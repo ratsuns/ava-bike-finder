@@ -761,6 +761,8 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
    and --sbw extends their box over it */
 @media (min-width:761px){dialog.cmd,dialog.bm{right:calc(-1 * var(--sbw,0px))}}
 #scrim{right:calc(-1 * var(--sbw,0px))}
+/* desktop search window: centred on the screen with a fixed height, so it never jumps while results change */
+@media (min-width:601px){dialog.cmd{inset:0 calc(-1 * var(--sbw,0px)) 0 0;margin:auto;height:min(720px,calc(100dvh - 96px));max-height:none}}
 </style>
 
 <a class="skip" href="#g">Skip to the bikes</a>
@@ -940,9 +942,9 @@ function cardHTML(b){
   ?`<div class="price"><div class="pay"><strong>${money(b.you)}</strong><span>you pay</span></div><div class="list"><s>${money(b.price)}</s> minus ${money(b.reb)} rebate, plus tax</div></div>`
   :`<div class="price na"><div class="pay"><strong>Price not listed</strong></div><div class="list">${tr?`Ava lists it at ${esc(tr)}. `:''}Ask the shop for the price.</div></div>`;
  const allNa=[b.spd,b.tq,b.load,b.range].every(v=>v==null||v==='');
- const sw=b.cv.length?`<div class="sws" role="group" aria-label="Colors">${b.cv.map((c,ci)=>`<button type="button" class="sw" data-c="${ci}" tabindex="${ci?-1:0}" aria-pressed="false" aria-label="${esc(c.n)}" title="${esc(c.n)}${c.img?'':' (no photo yet)'}"><i style="background:${c.hex||CHEX[c.f]}"></i></button>`).join('')}</div>`:'';
+ const ac0=activeColor(b),sw=b.cv.length?`<div class="sws" role="group" aria-label="Colors">${b.cv.map((c,ci)=>`<button type="button" class="sw" data-c="${ci}" tabindex="${ci===(ac0??0)?0:-1}" aria-pressed="${ci===ac0}" aria-label="${esc(c.n)}" title="${esc(c.n)}${c.img?'':' (no photo yet)'}"><i style="background:${c.hex||CHEX[c.f]}"></i></button>`).join('')}</div>`:'';
  return `<article class="c${pk?' pick':''}" data-b="${b.i}">
- <div class="ph"><img loading="lazy" decoding="async" src="${b.img}" alt="${esc(b.name)}">${sw}<span class="tag${b.reb===900?'':' s400'}"><i></i>${money(b.reb)} off</span>${pk?`<span class="picktag">${STAR}${pk.tag}</span>`:''}</div>
+ <div class="ph"><img loading="lazy" decoding="async" src="${shownSrc(b)}" alt="${esc(b.name)}">${sw}<span class="tag${b.reb===900?'':' s400'}"><i></i>${money(b.reb)} off</span>${pk?`<span class="picktag">${STAR}${pk.tag}</span>`:''}</div>
  <div class="b">
   <div class="id"><span class="br">${esc(b.brand)}</span><h3 class="n" title="${esc(b.model)}"><span class="vh">${esc(b.brand)} </span>${esc(b.mn)}</h3></div>
   ${price}
@@ -956,6 +958,9 @@ const NODE=new Map();
 const tpl=document.createElement('template');
 B.forEach(b=>{tpl.innerHTML=cardHTML(b).trim();NODE.set(b.i,tpl.content.firstElementChild)});
 
+/* cards show the bike's display photo with no color selected until someone picks one; the details open on a real color */
+function firstColor(b){const k=b.cv.findIndex(c=>c.img);return k>=0?k:null}
+function shownSrc(b){const k=activeColor(b);return k!=null&&b.cv[k].img?b.cv[k].img:b.img}
 function activeColor(b){
  const fc=F.color;let ac=ACT.has(b.i)?ACT.get(b.i):null;
  if(fc&&(ac==null||b.cv[ac].f!==fc)){const m=b.cv.findIndex(c=>c.f===fc);if(m>=0)ac=m}
@@ -1093,7 +1098,6 @@ function buildBike(i){if(BIKE_PRE===i)return;BIKE_PRE=i;
 }
 /* the details always open on a real color, so a dot is always selected and it always matches the photo:
    the color picked on the card (or by the color filter), otherwise the first color that has its own photo */
-const firstColor=b=>{const k=b.cv.findIndex(c=>c.img);return k>=0?k:null};
 function openBike(i,opener){buildBike(i);BIKE_I=i;BIKE_AC=activeColor(B[i])??firstColor(B[i]);syncBike();showDlg(BIKE,opener);$('bike-body').scrollTop=0}
 $('g').addEventListener('pointerdown',e=>{if(BIKE.open||e.button)return;const c=e.target.closest('.c[data-b]');if(c&&!e.target.closest('a,.sws'))buildBike(+c.dataset.b)},{passive:true});
 function syncBike(){
@@ -1135,7 +1139,7 @@ function renderCmd(){
  /* only rebuild the matches when they change, so dragging the price slider doesn't flicker the photos */
  const key=top.map(b=>b.i).join()+'|'+qv+'|'+n;
  if(CMD._key!==key){CMD._key=key;
-  $('cmd-res').innerHTML=top.length?top.map(b=>`<button type="button" class="hit" data-go="${b.i}"><img src="${b.img}" alt="" loading="lazy"><span class="ht"><b>${esc(b.name)}</b><small>${esc(b.type)} · Class ${esc(b.cls)}</small></span><span class="hp">${b.you!=null?money(b.you):'Ask'}</span></button>`).join('')
+  $('cmd-res').innerHTML=top.length?top.map(b=>`<button type="button" class="hit" data-go="${b.i}"><img src="${shownSrc(b)}" alt="" loading="lazy"><span class="ht"><b>${esc(b.name)}</b><small>${esc(b.type)} · Class ${esc(b.cls)}</small></span><span class="hp">${b.you!=null?money(b.you):'Ask'}</span></button>`).join('')
    :`<p class="cnone">No bikes match${qv?` “${esc(qv)}”`:''}${n?` with your ${n===1?'filter':n+' filters'}. <button type="button" class="linkbtn" data-clearf>Clear filters</button>`:'.'}</p>`}
  $('cmd-reshead').textContent=qv||n?'Top matches':$('sort').selectedOptions[0].text;
  CMF.sync();
