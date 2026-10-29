@@ -333,18 +333,17 @@ input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;width:1
 .fab.on{opacity:1;transform:translate(-50%,0);pointer-events:auto}
 .fab.on:active{transform:translate(-50%,0) scale(.97);transition:transform .16s var(--ease-out)}
 .fab svg{flex:none;color:var(--fg)}
-/* border beam: a short arc of light that slowly circles the pill's edge; runs only while the pill is shown */
-@property --beam-angle{syntax:'<angle>';inherits:false;initial-value:0deg}
-.fab::before{content:"";position:absolute;inset:-1px;border-radius:inherit;padding:1px;pointer-events:none;opacity:.6;
- background:conic-gradient(from var(--beam-angle),transparent 0deg,transparent 300deg,color-mix(in oklab,var(--accent) 70%,transparent) 330deg,#d9f5e8 352deg,transparent 360deg);
- -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;
- mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0);
- animation:beam 7s linear infinite paused}
+/* border beam: a short arc of light circling the pill's edge.
+   The gradient is painted once on an oversized square that only rotates (transform), so the GPU compositor runs it without
+   repainting or touching the main thread; the pill clips it to a 1px ring and an inner layer covers the middle. */
+.fab{isolation:isolate;overflow:hidden;border:0}
+.fab::before{content:"";position:absolute;z-index:-2;left:50%;top:50%;width:max(120%,460px);aspect-ratio:1;pointer-events:none;
+ background:conic-gradient(from 0deg,transparent 0deg,transparent 300deg,color-mix(in oklab,var(--accent) 70%,transparent) 330deg,#d9f5e8 352deg,transparent 360deg);
+ transform:translate(-50%,-50%) rotate(0deg);animation:beam 7s linear infinite paused;will-change:transform}
+.fab::after{content:"";position:absolute;z-index:-1;inset:1px;border-radius:inherit;background:var(--surface);pointer-events:none}
 .fab.on::before{animation-play-state:running}
-@keyframes beam{to{--beam-angle:360deg}}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .fab::before{opacity:.8}}
-:root[data-theme="dark"] .fab::before{opacity:.8}
-@media (prefers-reduced-motion:reduce){.fab::before{animation:none;background:color-mix(in oklab,var(--accent) 35%,transparent)}}
+@keyframes beam{to{transform:translate(-50%,-50%) rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.fab::before{animation:none}}
 .fmain,.ffil{display:flex;align-items:center;height:40px;border:0;border-radius:999px;background:none;color:inherit;font:inherit;cursor:pointer}
 #fab-q,.ffil svg{transition:color .15s ease}
 .fmain{flex:1 1 auto;min-width:0;gap:10px;padding:0 14px 0 10px}
@@ -625,7 +624,7 @@ article.c .b{container-type:inline-size}
 /* the floating search bar is solid instead of frosted, so scrolling stays smooth in Safari */
 .fab{-webkit-backdrop-filter:none;backdrop-filter:none;background:var(--surface)}
 /* scrolling panels fade out at the bottom while there is more to read, and the fade lifts once you reach the end */
-.bmb::after,.dbody::after,.cbody::after{content:"";position:sticky;bottom:0;display:block;height:56px;margin-top:-56px;pointer-events:none;background:linear-gradient(to bottom,transparent,var(--surface) 92%);opacity:0;transition:opacity .2s ease}
+.bmb::after,.dbody::after,.cbody::after{content:"";position:sticky;bottom:calc(var(--pb,0px) * -1);display:block;height:56px;margin-top:-56px;pointer-events:none;background:linear-gradient(to bottom,transparent,var(--surface) 92%);opacity:0;transition:opacity .2s ease}
 .bmb.has-more::after,.dbody.has-more::after,.cbody.has-more::after{opacity:1}
 /* single search entry: no separate Filters button; the search bar opens the search window, filters included */
 #mfilter,#fab-f,.fab .fsep{display:none!important}
@@ -680,6 +679,12 @@ dialog.cmd.instant,dialog.cmd.instant[data-state]{transition:none}
    window has finished sliding in: blurring the page while something moves over it dropped frames to 80-130ms */
 #scrim{background:rgba(0,0,0,.55)}
 #scrim.blur{-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+/* the ring under the beam: the pill background shows through the 1px gap around the inner layer */
+.fab{background:var(--line2)}
+/* the fade pins to the real bottom edge, not to the panel's inner padding: --pb mirrors each panel's bottom padding */
+.dbody{--pb:calc(40px + env(safe-area-inset-bottom,0px))}
+.cbody{--pb:18px}
+@media (max-width:600px){.dbody{--pb:calc(32px + env(safe-area-inset-bottom,0px))}.cbody{--pb:16px}}
 </style>
 
 <a class="skip" href="#g">Skip to the bikes</a>
