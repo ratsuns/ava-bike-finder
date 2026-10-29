@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"></head><body style="margin:0"><title>Ava Rebate Bike Finder</title>
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#0f1211"></head><body style="margin:0"><title>Ava Rebate Bike Finder</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400..700&display=swap" rel="stylesheet">
@@ -182,9 +182,8 @@ html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){.drawer{transition:opacity .2s ease,overlay .2s allow-discrete,display .2s allow-discrete;transform:none;opacity:0}.drawer[open]{opacity:1}@starting-style{.drawer[open]{opacity:0;transform:none}}}
 
 
-/* one backdrop for every dialog: same dim, same 3px blur, same fade */
+/* one backdrop for every dialog: same dim, same fade. No blur: a full-screen blur over 224 cards and a playing video makes Safari stutter */
 dialog::backdrop{background:rgba(10,14,12,.42);opacity:0;transition:opacity .18s ease,overlay .18s allow-discrete,display .18s allow-discrete}
-dialog.settled::backdrop{-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
 dialog[open]::backdrop{opacity:1}
 @starting-style{dialog[open]::backdrop{opacity:0}}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) dialog::backdrop{background:rgba(0,0,0,.58)}}
@@ -545,10 +544,10 @@ main.grid{padding-bottom:96px}
 
 .hero .topnav{position:absolute;inset:0 0 auto;z-index:1;padding-top:env(safe-area-inset-top)}
 .hero .topnav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px;padding-block:0;border-bottom:1px solid rgba(255,255,255,.12)}
-.brand{display:inline-flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:650;font-size:16px;letter-spacing:-.01em;min-height:44px}
+.brand{display:inline-flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:600;font-size:15px;letter-spacing:-.01em;min-height:44px}
 .brand svg{flex:none}
 .navlinks{display:flex;align-items:center;gap:4px;margin-right:-12px}
-.navlinks button,.navlinks a{text-decoration:none;font:inherit;font-size:15px;font-weight:550;color:rgba(255,255,255,.82);background:none;border:0;height:44px;padding:0 12px;border-radius:6px;cursor:pointer;transition:color .15s ease,transform .12s var(--ease-out)}
+.navlinks button,.navlinks a{text-decoration:none;font:inherit;font-size:14px;font-weight:500;color:rgba(255,255,255,.82);background:none;border:0;height:44px;padding:0 12px;border-radius:6px;cursor:pointer;transition:color .15s ease,transform .12s var(--ease-out)}
 .navlinks button:active{transform:scale(.97)}
 .navlinks button:focus-visible,.navlinks a:focus-visible,.menubtn:focus-visible,.brand:focus-visible{outline:2px solid #fff;outline-offset:2px}
 @media (hover:hover) and (pointer:fine){.navlinks button:hover,.navlinks a:hover{color:#fff}}
@@ -601,12 +600,12 @@ article.c .b{container-type:inline-size}
 .navmenu::backdrop{background:transparent}
 .nmh{padding-top:env(safe-area-inset-top,0px);border-bottom:1px solid var(--line)}
 .nmh .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;padding-block:0}
-.nmb{display:inline-flex;align-items:center;gap:8px;font-weight:650;font-size:15px;letter-spacing:-.01em}
+.nmb{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;letter-spacing:-.01em}
 .nmx{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;margin-right:-10px;border:0;border-radius:8px;background:none;color:var(--fg);cursor:pointer;transition:transform .12s var(--ease-out)}
 .nmx:active{transform:scale(.95)}
 .nml{list-style:none;margin:8px 0 0;padding:0}
 .nml li{border-bottom:1px solid var(--line)}
-.nml button,.nml a{display:flex;align-items:center;gap:14px;width:100%;min-height:64px;padding:0;border:0;background:none;font:inherit;font-size:20px;font-weight:600;letter-spacing:-.015em;color:var(--fg);text-decoration:none;text-align:left;cursor:pointer;transition:opacity .12s ease}
+.nml button,.nml a{display:flex;align-items:center;gap:12px;width:100%;min-height:56px;padding:0;border:0;background:none;font:inherit;font-size:17px;font-weight:500;letter-spacing:-.01em;color:var(--fg);text-decoration:none;text-align:left;cursor:pointer;transition:opacity .12s ease}
 .nml button:active,.nml a:active{opacity:.6}
 .nml svg{flex:none;color:var(--fg3)}
 .nml span{flex:1}
@@ -619,6 +618,12 @@ article.c .b{container-type:inline-size}
 .maplink,.web{line-height:1.5}
 .maplink svg,.web svg{margin-top:3.5px}
 @supports (margin-top:1lh){.maplink svg,.web svg,.web svg+span+svg{margin-top:calc((1lh - 13px) / 2)}}
+/* close buttons are ghost buttons: no fill until hovered or pressed */
+.dclose{background:transparent;color:var(--fg2)}
+.dclose:active{background:var(--well);color:var(--fg)}
+@media (hover:hover) and (pointer:fine){.dclose:hover{background:var(--well);color:var(--fg)}}
+/* the floating search bar is solid instead of frosted, so scrolling stays smooth in Safari */
+.fab{-webkit-backdrop-filter:none;backdrop-filter:none;background:var(--surface)}
 </style>
 
 <a class="skip" href="#g">Skip to the bikes</a>
@@ -1126,6 +1131,12 @@ document.addEventListener('click',e=>{if(performance.now()<NAV_SWALLOW){NAV_SWAL
 NAVM.addEventListener('toggle',e=>{const o=e.newState==='open';MBTN.setAttribute('aria-expanded',o);MBTN.setAttribute('aria-label',o?'Close menu':'Menu');lockScroll()});
 matchMedia('(min-width: 761px)').addEventListener('change',e=>{if(e.matches&&NAVM.matches(':popover-open'))NAVM.hidePopover()});
 document.addEventListener('click',e=>{const a=e.target.closest('a[href="#dir"]:not([data-dir])');if(!a)return;e.preventDefault();const go=()=>$('dir').scrollIntoView({block:'start',behavior:'instant'});go();let n=0;const fix=()=>{if(n++>40)return;if(Math.abs($('dir').getBoundingClientRect().top)>2)go();requestAnimationFrame(fix)};requestAnimationFrame(fix);history.replaceState(null,'','#dir')});
+/* the hero video only plays while it is on screen and no window is open; it costs nothing the rest of the time */
+(()=>{const v=document.getElementById('herov');if(!v)return;let seen=true;
+ const sync=()=>{const busy=document.documentElement.classList.contains('locked')||document.hidden;if(seen&&!busy&&!REDUCE.matches){if(v.paused)v.play().catch(()=>{})}else if(!v.paused)v.pause()};
+ new IntersectionObserver(e=>{seen=e[0].isIntersecting;sync()}).observe(v);
+ new MutationObserver(sync).observe(document.documentElement,{attributes:true,attributeFilter:['class']});
+ document.addEventListener('visibilitychange',sync)})();
 </script>
 
 </body></html>
