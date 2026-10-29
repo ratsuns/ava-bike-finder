@@ -30,6 +30,7 @@ for b,r,img,mode in zip(B,R,IM,MODES):
     if p:
         lo,hi={'$':(0,1500),'$$':(1501,3000),'$$$':(3001,1e9)}.get(out[-1]['tier'],(0,1e9))
         out[-1]['warn']= p<lo*0.85 or p>hi*1.15
+VS={int(k):v for k,v in json.load(open('verify/specs_verified.json')).items()} if os.path.exists('verify/specs_verified.json') else {}
 SP={}
 for f in sorted(glob.glob('specs/out*.json')):
     for r in json.load(open(f)): SP[r['index']]=r
@@ -63,6 +64,15 @@ for i,o in enumerate(out):
     if o.get('spd') is not None and o['spd']<17: o['spd']=None
     o['colors']=r.get('colors') or []
     o['cs']=r.get('colors_simple') or []
+    # manufacturer-verified specs (verify/specs_verified.json, one entry per bike with its source page) win over everything above.
+    # A field the maker doesn't publish is set to None there, so the card leaves it out instead of showing an unverified number.
+    v=VS.get(i)
+    if v:
+        for k in ('cls','spd','tq','load','wh','wt'):
+            if k in v: o[k]=v[k]
+        for k in ('range','height','fold','motor'):
+            if k in v: o[k]=v[k]
+        if 'range' in v: o['range']=rng(o.get('range'))
 # per-color photos (verified colors + verified photos), written as separate image files for the static site
 from famap import fam
 import base64,io,hashlib
