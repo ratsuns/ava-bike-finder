@@ -81,12 +81,13 @@ main.grid{padding-block:14px 56px;display:grid;grid-template-columns:repeat(auto
 .ph{display:block;position:relative;aspect-ratio:4/3;max-width:100%;background:#fff;overflow:hidden}
 .sws{position:absolute;left:8px;bottom:8px;display:flex;align-items:center;gap:0;padding:1px 2px;border-radius:999px;background:rgba(255,255,255,.92);box-shadow:0 1px 3px rgba(0,0,0,.14);max-width:calc(100% - 20px);flex-wrap:wrap}
 .sw{width:22px;height:22px;border:0;padding:0;background:none;border-radius:50%;display:grid;place-items:center;cursor:pointer;position:relative}
-.sw i{width:13px;height:13px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(0,0,0,.2);transition:transform .12s var(--ease-out)}
+.sw i{width:12px;height:12px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(0,0,0,.2);transition:transform .12s var(--ease-out)}
 .sw::before{content:"";position:absolute;inset:-2px}
-.sw[aria-pressed="true"]::after{content:"";position:absolute;inset:2px;border-radius:50%;box-shadow:0 0 0 1.5px #121614}
+/* the selected ring is drawn around the dot itself, so it is always perfectly centred on it */
+.sw[aria-pressed="true"] i{box-shadow:inset 0 0 0 1px rgba(0,0,0,.2),0 0 0 2px #fff,0 0 0 3.5px #121614}
 @media (hover:hover) and (pointer:fine){.sw:hover i{transform:scale(1.15)}}
 .sw:active i,.sw:hover:active i{transform:scale(.9)}
-@media (pointer:coarse){.sw{width:26px;height:26px}.sw i{width:15px;height:15px}.sw::before{inset:-6px}.sws{gap:4px;padding:2px 4px}}
+@media (pointer:coarse){.sw{width:26px;height:26px}.sw i{width:14px;height:14px}.sw::before{inset:-6px}.sws{gap:4px;padding:2px 4px}}
 .ph img{width:100%;height:100%;object-fit:cover;display:block}
 .tag{position:absolute;left:12px;top:12px;display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.94);color:#0b5f40;border:1px solid rgba(14,122,82,.28);font-size:var(--t-micro);font-weight:600;padding:3px 8px;border-radius:4px;font-variant-numeric:tabular-nums}
 .tag.s400{color:#3d4541;border-color:rgba(18,22,20,.16)}
