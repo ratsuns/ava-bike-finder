@@ -824,7 +824,9 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
  :root[data-theme="light"] .hero-media::after{background:radial-gradient(ellipse 62% 58% at 50% 50%,rgba(15,18,17,.42) 0%,rgba(15,18,17,0) 100%),linear-gradient(180deg,rgba(15,18,17,.3) 0%,rgba(15,18,17,.12) 32%,rgba(15,18,17,.5) 62%,rgba(15,18,17,.62) 100%)}
 }
 /* hero search: a soft shadow lifts it off the video; the focus ring is layered on top so it still shows */
-.hero .hbar input[type=search]{box-shadow:0 3px 8px rgba(0,0,0,.38),0 20px 44px -4px rgba(0,0,0,.7)}
+.hero .hbar input[type=search]{border-color:rgba(255,255,255,.22);box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 3px 8px rgba(0,0,0,.38),0 20px 44px -4px rgba(0,0,0,.7)}
+/* light mode: the bar is white, so its edge is a crisp hairline instead */
+:root[data-theme="light"] .hero .hbar input[type=search]{border-color:rgba(255,255,255,.9);box-shadow:0 0 0 1px rgba(0,0,0,.06),0 3px 8px rgba(0,0,0,.38),0 20px 44px -4px rgba(0,0,0,.7)}
 .hero .hbar input[type=search]:focus-visible{box-shadow:0 0 0 3px var(--accent-soft),0 3px 8px rgba(0,0,0,.38),0 20px 44px -4px rgba(0,0,0,.7)}
 /* hero: the list date sits as a small, quiet line under the search (desktop's column already has a 12px gap, so it pulls up to the same 8px) */
 @media (min-width:761px){.hero .hupd{margin-top:-4px!important}}
