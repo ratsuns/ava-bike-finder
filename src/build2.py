@@ -11,15 +11,14 @@ from cargo_specs import CS
 for b,r in zip(B,R):
     for k,v in CS.get((b['brand'],b['model']),{}).items():
         if k in ('price','price_note','source') or r.get(k) is None: r[k]=v
-fix={'Laurel Cyclery (Oakland)':'https://www.laurelcyclery.com/','NILES BICYCLES (Fremont)':'https://niles-bicycles.cloveronline.com/','Sports Basement (Berkeley)':'https://shop.sportsbasement.com/blogs/stores/berkeley','Alameda Bicycle (Alameda)':'https://www.alamedabicycle.com/','Dublin Cyclery (Dublin)':'https://www.dublincyclery.com/','Robby\'s Bicycles (Stockton)':'https://www.robbysbicycles.com/','Adaptive Cycles (Berkeley)':'https://adaptivecycles.com/','Stay True Cycles (Berkeley)':'https://www.staytrue.bike/','Cycle City (Alameda)':'https://cyclecityusa.com/','King Kog (Oakland)':'https://kingkog.bigcartel.com/','(Oakland)':'https://kingkog.bigcartel.com/'}
+fix={'Laurel Cyclery (Oakland)':'https://www.laurelcyclery.com/','NILES BICYCLES (Fremont)':'https://niles-bicycles.cloveronline.com/','Sports Basement (Berkeley)':'https://shop.sportsbasement.com/blogs/stores/berkeley','Alameda Bicycle (Alameda)':'https://www.alamedabicycle.com/','Dublin Cyclery (Dublin)':'https://www.dublincyclery.com/','Robby\'s Bicycles (Stockton)':'https://www.robbysbicycles.com/','Adaptive Cycles (Berkeley)':'https://adaptivecycles.com/','Stay True Cycles (Berkeley)':'https://www.staytrue.bike/','Cycle City (Alameda)':'https://cyclecityusa.com/'}
 for k,u in fix.items():
     if k in S: S[k]['url']=u
 for k in ['Castro Valley Cyclery','Castro Valley Cyclery (Castro Valley)']:
     if k in S: S[k]['url']=None  # site's security certificate has expired
 out=[]
 for b,r,img,mode in zip(B,R,IM,MODES):
-    shops=[s.strip() for s in b['shops'].replace('King Kog (Oakland)','(Oakland)').split(',') if s.strip()]
-    shops=[s if s in S else ('(Oakland)' if 'Kog' in s else s) for s in shops]
+    shops=[s.strip() for s in b['shops'].split(',') if s.strip() and 'Kog' not in s and s.strip()!='(Oakland)']
     def n(x):
         try: return float(x) if x is not None else None
         except: return None

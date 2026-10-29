@@ -1,12 +1,4 @@
 {
- "(Oakland)": {
-  "name": "King Kog",
-  "address": "327 17th St",
-  "city": "Oakland",
-  "phone": "(510) 858-7514",
-  "url": "https://kingkog.bigcartel.com/",
-  "email": "kingkogshopoakland@gmail.com"
- },
  "Adaptive Cycles (Berkeley)": {
   "name": "Adaptive Cycles",
   "address": "1 Spinnaker Way",
@@ -83,14 +75,6 @@
   "phone": "(925) 230-8178",
   "url": "https://electricbikeca.com/",
   "email": "sales@electricbikeca.com"
- },
- "King Kog (Oakland)": {
-  "name": "King Kog",
-  "address": "327 17th St",
-  "city": "Oakland",
-  "phone": "(510) 858-7514",
-  "url": "https://kingkog.bigcartel.com/",
-  "email": "kingkogshopoakland@gmail.com"
  },
  "Laurel Cyclery (Oakland)": {
   "name": "Laurel Cyclery",
