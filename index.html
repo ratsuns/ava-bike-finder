@@ -559,12 +559,12 @@ main.grid{padding-bottom:96px}
  linear-gradient(180deg,rgba(246,247,245,.42) 0%,rgba(246,247,245,0) 16%,rgba(246,247,245,0) 58%,rgba(246,247,245,.6) 80%,rgba(246,247,245,.97) 93%,var(--bg) 100%),
  linear-gradient(90deg,rgba(246,247,245,.82) 0%,rgba(246,247,245,.62) 34%,rgba(246,247,245,.18) 56%,rgba(246,247,245,0) 72%)}
 /* phones: the type spans the full width, so the video stays clear at the top and the wash builds behind the text instead */
-@media (max-width:760px){:root[data-theme="light"] .hero-media::after{background:linear-gradient(180deg,rgba(246,247,245,.35) 0%,rgba(246,247,245,0) 14%,rgba(246,247,245,.1) 30%,rgba(246,247,245,.72) 48%,rgba(246,247,245,.82) 72%,rgba(246,247,245,.97) 92%,var(--bg) 100%)}}
-.hero{position:relative;isolation:isolate;overflow:hidden;min-height:min(58svh,560px);display:flex;align-items:flex-end;background:var(--bg);color:rgb(var(--hink))}
+@media (max-width:760px){:root[data-theme="light"] .hero-media::after{background:linear-gradient(180deg,rgba(246,247,245,.35) 0%,rgba(246,247,245,0) 14%,rgba(246,247,245,.1) 30%,rgba(246,247,245,.72) 48%,rgba(246,247,245,.82) 74%,rgba(246,247,245,.97) 92%,var(--bg) 100%)}}
+.hero{position:relative;isolation:isolate;overflow:hidden;min-height:calc(min(58svh,560px) + 56px);display:flex;align-items:flex-end;background:var(--bg);color:rgb(var(--hink))}
 .hero-media{position:absolute;inset:0;z-index:-1}
 .hero-media video{width:100%;height:100%;object-fit:cover;display:block}
 .hero-media::after{content:"";position:absolute;inset:-1px 0;background:linear-gradient(180deg,rgba(var(--hscrim),var(--ha0)) 0%,rgba(var(--hscrim),var(--ha1)) 32%,rgba(var(--hscrim),var(--ha2)) 60%,rgba(var(--hscrim),var(--ha3)) 78%,rgba(var(--hscrim),.97) 92%,var(--bg) 100%),linear-gradient(90deg,rgba(var(--hscrim),var(--ha4)) 0%,rgba(var(--hscrim),0) 60%)}
-.hero .wrap{width:100%;padding-block:112px 72px}
+.hero .wrap{width:100%;padding-block:112px 128px}
 .hero h1{color:rgb(var(--hink));font-size:clamp(40px,6vw,72px);line-height:1.02;letter-spacing:-.035em;max-width:14ch}
 .hero .lede{color:rgba(var(--hink),.86);font-size:clamp(17px,1.6vw,20px);max-width:52ch}
 .hero .hlinks{margin-top:10px;gap:10px 12px}
@@ -572,7 +572,8 @@ main.grid{padding-bottom:96px}
 .hero .gbtn svg{color:rgb(var(--hink))}
 .hero .hlinks a{color:rgb(var(--hink));font-weight:600;text-decoration:underline;text-decoration-color:rgba(var(--hink),.4);text-underline-offset:4px}
 @media (hover:hover) and (pointer:fine){.hero .gbtn:hover{background:rgba(var(--hink),.18);border-color:rgba(var(--hink),.45)}.hero .hlinks a:hover{text-decoration-color:rgb(var(--hink))}}
-@media (max-width:760px){.hero{min-height:min(52svh,440px)}.hero .wrap{padding-block:128px 40px}}
+/* the extra height goes below the text, so the title and description stay exactly where they were */
+@media (max-width:760px){.hero{min-height:calc(min(52svh,440px) + 56px)}.hero .wrap{padding-block:128px 96px}}
 @media (prefers-reduced-motion:reduce){.hero-media video{display:none}.hero-media{background:url(img/hero.jpg) center/cover}}
 
 .hero .topnav{position:absolute;inset:0 0 auto;z-index:1;padding-top:env(safe-area-inset-top)}
