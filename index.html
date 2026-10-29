@@ -1087,7 +1087,10 @@ function buildBike(i){if(BIKE_PRE===i)return;BIKE_PRE=i;
  </div>
 </div>`;
 }
-function openBike(i,opener){buildBike(i);BIKE_I=i;BIKE_AC=activeColor(B[i]);syncBike();showDlg(BIKE,opener);$('bike-body').scrollTop=0}
+/* the details always open on a real color, so a dot is always selected and it always matches the photo:
+   the color picked on the card (or by the color filter), otherwise the first color that has its own photo */
+const firstColor=b=>{const k=b.cv.findIndex(c=>c.img);return k>=0?k:null};
+function openBike(i,opener){buildBike(i);BIKE_I=i;BIKE_AC=activeColor(B[i])??firstColor(B[i]);syncBike();showDlg(BIKE,opener);$('bike-body').scrollTop=0}
 $('g').addEventListener('pointerdown',e=>{if(BIKE.open||e.button)return;const c=e.target.closest('.c[data-b]');if(c&&!e.target.closest('a,.sws'))buildBike(+c.dataset.b)},{passive:true});
 function syncBike(){
  if(BIKE_I==null||!BIKE.contains($('bike-img')))return;const b=B[BIKE_I],ac=BIKE_AC,img=$('bike-img'),cap=$('bike-cap');
