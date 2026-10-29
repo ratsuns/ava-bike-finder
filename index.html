@@ -215,7 +215,7 @@ dialog[open]::backdrop{opacity:1}
  .status .count{display:flex;flex-wrap:wrap;align-items:baseline;column-gap:12px;min-width:0}
  .view{flex:none}
  /* phones: the chip row always keeps its height so the bikes never jump */
- .status .achips,.status .achips[hidden]{display:flex;order:3;flex-basis:100%;min-height:44px;margin:0;padding-block:0;align-items:center}
+ .status .achips,.status .achips[hidden]{display:flex;order:3;flex-basis:100%;min-height:34px;margin:0;padding-block:0;align-items:center}
  .status .achips:empty{display:none}
 }
 /* the search lives in the hero, right under the description */
@@ -381,7 +381,7 @@ main.grid{padding-bottom:96px}
 .ach button{flex:none;display:grid;place-items:center;width:24px;height:24px;border:0;border-radius:4px;background:none;color:var(--fg3);cursor:pointer;padding:0;transition:background-color .12s ease,color .12s ease}
 .achc{font:inherit;font-size:var(--t-meta);font-weight:500;color:var(--accent-ink);background:none;border:0;padding:0 6px;height:28px;cursor:pointer;border-radius:4px}
 @media (hover:hover) and (pointer:fine){.ach button:hover{background:var(--well);color:var(--fg)}.achc:hover{color:var(--fg)}}
-@media (pointer:coarse){.ach{height:40px;padding-left:12px;font-size:var(--t-ui)}.ach button{width:36px;height:36px}.achc{height:40px;font-size:var(--t-ui);padding-inline:8px}}
+@media (pointer:coarse){.ach{height:34px;padding-left:12px}.ach button{width:32px;height:32px}.achc{height:34px;padding-inline:8px}}
 
 /* command dialog */
 .cmd{position:fixed;inset:12vh 0 auto;margin:0 auto;width:min(640px,calc(100vw - 32px));max-height:min(720px,76vh);padding:0;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--fg);box-shadow:0 24px 64px rgba(0,0,0,.24);display:flex;flex-direction:column;overflow:hidden;opacity:0;transform:scale(.97);transform-origin:50% 0;transition:opacity .18s var(--ease-out),transform .2s var(--ease-out),overlay .2s allow-discrete,display .2s allow-discrete}
@@ -728,8 +728,7 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
 .sortbtn[aria-expanded="true"] .schev{transform:rotate(180deg)}
 .sortbtn:active{transform:scale(.97)}
 @media (hover:hover) and (pointer:fine){.sortbtn:hover{border-color:var(--fg3)}}
-@media (pointer:coarse){.sortbtn{height:44px}}
-@media (max-width:760px){.sortbtn{font-size:16px}}
+@media (pointer:coarse){.sortbtn{height:40px}}
 .sortmenu{position:fixed;inset:auto;margin:0;min-width:0;box-sizing:border-box;padding:4px;border:1px solid var(--line2);border-radius:10px;background:var(--surface);color:var(--fg);box-shadow:0 12px 32px rgba(0,0,0,.35),0 2px 6px rgba(0,0,0,.2);transform-origin:top center;opacity:0;transform:translateY(-4px);transition:opacity .15s var(--ease-out),transform .15s var(--ease-out),overlay .15s allow-discrete,display .15s allow-discrete}
 .sortmenu:popover-open{opacity:1;transform:none}
 @starting-style{.sortmenu:popover-open{opacity:0;transform:translateY(-4px)}}
