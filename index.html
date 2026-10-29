@@ -331,7 +331,7 @@ input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;width:1
 /* floating search pill */
 .fab{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:15;display:flex;align-items:center;gap:2px;height:48px;width:min(420px,calc(100vw - 32px));padding:0 4px;border-radius:999px;border:1px solid var(--line2);background:color-mix(in oklab,var(--surface) 90%,transparent);-webkit-backdrop-filter:saturate(1.4) blur(14px);backdrop-filter:saturate(1.4) blur(14px);color:var(--fg2);font-size:var(--t-ui);box-shadow:0 2px 6px rgba(18,22,20,.08),0 12px 32px rgba(18,22,20,.16);opacity:0;transform:translate(-50%,12px) scale(.97);pointer-events:none;transition:opacity .2s var(--ease-out),transform .24s var(--ease-out)}
 .fab.on{opacity:1;transform:translate(-50%,0);pointer-events:auto}
-.fab.on:active{transform:translate(-50%,0) scale(.97)}
+.fab.on:active{transform:translate(-50%,0) scale(.97);transition:transform .16s var(--ease-out)}
 .fab svg{flex:none;color:var(--fg)}
 /* border beam: a short arc of light that slowly circles the pill's edge; runs only while the pill is shown */
 @property --beam-angle{syntax:'<angle>';inherits:false;initial-value:0deg}
@@ -640,9 +640,9 @@ dialog:focus{outline:none}
 dialog{z-index:50}
 @media (prefers-reduced-motion:reduce){#scrim{transition:none}}
 /* floating search bar: rises in with a soft spring-like ease, leaves quicker than it arrives (transform and opacity only, so it stays on the GPU) */
-.fab{transform:translate(-50%,20px) scale(.96);transition:opacity .15s var(--ease-out),transform .2s var(--ease-out);will-change:transform,opacity}
-.fab.on{transform:translate(-50%,0);transition:opacity .28s cubic-bezier(.23,1,.32,1),transform .42s cubic-bezier(.32,.72,0,1)}
-html.locked .fab.on{transform:translate(-50%,20px) scale(.96);transition:opacity .15s var(--ease-out),transform .2s var(--ease-out)}
+.fab{transform:translate(-50%,calc(100% + 28px + env(safe-area-inset-bottom,0px)));opacity:0;transition:opacity .2s ease,transform .26s var(--ease-out);will-change:transform,opacity}
+.fab.on{transform:translate(-50%,0);opacity:1;transition:opacity .36s ease,transform .5s var(--ease-drawer)}
+html.locked .fab.on{transform:translate(-50%,calc(100% + 28px + env(safe-area-inset-bottom,0px)));opacity:0;transition:opacity .2s ease,transform .26s var(--ease-out)}
 @media (prefers-reduced-motion:reduce){.fab,.fab.on,html.locked .fab.on{transform:translate(-50%,0);transition:opacity .2s ease}}
 .rb.lg svg{flex:none}
 /* ---- motion system (Emil's standards): enter and exit with strong ease-out, panels with the iOS drawer curve, transform + opacity only ----
@@ -942,6 +942,8 @@ let LASTCLOSE=-1e9;
 function lockScroll(){document.documentElement.classList.toggle('locked',!!document.querySelector('dialog[open],#navmenu:popover-open'))}
 /* Windows open with show(), not showModal(): showModal makes the browser mark all ~11,000 elements behind it as blocked,
    which took 60-90ms on a mid-range phone. The dim layer, Escape, outside taps and keeping Tab inside the window are handled here instead. */
+/* keyboard users get focus handed back to what opened a window; touch and mouse users get no leftover outline */
+let KBD=false;addEventListener('keydown',e=>{if(e.key==='Tab'||e.key==='Escape'||e.key.startsWith('Arrow')||e.key==='Enter')KBD=true},true);addEventListener('pointerdown',()=>{KBD=false},true);
 const DSTACK=[];const SCRIM=document.createElement('div');SCRIM.id='scrim';SCRIM.setAttribute('aria-hidden','true');document.body.append(SCRIM);
 SCRIM.addEventListener('click',()=>{const d=DSTACK[DSTACK.length-1];if(d)d.close()});
 document.addEventListener('keydown',e=>{const d=DSTACK[DSTACK.length-1];if(!d)return;
@@ -960,7 +962,7 @@ function animClose(){const d=this;if(!d.open||d.dataset.state==='closing')return
 document.querySelectorAll('dialog').forEach(d=>{d.close=animClose});
 function showDlg(d,opener){d._opener=opener||document.activeElement;d.classList.remove('settled');d.tabIndex=-1;d.setAttribute('aria-modal','true');DSTACK.push(d);d.style.transform='';d.dataset.state='closed';d.show();d.offsetWidth;d.dataset.state='open';SCRIM.classList.add('on');d.focus({preventScroll:true});lockScroll();clearTimeout(d._st);d._st=setTimeout(()=>{if(d.open)d.classList.add('settled')},260);const body=d.querySelector('.dbody,.cbody');if(body)body.scrollTop=0}
 document.querySelectorAll('dialog').forEach(d=>{
- d.addEventListener('close',()=>{const i=DSTACK.indexOf(d);if(i>=0)DSTACK.splice(i,1);SCRIM.classList.toggle('on',DSTACK.length>0);LASTCLOSE=performance.now();clearTimeout(d._st);d.classList.remove('settled');lockScroll();updateFab();const o=d._opener;if(o&&o.isConnected&&o.focus)o.focus({preventScroll:true})});
+ d.addEventListener('close',()=>{const i=DSTACK.indexOf(d);if(i>=0)DSTACK.splice(i,1);SCRIM.classList.toggle('on',DSTACK.length>0);LASTCLOSE=performance.now();clearTimeout(d._st);d.classList.remove('settled');lockScroll();updateFab();const o=d._opener;if(KBD&&o&&o.isConnected&&o.focus)o.focus({preventScroll:true});else if(d.contains(document.activeElement)||document.activeElement===d)document.activeElement.blur()});
  d.addEventListener('click',e=>{if(e.target!==d)return;const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close()});
  d.querySelectorAll('.dclose').forEach(x=>x.onclick=()=>d.close())});
 document.querySelectorAll('[data-open]').forEach(btn=>btn.onclick=()=>showDlg($(btn.dataset.open),btn));
