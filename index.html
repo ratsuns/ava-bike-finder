@@ -1083,7 +1083,7 @@ function buildBike(i){if(BIKE_PRE===i)return;BIKE_PRE=i;
  $('bike-h').innerHTML=`<span class="vh">${esc(b.brand)} </span>${esc(b.mn)}`;
  $('bike-body').innerHTML=`<div class="bmg">
  <div class="bml">
-  <div class="bmph"><img id="bike-img" src="${b.img}" alt="${esc(b.name)}">${sws}</div>
+  <div class="bmph"><img id="bike-img" src="${shownSrc(b)}" decoding="sync" alt="${esc(b.name)}">${sws}</div>
   <p class="bmcap" id="bike-cap" hidden></p>
   <div class="bmp">${price}${warn}${b.note?`<p class="bmtax">About the price: ${esc(b.note)}</p>`:''}</div>
  </div>
@@ -1096,9 +1096,9 @@ function buildBike(i){if(BIKE_PRE===i)return;BIKE_PRE=i;
  </div>
 </div>`;
 }
-/* the details always open on a real color, so a dot is always selected and it always matches the photo:
-   the color picked on the card (or by the color filter), otherwise the first color that has its own photo */
-function openBike(i,opener){buildBike(i);BIKE_I=i;BIKE_AC=activeColor(B[i])??firstColor(B[i]);syncBike();showDlg(BIKE,opener);$('bike-body').scrollTop=0}
+/* the details open on exactly the photo the card shows: the color picked on the card if there is one, otherwise the display photo with no dot selected.
+   the same image is already decoded from the card, so nothing swaps or flickers while the window slides in */
+function openBike(i,opener){buildBike(i);BIKE_I=i;BIKE_AC=activeColor(B[i]);syncBike();showDlg(BIKE,opener);$('bike-body').scrollTop=0}
 $('g').addEventListener('pointerdown',e=>{if(BIKE.open||e.button)return;const c=e.target.closest('.c[data-b]');if(c&&!e.target.closest('a,.sws'))buildBike(+c.dataset.b)},{passive:true});
 function syncBike(){
  if(BIKE_I==null||!BIKE.contains($('bike-img')))return;const b=B[BIKE_I],ac=BIKE_AC,img=$('bike-img'),cap=$('bike-cap');
