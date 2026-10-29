@@ -841,6 +841,18 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
 @media (hover:hover) and (pointer:fine){.hero .hbar .search:hover input[type=search]::placeholder,.hero .hbar .search:hover svg{color:rgba(255,255,255,.95)}}
 :root[data-theme="light"] .hero .hbar input[type=search]::placeholder,:root[data-theme="light"] .hero .hbar .search svg{color:#4d5651}
 @media (hover:hover) and (pointer:fine){:root[data-theme="light"] .hero .hbar .search:hover input[type=search]::placeholder,:root[data-theme="light"] .hero .hbar .search:hover svg{color:#121614}}
+/* hero search border beam: the same arc of light as the floating search bar.
+   A ring-shaped mask (border width only) sits on top of the field; inside it an oversized conic gradient just rotates,
+   which the GPU compositor runs without repainting. It sits above the field, so the frosted blur never samples it */
+.hero .hbar .search{position:relative}
+.hero .sbeam{position:absolute;inset:0;border-radius:10px;padding:1px;overflow:hidden;pointer-events:none;z-index:2;
+ -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0)}
+.hero .sbeam::before{content:"";position:absolute;left:50%;top:50%;width:max(130%,700px);aspect-ratio:1;
+ background:conic-gradient(from 0deg,transparent 0deg,transparent 300deg,color-mix(in oklab,var(--accent) 70%,transparent) 330deg,#d9f5e8 352deg,transparent 360deg);
+ transform:translate(-50%,-50%) rotate(0deg);animation:beam 7s linear infinite;will-change:transform}
+.hero.offscreen .sbeam::before,html.dim .hero .sbeam::before{animation-play-state:paused}
+@media (max-width:760px){.hero .sbeam{border-radius:6px}}
+@media (prefers-reduced-motion:reduce){.hero .sbeam{display:none}}
 </style>
 
 <a class="skip" href="#g">Skip to the bikes</a>
@@ -849,7 +861,7 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
  <p class="lede">Browse every e-bike on Ava's list and find the one that fits the way you ride.</p>
  <div class="bar hbar" id="bar">
  <button type="button" class="mfilter" id="mfilter" aria-haspopup="dialog" aria-controls="cmd"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>Filters<span class="mcount" id="mfilter-n" hidden></span></button>
- <div class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" id="q" placeholder="Search bikes or shops" aria-label="Search bikes or shops"></div>
+ <div class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" id="q" placeholder="Search bikes or shops" aria-label="Search bikes or shops"><span class="sbeam" aria-hidden="true"></span></div>
  </div>
  <p class="hupd">List updated October&nbsp;8, 2026</p>
 </div></header>
@@ -1412,6 +1424,8 @@ document.addEventListener('click',e=>{const a=e.target.closest('a[href="#dir"]:n
  label();
  b.addEventListener('click',()=>{const next=cur()==='dark'?'light':'dark';
   if(document.startViewTransition&&!REDUCE.matches){b.style.viewTransitionName='themebtn';const vt=document.startViewTransition(()=>apply(next));vt.finished.finally(()=>{b.style.viewTransitionName=''})}else apply(next)})})();
+/* the hero beam rests while the hero is scrolled away */
+(()=>{const h=document.querySelector('.hero');if(h)new IntersectionObserver(e=>h.classList.toggle('offscreen',!e[0].isIntersecting)).observe(h)})();
 /* build the search window once while the browser is idle, so the first open is as quick as the rest */
 (window.requestIdleCallback||(f=>setTimeout(f,1200)))(()=>{try{renderCmd()}catch(e){}});
 /* swipe a photo sideways to step through its colors: the gesture just presses the next or previous color dot, so every view stays in sync.
