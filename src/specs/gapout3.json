@@ -1,0 +1,191 @@
+[
+ {
+  "index": 16,
+  "spd": 15.5,
+  "tq": null,
+  "load": 242.5,
+  "range": null,
+  "url": "https://electricbikereport.com/brompton-electric-c-line-review/",
+  "note": "EBR review: Class 1 pedal assist to 15.5 mph (25 km/h, matches Brompton page); total payload capacity 242.5 lb. Torque not published (review: we do not know its torque rating)."
+ },
+ {
+  "index": 23,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://www.rei.com/product/C17693/cannondale-adventure-neo-allroad-speed-electric-bike",
+  "note": "Class 3 = Allroad Speed: Bafang G0900 750W rear hub, 28 mph, 720Wh, up to 71 mi (REI). Torque and rider/system weight limit not published on Cannondale, REI, or reviews (Cannondale spec shows Rider Weight Limit field empty)."
+ },
+ {
+  "index": 29,
+  "spd": 20,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://cyclesouq.com/en-us/collections/e-folding/products/dahon-unio-e20-20-folding-bike",
+  "note": "Retailer (CycleSouq) Unio E20 page: Top Speed 20 mph (32 km/h), 200W mid-drive. Dahon US page gives no speed; Dahon manual (older Unio) says assist tapers at 25 km/h (EU)."
+ },
+ {
+  "index": 38,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://www.eriksbikeshop.com/products/emojo-2026-bull-trail-electric-trike-pr5a26553",
+  "note": "Torque not published: Erik s spec table (motor power, speed, load, range) has no Nm; review sites list only 500W geared hub; emojobike.com not fetchable."
+ },
+ {
+  "index": 45,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://bikes.fan/?p=192493",
+  "note": "Load not published: Fuji product page, bikes.fan spec page have no rider/system weight limit; 99spokes not fetchable."
+ },
+ {
+  "index": 51,
+  "spd": null,
+  "tq": null,
+  "load": 287,
+  "range": null,
+  "url": "https://www.bike-magazin.de/en/brands/gazelle/model/arroyo-c5-hmb-elite-69de04c9708f1437f9fdf77f/",
+  "note": "Arroyo C5 HMB Elite: permissible total weight 130 kg (=287 lb; max system weight incl. bike, rider, cargo) per BIKE magazine and Fahrrad-XXL (EU listings). Rear rack 27 kg."
+ },
+ {
+  "index": 58,
+  "spd": 15.5,
+  "tq": null,
+  "load": null,
+  "range": "50",
+  "url": "https://hmi-basen.dk/blobs/produktblade/20468.pdf",
+  "note": "Hase STEPS trikes brochure (EVO STEPS/LEPUS/TRIGO UP STEPS): assist to 25 km/h (brochure writes 15 mph; 25 km/h = 15.5 mph), range approx. 50 mi (80 km), 504Wh 36V, max load 140 kg. Torque not listed; Shimano STEPS drive unit model not named anywhere found, so Nm not assigned."
+ },
+ {
+  "index": 67,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://www.utahtrikes.com/PROD-11619739.html",
+  "note": "Not published: ICE Full Fat e-assist is optional Shimano STEPS (E6100 60Nm / E8000 70Nm per Utah Trikes; EP8 85Nm per Laid Back Cycles); no retailer or ICE doc found states top assist speed or range (depends on chosen motor/battery 418/504/630Wh)."
+ },
+ {
+  "index": 82,
+  "spd": null,
+  "tq": null,
+  "load": 344,
+  "range": null,
+  "url": "https://shop.roulezjeunesse.com/products/liv-rove-e",
+  "note": "Retailer (Roulez Jeunesse, Canada) Liv Rove E+: Charge max totale 156.0 kg (=344 lb; max total weight, no separate rider limit). Retailer notes specs may vary by version."
+ },
+ {
+  "index": 90,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://www.marinbikes.com/de/bikes/2025-stinson-e",
+  "note": "Load not published: Marin 2025/2026 Stinson E and E ST pages (US, DE) list no rider/system weight limit. (Same pages: Class 1 20 mph US, Bafang hub 40 Nm, 15/19-62 mi.)"
+ },
+ {
+  "index": 99,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://electrek.co/2024/07/17/europe-meets-texas-the-mod-berlin-electric-bike-seeks-to-find-the-best-of-both/",
+  "note": "Torque not published for Berlin 3: Electrek, BGR, CleanTechnica give only 750W hub with torque sensor, no Nm; MOD site unreachable. (Older Berlin mid-drive was Shengyi 90 Nm per EBR - different bike, not used.)"
+ },
+ {
+  "index": 110,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://www.autoevolution.com/news/navee-s-kg05-e-bike-carries-kevin-garnett-s-name-and-can-be-set-to-ride-faster-than-28-mph-275500.html",
+  "note": "Torque not found: news coverage gives no Nm; Navee US product page not fetchable and not surfaced by search; bikeride.com spec page failed to load."
+ },
+ {
+  "index": 116,
+  "spd": null,
+  "tq": 40,
+  "load": null,
+  "range": null,
+  "url": "https://www.sigmasports.com/item/Orbea/Optima-E40-Electric-Hybrid-Bike-2022/VEGO",
+  "note": "Sigma Sports (2021 and 2022 Optima E40): Ebikemotion/Mahle X35 Plus hub, Maximum Assist 250w / 40Nm torque, 248Wh. Range and max rider/system weight not stated by Sigma, RABE, or bikes.com.au."
+ },
+ {
+  "index": 132,
+  "spd": null,
+  "tq": null,
+  "load": 350,
+  "range": null,
+  "url": "https://retrospec.com/products/beaumont-rev-2-electric-city-bike-step-through",
+  "note": "Retrospec Beaumont Rev 2 Electric City Bike (step-through page): Recommended Weight Limit 350 lbs (rider weight limit); rack 22 lb. Torque not published (EBR: Retrospec does not publish peak watts or torque; 350W hub, cadence sensor)."
+ },
+ {
+  "index": 140,
+  "spd": null,
+  "tq": 65,
+  "load": 350,
+  "range": null,
+  "url": "https://retrospec.com/collections/electric-bikes/products/koa-rev-2-26-fat-tire-electric-bike",
+  "note": "Retrospec Koa Rev 2 page: 500W (770W peak) 65Nm torque, Recommended Weight Limit 350 lbs, 20 mph, up to 75 mi. Koa Rev+ 2 also 350 lb limit but its torque is not published; Koa Rev 3 torque/limit not on Ace page."
+ },
+ {
+  "index": 148,
+  "spd": null,
+  "tq": 40,
+  "load": null,
+  "range": "30-100",
+  "url": "https://e-bikeshop.co.uk/products/electric-bike-scott-sub-cross-eride-30-2022",
+  "note": "Scott US page: motor Bosch Active (BES2), 400Wh; no Nm/range. Bosch Active Line = 40 Nm (motor-maker spec; e-bikeshop.co.uk spec table also lists Active Line 40Nm, though its blurb says 50Nm). Range 30-100 mi is e-bikeshop.co.uk (UK retailer, 2022 eRIDE 30) spec; Scott publishes none. Other trims may differ."
+ },
+ {
+  "index": 159,
+  "spd": null,
+  "tq": null,
+  "load": 300,
+  "range": null,
+  "url": "https://serfas.com/products/dash-mini-500w-belt-drive",
+  "note": "Serfas current Dash Mini 500W (belt drive) page: Up To 300lbs Cargo/Rider Total (total payload). Note: this is the current belt-drive Mini; 2022/2023 eDASH Mini pages list no limit. Torque not published on any Serfas or Scheller s page (Bafang 500W rear hub)."
+ },
+ {
+  "index": 166,
+  "spd": null,
+  "tq": null,
+  "load": 287,
+  "range": null,
+  "url": "https://shop.roulezjeunesse.com/products/specialized-turbo-vado-5-0",
+  "note": "Retailer (Roulez Jeunesse, Canada) Turbo Vado 5.0: Charge max totale 130.0 kg (=287 lb, max total weight). Not the UL-specific page; Specialized page not fetched. Rack 27 kg."
+ },
+ {
+  "index": 182,
+  "spd": null,
+  "tq": 40,
+  "load": 300,
+  "range": null,
+  "url": "https://www.bikeexchange.com/en-US/products/trek_verveplus_2_2021",
+  "note": "Verve+ 2 (2021, Gen 2) Trek spec via BikeExchange: Bosch Active 250W 40 Nm, 20 mph; maximum total weight limit (bike+rider+cargo) 300 lb (136 kg). Gen 3 (2024) uses Bosch Active Line Plus 50 Nm, same 136 kg limit (boutiquevelozone.ca)."
+ },
+ {
+  "index": 216,
+  "spd": null,
+  "tq": 85,
+  "load": null,
+  "range": null,
+  "url": "https://bikerumor.com/xtracycle-swoop-asm-e-cargo-bike-carries-3-kids/",
+  "note": "Swoop ASM uses Shimano STEPS EP6 Cargo drive unit, 85 Nm (Bikerumor; Shimano EP6 spec = 85 Nm). Load not published for ASM: Bikerumor could not find weight limits, Electrek lists none (the 470 lb GVW is the different Swoop 2.0). Electrek also says ASM is Class 3, 28 mph, 630Wh, up to 60 mi."
+ },
+ {
+  "index": 223,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://zoozbikes.com/products/ultra-flex-g2-low-bar",
+  "note": "Torque not published: Zooz product page, Gen 2 launch blog, and Freshly Charged list only 750W Thrillmatic planetary-geared hub, no Nm."
+ }
+]

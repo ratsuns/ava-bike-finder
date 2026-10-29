@@ -1,0 +1,937 @@
+[
+ {
+  "index": 3,
+  "spd": 20.0,
+  "tq": 45.0,
+  "load": 300.0,
+  "wh": 360.0,
+  "motor": "350W hub",
+  "wt": 41.0,
+  "range": "up to 46",
+  "colors": [
+   "Baja",
+   "Matte Black Midnight"
+  ],
+  "colors_simple": [
+   "Teal",
+   "Black"
+  ],
+  "url": "https://electricbikereview.com/aventon/soltera-2-5/",
+  "fix": null,
+  "note": "Existing spd/wh/wt (360Wh, 41 lb) match original Soltera; Soltera 2.5 (EBR) is 345.6Wh, 46 lb, 45Nm, 300 lb; colors/tq/load from 2.5"
+ },
+ {
+  "index": 8,
+  "spd": 28.0,
+  "tq": 65.0,
+  "load": 440.0,
+  "wh": 400.0,
+  "motor": "Bosch Performance Line Sport (Gen 3) mid-drive",
+  "wt": 65.0,
+  "range": "25-70",
+  "colors": [
+   "Anthracite Gray",
+   "Titanium Gray",
+   "Wasabi Green",
+   "Machine Blue"
+  ],
+  "colors_simple": [
+   "Gray",
+   "Gray",
+   "Green",
+   "Blue"
+  ],
+  "url": "https://www.bikeride.com/?p=485272",
+  "fix": null,
+  "note": "2024 Boost; variants Performance Sport/Speed, regular & step-through; spec numbers from existing data (retailer page lists no numbers); Bikeride: 65 or 85Nm (Sport vs Speed/CX), 400/500Wh, supports up to 375 lb (component limits sum to 435); kept 440 from prior data"
+ },
+ {
+  "index": 13,
+  "spd": null,
+  "tq": 70.0,
+  "load": 400.0,
+  "wh": 614.0,
+  "motor": "750W geared hub",
+  "wt": 62.0,
+  "range": "up to 70",
+  "colors": [
+   "Nu Cream"
+  ],
+  "colors_simple": [
+   "White"
+  ],
+  "url": "https://escondido.ebikesupershop.com/products/blix-sol-x-electric-beach-cruiser-ebike-step-over-750-w-electric-commuter-ebike",
+  "fix": null,
+  "note": "retailer page names only Nu Cream; other colors shown unnamed"
+ },
+ {
+  "index": 18,
+  "spd": 28.0,
+  "tq": 85.0,
+  "load": null,
+  "wh": 625.0,
+  "motor": "Bosch Performance Line Speed (Gen 4) mid-drive",
+  "wt": 59.7,
+  "range": "40-100",
+  "colors": [
+   "Matte Black with Metallic Grey Accents"
+  ],
+  "colors_simple": [
+   "Black"
+  ],
+  "url": "https://electricbikereview.com/?p=150220",
+  "fix": null,
+  "note": "Actually Bulls Iconic EVO 2 Speed (eMTB hardtail); 36V17.4Ah (626Wh); no max weight published"
+ },
+ {
+  "index": 23,
+  "spd": 20.0,
+  "tq": null,
+  "load": null,
+  "wh": 418.0,
+  "motor": "Bafang G020 250W rear hub",
+  "wt": null,
+  "range": "up to 47",
+  "colors": null,
+  "colors_simple": null,
+  "url": "https://www.cannondale.com/en/bikes/electric/e-urban/adventure-neo-allroad/adventure-neo-allroad",
+  "fix": null,
+  "note": "retailer page names only Black; Cannondale page lists no weight/rider limit/colors; Allroad Speed and EQ/ST variants exist"
+ },
+ {
+  "index": 28,
+  "spd": 16.0,
+  "tq": 32.0,
+  "load": 231.0,
+  "wh": 120.0,
+  "motor": "Dahon 24V 250W rear hub",
+  "wt": 26.4,
+  "range": null,
+  "colors": [
+   "Robin Egg Blue",
+   "Pink",
+   "Cream-Black",
+   "Obsidian",
+   "Slate",
+   "Cream",
+   "Forest Green",
+   "Lemon",
+   "Blush"
+  ],
+  "colors_simple": [
+   "Blue",
+   "Pink",
+   "White",
+   "Black",
+   "Gray",
+   "White",
+   "Green",
+   "Yellow",
+   "Pink"
+  ],
+  "url": "https://usa.dahon.com/collections/new-bikes/products/dahon-k-feather",
+  "fix": null,
+  "note": "Wh computed 24V x 5Ah; no official range stated"
+ },
+ {
+  "index": 33,
+  "spd": null,
+  "tq": 60.0,
+  "load": 300.0,
+  "wh": 520.0,
+  "motor": "500W rear hub",
+  "wt": 57.7,
+  "range": "50",
+  "colors": [
+   "Aloe Vera",
+   "Orchid"
+  ],
+  "colors_simple": [
+   "Green",
+   "Purple"
+  ],
+  "url": "https://www.gearwest.com/products/electra-townie-go",
+  "fix": null,
+  "note": "300 lb = bike+rider+cargo"
+ },
+ {
+  "index": 38,
+  "spd": 20.0,
+  "tq": null,
+  "load": 300.0,
+  "wh": 672.0,
+  "motor": "750W hub",
+  "wt": 90.0,
+  "range": "up to 60",
+  "colors": [
+   "Apple Red",
+   "Metallic Gray",
+   "Electric Blue"
+  ],
+  "colors_simple": [
+   "Red",
+   "Gray",
+   "Blue"
+  ],
+  "url": "https://www.eriksbikeshop.com/products/emojo-2026-bull-trail-electric-trike-pr5a26553",
+  "fix": null,
+  "note": "2026 Bull Trail; 48V/14Ah = 672Wh"
+ },
+ {
+  "index": 43,
+  "spd": 20.0,
+  "tq": null,
+  "load": 300.0,
+  "wh": 360.0,
+  "motor": "Bafang H400B 250W rear hub",
+  "wt": 50.7,
+  "range": "up to 40",
+  "colors": [
+   "Matte Black",
+   "Cool Gray",
+   "Sage"
+  ],
+  "colors_simple": [
+   "Black",
+   "Gray",
+   "Green"
+  ],
+  "url": "https://www.fujibikes.com/products/boulevard-evo-25",
+  "fix": null,
+  "note": "2025 model; 300 lb total incl. bike; maker lists 50.6 lb (kept 50.7)"
+ },
+ {
+  "index": 48,
+  "spd": 20.0,
+  "tq": 50.0,
+  "load": 287.0,
+  "wh": 500.0,
+  "motor": "Bosch Active Line Plus mid-drive (T9)",
+  "wt": 50.9,
+  "range": null,
+  "colors": [
+   "Champion Red Gloss",
+   "Ink Blue Gloss",
+   "Thunder Grey Gloss"
+  ],
+  "colors_simple": [
+   "Red",
+   "Blue",
+   "Gray"
+  ],
+  "url": "https://www.gazellebikes.com/en-gb/medeo-t9-hmb",
+  "fix": null,
+  "note": "Medeo T9 HMB (UK page: 25 km/h, 400/545Wh, 130 kg max total, 23.1 kg excl. battery, range up to 155 km on 545Wh); US 500Wh/20 mph kept; US retailer also lists Caramel Khaki, Dust, Turmeric Yellow, Light Olive on other Medeo trims (T10, T9 City)"
+ },
+ {
+  "index": 53,
+  "spd": 20.0,
+  "tq": 50.0,
+  "load": null,
+  "wh": 504.0,
+  "motor": "Shimano EP5 mid-drive",
+  "wt": 54.5,
+  "range": null,
+  "colors": [
+   "Pine Green Gloss",
+   "Caramel Khaki Gloss"
+  ],
+  "colors_simple": [
+   "Green",
+   "Tan"
+  ],
+  "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-easyflow-c7",
+  "fix": null,
+  "note": "EasyFlow C7; weight excludes battery"
+ },
+ {
+  "index": 58,
+  "spd": null,
+  "tq": null,
+  "load": 309.0,
+  "wh": 504.0,
+  "motor": "Shimano STEPS mid-drive",
+  "wt": null,
+  "range": null,
+  "colors": null,
+  "colors_simple": null,
+  "url": "https://www.ucycle.com/hase-kettwiesel-evo-shimano-steps.html",
+  "fix": null,
+  "note": "EVO STEPS appears discontinued; Hase site now shows Kettwiesel ONE (Shimano EP6 Cargo 85Nm, 630Wh, from 77 lb, 309 lb max load excl. bike, Pale green RAL 6021 / Grey beige RAL 1019). 504Wh+motor from ucycle EVO Steps page; 309 load from Hase ONE page"
+ },
+ {
+  "index": 63,
+  "spd": 28.0,
+  "tq": 85.0,
+  "load": 400.0,
+  "wh": 960.0,
+  "motor": "750W",
+  "wt": 79.0,
+  "range": "80",
+  "colors": null,
+  "colors_simple": null,
+  "url": "https://www.bikeride.com/himiway-d5-zebra/",
+  "fix": null,
+  "note": "D5 Zebra: 20 mph default, unlockable to 28; review measured 89.6 lb vs 79 claimed and 86Nm (kept 85); 4 colorways unnamed; D5 Pro also exists"
+ },
+ {
+  "index": 68,
+  "spd": 20.0,
+  "tq": 60.0,
+  "load": null,
+  "wh": 417.6,
+  "motor": "SR Suntour hub 250W/400W peak",
+  "wt": 52.3,
+  "range": "15-50",
+  "colors": [
+   "Black with Gray",
+   "Salmon with Gray"
+  ],
+  "colors_simple": [
+   "Black",
+   "Pink"
+  ],
+  "url": "https://electricbikereview.com/izip/e3-simi/",
+  "fix": null,
+  "note": "E3 Simi 2019 review; 55 lb is rack only, so load left null"
+ },
+ {
+  "index": 73,
+  "spd": 20.0,
+  "tq": 28.0,
+  "load": 275.0,
+  "wh": 375.0,
+  "motor": "300W rear hub (819W peak)",
+  "wt": 49.0,
+  "range": "up to 45 (80 w/ long-range 672Wh)",
+  "colors": [
+   "Arctic White",
+   "Lectric Blue",
+   "Lavender Haze"
+  ],
+  "colors_simple": [
+   "White",
+   "Blue",
+   "Purple"
+  ],
+  "url": "https://lectricebikes.com/collections/xp-lite-series/products/xp-lite-arctic-white",
+  "fix": null,
+  "note": "XP Lite 2.0; page says 4 colors, only these names found; weight 49 lb (41 lb w/o battery per spec table); XP Lite3 also exists"
+ },
+ {
+  "index": 78,
+  "spd": 28.0,
+  "tq": 90.0,
+  "load": 450.0,
+  "wh": 672.0,
+  "motor": "SE: 750W rear hub (1,200W peak), 90Nm; Minivan: Ananda Cargoline mid-drive 500W (750W peak), 130Nm",
+  "wt": 71.0,
+  "range": "40",
+  "colors": [
+   "Green",
+   "White",
+   "Gray"
+  ],
+  "colors_simple": [
+   "Green",
+   "White",
+   "Gray"
+  ],
+  "url": "https://letrigo.com/products/minivan-se",
+  "fix": null,
+  "note": "Colors/range for Minivan SE (48V/14Ah=672Wh); non-SE Minivan colors Blue, Gray; Class 2/3 selectable 20/28 mph"
+ },
+ {
+  "index": 83,
+  "spd": 20.0,
+  "tq": 65.0,
+  "load": 220.0,
+  "wh": 500.0,
+  "motor": "500W hub (750W peak)",
+  "wt": 65.0,
+  "range": "28\u201356 (dual battery)",
+  "colors": [
+   "Black"
+  ],
+  "colors_simple": [
+   "Black"
+  ],
+  "url": "https://ebikesupershop.com/products/ebike-macfox-x1s-black-in-a-box",
+  "fix": null,
+  "note": "220 lb listed is rider limit; torque from prior data"
+ },
+ {
+  "index": 88,
+  "spd": 20.0,
+  "tq": null,
+  "load": 330.0,
+  "wh": 624.0,
+  "motor": "500W hub (750W peak)",
+  "wt": 87.0,
+  "range": "30\u201360 (dual battery)",
+  "colors": [
+   "Navy Blue"
+  ],
+  "colors_simple": [
+   "Blue"
+  ],
+  "url": "https://sandiego.ebikesupershop.com/products/ebike-macfox-x7-x7-navy-blue-in-a-box",
+  "fix": null,
+  "note": "330 lb is rider weight limit; Black possibly also offered"
+ },
+ {
+  "index": 93,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "wh": null,
+  "motor": null,
+  "wt": null,
+  "range": null,
+  "colors": null,
+  "colors_simple": null,
+  "url": null,
+  "fix": null,
+  "note": "No manufacturer or retailer page found for Mobility Access Orion Twin"
+ },
+ {
+  "index": 98,
+  "spd": 28.0,
+  "tq": 65.0,
+  "load": 265.0,
+  "wh": 672.0,
+  "motor": "500W rear hub",
+  "wt": 65.0,
+  "range": "100",
+  "colors": null,
+  "colors_simple": null,
+  "url": "https://electricbikereport.com/mod-city-plus-review/",
+  "fix": null,
+  "note": "EBR 2024 City+ review: 28 mph PAS/20 throttle, 60Nm, 576Wh, 45 mi; existing 672Wh/65Nm/100 mi (freshlycharged) likely City+ 3 - version mismatch; colors not found"
+ },
+ {
+  "index": 103,
+  "spd": 28.0,
+  "tq": 90.0,
+  "load": 450.0,
+  "wh": 940.0,
+  "motor": "750W (1100W peak)",
+  "wt": 80.0,
+  "range": "60-80",
+  "colors": [
+   "DarkBlue"
+  ],
+  "colors_simple": [
+   "Blue"
+  ],
+  "url": "https://www.mokwheel.com/products/basalt-2-0",
+  "fix": null,
+  "note": "Basalt 2.0; 48V 19.6Ah; also Basalt ST 2.0; 28 PAS / 20 throttle"
+ },
+ {
+  "index": 108,
+  "spd": 28.0,
+  "tq": 80.0,
+  "load": 408.0,
+  "wh": 780.0,
+  "motor": "SyncDrive Move S 750W rear hub",
+  "wt": null,
+  "range": "45-75",
+  "colors": [
+   "Metal",
+   "Aquarium"
+  ],
+  "colors_simple": [
+   "Gray",
+   "Blue"
+  ],
+  "url": "https://mikesbikes.com/collections/electric-bikes-cargo/products/momentum-cito-e",
+  "fix": null,
+  "note": null
+ },
+ {
+  "index": 113,
+  "spd": 20.0,
+  "tq": 85.0,
+  "load": null,
+  "wh": 540.0,
+  "motor": "Shimano EP600",
+  "wt": 50.7,
+  "range": "up to 70",
+  "colors": [
+   "Glitter Anthracite (Gloss)",
+   "Ivory White (Gloss)",
+   "Spaceship Green (Matt)"
+  ],
+  "colors_simple": [
+   "Gray",
+   "White",
+   "Green"
+  ],
+  "url": "https://www.momentbikes.com/product/orbea-diem-30-20-941142-1.htm",
+  "fix": null,
+  "note": "Diem 30 20mph 2025 retailer page; rack 20 kg only; Diem 30 20mph; torque 85Nm is Shimano EP600 rating (from Orbea Carpe listing); weight/range from Yahoo/review (range conflicts: 70 mi spec vs ~50 mi text); Diem 10 uses EP8"
+ },
+ {
+  "index": 118,
+  "spd": 28.0,
+  "tq": 85.0,
+  "load": null,
+  "wh": 420.0,
+  "motor": "Shimano EP600 mid-drive",
+  "wt": null,
+  "range": null,
+  "colors": [
+   "Nickel",
+   "Mars Red (Gloss)",
+   "Diamond Black (Matt)"
+  ],
+  "colors_simple": [
+   "Silver",
+   "Red",
+   "Black"
+  ],
+  "url": "https://99spokes.com/bikes/orbea/2026/carpe-20",
+  "fix": null,
+  "note": "Carpe 420Wh battery (+252Wh range extender optional); 3 colors unnamed in source; Carpe 20 2026; 28 mph per Orbea US model name 'Carpe 20 28mph'; 20 mph version also sold"
+ },
+ {
+  "index": 123,
+  "spd": 20.0,
+  "tq": null,
+  "load": 250.0,
+  "wh": 546.0,
+  "motor": "750W rear hub",
+  "wt": 54.0,
+  "range": "up to 75",
+  "colors": [
+   "Gloss Black",
+   "Gloss White",
+   "Gloss Mineral Blue",
+   "Gloss Red",
+   "Gloss Stephanie Blue"
+  ],
+  "colors_simple": [
+   "Black",
+   "White",
+   "Blue",
+   "Red",
+   "Blue"
+  ],
+  "url": "https://pedegoelectricbikes.ca/shop/boomerang/",
+  "fix": null,
+  "note": "Canadian page: 32 km/h, 52V 17.5Ah (910Wh) battery, 500W/1000W peak, 54.2-56.4 lb w/o battery, range up to 120 km (~75 mi); existing 546Wh kept (smaller US battery option); 250 lb = max rider weight"
+ },
+ {
+  "index": 128,
+  "spd": 20.0,
+  "tq": 40.0,
+  "load": 220.0,
+  "wh": 504.0,
+  "motor": "350W rear hub",
+  "wt": 47.7,
+  "range": "20-60",
+  "colors": [
+   "Matte Black",
+   "Metallic Dark Gray"
+  ],
+  "colors_simple": [
+   "Black",
+   "Gray"
+  ],
+  "url": "https://electricbikereview.com/qualisports/dolphin/",
+  "fix": null,
+  "note": "2019 model; 22 mph on page is gearing not assist speed; 220 lb listed as max rider weight, unconfirmed by maker; 36V14Ah"
+ },
+ {
+  "index": 133,
+  "spd": 20.0,
+  "tq": null,
+  "load": 350.0,
+  "wh": 360.0,
+  "motor": "350W rear hub",
+  "wt": 42.0,
+  "range": "42",
+  "colors": [
+   "Matte Black",
+   "Moss",
+   "Navy"
+  ],
+  "colors_simple": [
+   "Black",
+   "Green",
+   "Blue"
+  ],
+  "url": "https://retrospec.com/collections/electric-bikes/products/judd-rev-folding-electric-bike",
+  "fix": null,
+  "note": "350 lb = recommended weight limit"
+ },
+ {
+  "index": 138,
+  "spd": 20.0,
+  "tq": 65.0,
+  "load": 350.0,
+  "wh": 500.0,
+  "motor": "500W rear hub",
+  "wt": 71.0,
+  "range": "75",
+  "colors": [
+   "Matte Black",
+   "Matte Feather Gray"
+  ],
+  "colors_simple": [
+   "Black",
+   "Gray"
+  ],
+  "url": "https://retrospec.com/products/abbot-rev-electric-bike",
+  "fix": null,
+  "note": "Rev 2 page; 350 lb recommended weight limit; wt 71 from prior data (page lists none)"
+ },
+ {
+  "index": 143,
+  "spd": 20.0,
+  "tq": null,
+  "load": 441.0,
+  "wh": 725.0,
+  "motor": "Bosch Cargo Line mid-drive",
+  "wt": 84.0,
+  "range": null,
+  "colors": [
+   "Coal Grey Matt",
+   "Peanut Matt",
+   "Tundra Grey Matt",
+   "Arctic"
+  ],
+  "colors_simple": [
+   "Gray",
+   "Tan",
+   "Gray",
+   "White"
+  ],
+  "url": "https://www.r-m.de/bikes/load4-75",
+  "fix": null,
+  "note": "Load4 75 touring/vario (725Wh; EASY 545Wh, 105.8 lb; DualBattery 1450 optional); 200 kg GVWR; HS variants 28 mph; Load4 60 also exists"
+ },
+ {
+  "index": 148,
+  "spd": 20.0,
+  "tq": null,
+  "load": 282.0,
+  "wh": 400.0,
+  "motor": "Bosch Active Line (BES2) mid-drive",
+  "wt": 52.25,
+  "range": null,
+  "colors": null,
+  "colors_simple": null,
+  "url": "https://scott-sports.com/us/en/product/scott-sub-cross-eride-30-men-bike",
+  "fix": null,
+  "note": "Sub Cross eRIDE 30 Men; 128 kg system weight limit; other trims (10/20, EQ) differ; no colors named"
+ },
+ {
+  "index": 153,
+  "spd": 28.0,
+  "tq": 62.0,
+  "load": 350.0,
+  "wh": 960.0,
+  "motor": "500W hub (700W peak), torque sensor",
+  "wt": null,
+  "range": "up to 75",
+  "colors": null,
+  "colors_simple": null,
+  "url": "https://electricwheelers.com/senada-electric-bikes-review/",
+  "fix": null,
+  "note": "Source covers Osprey (not explicitly V2); brand appears defunct; 48V20Ah=960Wh; wetried.it Osprey review: 28 mph, 48V14Ah (672Wh), ~330 lb limit - conflicts with existing 960Wh/350 lb; colors unnamed"
+ },
+ {
+  "index": 158,
+  "spd": 20.0,
+  "tq": null,
+  "load": 330.0,
+  "wh": 720.0,
+  "motor": "Bafang RMG062 750W rear hub",
+  "wt": null,
+  "range": "35\u201340",
+  "colors": [
+   "Black",
+   "White"
+  ],
+  "colors_simple": [
+   "Black",
+   "White"
+  ],
+  "url": "https://serfas.com/products/quest-750w",
+  "fix": null,
+  "note": "Page conflicts: 20 mph PAS vs 'max speed of 28mph'; 48V15Ah=720Wh"
+ },
+ {
+  "index": 163,
+  "spd": null,
+  "tq": 50.0,
+  "load": null,
+  "wh": 530.0,
+  "motor": "Specialized 2.0E mid-drive (3.0); 2.0/2.2 on 4.0/5.0",
+  "wt": 50.7,
+  "range": "up to 68",
+  "colors": [
+   "White Mountains / Gunmetal"
+  ],
+  "colors_simple": [
+   "White"
+  ],
+  "url": "https://www.specialized.com/ca/en/turbo-tero-30/p/216846",
+  "fix": null,
+  "note": "3.0: 50Nm/530Wh/2.0E; 4.0: 70Nm/710Wh; 5.0: 90Nm/710Wh; values shown are 3.0; source is Upway review; Specialized CA page: 3.0 = 2.0E 50Nm, 530Wh, 23.0 kg; US speed (Class 1, 20 mph) not stated on page"
+ },
+ {
+  "index": 168,
+  "spd": 15.0,
+  "tq": null,
+  "load": 375.0,
+  "wh": 374.0,
+  "motor": "500W/750W/1000W optional kit",
+  "wt": 46.0,
+  "range": null,
+  "colors": [
+   "Sun Factory Navy Blue",
+   "Sun Factory Metallic Red",
+   "Sun Factory Metallic Blue",
+   "Satin Black"
+  ],
+  "colors_simple": [
+   "Blue",
+   "Red",
+   "Blue",
+   "Black"
+  ],
+  "url": "https://mail.utahtrikes.com/PROD-11619618.html",
+  "fix": null,
+  "note": "375 = 300 lb rider + 75 lb cargo; 46 lb weight likely without motor kit; motor is optional 500/750/1000W kit"
+ },
+ {
+  "index": 173,
+  "spd": 20.0,
+  "tq": 50.0,
+  "load": 330.7,
+  "wh": 400.0,
+  "motor": "Bosch Active Line Plus (D8)",
+  "wt": 50.3,
+  "range": "33.6-65.2",
+  "colors": [
+   "Tabasco",
+   "Merlot",
+   "Olive",
+   "Blue Gray"
+  ],
+  "colors_simple": [
+   "Red",
+   "Red",
+   "Green",
+   "Blue"
+  ],
+  "url": "https://www.ternbicycles.com/en/bikes/471/quick-haul-d8",
+  "fix": "load 330 -> 330.7 (150 kg GVW per Tern)",
+  "note": "Quick Haul D8; P9 differs (Performance motor); colors from image filenames; D8 colors on retailer: Tabasco, Black, Olive/Mustard"
+ },
+ {
+  "index": 178,
+  "spd": 20.0,
+  "tq": null,
+  "load": null,
+  "wh": null,
+  "motor": "Shimano-based power assist 250W (500W peak)",
+  "wt": 60.0,
+  "range": "30",
+  "colors": null,
+  "colors_simple": null,
+  "url": "https://www.amplife.co/products/top-end-e-force-3-handcycle",
+  "fix": null,
+  "note": "E-Force 3; colors are custom (no names listed); Shimano power assist"
+ },
+ {
+  "index": 183,
+  "spd": 28.0,
+  "tq": 85.0,
+  "load": 300.0,
+  "wh": 500.0,
+  "motor": "Bosch Performance Line Speed mid-drive",
+  "wt": 54.0,
+  "range": null,
+  "colors": null,
+  "colors_simple": null,
+  "url": "https://www.bikeexchange.com/en-US/products/trek_allantplus_7s_stagger_2021",
+  "fix": "tq 75 -> 85: 2021 Allant+ 7S spec lists Bosch Performance Speed 85Nm (one dealer page said 75Nm)",
+  "note": "Allant+ 7S (Class 3); Allant+ 8S/9.9S and Gen 2 differ; 300 lb = bike+rider+cargo; weight size M; colors not found"
+ },
+ {
+  "index": 188,
+  "spd": 28.0,
+  "tq": 86.0,
+  "load": null,
+  "wh": 960.0,
+  "motor": "750W Bafang hub",
+  "wt": 83.8,
+  "range": "up to 90",
+  "colors": [
+   "Gloss Desert Tan",
+   "Gloss Charcoal"
+  ],
+  "colors_simple": [
+   "Tan",
+   "Gray"
+  ],
+  "url": "https://www.bikeride.com/?p=529017",
+  "fix": "load 100 removed: that is rear-rack capacity only, not bike payload",
+  "note": "Maker page lists almost no specs; Bikeride review; 48V20Ah=960Wh; only rack capacity (100 lb) published, no total payload; colors from Troxus page"
+ },
+ {
+  "index": 193,
+  "spd": 15.5,
+  "tq": 85.0,
+  "load": 440.0,
+  "wh": 545.0,
+  "motor": "Bosch Cargo Line mid-drive",
+  "wt": 112.0,
+  "range": "31-50",
+  "colors": [
+   "Green",
+   "Black"
+  ],
+  "colors_simple": [
+   "Green",
+   "Black"
+  ],
+  "url": "https://www.notebookcheck.net/Urban-Arrow-unveils-Breeze-cargo-e-bike-with-Bosch-Cargo-Line-motor-and-49-mile-range.1130748.0.html",
+  "fix": null,
+  "note": "EU launch article: 25 km/h (15.5 mph; US version likely 20 mph), range with 400Wh pack; battery options 400/545/800Wh"
+ },
+ {
+  "index": 198,
+  "spd": 28.0,
+  "tq": 90.0,
+  "load": 330.0,
+  "wh": 802.0,
+  "motor": "750W hub (~1,250W peak)",
+  "wt": 58.0,
+  "range": "45\u201390",
+  "colors": [
+   "Moonlight",
+   "Copper",
+   "Olive"
+  ],
+  "colors_simple": [
+   "Silver",
+   "Orange",
+   "Green"
+  ],
+  "url": "https://electricbikereview.com/urtopia/carbon-atom-review/",
+  "fix": null,
+  "note": "Weight 58 lb advertised w/o fenders (64 measured); EBR report: 330 lb total payload; that review lists 835Wh vs 802Wh kept"
+ },
+ {
+  "index": 203,
+  "spd": 28.0,
+  "tq": 65.0,
+  "load": 440.0,
+  "wh": 691.0,
+  "motor": "500W hub (950W peak)",
+  "wt": 60.0,
+  "range": "34\u201365",
+  "colors": [
+   "Forest",
+   "Indigo",
+   "Gray",
+   "Mango",
+   "Silver",
+   "Cyan"
+  ],
+  "colors_simple": [
+   "Green",
+   "Blue",
+   "Gray",
+   "Orange",
+   "Silver",
+   "Teal"
+  ],
+  "url": "https://electricbikereview.com/velotric/discover-1-plus-review/",
+  "fix": null,
+  "note": "Colors/weight not on review page; EBR lists 6 colors but text implies 5 ('Indigo Gray' may be one); bikeride spec says 378.6 lb payload vs 440"
+ },
+ {
+  "index": 208,
+  "spd": 28.0,
+  "tq": 55.0,
+  "load": 440.0,
+  "wh": 486.0,
+  "motor": "500W hub",
+  "wt": 61.0,
+  "range": "40\u201348",
+  "colors": [
+   "Eclipse Brown",
+   "Moonlight White"
+  ],
+  "colors_simple": [
+   "Brown",
+   "White"
+  ],
+  "url": "https://www.velotricbike.com/products/velotric-fold-1-lite?okeReviewsPageNum=2",
+  "fix": null,
+  "note": "20 mph out of box, unlockable to 28; Velotric page: 28 mph max adjustable (default 20)"
+ },
+ {
+  "index": 213,
+  "spd": 28.0,
+  "tq": 45.0,
+  "load": 330.0,
+  "wh": 374.0,
+  "motor": "350W hub (650W peak)",
+  "wt": 39.0,
+  "range": "up to 60",
+  "colors": [
+   "Lightning Silver",
+   "Sunset Tangerine"
+  ],
+  "colors_simple": [
+   "Silver",
+   "Orange"
+  ],
+  "url": "https://ebikesupershop.com/collections/velotric-ebikes-available-for-shipping/products/ebike-velotric-tempo-mid-step-lightning-silver-in-a-box",
+  "fix": null,
+  "note": "Mid-Step and High-Step frames; 28 assist/20 throttle"
+ },
+ {
+  "index": 218,
+  "spd": 28.0,
+  "tq": null,
+  "load": 500.0,
+  "wh": 720.0,
+  "motor": "750W hub",
+  "wt": 85.0,
+  "range": "up to 60",
+  "colors": null,
+  "colors_simple": null,
+  "url": "https://www.endurancesportswire.com/xtracycle-unveils-the-hopper-compact-e-cargo-bike-combines-500-lb-payload-with-premium-ride-quality/",
+  "fix": null,
+  "note": "500 lb rating per Electrek; Torque sensor, no Nm published in sources; colors not found; New Atlas lists 415 lb combined payload vs 500 lb per Xtracycle press/Electrek (kept 500); 20 or 28 mph by region"
+ },
+ {
+  "index": 223,
+  "spd": 20.0,
+  "tq": null,
+  "load": 350.0,
+  "wh": 1300.0,
+  "motor": "750W Thrillmatic hub",
+  "wt": 85.0,
+  "range": "25\u201340",
+  "colors": [
+   "Black",
+   "Cuda Chrome"
+  ],
+  "colors_simple": [
+   "Black",
+   "Silver"
+  ],
+  "url": "https://www.zoozbikes.com/products/ultra-flex-gen2",
+  "fix": null,
+  "note": "Gen2; 52V25Ah=1300Wh; ships limited to 20 mph"
+ }
+]

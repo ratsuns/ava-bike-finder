@@ -1,0 +1,2242 @@
+[
+{
+"brand": "Aima",
+"model": "Big Sur Sport",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "The Bicycle Garage (Fremont)",
+"link": "https://www.bicyclegaragefremont.com/"
+},
+{
+"brand": "Aima",
+"model": "Santa Monica",
+"type": "Standard",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "The Bicycle Garage (Fremont)",
+"link": "https://www.bicyclegaragefremont.com/"
+},
+{
+"brand": "Aventon",
+"model": "Pace (All)",
+"type": "Standard",
+"fold": "No",
+"cls": 2,
+"price": "$",
+"shops": "Sports Basement (Berkeley), The Bicycle Garage (Fremont), The New Wheel (Oakland), Electric Bike Center (Dublin), Castro Valley Cyclery (Castro Valley)",
+"link": "https://shop.sportsbasement.com/blogs/stores/berkeley"
+},
+{
+"brand": "Aventon",
+"model": "Soltera",
+"type": "Standard",
+"fold": "No",
+"cls": 2,
+"price": "$",
+"shops": "Sports Basement (Berkeley), The Bicycle Garage (Fremont), The New Wheel (Oakland), Electric Bike Center (Dublin), Castro Valley Cyclery (Castro Valley)",
+"link": "https://shop.sportsbasement.com/blogs/stores/berkeley"
+},
+{
+"brand": "Aventon",
+"model": "Abound",
+"type": "Cargo",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "Sports Basement (Berkeley), The Bicycle Garage (Fremont), The New Wheel (Oakland), Electric Bike Center (Dublin), Castro Valley Cyclery (Castro Valley)",
+"link": "https://shop.sportsbasement.com/blogs/stores/berkeley"
+},
+{
+"brand": "Aventon",
+"model": "Aventure",
+"type": "Standard",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "Sports Basement (Berkeley), The Bicycle Garage (Fremont), The New Wheel (Oakland), Electric Bike Center (Dublin), Castro Valley Cyclery (Castro Valley)",
+"link": "https://shop.sportsbasement.com/blogs/stores/berkeley"
+},
+{
+"brand": "Aventon",
+"model": "Level",
+"type": "Standard",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "Sports Basement (Berkeley), The Bicycle Garage (Fremont), The New Wheel (Oakland), Electric Bike Center (Dublin), Castro Valley Cyclery (Castro Valley)",
+"link": "https://shop.sportsbasement.com/blogs/stores/berkeley"
+},
+{
+"brand": "Aventon",
+"model": "Sinch",
+"type": "Standard",
+"fold": "Yes",
+"cls": 2,
+"price": "$$",
+"shops": "Sports Basement (Berkeley), The Bicycle Garage (Fremont), The New Wheel (Oakland), Electric Bike Center (Dublin), Castro Valley Cyclery (Castro Valley)",
+"link": "https://shop.sportsbasement.com/blogs/stores/berkeley"
+},
+{
+"brand": "Benno",
+"model": "Boost",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Laurel Cyclery (Oakland), Alameda Bicycle (Alameda), The New Wheel (Oakland), Tip Top Bike Shop (Oakland), eCyclepath (Hayward), King Kog (Oakland), Castro Valley Cyclery (Castro Valley)",
+"link": "https://www.laurelcyclery.com/"
+},
+{
+"brand": "Benno",
+"model": "46er",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Laurel Cyclery (Oakland), Alameda Bicycle (Alameda), The New Wheel (Oakland), Tip Top Bike Shop (Oakland), eCyclepath (Hayward), King Kog (Oakland), Castro Valley Cyclery (Castro Valley)",
+"link": "https://www.laurelcyclery.com/"
+},
+{
+"brand": "Benno",
+"model": "Ejoy",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Laurel Cyclery (Oakland), Alameda Bicycle (Alameda), The New Wheel (Oakland), Tip Top Bike Shop (Oakland), eCyclepath (Hayward), King Kog (Oakland), Castro Valley Cyclery (Castro Valley)",
+"link": "https://www.laurelcyclery.com/"
+},
+{
+"brand": "Benno",
+"model": "Remidemi",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Laurel Cyclery (Oakland), Alameda Bicycle (Alameda), The New Wheel (Oakland), Tip Top Bike Shop (Oakland), eCyclepath (Hayward), King Kog (Oakland), Castro Valley Cyclery (Castro Valley)",
+"link": "https://www.laurelcyclery.com/"
+},
+{
+"brand": "Benno",
+"model": "Remidemi XL",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Laurel Cyclery (Oakland), Alameda Bicycle (Alameda), The New Wheel (Oakland), Tip Top Bike Shop (Oakland), eCyclepath (Hayward), King Kog (Oakland), Castro Valley Cyclery (Castro Valley)",
+"link": "https://www.laurelcyclery.com/"
+},
+{
+"brand": "Blix",
+"model": "Sol X",
+"type": "Standard",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "Electric Bike Center (Dublin)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Blix",
+"model": "Vika X",
+"type": "Standard",
+"fold": "Yes",
+"cls": 2,
+"price": "$$",
+"shops": "Electric Bike Center (Dublin)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "BMC",
+"model": "AMP 257 AL Speed One",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "Sports Basement (Berkeley)",
+"link": "https://shop.sportsbasement.com/blogs/stores/berkeley"
+},
+{
+"brand": "Brompton",
+"model": "Electric C Line (All)",
+"type": "Standard",
+"fold": "Yes",
+"cls": 1,
+"price": "$$$",
+"shops": "Blue Heron Bicycles (Berkeley), Tip Top Bike Shop (Oakland), Alameda Bicycle (Alameda)",
+"link": "https://www.blueheronbikesberkeley.com/"
+},
+{
+"brand": "Brompton",
+"model": "Electric P Line (All)",
+"type": "Standard",
+"fold": "Yes",
+"cls": 1,
+"price": "$$$",
+"shops": "Blue Heron Bicycles (Berkeley), Tip Top Bike Shop (Oakland), Alameda Bicycle (Alameda)",
+"link": "https://www.blueheronbikesberkeley.com/"
+},
+{
+"brand": "Bulls",
+"model": "Evo 2 Speed",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "Pedego Electric Bikes (Livermore)",
+"link": "https://pedegoelectricbikes.com/pages/dealers/livermore"
+},
+{
+"brand": "Bulls",
+"model": "Evo TR 1",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "Pedego Electric Bikes (Livermore)",
+"link": "https://pedegoelectricbikes.com/pages/dealers/livermore"
+},
+{
+"brand": "Bulls",
+"model": "Iconic Evo 1",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Pedego Electric Bikes (Livermore)",
+"link": "https://pedegoelectricbikes.com/pages/dealers/livermore"
+},
+{
+"brand": "Bulls",
+"model": "Iconic Evo TR",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Pedego Electric Bikes (Livermore)",
+"link": "https://pedegoelectricbikes.com/pages/dealers/livermore"
+},
+{
+"brand": "Bunch",
+"model": "The Original",
+"type": "Adaptive",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "The New Wheel (Oakland)",
+"link": "https://newwheel.net/pages/oakland-east-bay-electric-bike-shop"
+},
+{
+"brand": "Cannondale",
+"model": "Adventure Neo Allroad",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$",
+"shops": "Sports Basement (Berkeley), Mike's Bikes (Berkeley), Mike's Bikes (Pleasanton)",
+"link": "https://shop.sportsbasement.com/blogs/stores/berkeley"
+},
+{
+"brand": "Cannondale",
+"model": "Adventure Neo",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "Sports Basement (Berkeley), Mike's Bikes (Berkeley), Mike's Bikes (Pleasanton)",
+"link": "https://shop.sportsbasement.com/blogs/stores/berkeley"
+},
+{
+"brand": "Cannondale",
+"model": "Cargowagen Neo",
+"type": "Cargo",
+"fold": "No",
+"cls": 3,
+"price": "$$$",
+"shops": "Sports Basement (Berkeley), Mike's Bikes (Berkeley), Mike's Bikes (Pleasanton)",
+"link": "https://shop.sportsbasement.com/blogs/stores/berkeley"
+},
+{
+"brand": "Cannondale",
+"model": "Mavaro",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$$",
+"shops": "Sports Basement (Berkeley), Mike's Bikes (Berkeley), Mike's Bikes (Pleasanton)",
+"link": "https://shop.sportsbasement.com/blogs/stores/berkeley"
+},
+{
+"brand": "Cannondale",
+"model": "Tesoro Carbon/ X",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$$",
+"shops": "Sports Basement (Berkeley), Mike's Bikes (Berkeley), Mike's Bikes (Pleasanton)",
+"link": "https://shop.sportsbasement.com/blogs/stores/berkeley"
+},
+{
+"brand": "Dahon",
+"model": "K-Feather",
+"type": "Standard",
+"fold": "Yes",
+"cls": 1,
+"price": "$",
+"shops": "Laurel Cyclery (Oakland), Bicycle Garage (Fremont), eCyclepath (Hayward)",
+"link": "https://www.laurelcyclery.com/"
+},
+{
+"brand": "Dahon",
+"model": "Unio E-20",
+"type": "Standard",
+"fold": "Yes",
+"cls": 1,
+"price": "$$",
+"shops": "Laurel Cyclery (Oakland), Bicycle Garage (Fremont), eCyclepath (Hayward)",
+"link": "https://www.laurelcyclery.com/"
+},
+{
+"brand": "Dahon",
+"model": "K-One",
+"type": "Standard",
+"fold": "Yes",
+"cls": 1,
+"price": "$$",
+"shops": "Laurel Cyclery (Oakland), Bicycle Garage (Fremont), eCyclepath (Hayward)",
+"link": "https://www.laurelcyclery.com/"
+},
+{
+"brand": "Dahon",
+"model": "E-Hemingway",
+"type": "Standard",
+"fold": "Yes",
+"cls": 1,
+"price": "$$",
+"shops": "Laurel Cyclery (Oakland), Bicycle Garage (Fremont), eCyclepath (Hayward)",
+"link": "https://www.laurelcyclery.com/"
+},
+{
+"brand": "Ebike2U",
+"model": "EB030",
+"type": "Cargo",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Ebikes2U",
+"link": "https://ebikes2u.com/"
+},
+{
+"brand": "Electra",
+"model": "Townie Go!",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$",
+"shops": "Robby's Bicycles (Stockton), Trek Bicycle (Dublin), Trek Bicycle (Livermore), Trek Bicycle (Oakland), Trek Bicycles (Castro Valley), Cycle City (Alameda), The Bicycle Garage, Trek Bicycle (Berkeley)",
+"link": "https://www.robbysbicycles.com/"
+},
+{
+"brand": "Electra",
+"model": "Cruiser Go!",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$",
+"shops": "Robby's Bicycles (Stockton), Trek Bicycle (Dublin), Trek Bicycle (Livermore), Trek Bicycle (Oakland), Trek Bicycles (Castro Valley), Cycle City (Alameda), The Bicycle Garage, Trek Bicycle (Berkeley)",
+"link": "https://www.robbysbicycles.com/"
+},
+{
+"brand": "Electra",
+"model": "Loft Go!",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$",
+"shops": "Robby's Bicycles (Stockton), Trek Bicycle (Dublin), Trek Bicycle (Livermore), Trek Bicycle (Oakland), Trek Bicycles (Castro Valley), Cycle City (Alameda), The Bicycle Garage, Trek Bicycle (Berkeley)",
+"link": "https://www.robbysbicycles.com/"
+},
+{
+"brand": "Electra",
+"model": "Ponto Go!",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Robby's Bicycles (Stockton), Trek Bicycle (Dublin), Trek Bicycle (Livermore), Trek Bicycle (Oakland), Trek Bicycles (Castro Valley), Cycle City (Alameda), The Bicycle Garage, Trek Bicycle (Berkeley)",
+"link": "https://www.robbysbicycles.com/"
+},
+{
+"brand": "Electra",
+"model": "Vale Go!",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Robby's Bicycles (Stockton), Trek Bicycle (Dublin), Trek Bicycle (Livermore), Trek Bicycle (Oakland), Trek Bicycles (Castro Valley), Cycle City (Alameda), The Bicycle Garage, Trek Bicycle (Berkeley)",
+"link": "https://www.robbysbicycles.com/"
+},
+{
+"brand": "Emojo",
+"model": "Bull Trike (All Variations)",
+"type": "Adaptive",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "Pedego Electric Bikes (Livermore)",
+"link": "https://pedegoelectricbikes.com/dealers/livermore/"
+},
+{
+"brand": "Emojo",
+"model": "Caddy Trike (All Variations)",
+"type": "Adaptive",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "Pedego Electric Bikes (Livermore)",
+"link": "https://pedegoelectricbikes.com/dealers/livermore/"
+},
+{
+"brand": "Emojo",
+"model": "Bison Trike (All Variations)",
+"type": "Adaptive",
+"fold": "Yes",
+"cls": 2,
+"price": "$$$",
+"shops": "Pedego Electric Bikes (Livermore)",
+"link": "https://pedegoelectricbikes.com/dealers/livermore/"
+},
+{
+"brand": "Eunorau",
+"model": "E-FAT-STEP",
+"type": "Standard",
+"fold": "Yes",
+"cls": 2,
+"price": "$",
+"shops": "Electric Bike Center (Dublin)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Eunorau",
+"model": "E-FAT-MN",
+"type": "Standard",
+"fold": "Yes",
+"cls": 2,
+"price": "$",
+"shops": "Electric Bike Center (Dublin)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Fuji",
+"model": "Boulevard EVO",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "Laurel Cyclery (Oakland), Blue Heron Bicycles (Berkeley)",
+"link": "https://www.laurelcyclery.com/"
+},
+{
+"brand": "Fuji",
+"model": "Conductor",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "Laurel Cyclery (Oakland), Blue Heron Bicycles (Berkeley)",
+"link": "https://www.laurelcyclery.com/"
+},
+{
+"brand": "Fuji",
+"model": "E- Traverse (All)",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "Laurel Cyclery (Oakland), Blue Heron Bicycles (Berkeley)",
+"link": "https://www.laurelcyclery.com/"
+},
+{
+"brand": "Fuji",
+"model": "E-Crosstown",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "Laurel Cyclery (Oakland), Blue Heron Bicycles (Berkeley)",
+"link": "https://www.laurelcyclery.com/"
+},
+{
+"brand": "Fuji",
+"model": "Sanibel",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "Laurel Cyclery (Oakland), Blue Heron Bicycles (Berkeley)",
+"link": "https://www.laurelcyclery.com/"
+},
+{
+"brand": "Gazelle",
+"model": "Medeo",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "Blue Heron Bicycles (Berkeley), Mike's Bikes (Berkeley), Mike's Bikes (Pleasanton), The Bicycle Garage (Fremont), The New Wheel (Oakland), eCyclepath (Hayward)",
+"link": "https://www.blueheronbikesberkeley.com/"
+},
+{
+"brand": "Gazelle",
+"model": "Eclipse",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$$",
+"shops": "Blue Heron Bicycles (Berkeley), Mike's Bikes (Berkeley), Mike's Bikes (Pleasanton), The Bicycle Garage (Fremont), The New Wheel (Oakland), eCyclepath (Hayward)",
+"link": "https://www.blueheronbikesberkeley.com/"
+},
+{
+"brand": "Gazelle",
+"model": "Ultimate",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Blue Heron Bicycles (Berkeley), Mike's Bikes (Berkeley), Mike's Bikes (Pleasanton), The Bicycle Garage (Fremont), The New Wheel (Oakland), eCyclepath (Hayward)",
+"link": "https://www.blueheronbikesberkeley.com/"
+},
+{
+"brand": "Gazelle",
+"model": "Arroyo",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Blue Heron Bicycles (Berkeley), Mike's Bikes (Berkeley), Mike's Bikes (Pleasanton), The Bicycle Garage (Fremont), The New Wheel (Oakland), eCyclepath (Hayward)",
+"link": "https://www.blueheronbikesberkeley.com/"
+},
+{
+"brand": "Gazelle",
+"model": "Avignon",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Blue Heron Bicycles (Berkeley), Mike's Bikes (Berkeley), Mike's Bikes (Pleasanton), The Bicycle Garage (Fremont), The New Wheel (Oakland), eCyclepath (Hayward)",
+"link": "https://www.blueheronbikesberkeley.com/"
+},
+{
+"brand": "Gazelle",
+"model": "EasyFlow",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Blue Heron Bicycles (Berkeley), Mike's Bikes (Berkeley), Mike's Bikes (Pleasanton), The Bicycle Garage (Fremont), The New Wheel (Oakland), eCyclepath (Hayward)",
+"link": "https://www.blueheronbikesberkeley.com/"
+},
+{
+"brand": "Giant",
+"model": "Stormguard E+",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$",
+"shops": "Dublin Cyclery (Dublin), Alameda Bicycle (Alameda), Mike's Bikes (Berkeley), Mike's Bikes (Pleasanton)",
+"link": "https://www.dublincyclery.com/"
+},
+{
+"brand": "Giant",
+"model": "Roam E+",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "Dublin Cyclery (Dublin), Alameda Bicycle (Alameda), Mike's Bikes (Berkeley), Mike's Bikes (Pleasanton)",
+"link": "https://www.dublincyclery.com/"
+},
+{
+"brand": "Giant",
+"model": "Explore E+",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$$",
+"shops": "Dublin Cyclery (Dublin), Alameda Bicycle (Alameda), Mike's Bikes (Berkeley), Mike's Bikes (Pleasanton)",
+"link": "https://www.dublincyclery.com/"
+},
+{
+"brand": "Golden Cycles",
+"model": "Panthro",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$",
+"shops": "The Bicycle Garage (Fremont)",
+"link": "https://www.bicyclegaragefremont.com/"
+},
+{
+"brand": "Hase",
+"model": "KETTWIESEL EVO STEPS",
+"type": "Adaptive",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "The New Wheel (Oakland)",
+"link": "https://newwheel.net/pages/oakland-east-bay-electric-bike-shop"
+},
+{
+"brand": "Hase",
+"model": "Gravit",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "The New Wheel (Oakland)",
+"link": "https://newwheel.net/pages/oakland-east-bay-electric-bike-shop"
+},
+{
+"brand": "Hase",
+"model": "Kettwiesel One",
+"type": "Adaptive",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "The New Wheel (Oakland)",
+"link": "https://newwheel.net/pages/oakland-east-bay-electric-bike-shop"
+},
+{
+"brand": "Hase",
+"model": "Pino",
+"type": "Adaptive",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "The New Wheel (Oakland)",
+"link": "https://newwheel.net/pages/oakland-east-bay-electric-bike-shop"
+},
+{
+"brand": "Himiway",
+"model": "A7 and A7 Pro",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Electric Bike Center (Dublin), Bicycle Garage (Fremont)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Himiway",
+"model": "D5 (All Variations)",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Electric Bike Center (Dublin), Bicycle Garage (Fremont)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Himiway",
+"model": "C3",
+"type": "Cargo",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Electric Bike Center (Dublin), Bicycle Garage (Fremont)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Ice Trikes",
+"model": "Adventure",
+"type": "Adaptive",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Adaptive Cycles (Berkeley)",
+"link": "https://adaptivecycles.com/"
+},
+{
+"brand": "Ice Trikes",
+"model": "Sprint",
+"type": "Adaptive",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Adaptive Cycles (Berkeley)",
+"link": "https://adaptivecycles.com/"
+},
+{
+"brand": "Ice Trikes",
+"model": "Full Fat",
+"type": "Adaptive",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Adaptive Cycles (Berkeley)",
+"link": "https://adaptivecycles.com/"
+},
+{
+"brand": "Izip",
+"model": "Simi",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$",
+"shops": "Robby's Bicycles (Stockton)",
+"link": "https://www.robbysbicycles.com/"
+},
+{
+"brand": "LarryvsHarry",
+"model": "Ebullitt",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Blue Heron Bicycles (Berkeley)",
+"link": "https://www.blueheronbikesberkeley.com/"
+},
+{
+"brand": "LarryvsHarry",
+"model": "EbullittX",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Blue Heron Bicycles (Berkeley)",
+"link": "https://www.blueheronbikesberkeley.com/"
+},
+{
+"brand": "Lectric",
+"model": "XP 4",
+"type": "Cargo",
+"fold": "Yes",
+"cls": 1,
+"price": "$",
+"shops": "NILES BICYCLES (Fremont), Laurel Cyclery (Oakland), King Kog (Oakland), Bicycle Garage (Fremont), Pedego Electric Bikes (Livermore)",
+"link": "https://niles-bicycles.cloveronline.com/"
+},
+{
+"brand": "Lectric",
+"model": "Xpeak",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$",
+"shops": "NILES BICYCLES (Fremont), Laurel Cyclery (Oakland), King Kog (Oakland), Bicycle Garage (Fremont), Pedego Electric Bikes (Livermore)",
+"link": "https://niles-bicycles.cloveronline.com/"
+},
+{
+"brand": "Lectric",
+"model": "XP Lite",
+"type": "Standard",
+"fold": "Yes",
+"cls": 1,
+"price": "$",
+"shops": "NILES BICYCLES (Fremont), Laurel Cyclery (Oakland), King Kog (Oakland), Bicycle Garage (Fremont), Pedego Electric Bikes (Livermore)",
+"link": "https://niles-bicycles.cloveronline.com/"
+},
+{
+"brand": "Lectric",
+"model": "XPedition",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "NILES BICYCLES (Fremont), Laurel Cyclery (Oakland), King Kog (Oakland), Bicycle Garage (Fremont), Pedego Electric Bikes (Livermore)",
+"link": "https://niles-bicycles.cloveronline.com/"
+},
+{
+"brand": "Lectric",
+"model": "XPress",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "NILES BICYCLES (Fremont), Laurel Cyclery (Oakland), King Kog (Oakland), Bicycle Garage (Fremont), Pedego Electric Bikes (Livermore)",
+"link": "https://niles-bicycles.cloveronline.com/"
+},
+{
+"brand": "Lectric",
+"model": "XP Trike",
+"type": "Adaptive",
+"fold": "Yes",
+"cls": 1,
+"price": "$$",
+"shops": "NILES BICYCLES (Fremont), Laurel Cyclery (Oakland), King Kog (Oakland), Bicycle Garage (Fremont), Pedego Electric Bikes (Livermore)",
+"link": "https://niles-bicycles.cloveronline.com/"
+},
+{
+"brand": "Lectric",
+"model": "Lectric ONE",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "NILES BICYCLES (Fremont), Laurel Cyclery (Oakland), King Kog (Oakland), Bicycle Garage (Fremont), Pedego Electric Bikes (Livermore)",
+"link": "https://niles-bicycles.cloveronline.com/"
+},
+{
+"brand": "Letrigo",
+"model": "Minivan & Minivan SE",
+"type": "Cargo",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Electric Bike Center (Dublin),  Castro Valley Cyclery",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Letrigo",
+"model": "Koda",
+"type": "Cargo",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Electric Bike Center (Dublin),  Castro Valley Cyclery",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Letrigo",
+"model": "Workhorse",
+"type": "Cargo",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Electric Bike Center (Dublin),  Castro Valley Cyclery",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Liv",
+"model": "Thrive E+",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Alameda Bicycle (Alameda), Dublin Cyclery (Dublin), Mike's Bikes (Berkeley), Mike's Bikes (Pleasanton)",
+"link": "https://www.alamedabicycle.com/"
+},
+{
+"brand": "Liv",
+"model": "Rove",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Alameda Bicycle (Alameda), Dublin Cyclery (Dublin), Mike's Bikes (Berkeley), Mike's Bikes (Pleasanton)",
+"link": "https://www.alamedabicycle.com/"
+},
+{
+"brand": "Macfox",
+"model": "X1s (All variants)",
+"type": "Standard",
+"fold": "No",
+"cls": 2,
+"price": "$",
+"shops": "Electric Bike Center (Dublin), Pedego Electric Bikes (Livermore), The Bicycle Garage (Fremont)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Macfox",
+"model": "X19",
+"type": "Standard",
+"fold": "No",
+"cls": 2,
+"price": "$",
+"shops": "Electric Bike Center (Dublin), Pedego Electric Bikes (Livermore), The Bicycle Garage (Fremont)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Macfox",
+"model": "M20X",
+"type": "Standard",
+"fold": "No",
+"cls": 2,
+"price": "$",
+"shops": "Electric Bike Center (Dublin), Pedego Electric Bikes (Livermore), The Bicycle Garage (Fremont)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Macfox",
+"model": "X2",
+"type": "Standard",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "Electric Bike Center (Dublin), Pedego Electric Bikes (Livermore), The Bicycle Garage (Fremont)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Macfox",
+"model": "M16",
+"type": "Standard",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "Electric Bike Center (Dublin), Pedego Electric Bikes (Livermore), The Bicycle Garage (Fremont)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Macfox",
+"model": "X7",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Electric Bike Center (Dublin), Pedego Electric Bikes (Livermore), The Bicycle Garage (Fremont)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Marin",
+"model": "FairFax E (All Variations)",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "Blue Heron Bicycles (Berkeley), Laurel Cyclery (Oakland), Stay True Cycles (Berkeley), Tip Top Bike Shop (Oakland), The Bicycle Garage (Fremont)",
+"link": "https://www.blueheronbikesberkeley.com/"
+},
+{
+"brand": "Marin",
+"model": "Stinson E (All variations)",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "Blue Heron Bicycles (Berkeley), Laurel Cyclery (Oakland), Stay True Cycles (Berkeley), Tip Top Bike Shop (Oakland), The Bicycle Garage (Fremont)",
+"link": "https://www.blueheronbikesberkeley.com/"
+},
+{
+"brand": "Marin",
+"model": "Sausalito E1/ E2",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "Blue Heron Bicycles (Berkeley), Laurel Cyclery (Oakland), Stay True Cycles (Berkeley), Tip Top Bike Shop (Oakland), The Bicycle Garage (Fremont)",
+"link": "https://www.blueheronbikesberkeley.com/"
+},
+{
+"brand": "Marin",
+"model": "Larkspur E",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Blue Heron Bicycles (Berkeley), Laurel Cyclery (Oakland), Stay True Cycles (Berkeley), Tip Top Bike Shop (Oakland), The Bicycle Garage (Fremont)",
+"link": "https://www.blueheronbikesberkeley.com/"
+},
+{
+"brand": "Mobility Access",
+"model": "Orion Twin (E-assist)",
+"type": "Adaptive",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Adaptive Cycles (Berkeley)",
+"link": "https://adaptivecycles.com/"
+},
+{
+"brand": "Mobility Access",
+"model": "Duet (E-assist)",
+"type": "Adaptive",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Adaptive Cycles (Berkeley)",
+"link": "https://adaptivecycles.com/"
+},
+{
+"brand": "MOD",
+"model": "MOD Black 3",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Pedego Electric Bikes (Livermore)",
+"link": "https://pedegoelectricbikes.com/dealers/livermore/"
+},
+{
+"brand": "MOD",
+"model": "CarGo 3",
+"type": "Cargo",
+"fold": "Yes",
+"cls": 3,
+"price": "$$",
+"shops": "Pedego Electric Bikes (Livermore)",
+"link": "https://pedegoelectricbikes.com/dealers/livermore/"
+},
+{
+"brand": "MOD",
+"model": "City 3",
+"type": "Standard",
+"fold": "Yes",
+"cls": 3,
+"price": "$$",
+"shops": "Pedego Electric Bikes (Livermore)",
+"link": "https://pedegoelectricbikes.com/dealers/livermore/"
+},
+{
+"brand": "MOD",
+"model": "City +",
+"type": "Standard",
+"fold": "Yes",
+"cls": 3,
+"price": "$$",
+"shops": "Pedego Electric Bikes (Livermore)",
+"link": "https://pedegoelectricbikes.com/dealers/livermore/"
+},
+{
+"brand": "MOD",
+"model": "Berlin 3/ ST",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Pedego Electric Bikes (Livermore)",
+"link": "https://pedegoelectricbikes.com/dealers/livermore/"
+},
+{
+"brand": "MOD",
+"model": "Groove Step-Thru 3",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Pedego Electric Bikes (Livermore)",
+"link": "https://pedegoelectricbikes.com/dealers/livermore/"
+},
+{
+"brand": "MOD",
+"model": "Easy 3",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Pedego Electric Bikes (Livermore)",
+"link": "https://pedegoelectricbikes.com/dealers/livermore/"
+},
+{
+"brand": "MOD",
+"model": "Easy SideCar",
+"type": "Cargo",
+"fold": "No",
+"cls": 3,
+"price": "$$$",
+"shops": "Pedego Electric Bikes (Livermore)",
+"link": "https://pedegoelectricbikes.com/dealers/livermore/"
+},
+{
+"brand": "Mokwheel",
+"model": "Basalt",
+"type": "Standard",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "The Bicycle Garage (Fremont)",
+"link": "https://www.bicyclegaragefremont.com/"
+},
+{
+"brand": "Mokwheel",
+"model": "Scoria",
+"type": "Standard",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "The Bicycle Garage (Fremont)",
+"link": "https://www.bicyclegaragefremont.com/"
+},
+{
+"brand": "Momentum",
+"model": "Vida E+",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "Dublin Cyclery (Dublin), Mike's Bikes (Berkeley), Mike's Bikes (Pleasanton)",
+"link": "https://www.dublincyclery.com/"
+},
+{
+"brand": "Momentum",
+"model": "Lafree E+",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "Dublin Cyclery (Dublin), Mike's Bikes (Berkeley), Mike's Bikes (Pleasanton)",
+"link": "https://www.dublincyclery.com/"
+},
+{
+"brand": "Momentum",
+"model": "Trancend E+",
+"type": "Cargo",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Dublin Cyclery (Dublin), Mike's Bikes (Berkeley), Mike's Bikes (Pleasanton)",
+"link": "https://www.dublincyclery.com/"
+},
+{
+"brand": "Momentum",
+"model": "Cito E+",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Dublin Cyclery (Dublin), Mike's Bikes (Berkeley), Mike's Bikes (Pleasanton)",
+"link": "https://www.dublincyclery.com/"
+},
+{
+"brand": "Momentum",
+"model": "Pakyak E+",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Dublin Cyclery (Dublin), Mike's Bikes (Berkeley), Mike's Bikes (Pleasanton)",
+"link": "https://www.dublincyclery.com/"
+},
+{
+"brand": "Navee",
+"model": "KG05",
+"type": "Standard",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "Electric Bike Center (Dublin)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Omnium",
+"model": "Cargo V3",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "(Oakland)",
+"link": "https://kingkog.bigcartel.com/"
+},
+{
+"brand": "Omnium",
+"model": "Min-Max V3",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "(Oakland)",
+"link": "https://kingkog.bigcartel.com/"
+},
+{
+"brand": "Orbea",
+"model": "Diem",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$$",
+"shops": "Stay True Cycles (Berkeley), The New Wheel (Oakland)",
+"link": "https://www.staytrue.bike/"
+},
+{
+"brand": "Orbea",
+"model": "Kemen",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$$",
+"shops": "Stay True Cycles (Berkeley), The New Wheel (Oakland)",
+"link": "https://www.staytrue.bike/"
+},
+{
+"brand": "Orbea",
+"model": "Vibe",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Stay True Cycles (Berkeley), The New Wheel (Oakland)",
+"link": "https://www.staytrue.bike/"
+},
+{
+"brand": "Orbea",
+"model": "Optima E40",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Stay True Cycles (Berkeley), The New Wheel (Oakland)",
+"link": "https://www.staytrue.bike/"
+},
+{
+"brand": "Orbea",
+"model": "Muga",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "The New Wheel (Oakland)",
+"link": "https://newwheel.net/pages/oakland-east-bay-electric-bike-shop"
+},
+{
+"brand": "Orbea",
+"model": "Carpe",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$$",
+"shops": "Stay True Cycles (Berkeley), The New Wheel (Oakland)",
+"link": "https://www.staytrue.bike/"
+},
+{
+"brand": "Pedego",
+"model": "Latch",
+"type": "Standard",
+"fold": "Yes",
+"cls": 2,
+"price": "$",
+"shops": "Pedego Electric Bikes (Livermore)",
+"link": "https://pedegoelectricbikes.com/dealers/livermore/"
+},
+{
+"brand": "Pedego",
+"model": "Cargo",
+"type": "Cargo",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Pedego Electric Bikes (Livermore)",
+"link": "https://pedegoelectricbikes.com/dealers/livermore/"
+},
+{
+"brand": "Pedego",
+"model": "Avenue",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Pedego Electric Bikes (Livermore)",
+"link": "https://pedegoelectricbikes.com/dealers/livermore/"
+},
+{
+"brand": "Pedego",
+"model": "Interceptor (All)",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Pedego Electric Bikes (Livermore)",
+"link": "https://pedegoelectricbikes.com/dealers/livermore/"
+},
+{
+"brand": "Pedego",
+"model": "Boomerang",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Pedego Electric Bikes (Livermore)",
+"link": "https://pedegoelectricbikes.com/dealers/livermore/"
+},
+{
+"brand": "Pedego",
+"model": "Element",
+"type": "Standard",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "Pedego Electric Bikes (Livermore)",
+"link": "https://pedegoelectricbikes.com/dealers/livermore/"
+},
+{
+"brand": "Pedego",
+"model": "Ridge Rider",
+"type": "Standard",
+"fold": "No",
+"cls": 2,
+"price": "$$$",
+"shops": "Pedego Electric Bikes (Livermore)",
+"link": "https://pedegoelectricbikes.com/dealers/livermore/"
+},
+{
+"brand": "Priority",
+"model": "E-Coast",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Electric Bike Center (Dublin)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Priority",
+"model": "E-Classic",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "Electric Bike Center (Dublin)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Qualisports",
+"model": "Dolphin",
+"type": "Standard",
+"fold": "Yes",
+"cls": 2,
+"price": "$",
+"shops": "Electric Bike Center (Dublin)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Radio Flyer",
+"model": "Flyer Loop",
+"type": "Cargo",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "Electric Bike Center (Dublin)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Radio Flyer",
+"model": "Flyer Via",
+"type": "Cargo",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "Electric Bike Center (Dublin)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Radio Flyer",
+"model": "Flyer Via Pro",
+"type": "Cargo",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "Electric Bike Center (Dublin)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Retrospec",
+"model": "Beaumont Rev 2 City",
+"type": "Standard",
+"fold": "No",
+"cls": 2,
+"price": "$",
+"shops": "Robby's Bicycles (Stockton), Dublin Cyclery (Dublin)",
+"link": "https://www.robbysbicycles.com/"
+},
+{
+"brand": "Retrospec",
+"model": "Judd Rev Folding",
+"type": "Standard",
+"fold": "Yes",
+"cls": 2,
+"price": "$",
+"shops": "Robby's Bicycles (Stockton), Dublin Cyclery (Dublin)",
+"link": "https://www.robbysbicycles.com/"
+},
+{
+"brand": "Retrospec",
+"model": "Valen Rev +/ Rev 2 &3 (All Variations)",
+"type": "Standard",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "Robby's Bicycles (Stockton), Dublin Cyclery (Dublin)",
+"link": "https://www.robbysbicycles.com/"
+},
+{
+"brand": "Retrospec",
+"model": "Boca Rev 1&2 Trike",
+"type": "Adaptive",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "Robby's Bicycles (Stockton), Dublin Cyclery (Dublin)",
+"link": "https://www.robbysbicycles.com/"
+},
+{
+"brand": "Retrospec",
+"model": "Chatham Rev+/ Rev 2 & 3 (All Variations)",
+"type": "Standard",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "Robby's Bicycles (Stockton), Dublin Cyclery (Dublin)",
+"link": "https://www.robbysbicycles.com/"
+},
+{
+"brand": "Retrospec",
+"model": "Joe Rev 1& 2 BMX",
+"type": "Standard",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "Robby's Bicycles (Stockton), Dublin Cyclery (Dublin)",
+"link": "https://www.robbysbicycles.com/"
+},
+{
+"brand": "Retrospec",
+"model": "Abbot Rev 1&2",
+"type": "Standard",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "Robby's Bicycles (Stockton), Dublin Cyclery (Dublin)",
+"link": "https://www.robbysbicycles.com/"
+},
+{
+"brand": "Retrospec",
+"model": "Napa Rev",
+"type": "Standard",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "Robby's Bicycles (Stockton), Dublin Cyclery (Dublin)",
+"link": "https://www.robbysbicycles.com/"
+},
+{
+"brand": "Retrospec",
+"model": "Koa Rev 2 & 3 Rev+ (All Variants)",
+"type": "Standard",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "Robby's Bicycles (Stockton), Dublin Cyclery (Dublin)",
+"link": "https://www.robbysbicycles.com/"
+},
+{
+"brand": "Retrospec",
+"model": "Roo Rev and Roo Rev XL",
+"type": "Cargo",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Robby's Bicycles (Stockton), Dublin Cyclery (Dublin)",
+"link": "https://www.robbysbicycles.com/"
+},
+{
+"brand": "Revi Bikes",
+"model": "Runabout.2",
+"type": "Cargo",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "Ebikes2U",
+"link": "https://ebikes2u.com/"
+},
+{
+"brand": "Riese and Muller",
+"model": "Load",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "The New Wheel (Oakland), Blue Heron Bicycles (Berkeley)",
+"link": "https://newwheel.net/pages/oakland-east-bay-electric-bike-shop"
+},
+{
+"brand": "Salsa",
+"model": "Salsa Confluence (All Mahle)",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "Alameda Bicycle (Alameda), Mike's Bikes (Berkeley), Mike's Bikes (Pleasanton), eCyclepath (Hayward)",
+"link": "https://www.alamedabicycle.com/"
+},
+{
+"brand": "Salsa",
+"model": "Tributary",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$$",
+"shops": "Alameda Bicycle (Alameda), Mike's Bikes (Berkeley), Mike's Bikes (Pleasanton), eCyclepath (Hayward)",
+"link": "https://www.alamedabicycle.com/"
+},
+{
+"brand": "Santa Cruz",
+"model": "Skitch",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Mike's Bikes (Berkeley), Mike's Bikes (Pleasanton), Rhythm Bikes (Oakland), The Bicycle Garage (Fremont)",
+"link": "https://mikesbikes.com/pages/berkeley"
+},
+{
+"brand": "Scott",
+"model": "Sub Active (All)",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Sports Basement (Berkeley)",
+"link": "https://shop.sportsbasement.com/blogs/stores/berkeley"
+},
+{
+"brand": "Scott",
+"model": "Sub Cross (All)",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Sports Basement (Berkeley)",
+"link": "https://shop.sportsbasement.com/blogs/stores/berkeley"
+},
+{
+"brand": "Scott",
+"model": "Silence (All)",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Sports Basement (Berkeley)",
+"link": "https://shop.sportsbasement.com/blogs/stores/berkeley"
+},
+{
+"brand": "Segway",
+"model": "Xafari",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "The Bicycle Garage (Fremont), Electric Bike Center (Dublin), Castro Valley Cyclery (Castro Valley)",
+"link": "https://www.bicyclegaragefremont.com/"
+},
+{
+"brand": "Segway",
+"model": "Myon",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "The Bicycle Garage (Fremont), Electric Bike Center (Dublin), Castro Valley Cyclery (Castro Valley)",
+"link": "https://www.bicyclegaragefremont.com/"
+},
+{
+"brand": "Segway",
+"model": "Muxi",
+"type": "Cargo",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "The Bicycle Garage (Fremont), Electric Bike Center (Dublin), Castro Valley Cyclery (Castro Valley)",
+"link": "https://www.bicyclegaragefremont.com/"
+},
+{
+"brand": "Senada",
+"model": "Osprey V2",
+"type": "Cargo",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Ebikes2U",
+"link": "https://ebikes2u.com/"
+},
+{
+"brand": "Senada",
+"model": "Gladiator",
+"type": "Cargo",
+"fold": "Yes",
+"cls": 3,
+"price": "$$",
+"shops": "Ebikes2U",
+"link": "https://ebikes2u.com/"
+},
+{
+"brand": "Senada",
+"model": "Austin V2",
+"type": "Standard",
+"fold": "Yes",
+"cls": 3,
+"price": "$$",
+"shops": "Ebikes2U",
+"link": "https://ebikes2u.com/"
+},
+{
+"brand": "Senada",
+"model": "Moto Cargo",
+"type": "Cargo",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Ebikes2U",
+"link": "https://ebikes2u.com/"
+},
+{
+"brand": "Serfas",
+"model": "Atlas",
+"type": "Cargo",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "Blue Heron Bicycles (Berkeley), Laurel Cyclery (Oakland), Robby's Bicycles (Stockton), Sports Basement (Berkeley), Tip Top Bike Shop (Oakland), Tracy Cyclery (Tracy), eCyclepath (Hayward)",
+"link": "https://www.blueheronbikesberkeley.com/"
+},
+{
+"brand": "Serfas",
+"model": "Quest",
+"type": "Cargo",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Blue Heron Bicycles (Berkeley), Laurel Cyclery (Oakland), Robby's Bicycles (Stockton), Sports Basement (Berkeley), Tip Top Bike Shop (Oakland), Tracy Cyclery (Tracy), eCyclepath (Hayward)",
+"link": "https://www.blueheronbikesberkeley.com/"
+},
+{
+"brand": "Serfas",
+"model": "E Dash Mini",
+"type": "Standard",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "Blue Heron Bicycles (Berkeley), Laurel Cyclery (Oakland), Robby's Bicycles (Stockton), Sports Basement (Berkeley), Tip Top Bike Shop (Oakland), Tracy Cyclery (Tracy), eCyclepath (Hayward)",
+"link": "https://www.blueheronbikesberkeley.com/"
+},
+{
+"brand": "Serfas",
+"model": "E Dart",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Blue Heron Bicycles (Berkeley), Laurel Cyclery (Oakland), Robby's Bicycles (Stockton), Sports Basement (Berkeley), Tip Top Bike Shop (Oakland), Tracy Cyclery (Tracy), eCyclepath (Hayward)",
+"link": "https://www.blueheronbikesberkeley.com/"
+},
+{
+"brand": "Serfas",
+"model": "E Dash/ E Dash +",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$$",
+"shops": "Blue Heron Bicycles (Berkeley), Laurel Cyclery (Oakland), Robby's Bicycles (Stockton), Sports Basement (Berkeley), Tip Top Bike Shop (Oakland), Tracy Cyclery (Tracy), eCyclepath (Hayward)",
+"link": "https://www.blueheronbikesberkeley.com/"
+},
+{
+"brand": "Sixthreezero",
+"model": "EVRYjourney",
+"type": "Adaptive",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Pedego Electric Bikes (Livermore)",
+"link": "https://pedegoelectricbikes.com/dealers/livermore/"
+},
+{
+"brand": "Specialized",
+"model": "Turbo Tero (HT)",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "Alameda Bicycle (Alameda), Rhythm Bikes (Oakland), Stay True Cycles (Berkeley), The Bicycle Garage (Fremont), The New Wheel (Oakland), Uptown BART Bike Station (Oakland)",
+"link": "https://www.alamedabicycle.com/"
+},
+{
+"brand": "Specialized",
+"model": "Haul",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "Alameda Bicycle (Alameda), Rhythm Bikes (Oakland), Stay True Cycles (Berkeley), The Bicycle Garage (Fremont), The New Wheel (Oakland), Uptown BART Bike Station (Oakland)",
+"link": "https://www.alamedabicycle.com/"
+},
+{
+"brand": "Specialized",
+"model": "Turbo Como",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Alameda Bicycle (Alameda), Rhythm Bikes (Oakland), Stay True Cycles (Berkeley), The Bicycle Garage (Fremont), The New Wheel (Oakland), Uptown BART Bike Station (Oakland)",
+"link": "https://www.alamedabicycle.com/"
+},
+{
+"brand": "Specialized",
+"model": "Turbo Vado",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Alameda Bicycle (Alameda), Rhythm Bikes (Oakland), Stay True Cycles (Berkeley), The Bicycle Garage (Fremont), The New Wheel (Oakland), Uptown BART Bike Station (Oakland)",
+"link": "https://www.alamedabicycle.com/"
+},
+{
+"brand": "Sunseeker",
+"model": "E-Delta B1 SX Electric Delta",
+"type": "Adaptive",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Adaptive Cycles (Berkeley)",
+"link": "https://adaptivecycles.com/"
+},
+{
+"brand": "Sunseeker",
+"model": "E-Eco Tad B1 SX Electric Tadpole",
+"type": "Adaptive",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Adaptive Cycles (Berkeley)",
+"link": "https://adaptivecycles.com/"
+},
+{
+"brand": "Surly",
+"model": "Skid Loader",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Alameda Bicycle (Alameda), eCyclepath (Hayward)",
+"link": "https://www.alamedabicycle.com/"
+},
+{
+"brand": "Surly",
+"model": "Big Easy",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Alameda Bicycle (Alameda), eCyclepath (Hayward)",
+"link": "https://www.alamedabicycle.com/"
+},
+{
+"brand": "Tern",
+"model": "GSD",
+"type": "Cargo",
+"fold": "No",
+"cls": 3,
+"price": "$$$",
+"shops": "Alameda Bicycle (Alameda), Blue Heron Bicycles (Berkeley), The New Wheel (Oakland),The Bicycle Garage (Fremont)",
+"link": "https://www.alamedabicycle.com/"
+},
+{
+"brand": "Tern",
+"model": "Orox",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Alameda Bicycle (Alameda), Blue Heron Bicycles (Berkeley), The New Wheel (Oakland),The Bicycle Garage (Fremont)",
+"link": "https://www.alamedabicycle.com/"
+},
+{
+"brand": "Tern",
+"model": "Quick Haul",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Alameda Bicycle (Alameda), Blue Heron Bicycles (Berkeley), The New Wheel (Oakland),The Bicycle Garage (Fremont)",
+"link": "https://www.alamedabicycle.com/"
+},
+{
+"brand": "Tern",
+"model": "HSD",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Alameda Bicycle (Alameda), Blue Heron Bicycles (Berkeley), The New Wheel (Oakland),The Bicycle Garage (Fremont)",
+"link": "https://www.alamedabicycle.com/"
+},
+{
+"brand": "Tern",
+"model": "NBD",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Alameda Bicycle (Alameda), Blue Heron Bicycles (Berkeley), The New Wheel (Oakland),The Bicycle Garage (Fremont)",
+"link": "https://www.alamedabicycle.com/"
+},
+{
+"brand": "Tern",
+"model": "Quick Haul Long",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Alameda Bicycle (Alameda), Blue Heron Bicycles (Berkeley), The New Wheel (Oakland),The Bicycle Garage (Fremont)",
+"link": "https://www.alamedabicycle.com/"
+},
+{
+"brand": "Tern",
+"model": "Vektron",
+"type": "Standard",
+"fold": "Yes",
+"cls": 1,
+"price": "$$$",
+"shops": "Alameda Bicycle (Alameda), Blue Heron Bicycles (Berkeley), The New Wheel (Oakland),The Bicycle Garage (Fremont)",
+"link": "https://www.alamedabicycle.com/"
+},
+{
+"brand": "Top End",
+"model": "All E-handcycle models",
+"type": "Adaptive",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Adaptive Cycles (Berkeley)",
+"link": "https://adaptivecycles.com/"
+},
+{
+"brand": "Trek",
+"model": "Dual Sport+",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "Cycle City (Alameda), Rhythm Bikes (Oakland), Robby's Bicycles (Stockton), The Bicycle Garage (Fremont), Trek Bicycle (Dublin), Trek Bicycle (Livermore), Trek Bicycle (Oakland), Trek Bicycles (Castro Valley), Trek Bicycle (Berkeley)",
+"link": "https://cyclecityusa.com/index.php?title=Cycle_City"
+},
+{
+"brand": "Trek",
+"model": "Fetch+",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "Cycle City (Alameda), Rhythm Bikes (Oakland), Robby's Bicycles (Stockton), The Bicycle Garage (Fremont), Trek Bicycle (Dublin), Trek Bicycle (Livermore), Trek Bicycle (Oakland), Trek Bicycles (Castro Valley), Trek Bicycle (Berkeley)",
+"link": "https://cyclecityusa.com/index.php?title=Cycle_City"
+},
+{
+"brand": "Trek",
+"model": "FX+",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Cycle City (Alameda), Rhythm Bikes (Oakland), Robby's Bicycles (Stockton), The Bicycle Garage (Fremont), Trek Bicycle (Dublin), Trek Bicycle (Livermore), Trek Bicycle (Oakland), Trek Bicycles (Castro Valley), Trek Bicycle (Berkeley)",
+"link": "https://cyclecityusa.com/index.php?title=Cycle_City"
+},
+{
+"brand": "Trek",
+"model": "Verve+",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "Cycle City (Alameda), Rhythm Bikes (Oakland), Robby's Bicycles (Stockton), The Bicycle Garage (Fremont), Trek Bicycle (Dublin), Trek Bicycle (Livermore), Trek Bicycle (Oakland), Trek Bicycles (Castro Valley), Trek Bicycle (Berkeley)",
+"link": "https://cyclecityusa.com/index.php?title=Cycle_City"
+},
+{
+"brand": "Trek",
+"model": "Allant+",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$$",
+"shops": "Cycle City (Alameda), Rhythm Bikes (Oakland), Robby's Bicycles (Stockton), The Bicycle Garage (Fremont), Trek Bicycle (Dublin), Trek Bicycle (Livermore), Trek Bicycle (Oakland), Trek Bicycles (Castro Valley), Trek Bicycle (Berkeley)",
+"link": "https://cyclecityusa.com/index.php?title=Cycle_City"
+},
+{
+"brand": "Trek",
+"model": "Charter+ (All)",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$$",
+"shops": "Cycle City (Alameda), Rhythm Bikes (Oakland), Robby's Bicycles (Stockton), The Bicycle Garage (Fremont), Trek Bicycle (Dublin), Trek Bicycle (Livermore), Trek Bicycle (Oakland), Trek Bicycles (Castro Valley), Trek Bicycle (Berkeley)",
+"link": "https://cyclecityusa.com/index.php?title=Cycle_City"
+},
+{
+"brand": "Trek",
+"model": "Borrego+",
+"type": "Standard",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "Cycle City (Alameda), Rhythm Bikes (Oakland), Robby's Bicycles (Stockton), The Bicycle Garage (Fremont), Trek Bicycle (Dublin), Trek Bicycle (Livermore), Trek Bicycle (Oakland), Trek Bicycles (Castro Valley), Trek Bicycle (Berkeley)",
+"link": "https://cyclecityusa.com/index.php?title=Cycle_City"
+},
+{
+"brand": "Troxus",
+"model": "Trax (All Variations)",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Sports Basement (Berkeley), eCyclepath (Hayward), Pedego Electric Bikes (Livermore)",
+"link": "https://shop.sportsbasement.com/blogs/stores/berkeley"
+},
+{
+"brand": "Troxus",
+"model": "Lynx (Plus, cargo, folding)",
+"type": "Standard",
+"fold": "Yes",
+"cls": 2,
+"price": "$$",
+"shops": "Sports Basement (Berkeley), eCyclepath (Hayward), Pedego Electric Bikes (Livermore)",
+"link": "https://shop.sportsbasement.com/blogs/stores/berkeley"
+},
+{
+"brand": "Troxus",
+"model": "Explorer Plus",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Sports Basement (Berkeley), eCyclepath (Hayward), Pedego Electric Bikes (Livermore)",
+"link": "https://shop.sportsbasement.com/blogs/stores/berkeley"
+},
+{
+"brand": "Troxus",
+"model": "T-XC",
+"type": "Standard",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "Sports Basement (Berkeley), eCyclepath (Hayward), Pedego Electric Bikes (Livermore)",
+"link": "https://shop.sportsbasement.com/blogs/stores/berkeley"
+},
+{
+"brand": "Urban Arrow",
+"model": "Cargo/ Family",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "The New Wheel (Oakland), eCyclepath (Hayward), The Bicycle Garage (Fremont), Blue Heron Bicycles (Berkeley)",
+"link": "https://newwheel.net/pages/oakland-east-bay-electric-bike-shop"
+},
+{
+"brand": "Urban Arrow",
+"model": "Family (All Variations)",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "The New Wheel (Oakland), eCyclepath (Hayward), The Bicycle Garage (Fremont), Blue Heron Bicycles (Berkeley)",
+"link": "https://newwheel.net/pages/oakland-east-bay-electric-bike-shop"
+},
+{
+"brand": "Urban Arrow",
+"model": "Shorty",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "The New Wheel (Oakland), eCyclepath (Hayward), The Bicycle Garage (Fremont), Blue Heron Bicycles (Berkeley)",
+"link": "https://newwheel.net/pages/oakland-east-bay-electric-bike-shop"
+},
+{
+"brand": "Urban Arrow",
+"model": "Breeze",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "The New Wheel (Oakland), eCyclepath (Hayward), The Bicycle Garage (Fremont), Blue Heron Bicycles (Berkeley)",
+"link": "https://newwheel.net/pages/oakland-east-bay-electric-bike-shop"
+},
+{
+"brand": "Urtopia",
+"model": "Joy Carbon",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Pedego Electric Bikes (Livermore), The Bicycle Garage (Fremont)",
+"link": "https://pedegoelectricbikes.com/dealers/livermore/"
+},
+{
+"brand": "Urtopia",
+"model": "Carbon 1 ST",
+"type": "Standard",
+"fold": "Yes",
+"cls": 3,
+"price": "$$",
+"shops": "Pedego Electric Bikes (Livermore), The Bicycle Garage (Fremont)",
+"link": "https://pedegoelectricbikes.com/dealers/livermore/"
+},
+{
+"brand": "Urtopia",
+"model": "Carbon Fusion GT",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Pedego Electric Bikes (Livermore), The Bicycle Garage (Fremont)",
+"link": "https://pedegoelectricbikes.com/dealers/livermore/"
+},
+{
+"brand": "Urtopia",
+"model": "Caron Classic and Classic ST",
+"type": "Standard",
+"fold": "No",
+"cls": 3,
+"price": "$$",
+"shops": "Pedego Electric Bikes (Livermore), The Bicycle Garage (Fremont)",
+"link": "https://pedegoelectricbikes.com/dealers/livermore/"
+},
+{
+"brand": "Urtopia",
+"model": "Carbon Atom E-Bike",
+"type": "Standard",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "Pedego Electric Bikes (Livermore), The Bicycle Garage (Fremont)",
+"link": "https://pedegoelectricbikes.com/dealers/livermore/"
+},
+{
+"brand": "Velotric",
+"model": "Breeze 1",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$",
+"shops": "Electric Bike Center (Dublin), The Bicycle Garage (Fremont), Castro Valley Cyclery (Castro Valley), Pedego Electric Bikes (Livermore)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Velotric",
+"model": "Nomad 2",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$",
+"shops": "Electric Bike Center (Dublin), The Bicycle Garage (Fremont), Castro Valley Cyclery (Castro Valley), Pedego Electric Bikes (Livermore)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Velotric",
+"model": "Discover 2 & 3",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$",
+"shops": "Electric Bike Center (Dublin), The Bicycle Garage (Fremont), Castro Valley Cyclery (Castro Valley), Pedego Electric Bikes (Livermore)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Velotric",
+"model": "Velotric T1",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "Electric Bike Center (Dublin), The Bicycle Garage (Fremont), Castro Valley Cyclery (Castro Valley), Pedego Electric Bikes (Livermore)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Velotric",
+"model": "Discover 1 Plus",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "Electric Bike Center (Dublin), The Bicycle Garage (Fremont), Castro Valley Cyclery (Castro Valley), Pedego Electric Bikes (Livermore)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Velotric",
+"model": "Nomad 1 Plus",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "Electric Bike Center (Dublin), The Bicycle Garage (Fremont), Castro Valley Cyclery (Castro Valley), Pedego Electric Bikes (Livermore)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Velotric",
+"model": "Fold 1 & Fold 1 Plus",
+"type": "Cargo",
+"fold": "Yes",
+"cls": 1,
+"price": "$$",
+"shops": "Electric Bike Center (Dublin), The Bicycle Garage (Fremont), Castro Valley Cyclery (Castro Valley), Pedego Electric Bikes (Livermore)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Velotric",
+"model": "Summit 1 & 2",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "Electric Bike Center (Dublin), The Bicycle Garage (Fremont), Castro Valley Cyclery (Castro Valley), Pedego Electric Bikes (Livermore)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Velotric",
+"model": "Go 1",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "Electric Bike Center (Dublin), The Bicycle Garage (Fremont), Castro Valley Cyclery (Castro Valley), Pedego Electric Bikes (Livermore)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Velotric",
+"model": "Fold 1Lite",
+"type": "Standard",
+"fold": "Yes",
+"cls": 1,
+"price": "$$",
+"shops": "Electric Bike Center (Dublin), The Bicycle Garage (Fremont), Castro Valley Cyclery (Castro Valley), Pedego Electric Bikes (Livermore)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Velotric",
+"model": "Packer 1",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "Electric Bike Center (Dublin), The Bicycle Garage (Fremont), Castro Valley Cyclery (Castro Valley), Pedego Electric Bikes (Livermore)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Velotric",
+"model": "Triker 1",
+"type": "Adaptive",
+"fold": "Yes",
+"cls": 1,
+"price": "$$",
+"shops": "Electric Bike Center (Dublin), The Bicycle Garage (Fremont), Castro Valley Cyclery (Castro Valley), Pedego Electric Bikes (Livermore)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Velotric",
+"model": "Discover M",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "Electric Bike Center (Dublin), The Bicycle Garage (Fremont), Castro Valley Cyclery (Castro Valley), Pedego Electric Bikes (Livermore)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Velotric",
+"model": "GoMad",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "Electric Bike Center (Dublin), The Bicycle Garage (Fremont), Castro Valley Cyclery (Castro Valley), Pedego Electric Bikes (Livermore)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "Velotric",
+"model": "Tempo",
+"type": "Standard",
+"fold": "No",
+"cls": 1,
+"price": "$$",
+"shops": "Electric Bike Center (Dublin), The Bicycle Garage (Fremont), Castro Valley Cyclery (Castro Valley), Pedego Electric Bikes (Livermore)",
+"link": "https://electricbikeca.com/"
+},
+{
+"brand": "X-Lab",
+"model": "ST5+",
+"type": "Standard",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "Castro Valley Cyclery (Castro Valley), Sports Basement (Berkeley)",
+"link": "https://castrovalleycyclery.net/"
+},
+{
+"brand": "X-Lab",
+"model": "SP5+",
+"type": "Standard",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "Castro Valley Cyclery (Castro Valley), Sports Basement (Berkeley)",
+"link": "https://castrovalleycyclery.net/"
+},
+{
+"brand": "Xtracycle",
+"model": "Swoop ASM",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Stay True Cycles (Berkeley)",
+"link": "https://www.staytrue.bike/"
+},
+{
+"brand": "Xtracycle",
+"model": "The RFA",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Stay True Cycles (Berkeley)",
+"link": "https://www.staytrue.bike/"
+},
+{
+"brand": "Xtracycle",
+"model": "The Hopper",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Stay True Cycles (Berkeley)",
+"link": "https://www.staytrue.bike/"
+},
+{
+"brand": "Yuba",
+"model": "Boda Boda",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Blue Heron Bicycles (Berkeley),  Mike's Bikes (Berkeley), Mike's Bikes (Pleasanton)",
+"link": "https://www.blueheronbikesberkeley.com/"
+},
+{
+"brand": "Yuba",
+"model": "Spicy Curry",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Blue Heron Bicycles (Berkeley),  Mike's Bikes (Berkeley), Mike's Bikes (Pleasanton)",
+"link": "https://www.blueheronbikesberkeley.com/"
+},
+{
+"brand": "Yuba",
+"model": "Fast Rack",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Blue Heron Bicycles (Berkeley),  Mike's Bikes (Berkeley), Mike's Bikes (Pleasanton)",
+"link": "https://www.blueheronbikesberkeley.com/"
+},
+{
+"brand": "Yuba",
+"model": "Kombi E5",
+"type": "Cargo",
+"fold": "No",
+"cls": 1,
+"price": "$$$",
+"shops": "Blue Heron Bicycles (Berkeley),  Mike's Bikes (Berkeley), Mike's Bikes (Pleasanton)",
+"link": "https://www.blueheronbikesberkeley.com/"
+},
+{
+"brand": "Zooz",
+"model": "Ultra Flex",
+"type": "Standard",
+"fold": "No",
+"cls": 2,
+"price": "$$",
+"shops": "NILES BICYCLES (Fremont)",
+"link": "https://niles-bicycles.cloveronline.com/"
+}
+]

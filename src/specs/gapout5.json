@@ -1,0 +1,182 @@
+[
+ {
+  "index": 18,
+  "spd": null,
+  "tq": null,
+  "load": 298,
+  "range": null,
+  "url": "https://www.mantel.com/bulls-iconic-evo-2-275",
+  "note": "135 kg (298 lb) weight limit from Mantel listing of EU Bulls Iconic EVO 2 27.5 (same frame family; US 'Speed' variant has no published limit). Mantel doesn't say whether total or rider - treat as total max weight; lower confidence."
+ },
+ {
+  "index": 25,
+  "spd": null,
+  "tq": 85,
+  "load": null,
+  "range": null,
+  "url": "https://www.rabe-bike.de/en/cannondale-cargowagen-neo-2-grey-2024",
+  "note": "Retailer Rabe: 'Bosch Cargo Line (85Nm)'; matches Bosch's published Cargo Line spec (85 Nm)."
+ },
+ {
+  "index": 31,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://usa.dahon.com/products/e-hemingway",
+  "note": "Dahon US and DE pages give 250W hub, 5 assist levels, EN15194 battery but no assist speed; not published."
+ },
+ {
+  "index": 40,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://acceptance.reach.dog/shop/wwwebikesocalacom/products/emojo-bison-pro",
+  "note": "Torque not published by Emojo or retailers found."
+ },
+ {
+  "index": 47,
+  "spd": null,
+  "tq": 45,
+  "load": null,
+  "range": null,
+  "url": "https://decathlon.ch/en/p/mp/mach1/roue-de-velo-mach1-t-maxx-36h-bafang-h400b-36v-250w/_/R-p-340a3386-0315-403b-9251-913353043c5f",
+  "note": "Fuji page (fujibikes.com/products/sanibel-19) lists Bafang H400B rear hub, 417Wh; H400B max torque 45 Nm per Decathlon spec of that motor (Bafang's H400 page says 50 Nm for front-drive version). Load and range not published by Fuji or 99spokes."
+ },
+ {
+  "index": 53,
+  "spd": null,
+  "tq": null,
+  "load": 287,
+  "range": "25-90",
+  "url": "https://www.gazellebikes.com/en-gb/ebikes/easyflow-C7",
+  "note": "Range from Gazelle range table: 418Wh 25-60 mi, 504Wh 30-75 mi, 630Wh 40-90 mi. Load = max total weight 130 kg (287 lb) from retailer shop.roulezjeunesse.com/products/gazelle-easyflow-c7 ('Charge max totale 130 kg'); Gazelle site doesn't list it."
+ },
+ {
+  "index": 60,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://www.recumbent.news/2024/06/28/hase-bikes-unveils-the-kettwiesel-one-the-ultimate-delta-trike-for-all-riders/",
+  "note": "No assist speed stated (Hase, New Wheel, recumbent.news, Yanko). US cutoff not published."
+ },
+ {
+  "index": 69,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://larryvsharry.com/blogs/tips-guides/e6100-our-electric-bestseller",
+  "note": "LvH only publishes 25 km/h (EU); no US mph figure found on maker or retailer pages."
+ },
+ {
+  "index": 86,
+  "spd": null,
+  "tq": 65,
+  "load": null,
+  "range": null,
+  "url": "https://www.wellbots.com/es/products/macfox-x2-electric-mountain-bike",
+  "note": "Retailer Wellbots spec: 'Par: 65 Nm'"
+ },
+ {
+  "index": 92,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://www.marinbikes.com/bikes/2025-larkspur-e",
+  "note": "Marin page lists no max/rider weight; not found on retailers."
+ },
+ {
+  "index": 102,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://electrek.co/2022/11/11/mod-easy-sidecar-electric-bike-review/",
+  "note": "Only '750W (1,050W peak) geared rear hub' published; no torque (Electrek, RideReview)."
+ },
+ {
+  "index": 112,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://omniumcargo.com/mini-max/",
+  "note": "Omnium E-Mini-Max (Shimano EP8/EP801) - only 25 km/h published (omafiets AU, Canadian shop); omniumcargo.us not reachable; no US mph found."
+ },
+ {
+  "index": 118,
+  "spd": null,
+  "tq": null,
+  "load": 258,
+  "range": null,
+  "url": "https://shop.roulezjeunesse.com/products/orbea-carpe-20",
+  "note": "Load = max payload 117 kg (258 lb) excluding bike weight, per retailer ('Charge max totale 117 kg hors poids du velo'). Range not published anywhere checked (Orbea gives only 420Wh + optional 252Wh extender; bike-ev says no confirmed range)."
+ },
+ {
+  "index": 135,
+  "spd": 14,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://retrospec.com/products/boca-rev-electric-tricycle",
+  "note": "Retrospec: 'Class 2 EBike, 14mph Top Assisted Speed'."
+ },
+ {
+  "index": 144,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://www.campfirecycling.com/product/salsa-confluence-flat-bar-cues-11.html",
+  "note": "No max weight on Salsa retailer pages (Campfire, Steed, Dismount, Performance)."
+ },
+ {
+  "index": 155,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://slickdeals.net/f/17841678-senada-austin-48v-500w-fat-tire-folding-ebike-up-to-25-mph-62-miles-509-free-shipping",
+  "note": "Only 500W/750W peak published; no Nm figure."
+ },
+ {
+  "index": 161,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://serfas.com/collections/e-dash/products/dash-mid-500w-belt-drive",
+  "note": "Serfas lists '500W BAFANG M430 Mid Drive Motor' but no Nm. Bafang gives M430 as 95-150 Nm depending on variant (bike-eu says 120 Nm for cargo version), so exact torque for this bike can't be pinned."
+ },
+ {
+  "index": 168,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://mail.utahtrikes.com/PROD-11619618.html",
+  "note": "Motor is an optional 500/750/1000W add-on kit; speed, torque and range depend on kit and are not published for the trike."
+ },
+ {
+  "index": 190,
+  "spd": 20,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://propelbikes.com/urban-arrow-brand-guide/",
+  "note": "Propel FAQ: 'Urban Arrow Family is categorized as a Class 1 eBike ... pedal assistance up to 20mph' (both Performance and Cargo Line); GearJunkie review agrees."
+ },
+ {
+  "index": 219,
+  "spd": 20,
+  "tq": null,
+  "load": null,
+  "range": "15-50",
+  "url": "https://www.sdebike.com/product/yuba-boda-boda-step-through-377184-1.htm",
+  "note": "SDEbike spec: range '15 - 50 miles', motor 'supports speeds of up to 20mph' (Shimano E6100; Upway listing also says Class 1, 20 mph)."
+ }
+]

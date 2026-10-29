@@ -1,0 +1,182 @@
+[
+ {
+  "index": 17,
+  "spd": 15.5,
+  "tq": null,
+  "load": 242,
+  "url": "https://www.brompton.com/support/knowledge/how-does-the-brompton-electric-work",
+  "range": null,
+  "note": "Brompton states assist to 15.5 mph (25 km/h) even on US site; Upway US listing says 15 mph Class 1. Load = Brompton general max rider+luggage 110 kg (242 lb) per sg.brompton.com support article (not P Line-specific)."
+ },
+ {
+  "index": 24,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://www.electricbikejournal.com/cannondale-adventure-neo-allroad-review/",
+  "note": "AllRoad uses a 250W Bafang rear hub (Electric Bike Journal); no Nm published. Older Bosch Active Line Plus Adventure Neo is 50 Nm (Upway) but that's a different drivetrain, so not used. Cannondale 'Rider Weight Limit' field shows no value; load not found."
+ },
+ {
+  "index": 30,
+  "spd": 20,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://www.marbleheadcycle.com/product/dahon-k-one-hub-drive-electric-folding-bike-34418.htm",
+  "note": "Retailer: ~20 mph top assist; Bafang 250W rear hub, torque Nm not published. Torque (tq) not published."
+ },
+ {
+  "index": 39,
+  "spd": null,
+  "tq": 80,
+  "load": null,
+  "range": null,
+  "url": "https://99spokes.com/bikes/emojo/2019/caddy-trike",
+  "note": "99spokes (2019 Caddy Trike): Bafang front geared hub 500W, 80 Nm. Caddy Pro torque not separately published."
+ },
+ {
+  "index": 46,
+  "spd": null,
+  "tq": 45,
+  "load": null,
+  "range": null,
+  "url": "https://fujibikes.com/products/e-crosstown-19",
+  "note": "Fuji lists Bafang H400B rear hub; H400B = 45 Nm max per Decathlon motor listing (decathlon.ch Mach1 H400B wheel). Range/max weight not on Fuji page. Searches found no range or max weight."
+ },
+ {
+  "index": 52,
+  "spd": null,
+  "tq": null,
+  "load": 287,
+  "range": null,
+  "url": "https://www.bosch-ebike.com/us/ebikes/gazelle/avignon-c380_1764",
+  "note": "Bosch eBike US page: max permissible total weight 130 kg (286.7 lb). Mantel lists 150 kg for the C380+ variant."
+ },
+ {
+  "index": 59,
+  "spd": 15.5,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://insideevs.com/news/680259/hase-gravit-city-ebike/",
+  "note": "InsideEVs/New Atlas: pedal assist up to 15.5 mph (25 km/h). Range: New Atlas says per-charge range hasn't been given; Hase page lists none."
+ },
+ {
+  "index": 68,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://electricbikereview.com/izip/e3-simi/",
+  "note": "Only 55 lb rack rating published; no total payload/rider limit found."
+ },
+ {
+  "index": 84,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": null,
+  "note": "No Macfox X19 exists in search results (only X1S, X2, M19); not filled."
+ },
+ {
+  "index": 91,
+  "spd": null,
+  "tq": null,
+  "load": 287,
+  "range": null,
+  "url": "https://shop.roulezjeunesse.com/collections/all/products/marin-sausalito-e1",
+  "note": "Roulez Jeunesse spec: 'Charge max totale' 130 kg (287 lb) = max total weight for Sausalito E1."
+ },
+ {
+  "index": 101,
+  "spd": null,
+  "tq": 69,
+  "load": null,
+  "range": null,
+  "url": "https://www.drone.jp/?p=83352",
+  "note": "Drone.jp MOD Easy 3 article: 750W geared rear hub, 69 Nm torque."
+ },
+ {
+  "index": 111,
+  "spd": 15.5,
+  "tq": 85,
+  "load": null,
+  "range": "62",
+  "url": "https://www.bicyclejunction.co.nz/products/omnium-e-cargo-v3",
+  "note": "Bicycle Junction NZ: Shimano EP801-CRG up to 85 Nm; up to 100 km (62 mi) on 504Wh. Speed 15.5 mph = 25 km/h per Omnium page (omniumcargo.com); NZ retailer's '45 km/h' looks erroneous for EP801."
+ },
+ {
+  "index": 117,
+  "spd": null,
+  "tq": null,
+  "load": 331,
+  "range": null,
+  "url": "https://www.nimms-rad.de/news/neues-orbea-muga-e-bike-suv-bosch-cx/",
+  "note": "Nimms-rad: max system weight 150 kg (331 lb) incl. rider, bike, cargo. Range not published (600Wh std, 750Wh optional, 250Wh range extender)."
+ },
+ {
+  "index": 133,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://www.bikeride.com/?p=546584",
+  "note": "Original Judd Rev torque not published (350W rear hub). Successor Judd Rev 2 lists 50 Nm on bikeride.com, not used since different model."
+ },
+ {
+  "index": 143,
+  "spd": null,
+  "tq": 85,
+  "load": null,
+  "range": "62+",
+  "url": "https://shop.roulezjeunesse.com/products/riese-muller-load4-75-touring",
+  "note": "Roulez Jeunesse: Load4 75 touring, Bosch Cargo Line 85 Nm; 725Wh battery 'more than 100 km' (62+ mi)."
+ },
+ {
+  "index": 149,
+  "spd": null,
+  "tq": 75,
+  "load": null,
+  "range": "60",
+  "url": "https://shop.sportsbasement.com/products/silence-eride-20-men-speed",
+  "note": "Sports Basement: Bosch Performance Speed 75 Nm max; range 60 miles."
+ },
+ {
+  "index": 160,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://serfas.com/products/serfas-2023-edart-500w-e-bike",
+  "note": "Serfas lists 'Sutto 500W 48V brushless motor'; no Nm on Serfas or retailer pages."
+ },
+ {
+  "index": 167,
+  "spd": 15,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://shop.bebikes.com/product/sun-seeker-e-delta-electric-assist-trike-390475-1.htm",
+  "note": "BE Bikes listing for Sun Seeker E-Delta: 'Mid-Drive 250W pedal assist ... speeds up to 15 mph'; no torque given. Note Erik's page mentions 350W, so variant may differ."
+ },
+ {
+  "index": 183,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://bikerumor.com/trek-allant-e-bikes-go-over-100-miles-with-range-boost-battery-pack/",
+  "note": "No base range published for Allant+ 7S (500Wh); Bikerumor only says 'well over 100 miles' with optional second 500Wh Range Boost battery. 99spokes pages failed to load."
+ },
+ {
+  "index": 218,
+  "spd": null,
+  "tq": 80,
+  "load": null,
+  "range": null,
+  "url": "https://www.bikeride.com/?p=508397",
+  "note": "Bikeride.com spec listing: 750W Xtracycle rear hub, 80 Nm. Clever Cycles lists no Nm."
+ }
+]

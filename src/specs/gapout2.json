@@ -1,0 +1,191 @@
+[
+ {
+  "index": 13,
+  "spd": 28,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://upway.co/blogs/news/blix-electric-bike-brand-guide",
+  "note": "Upway Blix guide: Sol X 'assisting up to 28 mph', capable of Class 2 and Class 3 speeds (backpackers.com launch article also says up to 28 mph); ships Class 2 configurable"
+ },
+ {
+  "index": 21,
+  "spd": null,
+  "tq": 75,
+  "load": null,
+  "range": "40-100",
+  "url": "https://electricbikereview.com/?p=143868",
+  "note": "Bosch Performance Line Speed Gen 4, 75 Nm per EBR + ElectricBikeReport (28 mph version); range EBR est. 40-100 mi; max total weight not published in any source found"
+ },
+ {
+  "index": 28,
+  "spd": 16,
+  "tq": null,
+  "load": null,
+  "range": "25",
+  "url": "https://electricbikereport.com/dahon-k-feather-review/",
+  "note": "ElectricBikeReport: 'Dahon advertises a maximum speed of 16 mph'; battery rated up to 25 miles"
+ },
+ {
+  "index": 37,
+  "spd": null,
+  "tq": null,
+  "load": 300,
+  "range": "105",
+  "url": "https://www.bikemart.com/products/2024-vale-go-9d-eq-electric-cruiser-bike",
+  "note": "load = max total weight (bike+rider+cargo) 300 lb per Bike Mart (Trek spec text); range 'Maximum Range 105 miles' from bikeride.com aggregator (bikeride.com/?p=472706), not Trek-stated"
+ },
+ {
+  "index": 44,
+  "spd": null,
+  "tq": 45,
+  "load": null,
+  "range": null,
+  "url": "https://www.culturevelo.com/shop/moteur-roue-arriere-vae-bafang-h400b-pour-700c-28-36v-250w-45nm-vitesse-25km-h-rm-g020250dc-457708",
+  "note": "Conductor 2.1+ uses Bafang H400B rear hub 250W (fujibikes.com); 45 Nm per motor listing for Bafang H400B rear 36V 250W (Bafang's own page lists front H400 at 50 Nm). Range & max weight not published by Fuji/retailers"
+ },
+ {
+  "index": 50,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": "31-75",
+  "url": "https://gazellebikes.com/en-ca/ebikes/ultimate-c380",
+  "note": "Gazelle CA page range by mode 50-120 km (Turbo-Eco) for 540Wh battery; US 625Wh range not stated anywhere found (bikeride.com lists 65-70 mi max). Max permissible weight not stated"
+ },
+ {
+  "index": 66,
+  "spd": null,
+  "tq": 85,
+  "load": null,
+  "range": null,
+  "url": "https://www.recumbent.news/2024/03/07/interesting-changes-for-the-ice-sprint-x-recumbent-trike",
+  "note": "Sprint X e-assist uses Shimano STEPS EP8 = 85 Nm (motor spec, 630Wh battery). Top US assist speed and range not published by ICE/dealer"
+ },
+ {
+  "index": 81,
+  "spd": null,
+  "tq": null,
+  "load": 344,
+  "range": null,
+  "url": "https://shop.roulezjeunesse.com/collections/all/products/liv-thrive-e-ex-ridedash-evo",
+  "note": "load = 'Charge max totale 156.0 kg' (max total weight, ~344 lb) per retailer for Thrive E+ EX (RideDash Evo), newer variant than 2021 EX Pro"
+ },
+ {
+  "index": 97,
+  "spd": null,
+  "tq": 69,
+  "load": 275,
+  "range": null,
+  "url": "https://www.bikeride.com/?p=483668",
+  "note": "bikeride.com MOD City+ 3 spec: 69 Nm torque, '275lb payload capacity' (rear rack separately 65 lb); 500W motor, model not named"
+ },
+ {
+  "index": 115,
+  "spd": null,
+  "tq": 40,
+  "load": 253,
+  "range": "62",
+  "url": "https://shop.roulezjeunesse.com/collections/orbea-vibe-precedents/products/orbea-vibe-h30-eq",
+  "note": "Vibe H30 EQ: Mahle X35 Plus rear hub 40 Nm; range 'jusqu'a 100 km' (~62 mi) with 248Wh; load = max total load 115 kg excluding bike (~253 lb)"
+ },
+ {
+  "index": 127,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://newatlas.com/bicycles/priority-e-classic-plus/",
+  "note": "Torque not published: Priority/reviews only state '250W front hub motor', motor model not named"
+ },
+ {
+  "index": 147,
+  "spd": null,
+  "tq": 50,
+  "load": null,
+  "range": null,
+  "url": "https://www.bike-magazin.de/marken/scott/modell/sub-active-eride-20-unisex-rack-65a2c49ff54232ff067fab70/",
+  "note": "Motor Bosch Active Line Plus (bike-magazin: 'Bosch Active Plus'); Bosch spec 50 Nm (Bike Mart page also lists Active Plus 50 Nm). Range not stated by Scott/retailers (400Wh)"
+ },
+ {
+  "index": 57,
+  "spd": null,
+  "tq": null,
+  "load": 300,
+  "range": null,
+  "url": "https://ezeryders.com/products/strike-cycles-panthro-750w-moto-ebike-20x4-fat-electric-e-moto-style-ebike",
+  "note": "Panthro (Strike Cycles listing; text calls it 'the All-New Panthro E-bike from Golden Cycles'): 'maximum cargo weight of 300lbs' - treated as max payload"
+ },
+ {
+  "index": 89,
+  "spd": null,
+  "tq": null,
+  "load": 287,
+  "range": null,
+  "url": "https://shop.roulezjeunesse.com/products/marin-fairfax-e",
+  "note": "'Charge max totale: 130.0 kg' (~287 lb, max total weight) per Canadian retailer, Bafang rear hub 40 Nm version; Marin US page states no limit"
+ },
+ {
+  "index": 107,
+  "spd": null,
+  "tq": null,
+  "load": 344,
+  "range": null,
+  "url": "https://bikeradar.com/reviews/bikes/electric-bikes/momentum-transend-e-review",
+  "note": "BikeRadar: Transend E+ 'rated to carry a huge maximum load of 156kg/344lb' (UK review of Transend E+; treated as max total weight)"
+ },
+ {
+  "index": 139,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://www.acehardware.com/departments/outdoor-living/sporting-goods/bicycles/8106716",
+  "note": "Torque not published: Ace lists 500W 48V torque-sensor motor, no Nm; retrospec.com page fails to load; no review with Napa Rev Nm found"
+ },
+ {
+  "index": 158,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://serfas.com/products/quest-750w",
+  "note": "Motor is Bafang RMG062 48V 750W rear hub (serfas.com) but torque not stated by Serfas; Bafang's public pages don't list G062 torque (only forum hearsay ~85 Nm), so left null"
+ },
+ {
+  "index": 165,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": "68",
+  "url": "https://www.eriksbikeshop.com/products/specialized-2023-turbo-como-3-0-step-thru-electric-bike-pr5a12595",
+  "note": "2023 Turbo Como 3.0 (Erik's): 'Max Range: 68 miles' (same page also says 'up to 90 miles'). Max total weight not published (only 27 kg rack)"
+ },
+ {
+  "index": 181,
+  "spd": null,
+  "tq": null,
+  "load": 300,
+  "range": "50",
+  "url": "https://electricbikereport.com/trek-fx7s-review/",
+  "note": "FX+ 7S: max total weight (bike+rider+cargo) 300 lb (First Stop Board Barn Trek spec; EBR 'total payload capacity 300 lbs'); claimed range 50 mi (EBR), TQ HPR50 360Wh"
+ },
+ {
+  "index": 193,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://electrek.co/?p=479391",
+  "note": "US top assist speed not published in any source found: Bosch Cargo Line motor; launch press only gives EU 25 km/h, autoevolution speculates 20 or 28 mph"
+ },
+ {
+  "index": 222,
+  "spd": null,
+  "tq": 40,
+  "load": null,
+  "range": null,
+  "url": "https://www.bicyclejunction.co.nz/products/yuba-kombi-e5",
+  "note": "Shimano STEPS E5000 motor, 'delivers 40Nm of torque' (retailer; matches Shimano E5000 spec)"
+ }
+]

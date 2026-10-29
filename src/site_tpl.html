@@ -1,0 +1,1512 @@
+<title>Ava Rebate Bike Finder</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400..700&display=swap" rel="stylesheet">
+<style>
+/* Layout: quiet header, one sticky filter row, a clean photo grid where "you pay" leads each card, shop list below. */
+:root{
+ --bg:#f6f7f5; --surface:#ffffff; --well:#f1f3f0; --fg:#121614; --fg2:#4d5651; --fg3:#646d68;
+ --line:#e3e7e2; --line2:#c9d0ca; --accent:#0e7a52; --accent-fg:#ffffff; --accent-soft:#e3f2ea; --accent-ink:#0b5f40;
+ --pick:#b7791f; --warn-ink:#8a5300;
+ --shadow:0 1px 2px rgba(18,22,20,.04),0 4px 14px rgba(18,22,20,.05);
+ --shadow-hi:0 2px 4px rgba(18,22,20,.05),0 12px 28px rgba(18,22,20,.09);
+ --ease-out:cubic-bezier(.23,1,.32,1); --ease-in-out:cubic-bezier(.77,0,.175,1);
+ --t-micro:12px; --t-meta:13px; --t-ui:14px; --t-body:15px; --t-lede:17px; --t-title:17px; --t-price:28px; --t-h2:24px;
+ --font:"Geist",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+ color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+ --bg:#0f1211; --surface:#171b19; --well:#1e2320; --fg:#eef1ee; --fg2:#b4bcb7; --fg3:#8d9691;
+ --line:#262c29; --line2:#3a433e; --accent:#2fae7d; --accent-fg:#06140e; --accent-soft:#16302a; --accent-ink:#7fdcb4;
+ --pick:#e0a84a; --warn-ink:#f0c46b;
+ --shadow:0 1px 2px rgba(0,0,0,.3); --shadow-hi:0 8px 24px rgba(0,0,0,.4); color-scheme:dark}}
+:root[data-theme="dark"]{
+ --bg:#0f1211; --surface:#171b19; --well:#1e2320; --fg:#eef1ee; --fg2:#b4bcb7; --fg3:#8d9691;
+ --line:#262c29; --line2:#3a433e; --accent:#2fae7d; --accent-fg:#06140e; --accent-soft:#16302a; --accent-ink:#7fdcb4;
+ --pick:#e0a84a; --warn-ink:#f0c46b;
+ --shadow:0 1px 2px rgba(0,0,0,.3); --shadow-hi:0 8px 24px rgba(0,0,0,.4); color-scheme:dark}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;accent-color:var(--accent);scrollbar-color:var(--line2) transparent}
+body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:var(--t-body);line-height:1.5;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+::selection{background:var(--accent-soft);color:var(--fg)}
+a{color:var(--accent-ink);text-underline-offset:3px;text-decoration-thickness:1px}
+/* no browser tap highlight anywhere: it paints over everything (even the opening sheet) and reads as a flash. Pressed states are drawn by the components themselves */
+html,a,button,select,summary,label,[data-b]{-webkit-tap-highlight-color:transparent}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1200px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+
+/* header */
+header .wrap{padding-block:48px 28px;display:grid;gap:12px}
+h1{margin:0;font-size:clamp(32px,4.2vw,44px);line-height:1.06;letter-spacing:-.03em;font-weight:700;text-wrap:balance;max-width:18ch}
+.lede{margin:0;color:var(--fg2);font-size:var(--t-lede);line-height:1.55;max-width:60ch;text-wrap:pretty}
+
+/* search bar: Filters button (opens the left panel, so it sits on the left) + search */
+.bar{background:var(--bg)}
+.bar .wrap{padding-block:12px;display:flex;gap:10px;align-items:center}
+.field{position:relative;display:inline-flex;align-items:center}
+.field span{position:absolute;left:12px;font-size:var(--t-micro);font-weight:500;color:var(--fg3);pointer-events:none}
+select,input[type=search]{font:inherit;font-size:var(--t-ui);color:var(--fg);background-color:var(--surface);border:1px solid var(--line2);border-radius:6px;height:38px;transition:border-color .15s ease,box-shadow .15s ease}
+select{appearance:none;-webkit-appearance:none;padding:0 32px 0 12px;background-image:linear-gradient(45deg,transparent 50%,var(--fg3) 50%),linear-gradient(135deg,var(--fg3) 50%,transparent 50%);background-position:calc(100% - 17px) 50%,calc(100% - 12px) 50%;background-size:5px 5px;background-repeat:no-repeat;cursor:pointer}
+.field select{padding-left:var(--pl)}
+.search{flex:1 1 auto;min-width:180px;position:relative}
+.search svg{position:absolute;left:12px;top:50%;translate:0 -50%;color:var(--fg3);pointer-events:none}
+input[type=search]{width:100%;padding:0 12px 0 36px}
+input::placeholder{color:var(--fg3)}
+.check{display:inline-flex;align-items:center;gap:8px;font-size:var(--t-ui);color:var(--fg2);cursor:pointer;height:38px}
+.check input{width:16px;height:16px;margin:0}
+#reset{font:inherit;font-size:var(--t-ui);font-weight:500;color:var(--accent-ink);background:none;border:0;padding:2px 4px;cursor:pointer;border-radius:4px}
+@media (hover:hover) and (pointer:fine){
+ select:hover,input[type=search]:hover{border-color:var(--fg3)}
+ #reset:hover{color:var(--fg)}
+}
+select:focus-visible,input[type=search]:focus-visible{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+
+/* results */
+.status{padding-block:18px 2px;display:flex;flex-wrap:nowrap;justify-content:space-between;gap:12px;align-items:center;min-height:58px}
+.status .count{flex:none}
+.count{display:flex;align-items:center;gap:12px}
+.view{display:flex;align-items:center;gap:14px}
+#count{font-size:var(--t-ui);color:var(--fg2)}
+#count strong{color:var(--fg);font-weight:600}
+main.grid .c{content-visibility:auto;contain-intrinsic-size:auto 680px}
+main.grid{padding-block:14px 56px;display:grid;grid-template-columns:repeat(auto-fill,minmax(272px,1fr));gap:18px;align-items:stretch}
+
+.c{background:var(--surface);border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0;overflow:hidden;view-transition-class:bike;scroll-margin:80px}
+.c.flash{animation:flash 1.4s var(--ease-out)}
+@keyframes flash{0%,30%{box-shadow:0 0 0 3px var(--accent),var(--shadow)}}
+.c.pick{border-color:var(--pick);box-shadow:0 0 0 1px var(--pick),var(--shadow)}
+.ph{display:block;position:relative;aspect-ratio:4/3;max-width:100%;background:#fff;overflow:hidden}
+.sws{position:absolute;left:8px;bottom:8px;display:flex;align-items:center;gap:0;padding:1px 2px;border-radius:999px;background:rgba(255,255,255,.92);box-shadow:0 1px 3px rgba(0,0,0,.14);max-width:calc(100% - 20px);flex-wrap:wrap}
+.sw{width:22px;height:22px;border:0;padding:0;background:none;border-radius:50%;display:grid;place-items:center;cursor:pointer;position:relative}
+.sw i{width:12px;height:12px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(0,0,0,.2);transition:transform .12s var(--ease-out)}
+.sw::before{content:"";position:absolute;inset:-2px}
+/* the selected ring is drawn around the dot itself, so it is always perfectly centred on it */
+.sw[aria-pressed="true"] i{box-shadow:inset 0 0 0 1px rgba(0,0,0,.2),0 0 0 2px #fff,0 0 0 3.5px #121614}
+@media (hover:hover) and (pointer:fine){.sw:hover i{transform:scale(1.15)}}
+.sw:active i,.sw:hover:active i{transform:scale(.9)}
+@media (pointer:coarse){.sw{width:26px;height:26px}.sw i{width:14px;height:14px}.sw::before{inset:-6px}.sws{gap:4px;padding:2px 4px}}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.tag{position:absolute;left:12px;top:12px;display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.94);color:#0b5f40;border:1px solid rgba(14,122,82,.28);font-size:var(--t-micro);font-weight:600;padding:3px 8px;border-radius:4px;font-variant-numeric:tabular-nums}
+.tag.s400{color:#3d4541;border-color:rgba(18,22,20,.16)}
+.tag i{width:6px;height:6px;border-radius:50%;background:#0e7a52}.tag.s400 i{background:#7a837e}
+/* card photo: 'Call for price' sits bottom-right, in line with the colour dots on the left; same small badge style as the rebate tag, in the warning tone */
+.calltag{position:absolute;right:12px;bottom:12px;z-index:2;display:inline-flex;align-items:center;background:#fdf3e1;color:#8a5300;border:1px solid rgba(183,121,31,.35);font-size:var(--t-micro);font-weight:600;padding:3px 8px;border-radius:4px;pointer-events:none}
+.rb{display:inline-flex;align-items:center;gap:6px;height:22px;padding:0 8px;border-radius:4px;font-size:var(--t-micro);font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap;line-height:1;background:var(--accent-soft);color:var(--accent-ink);border:1px solid color-mix(in oklab,var(--accent) 30%,transparent)}
+.rb i{width:6px;height:6px;border-radius:50%;background:var(--accent);flex:none}
+.rb.s400{background:var(--well);color:var(--fg2);border-color:var(--line)}
+.rb.s400 i{background:var(--fg3)}
+.bmreb{align-items:center}
+.bmrt{color:var(--fg3)}
+.ro .rl .rb{margin-left:8px;vertical-align:1px}
+.b{padding:14px 16px 16px;display:flex;flex-direction:column;gap:12px;flex:1;min-width:0;border-top:1px solid var(--line)}
+.picktag{position:absolute;right:12px;top:12px;display:inline-flex;align-items:center;gap:5px;background:#fdf3e1;color:#7a4f0e;border:1px solid rgba(183,121,31,.35);font-size:var(--t-micro);font-weight:600;padding:3px 8px;border-radius:4px}
+.picktag svg{color:#b7791f}
+.note.picknote{color:var(--fg);font-weight:500}
+.id{display:grid;gap:1px}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.br{color:var(--fg3);font-size:var(--t-meta);font-weight:500}
+.n{margin:0;overflow-wrap:anywhere;font-size:var(--t-title);line-height:1.25;font-weight:600;letter-spacing:-.015em;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.price{display:grid;gap:3px;margin-top:2px}
+.pay{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.pay strong{font-size:var(--t-price);line-height:1;font-weight:700;letter-spacing:-.03em;font-variant-numeric:tabular-nums;color:var(--fg)}
+.pay span{font-size:var(--t-meta);color:var(--fg2)}
+.list{font-size:var(--t-meta);color:var(--fg3);font-variant-numeric:tabular-nums}
+.list s{text-decoration-thickness:1px}
+.price.na .pay strong{font-size:var(--t-title);color:var(--fg2);letter-spacing:-.01em}
+.note{font-size:var(--t-meta);color:var(--fg2);line-height:1.45;text-wrap:pretty;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.chips{display:flex;flex-wrap:nowrap;gap:6px;overflow:hidden;min-width:0}
+.chip{white-space:nowrap;flex:none}
+.pwarn{display:flex;gap:6px;align-items:flex-start;margin-top:4px;font-size:var(--t-micro);line-height:1.4;color:var(--warn-ink)}
+.pwarn svg{flex:none;margin-top:1px}
+.chip{font-size:var(--t-micro);font-weight:500;color:var(--fg2);background:var(--well);border-radius:4px;padding:2px 8px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:6px;overflow:hidden;margin:0}
+.stats div{background:var(--well);padding:7px 10px 8px;min-width:0}
+.stats dt{font-size:var(--t-micro);font-weight:500;color:var(--fg2);white-space:nowrap}
+.stats dd{margin:1px 0 0;font-size:16px;line-height:1.3;font-weight:650;color:var(--fg);font-variant-numeric:tabular-nums;letter-spacing:-.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.stats dd small{font-size:var(--t-meta);font-weight:500;color:var(--fg2);margin-left:2px}
+.stats dd.na{color:var(--fg3);font-weight:500;font-size:var(--t-meta)}
+.br{overflow-wrap:anywhere}
+.empty{grid-column:1/-1;padding:56px 0;color:var(--fg2);text-align:center}
+.empty p{margin:0 0 14px}
+
+/* shops */
+#dir{padding-block:28px 72px;border-top:1px solid var(--line)}
+#dir h2{text-wrap:balance;font-size:var(--t-h2);letter-spacing:-.025em;font-weight:700;margin:0 0 4px}
+#dir>p{margin:0 0 20px;color:var(--fg2)}
+.dirgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.shop{min-width:0;overflow-wrap:anywhere;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px 16px;font-size:var(--t-ui);display:grid;gap:2px;align-content:start}
+.shop .city{color:var(--accent-ink);font-weight:600;font-size:var(--t-micro)}
+.shop b{font-size:var(--t-body);font-weight:600}
+.shop .m{color:var(--fg2)}
+
+
+/* guide */
+.hlinks{display:flex;flex-wrap:wrap;gap:6px 20px;margin:2px 0 0;font-size:var(--t-ui);font-weight:500}
+.hlinks a{text-decoration:none}
+@media (hover:hover) and (pointer:fine){.hlinks a:hover{text-decoration:underline}}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+#dir{scroll-margin-top:16px}
+.hlinks{align-items:center}
+.gbtn{font:inherit;font-size:var(--t-ui);font-weight:600;display:inline-flex;align-items:center;gap:8px;height:36px;padding:0 14px 0 12px;border-radius:6px;border:1px solid var(--line2);background:var(--surface);color:var(--fg);cursor:pointer;transition:border-color .15s ease,transform .12s var(--ease-out)}
+.gbtn svg{color:var(--accent-ink)}
+.gbtn:active{transform:scale(.97)}
+@media (hover:hover) and (pointer:fine){.gbtn:hover{border-color:var(--fg3)}}
+.drawer{position:fixed;inset:0 0 0 auto;margin:0;height:100dvh;max-height:100dvh;width:min(560px,100vw);max-width:100vw;padding:0;border:0;border-left:1px solid var(--line);background:var(--surface);color:var(--fg);box-shadow:-12px 0 40px rgba(0,0,0,.14);display:flex;flex-direction:column;overflow:hidden;transform:translateX(100%);transition:transform .32s cubic-bezier(.32,.72,0,1),overlay .32s allow-discrete,display .32s allow-discrete}
+.drawer:not([open]){display:none}
+.drawer[open]{transform:none}
+.drawer:not([open]){transition-duration:.2s}
+@starting-style{.drawer[open]{transform:translateX(100%)}}
+.dhead{display:flex;gap:16px;align-items:flex-start;justify-content:space-between;padding:max(22px,env(safe-area-inset-top,0px)) 24px 16px;border-bottom:1px solid var(--line);flex:none}
+.dhead h2{margin:0;font-size:22px;letter-spacing:-.02em;font-weight:700}
+.dhead p{margin:4px 0 0;color:var(--fg2);font-size:var(--t-ui)}
+.dclose{flex:none;display:grid;place-items:center;width:36px;height:36px;border-radius:6px;border:0;background:var(--well);color:var(--fg);cursor:pointer}
+.dbody{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:4px 24px calc(40px + env(safe-area-inset-bottom,0px));-webkit-overflow-scrolling:touch}
+.dbody h3{font-size:var(--t-lede);font-weight:600;letter-spacing:-.01em;margin:26px 0 10px}
+.gsub{margin:-4px 0 12px;font-size:var(--t-ui);color:var(--fg2)}
+.g3{display:grid;gap:10px}
+.gc{background:var(--well);border-radius:8px;padding:12px 14px 14px;display:grid;gap:3px}
+.gk{font-size:var(--t-micro);font-weight:600;color:var(--accent-ink);font-variant-numeric:tabular-nums}
+.gc b{font-weight:600;font-size:var(--t-body)}
+.gc p{margin:2px 0 0;color:var(--fg2);font-size:var(--t-ui);line-height:1.55;text-wrap:pretty}
+.gdl{display:grid;gap:14px;margin:0}
+.gdl dt{font-weight:600;margin-bottom:2px}
+.gdl dd{margin:0;color:var(--fg2);font-size:var(--t-ui);line-height:1.6;text-wrap:pretty}
+.gdl dd b{color:var(--fg);font-weight:600}
+.g2{display:grid;gap:0}
+.gp{margin:0;color:var(--fg2);font-size:var(--t-ui);line-height:1.6;text-wrap:pretty}
+.gl{margin:0;padding-left:18px;display:grid;gap:7px;color:var(--fg2);font-size:var(--t-ui);line-height:1.55}
+.gl b{color:var(--fg);font-weight:600}
+.gl li::marker{color:var(--fg3)}
+@media (max-width:600px){.drawer{width:100vw;border-left:0}.dhead{padding:max(18px,env(safe-area-inset-top,0px)) 18px 14px}.dbody{padding:2px 18px calc(32px + env(safe-area-inset-bottom,0px))}}
+@media (prefers-reduced-motion:reduce){.drawer{transition:opacity .2s ease,overlay .2s allow-discrete,display .2s allow-discrete;transform:none;opacity:0}.drawer[open]{opacity:1}@starting-style{.drawer[open]{opacity:0;transform:none}}}
+
+
+/* one backdrop for every dialog: same dim, same fade. No blur: a full-screen blur over 224 cards and a playing video makes Safari stutter */
+dialog::backdrop{background:rgba(10,14,12,.42);opacity:0;transition:opacity .18s ease,overlay .18s allow-discrete,display .18s allow-discrete}
+dialog[open]::backdrop{opacity:1}
+@starting-style{dialog[open]::backdrop{opacity:0}}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) dialog::backdrop{background:rgba(0,0,0,.58)}}
+:root[data-theme="dark"] dialog::backdrop{background:rgba(0,0,0,.58)}
+@media (prefers-reduced-motion:reduce){dialog::backdrop{transition:none}}
+
+/* motion: cards glide to their new places when filters change */
+::view-transition-group(.bike){animation-duration:.26s;animation-timing-function:var(--ease-in-out)}
+::view-transition-old(.bike):only-child{animation:vt-out .15s var(--ease-out) both}
+::view-transition-new(.bike):only-child{animation:vt-in .22s var(--ease-out) both}
+#count{view-transition-name:count}
+::view-transition-old(count){display:none}
+::view-transition-new(count){animation:none}
+@keyframes vt-out{to{opacity:0;filter:blur(2px)}}
+@keyframes vt-in{from{opacity:0;filter:blur(2px);transform:scale(.97)}}
+@keyframes vt-fade{from{opacity:0}}
+
+@media (pointer:coarse){select,input[type=search],#reset,.check,.mfilter{height:44px}}
+.search{max-width:640px}
+@media (max-width:760px){
+ header .wrap{padding-block:32px 20px}
+ select,input[type=search],.check,#reset,.mfilter{font-size:16px}
+ .bar .wrap{flex-wrap:nowrap}
+ .search{flex:1 1 auto;min-width:0;max-width:none}
+ .view{margin-left:auto}
+ .status{flex-wrap:wrap;align-items:center;row-gap:10px}
+ .status .count{display:flex;flex-wrap:wrap;align-items:baseline;column-gap:12px;min-width:0}
+ .view{flex:none}
+ /* phones: the chip row always keeps its height so the bikes never jump */
+ .status .achips,.status .achips[hidden]{display:flex;order:3;flex-basis:100%;min-height:34px;margin:0;padding-block:0;align-items:center}
+ .status .achips:empty{display:none}
+}
+/* the search lives in the hero, right under the description */
+.hero .hbar{background:none;display:flex;gap:10px;align-items:center;margin-top:12px;max-width:640px}
+/* theme toggle: one icon that morphs. Dark shows a moon, light shows a sun.
+   Only transforms and opacity animate (GPU), so it stays smooth; the page itself crossfades through a view transition where supported */
+.navr{display:flex;align-items:center;gap:4px}
+.themebtn{display:grid;place-items:center;width:40px;height:40px;margin-left:8px;border:0;border-radius:8px;background:none;color:rgba(var(--hink),.82);cursor:pointer;transition:color .15s ease,transform .12s var(--ease-out)}
+.themebtn:active{transform:scale(.92)}
+.themebtn:focus-visible{outline:2px solid rgb(var(--hink));outline-offset:2px}
+@media (hover:hover) and (pointer:fine){.themebtn:hover{color:rgb(var(--hink))}}
+.themebtn svg{overflow:visible}
+.themebtn .tm-core,.themebtn .tm-cut,.themebtn .tm-rays{transform-box:view-box;transform-origin:12px 12px;transition:transform .45s var(--ease-out),opacity .3s var(--ease-out)}
+/* light (sun): small core, cut-out moved clear, rays out */
+.themebtn .tm-core{transform:scale(.55)}
+.themebtn .tm-cut{transform:translate(9px,-9px)}
+.themebtn .tm-rays{transform:none;opacity:1}
+/* dark (moon): full disc with a bite taken out, rays tucked away */
+:root[data-theme="dark"] .themebtn .tm-core{transform:rotate(0deg) scale(1)}
+:root[data-theme="dark"] .themebtn .tm-cut{transform:none}
+:root[data-theme="dark"] .themebtn .tm-rays{transform:rotate(-45deg) scale(.5);opacity:0}
+@media (max-width:760px){.themebtn{margin-left:0;width:44px;height:44px}}
+@media (prefers-reduced-motion:reduce){.themebtn .tm-core,.themebtn .tm-cut,.themebtn .tm-rays{transition:none}}
+::view-transition-old(root),::view-transition-new(root){animation-duration:.3s;animation-timing-function:ease}
+/* the toggle itself is shown live during the crossfade, so its morph plays instead of being frozen in a snapshot */
+::view-transition-old(themebtn){display:none}
+::view-transition-new(themebtn){animation:none}
+@media (prefers-reduced-motion:reduce){
+ .gbtn:active,.sw:active i,.sw:hover:active i{transform:none}
+ .c.flash{animation:none;box-shadow:0 0 0 3px var(--accent)}
+ ::view-transition-group(.bike){animation-duration:0s}
+ ::view-transition-new(.bike){animation:vt-fade .15s ease both}
+ ::view-transition-old(.bike){animation:none;opacity:0}
+}
+
+/* skip link, mobile filter button, card footer button */
+.skip{position:absolute;left:-999px;top:12px;z-index:30;background:var(--surface);color:var(--fg);padding:8px 12px;border-radius:6px;box-shadow:var(--shadow-hi);font-weight:600}
+.skip:focus{left:16px}
+.mfilter{display:inline-flex;align-items:center;gap:8px;flex:none;font:inherit;font-size:var(--t-ui);font-weight:600;height:38px;padding:0 14px 0 12px;border-radius:6px;border:1px solid var(--line2);background:var(--surface);color:var(--fg);cursor:pointer;transition:transform .12s var(--ease-out),border-color .15s ease}
+.mfilter svg{color:var(--fg2)}
+@media (hover:hover) and (pointer:fine){.mfilter:hover{border-color:var(--fg3)}}
+@media (pointer:coarse){.mfilter{height:44px}}
+@media (max-width:760px){.mfilter{font-size:16px}}
+.more{margin-top:auto;display:flex;align-items:center;justify-content:space-between;width:100%;font:inherit;font-size:var(--t-ui);font-weight:600;color:var(--fg);background:none;border:0;border-top:1px solid var(--line);padding:12px 0 0;cursor:pointer;text-align:left}
+.more svg{color:var(--fg3);transition:transform .16s var(--ease-out),color .15s ease}
+.nospec{margin:0;font-size:var(--t-meta);color:var(--fg2);background:var(--well);border-radius:6px;padding:10px 12px}
+button,.sw,.hit{touch-action:manipulation;-webkit-user-select:none;user-select:none}
+.dclose{transition:transform .12s var(--ease-out),background-color .15s ease}
+.dclose:active,#reset:active,.mfilter:active,.primary:active,.hit:active{transform:scale(.97)}
+html{scrollbar-gutter:stable}
+html.locked{overflow:hidden}
+.maplink{display:inline-flex;align-items:flex-start;gap:6px;color:var(--fg2);text-decoration:none;width:fit-content}
+.maplink svg{flex:none;margin-top:3px;color:var(--fg3)}
+.maplink span{text-decoration:underline;text-decoration-color:var(--line2);text-underline-offset:3px}
+@media (hover:hover) and (pointer:fine){.maplink:hover{color:var(--fg)}.maplink:hover span{text-decoration-color:currentColor}}
+.tel{font-variant-numeric:tabular-nums}
+input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;width:14px;height:14px;background:var(--fg3);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M6 6l12 12M18 6 6 18'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M6 6l12 12M18 6 6 18'/%3E%3C/svg%3E") center/contain no-repeat;cursor:pointer}
+@media (pointer:coarse){.gbtn{height:44px}.dclose{width:44px;height:44px}.more{min-height:44px;padding-top:8px}}
+@media (pointer:coarse){.hlinks a{padding-block:12px}.shop a{padding-block:12px;margin-block:-4px}.sw::before{inset:-9px -6px}}
+
+/* bike detail: the whole card opens it (stretched .more button), centered modal on desktop, bottom sheet on phones */
+.c{position:relative;cursor:pointer;transition:border-color .15s ease,box-shadow .2s ease,transform .16s var(--ease-out)}
+.more::after{content:"";position:absolute;inset:0;z-index:1}
+.c .sws{z-index:2}
+.more:focus-visible{outline:none}
+.c:has(.more:focus-visible){outline:2px solid var(--accent);outline-offset:2px}
+.c:active:not(:has(.sw:active)){transform:scale(.985)}
+@media (hover:hover) and (pointer:fine){
+ .c:hover{border-color:var(--line2);box-shadow:var(--shadow-hi)}
+ .c.pick:hover{border-color:var(--pick);box-shadow:0 0 0 1px var(--pick),var(--shadow-hi)}
+ .c:hover .more svg{transform:translateX(2px);color:var(--fg)}
+}
+.bm{position:fixed;inset:0;margin:auto;width:min(820px,calc(100vw - 48px));max-width:none;height:fit-content;max-height:min(880px,calc(100dvh - 48px));padding:0;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--fg);box-shadow:0 24px 64px rgba(0,0,0,.24);display:flex;flex-direction:column;overflow:hidden;opacity:0;transform:scale(.97);transition:opacity .2s var(--ease-out),transform .22s var(--ease-out),overlay .22s allow-discrete,display .22s allow-discrete}
+.bm:not([open]){display:none;transition-duration:.15s}
+.bm[open]{opacity:1;transform:none}
+@starting-style{.bm[open]{opacity:0;transform:scale(.97)}}
+.bmh{position:relative;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:16px 16px 14px 24px;border-bottom:1px solid var(--line);flex:none}
+.bmh .br{display:block}
+.bmh h2{margin:1px 0 0;font-size:22px;line-height:1.2;letter-spacing:-.02em;font-weight:700;text-wrap:balance;overflow-wrap:anywhere}
+.bmb{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.bmg{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px 28px;padding:20px 24px 28px;align-items:start}
+@media (min-height:720px){.bml{position:sticky;top:20px;z-index:4}} /* the pinned photo column stays above the top fade */
+.bmph{position:relative;aspect-ratio:4/3;background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.bmph img{width:100%;height:100%;object-fit:contain;display:block}
+.bmcap{margin:8px 0 0;font-size:var(--t-meta);color:var(--fg2)}
+.bmp{margin-top:16px;padding-top:16px;border-top:1px solid var(--line);display:grid;gap:10px}
+.bmpay{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.bmpay strong{font-size:34px;line-height:1;font-weight:700;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.bmpay span{font-size:var(--t-ui);color:var(--fg2)}
+.bmpay.na strong{font-size:22px;color:var(--fg2);letter-spacing:-.015em}
+.bmpl{margin:0;display:grid;gap:4px;font-size:var(--t-ui);font-variant-numeric:tabular-nums}
+.bmpl div{display:flex;justify-content:space-between;gap:12px}
+.bmpl dt{color:var(--fg2)}
+.bmpl dd{margin:0;font-weight:600}
+.bmtax{margin:0;font-size:var(--t-meta);color:var(--fg2);line-height:1.45;text-wrap:pretty}
+.bmp .pwarn{margin:0;font-size:var(--t-meta);padding:8px 10px;background:var(--warn-soft);border-radius:6px}
+.bmr{display:grid;gap:24px;min-width:0}
+.bmr h3{margin:0 0 10px;font-size:var(--t-body);font-weight:600;letter-spacing:-.01em}
+.bmpick{display:grid;gap:4px;margin:0 0 4px;padding:0}
+.bmpk{display:inline-flex;align-items:center;gap:5px;font-size:var(--t-micro);font-weight:600;color:var(--pick);letter-spacing:.01em}
+.bmpk svg{width:12px;height:12px}
+.bmpick p{margin:0;color:var(--fg2);font-size:var(--t-ui);line-height:1.5;text-wrap:pretty}
+.bmpick b{color:var(--fg);font-weight:600}
+.bms{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:6px;overflow:hidden;margin:0}
+.bms div{background:var(--well);padding:8px 12px 9px;min-width:0}
+.bms .w{grid-column:1/-1}
+.bms dt{font-size:var(--t-micro);font-weight:500;color:var(--fg2)}
+.bms dd{margin:1px 0 0;font-size:16px;line-height:1.3;font-weight:650;font-variant-numeric:tabular-nums;letter-spacing:-.01em;overflow-wrap:anywhere}
+.bms dd small{font-size:var(--t-meta);font-weight:500;color:var(--fg2);margin-left:3px}
+.bms p{margin:2px 0 0;font-size:var(--t-meta);color:var(--fg2);line-height:1.4}
+.bmnone{margin:0;font-size:var(--t-ui);color:var(--fg2)}
+.bmin{margin:-4px 0 12px;font-size:var(--t-meta);color:var(--fg2)}
+.bmshops{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.bmshop{display:grid;gap:4px;justify-items:start;padding:12px 14px;border:1px solid var(--line);border-radius:8px;font-size:var(--t-ui);min-width:0;overflow-wrap:anywhere}
+.bmshop b{font-weight:600;font-size:var(--t-body);line-height:1.3}
+.bmshop .web{font-weight:500;text-decoration:none}
+.bmlinks{display:flex;flex-wrap:wrap;gap:6px 20px;font-size:var(--t-ui);font-weight:500;padding-top:16px;border-top:1px solid var(--line)}
+.bmlinks a{display:inline-flex;align-items:center;gap:6px;text-decoration:none}
+@media (hover:hover) and (pointer:fine){.bmlinks a:hover,.bmshop .web:hover{text-decoration:underline}}
+@media (pointer:coarse){.bmshop{gap:0;padding-block:6px}.bmshop b{padding-block:6px 2px}.bmshop a{padding-block:8px}.bmlinks a{min-height:44px}.bmlinks{padding-top:4px}}
+@media (max-width:760px){
+ .bm{inset:auto 0 0;margin:0;width:100%;max-height:calc(100dvh - max(16px,env(safe-area-inset-top,0px)));border-radius:14px 14px 0 0;border-width:1px 0 0;opacity:1;transform:translateY(100%);transition:transform .28s cubic-bezier(.32,.72,0,1),overlay .28s allow-discrete,display .28s allow-discrete}
+ .bm[open]{transform:none}
+ @starting-style{.bm[open]{transform:translateY(100%);opacity:1}}
+ .bm:not([open]){transition-duration:.2s}
+ .bmh{padding:18px 8px 12px 16px}
+ .bmh::before{content:"";position:absolute;top:6px;left:50%;width:36px;height:4px;margin-left:-18px;border-radius:2px;background:var(--line2)}
+ .bmh h2{font-size:20px}
+ .bmg{grid-template-columns:minmax(0,1fr);gap:24px;padding:16px 16px calc(28px + env(safe-area-inset-bottom,0px))}
+ .bml{position:static}
+}
+@media (prefers-reduced-motion:reduce){
+ .bm,.bm[open]{transform:none!important;transition:opacity .15s ease,overlay .15s allow-discrete,display .15s allow-discrete}
+ .bm:not([open]){opacity:0}.bm[open]{opacity:1}
+ @starting-style{.bm[open]{opacity:0}}
+ .c{transition:border-color .15s ease,box-shadow .2s ease}
+ .c:active:not(:has(.sw:active)){transform:none}
+}
+
+/* floating search pill */
+.fab{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:15;display:flex;align-items:center;gap:2px;height:48px;width:min(420px,calc(100vw - 32px));padding:0 4px;border-radius:999px;border:1px solid var(--line2);background:color-mix(in oklab,var(--surface) 90%,transparent);-webkit-backdrop-filter:saturate(1.4) blur(14px);backdrop-filter:saturate(1.4) blur(14px);color:var(--fg2);font-size:var(--t-ui);box-shadow:0 2px 6px rgba(18,22,20,.08),0 12px 32px rgba(18,22,20,.16);opacity:0;transform:translate(-50%,12px) scale(.97);pointer-events:none;transition:opacity .2s var(--ease-out),transform .24s var(--ease-out)}
+.fab.on{opacity:1;transform:translate(-50%,0);pointer-events:auto}
+.fab.on:active{transform:translate(-50%,0) scale(.97);transition:transform .16s var(--ease-out)}
+.fab svg{flex:none;color:var(--fg)}
+/* border beam: a short arc of light circling the pill's edge.
+   The gradient is painted once on an oversized square that only rotates (transform), so the GPU compositor runs it without
+   repainting or touching the main thread; the pill clips it to a 1px ring and an inner layer covers the middle. */
+.fab{isolation:isolate;overflow:hidden;border:0}
+.fab::after{content:"";position:absolute;z-index:-1;inset:1px;border-radius:inherit;background:var(--surface);pointer-events:none}
+.fmain,.ffil{display:flex;align-items:center;height:40px;border:0;border-radius:999px;background:none;color:inherit;font:inherit;cursor:pointer}
+#fab-q,.ffil svg{transition:color .15s ease}
+.fmain{flex:1 1 auto;min-width:0;gap:10px;padding:0 14px 0 10px}
+.ffil{flex:none;gap:6px;min-width:40px;justify-content:center;padding:0 12px;color:var(--fg)}
+.ffil.on{background:var(--accent-soft);color:var(--accent-ink)}
+.ffil.on svg{color:currentColor}
+.fnum{font-size:var(--t-meta);font-weight:650;font-variant-numeric:tabular-nums}
+.fnum[hidden]{display:none}
+@media (hover:hover) and (pointer:fine){.fmain:hover #fab-q{color:var(--fg)}.ffil:not(.on):hover svg{color:var(--accent-ink)}}
+#fab-q{min-width:0;flex:1 1 auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left}
+#fab-q.typed{color:var(--fg);font-weight:500}
+.fsep{width:1px;height:20px;background:var(--line);flex:none}
+.fcount{flex:none;margin-left:auto;font-variant-numeric:tabular-nums;color:var(--fg);font-weight:600}
+.mcount[hidden]{display:none}
+.mcount{display:grid;place-items:center;min-width:20px;height:20px;padding:0 6px;margin-right:-4px;border-radius:999px;background:var(--accent);color:var(--accent-fg);font-size:var(--t-micro);font-weight:700;font-variant-numeric:tabular-nums;line-height:1}
+html.locked .fab.on{opacity:0;transform:translate(-50%,12px) scale(.97);pointer-events:none}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .fab{box-shadow:0 2px 6px rgba(0,0,0,.3),0 12px 32px rgba(0,0,0,.5)}}
+:root[data-theme="dark"] .fab{box-shadow:0 2px 6px rgba(0,0,0,.3),0 12px 32px rgba(0,0,0,.5)}
+@media (max-width:600px){.fab{width:min(340px,calc(100vw - 48px))}}
+@media (max-width:400px){.fmain{gap:8px;padding-right:12px}}
+@media (prefers-reduced-motion:reduce){.fab,.fab.on,html.locked .fab.on{transform:translate(-50%,0);transition:opacity .15s ease}}
+main.grid{padding-bottom:96px}
+/* active filters: one removable chip each, right above the cards */
+.achips{flex:1 1 auto;min-width:0;display:flex;flex-wrap:nowrap;align-items:center;gap:6px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;padding:3px 24px 3px 2px;margin:-3px 0;-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 28px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 28px),transparent)}
+.achips::-webkit-scrollbar{display:none}
+.achips>*{flex:none}
+.achips[hidden]{display:none}
+
+.ach{display:inline-flex;align-items:center;gap:6px;height:28px;padding:0 2px 0 10px;border:1px solid var(--line2);border-radius:6px;background:var(--surface);font-size:var(--t-meta);font-weight:500;color:var(--fg);font-variant-numeric:tabular-nums;max-width:100%;min-width:0}
+.ach i{flex:none;width:10px;height:10px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(0,0,0,.2)}
+.ach button{flex:none;display:grid;place-items:center;width:24px;height:24px;border:0;border-radius:4px;background:none;color:var(--fg3);cursor:pointer;padding:0;transition:background-color .12s ease,color .12s ease}
+.achc{font:inherit;font-size:var(--t-meta);font-weight:500;color:var(--accent-ink);background:none;border:0;padding:0 6px;height:28px;cursor:pointer;border-radius:4px}
+@media (hover:hover) and (pointer:fine){.ach button:hover{background:var(--well);color:var(--fg)}.achc:hover{color:var(--fg)}}
+@media (pointer:coarse){.ach{height:34px;padding-left:12px}.ach button{width:32px;height:32px}.achc{height:34px;padding-inline:8px}}
+
+/* command dialog */
+.cmd{position:fixed;inset:12vh 0 auto;margin:0 auto;width:min(640px,calc(100vw - 32px));max-height:min(720px,76vh);padding:0;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--fg);box-shadow:0 24px 64px rgba(0,0,0,.24);display:flex;flex-direction:column;overflow:hidden;opacity:0;transform:scale(.97);transform-origin:50% 0;transition:opacity .18s var(--ease-out),transform .2s var(--ease-out),overlay .2s allow-discrete,display .2s allow-discrete}
+.cmd:not([open]){display:none}
+.cmd[open]{opacity:1;transform:none}
+@starting-style{.cmd[open]{opacity:0;transform:scale(.97)}}
+.cmd.instant,.cmd.instant::backdrop{transition:none}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .cmd{box-shadow:0 24px 64px rgba(0,0,0,.6)}}
+:root[data-theme="dark"] .cmd{box-shadow:0 24px 64px rgba(0,0,0,.6)}
+.chead{position:relative;display:flex;align-items:center;gap:10px;padding:10px 10px 10px 18px;border-bottom:1px solid var(--line);flex:none}
+.cicon{display:grid;color:var(--fg3)}
+#cq{flex:1;min-width:0;height:44px;border:0;background:none;padding:0;font-size:17px;box-shadow:none;outline:none}
+.cbody{flex:1 1 auto;min-height:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;padding:6px 18px 18px;-webkit-overflow-scrolling:touch;interpolate-size:allow-keywords}
+.cres h3{margin:12px 0 6px;font-size:var(--t-micro);font-weight:600;color:var(--fg3);letter-spacing:.02em}
+.hit{display:flex;align-items:center;gap:12px;margin:0 -8px;width:calc(100% + 16px);padding:6px 8px;border:0;border-radius:8px;background:none;color:var(--fg);font:inherit;text-align:left;cursor:pointer;transition:background-color .12s ease,transform .12s var(--ease-out)}
+.hit img{width:52px;height:39px;object-fit:cover;border-radius:4px;background:#fff;flex:none;border:1px solid var(--line)}
+.ht{display:grid;min-width:0;flex:1}
+.ht b{font-weight:600;font-size:var(--t-ui);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ht small{color:var(--fg2);font-size:var(--t-micro)}
+.hp{flex:none;font-weight:600;font-variant-numeric:tabular-nums;font-size:var(--t-ui)}
+@media (hover:hover) and (pointer:fine){.hit:hover{background:var(--well)}}
+.cnone{margin:8px 0;color:var(--fg2);font-size:var(--t-ui)}
+.cfoot{display:flex;align-items:center;justify-content:flex-end;gap:12px;padding:12px 18px calc(12px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);flex:none}
+.linkbtn{margin-right:auto;font:inherit;font-size:var(--t-ui);font-weight:500;color:var(--accent-ink);background:none;border:0;padding:8px 4px;cursor:pointer}
+.primary{font:inherit;font-size:var(--t-ui);font-weight:600;height:42px;padding:0 18px;border-radius:8px;border:0;background:var(--accent);color:var(--accent-fg);cursor:pointer;transition:transform .12s var(--ease-out),opacity .15s ease}
+.primary:disabled{opacity:.45;cursor:default}
+@media (max-width:600px){
+ .cmd{inset:auto 0 0;width:100vw;max-width:100vw;height:min(88dvh,760px);max-height:none;border-radius:14px 14px 0 0;border-width:1px 0 0;opacity:1;transform:translateY(100%);transition:transform .32s cubic-bezier(.32,.72,0,1),overlay .32s allow-discrete,display .32s allow-discrete}
+ .cmd[open]{transform:none}
+ @starting-style{.cmd[open]{transform:translateY(100%);opacity:1}}
+ .cmd:not([open]){transition-duration:.2s}
+ .chead{padding:16px 8px 8px 16px}
+ .chead::before{content:"";position:absolute;top:6px;left:50%;width:36px;height:4px;margin-left:-18px;border-radius:2px;background:var(--line2)}
+ .chead{touch-action:none}
+ #cq{font-size:16px}
+ .cbody{padding:4px 16px 16px}
+ .primary{flex:1;height:48px;font-size:16px}
+}
+@media (prefers-reduced-motion:reduce){.cmd,.cmd[open]{transform:none!important;transition:opacity .15s ease,overlay .15s allow-discrete,display .15s allow-discrete}@starting-style{.cmd[open]{opacity:0}}}
+@media (pointer:coarse){.linkbtn{min-height:44px;padding-inline:8px;margin-left:-8px}.primary{height:48px;font-size:16px}}
+/* filters inside the command dialog: same controls as the panel, a little more compact */
+.cflt{margin-top:14px;padding-top:2px;border-top:1px solid var(--line)}
+.cflt h3{margin:12px 0 2px;font-size:var(--t-micro);font-weight:600;color:var(--fg3);letter-spacing:.02em}
+.cmd .fs summary{min-height:48px}
+.cmd .fsc{padding-bottom:14px}
+.cmd .fsw{min-height:56px;padding:6px 0}
+.cfoot .primary{min-width:168px}
+@media (pointer:coarse){.cmd .fs summary{min-height:52px}}
+
+/* filters panel: slides in from the left; sticky header and footer around one scrolling column of accordions */
+.fp{position:fixed;inset:0 auto 0 0;margin:0;height:100dvh;max-height:100dvh;width:min(400px,100vw);max-width:100vw;padding:0;border:0;border-right:1px solid var(--line);background:var(--surface);color:var(--fg);box-shadow:12px 0 40px rgba(0,0,0,.14);display:flex;flex-direction:column;overflow:hidden;transform:translateX(-100%);transition:transform .32s cubic-bezier(.32,.72,0,1),overlay .32s allow-discrete,display .32s allow-discrete}
+.fp:not([open]){display:none;transition-duration:.2s}
+.fp[open]{transform:none}
+@starting-style{.fp[open]{transform:translateX(-100%)}}
+.fph{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:max(12px,env(safe-area-inset-top,0px)) 12px 12px max(20px,env(safe-area-inset-left,0px));border-bottom:1px solid var(--line);flex:none}
+.fph h2{margin:0;font-size:20px;letter-spacing:-.02em;font-weight:700}
+.fpb{flex:1 1 auto;min-height:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;padding:0 20px 12px max(20px,env(safe-area-inset-left,0px));-webkit-overflow-scrolling:touch;interpolate-size:allow-keywords}
+.fpf{display:flex;align-items:center;gap:12px;padding:12px 20px calc(12px + env(safe-area-inset-bottom,0px)) max(20px,env(safe-area-inset-left,0px));border-top:1px solid var(--line);flex:none;background:var(--surface)}
+.fpf .primary{flex:1;max-width:240px;margin-left:auto}
+.linkbtn:disabled{color:var(--fg3);cursor:default}
+/* accordion sections */
+.fs{margin-inline:-10px;background:linear-gradient(var(--line),var(--line)) 10px 100%/calc(100% - 20px) 1px no-repeat}
+.fs summary{display:flex;align-items:center;gap:12px;min-height:52px;padding-inline:10px;cursor:pointer;list-style:none;font-weight:600;font-size:var(--t-body);-webkit-user-select:none;user-select:none;border-radius:4px}
+.fs summary::-webkit-details-marker{display:none}
+.fs summary:focus-visible{outline-offset:-2px}
+.fl{flex:none}
+.fv{margin-left:auto;min-width:0;font-weight:500;font-size:var(--t-ui);color:var(--fg2);font-variant-numeric:tabular-nums;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.fv.on{color:var(--accent-ink);font-weight:600}
+.chev{flex:none;color:var(--fg3);transition:transform .15s var(--ease-out)}
+.fs[open] .chev{transform:rotate(180deg)}
+.fsc{padding:0 10px 16px}
+.fs::details-content{block-size:0;opacity:0;overflow:clip;transition:block-size .18s var(--ease-out),opacity .14s ease,content-visibility .18s allow-discrete}
+.fs[open]::details-content{block-size:auto;opacity:1}
+/* radio lists */
+.rlist{border:0;margin:0;padding:0;min-width:0;display:grid;gap:2px}
+.ro{display:flex;align-items:center;gap:12px;min-height:38px;padding:0 10px;margin:0 -10px;border-radius:6px;cursor:pointer;font-size:var(--t-ui);transition:background-color .12s ease}
+.ro input{appearance:none;-webkit-appearance:none;flex:none;width:18px;height:18px;margin:0;border-radius:50%;border:1.5px solid var(--fg3);background:var(--surface);transition:border-width .12s var(--ease-out),border-color .12s ease}
+.ro input:checked{border:5.5px solid var(--accent)}
+.ro input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.ro .rl{flex:1;min-width:0;overflow-wrap:anywhere}
+.ro .rl small{color:var(--fg2);font-size:var(--t-meta);margin-left:6px}
+.rn{flex:none;color:var(--fg3);font-size:var(--t-micro);font-variant-numeric:tabular-nums}
+.ro:has(input:checked) .rn{color:var(--fg2)}
+.rcity{grid-template-columns:1fr 1fr;column-gap:20px}
+.rcity .ro:first-of-type{grid-column:1/-1}
+.ro:has(input:checked) .rl{font-weight:600}
+.ro.zero .rl{color:var(--fg3)}
+@media (hover:hover) and (pointer:fine){.ro:hover{background:var(--well)}.ro:hover .rn{color:var(--fg2)}}
+/* color swatches */
+.cgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:6px}
+.cb{display:flex;align-items:center;gap:8px;height:40px;padding:0 10px;min-width:0;border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--fg);font:inherit;font-size:var(--t-ui);cursor:pointer;text-align:left;transition:border-color .12s ease,background-color .12s ease}
+.cb span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cb i{flex:none;width:16px;height:16px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(0,0,0,.2)}
+.cb i.any{background:conic-gradient(#c8352e,#e9c23b,#3f8a4f,#2f63c4,#7a4fb0,#c8352e)}
+.cb[aria-pressed="true"]{border-color:var(--fg);box-shadow:inset 0 0 0 1px var(--fg);font-weight:600}
+.cb[aria-pressed="true"] i{box-shadow:0 0 0 2px var(--surface),0 0 0 3.5px var(--fg)}
+.cb.zero{color:var(--fg3)}.cb.zero i{opacity:.4}
+@media (hover:hover) and (pointer:fine){.cb:not([aria-pressed="true"]):hover{border-color:var(--fg3)}}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .cb i{box-shadow:inset 0 0 0 1px rgba(255,255,255,.25)}:root:not([data-theme="light"]) .cb[aria-pressed="true"] i{box-shadow:0 0 0 2px var(--surface),0 0 0 3.5px var(--fg)}}
+:root[data-theme="dark"] .cb i{box-shadow:inset 0 0 0 1px rgba(255,255,255,.25)}
+:root[data-theme="dark"] .cb[aria-pressed="true"] i{box-shadow:0 0 0 2px var(--surface),0 0 0 3.5px var(--fg)}
+/* you pay: two native range inputs over one styled track; the whole strip is the hit area */
+.prv{margin:0 0 2px}
+.ptxt{font-size:var(--t-lede);font-weight:650;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.rng{position:relative;touch-action:pan-y;cursor:pointer;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}
+.rbar{position:relative;height:44px}
+.rtrack{position:absolute;left:12px;right:12px;top:50%;height:4px;margin-top:-2px;border-radius:2px;background:var(--line)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .rtrack{background:var(--line2)}}
+:root[data-theme="dark"] .rtrack{background:var(--line2)}
+.rfill{position:absolute;top:0;bottom:0;left:0;right:0;border-radius:2px;background:var(--accent)}
+.rng input{position:absolute;left:0;top:50%;width:100%;height:24px;margin:-12px 0 0;padding:0;border:0;background:none;-webkit-appearance:none;appearance:none;pointer-events:none;font-size:16px}
+.rng input:focus-visible{outline:none}
+.rng input::-webkit-slider-runnable-track{height:24px;background:none;border:0}
+.rng input::-moz-range-track{height:24px;background:none;border:0}
+.rng input::-webkit-slider-thumb{-webkit-appearance:none;box-sizing:border-box;width:24px;height:24px;border-radius:50%;background:#fff;border:2px solid var(--accent);box-shadow:0 1px 3px rgba(0,0,0,.22);transition:box-shadow .15s ease}
+.rng input::-moz-range-thumb{box-sizing:border-box;width:24px;height:24px;border-radius:50%;background:#fff;border:2px solid var(--accent);box-shadow:0 1px 3px rgba(0,0,0,.22)}
+.rng input:focus-visible::-webkit-slider-thumb{box-shadow:0 0 0 4px color-mix(in oklab,var(--accent) 32%,transparent),0 1px 3px rgba(0,0,0,.22)}
+.rng input:focus-visible::-moz-range-thumb{box-shadow:0 0 0 4px color-mix(in oklab,var(--accent) 32%,transparent)}
+.rng input.act::-webkit-slider-thumb{box-shadow:0 0 0 6px color-mix(in oklab,var(--accent) 22%,transparent),0 1px 3px rgba(0,0,0,.22)}
+.rng input.act::-moz-range-thumb{box-shadow:0 0 0 6px color-mix(in oklab,var(--accent) 22%,transparent)}
+.rticks{position:relative;height:26px;margin:-8px 12px 0}
+.rticks i{position:absolute;top:0;width:1px;height:5px;background:var(--fg3);opacity:.55;translate:-50% 0}
+.rticks i.mj{height:8px;opacity:1}
+.rticks span{position:absolute;top:10px;translate:-50% 0;font-size:var(--t-micro);color:var(--fg2);font-variant-numeric:tabular-nums;white-space:nowrap;line-height:1.2}
+.rticks span:first-of-type{translate:-12px 0}
+.rticks span:last-of-type{translate:calc(-100% + 12px) 0}
+/* folding switch */
+.fsw{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:8px 0;cursor:pointer}
+.fsw b{display:block;font-weight:600;font-size:var(--t-body)}
+.fsw small{display:block;font-size:var(--t-meta);color:var(--fg2)}
+.fsw input{appearance:none;-webkit-appearance:none;flex:none;position:relative;width:42px;height:26px;margin:0;border-radius:999px;background:var(--line2);cursor:pointer;transition:background-color .15s ease}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .fsw input:not(:checked){background:#4a544e}}
+:root[data-theme="dark"] .fsw input:not(:checked){background:#4a544e}
+.fsw input::before{content:"";position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.25);transition:transform .18s var(--ease-out)}
+.fsw input:checked{background:var(--accent)}
+.fsw input:checked::before{transform:translateX(16px)}
+.fsw input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (pointer:coarse){.ro{min-height:44px}.cb{height:44px}.fs summary{min-height:56px}}
+@media (max-width:600px){.fp{width:100vw;border-right:0}.fph{padding-left:max(16px,env(safe-area-inset-left,0px))}.fpb{padding-inline:16px}.fpf{padding-inline:16px}.fpf .primary{max-width:none}}
+@media (prefers-reduced-motion:reduce){
+ .fp,.fp[open]{transform:none!important;transition:opacity .15s ease,overlay .15s allow-discrete,display .15s allow-discrete}
+ .fp:not([open]){opacity:0}.fp[open]{opacity:1}
+ @starting-style{.fp[open]{opacity:0}}
+ .fs::details-content{transition:none}
+ .chev,.fsw input::before,.ro input{transition:none}
+}
+
+/* hero: looping ride video under a dark gradient */
+/* the video section is the same in both themes: full-colour video, white type, dark shading only behind the text.
+ In light mode the video ends on a clean edge and the light page starts below it (no light wash over the footage) */
+.hero{--hink:255,255,255;--hscrim:15,18,17;--ha0:.3;--ha1:.12;--ha2:.55;--ha3:.88;--ha4:.5}
+/* light mode: no fade into the (light) page colour, so the bottom keeps the video and ends on a clean edge */
+:root[data-theme="light"] .hero-media::after{background:linear-gradient(180deg,rgba(15,18,17,.3) 0%,rgba(15,18,17,.12) 32%,rgba(15,18,17,.5) 62%,rgba(15,18,17,.62) 100%),linear-gradient(90deg,rgba(15,18,17,.5) 0%,rgba(15,18,17,0) 60%)}
+:root[data-theme="light"] .hero{background:#0f1211}
+.hero{position:relative;isolation:isolate;overflow:hidden;min-height:min(76svh,780px);display:flex;align-items:center;background:var(--bg);color:rgb(var(--hink))}
+.hero-media{position:absolute;inset:0;z-index:-1}
+.hero-media video{width:100%;height:100%;object-fit:cover;display:block}
+.hero-media::after{content:"";position:absolute;inset:-1px 0;background:linear-gradient(180deg,rgba(var(--hscrim),var(--ha0)) 0%,rgba(var(--hscrim),var(--ha1)) 32%,rgba(var(--hscrim),var(--ha2)) 60%,rgba(var(--hscrim),var(--ha3)) 78%,rgba(var(--hscrim),.97) 92%,var(--bg) 100%),linear-gradient(90deg,rgba(var(--hscrim),var(--ha4)) 0%,rgba(var(--hscrim),0) 60%)}
+.hero .wrap{width:100%;padding-block:64px} /* desktop: the text block sits in the vertical middle of the video (64px top = nav height, matched at the bottom) */
+.hero h1{color:rgb(var(--hink));font-size:clamp(40px,6vw,72px);line-height:1.02;letter-spacing:-.035em;max-width:14ch}
+.hero .lede{color:rgba(var(--hink),.86);font-size:clamp(17px,1.6vw,20px);max-width:52ch}
+.hero .hlinks{margin-top:10px;gap:10px 12px}
+.hero .gbtn{height:44px;padding:0 16px 0 14px;border-color:rgba(var(--hink),.28);background:rgba(var(--hink),.1);color:rgb(var(--hink));-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.hero .gbtn svg{color:rgb(var(--hink))}
+.hero .hlinks a{color:rgb(var(--hink));font-weight:600;text-decoration:underline;text-decoration-color:rgba(var(--hink),.4);text-underline-offset:4px}
+@media (hover:hover) and (pointer:fine){.hero .gbtn:hover{background:rgba(var(--hink),.18);border-color:rgba(var(--hink),.45)}.hero .hlinks a:hover{text-decoration-color:rgb(var(--hink))}}
+/* phones keep their previous hero: height from before, text anchored at the bottom */
+@media (max-width:760px){.hero{min-height:min(52svh,440px);align-items:flex-end}.hero .wrap{padding-block:128px 40px}}
+@media (prefers-reduced-motion:reduce){.hero-media video{display:none}.hero-media{background:url(__HERO_JPG__) center/cover}}
+
+.hero .topnav{position:absolute;inset:0 0 auto;z-index:1;padding-top:env(safe-area-inset-top)}
+.hero .topnav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px;padding-block:0}
+.brand{display:inline-flex;align-items:center;gap:10px;color:rgb(var(--hink));text-decoration:none;font-weight:600;font-size:15px;letter-spacing:-.01em;min-height:44px}
+.brand svg{flex:none}
+.navlinks{display:flex;align-items:center;gap:4px;margin-right:-12px}
+.navlinks button,.navlinks a{text-decoration:none;font:inherit;font-size:14px;font-weight:500;color:rgba(var(--hink),.82);background:none;border:0;height:44px;padding:0 12px;border-radius:6px;cursor:pointer;transition:color .15s ease,transform .12s var(--ease-out)}
+.navlinks button:active{transform:scale(.97)}
+.navlinks button:focus-visible,.navlinks a:focus-visible,.menubtn:focus-visible,.brand:focus-visible{outline:2px solid rgb(var(--hink));outline-offset:2px}
+@media (hover:hover) and (pointer:fine){.navlinks button:hover,.navlinks a:hover{color:rgb(var(--hink))}}
+.hero .hlinks a.hcta{text-decoration:none}
+@media (max-width:760px){.navlinks button{padding:0 10px;font-size:15px}.navlinks{margin-right:-10px;gap:0}.brand{font-size:15px;gap:8px}}
+.brand,.navlinks button{white-space:nowrap}
+
+@media (prefers-reduced-motion:reduce){.navlinks button:active{transform:none}}
+.rb.lg{height:30px;padding:0 11px;font-size:15px;gap:8px;border-radius:6px;justify-self:start;margin:0 0 8px}
+.rb.lg i{width:8px;height:8px}
+/* search footer: two real buttons, same height, even edges */
+.cfoot .linkbtn{margin:0;height:42px;min-height:0;padding:0 16px;border:0;border-radius:8px;background:transparent;color:var(--fg);font-weight:600;display:inline-flex;align-items:center;justify-content:center;transition:transform .12s var(--ease-out),background-color .15s ease}
+.cfoot .linkbtn:active{transform:scale(.97)}
+@media (hover:hover) and (pointer:fine){.cfoot .linkbtn:not(:disabled):hover{background:var(--well)}}
+.cfoot .linkbtn:disabled{color:var(--fg3);opacity:.7}
+.cfoot{padding-inline:16px}
+@media (max-width:760px),(pointer:coarse){.cfoot{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px))}.cfoot .linkbtn,.cfoot .primary{height:44px;min-width:0;max-width:none;width:100%;margin:0;font-size:15px}}
+@media (prefers-reduced-motion:reduce){.cfoot .linkbtn:active{transform:none}}
+.web{display:inline-flex;align-items:flex-start;gap:6px;width:fit-content}
+.web svg{flex:none;margin-top:3px;color:var(--fg3)}
+.shop a.web,.bmshop a.web{text-decoration:none;font-weight:500}
+@media (hover:hover) and (pointer:fine){a.web:hover span{text-decoration:underline;text-underline-offset:3px}}
+.web svg+span+svg{color:currentColor;margin-top:4px}
+.cfoot .linkbtn:not(:disabled):active{background:var(--well)}
+.cfoot .linkbtn:disabled{opacity:1;color:var(--fg3)}
+.navlinks a{display:inline-flex;align-items:center}
+.menubtn{display:none;align-items:center;justify-content:center;width:44px;height:44px;margin-right:-10px;border:0;border-radius:8px;background:none;color:rgb(var(--hink));cursor:pointer;transition:background-color .15s ease,transform .12s var(--ease-out)}
+.menubtn:active{transform:scale(.95)}
+@media (max-width:760px){.navlinks{display:none}.menubtn{display:inline-flex}}
+.ptag{margin-left:auto;align-self:center;display:inline-flex;align-items:center;gap:6px;height:26px;padding:0 9px;border-radius:6px;font-size:var(--t-micro);font-weight:600;line-height:1;white-space:nowrap;background:var(--warn-soft);color:var(--warn-ink);border:1px solid color-mix(in oklab,var(--warn-ink) 22%,transparent)}
+.ptag svg{flex:none;width:12px;height:12px}
+.bmpay{flex-wrap:nowrap}
+.pay>span{white-space:nowrap}
+.pbr{display:none}
+article.c .b{container-type:inline-size}
+@container (max-width:310px){.pbr{display:block;flex-basis:100%;height:0}.pay .ptag{margin:4px 0 2px}}
+.pwarn.pshort,.bmp .pwarn.pshort{margin:0;padding:0;background:none;border-radius:0;font-size:var(--t-meta);font-weight:500;line-height:1.45}
+.pwarn.pshort svg{margin-top:2px}
+.bmlist{font-size:var(--t-ui);margin-top:-4px}
+.menubtn{position:relative;z-index:2}
+.menubtn svg{position:absolute;pointer-events:none;transition:opacity .15s ease,transform .18s var(--ease-out)}
+.menubtn .mi-close{opacity:0;transform:rotate(-45deg) scale(.8)}
+.menubtn[aria-expanded="true"] .mi-open{opacity:0;transform:rotate(45deg) scale(.8)}
+.menubtn[aria-expanded="true"] .mi-close{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.menubtn svg{transition:opacity .12s ease;transform:none!important}}
+/* mobile menu: a full-screen page that replaces the view, like most product sites */
+.navmenu{position:fixed;inset:0;width:100%;height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;background:var(--bg);color:var(--fg);overflow-y:auto;overscroll-behavior:contain;opacity:0;transform:translateY(-6px);transition:opacity .2s var(--ease-out),transform .2s var(--ease-out),overlay .2s allow-discrete,display .2s allow-discrete}
+.navmenu:popover-open{opacity:1;transform:none}
+@starting-style{.navmenu:popover-open{opacity:0;transform:translateY(-6px)}}
+.navmenu::backdrop{background:transparent}
+.nmh{padding-top:env(safe-area-inset-top,0px);border-bottom:1px solid var(--line)}
+.nmh .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;padding-block:0}
+.nmb{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;letter-spacing:-.01em}
+.nmx{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;margin-right:-10px;border:0;border-radius:8px;background:none;color:var(--fg);cursor:pointer;transition:transform .12s var(--ease-out)}
+.nmx:active{transform:scale(.95)}
+.nml{list-style:none;margin:8px 0 0;padding:0}
+.nml li{border-bottom:1px solid var(--line)}
+.nml button,.nml a{display:flex;align-items:center;gap:12px;width:100%;min-height:56px;padding:0;border:0;background:none;font:inherit;font-size:17px;font-weight:500;letter-spacing:-.01em;color:var(--fg);text-decoration:none;text-align:left;cursor:pointer;transition:opacity .12s ease}
+.nml button:active,.nml a:active{opacity:.6}
+.nml svg{flex:none;color:var(--fg3)}
+.nml span{flex:1}
+.nml .nmc{color:var(--fg3)}
+.navmenu :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
+@media (prefers-reduced-motion:reduce){.navmenu,.navmenu:popover-open{transform:none;transition:opacity .15s ease,overlay .15s allow-discrete,display .15s allow-discrete}@starting-style{.navmenu:popover-open{transform:none}}.nmx:active{transform:none}}
+.hero .navmenu .wrap{padding-block:0;display:block}
+.hero .navmenu .nmh .wrap{display:flex}
+/* contact icons sit on the centre of the first line of text, even when an address wraps */
+.maplink,.web{line-height:1.5}
+.maplink svg,.web svg{margin-top:3.5px}
+@supports (margin-top:1lh){.maplink svg,.web svg,.web svg+span+svg{margin-top:calc((1lh - 13px) / 2)}}
+/* close buttons are ghost buttons: no fill until hovered or pressed */
+.dclose{background:transparent;color:var(--fg2)}
+.dclose:active{background:var(--well);color:var(--fg)}
+@media (hover:hover) and (pointer:fine){.dclose:hover{background:var(--well);color:var(--fg)}}
+/* the floating search bar is solid instead of frosted, so scrolling stays smooth in Safari */
+.fab{-webkit-backdrop-filter:none;backdrop-filter:none;background:var(--surface)}
+/* scrolling panels fade out at the bottom while there is more to read, and the fade lifts once you reach the end */
+.bmb::after,.dbody::after,.cbody::after{content:"";position:sticky;bottom:calc(var(--pb,0px) * -1);display:block;height:56px;margin-top:-56px;pointer-events:none;background:linear-gradient(to bottom,transparent,var(--surface) 92%);opacity:0;transition:opacity .2s ease}
+.bmb.has-more::after,.dbody.has-more::after,.cbody.has-more::after{opacity:1}
+/* matching fade at the top once the panel has scrolled: content slides under the header instead of being cut off by it */
+.bmb::before,.dbody::before,.cbody::before{content:"";position:sticky;z-index:3;top:calc(var(--pt,0px) * -1);display:block;height:32px;margin-bottom:-32px;margin-inline:calc(var(--px,0px) * -1);pointer-events:none;background:linear-gradient(to top,transparent,var(--surface) 88%);opacity:0;transition:opacity .2s ease}
+.bmb.has-above::before,.dbody.has-above::before,.cbody.has-above::before{opacity:1}
+/* single search entry: no separate Filters button; the search bar opens the search window, filters included */
+#mfilter,#fab-f,.fab .fsep{display:none!important}
+.fab{padding-left:8px}
+#q{cursor:pointer;caret-color:transparent}
+dialog:focus{outline:none}
+/* shared dim layer behind every window */
+#scrim{position:fixed;inset:0;z-index:40;background:rgba(0,0,0,.58);opacity:0;pointer-events:none;transition:opacity .18s ease}
+#scrim.on{opacity:1;pointer-events:auto}
+dialog{z-index:50}
+@media (prefers-reduced-motion:reduce){#scrim{transition:none}}
+/* floating search bar: rises in with a soft spring-like ease, leaves quicker than it arrives (transform and opacity only, so it stays on the GPU) */
+.fab{transform:translate(-50%,calc(100% + 28px + env(safe-area-inset-bottom,0px)));opacity:0;transition:opacity .2s ease,transform .26s var(--ease-out);will-change:transform,opacity}
+.fab.on{transform:translate(-50%,0);opacity:1;transition:opacity .36s ease,transform .5s var(--ease-drawer)}
+html.locked .fab.on{transform:translate(-50%,calc(100% + 28px + env(safe-area-inset-bottom,0px)));opacity:0;transition:opacity .2s ease,transform .26s var(--ease-out)}
+@media (prefers-reduced-motion:reduce){.fab,.fab.on,html.locked .fab.on{transform:translate(-50%,0);transition:opacity .2s ease}}
+.rb.lg svg{flex:none}
+/* ---- motion system (Emil's standards): enter and exit with strong ease-out, panels with the iOS drawer curve, transform + opacity only ----
+   side panels: slide from the right, 300ms in / 200ms out
+   bottom sheets (phones): slide up, 320ms in / 220ms out
+   centred windows (desktop): fade + 0.97 scale, 200ms in / 150ms out
+   dim layer: fades with the window */
+:root{--ease-drawer:cubic-bezier(.32,.72,0,1)}
+dialog.drawer{transition:transform .3s var(--ease-drawer),display .3s allow-discrete;transform:translateX(100%)}
+dialog.drawer[data-state="open"]{transform:none}
+dialog.drawer[data-state="closing"]{transform:translateX(100%);transition:transform .2s var(--ease-out),display .2s allow-discrete}
+dialog.drawer[data-state="closed"]{transform:translateX(100%);transition:none}
+dialog.bm,dialog.cmd{transition:opacity .2s var(--ease-out),transform .2s var(--ease-out),display .2s allow-discrete;opacity:0;transform:scale(.97)}
+dialog.bm[data-state="open"],dialog.cmd[data-state="open"]{opacity:1;transform:none}
+dialog.bm[data-state="closing"],dialog.cmd[data-state="closing"]{opacity:0;transform:scale(.97);transition:opacity .15s var(--ease-out),transform .15s var(--ease-out),display .15s allow-discrete}
+dialog.bm[data-state="closed"],dialog.cmd[data-state="closed"]{opacity:0;transform:scale(.97);transition:none}
+@media (max-width:760px){
+ dialog.bm{opacity:1;transform:translateY(100%);transition:transform .32s var(--ease-drawer),display .32s allow-discrete}
+ dialog.bm[data-state="open"]{transform:none}
+ dialog.bm[data-state="closing"]{opacity:1;transform:translateY(100%);transition:transform .22s var(--ease-out),display .22s allow-discrete}
+ dialog.bm[data-state="closed"]{opacity:1;transform:translateY(100%);transition:none}
+}
+@media (max-width:600px){
+ dialog.cmd{opacity:1;transform:translateY(100%);transition:transform .32s var(--ease-drawer),display .32s allow-discrete}
+ dialog.cmd[data-state="open"]{transform:none}
+ dialog.cmd[data-state="closing"]{opacity:1;transform:translateY(100%);transition:transform .22s var(--ease-out),display .22s allow-discrete}
+ dialog.cmd[data-state="closed"]{opacity:1;transform:translateY(100%);transition:none}
+}
+dialog.cmd.instant,dialog.cmd.instant[data-state]{transition:none}
+#scrim{transition:opacity .2s var(--ease-out)}
+@media (prefers-reduced-motion:reduce){
+ dialog.drawer,dialog.bm,dialog.cmd,dialog.drawer[data-state],dialog.bm[data-state],dialog.cmd[data-state]{transform:none!important;transition:opacity .15s ease,display .15s allow-discrete}
+ dialog.drawer[data-state="closed"],dialog.drawer[data-state="closing"],dialog.bm[data-state="closed"],dialog.bm[data-state="closing"],dialog.cmd[data-state="closed"],dialog.cmd[data-state="closing"]{opacity:0}
+ dialog.drawer[data-state="open"],dialog.bm[data-state="open"],dialog.cmd[data-state="open"]{opacity:1}
+}
+/* the same light blur behind every window, in every browser (Safari needs the -webkit- form). The blur fades in and out together with the dim;
+   only the layer's opacity animates, the page behind is scroll-locked, and the radius stays small */
+#scrim{background:rgba(0,0,0,.5);will-change:opacity}
+/* blur the page itself, region by region, instead of a full-screen backdrop-filter layer: the still regions are blurred once and
+   cached, and the playing hero video only re-blurs its own layer, so nothing behind a window has to stop */
+.hero,#bar,#status,#g,#dir{transition:filter .2s var(--ease-out)}
+/* only regions that are on screen get blurred: Safari draws a stray black box when a blur filter sits on an element that is scrolled out of view (WebKit bug 314999) */
+html.dim :is(.hero,#bar,#status,#g,#dir).onscr{filter:blur(6px)}
+@media (prefers-reduced-motion:reduce){.hero,#bar,#status,#g,#dir{transition:none}}
+/* the ring under the beam: the pill background shows through the 1px gap around the inner layer */
+.fab{background:var(--line2)}
+/* phones: a bigger, easier thumb target */
+@media (max-width:600px){.fab{height:56px;width:min(420px,calc(100vw - 32px));padding-left:10px;font-size:16px}.fab .fmain{height:48px;gap:12px}.fab .fmain svg{width:20px;height:20px}}
+/* the fade pins to the real bottom edge, not to the panel's inner padding: --pb mirrors each panel's bottom padding */
+.dbody{--pb:calc(40px + env(safe-area-inset-bottom,0px));--pt:4px;--px:24px}
+.cbody{--pb:18px;--pt:6px;--px:18px}
+@media (max-width:600px){.dbody{--pb:calc(32px + env(safe-area-inset-bottom,0px));--pt:2px;--px:18px}.cbody{--pb:16px;--pt:4px;--px:16px}}
+@media (min-width:761px) and (pointer:fine){.cfoot .linkbtn,.cfoot .primary{height:38px;font-size:14px}}
+/* photos: swipe across a photo to change color; tap the photo in the details to see it larger */
+.ph,.bmph,.c .more{touch-action:pan-y}
+.bmph img{cursor:zoom-in}
+.zoomv{position:fixed;inset:0;width:100vw;height:100dvh;max-width:none;max-height:none;margin:0;padding:max(56px,env(safe-area-inset-top,0px)) 16px calc(16px + env(safe-area-inset-bottom,0px));border:0;background:#070a09;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;overflow:hidden;z-index:60}
+.zoomv:not([open]){display:none}
+.zfig{margin:0;width:min(1100px,100%);flex:1 1 auto;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;touch-action:pan-y pinch-zoom}
+.zfig img{display:block;max-width:100%;max-height:100%;min-height:0;object-fit:contain;border-radius:12px;background:#fff;box-shadow:0 24px 64px rgba(0,0,0,.45)}
+.zfig figcaption{font-size:var(--t-ui);color:rgba(255,255,255,.8)}
+.zx{position:absolute;top:max(10px,env(safe-area-inset-top,0px));right:10px;width:44px;height:44px;display:grid;place-items:center;border:0;border-radius:999px;background:rgba(255,255,255,.12);color:#fff;cursor:pointer;transition:background-color .15s ease,transform .16s var(--ease-out)}
+.zx:active{transform:scale(.95)}
+@media (hover:hover) and (pointer:fine){.zx:hover{background:rgba(255,255,255,.2)}}
+.zsws:empty{display:none}
+dialog.zoomv{transition:opacity .2s var(--ease-out),transform .2s var(--ease-out),display .2s allow-discrete;opacity:0;transform:scale(.97)}
+dialog.zoomv[data-state="open"]{opacity:1;transform:none}
+dialog.zoomv[data-state="closing"]{opacity:0;transform:scale(.97);transition:opacity .15s var(--ease-out),transform .15s var(--ease-out),display .15s allow-discrete}
+dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none}
+@media (prefers-reduced-motion:reduce){dialog.zoomv,dialog.zoomv[data-state]{transform:none!important}}
+.zoomv{justify-content:center}
+.zfig{flex:0 0 auto;width:100%;max-width:1100px}
+.zfig img{width:min(100%,1100px,calc((100dvh - 190px) * 4 / 3));aspect-ratio:4/3;height:auto;max-height:none;object-fit:contain}
+@media (max-width:760px){.zfig img{width:min(100%,calc((100dvh - 210px) * 4 / 3))}}
+/* sort menu: a custom list in the site's own style (native select lists can't be styled). The hidden select stays the source of truth */
+.sortwrap{position:relative;display:inline-flex}
+.sortbtn{display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 10px 0 12px;font:inherit;font-size:var(--t-ui);color:var(--fg);background:var(--surface);border:1px solid var(--line2);border-radius:6px;cursor:pointer;transition:border-color .15s ease,transform .16s var(--ease-out)}
+.sortbtn .slab{font-size:var(--t-micro);font-weight:500;color:var(--fg3)}
+.sortbtn #sortval{font-weight:500;display:inline-block;text-align:left}
+.sortbtn .schev{color:var(--fg3);transition:transform .2s var(--ease-out)}
+.sortbtn[aria-expanded="true"]{border-color:var(--fg3)}
+.sortbtn[aria-expanded="true"] .schev{transform:rotate(180deg)}
+.sortbtn:active{transform:scale(.97)}
+@media (hover:hover) and (pointer:fine){.sortbtn:hover{border-color:var(--fg3)}}
+@media (pointer:coarse){.sortbtn{height:40px}}
+.sortmenu{position:fixed;inset:auto;margin:0;min-width:0;box-sizing:border-box;padding:4px;border:1px solid var(--line2);border-radius:10px;background:var(--surface);color:var(--fg);box-shadow:0 12px 32px rgba(0,0,0,.35),0 2px 6px rgba(0,0,0,.2);transform-origin:top center;opacity:0;transform:translateY(-4px);transition:opacity .15s var(--ease-out),transform .15s var(--ease-out),overlay .15s allow-discrete,display .15s allow-discrete}
+.sortmenu:popover-open{opacity:1;transform:none}
+@starting-style{.sortmenu:popover-open{opacity:0;transform:translateY(-4px)}}
+.sopt{display:flex;align-items:center;gap:10px;width:100%;min-height:36px;padding:0 12px;border:0;border-radius:6px;background:none;font:inherit;font-size:var(--t-ui);color:var(--fg);text-align:left;cursor:pointer;transition:background-color .12s ease}
+.sopt[aria-selected="true"]{background:var(--line);font-weight:600}
+.sopt:focus-visible{outline:none;background:var(--well)}
+.sopt:active{background:var(--well)}
+@media (hover:hover) and (pointer:fine){.sopt:hover{background:var(--well)}}
+@media (pointer:coarse){.sopt{min-height:44px;font-size:16px}}
+@media (prefers-reduced-motion:reduce){.sortmenu,.sortmenu:popover-open{transform:none}.sortbtn .schev{transition:none}}
+/* larger photo view: arrows step through the colors; the selected dot gets a clear white ring */
+.zstage{position:relative;display:flex;justify-content:center}
+.zarr{position:absolute;top:50%;width:44px;height:44px;margin-top:-22px;display:grid;place-items:center;border:0;border-radius:999px;background:rgba(10,14,12,.62);color:#fff;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.3);transition:background-color .15s ease,transform .16s var(--ease-out)}
+.zarr[hidden]{display:none}
+.zprev{left:12px}.znext{right:12px}
+.zarr:active{transform:scale(.94)}
+@media (hover:hover) and (pointer:fine){.zarr:hover{background:rgba(10,14,12,.82)}}
+.zarr:focus-visible{outline:2px solid #fff;outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.zarr:active{transform:none}}
+.zstage{width:100%}
+/* in the larger photo, the color dots sit on the photo, centered along its bottom edge, same size as everywhere else */
+/* color dots sit under the bike name: compact, with a white ring on the selected one so it reads on the dark background */
+.zsws{display:flex;flex-wrap:wrap;justify-content:center;gap:2px;margin-top:-6px}
+.zsws .sw{width:22px;height:22px}
+.zsws .sw i{width:12px;height:12px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.3)}
+.zsws .sw[aria-pressed="true"] i{box-shadow:0 0 0 2px #070a09,0 0 0 3px #fff}
+/* the stage is exactly the photo's size, so the arrows and dots sit on the photo */
+.zstage{width:min(100%,1100px,calc((100dvh - 190px) * 4 / 3));margin-inline:auto}
+@media (max-width:760px){.zstage{width:min(100%,calc((100dvh - 210px) * 4 / 3))}}
+.zstage img{width:100%!important}
+/* arrow buttons on the photo: frosted, a little lighter than before (small blur, cheap to draw) */
+.zarr{background:rgba(52,60,56,.42);-webkit-backdrop-filter:blur(10px) saturate(1.2);backdrop-filter:blur(10px) saturate(1.2);box-shadow:0 2px 10px rgba(0,0,0,.18),inset 0 0 0 1px rgba(255,255,255,.14)}
+@media (hover:hover) and (pointer:fine){.zarr:hover{background:rgba(52,60,56,.6)}}
+/* light theme: the photo view sits on the light page color instead of near-black */
+:root[data-theme="light"] .zoomv{background:var(--bg);color:var(--fg)}
+:root[data-theme="light"] .zfig figcaption{color:var(--fg2)}
+:root[data-theme="light"] .zfig img{box-shadow:0 1px 2px rgba(18,22,20,.06),0 12px 32px rgba(18,22,20,.1);outline:1px solid var(--line);outline-offset:-1px}
+:root[data-theme="light"] .zx{background:rgba(18,22,20,.06);color:var(--fg)}
+:root[data-theme="light"] .zarr{background:rgba(255,255,255,.62);color:var(--fg);box-shadow:0 2px 10px rgba(18,22,20,.12),inset 0 0 0 1px rgba(18,22,20,.08)}
+:root[data-theme="light"] .zarr:focus-visible{outline-color:var(--fg)}
+:root[data-theme="light"] .zsws .sw i{box-shadow:inset 0 0 0 1px rgba(0,0,0,.2)}
+:root[data-theme="light"] .zsws .sw[aria-pressed="true"] i{box-shadow:inset 0 0 0 1px rgba(0,0,0,.2),0 0 0 2px var(--bg),0 0 0 3.5px var(--fg)}
+@media (hover:hover) and (pointer:fine){:root[data-theme="light"] .zx:hover{background:rgba(18,22,20,.1)}:root[data-theme="light"] .zarr:hover{background:rgba(255,255,255,.82)}}
+/* centred windows are centred on the whole screen: the page keeps a scrollbar gutter (so nothing jumps when a window opens),
+   and --sbw extends their box over it */
+@media (min-width:761px){dialog.cmd,dialog.bm{right:calc(-1 * var(--sbw,0px))}}
+#scrim{right:calc(-1 * var(--sbw,0px))}
+/* desktop search window: centred on the screen with a fixed height, so it never jumps while results change */
+@media (min-width:601px){dialog.cmd{inset:0 calc(-1 * var(--sbw,0px)) 0 0;margin:auto;height:min(720px,calc(100dvh - 96px));max-height:none}}
+/* desktop hero: title, description and a larger search centered in the video; shading is centered too (no side darkening). Phones keep their left-aligned layout */
+@media (min-width:761px){
+ /* one column that scales as a unit: everything is sized from the title's font size (--hfs), so title, description and search shrink together */
+ .hero>.wrap{--hfs:clamp(40px,6vw,72px);--hcol:calc(var(--hfs) * 8.75);display:flex;flex-direction:column;align-items:center;text-align:center}
+ .hero h1{max-width:none}
+ .hero .lede{max-width:calc(var(--hcol) * 1.12);margin-inline:auto;text-wrap:balance;font-size:clamp(16px,calc(var(--hfs) * .27),19px)}
+ /* the search matches the title's line width (the title is ~8.75x its font size wide), so the block reads as one column */
+ .hero .hbar{width:100%;max-width:var(--hcol);margin-inline:auto;margin-top:calc(var(--hfs) * .22)}
+ .hero .hbar .search{max-width:none;width:100%}
+ .hero .hbar input[type=search]{height:clamp(44px,calc(var(--hfs) * .72),52px);font-size:clamp(15px,calc(var(--hfs) * .22),16px);padding-left:46px;border-radius:10px}
+ .hero .hbar .search svg{left:16px;width:18px;height:18px}
+ .hero-media::after{background:radial-gradient(ellipse 62% 58% at 50% 50%,rgba(var(--hscrim),.42) 0%,rgba(var(--hscrim),0) 100%),linear-gradient(180deg,rgba(var(--hscrim),var(--ha0)) 0%,rgba(var(--hscrim),var(--ha1)) 32%,rgba(var(--hscrim),var(--ha2)) 60%,rgba(var(--hscrim),var(--ha3)) 78%,rgba(var(--hscrim),.97) 92%,var(--bg) 100%)}
+ :root[data-theme="light"] .hero-media::after{background:radial-gradient(ellipse 62% 58% at 50% 50%,rgba(15,18,17,.42) 0%,rgba(15,18,17,0) 100%),linear-gradient(180deg,rgba(15,18,17,.3) 0%,rgba(15,18,17,.12) 32%,rgba(15,18,17,.5) 62%,rgba(15,18,17,.62) 100%)}
+}
+/* hero search: a soft shadow lifts it off the video; the focus ring is layered on top so it still shows */
+.hero .hbar input[type=search]{border-color:rgba(255,255,255,.22);box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 1px 3px rgba(0,0,0,.2),0 10px 28px -6px rgba(0,0,0,.4)}
+/* light mode: the bar is white, so its edge is a crisp hairline instead */
+:root[data-theme="light"] .hero .hbar input[type=search]{border-color:rgba(255,255,255,.9);box-shadow:0 0 0 1px rgba(0,0,0,.06),0 1px 3px rgba(0,0,0,.2),0 10px 28px -6px rgba(0,0,0,.4)}
+.hero .hbar input[type=search]:focus-visible{box-shadow:0 0 0 3px var(--accent-soft),0 1px 3px rgba(0,0,0,.2),0 10px 28px -6px rgba(0,0,0,.4)}
+/* hero: the list date sits as a small, quiet line under the search (the column already has a 12px gap; 2px more makes 14px) */
+.hero .hupd{margin-top:2px;font-size:var(--t-meta);color:rgba(var(--hink),.7);letter-spacing:.01em}
+/* hero search: a very light frost. The field stays mostly solid (its normal colours and text), with just enough
+   see-through and blur that the video softly shows behind it. Blur covers only this small field, so it stays cheap */
+.hero .hbar input[type=search]{background-color:rgba(23,27,25,.74);-webkit-backdrop-filter:blur(14px) saturate(1.3);backdrop-filter:blur(14px) saturate(1.3)}
+:root[data-theme="light"] .hero .hbar input[type=search]{background-color:rgba(255,255,255,.9)}
+.hero .hbar .search svg{z-index:1}
+/* hero search text: readable at rest, brighter on hover (placeholder and icon move together) */
+.hero .hbar input[type=search]::placeholder{color:rgba(255,255,255,.74);transition:color .15s ease}
+.hero .hbar .search svg{color:rgba(255,255,255,.74);transition:color .15s ease}
+@media (hover:hover) and (pointer:fine){.hero .hbar .search:hover input[type=search]::placeholder,.hero .hbar .search:hover svg{color:rgba(255,255,255,.95)}}
+:root[data-theme="light"] .hero .hbar input[type=search]::placeholder,:root[data-theme="light"] .hero .hbar .search svg{color:#4d5651}
+@media (hover:hover) and (pointer:fine){:root[data-theme="light"] .hero .hbar .search:hover input[type=search]::placeholder,:root[data-theme="light"] .hero .hbar .search:hover svg{color:#121614}}
+/* hero search border beam: the same arc of light as the floating search bar.
+   A ring-shaped mask (border width only) sits on top of the field; inside it an oversized conic gradient just rotates,
+   which the GPU compositor runs without repainting. It sits above the field, so the frosted blur never samples it */
+.hero .hbar .search{position:relative}
+.hero .sbeam{position:absolute;inset:0;border-radius:10px;padding:1px;overflow:hidden;pointer-events:none;z-index:2;
+ -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0)}
+/* phones: the hero search is a touch larger (50px, rounder, bigger icon) so it holds its own under the title */
+@media (max-width:760px){
+ .hero .hbar input[type=search]{height:50px;padding-left:42px;border-radius:8px}
+ .hero .hbar .search svg{left:14px;width:18px;height:18px}
+ .hero .sbeam{border-radius:8px}
+}
+@media (prefers-reduced-motion:reduce){.hero .sbeam{display:none}}
+/* border beam: a soft light that travels the edge at one constant speed (same px/second on every bar).
+   It moves with transform only (Web Animations, run by the compositor); the ring shape hides everything but the 1px edge */
+.bdot{position:absolute;left:0;top:0;width:150px;height:34px;margin:-17px 0 0 -75px;border-radius:50%;pointer-events:none;
+ background:radial-gradient(closest-side,#effcf5 0%,#bfeeda 18%,color-mix(in oklab,var(--accent) 85%,transparent) 45%,transparent 100%);will-change:transform}
+.fab .bdot{z-index:-2}
+@media (prefers-reduced-motion:reduce){.bdot{display:none}}
+</style>
+
+<a class="skip" href="#g">Skip to the bikes</a>
+<header class="hero" id="top"><nav class="topnav" aria-label="Site"><div class="wrap"><a class="brand" href="#top"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5.5" cy="17" r="3.5"/><circle cx="18.5" cy="17" r="3.5"/><path d="M5.5 17 9 9h6l3.5 8M12 17l3-8M8 6h3"/></svg><span>Ava Bike Finder</span></a><div class="navr"><div class="navlinks"><button type="button" data-open="guide">E-bike guide</button><button type="button" data-open="rebate">Rebate info</button><a href="#dir">Browse shops</a></div><button type="button" class="themebtn" id="themebtn" aria-label="Switch to light mode"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><mask id="tmask"><rect width="24" height="24" fill="#fff"/><circle class="tm-cut" cx="17" cy="7" r="7" fill="#000"/></mask><circle class="tm-core" cx="12" cy="12" r="8.5" fill="currentColor" mask="url(#tmask)"/><g class="tm-rays" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 1.5v2M12 20.5v2M1.5 12h2M20.5 12h2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M4.6 19.4 6 18M18 6l1.4-1.4"/></g></svg></button><button type="button" class="menubtn" popovertarget="navmenu" aria-label="Menu" aria-expanded="false" aria-controls="navmenu"><svg class="mi-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="mi-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div></div></nav><div id="navmenu" class="navmenu" popover aria-label="Menu"><div class="nmh"><div class="wrap"><span class="nmb"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5.5" cy="17" r="3.5"/><circle cx="18.5" cy="17" r="3.5"/><path d="M5.5 17 9 9h6l3.5 8M12 17l3-8M8 6h3"/></svg><span>Ava Bike Finder</span></span><button type="button" class="nmx" popovertarget="navmenu" popovertargetaction="hide" aria-label="Close menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div></div><div class="wrap"><ul class="nml"><li><button type="button" data-open="guide"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></svg><span>E-bike guide</span><svg class="nmc" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></button></li><li><button type="button" data-open="rebate"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.6 2.6A2 2 0 0 0 11.2 2H4a2 2 0 0 0-2 2v7.2a2 2 0 0 0 .6 1.4l8.7 8.7a2.4 2.4 0 0 0 3.4 0l6.6-6.6a2.4 2.4 0 0 0 0-3.4z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg><span>Rebate info</span><svg class="nmc" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></button></li><li><a href="#dir"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9 4.5 4h15L21 9"/><path d="M3 9h18v2a3 3 0 0 1-6 0 3 3 0 0 1-6 0 3 3 0 0 1-6 0z"/><path d="M5 13v7h14v-7"/></svg><span>Browse shops</span><svg class="nmc" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></a></li></ul></div></div><div class="hero-media" aria-hidden="true"><video id="herov" src="__HERO_MP4__" poster="__HERO_JPG__" autoplay muted loop playsinline preload="auto"></video></div><div class="wrap">
+ <h1>Find your e&#8209;bike with the Ava rebate</h1>
+ <p class="lede">Browse every e-bike on Ava's list and find the one that fits the way you ride.</p>
+ <div class="bar hbar" id="bar">
+ <button type="button" class="mfilter" id="mfilter" aria-haspopup="dialog" aria-controls="cmd"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>Filters<span class="mcount" id="mfilter-n" hidden></span></button>
+ <div class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" id="q" placeholder="Search bikes or shops" aria-label="Search bikes or shops"><span class="sbeam" aria-hidden="true"><span class="bdot"></span></span></div>
+ </div>
+ <p class="hupd">List updated October&nbsp;8, 2026</p>
+</div></header>
+
+
+
+<div class="wrap status" id="status">
+ <div class="count"><span id="count" aria-live="polite"></span></div>
+ <div class="achips" id="achips" role="group" aria-label="Active filters" hidden></div>
+ <div class="view">
+  <div class="sortwrap"><select id="sort" class="vh" tabindex="-1" aria-hidden="true"><option value="pay">Lowest price</option><option value="payd">Highest price</option><option value="spd">Fastest</option><option value="tq">Best for hills</option><option value="load">Most capacity</option><option value="range">Longest range</option><option value="name">Brand A–Z</option></select><button type="button" id="sortbtn" class="sortbtn" aria-haspopup="listbox" aria-expanded="false" aria-controls="sortmenu" popovertarget="sortmenu"><span class="slab">Sort</span><span id="sortval">Lowest price</span><svg class="schev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button><div id="sortmenu" class="sortmenu" popover role="listbox" aria-label="Sort bikes"><button type="button" role="option" class="sopt" data-v="pay" aria-selected="false" tabindex="-1"><span>Lowest price</span></button><button type="button" role="option" class="sopt" data-v="payd" aria-selected="false" tabindex="-1"><span>Highest price</span></button><button type="button" role="option" class="sopt" data-v="spd" aria-selected="false" tabindex="-1"><span>Fastest</span></button><button type="button" role="option" class="sopt" data-v="tq" aria-selected="false" tabindex="-1"><span>Best for hills</span></button><button type="button" role="option" class="sopt" data-v="load" aria-selected="false" tabindex="-1"><span>Most capacity</span></button><button type="button" role="option" class="sopt" data-v="range" aria-selected="false" tabindex="-1"><span>Longest range</span></button><button type="button" role="option" class="sopt" data-v="name" aria-selected="false" tabindex="-1"><span>Brand A–Z</span></button></div></div>
+ </div>
+</div>
+<main class="wrap grid" id="g"></main>
+
+
+
+<dialog id="rebate" class="drawer" aria-labelledby="rebate-h">
+ <div class="dhead"><div><h2 id="rebate-h">How the rebate works</h2></div>
+ <button type="button" class="dclose" aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+ <div class="dbody">
+  <h3>How much you get</h3>
+  <div class="g3">
+   <div class="gc"><span class="rb lg"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.6 2.6A2 2 0 0 0 11.2 2H4a2 2 0 0 0-2 2v7.2a2 2 0 0 0 .6 1.4l8.7 8.7a2.4 2.4 0 0 0 3.4 0l6.6-6.6a2.4 2.4 0 0 0 0-3.4z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg>$900 off</span><b>Cargo and adaptive e-bikes</b><p>Bikes built to carry loads or passengers, and trikes, recumbents and other bikes for riders with mobility needs.</p></div>
+   <div class="gc"><span class="rb lg s400"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.6 2.6A2 2 0 0 0 11.2 2H4a2 2 0 0 0-2 2v7.2a2 2 0 0 0 .6 1.4l8.7 8.7a2.4 2.4 0 0 0 3.4 0l6.6-6.6a2.4 2.4 0 0 0 0-3.4z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg>$400 off</span><b>Standard e-bikes</b><p>City and commuter e-bikes.</p></div>
+  </div>
+  <h3>What "you pay" means</h3>
+  <p class="gp">Each card shows the bike's price minus your rebate. Sales tax is added on top, because the rebate can't be used for tax. It can't be used for shipping either.</p>
+  <h3>How to use it</h3>
+  <ul class="gl">
+   <li>The rebate only works <b>in person</b> at a participating shop. The shops are listed on each card and at the bottom of this page.</li>
+   <li>Call the shop first to check that they have the bike in stock.</li>
+   <li>The rebate usually won't cover the full price, so plan for the rest.</li>
+  </ul>
+ </div>
+</dialog>
+<dialog id="guide" class="drawer" aria-labelledby="guide-h">
+ <div class="dhead"><div><h2 id="guide-h">How to choose an e-bike</h2><p>A quick read based on <a href="https://avaenergy.org/insight/how-to-choose-the-best-e-bike-for-you/" target="_blank" rel="noopener">Ava's buying guide</a>.</p></div>
+ <button type="button" class="dclose" aria-label="Close guide"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+ <div class="dbody">
+ 
+
+ <h3>The three classes</h3>
+ <p class="gsub">Every e-bike sold in the US is one of three classes. The class is on each card.</p>
+ <div class="g3">
+  <div class="gc"><span class="gk">Class 1</span><b>Pedal assist, up to 20 mph</b><p>The motor only helps while you pedal. Feels like a regular bike with a boost. The easiest place to start.</p></div>
+  <div class="gc"><span class="gk">Class 2</span><b>Pedal assist plus throttle, up to 20 mph</b><p>Adds a throttle, so you can get moving without pedaling. Handy from a stop or with a heavy load.</p></div>
+  <div class="gc"><span class="gk">Class 3</span><b>Pedal assist, up to 28 mph</b><p>The fastest legal class, with a speedometer. Good for longer trips. In California it can't have a throttle, and it isn't allowed on bike-only off-road trails.</p></div>
+ </div>
+
+ <h3>The three types on this list</h3>
+ <div class="g3">
+  <div class="gc"><span class="gk">Standard · $400 off</span><b>City and commuter</b><p>Lighter and easy to handle. Upright and comfortable for commuting and errands. A great choice unless you need to haul a lot.</p></div>
+  <div class="gc"><span class="gk">Cargo · $900 off</span><b>Built to carry</b><p>Room in front or back for kids, groceries or tools, with stronger motors. Some have three wheels. Bigger, heavier and less nimble.</p></div>
+  <div class="gc"><span class="gk">Adaptive · $900 off</span><b>For mobility needs</b><p>Trikes, recumbents, tandems and options for wheelchair users. Wider, so they take more room on the road and in storage.</p></div>
+ </div>
+
+ <h3>What's on the spec sheet</h3>
+ <dl class="gdl">
+  <div><dt>Motor</dt><dd><b>Hub motors</b> sit in the wheel and feel like a tailwind. <b>Mid-drive motors</b> sit at the pedals and feel more natural, especially on hills. <b>Torque</b> (Nm) is pulling power: more torque helps with hills and heavy loads.</dd></div>
+  <div><dt>Battery and range</dt><dd>Capacity is in watt-hours (Wh). More Wh means more miles per charge, but a heavier bike. A full charge takes about 1 to 5 hours. Use the charger that came with the bike, plugged straight into the wall, and don't leave it charging for days.</dd></div>
+  <div><dt>The display</dt><dd>The handlebar screen shows speed and battery, sets the assist level, and runs the throttle if the bike has one.</dd></div>
+  <div><dt>Max load</dt><dd>The most weight the bike is rated to carry, including you. Leave room for cargo or a passenger on top of your own weight.</dd></div>
+ </dl>
+
+ <div class="g2">
+  <div><h3>Ask yourself first</h3><ul class="gl">
+   <li>Am I replacing a daily car trip?</li>
+   <li>Will I take it on a bus or train?</li>
+   <li>How many miles a day or week will I ride?</li>
+   <li>What do I need to carry: a laptop, kids, groceries, tools?</li>
+   <li>Who will handle maintenance?</li>
+   <li>Would a low step-through or a third wheel make riding easier?</li>
+  </ul></div>
+  <div><h3>Then compare on</h3><ul class="gl">
+   <li><b>Power:</b> enough for your hills and loads, and right for everyone who will ride it.</li>
+   <li><b>Fit:</b> frame size, seat and handlebars. Test ride if you can.</li>
+   <li><b>Weight:</b> pick one you can lift and move yourself.</li>
+   <li><b>Range:</b> enough battery for your normal day with room to spare.</li>
+   <li><b>Accessories:</b> racks, fenders, lights, phone mount.</li>
+   <li><b>Service:</b> a local shop you trust for repairs and parts.</li>
+  </ul></div>
+ </div>
+</div>
+</dialog>
+<dialog id="zoom" class="zoomv" aria-label="Bike photo"><button type="button" class="zx" aria-label="Close photo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button><figure class="zfig"><div class="zstage"><img id="zoom-img" alt=""><button type="button" class="zarr zprev" aria-label="Previous color"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg></button><button type="button" class="zarr znext" aria-label="Next color"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></button></div><figcaption id="zoom-cap"></figcaption><div class="zsws" id="zoom-sws" role="group" aria-label="Colors"></div></figure></dialog>
+<dialog id="bike" class="bm" aria-labelledby="bike-h">
+ <div class="bmh"><div><span class="br" id="bike-br" aria-hidden="true"></span><h2 id="bike-h"></h2></div>
+ <button type="button" class="dclose" aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+ <div class="bmb" id="bike-body"></div>
+</dialog>
+<dialog id="filters" class="fp" aria-labelledby="fp-h">
+ <div class="fph"><h2 id="fp-h">Filters</h2><button type="button" class="dclose" aria-label="Close filters"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+ <div class="fpb" id="fp-body"></div>
+ <div class="fpf"><button type="button" class="linkbtn" id="fp-clear">Clear all</button><button type="button" class="primary" id="fp-show">Show bikes</button><span class="vh" aria-live="polite" id="fp-live"></span></div>
+</dialog>
+<dialog id="cmd" class="cmd" aria-label="Search bikes">
+ <div class="chead"><span class="cicon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></span><input type="search" id="cq" placeholder="Search bikes, brands or shops" aria-label="Search bikes, brands or shops" autocomplete="off" enterkeyhint="search"><button type="button" class="dclose" id="cmd-x" aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+ <div class="cbody">
+  <section class="cres" aria-live="polite"><h3 id="cmd-reshead">Top matches</h3><div id="cmd-res"></div></section>
+  <section class="cflt" id="cmd-flt" aria-labelledby="cmd-fh"><h3 id="cmd-fh">Filters</h3><div id="cmd-fbody"></div></section>
+ </div>
+ <div class="cfoot"><button type="button" class="linkbtn" id="cmd-clear">Clear all</button><button type="button" class="primary" id="cmd-show">Show bikes</button></div>
+</dialog>
+<div class="fab" id="fab" inert><span class="bdot" aria-hidden="true"></span><button type="button" class="ffil" id="fab-f" aria-haspopup="dialog" aria-controls="filters" aria-label="Filters"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg><span class="fnum" id="fab-n" hidden></span></button><span class="fsep" aria-hidden="true"></span><button type="button" class="fmain" id="fab-s" aria-label="Search bikes"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span id="fab-q">Search bikes</span><span class="fcount" id="fab-count"></span></button></div>
+<section class="wrap" id="dir"><h2>Where to buy</h2><p>Every participating shop. Call ahead to check stock; the rebate only works in person.</p><div class="dirgrid" id="dirgrid"></div></section>
+
+<script>
+const B=__BIKES__;
+const S=__SHOPS__;
+const CLASSX={"1":"Class 1: pedal assist only, up to 20 mph.","2":"Class 2: pedal assist plus a throttle, up to 20 mph.","3":"Class 3: pedal assist up to 28 mph. No throttle in California."};
+const TYPEX={Standard:"Standard: a city or commuter e-bike. Lighter and easy to handle.",Cargo:"Cargo: built to carry heavy loads or passengers.",Adaptive:"Adaptive: for riders with injuries or mobility needs, like trikes and recumbents."};
+const TIERS={'$':[0,1500],'$$':[1501,3000],'$$$':[3001,null]};
+const money=n=>'$'+Math.round(n).toLocaleString('en-US');
+const tierText=t=>{const r=TIERS[t];if(!r)return null;return r[0]===0?'under '+money(r[1]):r[1]?money(r[0])+'–'+money(r[1]):'over '+money(r[0]-1)};
+const CHEX={Black:'#1d1f1e',White:'#f4f4f2',Gray:'#8a8f8c',Silver:'#c4c8c6',Blue:'#2f63c4',Green:'#3f8a4f',Teal:'#1f8f8a',Red:'#c8352e',Orange:'#e2742a',Yellow:'#e9c23b',Brown:'#7b5636',Tan:'#c9ad84',Pink:'#e48aa8',Purple:'#7a4fb0'};
+const CORD=Object.keys(CHEX);
+const PICKS={"Lectric|XP 4":{tag:"Top pick",note:"Our pick is the stronger XP4 750: $1,299, you pay $399, at Niles Bicycles.",head:"Get the XP4 750",sub:"The stronger version. $1,299, you pay $399 at Niles Bicycles."},"Velotric|Fold 1 & Fold 1 Plus":{tag:"Runner-up",note:"Get the Fold 1 Plus: $1,499 at Electric Bike Center.",head:"Get the Fold 1 Plus",sub:"$1,499 at Electric Bike Center."}};
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const STAR='<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg>';
+const INFO='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 7.5h.01"/></svg>';
+const mapUrl=s=>'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent([s.name,s.address,s.city,'CA'].filter(Boolean).join(', '));
+const telUrl=p=>'tel:'+String(p).replace(/[^0-9+]/g,'');
+const PIN='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>';
+const GLOBE='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18z"/></svg>',PHONE='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>';
+const MAIL='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>';
+/* email a shop with the subject and message already written; about one bike from its details, or a general question from the shop list */
+const mailUrl=(s,b)=>{const subj=b?`Question about the ${b.name} (Ava e-bike rebate)`:'Question about the Ava e-bike rebate';
+ const body=b?`Hi ${s.name},\n\nI'm interested in the ${b.name} and plan to use my Ava Community Energy e-bike rebate. Could you let me know:\n\n- Do you have it in stock, and in which colors and sizes?\n- What is the current price?\n- Can I come in for a test ride?\n\nThank you!\n`
+  :`Hi ${s.name},\n\nI'm shopping for an e-bike and plan to use my Ava Community Energy e-bike rebate. Which rebate-eligible bikes do you have in stock right now?\n\nThank you!\n`;
+ return `mailto:${s.email}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(body.replace(/\n/g,'\r\n'))}`};
+const shopLines=(s,b)=>`${s.address||s.city?`<a class="maplink" href="${mapUrl(s)}" target="_blank" rel="noopener">${PIN}<span>${esc([s.address,s.city].filter(Boolean).join(', '))}</span></a>`:''}${s.phone?`<a class="maplink tel" href="${telUrl(s.phone)}">${PHONE}<span>${esc(s.phone)}</span></a>`:''}${s.email?`<a class="maplink mail" href="${mailUrl(s,b)}">${MAIL}<span>${esc(s.email)}</span></a>`:''}`;
+const ARROW='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>';
+const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
+const MOBILE=matchMedia('(max-width: 760px)');
+
+/* data prep */
+B.forEach((b,i)=>{
+ b.i=i;b.reb=b.type==='Standard'?400:900;b.you=b.price!=null?Math.max(0,b.price-b.reb):null;
+ b.mn=String(b.model||'').replace(/\s*\(All[^)]*\)/i,'').replace(/\s+/g,' ').trim();
+ b.name=(b.brand+' '+b.mn).trim();
+ b.cities=[...new Set((b.shops||[]).map(k=>S[k]&&S[k].city).filter(Boolean))];
+ const seenF=new Set();
+ b.cv=(b.cv||[]).filter(c=>CHEX[c.f]);
+ b.cs=b.cv.map(c=>c.f);
+ b.hay=[b.brand,b.model,b.type,'class '+b.cls,...(b.shops||[]).flatMap(k=>S[k]?[S[k].name,S[k].city]:[k])].join(' ').toLowerCase();
+});
+const usedC=CORD.filter(c=>B.some(b=>b.cs.includes(c)));
+const cities=[...new Set(Object.values(S).map(s=>s.city).filter(Boolean))].sort();
+const ACT=new Map();
+/* filter state: one object, read by everything */
+const PV=[];for(let v=0;v<=3000;v+=100)PV.push(v);PV.push(3500,4000,4500,5000,5500,6000,7000,8000,10000,Infinity);
+const PTOP=PV.length-1;
+const F0={q:'',type:'',payMin:0,payMax:Infinity,spd:'',color:'',city:'',fold:false};
+const F={...F0,sort:'pay'};
+const payOn=f=>f.payMin>0||f.payMax!==Infinity;
+const FACET={
+ type:{opts:[['','All types'],['Standard','Standard','$400 off'],['Cargo','Cargo','$900 off'],['Adaptive','Adaptive','$900 off']],test:(b,v)=>b.type===v},
+ spd:{opts:[['','Any speed'],['le20','Up to 20 mph'],['28','28 mph or faster']],short:{le20:'Up to 20 mph','28':'28+ mph'},test:(b,v)=>b.spd!=null&&(v==='le20'?b.spd<=20:b.spd>=28)},
+ city:{opts:[['','Any city']].concat(cities.map(c=>[c,c])),test:(b,v)=>b.cities.includes(v)},
+ color:{test:(b,v)=>b.cs.includes(v)}};
+
+/* cards: built once, then filtered and reordered */
+const stat=(l,v,u)=>`<div><dt>${l}</dt>${v==null||v===''?'<dd class="na">Not listed</dd>':`<dd>${esc(v)}<small>${u}</small></dd>`}</div>`;
+function cardHTML(b){
+ const pk=PICKS[b.brand+'|'+b.model];
+ const tr=tierText(b.tier);
+ const price=b.price!=null
+  ?`<div class="price"><div class="pay"><strong>${money(b.you)}</strong><span>you pay</span></div><div class="list"><s>${money(b.price)}</s> minus ${money(b.reb)} rebate, plus tax</div></div>`
+  :`<div class="price na"><div class="pay"><strong>Price not listed</strong></div><div class="list">${tr?`Ava lists it at ${esc(tr)}. `:''}Ask the shop for the price.</div></div>`;
+ const allNa=[b.spd,b.tq,b.load,b.range].every(v=>v==null||v==='');
+ const ac0=activeColor(b),sw=b.cv.length?`<div class="sws" role="group" aria-label="Colors">${b.cv.map((c,ci)=>`<button type="button" class="sw" data-c="${ci}" tabindex="${ci===(ac0??0)?0:-1}" aria-pressed="${ci===ac0}" aria-label="${esc(c.n)}" title="${esc(c.n)}${c.img?'':' (no photo yet)'}"><i style="background:${c.hex||CHEX[c.f]}"></i></button>`).join('')}</div>`:'';
+ return `<article class="c${pk?' pick':''}" data-b="${b.i}">
+ <div class="ph"><img loading="lazy" decoding="async" src="${shownSrc(b)}" alt="${esc(b.name)}">${sw}<span class="tag${b.reb===900?'':' s400'}"><i></i>${money(b.reb)} off</span>${pk?`<span class="picktag">${STAR}${pk.tag}</span>`:''}${b.warn&&tr&&b.price!=null?'<span class="calltag">Call for price</span>':''}</div>
+ <div class="b">
+  <div class="id"><span class="br">${esc(b.brand)}</span><h3 class="n" title="${esc(b.model)}"><span class="vh">${esc(b.brand)} </span>${esc(b.mn)}</h3></div>
+  ${price}
+  ${allNa?'<p class="nospec">Specs not listed. Ask the shop.</p>':`<dl class="stats">${stat('Top speed',b.spd,'mph')}${stat('Torque',b.tq,'Nm')}${stat('Max load',b.load,'lb')}${stat('Range',b.range,'mi')}</dl>`}
+  ${pk?`<p class="note picknote">${esc(pk.note)}</p>`:''}
+  <div class="chips"><span class="chip" title="${esc(TYPEX[b.type]||'')}">${esc(b.type)}</span><span class="chip" title="${esc(CLASSX[b.cls]||'')}">Class ${esc(b.cls)}</span>${b.fold==='Yes'?'<span class="chip">Folds</span>':''}</div>
+  <button type="button" class="more" data-more="${b.i}"><span>See details<span class="vh"> for ${esc(b.name)}</span></span>${ARROW}</button>
+ </div></article>`}
+const NODE=new Map();
+const tpl=document.createElement('template');
+B.forEach(b=>{tpl.innerHTML=cardHTML(b).trim();NODE.set(b.i,tpl.content.firstElementChild)});
+
+/* cards show the bike's display photo with no color selected until someone picks one; the details open on a real color */
+function firstColor(b){const k=b.cv.findIndex(c=>c.img);return k>=0?k:null}
+function shownSrc(b){const k=activeColor(b);return k!=null&&b.cv[k].img?b.cv[k].img:b.img}
+function activeColor(b){
+ const fc=F.color;let ac=ACT.has(b.i)?ACT.get(b.i):null;
+ if(fc&&(ac==null||b.cv[ac].f!==fc)){const m=b.cv.findIndex(c=>c.f===fc);if(m>=0)ac=m}
+ return ac}
+function syncColor(b){
+ if(!b.cv.length)return;const node=NODE.get(b.i),img=node.querySelector('.ph img'),ac=activeColor(b);
+ const src=ac!=null&&b.cv[ac].img?b.cv[ac].img:b.img;
+ if(img.getAttribute('src')!==src){img.src=src;img.alt=b.name+(ac!=null?', '+b.cv[ac].n:'')}
+ node.querySelectorAll('.sw').forEach((s,i)=>{s.setAttribute('aria-pressed',i===ac);s.tabIndex=(ac==null?i===0:i===ac)?0:-1})}
+
+/* filtering */
+const EMPTY=document.createElement('div');EMPTY.className='empty';
+function activeCount(f=F){return ['type','spd','color','city'].filter(k=>f[k]).length+(f.fold?1:0)+(payOn(f)?1:0)}
+/* skip leaves one filter out, for the counts next to that filter's choices */
+function match(f=F,skip){
+ const q=f.q.toLowerCase().trim(),pay=skip!=='pay'&&payOn(f);
+ return B.filter(b=>['type','spd','city','color'].every(k=>k===skip||!f[k]||FACET[k].test(b,f[k]))
+  &&(!pay||(b.you!=null&&b.you>=f.payMin&&b.you<=f.payMax))
+  &&(!f.fold||b.fold==='Yes')&&(!q||b.hay.includes(q)))}
+function sorted(L,f){
+ const nz=(v,d)=>{if(v==null||v==='')return d;if(typeof v==='number')return v;const m=String(v).match(/\d+(\.\d+)?/g);return m?Math.max(...m.map(Number)):d};const ci=b=>{const c=f.color||b.cs[0];return c?CORD.indexOf(c):99};
+ const cmp={pay:(a,b)=>nz(a.you,1e9)-nz(b.you,1e9),payd:(a,b)=>nz(b.you,-1)-nz(a.you,-1),spd:(a,b)=>nz(b.spd,-1)-nz(a.spd,-1),tq:(a,b)=>nz(b.tq,-1)-nz(a.tq,-1),load:(a,b)=>nz(b.load,-1)-nz(a.load,-1),range:(a,b)=>nz(b.range,-1)-nz(a.range,-1),name:(a,b)=>a.name.localeCompare(b.name),color:(a,b)=>ci(a)-ci(b)||nz(a.you,1e9)-nz(b.you,1e9)}[f.sort];
+ return L.sort(cmp)}
+let LIST=[];
+function render(){
+ const f=F,qv=f.q.trim();LIST=sorted(match(),f);
+ $('count').innerHTML=`<strong>${LIST.length}</strong> of ${B.length} bikes`;
+ const n=activeCount();renderChips(n,qv);
+ if(LIST.length){$('g').replaceChildren(...LIST.map(b=>NODE.get(b.i)));LIST.forEach(syncColor)}
+ else{EMPTY.innerHTML=`<p>${qv?`No bikes match “${esc(qv)}”${n?' with these filters':''}.`:'No bikes match these filters.'}</p><button type="button" class="gbtn" data-clear>Clear all filters</button>`;$('g').replaceChildren(EMPTY)}
+ updateFab(n);if(CMD.open)renderCmd();if(FP.open)renderFP();
+}
+/* only cards near the screen get a transition name, so the glide stays smooth */
+function nameVisible(){const vh=innerHeight;for(const el of $('g').children){if(!el.dataset.b)continue;const r=el.getBoundingClientRect();el.style.viewTransitionName=(r.bottom>-200&&r.top<vh+200)?'bk'+el.dataset.b:''}}
+function draw(){
+ if(!document.startViewTransition||REDUCE.matches||document.querySelector('dialog[open]')){render();return Promise.resolve()}
+ nameVisible();const vt=document.startViewTransition(()=>{render();nameVisible()});
+ [vt.ready,vt.finished,vt.updateCallbackDone].forEach(p=>p&&p.catch(()=>{}));
+ vt.finished.then(()=>{for(const el of $('g').children)el.style.viewTransitionName=''},()=>{});return vt.updateCallbackDone.catch(()=>{})}
+const XI='<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>';
+function renderChips(n,qv){
+ const c=[];
+ if(qv)c.push(['q',`“${esc(qv)}”`,`search “${esc(qv)}”`]);
+ if(F.type)c.push(['type',F.type]);
+ if(payOn(F))c.push(['pay',payText(F),'price '+payText(F)]);
+ if(F.spd)c.push(['spd',FACET.spd.short[F.spd]]);
+ if(F.color)c.push(['color',`<i style="background:${CHEX[F.color]}"></i>${F.color}`,F.color]);
+ if(F.city)c.push(['city',esc(F.city)]);
+ if(F.fold)c.push(['fold','Folding']);
+ const el=$('achips');el.hidden=!c.length;
+ el.innerHTML=c.length?c.map(([k,h,a])=>`<span class="ach">${h}<button type="button" data-rm="${k}" aria-label="Remove ${a||h} filter">${XI}</button></span>`).join('')+`<button type="button" class="achc" data-rm="all">Clear all</button>`:''}
+function clearFilters(){Object.assign(F,F0,{q:F.q});ACT.clear()}
+function clearAll(){Object.assign(F,F0);$('q').value='';$('cq').value='';ACT.clear()}
+
+/* swatches */
+$('g').addEventListener('click',e=>{
+ if(e.target.closest('[data-clear]')){clearAll();draw();return}
+ const t=e.target.closest('.sw');
+ /* any click on a card opens its details, except on a color swatch */
+ if(!t){const c=e.target.closest('.c[data-b]');if(c&&!e.target.closest('a,.sws'))openBike(+c.dataset.b,c.querySelector('.more'));return}
+ const b=B[+t.closest('.c').dataset.b];ACT.set(b.i,+t.dataset.c);const img=t.closest('.ph').querySelector('img');const before=img.getAttribute('src');syncColor(b);
+ if(!REDUCE.matches&&img.getAttribute('src')!==before)img.decode().then(()=>img.animate([{opacity:.35,filter:'blur(3px)'},{opacity:1,filter:'blur(0)'}],{duration:200,easing:'cubic-bezier(.23,1,.32,1)'})).catch(()=>{})});
+$('g').addEventListener('keydown',e=>{const t=e.target.closest('.sw');if(!t||!['ArrowLeft','ArrowRight'].includes(e.key))return;e.preventDefault();
+ const all=[...t.parentElement.children],i=all.indexOf(t),n=all[(i+(e.key==='ArrowRight'?1:-1)+all.length)%all.length];n.focus();n.click()});
+
+/* drawers */
+let LASTCLOSE=-1e9;
+function lockScroll(){document.documentElement.classList.toggle('locked',!!document.querySelector('dialog[open],#navmenu:popover-open'))}
+/* Windows open with show(), not showModal(): showModal makes the browser mark all ~11,000 elements behind it as blocked,
+   which took 60-90ms on a mid-range phone. The dim layer, Escape, outside taps and keeping Tab inside the window are handled here instead. */
+/* keyboard users get focus handed back to what opened a window; touch and mouse users get no leftover outline */
+let KBD=false;addEventListener('keydown',e=>{if(e.key==='Tab'||e.key==='Escape'||e.key.startsWith('Arrow')||e.key==='Enter')KBD=true},true);addEventListener('pointerdown',()=>{KBD=false},true);
+const DSTACK=[];const SCRIM=document.createElement('div');SCRIM.id='scrim';SCRIM.setAttribute('aria-hidden','true');document.body.append(SCRIM);
+SCRIM.addEventListener('click',()=>{const d=DSTACK[DSTACK.length-1];if(d)d.close()});
+document.addEventListener('keydown',e=>{const d=DSTACK[DSTACK.length-1];if(!d)return;
+ if(e.key==='Escape'){e.preventDefault();d.close();return}
+ if(e.key==='Tab'){const f=[...d.querySelectorAll('button,[href],input,select,textarea,summary,[tabindex]:not([tabindex="-1"])')].filter(x=>!x.disabled&&x.getClientRects().length);if(!f.length)return;
+  const a=f[0],z=f[f.length-1],c=document.activeElement;
+  if(!d.contains(c)){e.preventDefault();a.focus();return}
+  if(e.shiftKey&&(c===a||c===d)){e.preventDefault();z.focus()}else if(!e.shiftKey&&c===z){e.preventDefault();a.focus()}}});
+/* close plays the exit animation first, then really closes; the same curve family everywhere */
+const NCLOSE=HTMLDialogElement.prototype.close;
+function animClose(){const d=this;if(!d.open||d.dataset.state==='closing')return;
+ const rest=DSTACK.filter(x=>x!==d);SCRIM.classList.toggle('on',rest.length>0);setDim(rest.length>0);
+ if(d.classList.contains('instant')){NCLOSE.call(d);d.dataset.state='';return}
+ d.dataset.state='closing';let t;const done=()=>{clearTimeout(t);d.removeEventListener('transitionend',te);if(d.open)NCLOSE.call(d);d.dataset.state='';d.style.transition='';d.style.transform=''};
+ const te=e=>{if(e.target===d&&(e.propertyName==='transform'||e.propertyName==='opacity'))done()};d.addEventListener('transitionend',te);t=setTimeout(done,300)}
+document.querySelectorAll('dialog').forEach(d=>{d.close=animClose});
+const DIMR=['.hero','#bar','#status','#g','#dir'].map(q=>document.querySelector(q)).filter(Boolean);
+function setDim(on){const H=document.documentElement;
+ if(on&&!H.classList.contains('dim')){const vh=innerHeight;for(const el of DIMR){const r=el.getBoundingClientRect();el.classList.toggle('onscr',r.bottom>0&&r.top<vh)}}
+ H.classList.toggle('dim',on)}
+function showDlg(d,opener){d._opener=opener||document.activeElement;d.classList.remove('settled');d.tabIndex=-1;d.setAttribute('aria-modal','true');DSTACK.push(d);d.style.transform='';d.dataset.state='closed';d.show();d.offsetWidth;d.dataset.state='open';SCRIM.classList.add('on');setDim(true);d.focus({preventScroll:true});lockScroll();clearTimeout(d._st);d._st=setTimeout(()=>{if(d.open&&d.dataset.state==='open')d.classList.add('settled')},340);const body=d.querySelector('.dbody,.cbody');if(body)body.scrollTop=0}
+document.querySelectorAll('dialog').forEach(d=>{
+ d.addEventListener('close',()=>{const i=DSTACK.indexOf(d);if(i>=0)DSTACK.splice(i,1);SCRIM.classList.toggle('on',DSTACK.length>0);setDim(DSTACK.length>0);LASTCLOSE=performance.now();clearTimeout(d._st);d.classList.remove('settled');lockScroll();updateFab();const o=d._opener;if(KBD&&o&&o.isConnected&&o.focus)o.focus({preventScroll:true});else if(d.contains(document.activeElement)||document.activeElement===d)document.activeElement.blur()});
+ d.addEventListener('click',e=>{if(e.target!==d)return;const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close()});
+ d.querySelectorAll('.dclose').forEach(x=>x.onclick=()=>d.close())});
+document.querySelectorAll('[data-open]').forEach(btn=>btn.onclick=()=>showDlg($(btn.dataset.open),btn));
+/* bike detail modal */
+const BIKE=$('bike');let BIKE_I=null,BIKE_AC=null;/* the modal's colour is its own: picking one there never changes the card */
+const EXT='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>';
+/* the details are built as soon as a finger or mouse goes down on a card, so by the time the tap lands the window only has to slide in */
+let BIKE_PRE=null;
+function buildBike(i){if(BIKE_PRE===i)return;BIKE_PRE=i;
+ const b=B[i],pk=PICKS[b.brand+'|'+b.model],tr=tierText(b.tier);
+ const has=v=>v!=null&&v!=='';
+ const uniq=[...new Map((b.shops||[]).map(x=>S[x]).filter(Boolean).map(s=>[s.name,s])).values()];
+ /* key stats: missing values are left out; an odd one out spans the full row so the grid never has a hole */
+ const cls=CLASSX[b.cls];
+ const narrow=[['Top speed',b.spd,'mph'],['Torque',b.tq,'Nm'],['Max load',b.load,'lb'],['Range',b.range,'mi'],['Battery',b.wh,'Wh'],['Bike weight',b.wt,'lb'],['Rider height',b.height,''],['Folds',b.fold==='Yes'||b.fold==='No'?b.fold:null,'']].filter(s=>has(s[1]));
+ const wide=[['Motor',b.motor,''],['Class','Class '+b.cls,'',cls?cls.replace(/^Class \d:\s*/,'').replace(/^./,c=>c.toUpperCase()):'']].filter(s=>has(b.cls)||s[0]!=='Class').filter(s=>has(s[1]));
+ if(narrow.length%2)wide.unshift(narrow.pop());
+ const cell=([l,v,u,x],w)=>`<div${w?' class="w"':''}><dt>${l}</dt><dd>${esc(v)}${u?`<small>${u}</small>`:''}</dd>${x?`<p>${esc(x)}</p>`:''}</div>`;
+ const stats=narrow.map(s=>cell(s)).join('')+wide.map(s=>cell(s,1)).join('');
+ const price=b.price!=null
+  ?`<div class="bmpay"><strong>${money(b.you)}</strong><span>you pay</span></div>
+   <div class="list bmlist"><s>${money(b.price)}</s> minus ${money(b.reb)} rebate, plus tax</div>`
+  :`<div class="bmpay na"><strong>Price not listed</strong></div>
+   <p class="bmtax">${tr?`Ava lists it at ${esc(tr)}. `:''}Ask the shop for today's price. Your rebate takes ${money(b.reb)} off, and sales tax is extra.</p>`;
+ const warn=b.price!=null&&b.warn&&tr?`<p class="pwarn pshort">${INFO}<span>Call shop to confirm price. Ava's list puts this bike at ${esc(tr)}, not ${money(b.price)}.</span></p>`:'';
+ const sws=b.cv.length?`<div class="sws" role="group" aria-label="Colors">${b.cv.map((c,ci)=>`<button type="button" class="sw" data-c="${ci}" tabindex="-1" aria-pressed="false" aria-label="${esc(c.n)}" title="${esc(c.n)}${c.img?'':' (no photo yet)'}"><i style="background:${c.hex||CHEX[c.f]}"></i></button>`).join('')}</div>`:'';
+ const gi='https://www.google.com/search?tbm=isch&q='+encodeURIComponent(b.name+' e-bike');
+ $('bike-br').textContent=b.brand;
+ $('bike-h').innerHTML=`<span class="vh">${esc(b.brand)} </span>${esc(b.mn)}`;
+ $('bike-body').innerHTML=`<div class="bmg">
+ <div class="bml">
+  <div class="bmph"><img id="bike-img" src="${shownSrc(b)}" decoding="sync" alt="${esc(b.name)}">${sws}</div>
+  <p class="bmcap" id="bike-cap" hidden></p>
+  <div class="bmp">${price}${warn}${b.note?`<p class="bmtax">About the price: ${esc(b.note)}</p>`:''}</div>
+ </div>
+ <div class="bmr">
+  ${pk?`<div class="bmpick"><span class="bmpk">${STAR}${esc(pk.tag)}</span><p><b>${esc(pk.head)}</b> ${esc(pk.sub)}</p></div>`:''}
+  <section><h3>Key specs</h3>${stats?`<dl class="bms">${stats}</dl>`:`<p class="bmnone">The maker doesn't publish specs for this bike. Ask the shop.</p>`}</section>
+  <section><h3>Where to buy</h3><p class="bmin">The rebate only works in person at the shop. Call ahead to check stock.</p>
+   ${uniq.length?`<ul class="bmshops">${uniq.map(s=>`<li class="bmshop"><b>${esc(s.name)}</b>${shopLines(s,b)}${s.url?`<a class="web" href="${esc(s.url)}" target="_blank" rel="noopener">${GLOBE}<span>Shop website</span>${EXT}</a>`:''}</li>`).join('')}</ul>`:`<p class="bmnone">No shop is listed for this bike yet. <a href="#dir" data-dir>See all shops</a></p>`}</section>
+  <div class="bmlinks"><a href="${gi}" target="_blank" rel="noopener">More photos on Google${EXT}</a>${b.src?`<a href="${esc(b.src)}" target="_blank" rel="noopener">Price source${EXT}</a>`:''}</div>
+ </div>
+</div>`;
+ $('bike-img').decode().catch(()=>{});
+}
+/* the details open on exactly the photo the card shows: the color picked on the card if there is one, otherwise the display photo with no dot selected.
+   the same image is already decoded from the card, so nothing swaps or flickers while the window slides in */
+/* the photo is decoded before the window is shown, so its first painted frame already has the picture (no blank-then-image flash).
+   decoding starts on pointerdown, so by the time the tap lands it is normally finished; a short cap keeps a slow decode from holding the window back */
+let BIKE_OPENING=0;
+function openBike(i,opener){if(BIKE.open)return;const tok=++BIKE_OPENING;buildBike(i);BIKE_I=i;BIKE_AC=activeColor(B[i]);syncBike();
+ const im=$('bike-img'),show=()=>{if(tok!==BIKE_OPENING||BIKE.open)return;showDlg(BIKE,opener);$('bike-body').scrollTop=0};
+ Promise.race([im.decode().catch(()=>{}),new Promise(r=>setTimeout(r,150))]).then(show)}
+$('g').addEventListener('pointerdown',e=>{if(BIKE.open||e.button)return;const c=e.target.closest('.c[data-b]');if(c&&!e.target.closest('a,.sws'))buildBike(+c.dataset.b)},{passive:true});
+function syncBike(){
+ if(BIKE_I==null||!BIKE.contains($('bike-img')))return;const b=B[BIKE_I],ac=BIKE_AC,img=$('bike-img'),cap=$('bike-cap');
+ const src=ac!=null&&b.cv[ac].img?b.cv[ac].img:b.img;
+ if(img.getAttribute('src')!==src)img.src=src;img.alt=b.name+(ac!=null?', '+b.cv[ac].n:'');
+ BIKE.querySelectorAll('.sw').forEach((s,k)=>{s.setAttribute('aria-pressed',k===ac);s.tabIndex=(ac==null?k===0:k===ac)?0:-1});
+ cap.textContent=ac!=null?(b.cv[ac].img?`Shown in ${b.cv[ac].n}`:`${b.cv[ac].n}: no photo of this color yet`):b.cv.length===1?`Comes in ${b.cv[0].n}`:b.cv.length?`Comes in ${b.cv.length} colors`:'';
+ cap.hidden=!cap.textContent}
+BIKE.addEventListener('click',e=>{
+ if(e.target.closest('[data-dir]')){e.preventDefault();BIKE.close();requestAnimationFrame(()=>$('dir').scrollIntoView({behavior:REDUCE.matches?'auto':'smooth'}));return}
+ const t=e.target.closest('.sw');if(!t||BIKE_I==null)return;
+ const img=$('bike-img'),before=img.getAttribute('src');BIKE_AC=+t.dataset.c;syncBike();
+ if(!REDUCE.matches&&img.getAttribute('src')!==before)img.decode().then(()=>img.animate([{opacity:.35,filter:'blur(3px)'},{opacity:1,filter:'blur(0)'}],{duration:200,easing:'cubic-bezier(.23,1,.32,1)'})).catch(()=>{})});
+BIKE.addEventListener('keydown',e=>{const t=e.target.closest('.sw');if(!t||!['ArrowLeft','ArrowRight'].includes(e.key))return;e.preventDefault();
+ const all=[...t.parentElement.children],i=all.indexOf(t),n=all[(i+(e.key==='ArrowRight'?1:-1)+all.length)%all.length];n.focus();n.click()});
+BIKE.addEventListener('close',()=>{BIKE_I=null;BIKE_AC=null});
+
+/* floating search + command dialog */
+const CMD=$('cmd');
+const fab=$('fab');
+let barVisible=true,atDir=false;
+/* the pill appears once the filter bar has scrolled away, and steps aside once the shop list fills the lower part of the screen */
+new IntersectionObserver(es=>{barVisible=es[0].isIntersecting;updateFab()},{rootMargin:'-48px 0px 0px 0px'}).observe($('bar'));
+new IntersectionObserver(es=>{atDir=es[0].isIntersecting;updateFab()},{rootMargin:'0px 0px -40% 0px'}).observe($('dir'));
+function updateFab(n=activeCount()){
+ const show=!barVisible&&!atDir&&!document.querySelector('dialog[open]');
+ fab.classList.toggle('on',show);fab.inert=!show;
+ const qv=F.q.trim(),bikes=LIST.length+' bike'+(LIST.length===1?'':'s'),fl=n?`Filters, ${n} on`:'Filters';
+ $('fab-q').textContent=qv?'“'+qv+'”':'Search bikes';$('fab-q').classList.toggle('typed',!!qv);
+ $('fab-count').textContent=bikes;
+ $('fab-s').setAttribute('aria-label',`Search${qv?': “'+qv+'”':' bikes'}, ${bikes}`);
+ [['fab-n','fab-f'],['mfilter-n','mfilter']].forEach(([c,btn])=>{$(c).textContent=n||'';$(c).hidden=!n;$(btn).setAttribute('aria-label',fl)});
+ $('fab-f').classList.toggle('on',!!n)}
+function renderCmd(){
+ const f=F,qv=f.q.trim(),n=activeCount();
+ if($('cq').value!==f.q)$('cq').value=f.q;
+ const top=LIST.slice(0,MOBILE.matches&&!qv?3:5);
+ /* only rebuild the matches when they change, so dragging the price slider doesn't flicker the photos */
+ const key=top.map(b=>b.i).join()+'|'+qv+'|'+n;
+ if(CMD._key!==key){CMD._key=key;
+  $('cmd-res').innerHTML=top.length?top.map(b=>`<button type="button" class="hit" data-go="${b.i}"><img src="${shownSrc(b)}" alt="" loading="lazy"><span class="ht"><b>${esc(b.name)}</b><small>${esc(b.type)} · Class ${esc(b.cls)}</small></span><span class="hp">${b.you!=null?money(b.you):'Ask'}</span></button>`).join('')
+   :`<p class="cnone">No bikes match${qv?` “${esc(qv)}”`:''}${n?` with your ${n===1?'filter':n+' filters'}. <button type="button" class="linkbtn" data-clearf>Clear filters</button>`:'.'}</p>`}
+ $('cmd-reshead').textContent=qv||n?'Top matches':$('sort').selectedOptions[0].text;
+ CMF.sync();
+ $('cmd-show').textContent=showText();$('cmd-show').disabled=!LIST.length;
+ $('cmd-clear').disabled=!n&&!qv;
+}
+/* desktop: the search field gets focus. Phones: only when opened from the search box. With filters:true it opens scrolled to the filters */
+function openCmd(opts={}){
+ CMD.classList.toggle('instant',!!opts.instant);CMD._key=null;renderCmd();CMD._sig=fsig();CMD._go=false;CMD._hit=false;showDlg(CMD,opts.opener);
+ const cq=$('cq');
+ if(opts.filters){const body=CMD.querySelector('.cbody');body.scrollTop+=$('cmd-fh').getBoundingClientRect().top-body.getBoundingClientRect().top-6;CMD.querySelector('#cmd-fbody summary').focus({preventScroll:true})}
+ else if(!MOBILE.matches||opts.focus)cq.focus({preventScroll:true});else CMD.focus({preventScroll:true})}
+$('fab-s').onclick=()=>openCmd({opener:$('fab-s')});
+/* the pill's filter button opens the same dialog, at its filters */
+$('fab-f').onclick=()=>openCmd({opener:$('fab-f'),filters:true});
+$('fab-f').setAttribute('aria-controls','cmd');
+/* close: jump to the results if the filters changed or "Show" was pressed, not after picking a single bike */
+CMD.addEventListener('close',()=>{if(!CMD._hit&&(CMD._go||CMD._sig!==fsig()))requestAnimationFrame(scrollToResults)});
+/* clearing never pops the phone keyboard back up; keyboard users go back to the search field */
+$('cmd-clear').onclick=()=>{clearAll();render();if(KBD)$('cq').focus({preventScroll:true});else document.activeElement?.blur()};
+CMD.addEventListener('click',e=>{
+ if(e.target.closest('[data-clearf]')){clearFilters();render();if(KBD)$('cq').focus({preventScroll:true});else document.activeElement?.blur();return}
+ const g=e.target.closest('[data-go]');if(g){const el=NODE.get(+g.dataset.go);if(el)CMD._opener=el.querySelector('.more');CMD._hit=true;CMD.close();goTo(+g.dataset.go);return}});
+let qt;$('cq').addEventListener('input',()=>{F.q=$('q').value=$('cq').value;clearTimeout(qt);qt=setTimeout(render,100)});
+$('cq').addEventListener('keydown',e=>{
+ if(e.key==='Enter'){e.preventDefault();clearTimeout(qt);render();CMD._go=true;CMD.close()}
+ else if(e.key==='ArrowDown'){const h=CMD.querySelector('.hit');if(h){e.preventDefault();h.focus()}}});
+/* phones: pull a bottom sheet down to close it, from its header or from the content once it is scrolled to the top; a quick flick is enough */
+function sheetDrag(D,head,body,q){let x0=0,y0=0,t0=0,dy=0,st=0,fromBody=false;const on=()=>matchMedia(q).matches;
+ const start=(e,b)=>{if(!on()||!D.open||e.touches.length>1||e.target.closest('input,select,textarea,.rbar'))return;if(b&&body.scrollTop>0)return;x0=e.touches[0].clientX;y0=e.touches[0].clientY;t0=performance.now();dy=0;st=1;fromBody=b};
+ const move=e=>{if(!st)return;const d=e.touches[0].clientY-y0;
+  /* a sideways swipe (like changing colors on the photo) never turns into closing the sheet */
+  if(st===1){const dx=Math.abs(e.touches[0].clientX-x0);if(Math.abs(d)<8&&dx<8)return;if(d<0||dx>Math.abs(d)*0.6||(fromBody&&body.scrollTop>0)){st=0;return}st=2;y0=e.touches[0].clientY;t0=performance.now();D.style.transition='none'}
+  e.preventDefault();const m=e.touches[0].clientY-y0;dy=m>0?m:-Math.sqrt(-m)*2;D.style.transform=`translateY(${dy}px)`};
+ const end=()=>{if(st!==2){st=0;return}st=0;const v=dy/Math.max(1,performance.now()-t0);
+  if(dy>D.offsetHeight*.25||(dy>24&&v>.11)){D.style.transition='transform .2s cubic-bezier(.32,.72,0,1)';D.style.transform='translateY(100%)';setTimeout(()=>{D.style.transition='none';D.close();requestAnimationFrame(()=>{D.style.transition='';D.style.transform=''})},200)}
+  else{D.style.transition='transform .25s cubic-bezier(.32,.72,0,1)';D.style.transform='';setTimeout(()=>{if(!st)D.style.transition=''},260)}};
+ head.addEventListener('touchstart',e=>start(e,false),{passive:true});body.addEventListener('touchstart',e=>start(e,true),{passive:true});
+ for(const el of [head,body]){el.addEventListener('touchmove',move,{passive:false});el.addEventListener('touchend',end);el.addEventListener('touchcancel',end)}}
+sheetDrag(CMD,CMD.querySelector('.chead'),CMD.querySelector('.cbody'),'(max-width: 600px)');
+sheetDrag($('bike'),$('bike').querySelector('.bmh'),$('bike').querySelector('.bmb'),'(max-width: 760px)');
+/* arrow keys move through the top matches */
+$('cmd-res').addEventListener('keydown',e=>{
+ if(!['ArrowDown','ArrowUp'].includes(e.key))return;const all=[...$('cmd-res').querySelectorAll('.hit')],i=all.indexOf(document.activeElement);if(i<0)return;
+ e.preventDefault();const n=all[i+(e.key==='ArrowDown'?1:-1)];(n||(e.key==='ArrowUp'?$('cq'):all[i])).focus()});
+$('cmd-show').onclick=()=>{CMD._go=true;CMD.close()};
+function scrollToResults(){const t=$('status').getBoundingClientRect().top;if(t>=0)return;scrollTo({top:Math.max(0,t+scrollY-12),behavior:REDUCE.matches?'auto':'smooth'})}
+function goTo(i){const el=NODE.get(i);if(!el)return;el.scrollIntoView({block:'center',behavior:REDUCE.matches?'auto':'smooth'});el.classList.remove('flash');void el.offsetWidth;el.classList.add('flash')}
+document.addEventListener('keydown',e=>{
+ const isK=e.key.toLowerCase()==='k'&&(e.metaKey||e.ctrlKey)&&!e.altKey&&!e.shiftKey;
+ if(isK&&CMD.open){e.preventDefault();CMD.classList.add('instant');CMD.close();return}
+ if(document.querySelector('dialog[open]')||e.isComposing)return;
+ const el=document.activeElement,typing=/^(INPUT|SELECT|TEXTAREA)$/.test(el.tagName)||el.isContentEditable;
+ if(isK||(e.key==='/'&&!typing&&!e.metaKey&&!e.ctrlKey&&!e.altKey)){e.preventDefault();openCmd({instant:true,focus:true})}});
+/* on phones the search box and Filters button open the same dialog, so the keyboard never covers the list */
+/* Phones: the box is read-only and every tap (click) opens the dialog, even if the box still has focus from before.
+   Keyboard focus also opens it, but not the focus a closing dialog hands back, so it can't reopen itself. */
+let qPtr=-1e9;
+const qOpen=(ch)=>{if(document.querySelector('dialog[open]'))return false;$('q').blur();openCmd({opener:$('q'),focus:true});if(ch){const c=$('cq');c.value+=ch;c.dispatchEvent(new Event('input'))}return true};
+$('q').addEventListener('pointerdown',()=>{qPtr=performance.now()});
+$('q').addEventListener('click',e=>{if(qOpen())e.preventDefault()});
+$('q').addEventListener('focus',()=>{const t=performance.now();if(MOBILE.matches&&t-qPtr>800&&t-LASTCLOSE>400)qOpen()});
+$('q').readOnly=true;
+/* one search experience: the bar on the page only opens the search window; typing into it carries the first letter over */
+$('q').addEventListener('keydown',e=>{if(e.metaKey||e.ctrlKey||e.altKey)return;if(e.key==='Enter'||e.key===' '){e.preventDefault();qOpen()}else if(e.key.length===1){e.preventDefault();qOpen(e.key)}});
+$('mfilter').onclick=()=>openCmd({opener:$('mfilter'),filters:true});
+/* the full placeholder gets cut off next to the Filters button on narrow phones */
+const QPH='Search bikes, brands or shops';const fitPh=()=>{$('q').placeholder=MOBILE.matches?'Search bikes or shops':QPH};fitPh();MOBILE.addEventListener('change',fitPh);
+
+/* filters: ONE builder makes the controls for both the left panel and the search dialog, so they can't drift.
+   Every change writes F and applies at once; render() then re-syncs whichever UIs are open. */
+const FP=$('filters');
+let fraf=0;const later=()=>{if(!fraf)fraf=requestAnimationFrame(()=>{fraf=0;render()})};
+/* you pay: snap points every $100 up to $3,000 (where most bikes are), wider steps above; the top means no limit */
+const RT=[0,500,1000,1500,2000,2500,3000,4000,5000,6000,8000,10000,Infinity],RL={0:'$0',1000:'$1,000',2000:'$2,000',3000:'$3,000',Infinity:'No max'};
+const TICKS=RT.map(v=>`<i${v in RL?' class="mj"':''} style="left:${PV.indexOf(v)/PTOP*100}%"></i>`).join('')+RT.filter(v=>v in RL).map(v=>`<span style="left:${PV.indexOf(v)/PTOP*100}%">${RL[v]}</span>`).join('');
+const payText=f=>!payOn(f)?'Any price':f.payMax===Infinity?money(f.payMin)+' and up':f.payMin===0?'Up to '+money(f.payMax):money(f.payMin)+' – '+money(f.payMax);
+const CHEV='<svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>';
+function buildFilters(host,p,open=[]){
+ const sec=(k,label,body)=>`<details class="fs" data-k="${k}"${open.includes(k)?' open':''}><summary><span class="fl">${label}</span><span class="fv">Any</span>${CHEV}</summary><div class="fsc">${body}</div></details>`;
+ const radios=(k,label)=>`<fieldset class="rlist${k==='city'?' rcity':''}"><legend class="vh">${label}</legend>${FACET[k].opts.map(([v,t,x])=>`<label class="ro"><input type="radio" name="${p}-${k}" value="${esc(v)}"><span class="rl">${esc(t)}${x?`<span class="rb${x.startsWith('$900')?'':' s400'}"><i></i>${x}</span>`:''}</span><span class="rn"></span></label>`).join('')}</fieldset>`;
+ host.innerHTML=sec('type','Type and rebate',radios('type','Type and rebate'))
+  +sec('pay','You pay',`<div class="prv"><span class="ptxt">Any price</span></div><div class="rng"><div class="rbar"><div class="rtrack"><div class="rfill"></div></div><input type="range" class="pmin" min="0" max="${PTOP}" step="1" value="0" aria-label="Lowest you pay"><input type="range" class="pmax" min="0" max="${PTOP}" step="1" value="${PTOP}" aria-label="Most you pay"></div><div class="rticks" aria-hidden="true">${TICKS}</div></div>`)
+  +sec('spd','Top speed',radios('spd','Top speed'))
+  +sec('color','Color',`<div class="cgrid" role="group" aria-label="Color">${[['','Any']].concat(usedC.map(c=>[c,c])).map(([v,t])=>`<button type="button" class="cb" data-v="${v}" aria-pressed="false"><i${v?` style="background:${CHEX[v]}"`:' class="any"'}></i><span>${t}</span></button>`).join('')}</div>`)
+  +sec('city','Shop city',radios('city','Shop city'))
+  +`<label class="fsw"><span><b>Folding bikes only</b><small>Easier to store and take on a train</small></span><input type="checkbox" role="switch" class="ffold" id="${p}-fold"></label>`;
+ const q=s=>host.querySelector(s),PMIN=q('.pmin'),PMAX=q('.pmax'),RNG=q('.rng'),FILL=q('.rfill'),FOLD=q('.ffold');
+ host.addEventListener('change',e=>{const t=e.target;
+  if(t.type==='radio'&&t.name.startsWith(p+'-')){F[t.name.slice(p.length+1)]=t.value;later()}
+  else if(t===FOLD){F.fold=t.checked;later()}});
+ q('.cgrid').addEventListener('click',e=>{const c=e.target.closest('.cb');if(!c)return;F.color=F.color===c.dataset.v?'':c.dataset.v;ACT.clear();later()});
+ function paint(){
+  const a=+PMIN.value,b=+PMAX.value;
+  FILL.style.left=a/PTOP*100+'%';FILL.style.right=(1-b/PTOP)*100+'%';
+  PMIN.setAttribute('aria-valuetext',money(PV[a]));PMAX.setAttribute('aria-valuetext',b===PTOP?'No maximum':money(PV[b]));
+  q('.ptxt').textContent=payText(F)}
+ function setPay(inp,i){
+  i=inp===PMIN?Math.max(0,Math.min(i,+PMAX.value-1)):Math.min(PTOP,Math.max(i,+PMIN.value+1));
+  inp.value=i;F.payMin=PV[+PMIN.value];F.payMax=PV[+PMAX.value];paint();later()}
+ [PMIN,PMAX].forEach(inp=>inp.addEventListener('input',()=>setPay(inp,+inp.value)));
+ /* the whole strip is the hit area: press anywhere and the nearest thumb jumps there and follows the finger or mouse */
+ let act=null;
+ const at=x=>{const r=RNG.getBoundingClientRect();return Math.round(Math.min(1,Math.max(0,(x-r.left-12)/(r.width-24)))*PTOP)};
+ RNG.addEventListener('pointerdown',e=>{if(e.button)return;const i=at(e.clientX),a=+PMIN.value,b=+PMAX.value;
+  act=i<=a?PMIN:i>=b?PMAX:(i-a<b-i?PMIN:PMAX);
+  RNG.setPointerCapture(e.pointerId);act.classList.add('act');act.focus({preventScroll:true});setPay(act,i);e.preventDefault()});
+ RNG.addEventListener('pointermove',e=>{if(act)setPay(act,at(e.clientX))});
+ const end=()=>{if(act){act.classList.remove('act');act=null}};
+ RNG.addEventListener('pointerup',end);RNG.addEventListener('pointercancel',end);
+ const fv=(k,txt,on)=>{const v=q(`.fs[data-k="${k}"] .fv`);v.textContent=txt;v.classList.toggle('on',on)};
+ function sync(){
+  ['type','spd','city'].forEach(k=>{
+   const L=match(F,k);
+   host.querySelectorAll(`input[name="${p}-${k}"]`).forEach(r=>{r.checked=r.value===F[k];
+    const c=r.value?L.filter(b=>FACET[k].test(b,r.value)).length:L.length,row=r.closest('.ro');
+    row.querySelector('.rn').textContent=c;row.classList.toggle('zero',!c)})});
+  const LC=match(F,'color');
+  host.querySelectorAll('.cb').forEach(c=>{const v=c.dataset.v;c.setAttribute('aria-pressed',F.color===v);c.classList.toggle('zero',!!v&&!LC.some(b=>b.cs.includes(v)))});
+  FOLD.checked=F.fold;
+  if(!act){const ia=PV.indexOf(F.payMin),ib=PV.indexOf(F.payMax);if(+PMIN.value!==ia)PMIN.value=ia;if(+PMAX.value!==ib)PMAX.value=ib}paint();
+  fv('type',F.type||'All',!!F.type);
+  fv('pay',payText(F),payOn(F));
+  fv('spd',F.spd?FACET.spd.short[F.spd]:'Any',!!F.spd);
+  fv('color',F.color||'Any',!!F.color);
+  fv('city',F.city||'Any',!!F.city)}
+ return {sync,host}}
+const FPF=buildFilters($('fp-body'),'fp',['type','pay']);
+const CMF=buildFilters($('cmd-fbody'),'cf');
+const showText=()=>LIST.length?`Show ${LIST.length} bike${LIST.length===1?'':'s'}`:'No bikes match';
+function renderFP(){
+ FPF.sync();
+ $('fp-show').textContent=showText();$('fp-show').disabled=!LIST.length;$('fp-clear').disabled=!activeCount();
+ clearTimeout(FP._lt);FP._lt=setTimeout(()=>{$('fp-live').textContent=LIST.length+' bikes match'},400)}
+const fsig=()=>JSON.stringify([F.type,F.payMin,F.payMax,F.spd,F.color,F.city,F.fold]);
+function openFP(opener){renderFP();FP._sig=fsig();FP._go=false;showDlg(FP,opener)}
+/* the page stays put while the panel is open; on close, jump to the results only if something changed or "Show" was pressed */
+FP.addEventListener('close',()=>{if(FP._go||FP._sig!==fsig())requestAnimationFrame(scrollToResults)});
+$('fp-clear').onclick=()=>{clearFilters();render();$('fp-show').focus()};
+$('fp-show').onclick=()=>{FP._go=true;FP.close()};
+
+/* main bar */
+$('sort').onchange=()=>{F.sort=$('sort').value;draw()};
+let mt;$('q').oninput=()=>{F.q=$('q').value;clearTimeout(mt);mt=setTimeout(render,120)};
+$('achips').addEventListener('click',e=>{const x=e.target.closest('[data-rm]');if(!x)return;
+ const k=x.dataset.rm;
+ if(k==='all')clearAll();else if(k==='q'){F.q='';$('q').value='';$('cq').value=''}else if(k==='pay'){F.payMin=0;F.payMax=Infinity}else{F[k]=F0[k];if(k==='color')ACT.clear()}
+ /* clearing a filter never opens search. Keyboard users stay in the chip row (next chip, or the result count once the row empties); a tap just lets go of focus */
+ const i=[...$('achips').querySelectorAll('[data-rm]')].indexOf(x),kbd=KBD;
+ draw().then(()=>{if(!kbd){const a=document.activeElement;if(a&&a!==document.body)a.blur();return}const now=[...$('achips').querySelectorAll('[data-rm]')];const t=now[Math.min(i,now.length-2)]||$('count');if(t===$('count'))t.tabIndex=-1;t.focus({preventScroll:true})})});
+
+/* shop directory */
+const seen=new Map();Object.values(S).forEach(s=>{if(!seen.has(s.name))seen.set(s.name,s)});
+$('dirgrid').innerHTML=[...seen.values()].sort((a,b)=>(a.city||'').localeCompare(b.city||'')||a.name.localeCompare(b.name)).map(s=>`<div class="shop"><span class="city">${esc(s.city||'')}</span><b>${esc(s.name)}</b>${shopLines(s)||'<span class="m">Address not listed</span>'}${s.url?`<a class="web" href="${esc(s.url)}" target="_blank" rel="noopener">${GLOBE}<span>Shop website</span>${EXT}</a>`:''}</div>`).join('');
+render();
+const NAVM=document.getElementById('navmenu'),MBTN=document.querySelector('.menubtn');NAVM.addEventListener('click',e=>{if(e.target.closest('.nml button,.nml a'))NAVM.hidePopover()});
+/* the menu is a small modal: it sits under its button, dims and freezes the page while open, and the button turns into a close icon */
+/* a tap on the dimmed page only closes the menu; it must not also open the bike underneath */
+let NAV_SWALLOW=0;document.addEventListener('pointerdown',e=>{if(NAVM.matches(':popover-open')&&!e.target.closest('#navmenu,.menubtn'))NAV_SWALLOW=performance.now()+600},true);
+document.addEventListener('click',e=>{if(performance.now()<NAV_SWALLOW){NAV_SWALLOW=0;e.preventDefault();e.stopPropagation()}},true);
+NAVM.addEventListener('toggle',e=>{const o=e.newState==='open';MBTN.setAttribute('aria-expanded',o);MBTN.setAttribute('aria-label',o?'Close menu':'Menu');lockScroll()});
+matchMedia('(min-width: 761px)').addEventListener('change',e=>{if(e.matches&&NAVM.matches(':popover-open'))NAVM.hidePopover()});
+document.addEventListener('click',e=>{const a=e.target.closest('a[href="#dir"]:not([data-dir])');if(!a)return;e.preventDefault();const go=()=>$('dir').scrollIntoView({block:'start',behavior:'instant'});go();let n=0;const fix=()=>{if(n++>40)return;if(Math.abs($('dir').getBoundingClientRect().top)>2)go();requestAnimationFrame(fix)};requestAnimationFrame(fix);history.replaceState(null,'','#dir')});
+/* the hero video keeps playing behind open windows; it only rests while it is scrolled out of view or the tab is in the background, where nobody can see it */
+(()=>{const v=document.getElementById('herov');if(!v)return;let seen=true;
+ const sync=()=>{const busy=document.hidden;if(seen&&!busy&&!REDUCE.matches){if(v.paused)v.play().catch(()=>{})}else if(!v.paused)v.pause()};
+ new IntersectionObserver(e=>{seen=e[0].isIntersecting;sync()}).observe(v);
+ document.addEventListener('visibilitychange',sync)})();
+/* mark a scrolling panel when there is more below or above, so it can fade that edge */
+(()=>{const els=[...document.querySelectorAll('.bmb,.dbody,.cbody')];
+ const upd=el=>{el.classList.toggle('has-more',el.scrollHeight-el.scrollTop-el.clientHeight>4);el.classList.toggle('has-above',el.scrollTop>4)};
+ const ro=new ResizeObserver(es=>es.forEach(e=>upd(e.target)));
+ els.forEach(el=>{el.addEventListener('scroll',()=>upd(el),{passive:true});ro.observe(el);new MutationObserver(()=>requestAnimationFrame(()=>upd(el))).observe(el,{childList:true,subtree:true,attributes:true,attributeFilter:['open','hidden']})});
+ document.querySelectorAll('dialog').forEach(d=>d.addEventListener('toggle',()=>requestAnimationFrame(()=>els.forEach(upd))))})();
+/* light / dark toggle: remembered per browser; the page crossfades between themes where view transitions exist */
+(()=>{const b=$('themebtn');if(!b)return;const H=document.documentElement;
+ const cur=()=>H.dataset.theme==='light'?'light':'dark';
+ const label=()=>{const t=cur();b.setAttribute('aria-label',t==='dark'?'Switch to light mode':'Switch to dark mode');b.title=b.getAttribute('aria-label')};
+ const apply=t=>{H.dataset.theme=t;const cs=document.querySelector('meta[name="color-scheme"]'),tc=document.querySelector('meta[name="theme-color"]');if(cs)cs.content=t;if(tc)tc.content=t==='light'?'#f6f7f5':'#0f1211';try{localStorage.setItem('theme',t)}catch(e){}label()};
+ label();
+ b.addEventListener('click',()=>{const next=cur()==='dark'?'light':'dark';
+  if(document.startViewTransition&&!REDUCE.matches){b.style.viewTransitionName='themebtn';const vt=document.startViewTransition(()=>apply(next));vt.finished.finally(()=>{b.style.viewTransitionName=''})}else apply(next)})})();
+/* the hero beam rests while the hero is scrolled away */
+(()=>{const h=document.querySelector('.hero');if(h)new IntersectionObserver(e=>h.classList.toggle('offscreen',!e[0].isIntersecting)).observe(h)})();
+/* border beam motion: corners are reached at times proportional to the distance travelled, with linear easing,
+   so the light never speeds up or slows down. Rebuilt only when a bar changes size. */
+const BEAM_SPEED=140; /* px per second */
+const BEAMS=[];
+function beam(ring,dot,active){const b={ring,dot,active,anim:null};
+ const build=()=>{const w=ring.offsetWidth,h=ring.offsetHeight;if(!w||!h)return;const t=b.anim?b.anim.currentTime:0;b.anim&&b.anim.cancel();
+  const P=2*(w+h),i=.5,pts=[[i,i],[w-i,i],[w-i,h-i],[i,h-i],[i,i]],d=[0,w,w+h,2*w+h,P];
+  b.anim=dot.animate(pts.map(([x,y],k)=>({transform:`translate(${x}px,${y}px)`,offset:d[k]/P})),{duration:P/BEAM_SPEED*1000,iterations:Infinity,easing:'linear'});
+  b.anim.currentTime=t||0;sync()};
+ const sync=()=>{if(!b.anim)return;if(REDUCE.matches||!b.active())b.anim.pause();else b.anim.play()};
+ b.sync=sync;new ResizeObserver(build).observe(ring);BEAMS.push(b);return b}
+(()=>{const fab=$('fab'),sb=document.querySelector('.hero .sbeam'),hero=document.querySelector('.hero'),H=document.documentElement;
+ if(fab)beam(fab,fab.querySelector('.bdot'),()=>fab.classList.contains('on')&&!H.classList.contains('locked'));
+ if(sb)beam(sb,sb.querySelector('.bdot'),()=>!hero.classList.contains('offscreen')&&!H.classList.contains('dim'));
+ const all=()=>BEAMS.forEach(b=>b.sync());
+ [fab,hero,H].filter(Boolean).forEach(el=>new MutationObserver(all).observe(el,{attributes:true,attributeFilter:['class']}));
+ REDUCE.addEventListener?.('change',all)})();
+/* build the search window once while the browser is idle, so the first open is as quick as the rest */
+(window.requestIdleCallback||(f=>setTimeout(f,1200)))(()=>{try{renderCmd()}catch(e){}});
+/* swipe a photo sideways to step through its colors: the gesture just presses the next or previous color dot, so every view stays in sync.
+   touch-action:pan-y leaves vertical scrolling to the browser; if the browser takes the gesture for scrolling, it cancels ours */
+let SWIPED=0;
+function stepDots(dots,dir){if(dots.length<2)return;const i=dots.findIndex(d=>d.getAttribute('aria-pressed')==='true');const n=i<0?(dir>0?0:dots.length-1):(i+dir+dots.length)%dots.length;dots[n].click()}
+function swipeColors(root,photoSel){let x0=0,y0=0,el=null;
+ root.addEventListener('pointerdown',e=>{if(e.pointerType!=='touch'||e.target.closest('.sw'))return;el=e.target.closest(photoSel);
+  /* on the grid the whole card is covered by its "See details" layer, so find the photo under the finger by position */
+  if(!el){const card=e.target.closest('.c');const ph=card&&card.querySelector(photoSel);if(ph){const r=ph.getBoundingClientRect();if(e.clientX>=r.left&&e.clientX<=r.right&&e.clientY>=r.top&&e.clientY<=r.bottom)el=ph}}
+  if(!el)return;x0=e.clientX;y0=e.clientY},{passive:true});
+ root.addEventListener('pointercancel',()=>{el=null},{passive:true});
+ root.addEventListener('pointerup',e=>{if(!el)return;const dx=e.clientX-x0,dy=e.clientY-y0,box=el;el=null;
+  if(Math.abs(dx)<36||Math.abs(dx)<Math.abs(dy)*1.3)return;
+  SWIPED=performance.now();stepDots([...box.querySelectorAll('.sw')],dx<0?1:-1)},{passive:true});
+ /* a swipe is not a tap: don't let it open the details */
+ root.addEventListener('click',e=>{if(performance.now()-SWIPED<400&&!e.target.closest('.sw')){e.stopPropagation();e.preventDefault()}},true)}
+swipeColors($('g'),'.ph');swipeColors(BIKE,'.bmph');
+
+/* tap the photo in the details to see it larger; swipe or tap the color dots there too */
+const ZOOM=$('zoom');
+function syncZoom(){const img=$('bike-img');if(!img)return;$('zoom-img').src=img.currentSrc||img.src;$('zoom-img').alt=img.alt;
+ const b=BIKE_I!=null?B[BIKE_I]:null,on=BIKE.querySelector('.bmph .sw[aria-pressed="true"]');$('zoom-cap').textContent=b?(b.name+(on?' · '+on.getAttribute('aria-label'):'')):'';
+ const src=BIKE.querySelector('.bmph .sws');$('zoom-sws').innerHTML=src?src.innerHTML:''}
+BIKE.addEventListener('click',e=>{if(e.target.id==='bike-img'&&performance.now()-SWIPED>400){syncZoom();showDlg(ZOOM,e.target)}});
+ZOOM.querySelector('.zx').onclick=()=>ZOOM.close();
+ZOOM.addEventListener('click',e=>{const t=e.target.closest('.sw');if(t){const twin=BIKE.querySelectorAll('.bmph .sw')[[...ZOOM.querySelectorAll('.sw')].indexOf(t)];if(twin){twin.click();requestAnimationFrame(syncZoom)}return}
+ if(!e.target.closest('img,.zsws,.zx,.zarr')&&performance.now()-SWIPED>400)ZOOM.close()});
+(()=>{let x0=0,y0=0,on=false;ZOOM.addEventListener('pointerdown',e=>{if(e.pointerType!=='touch'||e.target.closest('.sw,.zx'))return;on=true;x0=e.clientX;y0=e.clientY},{passive:true});
+ ZOOM.addEventListener('pointercancel',()=>{on=false},{passive:true});
+ ZOOM.addEventListener('pointerup',e=>{if(!on)return;on=false;const dx=e.clientX-x0,dy=e.clientY-y0;
+  if(Math.abs(dx)>=36&&Math.abs(dx)>=Math.abs(dy)*1.3){SWIPED=performance.now();zstep(dx<0?1:-1)}
+  else if(dy>80&&Math.abs(dy)>Math.abs(dx)*1.3){SWIPED=performance.now();ZOOM.close()}},{passive:true})})();
+function zstep(dir){stepDots([...BIKE.querySelectorAll('.bmph .sw')],dir);requestAnimationFrame(syncZoom)}
+document.addEventListener('keydown',e=>{if(!ZOOM.open||!['ArrowLeft','ArrowRight'].includes(e.key))return;e.preventDefault();zstep(e.key==='ArrowRight'?1:-1)});
+ZOOM.querySelector('.zprev').onclick=()=>zstep(-1);ZOOM.querySelector('.znext').onclick=()=>zstep(1);
+/* arrows only when there is more than one color */
+const zArrows=()=>{const many=BIKE.querySelectorAll('.bmph .sw').length>1;ZOOM.querySelector('.zprev').hidden=!many;ZOOM.querySelector('.znext').hidden=!many};
+ZOOM.addEventListener('toggle',zArrows);
+/* sort menu behaviour: opens under its button, arrow keys move, Enter or a tap picks, Escape or a tap outside closes */
+(()=>{const btn=$('sortbtn'),menu=$('sortmenu'),sel=$('sort'),opts=[...menu.querySelectorAll('.sopt')];
+ const mark=()=>{opts.forEach(o=>o.setAttribute('aria-selected',o.dataset.v===sel.value));$('sortval').textContent=sel.selectedOptions[0].text};mark();
+ /* the label area is as wide as the longest option, so the button (and the menu under it) never changes width when the sort changes */
+ const fit=()=>{const v=$('sortval'),keep=v.textContent;let w=0;for(const o of sel.options){v.textContent=o.text;w=Math.max(w,v.getBoundingClientRect().width)}v.textContent=keep;v.style.minWidth=Math.ceil(w)+'px'};
+ fit();document.fonts&&document.fonts.ready.then(fit);matchMedia('(max-width: 760px)').addEventListener('change',()=>{$('sortval').style.minWidth='';fit()});
+ const cur=()=>opts.find(o=>o.dataset.v===sel.value)||opts[0];
+ menu.addEventListener('beforetoggle',e=>{if(e.newState!=='open')return;mark();const r=btn.getBoundingClientRect();const w=r.width;
+  menu.style.width=w+'px';menu.style.left=r.left+'px';
+  const below=innerHeight-r.bottom;const h=opts.length*(matchMedia('(pointer:coarse)').matches?44:36)+12;
+  if(below<h+12&&r.top>h+12){menu.style.top='';menu.style.bottom=(innerHeight-r.top+6)+'px';menu.style.transformOrigin='bottom center'}else{menu.style.bottom='';menu.style.top=(r.bottom+6)+'px';menu.style.transformOrigin='top center'}});
+ menu.addEventListener('toggle',e=>{const o=e.newState==='open';btn.setAttribute('aria-expanded',o);if(o)cur().focus({preventScroll:true});else if(KBD)btn.focus({preventScroll:true})});
+ const pick=o=>{if(sel.value!==o.dataset.v){sel.value=o.dataset.v;sel.dispatchEvent(new Event('change'))}mark();menu.hidePopover()};
+ menu.addEventListener('click',e=>{const o=e.target.closest('.sopt');if(o)pick(o)});
+ menu.addEventListener('keydown',e=>{const i=opts.indexOf(document.activeElement);
+  if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();opts[(i+(e.key==='ArrowDown'?1:-1)+opts.length)%opts.length].focus()}
+  else if(e.key==='Home'||e.key==='End'){e.preventDefault();opts[e.key==='Home'?0:opts.length-1].focus()}
+  else if(e.key==='Tab'){menu.hidePopover()}});
+ btn.addEventListener('keydown',e=>{if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();menu.showPopover()}});
+ addEventListener('scroll',()=>{if(menu.matches(':popover-open'))menu.hidePopover()},{passive:true});
+ sel.addEventListener('change',mark)})();
+/* width of the reserved scrollbar strip, used to centre windows on the full screen */
+const SBP=document.createElement('div');SBP.setAttribute('aria-hidden','true');SBP.style.cssText='position:fixed;inset:0;visibility:hidden;pointer-events:none;z-index:-1';document.body.append(SBP);
+const setSbw=()=>{document.documentElement.style.setProperty('--sbw',Math.max(0,innerWidth-SBP.getBoundingClientRect().width)+'px')};setSbw();addEventListener('resize',setSbw);
+</script>
+

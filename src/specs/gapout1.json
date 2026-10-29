@@ -1,0 +1,191 @@
+[
+ {
+  "index": 7,
+  "spd": null,
+  "tq": 60,
+  "load": null,
+  "range": null,
+  "url": "https://99spokes.com/bikes/aventon/2025/sinch-2",
+  "note": "60 Nm per Electric Bike Review quoted on 99spokes Sinch.2 page; Aventon's own Sinch.2 page lists only 48V 500W, no Nm"
+ },
+ {
+  "index": 20,
+  "spd": 20,
+  "tq": null,
+  "load": 298,
+  "range": null,
+  "url": "https://upway.co/blogs/news/bulls-iconic-ebike-review",
+  "note": "spd: Upway says EVO 1 750 Bosch CX assist up to 20 mph (Class 1). load: 135 kg 'Weight Limit' from mantel.com/en/bulls-iconic-evo-1-275 (EU 625Wh version, same frame; unclear if incl. bike). range: only EU 625Wh figure found (up to 180 km), not valid for US 750Wh version -> null"
+ },
+ {
+  "index": 27,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://www.rei.com/product/221307/cannondale-tesoro-neo-x-2-stepthru-electric-bike",
+  "note": "No max system/rider weight published on REI, rabe-bike, bike-magazin; only rear rack 25 kg"
+ },
+ {
+  "index": 33,
+  "spd": 20,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://www.rei.com/product/198529/electra-townie-go-7d-step-through-electric-bike",
+  "note": "REI: 'Class 1: pedal assist up to 20 mph'; OutdoorGearLab also says top assisted speed 20 mph"
+ },
+ {
+  "index": 43,
+  "spd": null,
+  "tq": 45,
+  "load": null,
+  "range": null,
+  "url": "https://decathlon.ch/en/p/mp/mach1/roue-de-velo-mach1-t-maxx-36h-bafang-h400b-36v-250w/_/R-p-340a3386-0315-403b-9251-913353043c5f",
+  "note": "Fuji page names motor 'Bafang H400B rear hub 250W' but no Nm; Decathlon listing for Bafang H400B 36V 250W rear hub states max torque 45 Nm (Bafang's own site lists only front H400 at 50 Nm)"
+ },
+ {
+  "index": 49,
+  "spd": null,
+  "tq": null,
+  "load": 331,
+  "range": null,
+  "url": "https://www.gazellebikes.com/en-gb/eclipse-t11-hmb",
+  "note": "Gazelle spec sheet: Bike Max. Total Weight 150 kg (bike+rider+luggage per mantel FAQ) = 331 lb max system weight"
+ },
+ {
+  "index": 56,
+  "spd": null,
+  "tq": null,
+  "load": 344,
+  "range": "31-111",
+  "url": "https://www.giant-bicycles.com/us/explore-eplus-1-sta-28mph-2023",
+  "note": "range: Giant US page (EnergyPak Smart 625): 31 extreme / 62 good / 111 ideal mi. load: bikes.de Explore E+ 1 2025 'Zul\u00e4ssiges Gesamtgewicht 156 kg' (max system weight, EU listing) = 344 lb"
+ },
+ {
+  "index": 65,
+  "spd": null,
+  "tq": 60,
+  "load": null,
+  "range": null,
+  "url": "https://www.utahtrikes.com/PROD-11618277.html",
+  "note": "Utah Trikes ICE Adventure: Shimano STEPS E6100 '60Nm torque' (matches Shimano E6100 spec), 418/504 Wh. No range published by ICE or dealers"
+ },
+ {
+  "index": 76,
+  "spd": 17,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://www.bestbuy.com/product/lectric-ebikes-xp-trike2-750-foldable-long-range-ebike-max-70mi-17mph-cargo-package-support-seat-seat-post-headlight-mirrors-lock-stratus-white/J3GWYSPJXY",
+  "note": "XP Trike2 750: Best Buy spec 'Maximum Speed: 17 miles per hour'; EBR also says 750 has 'higher 17 mph speed limit'. Lectric says trikes are speed-tested as Class 2"
+ },
+ {
+  "index": 88,
+  "spd": null,
+  "tq": 65,
+  "load": null,
+  "range": null,
+  "url": "https://www.bikeride.com/macfox-x7/",
+  "note": "bikeride.com facts: 'Torque 65 Nm' (third-party spec page; Macfox site not checked)"
+ },
+ {
+  "index": 94,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://www.huka.nl/wp-content/uploads/2024/09/User-manual-Duet_EN.pdf",
+  "note": "Huka Duet manual, leaflet and product page give only 43V 750Wh battery, 3 support levels, 4 km/h walk assist; no assisted top speed or range published"
+ },
+ {
+  "index": 106,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://bikes.fan/momentum-lafree-eplus-2023/",
+  "note": "No max weight found (bikes.fan, Mike's Bikes); 99spokes pages failed to load"
+ },
+ {
+  "index": 114,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://www.bikes.de/shop/e-bikes/marke.orbea/orbea-kemen-30-2023/",
+  "note": "No system weight or range on bikes.de/bike24 (540Wh + optional 250Wh extender, rack 18 kg); orbea.com and 99spokes pages failed to load"
+ },
+ {
+  "index": 126,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://www.bikeride.com/priority-e-coast/",
+  "note": "Torque not published (bikeride.com: 'Not Stated in Nm'; Priority Costco page, Electrek, TwoWheelingTots list only 500W rear hub). No total/rider weight limit published; only rear rack 50 lb"
+ },
+ {
+  "index": 137,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://retrospec.com/collections/electric-bikes/products/joe-rev-bmx-electric-bike",
+  "note": "Torque not published: Retrospec and dealers list only '750W planetary geared rear hub'"
+ },
+ {
+  "index": 146,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://www.santacruzbicycles.com/cdn/shop/files/57-30239_EN17406_Payload_Safety_MY27.1_Feb_26_US.docx.pdf",
+  "note": "Santa Cruz payload doc lists Skitch as Condition 2 but gives no payload/max weight for it; support page and reviews also silent"
+ },
+ {
+  "index": 157,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://serfas.com/shop/products/e-bike/cargo/atlas-750w",
+  "note": "Serfas lists motor as Bafang RM G0900.750.D 48V 750W but no Nm; Bafang does not publish a public torque figure for G0900 -> null"
+ },
+ {
+  "index": 164,
+  "spd": null,
+  "tq": 90,
+  "load": null,
+  "range": "60",
+  "url": "https://upway.co/blogs/news/specialized-globe-haul-vs-aventon-abound",
+  "note": "Globe Haul ST: Upway 'Specialized uses a 90 Nm motor'; range claimed 60 mi (772Wh) per Upway and Electric Bike Report (EBR tested 38-54)"
+ },
+ {
+  "index": 179,
+  "spd": null,
+  "tq": null,
+  "load": 300,
+  "range": null,
+  "url": "https://www.sunshinebicycle.com/products/210000071417",
+  "note": "Trek spec text: 'maximum total weight limit (combined weight of bicycle, rider, and cargo) of 300 pounds (136 kg)'"
+ },
+ {
+  "index": 192,
+  "spd": null,
+  "tq": 85,
+  "load": null,
+  "range": null,
+  "url": "https://shop.roulezjeunesse.com/collections/urban-arrow-cargo/products/urban-arrow-shorty-cargo-line",
+  "note": "tq: Shorty Cargo Line uses Bosch Cargo Line, 'couple de 85 Nm' (matches Bosch spec). spd: maker states only 25 km/h (EU); no US Shorty mph source found (Propel says UA Family is Class 1 20 mph, not Shorty)"
+ },
+ {
+  "index": 221,
+  "spd": null,
+  "tq": null,
+  "load": 440,
+  "range": "19-43",
+  "url": "https://gearjunkie.com/biking/yuba-fastrack-cargo-ebike-review",
+  "note": "load: GearJunkie 'GVWR: 440 lbs' (max total incl. bike); Yuba EU says 200 kg max load incl. rider. range: yubabikes.eu FAQ 'between 30 and 70 km' = 19-43 mi"
+ }
+]

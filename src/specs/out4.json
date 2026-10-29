@@ -1,0 +1,906 @@
+[
+ {
+  "index": 4,
+  "spd": 20,
+  "tq": 80,
+  "load": 440,
+  "wh": 733,
+  "motor": "750W rear hub (1,188W peak)",
+  "wt": 80,
+  "range": "up to 60",
+  "colors": [
+   "Cobalt",
+   "Haze",
+   "Stealth"
+  ],
+  "colors_simple": [
+   "Blue",
+   "Gray",
+   "Black"
+  ],
+  "url": "https://aventon.com/products/abound-sr-ebike",
+  "fix": "peak power 1,188W per Aventon (was 1,184W)",
+  "note": "Specs are for current Abound SR; original 2023 Abound had 720Wh battery, 81 lb, color Sage. Abound LR (88 lb) colors Sage/Stealth."
+ },
+ {
+  "index": 9,
+  "spd": 28,
+  "tq": 85,
+  "load": 420,
+  "wh": 500,
+  "motor": "Bosch Performance Line Speed mid-drive 250W",
+  "wt": null,
+  "range": "30-90",
+  "colors": [
+   "Denim Blue",
+   "Wasabi Green",
+   "Anthracite Gray",
+   "Bone Gray"
+  ],
+  "colors_simple": [
+   "Blue",
+   "Green",
+   "Gray",
+   "Gray"
+  ],
+  "url": "https://99spokes.com/en/bikes/benno/2025/46er",
+  "fix": null,
+  "note": "Colors from 99spokes 2025 46er listing (CX version); speed version seen in Bone Gray. Weight not found; benno site not reachable."
+ },
+ {
+  "index": 14,
+  "spd": 28,
+  "tq": 55,
+  "load": 312,
+  "wh": 614,
+  "motor": "500W geared rear hub",
+  "wt": 61,
+  "range": "up to 70",
+  "colors": [
+   "Racing Green",
+   "Slate Grey",
+   "Burgundy",
+   "Steel Blue"
+  ],
+  "colors_simple": [
+   "Green",
+   "Gray",
+   "Red",
+   "Blue"
+  ],
+  "url": "https://electricbikereport.com/blix-vika-x-review/",
+  "fix": null,
+  "note": "Payload 312 lb and claimed weight 61 lb (tested 56) from Electric Bike Report; colors from ElectricBikeReview. Throttle capped 20 mph."
+ },
+ {
+  "index": 19,
+  "spd": null,
+  "tq": 85,
+  "load": null,
+  "wh": 750,
+  "motor": "Bosch Performance Line CX Smart System mid-drive",
+  "wt": null,
+  "range": null,
+  "colors": [
+   "Black matte / dark chrome"
+  ],
+  "colors_simple": [
+   "Black"
+  ],
+  "url": "https://flyridesusa.com/products/bulls-iconic-evo-tr-1",
+  "fix": null,
+  "note": "Matched to Bulls Iconic EVO TR 1 750 (sold out at Flyrides). Older 2019 Iconic EVO TR 1 had Bosch Perf Speed 63Nm/482Wh, 60.4 lb."
+ },
+ {
+  "index": 24,
+  "spd": 20,
+  "tq": null,
+  "load": null,
+  "wh": 418,
+  "motor": "Bafang G020 250W rear hub",
+  "wt": null,
+  "range": "up to 47",
+  "colors": [
+   "Black"
+  ],
+  "colors_simple": [
+   "Black"
+  ],
+  "url": "https://www.cannondale.com/en/bikes/electric/e-urban/adventure-neo-allroad/adventure-neo-allroad",
+  "fix": null,
+  "note": "Adventure Neo AllRoad (Class 2 throttle). Color 'Black' from Mike's Bikes title; Cannondale page lists no color names. Other Adventure Neo variants (EQ, Speed) differ."
+ },
+ {
+  "index": 29,
+  "spd": null,
+  "tq": 60,
+  "load": 231,
+  "wh": 345,
+  "motor": "DAHON 200W mid-drive (36V)",
+  "wt": 41.2,
+  "range": "up to 62 (100 km)",
+  "colors": [
+   "Black",
+   "Red"
+  ],
+  "colors_simple": [
+   "Black",
+   "Red"
+  ],
+  "url": "https://usa.dahon.com/products/unio-e20-mid-motor",
+  "fix": null,
+  "note": "Load is max rider weight 105 kg (231 lb); rack 10 kg. Top speed not stated on Dahon US page. EU listing shows 313Wh/9.5Ah and color Matt Obsidian."
+ },
+ {
+  "index": 34,
+  "spd": 20,
+  "tq": 40,
+  "load": 300,
+  "wh": 250,
+  "motor": "250W Hyena rear hub",
+  "wt": 44,
+  "range": "up to 40",
+  "colors": null,
+  "colors_simple": null,
+  "url": "https://www.trekbikes.com/FAQ/cruisergo/",
+  "fix": null,
+  "note": "Specs from Trek/Electra Cruiser Go! FAQ; load is total system weight. Colors not found."
+ },
+ {
+  "index": 39,
+  "spd": 20,
+  "tq": null,
+  "load": 400,
+  "wh": 720,
+  "motor": "500W Bafang rear hub",
+  "wt": 90,
+  "range": "35-65",
+  "colors": [
+   "White",
+   "Apple Red",
+   "Anthracite Grey"
+  ],
+  "colors_simple": [
+   "White",
+   "Red",
+   "Gray"
+  ],
+  "url": "https://www.southshorecyclery.com/product/emojo-bike-emojo-caddy-pro-e-trike-17277.htm",
+  "fix": null,
+  "note": "Caddy Pro: battery 48V/15Ah (720Wh) in details, 48V/15.6Ah in spec table; retailer range figures conflict (35 vs 45/65). Emojo site not reachable."
+ },
+ {
+  "index": 44,
+  "spd": 20,
+  "tq": null,
+  "load": null,
+  "wh": 417,
+  "motor": "Bafang H400B 250W rear hub",
+  "wt": null,
+  "range": null,
+  "colors": [
+   "Satin Black",
+   "Satin Black / Green"
+  ],
+  "colors_simple": [
+   "Black",
+   "Black"
+  ],
+  "url": "https://www.fujibikes.com/products/conductor-21-19",
+  "fix": null,
+  "note": "Page is Conductor 2.1+; weight listed as TBD."
+ },
+ {
+  "index": 49,
+  "spd": 28,
+  "tq": 85,
+  "load": null,
+  "wh": 750,
+  "motor": "Bosch Performance Line CX mid-drive",
+  "wt": null,
+  "range": "70-100",
+  "colors": [
+   "Anthracite Grey",
+   "Green"
+  ],
+  "colors_simple": [
+   "Gray",
+   "Green"
+  ],
+  "url": "https://www.globalbikes.info/product/gazelle-bikes-eclipse-t11-high-697462-1.htm",
+  "fix": null,
+  "note": "Eclipse comes as C380 HMB (Bosch Performance Line, 75Nm) and T11 HMB (Performance Line CX, 85Nm); 85Nm is T11. Gazelle US page not reachable; Anthracite Grey from dealer T11+ High page; Green from Mike's Bikes T11+ Low-Step listing title. Retailer lists motor as Performance Line Speed 85Nm (US 28 mph)."
+ },
+ {
+  "index": 54,
+  "spd": 20,
+  "tq": 85,
+  "load": null,
+  "wh": 800,
+  "motor": "Giant SyncDrive Pro2 (Yamaha) mid-drive",
+  "wt": 66.1,
+  "range": "up to 155",
+  "colors": [
+   "Bay Leaf"
+  ],
+  "colors_simple": [
+   "Green"
+  ],
+  "url": "https://www.bicyclebluebook.com/value-guide/e-bike/giant/stormguard-e-3/2024",
+  "fix": null,
+  "note": "Color is for 2024 Stormguard E+ 3; E+ 1/2 trims may differ. Rack capacity 44 lb; total payload not found."
+ },
+ {
+  "index": 59,
+  "spd": null,
+  "tq": 85,
+  "load": 441,
+  "wh": 630,
+  "motor": "Shimano EP6 Cargo mid-drive",
+  "wt": 64,
+  "range": null,
+  "colors": [
+   "Pale green RAL 6021"
+  ],
+  "colors_simple": [
+   "Green"
+  ],
+  "url": "https://hasebikes.com/en/your-bikes/cargo-bikes/gravit-city-e/",
+  "fix": null,
+  "note": "Matched to Hase Gravit City E (max load 200 kg = 441 lb; platform 70 kg). A Gravit Dust cargo-gravel variant also exists."
+ },
+ {
+  "index": 64,
+  "spd": 20,
+  "tq": 86,
+  "load": 440,
+  "wh": 960,
+  "motor": "750W geared rear hub",
+  "wt": 80,
+  "range": "60-80",
+  "colors": [
+   "Ocean Blue",
+   "Orange"
+  ],
+  "colors_simple": [
+   "Blue",
+   "Orange"
+  ],
+  "url": "https://ezeryders.com/products/himiway-cargo-ebike-c3",
+  "fix": null,
+  "note": "Load is max system weight. Listed as class 3 but EBR describes C3 as Class 2, 20 mph. Retailer torque figure may be copied from C5."
+ },
+ {
+  "index": 69,
+  "spd": null,
+  "tq": 85,
+  "load": 397,
+  "wh": 504,
+  "motor": "Shimano STePS EP8 mid-drive 250W",
+  "wt": null,
+  "range": "up to 62 (100 km)",
+  "colors": [
+   "Classic Black",
+   "Bluebird",
+   "Moondog"
+  ],
+  "colors_simple": [
+   "Black",
+   "Blue"
+  ],
+  "url": "https://www.thebikeshop.com/product/larry-vs-harry-e-bullitt-steps-ep8-bike-only-classic-black-shimano-xt-11sp-68082.htm",
+  "fix": null,
+  "note": "EP8 version. Retailer gives 100 kg cargo payload; 397 lb total incl. rider is from Bikerumor (earlier STePS eBullitt, 418Wh, 49.2 lb). 'Moondog' color family unknown so not mapped."
+ },
+ {
+  "index": 74,
+  "spd": 28,
+  "tq": 85,
+  "load": 450,
+  "wh": 1248,
+  "motor": "750W rear hub (1,310W peak)",
+  "wt": 75,
+  "range": "up to 170",
+  "colors": [
+   "Stratus White",
+   "Raindrop Blue"
+  ],
+  "colors_simple": [
+   "White",
+   "Blue"
+  ],
+  "url": "https://electrek.co/2024/11/12/lectric-unveils-major-upgrades-to-xpedition-2-0-e-bike-no-price-increase/",
+  "fix": null,
+  "note": "XPedition 2.0: 624Wh single / 1,248Wh dual / 1,680Wh long-range; 170 mi is with largest battery. Weight 75 lb (dual battery) and Class 1/2/3 settings from Lectric XPedition 1.0 page (1.0: 1,345Wh, Fog Grey, 75/150 mi)."
+ },
+ {
+  "index": 79,
+  "spd": 28,
+  "tq": 100,
+  "load": 500,
+  "wh": 960,
+  "motor": "750W Hentach hub (1,500W peak)",
+  "wt": 80,
+  "range": "up to 45",
+  "colors": [
+   "Green",
+   "Gray"
+  ],
+  "colors_simple": [
+   "Green",
+   "Gray"
+  ],
+  "url": "https://letrigo.com/products/koda",
+  "fix": null,
+  "note": "Battery 48V/20Ah = 960Wh. Page: Class 2 20 mph by default, max speed up to 28 mph."
+ },
+ {
+  "index": 84,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "wh": null,
+  "motor": null,
+  "wt": null,
+  "range": null,
+  "colors": null,
+  "colors_simple": null,
+  "url": null,
+  "fix": null,
+  "note": "No 'Macfox X19' model found; Macfox sells X1S, X2, M19 etc. Possibly M19 or a typo; not filled."
+ },
+ {
+  "index": 89,
+  "spd": 20,
+  "tq": 40,
+  "load": null,
+  "wh": 340,
+  "motor": "Bafang 250W rear hub",
+  "wt": 60,
+  "range": "up to 62",
+  "colors": [
+   "Green"
+  ],
+  "colors_simple": [
+   "Green"
+  ],
+  "url": "https://marinbikes.com/products/2026-fairfax-e",
+  "fix": null,
+  "note": "2026 Fairfax E page; weight not on page (kept existing 60). Other variants (e.g. ST) may have other colors."
+ },
+ {
+  "index": 94,
+  "spd": null,
+  "tq": 65,
+  "load": 220,
+  "wh": 750,
+  "motor": "Bafang rear hub motor",
+  "wt": null,
+  "range": null,
+  "colors": [
+   "Silk metallic blue",
+   "Silk metallic red",
+   "Silk silver grey"
+  ],
+  "colors_simple": [
+   "Blue",
+   "Red",
+   "Silver"
+  ],
+  "url": "https://www.huka.nl/wp-content/uploads/2023/05/Wheelchair-bike-Duet-product-information.pdf",
+  "fix": null,
+  "note": "Specs from Huka (Duet maker) product sheet; Mobility Access appears to be the US distributor. Load = 100 kg max in the wheelchair (bike part also 100 kg). Battery 43V 750Wh. Colors listed for standard version (seat shell yellow)."
+ },
+ {
+  "index": 99,
+  "spd": 28,
+  "tq": null,
+  "load": 275,
+  "wh": 615,
+  "motor": "750W rear geared hub (1,000W peak)",
+  "wt": 58,
+  "range": "up to 45",
+  "colors": [
+   "Charcoal Black",
+   "Brushed Aluminum"
+  ],
+  "colors_simple": [
+   "Black",
+   "Silver"
+  ],
+  "url": "https://cleantechnica.com/2024/07/15/the-new-mod-berlin-3-looks-like-a-great-first-commuter-e-bike/",
+  "fix": null,
+  "note": "Berlin 3 / Step-Thru 3; up to 90 mi with optional second battery. MOD site not reachable."
+ },
+ {
+  "index": 104,
+  "spd": 28,
+  "tq": 90,
+  "load": 350,
+  "wh": 940,
+  "motor": "750W rear hub (1,100W peak)",
+  "wt": 82,
+  "range": "60-80",
+  "colors": [
+   "White",
+   "Dark Olive Green",
+   "Firebrick",
+   "Gray"
+  ],
+  "colors_simple": [
+   "White",
+   "Green",
+   "Red",
+   "Gray"
+  ],
+  "url": "https://mokwheel.com/products/scoria",
+  "fix": "range updated to 60-80 per Mokwheel page (was 60)",
+  "note": "Throttle 20 mph, PAS 28 mph."
+ },
+ {
+  "index": 109,
+  "spd": 28,
+  "tq": 80,
+  "load": 361,
+  "wh": 500,
+  "motor": "SyncDrive Pro (Yamaha) mid-drive 250W",
+  "wt": 81.6,
+  "range": "up to 60",
+  "colors": [
+   "Traffic Yellow",
+   "Patina Green"
+  ],
+  "colors_simple": [
+   "Yellow",
+   "Green"
+  ],
+  "url": "https://ekkip-sports.com/en/collections/all/products/pakyak-e",
+  "fix": null,
+  "note": "Weight (about 37 kg), range (97 km) and colors from a Canadian retailer's PakYak E listing; load 361 lb = 164 kg total authorized weight. US E+ is Class 3 28 mph."
+ },
+ {
+  "index": 114,
+  "spd": 20,
+  "tq": 85,
+  "load": null,
+  "wh": 540,
+  "motor": "Shimano EP600 mid-drive (600W peak)",
+  "wt": null,
+  "range": null,
+  "colors": [
+   "Diamond Black (Matt-Gloss)",
+   "Mars Red - Ivory White (Gloss)",
+   "Blue Stone (Matt) - Burgundy (Gloss)"
+  ],
+  "colors_simple": [
+   "Black",
+   "Red",
+   "Blue"
+  ],
+  "url": "https://99spokes.com/bikes/orbea/2026/kemen-adv-30-mid-20mph",
+  "fix": null,
+  "note": "2026 Kemen ADV 30 Mid 20mph version, though list says class 3 (a 28 mph version may exist). Rack max 30 kg."
+ },
+ {
+  "index": 119,
+  "spd": 20,
+  "tq": 45,
+  "load": 250,
+  "wh": 910,
+  "motor": "500W geared rear hub (52V)",
+  "wt": 47.2,
+  "range": "up to 75",
+  "colors": [
+   "Black",
+   "Red",
+   "Blue"
+  ],
+  "colors_simple": [
+   "Black",
+   "Red",
+   "Blue"
+  ],
+  "url": "https://pedegoelectricbikes.com/products/latch",
+  "fix": "Existing values (750W, 90Nm, 835Wh, 400 lb, 66 lb, 84 mi) are the Latch 2, a different Class 1 model; replaced with original Latch specs",
+  "note": "Latch weight 47.2 lb without battery; battery 52V 17.5Ah (910Wh) or 10.5Ah (546Wh). Colors from image filenames. Latch 2 colors: Blue Fusion, Cloud Dancer, Hematite."
+ },
+ {
+  "index": 124,
+  "spd": 20,
+  "tq": 45,
+  "load": 250,
+  "wh": 480,
+  "motor": "500W geared rear hub",
+  "wt": 52.8,
+  "range": "up to 56",
+  "colors": [
+   "Black",
+   "Blue",
+   "Green",
+   "Orange",
+   "Red",
+   "White"
+  ],
+  "colors_simple": [
+   "Black",
+   "Blue",
+   "Green",
+   "Orange",
+   "Red",
+   "White"
+  ],
+  "url": "https://pedegoelectricbikes.com/products/element",
+  "fix": "weight 52.8 lb (no battery) per Pedego page (was 59)",
+  "note": "Battery 48V 10Ah (480Wh) or 14Ah (672Wh). Colors from image filenames only."
+ },
+ {
+  "index": 129,
+  "spd": 20,
+  "tq": 87,
+  "load": 440,
+  "wh": 687,
+  "motor": "750W rear hub (1,200W peak)",
+  "wt": 77,
+  "range": "30-50",
+  "colors": [
+   "Black"
+  ],
+  "colors_simple": [
+   "Black"
+  ],
+  "url": "https://www.radioflyer.com/products/flyer-loop",
+  "fix": null,
+  "note": "Radio Flyer page does not list Wh/torque (kept existing); page shows both 440 and 400 lb capacity."
+ },
+ {
+  "index": 134,
+  "spd": 28,
+  "tq": 65,
+  "load": 350,
+  "wh": 720,
+  "motor": "750W rear hub (850W peak)",
+  "wt": 72,
+  "range": "up to 68",
+  "colors": [
+   "Matte Green"
+  ],
+  "colors_simple": [
+   "Green"
+  ],
+  "url": "https://electricbikereport.com/retrospec-valen-rev-plus-review/",
+  "fix": "range up to 68 per Valen Rev+ review (was 50)",
+  "note": "Specs are Valen Rev+ (EBR review). 'All variations' (Rev, Rev+ 2, Rev 3) differ. Retrospec's fat-tire line colors include Matte Black, Matte Olive Drab, Matte Shale, Cypress Blue, Slate Gray, etc., not per-model."
+ },
+ {
+  "index": 139,
+  "spd": 28,
+  "tq": null,
+  "load": 350,
+  "wh": 500,
+  "motor": "500W hub (torque sensor)",
+  "wt": null,
+  "range": "up to 52",
+  "colors": [
+   "Matte Gray"
+  ],
+  "colors_simple": [
+   "Gray"
+  ],
+  "url": "https://www.acehardware.com/departments/outdoor-living/sporting-goods/bicycles/8106715",
+  "fix": null,
+  "note": "Retrospec's own page failed to load; specs from Ace Hardware listing. Other colors may exist."
+ },
+ {
+  "index": 144,
+  "spd": 20,
+  "tq": 45,
+  "load": null,
+  "wh": 237,
+  "motor": "Mahle X30 rear hub",
+  "wt": null,
+  "range": "up to 45",
+  "colors": [
+   "Canyon Red"
+  ],
+  "colors_simple": [
+   "Red"
+  ],
+  "url": "https://www.performancebike.com/salsa-confluence-flat-bar-gravel-ebike-canyon-red-06-004543-fb-p/p1818124",
+  "fix": null,
+  "note": "Flat-bar Confluence listing; other Confluence builds may have other colors."
+ },
+ {
+  "index": 149,
+  "spd": 28,
+  "tq": null,
+  "load": 287,
+  "wh": 625,
+  "motor": "Bosch Performance Line Speed mid-drive",
+  "wt": 62.4,
+  "range": null,
+  "colors": null,
+  "colors_simple": null,
+  "url": "https://scott-sports.com/us/en/product/scott-silence-eride-20-men-speed-bike",
+  "fix": null,
+  "note": "Silence eRIDE 20 Men Speed (US): 45 km/h/28 mph; load is max system weight 130 kg; weight approx 28.3 kg. Evo version 28 kg; Range Booster up to 1125Wh. No colors on Scott pages."
+ },
+ {
+  "index": 154,
+  "spd": 28,
+  "tq": 75,
+  "load": 350,
+  "wh": 720,
+  "motor": "750W hub (900W peak)",
+  "wt": null,
+  "range": "up to 65",
+  "colors": null,
+  "colors_simple": null,
+  "url": "https://electricwheelers.com/senada-electric-bikes-review/",
+  "fix": null,
+  "note": "Battery 48V 15Ah. Article says Senada appears to have stopped operating; no maker page."
+ },
+ {
+  "index": 159,
+  "spd": 20,
+  "tq": null,
+  "load": null,
+  "wh": 636,
+  "motor": "500W rear hub",
+  "wt": 70,
+  "range": "25-55",
+  "colors": [
+   "Silly Grey",
+   "Black",
+   "Race Red"
+  ],
+  "colors_simple": [
+   "Gray",
+   "Black",
+   "Red"
+  ],
+  "url": "https://serfas.com/shop/products/e-bike/e-dash/serfas-edash-mini-500w-2023-model",
+  "fix": null,
+  "note": "2023 model page; also states 'Colors Available: Black' (inconsistent)."
+ },
+ {
+  "index": 164,
+  "spd": 28,
+  "tq": null,
+  "load": 419,
+  "wh": 772,
+  "motor": "Globe custom rear hub",
+  "wt": 77.2,
+  "range": null,
+  "colors": [
+   "Satin Obsidian",
+   "Gloss White Mountains"
+  ],
+  "colors_simple": [
+   "Black",
+   "White"
+  ],
+  "url": "https://99spokes.com/bikes/specialized/2025/haul-st",
+  "fix": null,
+  "note": "Haul ST (Globe Haul ST); Haul LT also exists."
+ },
+ {
+  "index": 169,
+  "spd": 20,
+  "tq": 85,
+  "load": 400,
+  "wh": 500,
+  "motor": "Bosch Performance Cargo mid-drive",
+  "wt": null,
+  "range": "15-50",
+  "colors": [
+   "Bathwater Gray"
+  ],
+  "colors_simple": [
+   "Gray"
+  ],
+  "url": "https://surlybikes.com/products/skid-loader",
+  "fix": "range 15-50 per Surly (was 50)",
+  "note": null
+ },
+ {
+  "index": 174,
+  "spd": 20,
+  "tq": 75,
+  "load": 419,
+  "wh": 545,
+  "motor": "Bosch Performance (BDU34) mid-drive",
+  "wt": 61.9,
+  "range": "35-67",
+  "colors": [
+   "Blue/Green"
+  ],
+  "colors_simple": [
+   "Blue",
+   "Green"
+  ],
+  "url": "https://www.ternbicycles.com/us/bikes/473/hsd-p5i",
+  "fix": null,
+  "note": "HSD P5i Gen 3: GVW 190 kg (418.9 lb), max rider 130 kg, rack 80 kg. Color from REI listing (REI shows 397 lb GVW and 76 mi range, likely older Gen 2). Other HSD trims (S00, S+) differ."
+ },
+ {
+  "index": 179,
+  "spd": 20,
+  "tq": 40,
+  "load": null,
+  "wh": 250,
+  "motor": "250W rear hub",
+  "wt": 38.6,
+  "range": "up to 35",
+  "colors": null,
+  "colors_simple": null,
+  "url": "https://insideevs.com/news/600644/trek-commuter-electric-bikes-launched/",
+  "fix": null,
+  "note": "Weight 17.5 kg (38.6 lb). Range up to 70 mi with range extender."
+ },
+ {
+  "index": 184,
+  "spd": 28,
+  "tq": 90,
+  "load": 300,
+  "wh": 800,
+  "motor": "Bosch Performance Line Sport mid-drive (up to 700W)",
+  "wt": 70,
+  "range": "45-64",
+  "colors": null,
+  "colors_simple": null,
+  "url": "https://www.trekbikes.com/FAQ/charter-plus/",
+  "fix": null,
+  "note": "Trek FAQ: 28 mph on Charter+ 4S/5S; 540Wh (up to 45 mi) and 800Wh (up to 64 mi) models; avg weight 70 lb stepover / 67 lb low-step; 300 lb total limit."
+ },
+ {
+  "index": 189,
+  "spd": 20,
+  "tq": 130,
+  "load": 300,
+  "wh": 720,
+  "motor": "Bafang 500W mid-drive",
+  "wt": 60.5,
+  "range": "up to 60",
+  "colors": [
+   "Burnt Orange",
+   "Charcoal"
+  ],
+  "colors_simple": [
+   "Orange",
+   "Gray"
+  ],
+  "url": "https://troxusmobility.com/products/t-xc-e-bike",
+  "fix": null,
+  "note": null
+ },
+ {
+  "index": 194,
+  "spd": 25,
+  "tq": 50,
+  "load": 330,
+  "wh": 529,
+  "motor": "500W rear hub (750W peak)",
+  "wt": 56.8,
+  "range": "up to 65",
+  "colors": [
+   "Rose Red",
+   "Glacier Blue",
+   "Creme",
+   "Charcoal Grey"
+  ],
+  "colors_simple": [
+   "Red",
+   "Blue",
+   "White",
+   "Gray"
+  ],
+  "url": "https://newurtopia.com/products/urtopia-joy-carbon-fat-tire-ebike",
+  "fix": null,
+  "note": "20 mph by default, 25 mph when unlocked."
+ },
+ {
+  "index": 199,
+  "spd": 28,
+  "tq": 65,
+  "load": 330,
+  "wh": 627,
+  "motor": "750W rear hub (900W peak)",
+  "wt": 48,
+  "range": "55-70",
+  "colors": [
+   "Ocean Mist",
+   "Classic Scarlet",
+   "Satin White",
+   "Slate Gray",
+   "Violet Haze",
+   "Lemans Blue"
+  ],
+  "colors_simple": [
+   "Blue",
+   "Red",
+   "White",
+   "Gray",
+   "Purple",
+   "Blue"
+  ],
+  "url": "https://www.velotricbike.com/products/velotric-breeze-1",
+  "fix": "battery 627Wh (48V 13.4Ah) per Velotric (was 643)",
+  "note": "Default max 20 mph, adjustable 12-28 mph. Range 70 PAS / 55 throttle."
+ },
+ {
+  "index": 204,
+  "spd": 28,
+  "tq": 75,
+  "load": 440,
+  "wh": 691,
+  "motor": "750W rear hub",
+  "wt": 71,
+  "range": "up to 55",
+  "colors": [
+   "Indigo Grey",
+   "Forest Green"
+  ],
+  "colors_simple": [
+   "Gray",
+   "Green"
+  ],
+  "url": "https://electricbikereview.com/velotric/nomad-1-plus-review/",
+  "fix": "range: Velotric estimate 55 mi per EBR (was 30-55)",
+  "note": "EBR spec lists 71 lb but text says 74 lb."
+ },
+ {
+  "index": 209,
+  "spd": 20,
+  "tq": 75,
+  "load": 440,
+  "wh": 691,
+  "motor": "750W rear hub (1,200W peak)",
+  "wt": 75,
+  "range": "45-52",
+  "colors": [
+   "Sky Blue",
+   "Indigo Gray"
+  ],
+  "colors_simple": [
+   "Blue",
+   "Gray"
+  ],
+  "url": "https://www.electricbikejournal.com/tech-check-velotric-packer-1/",
+  "fix": null,
+  "note": "Article says ~700Wh; kept 691Wh."
+ },
+ {
+  "index": 214,
+  "spd": 28,
+  "tq": 95,
+  "load": 330,
+  "wh": 619,
+  "motor": "XDS X800 mid-drive 250W (470W peak)",
+  "wt": 54.6,
+  "range": "up to 75",
+  "colors": [
+   "Nightfall Black"
+  ],
+  "colors_simple": [
+   "Black"
+  ],
+  "url": "https://xds.co/products/st5-plus",
+  "fix": null,
+  "note": "Class 2 20 mph by default; unlockable to Class 3 via app (listed as class 2)."
+ },
+ {
+  "index": 219,
+  "spd": null,
+  "tq": 85,
+  "load": 441,
+  "wh": 500,
+  "motor": "Bosch Cargo Line mid-drive",
+  "wt": 70,
+  "range": null,
+  "colors": null,
+  "colors_simple": null,
+  "url": "https://yubabikes.eu/product/boda-boda/",
+  "fix": null,
+  "note": "Max load 200 kg (441 lb) and weight 32 kg from Yuba EU page; colors not listed (Regular/Family/Active editions)."
+ }
+]

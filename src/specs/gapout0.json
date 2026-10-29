@@ -1,0 +1,191 @@
+[
+ {
+  "index": 1,
+  "spd": null,
+  "tq": 70,
+  "load": null,
+  "range": null,
+  "url": "https://electricbikereport.com/aima-santa-monica-review/",
+  "note": "Electric Bike Report spec list: 750W 48V rear hub (1260W peak), 70 Nm torque"
+ },
+ {
+  "index": 19,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://www.globalbikes.info/product/bulls-iconic-evo-tr-1-750-434287-1.htm",
+  "note": "Retailer pages (globalbikes, upway.fr) give Bosch Perf Line CX 85Nm + 750Wh only; upway.fr shows EU 25 km/h; no US speed, payload or range published"
+ },
+ {
+  "index": 26,
+  "spd": 28,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://www.rei.com/product/232746/cannondale-mavaro-neo-2-low-stepthru-electric-bike",
+  "note": "REI US Mavaro Neo 2: 'Class 3: pedal assist up to 28 mph' (Bosch Perf Line Sport). Mavaro SL 2 (Bafang 45Nm) is 25 km/h intl only, no US spec found. No bike weight limit on REI/Cannondale/99spokes pages (rack 25 kg only)"
+ },
+ {
+  "index": 32,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": null,
+  "note": "No web listing found for Ebike2U EB030 (searched); not published"
+ },
+ {
+  "index": 41,
+  "spd": 20,
+  "tq": null,
+  "load": 440,
+  "range": null,
+  "url": "https://reallygoodebikes.com/products/eunorau-fat-tire-step-thru-folding-ebike",
+  "note": "Retailer: 'Class 2 Speed limited' 20 mph (unlockable); 440 lbs total payload capacity"
+ },
+ {
+  "index": 48,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": "40-80",
+  "url": "https://mikesbikes.com/products/gazelle-medeo-t9-hmb-high-step",
+  "note": "Mike's Bikes US Medeo T9 HMB: range 40-80 miles (545Wh battery listed there)"
+ },
+ {
+  "index": 54,
+  "spd": null,
+  "tq": null,
+  "load": 344,
+  "range": null,
+  "url": "https://www.bike-magazin.de/en/bicycles/trekking-bikes/giant-stormguard-e-3-the-jeep-among-suv-e-bikes/",
+  "note": "Stormguard E+ 3 test: permissible total weight 156 kg (=344 lb, max system weight incl. bike); rack 20 kg"
+ },
+ {
+  "index": 61,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://WWW.RAD-INNOVATIONS.COM/hase-bikes-pino.html",
+  "note": "US dealer and Hase pages give no assist speed/class for Pino Steps; not published"
+ },
+ {
+  "index": 70,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://shop.roulezjeunesse.com/collections/velos-connectes/products/larry-vs-harry-ebullitt-x-ep801",
+  "note": "No US speed or range figure published on maker/retailer pages (EU 25 km/h only)"
+ },
+ {
+  "index": 87,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://www.newsfilecorp.com/release/272398",
+  "note": "Macfox press release/retailers give 500W (750W peak), 20 mph, no torque figure published"
+ },
+ {
+  "index": 93,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": null,
+  "note": "No web listing found for Mobility Access Orion Twin; not published"
+ },
+ {
+  "index": 105,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": "40-55",
+  "url": "https://electricbikereview.com/momentum/vida-e-plus-review/",
+  "note": "EBR quoting Momentum claim: 40-55 mi pedal assist (31-43 throttle only), 688Wh; no payload limit published"
+ },
+ {
+  "index": 113,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://www.tomsguide.com/home/electric-bikes/orbea-diem-e-bike-review-a-robust-urban-e-bike-packed-with-useful-features",
+  "note": "Only rack limits published (rear 20 kg, optional 30 kg; front 10 kg); no max system/rider weight found on Tom's Guide, BikeRadar, Fahrrad XXL"
+ },
+ {
+  "index": 123,
+  "spd": null,
+  "tq": 60,
+  "load": null,
+  "range": null,
+  "url": "https://speed.pedegoelectricbikes.com/wp-content/uploads/2023/07/FS22-Boomerang.pdf",
+  "note": "Pedego FS22 Boomerang fact sheet: 52V geared rear hub, 60 Nm torque"
+ },
+ {
+  "index": 136,
+  "spd": null,
+  "tq": 65,
+  "load": null,
+  "range": null,
+  "url": "https://electricbikereport.com/retrospec-chatham-rev-plus-2-review/",
+  "note": "Chatham Rev+ 2 = 65 Nm (EBR); original Chatham Rev+ = 55 Nm (EBR review); Rev 3 torque not found"
+ },
+ {
+  "index": 145,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://www.rei.com/product/227687/salsa-tributary-sus-apex-1-electric-bike",
+  "note": "No max weight/system weight published on REI, Radavist or retailer pages"
+ },
+ {
+  "index": 156,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": null,
+  "note": "No Senada Moto Cargo listing exists (prior pass: brand appears defunct); not filled"
+ },
+ {
+  "index": 163,
+  "spd": 20,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://forums.electricbikereview.com/threads/specialized-turbo-tero-step-through-3-0-review-demo-ride.45853/latest",
+  "note": "Speed from Class 1 (20 mph): EBR forum review says US Tero is Class 1 (weak source; Specialized page says cutoff varies by region). No max total/rider weight published (rack 27 kg only)"
+ },
+ {
+  "index": 178,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://www.amplife.co/products/top-end-e-force-3-handcycle",
+  "note": "Retailer lists Shimano power assist 250W/500W peak (TE65247 drivetrain) but no motor model, torque or user weight limit; not published"
+ },
+ {
+  "index": 191,
+  "spd": 20,
+  "tq": null,
+  "load": null,
+  "range": null,
+  "url": "https://gearjunkie.com/biking/urban-arrow-family-cargo-line-smart-system-review",
+  "note": "GearJunkie US review spec list: 'Class: 1', 'Limited to 20 mph'"
+ },
+ {
+  "index": 220,
+  "spd": null,
+  "tq": null,
+  "load": null,
+  "range": "65",
+  "url": "https://contenderbicycles.com/products/yuba-spicy-curry-v3-white",
+  "note": "Retailer (Spicy Curry V3, Bosch 500Wh): range up to 65 miles"
+ }
+]
