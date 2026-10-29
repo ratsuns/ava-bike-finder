@@ -676,9 +676,10 @@ dialog.cmd.instant,dialog.cmd.instant[data-state]{transition:none}
  dialog.drawer[data-state="closed"],dialog.drawer[data-state="closing"],dialog.bm[data-state="closed"],dialog.bm[data-state="closing"],dialog.cmd[data-state="closed"],dialog.cmd[data-state="closing"]{opacity:0}
  dialog.drawer[data-state="open"],dialog.bm[data-state="open"],dialog.cmd[data-state="open"]{opacity:1}
 }
-/* the same light blur behind every window, in every browser (Safari needs the -webkit- form). Kept small (6px) because the
-   page behind is frozen and the video is paused while a window is open, so the blur is drawn once rather than every frame */
-#scrim{background:rgba(0,0,0,.5);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+/* the same light blur behind every window, in every browser (Safari needs the -webkit- form). It is switched on only after the
+   window has finished sliding in: blurring the page while something moves over it dropped frames to 80-130ms */
+#scrim{background:rgba(0,0,0,.55)}
+#scrim.blur{-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
 </style>
 
 <a class="skip" href="#g">Skip to the bikes</a>
@@ -956,12 +957,12 @@ document.addEventListener('keydown',e=>{const d=DSTACK[DSTACK.length-1];if(!d)re
 /* close plays the exit animation first, then really closes; the same curve family everywhere */
 const NCLOSE=HTMLDialogElement.prototype.close;
 function animClose(){const d=this;if(!d.open||d.dataset.state==='closing')return;
- const rest=DSTACK.filter(x=>x!==d);SCRIM.classList.toggle('on',rest.length>0);
+ const rest=DSTACK.filter(x=>x!==d);SCRIM.classList.toggle('on',rest.length>0);if(!rest.length)SCRIM.classList.remove('blur');
  if(d.classList.contains('instant')){NCLOSE.call(d);d.dataset.state='';return}
  d.dataset.state='closing';let t;const done=()=>{clearTimeout(t);d.removeEventListener('transitionend',te);if(d.open)NCLOSE.call(d);d.dataset.state='';d.style.transition='';d.style.transform=''};
  const te=e=>{if(e.target===d&&(e.propertyName==='transform'||e.propertyName==='opacity'))done()};d.addEventListener('transitionend',te);t=setTimeout(done,300)}
 document.querySelectorAll('dialog').forEach(d=>{d.close=animClose});
-function showDlg(d,opener){d._opener=opener||document.activeElement;d.classList.remove('settled');d.tabIndex=-1;d.setAttribute('aria-modal','true');DSTACK.push(d);d.style.transform='';d.dataset.state='closed';d.show();d.offsetWidth;d.dataset.state='open';SCRIM.classList.add('on');d.focus({preventScroll:true});lockScroll();clearTimeout(d._st);d._st=setTimeout(()=>{if(d.open)d.classList.add('settled')},260);const body=d.querySelector('.dbody,.cbody');if(body)body.scrollTop=0}
+function showDlg(d,opener){d._opener=opener||document.activeElement;d.classList.remove('settled');d.tabIndex=-1;d.setAttribute('aria-modal','true');DSTACK.push(d);d.style.transform='';d.dataset.state='closed';d.show();d.offsetWidth;d.dataset.state='open';SCRIM.classList.add('on');d.focus({preventScroll:true});lockScroll();clearTimeout(d._st);d._st=setTimeout(()=>{if(d.open&&d.dataset.state==='open'){d.classList.add('settled');SCRIM.classList.add('blur')}},340);const body=d.querySelector('.dbody,.cbody');if(body)body.scrollTop=0}
 document.querySelectorAll('dialog').forEach(d=>{
  d.addEventListener('close',()=>{const i=DSTACK.indexOf(d);if(i>=0)DSTACK.splice(i,1);SCRIM.classList.toggle('on',DSTACK.length>0);LASTCLOSE=performance.now();clearTimeout(d._st);d.classList.remove('settled');lockScroll();updateFab();const o=d._opener;if(KBD&&o&&o.isConnected&&o.focus)o.focus({preventScroll:true});else if(d.contains(document.activeElement)||document.activeElement===d)document.activeElement.blur()});
  d.addEventListener('click',e=>{if(e.target!==d)return;const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close()});
