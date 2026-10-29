@@ -91,6 +91,8 @@ main.grid{padding-block:14px 56px;display:grid;grid-template-columns:repeat(auto
 .tag{position:absolute;left:12px;top:12px;display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.94);color:#0b5f40;border:1px solid rgba(14,122,82,.28);font-size:var(--t-micro);font-weight:600;padding:3px 8px;border-radius:4px;font-variant-numeric:tabular-nums}
 .tag.s400{color:#3d4541;border-color:rgba(18,22,20,.16)}
 .tag i{width:6px;height:6px;border-radius:50%;background:#0e7a52}.tag.s400 i{background:#7a837e}
+/* card photo: 'Call for price' sits bottom-right, in line with the colour dots on the left; same small badge style as the rebate tag, in the warning tone */
+.calltag{position:absolute;right:12px;bottom:12px;z-index:2;display:inline-flex;align-items:center;background:#fdf3e1;color:#8a5300;border:1px solid rgba(183,121,31,.35);font-size:var(--t-micro);font-weight:600;padding:3px 8px;border-radius:4px;pointer-events:none}
 .rb{display:inline-flex;align-items:center;gap:6px;height:22px;padding:0 8px;border-radius:4px;font-size:var(--t-micro);font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap;line-height:1;background:var(--accent-soft);color:var(--accent-ink);border:1px solid color-mix(in oklab,var(--accent) 30%,transparent)}
 .rb i{width:6px;height:6px;border-radius:50%;background:var(--accent);flex:none}
 .rb.s400{background:var(--well);color:var(--fg2);border-color:var(--line)}
@@ -1032,11 +1034,10 @@ function cardHTML(b){
  const allNa=[b.spd,b.tq,b.load,b.range].every(v=>v==null||v==='');
  const ac0=activeColor(b),sw=b.cv.length?`<div class="sws" role="group" aria-label="Colors">${b.cv.map((c,ci)=>`<button type="button" class="sw" data-c="${ci}" tabindex="${ci===(ac0??0)?0:-1}" aria-pressed="${ci===ac0}" aria-label="${esc(c.n)}" title="${esc(c.n)}${c.img?'':' (no photo yet)'}"><i style="background:${c.hex||CHEX[c.f]}"></i></button>`).join('')}</div>`:'';
  return `<article class="c${pk?' pick':''}" data-b="${b.i}">
- <div class="ph"><img loading="lazy" decoding="async" src="${shownSrc(b)}" alt="${esc(b.name)}">${sw}<span class="tag${b.reb===900?'':' s400'}"><i></i>${money(b.reb)} off</span>${pk?`<span class="picktag">${STAR}${pk.tag}</span>`:''}</div>
+ <div class="ph"><img loading="lazy" decoding="async" src="${shownSrc(b)}" alt="${esc(b.name)}">${sw}<span class="tag${b.reb===900?'':' s400'}"><i></i>${money(b.reb)} off</span>${pk?`<span class="picktag">${STAR}${pk.tag}</span>`:''}${b.warn&&tr&&b.price!=null?'<span class="calltag">Call for price</span>':''}</div>
  <div class="b">
   <div class="id"><span class="br">${esc(b.brand)}</span><h3 class="n" title="${esc(b.model)}"><span class="vh">${esc(b.brand)} </span>${esc(b.mn)}</h3></div>
   ${price}
-  ${b.warn&&tr&&b.price!=null?`<p class="pwarn pshort">${INFO}<span>Call shop to confirm price</span></p>`:''}
   ${allNa?'<p class="nospec">Specs not listed. Ask the shop.</p>':`<dl class="stats">${stat('Top speed',b.spd,'mph')}${stat('Torque',b.tq,'Nm')}${stat('Max load',b.load,'lb')}${stat('Range',b.range,'mi')}</dl>`}
   ${pk?`<p class="note picknote">${esc(pk.note)}</p>`:''}
   <div class="chips"><span class="chip" title="${esc(TYPEX[b.type]||'')}">${esc(b.type)}</span><span class="chip" title="${esc(CLASSX[b.cls]||'')}">Class ${esc(b.cls)}</span>${b.fold==='Yes'?'<span class="chip">Folds</span>':''}</div>
@@ -1424,7 +1425,7 @@ document.addEventListener('click',e=>{const a=e.target.closest('a[href="#dir"]:n
 (()=>{const h=document.querySelector('.hero');if(h)new IntersectionObserver(e=>h.classList.toggle('offscreen',!e[0].isIntersecting)).observe(h)})();
 /* border beam motion: corners are reached at times proportional to the distance travelled, with linear easing,
    so the light never speeds up or slows down. Rebuilt only when a bar changes size. */
-const BEAM_SPEED=200; /* px per second */
+const BEAM_SPEED=140; /* px per second */
 const BEAMS=[];
 function beam(ring,dot,active){const b={ring,dot,active,anim:null};
  const build=()=>{const w=ring.offsetWidth,h=ring.offsetHeight;if(!w||!h)return;const t=b.anim?b.anim.currentTime:0;b.anim&&b.anim.cancel();
