@@ -12,7 +12,6 @@ Live site: https://ratsuns.github.io/ava-bike-finder/
   - `build2.py`: combines the design with the data into the site.
   - `shops.json`, `bikes.json`, `res_all.json`, `fill*.json`, `specs/`, `cargo_specs.py`: the bike list, prices, specs and shop addresses.
   - `verify/`: checked photos, photo fixes, the hero video, the share card and icons.
-- `PRODUCT.md`: what the product is and who it's for (read by the Impeccable design skill).
 - `.claude/` and `skills-lock.json`: the Claude design skills this project uses (Impeccable, Emil Kowalski's animation skills, frontend-design).
 
 ## Rebuild
