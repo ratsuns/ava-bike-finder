@@ -362,13 +362,7 @@ input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;width:1
    The gradient is painted once on an oversized square that only rotates (transform), so the GPU compositor runs it without
    repainting or touching the main thread; the pill clips it to a 1px ring and an inner layer covers the middle. */
 .fab{isolation:isolate;overflow:hidden;border:0}
-.fab::before{content:"";position:absolute;z-index:-2;left:50%;top:50%;width:max(120%,460px);aspect-ratio:1;pointer-events:none;
- background:conic-gradient(from 0deg,transparent 0deg,transparent 300deg,color-mix(in oklab,var(--accent) 70%,transparent) 330deg,#d9f5e8 352deg,transparent 360deg);
- transform:translate(-50%,-50%) rotate(0deg);animation:beam 7s linear infinite paused;will-change:transform}
 .fab::after{content:"";position:absolute;z-index:-1;inset:1px;border-radius:inherit;background:var(--surface);pointer-events:none}
-.fab.on::before{animation-play-state:running}
-@keyframes beam{to{transform:translate(-50%,-50%) rotate(360deg)}}
-@media (prefers-reduced-motion:reduce){.fab::before{animation:none}}
 .fmain,.ffil{display:flex;align-items:center;height:40px;border:0;border-radius:999px;background:none;color:inherit;font:inherit;cursor:pointer}
 #fab-q,.ffil svg{transition:color .15s ease}
 .fmain{flex:1 1 auto;min-width:0;gap:10px;padding:0 14px 0 10px}
@@ -847,12 +841,14 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
 .hero .hbar .search{position:relative}
 .hero .sbeam{position:absolute;inset:0;border-radius:10px;padding:1px;overflow:hidden;pointer-events:none;z-index:2;
  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0)}
-.hero .sbeam::before{content:"";position:absolute;left:50%;top:50%;width:max(130%,700px);aspect-ratio:1;
- background:conic-gradient(from 0deg,transparent 0deg,transparent 300deg,color-mix(in oklab,var(--accent) 70%,transparent) 330deg,#d9f5e8 352deg,transparent 360deg);
- transform:translate(-50%,-50%) rotate(0deg);animation:beam 7s linear infinite;will-change:transform}
-.hero.offscreen .sbeam::before,html.dim .hero .sbeam::before{animation-play-state:paused}
 @media (max-width:760px){.hero .sbeam{border-radius:6px}}
 @media (prefers-reduced-motion:reduce){.hero .sbeam{display:none}}
+/* border beam: a soft light that travels the edge at one constant speed (same px/second on every bar).
+   It moves with transform only (Web Animations, run by the compositor); the ring shape hides everything but the 1px edge */
+.bdot{position:absolute;left:0;top:0;width:150px;height:34px;margin:-17px 0 0 -75px;border-radius:50%;pointer-events:none;
+ background:radial-gradient(closest-side,#effcf5 0%,#bfeeda 18%,color-mix(in oklab,var(--accent) 85%,transparent) 45%,transparent 100%);will-change:transform}
+.fab .bdot{z-index:-2}
+@media (prefers-reduced-motion:reduce){.bdot{display:none}}
 </style>
 
 <a class="skip" href="#g">Skip to the bikes</a>
@@ -861,7 +857,7 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
  <p class="lede">Browse every e-bike on Ava's list and find the one that fits the way you ride.</p>
  <div class="bar hbar" id="bar">
  <button type="button" class="mfilter" id="mfilter" aria-haspopup="dialog" aria-controls="cmd"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>Filters<span class="mcount" id="mfilter-n" hidden></span></button>
- <div class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" id="q" placeholder="Search bikes or shops" aria-label="Search bikes or shops"><span class="sbeam" aria-hidden="true"></span></div>
+ <div class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" id="q" placeholder="Search bikes or shops" aria-label="Search bikes or shops"><span class="sbeam" aria-hidden="true"><span class="bdot"></span></span></div>
  </div>
  <p class="hupd">List updated October&nbsp;8, 2026</p>
 </div></header>
@@ -966,7 +962,7 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
  </div>
  <div class="cfoot"><button type="button" class="linkbtn" id="cmd-clear">Clear all</button><button type="button" class="primary" id="cmd-show">Show bikes</button></div>
 </dialog>
-<div class="fab" id="fab" inert><button type="button" class="ffil" id="fab-f" aria-haspopup="dialog" aria-controls="filters" aria-label="Filters"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg><span class="fnum" id="fab-n" hidden></span></button><span class="fsep" aria-hidden="true"></span><button type="button" class="fmain" id="fab-s" aria-label="Search bikes"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span id="fab-q">Search bikes</span><span class="fcount" id="fab-count"></span></button></div>
+<div class="fab" id="fab" inert><span class="bdot" aria-hidden="true"></span><button type="button" class="ffil" id="fab-f" aria-haspopup="dialog" aria-controls="filters" aria-label="Filters"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg><span class="fnum" id="fab-n" hidden></span></button><span class="fsep" aria-hidden="true"></span><button type="button" class="fmain" id="fab-s" aria-label="Search bikes"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span id="fab-q">Search bikes</span><span class="fcount" id="fab-count"></span></button></div>
 <section class="wrap" id="dir"><h2>Where to buy</h2><p>Every participating shop. Call ahead to check stock; the rebate only works in person.</p><div class="dirgrid" id="dirgrid"></div></section>
 
 <script>
@@ -1426,6 +1422,23 @@ document.addEventListener('click',e=>{const a=e.target.closest('a[href="#dir"]:n
   if(document.startViewTransition&&!REDUCE.matches){b.style.viewTransitionName='themebtn';const vt=document.startViewTransition(()=>apply(next));vt.finished.finally(()=>{b.style.viewTransitionName=''})}else apply(next)})})();
 /* the hero beam rests while the hero is scrolled away */
 (()=>{const h=document.querySelector('.hero');if(h)new IntersectionObserver(e=>h.classList.toggle('offscreen',!e[0].isIntersecting)).observe(h)})();
+/* border beam motion: corners are reached at times proportional to the distance travelled, with linear easing,
+   so the light never speeds up or slows down. Rebuilt only when a bar changes size. */
+const BEAM_SPEED=200; /* px per second */
+const BEAMS=[];
+function beam(ring,dot,active){const b={ring,dot,active,anim:null};
+ const build=()=>{const w=ring.offsetWidth,h=ring.offsetHeight;if(!w||!h)return;const t=b.anim?b.anim.currentTime:0;b.anim&&b.anim.cancel();
+  const P=2*(w+h),i=.5,pts=[[i,i],[w-i,i],[w-i,h-i],[i,h-i],[i,i]],d=[0,w,w+h,2*w+h,P];
+  b.anim=dot.animate(pts.map(([x,y],k)=>({transform:`translate(${x}px,${y}px)`,offset:d[k]/P})),{duration:P/BEAM_SPEED*1000,iterations:Infinity,easing:'linear'});
+  b.anim.currentTime=t||0;sync()};
+ const sync=()=>{if(!b.anim)return;if(REDUCE.matches||!b.active())b.anim.pause();else b.anim.play()};
+ b.sync=sync;new ResizeObserver(build).observe(ring);BEAMS.push(b);return b}
+(()=>{const fab=$('fab'),sb=document.querySelector('.hero .sbeam'),hero=document.querySelector('.hero'),H=document.documentElement;
+ if(fab)beam(fab,fab.querySelector('.bdot'),()=>fab.classList.contains('on')&&!H.classList.contains('locked'));
+ if(sb)beam(sb,sb.querySelector('.bdot'),()=>!hero.classList.contains('offscreen')&&!H.classList.contains('dim'));
+ const all=()=>BEAMS.forEach(b=>b.sync());
+ [fab,hero,H].filter(Boolean).forEach(el=>new MutationObserver(all).observe(el,{attributes:true,attributeFilter:['class']}));
+ REDUCE.addEventListener?.('change',all)})();
 /* build the search window once while the browser is idle, so the first open is as quick as the rest */
 (window.requestIdleCallback||(f=>setTimeout(f,1200)))(()=>{try{renderCmd()}catch(e){}});
 /* swipe a photo sideways to step through its colors: the gesture just presses the next or previous color dot, so every view stays in sync.
