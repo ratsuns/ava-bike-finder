@@ -629,6 +629,10 @@ article.c .b{container-type:inline-size}
 .bmb.has-more,.dbody.has-more,.cbody.has-more{--fade:56px}
 @property --fade{syntax:"<length>";inherits:false;initial-value:0px}
 .bmb,.dbody,.cbody{transition:--fade .2s ease}
+/* single search entry: no separate Filters button; the search bar opens the search window, filters included */
+#mfilter,#fab-f,.fab .fsep{display:none!important}
+.fab{padding-left:8px}
+#q{cursor:pointer;caret-color:transparent}
 </style>
 
 <a class="skip" href="#g">Skip to the bikes</a>
@@ -1033,14 +1037,16 @@ document.addEventListener('keydown',e=>{
 /* Phones: the box is read-only and every tap (click) opens the dialog, even if the box still has focus from before.
    Keyboard focus also opens it, but not the focus a closing dialog hands back, so it can't reopen itself. */
 let qPtr=-1e9;
-const qOpen=()=>{if(!MOBILE.matches||document.querySelector('dialog[open]'))return false;$('q').blur();openCmd({opener:$('mfilter'),focus:true});return true};
+const qOpen=(ch)=>{if(document.querySelector('dialog[open]'))return false;$('q').blur();openCmd({opener:$('q'),focus:true});if(ch){const c=$('cq');c.value+=ch;c.dispatchEvent(new Event('input'))}return true};
 $('q').addEventListener('pointerdown',()=>{qPtr=performance.now()});
 $('q').addEventListener('click',e=>{if(qOpen())e.preventDefault()});
 $('q').addEventListener('focus',()=>{const t=performance.now();if(MOBILE.matches&&t-qPtr>800&&t-LASTCLOSE>400)qOpen()});
-const qRO=()=>{$('q').readOnly=MOBILE.matches};qRO();MOBILE.addEventListener('change',qRO);
+$('q').readOnly=true;
+/* one search experience: the bar on the page only opens the search window; typing into it carries the first letter over */
+$('q').addEventListener('keydown',e=>{if(e.metaKey||e.ctrlKey||e.altKey)return;if(e.key==='Enter'||e.key===' '){e.preventDefault();qOpen()}else if(e.key.length===1){e.preventDefault();qOpen(e.key)}});
 $('mfilter').onclick=()=>openCmd({opener:$('mfilter'),filters:true});
 /* the full placeholder gets cut off next to the Filters button on narrow phones */
-const QPH=$('q').placeholder;const fitPh=()=>{$('q').placeholder=MOBILE.matches?'Search bikes':QPH};fitPh();MOBILE.addEventListener('change',fitPh);
+const QPH='Search bikes, brands or shops';const fitPh=()=>{$('q').placeholder=MOBILE.matches?'Search bikes or shops':QPH};fitPh();MOBILE.addEventListener('change',fitPh);
 
 /* filters: ONE builder makes the controls for both the left panel and the search dialog, so they can't drift.
    Every change writes F and applies at once; render() then re-syncs whichever UIs are open. */
@@ -1122,7 +1128,7 @@ $('achips').addEventListener('click',e=>{const x=e.target.closest('[data-rm]');i
  if(k==='all')clearAll();else if(k==='q'){F.q='';$('q').value='';$('cq').value=''}else if(k==='pay'){F.payMin=0;F.payMax=Infinity}else{F[k]=F0[k];if(k==='color')ACT.clear()}
  /* keep keyboard focus in the row: the next chip, or the search box when the row empties */
  const i=[...$('achips').querySelectorAll('[data-rm]')].indexOf(x);
- draw().then(()=>{const now=[...$('achips').querySelectorAll('[data-rm]')];(now[Math.min(i,now.length-2)]||$('mfilter')).focus({preventScroll:true})})});
+ draw().then(()=>{const now=[...$('achips').querySelectorAll('[data-rm]')];(now[Math.min(i,now.length-2)]||$('q')).focus({preventScroll:true})})});
 
 /* shop directory */
 const seen=new Map();Object.values(S).forEach(s=>{if(!seen.has(s.name))seen.set(s.name,s)});
