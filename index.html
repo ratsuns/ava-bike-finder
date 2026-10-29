@@ -615,6 +615,10 @@ article.c .b{container-type:inline-size}
 @media (prefers-reduced-motion:reduce){.navmenu,.navmenu:popover-open{transform:none;transition:opacity .15s ease,overlay .15s allow-discrete,display .15s allow-discrete}@starting-style{.navmenu:popover-open{transform:none}}.nmx:active{transform:none}}
 .hero .navmenu .wrap{padding-block:0;display:block}
 .hero .navmenu .nmh .wrap{display:flex}
+/* contact icons sit on the centre of the first line of text, even when an address wraps */
+.maplink,.web{line-height:1.5}
+.maplink svg,.web svg{margin-top:3.5px}
+@supports (margin-top:1lh){.maplink svg,.web svg,.web svg+span+svg{margin-top:calc((1lh - 13px) / 2)}}
 </style>
 
 <a class="skip" href="#g">Skip to the bikes</a>
