@@ -34,7 +34,8 @@ body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:var(
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
 ::selection{background:var(--accent-soft);color:var(--fg)}
 a{color:var(--accent-ink);text-underline-offset:3px;text-decoration-thickness:1px}
-a,button,select,summary,label{-webkit-tap-highlight-color:transparent}
+/* no browser tap highlight anywhere: it paints over everything (even the opening sheet) and reads as a flash. Pressed states are drawn by the components themselves */
+html,a,button,select,summary,label,[data-b]{-webkit-tap-highlight-color:transparent}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
 .wrap{max-width:1200px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
 
@@ -1097,10 +1098,16 @@ function buildBike(i){if(BIKE_PRE===i)return;BIKE_PRE=i;
   <div class="bmlinks"><a href="${gi}" target="_blank" rel="noopener">More photos on Google${EXT}</a>${b.src?`<a href="${esc(b.src)}" target="_blank" rel="noopener">Price source${EXT}</a>`:''}</div>
  </div>
 </div>`;
+ $('bike-img').decode().catch(()=>{});
 }
 /* the details open on exactly the photo the card shows: the color picked on the card if there is one, otherwise the display photo with no dot selected.
    the same image is already decoded from the card, so nothing swaps or flickers while the window slides in */
-function openBike(i,opener){buildBike(i);BIKE_I=i;BIKE_AC=activeColor(B[i]);syncBike();showDlg(BIKE,opener);$('bike-body').scrollTop=0}
+/* the photo is decoded before the window is shown, so its first painted frame already has the picture (no blank-then-image flash).
+   decoding starts on pointerdown, so by the time the tap lands it is normally finished; a short cap keeps a slow decode from holding the window back */
+let BIKE_OPENING=0;
+function openBike(i,opener){if(BIKE.open)return;const tok=++BIKE_OPENING;buildBike(i);BIKE_I=i;BIKE_AC=activeColor(B[i]);syncBike();
+ const im=$('bike-img'),show=()=>{if(tok!==BIKE_OPENING||BIKE.open)return;showDlg(BIKE,opener);$('bike-body').scrollTop=0};
+ Promise.race([im.decode().catch(()=>{}),new Promise(r=>setTimeout(r,150))]).then(show)}
 $('g').addEventListener('pointerdown',e=>{if(BIKE.open||e.button)return;const c=e.target.closest('.c[data-b]');if(c&&!e.target.closest('a,.sws'))buildBike(+c.dataset.b)},{passive:true});
 function syncBike(){
  if(BIKE_I==null||!BIKE.contains($('bike-img')))return;const b=B[BIKE_I],ac=BIKE_AC,img=$('bike-img'),cap=$('bike-cap');
@@ -1160,9 +1167,10 @@ $('fab-f').onclick=()=>openCmd({opener:$('fab-f'),filters:true});
 $('fab-f').setAttribute('aria-controls','cmd');
 /* close: jump to the results if the filters changed or "Show" was pressed, not after picking a single bike */
 CMD.addEventListener('close',()=>{if(!CMD._hit&&(CMD._go||CMD._sig!==fsig()))requestAnimationFrame(scrollToResults)});
-$('cmd-clear').onclick=()=>{clearAll();render();$('cq').focus({preventScroll:true})};
+/* clearing never pops the phone keyboard back up; keyboard users go back to the search field */
+$('cmd-clear').onclick=()=>{clearAll();render();if(KBD)$('cq').focus({preventScroll:true});else document.activeElement?.blur()};
 CMD.addEventListener('click',e=>{
- if(e.target.closest('[data-clearf]')){clearFilters();render();$('cq').focus();return}
+ if(e.target.closest('[data-clearf]')){clearFilters();render();if(KBD)$('cq').focus({preventScroll:true});else document.activeElement?.blur();return}
  const g=e.target.closest('[data-go]');if(g){const el=NODE.get(+g.dataset.go);if(el)CMD._opener=el.querySelector('.more');CMD._hit=true;CMD.close();goTo(+g.dataset.go);return}});
 let qt;$('cq').addEventListener('input',()=>{F.q=$('q').value=$('cq').value;clearTimeout(qt);qt=setTimeout(render,100)});
 $('cq').addEventListener('keydown',e=>{
@@ -1288,9 +1296,9 @@ let mt;$('q').oninput=()=>{F.q=$('q').value;clearTimeout(mt);mt=setTimeout(rende
 $('achips').addEventListener('click',e=>{const x=e.target.closest('[data-rm]');if(!x)return;
  const k=x.dataset.rm;
  if(k==='all')clearAll();else if(k==='q'){F.q='';$('q').value='';$('cq').value=''}else if(k==='pay'){F.payMin=0;F.payMax=Infinity}else{F[k]=F0[k];if(k==='color')ACT.clear()}
- /* keep keyboard focus in the row: the next chip, or the search box when the row empties */
- const i=[...$('achips').querySelectorAll('[data-rm]')].indexOf(x);
- draw().then(()=>{const now=[...$('achips').querySelectorAll('[data-rm]')];(now[Math.min(i,now.length-2)]||$('q')).focus({preventScroll:true})})});
+ /* clearing a filter never opens search. Keyboard users stay in the chip row (next chip, or the result count once the row empties); a tap just lets go of focus */
+ const i=[...$('achips').querySelectorAll('[data-rm]')].indexOf(x),kbd=KBD;
+ draw().then(()=>{if(!kbd){const a=document.activeElement;if(a&&a!==document.body)a.blur();return}const now=[...$('achips').querySelectorAll('[data-rm]')];const t=now[Math.min(i,now.length-2)]||$('count');if(t===$('count'))t.tabIndex=-1;t.focus({preventScroll:true})})});
 
 /* shop directory */
 const seen=new Map();Object.values(S).forEach(s=>{if(!seen.has(s.name))seen.set(s.name,s)});
