@@ -543,7 +543,7 @@ main.grid{padding-bottom:96px}
 @media (prefers-reduced-motion:reduce){.hero-media video{display:none}.hero-media{background:url(img/hero.jpg) center/cover}}
 
 .hero .topnav{position:absolute;inset:0 0 auto;z-index:1;padding-top:env(safe-area-inset-top)}
-.hero .topnav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px;padding-block:0;border-bottom:1px solid rgba(255,255,255,.12)}
+.hero .topnav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px;padding-block:0}
 .brand{display:inline-flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:600;font-size:15px;letter-spacing:-.01em;min-height:44px}
 .brand svg{flex:none}
 .navlinks{display:flex;align-items:center;gap:4px;margin-right:-12px}
@@ -633,6 +633,51 @@ article.c .b{container-type:inline-size}
 #mfilter,#fab-f,.fab .fsep{display:none!important}
 .fab{padding-left:8px}
 #q{cursor:pointer;caret-color:transparent}
+dialog:focus{outline:none}
+/* shared dim layer behind every window */
+#scrim{position:fixed;inset:0;z-index:40;background:rgba(0,0,0,.58);opacity:0;pointer-events:none;transition:opacity .18s ease}
+#scrim.on{opacity:1;pointer-events:auto}
+dialog{z-index:50}
+@media (prefers-reduced-motion:reduce){#scrim{transition:none}}
+/* floating search bar: rises in with a soft spring-like ease, leaves quicker than it arrives (transform and opacity only, so it stays on the GPU) */
+.fab{transform:translate(-50%,20px) scale(.96);transition:opacity .15s var(--ease-out),transform .2s var(--ease-out);will-change:transform,opacity}
+.fab.on{transform:translate(-50%,0);transition:opacity .28s cubic-bezier(.23,1,.32,1),transform .42s cubic-bezier(.32,.72,0,1)}
+html.locked .fab.on{transform:translate(-50%,20px) scale(.96);transition:opacity .15s var(--ease-out),transform .2s var(--ease-out)}
+@media (prefers-reduced-motion:reduce){.fab,.fab.on,html.locked .fab.on{transform:translate(-50%,0);transition:opacity .2s ease}}
+.rb.lg svg{flex:none}
+/* ---- motion system (Emil's standards): enter and exit with strong ease-out, panels with the iOS drawer curve, transform + opacity only ----
+   side panels: slide from the right, 300ms in / 200ms out
+   bottom sheets (phones): slide up, 320ms in / 220ms out
+   centred windows (desktop): fade + 0.97 scale, 200ms in / 150ms out
+   dim layer: fades with the window */
+:root{--ease-drawer:cubic-bezier(.32,.72,0,1)}
+dialog.drawer{transition:transform .3s var(--ease-drawer),display .3s allow-discrete;transform:translateX(100%)}
+dialog.drawer[data-state="open"]{transform:none}
+dialog.drawer[data-state="closing"]{transform:translateX(100%);transition:transform .2s var(--ease-out),display .2s allow-discrete}
+dialog.drawer[data-state="closed"]{transform:translateX(100%);transition:none}
+dialog.bm,dialog.cmd{transition:opacity .2s var(--ease-out),transform .2s var(--ease-out),display .2s allow-discrete;opacity:0;transform:scale(.97)}
+dialog.bm[data-state="open"],dialog.cmd[data-state="open"]{opacity:1;transform:none}
+dialog.bm[data-state="closing"],dialog.cmd[data-state="closing"]{opacity:0;transform:scale(.97);transition:opacity .15s var(--ease-out),transform .15s var(--ease-out),display .15s allow-discrete}
+dialog.bm[data-state="closed"],dialog.cmd[data-state="closed"]{opacity:0;transform:scale(.97);transition:none}
+@media (max-width:760px){
+ dialog.bm{opacity:1;transform:translateY(100%);transition:transform .32s var(--ease-drawer),display .32s allow-discrete}
+ dialog.bm[data-state="open"]{transform:none}
+ dialog.bm[data-state="closing"]{opacity:1;transform:translateY(100%);transition:transform .22s var(--ease-out),display .22s allow-discrete}
+ dialog.bm[data-state="closed"]{opacity:1;transform:translateY(100%);transition:none}
+}
+@media (max-width:600px){
+ dialog.cmd{opacity:1;transform:translateY(100%);transition:transform .32s var(--ease-drawer),display .32s allow-discrete}
+ dialog.cmd[data-state="open"]{transform:none}
+ dialog.cmd[data-state="closing"]{opacity:1;transform:translateY(100%);transition:transform .22s var(--ease-out),display .22s allow-discrete}
+ dialog.cmd[data-state="closed"]{opacity:1;transform:translateY(100%);transition:none}
+}
+dialog.cmd.instant,dialog.cmd.instant[data-state]{transition:none}
+#scrim{transition:opacity .2s var(--ease-out)}
+@media (prefers-reduced-motion:reduce){
+ dialog.drawer,dialog.bm,dialog.cmd,dialog.drawer[data-state],dialog.bm[data-state],dialog.cmd[data-state]{transform:none!important;transition:opacity .15s ease,display .15s allow-discrete}
+ dialog.drawer[data-state="closed"],dialog.drawer[data-state="closing"],dialog.bm[data-state="closed"],dialog.bm[data-state="closing"],dialog.cmd[data-state="closed"],dialog.cmd[data-state="closing"]{opacity:0}
+ dialog.drawer[data-state="open"],dialog.bm[data-state="open"],dialog.cmd[data-state="open"]{opacity:1}
+}
 </style>
 
 <a class="skip" href="#g">Skip to the bikes</a>
@@ -659,12 +704,12 @@ article.c .b{container-type:inline-size}
 
 <dialog id="rebate" class="drawer" aria-labelledby="rebate-h">
  <div class="dhead"><div><h2 id="rebate-h">How the rebate works</h2></div>
- <button type="button" class="dclose" aria-label="Close" autofocus><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+ <button type="button" class="dclose" aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
  <div class="dbody">
   <h3>How much you get</h3>
   <div class="g3">
-   <div class="gc"><span class="rb lg"><i></i>$900 off</span><b>Cargo and adaptive e-bikes</b><p>Bikes built to carry loads or passengers, and trikes, recumbents and other bikes for riders with mobility needs.</p></div>
-   <div class="gc"><span class="rb lg s400"><i></i>$400 off</span><b>Standard e-bikes</b><p>City and commuter e-bikes.</p></div>
+   <div class="gc"><span class="rb lg"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.6 2.6A2 2 0 0 0 11.2 2H4a2 2 0 0 0-2 2v7.2a2 2 0 0 0 .6 1.4l8.7 8.7a2.4 2.4 0 0 0 3.4 0l6.6-6.6a2.4 2.4 0 0 0 0-3.4z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg>$900 off</span><b>Cargo and adaptive e-bikes</b><p>Bikes built to carry loads or passengers, and trikes, recumbents and other bikes for riders with mobility needs.</p></div>
+   <div class="gc"><span class="rb lg s400"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.6 2.6A2 2 0 0 0 11.2 2H4a2 2 0 0 0-2 2v7.2a2 2 0 0 0 .6 1.4l8.7 8.7a2.4 2.4 0 0 0 3.4 0l6.6-6.6a2.4 2.4 0 0 0 0-3.4z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg>$400 off</span><b>Standard e-bikes</b><p>City and commuter e-bikes.</p></div>
   </div>
   <h3>What "you pay" means</h3>
   <p class="gp">Each card shows the bike's price minus your rebate. Sales tax is added on top, because the rebate can't be used for tax. It can't be used for shipping either.</p>
@@ -678,7 +723,7 @@ article.c .b{container-type:inline-size}
 </dialog>
 <dialog id="guide" class="drawer" aria-labelledby="guide-h">
  <div class="dhead"><div><h2 id="guide-h">How to choose an e-bike</h2><p>A quick read based on <a href="https://avaenergy.org/insight/how-to-choose-the-best-e-bike-for-you/" target="_blank" rel="noopener">Ava's buying guide</a>.</p></div>
- <button type="button" class="dclose" aria-label="Close guide" autofocus><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+ <button type="button" class="dclose" aria-label="Close guide"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
  <div class="dbody">
  
 
@@ -727,16 +772,16 @@ article.c .b{container-type:inline-size}
 </dialog>
 <dialog id="bike" class="bm" aria-labelledby="bike-h">
  <div class="bmh"><div><span class="br" id="bike-br" aria-hidden="true"></span><h2 id="bike-h"></h2></div>
- <button type="button" class="dclose" aria-label="Close" autofocus><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+ <button type="button" class="dclose" aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
  <div class="bmb" id="bike-body"></div>
 </dialog>
 <dialog id="filters" class="fp" aria-labelledby="fp-h">
- <div class="fph"><h2 id="fp-h">Filters</h2><button type="button" class="dclose" aria-label="Close filters" autofocus><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+ <div class="fph"><h2 id="fp-h">Filters</h2><button type="button" class="dclose" aria-label="Close filters"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
  <div class="fpb" id="fp-body"></div>
  <div class="fpf"><button type="button" class="linkbtn" id="fp-clear">Clear all</button><button type="button" class="primary" id="fp-show">Show bikes</button><span class="vh" aria-live="polite" id="fp-live"></span></div>
 </dialog>
 <dialog id="cmd" class="cmd" aria-label="Search bikes">
- <div class="chead"><span class="cicon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></span><input type="search" id="cq" placeholder="Search bikes, brands or shops" aria-label="Search bikes, brands or shops" autocomplete="off" enterkeyhint="search"><button type="button" class="dclose" id="cmd-x" aria-label="Close" autofocus><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+ <div class="chead"><span class="cicon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></span><input type="search" id="cq" placeholder="Search bikes, brands or shops" aria-label="Search bikes, brands or shops" autocomplete="off" enterkeyhint="search"><button type="button" class="dclose" id="cmd-x" aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
  <div class="cbody">
   <section class="cres" aria-live="polite"><h3 id="cmd-reshead">Top matches</h3><div id="cmd-res"></div></section>
   <section class="cflt" id="cmd-flt" aria-labelledby="cmd-fh"><h3 id="cmd-fh">Filters</h3><div id="cmd-fbody"></div></section>
@@ -895,9 +940,27 @@ $('g').addEventListener('keydown',e=>{const t=e.target.closest('.sw');if(!t||!['
 /* drawers */
 let LASTCLOSE=-1e9;
 function lockScroll(){document.documentElement.classList.toggle('locked',!!document.querySelector('dialog[open],#navmenu:popover-open'))}
-function showDlg(d,opener){d._opener=opener||document.activeElement;d.classList.remove('settled');d.showModal();lockScroll();clearTimeout(d._st);d._st=setTimeout(()=>{if(d.open)d.classList.add('settled')},260);const body=d.querySelector('.dbody,.cbody');if(body)body.scrollTop=0}
+/* Windows open with show(), not showModal(): showModal makes the browser mark all ~11,000 elements behind it as blocked,
+   which took 60-90ms on a mid-range phone. The dim layer, Escape, outside taps and keeping Tab inside the window are handled here instead. */
+const DSTACK=[];const SCRIM=document.createElement('div');SCRIM.id='scrim';SCRIM.setAttribute('aria-hidden','true');document.body.append(SCRIM);
+SCRIM.addEventListener('click',()=>{const d=DSTACK[DSTACK.length-1];if(d)d.close()});
+document.addEventListener('keydown',e=>{const d=DSTACK[DSTACK.length-1];if(!d)return;
+ if(e.key==='Escape'){e.preventDefault();d.close();return}
+ if(e.key==='Tab'){const f=[...d.querySelectorAll('button,[href],input,select,textarea,summary,[tabindex]:not([tabindex="-1"])')].filter(x=>!x.disabled&&x.getClientRects().length);if(!f.length)return;
+  const a=f[0],z=f[f.length-1],c=document.activeElement;
+  if(!d.contains(c)){e.preventDefault();a.focus();return}
+  if(e.shiftKey&&(c===a||c===d)){e.preventDefault();z.focus()}else if(!e.shiftKey&&c===z){e.preventDefault();a.focus()}}});
+/* close plays the exit animation first, then really closes; the same curve family everywhere */
+const NCLOSE=HTMLDialogElement.prototype.close;
+function animClose(){const d=this;if(!d.open||d.dataset.state==='closing')return;
+ const rest=DSTACK.filter(x=>x!==d);SCRIM.classList.toggle('on',rest.length>0);
+ if(d.classList.contains('instant')){NCLOSE.call(d);d.dataset.state='';return}
+ d.dataset.state='closing';let t;const done=()=>{clearTimeout(t);d.removeEventListener('transitionend',te);if(d.open)NCLOSE.call(d);d.dataset.state='';d.style.transition='';d.style.transform=''};
+ const te=e=>{if(e.target===d&&(e.propertyName==='transform'||e.propertyName==='opacity'))done()};d.addEventListener('transitionend',te);t=setTimeout(done,300)}
+document.querySelectorAll('dialog').forEach(d=>{d.close=animClose});
+function showDlg(d,opener){d._opener=opener||document.activeElement;d.classList.remove('settled');d.tabIndex=-1;d.setAttribute('aria-modal','true');DSTACK.push(d);d.style.transform='';d.dataset.state='closed';d.show();d.offsetWidth;d.dataset.state='open';SCRIM.classList.add('on');d.focus({preventScroll:true});lockScroll();clearTimeout(d._st);d._st=setTimeout(()=>{if(d.open)d.classList.add('settled')},260);const body=d.querySelector('.dbody,.cbody');if(body)body.scrollTop=0}
 document.querySelectorAll('dialog').forEach(d=>{
- d.addEventListener('close',()=>{LASTCLOSE=performance.now();clearTimeout(d._st);d.classList.remove('settled');lockScroll();updateFab();const o=d._opener;if(o&&o.isConnected&&o.focus)o.focus({preventScroll:true})});
+ d.addEventListener('close',()=>{const i=DSTACK.indexOf(d);if(i>=0)DSTACK.splice(i,1);SCRIM.classList.toggle('on',DSTACK.length>0);LASTCLOSE=performance.now();clearTimeout(d._st);d.classList.remove('settled');lockScroll();updateFab();const o=d._opener;if(o&&o.isConnected&&o.focus)o.focus({preventScroll:true})});
  d.addEventListener('click',e=>{if(e.target!==d)return;const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close()});
  d.querySelectorAll('.dclose').forEach(x=>x.onclick=()=>d.close())});
 document.querySelectorAll('[data-open]').forEach(btn=>btn.onclick=()=>showDlg($(btn.dataset.open),btn));
@@ -992,7 +1055,7 @@ function openCmd(opts={}){
  CMD.classList.toggle('instant',!!opts.instant);CMD._key=null;renderCmd();CMD._sig=fsig();CMD._go=false;CMD._hit=false;showDlg(CMD,opts.opener);
  const cq=$('cq');
  if(opts.filters){const body=CMD.querySelector('.cbody');body.scrollTop+=$('cmd-fh').getBoundingClientRect().top-body.getBoundingClientRect().top-6;CMD.querySelector('#cmd-fbody summary').focus({preventScroll:true})}
- else if(!MOBILE.matches||opts.focus)cq.focus({preventScroll:true});else $('cmd-x').focus({preventScroll:true})}
+ else if(!MOBILE.matches||opts.focus)cq.focus({preventScroll:true});else CMD.focus({preventScroll:true})}
 $('fab-s').onclick=()=>openCmd({opener:$('fab-s')});
 /* the pill's filter button opens the same dialog, at its filters */
 $('fab-f').onclick=()=>openCmd({opener:$('fab-f'),filters:true});
@@ -1154,6 +1217,8 @@ document.addEventListener('click',e=>{const a=e.target.closest('a[href="#dir"]:n
  const ro=new ResizeObserver(es=>es.forEach(e=>upd(e.target)));
  els.forEach(el=>{el.addEventListener('scroll',()=>upd(el),{passive:true});ro.observe(el);new MutationObserver(()=>requestAnimationFrame(()=>upd(el))).observe(el,{childList:true,subtree:true,attributes:true,attributeFilter:['open','hidden']})});
  document.querySelectorAll('dialog').forEach(d=>d.addEventListener('toggle',()=>requestAnimationFrame(()=>els.forEach(upd))))})();
+/* build the search window once while the browser is idle, so the first open is as quick as the rest */
+(window.requestIdleCallback||(f=>setTimeout(f,1200)))(()=>{try{renderCmd()}catch(e){}});
 </script>
 
 </body></html>
