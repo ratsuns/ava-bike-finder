@@ -274,7 +274,7 @@ input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;width:1
 .bmh h2{margin:1px 0 0;font-size:22px;line-height:1.2;letter-spacing:-.02em;font-weight:700;text-wrap:balance;overflow-wrap:anywhere}
 .bmb{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain}
 .bmg{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px 28px;padding:20px 24px 28px;align-items:start}
-@media (min-height:720px){.bml{position:sticky;top:20px}}
+@media (min-height:720px){.bml{position:sticky;top:20px;z-index:4}} /* the pinned photo column stays above the top fade */
 .bmph{position:relative;aspect-ratio:4/3;background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden}
 .bmph img{width:100%;height:100%;object-fit:contain;display:block}
 .bmcap{margin:8px 0 0;font-size:var(--t-meta);color:var(--fg2)}
@@ -630,6 +630,9 @@ article.c .b{container-type:inline-size}
 /* scrolling panels fade out at the bottom while there is more to read, and the fade lifts once you reach the end */
 .bmb::after,.dbody::after,.cbody::after{content:"";position:sticky;bottom:calc(var(--pb,0px) * -1);display:block;height:56px;margin-top:-56px;pointer-events:none;background:linear-gradient(to bottom,transparent,var(--surface) 92%);opacity:0;transition:opacity .2s ease}
 .bmb.has-more::after,.dbody.has-more::after,.cbody.has-more::after{opacity:1}
+/* matching fade at the top once the panel has scrolled: content slides under the header instead of being cut off by it */
+.bmb::before,.dbody::before,.cbody::before{content:"";position:sticky;z-index:3;top:calc(var(--pt,0px) * -1);display:block;height:32px;margin-bottom:-32px;margin-inline:calc(var(--px,0px) * -1);pointer-events:none;background:linear-gradient(to top,transparent,var(--surface) 88%);opacity:0;transition:opacity .2s ease}
+.bmb.has-above::before,.dbody.has-above::before,.cbody.has-above::before{opacity:1}
 /* single search entry: no separate Filters button; the search bar opens the search window, filters included */
 #mfilter,#fab-f,.fab .fsep{display:none!important}
 .fab{padding-left:8px}
@@ -693,9 +696,9 @@ html.dim :is(.hero,#bar,#status,#g,#dir).onscr{filter:blur(6px)}
 /* phones: a bigger, easier thumb target */
 @media (max-width:600px){.fab{height:56px;width:min(420px,calc(100vw - 32px));padding-left:10px;font-size:16px}.fab .fmain{height:48px;gap:12px}.fab .fmain svg{width:20px;height:20px}}
 /* the fade pins to the real bottom edge, not to the panel's inner padding: --pb mirrors each panel's bottom padding */
-.dbody{--pb:calc(40px + env(safe-area-inset-bottom,0px))}
-.cbody{--pb:18px}
-@media (max-width:600px){.dbody{--pb:calc(32px + env(safe-area-inset-bottom,0px))}.cbody{--pb:16px}}
+.dbody{--pb:calc(40px + env(safe-area-inset-bottom,0px));--pt:4px;--px:24px}
+.cbody{--pb:18px;--pt:6px;--px:18px}
+@media (max-width:600px){.dbody{--pb:calc(32px + env(safe-area-inset-bottom,0px));--pt:2px;--px:18px}.cbody{--pb:16px;--pt:4px;--px:16px}}
 @media (min-width:761px) and (pointer:fine){.cfoot .linkbtn,.cfoot .primary{height:38px;font-size:14px}}
 /* photos: swipe across a photo to change color; tap the photo in the details to see it larger */
 .ph,.bmph,.c .more{touch-action:pan-y}
@@ -1324,9 +1327,9 @@ document.addEventListener('click',e=>{const a=e.target.closest('a[href="#dir"]:n
  const sync=()=>{const busy=document.hidden;if(seen&&!busy&&!REDUCE.matches){if(v.paused)v.play().catch(()=>{})}else if(!v.paused)v.pause()};
  new IntersectionObserver(e=>{seen=e[0].isIntersecting;sync()}).observe(v);
  document.addEventListener('visibilitychange',sync)})();
-/* mark a scrolling panel when there is more below, so it can fade its bottom edge */
+/* mark a scrolling panel when there is more below or above, so it can fade that edge */
 (()=>{const els=[...document.querySelectorAll('.bmb,.dbody,.cbody')];
- const upd=el=>el.classList.toggle('has-more',el.scrollHeight-el.scrollTop-el.clientHeight>4);
+ const upd=el=>{el.classList.toggle('has-more',el.scrollHeight-el.scrollTop-el.clientHeight>4);el.classList.toggle('has-above',el.scrollTop>4)};
  const ro=new ResizeObserver(es=>es.forEach(e=>upd(e.target)));
  els.forEach(el=>{el.addEventListener('scroll',()=>upd(el),{passive:true});ro.observe(el);new MutationObserver(()=>requestAnimationFrame(()=>upd(el))).observe(el,{childList:true,subtree:true,attributes:true,attributeFilter:['open','hidden']})});
  document.querySelectorAll('dialog').forEach(d=>d.addEventListener('toggle',()=>requestAnimationFrame(()=>els.forEach(upd))))})();
