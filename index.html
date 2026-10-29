@@ -19,9 +19,7 @@
  --bg:#0f1211; --surface:#171b19; --well:#1e2320; --fg:#eef1ee; --fg2:#b4bcb7; --fg3:#8d9691;
  --line:#262c29; --line2:#3a433e; --accent:#2fae7d; --accent-fg:#06140e; --accent-soft:#16302a; --accent-ink:#7fdcb4;
  --pick:#e0a84a; --warn-ink:#f0c46b;
- --shadow:0 1px 2px rgba(0,0,0,.3); --shadow-hi:0 8px 24px rgba(0,0,0,.4); color-scheme:dark}
- :root:not([data-theme="light"]) body{letter-spacing:.006em}}
-:root[data-theme="dark"] body{letter-spacing:.006em}
+ --shadow:0 1px 2px rgba(0,0,0,.3); --shadow-hi:0 8px 24px rgba(0,0,0,.4); color-scheme:dark}}
 :root[data-theme="dark"]{
  --bg:#0f1211; --surface:#171b19; --well:#1e2320; --fg:#eef1ee; --fg2:#b4bcb7; --fg3:#8d9691;
  --line:#262c29; --line2:#3a433e; --accent:#2fae7d; --accent-fg:#06140e; --accent-soft:#16302a; --accent-ink:#7fdcb4;
@@ -223,10 +221,10 @@ dialog[open]::backdrop{opacity:1}
 /* theme toggle: one icon that morphs. Dark shows a moon, light shows a sun.
    Only transforms and opacity animate (GPU), so it stays smooth; the page itself crossfades through a view transition where supported */
 .navr{display:flex;align-items:center;gap:4px}
-.themebtn{display:grid;place-items:center;width:40px;height:40px;margin-left:8px;border:0;border-radius:8px;background:none;color:rgba(255,255,255,.82);cursor:pointer;transition:color .15s ease,transform .12s var(--ease-out)}
+.themebtn{display:grid;place-items:center;width:40px;height:40px;margin-left:8px;border:0;border-radius:8px;background:none;color:rgba(var(--hink),.82);cursor:pointer;transition:color .15s ease,transform .12s var(--ease-out)}
 .themebtn:active{transform:scale(.92)}
-.themebtn:focus-visible{outline:2px solid #fff;outline-offset:2px}
-@media (hover:hover) and (pointer:fine){.themebtn:hover{color:#fff}}
+.themebtn:focus-visible{outline:2px solid rgb(var(--hink));outline-offset:2px}
+@media (hover:hover) and (pointer:fine){.themebtn:hover{color:rgb(var(--hink))}}
 .themebtn svg{overflow:visible}
 .themebtn .tm-core,.themebtn .tm-cut,.themebtn .tm-rays{transform-box:view-box;transform-origin:12px 12px;transition:transform .45s var(--ease-out),opacity .3s var(--ease-out)}
 /* light (sun): small core, cut-out moved clear, rays out */
@@ -553,30 +551,33 @@ main.grid{padding-bottom:96px}
 }
 
 /* hero: looping ride video under a dark gradient */
-.hero{position:relative;isolation:isolate;overflow:hidden;min-height:min(58svh,560px);display:flex;align-items:flex-end;background:var(--bg);color:#fff}
+/* hero ink and video wash follow the theme: dark wash + white type in dark mode, light wash + dark type in light mode, always fading into the page background */
+.hero{--hink:255,255,255;--hscrim:15,18,17;--ha0:.3;--ha1:.12;--ha2:.55;--ha3:.88;--ha4:.5}
+:root[data-theme="light"] .hero{--hink:18,22,20;--hscrim:246,247,245;--ha0:.55;--ha1:.4;--ha2:.72;--ha3:.92;--ha4:.7}
+.hero{position:relative;isolation:isolate;overflow:hidden;min-height:min(58svh,560px);display:flex;align-items:flex-end;background:var(--bg);color:rgb(var(--hink))}
 .hero-media{position:absolute;inset:0;z-index:-1}
 .hero-media video{width:100%;height:100%;object-fit:cover;display:block}
-.hero-media::after{content:"";position:absolute;inset:-1px 0;background:linear-gradient(180deg,rgba(15,18,17,.3) 0%,rgba(15,18,17,.12) 32%,rgba(15,18,17,.55) 60%,rgba(15,18,17,.88) 82%,#0f1211 100%),linear-gradient(90deg,rgba(15,18,17,.5) 0%,rgba(15,18,17,0) 60%)}
+.hero-media::after{content:"";position:absolute;inset:-1px 0;background:linear-gradient(180deg,rgba(var(--hscrim),var(--ha0)) 0%,rgba(var(--hscrim),var(--ha1)) 32%,rgba(var(--hscrim),var(--ha2)) 60%,rgba(var(--hscrim),var(--ha3)) 82%,var(--bg) 100%),linear-gradient(90deg,rgba(var(--hscrim),var(--ha4)) 0%,rgba(var(--hscrim),0) 60%)}
 .hero .wrap{width:100%;padding-block:112px 72px}
-.hero h1{color:#fff;font-size:clamp(40px,6vw,72px);line-height:1.02;letter-spacing:-.035em;max-width:14ch}
-.hero .lede{color:rgba(255,255,255,.86);font-size:clamp(17px,1.6vw,20px);max-width:52ch}
+.hero h1{color:rgb(var(--hink));font-size:clamp(40px,6vw,72px);line-height:1.02;letter-spacing:-.035em;max-width:14ch}
+.hero .lede{color:rgba(var(--hink),.86);font-size:clamp(17px,1.6vw,20px);max-width:52ch}
 .hero .hlinks{margin-top:10px;gap:10px 12px}
-.hero .gbtn{height:44px;padding:0 16px 0 14px;border-color:rgba(255,255,255,.28);background:rgba(255,255,255,.1);color:#fff;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
-.hero .gbtn svg{color:#fff}
-.hero .hlinks a{color:#fff;font-weight:600;text-decoration:underline;text-decoration-color:rgba(255,255,255,.4);text-underline-offset:4px}
-@media (hover:hover) and (pointer:fine){.hero .gbtn:hover{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.45)}.hero .hlinks a:hover{text-decoration-color:#fff}}
+.hero .gbtn{height:44px;padding:0 16px 0 14px;border-color:rgba(var(--hink),.28);background:rgba(var(--hink),.1);color:rgb(var(--hink));-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.hero .gbtn svg{color:rgb(var(--hink))}
+.hero .hlinks a{color:rgb(var(--hink));font-weight:600;text-decoration:underline;text-decoration-color:rgba(var(--hink),.4);text-underline-offset:4px}
+@media (hover:hover) and (pointer:fine){.hero .gbtn:hover{background:rgba(var(--hink),.18);border-color:rgba(var(--hink),.45)}.hero .hlinks a:hover{text-decoration-color:rgb(var(--hink))}}
 @media (max-width:760px){.hero{min-height:min(52svh,440px)}.hero .wrap{padding-block:128px 40px}}
 @media (prefers-reduced-motion:reduce){.hero-media video{display:none}.hero-media{background:url(img/hero.jpg) center/cover}}
 
 .hero .topnav{position:absolute;inset:0 0 auto;z-index:1;padding-top:env(safe-area-inset-top)}
 .hero .topnav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px;padding-block:0}
-.brand{display:inline-flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:600;font-size:15px;letter-spacing:-.01em;min-height:44px}
+.brand{display:inline-flex;align-items:center;gap:10px;color:rgb(var(--hink));text-decoration:none;font-weight:600;font-size:15px;letter-spacing:-.01em;min-height:44px}
 .brand svg{flex:none}
 .navlinks{display:flex;align-items:center;gap:4px;margin-right:-12px}
-.navlinks button,.navlinks a{text-decoration:none;font:inherit;font-size:14px;font-weight:500;color:rgba(255,255,255,.82);background:none;border:0;height:44px;padding:0 12px;border-radius:6px;cursor:pointer;transition:color .15s ease,transform .12s var(--ease-out)}
+.navlinks button,.navlinks a{text-decoration:none;font:inherit;font-size:14px;font-weight:500;color:rgba(var(--hink),.82);background:none;border:0;height:44px;padding:0 12px;border-radius:6px;cursor:pointer;transition:color .15s ease,transform .12s var(--ease-out)}
 .navlinks button:active{transform:scale(.97)}
-.navlinks button:focus-visible,.navlinks a:focus-visible,.menubtn:focus-visible,.brand:focus-visible{outline:2px solid #fff;outline-offset:2px}
-@media (hover:hover) and (pointer:fine){.navlinks button:hover,.navlinks a:hover{color:#fff}}
+.navlinks button:focus-visible,.navlinks a:focus-visible,.menubtn:focus-visible,.brand:focus-visible{outline:2px solid rgb(var(--hink));outline-offset:2px}
+@media (hover:hover) and (pointer:fine){.navlinks button:hover,.navlinks a:hover{color:rgb(var(--hink))}}
 .hero .hlinks a.hcta{text-decoration:none}
 @media (max-width:760px){.navlinks button{padding:0 10px;font-size:15px}.navlinks{margin-right:-10px;gap:0}.brand{font-size:15px;gap:8px}}
 .brand,.navlinks button{white-space:nowrap}
@@ -600,7 +601,7 @@ main.grid{padding-bottom:96px}
 .cfoot .linkbtn:not(:disabled):active{background:var(--well)}
 .cfoot .linkbtn:disabled{opacity:1;color:var(--fg3)}
 .navlinks a{display:inline-flex;align-items:center}
-.menubtn{display:none;align-items:center;justify-content:center;width:44px;height:44px;margin-right:-10px;border:0;border-radius:8px;background:none;color:#fff;cursor:pointer;transition:background-color .15s ease,transform .12s var(--ease-out)}
+.menubtn{display:none;align-items:center;justify-content:center;width:44px;height:44px;margin-right:-10px;border:0;border-radius:8px;background:none;color:rgb(var(--hink));cursor:pointer;transition:background-color .15s ease,transform .12s var(--ease-out)}
 .menubtn:active{transform:scale(.95)}
 @media (max-width:760px){.navlinks{display:none}.menubtn{display:inline-flex}}
 .ptag{margin-left:auto;align-self:center;display:inline-flex;align-items:center;gap:6px;height:26px;padding:0 9px;border-radius:6px;font-size:var(--t-micro);font-weight:600;line-height:1;white-space:nowrap;background:var(--warn-soft);color:var(--warn-ink);border:1px solid color-mix(in oklab,var(--warn-ink) 22%,transparent)}
