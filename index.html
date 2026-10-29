@@ -241,6 +241,18 @@ dialog[open]::backdrop{opacity:1}
 /* the toggle itself is shown live during the crossfade, so its morph plays instead of being frozen in a snapshot */
 ::view-transition-old(themebtn){display:none}
 ::view-transition-new(themebtn){animation:none}
+/* desktop hero: title, description and a larger search centered in the video; shading is centered too (no side darkening). Phones keep their left-aligned layout */
+@media (min-width:761px){
+ .hero>.wrap{display:flex;flex-direction:column;align-items:center;text-align:center}
+ .hero h1{max-width:none}
+ .hero .lede{max-width:48ch;margin-inline:auto;text-wrap:balance}
+ .hero .hbar{width:100%;max-width:680px;margin-inline:auto;margin-top:16px}
+ .hero .hbar .search{max-width:none;width:100%}
+ .hero .hbar input[type=search]{height:52px;font-size:16px;padding-left:46px;border-radius:10px}
+ .hero .hbar .search svg{left:16px;width:18px;height:18px}
+ .hero-media::after{background:radial-gradient(ellipse 62% 58% at 50% 50%,rgba(var(--hscrim),.42) 0%,rgba(var(--hscrim),0) 100%),linear-gradient(180deg,rgba(var(--hscrim),var(--ha0)) 0%,rgba(var(--hscrim),var(--ha1)) 32%,rgba(var(--hscrim),var(--ha2)) 60%,rgba(var(--hscrim),var(--ha3)) 78%,rgba(var(--hscrim),.97) 92%,var(--bg) 100%)}
+ :root[data-theme="light"] .hero-media::after{background:radial-gradient(ellipse 62% 58% at 50% 50%,rgba(15,18,17,.42) 0%,rgba(15,18,17,0) 100%),linear-gradient(180deg,rgba(15,18,17,.3) 0%,rgba(15,18,17,.12) 32%,rgba(15,18,17,.5) 62%,rgba(15,18,17,.62) 100%)}
+}
 @media (prefers-reduced-motion:reduce){
  .gbtn:active,.sw:active i,.sw:hover:active i{transform:none}
  .c.flash{animation:none;box-shadow:0 0 0 3px var(--accent)}
