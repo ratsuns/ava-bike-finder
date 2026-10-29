@@ -44,7 +44,7 @@ h1{margin:0;font-size:clamp(32px,4.2vw,44px);line-height:1.06;letter-spacing:-.0
 .lede{margin:0;color:var(--fg2);font-size:var(--t-lede);line-height:1.55;max-width:60ch;text-wrap:pretty}
 
 /* search bar: Filters button (opens the left panel, so it sits on the left) + search */
-.bar{background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{background:var(--bg)}
 .bar .wrap{padding-block:12px;display:flex;gap:10px;align-items:center}
 .field{position:relative;display:inline-flex;align-items:center}
 .field span{position:absolute;left:12px;font-size:var(--t-micro);font-weight:500;color:var(--fg3);pointer-events:none}
@@ -624,6 +624,11 @@ article.c .b{container-type:inline-size}
 @media (hover:hover) and (pointer:fine){.dclose:hover{background:var(--well);color:var(--fg)}}
 /* the floating search bar is solid instead of frosted, so scrolling stays smooth in Safari */
 .fab{-webkit-backdrop-filter:none;backdrop-filter:none;background:var(--surface)}
+/* scrolling panels fade out at the bottom while there is more to read, and the fade lifts once you reach the end */
+.bmb,.dbody,.cbody{--fade:0px;-webkit-mask-image:linear-gradient(to bottom,#000 calc(100% - var(--fade)),transparent);mask-image:linear-gradient(to bottom,#000 calc(100% - var(--fade)),transparent)}
+.bmb.has-more,.dbody.has-more,.cbody.has-more{--fade:56px}
+@property --fade{syntax:"<length>";inherits:false;initial-value:0px}
+.bmb,.dbody,.cbody{transition:--fade .2s ease}
 </style>
 
 <a class="skip" href="#g">Skip to the bikes</a>
@@ -1137,6 +1142,12 @@ document.addEventListener('click',e=>{const a=e.target.closest('a[href="#dir"]:n
  new IntersectionObserver(e=>{seen=e[0].isIntersecting;sync()}).observe(v);
  new MutationObserver(sync).observe(document.documentElement,{attributes:true,attributeFilter:['class']});
  document.addEventListener('visibilitychange',sync)})();
+/* mark a scrolling panel when there is more below, so it can fade its bottom edge */
+(()=>{const els=[...document.querySelectorAll('.bmb,.dbody,.cbody')];
+ const upd=el=>el.classList.toggle('has-more',el.scrollHeight-el.scrollTop-el.clientHeight>4);
+ const ro=new ResizeObserver(es=>es.forEach(e=>upd(e.target)));
+ els.forEach(el=>{el.addEventListener('scroll',()=>upd(el),{passive:true});ro.observe(el);new MutationObserver(()=>requestAnimationFrame(()=>upd(el))).observe(el,{childList:true,subtree:true,attributes:true,attributeFilter:['open','hidden']})});
+ document.querySelectorAll('dialog').forEach(d=>d.addEventListener('toggle',()=>requestAnimationFrame(()=>els.forEach(upd))))})();
 </script>
 
 </body></html>
