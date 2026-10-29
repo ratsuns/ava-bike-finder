@@ -569,7 +569,8 @@ main.grid{padding-bottom:96px}
 .hero .gbtn svg{color:rgb(var(--hink))}
 .hero .hlinks a{color:rgb(var(--hink));font-weight:600;text-decoration:underline;text-decoration-color:rgba(var(--hink),.4);text-underline-offset:4px}
 @media (hover:hover) and (pointer:fine){.hero .gbtn:hover{background:rgba(var(--hink),.18);border-color:rgba(var(--hink),.45)}.hero .hlinks a:hover{text-decoration-color:rgb(var(--hink))}}
-@media (max-width:760px){.hero{min-height:min(84svh,760px)}.hero .wrap{padding-block:158px 40px}}
+/* phones keep their previous hero: height from before, text anchored at the bottom */
+@media (max-width:760px){.hero{min-height:min(52svh,440px);align-items:flex-end}.hero .wrap{padding-block:128px 40px}}
 @media (prefers-reduced-motion:reduce){.hero-media video{display:none}.hero-media{background:url(img/hero.jpg) center/cover}}
 
 .hero .topnav{position:absolute;inset:0 0 auto;z-index:1;padding-top:env(safe-area-inset-top)}
