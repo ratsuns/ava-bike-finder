@@ -693,7 +693,7 @@ html.dim :is(.hero,#bar,#status,#g,#dir){filter:blur(6px)}
 /* photos: swipe across a photo to change color; tap the photo in the details to see it larger */
 .ph,.bmph,.c .more{touch-action:pan-y}
 .bmph img{cursor:zoom-in}
-.zoomv{position:fixed;inset:0;width:100vw;height:100dvh;max-width:none;max-height:none;margin:0;padding:max(56px,env(safe-area-inset-top,0px)) 16px calc(16px + env(safe-area-inset-bottom,0px));border:0;background:rgba(6,9,8,.97);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;overflow:hidden;z-index:60}
+.zoomv{position:fixed;inset:0;width:100vw;height:100dvh;max-width:none;max-height:none;margin:0;padding:max(56px,env(safe-area-inset-top,0px)) 16px calc(16px + env(safe-area-inset-bottom,0px));border:0;background:#070a09;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;overflow:hidden;z-index:60}
 .zoomv:not([open]){display:none}
 .zfig{margin:0;width:min(1100px,100%);flex:1 1 auto;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;touch-action:pan-y pinch-zoom}
 .zfig img{display:block;max-width:100%;max-height:100%;min-height:0;object-fit:contain;border-radius:12px;background:#fff;box-shadow:0 24px 64px rgba(0,0,0,.45)}
@@ -708,6 +708,10 @@ dialog.zoomv[data-state="open"]{opacity:1;transform:none}
 dialog.zoomv[data-state="closing"]{opacity:0;transform:scale(.97);transition:opacity .15s var(--ease-out),transform .15s var(--ease-out),display .15s allow-discrete}
 dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none}
 @media (prefers-reduced-motion:reduce){dialog.zoomv,dialog.zoomv[data-state]{transform:none!important}}
+.zoomv{justify-content:center}
+.zfig{flex:0 0 auto;width:100%;max-width:1100px}
+.zfig img{width:min(100%,1100px,calc((100dvh - 190px) * 4 / 3));aspect-ratio:4/3;height:auto;max-height:none;object-fit:contain}
+@media (max-width:760px){.zfig img{width:min(100%,calc((100dvh - 210px) * 4 / 3))}}
 </style>
 
 <a class="skip" href="#g">Skip to the bikes</a>
@@ -1107,10 +1111,11 @@ $('cq').addEventListener('keydown',e=>{
  if(e.key==='Enter'){e.preventDefault();clearTimeout(qt);render();CMD._go=true;CMD.close()}
  else if(e.key==='ArrowDown'){const h=CMD.querySelector('.hit');if(h){e.preventDefault();h.focus()}}});
 /* phones: pull a bottom sheet down to close it, from its header or from the content once it is scrolled to the top; a quick flick is enough */
-function sheetDrag(D,head,body,q){let y0=0,t0=0,dy=0,st=0,fromBody=false;const on=()=>matchMedia(q).matches;
- const start=(e,b)=>{if(!on()||!D.open||e.touches.length>1||e.target.closest('input,select,textarea,.rbar'))return;if(b&&body.scrollTop>0)return;y0=e.touches[0].clientY;t0=performance.now();dy=0;st=1;fromBody=b};
+function sheetDrag(D,head,body,q){let x0=0,y0=0,t0=0,dy=0,st=0,fromBody=false;const on=()=>matchMedia(q).matches;
+ const start=(e,b)=>{if(!on()||!D.open||e.touches.length>1||e.target.closest('input,select,textarea,.rbar'))return;if(b&&body.scrollTop>0)return;x0=e.touches[0].clientX;y0=e.touches[0].clientY;t0=performance.now();dy=0;st=1;fromBody=b};
  const move=e=>{if(!st)return;const d=e.touches[0].clientY-y0;
-  if(st===1){if(Math.abs(d)<6)return;if(d<0||(fromBody&&body.scrollTop>0)){st=0;return}st=2;y0=e.touches[0].clientY;t0=performance.now();D.style.transition='none'}
+  /* a sideways swipe (like changing colors on the photo) never turns into closing the sheet */
+  if(st===1){const dx=Math.abs(e.touches[0].clientX-x0);if(Math.abs(d)<8&&dx<8)return;if(d<0||dx>Math.abs(d)*0.6||(fromBody&&body.scrollTop>0)){st=0;return}st=2;y0=e.touches[0].clientY;t0=performance.now();D.style.transition='none'}
   e.preventDefault();const m=e.touches[0].clientY-y0;dy=m>0?m:-Math.sqrt(-m)*2;D.style.transform=`translateY(${dy}px)`};
  const end=()=>{if(st!==2){st=0;return}st=0;const v=dy/Math.max(1,performance.now()-t0);
   if(dy>D.offsetHeight*.25||(dy>24&&v>.11)){D.style.transition='transform .2s cubic-bezier(.32,.72,0,1)';D.style.transform='translateY(100%)';setTimeout(()=>{D.style.transition='none';D.close();requestAnimationFrame(()=>{D.style.transition='';D.style.transform=''})},200)}
