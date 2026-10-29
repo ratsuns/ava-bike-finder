@@ -557,11 +557,11 @@ main.grid{padding-bottom:96px}
 /* light mode: no fade into the (light) page colour, so the bottom keeps the video and ends on a clean edge */
 :root[data-theme="light"] .hero-media::after{background:linear-gradient(180deg,rgba(15,18,17,.3) 0%,rgba(15,18,17,.12) 32%,rgba(15,18,17,.5) 62%,rgba(15,18,17,.62) 100%),linear-gradient(90deg,rgba(15,18,17,.5) 0%,rgba(15,18,17,0) 60%)}
 :root[data-theme="light"] .hero{background:#0f1211}
-.hero{position:relative;isolation:isolate;overflow:hidden;min-height:min(86svh,880px);display:flex;align-items:flex-start;background:var(--bg);color:rgb(var(--hink))}
+.hero{position:relative;isolation:isolate;overflow:hidden;min-height:min(86svh,880px);display:flex;align-items:center;background:var(--bg);color:rgb(var(--hink))}
 .hero-media{position:absolute;inset:0;z-index:-1}
 .hero-media video{width:100%;height:100%;object-fit:cover;display:block}
 .hero-media::after{content:"";position:absolute;inset:-1px 0;background:linear-gradient(180deg,rgba(var(--hscrim),var(--ha0)) 0%,rgba(var(--hscrim),var(--ha1)) 32%,rgba(var(--hscrim),var(--ha2)) 60%,rgba(var(--hscrim),var(--ha3)) 78%,rgba(var(--hscrim),.97) 92%,var(--bg) 100%),linear-gradient(90deg,rgba(var(--hscrim),var(--ha4)) 0%,rgba(var(--hscrim),0) 60%)}
-.hero .wrap{width:100%;padding-block:167px 56px}
+.hero .wrap{width:100%;padding-block:64px} /* desktop: the text block sits in the vertical middle of the video (64px top = nav height, matched at the bottom) */
 .hero h1{color:rgb(var(--hink));font-size:clamp(40px,6vw,72px);line-height:1.02;letter-spacing:-.035em;max-width:14ch}
 .hero .lede{color:rgba(var(--hink),.86);font-size:clamp(17px,1.6vw,20px);max-width:52ch}
 .hero .hlinks{margin-top:10px;gap:10px 12px}
