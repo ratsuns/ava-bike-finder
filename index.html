@@ -588,6 +588,13 @@ main.grid{padding-bottom:96px}
 .navmenu :focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
 @media (max-width:760px){.navlinks{display:none}.menubtn{display:inline-flex}}
 @media (prefers-reduced-motion:reduce){.navmenu{transform:none!important;transition:opacity .15s ease,overlay .15s allow-discrete,display .15s allow-discrete}@starting-style{.navmenu:popover-open{transform:none}}.menubtn:active{transform:none}}
+.ptag{margin-left:auto;align-self:center;display:inline-flex;align-items:center;gap:6px;height:26px;padding:0 9px;border-radius:6px;font-size:var(--t-micro);font-weight:600;line-height:1;white-space:nowrap;background:var(--warn-soft);color:var(--warn-ink);border:1px solid color-mix(in oklab,var(--warn-ink) 22%,transparent)}
+.ptag svg{flex:none;width:12px;height:12px}
+.bmpay{flex-wrap:nowrap}
+.pay>span{white-space:nowrap}
+.pbr{display:none}
+article.c .b{container-type:inline-size}
+@container (max-width:310px){.pbr{display:block;flex-basis:100%;height:0}.pay .ptag{margin:4px 0 2px}}
 </style>
 
 <a class="skip" href="#g">Skip to the bikes</a>
@@ -757,7 +764,7 @@ function cardHTML(b){
  const pk=PICKS[b.brand+'|'+b.model];
  const tr=tierText(b.tier);
  const price=b.price!=null
-  ?`<div class="price"><div class="pay"><strong>${money(b.you)}</strong><span>you pay</span></div><div class="list"><s>${money(b.price)}</s> minus ${money(b.reb)} rebate, plus tax</div></div>`
+  ?`<div class="price"><div class="pay"><strong>${money(b.you)}</strong><span>you pay</span>${b.warn&&tr?`<i class="pbr"></i><span class="ptag" title="Ava lists this bike at ${esc(tr)}">${PHONE}Call shop for price</span>`:''}</div><div class="list"><s>${money(b.price)}</s> minus ${money(b.reb)} rebate, plus tax</div></div>`
   :`<div class="price na"><div class="pay"><strong>Price not listed</strong></div><div class="list">${tr?`Ava lists it at ${esc(tr)}. `:''}Ask the shop for the price.</div></div>`;
  const allNa=[b.spd,b.tq,b.load,b.range].every(v=>v==null||v==='');
  const sw=b.cv.length?`<div class="sws" role="group" aria-label="Colors">${b.cv.map((c,ci)=>`<button type="button" class="sw" data-c="${ci}" tabindex="${ci?-1:0}" aria-pressed="false" aria-label="${esc(c.n)}" title="${esc(c.n)}${c.img?'':' (no photo yet)'}"><i style="background:${c.hex||CHEX[c.f]}"></i></button>`).join('')}</div>`:'';
@@ -767,7 +774,6 @@ function cardHTML(b){
   <div class="id"><span class="br">${esc(b.brand)}</span><h3 class="n" title="${esc(b.model)}"><span class="vh">${esc(b.brand)} </span>${esc(b.mn)}</h3></div>
   ${price}
   ${allNa?'<p class="nospec">Specs not listed. Ask the shop.</p>':`<dl class="stats">${stat('Top speed',b.spd,'mph')}${stat('Torque',b.tq,'Nm')}${stat('Max load',b.load,'lb')}${stat('Range',b.range,'mi')}</dl>`}
-  ${b.warn&&tr?`<div class="pwarn">${INFO}<span>Ava's list puts this bike at ${esc(tr)}, not ${money(b.price)}. Ask the shop for today's price.</span></div>`:''}
   ${pk?`<p class="note picknote">${esc(pk.note)}</p>`:''}
   <div class="chips"><span class="chip" title="${esc(TYPEX[b.type]||'')}">${esc(b.type)}</span><span class="chip" title="${esc(CLASSX[b.cls]||'')}">Class ${esc(b.cls)}</span>${b.fold==='Yes'?'<span class="chip">Folds</span>':''}</div>
   <button type="button" class="more" data-more="${b.i}"><span>See details<span class="vh"> for ${esc(b.name)}</span></span>${ARROW}</button>
@@ -865,7 +871,7 @@ function openBike(i,opener){
  const cell=([l,v,u,x],w)=>`<div${w?' class="w"':''}><dt>${l}</dt><dd>${esc(v)}${u?`<small>${u}</small>`:''}</dd>${x?`<p>${esc(x)}</p>`:''}</div>`;
  const stats=narrow.map(s=>cell(s)).join('')+wide.map(s=>cell(s,1)).join('');
  const price=b.price!=null
-  ?`<div class="bmpay"><strong>${money(b.you)}</strong><span>you pay</span></div>
+  ?`<div class="bmpay"><strong>${money(b.you)}</strong><span>you pay</span>${b.warn&&tr?`<span class="ptag" title="Ava lists this bike at ${esc(tr)}">${PHONE}Call shop for price</span>`:''}</div>
    <dl class="bmpl"><div><dt>List price</dt><dd>${money(b.price)}</dd></div><div class="bmreb"><dt>Ava rebate <span class="bmrt">(${esc(b.type.toLowerCase())} bike)</span></dt><dd><span class="rb${b.reb===900?'':' s400'}"><i></i>${money(b.reb)} off</span></dd></div></dl>
    <p class="bmtax">Plus sales tax. The rebate can't be used for tax.</p>`
   :`<div class="bmpay na"><strong>Price not listed</strong></div>
@@ -879,7 +885,7 @@ function openBike(i,opener){
  <div class="bml">
   <div class="bmph"><img id="bike-img" src="${b.img}" alt="${esc(b.name)}">${sws}</div>
   <p class="bmcap" id="bike-cap" hidden></p>
-  <div class="bmp">${price}${warn}${b.note?`<p class="bmtax">About the price: ${esc(b.note)}</p>`:''}</div>
+  <div class="bmp">${price}${b.note?`<p class="bmtax">About the price: ${esc(b.note)}</p>`:''}</div>
  </div>
  <div class="bmr">
   ${pk?`<div class="bmpick"><span class="bmpk">${STAR}${esc(pk.tag)}</span><p><b>${esc(pk.head)}</b> ${esc(pk.sub)}</p></div>`:''}
