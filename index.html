@@ -364,6 +364,7 @@ input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;width:1
 html.locked .fab.on{opacity:0;transform:translate(-50%,12px) scale(.97);pointer-events:none}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .fab{box-shadow:0 2px 6px rgba(0,0,0,.3),0 12px 32px rgba(0,0,0,.5)}}
 :root[data-theme="dark"] .fab{box-shadow:0 2px 6px rgba(0,0,0,.3),0 12px 32px rgba(0,0,0,.5)}
+@media (max-width:600px){.fab{width:min(340px,calc(100vw - 48px))}}
 @media (max-width:400px){.fmain{gap:8px;padding-right:12px}}
 @media (prefers-reduced-motion:reduce){.fab,.fab.on,html.locked .fab.on{transform:translate(-50%,0);transition:opacity .15s ease}}
 main.grid{padding-bottom:96px}
@@ -391,7 +392,7 @@ main.grid{padding-bottom:96px}
 .chead{position:relative;display:flex;align-items:center;gap:10px;padding:10px 10px 10px 18px;border-bottom:1px solid var(--line);flex:none}
 .cicon{display:grid;color:var(--fg3)}
 #cq{flex:1;min-width:0;height:44px;border:0;background:none;padding:0;font-size:17px;box-shadow:none;outline:none}
-.cbody{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:6px 18px 18px}
+.cbody{flex:1 1 auto;min-height:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;padding:6px 18px 18px;-webkit-overflow-scrolling:touch;interpolate-size:allow-keywords}
 .cres h3{margin:12px 0 6px;font-size:var(--t-micro);font-weight:600;color:var(--fg3);letter-spacing:.02em}
 .hit{display:flex;align-items:center;gap:12px;margin:0 -8px;width:calc(100% + 16px);padding:6px 8px;border:0;border-radius:8px;background:none;color:var(--fg);font:inherit;text-align:left;cursor:pointer;transition:background-color .12s ease,transform .12s var(--ease-out)}
 .hit img{width:52px;height:39px;object-fit:cover;border-radius:4px;background:#fff;flex:none;border:1px solid var(--line)}
@@ -419,7 +420,14 @@ main.grid{padding-bottom:96px}
 }
 @media (prefers-reduced-motion:reduce){.cmd,.cmd[open]{transform:none!important;transition:opacity .15s ease,overlay .15s allow-discrete,display .15s allow-discrete}@starting-style{.cmd[open]{opacity:0}}}
 @media (pointer:coarse){.linkbtn{min-height:44px;padding-inline:8px;margin-left:-8px}.primary{height:48px;font-size:16px}}
-.cfoot .mfilter{margin-right:auto}
+/* filters inside the command dialog: same controls as the panel, a little more compact */
+.cflt{margin-top:14px;padding-top:2px;border-top:1px solid var(--line)}
+.cflt h3{margin:12px 0 2px;font-size:var(--t-micro);font-weight:600;color:var(--fg3);letter-spacing:.02em}
+.cmd .fs summary{min-height:48px}
+.cmd .fsc{padding-bottom:14px}
+.cmd .fsw{min-height:56px;padding:6px 0}
+.cfoot .primary{min-width:168px}
+@media (pointer:coarse){.cmd .fs summary{min-height:52px}}
 
 /* filters panel: slides in from the left; sticky header and footer around one scrolling column of accordions */
 .fp{position:fixed;inset:0 auto 0 0;margin:0;height:100dvh;max-height:100dvh;width:min(400px,100vw);max-width:100vw;padding:0;border:0;border-right:1px solid var(--line);background:var(--surface);color:var(--fg);box-shadow:12px 0 40px rgba(0,0,0,.14);display:flex;flex-direction:column;overflow:hidden;transform:translateX(-100%);transition:transform .32s cubic-bezier(.32,.72,0,1),overlay .32s allow-discrete,display .32s allow-discrete}
@@ -455,8 +463,8 @@ main.grid{padding-bottom:96px}
 .ro .rl small{color:var(--fg2);font-size:var(--t-meta);margin-left:6px}
 .rn{flex:none;color:var(--fg3);font-size:var(--t-micro);font-variant-numeric:tabular-nums}
 .ro:has(input:checked) .rn{color:var(--fg2)}
-#fo-city{grid-template-columns:1fr 1fr;column-gap:20px}
-#fo-city .ro:first-of-type{grid-column:1/-1}
+.rcity{grid-template-columns:1fr 1fr;column-gap:20px}
+.rcity .ro:first-of-type{grid-column:1/-1}
 .ro:has(input:checked) .rl{font-weight:600}
 .ro.zero .rl{color:var(--fg3)}
 @media (hover:hover) and (pointer:fine){.ro:hover{background:var(--well)}.ro:hover .rn{color:var(--fg2)}}
@@ -475,7 +483,7 @@ main.grid{padding-bottom:96px}
 :root[data-theme="dark"] .cb[aria-pressed="true"] i{box-shadow:0 0 0 2px var(--surface),0 0 0 3.5px var(--fg)}
 /* you pay: two native range inputs over one styled track; the whole strip is the hit area */
 .prv{margin:0 0 2px}
-#pay-txt{font-size:var(--t-lede);font-weight:650;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.ptxt{font-size:var(--t-lede);font-weight:650;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
 .rng{position:relative;touch-action:pan-y;cursor:pointer;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}
 .rbar{position:relative;height:44px}
 .rtrack{position:absolute;left:12px;right:12px;top:50%;height:4px;margin-top:-2px;border-radius:2px;background:var(--line)}
@@ -498,7 +506,6 @@ main.grid{padding-bottom:96px}
 .rticks span{position:absolute;top:10px;translate:-50% 0;font-size:var(--t-micro);color:var(--fg2);font-variant-numeric:tabular-nums;white-space:nowrap;line-height:1.2}
 .rticks span:first-of-type{translate:-12px 0}
 .rticks span:last-of-type{translate:calc(-100% + 12px) 0}
-.phint{margin:8px 0 0;font-size:var(--t-meta);color:var(--fg2);line-height:1.45}
 /* folding switch */
 .fsw{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:8px 0;cursor:pointer}
 .fsw b{display:block;font-weight:600;font-size:var(--t-body)}
@@ -519,10 +526,26 @@ main.grid{padding-bottom:96px}
  .fs::details-content{transition:none}
  .chev,.fsw input::before,.ro input{transition:none}
 }
+
+/* hero: looping ride video under a dark gradient */
+.hero{position:relative;isolation:isolate;overflow:hidden;min-height:min(78svh,720px);display:flex;align-items:flex-end;background:#0b0f0d;color:#fff}
+.hero-media{position:absolute;inset:0;z-index:-1}
+.hero-media video{width:100%;height:100%;object-fit:cover;display:block}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,12,10,.25) 0%,rgba(8,12,10,.15) 35%,rgba(8,12,10,.72) 78%,rgba(8,12,10,.9) 100%),linear-gradient(90deg,rgba(8,12,10,.55) 0%,rgba(8,12,10,0) 60%)}
+.hero .wrap{width:100%;padding-block:96px 48px}
+.hero h1{color:#fff;font-size:clamp(40px,6vw,72px);line-height:1.02;letter-spacing:-.035em;max-width:14ch}
+.hero .lede{color:rgba(255,255,255,.86);font-size:clamp(17px,1.6vw,20px);max-width:52ch}
+.hero .hlinks{margin-top:10px;gap:10px 12px}
+.hero .gbtn{height:44px;padding:0 16px 0 14px;border-color:rgba(255,255,255,.28);background:rgba(255,255,255,.1);color:#fff;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.hero .gbtn svg{color:#fff}
+.hero .hlinks a{color:#fff;font-weight:600;text-decoration:underline;text-decoration-color:rgba(255,255,255,.4);text-underline-offset:4px}
+@media (hover:hover) and (pointer:fine){.hero .gbtn:hover{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.45)}.hero .hlinks a:hover{text-decoration-color:#fff}}
+@media (max-width:760px){.hero{min-height:82svh}.hero .wrap{padding-block:72px 32px}}
+@media (prefers-reduced-motion:reduce){.hero-media video{display:none}.hero-media{background:url(img/hero.jpg) center/cover}}
 </style>
 
 <a class="skip" href="#g">Skip to the bikes</a>
-<header><div class="wrap">
+<header class="hero"><div class="hero-media" aria-hidden="true"><video id="herov" src="img/hero.mp4" poster="img/hero.jpg" autoplay muted loop playsinline preload="auto"></video></div><div class="wrap">
  <h1>Find your e-bike with the Ava rebate</h1>
  <p class="lede">All 224 bikes on the October 8, 2026 eligible list, with prices, what you pay after the rebate, specs and the East Bay shops that carry each one.</p>
  <p class="hlinks"><button type="button" class="gbtn" data-open="guide"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></svg>How to choose an e-bike</button><button type="button" class="gbtn" data-open="rebate"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg>How the rebate works</button><a href="#dir">See all shops</a></p>
@@ -619,24 +642,16 @@ main.grid{padding-bottom:96px}
 </dialog>
 <dialog id="filters" class="fp" aria-labelledby="fp-h">
  <div class="fph"><h2 id="fp-h">Filters</h2><button type="button" class="dclose" aria-label="Close filters" autofocus><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
- <div class="fpb" id="fp-body">
-  <details class="fs" id="fs-type" open><summary><span class="fl">Type and rebate</span><span class="fv" id="fv-type">Any</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><div class="fsc"><fieldset class="rlist" id="fo-type"><legend class="vh">Type and rebate</legend></fieldset></div></details>
-  <details class="fs" id="fs-pay" open><summary><span class="fl">You pay</span><span class="fv" id="fv-pay">Any</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><div class="fsc"><div class="prv"><span id="pay-txt">Any price</span></div>
-   <div class="rng" id="rng"><div class="rbar"><div class="rtrack"><div class="rfill" id="rfill"></div></div><input type="range" id="pmin" min="0" max="1" step="1" value="0" aria-label="Lowest you pay"><input type="range" id="pmax" min="0" max="1" step="1" value="1" aria-label="Most you pay"></div><div class="rticks" id="rticks" aria-hidden="true"></div></div>
-   <p class="phint" id="pay-hint" hidden></p></div></details>
-  <details class="fs" id="fs-spd"><summary><span class="fl">Top speed</span><span class="fv" id="fv-spd">Any</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><div class="fsc"><fieldset class="rlist" id="fo-spd"><legend class="vh">Top speed</legend></fieldset></div></details>
-  <details class="fs" id="fs-color"><summary><span class="fl">Color</span><span class="fv" id="fv-color">Any</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><div class="fsc"><div class="cgrid" id="fo-color" role="group" aria-label="Color"></div></div></details>
-  <details class="fs" id="fs-city"><summary><span class="fl">Shop city</span><span class="fv" id="fv-city">Any</span><svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><div class="fsc"><fieldset class="rlist" id="fo-city"><legend class="vh">Shop city</legend></fieldset></div></details>
-  <label class="fsw"><span><b>Folding bikes only</b><small>Easier to store and take on a train</small></span><input type="checkbox" role="switch" id="f-fold"></label>
- </div>
+ <div class="fpb" id="fp-body"></div>
  <div class="fpf"><button type="button" class="linkbtn" id="fp-clear">Clear all</button><button type="button" class="primary" id="fp-show">Show bikes</button><span class="vh" aria-live="polite" id="fp-live"></span></div>
 </dialog>
 <dialog id="cmd" class="cmd" aria-label="Search bikes">
  <div class="chead"><span class="cicon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></span><input type="search" id="cq" placeholder="Search bikes, brands or shops" aria-label="Search bikes, brands or shops" autocomplete="off" enterkeyhint="search"><button type="button" class="dclose" id="cmd-x" aria-label="Close" autofocus><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
  <div class="cbody">
   <section class="cres" aria-live="polite"><h3 id="cmd-reshead">Top matches</h3><div id="cmd-res"></div></section>
+  <section class="cflt" id="cmd-flt" aria-labelledby="cmd-fh"><h3 id="cmd-fh">Filters</h3><div id="cmd-fbody"></div></section>
  </div>
- <div class="cfoot"><button type="button" class="mfilter" id="cmd-f" aria-haspopup="dialog" aria-controls="filters"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>Filters<span class="mcount" id="cmd-fn" hidden></span></button><button type="button" class="primary" id="cmd-show">Show bikes</button></div>
+ <div class="cfoot"><button type="button" class="linkbtn" id="cmd-clear">Clear all</button><button type="button" class="primary" id="cmd-show">Show bikes</button></div>
 </dialog>
 <div class="fab" id="fab" inert><button type="button" class="ffil" id="fab-f" aria-haspopup="dialog" aria-controls="filters" aria-label="Filters"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg><span class="fnum" id="fab-n" hidden></span></button><span class="fsep" aria-hidden="true"></span><button type="button" class="fmain" id="fab-s" aria-label="Search bikes"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span id="fab-q">Search bikes</span><span class="fcount" id="fab-count"></span></button></div>
 <section class="wrap" id="dir"><h2>Where to buy</h2><p>Every participating shop. Call ahead to check stock; the rebate only works in person.</p><div class="dirgrid" id="dirgrid"></div></section>
@@ -782,10 +797,11 @@ $('g').addEventListener('keydown',e=>{const t=e.target.closest('.sw');if(!t||!['
  const all=[...t.parentElement.children],i=all.indexOf(t),n=all[(i+(e.key==='ArrowRight'?1:-1)+all.length)%all.length];n.focus();n.click()});
 
 /* drawers */
+let LASTCLOSE=-1e9;
 function lockScroll(){document.documentElement.classList.toggle('locked',!!document.querySelector('dialog[open]'))}
 function showDlg(d,opener){d._opener=opener||document.activeElement;d.classList.remove('settled');d.showModal();lockScroll();clearTimeout(d._st);d._st=setTimeout(()=>{if(d.open)d.classList.add('settled')},260);const body=d.querySelector('.dbody,.cbody');if(body)body.scrollTop=0}
 document.querySelectorAll('dialog').forEach(d=>{
- d.addEventListener('close',()=>{clearTimeout(d._st);d.classList.remove('settled');lockScroll();updateFab();const o=d._opener;if(o&&o.isConnected&&o.focus)o.focus({preventScroll:true})});
+ d.addEventListener('close',()=>{LASTCLOSE=performance.now();clearTimeout(d._st);d.classList.remove('settled');lockScroll();updateFab();const o=d._opener;if(o&&o.isConnected&&o.focus)o.focus({preventScroll:true})});
  d.addEventListener('click',e=>{if(e.target!==d)return;const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close()});
  d.querySelectorAll('.dclose').forEach(x=>x.onclick=()=>d.close())});
 document.querySelectorAll('[data-open]').forEach(btn=>btn.onclick=()=>showDlg($(btn.dataset.open),btn));
@@ -860,32 +876,41 @@ function updateFab(n=activeCount()){
  $('fab-q').textContent=qv?'“'+qv+'”':'Search bikes';$('fab-q').classList.toggle('typed',!!qv);
  $('fab-count').textContent=bikes;
  $('fab-s').setAttribute('aria-label',`Search${qv?': “'+qv+'”':' bikes'}, ${bikes}`);
- [['fab-n','fab-f'],['mfilter-n','mfilter'],['cmd-fn','cmd-f']].forEach(([c,btn])=>{$(c).textContent=n||'';$(c).hidden=!n;$(btn).setAttribute('aria-label',fl)});
+ [['fab-n','fab-f'],['mfilter-n','mfilter']].forEach(([c,btn])=>{$(c).textContent=n||'';$(c).hidden=!n;$(btn).setAttribute('aria-label',fl)});
  $('fab-f').classList.toggle('on',!!n)}
 function renderCmd(){
  const f=F,qv=f.q.trim(),n=activeCount();
  if($('cq').value!==f.q)$('cq').value=f.q;
  const top=LIST.slice(0,MOBILE.matches&&!qv?3:5);
- $('cmd-res').innerHTML=top.length?top.map(b=>`<button type="button" class="hit" data-go="${b.i}"><img src="${b.img}" alt="" loading="lazy"><span class="ht"><b>${esc(b.name)}</b><small>${esc(b.type)} · Class ${esc(b.cls)}</small></span><span class="hp">${b.you!=null?money(b.you):'Ask'}</span></button>`).join('')
-  :`<p class="cnone">No bikes match${qv?` “${esc(qv)}”`:''}${n?` with your ${n===1?'filter':n+' filters'}. <button type="button" class="linkbtn" data-clearf>Clear filters</button>`:'.'}</p>`;
+ /* only rebuild the matches when they change, so dragging the price slider doesn't flicker the photos */
+ const key=top.map(b=>b.i).join()+'|'+qv+'|'+n;
+ if(CMD._key!==key){CMD._key=key;
+  $('cmd-res').innerHTML=top.length?top.map(b=>`<button type="button" class="hit" data-go="${b.i}"><img src="${b.img}" alt="" loading="lazy"><span class="ht"><b>${esc(b.name)}</b><small>${esc(b.type)} · Class ${esc(b.cls)}</small></span><span class="hp">${b.you!=null?money(b.you):'Ask'}</span></button>`).join('')
+   :`<p class="cnone">No bikes match${qv?` “${esc(qv)}”`:''}${n?` with your ${n===1?'filter':n+' filters'}. <button type="button" class="linkbtn" data-clearf>Clear filters</button>`:'.'}</p>`}
  $('cmd-reshead').textContent=qv||n?'Top matches':$('sort').selectedOptions[0].text;
- $('cmd-show').textContent=LIST.length?`Show ${LIST.length} bike${LIST.length===1?'':'s'}`:'No bikes match';
- $('cmd-show').disabled=!LIST.length;
+ CMF.sync();
+ $('cmd-show').textContent=showText();$('cmd-show').disabled=!LIST.length;
+ $('cmd-clear').disabled=!n&&!qv;
 }
-/* desktop: the search field gets focus. Phones: only when opened from the search box */
+/* desktop: the search field gets focus. Phones: only when opened from the search box. With filters:true it opens scrolled to the filters */
 function openCmd(opts={}){
- CMD.classList.toggle('instant',!!opts.instant);renderCmd();showDlg(CMD,opts.opener);
- const cq=$('cq');if(!MOBILE.matches||opts.focus)cq.focus({preventScroll:true});else $('cmd-x').focus({preventScroll:true})}
+ CMD.classList.toggle('instant',!!opts.instant);CMD._key=null;renderCmd();CMD._sig=fsig();CMD._go=false;CMD._hit=false;showDlg(CMD,opts.opener);
+ const cq=$('cq');
+ if(opts.filters){const body=CMD.querySelector('.cbody');body.scrollTop+=$('cmd-fh').getBoundingClientRect().top-body.getBoundingClientRect().top-6;CMD.querySelector('#cmd-fbody summary').focus({preventScroll:true})}
+ else if(!MOBILE.matches||opts.focus)cq.focus({preventScroll:true});else $('cmd-x').focus({preventScroll:true})}
 $('fab-s').onclick=()=>openCmd({opener:$('fab-s')});
-$('fab-f').onclick=()=>openFP($('fab-f'));
-/* the command dialog is search only; its Filters button hands over to the panel */
-$('cmd-f').onclick=()=>{const o=CMD._opener;CMD._opener=null;CMD.classList.add('instant');CMD.close();openFP(o&&o.isConnected&&o!==$('q')?o:$('mfilter'))};
+/* the pill's filter button opens the same dialog, at its filters */
+$('fab-f').onclick=()=>openCmd({opener:$('fab-f'),filters:true});
+$('fab-f').setAttribute('aria-controls','cmd');
+/* close: jump to the results if the filters changed or "Show" was pressed, not after picking a single bike */
+CMD.addEventListener('close',()=>{if(!CMD._hit&&(CMD._go||CMD._sig!==fsig()))requestAnimationFrame(scrollToResults)});
+$('cmd-clear').onclick=()=>{clearAll();render();$('cq').focus({preventScroll:true})};
 CMD.addEventListener('click',e=>{
  if(e.target.closest('[data-clearf]')){clearFilters();render();$('cq').focus();return}
- const g=e.target.closest('[data-go]');if(g){const el=NODE.get(+g.dataset.go);if(el)CMD._opener=el.querySelector('.more');CMD.close();goTo(+g.dataset.go);return}});
+ const g=e.target.closest('[data-go]');if(g){const el=NODE.get(+g.dataset.go);if(el)CMD._opener=el.querySelector('.more');CMD._hit=true;CMD.close();goTo(+g.dataset.go);return}});
 let qt;$('cq').addEventListener('input',()=>{F.q=$('q').value=$('cq').value;clearTimeout(qt);qt=setTimeout(render,100)});
 $('cq').addEventListener('keydown',e=>{
- if(e.key==='Enter'){e.preventDefault();clearTimeout(qt);render();CMD.close();scrollToResults()}
+ if(e.key==='Enter'){e.preventDefault();clearTimeout(qt);render();CMD._go=true;CMD.close()}
  else if(e.key==='ArrowDown'){const h=CMD.querySelector('.hit');if(h){e.preventDefault();h.focus()}}});
 /* phones: drag the sheet's top edge down to close it; a quick flick is enough */
 (()=>{const h=CMD.querySelector('.chead');let y0=0,t0=0,dy=0,drag=false;
@@ -898,7 +923,7 @@ $('cq').addEventListener('keydown',e=>{
 $('cmd-res').addEventListener('keydown',e=>{
  if(!['ArrowDown','ArrowUp'].includes(e.key))return;const all=[...$('cmd-res').querySelectorAll('.hit')],i=all.indexOf(document.activeElement);if(i<0)return;
  e.preventDefault();const n=all[i+(e.key==='ArrowDown'?1:-1)];(n||(e.key==='ArrowUp'?$('cq'):all[i])).focus()});
-$('cmd-show').onclick=()=>{CMD.close();scrollToResults()};
+$('cmd-show').onclick=()=>{CMD._go=true;CMD.close()};
 function scrollToResults(){const t=$('status').getBoundingClientRect().top;if(t>=0)return;scrollTo({top:Math.max(0,t+scrollY-12),behavior:REDUCE.matches?'auto':'smooth'})}
 function goTo(i){const el=NODE.get(i);if(!el)return;el.scrollIntoView({block:'center',behavior:REDUCE.matches?'auto':'smooth'});el.classList.remove('flash');void el.offsetWidth;el.classList.add('flash')}
 document.addEventListener('keydown',e=>{
@@ -908,64 +933,82 @@ document.addEventListener('keydown',e=>{
  const el=document.activeElement,typing=/^(INPUT|SELECT|TEXTAREA)$/.test(el.tagName)||el.isContentEditable;
  if(isK||(e.key==='/'&&!typing&&!e.metaKey&&!e.ctrlKey&&!e.altKey)){e.preventDefault();openCmd({instant:true,focus:true})}});
 /* on phones the search box and Filters button open the same dialog, so the keyboard never covers the list */
-$('q').addEventListener('focus',()=>{if(MOBILE.matches){$('q').blur();openCmd({opener:$('mfilter'),focus:true})}});
+/* Phones: the box is read-only and every tap (click) opens the dialog, even if the box still has focus from before.
+   Keyboard focus also opens it, but not the focus a closing dialog hands back, so it can't reopen itself. */
+let qPtr=-1e9;
+const qOpen=()=>{if(!MOBILE.matches||document.querySelector('dialog[open]'))return false;$('q').blur();openCmd({opener:$('mfilter'),focus:true});return true};
+$('q').addEventListener('pointerdown',()=>{qPtr=performance.now()});
+$('q').addEventListener('click',e=>{if(qOpen())e.preventDefault()});
+$('q').addEventListener('focus',()=>{const t=performance.now();if(MOBILE.matches&&t-qPtr>800&&t-LASTCLOSE>400)qOpen()});
+const qRO=()=>{$('q').readOnly=MOBILE.matches};qRO();MOBILE.addEventListener('change',qRO);
 $('mfilter').onclick=()=>openFP($('mfilter'));
 /* the full placeholder gets cut off next to the Filters button on narrow phones */
 const QPH=$('q').placeholder;const fitPh=()=>{$('q').placeholder=MOBILE.matches?'Search bikes':QPH};fitPh();MOBILE.addEventListener('change',fitPh);
 
-/* filters panel: every change applies at once; the grid updates behind the panel */
-const FP=$('filters'),PMIN=$('pmin'),PMAX=$('pmax'),RNG=$('rng');
+/* filters: ONE builder makes the controls for both the left panel and the search dialog, so they can't drift.
+   Every change writes F and applies at once; render() then re-syncs whichever UIs are open. */
+const FP=$('filters');
 let fraf=0;const later=()=>{if(!fraf)fraf=requestAnimationFrame(()=>{fraf=0;render()})};
-['type','spd','city'].forEach(k=>{$('fo-'+k).insertAdjacentHTML('beforeend',FACET[k].opts.map(([v,t,x])=>`<label class="ro"><input type="radio" name="f-${k}" value="${esc(v)}"><span class="rl">${esc(t)}${x?`<span class="rb${x.startsWith('$900')?'':' s400'}"><i></i>${x}</span>`:''}</span><span class="rn"></span></label>`).join(''))});
-$('fo-color').innerHTML=[['','Any']].concat(usedC.map(c=>[c,c])).map(([v,t])=>`<button type="button" class="cb" data-v="${v}" aria-pressed="false"><i${v?` style="background:${CHEX[v]}"`:' class="any"'}></i><span>${t}</span></button>`).join('');
-FP.addEventListener('change',e=>{const t=e.target;
- if(t.type==='radio'){F[t.name.slice(2)]=t.value;later()}
- else if(t.id==='f-fold'){F.fold=t.checked;later()}});
-$('fo-color').addEventListener('click',e=>{const c=e.target.closest('.cb');if(!c)return;F.color=F.color===c.dataset.v?'':c.dataset.v;ACT.clear();later()});
 /* you pay: snap points every $100 up to $3,000 (where most bikes are), wider steps above; the top means no limit */
-PMIN.max=PMAX.max=PTOP;PMAX.value=PTOP;
 const RT=[0,500,1000,1500,2000,2500,3000,4000,5000,6000,8000,10000,Infinity],RL={0:'$0',1000:'$1,000',2000:'$2,000',3000:'$3,000',Infinity:'No max'};
-$('rticks').innerHTML=RT.map(v=>`<i${v in RL?' class="mj"':''} style="left:${PV.indexOf(v)/PTOP*100}%"></i>`).join('')+RT.filter(v=>v in RL).map(v=>`<span style="left:${PV.indexOf(v)/PTOP*100}%">${RL[v]}</span>`).join('');
+const TICKS=RT.map(v=>`<i${v in RL?' class="mj"':''} style="left:${PV.indexOf(v)/PTOP*100}%"></i>`).join('')+RT.filter(v=>v in RL).map(v=>`<span style="left:${PV.indexOf(v)/PTOP*100}%">${RL[v]}</span>`).join('');
 const payText=f=>!payOn(f)?'Any price':f.payMax===Infinity?money(f.payMin)+' and up':f.payMin===0?'Up to '+money(f.payMax):money(f.payMin)+' – '+money(f.payMax);
-function paintPay(){
- const a=+PMIN.value,b=+PMAX.value;
- $('rfill').style.left=a/PTOP*100+'%';$('rfill').style.right=(1-b/PTOP)*100+'%';
- PMIN.setAttribute('aria-valuetext',money(PV[a]));PMAX.setAttribute('aria-valuetext',b===PTOP?'No maximum':money(PV[b]));
- $('pay-txt').textContent=payText(F)}
-function setPay(inp,i){
- i=inp===PMIN?Math.max(0,Math.min(i,+PMAX.value-1)):Math.min(PTOP,Math.max(i,+PMIN.value+1));
- inp.value=i;F.payMin=PV[+PMIN.value];F.payMax=PV[+PMAX.value];paintPay();later()}
-[PMIN,PMAX].forEach(inp=>inp.addEventListener('input',()=>setPay(inp,+inp.value)));
-/* the whole strip is the hit area: press anywhere and the nearest thumb jumps there and follows the finger */
-(()=>{let act=null;
+const CHEV='<svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>';
+function buildFilters(host,p,open=[]){
+ const sec=(k,label,body)=>`<details class="fs" data-k="${k}"${open.includes(k)?' open':''}><summary><span class="fl">${label}</span><span class="fv">Any</span>${CHEV}</summary><div class="fsc">${body}</div></details>`;
+ const radios=(k,label)=>`<fieldset class="rlist${k==='city'?' rcity':''}"><legend class="vh">${label}</legend>${FACET[k].opts.map(([v,t,x])=>`<label class="ro"><input type="radio" name="${p}-${k}" value="${esc(v)}"><span class="rl">${esc(t)}${x?`<span class="rb${x.startsWith('$900')?'':' s400'}"><i></i>${x}</span>`:''}</span><span class="rn"></span></label>`).join('')}</fieldset>`;
+ host.innerHTML=sec('type','Type and rebate',radios('type','Type and rebate'))
+  +sec('pay','You pay',`<div class="prv"><span class="ptxt">Any price</span></div><div class="rng"><div class="rbar"><div class="rtrack"><div class="rfill"></div></div><input type="range" class="pmin" min="0" max="${PTOP}" step="1" value="0" aria-label="Lowest you pay"><input type="range" class="pmax" min="0" max="${PTOP}" step="1" value="${PTOP}" aria-label="Most you pay"></div><div class="rticks" aria-hidden="true">${TICKS}</div></div>`)
+  +sec('spd','Top speed',radios('spd','Top speed'))
+  +sec('color','Color',`<div class="cgrid" role="group" aria-label="Color">${[['','Any']].concat(usedC.map(c=>[c,c])).map(([v,t])=>`<button type="button" class="cb" data-v="${v}" aria-pressed="false"><i${v?` style="background:${CHEX[v]}"`:' class="any"'}></i><span>${t}</span></button>`).join('')}</div>`)
+  +sec('city','Shop city',radios('city','Shop city'))
+  +`<label class="fsw"><span><b>Folding bikes only</b><small>Easier to store and take on a train</small></span><input type="checkbox" role="switch" class="ffold" id="${p}-fold"></label>`;
+ const q=s=>host.querySelector(s),PMIN=q('.pmin'),PMAX=q('.pmax'),RNG=q('.rng'),FILL=q('.rfill'),FOLD=q('.ffold');
+ host.addEventListener('change',e=>{const t=e.target;
+  if(t.type==='radio'&&t.name.startsWith(p+'-')){F[t.name.slice(p.length+1)]=t.value;later()}
+  else if(t===FOLD){F.fold=t.checked;later()}});
+ q('.cgrid').addEventListener('click',e=>{const c=e.target.closest('.cb');if(!c)return;F.color=F.color===c.dataset.v?'':c.dataset.v;ACT.clear();later()});
+ function paint(){
+  const a=+PMIN.value,b=+PMAX.value;
+  FILL.style.left=a/PTOP*100+'%';FILL.style.right=(1-b/PTOP)*100+'%';
+  PMIN.setAttribute('aria-valuetext',money(PV[a]));PMAX.setAttribute('aria-valuetext',b===PTOP?'No maximum':money(PV[b]));
+  q('.ptxt').textContent=payText(F)}
+ function setPay(inp,i){
+  i=inp===PMIN?Math.max(0,Math.min(i,+PMAX.value-1)):Math.min(PTOP,Math.max(i,+PMIN.value+1));
+  inp.value=i;F.payMin=PV[+PMIN.value];F.payMax=PV[+PMAX.value];paint();later()}
+ [PMIN,PMAX].forEach(inp=>inp.addEventListener('input',()=>setPay(inp,+inp.value)));
+ /* the whole strip is the hit area: press anywhere and the nearest thumb jumps there and follows the finger or mouse */
+ let act=null;
  const at=x=>{const r=RNG.getBoundingClientRect();return Math.round(Math.min(1,Math.max(0,(x-r.left-12)/(r.width-24)))*PTOP)};
  RNG.addEventListener('pointerdown',e=>{if(e.button)return;const i=at(e.clientX),a=+PMIN.value,b=+PMAX.value;
   act=i<=a?PMIN:i>=b?PMAX:(i-a<b-i?PMIN:PMAX);
   RNG.setPointerCapture(e.pointerId);act.classList.add('act');act.focus({preventScroll:true});setPay(act,i);e.preventDefault()});
  RNG.addEventListener('pointermove',e=>{if(act)setPay(act,at(e.clientX))});
  const end=()=>{if(act){act.classList.remove('act');act=null}};
- RNG.addEventListener('pointerup',end);RNG.addEventListener('pointercancel',end)})();
-function setFv(k,txt,on){const v=$('fv-'+k);v.textContent=txt;v.classList.toggle('on',on)}
+ RNG.addEventListener('pointerup',end);RNG.addEventListener('pointercancel',end);
+ const fv=(k,txt,on)=>{const v=q(`.fs[data-k="${k}"] .fv`);v.textContent=txt;v.classList.toggle('on',on)};
+ function sync(){
+  ['type','spd','city'].forEach(k=>{
+   const L=match(F,k);
+   host.querySelectorAll(`input[name="${p}-${k}"]`).forEach(r=>{r.checked=r.value===F[k];
+    const c=r.value?L.filter(b=>FACET[k].test(b,r.value)).length:L.length,row=r.closest('.ro');
+    row.querySelector('.rn').textContent=c;row.classList.toggle('zero',!c)})});
+  const LC=match(F,'color');
+  host.querySelectorAll('.cb').forEach(c=>{const v=c.dataset.v;c.setAttribute('aria-pressed',F.color===v);c.classList.toggle('zero',!!v&&!LC.some(b=>b.cs.includes(v)))});
+  FOLD.checked=F.fold;
+  if(!act){const ia=PV.indexOf(F.payMin),ib=PV.indexOf(F.payMax);if(+PMIN.value!==ia)PMIN.value=ia;if(+PMAX.value!==ib)PMAX.value=ib}paint();
+  fv('type',F.type||'All',!!F.type);
+  fv('pay',payText(F),payOn(F));
+  fv('spd',F.spd?FACET.spd.short[F.spd]:'Any',!!F.spd);
+  fv('color',F.color||'Any',!!F.color);
+  fv('city',F.city||'Any',!!F.city)}
+ return {sync,host}}
+const FPF=buildFilters($('fp-body'),'fp',['type','pay']);
+const CMF=buildFilters($('cmd-fbody'),'cf');
+const showText=()=>LIST.length?`Show ${LIST.length} bike${LIST.length===1?'':'s'}`:'No bikes match';
 function renderFP(){
- const n=activeCount();
- ['type','spd','city'].forEach(k=>{
-  const L=match(F,k);
-  FP.querySelectorAll(`input[name="f-${k}"]`).forEach(r=>{r.checked=r.value===F[k];
-   const c=r.value?L.filter(b=>FACET[k].test(b,r.value)).length:L.length,row=r.closest('.ro');
-   row.querySelector('.rn').textContent=c;row.classList.toggle('zero',!c)})});
- const LC=match(F,'color');
- $('fo-color').querySelectorAll('.cb').forEach(c=>{const v=c.dataset.v;c.setAttribute('aria-pressed',F.color===v);c.classList.toggle('zero',!!v&&!LC.some(b=>b.cs.includes(v)))});
- $('f-fold').checked=F.fold;
- const ia=PV.indexOf(F.payMin),ib=PV.indexOf(F.payMax);if(+PMIN.value!==ia)PMIN.value=ia;if(+PMAX.value!==ib)PMAX.value=ib;paintPay();
- const hid=payOn(F)?match(F,'pay').filter(b=>b.you==null).length:0;
- $('pay-hint').textContent=hid?`${hid} bike${hid===1?'':'s'} without a listed price ${hid===1?'is':'are'} hidden while a price limit is on.`:'';$('pay-hint').hidden=true;
- setFv('type',F.type||'All',!!F.type);
- setFv('pay',payText(F),payOn(F));
- setFv('spd',F.spd?FACET.spd.short[F.spd]:'Any',!!F.spd);
- setFv('color',F.color||'Any',!!F.color);
- setFv('city',F.city||'Any',!!F.city);
- const t=LIST.length?`Show ${LIST.length} bike${LIST.length===1?'':'s'}`:'No bikes match';
- $('fp-show').textContent=t;$('fp-show').disabled=!LIST.length;$('fp-clear').disabled=!n;
+ FPF.sync();
+ $('fp-show').textContent=showText();$('fp-show').disabled=!LIST.length;$('fp-clear').disabled=!activeCount();
  clearTimeout(FP._lt);FP._lt=setTimeout(()=>{$('fp-live').textContent=LIST.length+' bikes match'},400)}
 const fsig=()=>JSON.stringify([F.type,F.payMin,F.payMax,F.spd,F.color,F.city,F.fold]);
 function openFP(opener){renderFP();FP._sig=fsig();FP._go=false;showDlg(FP,opener)}
