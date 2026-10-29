@@ -215,7 +215,7 @@ dialog[open]::backdrop{opacity:1}
  .view{flex:none}
  /* phones: the chip row always keeps its height so the bikes never jump */
  .status .achips,.status .achips[hidden]{display:flex;order:3;flex-basis:100%;min-height:44px;margin:0;padding-block:0;align-items:center}
- .status .achips:empty::before{content:"Showing all bikes. Tap Filters to narrow it down.";color:var(--fg3);font-size:var(--t-meta);white-space:nowrap}
+ .status .achips:empty{display:none}
 }
 @media (prefers-reduced-motion:reduce){
  .gbtn:active,.sw:active i,.sw:hover:active i{transform:none}
