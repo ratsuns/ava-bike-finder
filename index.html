@@ -528,11 +528,11 @@ main.grid{padding-bottom:96px}
 }
 
 /* hero: looping ride video under a dark gradient */
-.hero{position:relative;isolation:isolate;overflow:hidden;min-height:min(58svh,560px);display:flex;align-items:flex-end;background:var(--bg);color:#fff}
+.hero{position:relative;isolation:isolate;overflow:hidden;min-height:min(50svh,460px);display:flex;align-items:flex-end;background:var(--bg);color:#fff}
 .hero-media{position:absolute;inset:0;z-index:-1}
 .hero-media video{width:100%;height:100%;object-fit:cover;display:block}
 .hero-media::after{content:"";position:absolute;inset:-1px 0;background:linear-gradient(180deg,rgba(15,18,17,.3) 0%,rgba(15,18,17,.12) 32%,rgba(15,18,17,.55) 60%,rgba(15,18,17,.88) 82%,#0f1211 100%),linear-gradient(90deg,rgba(15,18,17,.5) 0%,rgba(15,18,17,0) 60%)}
-.hero .wrap{width:100%;padding-block:112px 40px}
+.hero .wrap{width:100%;padding-block:112px 12px}
 .hero h1{color:#fff;font-size:clamp(40px,6vw,72px);line-height:1.02;letter-spacing:-.035em;max-width:14ch}
 .hero .lede{color:rgba(255,255,255,.86);font-size:clamp(17px,1.6vw,20px);max-width:52ch}
 .hero .hlinks{margin-top:10px;gap:10px 12px}
@@ -540,7 +540,7 @@ main.grid{padding-bottom:96px}
 .hero .gbtn svg{color:#fff}
 .hero .hlinks a{color:#fff;font-weight:600;text-decoration:underline;text-decoration-color:rgba(255,255,255,.4);text-underline-offset:4px}
 @media (hover:hover) and (pointer:fine){.hero .gbtn:hover{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.45)}.hero .hlinks a:hover{text-decoration-color:#fff}}
-@media (max-width:760px){.hero{min-height:min(52svh,440px)}.hero .wrap{padding-block:128px 36px}}
+@media (max-width:760px){.hero{min-height:min(44svh,380px)}.hero .wrap{padding-block:112px 12px}}
 @media (prefers-reduced-motion:reduce){.hero-media video{display:none}.hero-media{background:url(img/hero.jpg) center/cover}}
 
 .hero .topnav{position:absolute;inset:0 0 auto;z-index:1;padding-top:env(safe-area-inset-top)}
