@@ -552,7 +552,7 @@ main.grid{padding-bottom:96px}
 </div></header>
 
 <div class="bar" id="bar"><div class="wrap">
- <button type="button" class="mfilter" id="mfilter" aria-haspopup="dialog" aria-controls="filters"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>Filters<span class="mcount" id="mfilter-n" hidden></span></button>
+ <button type="button" class="mfilter" id="mfilter" aria-haspopup="dialog" aria-controls="cmd"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>Filters<span class="mcount" id="mfilter-n" hidden></span></button>
  <div class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" id="q" placeholder="Search bikes or shops" aria-label="Search bikes or shops"></div>
 </div></div>
 
@@ -941,7 +941,7 @@ $('q').addEventListener('pointerdown',()=>{qPtr=performance.now()});
 $('q').addEventListener('click',e=>{if(qOpen())e.preventDefault()});
 $('q').addEventListener('focus',()=>{const t=performance.now();if(MOBILE.matches&&t-qPtr>800&&t-LASTCLOSE>400)qOpen()});
 const qRO=()=>{$('q').readOnly=MOBILE.matches};qRO();MOBILE.addEventListener('change',qRO);
-$('mfilter').onclick=()=>openFP($('mfilter'));
+$('mfilter').onclick=()=>openCmd({opener:$('mfilter'),filters:true});
 /* the full placeholder gets cut off next to the Filters button on narrow phones */
 const QPH=$('q').placeholder;const fitPh=()=>{$('q').placeholder=MOBILE.matches?'Search bikes':QPH};fitPh();MOBILE.addEventListener('change',fitPh);
 
