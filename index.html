@@ -548,14 +548,14 @@ main.grid{padding-bottom:96px}
 .brand{display:inline-flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:650;font-size:16px;letter-spacing:-.01em;min-height:44px}
 .brand svg{flex:none}
 .navlinks{display:flex;align-items:center;gap:4px;margin-right:-12px}
-.navlinks button{font:inherit;font-size:15px;font-weight:550;color:rgba(255,255,255,.82);background:none;border:0;height:44px;padding:0 12px;border-radius:6px;cursor:pointer;transition:color .15s ease,transform .12s var(--ease-out)}
+.navlinks button,.navlinks a{text-decoration:none;font:inherit;font-size:15px;font-weight:550;color:rgba(255,255,255,.82);background:none;border:0;height:44px;padding:0 12px;border-radius:6px;cursor:pointer;transition:color .15s ease,transform .12s var(--ease-out)}
 .navlinks button:active{transform:scale(.97)}
-.navlinks button:focus-visible,.brand:focus-visible{outline:2px solid #fff;outline-offset:2px}
-@media (hover:hover) and (pointer:fine){.navlinks button:hover{color:#fff}}
+.navlinks button:focus-visible,.navlinks a:focus-visible,.menubtn:focus-visible,.brand:focus-visible{outline:2px solid #fff;outline-offset:2px}
+@media (hover:hover) and (pointer:fine){.navlinks button:hover,.navlinks a:hover{color:#fff}}
 .hero .hlinks a.hcta{text-decoration:none}
 @media (max-width:760px){.navlinks button{padding:0 10px;font-size:15px}.navlinks{margin-right:-10px;gap:0}.brand{font-size:15px;gap:8px}}
 .brand,.navlinks button{white-space:nowrap}
-@media (max-width:440px){.brand span{display:none}}
+
 @media (prefers-reduced-motion:reduce){.navlinks button:active{transform:none}}
 .rb.lg{height:30px;padding:0 11px;font-size:15px;gap:8px;border-radius:6px;justify-self:start;margin:0 0 8px}
 .rb.lg i{width:8px;height:8px}
@@ -574,13 +574,26 @@ main.grid{padding-bottom:96px}
 .web svg+span+svg{color:currentColor;margin-top:4px}
 .cfoot .linkbtn:not(:disabled):active{background:var(--well)}
 .cfoot .linkbtn:disabled{opacity:1;color:var(--fg3)}
+.navlinks a{display:inline-flex;align-items:center}
+.menubtn{display:none;align-items:center;justify-content:center;width:44px;height:44px;margin-right:-10px;border:0;border-radius:8px;background:none;color:#fff;cursor:pointer;transition:background-color .15s ease,transform .12s var(--ease-out)}
+.menubtn:active{transform:scale(.95)}
+.navmenu{position:fixed;inset:auto;top:calc(env(safe-area-inset-top,0px) + 60px);right:12px;left:auto;margin:0;width:min(280px,calc(100vw - 24px));padding:6px;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--fg);box-shadow:0 12px 32px rgba(0,0,0,.22),0 2px 6px rgba(0,0,0,.08);opacity:0;transform:scale(.96) translateY(-4px);transform-origin:top right;transition:opacity .18s var(--ease-out),transform .18s var(--ease-out),overlay .18s allow-discrete,display .18s allow-discrete}
+.navmenu:popover-open{opacity:1;transform:none}
+@starting-style{.navmenu:popover-open{opacity:0;transform:scale(.96) translateY(-4px)}}
+.navmenu::backdrop{background:transparent}
+.navmenu button,.navmenu a{display:flex;align-items:center;gap:12px;width:100%;min-height:48px;padding:0 12px;border:0;border-radius:8px;background:none;font:inherit;font-size:16px;font-weight:550;color:var(--fg);text-decoration:none;text-align:left;cursor:pointer;transition:background-color .12s ease}
+.navmenu svg{flex:none;color:var(--fg3)}
+.navmenu button:active,.navmenu a:active{background:var(--well)}
+@media (hover:hover) and (pointer:fine){.navmenu button:hover,.navmenu a:hover{background:var(--well)}.menubtn:hover{background:rgba(255,255,255,.12)}}
+.navmenu :focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+@media (max-width:760px){.navlinks{display:none}.menubtn{display:inline-flex}}
+@media (prefers-reduced-motion:reduce){.navmenu{transform:none!important;transition:opacity .15s ease,overlay .15s allow-discrete,display .15s allow-discrete}@starting-style{.navmenu:popover-open{transform:none}}.menubtn:active{transform:none}}
 </style>
 
 <a class="skip" href="#g">Skip to the bikes</a>
-<header class="hero" id="top"><nav class="topnav" aria-label="Site"><div class="wrap"><a class="brand" href="#top"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5.5" cy="17" r="3.5"/><circle cx="18.5" cy="17" r="3.5"/><path d="M5.5 17 9 9h6l3.5 8M12 17l3-8M8 6h3"/></svg><span>Ava Bike Finder</span></a><div class="navlinks"><button type="button" data-open="guide">E-bike guide</button><button type="button" data-open="rebate">Rebate info</button></div></div></nav><div class="hero-media" aria-hidden="true"><video id="herov" src="img/hero.mp4" poster="img/hero.jpg" autoplay muted loop playsinline preload="auto"></video></div><div class="wrap">
+<header class="hero" id="top"><nav class="topnav" aria-label="Site"><div class="wrap"><a class="brand" href="#top"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5.5" cy="17" r="3.5"/><circle cx="18.5" cy="17" r="3.5"/><path d="M5.5 17 9 9h6l3.5 8M12 17l3-8M8 6h3"/></svg><span>Ava Bike Finder</span></a><div class="navlinks"><button type="button" data-open="guide">E-bike guide</button><button type="button" data-open="rebate">Rebate info</button><a href="#dir">Browse shops</a></div><button type="button" class="menubtn" popovertarget="navmenu" aria-label="Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button></div></nav><div id="navmenu" class="navmenu" popover><button type="button" data-open="guide"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></svg>E-bike guide</button><button type="button" data-open="rebate"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.6 2.6A2 2 0 0 0 11.2 2H4a2 2 0 0 0-2 2v7.2a2 2 0 0 0 .6 1.4l8.7 8.7a2.4 2.4 0 0 0 3.4 0l6.6-6.6a2.4 2.4 0 0 0 0-3.4z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg>Rebate info</button><a href="#dir"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9 4.5 4h15L21 9"/><path d="M3 9h18v2a3 3 0 0 1-6 0 3 3 0 0 1-6 0 3 3 0 0 1-6 0z"/><path d="M5 13v7h14v-7"/></svg>Browse shops</a></div><div class="hero-media" aria-hidden="true"><video id="herov" src="img/hero.mp4" poster="img/hero.jpg" autoplay muted loop playsinline preload="auto"></video></div><div class="wrap">
  <h1>Find your e&#8209;bike with the Ava rebate</h1>
  <p class="lede">Browse every e-bike on Ava's list and find the one that fits the way you ride. List updated October&nbsp;8, 2026.</p>
- <p class="hlinks"><a class="gbtn hcta" href="#dir"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9 4.5 4h15L21 9"/><path d="M3 9h18v2a3 3 0 0 1-6 0 3 3 0 0 1-6 0 3 3 0 0 1-6 0z"/><path d="M5 13v7h14v-7"/></svg>See all shops</a></p>
 </div></header>
 
 <div class="bar" id="bar"><div class="wrap">
@@ -1063,6 +1076,8 @@ $('achips').addEventListener('click',e=>{const x=e.target.closest('[data-rm]');i
 const seen=new Map();Object.values(S).forEach(s=>{if(!seen.has(s.name))seen.set(s.name,s)});
 $('dirgrid').innerHTML=[...seen.values()].sort((a,b)=>(a.city||'').localeCompare(b.city||'')||a.name.localeCompare(b.name)).map(s=>`<div class="shop"><span class="city">${esc(s.city||'')}</span><b>${esc(s.name)}</b>${shopLines(s)||'<span class="m">Address not listed</span>'}${s.url?`<a class="web" href="${esc(s.url)}" target="_blank" rel="noopener">${GLOBE}<span>Shop website</span>${EXT}</a>`:''}</div>`).join('');
 render();
+const NAVM=document.getElementById('navmenu');NAVM.addEventListener('click',e=>{if(e.target.closest('button,a'))NAVM.hidePopover()});
+document.addEventListener('click',e=>{const a=e.target.closest('a[href="#dir"]:not([data-dir])');if(!a)return;e.preventDefault();const go=()=>$('dir').scrollIntoView({block:'start',behavior:'instant'});go();let n=0;const fix=()=>{if(n++>40)return;if(Math.abs($('dir').getBoundingClientRect().top)>2)go();requestAnimationFrame(fix)};requestAnimationFrame(fix);history.replaceState(null,'','#dir')});
 </script>
 
 </body></html>
