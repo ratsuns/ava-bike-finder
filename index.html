@@ -225,10 +225,11 @@ dialog[open]::backdrop{opacity:1}
 .status .count{margin-left:auto;flex:none}
 .status .achips,.status .achips[hidden]{order:5;flex-basis:100%}
 @media (min-width:761px){.status .achips[hidden],.status .achips:empty{display:none}}
-/* phones can't fit all three on one line without crushing the search field: search gets its own row, sort and count share the next */
+/* phones keep the original layout: search on its own row, then the count on the left and sort on the right */
 @media (max-width:600px){
  .status .search{flex:1 1 100%;max-width:none}
- .status .count{margin-left:auto}
+ .status .count{order:2;margin-left:0}
+ .status .view{order:3;margin-left:auto}
 }
 @media (prefers-reduced-motion:reduce){
  .gbtn:active,.sw:active i,.sw:hover:active i{transform:none}
