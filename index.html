@@ -571,6 +571,7 @@ main.grid{padding-bottom:96px}
 .web svg{flex:none;margin-top:3px;color:var(--fg3)}
 .shop a.web,.bmshop a.web{text-decoration:none;font-weight:500}
 @media (hover:hover) and (pointer:fine){a.web:hover span{text-decoration:underline;text-underline-offset:3px}}
+.web svg+span+svg{color:currentColor;margin-top:4px}
 </style>
 
 <a class="skip" href="#g">Skip to the bikes</a>
@@ -869,7 +870,7 @@ function openBike(i,opener){
   ${pk?`<div class="bmpick"><span class="bmpk">${STAR}${esc(pk.tag)}</span><p><b>${esc(pk.head)}</b> ${esc(pk.sub)}</p></div>`:''}
   <section><h3>Key specs</h3>${stats?`<dl class="bms">${stats}</dl>`:`<p class="bmnone">The maker doesn't publish specs for this bike. Ask the shop.</p>`}</section>
   <section><h3>Where to buy</h3><p class="bmin">The rebate only works in person at the shop. Call ahead to check stock.</p>
-   ${uniq.length?`<ul class="bmshops">${uniq.map(s=>`<li class="bmshop"><b>${esc(s.name)}</b>${shopLines(s)}${s.url?`<a class="web" href="${esc(s.url)}" target="_blank" rel="noopener">${GLOBE}<span>Shop website</span></a>`:''}</li>`).join('')}</ul>`:`<p class="bmnone">No shop is listed for this bike yet. <a href="#dir" data-dir>See all shops</a></p>`}</section>
+   ${uniq.length?`<ul class="bmshops">${uniq.map(s=>`<li class="bmshop"><b>${esc(s.name)}</b>${shopLines(s)}${s.url?`<a class="web" href="${esc(s.url)}" target="_blank" rel="noopener">${GLOBE}<span>Shop website</span>${EXT}</a>`:''}</li>`).join('')}</ul>`:`<p class="bmnone">No shop is listed for this bike yet. <a href="#dir" data-dir>See all shops</a></p>`}</section>
   <div class="bmlinks"><a href="${gi}" target="_blank" rel="noopener">More photos on Google${EXT}</a>${b.src?`<a href="${esc(b.src)}" target="_blank" rel="noopener">Price source${EXT}</a>`:''}</div>
  </div>
 </div>`;
@@ -1058,7 +1059,7 @@ $('achips').addEventListener('click',e=>{const x=e.target.closest('[data-rm]');i
 
 /* shop directory */
 const seen=new Map();Object.values(S).forEach(s=>{if(!seen.has(s.name))seen.set(s.name,s)});
-$('dirgrid').innerHTML=[...seen.values()].sort((a,b)=>(a.city||'').localeCompare(b.city||'')||a.name.localeCompare(b.name)).map(s=>`<div class="shop"><span class="city">${esc(s.city||'')}</span><b>${esc(s.name)}</b>${shopLines(s)||'<span class="m">Address not listed</span>'}${s.url?`<a class="web" href="${esc(s.url)}" target="_blank" rel="noopener">${GLOBE}<span>Shop website</span></a>`:''}</div>`).join('');
+$('dirgrid').innerHTML=[...seen.values()].sort((a,b)=>(a.city||'').localeCompare(b.city||'')||a.name.localeCompare(b.name)).map(s=>`<div class="shop"><span class="city">${esc(s.city||'')}</span><b>${esc(s.name)}</b>${shopLines(s)||'<span class="m">Address not listed</span>'}${s.url?`<a class="web" href="${esc(s.url)}" target="_blank" rel="noopener">${GLOBE}<span>Shop website</span>${EXT}</a>`:''}</div>`).join('');
 render();
 </script>
 
