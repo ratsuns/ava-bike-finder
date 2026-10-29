@@ -554,10 +554,8 @@ main.grid{padding-bottom:96px}
 /* hero ink and video wash follow the theme: dark wash + white type in dark mode, light wash + dark type in light mode, always fading into the page background */
 .hero{--hink:255,255,255;--hscrim:15,18,17;--ha0:.3;--ha1:.12;--ha2:.55;--ha3:.88;--ha4:.5}
 :root[data-theme="light"] .hero{--hink:18,22,20;--hscrim:246,247,245}
-/* light: the video stays vivid; a soft wash sits only where the type is (left side), a thin veil under the nav, and the bottom eases into the page */
-:root[data-theme="light"] .hero-media::after{background:
- linear-gradient(180deg,rgba(246,247,245,.42) 0%,rgba(246,247,245,0) 16%,rgba(246,247,245,0) 58%,rgba(246,247,245,.6) 80%,rgba(246,247,245,.97) 93%,var(--bg) 100%),
- linear-gradient(90deg,rgba(246,247,245,.82) 0%,rgba(246,247,245,.62) 34%,rgba(246,247,245,.18) 56%,rgba(246,247,245,0) 72%)}
+/* light: the video is untouched at the top; it fades into the page from just under the title, so the copy and search sit in the fade */
+:root[data-theme="light"] .hero-media::after{background:linear-gradient(180deg,rgba(246,247,245,0) 0%,rgba(246,247,245,0) 42%,rgba(246,247,245,.55) 52%,rgba(246,247,245,.85) 60%,rgba(246,247,245,.95) 76%,var(--bg) 100%)}
 /* light mode: the description uses the full-strength ink so it holds up over the video */
 :root[data-theme="light"] .hero .lede{color:rgb(var(--hink))}
 /* phones: the video is untouched at the top; the bottom fade into the page starts just under the title, so the copy and search sit in it */
