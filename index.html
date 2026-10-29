@@ -843,7 +843,12 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
 .hero .hbar .search{position:relative}
 .hero .sbeam{position:absolute;inset:0;border-radius:10px;padding:1px;overflow:hidden;pointer-events:none;z-index:2;
  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0)}
-@media (max-width:760px){.hero .sbeam{border-radius:6px}}
+/* phones: the hero search is a touch larger (50px, rounder, bigger icon) so it holds its own under the title */
+@media (max-width:760px){
+ .hero .hbar input[type=search]{height:50px;padding-left:42px;border-radius:8px}
+ .hero .hbar .search svg{left:14px;width:18px;height:18px}
+ .hero .sbeam{border-radius:8px}
+}
 @media (prefers-reduced-motion:reduce){.hero .sbeam{display:none}}
 /* border beam: a soft light that travels the edge at one constant speed (same px/second on every bar).
    It moves with transform only (Web Animations, run by the compositor); the ring shape hides everything but the 1px edge */
