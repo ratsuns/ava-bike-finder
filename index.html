@@ -758,6 +758,7 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
 @media (pointer:coarse){.sortbtn{height:40px}}
 .sortmenu{position:fixed;inset:auto;margin:0;min-width:0;box-sizing:border-box;padding:4px;border:1px solid var(--line2);border-radius:10px;background:var(--surface);color:var(--fg);box-shadow:0 12px 32px rgba(0,0,0,.35),0 2px 6px rgba(0,0,0,.2);transform-origin:top center;opacity:0;transform:translateY(-4px);transition:opacity .15s var(--ease-out),transform .15s var(--ease-out),overlay .15s allow-discrete,display .15s allow-discrete}
 .sortmenu:popover-open{opacity:1;transform:none}
+.sortmenu.instant,.sortmenu.instant:popover-open{transition:none}
 @starting-style{.sortmenu:popover-open{opacity:0;transform:translateY(-4px)}}
 .sopt{display:flex;align-items:center;gap:10px;width:100%;min-height:36px;padding:0 12px;border:0;border-radius:6px;background:none;font:inherit;font-size:var(--t-ui);color:var(--fg);text-align:left;cursor:pointer;transition:background-color .12s ease}
 .sopt[aria-selected="true"]{background:var(--line);font-weight:600}
@@ -1503,7 +1504,16 @@ ZOOM.addEventListener('toggle',zArrows);
   else if(e.key==='Home'||e.key==='End'){e.preventDefault();opts[e.key==='Home'?0:opts.length-1].focus()}
   else if(e.key==='Tab'){menu.hidePopover()}});
  btn.addEventListener('keydown',e=>{if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();menu.showPopover()}});
- addEventListener('scroll',()=>{if(menu.matches(':popover-open'))menu.hidePopover()},{passive:true});
+ /* the menu is pinned to the screen, not to the button, so once the page starts moving it must go at once:
+    an animated exit while the page slides under it is what read as a flicker. It closes on the first sign of a
+    scroll (wheel, touch drag, keyboard scroll or the scroll itself) and skips the fade, in one frame */
+ const shut=()=>{if(!menu.matches(':popover-open'))return;menu.classList.add('instant');menu.hidePopover();requestAnimationFrame(()=>requestAnimationFrame(()=>menu.classList.remove('instant')))};
+ let ty=null;
+ addEventListener('wheel',e=>{if(!menu.contains(e.target))shut()},{passive:true,capture:true});
+ addEventListener('touchstart',e=>{ty=menu.contains(e.target)?null:e.touches[0].clientY},{passive:true,capture:true});
+ addEventListener('touchmove',e=>{if(ty!=null&&Math.abs(e.touches[0].clientY-ty)>4)shut()},{passive:true,capture:true});
+ addEventListener('scroll',shut,{passive:true,capture:true});
+ addEventListener('resize',shut);
  sel.addEventListener('change',mark)})();
 /* width of the reserved scrollbar strip, used to centre windows on the full screen */
 const SBP=document.createElement('div');SBP.setAttribute('aria-hidden','true');SBP.style.cssText='position:fixed;inset:0;visibility:hidden;pointer-events:none;z-index:-1';document.body.append(SBP);
