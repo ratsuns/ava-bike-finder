@@ -595,6 +595,8 @@ main.grid{padding-bottom:96px}
 .pbr{display:none}
 article.c .b{container-type:inline-size}
 @container (max-width:310px){.pbr{display:block;flex-basis:100%;height:0}.pay .ptag{margin:4px 0 2px}}
+.pwarn.pshort,.bmp .pwarn.pshort{margin:0;padding:0;background:none;border-radius:0;font-size:var(--t-meta);font-weight:500;line-height:1.45}
+.pwarn.pshort svg{margin-top:2px}
 </style>
 
 <a class="skip" href="#g">Skip to the bikes</a>
@@ -764,7 +766,7 @@ function cardHTML(b){
  const pk=PICKS[b.brand+'|'+b.model];
  const tr=tierText(b.tier);
  const price=b.price!=null
-  ?`<div class="price"><div class="pay"><strong>${money(b.you)}</strong><span>you pay</span>${b.warn&&tr?`<i class="pbr"></i><span class="ptag" title="Ava lists this bike at ${esc(tr)}">${PHONE}Call shop for price</span>`:''}</div><div class="list"><s>${money(b.price)}</s> minus ${money(b.reb)} rebate, plus tax</div></div>`
+  ?`<div class="price"><div class="pay"><strong>${money(b.you)}</strong><span>you pay</span></div><div class="list"><s>${money(b.price)}</s> minus ${money(b.reb)} rebate, plus tax</div></div>`
   :`<div class="price na"><div class="pay"><strong>Price not listed</strong></div><div class="list">${tr?`Ava lists it at ${esc(tr)}. `:''}Ask the shop for the price.</div></div>`;
  const allNa=[b.spd,b.tq,b.load,b.range].every(v=>v==null||v==='');
  const sw=b.cv.length?`<div class="sws" role="group" aria-label="Colors">${b.cv.map((c,ci)=>`<button type="button" class="sw" data-c="${ci}" tabindex="${ci?-1:0}" aria-pressed="false" aria-label="${esc(c.n)}" title="${esc(c.n)}${c.img?'':' (no photo yet)'}"><i style="background:${c.hex||CHEX[c.f]}"></i></button>`).join('')}</div>`:'';
@@ -773,6 +775,7 @@ function cardHTML(b){
  <div class="b">
   <div class="id"><span class="br">${esc(b.brand)}</span><h3 class="n" title="${esc(b.model)}"><span class="vh">${esc(b.brand)} </span>${esc(b.mn)}</h3></div>
   ${price}
+  ${b.warn&&tr&&b.price!=null?`<p class="pwarn pshort">${INFO}<span>Call shop to confirm price</span></p>`:''}
   ${allNa?'<p class="nospec">Specs not listed. Ask the shop.</p>':`<dl class="stats">${stat('Top speed',b.spd,'mph')}${stat('Torque',b.tq,'Nm')}${stat('Max load',b.load,'lb')}${stat('Range',b.range,'mi')}</dl>`}
   ${pk?`<p class="note picknote">${esc(pk.note)}</p>`:''}
   <div class="chips"><span class="chip" title="${esc(TYPEX[b.type]||'')}">${esc(b.type)}</span><span class="chip" title="${esc(CLASSX[b.cls]||'')}">Class ${esc(b.cls)}</span>${b.fold==='Yes'?'<span class="chip">Folds</span>':''}</div>
@@ -871,12 +874,12 @@ function openBike(i,opener){
  const cell=([l,v,u,x],w)=>`<div${w?' class="w"':''}><dt>${l}</dt><dd>${esc(v)}${u?`<small>${u}</small>`:''}</dd>${x?`<p>${esc(x)}</p>`:''}</div>`;
  const stats=narrow.map(s=>cell(s)).join('')+wide.map(s=>cell(s,1)).join('');
  const price=b.price!=null
-  ?`<div class="bmpay"><strong>${money(b.you)}</strong><span>you pay</span>${b.warn&&tr?`<span class="ptag" title="Ava lists this bike at ${esc(tr)}">${PHONE}Call shop for price</span>`:''}</div>
+  ?`<div class="bmpay"><strong>${money(b.you)}</strong><span>you pay</span></div>
    <dl class="bmpl"><div><dt>List price</dt><dd>${money(b.price)}</dd></div><div class="bmreb"><dt>Ava rebate <span class="bmrt">(${esc(b.type.toLowerCase())} bike)</span></dt><dd><span class="rb${b.reb===900?'':' s400'}"><i></i>${money(b.reb)} off</span></dd></div></dl>
    <p class="bmtax">Plus sales tax. The rebate can't be used for tax.</p>`
   :`<div class="bmpay na"><strong>Price not listed</strong></div>
    <p class="bmtax">${tr?`Ava lists it at ${esc(tr)}. `:''}Ask the shop for today's price. Your rebate takes ${money(b.reb)} off, and sales tax is extra.</p>`;
- const warn=b.price!=null&&b.warn&&tr?`<div class="pwarn">${INFO}<span>Ava's list puts this bike at ${esc(tr)}, not ${money(b.price)}. Ask the shop for today's price.</span></div>`:'';
+ const warn=b.price!=null&&b.warn&&tr?`<p class="pwarn pshort">${INFO}<span>Call shop to confirm price. Ava's list puts this bike at ${esc(tr)}, not ${money(b.price)}.</span></p>`:'';
  const sws=b.cv.length?`<div class="sws" role="group" aria-label="Colors">${b.cv.map((c,ci)=>`<button type="button" class="sw" data-c="${ci}" tabindex="-1" aria-pressed="false" aria-label="${esc(c.n)}" title="${esc(c.n)}${c.img?'':' (no photo yet)'}"><i style="background:${c.hex||CHEX[c.f]}"></i></button>`).join('')}</div>`:'';
  const gi='https://www.google.com/search?tbm=isch&q='+encodeURIComponent(b.name+' e-bike');
  $('bike-br').textContent=b.brand;
@@ -885,7 +888,7 @@ function openBike(i,opener){
  <div class="bml">
   <div class="bmph"><img id="bike-img" src="${b.img}" alt="${esc(b.name)}">${sws}</div>
   <p class="bmcap" id="bike-cap" hidden></p>
-  <div class="bmp">${price}${b.note?`<p class="bmtax">About the price: ${esc(b.note)}</p>`:''}</div>
+  <div class="bmp">${price}${warn}${b.note?`<p class="bmtax">About the price: ${esc(b.note)}</p>`:''}</div>
  </div>
  <div class="bmr">
   ${pk?`<div class="bmpick"><span class="bmpk">${STAR}${esc(pk.tag)}</span><p><b>${esc(pk.head)}</b> ${esc(pk.sub)}</p></div>`:''}
