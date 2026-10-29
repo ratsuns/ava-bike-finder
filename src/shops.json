@@ -12,7 +12,7 @@
   "address": "1522 Park St",
   "city": "Alameda",
   "phone": "(510) 522-0070",
-  "url": null,
+  "url": "https://www.alamedabicycle.com/",
   "email": "info@alamedabicycle.com"
  },
  "Bicycle Garage (Fremont)": {
@@ -49,22 +49,22 @@
   "address": "1433 High St",
   "city": "Alameda",
   "phone": "(510) 521-2872",
-  "url": null,
-  "email": "info@cyclecityusa.com"
+  "url": "https://www.cyclecityusa.com/",
+  "email": null
  },
  "Dublin Cyclery (Dublin)": {
   "name": "Dublin Cyclery",
   "address": "7001 Dublin Blvd",
   "city": "Dublin",
   "phone": "(925) 828-8676",
-  "url": null,
-  "email": "info@dublincyclery.com"
+  "url": "https://www.dublincyclery.com/",
+  "email": null
  },
  "Ebikes2U": {
   "name": "Ebikes2U",
   "address": "46701 Fremont Blvd Unit B",
   "city": "Fremont",
-  "phone": null,
+  "phone": "(510) 883-3909",
   "url": "https://ebikes2u.com/",
   "email": "info@ebikes2u.com"
  },
@@ -106,7 +106,7 @@
   "city": "Fremont",
   "phone": "(510) 565-1111",
   "url": null,
-  "email": "nilesbicycles@gmail.com"
+  "email": null
  },
  "Pedego Electric Bikes (Livermore)": {
   "name": "Pedego Electric Bikes Livermore",
@@ -136,15 +136,15 @@
   "address": "2727 Milvia St",
   "city": "Berkeley",
   "phone": "(510) 984-3907",
-  "url": null,
+  "url": "https://www.sportsbasement.com/stores/berkeley",
   "email": "friends@sportsbasement.com"
  },
  "Stay True Cycles (Berkeley)": {
   "name": "Stay True Cycles",
   "address": "2116 Vine St",
   "city": "Berkeley",
-  "phone": null,
-  "url": null
+  "phone": "(510) 725-6281",
+  "url": "http://staytrue.bike/"
  },
  "The Bicycle Garage": {
   "name": "The Bicycle Garage",
@@ -178,9 +178,9 @@
  },
  "Tracy Cyclery (Tracy)": {
   "name": "Tracy Cyclery",
-  "address": null,
+  "address": "2217 N Tracy Blvd",
   "city": "Tracy",
-  "phone": null,
+  "phone": "(209) 640-9380",
   "url": null
  },
  "Trek Bicycle (Berkeley)": {
@@ -222,8 +222,8 @@
   "name": "Uptown BART Bike Station",
   "address": "1775 Broadway",
   "city": "Oakland",
-  "phone": null,
-  "url": null,
+  "phone": "(510) 858-7555",
+  "url": "https://www.bikehub.com/articles/bart-bike-stations-pg1208.htm",
   "email": "uptown@bikehub.com"
  },
  "eCyclepath (Hayward)": {

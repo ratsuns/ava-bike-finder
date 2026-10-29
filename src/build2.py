@@ -22,13 +22,9 @@ for b,r,img,mode in zip(B,R,IM,MODES):
     def n(x):
         try: return float(x) if x is not None else None
         except: return None
-    out.append(dict(brand=b['brand'],model=b['model'],type=b['type'],fold=b['fold'],cls=b['cls'],tier=b['price'],
+    out.append(dict(brand=b['brand'],model=b['model'],type=b['type'],fold=b['fold'],cls=b['cls'],
       price=n(r.get('price')),note=r.get('price_note') if (r.get('price') or (r.get('price_note') and 'not researched' not in r.get('price_note','') and 'budget' not in r.get('price_note',''))) else None,motor=r.get('motor'),tq=n(r.get('torque_nm')),spd=n(r.get('top_speed_mph')),
       wh=n(r.get('battery_wh')),range=r.get('range_mi'),load=n(r.get('max_load_lb')),height=r.get('rider_height'),wt=n(r.get('weight_lb')),src=r.get('source'),img=img,fit=mode,shops=shops))
-    p=out[-1]['price']
-    if p:
-        lo,hi={'$':(0,1500),'$$':(1501,3000),'$$$':(3001,1e9)}.get(out[-1]['tier'],(0,1e9))
-        out[-1]['warn']= p<lo*0.85 or p>hi*1.15
 VS={int(k):v for k,v in json.load(open('verify/specs_verified.json')).items()} if os.path.exists('verify/specs_verified.json') else {}
 SP={}
 for f in sorted(glob.glob('specs/out*.json')):
@@ -113,6 +109,46 @@ for i,o in enumerate(out):
     j=DISP.get(str(i))
     if j is not None and j<len(cv) and cv[j]['img']: o['img']=cv[j]['img']
     o.pop('colors',None);o.pop('cs',None)
+# one card per current model (verify/cards.json): maker-verified specs, prices, colors and per-color photos.
+# A row the maker sells as several models becomes several cards; each card keeps its row's shops and rebate type.
+CARDS=json.load(open('verify/cards.json')) if os.path.exists('verify/cards.json') else None
+if CARDS:
+    CHX={'Black':(29,31,30),'White':(244,244,242),'Gray':(138,143,140),'Silver':(196,200,198),'Blue':(47,99,196),'Green':(63,138,79),'Teal':(31,143,138),'Red':(200,53,46),'Orange':(226,116,42),'Yellow':(233,194,59),'Brown':(123,86,54),'Tan':(201,173,132),'Pink':(228,138,168),'Purple':(122,79,176)}
+    def hexfam(h):
+        try: r,g,b=int(h[1:3],16),int(h[3:5],16),int(h[5:7],16)
+        except Exception: return None
+        return min(CHX,key=lambda f:sum((a-c)**2 for a,c in zip((r,g,b),CHX[f])))
+    def emitf(name):
+        src=f'verify/cardphotos/{name}.webp'
+        if SITE:
+            shutil.copy(src,f'{SITE}/img/c-{name}.webp');return f'img/c-{name}.webp'
+        return 'data:image/webp;base64,'+base64.b64encode(open(src,'rb').read()).decode()
+    import shutil
+    for i,c in CARDS.items():
+        if isinstance(c,dict) and 'merge' in c:
+            t=out[c['merge']];t['shops']=list(dict.fromkeys(t['shops']+out[int(i)]['shops']))
+    new=[]
+    for i,o in enumerate(out):
+        L=CARDS.get(str(i))
+        if isinstance(L,dict): continue
+        for c in L:
+            n={k:v for k,v in o.items() if k not in ('tier','warn')}
+            for k in ('brand','model','cls','spd','tq','wh','range','wt','load','height','motor','price','src','st'): n[k]=c.get(k)
+            n['fold']=c.get('fold') or o.get('fold')
+            n['range']=rng(n.get('range'))
+            if c.get('wtnb'): n['wtnb']=True
+            n['note']=c.get('pnote')
+            if c.get('cv') is not None:
+                cv=[]
+                for x in c['cv']:
+                    f=fam(x['n']) or (hexfam(x['hex']) if x.get('hex') else None)
+                    if not f: continue
+                    cv.append(dict(n=x['n'],f=f,hex=x.get('hex'),img=emitf(x['img']) if x.get('img') else None))
+                if cv or not o['cv']: n['cv']=cv
+            if c.get('img'): n['img']=emitf(c['img'])
+            elif n['cv'] is not o['cv'] and any(x['img'] for x in n['cv']): n['img']=next(x['img'] for x in n['cv'] if x['img'])
+            new.append(n)
+    out=new
 missing=sorted({s for o in out for s in o['shops'] if s not in S})
 print('unmapped shops',missing,'priced',sum(1 for o in out if o['price']))
 json.dump([{**{k:v for k,v in o.items() if k not in ('img','cv')},'colors':[c['n'] for c in o['cv']]} for o in out],open('merged.json','w'),indent=0)
