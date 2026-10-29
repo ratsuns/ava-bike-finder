@@ -757,6 +757,10 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
 /* arrow buttons on the photo: frosted, a little lighter than before (small blur, cheap to draw) */
 .zarr{background:rgba(52,60,56,.42);-webkit-backdrop-filter:blur(10px) saturate(1.2);backdrop-filter:blur(10px) saturate(1.2);box-shadow:0 2px 10px rgba(0,0,0,.18),inset 0 0 0 1px rgba(255,255,255,.14)}
 @media (hover:hover) and (pointer:fine){.zarr:hover{background:rgba(52,60,56,.6)}}
+/* centred windows are centred on the whole screen: the page keeps a scrollbar gutter (so nothing jumps when a window opens),
+   and --sbw extends their box over it */
+@media (min-width:761px){dialog.cmd,dialog.bm{right:calc(-1 * var(--sbw,0px))}}
+#scrim{right:calc(-1 * var(--sbw,0px))}
 </style>
 
 <a class="skip" href="#g">Skip to the bikes</a>
@@ -1365,6 +1369,9 @@ ZOOM.addEventListener('toggle',zArrows);
  btn.addEventListener('keydown',e=>{if(e.key==='ArrowDown'||e.key==='ArrowUp'){e.preventDefault();menu.showPopover()}});
  addEventListener('scroll',()=>{if(menu.matches(':popover-open'))menu.hidePopover()},{passive:true});
  sel.addEventListener('change',mark)})();
+/* width of the reserved scrollbar strip, used to centre windows on the full screen */
+const SBP=document.createElement('div');SBP.setAttribute('aria-hidden','true');SBP.style.cssText='position:fixed;inset:0;visibility:hidden;pointer-events:none;z-index:-1';document.body.append(SBP);
+const setSbw=()=>{document.documentElement.style.setProperty('--sbw',Math.max(0,innerWidth-SBP.getBoundingClientRect().width)+'px')};setSbw();addEventListener('resize',setSbw);
 </script>
 
 </body></html>
