@@ -553,7 +553,13 @@ main.grid{padding-bottom:96px}
 /* hero: looping ride video under a dark gradient */
 /* hero ink and video wash follow the theme: dark wash + white type in dark mode, light wash + dark type in light mode, always fading into the page background */
 .hero{--hink:255,255,255;--hscrim:15,18,17;--ha0:.3;--ha1:.12;--ha2:.55;--ha3:.88;--ha4:.5}
-:root[data-theme="light"] .hero{--hink:18,22,20;--hscrim:246,247,245;--ha0:.55;--ha1:.4;--ha2:.72;--ha3:.92;--ha4:.7}
+:root[data-theme="light"] .hero{--hink:18,22,20;--hscrim:246,247,245}
+/* light: the video stays vivid; a soft wash sits only where the type is (left side), a thin veil under the nav, and the bottom eases into the page */
+:root[data-theme="light"] .hero-media::after{background:
+ linear-gradient(180deg,rgba(246,247,245,.42) 0%,rgba(246,247,245,0) 16%,rgba(246,247,245,0) 58%,rgba(246,247,245,.6) 80%,rgba(246,247,245,.97) 93%,var(--bg) 100%),
+ linear-gradient(90deg,rgba(246,247,245,.82) 0%,rgba(246,247,245,.62) 34%,rgba(246,247,245,.18) 56%,rgba(246,247,245,0) 72%)}
+/* phones: the type spans the full width, so the video stays clear at the top and the wash builds behind the text instead */
+@media (max-width:760px){:root[data-theme="light"] .hero-media::after{background:linear-gradient(180deg,rgba(246,247,245,.35) 0%,rgba(246,247,245,0) 14%,rgba(246,247,245,.1) 30%,rgba(246,247,245,.72) 48%,rgba(246,247,245,.82) 72%,rgba(246,247,245,.97) 92%,var(--bg) 100%)}}
 .hero{position:relative;isolation:isolate;overflow:hidden;min-height:min(58svh,560px);display:flex;align-items:flex-end;background:var(--bg);color:rgb(var(--hink))}
 .hero-media{position:absolute;inset:0;z-index:-1}
 .hero-media video{width:100%;height:100%;object-fit:cover;display:block}
