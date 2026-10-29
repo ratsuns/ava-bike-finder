@@ -597,6 +597,7 @@ article.c .b{container-type:inline-size}
 @container (max-width:310px){.pbr{display:block;flex-basis:100%;height:0}.pay .ptag{margin:4px 0 2px}}
 .pwarn.pshort,.bmp .pwarn.pshort{margin:0;padding:0;background:none;border-radius:0;font-size:var(--t-meta);font-weight:500;line-height:1.45}
 .pwarn.pshort svg{margin-top:2px}
+.bmlist{font-size:var(--t-ui);margin-top:-4px}
 </style>
 
 <a class="skip" href="#g">Skip to the bikes</a>
@@ -875,8 +876,7 @@ function openBike(i,opener){
  const stats=narrow.map(s=>cell(s)).join('')+wide.map(s=>cell(s,1)).join('');
  const price=b.price!=null
   ?`<div class="bmpay"><strong>${money(b.you)}</strong><span>you pay</span></div>
-   <dl class="bmpl"><div><dt>List price</dt><dd>${money(b.price)}</dd></div><div class="bmreb"><dt>Ava rebate <span class="bmrt">(${esc(b.type.toLowerCase())} bike)</span></dt><dd><span class="rb${b.reb===900?'':' s400'}"><i></i>${money(b.reb)} off</span></dd></div></dl>
-   <p class="bmtax">Plus sales tax. The rebate can't be used for tax.</p>`
+   <div class="list bmlist"><s>${money(b.price)}</s> minus ${money(b.reb)} rebate, plus tax</div>`
   :`<div class="bmpay na"><strong>Price not listed</strong></div>
    <p class="bmtax">${tr?`Ava lists it at ${esc(tr)}. `:''}Ask the shop for today's price. Your rebate takes ${money(b.reb)} off, and sales tax is extra.</p>`;
  const warn=b.price!=null&&b.warn&&tr?`<p class="pwarn pshort">${INFO}<span>Call shop to confirm price. Ava's list puts this bike at ${esc(tr)}, not ${money(b.price)}.</span></p>`:'';
