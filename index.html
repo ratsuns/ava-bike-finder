@@ -814,7 +814,7 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
  /* one column that scales as a unit: everything is sized from the title's font size (--hfs), so title, description and search shrink together */
  .hero>.wrap{--hfs:clamp(40px,6vw,72px);--hcol:calc(var(--hfs) * 8.75);display:flex;flex-direction:column;align-items:center;text-align:center}
  .hero h1{max-width:none}
- .hero .lede{max-width:var(--hcol);margin-inline:auto;text-wrap:balance;font-size:clamp(16px,calc(var(--hfs) * .27),19px)}
+ .hero .lede{max-width:calc(var(--hcol) * 1.12);margin-inline:auto;text-wrap:balance;font-size:clamp(16px,calc(var(--hfs) * .27),19px)}
  /* the search matches the title's line width (the title is ~8.75x its font size wide), so the block reads as one column */
  .hero .hbar{width:100%;max-width:var(--hcol);margin-inline:auto;margin-top:calc(var(--hfs) * .22)}
  .hero .hbar .search{max-width:none;width:100%}
@@ -828,9 +828,8 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
 /* light mode: the bar is white, so its edge is a crisp hairline instead */
 :root[data-theme="light"] .hero .hbar input[type=search]{border-color:rgba(255,255,255,.9);box-shadow:0 0 0 1px rgba(0,0,0,.06),0 3px 8px rgba(0,0,0,.38),0 20px 44px -4px rgba(0,0,0,.7)}
 .hero .hbar input[type=search]:focus-visible{box-shadow:0 0 0 3px var(--accent-soft),0 3px 8px rgba(0,0,0,.38),0 20px 44px -4px rgba(0,0,0,.7)}
-/* hero: the list date sits as a small, quiet line under the search (desktop's column already has a 12px gap, so it pulls up to the same 8px) */
-@media (min-width:761px){.hero .hupd{margin-top:-4px!important}}
-.hero .hupd{margin-top:8px;font-size:var(--t-meta);color:rgba(var(--hink),.62);letter-spacing:.01em}
+/* hero: the list date sits as a small, quiet line under the search (the column already has a 12px gap; 2px more makes 14px) */
+.hero .hupd{margin-top:2px;font-size:var(--t-meta);color:rgba(var(--hink),.82);letter-spacing:.01em}
 </style>
 
 <a class="skip" href="#g">Skip to the bikes</a>
