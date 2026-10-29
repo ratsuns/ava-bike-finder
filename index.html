@@ -625,10 +625,8 @@ article.c .b{container-type:inline-size}
 /* the floating search bar is solid instead of frosted, so scrolling stays smooth in Safari */
 .fab{-webkit-backdrop-filter:none;backdrop-filter:none;background:var(--surface)}
 /* scrolling panels fade out at the bottom while there is more to read, and the fade lifts once you reach the end */
-.bmb,.dbody,.cbody{--fade:0px;-webkit-mask-image:linear-gradient(to bottom,#000 calc(100% - var(--fade)),transparent);mask-image:linear-gradient(to bottom,#000 calc(100% - var(--fade)),transparent)}
-.bmb.has-more,.dbody.has-more,.cbody.has-more{--fade:56px}
-@property --fade{syntax:"<length>";inherits:false;initial-value:0px}
-.bmb,.dbody,.cbody{transition:--fade .2s ease}
+.bmb::after,.dbody::after,.cbody::after{content:"";position:sticky;bottom:0;display:block;height:56px;margin-top:-56px;pointer-events:none;background:linear-gradient(to bottom,transparent,var(--surface) 92%);opacity:0;transition:opacity .2s ease}
+.bmb.has-more::after,.dbody.has-more::after,.cbody.has-more::after{opacity:1}
 /* single search entry: no separate Filters button; the search bar opens the search window, filters included */
 #mfilter,#fab-f,.fab .fsep{display:none!important}
 .fab{padding-left:8px}
@@ -678,6 +676,9 @@ dialog.cmd.instant,dialog.cmd.instant[data-state]{transition:none}
  dialog.drawer[data-state="closed"],dialog.drawer[data-state="closing"],dialog.bm[data-state="closed"],dialog.bm[data-state="closing"],dialog.cmd[data-state="closed"],dialog.cmd[data-state="closing"]{opacity:0}
  dialog.drawer[data-state="open"],dialog.bm[data-state="open"],dialog.cmd[data-state="open"]{opacity:1}
 }
+/* the same light blur behind every window, in every browser (Safari needs the -webkit- form). Kept small (6px) because the
+   page behind is frozen and the video is paused while a window is open, so the blur is drawn once rather than every frame */
+#scrim{background:rgba(0,0,0,.5);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
 </style>
 
 <a class="skip" href="#g">Skip to the bikes</a>
@@ -969,8 +970,10 @@ document.querySelectorAll('[data-open]').forEach(btn=>btn.onclick=()=>showDlg($(
 /* bike detail modal */
 const BIKE=$('bike');let BIKE_I=null,BIKE_AC=null;/* the modal's colour is its own: picking one there never changes the card */
 const EXT='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>';
-function openBike(i,opener){
- const b=B[i],pk=PICKS[b.brand+'|'+b.model],tr=tierText(b.tier);BIKE_I=i;
+/* the details are built as soon as a finger or mouse goes down on a card, so by the time the tap lands the window only has to slide in */
+let BIKE_PRE=null;
+function buildBike(i){if(BIKE_PRE===i)return;BIKE_PRE=i;
+ const b=B[i],pk=PICKS[b.brand+'|'+b.model],tr=tierText(b.tier);
  const has=v=>v!=null&&v!=='';
  const uniq=[...new Map((b.shops||[]).map(x=>S[x]).filter(Boolean).map(s=>[s.name,s])).values()];
  /* key stats: missing values are left out; an odd one out spans the full row so the grid never has a hole */
@@ -1004,8 +1007,9 @@ function openBike(i,opener){
   <div class="bmlinks"><a href="${gi}" target="_blank" rel="noopener">More photos on Google${EXT}</a>${b.src?`<a href="${esc(b.src)}" target="_blank" rel="noopener">Price source${EXT}</a>`:''}</div>
  </div>
 </div>`;
- BIKE_AC=activeColor(b);syncBike();
- showDlg(BIKE,opener);$('bike-body').scrollTop=0}
+}
+function openBike(i,opener){buildBike(i);BIKE_I=i;BIKE_AC=activeColor(B[i]);syncBike();showDlg(BIKE,opener);$('bike-body').scrollTop=0}
+$('g').addEventListener('pointerdown',e=>{if(BIKE.open||e.button)return;const c=e.target.closest('.c[data-b]');if(c&&!e.target.closest('a,.sws'))buildBike(+c.dataset.b)},{passive:true});
 function syncBike(){
  if(BIKE_I==null||!BIKE.contains($('bike-img')))return;const b=B[BIKE_I],ac=BIKE_AC,img=$('bike-img'),cap=$('bike-cap');
  const src=ac!=null&&b.cv[ac].img?b.cv[ac].img:b.img;
