@@ -632,7 +632,7 @@ article.c .b{container-type:inline-size}
  <div class="count"><span id="count" aria-live="polite"></span></div>
  <div class="achips" id="achips" role="group" aria-label="Active filters" hidden></div>
  <div class="view">
-  <label class="field" style="--pl:42px"><span>Sort</span><select id="sort" aria-label="Sort"><option value="pay">Lowest price</option><option value="payd">Highest price</option><option value="spd">Fastest</option><option value="tq">Most torque</option><option value="load">Most capacity</option><option value="color">Color</option><option value="name">Brand A–Z</option></select></label>
+  <label class="field" style="--pl:42px"><span>Sort</span><select id="sort" aria-label="Sort"><option value="pay">Lowest price</option><option value="payd">Highest price</option><option value="spd">Fastest</option><option value="tq">Best for hills</option><option value="load">Most capacity</option><option value="range">Longest range</option><option value="name">Brand A–Z</option></select></label>
  </div>
 </div>
 <main class="wrap grid" id="g"></main>
@@ -823,8 +823,8 @@ function match(f=F,skip){
   &&(!pay||(b.you!=null&&b.you>=f.payMin&&b.you<=f.payMax))
   &&(!f.fold||b.fold==='Yes')&&(!q||b.hay.includes(q)))}
 function sorted(L,f){
- const nz=(v,d)=>v==null?d:v;const ci=b=>{const c=f.color||b.cs[0];return c?CORD.indexOf(c):99};
- const cmp={pay:(a,b)=>nz(a.you,1e9)-nz(b.you,1e9),payd:(a,b)=>nz(b.you,-1)-nz(a.you,-1),spd:(a,b)=>nz(b.spd,-1)-nz(a.spd,-1),tq:(a,b)=>nz(b.tq,-1)-nz(a.tq,-1),load:(a,b)=>nz(b.load,-1)-nz(a.load,-1),name:(a,b)=>a.name.localeCompare(b.name),color:(a,b)=>ci(a)-ci(b)||nz(a.you,1e9)-nz(b.you,1e9)}[f.sort];
+ const nz=(v,d)=>{if(v==null||v==='')return d;if(typeof v==='number')return v;const m=String(v).match(/\d+(\.\d+)?/g);return m?Math.max(...m.map(Number)):d};const ci=b=>{const c=f.color||b.cs[0];return c?CORD.indexOf(c):99};
+ const cmp={pay:(a,b)=>nz(a.you,1e9)-nz(b.you,1e9),payd:(a,b)=>nz(b.you,-1)-nz(a.you,-1),spd:(a,b)=>nz(b.spd,-1)-nz(a.spd,-1),tq:(a,b)=>nz(b.tq,-1)-nz(a.tq,-1),load:(a,b)=>nz(b.load,-1)-nz(a.load,-1),range:(a,b)=>nz(b.range,-1)-nz(a.range,-1),name:(a,b)=>a.name.localeCompare(b.name),color:(a,b)=>ci(a)-ci(b)||nz(a.you,1e9)-nz(b.you,1e9)}[f.sort];
  return L.sort(cmp)}
 let LIST=[];
 function render(){
