@@ -686,6 +686,8 @@ html.dim :is(.hero,#bar,#status,#g,#dir){filter:blur(6px)}
 @media (prefers-reduced-motion:reduce){.hero,#bar,#status,#g,#dir{transition:none}}
 /* the ring under the beam: the pill background shows through the 1px gap around the inner layer */
 .fab{background:var(--line2)}
+/* phones: a bigger, easier thumb target */
+@media (max-width:600px){.fab{height:56px;width:min(420px,calc(100vw - 32px));padding-left:10px;font-size:16px}.fab .fmain{height:48px;gap:12px}.fab .fmain svg{width:20px;height:20px}}
 /* the fade pins to the real bottom edge, not to the panel's inner padding: --pb mirrors each panel's bottom padding */
 .dbody{--pb:calc(40px + env(safe-area-inset-bottom,0px))}
 .cbody{--pb:18px}
