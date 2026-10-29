@@ -966,13 +966,19 @@ let qt;$('cq').addEventListener('input',()=>{F.q=$('q').value=$('cq').value;clea
 $('cq').addEventListener('keydown',e=>{
  if(e.key==='Enter'){e.preventDefault();clearTimeout(qt);render();CMD._go=true;CMD.close()}
  else if(e.key==='ArrowDown'){const h=CMD.querySelector('.hit');if(h){e.preventDefault();h.focus()}}});
-/* phones: drag the sheet's top edge down to close it; a quick flick is enough */
-(()=>{const h=CMD.querySelector('.chead');let y0=0,t0=0,dy=0,drag=false;
- const sheet=()=>matchMedia('(max-width: 600px)').matches;
- h.addEventListener('pointerdown',e=>{if(!sheet()||e.pointerType==='mouse'||e.target.closest('input,button'))return;drag=true;y0=e.clientY;t0=performance.now();dy=0;h.setPointerCapture(e.pointerId);CMD.style.transition='none'});
- h.addEventListener('pointermove',e=>{if(!drag)return;const d=e.clientY-y0;dy=d>0?d:-Math.sqrt(-d)*2;CMD.style.transform=`translateY(${dy}px)`});
- const end=()=>{if(!drag)return;drag=false;const v=dy/Math.max(1,performance.now()-t0);CMD.style.transition='';CMD.style.transform='';if(dy>CMD.offsetHeight*.25||(dy>20&&v>.11))CMD.close()};
- h.addEventListener('pointerup',end);h.addEventListener('pointercancel',end)})();
+/* phones: pull a bottom sheet down to close it, from its header or from the content once it is scrolled to the top; a quick flick is enough */
+function sheetDrag(D,head,body,q){let y0=0,t0=0,dy=0,st=0,fromBody=false;const on=()=>matchMedia(q).matches;
+ const start=(e,b)=>{if(!on()||!D.open||e.touches.length>1||e.target.closest('input,select,textarea,.rbar'))return;if(b&&body.scrollTop>0)return;y0=e.touches[0].clientY;t0=performance.now();dy=0;st=1;fromBody=b};
+ const move=e=>{if(!st)return;const d=e.touches[0].clientY-y0;
+  if(st===1){if(Math.abs(d)<6)return;if(d<0||(fromBody&&body.scrollTop>0)){st=0;return}st=2;y0=e.touches[0].clientY;t0=performance.now();D.style.transition='none'}
+  e.preventDefault();const m=e.touches[0].clientY-y0;dy=m>0?m:-Math.sqrt(-m)*2;D.style.transform=`translateY(${dy}px)`};
+ const end=()=>{if(st!==2){st=0;return}st=0;const v=dy/Math.max(1,performance.now()-t0);
+  if(dy>D.offsetHeight*.25||(dy>24&&v>.11)){D.style.transition='transform .2s cubic-bezier(.32,.72,0,1)';D.style.transform='translateY(100%)';setTimeout(()=>{D.style.transition='none';D.close();requestAnimationFrame(()=>{D.style.transition='';D.style.transform=''})},200)}
+  else{D.style.transition='transform .25s cubic-bezier(.32,.72,0,1)';D.style.transform='';setTimeout(()=>{if(!st)D.style.transition=''},260)}};
+ head.addEventListener('touchstart',e=>start(e,false),{passive:true});body.addEventListener('touchstart',e=>start(e,true),{passive:true});
+ for(const el of [head,body]){el.addEventListener('touchmove',move,{passive:false});el.addEventListener('touchend',end);el.addEventListener('touchcancel',end)}}
+sheetDrag(CMD,CMD.querySelector('.chead'),CMD.querySelector('.cbody'),'(max-width: 600px)');
+sheetDrag($('bike'),$('bike').querySelector('.bmh'),$('bike').querySelector('.bmb'),'(max-width: 760px)');
 /* arrow keys move through the top matches */
 $('cmd-res').addEventListener('keydown',e=>{
  if(!['ArrowDown','ArrowUp'].includes(e.key))return;const all=[...$('cmd-res').querySelectorAll('.hit')],i=all.indexOf(document.activeElement);if(i<0)return;
