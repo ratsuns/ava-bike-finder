@@ -246,7 +246,8 @@ dialog[open]::backdrop{opacity:1}
  .hero>.wrap{display:flex;flex-direction:column;align-items:center;text-align:center}
  .hero h1{max-width:none}
  .hero .lede{max-width:48ch;margin-inline:auto;text-wrap:balance}
- .hero .hbar{width:100%;max-width:680px;margin-inline:auto;margin-top:16px}
+ /* the search matches the title's line width (the title is ~8.75x its font size wide), so the block reads as one column */
+ .hero .hbar{width:100%;max-width:calc(clamp(40px,6vw,72px) * 8.75);margin-inline:auto;margin-top:16px}
  .hero .hbar .search{max-width:none;width:100%}
  .hero .hbar input[type=search]{height:52px;font-size:16px;padding-left:46px;border-radius:10px}
  .hero .hbar .search svg{left:16px;width:18px;height:18px}
