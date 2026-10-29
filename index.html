@@ -218,19 +218,6 @@ dialog[open]::backdrop{opacity:1}
  .status .achips,.status .achips[hidden]{display:flex;order:3;flex-basis:100%;min-height:44px;margin:0;padding-block:0;align-items:center}
  .status .achips:empty{display:none}
 }
-/* one toolbar row: search (its own width, never stretched), sort, and the result count pushed to the right; active-filter chips wrap to their own row below */
-.status{flex-wrap:wrap;justify-content:flex-start;padding-block:16px 2px;row-gap:12px}
-.status .search{flex:0 1 360px;min-width:0;max-width:360px}
-.status .view{flex:none;margin-left:0}
-.status .count{margin-left:auto;flex:none}
-.status .achips,.status .achips[hidden]{order:5;flex-basis:100%}
-@media (min-width:761px){.status .achips[hidden],.status .achips:empty{display:none}}
-/* phones keep the original layout: search on its own row, then the count on the left and sort on the right */
-@media (max-width:600px){
- .status .search{flex:1 1 100%;max-width:none}
- .status .count{order:2;margin-left:0}
- .status .view{order:3;margin-left:auto}
-}
 @media (prefers-reduced-motion:reduce){
  .gbtn:active,.sw:active i,.sw:hover:active i{transform:none}
  .c.flash{animation:none;box-shadow:0 0 0 3px var(--accent)}
@@ -695,9 +682,9 @@ dialog.cmd.instant,dialog.cmd.instant[data-state]{transition:none}
 #scrim{background:rgba(0,0,0,.5);will-change:opacity}
 /* blur the page itself, region by region, instead of a full-screen backdrop-filter layer: the still regions are blurred once and
    cached, and the playing hero video only re-blurs its own layer, so nothing behind a window has to stop */
-.hero,#status,#g,#dir{transition:filter .2s var(--ease-out)}
-html.dim :is(.hero,#status,#g,#dir){filter:blur(6px)}
-@media (prefers-reduced-motion:reduce){.hero,#status,#g,#dir{transition:none}}
+.hero,#bar,#status,#g,#dir{transition:filter .2s var(--ease-out)}
+html.dim :is(.hero,#bar,#status,#g,#dir){filter:blur(6px)}
+@media (prefers-reduced-motion:reduce){.hero,#bar,#status,#g,#dir{transition:none}}
 /* the ring under the beam: the pill background shows through the 1px gap around the inner layer */
 .fab{background:var(--line2)}
 /* phones: a bigger, easier thumb target */
@@ -787,16 +774,17 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
  <p class="lede">Browse every e-bike on Ava's list and find the one that fits the way you ride. List updated October&nbsp;8, 2026.</p>
 </div></header>
 
-
-
-<div class="wrap status" id="status">
+<div class="bar" id="bar"><div class="wrap">
  <button type="button" class="mfilter" id="mfilter" aria-haspopup="dialog" aria-controls="cmd"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>Filters<span class="mcount" id="mfilter-n" hidden></span></button>
  <div class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" id="q" placeholder="Search bikes or shops" aria-label="Search bikes or shops"></div>
+</div></div>
+
+<div class="wrap status" id="status">
+ <div class="count"><span id="count" aria-live="polite"></span></div>
+ <div class="achips" id="achips" role="group" aria-label="Active filters" hidden></div>
  <div class="view">
   <div class="sortwrap"><select id="sort" class="vh" tabindex="-1" aria-hidden="true"><option value="pay">Lowest price</option><option value="payd">Highest price</option><option value="spd">Fastest</option><option value="tq">Best for hills</option><option value="load">Most capacity</option><option value="range">Longest range</option><option value="name">Brand A–Z</option></select><button type="button" id="sortbtn" class="sortbtn" aria-haspopup="listbox" aria-expanded="false" aria-controls="sortmenu" popovertarget="sortmenu"><span class="slab">Sort</span><span id="sortval">Lowest price</span><svg class="schev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button><div id="sortmenu" class="sortmenu" popover role="listbox" aria-label="Sort bikes"><button type="button" role="option" class="sopt" data-v="pay" aria-selected="false" tabindex="-1"><span>Lowest price</span></button><button type="button" role="option" class="sopt" data-v="payd" aria-selected="false" tabindex="-1"><span>Highest price</span></button><button type="button" role="option" class="sopt" data-v="spd" aria-selected="false" tabindex="-1"><span>Fastest</span></button><button type="button" role="option" class="sopt" data-v="tq" aria-selected="false" tabindex="-1"><span>Best for hills</span></button><button type="button" role="option" class="sopt" data-v="load" aria-selected="false" tabindex="-1"><span>Most capacity</span></button><button type="button" role="option" class="sopt" data-v="range" aria-selected="false" tabindex="-1"><span>Longest range</span></button><button type="button" role="option" class="sopt" data-v="name" aria-selected="false" tabindex="-1"><span>Brand A–Z</span></button></div></div>
  </div>
- <div class="count"><span id="count" aria-live="polite"></span></div>
- <div class="achips" id="achips" role="group" aria-label="Active filters" hidden></div>
 </div>
 <main class="wrap grid" id="g"></main>
 
@@ -1142,7 +1130,7 @@ const CMD=$('cmd');
 const fab=$('fab');
 let barVisible=true,atDir=false;
 /* the pill appears once the filter bar has scrolled away, and steps aside once the shop list fills the lower part of the screen */
-new IntersectionObserver(es=>{barVisible=es[0].isIntersecting;updateFab()},{rootMargin:'-48px 0px 0px 0px'}).observe($('status'));
+new IntersectionObserver(es=>{barVisible=es[0].isIntersecting;updateFab()},{rootMargin:'-48px 0px 0px 0px'}).observe($('bar'));
 new IntersectionObserver(es=>{atDir=es[0].isIntersecting;updateFab()},{rootMargin:'0px 0px -40% 0px'}).observe($('dir'));
 function updateFab(n=activeCount()){
  const show=!barVisible&&!atDir&&!document.querySelector('dialog[open]');
