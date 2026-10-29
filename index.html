@@ -557,7 +557,7 @@ main.grid{padding-bottom:96px}
 .hero{position:relative;isolation:isolate;overflow:hidden;min-height:min(58svh,560px);display:flex;align-items:flex-end;background:var(--bg);color:rgb(var(--hink))}
 .hero-media{position:absolute;inset:0;z-index:-1}
 .hero-media video{width:100%;height:100%;object-fit:cover;display:block}
-.hero-media::after{content:"";position:absolute;inset:-1px 0;background:linear-gradient(180deg,rgba(var(--hscrim),var(--ha0)) 0%,rgba(var(--hscrim),var(--ha1)) 32%,rgba(var(--hscrim),var(--ha2)) 60%,rgba(var(--hscrim),var(--ha3)) 82%,var(--bg) 100%),linear-gradient(90deg,rgba(var(--hscrim),var(--ha4)) 0%,rgba(var(--hscrim),0) 60%)}
+.hero-media::after{content:"";position:absolute;inset:-1px 0;background:linear-gradient(180deg,rgba(var(--hscrim),var(--ha0)) 0%,rgba(var(--hscrim),var(--ha1)) 32%,rgba(var(--hscrim),var(--ha2)) 60%,rgba(var(--hscrim),var(--ha3)) 78%,rgba(var(--hscrim),.97) 92%,var(--bg) 100%),linear-gradient(90deg,rgba(var(--hscrim),var(--ha4)) 0%,rgba(var(--hscrim),0) 60%)}
 .hero .wrap{width:100%;padding-block:112px 72px}
 .hero h1{color:rgb(var(--hink));font-size:clamp(40px,6vw,72px);line-height:1.02;letter-spacing:-.035em;max-width:14ch}
 .hero .lede{color:rgba(var(--hink),.86);font-size:clamp(17px,1.6vw,20px);max-width:52ch}
@@ -789,6 +789,16 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
 /* arrow buttons on the photo: frosted, a little lighter than before (small blur, cheap to draw) */
 .zarr{background:rgba(52,60,56,.42);-webkit-backdrop-filter:blur(10px) saturate(1.2);backdrop-filter:blur(10px) saturate(1.2);box-shadow:0 2px 10px rgba(0,0,0,.18),inset 0 0 0 1px rgba(255,255,255,.14)}
 @media (hover:hover) and (pointer:fine){.zarr:hover{background:rgba(52,60,56,.6)}}
+/* light theme: the photo view sits on the light page color instead of near-black */
+:root[data-theme="light"] .zoomv{background:var(--bg);color:var(--fg)}
+:root[data-theme="light"] .zfig figcaption{color:var(--fg2)}
+:root[data-theme="light"] .zfig img{box-shadow:0 1px 2px rgba(18,22,20,.06),0 12px 32px rgba(18,22,20,.1);outline:1px solid var(--line);outline-offset:-1px}
+:root[data-theme="light"] .zx{background:rgba(18,22,20,.06);color:var(--fg)}
+:root[data-theme="light"] .zarr{background:rgba(255,255,255,.62);color:var(--fg);box-shadow:0 2px 10px rgba(18,22,20,.12),inset 0 0 0 1px rgba(18,22,20,.08)}
+:root[data-theme="light"] .zarr:focus-visible{outline-color:var(--fg)}
+:root[data-theme="light"] .zsws .sw i{box-shadow:inset 0 0 0 1px rgba(0,0,0,.2)}
+:root[data-theme="light"] .zsws .sw[aria-pressed="true"] i{box-shadow:inset 0 0 0 1px rgba(0,0,0,.2),0 0 0 2px var(--bg),0 0 0 3.5px var(--fg)}
+@media (hover:hover) and (pointer:fine){:root[data-theme="light"] .zx:hover{background:rgba(18,22,20,.1)}:root[data-theme="light"] .zarr:hover{background:rgba(255,255,255,.82)}}
 /* centred windows are centred on the whole screen: the page keeps a scrollbar gutter (so nothing jumps when a window opens),
    and --sbw extends their box over it */
 @media (min-width:761px){dialog.cmd,dialog.bm{right:calc(-1 * var(--sbw,0px))}}
