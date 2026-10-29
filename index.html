@@ -558,8 +558,10 @@ main.grid{padding-bottom:96px}
 :root[data-theme="light"] .hero-media::after{background:
  linear-gradient(180deg,rgba(246,247,245,.42) 0%,rgba(246,247,245,0) 16%,rgba(246,247,245,0) 58%,rgba(246,247,245,.6) 80%,rgba(246,247,245,.97) 93%,var(--bg) 100%),
  linear-gradient(90deg,rgba(246,247,245,.82) 0%,rgba(246,247,245,.62) 34%,rgba(246,247,245,.18) 56%,rgba(246,247,245,0) 72%)}
-/* phones: no wash over the video, it only fades into the page color at the bottom */
-@media (max-width:760px){:root[data-theme="light"] .hero-media::after{background:linear-gradient(180deg,rgba(246,247,245,0) 0%,rgba(246,247,245,0) 62%,rgba(246,247,245,.7) 82%,rgba(246,247,245,.95) 93%,var(--bg) 100%)}}
+/* light mode: the description uses the full-strength ink so it holds up over the video */
+:root[data-theme="light"] .hero .lede{color:rgb(var(--hink))}
+/* phones: the video is untouched at the top; the bottom fade into the page starts just under the title, so the copy and search sit in it */
+@media (max-width:760px){:root[data-theme="light"] .hero-media::after{background:linear-gradient(180deg,rgba(246,247,245,0) 0%,rgba(246,247,245,0) 40%,rgba(246,247,245,.6) 54%,rgba(246,247,245,.86) 66%,rgba(246,247,245,.96) 80%,var(--bg) 100%)}}
 .hero{position:relative;isolation:isolate;overflow:hidden;min-height:calc(min(58svh,560px) + 56px);display:flex;align-items:flex-end;background:var(--bg);color:rgb(var(--hink))}
 .hero-media{position:absolute;inset:0;z-index:-1}
 .hero-media video{width:100%;height:100%;object-fit:cover;display:block}
@@ -573,7 +575,7 @@ main.grid{padding-bottom:96px}
 .hero .hlinks a{color:rgb(var(--hink));font-weight:600;text-decoration:underline;text-decoration-color:rgba(var(--hink),.4);text-underline-offset:4px}
 @media (hover:hover) and (pointer:fine){.hero .gbtn:hover{background:rgba(var(--hink),.18);border-color:rgba(var(--hink),.45)}.hero .hlinks a:hover{text-decoration-color:rgb(var(--hink))}}
 /* the extra height goes below the text, so the title and description stay exactly where they were */
-@media (max-width:760px){.hero{min-height:calc(min(52svh,440px) + 56px)}.hero .wrap{padding-block:128px 96px}}
+@media (max-width:760px){.hero{min-height:min(52svh,440px)}.hero .wrap{padding-block:128px 40px}}
 @media (prefers-reduced-motion:reduce){.hero-media video{display:none}.hero-media{background:url(img/hero.jpg) center/cover}}
 
 .hero .topnav{position:absolute;inset:0 0 auto;z-index:1;padding-top:env(safe-area-inset-top)}
