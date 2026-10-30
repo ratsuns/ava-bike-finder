@@ -1788,7 +1788,7 @@
 ],
 "31": [
 {
-"cls": null,
+"cls": 1,
 "spd": null,
 "tq": 42,
 "wh": 360,
@@ -1821,7 +1821,7 @@
 ],
 "32": [
 {
-"cls": null,
+"cls": 3,
 "spd": null,
 "tq": null,
 "wh": null,
@@ -2577,7 +2577,7 @@
 ],
 "44": [
 {
-"cls": null,
+"cls": 1,
 "spd": 20,
 "tq": null,
 "wh": 417,
@@ -2633,7 +2633,7 @@
 ],
 "46": [
 {
-"cls": null,
+"cls": 1,
 "spd": 20,
 "tq": 45,
 "wh": 468,
@@ -2661,7 +2661,7 @@
 ],
 "47": [
 {
-"cls": null,
+"cls": 1,
 "spd": 20,
 "tq": 45,
 "wh": 417,
@@ -3219,7 +3219,7 @@
 ],
 "56": [
 {
-"cls": null,
+"cls": "1 or 3",
 "spd": null,
 "tq": 75,
 "wh": 625,
@@ -3288,7 +3288,7 @@
 ],
 "58": [
 {
-"cls": null,
+"cls": 1,
 "spd": null,
 "tq": 85,
 "wh": 630,
@@ -5125,7 +5125,7 @@
 ],
 "93": [
 {
-"cls": null,
+"cls": 1,
 "spd": null,
 "tq": null,
 "wh": null,
@@ -5146,7 +5146,7 @@
 ],
 "94": [
 {
-"cls": null,
+"cls": 1,
 "spd": null,
 "tq": null,
 "wh": 750,
@@ -5758,7 +5758,7 @@
 ],
 "111": [
 {
-"cls": null,
+"cls": 1,
 "spd": 15.5,
 "tq": 85,
 "wh": 504,
@@ -5821,7 +5821,7 @@
 ],
 "112": [
 {
-"cls": null,
+"cls": 1,
 "spd": null,
 "tq": 85,
 "wh": null,
@@ -6038,7 +6038,7 @@
 ],
 "116": [
 {
-"cls": null,
+"cls": 1,
 "spd": 20,
 "tq": 40,
 "wh": 248,
@@ -6852,7 +6852,7 @@
 ],
 "127": [
 {
-"cls": null,
+"cls": 1,
 "spd": null,
 "tq": null,
 "wh": null,
@@ -8278,7 +8278,7 @@
 ],
 "153": [
 {
-"cls": null,
+"cls": 3,
 "spd": null,
 "tq": null,
 "wh": null,
@@ -8299,7 +8299,7 @@
 ],
 "154": [
 {
-"cls": null,
+"cls": "2 or 3",
 "spd": null,
 "tq": null,
 "wh": null,
@@ -8309,18 +8309,18 @@
 "height": null,
 "fold": null,
 "motor": null,
-"price": null,
+"price": 1750,
 "brand": "Senada",
 "model": "Gladiator",
-"src": "https://senadabikes.com/",
-"pnote": null,
+"src": "https://ebikes2u.com/product/gladiator-ul-2849-certified-750w-15ah-900w-peak-folding-e-bike-upgraded-48v-15ah-20%e2%80%b3-fat-tire-e-cargo-edition-fremont-2/",
+"pnote": "Senada's own site is offline, so this is the regular price at Ebikes2U (Fremont), an Ava shop. It was on sale for $1,499 when we checked (Oct 2026).",
 "st": null,
 "img": null
 }
 ],
 "155": [
 {
-"cls": null,
+"cls": 3,
 "spd": null,
 "tq": null,
 "wh": null,
@@ -8341,7 +8341,7 @@
 ],
 "156": [
 {
-"cls": null,
+"cls": 3,
 "spd": null,
 "tq": null,
 "wh": null,
@@ -8753,7 +8753,7 @@
 "img": "a94c348373d10b"
 },
 {
-"cls": null,
+"cls": 2,
 "spd": 20,
 "tq": null,
 "wh": 500,
@@ -8781,7 +8781,7 @@
 ],
 "163": [
 {
-"cls": null,
+"cls": 1,
 "spd": null,
 "tq": 50,
 "wh": 530,
@@ -9151,7 +9151,7 @@
 ],
 "168": [
 {
-"cls": null,
+"cls": 1,
 "spd": 15,
 "tq": null,
 "wh": null,
@@ -11029,7 +11029,7 @@
 ],
 "192": [
 {
-"cls": null,
+"cls": 1,
 "spd": 15.5,
 "tq": null,
 "wh": null,
