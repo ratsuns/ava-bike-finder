@@ -199,6 +199,11 @@ html{scroll-behavior:smooth}
 .gl b{color:var(--fg);font-weight:600}
 .gl li::marker{color:var(--fg3)}
 .gsrc{margin:22px 0 0;font-size:13px;color:var(--fg3)}
+.gnote{margin:12px 0 0;color:var(--fg2);font-size:var(--t-ui);line-height:1.55;text-wrap:pretty}
+.gsteps{list-style:none;margin:0;padding:0;display:grid;gap:12px;counter-reset:gs}
+.gsteps li{counter-increment:gs;display:grid;grid-template-columns:26px 1fr;column-gap:12px;align-items:start;color:var(--fg2);font-size:var(--t-ui);line-height:1.55;text-wrap:pretty}
+.gsteps li::before{content:counter(gs);width:26px;height:26px;margin-top:-2px;border-radius:50%;background:var(--well);color:var(--fg);font-weight:600;font-size:14px;line-height:1;display:grid;place-items:center;font-variant-numeric:tabular-nums}
+.dbody .gsteps a{color:var(--fg);text-decoration:underline;text-underline-offset:3px;text-decoration-color:color-mix(in oklab,currentColor 45%,transparent)}
 .dbody .gl a,.dbody .gsrc a{color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-color:color-mix(in oklab,currentColor 45%,transparent)}
 @media (max-width:600px){.drawer{width:100vw;border-left:0}.dhead{padding:max(18px,env(safe-area-inset-top,0px)) 18px 14px}.dbody{padding:2px 18px calc(32px + env(safe-area-inset-bottom,0px))}}
 @media (prefers-reduced-motion:reduce){.drawer{transition:opacity .2s ease,overlay .2s allow-discrete,display .2s allow-discrete;transform:none;opacity:0}.drawer[open]{opacity:1}@starting-style{.drawer[open]{opacity:0;transform:none}}}
@@ -883,6 +888,8 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
 .bmin{font-size:15px}
 .bmr h3{font-size:18px}
 .bmh h2{font-size:22px}
+.gp,.gl,.gsub,.gnote,.gc p,.gdl dd,.gsteps li{font-size:16px;line-height:1.5}
+.gsteps li::before{margin-top:-1px}
 }
 </style>
 
@@ -917,28 +924,30 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
  <div class="dbody">
   <h3>How much you get</h3>
   <div class="g3">
-   <div class="gc"><span class="rb lg"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.6 2.6A2 2 0 0 0 11.2 2H4a2 2 0 0 0-2 2v7.2a2 2 0 0 0 .6 1.4l8.7 8.7a2.4 2.4 0 0 0 3.4 0l6.6-6.6a2.4 2.4 0 0 0 0-3.4z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg>$900 off</span><b>Cargo and adaptive e-bikes</b><p>Bikes built to carry loads or passengers, and trikes, recumbents and other bikes for riders with mobility needs.</p></div>
-   <div class="gc"><span class="rb lg s400"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.6 2.6A2 2 0 0 0 11.2 2H4a2 2 0 0 0-2 2v7.2a2 2 0 0 0 .6 1.4l8.7 8.7a2.4 2.4 0 0 0 3.4 0l6.6-6.6a2.4 2.4 0 0 0 0-3.4z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg>$400 off</span><b>Standard e-bikes</b><p>City and commuter e-bikes.</p></div>
+   <div class="gc"><span class="rb lg"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.6 2.6A2 2 0 0 0 11.2 2H4a2 2 0 0 0-2 2v7.2a2 2 0 0 0 .6 1.4l8.7 8.7a2.4 2.4 0 0 0 3.4 0l6.6-6.6a2.4 2.4 0 0 0 0-3.4z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg>$900 off</span><b>Cargo and adaptive e-bikes</b><p>$1,500 off if you qualify by income.</p></div>
+   <div class="gc"><span class="rb lg s400"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.6 2.6A2 2 0 0 0 11.2 2H4a2 2 0 0 0-2 2v7.2a2 2 0 0 0 .6 1.4l8.7 8.7a2.4 2.4 0 0 0 3.4 0l6.6-6.6a2.4 2.4 0 0 0 0-3.4z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg>$400 off</span><b>Standard e-bikes</b><p>$1,000 off if you qualify by income.</p></div>
   </div>
-  <h3>What "you pay" means</h3>
-  <p class="gp">Each card shows the bike's price minus your rebate. Sales tax is added on top, because the rebate can't be used for tax. It can't be used for shipping either.</p>
-  <h3>How to use it</h3>
-  <ul class="gl">
-   <li>The rebate only works <b>in person</b> at a participating shop. The shops are listed on each card and at the bottom of this page.</li>
-   <li>Call the shop first to check that they have the bike in stock.</li>
-   <li>The rebate usually won't cover the full price, so plan for the rest.</li>
-  </ul>
+  <p class="gnote">You qualify by income if you're enrolled in CARE or FERA (PG&amp;E) or EAP (Alameda Municipal Power). It also adds up to $250 for a helmet, lock and lights.</p>
   <h3>Who can apply</h3>
-  <p class="gp">Anyone 18 or older who lives in Alameda County, or who is an Ava residential customer in San Joaquin County (Tracy, Stockton, Lathrop and nearby unincorporated areas). It's one rebate per person and up to two per household.</p>
-  <h3>A bigger rebate if you qualify by income</h3>
-  <p class="gp">If you're enrolled in CARE or FERA (PG&amp;E) or EAP (Alameda Municipal Power), you get <b>$1,500 off</b> cargo and adaptive e-bikes and <b>$1,000 off</b> standard e-bikes, plus up to $250 for a helmet, lock and lights. The prices on this site use the regular $900 and $400 amounts.</p>
-  <h3>How to get the rebate</h3>
-  <ol class="gl">
-   <li>Apply on <a href="https://avaenergy.org/bike-electric/" target="_blank" rel="noopener">Ava's Bike Electric page</a>.</li>
-   <li>Ava picks people in a random drawing each month. You're entered in three drawings in a row.</li>
-   <li>If you're picked, Ava emails you a rebate code.</li>
-   <li>Use the code in person at a participating shop within 60 days. It can't be used online, on used bikes or on bikes bought before you applied.</li>
+  <ul class="gl">
+   <li>You're 18 or older.</li>
+   <li>You live in Alameda County, or you're an Ava home customer in San Joaquin County (Tracy, Stockton, Lathrop).</li>
+   <li>One rebate per person, two per household.</li>
+  </ul>
+  <h3>How to get it</h3>
+  <ol class="gsteps">
+   <li><span>Apply on <a href="https://avaenergy.org/bike-electric/" target="_blank" rel="noopener">Ava's Bike Electric page</a>.</span></li>
+   <li><span>Ava holds a random drawing each month. You're entered in three.</span></li>
+   <li><span>If you're picked, Ava emails you a rebate code.</span></li>
+   <li><span>Use it in person at a participating shop within 60 days.</span></li>
   </ol>
+  <h3>Good to know</h3>
+  <ul class="gl">
+   <li>The price on each card is the bike's price minus the regular rebate.</li>
+   <li>Sales tax and shipping are extra. The rebate can't pay for them.</li>
+   <li>It only works <b>in person</b> on a new bike from Ava's list. Not online, and not on used bikes.</li>
+   <li>Call the shop first to check that they have the bike.</li>
+  </ul>
   <p class="gsrc">Source: <a href="https://avaenergy.org/bike-electric/" target="_blank" rel="noopener">Ava Community Energy</a>, checked October 29, 2026.</p>
  </div>
 </dialog>
@@ -949,44 +958,45 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
  
 
  <h3>The three classes</h3>
- <p class="gsub">Every e-bike sold in the US is one of three classes. The class is on each card.</p>
+ <p class="gsub">Every US e-bike is one of three classes. You'll see it on each card.</p>
  <div class="g3">
-  <div class="gc"><span class="gk">Class 1</span><b>Pedal assist, up to 20 mph</b><p>The motor only helps while you pedal. Feels like a regular bike with a boost. The easiest place to start.</p></div>
-  <div class="gc"><span class="gk">Class 2</span><b>Pedal assist plus throttle, up to 20 mph</b><p>Adds a throttle, so you can get moving without pedaling. Handy from a stop or with a heavy load.</p></div>
-  <div class="gc"><span class="gk">Class 3</span><b>Pedal assist, up to 28 mph</b><p>The fastest legal class, with a speedometer. Good for longer trips. In California it can't have a throttle, and it isn't allowed on bike-only off-road trails.</p></div>
+  <div class="gc"><span class="gk">Class 1</span><b>Pedal assist, up to 20 mph</b><p>The motor helps only while you pedal. The easiest place to start.</p></div>
+  <div class="gc"><span class="gk">Class 2</span><b>Pedal assist plus throttle, up to 20 mph</b><p>A throttle gets you moving without pedaling. Handy from a stop or with a load.</p></div>
+  <div class="gc"><span class="gk">Class 3</span><b>Pedal assist, up to 28 mph</b><p>The fastest legal class. No throttle in California, and not allowed on bike-only off-road trails.</p></div>
  </div>
 
  <h3>The three types on this list</h3>
  <div class="g3">
-  <div class="gc"><span class="gk">Standard · $400 off</span><b>City and commuter</b><p>Lighter and easy to handle. Upright and comfortable for commuting and errands. A great choice unless you need to haul a lot.</p></div>
-  <div class="gc"><span class="gk">Cargo · $900 off</span><b>Built to carry</b><p>Room in front or back for kids, groceries or tools, with stronger motors. Some have three wheels. Bigger, heavier and less nimble.</p></div>
-  <div class="gc"><span class="gk">Adaptive · $900 off</span><b>For mobility needs</b><p>Trikes, recumbents, tandems and options for wheelchair users. Wider, so they take more room on the road and in storage.</p></div>
+  <div class="gc"><span class="gk">Standard · $400 off</span><b>City and commuter</b><p>Light, upright and easy to handle. Right for most riders who don't haul a lot.</p></div>
+  <div class="gc"><span class="gk">Cargo · $900 off</span><b>Built to carry</b><p>Room for kids, groceries or tools, with stronger motors. Bigger and heavier.</p></div>
+  <div class="gc"><span class="gk">Adaptive · $900 off</span><b>For mobility needs</b><p>Trikes, recumbents, tandems and options for wheelchair users. Wider than most bikes.</p></div>
  </div>
 
  <h3>What's on the spec sheet</h3>
  <dl class="gdl">
-  <div><dt>Motor</dt><dd><b>Hub motors</b> sit in the wheel and feel like a tailwind. <b>Mid-drive motors</b> sit at the pedals and feel more natural, especially on hills. <b>Torque</b> (Nm) is pulling power: more torque helps with hills and heavy loads.</dd></div>
-  <div><dt>Battery and range</dt><dd>Capacity is in watt-hours (Wh). More Wh means more miles per charge, but a heavier bike. A full charge takes about 1 to 5 hours. Use the charger that came with the bike, plugged straight into the wall, and don't leave it charging for days.</dd></div>
-  <div><dt>The display</dt><dd>The handlebar screen shows speed and battery, sets the assist level, and runs the throttle if the bike has one.</dd></div>
-  <div><dt>Max load</dt><dd>The most weight the bike is rated to carry, including you. Leave room for cargo or a passenger on top of your own weight.</dd></div>
+  <div><dt>Motor</dt><dd><b>Hub motors</b> sit in the wheel and feel like a tailwind. <b>Mid-drive motors</b> sit at the pedals and feel more natural on hills.</dd></div>
+  <div><dt>Torque (Nm)</dt><dd>Pulling power. More torque helps with hills and heavy loads.</dd></div>
+  <div><dt>Battery (Wh)</dt><dd>More watt-hours means more miles, but a heavier bike. A full charge takes 1 to 5 hours.</dd></div>
+  <div><dt>Charging safely</dt><dd>Use the charger that came with the bike, plugged straight into the wall. Don't leave it charging for days.</dd></div>
+  <div><dt>Max load</dt><dd>The most weight the bike can carry, including you.</dd></div>
  </dl>
 
  <div class="g2">
   <div><h3>Ask yourself first</h3><ul class="gl">
    <li>Am I replacing a daily car trip?</li>
    <li>Will I take it on a bus or train?</li>
-   <li>How many miles a day or week will I ride?</li>
-   <li>What do I need to carry: a laptop, kids, groceries, tools?</li>
+   <li>How far will I ride each day?</li>
+   <li>What will I carry: a laptop, kids, groceries, tools?</li>
    <li>Who will handle maintenance?</li>
-   <li>Would a low step-through or a third wheel make riding easier?</li>
+   <li>Would a step-through frame or a third wheel help?</li>
   </ul></div>
   <div><h3>Then compare on</h3><ul class="gl">
-   <li><b>Power:</b> enough for your hills and loads, and right for everyone who will ride it.</li>
+   <li><b>Power:</b> enough for your hills and loads.</li>
    <li><b>Fit:</b> frame size, seat and handlebars. Test ride if you can.</li>
-   <li><b>Weight:</b> pick one you can lift and move yourself.</li>
-   <li><b>Range:</b> enough battery for your normal day with room to spare.</li>
+   <li><b>Weight:</b> one you can lift and move yourself.</li>
+   <li><b>Range:</b> your normal day, with room to spare.</li>
    <li><b>Accessories:</b> racks, fenders, lights, phone mount.</li>
-   <li><b>Service:</b> a local shop you trust for repairs and parts.</li>
+   <li><b>Service:</b> a local shop you trust for repairs.</li>
   </ul></div>
  </div>
 </div>
