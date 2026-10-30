@@ -71,6 +71,12 @@ select:focus-visible,input[type=search]:focus-visible{outline:none;border-color:
 #count{font-size:var(--t-ui);color:var(--fg2)}
 #count strong{color:var(--fg);font-weight:600}
 main.grid .c{content-visibility:auto;contain-intrinsic-size:auto 680px}
+.gmore{display:grid;justify-items:center;gap:10px;padding-bottom:56px;margin-top:-24px}
+.gmore[hidden]{display:none}
+.morebtn{font:inherit;font-size:var(--t-ui);font-weight:600;height:44px;padding:0 22px;border-radius:8px;border:1px solid var(--line2);background:var(--surface);color:var(--fg);cursor:pointer;transition:border-color .15s ease,background-color .15s ease}
+@media (hover:hover) and (pointer:fine){.morebtn:hover{border-color:var(--fg3)}}
+.morebtn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+#more-n{margin:0;font-size:var(--t-meta);color:var(--fg3)}
 main.grid{padding-block:14px 56px;display:grid;grid-template-columns:repeat(auto-fill,minmax(272px,1fr));gap:18px;align-items:stretch}
 
 .c{background:var(--surface);border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0;overflow:hidden;view-transition-class:bike;scroll-margin:80px}
@@ -921,6 +927,7 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
 </div>
 <h2 class="vh">All e-bikes on the Ava rebate list</h2>
 <main class="wrap grid" id="g"></main>
+<div class="wrap gmore" id="gmore" hidden><button type="button" class="morebtn" id="more-btn">Show more bikes</button><p id="more-n" aria-live="polite"></p></div>
 
 
 
@@ -1142,10 +1149,15 @@ function render(){
  const f=F,qv=f.q.trim();LIST=sorted(match(),f);
  $('count').innerHTML=`<strong>${LIST.length}</strong> of ${B.length} bikes`;
  const n=activeCount();renderChips(n,qv);
- if(LIST.length){$('g').replaceChildren(...LIST.map(b=>NODE.get(b.i)));LIST.forEach(syncColor)}
+ SHOWN=PAGE;if(LIST.length){const v=LIST.slice(0,SHOWN);$('g').replaceChildren(...v.map(b=>NODE.get(b.i)));v.forEach(syncColor)}
  else{EMPTY.innerHTML=`<p>${qv?`No bikes match “${esc(qv)}”${n?' with these filters':''}.`:'No bikes match these filters.'}</p><button type="button" class="gbtn" data-clear>Clear all filters</button>`;$('g').replaceChildren(EMPTY)}
- updateFab(n);if(CMD.open)renderCmd();if(FP.open)renderFP();
+ updateFab(n);updMore();if(CMD.open)renderCmd();if(FP.open)renderFP();
 }
+/* load more: 24 cards at a time */
+const PAGE=24;let SHOWN=PAGE;
+function updMore(){const m=$('gmore'),left=LIST.length-SHOWN;m.hidden=left<=0;if(left>0)$('more-n').textContent=`Showing ${SHOWN} of ${LIST.length}`}
+function showUpTo(k){if(k<=SHOWN)return;const v=LIST.slice(SHOWN,k);SHOWN=Math.min(k,LIST.length);$('g').append(...v.map(b=>NODE.get(b.i)));v.forEach(syncColor);updMore()}
+$('more-btn').onclick=()=>{const first=LIST[SHOWN];showUpTo(SHOWN+PAGE);const el=first&&NODE.get(first.i);if(el&&KBD)el.querySelector('.more')?.focus({preventScroll:true})};
 /* only cards near the screen get a transition name, so the glide stays smooth */
 function nameVisible(){const vh=innerHeight;for(const el of $('g').children){if(!el.dataset.b)continue;const r=el.getBoundingClientRect();el.style.viewTransitionName=(r.bottom>-200&&r.top<vh+200)?'bk'+el.dataset.b:''}}
 function draw(){
@@ -1349,7 +1361,7 @@ $('cmd-res').addEventListener('keydown',e=>{
  e.preventDefault();const n=all[i+(e.key==='ArrowDown'?1:-1)];(n||(e.key==='ArrowUp'?$('cq'):all[i])).focus()});
 $('cmd-show').onclick=()=>{CMD._go=true;CMD.close()};
 function scrollToResults(){const t=$('status').getBoundingClientRect().top;if(t>=0)return;scrollTo({top:Math.max(0,t+scrollY-12),behavior:REDUCE.matches?'auto':'smooth'})}
-function goTo(i){const el=NODE.get(i);if(!el)return;el.scrollIntoView({block:'center',behavior:REDUCE.matches?'auto':'smooth'});el.classList.remove('flash');void el.offsetWidth;el.classList.add('flash')}
+function goTo(i){const x=LIST.findIndex(b=>b.i===i);if(x>=SHOWN)showUpTo(Math.ceil((x+1)/PAGE)*PAGE);const el=NODE.get(i);if(!el||!el.isConnected)return;el.scrollIntoView({block:'center',behavior:REDUCE.matches?'auto':'smooth'});el.classList.remove('flash');void el.offsetWidth;el.classList.add('flash')}
 document.addEventListener('keydown',e=>{
  const isK=e.key.toLowerCase()==='k'&&(e.metaKey||e.ctrlKey)&&!e.altKey&&!e.shiftKey;
  if(isK&&CMD.open){e.preventDefault();CMD.classList.add('instant');CMD.close();return}
