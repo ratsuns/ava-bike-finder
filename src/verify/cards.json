@@ -3219,8 +3219,8 @@
 ],
 "56": [
 {
-"cls": "1 or 3",
-"spd": null,
+"cls": 3,
+"spd": 28,
 "tq": 75,
 "wh": 625,
 "range": null,
@@ -8299,16 +8299,16 @@
 ],
 "154": [
 {
-"cls": "2 or 3",
-"spd": null,
+"cls": 3,
+"spd": 28,
 "tq": null,
-"wh": null,
-"range": null,
+"wh": 720,
+"range": "65",
 "wt": null,
-"load": null,
+"load": 350,
 "height": null,
 "fold": null,
-"motor": null,
+"motor": "750W rear hub (900W peak)",
 "price": 1750,
 "brand": "Senada",
 "model": "Gladiator",
