@@ -698,6 +698,8 @@ dialog:focus{outline:none}
 /* shared dim layer behind every window */
 #scrim{position:fixed;inset:0;z-index:40;background:rgba(0,0,0,.58);opacity:0;pointer-events:none;transition:opacity .18s ease}
 #scrim.on{opacity:1;pointer-events:auto}
+#scrim{touch-action:none}
+@media (pointer:coarse){.cmd .cfoot{touch-action:none}}
 dialog{z-index:50}
 @media (prefers-reduced-motion:reduce){#scrim{transition:none}}
 /* floating search bar: rises in with a soft spring-like ease, leaves quicker than it arrives (transform and opacity only, so it stays on the GPU) */
@@ -1194,7 +1196,10 @@ $('g').addEventListener('keydown',e=>{const t=e.target.closest('.sw');if(!t||!['
 
 /* drawers */
 let LASTCLOSE=-1e9;
-function lockScroll(){document.documentElement.classList.toggle('locked',!!document.querySelector('dialog[open]:not([data-state="closing"]),#navmenu:popover-open'))}
+/* on touch screens the search panel does not lock the page: iPhone browsers ignore the first swipe after a lock is lifted once the keyboard has been up.
+   The page still stays put behind it: the scrim and the panel header take no swipes, and the results list keeps its scroll to itself */
+const COARSE=matchMedia('(pointer:coarse)');
+function lockScroll(){document.documentElement.classList.toggle('locked',[...document.querySelectorAll('dialog[open]:not([data-state="closing"]),#navmenu:popover-open')].some(d=>!(COARSE.matches&&d.id==='cmd')))}
 /* Windows open with show(), not showModal(): showModal makes the browser mark all ~11,000 elements behind it as blocked,
    which took 60-90ms on a mid-range phone. The dim layer, Escape, outside taps and keeping Tab inside the window are handled here instead. */
 /* keyboard users get focus handed back to what opened a window; touch and mouse users get no leftover outline */
@@ -1212,7 +1217,7 @@ const NCLOSE=HTMLDialogElement.prototype.close;
 function animClose(){const d=this;if(!d.open||d.dataset.state==='closing')return;
  const rest=DSTACK.filter(x=>x!==d);SCRIM.classList.toggle('on',rest.length>0);setDim(rest.length>0);
  if(d.classList.contains('instant')){NCLOSE.call(d);d.dataset.state='';return}
- d.dataset.state='closing';lockScroll();const ae=document.activeElement,typing=d.contains(ae)&&ae.matches('input,textarea');if(d.contains(ae)&&!KBD)ae.blur();/* phones shift the visible area while the keyboard is open; once it has closed, put the page back so the first swipe scrolls */if(typing){const y=scrollY,vv=window.visualViewport;let ok=false;const fix=()=>{if(ok)return;ok=true;vv&&vv.removeEventListener('resize',fix);if(Math.abs(scrollY-y)<2)scrollTo(scrollX,y)};vv&&vv.addEventListener('resize',fix);setTimeout(fix,450)}let t;const done=()=>{clearTimeout(t);d.removeEventListener('transitionend',te);if(d.open)NCLOSE.call(d);d.dataset.state='';d.style.transition='';d.style.transform=''};
+ d.dataset.state='closing';lockScroll();const ae=document.activeElement;if(d.contains(ae)&&!KBD)ae.blur();let t;const done=()=>{clearTimeout(t);d.removeEventListener('transitionend',te);if(d.open)NCLOSE.call(d);d.dataset.state='';d.style.transition='';d.style.transform=''};
  const te=e=>{if(e.target===d&&(e.propertyName==='transform'||e.propertyName==='opacity'))done()};d.addEventListener('transitionend',te);t=setTimeout(done,300)}
 document.querySelectorAll('dialog').forEach(d=>{d.close=animClose});
 const DIMR=['.hero','#bar','#status','#g','#dir'].map(q=>document.querySelector(q)).filter(Boolean);
