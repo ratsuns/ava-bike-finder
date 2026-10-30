@@ -1326,7 +1326,7 @@ function openCmd(opts={}){
  const cq=$('cq');
  if(opts.filters){const body=CMD.querySelector('.cbody');body.scrollTop+=$('cmd-fh').getBoundingClientRect().top-body.getBoundingClientRect().top-6;CMD.querySelector('#cmd-fbody summary').focus({preventScroll:true})}
  else if(!MOBILE.matches||opts.focus)cq.focus({preventScroll:true});else CMD.focus({preventScroll:true})}
-$('fab-s').onclick=()=>openCmd({opener:$('fab-s')});
+$('fab-s').onclick=()=>openCmd({opener:$('fab-s'),focus:true});
 /* the pill's filter button opens the same dialog, at its filters */
 $('fab-f').onclick=()=>openCmd({opener:$('fab-f'),filters:true});
 $('fab-f').setAttribute('aria-controls','cmd');
