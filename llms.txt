@@ -1,0 +1,16 @@
+# Ava Bike Finder
+
+> Every e-bike on Ava Community Energy's e-bike rebate list (366 bikes), with each bike's price, the price after the rebate, specs and the shops that sell it. Made by Chris Beltran in Oakland, CA. Not affiliated with Ava Community Energy. Updated October 29, 2026.
+
+## The rebate (source: https://avaenergy.org/bike-electric/, checked October 29, 2026)
+
+- **How much is the Ava e-bike rebate?** $900 off cargo and adaptive e-bikes and $400 off standard e-bikes. If you're enrolled in CARE or FERA (PG&E) or EAP (Alameda Municipal Power), it's $1,500 off cargo and adaptive and $1,000 off standard, plus up to $250 for a helmet, lock and lights.
+- **Who can get the Ava e-bike rebate?** Anyone 18 or older who lives in Alameda County, or who is an Ava residential customer in San Joaquin County (Tracy, Stockton, Lathrop and nearby unincorporated areas). It's one rebate per person and up to two per household.
+- **How do I get the Ava e-bike rebate?** Apply on Ava's Bike Electric page. Ava picks people in a random drawing each month, and you're entered in three drawings in a row. If you're picked, Ava emails you a rebate code. Use it in person at a participating shop within 60 days.
+- **Can I use the Ava e-bike rebate online?** No. The rebate only works in person at a participating shop. It can't be used online, on used bikes or on bikes bought before you applied.
+- **Does the Ava e-bike rebate cover sales tax?** No. The rebate comes off the bike's price only. Sales tax and shipping are paid on top.
+
+## Files
+
+- [Full bike and shop list](llms-full.txt): every bike with price, price after rebate, class, specs and shops, plus every shop's address, phone, hours and website.
+- [Website](https://ratsuns.github.io/ava-bike-finder/): search and filter the list.

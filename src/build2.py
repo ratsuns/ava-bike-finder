@@ -207,7 +207,7 @@ URL='https://ratsuns.github.io/ava-bike-finder/'
 # the share image gets a content hash in its name, so every change is a new URL that apps and the CDN fetch fresh
 OGN='og-'+hashlib.md5(open('verify/seo/og.jpg','rb').read()).hexdigest()[:8]+'.jpg'
 TITLE='Ava E-Bike Rebate Finder: Every Eligible E-Bike, Price and Shop'
-DESC=f"Browse all {len(out)} e-bikes on Ava Community Energy's rebate list. See your price after the $400 or $900 rebate, compare specs and find shops near you."
+DESC=f"All {len(out)} e-bikes on Ava Community Energy's rebate list for Alameda and San Joaquin County. See your price after the $400 or $900 rebate and find a shop."
 # structured data for Google: the site, who made it, and every participating shop
 _seen={};
 for _s in S.values():
@@ -220,17 +220,20 @@ for _s in sorted(_seen.values(),key=lambda x:(x.get('city') or '',x['name'])):
     for a,b in (('phone','telephone'),('url','url'),('email','email')):
         if _s.get(a): _d[b]=_s[a]
     _stores.append(_d)
+FAQ=[('How much is the Ava e-bike rebate?', "$900 off cargo and adaptive e-bikes and $400 off standard e-bikes. If you're enrolled in CARE or FERA (PG&E) or EAP (Alameda Municipal Power), it's $1,500 off cargo and adaptive and $1,000 off standard, plus up to $250 for a helmet, lock and lights."), ('Who can get the Ava e-bike rebate?', "Anyone 18 or older who lives in Alameda County, or who is an Ava residential customer in San Joaquin County (Tracy, Stockton, Lathrop and nearby unincorporated areas). It's one rebate per person and up to two per household."), ('How do I get the Ava e-bike rebate?', "Apply on Ava's Bike Electric page. Ava picks people in a random drawing each month, and you're entered in three drawings in a row. If you're picked, Ava emails you a rebate code. Use it in person at a participating shop within 60 days."), ('Can I use the Ava e-bike rebate online?', "No. The rebate only works in person at a participating shop. It can't be used online, on used bikes or on bikes bought before you applied."), ('Does the Ava e-bike rebate cover sales tax?', "No. The rebate comes off the bike's price only. Sales tax and shipping are paid on top.")]
 _me={"@type":"Person","@id":URL+"#chris","name":"Chris Beltran","address":{"@type":"PostalAddress","addressLocality":"Oakland","addressRegion":"CA"}}
 LD={"@context":"https://schema.org","@graph":[
  {"@type":"WebSite","@id":URL+"#site","name":"Ava Bike Finder","url":URL,"description":DESC,"inLanguage":"en-US","publisher":{"@id":URL+"#chris"},"copyrightHolder":{"@id":URL+"#chris"},"copyrightYear":2026},
  {"@type":"WebPage","@id":URL,"url":URL,"name":TITLE,"description":DESC,"isPartOf":{"@id":URL+"#site"},"author":{"@id":URL+"#chris"},"dateModified":__import__('datetime').date.today().isoformat(),"about":{"@type":"Thing","name":"Ava Community Energy e-bike rebate"},"primaryImageOfPage":URL+OGN},
  _me,
+ {"@type":"FAQPage","@id":URL+"#faq","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in FAQ]},
+ {"@type":"Dataset","name":"E-bikes eligible for the Ava Community Energy rebate","description":f"All {len(out)} e-bikes on Ava's eligible list with maker price, price after the rebate, class, type, motor, battery, range, weight and the shops that sell each one.","url":URL,"dateModified":__import__('datetime').date.today().isoformat(),"creator":{"@id":URL+"#chris"},"isAccessibleForFree":True,"license":"https://ratsuns.github.io/ava-bike-finder/#copyright","distribution":[{"@type":"DataDownload","encodingFormat":"text/markdown","contentUrl":URL+"llms-full.txt"}]},
  {"@type":"ItemList","name":"Shops that accept the Ava e-bike rebate","numberOfItems":len(_stores),"itemListElement":[{"@type":"ListItem","position":i+1,"item":x} for i,x in enumerate(_stores)]}]}
 import html as _h
 e=_h.escape
 SEO=(f'<title>{e(TITLE)}</title><meta name="description" content="{e(DESC)}"><link rel="canonical" href="{URL}">'
  '<meta name="robots" content="index,follow,max-image-preview:large">'
- '<link rel="icon" href="favicon.ico" sizes="48x48"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="manifest" href="site.webmanifest">'
+ '<link rel="icon" href="favicon.ico" sizes="48x48"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="manifest" href="site.webmanifest"><link rel="alternate" type="text/markdown" title="Full bike and shop list" href="llms-full.txt">'
  f'<meta property="og:type" content="website"><meta property="og:site_name" content="Ava Bike Finder"><meta property="og:url" content="{URL}"><meta property="og:title" content="{e("Find your e-bike with the Ava rebate")}"><meta property="og:description" content="{e(DESC)}">'
  f'<meta property="og:image" content="{URL}{OGN}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:alt" content="Ava Bike Finder: Find your e-bike with the Ava rebate. $900 off cargo and adaptive, $400 off standard."><meta property="og:locale" content="en_US">'
  f'<meta property="og:video" content="{URL}img/hero.mp4"><meta property="og:video:secure_url" content="{URL}img/hero.mp4"><meta property="og:video:type" content="video/mp4"><meta property="og:video:width" content="1280"><meta property="og:video:height" content="720">'
@@ -242,6 +245,33 @@ if SITE:
     json.dump({"name":"Ava Bike Finder","short_name":"Ava Bikes","start_url":"./","scope":"./","display":"standalone","background_color":"#000000","theme_color":"#0f1211",
      "icons":[{"src":"fav-192.png","sizes":"192x192","type":"image/png"},{"src":"fav-512.png","sizes":"512x512","type":"image/png"},{"src":"fav-512.png","sizes":"512x512","type":"image/png","purpose":"maskable"}]},open(SITE+'/site.webmanifest','w'))
     import datetime
+    # plain markdown files for AI assistants (llmstxt.org)
+    _today=datetime.date.today().strftime('%B %-d, %Y')
+    def _rb(b): return 900 if b.get('type') in ('Cargo','Adaptive') else 400
+    _hdr=f"""# Ava Bike Finder
+
+> Every e-bike on Ava Community Energy's e-bike rebate list ({len(out)} bikes), with each bike's price, the price after the rebate, specs and the shops that sell it. Made by Chris Beltran in Oakland, CA. Not affiliated with Ava Community Energy. Updated {_today}.
+
+## The rebate (source: https://avaenergy.org/bike-electric/, checked October 29, 2026)
+
+"""+"\n".join(f"- **{q}** {a}" for q,a in FAQ)+"""
+
+## Files
+
+- [Full bike and shop list](llms-full.txt): every bike with price, price after rebate, class, specs and shops, plus every shop's address, phone, hours and website.
+- [Website](https://ratsuns.github.io/ava-bike-finder/): search and filter the list.
+"""
+    open(SITE+'/llms.txt','w').write(_hdr)
+    _rows=["| Bike | Type | Class | Price | After rebate | Motor | Battery | Range | Weight | Status | Shops |","|---|---|---|---|---|---|---|---|---|---|---|"]
+    _stx={'disc':'Discontinued by maker','na':'No Ava shop sells it now'}
+    for _b in sorted(out,key=lambda x:(x['brand'].lower(),x['model'].lower())):
+        _p=_b.get('price')
+        _c=lambda v:str(v).replace('|','/') if v not in (None,'') else ''
+        _rows.append('| '+' | '.join([_c(_b['brand']+' '+_b['model']),_c(_b.get('type')),_c(_b.get('cls')),f"${_p:,}" if _p else 'not listed',f"${max(_p-_rb(_b),0):,}" if _p else '',_c(_b.get('motor')),f"{_b['wh']} Wh" if _b.get('wh') else '',f"{_b['range']} mi" if _b.get('range') else '',(f"{_b['wt']} lb"+(' (no battery)' if _b.get('wtnb') else '')) if _b.get('wt') else '',_stx.get(_b.get('st'),'Available'),_c(', '.join(S[k]['name'] for k in (_b.get('shops') or []) if k in S))])+' |')
+    _shops=[]
+    for _s in sorted(_seen.values(),key=lambda x:(x.get('city') or '',x['name'])):
+        _shops.append(f"### {_s['name']} ({_s.get('city','')})\n"+"\n".join(f"- {k}: {v}" for k,v in (('Address',(_s.get('address') or '')+(', '+_s['city'] if _s.get('city') else '')+', CA'),('Phone',_s.get('phone')),('Hours',_s.get('hours')),('Email',_s.get('email')),('Website',_s.get('url'))) if v))
+    open(SITE+'/llms-full.txt','w').write(_hdr.replace('## Files','## Notes\n\n- "After rebate" uses the regular $400 (standard) or $900 (cargo and adaptive) rebate. Sales tax is extra.\n- Prices are the maker\'s US list price, or the selling shop\'s price when the maker has none.\n\n## Files',1)+f"\n## All {len(out)} e-bikes\n\n"+"\n".join(_rows)+"\n\n## Participating shops\n\n"+"\n\n".join(_shops)+"\n")
     open(SITE+'/sitemap.xml','w').write(f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>{URL}</loc><lastmod>{datetime.date.today().isoformat()}</lastmod></url></urlset>')
     PAGE=PAGE.replace('<title>Ava Rebate Bike Finder</title>','',1)
 if SITE: open(SITE+'/index.html','w').write('<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#0f1211">'+SEO+'<script>try{var t=localStorage.getItem("theme");if(t==="light"){document.documentElement.dataset.theme="light";document.querySelector("meta[name=color-scheme]").content="light";document.querySelector("meta[name=theme-color]").content="#f6f7f5"}}catch(e){}</script></head><body style="margin:0">'+PAGE+'</body></html>')
