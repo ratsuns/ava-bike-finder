@@ -1213,7 +1213,7 @@ const NCLOSE=HTMLDialogElement.prototype.close;
 function animClose(){const d=this;if(!d.open||d.dataset.state==='closing')return;
  const rest=DSTACK.filter(x=>x!==d);SCRIM.classList.toggle('on',rest.length>0);setDim(rest.length>0);
  if(d.classList.contains('instant')){NCLOSE.call(d);d.dataset.state='';return}
- d.dataset.state='closing';lockScroll();if(d.contains(document.activeElement)&&!KBD)document.activeElement.blur();let t;const done=()=>{clearTimeout(t);d.removeEventListener('transitionend',te);if(d.open)NCLOSE.call(d);d.dataset.state='';d.style.transition='';d.style.transform=''};
+ d.dataset.state='closing';lockScroll();const ae=document.activeElement,typing=d.contains(ae)&&ae.matches('input,textarea');if(d.contains(ae)&&!KBD)ae.blur();/* phones shift the visible area while the keyboard is open; once it has closed, put the page back so the first swipe scrolls */if(typing){const y=scrollY,vv=window.visualViewport;let ok=false;const fix=()=>{if(ok)return;ok=true;vv&&vv.removeEventListener('resize',fix);if(Math.abs(scrollY-y)<2)scrollTo(scrollX,y)};vv&&vv.addEventListener('resize',fix);setTimeout(fix,450)}let t;const done=()=>{clearTimeout(t);d.removeEventListener('transitionend',te);if(d.open)NCLOSE.call(d);d.dataset.state='';d.style.transition='';d.style.transform=''};
  const te=e=>{if(e.target===d&&(e.propertyName==='transform'||e.propertyName==='opacity'))done()};d.addEventListener('transitionend',te);t=setTimeout(done,300)}
 document.querySelectorAll('dialog').forEach(d=>{d.close=animClose});
 const DIMR=['.hero','#bar','#status','#g','#dir'].map(q=>document.querySelector(q)).filter(Boolean);
