@@ -1267,7 +1267,7 @@ function syncBike(){
  const src=ac!=null&&b.cv[ac].img?b.cv[ac].img:b.img;
  if(img.getAttribute('src')!==src)img.src=src;img.alt=b.name+(ac!=null?', '+b.cv[ac].n:'');
  BIKE.querySelectorAll('.sw').forEach((s,k)=>{s.setAttribute('aria-pressed',k===ac);s.tabIndex=(ac==null?k===0:k===ac)?0:-1});
- cap.textContent=ac!=null&&!b.cv[ac].img?`${b.cv[ac].n}: no photo of this color yet`:b.cv.length===1?`Comes in ${b.cv[0].n}`:b.cv.length?`Comes in ${b.cv.length} colors`:'';
+ cap.textContent='';
  cap.hidden=!cap.textContent}
 BIKE.addEventListener('click',e=>{
  if(e.target.closest('[data-dir]')){e.preventDefault();BIKE.close();requestAnimationFrame(()=>$('dir').scrollIntoView({behavior:REDUCE.matches?'auto':'smooth'}));return}
