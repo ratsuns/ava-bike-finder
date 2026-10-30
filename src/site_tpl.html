@@ -137,12 +137,15 @@ main.grid{padding-block:14px 56px;display:grid;grid-template-columns:repeat(auto
 #dir>p{margin:0 0 20px;color:var(--fg2)}
 .dirgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
 .shop{min-width:0;overflow-wrap:anywhere;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px 16px;font-size:var(--t-ui);display:grid;gap:2px;align-content:start}
-.shead{display:flex;align-items:center;gap:12px;min-width:0;margin-bottom:6px}
-.snm{display:grid;gap:1px;min-width:0}
-.slogo{flex:none;width:44px;height:44px;border-radius:50%;overflow:hidden;background:#fff;box-shadow:0 0 0 1px var(--line);display:grid;place-items:center}
+.shead{display:flex;align-items:center;gap:8px;min-width:0;margin-bottom:4px}
+.shead b{min-width:0}
+.slogo{flex:none;width:26px;height:26px;border-radius:50%;overflow:hidden;background:#fff;box-shadow:0 0 0 1px var(--line);display:grid;place-items:center}
 .slogo img{width:100%;height:100%;object-fit:cover;display:block}
-.slogo.ini{background:var(--well);color:var(--fg2);font-size:15px;font-weight:700;letter-spacing:.02em}
+.slogo.ini{background:var(--well);color:var(--fg2);font-size:10px;font-weight:700;letter-spacing:.02em}
 .bmshop .shead{margin-bottom:2px}
+.maplink.hrs span{text-decoration:none}
+.hrs .nw{font-style:normal;white-space:nowrap}
+.maplink.hrs,.maplink.hrs:hover{color:var(--fg2);cursor:default}
 .shop .city{color:var(--accent-ink);font-weight:600;font-size:var(--t-micro)}
 .shop b{font-size:var(--t-body);font-weight:600}
 .shop .m{color:var(--fg2)}
@@ -994,6 +997,7 @@ const mapUrl=s=>'https://www.google.com/maps/search/?api=1&query='+encodeURIComp
 const telUrl=p=>'tel:'+String(p).replace(/[^0-9+]/g,'');
 const PIN='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>';
 const GLOBE='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18z"/></svg>',PHONE='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>';
+const CLOCK='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>';
 const MAIL='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>';
 /* email a shop with the subject and message already written; about one bike from its details, or a general question from the shop list */
 const mailUrl=(s,b)=>{const subj=b?`Question about the ${b.name} (Ava e-bike rebate)`:'Question about the Ava e-bike rebate';
@@ -1001,8 +1005,8 @@ const mailUrl=(s,b)=>{const subj=b?`Question about the ${b.name} (Ava e-bike reb
   :`Hi ${s.name},\n\nI'm shopping for an e-bike and plan to use my Ava Community Energy e-bike rebate. Which rebate-eligible bikes do you have in stock right now?\n\nThank you!\n`;
  return `mailto:${s.email}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(body.replace(/\n/g,'\r\n'))}`};
 /* shop logo in a round badge; shops without a published logo get their initials */
-const slogo=s=>s.logo?`<span class="slogo"><img src="${esc(s.logo)}" alt="" width="44" height="44" loading="lazy" decoding="async"></span>`:`<span class="slogo ini" aria-hidden="true">${esc(s.name.replace(/^the\s+/i,'').split(/\s+/).filter(w=>/^[A-Za-z]/.test(w)).slice(0,2).map(w=>w[0].toUpperCase()).join(''))}</span>`;
-const shopLines=(s,b)=>`${s.address||s.city?`<a class="maplink" href="${mapUrl(s)}" target="_blank" rel="noopener">${PIN}<span>${esc([s.address,s.city].filter(Boolean).join(', '))}</span></a>`:''}${s.phone?`<a class="maplink tel" href="${telUrl(s.phone)}">${PHONE}<span>${esc(s.phone)}</span></a>`:''}${s.email?`<a class="maplink mail" href="${mailUrl(s,b)}">${MAIL}<span>${esc(s.email)}</span></a>`:s.contact?`<a class="maplink mail" href="${esc(s.contact)}" target="_blank" rel="noopener">${MAIL}<span>Email via contact form</span></a>`:''}`;
+const slogo=s=>s.logo?`<span class="slogo"><img src="${esc(s.logo)}" alt="" width="26" height="26" loading="lazy" decoding="async"></span>`:`<span class="slogo ini" aria-hidden="true">${esc(s.name.replace(/^the\s+/i,'').split(/\s+/).filter(w=>/^[A-Za-z]/.test(w)).slice(0,2).map(w=>w[0].toUpperCase()).join(''))}</span>`;
+const shopLines=(s,b)=>`${s.address||s.city?`<a class="maplink" href="${mapUrl(s)}" target="_blank" rel="noopener">${PIN}<span>${esc([s.address,s.city].filter(Boolean).join(', '))}</span></a>`:''}${s.phone?`<a class="maplink tel" href="${telUrl(s.phone)}">${PHONE}<span>${esc(s.phone)}</span></a>`:''}${s.hours?`<span class="maplink hrs">${CLOCK}<span>Hours: ${s.hours.split(' · ').map(x=>`<i class="nw">${esc(x)}</i>`).join(' · ')}</span></span>`:''}${s.email?`<a class="maplink mail" href="${mailUrl(s,b)}">${MAIL}<span>${esc(s.email)}</span></a>`:s.contact?`<a class="maplink mail" href="${esc(s.contact)}" target="_blank" rel="noopener">${MAIL}<span>Email via contact form</span></a>`:''}`;
 const ARROW='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>';
 const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
 const MOBILE=matchMedia('(max-width: 760px)');
@@ -1400,7 +1404,7 @@ $('achips').addEventListener('click',e=>{const x=e.target.closest('[data-rm]');i
 
 /* shop directory */
 const seen=new Map();Object.values(S).forEach(s=>{if(!seen.has(s.name))seen.set(s.name,s)});
-$('dirgrid').innerHTML=[...seen.values()].sort((a,b)=>(a.city||'').localeCompare(b.city||'')||a.name.localeCompare(b.name)).map(s=>`<div class="shop"><div class="shead">${slogo(s)}<div class="snm"><span class="city">${esc(s.city||'')}</span><b>${esc(s.name)}</b></div></div>${shopLines(s)||'<span class="m">Address not listed</span>'}${s.url?`<a class="web" href="${esc(s.url)}" target="_blank" rel="noopener">${GLOBE}<span>Shop website</span>${EXT}</a>`:''}</div>`).join('');
+$('dirgrid').innerHTML=[...seen.values()].sort((a,b)=>(a.city||'').localeCompare(b.city||'')||a.name.localeCompare(b.name)).map(s=>`<div class="shop"><span class="city">${esc(s.city||'')}</span><div class="shead">${slogo(s)}<b>${esc(s.name)}</b></div>${shopLines(s)||'<span class="m">Address not listed</span>'}${s.url?`<a class="web" href="${esc(s.url)}" target="_blank" rel="noopener">${GLOBE}<span>Shop website</span>${EXT}</a>`:''}</div>`).join('');
 render();
 const NAVM=document.getElementById('navmenu'),MBTN=document.querySelector('.menubtn');NAVM.addEventListener('click',e=>{if(e.target.closest('.nml button,.nml a'))NAVM.hidePopover()});
 /* the menu is a small modal: it sits under its button, dims and freezes the page while open, and the button turns into a close icon */
