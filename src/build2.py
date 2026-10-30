@@ -158,6 +158,18 @@ if SITE:
 else:
     HM='data:video/mp4;base64,'+base64.b64encode(open('verify/hero.mp4','rb').read()).decode();HJ='data:image/jpeg;base64,'+base64.b64encode(open('verify/hero.jpg','rb').read()).decode()
 html=open('site_tpl.html').read().replace('__HERO_MP4__',HM).replace('__HERO_JPG__',HJ).replace('__BIKES__',json.dumps(out,separators=(',',':'))).replace('__SHOPS__',json.dumps(S,separators=(',',':')))
+# the published page keeps the bike list in its own file, so the page itself stays small and link previews
+# (Messages, Slack, X) can read it; the list loads right after, before the page script runs
+if SITE:
+    for f in os.listdir(SITE):
+        if f.startswith('data-') and f.endswith('.js'): os.remove(os.path.join(SITE,f))
+    DJ='window.AVA_B='+json.dumps(out,separators=(',',':'))+';window.AVA_S='+json.dumps(S,separators=(',',':'))+';'
+    DN='data-'+hashlib.md5(DJ.encode()).hexdigest()[:8]+'.js'
+    open(os.path.join(SITE,DN),'w').write(DJ)
+    PAGE=open('site_tpl.html').read().replace('__HERO_MP4__',HM).replace('__HERO_JPG__',HJ)
+    PAGE=PAGE.replace('<script>\nconst B=__BIKES__;\nconst S=__SHOPS__;',f'<script src="{DN}"></script>\n<script>\nconst B=window.AVA_B;\nconst S=window.AVA_S;',1)
+    assert '__BIKES__' not in PAGE
+else: PAGE=html
 open('Ava_Rebate_Bike_Finder.html','w').write(html)
 # SEO + social cards: head tags, icons, manifest, sitemap
 URL='https://ratsuns.github.io/ava-bike-finder/'
@@ -182,7 +194,7 @@ if SITE:
      "icons":[{"src":"fav-192.png","sizes":"192x192","type":"image/png"},{"src":"fav-512.png","sizes":"512x512","type":"image/png"},{"src":"fav-512.png","sizes":"512x512","type":"image/png","purpose":"maskable"}]},open(SITE+'/site.webmanifest','w'))
     import datetime
     open(SITE+'/sitemap.xml','w').write(f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>{URL}</loc><lastmod>{datetime.date.today().isoformat()}</lastmod></url></urlset>')
-    html=html.replace('<title>Ava Rebate Bike Finder</title>','',1)
-if SITE: open(SITE+'/index.html','w').write('<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#0f1211">'+SEO+'<script>try{var t=localStorage.getItem("theme");if(t==="light"){document.documentElement.dataset.theme="light";document.querySelector("meta[name=color-scheme]").content="light";document.querySelector("meta[name=theme-color]").content="#f6f7f5"}}catch(e){}</script></head><body style="margin:0">'+html+'</body></html>')
+    PAGE=PAGE.replace('<title>Ava Rebate Bike Finder</title>','',1)
+if SITE: open(SITE+'/index.html','w').write('<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#0f1211">'+SEO+'<script>try{var t=localStorage.getItem("theme");if(t==="light"){document.documentElement.dataset.theme="light";document.querySelector("meta[name=color-scheme]").content="light";document.querySelector("meta[name=theme-color]").content="#f6f7f5"}}catch(e){}</script></head><body style="margin:0">'+PAGE+'</body></html>')
 open('Ava_Rebate_Bike_Finder_local.html','w').write('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head><body style="margin:0">'+html+'</body></html>')
 print(os.path.getsize('Ava_Rebate_Bike_Finder.html'))
