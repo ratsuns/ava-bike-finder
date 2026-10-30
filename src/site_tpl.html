@@ -300,6 +300,7 @@ button,.sw,.hit{touch-action:manipulation;-webkit-user-select:none;user-select:n
 .dclose:active,#reset:active,.mfilter:active,.primary:active,.hit:active{transform:scale(.97)}
 html{scrollbar-gutter:stable}
 html.locked{overflow:hidden}
+dialog[data-state="closing"]{pointer-events:none}
 .maplink{display:inline-flex;align-items:flex-start;gap:6px;color:var(--fg2);text-decoration:none;width:fit-content}
 .maplink svg{flex:none;margin-top:3px;color:var(--fg3)}
 .maplink span{text-decoration:underline;text-decoration-color:var(--line2);text-underline-offset:3px}
@@ -1193,7 +1194,7 @@ $('g').addEventListener('keydown',e=>{const t=e.target.closest('.sw');if(!t||!['
 
 /* drawers */
 let LASTCLOSE=-1e9;
-function lockScroll(){document.documentElement.classList.toggle('locked',!!document.querySelector('dialog[open],#navmenu:popover-open'))}
+function lockScroll(){document.documentElement.classList.toggle('locked',!!document.querySelector('dialog[open]:not([data-state="closing"]),#navmenu:popover-open'))}
 /* Windows open with show(), not showModal(): showModal makes the browser mark all ~11,000 elements behind it as blocked,
    which took 60-90ms on a mid-range phone. The dim layer, Escape, outside taps and keeping Tab inside the window are handled here instead. */
 /* keyboard users get focus handed back to what opened a window; touch and mouse users get no leftover outline */
@@ -1211,7 +1212,7 @@ const NCLOSE=HTMLDialogElement.prototype.close;
 function animClose(){const d=this;if(!d.open||d.dataset.state==='closing')return;
  const rest=DSTACK.filter(x=>x!==d);SCRIM.classList.toggle('on',rest.length>0);setDim(rest.length>0);
  if(d.classList.contains('instant')){NCLOSE.call(d);d.dataset.state='';return}
- d.dataset.state='closing';let t;const done=()=>{clearTimeout(t);d.removeEventListener('transitionend',te);if(d.open)NCLOSE.call(d);d.dataset.state='';d.style.transition='';d.style.transform=''};
+ d.dataset.state='closing';lockScroll();if(d.contains(document.activeElement)&&!KBD)document.activeElement.blur();let t;const done=()=>{clearTimeout(t);d.removeEventListener('transitionend',te);if(d.open)NCLOSE.call(d);d.dataset.state='';d.style.transition='';d.style.transform=''};
  const te=e=>{if(e.target===d&&(e.propertyName==='transform'||e.propertyName==='opacity'))done()};d.addEventListener('transitionend',te);t=setTimeout(done,300)}
 document.querySelectorAll('dialog').forEach(d=>{d.close=animClose});
 const DIMR=['.hero','#bar','#status','#g','#dir'].map(q=>document.querySelector(q)).filter(Boolean);
