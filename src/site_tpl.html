@@ -136,9 +136,10 @@ main.grid{padding-block:14px 56px;display:grid;grid-template-columns:repeat(auto
 #dir h2{text-wrap:balance;font-size:var(--t-h2);letter-spacing:-.025em;font-weight:700;margin:0 0 4px}
 #dir>p{margin:0 0 20px;color:var(--fg2)}
 #dir{padding-bottom:40px}
-.sfoot{padding-block:8px 96px}
+.sfoot{padding-block:8px 96px;display:grid;gap:16px}
 .sfoot p{margin:0;font-size:13px;color:var(--fg2)}
-.sfoot p+p{margin-top:4px}
+.sfoot p+p{margin-top:2px}
+.sfoot .fc{color:var(--fg3)}
 .sfoot a{color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-color:color-mix(in oklab,currentColor 45%,transparent)}
 @media (min-width:720px){.sfoot p{text-align:center}}
 .dirgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
@@ -856,7 +857,6 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
 :root[data-theme="light"] .hero .hbar input[type=search]{border-color:rgba(255,255,255,.9);box-shadow:0 0 0 1px rgba(0,0,0,.06),0 1px 3px rgba(0,0,0,.2),0 10px 28px -6px rgba(0,0,0,.4)}
 .hero .hbar input[type=search]:focus-visible{box-shadow:0 0 0 3px var(--accent-soft),0 1px 3px rgba(0,0,0,.2),0 10px 28px -6px rgba(0,0,0,.4)}
 /* hero: the list date sits as a small, quiet line under the search (the column already has a 12px gap; 2px more makes 14px) */
-.hero .hupd{margin-top:2px;font-size:var(--t-meta);color:rgba(var(--hink),.7);letter-spacing:.01em}
 /* hero search: a very light frost. The field stays mostly solid (its normal colours and text), with just enough
    see-through and blur that the video softly shows behind it. Blur covers only this small field, so it stays cheap */
 .hero .hbar input[type=search]{background-color:rgba(23,27,25,.74);-webkit-backdrop-filter:blur(14px) saturate(1.3);backdrop-filter:blur(14px) saturate(1.3)}
@@ -908,7 +908,6 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
  <button type="button" class="mfilter" id="mfilter" aria-haspopup="dialog" aria-controls="cmd"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg>Filters<span class="mcount" id="mfilter-n" hidden></span></button>
  <div class="search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" id="q" placeholder="Search bikes or shops" aria-label="Search bikes or shops"><span class="sbeam" aria-hidden="true"><span class="bdot"></span></span></div>
  </div>
- <p class="hupd">List updated October&nbsp;8, 2026</p>
 </div></header>
 
 
@@ -1029,7 +1028,7 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
 </dialog>
 <div class="fab" id="fab" inert><span class="bdot" aria-hidden="true"></span><button type="button" class="ffil" id="fab-f" aria-haspopup="dialog" aria-controls="filters" aria-label="Filters"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg><span class="fnum" id="fab-n" hidden></span></button><span class="fsep" aria-hidden="true"></span><button type="button" class="fmain" id="fab-s" aria-label="Search bikes"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span id="fab-q">Search bikes</span><span class="fcount" id="fab-count"></span></button></div>
 <section class="wrap" id="dir"><h2>Where to buy</h2><p>Every participating shop. Call ahead to check stock; the rebate only works in person.</p><div class="dirgrid" id="dirgrid"></div></section>
-<footer class="wrap sfoot" id="copyright"><p>Made by Chris Beltran in Oakland. Not affiliated with Ava Community Energy.</p><p>Bikes from <a href="https://avaenergy.org/bike-electric/" target="_blank" rel="noopener">Ava's eligible list</a>. Specs and prices from each maker's website.</p><p>© 2026 Chris Beltran. All rights reserved.</p></footer>
+<footer class="wrap sfoot" id="copyright"><div><p>Bike list from <a href="https://avaenergy.org/bike-electric/" target="_blank" rel="noopener">Ava's eligible list</a>, updated October&nbsp;8,&nbsp;2026.</p><p>Specs and prices from each maker's website.</p></div><div><p>Made by Chris Beltran in Oakland.</p><p>Not affiliated with Ava Community Energy.</p></div><p class="fc">© 2026 Chris Beltran. All rights reserved.</p></footer>
 
 <script>
 const B=__BIKES__;
