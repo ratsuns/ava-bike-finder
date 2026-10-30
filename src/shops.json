@@ -15,7 +15,7 @@
   "phone": "(510) 522-0070",
   "url": "https://www.alamedabicycle.com/",
   "email": "info@alamedabicycle.com",
-  "hours": "Mon 2:30\u20136p \u00b7 Tue\u2013Sun 11a\u20136p"
+  "hours": "Mon 2:30–6p · Tue–Sun 11a–6p"
  },
  "Bicycle Garage (Fremont)": {
   "name": "The Bicycle Garage",
@@ -24,7 +24,7 @@
   "phone": "(510) 795-9622",
   "url": "https://www.bicyclegaragefremont.com/",
   "email": "velocipedesf@gmail.com",
-  "hours": "Mon 10a\u20137p \u00b7 Wed\u2013Fri 10a\u20137p \u00b7 Sat 10a\u20136p \u00b7 Sun 11a\u20135p \u00b7 Closed Tue"
+  "hours": "Mon 10a–7p · Closed Tue · Wed–Fri 10a–7p · Sat 10a–6p · Sun 11a–5p"
  },
  "Blue Heron Bicycles (Berkeley)": {
   "name": "Blue Heron Bikes",
@@ -33,7 +33,7 @@
   "phone": "(510) 524-1937",
   "url": "https://blueheronbikesberkeley.com",
   "email": "service@blueheronbikesberkeley.com",
-  "hours": "Mon\u2013Sat 9a\u20136p \u00b7 Closed Sun"
+  "hours": "Mon–Sat 9a–6p · Closed Sun"
  },
  "Castro Valley Cyclery": {
   "name": "Castro Valley Cyclery",
@@ -41,7 +41,7 @@
   "city": "Castro Valley",
   "phone": "(510) 538-1878",
   "url": null,
-  "hours": "Tue\u2013Fri 12:30\u20135p \u00b7 Sat 10a\u20134p \u00b7 Closed Sun, Mon"
+  "hours": "Tue–Fri 12:30–5p · Sat 10a–4p · Closed Sun, Mon"
  },
  "Castro Valley Cyclery (Castro Valley)": {
   "name": "Castro Valley Cyclery",
@@ -49,7 +49,7 @@
   "city": "Castro Valley",
   "phone": "(510) 538-1878",
   "url": null,
-  "hours": "Tue\u2013Fri 12:30\u20135p \u00b7 Sat 10a\u20134p \u00b7 Closed Sun, Mon"
+  "hours": "Tue–Fri 12:30–5p · Sat 10a–4p · Closed Sun, Mon"
  },
  "Cycle City (Alameda)": {
   "name": "Cycle City",
@@ -58,7 +58,7 @@
   "phone": "(510) 521-2872",
   "url": "https://www.cyclecityusa.com/",
   "email": "info@cyclecityusa.com",
-  "hours": "Tue\u2013Sat 10:30a\u20136p \u00b7 Closed Sun, Mon"
+  "hours": "Tue–Sat 10:30a–6p · Closed Sun, Mon"
  },
  "Dublin Cyclery (Dublin)": {
   "name": "Dublin Cyclery",
@@ -67,7 +67,7 @@
   "phone": "(925) 828-8676",
   "url": "https://www.dublincyclery.com/",
   "email": "info@dublincyclery.com",
-  "hours": "Tue 10a\u20134p \u00b7 Wed\u2013Fri 9:30a\u20135:30p \u00b7 Sat 10a\u20134p \u00b7 Sun 11a\u20133p \u00b7 Closed Mon"
+  "hours": "Closed Mon · Tue 10a–4p · Wed–Fri 9:30a–5:30p · Sat 10a–4p · Sun 11a–3p"
  },
  "Ebikes2U": {
   "name": "Ebikes2U",
@@ -76,7 +76,7 @@
   "phone": "(510) 883-3909",
   "url": "https://ebikes2u.com/",
   "email": "info@ebikes2u.com",
-  "hours": "Mon\u2013Fri 9a\u20135p \u00b7 Closed Sat, Sun"
+  "hours": "Mon–Fri 9a–5p · Closed Sat, Sun"
  },
  "Electric Bike Center (Dublin)": {
   "name": "Electric Bike Center",
@@ -85,7 +85,7 @@
   "phone": "(925) 230-8178",
   "url": "https://electricbikeca.com/",
   "email": "sales@electricbikeca.com",
-  "hours": "Daily 10:30a\u20136p"
+  "hours": "Daily 10:30a–6p"
  },
  "Laurel Cyclery (Oakland)": {
   "name": "Laurel Cyclery",
@@ -94,7 +94,7 @@
   "phone": "(510) 328-1158",
   "url": "https://www.laurelcyclery.com",
   "email": "laurelcyclery@gmail.com",
-  "hours": "Mon\u2013Fri 11a\u20136p \u00b7 Sat 10a\u20134p \u00b7 Closed Sun"
+  "hours": "Mon–Fri 11a–6p · Sat 10a–4p · Closed Sun"
  },
  "Mike's Bikes (Berkeley)": {
   "name": "Mike's Bikes of Berkeley",
@@ -103,7 +103,7 @@
   "phone": "(510) 845-2453",
   "url": "https://mikesbikes.com/pages/berkeley",
   "email": "info@mikesbikes.com",
-  "hours": "Mon\u2013Sat 10a\u20136p \u00b7 Sun 10a\u20135p"
+  "hours": "Mon–Sat 10a–6p · Sun 10a–5p"
  },
  "Mike's Bikes (Pleasanton)": {
   "name": "Mike's Bikes of Pleasanton",
@@ -112,7 +112,7 @@
   "phone": "(925) 223-8267",
   "url": "https://mikesbikes.com/pages/pleasanton",
   "email": "info@mikesbikes.com",
-  "hours": "Mon\u2013Sat 10a\u20136p \u00b7 Sun 10a\u20135p"
+  "hours": "Mon–Sat 10a–6p · Sun 10a–5p"
  },
  "NILES BICYCLES (Fremont)": {
   "name": "Niles Bicycles",
@@ -121,7 +121,7 @@
   "phone": "(510) 565-1111",
   "url": "https://nilesbicycles.com/",
   "email": "nilesbicycles@gmail.com",
-  "hours": "Wed\u2013Sat 12\u20136p \u00b7 Sun 11a\u20133p \u00b7 Closed Mon, Tue"
+  "hours": "Closed Mon, Tue · Wed–Sat 12–6p · Sun 11a–3p"
  },
  "Pedego Electric Bikes (Livermore)": {
   "name": "Pedego Electric Bikes Livermore",
@@ -130,7 +130,7 @@
   "phone": "(925) 800-5330",
   "url": "https://dealers.pedegoelectricbikes.com/pages/dealers/livermore",
   "email": "contact@pedegolivermore.com",
-  "hours": "Thu\u2013Mon 11a\u20135p \u00b7 Closed Tue, Wed"
+  "hours": "Closed Tue, Wed · Thu–Mon 11a–5p"
  },
  "Rhythm Bikes (Oakland)": {
   "name": "Rhythm Bikes",
@@ -139,7 +139,7 @@
   "phone": "(510) 339-2953",
   "url": "https://www.rhythmbikes.com",
   "email": "rhythm@rhythmbikes.com",
-  "hours": "Tue\u2013Fri 11a\u20136p \u00b7 Sat 10a\u20135p \u00b7 Closed Sun, Mon"
+  "hours": "Tue–Fri 11a–6p · Sat 10a–5p · Closed Sun, Mon"
  },
  "Robby's Bicycles (Stockton)": {
   "name": "Robby's Bicycles",
@@ -148,7 +148,7 @@
   "phone": "(209) 951-4371",
   "url": "https://www.robbysbicycles.com/",
   "contact": "https://www.robbysbicycles.com/about/contact-us-pg126.htm",
-  "hours": "Mon\u2013Fri 11a\u20135p \u00b7 Sat 12\u20135p \u00b7 Sun 12\u20134p"
+  "hours": "Mon–Fri 11a–5p · Sat 12–5p · Sun 12–4p"
  },
  "Sports Basement (Berkeley)": {
   "name": "Sports Basement Berkeley",
@@ -157,7 +157,7 @@
   "phone": "(510) 984-3907",
   "url": "https://www.sportsbasement.com/stores/berkeley",
   "email": "friends@sportsbasement.com",
-  "hours": "Mon\u2013Fri 11a\u20138p \u00b7 Sat\u2013Sun 10a\u20137p"
+  "hours": "Mon–Fri 11a–8p · Sat–Sun 10a–7p"
  },
  "Stay True Cycles (Berkeley)": {
   "name": "Stay True Cycles",
@@ -166,7 +166,7 @@
   "phone": "(510) 725-6281",
   "url": "https://www.staytrue.bike/",
   "contact": "https://www.staytrue.bike/articles/email-us-pg199.htm",
-  "hours": "Tue\u2013Sat 12\u20137p \u00b7 Closed Sun, Mon"
+  "hours": "Tue–Sat 12–7p · Closed Sun, Mon"
  },
  "The Bicycle Garage": {
   "name": "The Bicycle Garage",
@@ -175,7 +175,7 @@
   "phone": "(510) 795-9622",
   "url": "https://www.bicyclegaragefremont.com/",
   "email": "velocipedesf@gmail.com",
-  "hours": "Mon 10a\u20137p \u00b7 Wed\u2013Fri 10a\u20137p \u00b7 Sat 10a\u20136p \u00b7 Sun 11a\u20135p \u00b7 Closed Tue"
+  "hours": "Mon 10a–7p · Closed Tue · Wed–Fri 10a–7p · Sat 10a–6p · Sun 11a–5p"
  },
  "The Bicycle Garage (Fremont)": {
   "name": "The Bicycle Garage",
@@ -184,7 +184,7 @@
   "phone": "(510) 795-9622",
   "url": "https://www.bicyclegaragefremont.com/",
   "email": "velocipedesf@gmail.com",
-  "hours": "Mon 10a\u20137p \u00b7 Wed\u2013Fri 10a\u20137p \u00b7 Sat 10a\u20136p \u00b7 Sun 11a\u20135p \u00b7 Closed Tue"
+  "hours": "Mon 10a–7p · Closed Tue · Wed–Fri 10a–7p · Sat 10a–6p · Sun 11a–5p"
  },
  "The New Wheel (Oakland)": {
   "name": "The New Wheel",
@@ -193,7 +193,7 @@
   "phone": "(415) 524-7362",
   "url": "https://newwheel.net/pages/oakland-east-bay-electric-bike-shop",
   "email": "info@newwheel.net",
-  "hours": "Wed\u2013Sat 11a\u20136p \u00b7 Sun 11a\u20135p \u00b7 Closed Mon, Tue"
+  "hours": "Closed Mon, Tue · Wed–Sat 11a–6p · Sun 11a–5p"
  },
  "Tip Top Bike Shop (Oakland)": {
   "name": "Tip Top Bike Shop",
@@ -202,7 +202,7 @@
   "phone": "(510) 444-4148",
   "url": "https://tiptopbikeshop.com",
   "email": "top@tiptopbikeshop.com",
-  "hours": "Tue\u2013Fri 11a\u20136p \u00b7 Sat\u2013Sun 12\u20135p \u00b7 Closed Mon"
+  "hours": "Closed Mon · Tue–Fri 11a–6p · Sat–Sun 12–5p"
  },
  "Tracy Cyclery (Tracy)": {
   "name": "Tracy Cyclery",
@@ -210,7 +210,7 @@
   "city": "Tracy",
   "phone": "(209) 640-9380",
   "url": null,
-  "hours": "Tue\u2013Fri 10a\u20136p \u00b7 Sat 10a\u20135p \u00b7 Closed Sun, Mon"
+  "hours": "Tue–Fri 10a–6p · Sat 10a–5p · Closed Sun, Mon"
  },
  "Trek Bicycle (Berkeley)": {
   "name": "Trek Bicycle Berkeley",
@@ -218,7 +218,7 @@
   "city": "Berkeley",
   "phone": "(510) 370-2890",
   "url": "https://www.trekbikes.com/us/en_US/retail/berkeley/",
-  "hours": "Tue\u2013Fri 11a\u20136p \u00b7 Sat 10a\u20136p \u00b7 Sun 12\u20135p \u00b7 Closed Mon"
+  "hours": "Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p · Sun 12–5p"
  },
  "Trek Bicycle (Dublin)": {
   "name": "Trek Bicycle Dublin",
@@ -226,7 +226,7 @@
   "city": "Dublin",
   "phone": "(925) 829-4310",
   "url": "https://www.trekbikes.com/us/en_US/retail/dublin/",
-  "hours": "Tue\u2013Fri 11a\u20136p \u00b7 Sat 10a\u20136p \u00b7 Sun 12\u20135p \u00b7 Closed Mon"
+  "hours": "Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p · Sun 12–5p"
  },
  "Trek Bicycle (Livermore)": {
   "name": "Trek Bicycle Livermore",
@@ -234,7 +234,7 @@
   "city": "Livermore",
   "phone": "(925) 455-8090",
   "url": "https://www.trekbikes.com/us/en_US/retail/livermore/",
-  "hours": "Tue\u2013Fri 11a\u20136p \u00b7 Sat 10a\u20136p \u00b7 Sun 12\u20135p \u00b7 Closed Mon"
+  "hours": "Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p · Sun 12–5p"
  },
  "Trek Bicycle (Oakland)": {
   "name": "Trek Bicycle Oakland",
@@ -242,7 +242,7 @@
   "city": "Oakland",
   "phone": "(510) 570-3885",
   "url": "https://www.trekbikes.com/us/en_US/retail/oakland/",
-  "hours": "Tue\u2013Fri 11a\u20136p \u00b7 Sat 10a\u20136p \u00b7 Closed Sun, Mon"
+  "hours": "Tue–Fri 11a–6p · Sat 10a–6p · Closed Sun, Mon"
  },
  "Trek Bicycles (Castro Valley)": {
   "name": "Trek Bicycle Castro Valley",
@@ -250,7 +250,7 @@
   "city": "Castro Valley",
   "phone": "(510) 881-5000",
   "url": "https://www.trekbikes.com/us/en_US/retail/castro_valley/",
-  "hours": "Tue\u2013Fri 11a\u20136p \u00b7 Sat 10a\u20136p \u00b7 Sun 12\u20135p \u00b7 Closed Mon"
+  "hours": "Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p · Sun 12–5p"
  },
  "Uptown BART Bike Station (Oakland)": {
   "name": "Uptown BART Bike Station",
@@ -259,7 +259,7 @@
   "phone": "(510) 858-7555",
   "url": "https://www.bikehub.com/articles/bart-bike-stations-pg1208.htm",
   "email": "uptown@bikehub.com",
-  "hours": "Mon\u2013Fri 7a\u20137p \u00b7 Closed Sat, Sun"
+  "hours": "Mon–Fri 7a–7p · Closed Sat, Sun"
  },
  "eCyclepath (Hayward)": {
   "name": "Cyclepath",
@@ -268,6 +268,6 @@
   "phone": "(510) 881-5177",
   "url": "https://www.ecyclepath.com/",
   "email": "info@cyclepathhayward.com",
-  "hours": "Mon\u2013Fri 10a\u20135p \u00b7 Sat 10a\u20134p \u00b7 Closed Sun"
+  "hours": "Mon–Fri 10a–5p · Sat 10a–4p · Closed Sun"
  }
 }
