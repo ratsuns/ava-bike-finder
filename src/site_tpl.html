@@ -353,7 +353,7 @@ input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;width:1
 .bmlinks{display:flex;flex-wrap:wrap;gap:6px 20px;font-size:var(--t-ui);font-weight:500;padding-top:16px;border-top:1px solid var(--line)}
 .bmlinks a{display:inline-flex;align-items:center;gap:6px;text-decoration:none}
 @media (hover:hover) and (pointer:fine){.bmlinks a:hover{text-decoration:underline}}
-@media (pointer:coarse){.bmshop{gap:0;padding-block:6px}.bmshop b{padding-block:6px 2px}.bmshop a{padding-block:8px}.bmlinks a{min-height:44px}.bmlinks{padding-top:4px}}
+@media (pointer:coarse){.bmshop{gap:0;padding-block:6px}.bmshop b{padding-block:6px 2px}.bmshop a:not(.slogo){padding-block:8px}.bmlinks a{min-height:44px}.bmlinks{padding-top:4px}}
 @media (max-width:760px){
  .bm{inset:auto 0 0;margin:0;width:100%;max-height:calc(100dvh - max(16px,env(safe-area-inset-top,0px)));border-radius:14px 14px 0 0;border-width:1px 0 0;opacity:1;transform:translateY(100%);transition:transform .28s cubic-bezier(.32,.72,0,1),overlay .28s allow-discrete,display .28s allow-discrete}
  .bm[open]{transform:none}
