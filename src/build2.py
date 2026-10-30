@@ -149,6 +149,20 @@ if CARDS:
             elif n['cv'] is not o['cv'] and any(x['img'] for x in n['cv']): n['img']=next(x['img'] for x in n['cv'] if x['img'])
             new.append(n)
     out=new
+import shutil
+# shop logos (verify/shoplogos/<slug>.webp), matched by the shop's name
+LOGO={'Alameda Bicycle':'alameda-bicycle','Blue Heron Bikes':'blue-heron-bikes','Cycle City':'cycle-city','Dublin Cyclery':'dublin-cyclery','Ebikes2U':'ebikes2u','Electric Bike Center':'electric-bike-center','Laurel Cyclery':'laurel-cyclery','Stay True Cycles':'stay-true-cycles','The Bicycle Garage':'the-bicycle-garage','The New Wheel':'the-new-wheel','Tip Top Bike Shop':'tip-top-bike-shop',"Robby's Bicycles":'robby-s-bicycles','Uptown BART Bike Station':'bikehub'}
+def logo_for(n):
+    if n in LOGO: return LOGO[n]
+    if n.startswith("Mike's Bikes"): return 'mike-s-bikes'
+    if n.startswith('Trek Bicycle'): return 'trek'
+    if n.startswith('Pedego'): return 'pedego'
+    if n.startswith('Sports Basement'): return 'sports-basement'
+for v in S.values():
+    g=logo_for(v['name'])
+    if g:
+        if SITE: shutil.copy(f'verify/shoplogos/{g}.webp',f'{SITE}/img/logo-{g}.webp'); v['logo']=f'img/logo-{g}.webp'
+        else: v['logo']='data:image/webp;base64,'+base64.b64encode(open(f'verify/shoplogos/{g}.webp','rb').read()).decode()
 missing=sorted({s for o in out for s in o['shops'] if s not in S})
 print('unmapped shops',missing,'priced',sum(1 for o in out if o['price']))
 json.dump([{**{k:v for k,v in o.items() if k not in ('img','cv')},'colors':[c['n'] for c in o['cv']]} for o in out],open('merged.json','w'),indent=0)
