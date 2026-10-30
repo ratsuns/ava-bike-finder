@@ -1603,10 +1603,12 @@ if(/[?&]debug\b/.test(location.search))(()=>{const box=document.createElement('p
  let tm=0,tmp=0,sc=0;addEventListener('touchstart',e=>{tm=0;tmp=0;sc=0;const t=e.target;L('touch on '+(t.id?'#'+t.id:(t.className&&typeof t.className=='string'?'.'+t.className.split(' ')[0]:t.tagName)))},{capture:true,passive:true});
  addEventListener('touchmove',e=>{tm++;setTimeout(()=>{if(e.defaultPrevented)tmp++},0)},{capture:true,passive:true});
  addEventListener('touchend',()=>setTimeout(()=>L(`swipe: ${tm} moves, ${tmp} blocked, page scrolled ${sc}x`),60),{capture:true,passive:true});
- addEventListener('scroll',()=>sc++,{passive:true});
+ addEventListener('scroll',e=>{if(e.target===document||e.target===document.documentElement)sc++;else{const n=e.target;L('OTHER scroll: '+(n.id?'#'+n.id:(n.className&&typeof n.className=='string'?'.'+n.className.split(' ')[0]:n.tagName))+' top='+Math.round(n.scrollTop))}},{passive:true,capture:true});
+ if(vv){let vs=0;vv.addEventListener('scroll',()=>{if(!vs++)setTimeout(()=>{L('visible area moved '+vs+'x top='+Math.round(vv.offsetTop)+' left='+Math.round(vv.offsetLeft)+' zoom='+vv.scale.toFixed(2));vs=0},150)});vv.addEventListener('resize',()=>L('visible area resized h='+Math.round(vv.height)+' zoom='+vv.scale.toFixed(2)))}
+ addEventListener('touchcancel',()=>L('touch CANCELLED by browser'),{capture:true,passive:true});addEventListener('pointercancel',e=>{if(e.pointerType==='touch')L('pointer cancelled')},{capture:true,passive:true});
  for(const d of document.querySelectorAll('dialog'))d.addEventListener('close',()=>L('closed '+d.id));
  const tick=()=>{const de=document.documentElement,ae=document.activeElement;box.textContent=`version ${document.lastModified}
-scrollY ${Math.round(scrollY)}  vv.top ${vv?Math.round(vv.offsetTop):'-'}  vv.h ${vv?Math.round(vv.height):'-'}  innerH ${innerHeight}
+scrollY ${Math.round(scrollY)}  zoom ${vv?vv.scale.toFixed(2):'-'}  vv.top ${vv?Math.round(vv.offsetTop):'-'}  vv.h ${vv?Math.round(vv.height):'-'}  innerH ${innerHeight}
 locked ${de.classList.contains('locked')}  dim ${de.classList.contains('dim')}  open ${[...document.querySelectorAll('dialog[open]')].map(d=>d.id+':'+(d.dataset.state||'')).join(',')||'none'}
 focus ${ae?(ae.id||ae.tagName):'-'}  overflow ${getComputedStyle(de).overflowY}/${getComputedStyle(document.body).overflowY}
 `+log.join('\n');requestAnimationFrame(tick)};tick()})();
