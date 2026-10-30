@@ -151,7 +151,7 @@ if CARDS:
     out=new
 import shutil
 # shop logos (verify/shoplogos/<slug>.webp), matched by the shop's name
-LOGO={'Alameda Bicycle':'alameda-bicycle','Blue Heron Bikes':'blue-heron-bikes','Cycle City':'cycle-city','Dublin Cyclery':'dublin-cyclery','Ebikes2U':'ebikes2u','Electric Bike Center':'electric-bike-center','Laurel Cyclery':'laurel-cyclery','Stay True Cycles':'stay-true-cycles','The Bicycle Garage':'the-bicycle-garage','The New Wheel':'the-new-wheel','Tip Top Bike Shop':'tip-top-bike-shop',"Robby's Bicycles":'robby-s-bicycles','Uptown BART Bike Station':'bikehub','Cyclepath':'cyclepath','Rhythm Bikes':'rhythm-bikes'}
+LOGO={'Alameda Bicycle':'alameda-bicycle','Blue Heron Bikes':'blue-heron-bikes','Cycle City':'cycle-city','Dublin Cyclery':'dublin-cyclery','Ebikes2U':'ebikes2u','Electric Bike Center':'electric-bike-center','Laurel Cyclery':'laurel-cyclery','Stay True Cycles':'stay-true-cycles','The Bicycle Garage':'the-bicycle-garage','The New Wheel':'the-new-wheel','Tip Top Bike Shop':'tip-top-bike-shop',"Robby's Bicycles":'robby-s-bicycles','Uptown BART Bike Station':'bikehub','Cyclepath':'cyclepath','Rhythm Bikes':'rhythm-bikes','Niles Bicycles':'niles-bicycles'}
 def logo_for(n):
     if n in LOGO: return LOGO[n]
     if n.startswith("Mike's Bikes"): return 'mike-s-bikes'
