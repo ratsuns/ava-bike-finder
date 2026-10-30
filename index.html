@@ -696,6 +696,8 @@ dialog{z-index:50}
 html.locked .fab.on{transform:translate(-50%,calc(100% + 28px + env(safe-area-inset-bottom,0px)));opacity:0;transition:opacity .2s ease,transform .26s var(--ease-out)}
 @media (prefers-reduced-motion:reduce){.fab,.fab.on,html.locked .fab.on{transform:translate(-50%,0);transition:opacity .2s ease}}
 .rb.lg svg{flex:none}
+.gc .rb.s400{background:var(--bg);color:var(--fg);border-color:color-mix(in oklab,var(--fg) 26%,transparent)}
+.gc p b{color:var(--fg);font-weight:600}
 /* ---- motion system (Emil's standards): enter and exit with strong ease-out, panels with the iOS drawer curve, transform + opacity only ----
    side panels: slide from the right, 300ms in / 200ms out
    bottom sheets (phones): slide up, 320ms in / 220ms out
@@ -924,8 +926,8 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
  <div class="dbody">
   <h3>How much you get</h3>
   <div class="g3">
-   <div class="gc"><span class="rb lg"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.6 2.6A2 2 0 0 0 11.2 2H4a2 2 0 0 0-2 2v7.2a2 2 0 0 0 .6 1.4l8.7 8.7a2.4 2.4 0 0 0 3.4 0l6.6-6.6a2.4 2.4 0 0 0 0-3.4z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg>$900 off</span><b>Cargo and adaptive e-bikes</b><p>$1,500 off if you qualify by income.</p></div>
-   <div class="gc"><span class="rb lg s400"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.6 2.6A2 2 0 0 0 11.2 2H4a2 2 0 0 0-2 2v7.2a2 2 0 0 0 .6 1.4l8.7 8.7a2.4 2.4 0 0 0 3.4 0l6.6-6.6a2.4 2.4 0 0 0 0-3.4z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg>$400 off</span><b>Standard e-bikes</b><p>$1,000 off if you qualify by income.</p></div>
+   <div class="gc"><span class="rb lg"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.6 2.6A2 2 0 0 0 11.2 2H4a2 2 0 0 0-2 2v7.2a2 2 0 0 0 .6 1.4l8.7 8.7a2.4 2.4 0 0 0 3.4 0l6.6-6.6a2.4 2.4 0 0 0 0-3.4z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg>$900 off</span><b>Cargo and adaptive e-bikes</b><p>That's the regular rebate. If you qualify by income, it's <b>$1,500 off</b>.</p></div>
+   <div class="gc"><span class="rb lg s400"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.6 2.6A2 2 0 0 0 11.2 2H4a2 2 0 0 0-2 2v7.2a2 2 0 0 0 .6 1.4l8.7 8.7a2.4 2.4 0 0 0 3.4 0l6.6-6.6a2.4 2.4 0 0 0 0-3.4z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg>$400 off</span><b>Standard e-bikes</b><p>That's the regular rebate. If you qualify by income, it's <b>$1,000 off</b>.</p></div>
   </div>
   <p class="gnote">You qualify by income if you're enrolled in CARE or FERA (PG&amp;E) or EAP (Alameda Municipal Power). It also adds up to $250 for a helmet, lock and lights.</p>
   <h3>Who can apply</h3>
