@@ -143,9 +143,10 @@ main.grid{padding-block:14px 56px;display:grid;grid-template-columns:repeat(auto
 .slogo img{width:100%;height:100%;object-fit:cover;display:block}
 .slogo.ini{background:var(--well);color:var(--fg2);font-size:12px;font-weight:700;letter-spacing:.02em}
 .bmshop .shead{margin-bottom:2px}
-.maplink.hrs span{text-decoration:none}
-.hrs .nw{font-style:normal;white-space:nowrap}
+.maplink.hrs span{text-decoration:none;color:var(--fg2)}
 .maplink.hrs,.maplink.hrs:hover{color:var(--fg2);cursor:default}
+.hrs ul{list-style:none;margin:2px 0 0;padding:0;display:grid;gap:1px}
+.hrs li{white-space:nowrap;color:var(--fg)}
 .shop .city{color:var(--accent-ink);font-weight:600;font-size:var(--t-micro)}
 .shop b{font-size:var(--t-body);font-weight:600}
 .shop .m{color:var(--fg2)}
@@ -1006,7 +1007,7 @@ const mailUrl=(s,b)=>{const subj=b?`Question about the ${b.name} (Ava e-bike reb
  return `mailto:${s.email}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(body.replace(/\n/g,'\r\n'))}`};
 /* shop logo in a round badge; shops without a published logo get their initials */
 const slogo=s=>s.logo?`<span class="slogo"><img src="${esc(s.logo)}" alt="" width="36" height="36" loading="lazy" decoding="async"></span>`:`<span class="slogo ini" aria-hidden="true">${esc(s.name.replace(/^the\s+/i,'').split(/\s+/).filter(w=>/^[A-Za-z]/.test(w)).slice(0,2).map(w=>w[0].toUpperCase()).join(''))}</span>`;
-const shopLines=(s,b)=>`${s.address||s.city?`<a class="maplink" href="${mapUrl(s)}" target="_blank" rel="noopener">${PIN}<span>${esc([s.address,s.city].filter(Boolean).join(', '))}</span></a>`:''}${s.phone?`<a class="maplink tel" href="${telUrl(s.phone)}">${PHONE}<span>${esc(s.phone)}</span></a>`:''}${s.hours?`<span class="maplink hrs">${CLOCK}<span>Hours: ${s.hours.split(' · ').map(x=>`<i class="nw">${esc(x)}</i>`).join(' · ')}</span></span>`:''}${s.email?`<a class="maplink mail" href="${mailUrl(s,b)}">${MAIL}<span>${esc(s.email)}</span></a>`:s.contact?`<a class="maplink mail" href="${esc(s.contact)}" target="_blank" rel="noopener">${MAIL}<span>Email via contact form</span></a>`:''}`;
+const shopLines=(s,b)=>`${s.address||s.city?`<a class="maplink" href="${mapUrl(s)}" target="_blank" rel="noopener">${PIN}<span>${esc([s.address,s.city].filter(Boolean).join(', '))}</span></a>`:''}${s.phone?`<a class="maplink tel" href="${telUrl(s.phone)}">${PHONE}<span>${esc(s.phone)}</span></a>`:''}${s.hours?`<div class="maplink hrs">${CLOCK}<div><span>Hours</span><ul>${s.hours.split(' · ').map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div></div>`:''}${s.email?`<a class="maplink mail" href="${mailUrl(s,b)}">${MAIL}<span>${esc(s.email)}</span></a>`:s.contact?`<a class="maplink mail" href="${esc(s.contact)}" target="_blank" rel="noopener">${MAIL}<span>Email via contact form</span></a>`:''}`;
 const ARROW='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>';
 const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
 const MOBILE=matchMedia('(max-width: 760px)');
