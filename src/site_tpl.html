@@ -141,6 +141,8 @@ main.grid{padding-block:14px 56px;display:grid;grid-template-columns:repeat(auto
 .shead b{min-width:0}
 .slogo{flex:none;width:36px;height:36px;margin-bottom:8px;border-radius:50%;overflow:hidden;background:#fff;box-shadow:0 0 0 1px var(--line);display:grid;place-items:center}
 .slogo img{width:100%;height:100%;object-fit:cover;display:block}
+a.slogo{text-decoration:none;transition:box-shadow .15s ease}
+@media (hover:hover) and (pointer:fine){a.slogo:hover{box-shadow:0 0 0 2px var(--fg2)}}
 .slogo.ini{background:var(--well);color:var(--fg2);font-size:12px;font-weight:700;letter-spacing:.02em}
 .bmshop .shead{margin-bottom:2px}
 .maplink.hrs span{text-decoration:none;color:var(--fg2)}
@@ -1006,7 +1008,7 @@ const mailUrl=(s,b)=>{const subj=b?`Question about the ${b.name} (Ava e-bike reb
   :`Hi ${s.name},\n\nI'm shopping for an e-bike and plan to use my Ava Community Energy e-bike rebate. Which rebate-eligible bikes do you have in stock right now?\n\nThank you!\n`;
  return `mailto:${s.email}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(body.replace(/\n/g,'\r\n'))}`};
 /* shop logo in a round badge; shops without a published logo get their initials */
-const slogo=s=>s.logo?`<span class="slogo"><img src="${esc(s.logo)}" alt="" width="36" height="36" loading="lazy" decoding="async"></span>`:`<span class="slogo ini" aria-hidden="true">${esc(s.name.replace(/^the\s+/i,'').split(/\s+/).filter(w=>/^[A-Za-z]/.test(w)).slice(0,2).map(w=>w[0].toUpperCase()).join(''))}</span>`;
+const slogo=s=>{const tag=s.url?`a href="${esc(s.url)}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" title="${esc(s.name)} website"`:'span aria-hidden="true"',end=s.url?'a':'span';return s.logo?`<${tag} class="slogo"><img src="${esc(s.logo)}" alt="" width="36" height="36" loading="lazy" decoding="async"></${end}>`:`<${tag} class="slogo ini">${esc(s.name.replace(/^the\s+/i,'').split(/\s+/).filter(w=>/^[A-Za-z]/.test(w)).slice(0,2).map(w=>w[0].toUpperCase()).join(''))}</${end}>`};
 const shopLines=(s,b)=>`${s.address||s.city?`<a class="maplink" href="${mapUrl(s)}" target="_blank" rel="noopener">${PIN}<span>${esc([s.address,s.city].filter(Boolean).join(', '))}</span></a>`:''}${s.phone?`<a class="maplink tel" href="${telUrl(s.phone)}">${PHONE}<span>${esc(s.phone)}</span></a>`:''}${s.hours?`<div class="maplink hrs">${CLOCK}<div><ul>${s.hours.split(' · ').map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div></div>`:''}${s.email?`<a class="maplink mail" href="${mailUrl(s,b)}">${MAIL}<span>${esc(s.email)}</span></a>`:s.contact?`<a class="maplink mail" href="${esc(s.contact)}" target="_blank" rel="noopener">${MAIL}<span>Email via contact form</span></a>`:''}`;
 const ARROW='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>';
 const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
