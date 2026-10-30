@@ -183,6 +183,23 @@ if SITE:
     PAGE=open('site_tpl.html').read().replace('__HERO_MP4__',HM).replace('__HERO_JPG__',HJ)
     PAGE=PAGE.replace('<script>\nconst B=__BIKES__;\nconst S=__SHOPS__;',f'<script src="{DN}"></script>\n<script>\nconst B=window.AVA_B;\nconst S=window.AVA_S;',1)
     assert '__BIKES__' not in PAGE
+    # plain-text copy of the list for search engines and browsers that don't run the page script
+    import html as _hx
+    _grp={}
+    for _b in out: _grp.setdefault(_b['brand'],[]).append(_b)
+    _li=[]
+    for _br in sorted(_grp,key=str.lower):
+        _items=[]
+        for _b in sorted(_grp[_br],key=lambda x:x['model'].lower()):
+            _r=900 if _b.get('type') in ('Cargo','Adaptive') else 400
+            _bits=[_b.get('type') or '']
+            if _b.get('cls'): _bits.append(f"Class {_b['cls']}")
+            if _b.get('price'): _bits.append(f"${_b['price']:,} list, about ${max(_b['price']-_r,0):,} after the ${_r} rebate")
+            _items.append(f"<li>{_hx.escape(_br+' '+_b['model'])} ({_hx.escape(', '.join(x for x in _bits if x))})</li>")
+        _li.append(f"<h3>{_hx.escape(_br)}</h3><ul>{''.join(_items)}</ul>")
+    NOS=f'<noscript><div class="wrap"><h2>All {len(out)} e-bikes on the Ava rebate list</h2>{"".join(_li)}</div></noscript>'
+    PAGE=PAGE.replace('<main class="wrap grid" id="g"></main>','<main class="wrap grid" id="g"></main>'+NOS,1)
+    assert NOS in PAGE
 else: PAGE=html
 open('Ava_Rebate_Bike_Finder.html','w').write(html)
 # SEO + social cards: head tags, icons, manifest, sitemap
@@ -191,6 +208,24 @@ URL='https://ratsuns.github.io/ava-bike-finder/'
 OGN='og-'+hashlib.md5(open('verify/seo/og.jpg','rb').read()).hexdigest()[:8]+'.jpg'
 TITLE='Ava E-Bike Rebate Finder: Every Eligible E-Bike, Price and Shop'
 DESC=f"Browse all {len(out)} e-bikes on Ava Community Energy's rebate list. See your price after the $400 or $900 rebate, compare specs and find shops near you."
+# structured data for Google: the site, who made it, and every participating shop
+_seen={};
+for _s in S.values():
+    _k=(_s.get('name'),_s.get('address'))
+    if _s.get('name') and _k not in _seen: _seen[_k]=_s
+_stores=[]
+for _s in sorted(_seen.values(),key=lambda x:(x.get('city') or '',x['name'])):
+    _d={"@type":"BikeStore","name":_s['name']}
+    if _s.get('address'): _d["address"]={"@type":"PostalAddress","streetAddress":_s['address'],"addressLocality":_s.get('city'),"addressRegion":"CA","addressCountry":"US"}
+    for a,b in (('phone','telephone'),('url','url'),('email','email')):
+        if _s.get(a): _d[b]=_s[a]
+    _stores.append(_d)
+_me={"@type":"Person","@id":URL+"#chris","name":"Chris Beltran","address":{"@type":"PostalAddress","addressLocality":"Oakland","addressRegion":"CA"}}
+LD={"@context":"https://schema.org","@graph":[
+ {"@type":"WebSite","@id":URL+"#site","name":"Ava Bike Finder","url":URL,"description":DESC,"inLanguage":"en-US","publisher":{"@id":URL+"#chris"},"copyrightHolder":{"@id":URL+"#chris"},"copyrightYear":2026},
+ {"@type":"WebPage","@id":URL,"url":URL,"name":TITLE,"description":DESC,"isPartOf":{"@id":URL+"#site"},"author":{"@id":URL+"#chris"},"dateModified":__import__('datetime').date.today().isoformat(),"about":{"@type":"Thing","name":"Ava Community Energy e-bike rebate"},"primaryImageOfPage":URL+OGN},
+ _me,
+ {"@type":"ItemList","name":"Shops that accept the Ava e-bike rebate","numberOfItems":len(_stores),"itemListElement":[{"@type":"ListItem","position":i+1,"item":x} for i,x in enumerate(_stores)]}]}
 import html as _h
 e=_h.escape
 SEO=(f'<title>{e(TITLE)}</title><meta name="description" content="{e(DESC)}"><link rel="canonical" href="{URL}">'
@@ -200,7 +235,7 @@ SEO=(f'<title>{e(TITLE)}</title><meta name="description" content="{e(DESC)}"><li
  f'<meta property="og:image" content="{URL}{OGN}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:alt" content="Ava Bike Finder: Find your e-bike with the Ava rebate. $900 off cargo and adaptive, $400 off standard."><meta property="og:locale" content="en_US">'
  f'<meta property="og:video" content="{URL}img/hero.mp4"><meta property="og:video:secure_url" content="{URL}img/hero.mp4"><meta property="og:video:type" content="video/mp4"><meta property="og:video:width" content="1280"><meta property="og:video:height" content="720">'
  f'<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{e("Find your e-bike with the Ava rebate")}"><meta name="twitter:description" content="{e(DESC)}"><meta name="twitter:image" content="{URL}{OGN}"><meta name="twitter:image:alt" content="Ava Bike Finder: Find your e-bike with the Ava rebate.">'
- '<script type="application/ld+json">'+json.dumps({"@context":"https://schema.org","@type":"WebSite","name":"Ava Bike Finder","url":URL,"description":DESC,"inLanguage":"en-US"})+'</script>')
+ '<script type="application/ld+json">'+json.dumps(LD,separators=(',',':'),ensure_ascii=False).replace('</','<\\/')+'</script>')
 if SITE:
     shutil.copy('verify/seo/og.jpg',SITE+'/'+OGN)
     for f in ['favicon.svg','favicon.ico','apple-touch-icon.png','fav-192.png','fav-512.png']: shutil.copy('verify/seo/'+f,SITE+'/'+f)
