@@ -466,7 +466,7 @@ main.grid{padding-bottom:96px}
  .cmd:not([open]){transition-duration:.2s}
  .chead{padding:16px 8px 8px 16px}
  .chead::before{content:"";position:absolute;top:6px;left:50%;width:36px;height:4px;margin-left:-18px;border-radius:2px;background:var(--line2)}
- .chead{touch-action:none}
+
  #cq{font-size:16px}
  .cbody{padding:4px 16px 16px}
  .primary{flex:1;height:48px;font-size:16px}
@@ -698,8 +698,7 @@ dialog:focus{outline:none}
 /* shared dim layer behind every window */
 #scrim{position:fixed;inset:0;z-index:40;background:rgba(0,0,0,.58);opacity:0;pointer-events:none;transition:opacity .18s ease}
 #scrim.on{opacity:1;pointer-events:auto}
-#scrim{touch-action:none}
-@media (pointer:coarse){.cmd .cfoot{touch-action:none}}
+
 dialog{z-index:50}
 @media (prefers-reduced-motion:reduce){#scrim{transition:none}}
 /* floating search bar: rises in with a soft spring-like ease, leaves quicker than it arrives (transform and opacity only, so it stays on the GPU) */
@@ -1196,10 +1195,7 @@ $('g').addEventListener('keydown',e=>{const t=e.target.closest('.sw');if(!t||!['
 
 /* drawers */
 let LASTCLOSE=-1e9;
-/* on touch screens the search panel does not lock the page: iPhone browsers ignore the first swipe after a lock is lifted once the keyboard has been up.
-   The page still stays put behind it: the scrim and the panel header take no swipes, and the results list keeps its scroll to itself */
-const COARSE=matchMedia('(pointer:coarse)');
-function lockScroll(){document.documentElement.classList.toggle('locked',[...document.querySelectorAll('dialog[open]:not([data-state="closing"]),#navmenu:popover-open')].some(d=>!(COARSE.matches&&d.id==='cmd')))}
+function lockScroll(){document.documentElement.classList.toggle('locked',!!document.querySelector('dialog[open]:not([data-state="closing"]),#navmenu:popover-open'))}
 /* Windows open with show(), not showModal(): showModal makes the browser mark all ~11,000 elements behind it as blocked,
    which took 60-90ms on a mid-range phone. The dim layer, Escape, outside taps and keeping Tab inside the window are handled here instead. */
 /* keyboard users get focus handed back to what opened a window; touch and mouse users get no leftover outline */
