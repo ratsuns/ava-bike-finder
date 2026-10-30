@@ -1,6 +1,6 @@
 # Ava Bike Finder
 
-> Every e-bike on Ava Community Energy's e-bike rebate list (366 bikes), with each bike's price, the price after the rebate, specs and the shops that sell it. Made by Chris Beltran in Oakland, CA. Not affiliated with Ava Community Energy. Updated October 29, 2026.
+> Every e-bike on Ava Community Energy's e-bike rebate list (366 bikes), with each bike's price, the price after the rebate, specs and the shops that sell it. Made by Chris Beltran in Oakland, CA. Not affiliated with Ava Community Energy. Updated October 30, 2026.
 
 ## The rebate (source: https://avaenergy.org/bike-electric/, checked October 29, 2026)
 

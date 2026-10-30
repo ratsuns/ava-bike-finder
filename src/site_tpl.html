@@ -875,6 +875,15 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
  background:radial-gradient(closest-side,#effcf5 0%,#bfeeda 18%,color-mix(in oklab,var(--accent) 85%,transparent) 45%,transparent 100%);will-change:transform}
 .fab .bdot{z-index:-2}
 @media (prefers-reduced-motion:reduce){.bdot{display:none}}
+/* phone type scale: reading text 16px, nothing under 14px, headings kept modest */
+@media (max-width:760px){
+:root{--t-micro:14px;--t-meta:14px;--t-ui:15px;--t-body:16px;--t-lede:18px;--t-title:18px}
+.stats dd,.bms dd{font-size:17px}
+.bms p{font-size:16px;line-height:1.5}
+.bmin{font-size:15px}
+.bmr h3{font-size:18px}
+.bmh h2{font-size:22px}
+}
 </style>
 
 <a class="skip" href="#g">Skip to the bikes</a>
