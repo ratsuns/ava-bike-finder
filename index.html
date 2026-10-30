@@ -330,10 +330,9 @@ input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;width:1
 .bmshops{list-style:none;margin:0;padding:0;display:grid;gap:8px}
 .bmshop{display:grid;gap:4px;justify-items:start;padding:12px 14px;border:1px solid var(--line);border-radius:8px;font-size:var(--t-ui);min-width:0;overflow-wrap:anywhere}
 .bmshop b{font-weight:600;font-size:var(--t-body);line-height:1.3}
-.bmshop .web{font-weight:500;text-decoration:none}
 .bmlinks{display:flex;flex-wrap:wrap;gap:6px 20px;font-size:var(--t-ui);font-weight:500;padding-top:16px;border-top:1px solid var(--line)}
 .bmlinks a{display:inline-flex;align-items:center;gap:6px;text-decoration:none}
-@media (hover:hover) and (pointer:fine){.bmlinks a:hover,.bmshop .web:hover{text-decoration:underline}}
+@media (hover:hover) and (pointer:fine){.bmlinks a:hover{text-decoration:underline}}
 @media (pointer:coarse){.bmshop{gap:0;padding-block:6px}.bmshop b{padding-block:6px 2px}.bmshop a{padding-block:8px}.bmlinks a{min-height:44px}.bmlinks{padding-top:4px}}
 @media (max-width:760px){
  .bm{inset:auto 0 0;margin:0;width:100%;max-height:calc(100dvh - max(16px,env(safe-area-inset-top,0px)));border-radius:14px 14px 0 0;border-width:1px 0 0;opacity:1;transform:translateY(100%);transition:transform .28s cubic-bezier(.32,.72,0,1),overlay .28s allow-discrete,display .28s allow-discrete}
@@ -594,8 +593,9 @@ main.grid{padding-bottom:96px}
 @media (prefers-reduced-motion:reduce){.cfoot .linkbtn:active{transform:none}}
 .web{display:inline-flex;align-items:flex-start;gap:6px;width:fit-content}
 .web svg{flex:none;margin-top:3px;color:var(--fg3)}
-.shop a.web,.bmshop a.web{text-decoration:none;font-weight:500}
-@media (hover:hover) and (pointer:fine){a.web:hover span{text-decoration:underline;text-underline-offset:3px}}
+.shop a.web,.bmshop a.web{text-decoration:none;font-weight:600;transition:color .15s ease}
+a.web span{text-decoration:underline;text-decoration-color:color-mix(in oklab,currentColor 45%,transparent);text-underline-offset:3px}
+@media (hover:hover) and (pointer:fine){a.web:hover{color:var(--fg)}a.web:hover span{text-decoration-color:currentColor}a.web:hover svg{color:currentColor}}
 .web svg+span+svg{color:currentColor;margin-top:4px}
 .cfoot .linkbtn:not(:disabled):active{background:var(--well)}
 .cfoot .linkbtn:disabled{opacity:1;color:var(--fg3)}
@@ -970,7 +970,7 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
 <div class="fab" id="fab" inert><span class="bdot" aria-hidden="true"></span><button type="button" class="ffil" id="fab-f" aria-haspopup="dialog" aria-controls="filters" aria-label="Filters"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg><span class="fnum" id="fab-n" hidden></span></button><span class="fsep" aria-hidden="true"></span><button type="button" class="fmain" id="fab-s" aria-label="Search bikes"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span id="fab-q">Search bikes</span><span class="fcount" id="fab-count"></span></button></div>
 <section class="wrap" id="dir"><h2>Where to buy</h2><p>Every participating shop. Call ahead to check stock; the rebate only works in person.</p><div class="dirgrid" id="dirgrid"></div></section>
 
-<script src="data-636c00bb.js"></script>
+<script src="data-e3d79b3b.js"></script>
 <script>
 const B=window.AVA_B;
 const S=window.AVA_S;
@@ -995,7 +995,7 @@ const mailUrl=(s,b)=>{const subj=b?`Question about the ${b.name} (Ava e-bike reb
  const body=b?`Hi ${s.name},\n\nI'm interested in the ${b.name} and plan to use my Ava Community Energy e-bike rebate. Could you let me know:\n\n- Do you have it in stock, and in which colors and sizes?\n- What is the current price?\n- Can I come in for a test ride?\n\nThank you!\n`
   :`Hi ${s.name},\n\nI'm shopping for an e-bike and plan to use my Ava Community Energy e-bike rebate. Which rebate-eligible bikes do you have in stock right now?\n\nThank you!\n`;
  return `mailto:${s.email}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(body.replace(/\n/g,'\r\n'))}`};
-const shopLines=(s,b)=>`${s.address||s.city?`<a class="maplink" href="${mapUrl(s)}" target="_blank" rel="noopener">${PIN}<span>${esc([s.address,s.city].filter(Boolean).join(', '))}</span></a>`:''}${s.phone?`<a class="maplink tel" href="${telUrl(s.phone)}">${PHONE}<span>${esc(s.phone)}</span></a>`:''}${s.email?`<a class="maplink mail" href="${mailUrl(s,b)}">${MAIL}<span>${esc(s.email)}</span></a>`:''}`;
+const shopLines=(s,b)=>`${s.address||s.city?`<a class="maplink" href="${mapUrl(s)}" target="_blank" rel="noopener">${PIN}<span>${esc([s.address,s.city].filter(Boolean).join(', '))}</span></a>`:''}${s.phone?`<a class="maplink tel" href="${telUrl(s.phone)}">${PHONE}<span>${esc(s.phone)}</span></a>`:''}${s.email?`<a class="maplink mail" href="${mailUrl(s,b)}">${MAIL}<span>${esc(s.email)}</span></a>`:s.contact?`<a class="maplink mail" href="${esc(s.contact)}" target="_blank" rel="noopener">${MAIL}<span>Email via contact form</span></a>`:''}`;
 const ARROW='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>';
 const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
 const MOBILE=matchMedia('(max-width: 760px)');

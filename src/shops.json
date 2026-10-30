@@ -20,7 +20,8 @@
   "address": "5006 Mowry Ave",
   "city": "Fremont",
   "phone": "(510) 795-9622",
-  "url": "https://bicyclegaragefremont.com/"
+  "url": "https://www.bicyclegaragefremont.com/",
+  "email": "velocipedesf@gmail.com"
  },
  "Blue Heron Bicycles (Berkeley)": {
   "name": "Blue Heron Bikes",
@@ -58,7 +59,7 @@
   "city": "Dublin",
   "phone": "(925) 828-8676",
   "url": "https://www.dublincyclery.com/",
-  "email": null
+  "email": "info@dublincyclery.com"
  },
  "Ebikes2U": {
   "name": "Ebikes2U",
@@ -105,8 +106,8 @@
   "address": "161 I Street",
   "city": "Fremont",
   "phone": "(510) 565-1111",
-  "url": null,
-  "email": null
+  "url": "https://nilesbicycles.com/",
+  "email": "nilesbicycles@gmail.com"
  },
  "Pedego Electric Bikes (Livermore)": {
   "name": "Pedego Electric Bikes Livermore",
@@ -129,7 +130,8 @@
   "address": "7931 Thornton Rd",
   "city": "Stockton",
   "phone": "(209) 951-4371",
-  "url": "http://www.robbysbicycles.com/"
+  "url": "https://www.robbysbicycles.com/",
+  "contact": "https://www.robbysbicycles.com/about/contact-us-pg126.htm"
  },
  "Sports Basement (Berkeley)": {
   "name": "Sports Basement Berkeley",
@@ -144,21 +146,24 @@
   "address": "2116 Vine St",
   "city": "Berkeley",
   "phone": "(510) 725-6281",
-  "url": "http://staytrue.bike/"
+  "url": "https://www.staytrue.bike/",
+  "contact": "https://www.staytrue.bike/articles/email-us-pg199.htm"
  },
  "The Bicycle Garage": {
   "name": "The Bicycle Garage",
   "address": "5006 Mowry Ave",
   "city": "Fremont",
   "phone": "(510) 795-9622",
-  "url": "https://bicyclegaragefremont.com/"
+  "url": "https://www.bicyclegaragefremont.com/",
+  "email": "velocipedesf@gmail.com"
  },
  "The Bicycle Garage (Fremont)": {
   "name": "The Bicycle Garage",
   "address": "5006 Mowry Ave",
   "city": "Fremont",
   "phone": "(510) 795-9622",
-  "url": "https://bicyclegaragefremont.com/"
+  "url": "https://www.bicyclegaragefremont.com/",
+  "email": "velocipedesf@gmail.com"
  },
  "The New Wheel (Oakland)": {
   "name": "The New Wheel",

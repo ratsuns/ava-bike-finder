@@ -11,7 +11,7 @@ from cargo_specs import CS
 for b,r in zip(B,R):
     for k,v in CS.get((b['brand'],b['model']),{}).items():
         if k in ('price','price_note','source') or r.get(k) is None: r[k]=v
-fix={'Laurel Cyclery (Oakland)':'https://www.laurelcyclery.com/','NILES BICYCLES (Fremont)':'https://niles-bicycles.cloveronline.com/','Sports Basement (Berkeley)':'https://shop.sportsbasement.com/blogs/stores/berkeley','Alameda Bicycle (Alameda)':'https://www.alamedabicycle.com/','Dublin Cyclery (Dublin)':'https://www.dublincyclery.com/','Robby\'s Bicycles (Stockton)':'https://www.robbysbicycles.com/','Adaptive Cycles (Berkeley)':'https://adaptivecycles.com/','Stay True Cycles (Berkeley)':'https://www.staytrue.bike/','Cycle City (Alameda)':'https://cyclecityusa.com/'}
+fix={'Laurel Cyclery (Oakland)':'https://www.laurelcyclery.com/','Sports Basement (Berkeley)':'https://shop.sportsbasement.com/blogs/stores/berkeley','Alameda Bicycle (Alameda)':'https://www.alamedabicycle.com/','Dublin Cyclery (Dublin)':'https://www.dublincyclery.com/','Adaptive Cycles (Berkeley)':'https://adaptivecycles.com/','Cycle City (Alameda)':'https://cyclecityusa.com/'}
 for k,u in fix.items():
     if k in S: S[k]['url']=u
 for k in ['Castro Valley Cyclery','Castro Valley Cyclery (Castro Valley)']:
