@@ -41,7 +41,7 @@
   "city": "Castro Valley",
   "phone": "(510) 538-1878",
   "url": null,
-  "hours": "Tue–Fri 12:30–5p · Sat 10a–4p · Closed Sun, Mon"
+  "hours": "Closed Mon · Tue–Fri 12:30–5p · Sat 10a–4p · Closed Sun"
  },
  "Castro Valley Cyclery (Castro Valley)": {
   "name": "Castro Valley Cyclery",
@@ -49,7 +49,7 @@
   "city": "Castro Valley",
   "phone": "(510) 538-1878",
   "url": null,
-  "hours": "Tue–Fri 12:30–5p · Sat 10a–4p · Closed Sun, Mon"
+  "hours": "Closed Mon · Tue–Fri 12:30–5p · Sat 10a–4p · Closed Sun"
  },
  "Cycle City (Alameda)": {
   "name": "Cycle City",
@@ -58,7 +58,7 @@
   "phone": "(510) 521-2872",
   "url": "https://www.cyclecityusa.com/",
   "email": "info@cyclecityusa.com",
-  "hours": "Tue–Sat 10:30a–6p · Closed Sun, Mon"
+  "hours": "Closed Mon · Tue–Sat 10:30a–6p · Closed Sun"
  },
  "Dublin Cyclery (Dublin)": {
   "name": "Dublin Cyclery",
@@ -139,7 +139,7 @@
   "phone": "(510) 339-2953",
   "url": "https://www.rhythmbikes.com",
   "email": "rhythm@rhythmbikes.com",
-  "hours": "Tue–Fri 11a–6p · Sat 10a–5p · Closed Sun, Mon"
+  "hours": "Closed Mon · Tue–Fri 11a–6p · Sat 10a–5p · Closed Sun"
  },
  "Robby's Bicycles (Stockton)": {
   "name": "Robby's Bicycles",
@@ -166,7 +166,7 @@
   "phone": "(510) 725-6281",
   "url": "https://www.staytrue.bike/",
   "contact": "https://www.staytrue.bike/articles/email-us-pg199.htm",
-  "hours": "Tue–Sat 12–7p · Closed Sun, Mon"
+  "hours": "Closed Mon · Tue–Sat 12–7p · Closed Sun"
  },
  "The Bicycle Garage": {
   "name": "The Bicycle Garage",
@@ -210,7 +210,7 @@
   "city": "Tracy",
   "phone": "(209) 640-9380",
   "url": null,
-  "hours": "Tue–Fri 10a–6p · Sat 10a–5p · Closed Sun, Mon"
+  "hours": "Closed Mon · Tue–Fri 10a–6p · Sat 10a–5p · Closed Sun"
  },
  "Trek Bicycle (Berkeley)": {
   "name": "Trek Bicycle Berkeley",
@@ -242,7 +242,7 @@
   "city": "Oakland",
   "phone": "(510) 570-3885",
   "url": "https://www.trekbikes.com/us/en_US/retail/oakland/",
-  "hours": "Tue–Fri 11a–6p · Sat 10a–6p · Closed Sun, Mon"
+  "hours": "Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p · Closed Sun"
  },
  "Trek Bicycles (Castro Valley)": {
   "name": "Trek Bicycle Castro Valley",
