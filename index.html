@@ -509,6 +509,8 @@ main.grid{padding-bottom:96px}
 /* radio lists */
 .rlist{border:0;margin:0;padding:0;min-width:0;display:grid;gap:2px}
 .nearmsg{margin:8px 0 0;font-size:var(--t-meta);color:var(--fg2)}
+.nearbox{margin:12px 0 0}
+.nrng input{pointer-events:auto}
 .ro{display:flex;align-items:center;gap:12px;min-height:38px;padding:0 10px;margin:0 -10px;border-radius:6px;cursor:pointer;font-size:var(--t-ui);transition:background-color .12s ease}
 .ro input{appearance:none;-webkit-appearance:none;flex:none;width:18px;height:18px;margin:0;border-radius:50%;border:1.5px solid var(--fg3);background:var(--surface);transition:border-width .12s var(--ease-out),border-color .12s ease}
 .ro input:checked{border:5.5px solid var(--accent)}
@@ -1093,6 +1095,7 @@ const miles=(a,s)=>{const R=3958.8,r=x=>x*Math.PI/180,dl=r(s.lat-a.lat),dg=r(s.l
 const shopMi=s=>ME&&s&&s.lat!=null?miles(ME,s):null;
 const bikeMi=b=>{let m=Infinity;for(const k of b.shops||[]){const d=shopMi(S[k]);if(d!=null&&d<m)m=d}return m};
 const miTxt=d=>d<10?d.toFixed(1)+' mi':Math.round(d)+' mi';
+const nearMax=()=>{if(!ME)return 10;let m=0;for(const s of Object.values(S)){const d=shopMi(s);if(d!=null&&d>m)m=d}return Math.max(10,Math.ceil(m/10)*10)};
 /* filter state: one object, read by everything */
 const PV=[];for(let v=0;v<=3000;v+=100)PV.push(v);PV.push(3500,4000,4500,5000,5500,6000,7000,8000,10000,Infinity);
 const PTOP=PV.length-1;
@@ -1419,9 +1422,11 @@ function buildFilters(host,p,open=[]){
   +sec('pay','You pay',`<div class="prv"><span class="ptxt">Any price</span></div><div class="rng"><div class="rbar"><div class="rtrack"><div class="rfill"></div></div><input type="range" class="pmin" min="0" max="${PTOP}" step="1" value="0" aria-label="Lowest you pay"><input type="range" class="pmax" min="0" max="${PTOP}" step="1" value="${PTOP}" aria-label="Most you pay"></div><div class="rticks" aria-hidden="true">${TICKS}</div></div>`)
   +sec('spd','Top speed',radios('spd','Top speed'))
   +sec('color','Color',`<div class="cgrid" role="group" aria-label="Color">${[['','Any']].concat(usedC.map(c=>[c,c])).map(([v,t])=>`<button type="button" class="cb" data-v="${v}" aria-pressed="false"><i${v?` style="background:${CHEX[v]}"`:' class="any"'}></i><span>${t}</span></button>`).join('')}</div>`)
-  +sec('city','Shop city',radios('city','Shop city')+'<p class="nearmsg" role="status" hidden></p>')
+  +sec('city','Shop city',radios('city','Shop city')+'<div class="nearbox" hidden><div class="prv"><span class="ptxt ntxt">Within 10 mi</span></div><div class="rng nrng"><div class="rbar"><div class="rtrack"><div class="rfill"></div></div><input type="range" class="nr" min="10" max="70" step="10" value="10" aria-label="Distance from you"></div></div></div><p class="nearmsg" role="status" hidden></p>')
   +`<label class="fsw"><span><b>Folding bikes only</b><small>Easier to store and take on a train</small></span><input type="checkbox" role="switch" class="ffold" id="${p}-fold"></label>`;
- const q=s=>host.querySelector(s),PMIN=q('.pmin'),PMAX=q('.pmax'),RNG=q('.rng'),FILL=q('.rfill'),FOLD=q('.ffold');
+ const q=s=>host.querySelector(s),PMIN=q('.pmin'),PMAX=q('.pmax'),RNG=q('.rng'),FILL=q('.rfill'),FOLD=q('.ffold'),NR=q('.nr'),NBOX=q('.nearbox');
+ const paintNear=()=>{const mx=Math.max(nearMax(),NEAR_MI);NR.max=mx;NR.value=NEAR_MI;q('.nrng .rfill').style.right=(mx>10?(1-(NEAR_MI-10)/(mx-10))*100:0)+'%';q('.ntxt').textContent=`Within ${NEAR_MI} mi`;NR.setAttribute('aria-valuetext',`Within ${NEAR_MI} miles`)};
+ NR.addEventListener('input',()=>{NEAR_MI=+NR.value;paintNear();later()});
  host.addEventListener('change',e=>{const t=e.target;
   if(t.type==='radio'&&t.name.startsWith(p+'-')){const k=t.name.slice(p.length+1);F[k]=t.value;if(k==='city'&&t.value==='near'){NEAR_MI=10;locate()}later()}
   else if(t===FOLD){F.fold=t.checked;later()}});
@@ -1460,6 +1465,7 @@ function buildFilters(host,p,open=[]){
   fv('spd',F.spd?FACET.spd.short[F.spd]:'Any',!!F.spd);
   fv('color',F.color||'Any',!!F.color);
   fv('city',F.city==='near'?(ME?`Within ${NEAR_MI} mi`:'Closest to me'):F.city||'Any',!!F.city);
+  NBOX.hidden=!(F.city==='near'&&ME);if(!NBOX.hidden)paintNear();
   const nm=q('.nearmsg');nm.textContent=ME_ST==='ask'?'Finding your location…':ME_ST==='off'?'Location is off. Allow it in your browser to see the closest shops.':'';nm.hidden=!nm.textContent}
  return {sync,host}}
 const FPF=buildFilters($('fp-body'),'fp',['type','pay']);
