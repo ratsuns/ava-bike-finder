@@ -6,7 +6,9 @@
   "phone": "(510) 497-1828",
   "url": null,
   "email": "greg@adaptivecycles.com",
-  "hours": "By appointment"
+  "hours": "By appointment",
+  "lat": 37.869802,
+  "lng": -122.319622
  },
  "Alameda Bicycle (Alameda)": {
   "name": "Alameda Bicycle",
@@ -15,7 +17,9 @@
   "phone": "(510) 522-0070",
   "url": "https://www.alamedabicycle.com/",
   "email": "info@alamedabicycle.com",
-  "hours": "Mon 2:30–6p · Tue–Sun 11a–6p"
+  "hours": "Mon 2:30–6p · Tue–Sun 11a–6p",
+  "lat": 37.766062,
+  "lng": -122.24113
  },
  "Bicycle Garage (Fremont)": {
   "name": "The Bicycle Garage",
@@ -24,7 +28,9 @@
   "phone": "(510) 795-9622",
   "url": "https://www.bicyclegaragefremont.com/",
   "email": "velocipedesf@gmail.com",
-  "hours": "Mon 10a–7p · Closed Tue · Wed–Fri 10a–7p · Sat 10a–6p · Sun 11a–5p"
+  "hours": "Mon 10a–7p · Closed Tue · Wed–Fri 10a–7p · Sat 10a–6p · Sun 11a–5p",
+  "lat": 37.536138,
+  "lng": -121.998373
  },
  "Blue Heron Bicycles (Berkeley)": {
   "name": "Blue Heron Bikes",
@@ -33,7 +39,9 @@
   "phone": "(510) 524-1937",
   "url": "https://blueheronbikesberkeley.com",
   "email": "service@blueheronbikesberkeley.com",
-  "hours": "Mon–Sat 9a–6p · Closed Sun"
+  "hours": "Mon–Sat 9a–6p · Closed Sun",
+  "lat": 37.881135,
+  "lng": -122.28932
  },
  "Castro Valley Cyclery": {
   "name": "Castro Valley Cyclery",
@@ -41,7 +49,9 @@
   "city": "Castro Valley",
   "phone": "(510) 538-1878",
   "url": null,
-  "hours": "Closed Mon · Tue–Fri 12:30–5p · Sat 10a–4p · Closed Sun"
+  "hours": "Closed Mon · Tue–Fri 12:30–5p · Sat 10a–4p · Closed Sun",
+  "lat": 37.694554,
+  "lng": -122.090325
  },
  "Castro Valley Cyclery (Castro Valley)": {
   "name": "Castro Valley Cyclery",
@@ -49,7 +59,9 @@
   "city": "Castro Valley",
   "phone": "(510) 538-1878",
   "url": null,
-  "hours": "Closed Mon · Tue–Fri 12:30–5p · Sat 10a–4p · Closed Sun"
+  "hours": "Closed Mon · Tue–Fri 12:30–5p · Sat 10a–4p · Closed Sun",
+  "lat": 37.694554,
+  "lng": -122.090325
  },
  "Cycle City (Alameda)": {
   "name": "Cycle City",
@@ -58,7 +70,9 @@
   "phone": "(510) 521-2872",
   "url": "https://www.cyclecityusa.com/",
   "email": "info@cyclecityusa.com",
-  "hours": "Closed Mon · Tue–Sat 10:30a–6p · Closed Sun"
+  "hours": "Closed Mon · Tue–Sat 10:30a–6p · Closed Sun",
+  "lat": 37.75867,
+  "lng": -122.231549
  },
  "Dublin Cyclery (Dublin)": {
   "name": "Dublin Cyclery",
@@ -67,7 +81,9 @@
   "phone": "(925) 828-8676",
   "url": "https://www.dublincyclery.com/",
   "email": "info@dublincyclery.com",
-  "hours": "Closed Mon · Tue 10a–4p · Wed–Fri 9:30a–5:30p · Sat 10a–4p · Sun 11a–3p"
+  "hours": "Closed Mon · Tue 10a–4p · Wed–Fri 9:30a–5:30p · Sat 10a–4p · Sun 11a–3p",
+  "lat": 37.706159,
+  "lng": -121.923567
  },
  "Ebikes2U": {
   "name": "Ebikes2U",
@@ -76,7 +92,9 @@
   "phone": "(510) 883-3909",
   "url": "https://ebikes2u.com/",
   "email": "info@ebikes2u.com",
-  "hours": "Mon–Fri 9a–5p · Closed Sat, Sun"
+  "hours": "Mon–Fri 9a–5p · Closed Sat, Sun",
+  "lat": 37.482213,
+  "lng": -121.945517
  },
  "Electric Bike Center (Dublin)": {
   "name": "Electric Bike Center",
@@ -85,7 +103,9 @@
   "phone": "(925) 230-8178",
   "url": "https://electricbikeca.com/",
   "email": "sales@electricbikeca.com",
-  "hours": "Daily 10:30a–6p"
+  "hours": "Daily 10:30a–6p",
+  "lat": 37.707356,
+  "lng": -121.924943
  },
  "Laurel Cyclery (Oakland)": {
   "name": "Laurel Cyclery",
@@ -94,7 +114,9 @@
   "phone": "(510) 328-1158",
   "url": "https://www.laurelcyclery.com",
   "email": "laurelcyclery@gmail.com",
-  "hours": "Mon–Fri 11a–6p · Sat 10a–4p · Closed Sun"
+  "hours": "Mon–Fri 11a–6p · Sat 10a–4p · Closed Sun",
+  "lat": 37.791965,
+  "lng": -122.199165
  },
  "Mike's Bikes (Berkeley)": {
   "name": "Mike's Bikes of Berkeley",
@@ -103,7 +125,9 @@
   "phone": "(510) 845-2453",
   "url": "https://mikesbikes.com/pages/berkeley",
   "email": "info@mikesbikes.com",
-  "hours": "Mon–Sat 10a–6p · Sun 10a–5p"
+  "hours": "Mon–Sat 10a–6p · Sun 10a–5p",
+  "lat": 37.871237,
+  "lng": -122.274693
  },
  "Mike's Bikes (Pleasanton)": {
   "name": "Mike's Bikes of Pleasanton",
@@ -112,7 +136,9 @@
   "phone": "(925) 223-8267",
   "url": "https://mikesbikes.com/pages/pleasanton",
   "email": "info@mikesbikes.com",
-  "hours": "Mon–Sat 10a–6p · Sun 10a–5p"
+  "hours": "Mon–Sat 10a–6p · Sun 10a–5p",
+  "lat": 37.657831,
+  "lng": -121.8983
  },
  "NILES BICYCLES (Fremont)": {
   "name": "Niles Bicycles",
@@ -121,7 +147,9 @@
   "phone": "(510) 565-1111",
   "url": "https://nilesbicycles.com/",
   "email": "nilesbicycles@gmail.com",
-  "hours": "Closed Mon, Tue · Wed–Sat 12–6p · Sun 11a–3p"
+  "hours": "Closed Mon, Tue · Wed–Sat 12–6p · Sun 11a–3p",
+  "lat": 37.57609,
+  "lng": -121.978365
  },
  "Pedego Electric Bikes (Livermore)": {
   "name": "Pedego Electric Bikes Livermore",
@@ -130,7 +158,9 @@
   "phone": "(925) 800-5330",
   "url": "https://dealers.pedegoelectricbikes.com/pages/dealers/livermore",
   "email": "contact@pedegolivermore.com",
-  "hours": "Closed Tue, Wed · Thu–Mon 11a–5p"
+  "hours": "Closed Tue, Wed · Thu–Mon 11a–5p",
+  "lat": 37.665203,
+  "lng": -121.739343
  },
  "Rhythm Bikes (Oakland)": {
   "name": "Rhythm Bikes",
@@ -139,7 +169,9 @@
   "phone": "(510) 339-2953",
   "url": "https://www.rhythmbikes.com",
   "email": "rhythm@rhythmbikes.com",
-  "hours": "Closed Mon · Tue–Fri 11a–6p · Sat 10a–5p · Closed Sun"
+  "hours": "Closed Mon · Tue–Fri 11a–6p · Sat 10a–5p · Closed Sun",
+  "lat": 37.826287,
+  "lng": -122.210333
  },
  "Robby's Bicycles (Stockton)": {
   "name": "Robby's Bicycles",
@@ -148,7 +180,9 @@
   "phone": "(209) 951-4371",
   "url": "https://www.robbysbicycles.com/",
   "contact": "https://www.robbysbicycles.com/about/contact-us-pg126.htm",
-  "hours": "Mon–Fri 11a–5p · Sat 12–5p · Sun 12–4p"
+  "hours": "Mon–Fri 11a–5p · Sat 12–5p · Sun 12–4p",
+  "lat": 38.021605,
+  "lng": -121.325805
  },
  "Sports Basement (Berkeley)": {
   "name": "Sports Basement Berkeley",
@@ -157,7 +191,9 @@
   "phone": "(510) 984-3907",
   "url": "https://www.sportsbasement.com/stores/berkeley",
   "email": "friends@sportsbasement.com",
-  "hours": "Mon–Fri 11a–8p · Sat–Sun 10a–7p"
+  "hours": "Mon–Fri 11a–8p · Sat–Sun 10a–7p",
+  "lat": 37.85918,
+  "lng": -122.2693
  },
  "Stay True Cycles (Berkeley)": {
   "name": "Stay True Cycles",
@@ -166,7 +202,9 @@
   "phone": "(510) 725-6281",
   "url": "https://www.staytrue.bike/",
   "contact": "https://www.staytrue.bike/articles/email-us-pg199.htm",
-  "hours": "Closed Mon · Tue–Sat 12–7p · Closed Sun"
+  "hours": "Closed Mon · Tue–Sat 12–7p · Closed Sun",
+  "lat": 37.88022,
+  "lng": -122.268568
  },
  "The Bicycle Garage": {
   "name": "The Bicycle Garage",
@@ -175,7 +213,9 @@
   "phone": "(510) 795-9622",
   "url": "https://www.bicyclegaragefremont.com/",
   "email": "velocipedesf@gmail.com",
-  "hours": "Mon 10a–7p · Closed Tue · Wed–Fri 10a–7p · Sat 10a–6p · Sun 11a–5p"
+  "hours": "Mon 10a–7p · Closed Tue · Wed–Fri 10a–7p · Sat 10a–6p · Sun 11a–5p",
+  "lat": 37.536138,
+  "lng": -121.998373
  },
  "The Bicycle Garage (Fremont)": {
   "name": "The Bicycle Garage",
@@ -184,7 +224,9 @@
   "phone": "(510) 795-9622",
   "url": "https://www.bicyclegaragefremont.com/",
   "email": "velocipedesf@gmail.com",
-  "hours": "Mon 10a–7p · Closed Tue · Wed–Fri 10a–7p · Sat 10a–6p · Sun 11a–5p"
+  "hours": "Mon 10a–7p · Closed Tue · Wed–Fri 10a–7p · Sat 10a–6p · Sun 11a–5p",
+  "lat": 37.536138,
+  "lng": -121.998373
  },
  "The New Wheel (Oakland)": {
   "name": "The New Wheel",
@@ -193,7 +235,9 @@
   "phone": "(415) 524-7362",
   "url": "https://newwheel.net/pages/oakland-east-bay-electric-bike-shop",
   "email": "info@newwheel.net",
-  "hours": "Closed Mon, Tue · Wed–Sat 11a–6p · Sun 11a–5p"
+  "hours": "Closed Mon, Tue · Wed–Sat 11a–6p · Sun 11a–5p",
+  "lat": 37.811726,
+  "lng": -122.212466
  },
  "Tip Top Bike Shop (Oakland)": {
   "name": "Tip Top Bike Shop",
@@ -202,7 +246,9 @@
   "phone": "(510) 444-4148",
   "url": "https://tiptopbikeshop.com",
   "email": "top@tiptopbikeshop.com",
-  "hours": "Closed Mon · Tue–Fri 11a–6p · Sat–Sun 12–5p"
+  "hours": "Closed Mon · Tue–Fri 11a–6p · Sat–Sun 12–5p",
+  "lat": 37.834775,
+  "lng": -122.262839
  },
  "Tracy Cyclery (Tracy)": {
   "name": "Tracy Cyclery",
@@ -210,7 +256,9 @@
   "city": "Tracy",
   "phone": "(209) 640-9380",
   "url": null,
-  "hours": "Closed Mon · Tue–Fri 10a–6p · Sat 10a–5p · Closed Sun"
+  "hours": "Closed Mon · Tue–Fri 10a–6p · Sat 10a–5p · Closed Sun",
+  "lat": 37.753443,
+  "lng": -121.435189
  },
  "Trek Bicycle (Berkeley)": {
   "name": "Trek Bicycle Berkeley",
@@ -218,7 +266,9 @@
   "city": "Berkeley",
   "phone": "(510) 370-2890",
   "url": "https://www.trekbikes.com/us/en_US/retail/berkeley/",
-  "hours": "Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p · Sun 12–5p"
+  "hours": "Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p · Sun 12–5p",
+  "lat": 37.85186,
+  "lng": -122.288818
  },
  "Trek Bicycle (Dublin)": {
   "name": "Trek Bicycle Dublin",
@@ -226,7 +276,9 @@
   "city": "Dublin",
   "phone": "(925) 829-4310",
   "url": "https://www.trekbikes.com/us/en_US/retail/dublin/",
-  "hours": "Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p · Sun 12–5p"
+  "hours": "Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p · Sun 12–5p",
+  "lat": 37.702215,
+  "lng": -121.93612
  },
  "Trek Bicycle (Livermore)": {
   "name": "Trek Bicycle Livermore",
@@ -234,7 +286,9 @@
   "city": "Livermore",
   "phone": "(925) 455-8090",
   "url": "https://www.trekbikes.com/us/en_US/retail/livermore/",
-  "hours": "Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p · Sun 12–5p"
+  "hours": "Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p · Sun 12–5p",
+  "lat": 37.684565,
+  "lng": -121.764165
  },
  "Trek Bicycle (Oakland)": {
   "name": "Trek Bicycle Oakland",
@@ -242,7 +296,9 @@
   "city": "Oakland",
   "phone": "(510) 570-3885",
   "url": "https://www.trekbikes.com/us/en_US/retail/oakland/",
-  "hours": "Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p · Closed Sun"
+  "hours": "Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p · Closed Sun",
+  "lat": 37.81439,
+  "lng": -122.246199
  },
  "Trek Bicycles (Castro Valley)": {
   "name": "Trek Bicycle Castro Valley",
@@ -250,7 +306,9 @@
   "city": "Castro Valley",
   "phone": "(510) 881-5000",
   "url": "https://www.trekbikes.com/us/en_US/retail/castro_valley/",
-  "hours": "Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p · Sun 12–5p"
+  "hours": "Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p · Sun 12–5p",
+  "lat": 37.696686,
+  "lng": -122.07813
  },
  "Uptown BART Bike Station (Oakland)": {
   "name": "Uptown BART Bike Station",
@@ -259,7 +317,9 @@
   "phone": "(510) 858-7555",
   "url": "https://www.bikehub.com/articles/bart-bike-stations-pg1208.htm",
   "email": "uptown@bikehub.com",
-  "hours": "Mon–Fri 7a–7p · Closed Sat, Sun"
+  "hours": "Mon–Fri 7a–7p · Closed Sat, Sun",
+  "lat": 37.807129,
+  "lng": -122.269597
  },
  "eCyclepath (Hayward)": {
   "name": "Cyclepath",
@@ -268,6 +328,8 @@
   "phone": "(510) 881-5177",
   "url": "https://www.ecyclepath.com/",
   "email": "info@cyclepathhayward.com",
-  "hours": "Mon–Fri 10a–5p · Sat 10a–4p · Closed Sun"
+  "hours": "Mon–Fri 10a–5p · Sat 10a–4p · Closed Sun",
+  "lat": 37.67459,
+  "lng": -122.081194
  }
 }

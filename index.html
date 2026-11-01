@@ -508,6 +508,7 @@ main.grid{padding-bottom:96px}
 .fs[open]::details-content{block-size:auto;opacity:1}
 /* radio lists */
 .rlist{border:0;margin:0;padding:0;min-width:0;display:grid;gap:2px}
+.nearmsg{margin:8px 0 0;font-size:var(--t-meta);color:var(--fg2)}
 .ro{display:flex;align-items:center;gap:12px;min-height:38px;padding:0 10px;margin:0 -10px;border-radius:6px;cursor:pointer;font-size:var(--t-ui);transition:background-color .12s ease}
 .ro input{appearance:none;-webkit-appearance:none;flex:none;width:18px;height:18px;margin:0;border-radius:50%;border:1.5px solid var(--fg3);background:var(--surface);transition:border-width .12s var(--ease-out),border-color .12s ease}
 .ro input:checked{border:5.5px solid var(--accent)}
@@ -1039,7 +1040,7 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
 <section class="wrap" id="dir"><h2>Where to buy</h2><p>Every participating shop. Call ahead to check stock; the rebate only works in person.</p><div class="dirgrid" id="dirgrid"></div></section>
 <footer class="wrap sfoot" id="copyright"><div><p>Bike list from <a href="https://avaenergy.org/bike-electric/" target="_blank" rel="noopener">Ava's eligible list</a>, updated October&nbsp;8,&nbsp;2026.</p><p>Specs and prices from each maker's website.</p></div><div><p>Made by Chris Beltran in Oakland.</p><p>Not affiliated with Ava Community Energy.</p></div><p class="fc">© 2026 Chris Beltran. All rights reserved.</p></footer>
 
-<script src="data-26e356ea.js"></script>
+<script src="data-daf50c7b.js"></script>
 <script>
 const B=window.AVA_B;
 const S=window.AVA_S;
@@ -1086,6 +1087,12 @@ B.forEach((b,i)=>{
 const usedC=CORD.filter(c=>B.some(b=>b.cs.includes(c)));
 const cities=[...new Set(Object.values(S).map(s=>s.city).filter(Boolean))].sort();
 const ACT=new Map();
+/* Closest to me: the visitor's position stays on this page only (never sent or stored); bikes count as near when a shop selling them is within NEAR_MI */
+let ME=null,NEAR_MI=10,ME_ST='';
+const miles=(a,s)=>{const R=3958.8,r=x=>x*Math.PI/180,dl=r(s.lat-a.lat),dg=r(s.lng-a.lng),h=Math.sin(dl/2)**2+Math.cos(r(a.lat))*Math.cos(r(s.lat))*Math.sin(dg/2)**2;return 2*R*Math.asin(Math.sqrt(h))};
+const shopMi=s=>ME&&s&&s.lat!=null?miles(ME,s):null;
+const bikeMi=b=>{let m=Infinity;for(const k of b.shops||[]){const d=shopMi(S[k]);if(d!=null&&d<m)m=d}return m};
+const miTxt=d=>d<10?d.toFixed(1)+' mi':Math.round(d)+' mi';
 /* filter state: one object, read by everything */
 const PV=[];for(let v=0;v<=3000;v+=100)PV.push(v);PV.push(3500,4000,4500,5000,5500,6000,7000,8000,10000,Infinity);
 const PTOP=PV.length-1;
@@ -1095,7 +1102,7 @@ const payOn=f=>f.payMin>0||f.payMax!==Infinity;
 const FACET={
  type:{opts:[['','All types'],['Standard','Standard','$400 off'],['Cargo','Cargo','$900 off'],['Adaptive','Adaptive','$900 off']],test:(b,v)=>b.type===v},
  spd:{opts:[['','Any speed'],['le20','Up to 20 mph'],['28','28 mph or faster']],short:{le20:'Up to 20 mph','28':'28+ mph'},test:(b,v)=>b.spd!=null&&(v==='le20'?b.spd<=20:b.spd>=28)},
- city:{opts:[['','Any city']].concat(cities.map(c=>[c,c])),test:(b,v)=>b.cities.includes(v)},
+ city:{opts:[['','Any city'],['near','Closest to me']].concat(cities.map(c=>[c,c])),test:(b,v)=>v==='near'?(!ME||bikeMi(b)<=NEAR_MI):b.cities.includes(v)},
  color:{test:(b,v)=>b.cs.includes(v)}};
 
 /* cards: built once, then filtered and reordered */
@@ -1153,7 +1160,8 @@ function render(){
  $('count').innerHTML=`<strong>${LIST.length}</strong> of ${B.length} bikes`;
  const n=activeCount();renderChips(n,qv);
  SHOWN=PAGE;if(LIST.length){const v=LIST.slice(0,SHOWN);$('g').replaceChildren(...v.map(b=>NODE.get(b.i)));v.forEach(syncColor)}
- else{EMPTY.innerHTML=`<p>${qv?`No bikes match “${esc(qv)}”${n?' with these filters':''}.`:'No bikes match these filters.'}</p><button type="button" class="gbtn" data-clear>Clear all filters</button>`;$('g').replaceChildren(EMPTY)}
+ else{if(F.city==='near'&&ME){EMPTY.innerHTML=`<p>No bikes sold within ${NEAR_MI} miles of you${activeCount()>1||qv?' with these filters':''}.</p><button type="button" class="gbtn" data-expand>Expand by 10 miles</button>`;$('g').replaceChildren(EMPTY)}
+  else{EMPTY.innerHTML=`<p>${qv?`No bikes match “${esc(qv)}”${n?' with these filters':''}.`:'No bikes match these filters.'}</p><button type="button" class="gbtn" data-clear>Clear all filters</button>`;$('g').replaceChildren(EMPTY)}}
  updateFab(n);updMore();if(CMD.open)renderCmd();if(FP.open)renderFP();
 }
 /* load more: 24 cards at a time */
@@ -1176,7 +1184,7 @@ function renderChips(n,qv){
  if(payOn(F))c.push(['pay',payText(F),'price '+payText(F)]);
  if(F.spd)c.push(['spd',FACET.spd.short[F.spd]]);
  if(F.color)c.push(['color',`<i style="background:${CHEX[F.color]}"></i>${F.color}`,F.color]);
- if(F.city)c.push(['city',esc(F.city)]);
+ if(F.city)c.push(['city',F.city==='near'?(ME?`Within ${NEAR_MI} mi of you`:'Closest to me'):esc(F.city)]);
  if(F.fold)c.push(['fold','Folding']);
  const el=$('achips');el.hidden=!c.length;
  el.innerHTML=c.length?c.map(([k,h,a])=>`<span class="ach">${h}<button type="button" data-rm="${k}" aria-label="Remove ${a||h} filter">${XI}</button></span>`).join('')+`<button type="button" class="achc" data-rm="all">Clear all</button>`:''}
@@ -1186,6 +1194,7 @@ function clearAll(){Object.assign(F,F0);$('q').value='';$('cq').value='';ACT.cle
 /* swatches */
 $('g').addEventListener('click',e=>{
  if(e.target.closest('[data-clear]')){clearAll();draw();return}
+ if(e.target.closest('[data-expand]')){NEAR_MI+=10;draw();return}
  const t=e.target.closest('.sw');
  /* any click on a card opens its details, except on a color swatch */
  if(!t){const c=e.target.closest('.c[data-b]');if(c&&!e.target.closest('a,.sws'))openBike(+c.dataset.b,c.querySelector('.more'));return}
@@ -1232,12 +1241,13 @@ const BIKE=$('bike');let BIKE_I=null,BIKE_AC=null;/* the modal's colour is its o
 const EXT='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>';
 /* the details are built as soon as a finger or mouse goes down on a card, so by the time the tap lands the window only has to slide in */
 let BIKE_PRE=null;
-function buildBike(i){const pre=i+'|'+F.city+'|'+F.q;if(BIKE_PRE===pre)return;BIKE_PRE=pre;
+function buildBike(i){const pre=i+'|'+F.city+'|'+F.q+'|'+(ME?NEAR_MI:'');if(BIKE_PRE===pre)return;BIKE_PRE=pre;
  const b=B[i],pk=PICKS[b.brand+'|'+b.model];
  const has=v=>v!=null&&v!=='';
  const uniq=[...new Map((b.shops||[]).map(x=>S[x]).filter(Boolean).map(s=>[s.name,s])).values()];
  /* shops that match the current city filter or search come first; the rest keep their order */
- {const q=F.q.toLowerCase().trim(),hit=s=>(F.city&&s.city===F.city)||(q&&[s.name,s.city].some(v=>v&&v.toLowerCase().includes(q)));uniq.sort((x,y)=>(hit(y)?1:0)-(hit(x)?1:0))}
+ {const q=F.q.toLowerCase().trim(),hit=s=>(F.city&&s.city===F.city)||(q&&[s.name,s.city].some(v=>v&&v.toLowerCase().includes(q)));uniq.sort((x,y)=>(hit(y)?1:0)-(hit(x)?1:0));
+  if(F.city==='near'&&ME)uniq.sort((x,y)=>(shopMi(x)??1e9)-(shopMi(y)??1e9))}
  /* key stats: missing values are left out; an odd one out spans the full row so the grid never has a hole */
  const cls=CLASSX[b.cls];
  const narrow=[['Top speed',b.spd,'mph'],['Torque',b.tq,'Nm'],['Max load',b.load,'lb'],['Range',b.range,'mi'],['Battery',b.wh,'Wh'],['Bike weight',b.wt,b.wtnb?'lb (no battery)':'lb'],['Rider height',b.height,''],['Folds',b.fold==='Yes'||b.fold==='No'?b.fold:null,'']].filter(s=>has(s[1]));
@@ -1264,7 +1274,7 @@ function buildBike(i){const pre=i+'|'+F.city+'|'+F.q;if(BIKE_PRE===pre)return;BI
   ${pk?`<div class="bmpick"><span class="bmpk">${STAR}${esc(pk.tag)}</span><p><b>${esc(pk.head)}</b> ${esc(pk.sub)}</p></div>`:''}
   <section><h3>Key specs</h3>${stats?`<dl class="bms">${stats}</dl>`:`<p class="bmnone">The maker doesn't publish specs for this bike. Ask the shop.</p>`}</section>
   <section><h3>Where to buy</h3><p class="bmin">The rebate only works in person at the shop. Call ahead to check stock.</p>
-   ${uniq.length?`<ul class="bmshops">${uniq.map(s=>`<li class="bmshop">${slogo(s)}${s.city?`<span class="city">${esc(s.city)}</span>`:''}<b>${esc(s.name)}</b>${shopLines(s,b)}${s.url?`<a class="web" href="${esc(s.url)}" target="_blank" rel="noopener">${GLOBE}<span>Shop website</span>${EXT}</a>`:''}</li>`).join('')}</ul>`:`<p class="bmnone">No shop is listed for this bike yet. <a href="#dir" data-dir>See all shops</a></p>`}</section>
+   ${uniq.length?`<ul class="bmshops">${uniq.map(s=>`<li class="bmshop">${slogo(s)}${s.city?`<span class="city">${esc(s.city)}${F.city==='near'&&shopMi(s)!=null?' · '+miTxt(shopMi(s)):''}</span>`:''}<b>${esc(s.name)}</b>${shopLines(s,b)}${s.url?`<a class="web" href="${esc(s.url)}" target="_blank" rel="noopener">${GLOBE}<span>Shop website</span>${EXT}</a>`:''}</li>`).join('')}</ul>`:`<p class="bmnone">No shop is listed for this bike yet. <a href="#dir" data-dir>See all shops</a></p>`}</section>
   <div class="bmlinks"><a href="${gi}" target="_blank" rel="noopener">More photos on Google${EXT}</a>${b.src?`<a href="${esc(b.src)}" target="_blank" rel="noopener">Price source${EXT}</a>`:''}</div>
  </div>
 </div>`;
@@ -1392,6 +1402,11 @@ const QPH='Search bikes, brands or shops';const fitPh=()=>{$('q').placeholder=MO
    Every change writes F and applies at once; render() then re-syncs whichever UIs are open. */
 const FP=$('filters');
 let fraf=0;const later=()=>{if(!fraf)fraf=requestAnimationFrame(()=>{fraf=0;render()})};
+function locate(){if(ME||ME_ST==='ask')return;
+ if(!navigator.geolocation){ME_ST='off';F.city='';later();return}
+ ME_ST='ask';later();
+ navigator.geolocation.getCurrentPosition(p=>{ME={lat:p.coords.latitude,lng:p.coords.longitude};ME_ST='';later()},
+  ()=>{ME_ST='off';if(F.city==='near')F.city='';later()},{enableHighAccuracy:false,timeout:15000,maximumAge:600000})}
 /* you pay: snap points every $100 up to $3,000 (where most bikes are), wider steps above; the top means no limit */
 const RT=[0,500,1000,1500,2000,2500,3000,4000,5000,6000,8000,10000,Infinity],RL={0:'$0',1000:'$1,000',2000:'$2,000',3000:'$3,000',Infinity:'No max'};
 const TICKS=RT.map(v=>`<i${v in RL?' class="mj"':''} style="left:${PV.indexOf(v)/PTOP*100}%"></i>`).join('')+RT.filter(v=>v in RL).map(v=>`<span style="left:${PV.indexOf(v)/PTOP*100}%">${RL[v]}</span>`).join('');
@@ -1404,11 +1419,11 @@ function buildFilters(host,p,open=[]){
   +sec('pay','You pay',`<div class="prv"><span class="ptxt">Any price</span></div><div class="rng"><div class="rbar"><div class="rtrack"><div class="rfill"></div></div><input type="range" class="pmin" min="0" max="${PTOP}" step="1" value="0" aria-label="Lowest you pay"><input type="range" class="pmax" min="0" max="${PTOP}" step="1" value="${PTOP}" aria-label="Most you pay"></div><div class="rticks" aria-hidden="true">${TICKS}</div></div>`)
   +sec('spd','Top speed',radios('spd','Top speed'))
   +sec('color','Color',`<div class="cgrid" role="group" aria-label="Color">${[['','Any']].concat(usedC.map(c=>[c,c])).map(([v,t])=>`<button type="button" class="cb" data-v="${v}" aria-pressed="false"><i${v?` style="background:${CHEX[v]}"`:' class="any"'}></i><span>${t}</span></button>`).join('')}</div>`)
-  +sec('city','Shop city',radios('city','Shop city'))
+  +sec('city','Shop city',radios('city','Shop city')+'<p class="nearmsg" role="status" hidden></p>')
   +`<label class="fsw"><span><b>Folding bikes only</b><small>Easier to store and take on a train</small></span><input type="checkbox" role="switch" class="ffold" id="${p}-fold"></label>`;
  const q=s=>host.querySelector(s),PMIN=q('.pmin'),PMAX=q('.pmax'),RNG=q('.rng'),FILL=q('.rfill'),FOLD=q('.ffold');
  host.addEventListener('change',e=>{const t=e.target;
-  if(t.type==='radio'&&t.name.startsWith(p+'-')){F[t.name.slice(p.length+1)]=t.value;later()}
+  if(t.type==='radio'&&t.name.startsWith(p+'-')){const k=t.name.slice(p.length+1);F[k]=t.value;if(k==='city'&&t.value==='near'){NEAR_MI=10;locate()}later()}
   else if(t===FOLD){F.fold=t.checked;later()}});
  q('.cgrid').addEventListener('click',e=>{const c=e.target.closest('.cb');if(!c)return;F.color=F.color===c.dataset.v?'':c.dataset.v;ACT.clear();later()});
  function paint(){
@@ -1444,7 +1459,8 @@ function buildFilters(host,p,open=[]){
   fv('pay',payText(F),payOn(F));
   fv('spd',F.spd?FACET.spd.short[F.spd]:'Any',!!F.spd);
   fv('color',F.color||'Any',!!F.color);
-  fv('city',F.city||'Any',!!F.city)}
+  fv('city',F.city==='near'?(ME?`Within ${NEAR_MI} mi`:'Closest to me'):F.city||'Any',!!F.city);
+  const nm=q('.nearmsg');nm.textContent=ME_ST==='ask'?'Finding your location…':ME_ST==='off'?'Location is off. Allow it in your browser to see the closest shops.':'';nm.hidden=!nm.textContent}
  return {sync,host}}
 const FPF=buildFilters($('fp-body'),'fp',['type','pay']);
 const CMF=buildFilters($('cmd-fbody'),'cf');
@@ -1453,7 +1469,7 @@ function renderFP(){
  FPF.sync();
  $('fp-show').textContent=showText();$('fp-show').disabled=!LIST.length;$('fp-clear').disabled=!activeCount();
  clearTimeout(FP._lt);FP._lt=setTimeout(()=>{$('fp-live').textContent=LIST.length+' bikes match'},400)}
-const fsig=()=>JSON.stringify([F.type,F.payMin,F.payMax,F.spd,F.color,F.city,F.fold]);
+const fsig=()=>JSON.stringify([F.type,F.payMin,F.payMax,F.spd,F.color,F.city,F.fold,NEAR_MI]);
 function openFP(opener){renderFP();FP._sig=fsig();FP._go=false;showDlg(FP,opener)}
 /* the page stays put while the panel is open; on close, jump to the results only if something changed or "Show" was pressed */
 FP.addEventListener('close',()=>{if(FP._go||FP._sig!==fsig())requestAnimationFrame(scrollToResults)});
