@@ -1231,10 +1231,12 @@ const BIKE=$('bike');let BIKE_I=null,BIKE_AC=null;/* the modal's colour is its o
 const EXT='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>';
 /* the details are built as soon as a finger or mouse goes down on a card, so by the time the tap lands the window only has to slide in */
 let BIKE_PRE=null;
-function buildBike(i){if(BIKE_PRE===i)return;BIKE_PRE=i;
+function buildBike(i){const pre=i+'|'+F.city+'|'+F.q;if(BIKE_PRE===pre)return;BIKE_PRE=pre;
  const b=B[i],pk=PICKS[b.brand+'|'+b.model];
  const has=v=>v!=null&&v!=='';
  const uniq=[...new Map((b.shops||[]).map(x=>S[x]).filter(Boolean).map(s=>[s.name,s])).values()];
+ /* shops that match the current city filter or search come first; the rest keep their order */
+ {const q=F.q.toLowerCase().trim(),hit=s=>(F.city&&s.city===F.city)||(q&&[s.name,s.city].some(v=>v&&v.toLowerCase().includes(q)));uniq.sort((x,y)=>(hit(y)?1:0)-(hit(x)?1:0))}
  /* key stats: missing values are left out; an odd one out spans the full row so the grid never has a hole */
  const cls=CLASSX[b.cls];
  const narrow=[['Top speed',b.spd,'mph'],['Torque',b.tq,'Nm'],['Max load',b.load,'lb'],['Range',b.range,'mi'],['Battery',b.wh,'Wh'],['Bike weight',b.wt,b.wtnb?'lb (no battery)':'lb'],['Rider height',b.height,''],['Folds',b.fold==='Yes'||b.fold==='No'?b.fold:null,'']].filter(s=>has(s[1]));
