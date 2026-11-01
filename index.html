@@ -510,7 +510,7 @@ main.grid{padding-bottom:96px}
 .rlist{border:0;margin:0;padding:0;min-width:0;display:grid;gap:2px}
 .nearmsg{margin:8px 0 0;font-size:var(--t-meta);color:var(--fg2)}
 .nearbox{margin:12px 0 0}
-.nrng input{pointer-events:auto}
+.ntxt{font-size:var(--t-ui);font-weight:600}
 .ro{display:flex;align-items:center;gap:12px;min-height:38px;padding:0 10px;margin:0 -10px;border-radius:6px;cursor:pointer;font-size:var(--t-ui);transition:background-color .12s ease}
 .ro input{appearance:none;-webkit-appearance:none;flex:none;width:18px;height:18px;margin:0;border-radius:50%;border:1.5px solid var(--fg3);background:var(--surface);transition:border-width .12s var(--ease-out),border-color .12s ease}
 .ro input:checked{border:5.5px solid var(--accent)}
@@ -542,7 +542,7 @@ main.grid{padding-bottom:96px}
 .ptxt{font-size:var(--t-lede);font-weight:650;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
 .rng{position:relative;touch-action:pan-y;cursor:pointer;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}
 .rbar{position:relative;height:44px}
-.rtrack{position:absolute;left:12px;right:12px;top:50%;height:4px;margin-top:-2px;border-radius:2px;background:var(--line)}
+.rtrack{position:absolute;left:10px;right:10px;top:50%;height:4px;margin-top:-2px;border-radius:2px;background:var(--line)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .rtrack{background:var(--line2)}}
 :root[data-theme="dark"] .rtrack{background:var(--line2)}
 .rfill{position:absolute;top:0;bottom:0;left:0;right:0;border-radius:2px;background:var(--accent)}
@@ -550,8 +550,8 @@ main.grid{padding-bottom:96px}
 .rng input:focus-visible{outline:none}
 .rng input::-webkit-slider-runnable-track{height:24px;background:none;border:0}
 .rng input::-moz-range-track{height:24px;background:none;border:0}
-.rng input::-webkit-slider-thumb{-webkit-appearance:none;box-sizing:border-box;width:24px;height:24px;border-radius:50%;background:#fff;border:2px solid var(--accent);box-shadow:0 1px 3px rgba(0,0,0,.22);transition:box-shadow .15s ease}
-.rng input::-moz-range-thumb{box-sizing:border-box;width:24px;height:24px;border-radius:50%;background:#fff;border:2px solid var(--accent);box-shadow:0 1px 3px rgba(0,0,0,.22)}
+.rng input::-webkit-slider-thumb{-webkit-appearance:none;box-sizing:border-box;width:20px;height:20px;border-radius:50%;background:#fff;border:2px solid var(--accent);box-shadow:0 1px 3px rgba(0,0,0,.22);transition:box-shadow .15s ease}
+.rng input::-moz-range-thumb{box-sizing:border-box;width:20px;height:20px;border-radius:50%;background:#fff;border:2px solid var(--accent);box-shadow:0 1px 3px rgba(0,0,0,.22)}
 .rng input:focus-visible::-webkit-slider-thumb{box-shadow:0 0 0 4px color-mix(in oklab,var(--accent) 32%,transparent),0 1px 3px rgba(0,0,0,.22)}
 .rng input:focus-visible::-moz-range-thumb{box-shadow:0 0 0 4px color-mix(in oklab,var(--accent) 32%,transparent)}
 .rng input.act::-webkit-slider-thumb{box-shadow:0 0 0 6px color-mix(in oklab,var(--accent) 22%,transparent),0 1px 3px rgba(0,0,0,.22)}
@@ -1093,9 +1093,9 @@ const ACT=new Map();
 let ME=null,NEAR_MI=10,ME_ST='';
 const miles=(a,s)=>{const R=3958.8,r=x=>x*Math.PI/180,dl=r(s.lat-a.lat),dg=r(s.lng-a.lng),h=Math.sin(dl/2)**2+Math.cos(r(a.lat))*Math.cos(r(s.lat))*Math.sin(dg/2)**2;return 2*R*Math.asin(Math.sqrt(h))};
 const shopMi=s=>ME&&s&&s.lat!=null?miles(ME,s):null;
-const bikeMi=b=>{let m=Infinity;for(const k of b.shops||[]){const d=shopMi(S[k]);if(d!=null&&d<m)m=d}return m};
+const bikeMi=b=>{if(b._me===ME)return b._mi;let m=Infinity;for(const k of b.shops||[]){const d=shopMi(S[k]);if(d!=null&&d<m)m=d}b._me=ME;b._mi=m;return m};
 const miTxt=d=>d<10?d.toFixed(1)+' mi':Math.round(d)+' mi';
-const nearMax=()=>{if(!ME)return 10;let m=0;for(const s of Object.values(S)){const d=shopMi(s);if(d!=null&&d>m)m=d}return Math.max(10,Math.ceil(m/10)*10)};
+let NMAX=null;const nearMax=()=>{if(!ME)return 10;if(NMAX&&NMAX.me===ME)return NMAX.v;let m=0;for(const s of Object.values(S)){const d=shopMi(s);if(d!=null&&d>m)m=d}NMAX={me:ME,v:Math.max(10,Math.ceil(m/10)*10)};return NMAX.v};
 /* filter state: one object, read by everything */
 const PV=[];for(let v=0;v<=3000;v+=100)PV.push(v);PV.push(3500,4000,4500,5000,5500,6000,7000,8000,10000,Infinity);
 const PTOP=PV.length-1;
@@ -1426,7 +1426,15 @@ function buildFilters(host,p,open=[]){
   +`<label class="fsw"><span><b>Folding bikes only</b><small>Easier to store and take on a train</small></span><input type="checkbox" role="switch" class="ffold" id="${p}-fold"></label>`;
  const q=s=>host.querySelector(s),PMIN=q('.pmin'),PMAX=q('.pmax'),RNG=q('.rng'),FILL=q('.rfill'),FOLD=q('.ffold'),NR=q('.nr'),NBOX=q('.nearbox');
  const paintNear=()=>{const mx=Math.max(nearMax(),NEAR_MI);NR.max=mx;NR.value=NEAR_MI;q('.nrng .rfill').style.right=(mx>10?(1-(NEAR_MI-10)/(mx-10))*100:0)+'%';q('.ntxt').textContent=`Within ${NEAR_MI} mi`;NR.setAttribute('aria-valuetext',`Within ${NEAR_MI} miles`)};
- NR.addEventListener('input',()=>{NEAR_MI=+NR.value;paintNear();later()});
+ const preview=()=>{const n=match().length,txt=n?`Show ${n} bike${n===1?'':'s'}`:'No bikes match';for(const id of ['cmd-show','fp-show']){const e=$(id);if(e){e.textContent=txt;e.disabled=!n}}
+  host.querySelectorAll(`input[name="${p}-city"][value="near"]`).forEach(r=>r.closest('.ro').querySelector('.rn').textContent=n);fv('city',`Within ${NEAR_MI} mi`,true)};
+ const setNear=(v,commit)=>{v=Math.min(+NR.max,Math.max(10,Math.round(v/10)*10));if(v!==NEAR_MI){NEAR_MI=v;paintNear();preview()}if(commit)later()};
+ NR.addEventListener('input',()=>setNear(+NR.value));NR.addEventListener('change',()=>setNear(+NR.value,true));
+ const NRNG=q('.nrng');let nact=false;
+ const nat=x=>{const r=NRNG.getBoundingClientRect(),f=Math.min(1,Math.max(0,(x-r.left-10)/(r.width-20)));return 10+f*(+NR.max-10)};
+ NRNG.addEventListener('pointerdown',e=>{if(e.button)return;nact=true;NRNG.setPointerCapture(e.pointerId);NR.classList.add('act');NR.focus({preventScroll:true});setNear(nat(e.clientX));e.preventDefault()});
+ NRNG.addEventListener('pointermove',e=>{if(nact)setNear(nat(e.clientX))});
+ const nend=()=>{if(nact)later();nact=false;NR.classList.remove('act')};NRNG.addEventListener('pointerup',nend);NRNG.addEventListener('pointercancel',nend);
  host.addEventListener('change',e=>{const t=e.target;
   if(t.type==='radio'&&t.name.startsWith(p+'-')){const k=t.name.slice(p.length+1);F[k]=t.value;if(k==='city'&&t.value==='near'){NEAR_MI=10;locate()}later()}
   else if(t===FOLD){F.fold=t.checked;later()}});
@@ -1442,7 +1450,7 @@ function buildFilters(host,p,open=[]){
  [PMIN,PMAX].forEach(inp=>inp.addEventListener('input',()=>setPay(inp,+inp.value)));
  /* the whole strip is the hit area: press anywhere and the nearest thumb jumps there and follows the finger or mouse */
  let act=null;
- const at=x=>{const r=RNG.getBoundingClientRect();return Math.round(Math.min(1,Math.max(0,(x-r.left-12)/(r.width-24)))*PTOP)};
+ const at=x=>{const r=RNG.getBoundingClientRect();return Math.round(Math.min(1,Math.max(0,(x-r.left-10)/(r.width-20)))*PTOP)};
  RNG.addEventListener('pointerdown',e=>{if(e.button)return;const i=at(e.clientX),a=+PMIN.value,b=+PMAX.value;
   act=i<=a?PMIN:i>=b?PMAX:(i-a<b-i?PMIN:PMAX);
   RNG.setPointerCapture(e.pointerId);act.classList.add('act');act.focus({preventScroll:true});setPay(act,i);e.preventDefault()});
