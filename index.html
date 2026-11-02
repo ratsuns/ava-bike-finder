@@ -1141,13 +1141,13 @@ const NODE=new Map();
 const tpl=document.createElement('template');
 B.forEach(b=>{tpl.innerHTML=cardHTML(b).trim();NODE.set(b.i,tpl.content.firstElementChild)});
 
-/* cards show the bike's display photo with no color selected until someone picks one; the details open on a real color */
+/* every bike starts on its first color (dot selected, that color's photo showing); a color filter or a color someone picked wins */
 function firstColor(b){const k=b.cv.findIndex(c=>c.img);return k>=0?k:null}
 function shownSrc(b){const k=activeColor(b);return k!=null&&b.cv[k].img?b.cv[k].img:b.img}
 function activeColor(b){
  const fc=F.color;let ac=ACT.has(b.i)?ACT.get(b.i):null;
  if(fc&&(ac==null||b.cv[ac].f!==fc)){const m=b.cv.findIndex(c=>c.f===fc);if(m>=0)ac=m}
- return ac}
+ return ac??firstColor(b)}
 function syncColor(b){
  if(!b.cv.length)return;const node=NODE.get(b.i),img=node.querySelector('.ph img'),ac=activeColor(b);
  const src=ac!=null&&b.cv[ac].img?b.cv[ac].img:b.img;
