@@ -314,6 +314,12 @@ input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;width:1
 .c{position:relative;cursor:pointer;transition:border-color .15s ease,box-shadow .2s ease,transform .16s var(--ease-out)}
 .more::after{content:"";position:absolute;inset:0;z-index:1}
 .c .sws{z-index:2}
+/* a color the maker sells but hasn't photographed yet: a dashed ring, and when it's picked the photo stays put with a short note */
+.sw.np i{outline:1px dashed rgba(18,22,20,.55);outline-offset:1.5px}
+.sw.np[aria-pressed="true"] i{box-shadow:inset 0 0 0 1px rgba(0,0,0,.2);outline:1.5px dashed #121614;outline-offset:2px}
+.npn{position:absolute;left:50%;bottom:38px;transform:translateX(-50%);z-index:2;padding:3px 10px;border-radius:999px;background:rgba(255,255,255,.92);box-shadow:0 1px 3px rgba(0,0,0,.14);color:#121614;font-size:var(--t-meta);white-space:nowrap;pointer-events:none}
+.npn[hidden]{display:none}
+@media (pointer:coarse){.npn{bottom:44px}}
 .sws{left:50%;transform:translateX(-50%)}
 .more:focus-visible{outline:none}
 .c:has(.more:focus-visible){outline:2px solid var(--accent);outline-offset:2px}
@@ -836,6 +842,10 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
 .zsws .sw{width:22px;height:22px}
 .zsws .sw i{width:12px;height:12px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.3)}
 .zsws .sw[aria-pressed="true"] i{box-shadow:0 0 0 2px #070a09,0 0 0 3px #fff}
+.zsws .sw.np i{outline-color:rgba(255,255,255,.6)}
+.zsws .sw.np[aria-pressed="true"] i{box-shadow:inset 0 0 0 1px rgba(255,255,255,.3);outline:1.5px dashed #fff;outline-offset:2px}
+.znote{margin:0;font-size:var(--t-meta);color:rgba(255,255,255,.6)}
+.znote[hidden]{display:none}
 /* the stage is exactly the photo's size, so the arrows and dots sit on the photo */
 .zstage,.zbar{width:min(100%,1100px,calc((100dvh - 190px) * 4 / 3));margin-inline:auto}
 @media (max-width:760px){.zstage,.zbar{width:min(100%,calc((100dvh - 210px) * 4 / 3))}}
@@ -852,6 +862,9 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
 :root[data-theme="light"] .zarr:focus-visible{outline-color:var(--fg)}
 :root[data-theme="light"] .zsws .sw i{box-shadow:inset 0 0 0 1px rgba(0,0,0,.2)}
 :root[data-theme="light"] .zsws .sw[aria-pressed="true"] i{box-shadow:inset 0 0 0 1px rgba(0,0,0,.2),0 0 0 2px var(--bg),0 0 0 3.5px var(--fg)}
+:root[data-theme="light"] .zsws .sw.np i{outline-color:rgba(18,22,20,.55)}
+:root[data-theme="light"] .zsws .sw.np[aria-pressed="true"] i{box-shadow:inset 0 0 0 1px rgba(0,0,0,.2);outline-color:var(--fg)}
+:root[data-theme="light"] .znote{color:var(--fg2)}
 @media (hover:hover) and (pointer:fine){:root[data-theme="light"] .zx:hover{background:rgba(18,22,20,.1)}:root[data-theme="light"] .zarr:hover{background:rgba(255,255,255,.82)}}
 /* centred windows are centred on the whole screen: the page keeps a scrollbar gutter (so nothing jumps when a window opens),
    and --sbw extends their box over it */
@@ -1030,7 +1043,7 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
  </div>
 </div>
 </dialog>
-<dialog id="zoom" class="zoomv" aria-label="Bike photo"><button type="button" class="zx" aria-label="Close photo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button><figure class="zfig"><div class="zstage"><img id="zoom-img" alt=""></div><div class="zbar"><button type="button" class="zarr zprev" aria-label="Previous color"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg></button><div class="zmeta"><p class="zcap" id="zoom-cap"></p><div class="zsws" id="zoom-sws" role="group" aria-label="Colors"></div></div><button type="button" class="zarr znext" aria-label="Next color"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></button></div></figure></dialog>
+<dialog id="zoom" class="zoomv" aria-label="Bike photo"><button type="button" class="zx" aria-label="Close photo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button><figure class="zfig"><div class="zstage"><img id="zoom-img" alt=""></div><div class="zbar"><button type="button" class="zarr zprev" aria-label="Previous color"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg></button><div class="zmeta"><p class="zcap" id="zoom-cap"></p><p class="znote" id="zoom-note" hidden></p><div class="zsws" id="zoom-sws" role="group" aria-label="Colors"></div></div><button type="button" class="zarr znext" aria-label="Next color"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></button></div></figure></dialog>
 <dialog id="bike" class="bm" aria-labelledby="bike-h">
  <div class="bmh"><div><span class="br" id="bike-br" aria-hidden="true"></span><h2 id="bike-h"></h2></div>
  <button type="button" class="dclose" aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
@@ -1119,13 +1132,14 @@ const FACET={
 
 /* cards: built once, then filtered and reordered */
 const stat=(l,v,u)=>`<div><dt>${l}</dt>${v==null||v===''?'<dd class="na">Not listed</dd>':`<dd>${esc(v)}<small>${u}</small></dd>`}</div>`;
+const npNote=c=>'No photo of '+c.n+' yet';
 function cardHTML(b){
  const pk=PICKS[b.brand+'|'+b.model];
  const price=b.price!=null
   ?`<div class="price"><div class="pay"><strong>${money(b.you)}</strong><span>you pay</span></div><div class="list"><s>${money(b.price)}</s> minus ${money(b.reb)} rebate, plus tax</div></div>`
   :`<div class="price na"><div class="pay"><strong>Price not listed</strong></div><div class="list">Ask the shop for the price.</div></div>`;
  const allNa=[b.spd,b.tq,b.load,b.range].every(v=>v==null||v==='');
- const ac0=activeColor(b),sw=b.cv.length?`<div class="sws" role="group" aria-label="Colors">${b.cv.map((c,ci)=>`<button type="button" class="sw" data-c="${ci}" tabindex="${ci===(ac0??0)?0:-1}" aria-pressed="${ci===ac0}" aria-label="${esc(c.n)}" title="${esc(c.n)}${c.img?'':' (no photo yet)'}"><i style="background:${c.hex||CHEX[c.f]}"></i></button>`).join('')}</div>`:'';
+ const ac0=activeColor(b),sw=b.cv.length?`<div class="sws" role="group" aria-label="Colors">${b.cv.map((c,ci)=>`<button type="button" class="sw${c.img?'':' np'}" data-c="${ci}" tabindex="${ci===(ac0??0)?0:-1}" aria-pressed="${ci===ac0}" aria-label="${esc(c.n)}" title="${esc(c.n)}${c.img?'':' (no photo yet)'}"><i style="background:${c.hex||CHEX[c.f]}"></i></button>`).join('')}</div><span class="npn"${ac0!=null&&!b.cv[ac0].img?'':' hidden'}>${ac0!=null&&!b.cv[ac0].img?esc(npNote(b.cv[ac0])):''}</span>`:'';
  return `<article class="c${pk?' pick':''}${b.st?' off':''}" data-b="${b.i}">
  <div class="ph"><img loading="lazy" decoding="async" src="${shownSrc(b)}" alt="${esc(b.name)}">${sw}<span class="tag${b.reb===900?'':' s400'}"><i></i>${money(b.reb)} off</span>${pk?`<span class="picktag">${STAR}${pk.tag}</span>`:''}</div>
  <div class="b">
@@ -1149,8 +1163,9 @@ function activeColor(b){
  return ac??firstColor(b)}
 function syncColor(b){
  if(!b.cv.length)return;const node=NODE.get(b.i),img=node.querySelector('.ph img'),ac=activeColor(b);
- const src=ac!=null&&b.cv[ac].img?b.cv[ac].img:b.img;
- if(img.getAttribute('src')!==src){img.src=src;img.alt=b.name+(ac!=null?', '+b.cv[ac].n:'')}
+ const np=ac!=null&&!b.cv[ac].img,src=np?(img.getAttribute('src')||b.img):ac!=null?b.cv[ac].img:b.img;
+ if(img.getAttribute('src')!==src)img.src=src;img.alt=b.name+(ac!=null?', '+b.cv[ac].n:'');
+ const nn=node.querySelector('.npn');if(nn){nn.hidden=!np;nn.textContent=np?npNote(b.cv[ac]):''}
  node.querySelectorAll('.sw').forEach((s,i)=>{s.setAttribute('aria-pressed',i===ac);s.tabIndex=(ac==null?i===0:i===ac)?0:-1})}
 
 /* filtering */
@@ -1272,7 +1287,7 @@ function buildBike(i){const pre=i+'|'+F.city+'|'+F.q+'|'+(ME?NEAR_MI:'');if(BIKE
    <div class="list bmlist"><s>${money(b.price)}</s> minus ${money(b.reb)} rebate, plus tax</div>`
   :`<div class="bmpay na"><strong>Price not listed</strong></div>
    <p class="bmtax">Ask the shop for today's price. Your rebate takes ${money(b.reb)} off, and sales tax is extra.</p>`;
- const sws=b.cv.length?`<div class="sws" role="group" aria-label="Colors">${b.cv.map((c,ci)=>`<button type="button" class="sw" data-c="${ci}" tabindex="-1" aria-pressed="false" aria-label="${esc(c.n)}" title="${esc(c.n)}${c.img?'':' (no photo yet)'}"><i style="background:${c.hex||CHEX[c.f]}"></i></button>`).join('')}</div>`:'';
+ const sws=b.cv.length?`<div class="sws" role="group" aria-label="Colors">${b.cv.map((c,ci)=>`<button type="button" class="sw${c.img?'':' np'}" data-c="${ci}" tabindex="-1" aria-pressed="false" aria-label="${esc(c.n)}" title="${esc(c.n)}${c.img?'':' (no photo yet)'}"><i style="background:${c.hex||CHEX[c.f]}"></i></button>`).join('')}</div>`:'';
  const gi='https://www.google.com/search?tbm=isch&q='+encodeURIComponent(b.name+' e-bike');
  $('bike-br').textContent=b.brand;
  $('bike-h').innerHTML=`<span class="vh">${esc(b.brand)} </span>${esc(b.mn)}`;
@@ -1303,10 +1318,10 @@ function openBike(i,opener){if(BIKE.open)return;const tok=++BIKE_OPENING;buildBi
 $('g').addEventListener('pointerdown',e=>{if(BIKE.open||e.button)return;const c=e.target.closest('.c[data-b]');if(c&&!e.target.closest('a,.sws'))buildBike(+c.dataset.b)},{passive:true});
 function syncBike(){
  if(BIKE_I==null||!BIKE.contains($('bike-img')))return;const b=B[BIKE_I],ac=BIKE_AC,img=$('bike-img'),cap=$('bike-cap');
- const src=ac!=null&&b.cv[ac].img?b.cv[ac].img:b.img;
+ const np=ac!=null&&!b.cv[ac].img,src=np?(img.getAttribute('src')||b.img):ac!=null?b.cv[ac].img:b.img;
  if(img.getAttribute('src')!==src)img.src=src;img.alt=b.name+(ac!=null?', '+b.cv[ac].n:'');
  BIKE.querySelectorAll('.sw').forEach((s,k)=>{s.setAttribute('aria-pressed',k===ac);s.tabIndex=(ac==null?k===0:k===ac)?0:-1});
- cap.textContent='';
+ cap.textContent=np?npNote(b.cv[ac]):'';
  cap.hidden=!cap.textContent}
 BIKE.addEventListener('click',e=>{
  if(e.target.closest('[data-dir]')){e.preventDefault();BIKE.close();requestAnimationFrame(()=>$('dir').scrollIntoView({behavior:REDUCE.matches?'auto':'smooth'}));return}
@@ -1582,7 +1597,9 @@ function beam(ring,dot,active){const b={ring,dot,active,anim:null};
 /* swipe a photo sideways to step through its colors: the gesture just presses the next or previous color dot, so every view stays in sync.
    touch-action:pan-y leaves vertical scrolling to the browser; if the browser takes the gesture for scrolling, it cancels ours */
 let SWIPED=0;
-function stepDots(dots,dir){if(dots.length<2)return;const i=dots.findIndex(d=>d.getAttribute('aria-pressed')==='true');const n=i<0?(dir>0?0:dots.length-1):(i+dir+dots.length)%dots.length;dots[n].click()}
+/* swiping only lands on colors that have a real photo */
+function stepDots(dots,dir){const n=dots.length;if(n<2)return;let i=dots.findIndex(d=>d.getAttribute('aria-pressed')==='true');const cur=i;if(i<0)i=dir>0?-1:n;
+ for(let k=1;k<=n;k++){const j=((i+dir*k)%n+n)%n;if(j!==cur&&!dots[j].classList.contains('np')){dots[j].click();return}}}
 function swipeColors(root,photoSel){let x0=0,y0=0,el=null;
  root.addEventListener('pointerdown',e=>{if(e.pointerType!=='touch'||e.target.closest('.sw'))return;el=e.target.closest(photoSel);
   /* on the grid the whole card is covered by its "See details" layer, so find the photo under the finger by position */
@@ -1600,7 +1617,8 @@ swipeColors($('g'),'.ph');swipeColors(BIKE,'.bmph');
 const ZOOM=$('zoom');
 function syncZoom(){const img=$('bike-img');if(!img)return;zreset();$('zoom-img').src=img.currentSrc||img.src;$('zoom-img').alt=img.alt;zmeta()}
 function zmeta(){const b=BIKE_I!=null?B[BIKE_I]:null,on=BIKE.querySelector('.bmph .sw[aria-pressed="true"]');$('zoom-cap').textContent=b?(b.name+(on?' · '+on.getAttribute('aria-label'):'')):'';
- const src=BIKE.querySelector('.bmph .sws');$('zoom-sws').innerHTML=src?src.innerHTML:''}
+ const np=b&&BIKE_AC!=null&&!b.cv[BIKE_AC].img,zn=$('zoom-note');zn.hidden=!np;zn.textContent=np?npNote(b.cv[BIKE_AC]):'';
+ const src=BIKE.querySelector('.bmph .sws');$('zoom-sws').innerHTML=src?src.innerHTML:'';zArrows()}
 BIKE.addEventListener('click',e=>{if(e.target.id==='bike-img'&&performance.now()-SWIPED>400){syncZoom();showDlg(ZOOM,e.target)}});
 ZOOM.querySelector('.zx').onclick=()=>ZOOM.close();
 ZOOM.addEventListener('click',e=>{const t=e.target.closest('.sw');if(t){const zs=[...ZOOM.querySelectorAll('.sw')],ni=zs.indexOf(t),oi=zs.findIndex(s=>s.getAttribute('aria-pressed')==='true'),twin=BIKE.querySelectorAll('.bmph .sw')[ni];if(twin&&ni!==oi)zgo(ni,ni>oi?1:-1);return}
@@ -1620,7 +1638,8 @@ function zspring(dist,v){if(!ZLIN)return {duration:300,easing:'cubic-bezier(.32,
  const n=Math.max(8,Math.round(T*60)),pts=[];for(let i=0;i<n;i++)pts.push((1+y(T*i/n)).toFixed(4));pts.push('1');
  return {duration:T*1000,easing:`linear(${pts.join(',')})`}}
 function zinfo(k){const b=B[BIKE_I],c=k!=null&&k>=0&&b.cv?b.cv[k]:null;return {src:c&&c.img?c.img:b.img,alt:b.name+(c?', '+c.n:'')}}
-function zidx(dir){const n=BIKE.querySelectorAll('.bmph .sw').length,i=BIKE_AC==null?-1:BIKE_AC;return n<2?null:i<0?(dir>0?0:n-1):(i+dir+n)%n}
+function zidx(dir){if(BIKE_I==null)return null;const cv=B[BIKE_I].cv||[],n=cv.length,cur=BIKE_AC??-1;let i=BIKE_AC==null?(dir>0?-1:n):BIKE_AC;
+ for(let k=1;k<=n;k++){const j=((i+dir*k)%n+n)%n;if(j!==cur&&cv[j].img)return j}return null}
 function zpane(k,x){const f=zinfo(k),p=new Image();p.className='zghost';p.alt='';p.setAttribute('aria-hidden','true');p.dataset.alt=f.alt;p.decoding='sync';p.src=f.src;zput(p,x);zst().appendChild(p);return p}
 function zmain(t){const o=$('zoom-img');if(t===o)return;o.removeAttribute('id');o.className='zghost';o.alt='';o.setAttribute('aria-hidden','true');
  t.id='zoom-img';t.className='';t.removeAttribute('aria-hidden');t.alt=t.dataset.alt||''}
@@ -1637,14 +1656,18 @@ function zsnap(t,v){const ps=[...zst().querySelectorAll('img')],d=-(t._x||0),was
  an[ps.indexOf(t)].finished.then(()=>{if(ZT===me){ZT=null;done()}},()=>{})}
 /* warm the neighbours so a drag never shows an empty slot */
 function zwarm(){[1,-1].forEach(d=>{const k=zidx(d);if(k!=null){const i=new Image();i.src=zinfo(k).src}})}
-function zgo(k,dir){if(k==null||BIKE_I==null)return;const seq=++ZSEQ;zfreeze();const m=$('zoom-img'),p=zpane(k,(m._x||0)+dir*(zst().clientWidth+ZGAP));
+function zgo(k,dir){if(k==null||BIKE_I==null)return;
+ /* a color with no photo, or one whose photo is already showing, just changes the name: nothing slides */
+ if(!B[BIKE_I].cv[k].img||zsame(zinfo(k).src)){BIKE.querySelectorAll('.bmph .sw')[k].click();zmeta();return}
+ const seq=++ZSEQ;zfreeze();const m=$('zoom-img'),p=zpane(k,(m._x||0)+dir*(zst().clientWidth+ZGAP));
  BIKE.querySelectorAll('.bmph .sw')[k].click();zmeta();zwarm();
  if(p.complete&&p.naturalWidth){zsnap(p,0);return}
  Promise.race([p.decode().catch(()=>{}),new Promise(r=>setTimeout(r,300))]).then(()=>{if(seq===ZSEQ&&p.isConnected)zsnap(p,0)})}
+const zsame=src=>new URL(src,location.href).href===new URL($('zoom-img').getAttribute('src'),location.href).href;
 function zstep(dir){zgo(zidx(dir),dir)}
 (()=>{let id=null,x0=0,y0=0,mode=null,inPh=false,trk=[],nb=null,w=0;
  const begin=()=>{ZSEQ++;const ps=zfreeze(),m=$('zoom-img');ps.forEach(p=>{if(p!==m)p.remove()});w=zst().clientWidth+ZGAP;
-  const mx=m._x||0,many=zidx(1)!=null;nb={m,n:many?zpane(zidx(1),mx+w):null,p:many?zpane(zidx(-1),mx-w):null};
+  const mx=m._x||0,many=zidx(1)!=null&&!zsame(zinfo(zidx(1)).src);nb={m,n:many?zpane(zidx(1),mx+w):null,p:many?zpane(zidx(-1),mx-w):null};
   [nb.m,nb.n,nb.p].forEach(p=>{if(p)p._b=p._x||0});mode='h';try{zst().setPointerCapture(id)}catch(_){}};
  const move=dx=>{const lim=nb.n?w:0,ov=Math.abs(dx)-lim,off=ov>0?Math.sign(dx)*(lim+(1-1/(ov*.55/w+1))*w):dx;
   [nb.m,nb.n,nb.p].forEach(p=>{if(p)zput(p,p._b+off)})};
@@ -1665,8 +1688,8 @@ function zstep(dir){zgo(zidx(dir),dir)}
  ZOOM.addEventListener('pointercancel',e=>end(e,false),{passive:true})})();
 document.addEventListener('keydown',e=>{if(!ZOOM.open||!['ArrowLeft','ArrowRight'].includes(e.key))return;e.preventDefault();zstep(e.key==='ArrowRight'?1:-1)});
 ZOOM.querySelector('.zprev').onclick=()=>zstep(-1);ZOOM.querySelector('.znext').onclick=()=>zstep(1);
-/* arrows only when there is more than one color */
-const zArrows=()=>{const many=BIKE.querySelectorAll('.bmph .sw').length>1;ZOOM.querySelector('.zprev').hidden=!many;ZOOM.querySelector('.znext').hidden=!many};
+/* arrows only when there is another photo to go to */
+const zArrows=()=>{const many=zidx(1)!=null;ZOOM.querySelector('.zprev').hidden=!many;ZOOM.querySelector('.znext').hidden=!many};
 ZOOM.addEventListener('toggle',zArrows);
 /* sort menu behaviour: opens under its button, arrow keys move, Enter or a tap picks, Escape or a tap outside closes */
 (()=>{const btn=$('sortbtn'),menu=$('sortmenu'),sel=$('sort'),opts=[...menu.querySelectorAll('.sopt')];
