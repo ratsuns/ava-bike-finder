@@ -7669,7 +7669,7 @@
 "model": "Load4 75 vario",
 "src": "https://www.r-m.de/en-us/bikes/load4-75/load4-75-vario/",
 "pnote": null,
-"st": null,
+"st": "disc",
 "cv": [
 {
 "n": "coal grey matt",
@@ -7700,7 +7700,7 @@
 "model": "Load4 60 vario",
 "src": "https://pos.r-m.de/en-us/bikes/load4-60/load4-60-vario",
 "pnote": null,
-"st": null,
+"st": "disc",
 "cv": [
 {
 "n": "coal grey matt",

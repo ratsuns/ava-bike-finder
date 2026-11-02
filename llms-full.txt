@@ -241,8 +241,8 @@
 | Retrospec Valen Rev 3 | Standard | 2 | $1,499.99 | $1,099.99 | 750W rear planetary geared hub | 500 Wh | 60 mi | 67 lb | Available | Robby's Bicycles, Dublin Cyclery |
 | Retrospec Valen Rev+ | Standard | 2 | $1,899.99 | $1,499.99 | 750W rear planetary geared hub | 720 Wh | 68 mi | 72 lb | Available | Robby's Bicycles, Dublin Cyclery |
 | Revi Bikes Runabout.2 | Cargo | 2 | $1,799 | $899 | 52V 750W rear hub (1,040W peak) | 780 Wh | 55 mi | 65 lb | Available | Ebikes2U |
-| Riese and Muller Load4 60 vario | Cargo | 1 | $10,539 | $9,639 | Bosch Cargo Line (smart system) mid-drive, 85Nm | 725 Wh |  | 80.5 lb | Available | The New Wheel, Blue Heron Bikes |
-| Riese and Muller Load4 75 vario | Cargo | 1 | $10,749 | $9,849 | Bosch Cargo Line (smart system) mid-drive, 85Nm | 725 Wh |  | 86.4 lb | Available | The New Wheel, Blue Heron Bikes |
+| Riese and Muller Load4 60 vario | Cargo | 1 | $10,539 | $9,639 | Bosch Cargo Line (smart system) mid-drive, 85Nm | 725 Wh |  | 80.5 lb | Discontinued by maker | The New Wheel, Blue Heron Bikes |
+| Riese and Muller Load4 75 vario | Cargo | 1 | $10,749 | $9,849 | Bosch Cargo Line (smart system) mid-drive, 85Nm | 725 Wh |  | 86.4 lb | Discontinued by maker | The New Wheel, Blue Heron Bikes |
 | Salsa Confluence Apex 1 | Standard | 1 | $3,199 | $2,799 | MAHLE X35+ rear hub | 250 Wh | 40 mi | 33 lb | Available | Alameda Bicycle, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton, Cyclepath |
 | Salsa Confluence CUES 10 | Standard | 1 | $3,499 | $3,099 | MAHLE X30 rear hub | 237 Wh | 45 mi |  | Available | Alameda Bicycle, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton, Cyclepath |
 | Salsa Confluence CUES 11 | Standard | 1 | $3,999 | $3,599 | MAHLE X30 rear hub | 237 Wh | 45 mi |  | Available | Alameda Bicycle, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton, Cyclepath |
