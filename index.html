@@ -521,9 +521,9 @@ main.grid{padding-bottom:96px}
 .rn{flex:none;color:var(--fg3);font-size:var(--t-micro);font-variant-numeric:tabular-nums}
 .ro:has(input:checked) .rn{color:var(--fg2)}
 .rcity{grid-template-columns:1fr 1fr;column-gap:20px}
-.rcity .ro:first-of-type{grid-column:1/-1}
+.rcity .ro:first-of-type .rn{display:none}
 .ro:has(input:checked) .rl{font-weight:600}
-.ro:has(input[value="near"]:checked){background:var(--well);grid-column:1/-1}
+.ro:has(input[value="near"]:checked){background:var(--well)}
 .ro.zero .rl{color:var(--fg3)}
 @media (hover:hover) and (pointer:fine){.ro:hover{background:var(--well)}.ro:hover .rn{color:var(--fg2)}}
 /* color swatches */
