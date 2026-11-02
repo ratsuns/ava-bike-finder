@@ -54,7 +54,7 @@
 {
 "n": "Route 66 Limited Edition",
 "hex": "#B5482E",
-"img": null
+"img": "09a5040f08e68f"
 },
 {
 "n": "Metallic Blue",
@@ -485,17 +485,12 @@
 {
 "n": "Titanium Gray",
 "hex": "#8A8D8F",
-"img": null
+"img": "2e60a00bde7503"
 },
 {
 "n": "Wasabi Green",
 "hex": "#A9B44A",
 "img": "71c4f8c46c5661"
-},
-{
-"n": "Neon Orange",
-"hex": "#FF6A1A",
-"img": null
 },
 {
 "n": "Anthracite Gray",
@@ -505,12 +500,12 @@
 {
 "n": "Machine Blue",
 "hex": "#3B5B7A",
-"img": null
+"img": "ef4c92ed0dd4aa"
 },
 {
 "n": "Aqua Green",
 "hex": "#5FB8A6",
-"img": null
+"img": "7294b35a487da6"
 }
 ],
 "img": "71c4f8c46c5661"
@@ -536,17 +531,12 @@
 {
 "n": "Titanium Gray",
 "hex": "#8A8D8F",
-"img": null
+"img": "54f2a0f3477e95"
 },
 {
 "n": "Wasabi Green",
 "hex": "#A9B44A",
 "img": "71c4f8c46c5661"
-},
-{
-"n": "Neon Orange",
-"hex": "#FF6A1A",
-"img": null
 },
 {
 "n": "Anthracite Gray",
@@ -556,12 +546,7 @@
 {
 "n": "Machine Blue",
 "hex": "#3B5B7A",
-"img": null
-},
-{
-"n": "Aqua Green",
-"hex": "#5FB8A6",
-"img": null
+"img": "62afcbca875b08"
 }
 ],
 "img": "71c4f8c46c5661"
@@ -594,17 +579,17 @@
 {
 "n": "Wasabi Green",
 "hex": "#A9B44A",
-"img": null
+"img": "9ccd7f0df38f82"
 },
 {
 "n": "Anthracite Gray",
 "hex": "#383E42",
-"img": null
+"img": "8fdc0f21b1aa05"
 },
 {
 "n": "Bone Gray",
 "hex": "#D6D2C4",
-"img": null
+"img": "a79d384fb738b9"
 }
 ],
 "img": "8344c405ae63c4"
@@ -635,17 +620,17 @@
 {
 "n": "Wasabi Green",
 "hex": "#A9B44A",
-"img": null
+"img": "9ccd7f0df38f82"
 },
 {
 "n": "Anthracite Gray",
 "hex": "#383E42",
-"img": null
+"img": "8fdc0f21b1aa05"
 },
 {
 "n": "Bone Gray",
 "hex": "#D6D2C4",
-"img": null
+"img": "a79d384fb738b9"
 }
 ],
 "img": "8344c405ae63c4"
@@ -673,12 +658,12 @@
 {
 "n": "Chai Latte Gray",
 "hex": "#B7AFA3",
-"img": null
+"img": "625baf951979c6"
 },
 {
 "n": "Niagara Blue",
 "hex": "#6F9FB8",
-"img": null
+"img": "cea739649ca5de"
 },
 {
 "n": "Pebble Brown",
@@ -688,7 +673,7 @@
 {
 "n": "Wasabi Green",
 "hex": "#A9B44A",
-"img": null
+"img": "9e522ce32ab03b"
 }
 ],
 "img": "42804de19236c5"
@@ -714,12 +699,12 @@
 {
 "n": "Chai Latte Gray",
 "hex": "#B7AFA3",
-"img": null
+"img": "94a2fcd5b4e1e1"
 },
 {
 "n": "Niagara Blue",
 "hex": "#6F9FB8",
-"img": null
+"img": "f8e36ba6f1040f"
 },
 {
 "n": "Pebble Brown",
@@ -729,7 +714,7 @@
 {
 "n": "Wasabi Green",
 "hex": "#A9B44A",
-"img": null
+"img": "bf673b195f599a"
 }
 ],
 "img": "42804de19236c5"
@@ -755,12 +740,12 @@
 {
 "n": "Chai Latte Gray",
 "hex": "#B7AFA3",
-"img": null
+"img": "94a2fcd5b4e1e1"
 },
 {
 "n": "Niagara Blue",
 "hex": "#6F9FB8",
-"img": null
+"img": "f8e36ba6f1040f"
 },
 {
 "n": "Pebble Brown",
@@ -770,7 +755,7 @@
 {
 "n": "Wasabi Green",
 "hex": "#A9B44A",
-"img": null
+"img": "bf673b195f599a"
 }
 ],
 "img": "42804de19236c5"
@@ -798,7 +783,7 @@
 {
 "n": "Chai Latte Gray",
 "hex": "#B7AFA3",
-"img": null
+"img": "93a0b752c6cc74"
 },
 {
 "n": "Coral Pink",
@@ -808,7 +793,7 @@
 {
 "n": "Dolphin Blue",
 "hex": "#6E8FA6",
-"img": null
+"img": "aa32716a2dd64c"
 },
 {
 "n": "Olive Green",
@@ -818,12 +803,12 @@
 {
 "n": "Turmeric Yellow",
 "hex": "#E0A526",
-"img": null
+"img": "2158856a689524"
 },
 {
 "n": "Anthracite Gray",
 "hex": "#383E42",
-"img": null
+"img": "d5a57f88d180fa"
 }
 ],
 "img": "2cd3198b35dd60"
@@ -849,7 +834,7 @@
 {
 "n": "Chai Latte Gray",
 "hex": "#B7AFA3",
-"img": null
+"img": "93a0b752c6cc74"
 },
 {
 "n": "Coral Pink",
@@ -859,7 +844,7 @@
 {
 "n": "Dolphin Blue",
 "hex": "#6E8FA6",
-"img": null
+"img": "aa32716a2dd64c"
 },
 {
 "n": "Olive Green",
@@ -869,12 +854,12 @@
 {
 "n": "Turmeric Yellow",
 "hex": "#E0A526",
-"img": null
+"img": "2158856a689524"
 },
 {
 "n": "Anthracite Gray",
 "hex": "#383E42",
-"img": null
+"img": "d5a57f88d180fa"
 }
 ],
 "img": "2cd3198b35dd60"
@@ -905,12 +890,12 @@
 {
 "n": "Cream Puff",
 "hex": "#EFE4CF",
-"img": null
+"img": "df853e2abc192d"
 },
 {
 "n": "Yellow Curry",
 "hex": "#D9A21B",
-"img": null
+"img": "fab7b0acb35ef8"
 }
 ],
 "img": "e962e956271567"
@@ -943,12 +928,12 @@
 {
 "n": "Turmeric Yellow",
 "hex": "#E0A526",
-"img": null
+"img": "d26b3dd5f6eec0"
 },
 {
 "n": "Anthracite Gray",
 "hex": "#383E42",
-"img": null
+"img": "0e2376f1f54bec"
 }
 ],
 "img": "e58e4b1a91f5a8"
@@ -979,12 +964,12 @@
 {
 "n": "Turmeric Yellow",
 "hex": "#E0A526",
-"img": null
+"img": "d26b3dd5f6eec0"
 },
 {
 "n": "Anthracite Gray",
 "hex": "#383E42",
-"img": null
+"img": "0e2376f1f54bec"
 }
 ],
 "img": "e58e4b1a91f5a8"
@@ -1098,7 +1083,7 @@
 {
 "n": "Powder Anthracite",
 "hex": "#3D3F42",
-"img": null
+"img": "617f215e18a0b6"
 }
 ],
 "img": null
@@ -1294,17 +1279,17 @@
 {
 "n": "Sedona Woodgrain",
 "hex": "#8B4A2B",
-"img": null
+"img": "b7ca6937966170"
 },
 {
 "n": "Honey Woodgrain",
 "hex": "#C99A5B",
-"img": null
+"img": "518fde07dbd304"
 },
 {
 "n": "Cool Black",
 "hex": "#1C1C1C",
-"img": null
+"img": "78d2e4d52afce1"
 },
 {
 "n": "Sleek White",
@@ -3831,7 +3816,7 @@
 {
 "n": "Green",
 "hex": "#5aa832",
-"img": "47053ee8cb44ba"
+"img": "8ddb95eadf3980"
 },
 {
 "n": "Metallic Matt Silver (Limited Edition)",
@@ -3862,7 +3847,7 @@
 {
 "n": "Adventure HD Blue",
 "hex": "#1f5fa8",
-"img": null
+"img": "af7f73935266be"
 },
 {
 "n": "Green",
@@ -5171,7 +5156,7 @@
 {
 "n": "Silk metallic red",
 "hex": "#9E2B2F",
-"img": null
+"img": "009f6a60173a90"
 },
 {
 "n": "Silk silver grey",
@@ -5618,7 +5603,7 @@
 {
 "n": "Metallic Red",
 "hex": "#8E1F24",
-"img": null
+"img": "9d5e203ee236ca"
 }
 ],
 "img": "9e0892b0663cc2"
@@ -5750,7 +5735,7 @@
 {
 "n": "Green",
 "hex": "#4a5a3c",
-"img": null
+"img": "7b15b355cc55a6"
 }
 ],
 "img": "bdbbe387b3fa8c"
@@ -5788,7 +5773,7 @@
 {
 "n": "Copperhead",
 "hex": "#B0663A",
-"img": null
+"img": "9934fc143e2c13"
 },
 {
 "n": "Pirate Black",
@@ -5798,21 +5783,6 @@
 {
 "n": "Lilac Haze",
 "hex": "#B9A6CF",
-"img": null
-},
-{
-"n": "Intergalactic Guacamole",
-"hex": "#8BA64A",
-"img": null
-},
-{
-"n": "Forest Green",
-"hex": "#2F5233",
-"img": null
-},
-{
-"n": "Diablo Red",
-"hex": "#B3202A",
 "img": null
 }
 ],
@@ -5841,12 +5811,12 @@
 {
 "n": "Blurple",
 "hex": "#4B4FB0",
-"img": null
+"img": "7f26914036cc70"
 },
 {
 "n": "Copperhead",
 "hex": "#B0663A",
-"img": null
+"img": "49e1de7bb2abc6"
 },
 {
 "n": "Pirate Black",
@@ -5856,7 +5826,7 @@
 {
 "n": "Glorious Grey",
 "hex": "#8C8F91",
-"img": null
+"img": "7505944d5be74b"
 },
 {
 "n": "Lilac Haze",
@@ -6974,7 +6944,7 @@
 {
 "n": "Black",
 "hex": "#1A1A1A",
-"img": null
+"img": "c0841d92a670a2"
 }
 ],
 "img": null
@@ -7284,12 +7254,12 @@
 {
 "n": "Mauve (Step Through)",
 "hex": "#B58A99",
-"img": null
+"img": "faff19c8db6418"
 },
 {
 "n": "Matcha (Step Through)",
 "hex": "#A9BF8A",
-"img": null
+"img": "a14c0549649b9b"
 }
 ],
 "img": "1614be82eafd33"
@@ -7335,12 +7305,12 @@
 {
 "n": "Matte Graphite (Step Through)",
 "hex": "#4A4C4E",
-"img": null
+"img": "9c8d9b01830d41"
 },
 {
 "n": "Seafoam (Step Through)",
 "hex": "#9FD3C1",
-"img": null
+"img": "6dab7cc628b6da"
 }
 ],
 "img": "2e243ff94fdaf1"
@@ -7513,7 +7483,7 @@
 {
 "n": "Matte Graphite (Step Through)",
 "hex": "#4A4C4E",
-"img": null
+"img": "a658b323d71516"
 }
 ],
 "img": "3c6324d60dbe8c"
@@ -7559,7 +7529,7 @@
 {
 "n": "Matte Shale (Step Through)",
 "hex": "#6E6A64",
-"img": null
+"img": "17a9b24bb91f4e"
 }
 ],
 "img": "ab0bea657ac98f"
@@ -8578,7 +8548,7 @@
 {
 "n": "Periwinkle Blue",
 "hex": "#8b9ad6",
-"img": null
+"img": "8396104998f5f2"
 },
 {
 "n": "Cream White",
@@ -8616,7 +8586,7 @@
 {
 "n": "Fluid Blue",
 "hex": "#2f7fc1",
-"img": null
+"img": "7410f432a67735"
 },
 {
 "n": "Cream White",
@@ -8652,7 +8622,7 @@
 {
 "n": "Cream White",
 "hex": "#f3eee2",
-"img": null
+"img": "50bfa686f2f3e4"
 },
 {
 "n": "Fluid Blue",
@@ -8695,7 +8665,7 @@
 {
 "n": "Navy",
 "hex": "#1F2F4F",
-"img": null
+"img": "6acd748ccab470"
 }
 ],
 "img": null
@@ -9299,7 +9269,7 @@
 {
 "n": "Papaya",
 "hex": "#F07F3C",
-"img": null
+"img": "66ecec7206c277"
 }
 ],
 "img": "bbf6f322acce3a"
@@ -9720,7 +9690,7 @@
 {
 "n": "Red",
 "hex": "#A8232B",
-"img": null
+"img": "93f63115e01efa"
 }
 ],
 "img": "4237d5f38ca263"
@@ -11016,12 +10986,12 @@
 {
 "n": "Green",
 "hex": "#A1B3AB",
-"img": null
+"img": "98c636fe2b6a00"
 },
 {
 "n": "Black",
 "hex": "#111111",
-"img": null
+"img": "7d13ffcaa4f348"
 }
 ],
 "img": null
@@ -12126,7 +12096,7 @@
 {
 "n": "Nightfall Black",
 "hex": "#15171a",
-"img": null
+"img": "0e9c19e4f49f0d"
 }
 ],
 "img": null
@@ -12154,7 +12124,7 @@
 {
 "n": "Nimbus",
 "hex": "#c9ccd0",
-"img": null
+"img": "effe7430d76d6e"
 }
 ],
 "img": null
@@ -12399,7 +12369,7 @@
 {
 "n": "Blue",
 "hex": "#2E6DB4",
-"img": null
+"img": "b15e944dcf067d"
 },
 {
 "n": "Green",
@@ -12414,7 +12384,7 @@
 {
 "n": "White",
 "hex": "#F2F2F0",
-"img": null
+"img": "a9c41c531c7588"
 }
 ],
 "img": "72e1d04e7e4e3f"
