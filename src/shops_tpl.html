@@ -19,15 +19,18 @@ __BASE_CSS__
 .sphero-in{padding-block:56px calc(56px + var(--ov))}
 .sphero h1{margin:0 auto;font-size:clamp(40px,6vw,72px);line-height:1.02;letter-spacing:-.035em;font-weight:700;text-wrap:balance}
 .sphero .lede{margin:16px auto 0;color:var(--fg2);font-size:clamp(16px,1.5vw,19px);line-height:1.55;max-width:52ch;text-wrap:balance}
-.sphero .spcount{margin:12px 0 0;font-size:var(--t-ui);color:var(--fg2)}
 /* the cards and the map start slightly over the bottom of the hero (no divider lines) */
-.spg{position:relative;z-index:1;margin-top:-40px;max-width:1440px;padding-block:0 72px;display:grid;gap:16px;grid-template-columns:minmax(0,1fr);grid-template-areas:"map" "list"}
+.spg{position:relative;z-index:1;margin-top:-40px;max-width:1440px;padding-block:0 72px;display:grid;gap:16px;grid-template-columns:minmax(0,1fr);grid-template-areas:"map" "count" "list"}
+/* "Where to buy" and the shop count sit at the top left, right above the list */
+.sphead{grid-area:count;align-self:end}
+.sphead h2{margin:0 0 2px;font-size:var(--t-h2);line-height:1.2;letter-spacing:-.025em;font-weight:700;text-wrap:balance}
+.spcount{margin:0;font-size:var(--t-ui);color:var(--fg2)}
 .spcount b{color:var(--fg);font-weight:600}
 .spmap{grid-area:map;position:relative;height:clamp(280px,45vh,460px);height:clamp(280px,45svh,460px);border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--mapbg);isolation:isolate}
 .splist{grid-area:list;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;align-content:start}
 @media (min-width:1024px){
- .sphero{--ov:56px;min-height:clamp(420px,58vh,580px);min-height:clamp(420px,58svh,580px)}
- .spg{margin-top:-56px;grid-template-columns:minmax(360px,440px) minmax(0,1fr);grid-template-areas:"list map";column-gap:24px}
+ .sphero{--ov:56px;min-height:clamp(380px,50vh,500px);min-height:clamp(380px,50svh,500px)}
+ .spg{margin-top:-56px;grid-template-columns:minmax(360px,440px) minmax(0,1fr);grid-template-rows:auto 1fr;grid-template-areas:"count map" "list map";column-gap:24px;row-gap:12px}
  .spmap{position:sticky;top:72px;align-self:start;height:calc(100vh - 88px);height:calc(100svh - 88px)}
  .splist{grid-template-columns:minmax(0,1fr)}
 }
@@ -80,9 +83,10 @@ a.mcl span{text-decoration:underline;text-decoration-color:var(--line2);text-und
 </style>
 </head><body data-overlayscrollbars-initialize style="margin:0">
 <header class="sbar">__NAV__</header>
-<section class="sphero" aria-labelledby="sph"><canvas class="spdots" aria-hidden="true"></canvas><div class="wrap sphero-in"><h1 id="sph">Vendor directory</h1><p class="lede">Every participating shop. Call ahead to check stock; the rebate only works in person.</p><p class="spcount"><b>__COUNT__</b> shops</p></div></section>
+<section class="sphero" aria-labelledby="sph"><canvas class="spdots" aria-hidden="true"></canvas><div class="wrap sphero-in"><h1 id="sph">Vendor directory</h1><p class="lede">Every participating shop. Call ahead to check stock; the rebate only works in person.</p></div></section>
 <main class="wrap spg">
 <div class="spmap" id="map" role="region" aria-label="Map of the shops"></div>
+<div class="sphead"><h2>Where to buy</h2><p class="spcount"><b>__COUNT__</b> shops</p></div>
 <div class="splist" id="list"></div>
 </main>
 <script>
@@ -117,7 +121,7 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
    ctx.fillStyle='rgba('+(hl[i]||ph[i]<.9?acc:col)+','+Math.min(1,a)+')';ctx.beginPath();ctx.arc(X[i],Y[i],rad*(1+.6*a),0,6.283);ctx.fill()}};
  const layout=()=>{const b=sec.getBoundingClientRect();w=b.width;h=b.height;if(!w||!h)return;dpr=Math.min(devicePixelRatio||1,2);cv.width=Math.round(w*dpr);cv.height=Math.round(h*dpr);
   /* the map fills the hero's height; on narrow screens its sides are cropped, keeping the Bay Area in view */
-  const asp=(W.cols*W.dx)/(W.rows*W.dy),mw=Math.min((h-24)*asp,Math.max(w-32,w*2),1000),mh=mw/asp,bf=(bx+.5)/W.cols,ox=mw>w-32?Math.min(0,Math.max(w-mw,w*.14-bf*mw)):(w-mw)/2,oy=(h-mh)/2,sx=mw/W.cols,sy=mh/W.rows;rad=Math.max(.75,sx*.19);
+  const asp=(W.cols*W.dx)/(W.rows*W.dy),mw=Math.min((h-24)*asp,Math.max(w-32,w*2)),mh=mw/asp,bf=(bx+.5)/W.cols,ox=mw>w-32?Math.min(0,Math.max(w-mw,w*.14-bf*mw)):(w-mw)/2,oy=(h-mh)/2,sx=mw/W.cols,sy=mh/W.rows;rad=Math.max(.75,sx*.19);
   /* dots fade toward the top and the far south (like the reference), softly behind the title so it stays easy to read, and away along the bottom edge into the page */
   for(let i=0;i<N;i++){const[c,r]=cells[i];X[i]=ox+(c+.5)*sx;Y[i]=oy+(r+.5)*sy;const t=r/W.rows;let a=(t<.32?.18+.82*t/.32:1)*(t>.86?Math.max(.2,1-(t-.86)/.14*.8):1);
    const narrow=w<700,fb=narrow?90:130,yb=(h-Y[i])/fb;if(yb<1){const k=Math.max(0,yb);a*=k*k*(3-2*k)}
