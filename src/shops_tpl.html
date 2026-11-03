@@ -81,12 +81,18 @@ __BASE_CSS__
 .mcard.open{pointer-events:auto;visibility:visible;opacity:1;transform:none;transition:opacity .15s var(--ease-out),transform .15s var(--ease-out),visibility 0s}
 :root[data-theme="dark"] .mcard{border-color:var(--line2);box-shadow:0 2px 6px rgba(0,0,0,.35),0 16px 40px rgba(0,0,0,.55)}
 @media (prefers-reduced-motion:reduce){.mcard,.mcard.open{transform:none}.pin svg{transition:none}}
-/* phones and tablets: like Yelp, the shop's card docks just above the list sheet (full width) instead of floating at the pin */
+/* phones and tablets: like Yelp, a row of shop cards docks just above the list sheet; swipe it left or right to go through the shops */
 .mdock{display:none}
 @media (max-width:1023px){
- .mdock{display:flex;justify-content:center;position:absolute;left:12px;right:12px;bottom:0;z-index:4;pointer-events:none;will-change:transform}
- .mdock .mcard{width:100%;max-width:440px}
+ .mdock{display:block;position:absolute;left:0;right:0;bottom:0;z-index:4;pointer-events:none;will-change:transform}
+ .mcar{display:flex;align-items:stretch;gap:10px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scroll-padding-inline:24px;padding:12px 24px 10px;scrollbar-width:none;touch-action:pan-x;
+  opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .15s var(--ease-out),transform .2s var(--ease-out),visibility 0s linear .15s}
+ .mcar::-webkit-scrollbar{display:none}
+ .mcar.open{pointer-events:auto;opacity:1;visibility:visible;transform:none;transition:opacity .18s var(--ease-out),transform .22s var(--ease-out),visibility 0s}
+ .mcar .mcard{flex:0 0 calc(100% - 48px);max-width:440px;width:auto;scroll-snap-align:center;scroll-snap-stop:always;pointer-events:auto;visibility:visible;opacity:1;transform:none;transition:none;box-shadow:0 1px 2px rgba(18,22,20,.06),0 4px 14px rgba(18,22,20,.14)}
+ :root[data-theme="dark"] .mcar .mcard{box-shadow:0 1px 3px rgba(0,0,0,.4),0 6px 16px rgba(0,0,0,.5)}
 }
+@media (max-width:1023px) and (prefers-reduced-motion:reduce){.mcar,.mcar.open{transform:none}}
 .mctop{display:flex;align-items:center;gap:10px;min-width:0}
 .mctop .slogo{margin:0}
 .mcname{display:grid;min-width:0;overflow-wrap:anywhere}
@@ -265,25 +271,39 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
   const cw=document.createElement('div');cw.className='mcw';const card=document.createElement('div');card.className='mcard';card.setAttribute('aria-hidden','true');cw.append(card);
   const cm=new maplibregl.Marker({element:cw,anchor:'bottom'}).setLngLat([SH[0].lng,SH[0].lat]).addTo(map);
   const dock=document.createElement('div');dock.className='mdock';box.append(dock);
+  const car=document.createElement('div');car.className='mcar';car.setAttribute('role','region');car.setAttribute('aria-label','Shops');dock.append(car);
   let cur=null,pinned=null,t=0,onCard=null;
   /* phones: the card sits in the dock just above the sheet; desktop: at the pin */
-  const home=()=>{const want=WIDE.matches?cw:dock;if(card.parentNode!==want)want.append(card)};
-  const dockTo=anim=>{const st=Math.min(window.sheetTopIn?window.sheetTopIn():Infinity,box.clientHeight);dock.style.transition=anim&&!REDUCE.matches?'transform .32s var(--ease-drawer)':'none';dock.style.transform='translateY('+Math.round(st-box.clientHeight-10)+'px)';return st-10};
+
+  const dockTo=anim=>{const st=Math.min(window.sheetTopIn?window.sheetTopIn():Infinity,box.clientHeight);dock.style.transition=anim&&!REDUCE.matches?'transform .32s var(--ease-drawer)':'none';dock.style.transform='translateY('+Math.round(st-box.clientHeight)+'px)';return st-10};
   /* above the pin when it fits, else below; never over the credits at the bottom. A tapped or clicked pin whose card doesn't fit either way nudges the map */
-  const place=(s,pan,anim)=>{if(!WIDE.matches){const p=map.project([s.lng,s.lat]),cb=dockTo(anim),ct=cb-card.offsetHeight;card.style.transformOrigin='50% 100%';
-    /* keep the pin in the open map above the card */
-    if(pan&&(p.y>ct-12||p.y<56))map.easeTo({center:[s.lng,s.lat],offset:[0,Math.round(ct/2-box.clientHeight/2)],duration:REDUCE.matches?0:300});return}
+  const place=(s,pan,anim)=>{if(!WIDE.matches){const p=map.project([s.lng,s.lat]),ct=dockTo(anim)-(car.offsetHeight-22);
+    /* keep the pin in the open map above the row of cards */
+    if(pan&&(p.y>ct-12||p.y<56||p.x<24||p.x>box.clientWidth-24))map.easeTo({center:[s.lng,s.lat],offset:[0,Math.round(ct/2-box.clientHeight/2)],duration:REDUCE.matches?0:350});return}
    const p=map.project([s.lng,s.lat]),W=box.clientWidth,Hh=box.clientHeight,w=card.offsetWidth,h=card.offsetHeight,cr=box.querySelector('.maplibregl-ctrl-bottom-right'),top=8,bot=Math.min(Hh-8-(cr?cr.offsetHeight:0),(window.sheetTop?window.sheetTop():Infinity)-box.getBoundingClientRect().top-8);
    const upTop=p.y-46-h,dnBot=p.y+10+h,up=upTop>=top||(dnBot>bot&&p.y-46-top>=bot-p.y-10);
    const l=p.x-w/2,dx=Math.round(Math.min(Math.max(l,8),W-8-w)-l);
    cm.setOffset([dx,up?-46:h+10]);card.style.transformOrigin=`${Math.round(w/2-dx)}px ${up?'100%':'0'}`;
    if(pan){const dy=up?Math.min(0,upTop-top):Math.max(0,dnBot-bot);if(dy)map.panBy([0,Math.round(dy)],{duration:REDUCE.matches?0:250})}};
+  /* phones: the row of cards (built the first time it's needed, in list order) */
+  let built=false,quiet=0,st0=0;
+  const select=(k,pan)=>{if(cur&&pins.get(cur))pins.get(cur).classList.remove('sel');cur=k;pins.get(k).classList.add('sel');mark(k);place(BY[k],pan)};
+  const carShow=(k,pan)=>{if(!built){car.innerHTML=SH.map(s=>`<div class="mcard" data-k="${esc(s.k)}">${cardHTML(s)}</div>`).join('');built=true}
+   if(window.sheetSnap&&window.sheetSnap()==='full')window.sheetTo('half');
+   const was=car.classList.contains('open');car.classList.add('open');select(k,pan);
+   const el=car.children[SH.findIndex(s=>s.k===k)];if(el){quiet=performance.now()+600;car.scrollTo({left:el.offsetLeft-(car.clientWidth-el.offsetWidth)/2,behavior:was&&!REDUCE.matches?'smooth':'auto'})}};
+  /* swiping the row selects the card that settles in the middle */
+  const settle=()=>{if(!car.classList.contains('open')||performance.now()<quiet)return;const mid=car.scrollLeft+car.clientWidth/2;let best=null,bd=1e9;
+   for(const el of car.children){const d=Math.abs(el.offsetLeft+el.offsetWidth/2-mid);if(d<bd){bd=d;best=el}}
+   if(best&&best.dataset.k!==cur){const k=best.dataset.k;pinned=k;select(k,true);if(onCard){const lr=list.getBoundingClientRect(),cr=onCard.getBoundingClientRect();list.scrollTo({top:list.scrollTop+cr.top-lr.top-8,behavior:REDUCE.matches?'auto':'smooth'})}}};
+  car.addEventListener('scroll',()=>{clearTimeout(st0);st0=setTimeout(settle,90)},{passive:true});
   const show=(k,pan)=>{clearTimeout(t);const s=BY[k];if(!s)return;
-   home();if(!WIDE.matches&&window.sheetSnap&&window.sheetSnap()==='full')window.sheetTo('half');
+   if(!WIDE.matches){carShow(k,pan);return}
+   if(card.parentNode!==cw)cw.append(card);
    if(cur!==k){if(cur&&pins.get(cur))pins.get(cur).classList.remove('sel');cur=k;card.innerHTML=cardHTML(s);pins.get(k).classList.add('sel');cm.setLngLat([s.lng,s.lat])}
    place(s,pan);card.classList.add('open');card.setAttribute('aria-hidden','false')};
   const mark=k=>{if(onCard)onCard.classList.remove('on');onCard=k?list.querySelector(`.shop[data-shop="${CSS.escape(k)}"]`):null;if(onCard)onCard.classList.add('on')};
-  const hide=()=>{clearTimeout(t);if(cur&&pins.get(cur))pins.get(cur).classList.remove('sel');cur=null;pinned=null;mark(null);card.classList.remove('open');card.setAttribute('aria-hidden','true')};
+  const hide=()=>{clearTimeout(t);if(cur&&pins.get(cur))pins.get(cur).classList.remove('sel');cur=null;pinned=null;mark(null);card.classList.remove('open');card.setAttribute('aria-hidden','true');car.classList.remove('open')};
   /* leaving the pin or the card waits a moment, so the pointer can cross the gap between them; a clicked pin's card stays */
   const hideSoon=()=>{clearTimeout(t);t=setTimeout(()=>{if(pinned){if(cur!==pinned)show(pinned)}else hide()},150)};
   let ptype='mouse';box.addEventListener('pointerdown',e=>{ptype=e.pointerType},true);
@@ -300,6 +320,7 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
   box.addEventListener('focusout',e=>{if(!e.relatedTarget||!e.relatedTarget.closest||!e.relatedTarget.closest('.pin,.mcw'))hideSoon()});
   document.addEventListener('keydown',e=>{if(e.key==='Escape'&&cur){const k=cur;hide();const p=pins.get(k);if(p&&box.contains(document.activeElement))p.blur()}});
   map.on('moveend',()=>{if(cur)place(BY[cur])});
+  WIDE.addEventListener('change',()=>{if(cur)hide()});
   /* hovering a shop in the list lights up its pin */
   let hot=null;const setHot=k=>{if(hot===k)return;if(hot&&pins.get(hot))pins.get(hot).classList.remove('hot');hot=k;if(k&&pins.get(k))pins.get(k).classList.add('hot')};
   list.addEventListener('pointerover',e=>{if(e.pointerType!=='mouse')return;const c=e.target.closest('.shop');setHot(c?c.dataset.shop:null)});
@@ -308,11 +329,11 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
   map.once('load',()=>list.classList.add('hasmap'));
   list.addEventListener('click',e=>{if(e.target.closest('a,button')||!list.classList.contains('hasmap'))return;const c=e.target.closest('.shop');if(!c)return;const k=c.dataset.shop,s=BY[k];if(!s)return;
    if(getSelection&&String(getSelection()).length)return;
-   if(cur&&cur!==k)hide();pinned=k;mark(k);const fast=REDUCE.matches;
+   if(cur&&cur!==k&&WIDE.matches)hide();pinned=k;mark(k);const fast=REDUCE.matches;
    /* phones and tablets: the sheet stays put (fully open drops to half so the map shows); the shop's card docks above the sheet
       and the map brings its pin into the open area above the card */
    if(!WIDE.matches){const r=box.getBoundingClientRect();if(Math.abs(r.top-64)>2)scrollTo({top:scrollY+r.top-64,behavior:fast?'auto':'smooth'});
-    show(k);const ct=dockTo(true)-card.offsetHeight;map.easeTo({center:[s.lng,s.lat],zoom:Math.max(map.getZoom(),13),offset:[0,Math.round(ct/2-box.clientHeight/2)],duration:fast?0:600});return}
+    show(k);const ct=dockTo(true)-(car.offsetHeight-22);map.easeTo({center:[s.lng,s.lat],zoom:Math.max(map.getZoom(),13),offset:[0,Math.round(ct/2-box.clientHeight/2)],duration:fast?0:600});return}
    map.easeTo({center:[s.lng,s.lat],zoom:Math.max(map.getZoom(),13),duration:fast?0:600});
    let done=false;const open=()=>{if(done||pinned!==k)return;done=true;show(k,true)};map.once('moveend',open);setTimeout(open,fast?50:700)});
   /* follow the site theme. Once the map is idle the other theme's style is fetched, so switching is instant (markers and the card stay) */
