@@ -1144,7 +1144,7 @@ function swWin(box,ac){if(!box||!box.querySelector('.swmore'))return;const ds=[.
 function cardHTML(b){
  const pk=PICKS[b.brand+'|'+b.model];
  const price=b.price!=null
-  ?`<div class="price"><div class="pay"><strong>${money(b.you)}</strong><span>you pay</span></div><div class="list"><s>${money(b.price)}</s> minus ${money(b.reb)} rebate, plus tax</div></div>`
+  ?`<div class="price"><div class="pay"><strong>${money(b.you)}</strong><span>you pay + tax</span></div><div class="list"><s>${money(b.price)}</s> minus ${money(b.reb)} rebate. Shops may add assembly and shipping.</div></div>`
   :`<div class="price na"><div class="pay"><strong>Price not listed</strong></div><div class="list">Ask the shop for the price.</div></div>`;
  const allNa=[b.spd,b.tq,b.load,b.range].every(v=>v==null||v==='');
  const ac0=activeColor(b),sw=b.cv.length?`<div class="sws" role="group" aria-label="Colors">${b.cv.map((c,ci)=>`<button type="button" class="sw${c.img?'':' np'}${swOff(b.cv.length,ac0,ci)}" data-c="${ci}" tabindex="${ci===(ac0??0)?0:-1}" aria-pressed="${ci===ac0}" aria-label="${esc(c.n)}" title="${esc(c.n)}${c.img?'':' (no photo yet)'}"><i style="background:${c.hex||CHEX[c.f]}"></i></button>`).join('')}${swMore(b.cv.length)}</div><span class="npn"${ac0!=null&&!b.cv[ac0].img?'':' hidden'}>${ac0!=null&&!b.cv[ac0].img?esc(npNote(b.cv[ac0])):''}</span>`:'';
@@ -1294,8 +1294,8 @@ function buildBike(i){const pre=i+'|'+F.city+'|'+F.q+'|'+(ME?NEAR_MI:'');if(BIKE
  const cell=([l,v,u,x],w)=>`<div${w?' class="w"':''}><dt>${l}</dt><dd>${esc(v)}${u?`<small>${u}</small>`:''}</dd>${x?`<p>${esc(x)}</p>`:''}</div>`;
  const stats=narrow.map(s=>cell(s)).join('')+wide.map(s=>cell(s,1)).join('');
  const price=b.price!=null
-  ?`<div class="bmpay"><strong>${money(b.you)}</strong><span>you pay</span></div>
-   <div class="list bmlist"><s>${money(b.price)}</s> minus ${money(b.reb)} rebate, plus tax</div>`
+  ?`<div class="bmpay"><strong>${money(b.you)}</strong><span>you pay + tax</span></div>
+   <div class="list bmlist"><s>${money(b.price)}</s> minus ${money(b.reb)} rebate. Shops may add assembly and shipping.</div>`
   :`<div class="bmpay na"><strong>Price not listed</strong></div>
    <p class="bmtax">Ask the shop for today's price. Your rebate takes ${money(b.reb)} off, and sales tax is extra.</p>`;
  const sws=b.cv.length?`<div class="sws" role="group" aria-label="Colors">${b.cv.map((c,ci)=>`<button type="button" class="sw${c.img?'':' np'}" data-c="${ci}" tabindex="-1" aria-pressed="false" aria-label="${esc(c.n)}" title="${esc(c.n)}${c.img?'':' (no photo yet)'}"><i style="background:${c.hex||CHEX[c.f]}"></i></button>`).join('')}${swMore(b.cv.length)}</div>`:'';
