@@ -307,7 +307,7 @@ def _css_keep(css,classes,types):
 if SITE:
     _tpl=open('site_tpl.html').read()
     _css=_tpl[_tpl.index('<style>')+7:_tpl.index('</style>')]
-    BASE_CSS=_css_keep(_css,{'wrap','shop','slogo','ini','shead','maplink','hrs','tel','mail','web','city','m','brand','themebtn','tm-core','tm-cut','tm-rays','topnav','navr','navlinks','menubtn','mi-open','mi-close','navmenu','nmh','nmb','nmx','nml','nmc','locked'},{'html','body','a','svg','img','b','span','ul','li','button','nav'})
+    BASE_CSS=_css_keep(_css,{'wrap','shop','slogo','ini','shead','maplink','hrs','tel','mail','web','city','m','brand','themebtn','tm-core','tm-cut','tm-rays','topnav','navr','navlinks','menubtn','mi-open','mi-close','navmenu','nmh','nmb','nmx','nml','nmc','locked','drawer','dhead','dbody','dclose','g2','g3','gamt','gc','gdl','gk','gl','gnote','gsrc','gsteps','gsub','lg','rb','has-more','has-above'},{'html','body','a','svg','img','b','span','ul','li','button','nav','dialog','div','p','h2','h3','dl','dt','dd','ol'})
     # the card helpers and the card markup come straight from the home page script, so the cards are identical
     def _js(name,until=None):
         m=re.search(r'^const '+name+r'=.*$',_tpl,re.M); assert m,name
@@ -339,10 +339,11 @@ if SITE:
     # the same top nav and phone menu as the home page; its window buttons become links back to the home page
     _nav=_tpl[_tpl.index('<nav class="topnav"'):_tpl.index('<div class="hero-media"')]
     _nav=_nav.replace('href="#top"','href="./"',1).replace('href="shops.html"','href="shops.html" aria-current="page"')
-    _nav=re.sub(r'<button type="button" data-open="(\w+)">(.*?)</button>',r'<a href="./#\1">\2</a>',_nav,flags=re.S)
-    assert 'data-open' not in _nav and _nav.count('aria-current')==2
+    assert _nav.count('data-open="guide"')==2 and _nav.count('data-open="rebate"')==2 and _nav.count('aria-current')==2
+    # the E-bike guide and Rebate info windows come along, so those buttons open them right here
+    _dl=''.join(_tpl[_tpl.index(f'<dialog id="{d}"'):_tpl.index('</dialog>',_tpl.index(f'<dialog id="{d}"'))+9]+'\n' for d in ('guide','rebate'))
     SP=open('shops_tpl.html').read()
-    for a,b in (('__HEAD__',SHEAD),('__BASE_CSS__',BASE_CSS),('__HELPERS__',HELPERS),('__CARD__',CARD),('__NAV__',_nav),('__COUNT__',str(len(SHL))),('__WORLD__',open('worlddots.json').read().strip()),('__SHOPS__',json.dumps(SHL,separators=(',',':'),ensure_ascii=False).replace('</','<\\/'))):
+    for a,b in (('__HEAD__',SHEAD),('__BASE_CSS__',BASE_CSS),('__HELPERS__',HELPERS),('__CARD__',CARD),('__NAV__',_nav),('__DIALOGS__',_dl),('__COUNT__',str(len(SHL))),('__WORLD__',open('worlddots.json').read().strip()),('__SHOPS__',json.dumps(SHL,separators=(',',':'),ensure_ascii=False).replace('</','<\\/'))):
         assert SP.count(a)==1,a; SP=SP.replace(a,b)
     open(SITE+'/shops.html','w').write(SP)
     print('shops.html',len(SHL),'locations',len(SP),'bytes')

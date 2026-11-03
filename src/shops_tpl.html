@@ -13,6 +13,10 @@ __BASE_CSS__
 .navlinks a[aria-current="page"]{color:rgb(var(--hink))}
 .navmenu .wrap{padding-block:0;display:block}
 .navmenu .nmh .wrap{display:flex}
+/* the E-bike guide and Rebate info side panels (same as the home page) and the dimmed page behind them */
+#scrim{position:fixed;inset:0;z-index:40;background:rgba(0,0,0,.5);opacity:0;pointer-events:none;transition:opacity .2s var(--ease-out)}
+#scrim.on{opacity:1;pointer-events:auto}
+@media (prefers-reduced-motion:reduce){#scrim{transition:none}}
 /* hero: big title like the home page, over a dotted world map (dots near the pointer twinkle; the Bay Area glows in the accent colour) */
 .sphero{position:relative;isolation:isolate;overflow:hidden;display:grid;place-items:center;text-align:center;min-height:clamp(280px,46vh,460px);min-height:clamp(280px,46svh,460px);--ov:40px}
 .spdots{position:absolute;inset:0;width:100%;height:100%;z-index:-2;display:block}
@@ -89,6 +93,7 @@ a.mcl span{text-decoration:underline;text-decoration-color:var(--line2);text-und
 <div class="sphead"><h2>Where to buy</h2><p class="spcount"><b>__COUNT__</b> shops</p></div>
 <div class="splist" id="list"></div>
 </main>
+__DIALOGS__
 <script>
 /* shop cards: drawn right away from the inline list, with the same helpers and markup as the home page's "Where to buy" */
 const SH=__SHOPS__;
@@ -136,12 +141,28 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
  sec.addEventListener('pointerleave',()=>{target=0;if(!raf&&on>0)raf=requestAnimationFrame(loop)});
  new ResizeObserver(layout).observe(sec);
  new MutationObserver(layout).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']})})();
+/* E-bike guide and Rebate info: side panels like the home page. Escape, the close button or a tap on the dimmed page closes them;
+   the page behind stays still and keyboard focus stays inside */
+(()=>{const H=document.documentElement,S=document.createElement('div');S.id='scrim';S.setAttribute('aria-hidden','true');document.body.append(S);const ST=[];
+ const lock=()=>H.classList.toggle('locked',!!document.querySelector('dialog[open]:not([data-state="closing"]),#navmenu:popover-open'));
+ const close=d=>{if(!d.open||d.dataset.state==='closing')return;ST.splice(ST.indexOf(d),1);S.classList.toggle('on',ST.length>0);d.dataset.state='closing';lock();
+  let t;const done=()=>{clearTimeout(t);d.removeEventListener('transitionend',te);if(d.open)d.close();d.dataset.state='';lock();const o=d._opener;if(o&&o.isConnected&&o.offsetParent)o.focus({preventScroll:true})};
+  const te=e=>{if(e.target===d&&e.propertyName==='transform')done()};d.addEventListener('transitionend',te);t=setTimeout(done,320)};
+ const open=(d,opener)=>{if(!d||d.open)return;d._opener=opener||document.activeElement;ST.push(d);d.tabIndex=-1;d.setAttribute('aria-modal','true');d.dataset.state='closed';d.show();d.offsetWidth;d.dataset.state='open';S.classList.add('on');d.focus({preventScroll:true});lock();const b=d.querySelector('.dbody');if(b)b.scrollTop=0};
+ document.querySelectorAll('[data-open]').forEach(b=>b.addEventListener('click',()=>{const M=$('navmenu');if(M&&M.matches(':popover-open'))M.hidePopover();open($(b.dataset.open),M&&M.contains(b)?document.querySelector('.menubtn'):b)}));
+ document.querySelectorAll('dialog.drawer .dclose').forEach(b=>b.addEventListener('click',()=>close(b.closest('dialog'))));
+ S.addEventListener('click',()=>{const d=ST[ST.length-1];if(d)close(d)});
+ document.addEventListener('keydown',e=>{const d=ST[ST.length-1];if(!d)return;if(e.key==='Escape'){e.preventDefault();close(d);return}
+  if(e.key==='Tab'){const f=[...d.querySelectorAll('button,[href],[tabindex]:not([tabindex="-1"])')].filter(x=>x.getClientRects().length);if(!f.length)return;const a=f[0],z=f[f.length-1];
+   if(e.shiftKey&&(document.activeElement===a||document.activeElement===d)){e.preventDefault();z.focus()}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus()}}});
+ /* soft fades at the top and bottom of a panel's text while there's more to scroll */
+ document.querySelectorAll('dialog.drawer .dbody').forEach(el=>{const upd=()=>{el.classList.toggle('has-more',el.scrollHeight-el.scrollTop-el.clientHeight>4);el.classList.toggle('has-above',el.scrollTop>4)};el.addEventListener('scroll',upd,{passive:true});new ResizeObserver(upd).observe(el)})})();
 /* phone menu: same behaviour as the home page (the button shows the X only while the menu is really open; the page behind doesn't scroll) */
 (()=>{const M=$('navmenu'),B=document.querySelector('.menubtn'),H=document.documentElement;if(!M||!B)return;
- const sync=()=>{const o=M.matches(':popover-open');if(B.getAttribute('aria-expanded')!==String(o)){B.setAttribute('aria-expanded',o);B.setAttribute('aria-label',o?'Close menu':'Menu')}H.classList.toggle('locked',o)};
+ const sync=()=>{const o=M.matches(':popover-open');if(B.getAttribute('aria-expanded')!==String(o)){B.setAttribute('aria-expanded',o);B.setAttribute('aria-label',o?'Close menu':'Menu')}H.classList.toggle('locked',o||!!document.querySelector('dialog[open]:not([data-state="closing"])'))};
  M.addEventListener('toggle',sync);M.addEventListener('beforetoggle',()=>requestAnimationFrame(sync));
  ['click','keyup','pointerup'].forEach(t=>document.addEventListener(t,()=>requestAnimationFrame(sync),true));addEventListener('pageshow',sync);
- M.addEventListener('click',e=>{if(e.target.closest('.nml a'))M.hidePopover()});
+ M.addEventListener('click',e=>{if(e.target.closest('.nml a'))M.hidePopover()});/* the menu's guide and rebate buttons close it and open their panel (see above) */
  matchMedia('(min-width: 761px)').addEventListener('change',e=>{if(e.matches&&M.matches(':popover-open'))M.hidePopover()})})();
 /* map: starts as soon as MapLibre (loaded with defer in the head) is ready */
 (()=>{const box=$('map'),list=$('list'),H=document.documentElement;
