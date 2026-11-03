@@ -142,7 +142,12 @@ a.mcl span{text-decoration:underline;text-decoration-color:var(--line2);text-und
 /* "find me" button (under the zoom buttons), your location dot, and a short note if location isn't available */
 .spmap .mloc{display:grid;place-items:center;color:#333;touch-action:manipulation}
 .spmap .mloc[aria-busy="true"]{color:var(--accent-ink)}
-.spmap .me{width:16px;height:16px;border-radius:50%;background:#4285f4;box-shadow:0 0 0 3px #fff,0 0 0 14px rgba(66,133,244,.2),0 1px 4px 3px rgba(0,0,0,.2)}
+.spmap .me{width:12px;height:12px}
+.spmap .me::after{content:"";position:absolute;inset:0;border-radius:50%;background:#4285f4;box-shadow:0 0 0 2.5px #fff,0 1px 3px 2.5px rgba(0,0,0,.2)}
+/* the soft blue ring around your dot breathes slowly (transform and opacity only, so it costs nothing while the map moves) */
+.spmap .me::before{content:"";position:absolute;inset:-11px;border-radius:50%;background:rgba(66,133,244,.22);animation:mepulse 2.6s cubic-bezier(0.77,0,0.175,1) infinite alternate}
+@keyframes mepulse{from{transform:scale(.7);opacity:1}to{transform:scale(1.1);opacity:.55}}
+@media (prefers-reduced-motion:reduce){.spmap .me::before{animation:none}}
 .spmap .mtoast{position:absolute;left:50%;top:12px;z-index:6;max-width:calc(100% - 120px);transform:translate(-50%,-6px);opacity:0;visibility:hidden;pointer-events:none;padding:8px 12px;border-radius:8px;background:#1f2937;color:#fff;font-size:var(--t-ui);line-height:1.35;text-align:center;box-shadow:0 4px 14px rgba(0,0,0,.25);transition:opacity .18s var(--ease-out),transform .18s var(--ease-out),visibility 0s linear .18s}
 .spmap .mtoast.on{opacity:1;visibility:visible;transform:translate(-50%,0);transition:opacity .18s var(--ease-out),transform .18s var(--ease-out),visibility 0s}
 @media (prefers-reduced-motion:reduce){.spmap .mtoast{transform:translate(-50%,0)}}
