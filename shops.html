@@ -270,7 +270,7 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
    ctx.fillStyle='rgba('+(hl[i]||ph[i]<.9?acc:col)+','+Math.min(1,a)+')';ctx.beginPath();ctx.arc(X[i],Y[i],rad*(1+.6*a),0,6.283);ctx.fill()}};
  const layout=()=>{const b=sec.getBoundingClientRect();w=b.width;h=b.height;if(!w||!h)return;dpr=Math.min(devicePixelRatio||1,2);cv.width=Math.round(w*dpr);cv.height=Math.round(h*dpr);
   /* the map fills the hero's height; on narrow screens its sides are cropped, keeping the Bay Area in view */
-  const asp=(W.cols*W.dx)/(W.rows*W.dy),mw=Math.min((h-24)*asp,Math.max(w-32,w*2)),mh=mw/asp,bf=(bx+.5)/W.cols,ox=mw>w-32?Math.min(0,Math.max(w-mw,w*.14-bf*mw)):(w-mw)/2,oy=(h-mh)/2,sx=mw/W.cols,sy=mh/W.rows;rad=Math.max(.75,sx*.19);
+  const asp=(W.cols*W.dx)/(W.rows*W.dy),mw=Math.min((h-24)*asp,Math.max(w-32,w*2),1000),mh=mw/asp,bf=(bx+.5)/W.cols,ox=mw>w-32?Math.min(0,Math.max(w-mw,w*.14-bf*mw)):(w-mw)/2,oy=(h-mh)/2,sx=mw/W.cols,sy=mh/W.rows;rad=Math.max(.75,sx*.19);
   /* dots fade toward the top and the far south (like the reference), softly behind the title so it stays easy to read, and away along the bottom edge into the page */
   for(let i=0;i<N;i++){const[c,r]=cells[i];X[i]=ox+(c+.5)*sx;Y[i]=oy+(r+.5)*sy;const t=r/W.rows;let a=(t<.32?.18+.82*t/.32:1)*(t>.86?Math.max(.2,1-(t-.86)/.14*.8):1);
    const narrow=w<700,fb=narrow?90:130,yb=(h-Y[i])/fb;if(yb<1){const k=Math.max(0,yb);a*=k*k*(3-2*k)}
