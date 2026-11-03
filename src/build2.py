@@ -1,6 +1,6 @@
 import os
 import json,glob,os
-SHOPS_PREVIEW=True  # shops.html is a preview: noindex and left out of sitemap.xml until this is False
+SHOPS_PREVIEW=False  # True makes shops.html a preview: noindex and left out of sitemap.xml
 B=json.load(open('bikes.json')); R=json.load(open('res_all.json')); IM=json.load(open('imgs_v3.json')); MODES=json.load(open('img_modes_v3.json')); S=json.load(open('shops.json'))
 for f in sorted(glob.glob('fill*.json')):
     for r in json.load(open(f)):
@@ -273,9 +273,9 @@ if SITE:
     for _s in sorted(_seen.values(),key=lambda x:(x.get('city') or '',x['name'])):
         _shops.append(f"### {_s['name']} ({_s.get('city','')})\n"+"\n".join(f"- {k}: {v}" for k,v in (('Address',(_s.get('address') or '')+(', '+_s['city'] if _s.get('city') else '')+', CA'),('Phone',_s.get('phone')),('Hours',_s.get('hours')),('Email',_s.get('email')),('Website',_s.get('url'))) if v))
     open(SITE+'/llms-full.txt','w').write(_hdr.replace('## Files','## Notes\n\n- "After rebate" uses the regular $400 (standard) or $900 (cargo and adaptive) rebate. Sales tax is extra.\n- Prices are the maker\'s US list price, or the selling shop\'s price when the maker has none.\n\n## Files',1)+f"\n## All {len(out)} e-bikes\n\n"+"\n".join(_rows)+"\n\n## Participating shops\n\n"+"\n\n".join(_shops)+"\n")
-    open(SITE+'/sitemap.xml','w').write(f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>{URL}</loc><lastmod>{datetime.date.today().isoformat()}</lastmod></url></urlset>')
+    open(SITE+'/sitemap.xml','w').write(f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>{URL}</loc><lastmod>{datetime.date.today().isoformat()}</lastmod></url>'+('' if SHOPS_PREVIEW else f'<url><loc>{URL}shops.html</loc><lastmod>{datetime.date.today().isoformat()}</lastmod></url>')+'</urlset>')
     PAGE=PAGE.replace('<title>Ava Rebate Bike Finder</title>','',1)
-if SITE: open(SITE+'/index.html','w').write('<!doctype html><html lang="en" data-theme="dark" data-overlayscrollbars-initialize><head><meta charset="utf-8"><link rel="stylesheet" href="vendor/overlayscrollbars-2.16.0.min.css"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#0f1211">'+SEO+'<script>try{if(!matchMedia("(hover: hover) and (pointer: fine)").matches||matchMedia("(any-pointer: coarse)").matches)document.documentElement.removeAttribute("data-overlayscrollbars-initialize");var t=localStorage.getItem("theme");if(t==="light"){document.documentElement.dataset.theme="light";document.querySelector("meta[name=color-scheme]").content="light";document.querySelector("meta[name=theme-color]").content="#f6f7f5"}}catch(e){}</script></head><body data-overlayscrollbars-initialize style="margin:0">'+PAGE+'</body></html>')
+if SITE: open(SITE+'/index.html','w').write('<!doctype html><html lang="en" data-theme="dark" data-overlayscrollbars-initialize><head><meta charset="utf-8"><link rel="stylesheet" href="vendor/overlayscrollbars-2.16.0.min.css"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#0f1211">'+SEO+'<script>if(location.hash==="#dir")location.replace("shops.html");try{if(!matchMedia("(hover: hover) and (pointer: fine)").matches||matchMedia("(any-pointer: coarse)").matches)document.documentElement.removeAttribute("data-overlayscrollbars-initialize");var t=localStorage.getItem("theme");if(t==="light"){document.documentElement.dataset.theme="light";document.querySelector("meta[name=color-scheme]").content="light";document.querySelector("meta[name=theme-color]").content="#f6f7f5"}}catch(e){}</script></head><body data-overlayscrollbars-initialize style="margin:0">'+PAGE+'</body></html>')
 # shops.html: every shop location as the home page's shop card, next to a map with a pin per shop
 def _css_keep(css,classes,types):
     # copies the home page rules whose selectors only use the given classes and element types (rule order kept, @media/@supports filtered inside)
@@ -307,15 +307,15 @@ def _css_keep(css,classes,types):
 if SITE:
     _tpl=open('site_tpl.html').read()
     _css=_tpl[_tpl.index('<style>')+7:_tpl.index('</style>')]
-    BASE_CSS=_css_keep(_css,{'wrap','shop','slogo','ini','shead','maplink','hrs','tel','mail','web','city','m','brand','themebtn','tm-core','tm-cut','tm-rays'},{'html','body','a','svg','img','b','span','ul','li','button'})
+    BASE_CSS=_css_keep(_css,{'wrap','shop','slogo','ini','shead','maplink','hrs','tel','mail','web','city','m','brand','themebtn','tm-core','tm-cut','tm-rays','topnav','navr','navlinks','menubtn','mi-open','mi-close','navmenu','nmh','nmb','nmx','nml','nmc','locked'},{'html','body','a','svg','img','b','span','ul','li','button','nav'})
     # the card helpers and the card markup come straight from the home page script, so the cards are identical
     def _js(name,until=None):
         m=re.search(r'^const '+name+r'=.*$',_tpl,re.M); assert m,name
         if not until: return m.group(0)
         e=_tpl.index(until,m.end()); return _tpl[m.start():_tpl.index('\n',e)]
     HELPERS='\n'.join([_js('esc'),_js('mapUrl'),_js('telUrl'),_js('PIN'),_js('GLOBE'),_js('CLOCK'),_js('MAIL'),_js('mailUrl',' return `mailto:'),_js('slogo'),_js('shopLines'),_js('EXT')])
-    _card=re.search(r"\$\('dirgrid'\)\.innerHTML=.*?\.map\(s=>(`<div class=\"shop\">.*?</div>`)\)\.join\(''\);",_tpl).group(1)
-    CARD=_card.replace('<div class="shop">','<div class="shop" data-shop="${esc(s.k)}">',1)
+    # the shop card (the same markup the home page's old "Where to buy" list used)
+    CARD='`<div class="shop" data-shop="${esc(s.k)}">${slogo(s)}<span class="city">${esc(s.city||\'\')}</span><b>${esc(s.name)}</b>${shopLines(s)||\'<span class="m">Address not listed</span>\'}${s.url?`<a class="web" href="${esc(s.url)}" target="_blank" rel="noopener">${GLOBE}<span>Shop website</span>${EXT}</a>`:\'\'}</div>`'
     # one card and pin per shop location (some shops are listed under two or three names in the data; those share one pin)
     _loc={}
     for k,s in S.items():
@@ -336,8 +336,13 @@ if SITE:
      f'<script>try{{if(!matchMedia("(hover: hover) and (pointer: fine)").matches||matchMedia("(any-pointer: coarse)").matches)document.documentElement.removeAttribute("data-overlayscrollbars-initialize");var t=localStorage.getItem("theme");if(t==="light"){{document.documentElement.dataset.theme="light";document.querySelector("meta[name=color-scheme]").content="light";document.querySelector("meta[name=theme-color]").content="#f6f7f5"}}}}catch(e){{}}(function(){{var l=document.createElement("link");l.rel="preload";l.as="fetch";l.crossOrigin="anonymous";l.href=document.documentElement.dataset.theme==="light"?"{STY_URL["light"]}":"{STY_URL["dark"]}";document.head.appendChild(l)}})()</script>'
      # the map's stylesheet downloads in parallel but never holds up the cards: it's applied when it arrives, and the map starts once it's in
      '<link rel="preload" as="style" href="vendor/maplibre-gl-5.24.0.min.css" onload="this.onload=null;this.rel=\'stylesheet\';window.MLCSS=1;document.dispatchEvent(new Event(\'mlcss\'))" onerror="window.MLCSS=1;document.dispatchEvent(new Event(\'mlcss\'))"><script defer src="vendor/maplibre-gl-5.24.0.min.js"></script>')
+    # the same top nav and phone menu as the home page; its window buttons become links back to the home page
+    _nav=_tpl[_tpl.index('<nav class="topnav"'):_tpl.index('<div class="hero-media"')]
+    _nav=_nav.replace('href="#top"','href="./"',1).replace('href="shops.html"','href="shops.html" aria-current="page"')
+    _nav=re.sub(r'<button type="button" data-open="(\w+)">(.*?)</button>',r'<a href="./#\1">\2</a>',_nav,flags=re.S)
+    assert 'data-open' not in _nav and _nav.count('aria-current')==2
     SP=open('shops_tpl.html').read()
-    for a,b in (('__HEAD__',SHEAD),('__BASE_CSS__',BASE_CSS),('__HELPERS__',HELPERS),('__CARD__',CARD),('__SHOPS__',json.dumps(SHL,separators=(',',':'),ensure_ascii=False).replace('</','<\\/'))):
+    for a,b in (('__HEAD__',SHEAD),('__BASE_CSS__',BASE_CSS),('__HELPERS__',HELPERS),('__CARD__',CARD),('__NAV__',_nav),('__COUNT__',str(len(SHL))),('__SHOPS__',json.dumps(SHL,separators=(',',':'),ensure_ascii=False).replace('</','<\\/'))):
         assert SP.count(a)==1,a; SP=SP.replace(a,b)
     open(SITE+'/shops.html','w').write(SP)
     print('shops.html',len(SHL),'locations',len(SP),'bytes')

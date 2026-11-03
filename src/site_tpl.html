@@ -182,17 +182,12 @@ main.grid{overflow-x:clip}
 .empty p{margin:0 0 14px}
 
 /* shops */
-#dir{padding-block:28px 72px;border-top:1px solid var(--line)}
-#dir h2{text-wrap:balance;font-size:var(--t-h2);letter-spacing:-.025em;font-weight:700;margin:0 0 4px}
-#dir>p{margin:0 0 20px;color:var(--fg2)}
-#dir{padding-bottom:40px}
 .sfoot{padding-block:8px 96px;display:grid;gap:16px}
 .sfoot p{margin:0;font-size:13px;color:var(--fg2)}
 .sfoot p+p{margin-top:2px}
 .sfoot .fc{color:var(--fg3)}
 .sfoot a{color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-color:color-mix(in oklab,currentColor 45%,transparent)}
 @media (min-width:720px){.sfoot p{text-align:center}}
-.dirgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
 .shop{min-width:0;overflow-wrap:anywhere;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px 16px 12px;font-size:var(--t-ui);display:grid;gap:2px;align-content:start}
 .shead{display:flex;align-items:center;gap:8px;min-width:0;margin-bottom:4px}
 .shead b{min-width:0}
@@ -218,7 +213,6 @@ a.slogo{text-decoration:none;transition:box-shadow .15s ease}
 @media (hover:hover) and (pointer:fine){.hlinks a:hover{text-decoration:underline}}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-#dir{scroll-margin-top:16px}
 .hlinks{align-items:center}
 .gbtn{font:inherit;font-size:var(--t-ui);font-weight:600;display:inline-flex;align-items:center;gap:8px;height:36px;padding:0 14px 0 12px;border-radius:6px;border:1px solid var(--line2);background:var(--surface);color:var(--fg);cursor:pointer;transition:border-color .15s ease,transform .12s var(--ease-out)}
 .gbtn svg{color:var(--accent-ink)}
@@ -821,10 +815,10 @@ dialog.cmd.instant,dialog.cmd.instant[data-state]{transition:none}
 #scrim{background:rgba(0,0,0,.5);will-change:opacity}
 /* blur the page itself, region by region, instead of a full-screen backdrop-filter layer: the still regions are blurred once and
    cached, and the playing hero video only re-blurs its own layer, so nothing behind a window has to stop */
-.hero,#bar,#status,#g,#dir{transition:filter .2s var(--ease-out)}
+.hero,#bar,#status,#g{transition:filter .2s var(--ease-out)}
 /* only regions that are on screen get blurred: Safari draws a stray black box when a blur filter sits on an element that is scrolled out of view (WebKit bug 314999) */
-html.dim :is(.hero,#bar,#status,#g,#dir).onscr{filter:blur(6px)}
-@media (prefers-reduced-motion:reduce){.hero,#bar,#status,#g,#dir{transition:none}}
+html.dim :is(.hero,#bar,#status,#g).onscr{filter:blur(6px)}
+@media (prefers-reduced-motion:reduce){.hero,#bar,#status,#g{transition:none}}
 /* the ring under the beam: the pill background shows through the 1px gap around the inner layer */
 .fab{background:var(--line2)}
 /* phones: a bigger, easier thumb target */
@@ -997,7 +991,7 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
 </style>
 
 <a class="skip" href="#g">Skip to the bikes</a>
-<header class="hero" id="top"><nav class="topnav" aria-label="Site"><div class="wrap"><a class="brand" href="#top"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5.5" cy="17" r="3.5"/><circle cx="18.5" cy="17" r="3.5"/><path d="M5.5 17 9 9h6l3.5 8M12 17l3-8M8 6h3"/></svg><span>Ava Bike Finder</span></a><div class="navr"><div class="navlinks"><button type="button" data-open="guide">E-bike guide</button><button type="button" data-open="rebate">Rebate info</button><a href="#dir">Browse shops</a></div><button type="button" class="themebtn" id="themebtn" aria-label="Switch to light mode"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><mask id="tmask"><rect width="24" height="24" fill="#fff"/><circle class="tm-cut" cx="17" cy="7" r="7" fill="#000"/></mask><circle class="tm-core" cx="12" cy="12" r="8.5" fill="currentColor" mask="url(#tmask)"/><g class="tm-rays" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 1.5v2M12 20.5v2M1.5 12h2M20.5 12h2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M4.6 19.4 6 18M18 6l1.4-1.4"/></g></svg></button><button type="button" class="menubtn" popovertarget="navmenu" aria-label="Menu" aria-expanded="false" aria-controls="navmenu"><svg class="mi-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="mi-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div></div></nav><div id="navmenu" class="navmenu" popover aria-label="Menu"><div class="nmh"><div class="wrap"><span class="nmb"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5.5" cy="17" r="3.5"/><circle cx="18.5" cy="17" r="3.5"/><path d="M5.5 17 9 9h6l3.5 8M12 17l3-8M8 6h3"/></svg><span>Ava Bike Finder</span></span><button type="button" class="nmx" popovertarget="navmenu" popovertargetaction="hide" aria-label="Close menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div></div><div class="wrap"><ul class="nml"><li><button type="button" data-open="guide"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></svg><span>E-bike guide</span><svg class="nmc" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></button></li><li><button type="button" data-open="rebate"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.6 2.6A2 2 0 0 0 11.2 2H4a2 2 0 0 0-2 2v7.2a2 2 0 0 0 .6 1.4l8.7 8.7a2.4 2.4 0 0 0 3.4 0l6.6-6.6a2.4 2.4 0 0 0 0-3.4z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg><span>Rebate info</span><svg class="nmc" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></button></li><li><a href="#dir"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9 4.5 4h15L21 9"/><path d="M3 9h18v2a3 3 0 0 1-6 0 3 3 0 0 1-6 0 3 3 0 0 1-6 0z"/><path d="M5 13v7h14v-7"/></svg><span>Browse shops</span><svg class="nmc" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></a></li></ul></div></div><div class="hero-media" aria-hidden="true"><video id="herov" src="__HERO_MP4__" poster="__HERO_JPG__" autoplay muted loop playsinline preload="auto"></video></div><div class="wrap">
+<header class="hero" id="top"><nav class="topnav" aria-label="Site"><div class="wrap"><a class="brand" href="#top"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5.5" cy="17" r="3.5"/><circle cx="18.5" cy="17" r="3.5"/><path d="M5.5 17 9 9h6l3.5 8M12 17l3-8M8 6h3"/></svg><span>Ava Bike Finder</span></a><div class="navr"><div class="navlinks"><button type="button" data-open="guide">E-bike guide</button><button type="button" data-open="rebate">Rebate info</button><a href="shops.html">Browse shops</a></div><button type="button" class="themebtn" id="themebtn" aria-label="Switch to light mode"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><mask id="tmask"><rect width="24" height="24" fill="#fff"/><circle class="tm-cut" cx="17" cy="7" r="7" fill="#000"/></mask><circle class="tm-core" cx="12" cy="12" r="8.5" fill="currentColor" mask="url(#tmask)"/><g class="tm-rays" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 1.5v2M12 20.5v2M1.5 12h2M20.5 12h2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M4.6 19.4 6 18M18 6l1.4-1.4"/></g></svg></button><button type="button" class="menubtn" popovertarget="navmenu" aria-label="Menu" aria-expanded="false" aria-controls="navmenu"><svg class="mi-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="mi-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div></div></nav><div id="navmenu" class="navmenu" popover aria-label="Menu"><div class="nmh"><div class="wrap"><span class="nmb"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5.5" cy="17" r="3.5"/><circle cx="18.5" cy="17" r="3.5"/><path d="M5.5 17 9 9h6l3.5 8M12 17l3-8M8 6h3"/></svg><span>Ava Bike Finder</span></span><button type="button" class="nmx" popovertarget="navmenu" popovertargetaction="hide" aria-label="Close menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div></div><div class="wrap"><ul class="nml"><li><button type="button" data-open="guide"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></svg><span>E-bike guide</span><svg class="nmc" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></button></li><li><button type="button" data-open="rebate"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.6 2.6A2 2 0 0 0 11.2 2H4a2 2 0 0 0-2 2v7.2a2 2 0 0 0 .6 1.4l8.7 8.7a2.4 2.4 0 0 0 3.4 0l6.6-6.6a2.4 2.4 0 0 0 0-3.4z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg><span>Rebate info</span><svg class="nmc" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></button></li><li><a href="shops.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9 4.5 4h15L21 9"/><path d="M3 9h18v2a3 3 0 0 1-6 0 3 3 0 0 1-6 0 3 3 0 0 1-6 0z"/><path d="M5 13v7h14v-7"/></svg><span>Browse shops</span><svg class="nmc" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></a></li></ul></div></div><div class="hero-media" aria-hidden="true"><video id="herov" src="__HERO_MP4__" poster="__HERO_JPG__" autoplay muted loop playsinline preload="auto"></video></div><div class="wrap">
  <h1>Find your e&#8209;bike with the Ava rebate</h1>
  <p class="lede">Browse every e-bike on Ava's list and find the one that fits the way you ride.</p>
  <div class="bar hbar" id="bar">
@@ -1124,7 +1118,6 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
  <div class="cfoot"><button type="button" class="linkbtn" id="cmd-clear">Clear all</button><button type="button" class="primary" id="cmd-show">Show bikes</button></div>
 </dialog>
 <div class="fab" id="fab" inert><span class="bdot" aria-hidden="true"></span><button type="button" class="ffil" id="fab-f" aria-haspopup="dialog" aria-controls="filters" aria-label="Filters"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg><span class="fnum" id="fab-n" hidden></span></button><span class="fsep" aria-hidden="true"></span><button type="button" class="fmain" id="fab-s" aria-label="Search bikes"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span id="fab-q">Search bikes</span><span class="fcount" id="fab-count"></span></button></div>
-<section class="wrap" id="dir"><h2>Where to buy</h2><p>Every participating shop. Call ahead to check stock; the rebate only works in person.</p><div class="dirgrid" id="dirgrid"></div></section>
 <footer class="wrap sfoot" id="copyright"><div><p>Bike list from <a href="https://avaenergy.org/bike-electric/" target="_blank" rel="noopener">Ava's eligible list</a>, updated October&nbsp;8,&nbsp;2026.</p><p>Specs and prices from each maker's website.</p></div><div><p>Made by Chris Beltran in Oakland.</p><p>Not affiliated with Ava Community Energy.</p></div><p class="fc">© 2026 Chris Beltran. All rights reserved.</p></footer>
 
 <script>
@@ -1325,7 +1318,7 @@ function animClose(){const d=this;if(!d.open||d.dataset.state==='closing')return
  d.dataset.state='closing';lockScroll();const ae=document.activeElement;if(d.contains(ae)&&!KBD)ae.blur();let t;const done=()=>{clearTimeout(t);d.removeEventListener('transitionend',te);if(d.open)NCLOSE.call(d);d.dataset.state='';d.style.transition='';d.style.transform=''};
  const te=e=>{if(e.target===d&&(e.propertyName==='transform'||e.propertyName==='opacity'))done()};d.addEventListener('transitionend',te);t=setTimeout(done,300)}
 document.querySelectorAll('dialog').forEach(d=>{d.close=animClose});
-const DIMR=['.hero','#bar','#status','#g','#dir'].map(q=>document.querySelector(q)).filter(Boolean);
+const DIMR=['.hero','#bar','#status','#g'].map(q=>document.querySelector(q)).filter(Boolean);
 function setDim(on){const H=document.documentElement;
  if(on&&!H.classList.contains('dim')){const vh=innerHeight;for(const el of DIMR){const r=el.getBoundingClientRect();el.classList.toggle('onscr',r.bottom>0&&r.top<vh)}}
  H.classList.toggle('dim',on)}
@@ -1335,6 +1328,8 @@ document.querySelectorAll('dialog').forEach(d=>{
  d.addEventListener('click',e=>{if(e.target!==d)return;const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close()});
  d.querySelectorAll('.dclose').forEach(x=>x.onclick=()=>d.close())});
 document.querySelectorAll('[data-open]').forEach(btn=>btn.onclick=()=>showDlg($(btn.dataset.open),btn));
+/* the shops page links here as ./#guide and ./#rebate: open that window, then tidy the address */
+{const fromHash=()=>{const h=location.hash.slice(1);if(h==='dir'){location.replace('shops.html');return}if(h==='guide'||h==='rebate'){history.replaceState(null,'',location.pathname+location.search);requestAnimationFrame(()=>{if(!$(h).open)showDlg($(h))})}};fromHash();addEventListener('hashchange',fromHash)}
 /* bike detail modal */
 const BIKE=$('bike');let BIKE_I=null,BIKE_AC=null;/* the modal's colour is its own: picking one there never changes the card */
 const EXT='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>';
@@ -1373,7 +1368,7 @@ function buildBike(i){const pre=i+'|'+F.city+'|'+F.q+'|'+(ME?NEAR_MI:'');if(BIKE
   ${pk?`<div class="bmpick"><span class="bmpk">${STAR}${esc(pk.tag)}</span><p><b>${esc(pk.head)}</b> ${esc(pk.sub)}</p></div>`:''}
   <section><h3>Key specs</h3>${stats?`<dl class="bms">${stats}</dl>`:`<p class="bmnone">The maker doesn't publish specs for this bike. Ask the shop.</p>`}</section>
   <section><h3>Where to buy</h3><p class="bmin">The rebate only works in person at the shop. Call ahead to check stock.</p>
-   ${uniq.length?`<ul class="bmshops">${uniq.map(s=>`<li class="bmshop">${slogo(s)}${s.city?`<span class="city">${esc(s.city)}${F.city==='near'&&shopMi(s)!=null?' · '+miTxt(shopMi(s)):''}</span>`:''}<b>${esc(s.name)}</b>${shopLines(s,b)}${s.url?`<a class="web" href="${esc(s.url)}" target="_blank" rel="noopener">${GLOBE}<span>Shop website</span>${EXT}</a>`:''}</li>`).join('')}</ul>`:`<p class="bmnone">No shop is listed for this bike yet. <a href="#dir" data-dir>See all shops</a></p>`}</section>
+   ${uniq.length?`<ul class="bmshops">${uniq.map(s=>`<li class="bmshop">${slogo(s)}${s.city?`<span class="city">${esc(s.city)}${F.city==='near'&&shopMi(s)!=null?' · '+miTxt(shopMi(s)):''}</span>`:''}<b>${esc(s.name)}</b>${shopLines(s,b)}${s.url?`<a class="web" href="${esc(s.url)}" target="_blank" rel="noopener">${GLOBE}<span>Shop website</span>${EXT}</a>`:''}</li>`).join('')}</ul>`:`<p class="bmnone">No shop is listed for this bike yet. <a href="shops.html">See all shops</a></p>`}</section>
   <div class="bmlinks"><a href="${gi}" target="_blank" rel="noopener">More photos on Google${EXT}</a>${b.src?`<a href="${esc(b.src)}" target="_blank" rel="noopener">Price source${EXT}</a>`:''}</div>
  </div>
 </div>`;
@@ -1396,7 +1391,7 @@ function syncBike(){
  cap.textContent=np?npNote(b.cv[ac]):'';
  cap.hidden=!cap.textContent}
 BIKE.addEventListener('click',e=>{
- if(e.target.closest('[data-dir]')){e.preventDefault();BIKE.close();requestAnimationFrame(()=>$('dir').scrollIntoView({behavior:REDUCE.matches?'auto':'smooth'}));return}
+ 
  const t=e.target.closest('.sw');if(!t||BIKE_I==null)return;
  const k=+t.dataset.c;if(k!==BIKE_AC)DT.go(k,BIKE_AC==null||k>BIKE_AC?1:-1)});
 BIKE.addEventListener('keydown',e=>{const t=e.target.closest('.sw');if(!t||!['ArrowLeft','ArrowRight'].includes(e.key))return;e.preventDefault();
@@ -1409,7 +1404,6 @@ const fab=$('fab');
 let barVisible=true,atDir=false;
 /* the pill appears once the filter bar has scrolled away, and steps aside once the shop list fills the lower part of the screen */
 new IntersectionObserver(es=>{barVisible=es[0].isIntersecting;updateFab()},{rootMargin:'-48px 0px 0px 0px'}).observe($('bar'));
-new IntersectionObserver(es=>{atDir=es[0].isIntersecting;updateFab()},{rootMargin:'0px 0px -40% 0px'}).observe($('dir'));
 function updateFab(n=activeCount()){
  const show=!barVisible&&!atDir&&!document.querySelector('dialog[open]');
  fab.classList.toggle('on',show);fab.inert=!show;
@@ -1613,9 +1607,6 @@ $('achips').addEventListener('click',e=>{const x=e.target.closest('[data-rm]');i
  const i=[...$('achips').querySelectorAll('[data-rm]')].indexOf(x),kbd=KBD;
  draw().then(()=>{if(!kbd){const a=document.activeElement;if(a&&a!==document.body)a.blur();return}const now=[...$('achips').querySelectorAll('[data-rm]')];const t=now[Math.min(i,now.length-2)]||$('count');if(t===$('count'))t.tabIndex=-1;t.focus({preventScroll:true})})});
 
-/* shop directory */
-const seen=new Map();Object.values(S).forEach(s=>{if(!seen.has(s.name))seen.set(s.name,s)});
-$('dirgrid').innerHTML=[...seen.values()].sort((a,b)=>(a.city||'').localeCompare(b.city||'')||a.name.localeCompare(b.name)).map(s=>`<div class="shop">${slogo(s)}<span class="city">${esc(s.city||'')}</span><b>${esc(s.name)}</b>${shopLines(s)||'<span class="m">Address not listed</span>'}${s.url?`<a class="web" href="${esc(s.url)}" target="_blank" rel="noopener">${GLOBE}<span>Shop website</span>${EXT}</a>`:''}</div>`).join('');
 render();
 const NAVM=document.getElementById('navmenu'),MBTN=document.querySelector('.menubtn');NAVM.addEventListener('click',e=>{if(e.target.closest('.nml button,.nml a'))NAVM.hidePopover()});
 /* the menu is a small modal: it sits under its button, dims and freezes the page while open, and the button turns into a close icon */
@@ -1628,7 +1619,6 @@ const syncNav=()=>{const o=NAVM.matches(':popover-open');if(MBTN.getAttribute('a
 NAVM.addEventListener('toggle',syncNav);NAVM.addEventListener('beforetoggle',()=>requestAnimationFrame(syncNav));
 ['click','keyup','pointerup'].forEach(t=>document.addEventListener(t,()=>requestAnimationFrame(syncNav),true));addEventListener('pageshow',syncNav);
 matchMedia('(min-width: 761px)').addEventListener('change',e=>{if(e.matches&&NAVM.matches(':popover-open'))NAVM.hidePopover()});
-document.addEventListener('click',e=>{const a=e.target.closest('a[href="#dir"]:not([data-dir])');if(!a)return;e.preventDefault();const go=()=>$('dir').scrollIntoView({block:'start',behavior:'instant'});go();let n=0;const fix=()=>{if(n++>40)return;if(Math.abs($('dir').getBoundingClientRect().top)>2)go();requestAnimationFrame(fix)};requestAnimationFrame(fix);history.replaceState(null,'','#dir')});
 /* the hero video keeps playing behind open windows; it only rests while it is scrolled out of view or the tab is in the background, where nobody can see it */
 (()=>{const v=document.getElementById('herov');if(!v)return;let seen=true;
  const sync=()=>{const busy=document.hidden;if(seen&&!busy&&!REDUCE.matches){if(v.paused)v.play().catch(()=>{})}else if(!v.paused)v.pause()};
