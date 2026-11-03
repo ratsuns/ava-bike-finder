@@ -1501,7 +1501,10 @@ $('cmd-res').addEventListener('keydown',e=>{
  e.preventDefault();const n=all[i+(e.key==='ArrowDown'?1:-1)];(n||(e.key==='ArrowUp'?$('cq'):all[i])).focus()});
 $('cmd-show').onclick=()=>{CMD._go=true;CMD.close()};
 function scrollToResults(){const t=$('status').getBoundingClientRect().top;if(t>=76)return;scrollTo({top:Math.max(0,t+scrollY-76),behavior:REDUCE.matches?'auto':'smooth'})}
-function goTo(i){const x=LIST.findIndex(b=>b.i===i);if(x>=SHOWN)showUpTo(Math.ceil((x+1)/PAGE)*PAGE);const el=NODE.get(i);if(!el||!el.isConnected)return;/* the bike's card lands with its top just below the pinned nav */el.scrollIntoView({block:'start',behavior:REDUCE.matches?'auto':'smooth'});el.classList.remove('flash');void el.offsetWidth;el.classList.add('flash')}
+function goTo(i){const x=LIST.findIndex(b=>b.i===i);if(x>=SHOWN)showUpTo(Math.ceil((x+1)/PAGE)*PAGE);const el=NODE.get(i);if(!el||!el.isConnected)return;/* the bike's card lands with its top just below the pinned nav; a bike in the first row keeps the count and Sort row above it in view */const f=$('g').firstElementChild,top=f&&f.offsetTop===el.offsetTop?$('status'):el,go=b=>top.scrollIntoView({block:'start',behavior:b});go(REDUCE.matches?'auto':'smooth');
+ /* when the scroll finishes, make sure it ended on that spot (on a phone, something like the keyboard closing can cut it short); a finger, wheel or key cancels this */
+ let ft;const fin=e=>{clearTimeout(ft);removeEventListener('scrollend',fin);['touchstart','wheel','keydown'].forEach(n=>removeEventListener(n,fin,true));if(!e||e.type==='scrollend')go('auto')};
+ addEventListener('scrollend',fin);['touchstart','wheel','keydown'].forEach(n=>addEventListener(n,fin,{capture:true,passive:true}));ft=setTimeout(fin,1500);el.classList.remove('flash');void el.offsetWidth;el.classList.add('flash')}
 document.addEventListener('keydown',e=>{
  const isK=e.key.toLowerCase()==='k'&&(e.metaKey||e.ctrlKey)&&!e.altKey&&!e.shiftKey;
  if(isK&&CMD.open){e.preventDefault();CMD.classList.add('instant');CMD.close();return}
