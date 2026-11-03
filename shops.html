@@ -312,8 +312,8 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
   try{map=new maplibregl.Map({container:box,style:STY[theme()],bounds,fitBoundsOptions:{padding:{top:56,bottom:32,left:32,right:32},maxZoom:13},
    minZoom:7,maxZoom:17,maxBounds:[[-123.4,36.9],[-120.4,38.6]],renderWorldCopies:false,fadeDuration:0,pixelRatio:Math.min(devicePixelRatio||1,2),
    dragRotate:false,pitchWithRotate:false,touchPitch:false,
-   /* where the map sits inside the scrolling page (one column), one finger scrolls the page and two move the map */
-   cooperativeGestures:!WIDE.matches,attributionControl:false})}
+   /* like the Google Maps app: one finger moves the map, two fingers zoom */
+   cooperativeGestures:false,attributionControl:false})}
   catch(e){box.classList.add('nomap');return}
   map.touchZoomRotate.disableRotation();map.keyboard.disableRotation();
   /* the map style mentions a few icons it doesn't ship; fill them with a blank so nothing errors */
