@@ -1344,13 +1344,9 @@ const DIMR=['.hero','#bar','#status','#g'].map(q=>document.querySelector(q)).fil
 function setDim(on){const H=document.documentElement;
  if(on&&!H.classList.contains('dim')){const vh=innerHeight;for(const el of DIMR){const r=el.getBoundingClientRect();el.classList.toggle('onscr',r.bottom>0&&r.top<vh)}}
  H.classList.toggle('dim',on)}
-/* electric borders hold still on their current frame while a window (search, bike details, guide…) is open over the page, and while the page
-   scrolls to a bike picked in the search: animating one behind the blurred page, or mid-scroll, stalls phones. They carry on once that's over */
-const EBHOLD={why:new Set(),wakers:new Set()};
-const ebHold=(why,on)=>{if(on)EBHOLD.why.add(why);else{EBHOLD.why.delete(why);if(!EBHOLD.why.size)EBHOLD.wakers.forEach(w=>w())}};
-function showDlg(d,opener){d._opener=opener||document.activeElement;d.classList.remove('settled');d.tabIndex=-1;d.setAttribute('aria-modal','true');DSTACK.push(d);ebHold('dlg',true);d.style.transform='';d.dataset.state='closed';d.show();d.offsetWidth;d.dataset.state='open';SCRIM.classList.add('on');setDim(true);d.focus({preventScroll:true});lockScroll();clearTimeout(d._st);d._st=setTimeout(()=>{if(d.open&&d.dataset.state==='open')d.classList.add('settled')},340);const body=d.querySelector('.dbody,.cbody');if(body)body.scrollTop=0}
+function showDlg(d,opener){d._opener=opener||document.activeElement;d.classList.remove('settled');d.tabIndex=-1;d.setAttribute('aria-modal','true');DSTACK.push(d);d.style.transform='';d.dataset.state='closed';d.show();d.offsetWidth;d.dataset.state='open';SCRIM.classList.add('on');setDim(true);d.focus({preventScroll:true});lockScroll();clearTimeout(d._st);d._st=setTimeout(()=>{if(d.open&&d.dataset.state==='open')d.classList.add('settled')},340);const body=d.querySelector('.dbody,.cbody');if(body)body.scrollTop=0}
 document.querySelectorAll('dialog').forEach(d=>{
- d.addEventListener('close',()=>{const i=DSTACK.indexOf(d);if(i>=0)DSTACK.splice(i,1);if(!DSTACK.length)ebHold('dlg',false);SCRIM.classList.toggle('on',DSTACK.length>0);setDim(DSTACK.length>0);LASTCLOSE=performance.now();clearTimeout(d._st);d.classList.remove('settled');lockScroll();updateFab();const o=d._opener;if(KBD&&o&&o.isConnected&&o.focus)o.focus({preventScroll:true});else if(d.contains(document.activeElement)||document.activeElement===d)document.activeElement.blur()});
+ d.addEventListener('close',()=>{const i=DSTACK.indexOf(d);if(i>=0)DSTACK.splice(i,1);SCRIM.classList.toggle('on',DSTACK.length>0);setDim(DSTACK.length>0);LASTCLOSE=performance.now();clearTimeout(d._st);d.classList.remove('settled');lockScroll();updateFab();const o=d._opener;if(KBD&&o&&o.isConnected&&o.focus)o.focus({preventScroll:true});else if(d.contains(document.activeElement)||document.activeElement===d)document.activeElement.blur()});
  d.addEventListener('click',e=>{if(e.target!==d)return;const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close()});
  d.querySelectorAll('.dclose').forEach(x=>x.onclick=()=>d.close())});
 document.querySelectorAll('[data-open]').forEach(btn=>btn.onclick=()=>showDlg($(btn.dataset.open),btn));
@@ -1482,10 +1478,9 @@ $('cmd-clear').onclick=()=>{clearAll();render();if(KBD)$('cq').focus({preventScr
 CMD.addEventListener('click',e=>{
  if(e.target.closest('[data-clearf]')){clearFilters();render();if(KBD)$('cq').focus({preventScroll:true});else document.activeElement?.blur();return}
  const g=e.target.closest('[data-go]');if(g){const el=NODE.get(+g.dataset.go);if(el)CMD._opener=el.querySelector('.more');CMD._hit=true;
-  /* picking a bike: the page behind clears its blur at once (no fade) so the scroll to the bike runs smoothly; fading a blur on the whole list while it scrolls makes phones stall */
   /* with the phone keyboard up, the scroll starts once it has gone down: the screen changing size in the middle of the scroll makes it stall */
   const k=+g.dataset.go,vv=window.visualViewport,ae=document.activeElement,kb=!!(vv&&innerHeight-vv.height>100);
-  DIMR.forEach(r=>r.style.transition='none');CMD.close();requestAnimationFrame(()=>requestAnimationFrame(()=>DIMR.forEach(r=>r.style.transition='')));
+  CMD.close();
   if(!kb){goTo(k);return}
   if(ae&&ae.matches&&ae.matches('input,textarea'))ae.blur();let done=false,kt=0;const go=()=>{if(done)return;done=true;clearTimeout(kt);vv.removeEventListener('resize',onv);goTo(k)};
   const onv=()=>{if(innerHeight-vv.height<=100){clearTimeout(kt);kt=setTimeout(go,60)}};vv.addEventListener('resize',onv);kt=setTimeout(go,700);return}});
@@ -1513,9 +1508,9 @@ $('cmd-res').addEventListener('keydown',e=>{
  e.preventDefault();const n=all[i+(e.key==='ArrowDown'?1:-1)];(n||(e.key==='ArrowUp'?$('cq'):all[i])).focus()});
 $('cmd-show').onclick=()=>{CMD._go=true;CMD.close()};
 function scrollToResults(){const t=$('status').getBoundingClientRect().top;if(t>=76)return;scrollTo({top:Math.max(0,t+scrollY-76),behavior:REDUCE.matches?'auto':'smooth'})}
-function goTo(i){const x=LIST.findIndex(b=>b.i===i);if(x>=SHOWN)showUpTo(Math.ceil((x+1)/PAGE)*PAGE);const el=NODE.get(i);if(!el||!el.isConnected)return;/* the bike's card lands with its top just below the pinned nav; a bike in the first row keeps the count and Sort row above it in view */const f=$('g').firstElementChild,top=f&&f.offsetTop===el.offsetTop?$('status'):el,go=b=>top.scrollIntoView({block:'start',behavior:b});ebHold('jump',true);go(REDUCE.matches?'auto':'smooth');
+function goTo(i){const x=LIST.findIndex(b=>b.i===i);if(x>=SHOWN)showUpTo(Math.ceil((x+1)/PAGE)*PAGE);const el=NODE.get(i);if(!el||!el.isConnected)return;/* the bike's card lands with its top just below the pinned nav; a bike in the first row keeps the count and Sort row above it in view */const f=$('g').firstElementChild,top=f&&f.offsetTop===el.offsetTop?$('status'):el,go=b=>top.scrollIntoView({block:'start',behavior:b});go(REDUCE.matches?'auto':'smooth');
  /* when the scroll finishes, make sure it ended on that spot (on a phone, something like the keyboard closing can cut it short); a finger, wheel or key cancels this */
- let ft;const fin=e=>{clearTimeout(ft);removeEventListener('scrollend',fin);['touchstart','wheel','keydown'].forEach(n=>removeEventListener(n,fin,true));if(!e||e.type==='scrollend')go('auto');ebHold('jump',false)};
+ let ft;const fin=e=>{clearTimeout(ft);removeEventListener('scrollend',fin);['touchstart','wheel','keydown'].forEach(n=>removeEventListener(n,fin,true));if(!e||e.type==='scrollend')go('auto')};
  addEventListener('scrollend',fin);['touchstart','wheel','keydown'].forEach(n=>addEventListener(n,fin,{capture:true,passive:true}));ft=setTimeout(fin,1500);el.classList.remove('flash');void el.offsetWidth;el.classList.add('flash')}
 document.addEventListener('keydown',e=>{
  const isK=e.key.toLowerCase()==='k'&&(e.metaKey||e.ctrlKey)&&!e.altKey&&!e.shiftKey;
@@ -2509,11 +2504,11 @@ return (container, options) => {
       render(s, hover.power * (s.interactive ? 1 : 0));
 
       const busy = power > 0.002 || s.active || sparks.length > 0;
-      if (busy && visible && pageVisible && !EBHOLD.why.size) raf = requestAnimationFrame(frame);
+      if (busy && visible && pageVisible) raf = requestAnimationFrame(frame);
     };
 
     const wake = () => {
-      if (raf || lost || !visible || !pageVisible || EBHOLD.why.size) return;
+      if (raf || lost || !visible || !pageVisible) return;
       last = performance.now();
       raf = requestAnimationFrame(frame);
     };
@@ -2589,10 +2584,8 @@ return (container, options) => {
 
     resize();
     wake();
-    EBHOLD.wakers.add(wake);
 
     stop = () => {
-      EBHOLD.wakers.delete(wake);
       cancelAnimationFrame(raf);
       api.wake = null;
       resizeObserver.disconnect();
