@@ -116,6 +116,21 @@ main.grid{padding-block:14px 56px;display:grid;grid-template-columns:repeat(auto
 .pay{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
 .pay strong{font-size:var(--t-price);line-height:1;font-weight:700;letter-spacing:-.03em;font-variant-numeric:tabular-nums;color:var(--fg)}
 .pay span{font-size:var(--t-meta);color:var(--fg2)}
+/* label + info button sit on one line, the icon centred on the text */
+.payl{display:inline-flex;align-items:center;gap:4px}
+.tipb{position:relative;z-index:2;display:inline-grid;place-items:center;width:16px;height:16px;padding:0;border:0;background:none;color:var(--fg2);cursor:pointer;border-radius:50%}
+.tipb::before{content:"";position:absolute;inset:-10px}
+.tipb svg{display:block}
+@media (hover:hover) and (pointer:fine){.tipb:hover{color:var(--fg)}}
+.tipb:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.tipb[aria-expanded="true"]{color:var(--fg)}
+/* the bubble: one shared popover, so it also shows above the details window */
+#feetip{position:fixed;inset:auto;margin:0;padding:6px 10px;max-width:min(300px,calc(100vw - 32px));border:0;border-radius:8px;background:var(--fg);color:var(--bg);font-size:var(--t-meta);line-height:1.35;box-shadow:0 6px 20px rgba(0,0,0,.28);pointer-events:none;overflow:visible;
+ /* tooltip recipe: grows out of the icon (origin set to the icon by script), 125ms strong ease-out in and out; a transition so a quick re-tap retargets instead of restarting */
+ opacity:0;transform:scale(.97);transition:opacity 125ms var(--ease-out),transform 125ms var(--ease-out),overlay 125ms allow-discrete,display 125ms allow-discrete}
+#feetip:popover-open{opacity:1;transform:none}
+@starting-style{#feetip:popover-open{opacity:0;transform:scale(.97)}}
+@media (prefers-reduced-motion:reduce){#feetip,#feetip:popover-open{transform:none}}
 .list{font-size:var(--t-meta);color:var(--fg3);font-variant-numeric:tabular-nums}
 .list s{text-decoration-thickness:1px}
 .price.na .pay strong{font-size:var(--t-title);color:var(--fg2);letter-spacing:-.01em}
@@ -1138,6 +1153,8 @@ const FACET={
 /* cards: built once, then filtered and reordered */
 const stat=(l,v,u)=>`<div><dt>${l}</dt>${v==null||v===''?'<dd class="na">Not listed</dd>':`<dd>${esc(v)}<small>${u}</small></dd>`}</div>`;
 const npNote=c=>'No photo of '+c.n+' yet';
+/* the "you pay" note: an info button next to the label; hover (mouse) or tap shows the bubble */
+const FEETIP=`<button type="button" class="tipb" data-tip="Shops may add assembly and shipping." aria-label="Price note: shops may add assembly and shipping."><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M12 11v6"/><circle cx="12" cy="7.6" r=".6" fill="currentColor"/></svg></button>`;
 const SWMAX=5,swMore=n=>n>SWMAX+1?`<span class="swmore" aria-hidden="true">+${n-SWMAX}</span>`:'';
 const swOff=(n,ac,i)=>{if(n<=SWMAX+1)return '';const st=Math.min(Math.max((ac??0)-2,0),n-SWMAX);return i<st||i>=st+SWMAX?' off':''};
 /* show the 5 dots around the picked color; the rest stay in place (hidden) so swiping still goes through every color */
@@ -1145,7 +1162,7 @@ function swWin(box,ac){if(!box||!box.querySelector('.swmore'))return;const ds=[.
 function cardHTML(b){
  const pk=PICKS[b.brand+'|'+b.model];
  const price=b.price!=null
-  ?`<div class="price"><div class="pay"><strong>${money(b.you)}</strong><span>you pay + tax</span></div><div class="list"><s>${money(b.price)}</s> minus ${money(b.reb)} rebate. Shops may add assembly and shipping.</div></div>`
+  ?`<div class="price"><div class="pay"><strong>${money(b.you)}</strong><span class="payl">you pay + tax${FEETIP}</span></div><div class="list"><s>${money(b.price)}</s> minus ${money(b.reb)} rebate.</div></div>`
   :`<div class="price na"><div class="pay"><strong>Price not listed</strong></div><div class="list">Ask the shop for the price.</div></div>`;
  const allNa=[b.spd,b.tq,b.load,b.range].every(v=>v==null||v==='');
  const ac0=activeColor(b),sw=b.cv.length?`<div class="sws" role="group" aria-label="Colors">${b.cv.map((c,ci)=>`<button type="button" class="sw${c.img?'':' np'}${swOff(b.cv.length,ac0,ci)}" data-c="${ci}" tabindex="${ci===(ac0??0)?0:-1}" aria-pressed="${ci===ac0}" aria-label="${esc(c.n)}" title="${esc(c.n)}${c.img?'':' (no photo yet)'}"><i style="background:${c.hex||CHEX[c.f]}"></i></button>`).join('')}${swMore(b.cv.length)}</div><span class="npn"${ac0!=null&&!b.cv[ac0].img?'':' hidden'}>${ac0!=null&&!b.cv[ac0].img?esc(npNote(b.cv[ac0])):''}</span>`:'';
@@ -1236,7 +1253,7 @@ $('g').addEventListener('click',e=>{
  if(e.target.closest('[data-expand]')){NEAR_MI+=10;draw();return}
  const t=e.target.closest('.sw');
  /* any click on a card opens its details, except on a color swatch */
- if(!t){const c=e.target.closest('.c[data-b]');if(c&&!e.target.closest('a,.sws'))openBike(+c.dataset.b,c.querySelector('.more'));return}
+ if(!t){const c=e.target.closest('.c[data-b]');if(c&&!e.target.closest('a,.sws,.tipb'))openBike(+c.dataset.b,c.querySelector('.more'));return}
  const b=B[+t.closest('.c').dataset.b],k=+t.dataset.c,ac=activeColor(b);if(k!==ac)cardTrack(t.closest('.ph')).go(k,ac==null||k>ac?1:-1)});
 
 $('g').addEventListener('keydown',e=>{const t=e.target.closest('.sw');if(!t||!['ArrowLeft','ArrowRight'].includes(e.key))return;e.preventDefault();
@@ -1295,8 +1312,8 @@ function buildBike(i){const pre=i+'|'+F.city+'|'+F.q+'|'+(ME?NEAR_MI:'');if(BIKE
  const cell=([l,v,u,x],w)=>`<div${w?' class="w"':''}><dt>${l}</dt><dd>${esc(v)}${u?`<small>${u}</small>`:''}</dd>${x?`<p>${esc(x)}</p>`:''}</div>`;
  const stats=narrow.map(s=>cell(s)).join('')+wide.map(s=>cell(s,1)).join('');
  const price=b.price!=null
-  ?`<div class="bmpay"><strong>${money(b.you)}</strong><span>you pay + tax</span></div>
-   <div class="list bmlist"><s>${money(b.price)}</s> minus ${money(b.reb)} rebate. Shops may add assembly and shipping.</div>`
+  ?`<div class="bmpay"><strong>${money(b.you)}</strong><span class="payl">you pay + tax${FEETIP}</span></div>
+   <div class="list bmlist"><s>${money(b.price)}</s> minus ${money(b.reb)} rebate.</div>`
   :`<div class="bmpay na"><strong>Price not listed</strong></div>
    <p class="bmtax">Ask the shop for today's price. Your rebate takes ${money(b.reb)} off, and sales tax is extra.</p>`;
  const sws=b.cv.length?`<div class="sws" role="group" aria-label="Colors">${b.cv.map((c,ci)=>`<button type="button" class="sw${c.img?'':' np'}" data-c="${ci}" tabindex="-1" aria-pressed="false" aria-label="${esc(c.n)}" title="${esc(c.n)}${c.img?'':' (no photo yet)'}"><i style="background:${c.hex||CHEX[c.f]}"></i></button>`).join('')}${swMore(b.cv.length)}</div>`:'';
@@ -1327,7 +1344,7 @@ let BIKE_OPENING=0;
 function openBike(i,opener){if(BIKE.open)return;const tok=++BIKE_OPENING;buildBike(i);DT.reset();BIKE_I=i;BIKE_AC=activeColor(B[i]);syncBike();
  const im=$('bike-img'),show=()=>{if(tok!==BIKE_OPENING||BIKE.open)return;showDlg(BIKE,opener);$('bike-body').scrollTop=0};
  Promise.race([im.decode().catch(()=>{}),new Promise(r=>setTimeout(r,150))]).then(show)}
-$('g').addEventListener('pointerdown',e=>{if(BIKE.open||e.button)return;const c=e.target.closest('.c[data-b]');if(c&&!e.target.closest('a,.sws'))buildBike(+c.dataset.b)},{passive:true});
+$('g').addEventListener('pointerdown',e=>{if(BIKE.open||e.button)return;const c=e.target.closest('.c[data-b]');if(c&&!e.target.closest('a,.sws,.tipb'))buildBike(+c.dataset.b)},{passive:true});
 function syncBike(){
  if(BIKE_I==null||!BIKE.contains($('bike-img')))return;const b=B[BIKE_I],ac=BIKE_AC,img=$('bike-img'),cap=$('bike-cap');
  const np=ac!=null&&!b.cv[ac].img,src=np?(img.getAttribute('src')||b.img):ac!=null?b.cv[ac].img:b.img;
@@ -1611,6 +1628,25 @@ let SWIPED=0,SWIPE_EAT=false;
 /* only the click that ends a swipe is ignored: any new touch clears it, so a quick tap right after cycling always goes through */
 const swallowClick=()=>SWIPE_EAT&&performance.now()-SWIPED<400;
 addEventListener('pointerdown',()=>{SWIPE_EAT=false},{capture:true,passive:true});
+/* price note bubble: placed above the icon (below if there's no room), centred on it and kept on screen.
+   Hover with a mouse, tap to toggle on touch; a tap elsewhere, scrolling or Escape closes it.
+   Moving straight from one icon to another just moves the open bubble, with no second animation */
+(()=>{const tip=document.createElement('div');tip.id='feetip';tip.setAttribute('popover','manual');tip.setAttribute('role','tooltip');document.body.append(tip);
+ let cur=null;
+ const place=b=>{const r=b.getBoundingClientRect(),w=tip.offsetWidth,h=tip.offsetHeight,m=8;let x=r.left+r.width/2-w/2;x=Math.max(m,Math.min(x,innerWidth-w-m));
+  const up=r.top-h-8>=m;tip.style.left=x+'px';tip.style.top=(up?r.top-h-8:r.bottom+8)+'px';tip.style.transformOrigin=`${Math.round(r.left+r.width/2-x)}px ${up?'100%':'0'}`};
+ const mark=b=>{b.setAttribute('aria-expanded','true');b.setAttribute('aria-describedby','feetip')},unmark=b=>{b.removeAttribute('aria-expanded');b.removeAttribute('aria-describedby')};
+ const show=b=>{if(cur===b)return;tip.textContent=b.dataset.tip;
+  if(cur){unmark(cur);cur=b;mark(b);place(b);return}
+  cur=b;mark(b);tip.showPopover();place(b)};
+ const hide=()=>{if(!cur)return;unmark(cur);cur=null;if(tip.matches(':popover-open'))tip.hidePopover()};
+ document.addEventListener('click',e=>{const b=e.target.closest('.tipb');if(!b){hide();return}e.preventDefault();e.stopPropagation();cur===b?hide():show(b)},true);
+ document.addEventListener('pointerover',e=>{if(e.pointerType!=='mouse')return;const b=e.target.closest('.tipb');if(b)show(b)});
+ document.addEventListener('pointerout',e=>{if(e.pointerType!=='mouse')return;const b=e.target.closest('.tipb');if(b&&b===cur&&!b.contains(e.relatedTarget))hide()});
+ document.addEventListener('focusin',e=>{const b=e.target.closest&&e.target.closest('.tipb');if(b&&KBD)show(b)});
+ document.addEventListener('focusout',e=>{if(e.target===cur)hide()});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&cur)hide()});
+ addEventListener('scroll',hide,{capture:true,passive:true});addEventListener('resize',hide)})();
 /* a swipe on a card photo is not a tap: don't let it open the details */
 $('g').addEventListener('click',e=>{if(swallowClick()&&!e.target.closest('.sw')){e.stopPropagation();e.preventDefault()}},true);
 
