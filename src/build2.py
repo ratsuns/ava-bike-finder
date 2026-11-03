@@ -273,9 +273,9 @@ if SITE:
     for _s in sorted(_seen.values(),key=lambda x:(x.get('city') or '',x['name'])):
         _shops.append(f"### {_s['name']} ({_s.get('city','')})\n"+"\n".join(f"- {k}: {v}" for k,v in (('Address',(_s.get('address') or '')+(', '+_s['city'] if _s.get('city') else '')+', CA'),('Phone',_s.get('phone')),('Hours',_s.get('hours')),('Email',_s.get('email')),('Website',_s.get('url'))) if v))
     open(SITE+'/llms-full.txt','w').write(_hdr.replace('## Files','## Notes\n\n- "After rebate" uses the regular $400 (standard) or $900 (cargo and adaptive) rebate. Sales tax is extra.\n- Prices are the maker\'s US list price, or the selling shop\'s price when the maker has none.\n\n## Files',1)+f"\n## All {len(out)} e-bikes\n\n"+"\n".join(_rows)+"\n\n## Participating shops\n\n"+"\n\n".join(_shops)+"\n")
-    open(SITE+'/sitemap.xml','w').write(f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>{URL}</loc><lastmod>{datetime.date.today().isoformat()}</lastmod></url>'+('' if SHOPS_PREVIEW else f'<url><loc>{URL}shops.html</loc><lastmod>{datetime.date.today().isoformat()}</lastmod></url>')+'</urlset>')
+    open(SITE+'/sitemap.xml','w').write(f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>{URL}</loc><lastmod>{datetime.date.today().isoformat()}</lastmod></url>'+('' if SHOPS_PREVIEW else f'<url><loc>{URL}browse-vendors/</loc><lastmod>{datetime.date.today().isoformat()}</lastmod></url>')+'</urlset>')
     PAGE=PAGE.replace('<title>Ava Rebate Bike Finder</title>','',1)
-if SITE: open(SITE+'/index.html','w').write('<!doctype html><html lang="en" data-theme="dark" data-overlayscrollbars-initialize><head><meta charset="utf-8"><link rel="stylesheet" href="vendor/overlayscrollbars-2.16.0.min.css"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#0f1211">'+SEO+'<script>if(location.hash==="#dir")location.replace("shops.html");try{if(!matchMedia("(hover: hover) and (pointer: fine)").matches||matchMedia("(any-pointer: coarse)").matches)document.documentElement.removeAttribute("data-overlayscrollbars-initialize");var t=localStorage.getItem("theme");if(t==="light"){document.documentElement.dataset.theme="light";document.querySelector("meta[name=color-scheme]").content="light";document.querySelector("meta[name=theme-color]").content="#f6f7f5"}}catch(e){}</script></head><body data-overlayscrollbars-initialize style="margin:0">'+PAGE+'</body></html>')
+if SITE: open(SITE+'/index.html','w').write('<!doctype html><html lang="en" data-theme="dark" data-overlayscrollbars-initialize><head><meta charset="utf-8"><link rel="stylesheet" href="vendor/overlayscrollbars-2.16.0.min.css"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#0f1211">'+SEO+'<script>if(location.hash==="#dir")location.replace("browse-vendors/");try{if(!matchMedia("(hover: hover) and (pointer: fine)").matches||matchMedia("(any-pointer: coarse)").matches)document.documentElement.removeAttribute("data-overlayscrollbars-initialize");var t=localStorage.getItem("theme");if(t==="light"){document.documentElement.dataset.theme="light";document.querySelector("meta[name=color-scheme]").content="light";document.querySelector("meta[name=theme-color]").content="#f6f7f5"}}catch(e){}</script></head><body data-overlayscrollbars-initialize style="margin:0">'+PAGE+'</body></html>')
 # shops.html: every shop location as the home page's shop card, next to a map with a pin per shop
 def _css_keep(css,classes,types):
     # copies the home page rules whose selectors only use the given classes and element types (rule order kept, @media/@supports filtered inside)
@@ -322,7 +322,7 @@ if SITE:
         if s.get('lat') is None: continue
         _loc.setdefault((s['name'],s.get('address')),dict(k=k,**{f:s[f] for f in ('name','address','city','phone','url','email','contact','hours','lat','lng','logo') if s.get(f) is not None}))
     SHL=list(_loc.values())
-    SURL=URL+'shops.html'
+    SURL=URL+'browse-vendors/'
     SDESC='Every shop that takes the Ava Community Energy e-bike rebate, on a map with each address, phone number and opening hours.'
     STY_URL={'light':'https://tiles.openfreemap.org/styles/bright','dark':'https://tiles.openfreemap.org/styles/bright'}  # OSM Bright in both themes
     SHEAD=('<!doctype html><html lang="en" data-theme="dark" data-overlayscrollbars-initialize><head><meta charset="utf-8"><link rel="stylesheet" href="vendor/overlayscrollbars-2.16.0.min.css"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#0f1211">'
@@ -337,15 +337,19 @@ if SITE:
      # the map's stylesheet downloads in parallel but never holds up the cards: it's applied when it arrives, and the map starts once it's in
      '<link rel="preload" as="style" href="vendor/maplibre-gl-5.24.0.min.css" onload="this.onload=null;this.rel=\'stylesheet\';window.MLCSS=1;document.dispatchEvent(new Event(\'mlcss\'))" onerror="window.MLCSS=1;document.dispatchEvent(new Event(\'mlcss\'))"><script defer src="vendor/maplibre-gl-5.24.0.min.js"></script>')
     # the same top nav and phone menu as the home page; its window buttons become links back to the home page
-    _nav=_tpl[_tpl.index('<nav class="topnav"'):_tpl.index('<div class="hero-media"')]
-    _nav=_nav.replace('href="#top"','href="./"',1).replace('href="shops.html"','href="shops.html" aria-current="page"')
+    _nav=_tpl[_tpl.index('<nav class="topnav"'):_tpl.index('</div><header class="hero"')]
+    _nav=_nav.replace('href="#top"','href="./"',1).replace('href="browse-vendors/"','href="browse-vendors/" aria-current="page"')
     assert _nav.count('data-open="guide"')==2 and _nav.count('data-open="rebate"')==2 and _nav.count('aria-current')==2
     # the E-bike guide and Rebate info windows come along, so those buttons open them right here
     _dl=''.join(_tpl[_tpl.index(f'<dialog id="{d}"'):_tpl.index('</dialog>',_tpl.index(f'<dialog id="{d}"'))+9]+'\n' for d in ('guide','rebate'))
     SP=open('shops_tpl.html').read()
     for a,b in (('__HEAD__',SHEAD),('__BASE_CSS__',BASE_CSS),('__HELPERS__',HELPERS),('__CARD__',CARD),('__NAV__',_nav),('__DIALOGS__',_dl),('__COUNT__',str(len(SHL))),('__WORLD__',open('worlddots.json').read().strip()),('__SHOPS__',json.dumps(SHL,separators=(',',':'),ensure_ascii=False).replace('</','<\\/'))):
         assert SP.count(a)==1,a; SP=SP.replace(a,b)
-    open(SITE+'/shops.html','w').write(SP)
+    # the page lives at browse-vendors/ (clean address); every relative link in it resolves from the site root
+    SP=SP.replace('<meta charset="utf-8">','<meta charset="utf-8"><base href="../">',1)
+    os.makedirs(SITE+'/browse-vendors',exist_ok=True);open(SITE+'/browse-vendors/index.html','w').write(SP)
+    # the old shops.html address forwards to browse-vendors/ (keeping any #part of the link)
+    open(SITE+'/shops.html','w').write(f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Participating shops | Ava Rebate Bike Finder</title><link rel="canonical" href="{SURL}"><meta name="robots" content="noindex"><meta http-equiv="refresh" content="0;url=browse-vendors/"><script>location.replace("browse-vendors/"+location.search+location.hash)</script></head><body><a href="browse-vendors/">Participating shops</a></body></html>')
     print('shops.html',len(SHL),'locations',len(SP),'bytes')
 open('Ava_Rebate_Bike_Finder_local.html','w').write('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head><body style="margin:0">'+html+'</body></html>')
 print(os.path.getsize('Ava_Rebate_Bike_Finder.html'))
