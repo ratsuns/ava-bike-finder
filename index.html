@@ -311,9 +311,6 @@ dialog[open]::backdrop{opacity:1}
 @media (max-width:760px){.themebtn{margin-left:0;width:44px;height:44px}}
 @media (prefers-reduced-motion:reduce){.themebtn .tm-core,.themebtn .tm-cut,.themebtn .tm-rays{transition:none}}
 ::view-transition-old(root),::view-transition-new(root){animation-duration:.3s;animation-timing-function:ease}
-/* going between this page and the vendor page crossfades instead of flashing */
-@view-transition{navigation:auto}
-@media (prefers-reduced-motion:reduce){@view-transition{navigation:none}}
 /* the toggle itself is shown live during the crossfade, so its morph plays instead of being frozen in a snapshot */
 ::view-transition-old(themebtn){display:none}
 ::view-transition-new(themebtn){animation:none}
@@ -1351,10 +1348,6 @@ document.querySelectorAll('dialog').forEach(d=>{
  d.querySelectorAll('.dclose').forEach(x=>x.onclick=()=>d.close())});
 document.querySelectorAll('[data-open]').forEach(btn=>btn.onclick=()=>showDlg($(btn.dataset.open),btn));
 /* the shops page links here as ./#guide and ./#rebate: open that window, then tidy the address */
-/* page-to-page crossfade: when the browser skips it (e.g. going back), that's fine; don't report it as an error */
-for(const ev of ['pagereveal','pageswap'])addEventListener(ev,e=>{const v=e.viewTransition;if(!v)return;[v.ready,v.finished,v.updateCallbackDone].forEach(p=>p&&p.catch(()=>{}));
- /* only forward links crossfade; the back and forward buttons switch straight away */
- const ty=ev==='pageswap'?e.activation&&e.activation.navigationType:window.navigation&&navigation.activation&&navigation.activation.navigationType;if(ty==='traverse')v.skipTransition()});
 /* top nav: frosted as soon as the page scrolls at all (a marker at the very top of the page tells when it has left the screen) */
 (()=>{const bar=document.getElementById('topbar'),hero=document.getElementById('top');if(!bar||!hero)return;
  /* jumps to a part of the page stop below the pinned nav */
