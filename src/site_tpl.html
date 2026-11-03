@@ -347,11 +347,11 @@ html.locked{overflow:hidden}
 /* page scrollbar, where the browser's own bar takes up a strip (Windows): a thin Mac-style bar floats over the page instead,
    fades out when you stop scrolling and widens under the mouse. Macs and phones keep their own bar. */
 html[data-overlayscrollbars-initialize],html[data-overlayscrollbars]{scrollbar-gutter:auto}
-.os-theme-ava{--os-size:16px;--os-padding-perpendicular:3px;--os-padding-axis:3px;--os-track-border-radius:10px;--os-handle-border-radius:10px;--os-handle-min-size:40px;
- --os-handle-perpendicular-size:60%;--os-handle-perpendicular-size-hover:100%;--os-handle-perpendicular-size-active:100%;
+.os-theme-ava{--os-size:22px;--os-padding-perpendicular:5px;--os-padding-axis:4px;--os-track-border-radius:10px;--os-handle-border-radius:10px;--os-handle-min-size:40px;
+ --os-handle-perpendicular-size:8px;--os-handle-perpendicular-size-hover:10px;--os-handle-perpendicular-size-active:10px;
  --os-handle-bg:var(--sbh);--os-handle-bg-hover:var(--sbh2);--os-handle-bg-active:var(--sbh2);
  --os-handle-border:1px solid var(--sbo);--os-handle-border-hover:1px solid var(--sbo);--os-handle-border-active:1px solid var(--sbo)}
-.os-theme-ava.os-scrollbar-vertical .os-scrollbar-handle{margin-left:auto}
+.os-theme-ava.os-scrollbar-vertical .os-scrollbar-handle{left:0;right:0;margin-inline:auto}
 .os-theme-ava.os-scrollbar{transition:opacity .3s ease,visibility .3s ease}
 dialog[data-state="closing"]{pointer-events:none}
 .maplink{display:inline-flex;align-items:flex-start;gap:6px;color:var(--fg2);text-decoration:none;width:fit-content}
