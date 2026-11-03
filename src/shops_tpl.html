@@ -141,7 +141,8 @@ a.mcl span{text-decoration:underline;text-decoration-color:var(--line2);text-und
 .spmap .maplibregl-ctrl-attrib.maplibregl-compact{background:#fff}
 /* "find me" button (under the zoom buttons), your location dot, and a short note if location isn't available */
 .spmap .mloc{display:grid;place-items:center;color:#333;touch-action:manipulation}
-.spmap .mloc[aria-busy="true"]{color:var(--accent-ink)}
+/* touch screens: the map buttons don't stay grey after a tap (the browser keeps "hover" on the last thing tapped); the quick press shade stays */
+@media (hover:none){.spmap .maplibregl-ctrl button:not(:disabled):hover{background-color:transparent}.spmap .maplibregl-ctrl button:not(:disabled):active{background-color:rgba(0,0,0,.05)}}
 .spmap .me{width:12px;height:12px}
 .spmap .me::after{content:"";position:absolute;inset:0;border-radius:50%;background:#4285f4;box-shadow:0 0 0 2.5px #fff,0 1px 3px 2.5px rgba(0,0,0,.2)}
 /* the soft blue ring around your dot breathes slowly (transform and opacity only, so it costs nothing while the map moves) */
