@@ -162,8 +162,8 @@ a.web:hover svg{color:currentColor}}
 /* the cards and the map start slightly over the bottom of the hero (no divider lines) */
 .spg{position:relative;z-index:1;margin-top:-40px;max-width:1440px;padding-block:0 72px;display:grid;gap:16px;grid-template-columns:minmax(0,1fr);grid-template-areas:"map" "count" "list"}
 /* "Where to buy" and the shop count sit at the top left, right above the list */
-.sphead{grid-area:count;align-self:end}
-.sphead h2{margin:0 0 2px;font-size:var(--t-h2);line-height:1.2;letter-spacing:-.025em;font-weight:700;text-wrap:balance}
+.sphead{grid-area:count;align-self:end;display:flex;flex-wrap:wrap;align-items:baseline;column-gap:10px}
+.sphead h2{margin:0;font-size:var(--t-h2);line-height:1.2;letter-spacing:-.025em;font-weight:700;text-wrap:balance}
 .spcount{margin:0;font-size:var(--t-ui);color:var(--fg2)}
 .spcount b{color:var(--fg);font-weight:600}
 .spmap{grid-area:map;position:relative;height:clamp(280px,45vh,460px);height:clamp(280px,45svh,460px);border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--mapbg);isolation:isolate}
