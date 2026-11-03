@@ -171,8 +171,9 @@ a.web:hover svg{color:currentColor}}
 .menubtn[aria-expanded="true"] .mi-open{opacity:0;transform:rotate(45deg) scale(.8)}
 .menubtn[aria-expanded="true"] .mi-close{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.menubtn svg{transition:opacity .12s ease;transform:none!important}}
-.navmenu{position:fixed;inset:0;width:100%;height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;background:var(--bg);color:var(--fg);overflow-y:auto;overscroll-behavior:contain;transition:overlay .2s allow-discrete,display .2s allow-discrete}
-.navmenu .nml{opacity:0;transform:translateY(-6px);transition:opacity .2s var(--ease-out),transform .2s var(--ease-out)}
+.navmenu{position:fixed;inset:0;width:100%;height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;background:var(--bg);color:var(--fg);overflow-y:auto;overscroll-behavior:contain;opacity:0;transition:opacity .12s var(--ease-out),overlay .12s allow-discrete,display .12s allow-discrete}
+.navmenu:popover-open{opacity:1;transition:none}
+.navmenu .nml{opacity:0;transform:translateY(-6px);transition:opacity .16s var(--ease-out),transform .16s var(--ease-out)}
 .navmenu:popover-open .nml{opacity:1;transform:none}
 @starting-style{.navmenu:popover-open .nml{opacity:0;transform:translateY(-6px)}}
 .navmenu::backdrop{background:transparent}
@@ -181,6 +182,7 @@ a.web:hover svg{color:currentColor}}
 .nmb{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;letter-spacing:-.01em}
 .nmx{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;margin-right:-10px;border:0;border-radius:8px;background:none;color:var(--fg);cursor:pointer;transition:transform .12s var(--ease-out)}
 .nmx:active{transform:scale(.95)}
+.menubtn,.nmx,.nml a,.nml button{touch-action:manipulation}
 .nml{list-style:none;margin:8px 0 0;padding:0}
 .nml li{border-bottom:1px solid var(--line)}
 .nml button,.nml a{display:flex;align-items:center;gap:12px;width:100%;min-height:56px;padding:0;border:0;background:none;font:inherit;font-size:17px;font-weight:500;letter-spacing:-.01em;color:var(--fg);text-decoration:none;text-align:left;cursor:pointer;transition:opacity .12s ease}

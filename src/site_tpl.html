@@ -678,9 +678,9 @@ main.grid{padding-bottom:96px}
  background-color:rgba(246,247,245,0);-webkit-backdrop-filter:blur(0px);backdrop-filter:blur(0px);box-shadow:0 1px 0 rgba(18,22,20,0),0 8px 24px -12px rgba(18,22,20,0);
  transition:background-color .35s ease,-webkit-backdrop-filter .35s ease,backdrop-filter .35s ease,box-shadow .35s ease}
 :root[data-theme="dark"] .topbar{background-color:rgba(15,18,17,0)}
-.topbar.frost{--hink:18,22,20;background-color:color-mix(in srgb,var(--bg) 80%,transparent);-webkit-backdrop-filter:saturate(180%) blur(24px);backdrop-filter:saturate(180%) blur(24px);
+.topbar.frost{--hink:18,22,20;background-color:color-mix(in srgb,var(--bg) 72%,transparent);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);
  box-shadow:0 1px 0 rgba(18,22,20,.08),0 8px 24px -12px rgba(18,22,20,.18)}
-:root[data-theme="dark"] .topbar.frost{--hink:238,241,238;background-color:color-mix(in srgb,var(--bg) 74%,transparent);box-shadow:0 1px 0 rgba(255,255,255,.07),0 8px 24px -12px rgba(0,0,0,.6)}
+:root[data-theme="dark"] .topbar.frost{--hink:238,241,238;background-color:color-mix(in srgb,var(--bg) 64%,transparent);box-shadow:0 1px 0 rgba(255,255,255,.07),0 8px 24px -12px rgba(0,0,0,.6)}
 /* browsers without the blur get a solid bar instead */
 @supports not ((-webkit-backdrop-filter:blur(1px)) or (backdrop-filter:blur(1px))){.topbar.frost,:root[data-theme="dark"] .topbar.frost{background-color:var(--bg)}}
 /* the nav's text and icons fade between white and the page's text colour along with the background */
@@ -735,9 +735,11 @@ article.c .b{container-type:inline-size}
 .menubtn[aria-expanded="true"] .mi-close{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.menubtn svg{transition:opacity .12s ease;transform:none!important}}
 /* mobile menu: a full-screen page that replaces the view, like most product sites */
-.navmenu{position:fixed;inset:0;width:100%;height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;background:var(--bg);color:var(--fg);overflow-y:auto;overscroll-behavior:contain;transition:overlay .2s allow-discrete,display .2s allow-discrete}
-/* the menu's top row (logo, close button) lands exactly where the nav's is and doesn't move, so nothing up there flickers; only the links below slide in */
-.navmenu .nml{opacity:0;transform:translateY(-6px);transition:opacity .2s var(--ease-out),transform .2s var(--ease-out)}
+.navmenu{position:fixed;inset:0;width:100%;height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;background:var(--bg);color:var(--fg);overflow-y:auto;overscroll-behavior:contain;opacity:0;transition:opacity .12s var(--ease-out),overlay .12s allow-discrete,display .12s allow-discrete}
+/* the menu opens at once: its top row (logo, close button) lands exactly where the nav's is and doesn't move, so nothing up there flickers, and the links below slide in.
+   Closing is a quick fade of the whole panel */
+.navmenu:popover-open{opacity:1;transition:none}
+.navmenu .nml{opacity:0;transform:translateY(-6px);transition:opacity .16s var(--ease-out),transform .16s var(--ease-out)}
 .navmenu:popover-open .nml{opacity:1;transform:none}
 @starting-style{.navmenu:popover-open .nml{opacity:0;transform:translateY(-6px)}}
 .navmenu::backdrop{background:transparent}
@@ -746,6 +748,7 @@ article.c .b{container-type:inline-size}
 .nmb{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;letter-spacing:-.01em}
 .nmx{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;margin-right:-10px;border:0;border-radius:8px;background:none;color:var(--fg);cursor:pointer;transition:transform .12s var(--ease-out)}
 .nmx:active{transform:scale(.95)}
+.menubtn,.nmx,.nml a,.nml button{touch-action:manipulation}
 .nml{list-style:none;margin:8px 0 0;padding:0}
 .nml li{border-bottom:1px solid var(--line)}
 .nml button,.nml a{display:flex;align-items:center;gap:12px;width:100%;min-height:56px;padding:0;border:0;background:none;font:inherit;font-size:17px;font-weight:500;letter-spacing:-.01em;color:var(--fg);text-decoration:none;text-align:left;cursor:pointer;transition:opacity .12s ease}
