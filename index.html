@@ -672,6 +672,15 @@ main.grid{padding-bottom:96px}
 .topbar{position:fixed;inset:0 0 auto;z-index:30;padding-top:env(safe-area-inset-top);--hink:255,255,255;background-color:transparent;transition:background-color .2s ease}
 .topbar.solid{background-color:var(--bg);--hink:18,22,20}
 :root[data-theme="dark"] .topbar.solid{--hink:238,241,238}
+/* scrolled: frosted glass. A see-through tint of the page colour over a strong blur, so what scrolls underneath turns to soft colour and never fights the nav text;
+   a faint edge and soft shadow separate it from the page. Browsers without the blur keep the solid bar above */
+@supports ((-webkit-backdrop-filter:blur(1px)) or (backdrop-filter:blur(1px))){
+ .topbar.solid{background-color:color-mix(in srgb,var(--bg) 72%,transparent);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);
+  box-shadow:0 1px 0 rgba(18,22,20,.08),0 8px 24px -12px rgba(18,22,20,.18)}
+ :root[data-theme="dark"] .topbar.solid{background-color:color-mix(in srgb,var(--bg) 64%,transparent);box-shadow:0 1px 0 rgba(255,255,255,.07),0 8px 24px -12px rgba(0,0,0,.6)}
+}
+.topbar{transition:background-color .2s ease,box-shadow .2s ease}
+@media (prefers-reduced-motion:reduce){.topbar{transition:none}}
 @media (prefers-reduced-motion:reduce){.topbar{transition:none}}
 .topbar .topnav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px;padding-block:0}
 .brand{display:inline-flex;align-items:center;gap:10px;color:rgb(var(--hink));text-decoration:none;font-weight:600;font-size:15px;letter-spacing:-.01em;min-height:44px}
@@ -1411,11 +1420,13 @@ BIKE.addEventListener('close',()=>{BIKE_I=null;BIKE_AC=null});
 /* floating search + command dialog */
 const CMD=$('cmd');
 const fab=$('fab');
-let barVisible=true,atDir=false;
+let barVisible=true,atDir=false,atFoot=false;
 /* the pill appears once the filter bar has scrolled away, and steps aside once the shop list fills the lower part of the screen */
-new IntersectionObserver(es=>{barVisible=es[0].isIntersecting;updateFab()},{rootMargin:'-48px 0px 0px 0px'}).observe($('bar'));
+new IntersectionObserver(es=>{barVisible=es[0].isIntersecting;updateFab()},{rootMargin:'-64px 0px 0px 0px'}).observe($('bar'));
+/* ...and slides away once the footer comes into view, so it never sits on top of it */
+new IntersectionObserver(es=>{atFoot=es[0].isIntersecting;updateFab()}).observe($('copyright'));
 function updateFab(n=activeCount()){
- const show=!barVisible&&!atDir&&!document.querySelector('dialog[open]');
+ const show=!barVisible&&!atDir&&!atFoot&&!document.querySelector('dialog[open]');
  fab.classList.toggle('on',show);fab.inert=!show;
  const qv=F.q.trim(),bikes=LIST.length+' bike'+(LIST.length===1?'':'s'),fl=n?`Filters, ${n} on`:'Filters';
  $('fab-q').textContent=qv?'“'+qv+'”':'Search bikes';$('fab-q').classList.toggle('typed',!!qv);
