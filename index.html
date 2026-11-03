@@ -125,12 +125,18 @@ main.grid{padding-block:14px 56px;display:grid;grid-template-columns:repeat(auto
 .tipb:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .tipb[aria-expanded="true"]{color:var(--fg)}
 /* the bubble: one shared popover, so it also shows above the details window */
-#feetip{position:fixed;inset:auto;margin:0;padding:6px 10px;max-width:min(300px,calc(100vw - 32px));border:0;border-radius:8px;background:var(--fg);color:var(--bg);font-size:var(--t-meta);line-height:1.35;box-shadow:0 6px 20px rgba(0,0,0,.28);pointer-events:none;overflow:visible;
- /* tooltip recipe: grows out of the icon (origin set to the icon by script), 125ms strong ease-out in and out; a transition so a quick re-tap retargets instead of restarting */
- opacity:0;transform:scale(.97);transition:opacity 125ms var(--ease-out),transform 125ms var(--ease-out),overlay 125ms allow-discrete,display 125ms allow-discrete}
-#feetip:popover-open{opacity:1;transform:none}
-@starting-style{#feetip:popover-open{opacity:0;transform:scale(.97)}}
-@media (prefers-reduced-motion:reduce){#feetip,#feetip:popover-open{transform:none}}
+#feetip{position:fixed;inset:auto;margin:0;padding:7px 11px;width:max-content;max-width:min(196px,calc(100vw - 32px));text-wrap:balance;border:0;border-radius:8px;background:var(--fg);color:var(--bg);font-size:var(--t-meta);line-height:1.35;box-shadow:0 6px 20px rgba(0,0,0,.28);pointer-events:none;overflow:visible;
+ /* tooltip: a fade with a 6px rise from the icon's side, no scaling (scaling blurs text). 200ms in (top of the 125-200ms tooltip range)
+    on the softer-starting drawer curve so the entrance is actually visible; 150ms out, the same way back */
+ --dy:6px;opacity:0;transform:translateY(var(--dy));transition:opacity 150ms var(--ease-drawer),transform 150ms var(--ease-drawer),overlay 150ms allow-discrete,display 150ms allow-discrete}
+#feetip[data-side="below"]{--dy:-6px}
+#feetip:popover-open{opacity:1;transform:none;transition-duration:200ms}
+@starting-style{#feetip:popover-open{opacity:0;transform:translateY(var(--dy))}}
+/* the little pointer aims at the icon, wherever the bubble had to shift to stay on screen */
+#feetip::after{content:"";position:absolute;left:var(--ax,50%);width:8px;height:8px;margin-left:-4px;background:inherit;transform:rotate(45deg);border-radius:1px}
+#feetip[data-side="above"]::after{bottom:-4px}
+#feetip[data-side="below"]::after{top:-4px}
+@media (prefers-reduced-motion:reduce){#feetip,#feetip:popover-open{transform:none}@starting-style{#feetip:popover-open{transform:none}}}
 .list{font-size:var(--t-meta);color:var(--fg3);font-variant-numeric:tabular-nums}
 .list s{text-decoration-thickness:1px}
 .price.na .pay strong{font-size:var(--t-title);color:var(--fg2);letter-spacing:-.01em}
@@ -1634,7 +1640,7 @@ addEventListener('pointerdown',()=>{SWIPE_EAT=false},{capture:true,passive:true}
 (()=>{const tip=document.createElement('div');tip.id='feetip';tip.setAttribute('popover','manual');tip.setAttribute('role','tooltip');document.body.append(tip);
  let cur=null;
  const place=b=>{const r=b.getBoundingClientRect(),w=tip.offsetWidth,h=tip.offsetHeight,m=8;let x=r.left+r.width/2-w/2;x=Math.max(m,Math.min(x,innerWidth-w-m));
-  const up=r.top-h-8>=m;tip.style.left=x+'px';tip.style.top=(up?r.top-h-8:r.bottom+8)+'px';tip.style.transformOrigin=`${Math.round(r.left+r.width/2-x)}px ${up?'100%':'0'}`};
+  const g=7,up=r.top-h-g>=m;tip.dataset.side=up?'above':'below';tip.style.left=x+'px';tip.style.top=(up?r.top-h-g:r.bottom+g)+'px';tip.style.setProperty('--ax',Math.round(r.left+r.width/2-x)+'px')};
  const mark=b=>{b.setAttribute('aria-expanded','true');b.setAttribute('aria-describedby','feetip')},unmark=b=>{b.removeAttribute('aria-expanded');b.removeAttribute('aria-describedby')};
  const show=b=>{if(cur===b)return;tip.textContent=b.dataset.tip;
   if(cur){unmark(cur);cur=b;mark(b);place(b);return}
