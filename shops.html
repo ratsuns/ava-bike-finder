@@ -1,0 +1,291 @@
+<!doctype html><html lang="en" data-theme="dark" data-overlayscrollbars-initialize><head><meta charset="utf-8"><link rel="stylesheet" href="vendor/overlayscrollbars-2.16.0.min.css"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#0f1211"><title>Participating shops | Ava Rebate Bike Finder</title><meta name="description" content="Every shop that takes the Ava Community Energy e-bike rebate, on a map with each address, phone number and opening hours."><link rel="canonical" href="https://ratsuns.github.io/ava-bike-finder/shops.html"><meta name="robots" content="noindex"><link rel="icon" href="favicon.ico" sizes="48x48"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="manifest" href="site.webmanifest"><link rel="preconnect" href="https://tiles.openfreemap.org" crossorigin><script>try{if(!matchMedia("(hover: hover) and (pointer: fine)").matches||matchMedia("(any-pointer: coarse)").matches)document.documentElement.removeAttribute("data-overlayscrollbars-initialize");var t=localStorage.getItem("theme");if(t==="light"){document.documentElement.dataset.theme="light";document.querySelector("meta[name=color-scheme]").content="light";document.querySelector("meta[name=theme-color]").content="#f6f7f5"}}catch(e){}(function(){var l=document.createElement("link");l.rel="preload";l.as="fetch";l.crossOrigin="anonymous";l.href=document.documentElement.dataset.theme==="light"?"https://tiles.openfreemap.org/styles/positron":"https://tiles.openfreemap.org/styles/dark";document.head.appendChild(l)})()</script><link rel="stylesheet" href="vendor/maplibre-gl-5.24.0.min.css"><script defer src="vendor/maplibre-gl-5.24.0.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400..700&display=swap" rel="stylesheet">
+<style>
+/* home page rules this page uses (build2.py copies them from site_tpl.html, so tokens, themes and the shop cards stay identical) */
+:root{--offveil:rgba(10,12,11,.14); --offc:#9a3412; --offbg:#fff7ed; --offbd:#fdba74;
+ --sbh:rgba(0,0,0,.45); --sbh2:rgba(0,0,0,.6); --sbo:rgba(255,255,255,.3);
+ --bg:#f6f7f5; --surface:#ffffff; --well:#f1f3f0; --fg:#121614; --fg2:#4d5651; --fg3:#646d68;
+ --line:#e3e7e2; --line2:#c9d0ca; --accent:#0e7a52; --accent-fg:#ffffff; --accent-soft:#e3f2ea; --accent-ink:#0b5f40;
+ --pick:#b7791f; --warn-ink:#8a5300;
+ --shadow:0 1px 2px rgba(18,22,20,.04),0 4px 14px rgba(18,22,20,.05);
+ --shadow-hi:0 2px 4px rgba(18,22,20,.05),0 12px 28px rgba(18,22,20,.09);
+ --ease-out:cubic-bezier(.23,1,.32,1); --ease-in-out:cubic-bezier(.77,0,.175,1);
+ --t-micro:12px; --t-meta:13px; --t-ui:14px; --t-body:15px; --t-lede:17px; --t-title:17px; --t-price:28px; --t-h2:24px;
+ --font:"Geist",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+ color-scheme:light;}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--offveil:rgba(10,12,11,.42); --offc:#fdba74; --offbg:#431407; --offbd:#9a3412;
+ --sbh:rgba(255,255,255,.5); --sbh2:rgba(255,255,255,.7); --sbo:rgba(0,0,0,.4);
+ --bg:#0f1211; --surface:#171b19; --well:#1e2320; --fg:#eef1ee; --fg2:#b4bcb7; --fg3:#8d9691;
+ --line:#262c29; --line2:#3a433e; --accent:#2fae7d; --accent-fg:#06140e; --accent-soft:#16302a; --accent-ink:#7fdcb4;
+ --pick:#e0a84a; --warn-ink:#f0c46b;
+ --shadow:0 1px 2px rgba(0,0,0,.3); --shadow-hi:0 8px 24px rgba(0,0,0,.4); color-scheme:dark}}
+:root[data-theme="dark"]{--offveil:rgba(10,12,11,.42); --offc:#fdba74; --offbg:#431407; --offbd:#9a3412;
+ --sbh:rgba(255,255,255,.5); --sbh2:rgba(255,255,255,.7); --sbo:rgba(0,0,0,.4);
+ --bg:#0f1211; --surface:#171b19; --well:#1e2320; --fg:#eef1ee; --fg2:#b4bcb7; --fg3:#8d9691;
+ --line:#262c29; --line2:#3a433e; --accent:#2fae7d; --accent-fg:#06140e; --accent-soft:#16302a; --accent-ink:#7fdcb4;
+ --pick:#e0a84a; --warn-ink:#f0c46b;
+ --shadow:0 1px 2px rgba(0,0,0,.3); --shadow-hi:0 8px 24px rgba(0,0,0,.4); color-scheme:dark}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;accent-color:var(--accent);scrollbar-color:var(--line2) transparent}
+body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:var(--t-body);line-height:1.5;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+::selection{background:var(--accent-soft);color:var(--fg)}
+a{color:var(--accent-ink);text-underline-offset:3px;text-decoration-thickness:1px}
+html,a,button,[data-b]{-webkit-tap-highlight-color:transparent}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1200px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.shop{min-width:0;overflow-wrap:anywhere;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px 16px 12px;font-size:var(--t-ui);display:grid;gap:2px;align-content:start}
+.shead{display:flex;align-items:center;gap:8px;min-width:0;margin-bottom:4px}
+.shead b{min-width:0}
+.slogo{flex:none;width:36px;height:36px;margin-bottom:8px;border-radius:50%;overflow:hidden;background:#fff;box-shadow:0 0 0 1px var(--line);display:grid;place-items:center}
+.slogo img{width:100%;height:100%;object-fit:cover;display:block}
+a.slogo{text-decoration:none;transition:box-shadow .15s ease}
+@media (hover:hover) and (pointer:fine){a.slogo:hover{box-shadow:0 0 0 2px var(--fg2)}}
+.slogo.ini{background:var(--well);color:var(--fg2);font-size:12px;font-weight:700;letter-spacing:.02em}
+.maplink.hrs span{text-decoration:none;color:var(--fg2)}
+.maplink.hrs,.maplink.hrs:hover{color:var(--fg2);cursor:default}
+.hrs ul{list-style:none;margin:0;padding:0;display:grid;gap:1px}
+.hrs li{white-space:nowrap}
+.shop .city{color:var(--accent-ink);font-weight:600;font-size:var(--t-micro)}
+.shop b{font-size:var(--t-body);font-weight:600}
+.shop .m{color:var(--fg2)}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.themebtn{display:grid;place-items:center;width:40px;height:40px;margin-left:8px;border:0;border-radius:8px;background:none;color:rgba(var(--hink),.82);cursor:pointer;transition:color .15s ease,transform .12s var(--ease-out)}
+.themebtn:active{transform:scale(.92)}
+.themebtn:focus-visible{outline:2px solid rgb(var(--hink));outline-offset:2px}
+@media (hover:hover) and (pointer:fine){.themebtn:hover{color:rgb(var(--hink))}}
+.themebtn svg{overflow:visible}
+.themebtn .tm-core,.themebtn .tm-cut,.themebtn .tm-rays{transform-box:view-box;transform-origin:12px 12px;transition:transform .45s var(--ease-out),opacity .3s var(--ease-out)}
+.themebtn .tm-core{transform:scale(.55)}
+.themebtn .tm-cut{transform:translate(9px,-9px)}
+.themebtn .tm-rays{transform:none;opacity:1}
+:root[data-theme="dark"] .themebtn .tm-core{transform:rotate(0deg) scale(1)}
+:root[data-theme="dark"] .themebtn .tm-cut{transform:none}
+:root[data-theme="dark"] .themebtn .tm-rays{transform:rotate(-45deg) scale(.5);opacity:0}
+@media (max-width:760px){.themebtn{margin-left:0;width:44px;height:44px}}
+@media (prefers-reduced-motion:reduce){.themebtn .tm-core,.themebtn .tm-cut,.themebtn .tm-rays{transition:none}}
+::view-transition-old(root),::view-transition-new(root){animation-duration:.3s;animation-timing-function:ease}
+::view-transition-old(themebtn){display:none}
+::view-transition-new(themebtn){animation:none}
+button{touch-action:manipulation;-webkit-user-select:none;user-select:none}
+html{scrollbar-gutter:stable}
+html[data-overlayscrollbars-initialize],html[data-overlayscrollbars]{scrollbar-gutter:auto}
+.os-theme-ava{--os-size:18px;--os-padding-perpendicular:4px;--os-padding-axis:4px;--os-track-border-radius:10px;--os-handle-border-radius:10px;--os-handle-min-size:40px;
+ --os-handle-perpendicular-size:7px;--os-handle-perpendicular-size-hover:7px;--os-handle-perpendicular-size-active:7px;--sbx:calc(9 / 7);
+ --os-handle-bg:var(--sbh);--os-handle-bg-hover:var(--sbh2);--os-handle-bg-active:var(--sbh2);
+ --os-handle-border:1px solid var(--sbo);--os-handle-border-hover:1px solid var(--sbo);--os-handle-border-active:1px solid var(--sbo)}
+.os-theme-ava.os-scrollbar-vertical{padding:4px 5px 4px 4px}
+.os-theme-ava.os-scrollbar-vertical .os-scrollbar-handle{left:0;right:0;margin-inline:auto;transition:opacity .15s,background-color .15s,border-color .15s,scale .2s var(--ease-out)}
+.os-theme-ava.os-scrollbar-vertical:hover .os-scrollbar-handle,.os-theme-ava.os-scrollbar-vertical:active .os-scrollbar-handle{scale:var(--sbx) 1}
+.os-theme-ava.os-scrollbar{transition:opacity .3s ease,visibility .3s ease}
+.maplink{display:inline-flex;align-items:flex-start;gap:6px;color:var(--fg2);text-decoration:none;width:fit-content}
+.maplink svg{flex:none;margin-top:3px;color:var(--fg3)}
+.maplink span{text-decoration:underline;text-decoration-color:var(--line2);text-underline-offset:3px}
+@media (hover:hover) and (pointer:fine){.maplink:hover{color:var(--fg)}
+.maplink:hover span{text-decoration-color:currentColor}}
+.tel{font-variant-numeric:tabular-nums}
+@media (pointer:coarse){.shop>.maplink,.shop>a.web{padding-block:5px}
+.shop>.maplink:last-child,.shop>a.web:last-child{margin-bottom:-5px}}
+.brand{display:inline-flex;align-items:center;gap:10px;color:rgb(var(--hink));text-decoration:none;font-weight:600;font-size:15px;letter-spacing:-.01em;min-height:44px}
+.brand svg{flex:none}
+.brand:focus-visible{outline:2px solid rgb(var(--hink));outline-offset:2px}
+@media (max-width:760px){.brand{font-size:15px;gap:8px}}
+.brand{white-space:nowrap}
+.web{display:inline-flex;align-items:flex-start;gap:6px;width:fit-content}
+.web svg{flex:none;margin-top:3px;color:var(--fg3)}
+.shop a.web{text-decoration:none;font-weight:600;transition:color .15s ease}
+a.web span{text-decoration:underline;text-decoration-color:color-mix(in oklab,currentColor 45%,transparent);text-underline-offset:3px}
+@media (hover:hover) and (pointer:fine){a.web:hover{color:var(--fg)}
+a.web:hover span{text-decoration-color:currentColor}
+a.web:hover svg{color:currentColor}}
+.web svg+span+svg{color:currentColor;margin-top:4px}
+.maplink,.web{line-height:1.5}
+.maplink svg,.web svg{margin-top:3.5px}
+@supports (margin-top:1lh){.maplink svg,.web svg,.web svg+span+svg{margin-top:calc((1lh - 13px) / 2)}}
+:root{--ease-drawer:cubic-bezier(.32,.72,0,1)}
+@media (max-width:760px){:root{--t-micro:14px;--t-meta:14px;--t-ui:15px;--t-body:16px;--t-lede:18px;--t-title:18px}}
+/* shops page */
+:root{--mapbg:rgb(242,243,240)}
+:root[data-theme="dark"]{--mapbg:rgb(12,12,12)}
+.sbar{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px);--hink:18,22,20}
+:root[data-theme="dark"] .sbar{--hink:238,241,238}
+.sbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:56px;max-width:1440px}
+.sbar .themebtn{margin-right:-8px}
+.spg{max-width:1440px;padding-block:24px 72px;display:grid;gap:16px;grid-template-columns:minmax(0,1fr);grid-template-areas:"head" "map" "list"}
+.sphead{grid-area:head}
+.sphead h1{font-size:var(--t-h2);line-height:1.2;letter-spacing:-.025em;font-weight:700;margin:0 0 4px;text-wrap:balance}
+.sphead p{margin:0;color:var(--fg2);text-wrap:pretty}
+.spmap{grid-area:map;position:relative;height:clamp(280px,45vh,460px);height:clamp(280px,45svh,460px);border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--mapbg);isolation:isolate}
+.splist{grid-area:list;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;align-content:start}
+@media (min-width:1024px){
+ .spg{grid-template-columns:minmax(360px,440px) minmax(0,1fr);grid-template-rows:auto 1fr;grid-template-areas:"head map" "list map";column-gap:24px}
+ .spmap{position:sticky;top:72px;align-self:start;height:calc(100vh - 88px);height:calc(100svh - 88px)}
+ .splist{grid-template-columns:minmax(0,1fr)}
+}
+.splist .shop{scroll-margin:72px 0 16px}
+.shop.on{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.spmap.nomap::after{content:"The map couldn't load. Every shop is listed here.";position:absolute;inset:0;z-index:10;background:var(--mapbg);display:grid;place-items:center;padding:24px;text-align:center;color:var(--fg2);font-size:var(--t-ui)}
+/* pins: one per shop, in the site's green with a white ring; the open or hovered one grows a little and sits on top */
+.pin{display:block;width:32px;height:40px;padding:4px 2px 0;margin:0;border:0;background:none;cursor:pointer;touch-action:manipulation}
+.pin svg{display:block;width:28px;height:36px;transform-origin:50% 100%;transition:transform .15s var(--ease-out);filter:drop-shadow(0 1px 1.5px rgba(0,0,0,.35))}
+.pin .pb{fill:var(--accent);stroke:#fff;stroke-width:2}
+.pin .pd{fill:#fff}
+.maplibregl-marker.pin.hot{z-index:3}
+.maplibregl-marker.pin.sel{z-index:4}
+.pin.hot svg,.pin.sel svg{transform:scale(1.2)}
+.pin:focus-visible{outline:none}
+.pin:focus-visible svg{outline:2px solid var(--fg);outline-offset:1px;border-radius:50% 50% 50% 50%/40% 40% 60% 60%}
+/* hover card: one element, reused for every pin; it grows out of the pin (or drops below it near the top edge) */
+.maplibregl-marker.mcw{z-index:6;pointer-events:none}
+.mcard{width:296px;max-width:calc(100vw - 58px);display:grid;gap:10px;padding:14px 16px;background:var(--surface);color:var(--fg);border:1px solid var(--line);border-radius:12px;font-size:var(--t-ui);line-height:1.45;text-align:left;
+ box-shadow:0 1px 2px rgba(18,22,20,.06),0 12px 32px rgba(18,22,20,.16);
+ pointer-events:none;visibility:hidden;opacity:0;transform:scale(.96);transition:opacity .12s var(--ease-out),transform .12s var(--ease-out),visibility 0s linear .12s}
+.mcard.open{pointer-events:auto;visibility:visible;opacity:1;transform:none;transition:opacity .15s var(--ease-out),transform .15s var(--ease-out),visibility 0s}
+:root[data-theme="dark"] .mcard{border-color:var(--line2);box-shadow:0 2px 6px rgba(0,0,0,.35),0 16px 40px rgba(0,0,0,.55)}
+@media (prefers-reduced-motion:reduce){.mcard,.mcard.open{transform:none}.pin svg{transition:none}}
+.mctop{display:flex;align-items:center;gap:10px;min-width:0}
+.mctop .slogo{margin:0}
+.mcname{display:grid;min-width:0;overflow-wrap:anywhere}
+.mcname .city{color:var(--accent-ink);font-weight:600;font-size:var(--t-micro)}
+.mcname b{font-size:var(--t-body);font-weight:600;line-height:1.3}
+.mclines{display:grid;gap:3px;color:var(--fg2)}
+.mcl{display:flex;align-items:flex-start;gap:6px;color:inherit;text-decoration:none;width:fit-content;overflow-wrap:anywhere}
+.mcl svg{flex:none;margin-top:calc((1lh - 13px) / 2);color:var(--fg3)}
+a.mcl span{text-decoration:underline;text-decoration-color:var(--line2);text-underline-offset:3px}
+.mcacts{display:flex;gap:8px;flex-wrap:wrap}
+.mcbtn{display:inline-flex;align-items:center;gap:6px;height:34px;padding:0 12px;border-radius:6px;border:1px solid var(--line2);background:var(--surface);color:var(--fg);font-weight:600;font-size:var(--t-ui);text-decoration:none;transition:background-color .15s ease,border-color .15s ease}
+.mcbtn svg{color:var(--fg3)}
+.mcbtn.pri{background:var(--accent);border-color:var(--accent);color:var(--accent-fg)}
+@media (hover:hover) and (pointer:fine){a.mcl:hover{color:var(--fg)}a.mcl:hover span{text-decoration-color:currentColor}.mcbtn:hover{border-color:var(--fg3)}.mcbtn.pri:hover{background:var(--accent-ink);border-color:var(--accent-ink)}:root[data-theme="dark"] .mcbtn.pri:hover{background:#3cc08c;border-color:#3cc08c}}
+@media (pointer:coarse){.mcbtn{height:40px}.mcl{padding-block:3px}}
+/* map controls in the site's colors */
+.spmap .maplibregl-ctrl-group{background:var(--surface);border-radius:8px;box-shadow:0 0 0 1px var(--line2),0 2px 8px rgba(18,22,20,.08)}
+.spmap .maplibregl-ctrl-group button+button{border-top-color:var(--line)}
+.spmap .maplibregl-ctrl-attrib{font-family:var(--font);font-size:11px}
+:root[data-theme="dark"] .spmap .maplibregl-ctrl-icon,:root[data-theme="dark"] .spmap .maplibregl-ctrl-attrib-button{filter:invert(1)}
+:root[data-theme="dark"] .spmap .maplibregl-ctrl-attrib{background:rgba(23,27,25,.8);color:var(--fg2)}
+:root[data-theme="dark"] .spmap .maplibregl-ctrl-attrib.maplibregl-compact{background:var(--surface)}
+:root[data-theme="dark"] .spmap .maplibregl-ctrl-attrib a{color:var(--fg2)}
+</style>
+</head><body data-overlayscrollbars-initialize style="margin:0">
+<header class="sbar"><div class="wrap"><a class="brand" href="./"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5.5" cy="17" r="3.5"/><circle cx="18.5" cy="17" r="3.5"/><path d="M5.5 17 9 9h6l3.5 8M12 17l3-8M8 6h3"/></svg><span>Ava Bike Finder</span></a><button type="button" class="themebtn" id="themebtn" aria-label="Switch to light mode"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><mask id="tmask"><rect width="24" height="24" fill="#fff"/><circle class="tm-cut" cx="17" cy="7" r="7" fill="#000"/></mask><circle class="tm-core" cx="12" cy="12" r="8.5" fill="currentColor" mask="url(#tmask)"/><g class="tm-rays" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 1.5v2M12 20.5v2M1.5 12h2M20.5 12h2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M4.6 19.4 6 18M18 6l1.4-1.4"/></g></svg></button></div></header>
+<main class="wrap spg">
+<div class="sphead"><h1>Where to buy</h1><p>Every participating shop. Call ahead to check stock; the rebate only works in person.</p></div>
+<div class="spmap" id="map" role="region" aria-label="Map of the shops"></div>
+<div class="splist" id="list"></div>
+</main>
+<script>
+/* shop cards: drawn right away from the inline list, with the same helpers and markup as the home page's "Where to buy" */
+const SH=[{"k":"Adaptive Cycles (Berkeley)","name":"Adaptive Cycles","address":"1 Spinnaker Way","city":"Berkeley","phone":"(510) 497-1828","url":"https://adaptivecycles.com/","email":"greg@adaptivecycles.com","hours":"By appointment","lat":37.869802,"lng":-122.319622,"logo":"img/logo-adaptive-cycles.webp"},{"k":"Alameda Bicycle (Alameda)","name":"Alameda Bicycle","address":"1522 Park St","city":"Alameda","phone":"(510) 522-0070","url":"https://www.alamedabicycle.com/","email":"info@alamedabicycle.com","hours":"Mon 2:30–6p · Tue–Sun 11a–6p","lat":37.766062,"lng":-122.24113,"logo":"img/logo-alameda-bicycle.webp"},{"k":"Bicycle Garage (Fremont)","name":"The Bicycle Garage","address":"5006 Mowry Ave","city":"Fremont","phone":"(510) 795-9622","url":"https://www.bicyclegaragefremont.com/","email":"velocipedesf@gmail.com","hours":"Mon 10a–7p · Closed Tue · Wed–Fri 10a–7p · Sat 10a–6p · Sun 11a–5p","lat":37.536138,"lng":-121.998373,"logo":"img/logo-the-bicycle-garage.webp"},{"k":"Blue Heron Bicycles (Berkeley)","name":"Blue Heron Bikes","address":"1306 Gilman St","city":"Berkeley","phone":"(510) 524-1937","url":"https://blueheronbikesberkeley.com","email":"service@blueheronbikesberkeley.com","hours":"Mon–Sat 9a–6p · Closed Sun","lat":37.881135,"lng":-122.28932,"logo":"img/logo-blue-heron-bikes.webp"},{"k":"Castro Valley Cyclery","name":"Castro Valley Cyclery","address":"20515 Stanton Ave","city":"Castro Valley","phone":"(510) 538-1878","hours":"Closed Mon · Tue–Fri 12:30–5p · Sat 10a–4p · Closed Sun","lat":37.694554,"lng":-122.090325},{"k":"Cycle City (Alameda)","name":"Cycle City","address":"1433 High St","city":"Alameda","phone":"(510) 521-2872","url":"https://cyclecityusa.com/","email":"info@cyclecityusa.com","hours":"Closed Mon · Tue–Sat 10:30a–6p · Closed Sun","lat":37.75867,"lng":-122.231549,"logo":"img/logo-cycle-city.webp"},{"k":"Dublin Cyclery (Dublin)","name":"Dublin Cyclery","address":"7001 Dublin Blvd","city":"Dublin","phone":"(925) 828-8676","url":"https://www.dublincyclery.com/","email":"info@dublincyclery.com","hours":"Closed Mon · Tue 10a–4p · Wed–Fri 9:30a–5:30p · Sat 10a–4p · Sun 11a–3p","lat":37.706159,"lng":-121.923567,"logo":"img/logo-dublin-cyclery.webp"},{"k":"Ebikes2U","name":"Ebikes2U","address":"46701 Fremont Blvd Unit B","city":"Fremont","phone":"(510) 883-3909","url":"https://ebikes2u.com/","email":"info@ebikes2u.com","hours":"Mon–Fri 9a–5p · Closed Sat, Sun","lat":37.482213,"lng":-121.945517,"logo":"img/logo-ebikes2u.webp"},{"k":"Electric Bike Center (Dublin)","name":"Electric Bike Center","address":"6894 Village Parkway","city":"Dublin","phone":"(925) 230-8178","url":"https://electricbikeca.com/","email":"sales@electricbikeca.com","hours":"Daily 10:30a–6p","lat":37.707356,"lng":-121.924943,"logo":"img/logo-electric-bike-center.webp"},{"k":"Laurel Cyclery (Oakland)","name":"Laurel Cyclery","address":"3715 MacArthur Blvd","city":"Oakland","phone":"(510) 328-1158","url":"https://www.laurelcyclery.com/","email":"laurelcyclery@gmail.com","hours":"Mon–Fri 11a–6p · Sat 10a–4p · Closed Sun","lat":37.791965,"lng":-122.199165,"logo":"img/logo-laurel-cyclery.webp"},{"k":"Mike's Bikes (Berkeley)","name":"Mike's Bikes of Berkeley","address":"1824 University Ave","city":"Berkeley","phone":"(510) 845-2453","url":"https://mikesbikes.com/pages/berkeley","email":"info@mikesbikes.com","hours":"Mon–Sat 10a–6p · Sun 10a–5p","lat":37.871237,"lng":-122.274693,"logo":"img/logo-mike-s-bikes.webp"},{"k":"Mike's Bikes (Pleasanton)","name":"Mike's Bikes of Pleasanton","address":"6754 Bernal Ave, Suite 710","city":"Pleasanton","phone":"(925) 223-8267","url":"https://mikesbikes.com/pages/pleasanton","email":"info@mikesbikes.com","hours":"Mon–Sat 10a–6p · Sun 10a–5p","lat":37.657831,"lng":-121.8983,"logo":"img/logo-mike-s-bikes.webp"},{"k":"NILES BICYCLES (Fremont)","name":"Niles Bicycles","address":"161 I Street","city":"Fremont","phone":"(510) 565-1111","url":"https://nilesbicycles.com/","email":"nilesbicycles@gmail.com","hours":"Closed Mon, Tue · Wed–Sat 12–6p · Sun 11a–3p","lat":37.57609,"lng":-121.978365,"logo":"img/logo-niles-bicycles.webp"},{"k":"Pedego Electric Bikes (Livermore)","name":"Pedego Electric Bikes Livermore","address":"4590 Tesla Road","city":"Livermore","phone":"(925) 800-5330","url":"https://dealers.pedegoelectricbikes.com/pages/dealers/livermore","email":"contact@pedegolivermore.com","hours":"Closed Tue, Wed · Thu–Mon 11a–5p","lat":37.665203,"lng":-121.739343,"logo":"img/logo-pedego.webp"},{"k":"Rhythm Bikes (Oakland)","name":"Rhythm Bikes","address":"6112 La Salle Ave","city":"Oakland","phone":"(510) 339-2953","url":"https://www.rhythmbikes.com","email":"rhythm@rhythmbikes.com","hours":"Closed Mon · Tue–Fri 11a–6p · Sat 10a–5p · Closed Sun","lat":37.826287,"lng":-122.210333,"logo":"img/logo-rhythm-bikes.webp"},{"k":"Robby's Bicycles (Stockton)","name":"Robby's Bicycles","address":"7931 Thornton Rd","city":"Stockton","phone":"(209) 951-4371","url":"https://www.robbysbicycles.com/","contact":"https://www.robbysbicycles.com/about/contact-us-pg126.htm","hours":"Mon–Fri 11a–5p · Sat 12–5p · Sun 12–4p","lat":38.021605,"lng":-121.325805,"logo":"img/logo-robby-s-bicycles.webp"},{"k":"Sports Basement (Berkeley)","name":"Sports Basement Berkeley","address":"2727 Milvia St","city":"Berkeley","phone":"(510) 984-3907","url":"https://shop.sportsbasement.com/blogs/stores/berkeley","email":"friends@sportsbasement.com","hours":"Mon–Fri 11a–8p · Sat–Sun 10a–7p","lat":37.85918,"lng":-122.2693,"logo":"img/logo-sports-basement.webp"},{"k":"Stay True Cycles (Berkeley)","name":"Stay True Cycles","address":"2116 Vine St","city":"Berkeley","phone":"(510) 725-6281","url":"https://www.staytrue.bike/","contact":"https://www.staytrue.bike/articles/email-us-pg199.htm","hours":"Closed Mon · Tue–Sat 12–7p · Closed Sun","lat":37.88022,"lng":-122.268568,"logo":"img/logo-stay-true-cycles.webp"},{"k":"The New Wheel (Oakland)","name":"The New Wheel","address":"1446 Leimert Blvd","city":"Oakland","phone":"(415) 524-7362","url":"https://newwheel.net/pages/oakland-east-bay-electric-bike-shop","email":"info@newwheel.net","hours":"Closed Mon, Tue · Wed–Sat 11a–6p · Sun 11a–5p","lat":37.811726,"lng":-122.212466,"logo":"img/logo-the-new-wheel.webp"},{"k":"Tip Top Bike Shop (Oakland)","name":"Tip Top Bike Shop","address":"4800 Telegraph Ave A","city":"Oakland","phone":"(510) 444-4148","url":"https://tiptopbikeshop.com","email":"top@tiptopbikeshop.com","hours":"Closed Mon · Tue–Fri 11a–6p · Sat–Sun 12–5p","lat":37.834775,"lng":-122.262839,"logo":"img/logo-tip-top-bike-shop.webp"},{"k":"Tracy Cyclery (Tracy)","name":"Tracy Cyclery","address":"2217 N Tracy Blvd","city":"Tracy","phone":"(209) 640-9380","hours":"Closed Mon · Tue–Fri 10a–6p · Sat 10a–5p · Closed Sun","lat":37.753443,"lng":-121.435189},{"k":"Trek Bicycle (Berkeley)","name":"Trek Bicycle Berkeley","address":"1045 Ashby Ave","city":"Berkeley","phone":"(510) 370-2890","url":"https://www.trekbikes.com/us/en_US/retail/berkeley/","hours":"Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p · Sun 12–5p","lat":37.85186,"lng":-122.288818,"logo":"img/logo-trek.webp"},{"k":"Trek Bicycle (Dublin)","name":"Trek Bicycle Dublin","address":"7222 San Ramon Road","city":"Dublin","phone":"(925) 829-4310","url":"https://www.trekbikes.com/us/en_US/retail/dublin/","hours":"Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p · Sun 12–5p","lat":37.702215,"lng":-121.93612,"logo":"img/logo-trek.webp"},{"k":"Trek Bicycle (Livermore)","name":"Trek Bicycle Livermore","address":"2752 First Street","city":"Livermore","phone":"(925) 455-8090","url":"https://www.trekbikes.com/us/en_US/retail/livermore/","hours":"Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p · Sun 12–5p","lat":37.684565,"lng":-121.764165,"logo":"img/logo-trek.webp"},{"k":"Trek Bicycle (Oakland)","name":"Trek Bicycle Oakland","address":"3530 Grand Avenue","city":"Oakland","phone":"(510) 570-3885","url":"https://www.trekbikes.com/us/en_US/retail/oakland/","hours":"Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p · Closed Sun","lat":37.81439,"lng":-122.246199,"logo":"img/logo-trek.webp"},{"k":"Trek Bicycles (Castro Valley)","name":"Trek Bicycle Castro Valley","address":"3318 Village Drive","city":"Castro Valley","phone":"(510) 881-5000","url":"https://www.trekbikes.com/us/en_US/retail/castro_valley/","hours":"Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p · Sun 12–5p","lat":37.696686,"lng":-122.07813,"logo":"img/logo-trek.webp"},{"k":"Uptown BART Bike Station (Oakland)","name":"Uptown BART Bike Station","address":"1775 Broadway","city":"Oakland","phone":"(510) 858-7555","url":"https://www.bikehub.com/articles/bart-bike-stations-pg1208.htm","email":"uptown@bikehub.com","hours":"Mon–Fri 7a–7p · Closed Sat, Sun","lat":37.807129,"lng":-122.269597,"logo":"img/logo-bikehub.webp"},{"k":"eCyclepath (Hayward)","name":"Cyclepath","address":"22510 Foothill Blvd","city":"Hayward","phone":"(510) 881-5177","url":"https://www.ecyclepath.com/","email":"info@cyclepathhayward.com","hours":"Mon–Fri 10a–5p · Sat 10a–4p · Closed Sun","lat":37.67459,"lng":-122.081194,"logo":"img/logo-cyclepath.webp"}];
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const mapUrl=s=>'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent([s.name,s.address,s.city,'CA'].filter(Boolean).join(', '));
+const telUrl=p=>'tel:'+String(p).replace(/[^0-9+]/g,'');
+const PIN='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>';
+const GLOBE='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18z"/></svg>',PHONE='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>';
+const CLOCK='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>';
+const MAIL='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>';
+const mailUrl=(s,b)=>{const subj=b?`Question about the ${b.name} (Ava e-bike rebate)`:'Question about the Ava e-bike rebate';
+ const body=b?`Hi ${s.name},\n\nI'm interested in the ${b.name} and plan to use my Ava Community Energy e-bike rebate. Could you let me know:\n\n- Do you have it in stock, and in which colors and sizes?\n- What is the current price?\n- Can I come in for a test ride?\n\nThank you!\n`
+  :`Hi ${s.name},\n\nI'm shopping for an e-bike and plan to use my Ava Community Energy e-bike rebate. Which rebate-eligible bikes do you have in stock right now?\n\nThank you!\n`;
+ return `mailto:${s.email}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(body.replace(/\n/g,'\r\n'))}`};
+const slogo=s=>{const tag=s.url?`a href="${esc(s.url)}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"`:'span aria-hidden="true"',end=s.url?'a':'span';return s.logo?`<${tag} class="slogo"><img src="${esc(s.logo)}" alt="" width="36" height="36" loading="lazy" decoding="async"></${end}>`:`<${tag} class="slogo ini">${esc(s.name.replace(/^the\s+/i,'').split(/\s+/).filter(w=>/^[A-Za-z]/.test(w)).slice(0,2).map(w=>w[0].toUpperCase()).join(''))}</${end}>`};
+const shopLines=(s,b)=>`${s.address||s.city?`<a class="maplink" href="${mapUrl(s)}" target="_blank" rel="noopener">${PIN}<span>${esc([s.address,s.city].filter(Boolean).join(', '))}</span></a>`:''}${s.phone?`<a class="maplink tel" href="${telUrl(s.phone)}">${PHONE}<span>${esc(s.phone)}</span></a>`:''}${s.hours?`<div class="maplink hrs">${CLOCK}<div><ul>${s.hours.split(' · ').map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div></div>`:''}${s.email?`<a class="maplink mail" href="${mailUrl(s,b)}">${MAIL}<span>${esc(s.email)}</span></a>`:s.contact?`<a class="maplink mail" href="${esc(s.contact)}" target="_blank" rel="noopener">${MAIL}<span>Email via contact form</span></a>`:''}`;
+const EXT='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>';
+SH.sort((a,b)=>(a.city||'').localeCompare(b.city||'')||a.name.localeCompare(b.name));
+/* the first few logos load right away; the rest wait until they're scrolled near */
+$('list').innerHTML=SH.map((s,i)=>{const h=`<div class="shop" data-shop="${esc(s.k)}">${slogo(s)}<span class="city">${esc(s.city||'')}</span><b>${esc(s.name)}</b>${shopLines(s)||'<span class="m">Address not listed</span>'}${s.url?`<a class="web" href="${esc(s.url)}" target="_blank" rel="noopener">${GLOBE}<span>Shop website</span>${EXT}</a>`:''}</div>`;return i<6?h.replace('loading="lazy"','loading="eager"'):h}).join('');
+const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
+/* light / dark toggle: same as the home page (remembered per browser, crossfades where view transitions exist) */
+(()=>{const b=$('themebtn');if(!b)return;const H=document.documentElement;
+ const cur=()=>H.dataset.theme==='light'?'light':'dark';
+ const label=()=>{const t=cur();b.setAttribute('aria-label',t==='dark'?'Switch to light mode':'Switch to dark mode')};
+ const apply=t=>{H.dataset.theme=t;const cs=document.querySelector('meta[name="color-scheme"]'),tc=document.querySelector('meta[name="theme-color"]');if(cs)cs.content=t;if(tc)tc.content=t==='light'?'#f6f7f5':'#0f1211';try{localStorage.setItem('theme',t)}catch(e){}label()};
+ label();
+ b.addEventListener('click',()=>{const next=cur()==='dark'?'light':'dark';
+  if(document.startViewTransition&&!REDUCE.matches){b.style.viewTransitionName='themebtn';const vt=document.startViewTransition(()=>apply(next));vt.finished.finally(()=>{b.style.viewTransitionName=''})}else apply(next)})})();
+/* map: starts as soon as MapLibre (loaded with defer in the head) is ready */
+(()=>{const box=$('map'),list=$('list'),H=document.documentElement;
+ const STY={light:'https://tiles.openfreemap.org/styles/positron',dark:'https://tiles.openfreemap.org/styles/dark'};
+ const theme=()=>H.dataset.theme==='light'?'light':'dark';
+ const BY={};SH.forEach(s=>BY[s.k]=s);
+ const dirUrl=s=>'https://www.google.com/maps/dir/?api=1&destination='+encodeURIComponent([s.name,s.address,s.city,'CA'].filter(Boolean).join(', '));
+ /* today's hours (Pacific time) from lines like "Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p"; anything else is shown as written */
+ const DAYS=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+ const inDays=(spec,d)=>spec.split(/,\s*/).some(x=>{const[a,b]=x.split('–'),i=DAYS.indexOf(a),j=b?DAYS.indexOf(b):i;return i>=0&&j>=0&&(i<=j?d>=i&&d<=j:d>=i||d<=j)});
+ const today=h=>{if(!h)return'';let d;try{d=DAYS.indexOf(new Date().toLocaleString('en-US',{timeZone:'America/Los_Angeles',weekday:'short'}))}catch(e){d=new Date().getDay()}
+  for(const p of h.split(' · ')){let m=p.match(/^Closed (.+)$/);if(m){if(inDays(m[1],d))return'Closed today';continue}
+   m=p.match(/^(Daily|[A-Z][a-z]{2}(?:–[A-Z][a-z]{2})?(?:, [A-Z][a-z]{2}(?:–[A-Z][a-z]{2})?)*) (.+)$/);if(!m)return h;if(m[1]==='Daily'||inDays(m[1],d))return'Today '+m[2]}
+  return /\d/.test(h)?'Closed today':h};
+ const cardHTML=s=>{const t=today(s.hours);return `<div class="mctop">${slogo(s)}<div class="mcname"><span class="city">${esc(s.city||'')}</span><b>${esc(s.name)}</b></div></div><div class="mclines">${s.address?`<span class="mcl">${PIN}<span>${esc(s.address)}</span></span>`:''}${t?`<span class="mcl">${CLOCK}<span>${esc(t)}</span></span>`:''}${s.phone?`<a class="mcl" href="${telUrl(s.phone)}">${PHONE}<span>${esc(s.phone)}</span></a>`:''}</div><div class="mcacts"><a class="mcbtn pri" href="${dirUrl(s)}" target="_blank" rel="noopener">Directions</a>${s.url?`<a class="mcbtn" href="${esc(s.url)}" target="_blank" rel="noopener">Website${EXT}</a>`:''}</div>`};
+ const PINSVG='<svg viewBox="0 0 28 36" aria-hidden="true"><path class="pb" d="M14 34.6S3 24 3 14.2a11 11 0 0 1 22 0C25 24 14 34.6 14 34.6z"/><circle class="pd" cx="14" cy="14" r="4"/></svg>';
+ const WIDE=matchMedia('(min-width: 1024px)');
+ const init=()=>{if(!window.maplibregl){box.classList.add('nomap');return}
+  const bounds=new maplibregl.LngLatBounds();SH.forEach(s=>bounds.extend([s.lng,s.lat]));
+  let map;
+  try{map=new maplibregl.Map({container:box,style:STY[theme()],bounds,fitBoundsOptions:{padding:{top:56,bottom:32,left:32,right:32},maxZoom:13},
+   minZoom:7,maxZoom:17,maxBounds:[[-123.4,36.9],[-120.4,38.6]],renderWorldCopies:false,fadeDuration:0,pixelRatio:Math.min(devicePixelRatio||1,2),
+   dragRotate:false,pitchWithRotate:false,touchPitch:false,
+   /* where the map sits inside the scrolling page (one column), one finger scrolls the page and two move the map */
+   cooperativeGestures:!WIDE.matches})}
+  catch(e){box.classList.add('nomap');return}
+  map.touchZoomRotate.disableRotation();map.keyboard.disableRotation();
+  map.addControl(new maplibregl.NavigationControl({showCompass:false}),'top-right');
+  map.once('load',()=>performance.mark('map-load'));
+  /* if the map style can't load, say so; the list works without it */
+  let styled=false;map.once('style.load',()=>{styled=true});map.on('error',()=>{if(!styled)box.classList.add('nomap')});
+  /* pins are made once; HTML markers stay put when the style changes with the theme */
+  const pins=new Map();
+  SH.forEach(s=>{const el=document.createElement('button');el.type='button';el.className='pin';el.dataset.k=s.k;el.setAttribute('aria-label',s.name+', '+s.city);el.innerHTML=PINSVG;
+   new maplibregl.Marker({element:el,anchor:'bottom'}).setLngLat([s.lng,s.lat]).addTo(map);pins.set(s.k,el)});
+  /* the one hover card, kept on the map (hidden) so it can fade in from its closed state */
+  const cw=document.createElement('div');cw.className='mcw';const card=document.createElement('div');card.className='mcard';card.setAttribute('aria-hidden','true');cw.append(card);
+  const cm=new maplibregl.Marker({element:cw,anchor:'bottom'}).setLngLat([SH[0].lng,SH[0].lat]).addTo(map);
+  let cur=null,pinned=null,t=0,onCard=null;
+  /* above the pin when it fits, else below; never over the credits at the bottom. A tapped or clicked pin whose card doesn't fit either way nudges the map */
+  const place=(s,pan)=>{const p=map.project([s.lng,s.lat]),W=box.clientWidth,Hh=box.clientHeight,w=card.offsetWidth,h=card.offsetHeight,cr=box.querySelector('.maplibregl-ctrl-bottom-right'),top=8,bot=Hh-8-(cr?cr.offsetHeight:0);
+   const upTop=p.y-46-h,dnBot=p.y+10+h,up=upTop>=top||(dnBot>bot&&p.y-46-top>=bot-p.y-10);
+   const l=p.x-w/2,dx=Math.round(Math.min(Math.max(l,8),W-8-w)-l);
+   cm.setOffset([dx,up?-46:h+10]);card.style.transformOrigin=`${Math.round(w/2-dx)}px ${up?'100%':'0'}`;
+   if(pan){const dy=up?Math.min(0,upTop-top):Math.max(0,dnBot-bot);if(dy)map.panBy([0,Math.round(dy)],{duration:REDUCE.matches?0:250})}};
+  const show=(k,pan)=>{clearTimeout(t);const s=BY[k];if(!s)return;
+   if(cur!==k){if(cur&&pins.get(cur))pins.get(cur).classList.remove('sel');cur=k;card.innerHTML=cardHTML(s);pins.get(k).classList.add('sel');cm.setLngLat([s.lng,s.lat])}
+   place(s,pan);card.classList.add('open');card.setAttribute('aria-hidden','false')};
+  const mark=k=>{if(onCard)onCard.classList.remove('on');onCard=k?list.querySelector(`.shop[data-shop="${CSS.escape(k)}"]`):null;if(onCard)onCard.classList.add('on')};
+  const hide=()=>{clearTimeout(t);if(cur&&pins.get(cur))pins.get(cur).classList.remove('sel');cur=null;pinned=null;mark(null);card.classList.remove('open');card.setAttribute('aria-hidden','true')};
+  /* leaving the pin or the card waits a moment, so the pointer can cross the gap between them; a clicked pin's card stays */
+  const hideSoon=()=>{clearTimeout(t);t=setTimeout(()=>{if(pinned){if(cur!==pinned)show(pinned)}else hide()},150)};
+  let ptype='mouse';box.addEventListener('pointerdown',e=>{ptype=e.pointerType},true);
+  box.addEventListener('pointerover',e=>{if(e.pointerType!=='mouse')return;const p=e.target.closest('.pin');if(p)show(p.dataset.k);else if(e.target.closest('.mcw'))clearTimeout(t)});
+  box.addEventListener('pointerout',e=>{if(e.pointerType!=='mouse')return;const from=e.target.closest('.pin,.mcw');if(!from)return;const to=e.relatedTarget&&e.relatedTarget.closest?e.relatedTarget.closest('.pin,.mcw'):null;if(to!==from)hideSoon()});
+  box.addEventListener('click',e=>{const p=e.target.closest('.pin');if(!p)return;const k=p.dataset.k;pinned=k;show(k,true);
+   if(ptype==='mouse'||!e.detail){mark(k);if(WIDE.matches&&onCard)onCard.scrollIntoView({block:'nearest',behavior:REDUCE.matches?'auto':'smooth'})}});
+  /* a tap or click on the map itself closes the card */
+  map.on('click',e=>{const tg=e.originalEvent&&e.originalEvent.target;if(tg&&tg.closest&&tg.closest('.pin,.mcw'))return;hide()});
+  box.addEventListener('focusin',e=>{const p=e.target.closest('.pin');if(p)show(p.dataset.k)});
+  box.addEventListener('focusout',e=>{if(!e.relatedTarget||!e.relatedTarget.closest||!e.relatedTarget.closest('.pin,.mcw'))hideSoon()});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&cur){const k=cur;hide();const p=pins.get(k);if(p&&box.contains(document.activeElement))p.blur()}});
+  map.on('moveend',()=>{if(cur)place(BY[cur])});
+  /* hovering a shop in the list lights up its pin */
+  let hot=null;const setHot=k=>{if(hot===k)return;if(hot&&pins.get(hot))pins.get(hot).classList.remove('hot');hot=k;if(k&&pins.get(k))pins.get(k).classList.add('hot')};
+  list.addEventListener('pointerover',e=>{if(e.pointerType!=='mouse')return;const c=e.target.closest('.shop');setHot(c?c.dataset.shop:null)});
+  list.addEventListener('pointerleave',()=>setHot(null));
+  /* follow the site theme. Once the map is idle the other theme's style is fetched, so switching is instant (markers and the card stay) */
+  const SJ={};let shown=theme();
+  map.once('idle',()=>{const o=theme()==='light'?'dark':'light';fetch(STY[o]).then(r=>r.ok?r.text():null).then(x=>{if(x)SJ[o]=x}).catch(()=>{})});
+  new MutationObserver(()=>{const t=theme();if(t===shown)return;try{SJ[shown]=JSON.stringify(map.getStyle())}catch(e){}shown=t;map.setStyle(SJ[t]?JSON.parse(SJ[t]):STY[t])}).observe(H,{attributes:true,attributeFilter:['data-theme']});
+ };
+ if(window.maplibregl)init();else document.addEventListener('DOMContentLoaded',init,{once:true});
+})();
+</script>
+<script src="vendor/overlayscrollbars-2.16.0.min.js" onerror="document.documentElement.removeAttribute('data-overlayscrollbars-initialize');document.body.removeAttribute('data-overlayscrollbars-initialize')"></script>
+<script>
+/* page scrollbar (see the .os-theme-ava styles): only runs where the browser's own bar takes up space */
+/* only with a real mouse (desktop): phones, tablets and touch screens always keep the device's own scrollbar and scrolling */
+const osOff=()=>{document.documentElement.removeAttribute('data-overlayscrollbars-initialize');document.body.removeAttribute('data-overlayscrollbars-initialize')};
+try{if(!matchMedia('(hover: hover) and (pointer: fine)').matches||matchMedia('(any-pointer: coarse)').matches)osOff();else{const{OverlayScrollbars,ClickScrollPlugin}=OverlayScrollbarsGlobal;OverlayScrollbars.plugin(ClickScrollPlugin);OverlayScrollbars({target:document.body,cancel:{nativeScrollbarsOverlaid:true,body:null}},{scrollbars:{theme:'os-theme-ava',autoHide:'scroll',autoHideDelay:1000,clickScroll:true}})}}
+catch(e){osOff()}
+</script>
+</body></html>

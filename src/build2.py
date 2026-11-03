@@ -1,5 +1,6 @@
 import os
 import json,glob,os
+SHOPS_PREVIEW=True  # shops.html is a preview: noindex and left out of sitemap.xml until this is False
 B=json.load(open('bikes.json')); R=json.load(open('res_all.json')); IM=json.load(open('imgs_v3.json')); MODES=json.load(open('img_modes_v3.json')); S=json.load(open('shops.json'))
 for f in sorted(glob.glob('fill*.json')):
     for r in json.load(open(f)):
@@ -274,6 +275,68 @@ if SITE:
     open(SITE+'/llms-full.txt','w').write(_hdr.replace('## Files','## Notes\n\n- "After rebate" uses the regular $400 (standard) or $900 (cargo and adaptive) rebate. Sales tax is extra.\n- Prices are the maker\'s US list price, or the selling shop\'s price when the maker has none.\n\n## Files',1)+f"\n## All {len(out)} e-bikes\n\n"+"\n".join(_rows)+"\n\n## Participating shops\n\n"+"\n\n".join(_shops)+"\n")
     open(SITE+'/sitemap.xml','w').write(f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>{URL}</loc><lastmod>{datetime.date.today().isoformat()}</lastmod></url></urlset>')
     PAGE=PAGE.replace('<title>Ava Rebate Bike Finder</title>','',1)
-if SITE: open(SITE+'/index.html','w').write('<!doctype html><html lang="en" data-theme="dark" data-overlayscrollbars-initialize><head><meta charset="utf-8"><link rel="stylesheet" href="vendor/overlayscrollbars-2.16.0.min.css"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#0f1211">'+SEO+'<script>try{var t=localStorage.getItem("theme");if(t==="light"){document.documentElement.dataset.theme="light";document.querySelector("meta[name=color-scheme]").content="light";document.querySelector("meta[name=theme-color]").content="#f6f7f5"}}catch(e){}</script></head><body data-overlayscrollbars-initialize style="margin:0">'+PAGE+'</body></html>')
+if SITE: open(SITE+'/index.html','w').write('<!doctype html><html lang="en" data-theme="dark" data-overlayscrollbars-initialize><head><meta charset="utf-8"><link rel="stylesheet" href="vendor/overlayscrollbars-2.16.0.min.css"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#0f1211">'+SEO+'<script>try{if(!matchMedia("(hover: hover) and (pointer: fine)").matches||matchMedia("(any-pointer: coarse)").matches)document.documentElement.removeAttribute("data-overlayscrollbars-initialize");var t=localStorage.getItem("theme");if(t==="light"){document.documentElement.dataset.theme="light";document.querySelector("meta[name=color-scheme]").content="light";document.querySelector("meta[name=theme-color]").content="#f6f7f5"}}catch(e){}</script></head><body data-overlayscrollbars-initialize style="margin:0">'+PAGE+'</body></html>')
+# shops.html: every shop location as the home page's shop card, next to a map with a pin per shop
+def _css_keep(css,classes,types):
+    # copies the home page rules whose selectors only use the given classes and element types (rule order kept, @media/@supports filtered inside)
+    def ok(sel):
+        if any(v not in ('root','themebtn') for v in re.findall(r'view-transition-[\w-]+\(([^)]*)\)',sel)): return False
+        s=re.sub(r'\[[^\]]*\]','',sel)
+        while re.search(r'\([^()]*\)',s): s=re.sub(r'\([^()]*\)','',s)
+        s=re.sub(r'::?[\w-]+','',s)
+        cl=re.findall(r'\.([\w-]+)',s); ids=re.findall(r'#([\w-]+)',s); ty=re.findall(r'[a-zA-Z][\w-]*',re.sub(r'[.#][\w-]+','',s))
+        return not ids and all(c in classes or c.startswith('os-') for c in cl) and all(t in types for t in ty)
+    def walk(t):
+        o=[];i=0
+        while i<len(t):
+            j=t.find('{',i)
+            if j<0: break
+            pre=t[i:j].strip();d=1;k=j+1
+            while d:
+                d+={'{':1,'}':-1}.get(t[k],0);k+=1
+            body=t[j+1:k-1];i=k
+            if pre.startswith('@media') or pre.startswith('@supports'):
+                inner=walk(body)
+                if inner: o.append(pre+'{'+inner+'}')
+            elif pre.startswith('@'): continue
+            else:
+                sels=[x.strip() for x in pre.split(',') if ok(x.strip())]
+                if sels: o.append(','.join(sels)+'{'+body.strip()+'}')
+        return '\n'.join(o)
+    return walk(re.sub(r'/\*.*?\*/','',css,flags=re.S))
+if SITE:
+    _tpl=open('site_tpl.html').read()
+    _css=_tpl[_tpl.index('<style>')+7:_tpl.index('</style>')]
+    BASE_CSS=_css_keep(_css,{'wrap','shop','slogo','ini','shead','maplink','hrs','tel','mail','web','city','m','brand','themebtn','tm-core','tm-cut','tm-rays'},{'html','body','a','svg','img','b','span','ul','li','button'})
+    # the card helpers and the card markup come straight from the home page script, so the cards are identical
+    def _js(name,until=None):
+        m=re.search(r'^const '+name+r'=.*$',_tpl,re.M); assert m,name
+        if not until: return m.group(0)
+        e=_tpl.index(until,m.end()); return _tpl[m.start():_tpl.index('\n',e)]
+    HELPERS='\n'.join([_js('esc'),_js('mapUrl'),_js('telUrl'),_js('PIN'),_js('GLOBE'),_js('CLOCK'),_js('MAIL'),_js('mailUrl',' return `mailto:'),_js('slogo'),_js('shopLines'),_js('EXT')])
+    _card=re.search(r"\$\('dirgrid'\)\.innerHTML=.*?\.map\(s=>(`<div class=\"shop\">.*?</div>`)\)\.join\(''\);",_tpl).group(1)
+    CARD=_card.replace('<div class="shop">','<div class="shop" data-shop="${esc(s.k)}">',1)
+    # one card and pin per shop location (some shops are listed under two or three names in the data; those share one pin)
+    _loc={}
+    for k,s in S.items():
+        if s.get('lat') is None: continue
+        _loc.setdefault((s['name'],s.get('address')),dict(k=k,**{f:s[f] for f in ('name','address','city','phone','url','email','contact','hours','lat','lng','logo') if s.get(f) is not None}))
+    SHL=list(_loc.values())
+    SURL=URL+'shops.html'
+    SDESC='Every shop that takes the Ava Community Energy e-bike rebate, on a map with each address, phone number and opening hours.'
+    STY_URL={'light':'https://tiles.openfreemap.org/styles/positron','dark':'https://tiles.openfreemap.org/styles/dark'}
+    SHEAD=('<!doctype html><html lang="en" data-theme="dark" data-overlayscrollbars-initialize><head><meta charset="utf-8"><link rel="stylesheet" href="vendor/overlayscrollbars-2.16.0.min.css"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#0f1211">'
+     f'<title>Participating shops | Ava Rebate Bike Finder</title><meta name="description" content="{e(SDESC)}"><link rel="canonical" href="{SURL}">'
+     +('<meta name="robots" content="noindex">' if SHOPS_PREVIEW else '')+
+     '<link rel="icon" href="favicon.ico" sizes="48x48"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="manifest" href="site.webmanifest">'
+     # the map style for the current theme starts downloading right away, alongside MapLibre (deferred, so it never holds up the page)
+     '<link rel="preconnect" href="https://tiles.openfreemap.org" crossorigin>'
+     f'<script>try{{if(!matchMedia("(hover: hover) and (pointer: fine)").matches||matchMedia("(any-pointer: coarse)").matches)document.documentElement.removeAttribute("data-overlayscrollbars-initialize");var t=localStorage.getItem("theme");if(t==="light"){{document.documentElement.dataset.theme="light";document.querySelector("meta[name=color-scheme]").content="light";document.querySelector("meta[name=theme-color]").content="#f6f7f5"}}}}catch(e){{}}(function(){{var l=document.createElement("link");l.rel="preload";l.as="fetch";l.crossOrigin="anonymous";l.href=document.documentElement.dataset.theme==="light"?"{STY_URL["light"]}":"{STY_URL["dark"]}";document.head.appendChild(l)}})()</script>'
+     '<link rel="stylesheet" href="vendor/maplibre-gl-5.24.0.min.css"><script defer src="vendor/maplibre-gl-5.24.0.min.js"></script>')
+    SP=open('shops_tpl.html').read()
+    for a,b in (('__HEAD__',SHEAD),('__BASE_CSS__',BASE_CSS),('__HELPERS__',HELPERS),('__CARD__',CARD),('__SHOPS__',json.dumps(SHL,separators=(',',':'),ensure_ascii=False).replace('</','<\\/'))):
+        assert SP.count(a)==1,a; SP=SP.replace(a,b)
+    open(SITE+'/shops.html','w').write(SP)
+    print('shops.html',len(SHL),'locations',len(SP),'bytes')
 open('Ava_Rebate_Bike_Finder_local.html','w').write('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head><body style="margin:0">'+html+'</body></html>')
 print(os.path.getsize('Ava_Rebate_Bike_Finder.html'))
