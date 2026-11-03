@@ -130,7 +130,8 @@ main.grid{padding-block:14px 56px;display:grid;grid-template-columns:repeat(auto
     200ms in on the softer-starting drawer curve so the growth is visible; 150ms out, shrinking back into the centre */
  transform-origin:center;opacity:0;transform:scale(.9);transition:opacity 150ms var(--ease-drawer),transform 150ms var(--ease-drawer),overlay 150ms allow-discrete,display 150ms allow-discrete}
 /* a short pause before it grows so it doesn't feel abrupt; closing has no pause */
-#feetip:popover-open{opacity:1;transform:none;transition-duration:200ms;transition-delay:120ms}
+#feetip:popover-open{opacity:1;transform:none;transition-duration:200ms}
+#feetip[data-via="touch"]:popover-open{transition-delay:120ms}
 @starting-style{#feetip:popover-open{opacity:0;transform:scale(.9)}}
 /* the pointer aims at whatever was tapped, even when the bubble had to shift to stay on screen */
 #feetip::after{content:"";position:absolute;left:var(--ax,50%);width:8px;height:8px;margin-left:-4px;background:inherit;transform:rotate(45deg);border-radius:1px}
@@ -1261,7 +1262,7 @@ $('g').addEventListener('click',e=>{
  if(e.target.closest('[data-expand]')){NEAR_MI+=10;draw();return}
  const t=e.target.closest('.sw');
  /* any click on a card opens its details, except on a color swatch */
- if(!t){const c=e.target.closest('.c[data-b]');if(c&&!e.target.closest('a,.sws,[data-tip]'))openBike(+c.dataset.b,c.querySelector('.more'));return}
+ if(!t){const c=e.target.closest('.c[data-b]');if(c&&!e.target.closest('a,.sws')&&!(e.target.closest('[data-tip]')&&LASTPTR!=='mouse'))openBike(+c.dataset.b,c.querySelector('.more'));return}
  const b=B[+t.closest('.c').dataset.b],k=+t.dataset.c,ac=activeColor(b);if(k!==ac)cardTrack(t.closest('.ph')).go(k,ac==null||k>ac?1:-1)});
 
 $('g').addEventListener('keydown',e=>{const t=e.target.closest('.sw');if(!t||!['ArrowLeft','ArrowRight'].includes(e.key))return;e.preventDefault();
@@ -1352,7 +1353,7 @@ let BIKE_OPENING=0;
 function openBike(i,opener){if(BIKE.open)return;const tok=++BIKE_OPENING;buildBike(i);DT.reset();BIKE_I=i;BIKE_AC=activeColor(B[i]);syncBike();
  const im=$('bike-img'),show=()=>{if(tok!==BIKE_OPENING||BIKE.open)return;showDlg(BIKE,opener);$('bike-body').scrollTop=0};
  Promise.race([im.decode().catch(()=>{}),new Promise(r=>setTimeout(r,150))]).then(show)}
-$('g').addEventListener('pointerdown',e=>{if(BIKE.open||e.button)return;const c=e.target.closest('.c[data-b]');if(c&&!e.target.closest('a,.sws,[data-tip]'))buildBike(+c.dataset.b)},{passive:true});
+$('g').addEventListener('pointerdown',e=>{if(BIKE.open||e.button)return;const c=e.target.closest('.c[data-b]');if(c&&!e.target.closest('a,.sws')&&!(e.target.closest('[data-tip]')&&e.pointerType!=='mouse'))buildBike(+c.dataset.b)},{passive:true});
 function syncBike(){
  if(BIKE_I==null||!BIKE.contains($('bike-img')))return;const b=B[BIKE_I],ac=BIKE_AC,img=$('bike-img'),cap=$('bike-cap');
  const np=ac!=null&&!b.cv[ac].img,src=np?(img.getAttribute('src')||b.img):ac!=null?b.cv[ac].img:b.img;
@@ -1636,6 +1637,8 @@ let SWIPED=0,SWIPE_EAT=false;
 /* only the click that ends a swipe is ignored: any new touch clears it, so a quick tap right after cycling always goes through */
 const swallowClick=()=>SWIPE_EAT&&performance.now()-SWIPED<400;
 addEventListener('pointerdown',()=>{SWIPE_EAT=false},{capture:true,passive:true});
+/* the kind of pointer that started the latest press: a mouse click on a chip opens the card, a tap shows the bubble */
+let LASTPTR='mouse';addEventListener('pointerdown',e=>{LASTPTR=e.pointerType},{capture:true,passive:true});
 /* price note bubble: placed above the icon (below if there's no room), centred on it and kept on screen.
    Hover with a mouse, tap to toggle on touch; a tap elsewhere, scrolling or Escape closes it.
    Moving straight from one icon to another just moves the open bubble, with no second animation */
@@ -1649,17 +1652,19 @@ addEventListener('pointerdown',()=>{SWIPE_EAT=false},{capture:true,passive:true}
   const sc=tip.getBoundingClientRect().width/tip.offsetWidth||1,cs=getComputedStyle(tip),pad=cs.boxSizing==='border-box'?parseFloat(cs.paddingLeft)+parseFloat(cs.paddingRight):0;
   tip.style.width=Math.ceil(Math.max(...ls.map(l=>l.width))/sc+pad+1)+'px'};
  const mark=b=>{b.setAttribute('aria-expanded','true');b.setAttribute('aria-describedby','feetip')},unmark=b=>{b.removeAttribute('aria-expanded');b.removeAttribute('aria-describedby')};
- const show=b=>{if(cur===b)return;tip.textContent=b.dataset.tip;
+ const show=(b,via)=>{clearTimeout(out);if(cur===b)return;tip.textContent=b.dataset.tip;
   if(cur){unmark(cur);cur=b;mark(b);fit();place(b);return}
-  cur=b;mark(b);tip.showPopover();fit();place(b)};
- const hide=()=>{if(!cur)return;unmark(cur);cur=null;if(tip.matches(':popover-open'))tip.hidePopover()};
- /* a click on a trigger the mouse just opened keeps it open (the hover already showed it); the next click closes it */
- let hov=null;
- document.addEventListener('click',e=>{const b=e.target.closest('[data-tip]');if(!b){hide();return}e.preventDefault();e.stopPropagation();
-  if(cur===b&&hov===b){hov=null;return}cur===b?hide():show(b)},true);
- document.addEventListener('pointerover',e=>{if(e.pointerType!=='mouse')return;const b=e.target.closest('[data-tip]');if(b&&b!==cur){show(b);hov=b}});
- document.addEventListener('pointerout',e=>{if(e.pointerType!=='mouse')return;const b=e.target.closest('[data-tip]');if(b&&b===cur&&!b.contains(e.relatedTarget))hide()});
- document.addEventListener('focusin',e=>{const b=e.target.closest&&e.target.closest('[data-tip]');if(b&&KBD)show(b)});
+  tip.dataset.via=via;cur=b;mark(b);tip.showPopover();fit();place(b)};
+ let out=0;
+ const hide=()=>{clearTimeout(out);if(!cur)return;unmark(cur);cur=null;if(tip.matches(':popover-open'))tip.hidePopover()};
+ /* touch has no hover: a tap on a chip or the icon toggles the bubble. With a mouse the bubble comes from hovering,
+    so a click goes through to the card and opens the details like anywhere else on it */
+ document.addEventListener('click',e=>{const b=e.target.closest('[data-tip]');if(!b||LASTPTR==='mouse'){hide();return}
+  e.preventDefault();e.stopPropagation();cur===b?hide():show(b,'touch')},true);
+ /* mouse: opens at once; moving to the next chip swaps it instantly; leaving waits 0.1s so crossing the gap between chips doesn't flicker */
+ document.addEventListener('pointerover',e=>{if(e.pointerType!=='mouse')return;const b=e.target.closest('[data-tip]');if(b)show(b,'mouse')});
+ document.addEventListener('pointerout',e=>{if(e.pointerType!=='mouse')return;const b=e.target.closest('[data-tip]');if(b&&b===cur&&!b.contains(e.relatedTarget)){clearTimeout(out);out=setTimeout(hide,100)}});
+ document.addEventListener('focusin',e=>{const b=e.target.closest&&e.target.closest('[data-tip]');if(b&&KBD)show(b,'mouse')});
  document.addEventListener('focusout',e=>{if(e.target===cur)hide()});
  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&cur)hide()});
  addEventListener('scroll',hide,{capture:true,passive:true});addEventListener('resize',hide)})();
