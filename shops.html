@@ -233,6 +233,8 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
   catch(e){box.classList.add('nomap');return}
   map.touchZoomRotate.disableRotation();map.keyboard.disableRotation();
   /* the map style mentions a few icons it doesn't ship; fill them with a blank so nothing errors */
+  /* on small maps the credit line starts open, then folds into its (i) button after 5 seconds (as OpenStreetMap's attribution guidelines allow) so it doesn't cover the map */
+  setTimeout(()=>{const a=box.querySelector('.maplibregl-ctrl-attrib.maplibregl-compact');if(a)a.classList.remove('maplibregl-compact-show')},5000);
   map.on('styleimagemissing',e=>{if(!map.hasImage(e.id))map.addImage(e.id,{width:1,height:1,data:new Uint8Array(4)})});
   map.addControl(new maplibregl.NavigationControl({showCompass:false}),'top-right');
   map.once('load',()=>performance.mark('map-load'));
