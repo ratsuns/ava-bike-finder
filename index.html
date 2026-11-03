@@ -1341,7 +1341,7 @@ function animClose(){const d=this;if(!d.open||d.dataset.state==='closing')return
  const te=e=>{if(e.target===d&&(e.propertyName==='transform'||e.propertyName==='opacity'))done()};d.addEventListener('transitionend',te);t=setTimeout(done,300)}
 document.querySelectorAll('dialog').forEach(d=>{d.close=animClose});
 const DIMR=['.hero','#bar','#status','#g'].map(q=>document.querySelector(q)).filter(Boolean);
-function setDim(on){const H=document.documentElement;/* TEST SWITCH (temporary): ?noblur keeps the page unblurred behind windows */if(/[?&]noblur\b/.test(location.search))on=false;
+function setDim(on){const H=document.documentElement;
  if(on&&!H.classList.contains('dim')){const vh=innerHeight;for(const el of DIMR){const r=el.getBoundingClientRect();el.classList.toggle('onscr',r.bottom>0&&r.top<vh)}}
  H.classList.toggle('dim',on)}
 /* electric borders hold still on their current frame while a window (search, bike details, guide…) is open over the page, and while the page
@@ -1483,7 +1483,12 @@ CMD.addEventListener('click',e=>{
  if(e.target.closest('[data-clearf]')){clearFilters();render();if(KBD)$('cq').focus({preventScroll:true});else document.activeElement?.blur();return}
  const g=e.target.closest('[data-go]');if(g){const el=NODE.get(+g.dataset.go);if(el)CMD._opener=el.querySelector('.more');CMD._hit=true;
   /* picking a bike: the page behind clears its blur at once (no fade) so the scroll to the bike runs smoothly; fading a blur on the whole list while it scrolls makes phones stall */
-  DIMR.forEach(r=>r.style.transition='none');CMD.close();goTo(+g.dataset.go);requestAnimationFrame(()=>requestAnimationFrame(()=>DIMR.forEach(r=>r.style.transition='')));return}});
+  /* with the phone keyboard up, the scroll starts once it has gone down: the screen changing size in the middle of the scroll makes it stall */
+  const k=+g.dataset.go,vv=window.visualViewport,ae=document.activeElement,kb=!!(vv&&innerHeight-vv.height>100);
+  DIMR.forEach(r=>r.style.transition='none');CMD.close();requestAnimationFrame(()=>requestAnimationFrame(()=>DIMR.forEach(r=>r.style.transition='')));
+  if(!kb){goTo(k);return}
+  if(ae&&ae.matches&&ae.matches('input,textarea'))ae.blur();let done=false,kt=0;const go=()=>{if(done)return;done=true;clearTimeout(kt);vv.removeEventListener('resize',onv);goTo(k)};
+  const onv=()=>{if(innerHeight-vv.height<=100){clearTimeout(kt);kt=setTimeout(go,60)}};vv.addEventListener('resize',onv);kt=setTimeout(go,700);return}});
 let qt;$('cq').addEventListener('input',()=>{F.q=$('q').value=$('cq').value;clearTimeout(qt);qt=setTimeout(render,100)});
 $('cq').addEventListener('keydown',e=>{
  if(e.key==='Enter'){e.preventDefault();clearTimeout(qt);render();CMD._go=true;CMD.close()}
@@ -2616,8 +2621,6 @@ const EBCOL={dark:'#f0ff30',light:'#a16207'};
 /* light mode also runs brighter, so the thin strands read on white */
 const EBLOOK={dark:{intensity:0.6,glow:0.3},light:{intensity:1.1,glow:0.5}};
 (()=>{const borders=[];
- /* TEST SWITCH (temporary): ?noborder leaves the electric borders off */
- if(/[?&]noborder\b/.test(location.search))return;
  B.forEach(b=>{if(!PICKS[b.brand+'|'+b.model])return;const node=NODE.get(b.i);if(!node)return;
   const w=document.createElement('div');w.className='ebw';if(node.parentNode)node.replaceWith(w);w.append(node);
   const eb=EB(w,{...EBLOOK[siteTheme()],color:EBCOL[siteTheme()],speed:1,chaos:0.35,spread:0.2,strands:2,thickness:1.5,arcs:0,offset:-1,flicker:0.25,borderRadius:8,theme:siteTheme()});
