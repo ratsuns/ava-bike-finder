@@ -5,6 +5,7 @@
 <style>
 /* Layout: quiet header, one sticky filter row, a clean photo grid where "you pay" leads each card, shop list below. */
 :root{
+ --offveil:rgba(10,12,11,.14);
  --bg:#f6f7f5; --surface:#ffffff; --well:#f1f3f0; --fg:#121614; --fg2:#4d5651; --fg3:#646d68;
  --line:#e3e7e2; --line2:#c9d0ca; --accent:#0e7a52; --accent-fg:#ffffff; --accent-soft:#e3f2ea; --accent-ink:#0b5f40;
  --pick:#b7791f; --warn-ink:#8a5300;
@@ -16,11 +17,13 @@
  color-scheme:light;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+ --offveil:rgba(10,12,11,.42);
  --bg:#0f1211; --surface:#171b19; --well:#1e2320; --fg:#eef1ee; --fg2:#b4bcb7; --fg3:#8d9691;
  --line:#262c29; --line2:#3a433e; --accent:#2fae7d; --accent-fg:#06140e; --accent-soft:#16302a; --accent-ink:#7fdcb4;
  --pick:#e0a84a; --warn-ink:#f0c46b;
  --shadow:0 1px 2px rgba(0,0,0,.3); --shadow-hi:0 8px 24px rgba(0,0,0,.4); color-scheme:dark}}
 :root[data-theme="dark"]{
+ --offveil:rgba(10,12,11,.42);
  --bg:#0f1211; --surface:#171b19; --well:#1e2320; --fg:#eef1ee; --fg2:#b4bcb7; --fg3:#8d9691;
  --line:#262c29; --line2:#3a433e; --accent:#2fae7d; --accent-fg:#06140e; --accent-soft:#16302a; --accent-ink:#7fdcb4;
  --pick:#e0a84a; --warn-ink:#f0c46b;
@@ -148,10 +151,11 @@ main.grid{padding-block:14px 56px;display:grid;grid-template-columns:repeat(auto
 /* chips that explain themselves: same look as a plain chip, sit above the card's "See details" layer, and show the bubble */
 .tipc{border:0;margin:0;font-family:inherit;line-height:inherit;letter-spacing:inherit;cursor:default;position:relative;z-index:2;-webkit-tap-highlight-color:transparent}
 .tipc:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-/* discontinued cards fade toward the page colour: a light wash in light mode, the same dim as before in dark mode */
-.c.off::after{content:"";position:absolute;inset:0;border-radius:inherit;background:color-mix(in srgb,var(--bg) 42%,transparent);pointer-events:none;z-index:3}
+/* discontinued cards are dimmed: lightly in light mode, as before in dark mode */
+.c.off::after{content:"";position:absolute;inset:0;border-radius:inherit;background:var(--offveil);pointer-events:none;z-index:3}
 .c.off .ph img{filter:grayscale(.85) contrast(.9)}
 .stag{position:relative;z-index:4;font-weight:600;color:var(--fg);background:var(--surface);border:1px solid var(--line2)}
+.ph .stag{position:absolute;left:12px;top:12px}
 .bmst{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 4px;font-size:var(--t-meta);color:var(--fg2);line-height:1.45}
 .stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:6px;overflow:hidden;margin:0}
 .stats div{background:var(--well);padding:7px 10px 8px;min-width:0}
@@ -1178,13 +1182,13 @@ function cardHTML(b){
  const allNa=[b.spd,b.tq,b.load,b.range].every(v=>v==null||v==='');
  const ac0=activeColor(b),sw=b.cv.length?`<div class="sws" role="group" aria-label="Colors">${b.cv.map((c,ci)=>`<button type="button" class="sw${c.img?'':' np'}${swOff(b.cv.length,ac0,ci)}" data-c="${ci}" tabindex="${ci===(ac0??0)?0:-1}" aria-pressed="${ci===ac0}" aria-label="${esc(c.n)}${c.img?'':', no photo yet'}"><i style="background:${c.hex||CHEX[c.f]}"></i></button>`).join('')}${swMore(b.cv.length)}</div><span class="npn"${ac0!=null&&!b.cv[ac0].img?'':' hidden'}>${ac0!=null&&!b.cv[ac0].img?esc(npNote(b.cv[ac0])):''}</span>`:'';
  return `<article class="c${pk?' pick':''}${b.st?' off':''}" data-b="${b.i}">
- <div class="ph"><img loading="lazy" decoding="async" src="${shownSrc(b)}" alt="${esc(b.name)}">${sw}<span class="tag${b.reb===900?'':' s400'}"><i></i>${money(b.reb)} off</span>${pk?`<span class="picktag">${STAR}${pk.tag}</span>`:''}</div>
+ <div class="ph"><img loading="lazy" decoding="async" src="${shownSrc(b)}" alt="${esc(b.name)}">${sw}${b.st?`<span class="chip stag">${esc(STX[b.st][0])}</span>`:`<span class="tag${b.reb===900?'':' s400'}"><i></i>${money(b.reb)} off</span>`}${pk?`<span class="picktag">${STAR}${pk.tag}</span>`:''}</div>
  <div class="b">
   <div class="id"><span class="br">${esc(b.brand)}</span><h3 class="n"><span class="vh">${esc(b.brand)} </span>${esc(b.mn)}</h3></div>
   ${price}
   ${allNa?'<p class="nospec">Specs not listed. Ask the shop.</p>':`<dl class="stats">${stat('Top speed',b.spd,'mph')}${stat('Torque',b.tq,'Nm')}${stat('Max load',b.load,'lb')}${stat('Range',b.range,'mi')}</dl>`}
   ${pk?`<p class="note picknote">${esc(pk.note)}</p>`:''}
-  <div class="chips">${b.st?`<span class="chip stag">${esc(STX[b.st][0])}</span>`:''}${TYPEX[b.type]?`<button type="button" class="chip tipc" data-tip="${esc(TYPEX[b.type])}">${esc(b.type)}</button>`:`<span class="chip">${esc(b.type)}</span>`}${b.cls?(CLASSX[b.cls]?`<button type="button" class="chip tipc" data-tip="${esc(CLASSX[b.cls])}">Class ${esc(b.cls)}</button>`:`<span class="chip">Class ${esc(b.cls)}</span>`):''}${b.fold==='Yes'?'<span class="chip">Folds</span>':''}</div>
+  <div class="chips">${TYPEX[b.type]?`<button type="button" class="chip tipc" data-tip="${esc(TYPEX[b.type])}">${esc(b.type)}</button>`:`<span class="chip">${esc(b.type)}</span>`}${b.cls?(CLASSX[b.cls]?`<button type="button" class="chip tipc" data-tip="${esc(CLASSX[b.cls])}">Class ${esc(b.cls)}</button>`:`<span class="chip">Class ${esc(b.cls)}</span>`):''}${b.fold==='Yes'?'<span class="chip">Folds</span>':''}</div>
   <button type="button" class="more" data-more="${b.i}"><span>See details<span class="vh"> for ${esc(b.name)}</span></span>${ARROW}</button>
  </div></article>`}
 const NODE=new Map();
