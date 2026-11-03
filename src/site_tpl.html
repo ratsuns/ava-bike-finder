@@ -6,6 +6,7 @@
 /* Layout: quiet header, one sticky filter row, a clean photo grid where "you pay" leads each card, shop list below. */
 :root{
  --offveil:rgba(10,12,11,.14); --offc:#9a3412; --offbg:#fff7ed; --offbd:#fdba74;
+ --sbh:rgba(0,0,0,.45); --sbh2:rgba(0,0,0,.6); --sbo:rgba(255,255,255,.6);
  --bg:#f6f7f5; --surface:#ffffff; --well:#f1f3f0; --fg:#121614; --fg2:#4d5651; --fg3:#646d68;
  --line:#e3e7e2; --line2:#c9d0ca; --accent:#0e7a52; --accent-fg:#ffffff; --accent-soft:#e3f2ea; --accent-ink:#0b5f40;
  --pick:#b7791f; --warn-ink:#8a5300;
@@ -18,12 +19,14 @@
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
  --offveil:rgba(10,12,11,.42); --offc:#fdba74; --offbg:#431407; --offbd:#9a3412;
+ --sbh:rgba(255,255,255,.5); --sbh2:rgba(255,255,255,.7); --sbo:rgba(0,0,0,.4);
  --bg:#0f1211; --surface:#171b19; --well:#1e2320; --fg:#eef1ee; --fg2:#b4bcb7; --fg3:#8d9691;
  --line:#262c29; --line2:#3a433e; --accent:#2fae7d; --accent-fg:#06140e; --accent-soft:#16302a; --accent-ink:#7fdcb4;
  --pick:#e0a84a; --warn-ink:#f0c46b;
  --shadow:0 1px 2px rgba(0,0,0,.3); --shadow-hi:0 8px 24px rgba(0,0,0,.4); color-scheme:dark}}
 :root[data-theme="dark"]{
  --offveil:rgba(10,12,11,.42); --offc:#fdba74; --offbg:#431407; --offbd:#9a3412;
+ --sbh:rgba(255,255,255,.5); --sbh2:rgba(255,255,255,.7); --sbo:rgba(0,0,0,.4);
  --bg:#0f1211; --surface:#171b19; --well:#1e2320; --fg:#eef1ee; --fg2:#b4bcb7; --fg3:#8d9691;
  --line:#262c29; --line2:#3a433e; --accent:#2fae7d; --accent-fg:#06140e; --accent-soft:#16302a; --accent-ink:#7fdcb4;
  --pick:#e0a84a; --warn-ink:#f0c46b;
@@ -341,6 +344,15 @@ button,.sw,.hit{touch-action:manipulation;-webkit-user-select:none;user-select:n
 .dclose:active,#reset:active,.mfilter:active,.primary:active,.hit:active{transform:scale(.97)}
 html{scrollbar-gutter:stable}
 html.locked{overflow:hidden}
+/* page scrollbar, where the browser's own bar takes up a strip (Windows): a thin Mac-style bar floats over the page instead,
+   fades out when you stop scrolling and widens under the mouse. Macs and phones keep their own bar. */
+html[data-overlayscrollbars-initialize],html[data-overlayscrollbars]{scrollbar-gutter:auto}
+.os-theme-ava{--os-size:16px;--os-padding-perpendicular:3px;--os-padding-axis:3px;--os-track-border-radius:10px;--os-handle-border-radius:10px;--os-handle-min-size:40px;
+ --os-handle-perpendicular-size:60%;--os-handle-perpendicular-size-hover:100%;--os-handle-perpendicular-size-active:100%;
+ --os-handle-bg:var(--sbh);--os-handle-bg-hover:var(--sbh2);--os-handle-bg-active:var(--sbh2);
+ --os-handle-border:1px solid var(--sbo);--os-handle-border-hover:1px solid var(--sbo);--os-handle-border-active:1px solid var(--sbo)}
+.os-theme-ava.os-scrollbar-vertical .os-scrollbar-handle{margin-left:auto}
+.os-theme-ava.os-scrollbar{transition:opacity .3s ease,visibility .3s ease}
 dialog[data-state="closing"]{pointer-events:none}
 .maplink{display:inline-flex;align-items:flex-start;gap:6px;color:var(--fg2);text-decoration:none;width:fit-content}
 .maplink svg{flex:none;margin-top:3px;color:var(--fg3)}
@@ -2572,4 +2584,9 @@ const SBP=document.createElement('div');SBP.setAttribute('aria-hidden','true');S
 const setSbw=()=>{document.documentElement.style.setProperty('--sbw',Math.max(0,innerWidth-SBP.getBoundingClientRect().width)+'px')};setSbw();addEventListener('resize',setSbw);
 
 </script>
-
+<script src="vendor/overlayscrollbars-2.16.0.min.js" onerror="document.documentElement.removeAttribute('data-overlayscrollbars-initialize');document.body.removeAttribute('data-overlayscrollbars-initialize')"></script>
+<script>
+/* page scrollbar (see the .os-theme-ava styles): only runs where the browser's own bar takes up space */
+try{const{OverlayScrollbars,ClickScrollPlugin}=OverlayScrollbarsGlobal;OverlayScrollbars.plugin(ClickScrollPlugin);OverlayScrollbars({target:document.body,cancel:{nativeScrollbarsOverlaid:true,body:null}},{scrollbars:{theme:'os-theme-ava',autoHide:'scroll',autoHideDelay:1000,clickScroll:true}})}
+catch(e){document.documentElement.removeAttribute('data-overlayscrollbars-initialize');document.body.removeAttribute('data-overlayscrollbars-initialize')}
+</script>
