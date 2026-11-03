@@ -320,7 +320,11 @@ input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;width:1
 .npn{position:absolute;left:50%;bottom:38px;transform:translateX(-50%);z-index:2;padding:3px 10px;border-radius:999px;background:rgba(255,255,255,.92);box-shadow:0 1px 3px rgba(0,0,0,.14);color:#121614;font-size:var(--t-meta);white-space:nowrap;pointer-events:none}
 .npn[hidden]{display:none}
 @media (pointer:coarse){.npn{bottom:44px}}
-.sws{left:50%;transform:translateX(-50%)}
+.sws{left:50%;transform:translateX(-50%);width:max-content;flex-wrap:nowrap}
+/* more than 6 colors: 5 dots show at a time and slide along with the picked one; "+N" says how many more there are */
+.sw.off{display:none}
+.swmore{font-size:var(--t-meta);font-weight:600;color:rgba(18,22,20,.6);padding:0 6px 0 3px;line-height:22px;pointer-events:none}
+@media (pointer:coarse){.swmore{line-height:26px}}
 .more:focus-visible{outline:none}
 .c:has(.more:focus-visible){outline:2px solid var(--accent);outline-offset:2px}
 .c:active:not(:has(.sw:active)){transform:scale(.985)}
@@ -1134,13 +1138,17 @@ const FACET={
 /* cards: built once, then filtered and reordered */
 const stat=(l,v,u)=>`<div><dt>${l}</dt>${v==null||v===''?'<dd class="na">Not listed</dd>':`<dd>${esc(v)}<small>${u}</small></dd>`}</div>`;
 const npNote=c=>'No photo of '+c.n+' yet';
+const SWMAX=5,swMore=n=>n>SWMAX+1?`<span class="swmore" aria-hidden="true">+${n-SWMAX}</span>`:'';
+const swOff=(n,ac,i)=>{if(n<=SWMAX+1)return '';const st=Math.min(Math.max((ac??0)-2,0),n-SWMAX);return i<st||i>=st+SWMAX?' off':''};
+/* show the 5 dots around the picked color; the rest stay in place (hidden) so swiping still goes through every color */
+function swWin(box,ac){if(!box||!box.querySelector('.swmore'))return;const ds=[...box.querySelectorAll('.sw')],st=Math.min(Math.max((ac??0)-2,0),ds.length-SWMAX);ds.forEach((d,i)=>d.classList.toggle('off',i<st||i>=st+SWMAX))}
 function cardHTML(b){
  const pk=PICKS[b.brand+'|'+b.model];
  const price=b.price!=null
   ?`<div class="price"><div class="pay"><strong>${money(b.you)}</strong><span>you pay</span></div><div class="list"><s>${money(b.price)}</s> minus ${money(b.reb)} rebate, plus tax</div></div>`
   :`<div class="price na"><div class="pay"><strong>Price not listed</strong></div><div class="list">Ask the shop for the price.</div></div>`;
  const allNa=[b.spd,b.tq,b.load,b.range].every(v=>v==null||v==='');
- const ac0=activeColor(b),sw=b.cv.length?`<div class="sws" role="group" aria-label="Colors">${b.cv.map((c,ci)=>`<button type="button" class="sw${c.img?'':' np'}" data-c="${ci}" tabindex="${ci===(ac0??0)?0:-1}" aria-pressed="${ci===ac0}" aria-label="${esc(c.n)}" title="${esc(c.n)}${c.img?'':' (no photo yet)'}"><i style="background:${c.hex||CHEX[c.f]}"></i></button>`).join('')}</div><span class="npn"${ac0!=null&&!b.cv[ac0].img?'':' hidden'}>${ac0!=null&&!b.cv[ac0].img?esc(npNote(b.cv[ac0])):''}</span>`:'';
+ const ac0=activeColor(b),sw=b.cv.length?`<div class="sws" role="group" aria-label="Colors">${b.cv.map((c,ci)=>`<button type="button" class="sw${c.img?'':' np'}${swOff(b.cv.length,ac0,ci)}" data-c="${ci}" tabindex="${ci===(ac0??0)?0:-1}" aria-pressed="${ci===ac0}" aria-label="${esc(c.n)}" title="${esc(c.n)}${c.img?'':' (no photo yet)'}"><i style="background:${c.hex||CHEX[c.f]}"></i></button>`).join('')}${swMore(b.cv.length)}</div><span class="npn"${ac0!=null&&!b.cv[ac0].img?'':' hidden'}>${ac0!=null&&!b.cv[ac0].img?esc(npNote(b.cv[ac0])):''}</span>`:'';
  return `<article class="c${pk?' pick':''}${b.st?' off':''}" data-b="${b.i}">
  <div class="ph"><img loading="lazy" decoding="async" src="${shownSrc(b)}" alt="${esc(b.name)}">${sw}<span class="tag${b.reb===900?'':' s400'}"><i></i>${money(b.reb)} off</span>${pk?`<span class="picktag">${STAR}${pk.tag}</span>`:''}</div>
  <div class="b">
@@ -1167,7 +1175,7 @@ function syncColor(b){
  const np=ac!=null&&!b.cv[ac].img,src=np?(img.getAttribute('src')||b.img):ac!=null?b.cv[ac].img:b.img;
  if(img.getAttribute('src')!==src)img.src=src;img.alt=b.name+(ac!=null?', '+b.cv[ac].n:'');
  const nn=node.querySelector('.npn');if(nn){nn.hidden=!np;nn.textContent=np?npNote(b.cv[ac]):''}
- node.querySelectorAll('.sw').forEach((s,i)=>{s.setAttribute('aria-pressed',i===ac);s.tabIndex=(ac==null?i===0:i===ac)?0:-1})}
+ node.querySelectorAll('.sw').forEach((s,i)=>{s.setAttribute('aria-pressed',i===ac);s.tabIndex=(ac==null?i===0:i===ac)?0:-1});swWin(node.querySelector('.sws'),ac)}
 
 /* filtering */
 const EMPTY=document.createElement('div');EMPTY.className='empty';
@@ -1229,7 +1237,7 @@ $('g').addEventListener('click',e=>{
  const b=B[+t.closest('.c').dataset.b];ACT.set(b.i,+t.dataset.c);const img=t.closest('.ph').querySelector('img');const before=img.getAttribute('src');syncColor(b);
  if(!REDUCE.matches&&img.getAttribute('src')!==before)img.decode().then(()=>img.animate([{opacity:.35,filter:'blur(3px)'},{opacity:1,filter:'blur(0)'}],{duration:200,easing:'cubic-bezier(.23,1,.32,1)'})).catch(()=>{})});
 $('g').addEventListener('keydown',e=>{const t=e.target.closest('.sw');if(!t||!['ArrowLeft','ArrowRight'].includes(e.key))return;e.preventDefault();
- const all=[...t.parentElement.children],i=all.indexOf(t),n=all[(i+(e.key==='ArrowRight'?1:-1)+all.length)%all.length];n.focus();n.click()});
+ const all=[...t.parentElement.querySelectorAll('.sw')],i=all.indexOf(t),n=all[(i+(e.key==='ArrowRight'?1:-1)+all.length)%all.length];n.click();n.focus()});
 
 /* drawers */
 let LASTCLOSE=-1e9;
@@ -1288,7 +1296,7 @@ function buildBike(i){const pre=i+'|'+F.city+'|'+F.q+'|'+(ME?NEAR_MI:'');if(BIKE
    <div class="list bmlist"><s>${money(b.price)}</s> minus ${money(b.reb)} rebate, plus tax</div>`
   :`<div class="bmpay na"><strong>Price not listed</strong></div>
    <p class="bmtax">Ask the shop for today's price. Your rebate takes ${money(b.reb)} off, and sales tax is extra.</p>`;
- const sws=b.cv.length?`<div class="sws" role="group" aria-label="Colors">${b.cv.map((c,ci)=>`<button type="button" class="sw${c.img?'':' np'}" data-c="${ci}" tabindex="-1" aria-pressed="false" aria-label="${esc(c.n)}" title="${esc(c.n)}${c.img?'':' (no photo yet)'}"><i style="background:${c.hex||CHEX[c.f]}"></i></button>`).join('')}</div>`:'';
+ const sws=b.cv.length?`<div class="sws" role="group" aria-label="Colors">${b.cv.map((c,ci)=>`<button type="button" class="sw${c.img?'':' np'}" data-c="${ci}" tabindex="-1" aria-pressed="false" aria-label="${esc(c.n)}" title="${esc(c.n)}${c.img?'':' (no photo yet)'}"><i style="background:${c.hex||CHEX[c.f]}"></i></button>`).join('')}${swMore(b.cv.length)}</div>`:'';
  const gi='https://www.google.com/search?tbm=isch&q='+encodeURIComponent(b.name+' e-bike');
  $('bike-br').textContent=b.brand;
  $('bike-h').innerHTML=`<span class="vh">${esc(b.brand)} </span>${esc(b.mn)}`;
@@ -1321,7 +1329,7 @@ function syncBike(){
  if(BIKE_I==null||!BIKE.contains($('bike-img')))return;const b=B[BIKE_I],ac=BIKE_AC,img=$('bike-img'),cap=$('bike-cap');
  const np=ac!=null&&!b.cv[ac].img,src=np?(img.getAttribute('src')||b.img):ac!=null?b.cv[ac].img:b.img;
  if(img.getAttribute('src')!==src)img.src=src;img.alt=b.name+(ac!=null?', '+b.cv[ac].n:'');
- BIKE.querySelectorAll('.sw').forEach((s,k)=>{s.setAttribute('aria-pressed',k===ac);s.tabIndex=(ac==null?k===0:k===ac)?0:-1});
+ BIKE.querySelectorAll('.sw').forEach((s,k)=>{s.setAttribute('aria-pressed',k===ac);s.tabIndex=(ac==null?k===0:k===ac)?0:-1});swWin(BIKE.querySelector('.bmph .sws'),ac);
  cap.textContent=np?npNote(b.cv[ac]):'';
  cap.hidden=!cap.textContent}
 BIKE.addEventListener('click',e=>{
@@ -1330,7 +1338,7 @@ BIKE.addEventListener('click',e=>{
  const img=$('bike-img'),before=img.getAttribute('src');BIKE_AC=+t.dataset.c;syncBike();
  if(!REDUCE.matches&&img.getAttribute('src')!==before)img.decode().then(()=>img.animate([{opacity:.35,filter:'blur(3px)'},{opacity:1,filter:'blur(0)'}],{duration:200,easing:'cubic-bezier(.23,1,.32,1)'})).catch(()=>{})});
 BIKE.addEventListener('keydown',e=>{const t=e.target.closest('.sw');if(!t||!['ArrowLeft','ArrowRight'].includes(e.key))return;e.preventDefault();
- const all=[...t.parentElement.children],i=all.indexOf(t),n=all[(i+(e.key==='ArrowRight'?1:-1)+all.length)%all.length];n.focus();n.click()});
+ const all=[...t.parentElement.querySelectorAll('.sw')],i=all.indexOf(t),n=all[(i+(e.key==='ArrowRight'?1:-1)+all.length)%all.length];n.click();n.focus()});
 BIKE.addEventListener('close',()=>{BIKE_I=null;BIKE_AC=null});
 
 /* floating search + command dialog */
@@ -1619,7 +1627,7 @@ const ZOOM=$('zoom');
 function syncZoom(){const img=$('bike-img');if(!img)return;zreset();$('zoom-img').src=img.currentSrc||img.src;$('zoom-img').alt=img.alt;zmeta()}
 function zmeta(){const b=BIKE_I!=null?B[BIKE_I]:null,on=BIKE.querySelector('.bmph .sw[aria-pressed="true"]');$('zoom-cap').textContent=b?(b.name+(on?' · '+on.getAttribute('aria-label'):'')):'';
  const np=b&&BIKE_AC!=null&&!b.cv[BIKE_AC].img,zn=$('zoom-note');zn.hidden=!np;zn.textContent=np?npNote(b.cv[BIKE_AC]):'';
- const src=BIKE.querySelector('.bmph .sws');$('zoom-sws').innerHTML=src?src.innerHTML:'';zArrows()}
+ const src=BIKE.querySelector('.bmph .sws'),zw=$('zoom-sws');zw.innerHTML=src?src.innerHTML:'';zw.querySelectorAll('.off').forEach(d=>d.classList.remove('off'));zw.querySelector('.swmore')?.remove();zArrows()}
 BIKE.addEventListener('click',e=>{if(e.target.id==='bike-img'&&performance.now()-SWIPED>400){syncZoom();showDlg(ZOOM,e.target)}});
 ZOOM.querySelector('.zx').onclick=()=>ZOOM.close();
 ZOOM.addEventListener('click',e=>{const t=e.target.closest('.sw');if(t){const zs=[...ZOOM.querySelectorAll('.sw')],ni=zs.indexOf(t),oi=zs.findIndex(s=>s.getAttribute('aria-pressed')==='true'),twin=BIKE.querySelectorAll('.bmph .sw')[ni];if(twin&&ni!==oi)zgo(ni,ni>oi?1:-1);return}
