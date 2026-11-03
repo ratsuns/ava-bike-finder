@@ -83,7 +83,7 @@ main.grid{padding-block:14px 56px;display:grid;grid-template-columns:repeat(auto
 .c.flash{animation:flash 1.4s var(--ease-out)}
 @keyframes flash{0%,30%{box-shadow:0 0 0 3px var(--accent),var(--shadow)}}
 .c.pick{border-color:var(--pick);box-shadow:0 0 0 1px var(--pick),var(--shadow)}
-.ph{display:block;position:relative;aspect-ratio:4/3;max-width:100%;background:#fff;overflow:hidden}
+.ph{display:block;position:relative;aspect-ratio:4/3;max-width:100%;background:transparent;overflow:hidden}
 .sws{position:absolute;left:8px;bottom:8px;display:flex;align-items:center;gap:0;padding:1px 2px;border-radius:999px;background:rgba(255,255,255,.92);box-shadow:0 1px 3px rgba(0,0,0,.14);max-width:calc(100% - 20px);flex-wrap:wrap}
 .sw{width:22px;height:22px;border:0;padding:0;background:none;border-radius:50%;display:grid;place-items:center;cursor:pointer;position:relative}
 .sw i{width:12px;height:12px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(0,0,0,.2);transition:transform .12s var(--ease-out)}
@@ -93,7 +93,7 @@ main.grid{padding-block:14px 56px;display:grid;grid-template-columns:repeat(auto
 @media (hover:hover) and (pointer:fine){.sw:hover i{transform:scale(1.15)}}
 .sw:active i,.sw:hover:active i{transform:scale(.9)}
 @media (pointer:coarse){.sw{width:26px;height:26px}.sw i{width:14px;height:14px}.sw::before{inset:-6px}.sws{gap:4px;padding:2px 4px}}
-.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.ph img{width:100%;height:100%;object-fit:cover;display:block;background:#fff}
 .tag{position:absolute;left:12px;top:12px;display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.94);color:#0b5f40;border:1px solid rgba(14,122,82,.28);font-size:var(--t-micro);font-weight:600;padding:3px 8px;border-radius:4px;font-variant-numeric:tabular-nums}
 .tag.s400{color:#3d4541;border-color:rgba(18,22,20,.16)}
 .tag i{width:6px;height:6px;border-radius:50%;background:#0e7a52}.tag.s400 i{background:#7a837e}
@@ -1170,7 +1170,7 @@ function activeColor(b){
  if(fc&&(ac==null||b.cv[ac].f!==fc)){const m=b.cv.findIndex(c=>c.f===fc);if(m>=0)ac=m}
  return ac??firstColor(b)}
 function syncColor(b){
- if(!b.cv.length)return;const node=NODE.get(b.i),img=node.querySelector('.ph img'),ac=activeColor(b);
+ if(!b.cv.length)return;const node=NODE.get(b.i),img=node.querySelector('.ph > img:not(.zghost)'),ac=activeColor(b);
  const np=ac!=null&&!b.cv[ac].img,src=np?(img.getAttribute('src')||b.img):ac!=null?b.cv[ac].img:b.img;
  if(img.getAttribute('src')!==src)img.src=src;img.alt=b.name+(ac!=null?', '+b.cv[ac].n:'');
  const nn=node.querySelector('.npn');if(nn){nn.hidden=!np;nn.textContent=np?npNote(b.cv[ac]):''}
@@ -1233,8 +1233,8 @@ $('g').addEventListener('click',e=>{
  const t=e.target.closest('.sw');
  /* any click on a card opens its details, except on a color swatch */
  if(!t){const c=e.target.closest('.c[data-b]');if(c&&!e.target.closest('a,.sws'))openBike(+c.dataset.b,c.querySelector('.more'));return}
- const b=B[+t.closest('.c').dataset.b];ACT.set(b.i,+t.dataset.c);const img=t.closest('.ph').querySelector('img');const before=img.getAttribute('src');syncColor(b);
- if(!REDUCE.matches&&img.getAttribute('src')!==before)img.decode().then(()=>img.animate([{opacity:.35,filter:'blur(3px)'},{opacity:1,filter:'blur(0)'}],{duration:200,easing:'cubic-bezier(.23,1,.32,1)'})).catch(()=>{})});
+ const b=B[+t.closest('.c').dataset.b],k=+t.dataset.c,ac=activeColor(b);if(k!==ac)cardTrack(t.closest('.ph')).go(k,ac==null||k>ac?1:-1)});
+
 $('g').addEventListener('keydown',e=>{const t=e.target.closest('.sw');if(!t||!['ArrowLeft','ArrowRight'].includes(e.key))return;e.preventDefault();
  const all=[...t.parentElement.querySelectorAll('.sw')],i=all.indexOf(t),n=all[(i+(e.key==='ArrowRight'?1:-1)+all.length)%all.length];n.click();n.focus()});
 
@@ -1604,21 +1604,8 @@ function beam(ring,dot,active){const b={ring,dot,active,anim:null};
 /* swipe a photo sideways to step through its colors: the gesture just presses the next or previous color dot, so every view stays in sync.
    touch-action:pan-y leaves vertical scrolling to the browser; if the browser takes the gesture for scrolling, it cancels ours */
 let SWIPED=0;
-/* swiping only lands on colors that have a real photo */
-function stepDots(dots,dir){const n=dots.length;if(n<2)return;let i=dots.findIndex(d=>d.getAttribute('aria-pressed')==='true');const cur=i;if(i<0)i=dir>0?-1:n;
- for(let k=1;k<=n;k++){const j=((i+dir*k)%n+n)%n;if(j!==cur&&!dots[j].classList.contains('np')){dots[j].click();return}}}
-function swipeColors(root,photoSel){let x0=0,y0=0,el=null;
- root.addEventListener('pointerdown',e=>{if(e.pointerType!=='touch'||e.target.closest('.sw'))return;el=e.target.closest(photoSel);
-  /* on the grid the whole card is covered by its "See details" layer, so find the photo under the finger by position */
-  if(!el){const card=e.target.closest('.c');const ph=card&&card.querySelector(photoSel);if(ph){const r=ph.getBoundingClientRect();if(e.clientX>=r.left&&e.clientX<=r.right&&e.clientY>=r.top&&e.clientY<=r.bottom)el=ph}}
-  if(!el)return;x0=e.clientX;y0=e.clientY},{passive:true});
- root.addEventListener('pointercancel',()=>{el=null},{passive:true});
- root.addEventListener('pointerup',e=>{if(!el)return;const dx=e.clientX-x0,dy=e.clientY-y0,box=el;el=null;
-  if(Math.abs(dx)<36||Math.abs(dx)<Math.abs(dy)*1.3)return;
-  SWIPED=performance.now();stepDots([...box.querySelectorAll('.sw')],dx<0?1:-1)},{passive:true});
- /* a swipe is not a tap: don't let it open the details */
- root.addEventListener('click',e=>{if(performance.now()-SWIPED<400&&!e.target.closest('.sw')){e.stopPropagation();e.preventDefault()}},true)}
-swipeColors($('g'),'.ph');
+/* a swipe on a card photo is not a tap: don't let it open the details */
+$('g').addEventListener('click',e=>{if(performance.now()-SWIPED<400&&!e.target.closest('.sw')){e.stopPropagation();e.preventDefault()}},true);
 
 /* tap the photo in the details to see it larger; swipe or tap the color dots there too */
 const ZOOM=$('zoom');
@@ -1642,20 +1629,21 @@ function tspring(dist,v){if(!TLIN)return {duration:300,easing:'cubic-bezier(.32,
  let T=.05;while(T<1.5&&(1+Math.abs(v0-w)*T)*Math.exp(-w*T)>eps)T+=1/120;
  const n=Math.max(8,Math.round(T*60)),pts=[];for(let i=0;i<n;i++)pts.push((1+y(T*i/n)).toFixed(4));pts.push('1');
  return {duration:T*1000,easing:`linear(${pts.join(',')})`}}
-function tinfo(k){const b=B[BIKE_I],c=k!=null&&k>=0&&b.cv?b.cv[k]:null;return {src:c&&c.img?c.img:b.img,alt:b.name+(c?', '+c.n:'')}}
-/* the next color with a real photo, either way round */
-function tidx(dir){if(BIKE_I==null)return null;const cv=B[BIKE_I].cv||[],n=cv.length,cur=BIKE_AC??-1;let i=BIKE_AC==null?(dir>0?-1:n):BIKE_AC;
- for(let k=1;k<=n;k++){const j=((i+dir*k)%n+n)%n;if(j!==cur&&cv[j].img)return j}return null}
 function pickColor(k){BIKE_AC=k;syncBike()}
-function mkTrack(o){let T=null,SEQ=0;
- const main=()=>$(o.id),st=()=>main().parentElement,imgs=()=>[...st().querySelectorAll(':scope > img')];
+/* one photo frame. o.stage(): the frame; o.id: the id its main photo carries (if any); o.bike(): the bike shown; o.cur(): its color; o.pick(k): select color k */
+function mkTrack(o){let T=null,SEQ=0,nb=null,w=0;
+ const st=()=>o.stage(),main=()=>st().querySelector(':scope > img:not(.zghost)'),imgs=()=>[...st().querySelectorAll(':scope > img')];
+ const info=k=>{const b=o.bike(),c=k!=null&&k>=0&&b.cv?b.cv[k]:null;return {src:c&&c.img?c.img:b.img,alt:b.name+(c?', '+c.n:'')}};
+ /* the next color with a real photo, either way round */
+ const idx=dir=>{const b=o.bike();if(!b)return null;const cv=b.cv||[],n=cv.length,ac=o.cur(),cur=ac??-1;let i=ac==null?(dir>0?-1:n):ac;
+  for(let k=1;k<=n;k++){const j=((i+dir*k)%n+n)%n;if(j!==cur&&cv[j].img)return j}return null};
  const same=src=>new URL(src,location.href).href===new URL(main().getAttribute('src'),location.href).href;
- const pane=(k,x)=>{const f=tinfo(k),p=new Image();p.className='zghost';p.alt='';p.setAttribute('aria-hidden','true');p.dataset.alt=f.alt;p.decoding='sync';p.src=f.src;tput(p,x);st().insertBefore(p,main().nextSibling);return p};
+ const pane=(k,x)=>{const f=info(k),p=new Image();p.className='zghost';p.alt='';p.setAttribute('aria-hidden','true');p.dataset.alt=f.alt;p.decoding='sync';p.src=f.src;tput(p,x);st().insertBefore(p,main().nextSibling);return p};
  /* the photo being moved to takes over as the main photo, so whatever reads the photo afterwards gets the right one */
- const swap=t=>{const m=main();if(t===m)return;m.removeAttribute('id');m.className='zghost';m.alt='';m.setAttribute('aria-hidden','true');t.id=o.id;t.className='';t.removeAttribute('aria-hidden');t.alt=t.dataset.alt||''};
+ const swap=t=>{const m=main();if(t===m)return;m.className='zghost';m.alt='';m.setAttribute('aria-hidden','true');if(o.id){m.removeAttribute('id');t.id=o.id}t.className='';t.removeAttribute('aria-hidden');t.alt=t.dataset.alt||''};
  /* stop any snap where it is, so the next move starts from what's on screen */
  const freeze=()=>{const ps=imgs(),xs=ps.map(txOf);ps.forEach((p,i)=>{p.getAnimations().forEach(a=>a.cancel());tput(p,xs[i])});T=null;return ps};
- const reset=()=>{const m=main();if(!m)return;imgs().forEach(p=>{if(p!==m)p.remove()});m.getAnimations().forEach(a=>a.cancel());tput(m,0);T=null};
+ const reset=()=>{const s0=st();if(!s0||!main())return;const m=main();imgs().forEach(p=>{if(p!==m)p.remove()});m.getAnimations().forEach(a=>a.cancel());tput(m,0);T=null};
  /* move every photo by the same amount so the target lands in the frame */
  const snap=(t,v,fresh)=>{const ps=imgs(),d=-(t._x||0);swap(t);
   const done=()=>{imgs().forEach(p=>{if(p!==t)p.remove()});t.getAnimations().forEach(a=>a.cancel());tput(t,0)};
@@ -1665,42 +1653,54 @@ function mkTrack(o){let T=null,SEQ=0;
   const an=ps.map(p=>p.animate([{transform:`translateX(${p._x||0}px)`},{transform:`translateX(${(p._x||0)+d}px)`}],{duration:sp.duration,easing:sp.easing,fill:'forwards'}));
   an[ps.indexOf(t)].finished.then(()=>{if(T===me){T=null;done()}},()=>{})};
  /* warm the neighbours so a drag never shows an empty slot */
- const warm=()=>{[1,-1].forEach(d=>{const k=tidx(d);if(k!=null){const i=new Image();i.src=tinfo(k).src}})};
- const choose=k=>{pickColor(k);o.after&&o.after();warm()};
+ const warm=()=>{[1,-1].forEach(d=>{const k=idx(d);if(k!=null){const i=new Image();i.src=info(k).src}})};
+ const choose=k=>{o.pick(k);o.after&&o.after();warm()};
  /* a color with no photo, or one whose photo is already showing, just changes the name: nothing slides */
- const go=(k,dir)=>{if(k==null||BIKE_I==null)return;
-  if(!B[BIKE_I].cv[k].img||same(tinfo(k).src)){choose(k);return}
+ const go=(k,dir)=>{if(k==null||!o.bike())return;
+  if(!o.bike().cv[k].img||same(info(k).src)){choose(k);return}
   const seq=++SEQ;freeze();const m=main(),p=pane(k,(m._x||0)+dir*(st().clientWidth+TGAP));swap(p);choose(k);
   if(p.complete&&p.naturalWidth){snap(p,0,true);return}
   Promise.race([p.decode().catch(()=>{}),new Promise(r=>setTimeout(r,300))]).then(()=>{if(seq===SEQ&&p.isConnected)snap(p,0,true)})};
- let id=null,x0=0,y0=0,mode=null,inPh=false,trk=[],nb=null,w=0;
- const begin=()=>{SEQ++;const ps=freeze(),m=main();ps.forEach(p=>{if(p!==m)p.remove()});w=st().clientWidth+TGAP;
-  const mx=m._x||0,many=tidx(1)!=null&&!same(tinfo(tidx(1)).src);nb={m,n:many?pane(tidx(1),mx+w):null,p:many?pane(tidx(-1),mx-w):null};
-  [nb.m,nb.n,nb.p].forEach(p=>{if(p)p._b=p._x||0});mode='h';try{st().setPointerCapture(id)}catch(_){}};
- const move=dx=>{const lim=nb.n?w:0,ov=Math.abs(dx)-lim,off=ov>0?Math.sign(dx)*(lim+(1-1/(ov*.55/w+1))*w):dx;
+ /* finger drag: the photo and its neighbours follow the finger; past the last photo it rubber-bands */
+ const begin=pid=>{SEQ++;const ps=freeze(),m=main();ps.forEach(p=>{if(p!==m)p.remove()});w=st().clientWidth+TGAP;
+  const mx=m._x||0,many=idx(1)!=null&&!same(info(idx(1)).src);nb={m,n:many?pane(idx(1),mx+w):null,p:many?pane(idx(-1),mx-w):null};
+  [nb.m,nb.n,nb.p].forEach(p=>{if(p)p._b=p._x||0});try{st().setPointerCapture(pid)}catch(_){}};
+ const move=dx=>{if(!nb)return;const lim=nb.n?w:0,ov=Math.abs(dx)-lim,off=ov>0?Math.sign(dx)*(lim+(1-1/(ov*.55/w+1))*w):dx;
   [nb.m,nb.n,nb.p].forEach(p=>{if(p)tput(p,p._b+off)})};
+ /* let go: snap to the next photo if it was dragged a quarter of the way or flicked, otherwise back */
+ const release=(v,ok)=>{if(!nb)return;const off=(nb.m._x||0)-nb.m._b,go2=ok&&nb.n&&off&&!(Math.abs(v)>110&&Math.sign(v)!==Math.sign(off))&&(Math.abs(off)>w*.25||Math.abs(v)>110);
+  let t=nb.m,k=null;if(go2){const dir=off<0?1:-1;k=idx(dir);t=dir>0?nb.n:nb.p}
+  nb=null;swap(t);if(k!=null)choose(k);snap(t,v,false)};
+ return {go,step:dir=>go(idx(dir),dir),reset,idx,begin,move,release,busy:()=>!!T}}
+/* one touch handler per area: it finds which photo frame the finger is on and drives that frame's track */
+function dragTracks(root,find,onDown){let id=null,x0=0,y0=0,mode=null,tr=null,trk=[];
  const end=(e,ok)=>{if(e.pointerId!==id)return;id=null;
   if(mode==='h'){SWIPED=performance.now();const now=e.timeStamp,rec=trk.filter(s=>now-s[0]<=100);let v=0;
    if(ok&&rec.length>1){const a=rec[0],b=rec[rec.length-1];if(b[0]>a[0])v=(b[1]-a[1])/(b[0]-a[0])*1000}
-   const off=(nb.m._x||0)-nb.m._b,go2=ok&&nb.n&&off&&!(Math.abs(v)>110&&Math.sign(v)!==Math.sign(off))&&(Math.abs(off)>w*.25||Math.abs(v)>110);
-   let t=nb.m,k=null;if(go2){const dir=off<0?1:-1;k=tidx(dir);t=dir>0?nb.n:nb.p}
-   nb=null;mode=null;swap(t);if(k!=null)choose(k);snap(t,v,false);return}
-  if(ok&&mode==='v'&&o.onDown){const dx=e.clientX-x0,dy=e.clientY-y0;if(dy>80&&Math.abs(dy)>Math.abs(dx)*1.3){SWIPED=performance.now();o.onDown()}}mode=null};
- o.root.addEventListener('pointerdown',e=>{if(id!==null||e.pointerType!=='touch'||e.target.closest('.sw,.zx,.zarr'))return;
-  id=e.pointerId;x0=e.clientX;y0=e.clientY;mode=null;trk=[[e.timeStamp,e.clientX]];inPh=!!e.target.closest(o.photo);
-  if(inPh&&T)begin()},{passive:true});
- o.root.addEventListener('pointermove',e=>{if(e.pointerId!==id)return;const dx=e.clientX-x0,dy=e.clientY-y0;
-  if(!mode){if(Math.abs(dx)<8&&Math.abs(dy)<8)return;if(inPh&&Math.abs(dx)>Math.abs(dy))begin();else{mode='v';return}}
-  if(mode!=='h')return;trk.push([e.timeStamp,e.clientX]);if(trk.length>12)trk.shift();move(dx)},{passive:true});
- o.root.addEventListener('pointerup',e=>end(e,true),{passive:true});
- o.root.addEventListener('pointercancel',e=>end(e,false),{passive:true});
- return {go,step:dir=>go(tidx(dir),dir),reset}}
-const ZT=mkTrack({id:'zoom-img',root:ZOOM,photo:'.zstage',after:zmeta,onDown:()=>ZOOM.close()});
-const DT=mkTrack({id:'bike-img',root:BIKE,photo:'.bmph'});
+   mode=null;tr.release(v,ok);return}
+  if(ok&&mode==='v'&&onDown){const dx=e.clientX-x0,dy=e.clientY-y0;if(dy>80&&Math.abs(dy)>Math.abs(dx)*1.3){SWIPED=performance.now();onDown()}}mode=null};
+ root.addEventListener('pointerdown',e=>{if(id!==null||e.pointerType!=='touch'||e.target.closest('.sw,.zx,.zarr'))return;
+  id=e.pointerId;x0=e.clientX;y0=e.clientY;mode=null;trk=[[e.timeStamp,e.clientX]];tr=find(e);
+  if(tr&&tr.busy()){tr.begin(id);mode='h'}},{passive:true});
+ root.addEventListener('pointermove',e=>{if(e.pointerId!==id)return;const dx=e.clientX-x0,dy=e.clientY-y0;
+  if(!mode){if(Math.abs(dx)<8&&Math.abs(dy)<8)return;if(tr&&Math.abs(dx)>Math.abs(dy)){tr.begin(id);mode='h'}else{mode='v';return}}
+  if(mode!=='h')return;trk.push([e.timeStamp,e.clientX]);if(trk.length>12)trk.shift();tr.move(dx)},{passive:true});
+ root.addEventListener('pointerup',e=>end(e,true),{passive:true});
+ root.addEventListener('pointercancel',e=>end(e,false),{passive:true})}
+const ZT=mkTrack({id:'zoom-img',stage:()=>$('zoom-img').parentElement,bike:()=>BIKE_I!=null?B[BIKE_I]:null,cur:()=>BIKE_AC,pick:pickColor,after:zmeta});
+const DT=mkTrack({id:'bike-img',stage:()=>BIKE.querySelector('.bmph'),bike:()=>BIKE_I!=null?B[BIKE_I]:null,cur:()=>BIKE_AC,pick:pickColor});
+/* grid cards: one track per card photo, made the first time it's needed */
+const CT=new WeakMap();
+function cardTrack(ph){let t=CT.get(ph);if(!t){const b=B[+ph.closest('.c').dataset.b];t=mkTrack({stage:()=>ph,bike:()=>b,cur:()=>activeColor(b),pick:k=>{ACT.set(b.i,k);syncColor(b)}});CT.set(ph,t)}return t}
+dragTracks(ZOOM,e=>e.target.closest('.zstage')?ZT:null,()=>ZOOM.close());
+dragTracks(BIKE,e=>e.target.closest('.bmph')?DT:null);
+/* on the grid the whole card is covered by its "See details" layer, so find the photo under the finger by position */
+dragTracks($('g'),e=>{let ph=e.target.closest('.ph');if(!ph){const c=e.target.closest('.c'),p=c&&c.querySelector('.ph');if(p){const r=p.getBoundingClientRect();if(e.clientX>=r.left&&e.clientX<=r.right&&e.clientY>=r.top&&e.clientY<=r.bottom)ph=p}}
+ return ph&&B[+ph.closest('.c').dataset.b].cv.length?cardTrack(ph):null});
 document.addEventListener('keydown',e=>{if(!ZOOM.open||!['ArrowLeft','ArrowRight'].includes(e.key))return;e.preventDefault();ZT.step(e.key==='ArrowRight'?1:-1)});
 ZOOM.querySelector('.zprev').onclick=()=>ZT.step(-1);ZOOM.querySelector('.znext').onclick=()=>ZT.step(1);
 /* arrows only when there is another photo to go to */
-const zArrows=()=>{const many=tidx(1)!=null;ZOOM.querySelector('.zprev').hidden=!many;ZOOM.querySelector('.znext').hidden=!many};
+const zArrows=()=>{const many=ZT.idx(1)!=null;ZOOM.querySelector('.zprev').hidden=!many;ZOOM.querySelector('.znext').hidden=!many};
 ZOOM.addEventListener('toggle',zArrows);
 /* sort menu behaviour: opens under its button, arrow keys move, Enter or a tap picks, Escape or a tap outside closes */
 (()=>{const btn=$('sortbtn'),menu=$('sortmenu'),sel=$('sort'),opts=[...menu.querySelectorAll('.sopt')];
