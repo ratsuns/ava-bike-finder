@@ -5,7 +5,7 @@
 <style>
 /* Layout: quiet header, one sticky filter row, a clean photo grid where "you pay" leads each card, shop list below. */
 :root{
- --offveil:rgba(10,12,11,.14);
+ --offveil:rgba(10,12,11,.14); --offc:#b45309;
  --bg:#f6f7f5; --surface:#ffffff; --well:#f1f3f0; --fg:#121614; --fg2:#4d5651; --fg3:#646d68;
  --line:#e3e7e2; --line2:#c9d0ca; --accent:#0e7a52; --accent-fg:#ffffff; --accent-soft:#e3f2ea; --accent-ink:#0b5f40;
  --pick:#b7791f; --warn-ink:#8a5300;
@@ -17,13 +17,13 @@
  color-scheme:light;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
- --offveil:rgba(10,12,11,.42);
+ --offveil:rgba(10,12,11,.42); --offc:#fb923c;
  --bg:#0f1211; --surface:#171b19; --well:#1e2320; --fg:#eef1ee; --fg2:#b4bcb7; --fg3:#8d9691;
  --line:#262c29; --line2:#3a433e; --accent:#2fae7d; --accent-fg:#06140e; --accent-soft:#16302a; --accent-ink:#7fdcb4;
  --pick:#e0a84a; --warn-ink:#f0c46b;
  --shadow:0 1px 2px rgba(0,0,0,.3); --shadow-hi:0 8px 24px rgba(0,0,0,.4); color-scheme:dark}}
 :root[data-theme="dark"]{
- --offveil:rgba(10,12,11,.42);
+ --offveil:rgba(10,12,11,.42); --offc:#fb923c;
  --bg:#0f1211; --surface:#171b19; --well:#1e2320; --fg:#eef1ee; --fg2:#b4bcb7; --fg3:#8d9691;
  --line:#262c29; --line2:#3a433e; --accent:#2fae7d; --accent-fg:#06140e; --accent-soft:#16302a; --accent-ink:#7fdcb4;
  --pick:#e0a84a; --warn-ink:#f0c46b;
@@ -155,7 +155,7 @@ main.grid{padding-block:14px 56px;display:grid;grid-template-columns:repeat(auto
 .c.off::after{content:"";position:absolute;inset:0;border-radius:inherit;background:var(--offveil);pointer-events:none;z-index:3}
 .c.off .ph img{filter:grayscale(.85) contrast(.9)}
 .stag{position:relative;z-index:4;font-weight:600;color:var(--fg);background:var(--surface);border:1px solid var(--line2)}
-.ph .stag{position:absolute;left:12px;top:12px}
+.ph .stag{position:absolute;left:12px;top:12px;color:var(--offc);border-color:color-mix(in srgb,var(--offc) 55%,transparent)}
 .bmst{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 4px;font-size:var(--t-meta);color:var(--fg2);line-height:1.45}
 .stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:6px;overflow:hidden;margin:0}
 .stats div{background:var(--well);padding:7px 10px 8px;min-width:0}
