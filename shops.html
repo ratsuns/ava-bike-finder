@@ -289,12 +289,12 @@ dialog.drawer[data-state="open"]{opacity:1}}
 /* pins: one per shop, in the site's green with a white ring; the open or hovered one grows a little and sits on top */
 .pin{display:block;width:32px;height:40px;padding:4px 2px 0;margin:0;border:0;background:none;cursor:pointer;touch-action:manipulation}
 .pin svg{display:block;width:28px;height:36px;transform-origin:50% 100%;transition:transform .15s var(--ease-out);filter:drop-shadow(0 1px 1.5px rgba(0,0,0,.35))}
-.pin .pb{fill:var(--accent);stroke:#fff;stroke-width:2}
+/* shops are light blue pins; the picked shop's pin is red (same in both themes, since the map looks the same in both) */
+.pin .pb{fill:#4da3f0;stroke:#fff;stroke-width:2}
 .pin .pd{fill:#fff}
 .maplibregl-marker.pin.hot{z-index:3}
 .maplibregl-marker.pin.sel{z-index:4}
 .pin.hot svg,.pin.sel svg{transform:scale(1.2)}
-/* the picked shop's pin turns red */
 .pin.sel .pb{fill:#e5392f}
 .pin:focus-visible{outline:none}
 .pin:focus-visible svg{outline:2px solid var(--fg);outline-offset:1px;border-radius:50% 50% 50% 50%/40% 40% 60% 60%}
@@ -314,21 +314,19 @@ dialog.drawer[data-state="open"]{opacity:1}}
  .spg.listing .mdock{opacity:0;visibility:hidden;transition:opacity .12s var(--ease-out),visibility 0s linear .12s}
  .mlist{pointer-events:auto;display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px 0 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--fg);
   font:inherit;font-size:var(--t-ui);font-weight:600;cursor:pointer;touch-action:manipulation;-webkit-user-select:none;user-select:none;
-  box-shadow:0 1px 2px rgba(18,22,20,.06),0 4px 14px rgba(18,22,20,.14);transition:transform .12s var(--ease-out)}
+  box-shadow:0 1px 2px rgba(18,22,20,.06),0 4px 14px rgba(18,22,20,.14);transition:transform .12s var(--ease-out);will-change:translate}
  .mlist svg{color:var(--fg2)}
  .mlist:active{transform:scale(.97)}
  .mlist:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
  :root[data-theme="dark"] .mlist{border-color:var(--line2);box-shadow:0 1px 3px rgba(0,0,0,.4),0 6px 16px rgba(0,0,0,.5)}
- .mcar{display:flex;align-self:stretch;align-items:stretch;gap:10px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scroll-padding-inline:20px;padding:10px 20px 12px;scrollbar-width:none;touch-action:pan-x;pointer-events:auto}
+ .mcar{display:flex;align-self:stretch;align-items:flex-end;gap:10px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scroll-padding-inline:20px;padding:10px 20px 12px;scrollbar-width:none;touch-action:pan-x;pointer-events:auto}
  .mcar::-webkit-scrollbar{display:none}
  .mcar .mcard{flex:0 0 calc(100% - 16px);max-width:440px;width:auto;scroll-snap-align:center;scroll-snap-stop:always;pointer-events:auto;visibility:visible;opacity:1;transform:none;transition:none;box-shadow:0 1px 2px rgba(18,22,20,.06),0 4px 14px rgba(18,22,20,.14)}
  :root[data-theme="dark"] .mcar .mcard{box-shadow:0 1px 3px rgba(0,0,0,.4),0 6px 16px rgba(0,0,0,.5)}
  /* details in two columns: address and phone | the week's hours, then the email */
- .mcar .mcard{grid-template-rows:auto auto 1fr}
- .mcar .mcacts{align-self:end}
- .mcgrid{display:grid;grid-template-columns:minmax(0,max-content) minmax(0,1fr);column-gap:12px;align-items:start;font-size:var(--t-meta);line-height:1.4}
+ .mcgrid{display:grid;grid-template-columns:fit-content(132px) minmax(0,1fr);column-gap:12px;align-items:start;font-size:var(--t-meta);line-height:1.4}
  .mcgrid .mclines{gap:2px}
- .mcgrid a.mcl[href^="tel:"],.mchrs li{white-space:nowrap}
+ .mcgrid a.mcl[href^="tel:"]{white-space:nowrap}
  .mchrs ul{list-style:none;margin:0;padding:0;display:grid;gap:0}
 }
 @media (prefers-reduced-motion:reduce){.mlist{transition:none}.mlist:active{transform:none}}
@@ -555,14 +553,23 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
  let cur=null,pinned=null,onCard=null,pins=null,place=null,quiet=0,st0=0;
  const mark=k=>{if(onCard)onCard.classList.remove('on');onCard=k?list.querySelector(`.shop[data-shop="${CSS.escape(k)}"]`):null;if(onCard)onCard.classList.add('on')};
  const selPin=k=>{if(pins){if(cur&&pins.get(cur))pins.get(cur).classList.remove('sel');if(k&&pins.get(k))pins.get(k).classList.add('sel')}cur=k};
- const carTo=(k,smooth)=>{const el=car.children[SH.findIndex(s=>s.k===k)];if(!el)return;quiet=performance.now()+700;car.scrollTo({left:el.offsetLeft-(car.clientWidth-el.offsetWidth)/2,behavior:smooth&&!REDUCE.matches?'smooth':'auto'})};
+ const carTo=(k,smooth)=>{const el=car.children[SH.findIndex(s=>s.k===k)];if(!el)return;quiet=performance.now()+700;car.scrollTo({left:el.offsetLeft-(car.clientWidth-el.offsetWidth)/2,behavior:smooth&&!REDUCE.matches?'smooth':'auto'});if(!smooth||REDUCE.matches)ride()};
  /* make a shop the current one: its pin turns red, its card is in the middle of the row, and the map shows its pin if it's hidden */
  const pick=(k,pan,scroll,smooth)=>{selPin(k);mark(k);if(scroll)carTo(k,smooth);if(place&&BY[k])place(BY[k],pan)};
  /* swiping the row picks the card that settles in the middle */
  const settle=()=>{if(WIDE.matches||performance.now()<quiet)return;const mid=car.scrollLeft+car.clientWidth/2;let best=null,bd=1e9;
   for(const el of car.children){const d=Math.abs(el.offsetLeft+el.offsetWidth/2-mid);if(d<bd){bd=d;best=el}}
   if(best&&best.dataset.k!==cur)pick(best.dataset.k,true,false)};
- car.addEventListener('scroll',()=>{clearTimeout(st0);st0=setTimeout(settle,90)},{passive:true});
+ /* each card is as tall as its content; "Show list" rides just above the card in the middle, following it smoothly while swiping */
+ let C=[],raf=0;
+ const measure=()=>{C=[...car.children].map(el=>({c:el.offsetLeft+el.offsetWidth/2,h:el.offsetHeight}))};
+ const ride=()=>{raf=0;if(WIDE.matches||!C.length)return;const mid=car.scrollLeft+car.clientWidth/2;let i=0;while(i<C.length-1&&C[i+1].c<=mid)i++;
+  const a=C[i],b=C[Math.min(i+1,C.length-1)],f=b===a?0:Math.min(1,Math.max(0,(mid-a.c)/(b.c-a.c))),hmax=Math.max(...C.map(x=>x.h));
+  lbtn.style.translate='0 '+Math.round(hmax-(a.h+(b.h-a.h)*f))+'px'};
+ new ResizeObserver(()=>{measure();ride()}).observe(car);
+ car.addEventListener('scroll',()=>{clearTimeout(st0);st0=setTimeout(settle,90);if(!raf)raf=requestAnimationFrame(ride)},{passive:true});
+ /* the top of the open map above "Show list" (inside the map box) */
+ const openTop=()=>dock.offsetTop+lbtn.offsetTop+(parseFloat((lbtn.style.translate||'0 0').split(' ')[1])||0);
  if(!WIDE.matches)pick(SH[0].k,false,false);
  /* "Show list" slides the full list up over the map; the close button, Escape, or pulling it down puts it away.
     Tapping a shop in the list closes it and brings up that shop's card and pin */
@@ -621,8 +628,8 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
   let t=0;
   /* phones: keep the pin in the open map above "Show list" and the row of cards.
      Desktop: the card goes above the pin when it fits, else below; never over the credits at the bottom. A clicked pin whose card doesn't fit either way nudges the map */
-  const above=()=>Math.round(dock.offsetTop/2-box.clientHeight/2+20);
-  place=(s,pan)=>{if(!WIDE.matches){const p=map.project([s.lng,s.lat]),ct=dock.offsetTop;
+  const above=()=>Math.round(openTop()/2-box.clientHeight/2+20);
+  place=(s,pan)=>{if(!WIDE.matches){const p=map.project([s.lng,s.lat]),ct=openTop();
     if(pan&&(p.y>ct-8||p.y<52||p.x<24||p.x>box.clientWidth-24))map.easeTo({center:[s.lng,s.lat],offset:[0,above()],duration:REDUCE.matches?0:350});return}
    const p=map.project([s.lng,s.lat]),W=box.clientWidth,Hh=box.clientHeight,w=card.offsetWidth,h=card.offsetHeight,cr=box.querySelector('.maplibregl-ctrl-bottom-right'),top=8,bot=Math.min(Hh-8-(cr?cr.offsetHeight:0),(window.sheetTop?window.sheetTop():Infinity)-box.getBoundingClientRect().top-8);
    const upTop=p.y-46-h,dnBot=p.y+10+h,up=upTop>=top||(dnBot>bot&&p.y-46-top>=bot-p.y-10);
