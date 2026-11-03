@@ -1603,9 +1603,12 @@ function beam(ring,dot,active){const b={ring,dot,active,anim:null};
 (window.requestIdleCallback||(f=>setTimeout(f,1200)))(()=>{try{renderCmd()}catch(e){}});
 /* swipe a photo sideways to step through its colors: the gesture just presses the next or previous color dot, so every view stays in sync.
    touch-action:pan-y leaves vertical scrolling to the browser; if the browser takes the gesture for scrolling, it cancels ours */
-let SWIPED=0;
+let SWIPED=0,SWIPE_EAT=false;
+/* only the click that ends a swipe is ignored: any new touch clears it, so a quick tap right after cycling always goes through */
+const swallowClick=()=>SWIPE_EAT&&performance.now()-SWIPED<400;
+addEventListener('pointerdown',()=>{SWIPE_EAT=false},{capture:true,passive:true});
 /* a swipe on a card photo is not a tap: don't let it open the details */
-$('g').addEventListener('click',e=>{if(performance.now()-SWIPED<400&&!e.target.closest('.sw')){e.stopPropagation();e.preventDefault()}},true);
+$('g').addEventListener('click',e=>{if(swallowClick()&&!e.target.closest('.sw')){e.stopPropagation();e.preventDefault()}},true);
 
 /* tap the photo in the details to see it larger; swipe or tap the color dots there too */
 const ZOOM=$('zoom');
@@ -1613,10 +1616,10 @@ function syncZoom(){const img=$('bike-img');if(!img)return;ZT.reset();$('zoom-im
 function zmeta(){const b=BIKE_I!=null?B[BIKE_I]:null,on=BIKE.querySelector('.bmph .sw[aria-pressed="true"]');$('zoom-cap').textContent=b?(b.name+(on?' · '+on.getAttribute('aria-label'):'')):'';
  const np=b&&BIKE_AC!=null&&!b.cv[BIKE_AC].img,zn=$('zoom-note');zn.hidden=!np;zn.textContent=np?npNote(b.cv[BIKE_AC]):'';
  const src=BIKE.querySelector('.bmph .sws'),zw=$('zoom-sws');zw.innerHTML=src?src.innerHTML:'';zw.querySelectorAll('.off').forEach(d=>d.classList.remove('off'));zw.querySelector('.swmore')?.remove();zArrows()}
-BIKE.addEventListener('click',e=>{if(e.target.id==='bike-img'&&performance.now()-SWIPED>400){syncZoom();showDlg(ZOOM,e.target)}});
+BIKE.addEventListener('click',e=>{if(e.target.id==='bike-img'&&!swallowClick()){syncZoom();showDlg(ZOOM,e.target)}});
 ZOOM.querySelector('.zx').onclick=()=>ZOOM.close();
 ZOOM.addEventListener('click',e=>{const t=e.target.closest('.sw');if(t){const zs=[...ZOOM.querySelectorAll('.sw')],ni=zs.indexOf(t),oi=zs.findIndex(s=>s.getAttribute('aria-pressed')==='true'),twin=BIKE.querySelectorAll('.bmph .sw')[ni];if(twin&&ni!==oi)ZT.go(ni,ni>oi?1:-1);return}
- if(!e.target.closest('img,.zsws,.zx,.zarr')&&performance.now()-SWIPED>400)ZOOM.close()});
+ if(!e.target.closest('img,.zsws,.zx,.zarr')&&!swallowClick())ZOOM.close()});
 /* both bike photos (in the details and the full-screen view) work like a carousel track: the frame stays put and the photos sit side by side inside it.
    dragging with a finger moves the track with the finger; letting go snaps to the next photo (or back) with a spring that keeps the finger's speed.
    arrows, keys and the color dots use the same snap. touching the photo mid-snap catches it where it is, so nothing jumps */
@@ -1664,29 +1667,32 @@ function mkTrack(o){let T=null,SEQ=0,nb=null,w=0;
  /* finger drag: the photo and its neighbours follow the finger; past the last photo it rubber-bands */
  const begin=pid=>{SEQ++;const ps=freeze(),m=main();ps.forEach(p=>{if(p!==m)p.remove()});w=st().clientWidth+TGAP;
   const mx=m._x||0,many=idx(1)!=null&&!same(info(idx(1)).src);nb={m,n:many?pane(idx(1),mx+w):null,p:many?pane(idx(-1),mx-w):null};
-  [nb.m,nb.n,nb.p].forEach(p=>{if(p)p._b=p._x||0});try{st().setPointerCapture(pid)}catch(_){}};
+  [nb.m,nb.n,nb.p].forEach(p=>{if(p)p._b=p._x||0})};
+ /* the finger is only held once it really drags: holding it on a plain tap would stop the browser from sending the tap */
+ const hold=pid=>{try{st().setPointerCapture(pid)}catch(_){}};
  const move=dx=>{if(!nb)return;const lim=nb.n?w:0,ov=Math.abs(dx)-lim,off=ov>0?Math.sign(dx)*(lim+(1-1/(ov*.55/w+1))*w):dx;
   [nb.m,nb.n,nb.p].forEach(p=>{if(p)tput(p,p._b+off)})};
  /* let go: snap to the next photo if it was dragged a quarter of the way or flicked, otherwise back */
  const release=(v,ok)=>{if(!nb)return;const off=(nb.m._x||0)-nb.m._b,go2=ok&&nb.n&&off&&!(Math.abs(v)>110&&Math.sign(v)!==Math.sign(off))&&(Math.abs(off)>w*.25||Math.abs(v)>110);
   let t=nb.m,k=null;if(go2){const dir=off<0?1:-1;k=idx(dir);t=dir>0?nb.n:nb.p}
   nb=null;swap(t);if(k!=null)choose(k);snap(t,v,false)};
- return {go,step:dir=>go(idx(dir),dir),reset,idx,begin,move,release,busy:()=>!!T}}
+ return {go,step:dir=>go(idx(dir),dir),reset,idx,begin,hold,move,release,busy:()=>!!T}}
 /* one touch handler per area: it finds which photo frame the finger is on and drives that frame's track */
 /* a finger always wiggles a little on a tap: under TAPSLOP of sideways travel it is still a tap (the photo settles back and the tap goes through) */
 const TAPSLOP=16;
-function dragTracks(root,find,onDown){let id=null,x0=0,y0=0,mode=null,tr=null,trk=[],far=0,caught=false;
+function dragTracks(root,find,onDown){let id=null,x0=0,y0=0,mode=null,tr=null,trk=[],far=0,held=false;
  const end=(e,ok)=>{if(e.pointerId!==id)return;id=null;
-  if(mode==='h'){if(caught||far>=TAPSLOP)SWIPED=performance.now();const now=e.timeStamp,rec=trk.filter(s=>now-s[0]<=100);let v=0;
+  if(mode==='h'){if(far>=TAPSLOP){SWIPED=performance.now();SWIPE_EAT=true}const now=e.timeStamp,rec=trk.filter(s=>now-s[0]<=100);let v=0;
    if(ok&&rec.length>1){const a=rec[0],b=rec[rec.length-1];if(b[0]>a[0])v=(b[1]-a[1])/(b[0]-a[0])*1000}
-   mode=null;tr.release(v,ok&&(caught||far>=TAPSLOP));return}
-  if(ok&&mode==='v'&&onDown){const dx=e.clientX-x0,dy=e.clientY-y0;if(dy>80&&Math.abs(dy)>Math.abs(dx)*1.3){SWIPED=performance.now();onDown()}}mode=null};
+   mode=null;tr.release(v,ok&&far>=TAPSLOP);return}
+  if(ok&&mode==='v'&&onDown){const dx=e.clientX-x0,dy=e.clientY-y0;if(dy>80&&Math.abs(dy)>Math.abs(dx)*1.3){SWIPED=performance.now();SWIPE_EAT=true;onDown()}}mode=null};
  root.addEventListener('pointerdown',e=>{if(id!==null||e.pointerType!=='touch'||e.target.closest('.sw,.zx,.zarr'))return;
-  id=e.pointerId;x0=e.clientX;y0=e.clientY;mode=null;trk=[[e.timeStamp,e.clientX]];tr=find(e);far=0;caught=false;
-  if(tr&&tr.busy()){tr.begin(id);mode='h';caught=true}},{passive:true});
+  id=e.pointerId;x0=e.clientX;y0=e.clientY;mode=null;trk=[[e.timeStamp,e.clientX]];tr=find(e);far=0;held=false;
+  /* touching a photo that is still settling stops it where it is; it only turns into a drag if the finger moves */
+  if(tr&&tr.busy()){tr.begin(id);mode='h'}},{passive:true});
  root.addEventListener('pointermove',e=>{if(e.pointerId!==id)return;const dx=e.clientX-x0,dy=e.clientY-y0;
   if(!mode){if(Math.abs(dx)<8&&Math.abs(dy)<8)return;if(tr&&Math.abs(dx)>Math.abs(dy)){tr.begin(id);mode='h'}else{mode='v';return}}
-  if(mode!=='h')return;far=Math.max(far,Math.abs(dx));trk.push([e.timeStamp,e.clientX]);if(trk.length>12)trk.shift();tr.move(dx)},{passive:true});
+  if(mode!=='h')return;far=Math.max(far,Math.abs(dx));if(!held&&far>=8){held=true;tr.hold(id)}trk.push([e.timeStamp,e.clientX]);if(trk.length>12)trk.shift();tr.move(dx)},{passive:true});
  root.addEventListener('pointerup',e=>end(e,true),{passive:true});
  root.addEventListener('pointercancel',e=>end(e,false),{passive:true})}
 const ZT=mkTrack({id:'zoom-img',stage:()=>$('zoom-img').parentElement,bike:()=>BIKE_I!=null?B[BIKE_I]:null,cur:()=>BIKE_AC,pick:pickColor,after:zmeta});
