@@ -1340,7 +1340,7 @@ function animClose(){const d=this;if(!d.open||d.dataset.state==='closing')return
  const te=e=>{if(e.target===d&&(e.propertyName==='transform'||e.propertyName==='opacity'))done()};d.addEventListener('transitionend',te);t=setTimeout(done,300)}
 document.querySelectorAll('dialog').forEach(d=>{d.close=animClose});
 const DIMR=['.hero','#bar','#status','#g'].map(q=>document.querySelector(q)).filter(Boolean);
-function setDim(on){const H=document.documentElement;
+function setDim(on){const H=document.documentElement;/* TEST SWITCH (temporary): ?noblur keeps the page unblurred behind windows */if(/[?&]noblur\b/.test(location.search))on=false;
  if(on&&!H.classList.contains('dim')){const vh=innerHeight;for(const el of DIMR){const r=el.getBoundingClientRect();el.classList.toggle('onscr',r.bottom>0&&r.top<vh)}}
  H.classList.toggle('dim',on)}
 /* electric borders hold still on their current frame while a window (search, bike details, guide…) is open over the page, and while the page
@@ -2615,6 +2615,8 @@ const EBCOL={dark:'#f0ff30',light:'#a16207'};
 /* light mode also runs brighter, so the thin strands read on white */
 const EBLOOK={dark:{intensity:0.6,glow:0.3},light:{intensity:1.1,glow:0.5}};
 (()=>{const borders=[];
+ /* TEST SWITCH (temporary): ?noborder leaves the electric borders off */
+ if(/[?&]noborder\b/.test(location.search))return;
  B.forEach(b=>{if(!PICKS[b.brand+'|'+b.model])return;const node=NODE.get(b.i);if(!node)return;
   const w=document.createElement('div');w.className='ebw';if(node.parentNode)node.replaceWith(w);w.append(node);
   const eb=EB(w,{...EBLOOK[siteTheme()],color:EBCOL[siteTheme()],speed:1,chaos:0.35,spread:0.2,strands:2,thickness:1.5,arcs:0,offset:-1,flicker:0.25,borderRadius:8,theme:siteTheme()});
