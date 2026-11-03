@@ -6,7 +6,7 @@
 /* Layout: quiet header, one sticky filter row, a clean photo grid where "you pay" leads each card, shop list below. */
 :root{
  --offveil:rgba(10,12,11,.14); --offc:#9a3412; --offbg:#fff7ed; --offbd:#fdba74;
- --sbh:rgba(0,0,0,.45); --sbh2:rgba(0,0,0,.6); --sbo:rgba(255,255,255,.6);
+ --sbh:rgba(0,0,0,.45); --sbh2:rgba(0,0,0,.6); --sbo:rgba(255,255,255,.3);
  --bg:#f6f7f5; --surface:#ffffff; --well:#f1f3f0; --fg:#121614; --fg2:#4d5651; --fg3:#646d68;
  --line:#e3e7e2; --line2:#c9d0ca; --accent:#0e7a52; --accent-fg:#ffffff; --accent-soft:#e3f2ea; --accent-ink:#0b5f40;
  --pick:#b7791f; --warn-ink:#8a5300;
@@ -347,11 +347,14 @@ html.locked{overflow:hidden}
 /* page scrollbar, where the browser's own bar takes up a strip (Windows): a thin Mac-style bar floats over the page instead,
    fades out when you stop scrolling and widens under the mouse. Macs and phones keep their own bar. */
 html[data-overlayscrollbars-initialize],html[data-overlayscrollbars]{scrollbar-gutter:auto}
-.os-theme-ava{--os-size:22px;--os-padding-perpendicular:5px;--os-padding-axis:4px;--os-track-border-radius:10px;--os-handle-border-radius:10px;--os-handle-min-size:40px;
- --os-handle-perpendicular-size:8px;--os-handle-perpendicular-size-hover:10px;--os-handle-perpendicular-size-active:10px;
+.os-theme-ava{--os-size:18px;--os-padding-perpendicular:4px;--os-padding-axis:4px;--os-track-border-radius:10px;--os-handle-border-radius:10px;--os-handle-min-size:40px;
+ --os-handle-perpendicular-size:7px;--os-handle-perpendicular-size-hover:7px;--os-handle-perpendicular-size-active:7px;--sbx:calc(9 / 7);
  --os-handle-bg:var(--sbh);--os-handle-bg-hover:var(--sbh2);--os-handle-bg-active:var(--sbh2);
  --os-handle-border:1px solid var(--sbo);--os-handle-border-hover:1px solid var(--sbo);--os-handle-border-active:1px solid var(--sbo)}
-.os-theme-ava.os-scrollbar-vertical .os-scrollbar-handle{left:0;right:0;margin-inline:auto}
+/* bar: 7px wide, 6px from the right edge; it keeps its width and grows by stretching (7px -> 9px), which the browser animates smoothly in fractions of a pixel */
+.os-theme-ava.os-scrollbar-vertical{padding:4px 5px 4px 4px}
+.os-theme-ava.os-scrollbar-vertical .os-scrollbar-handle{left:0;right:0;margin-inline:auto;transition:opacity .15s,background-color .15s,border-color .15s,scale .2s var(--ease-out)}
+.os-theme-ava.os-scrollbar-vertical:hover .os-scrollbar-handle,.os-theme-ava.os-scrollbar-vertical:active .os-scrollbar-handle{scale:var(--sbx) 1}
 .os-theme-ava.os-scrollbar{transition:opacity .3s ease,visibility .3s ease}
 dialog[data-state="closing"]{pointer-events:none}
 .maplink{display:inline-flex;align-items:flex-start;gap:6px;color:var(--fg2);text-decoration:none;width:fit-content}
@@ -1619,7 +1622,11 @@ const NAVM=document.getElementById('navmenu'),MBTN=document.querySelector('.menu
 /* a tap on the dimmed page only closes the menu; it must not also open the bike underneath */
 let NAV_SWALLOW=0;document.addEventListener('pointerdown',e=>{if(NAVM.matches(':popover-open')&&!e.target.closest('#navmenu,.menubtn'))NAV_SWALLOW=performance.now()+600},true);
 document.addEventListener('click',e=>{if(performance.now()<NAV_SWALLOW){NAV_SWALLOW=0;e.preventDefault();e.stopPropagation()}},true);
-NAVM.addEventListener('toggle',e=>{const o=e.newState==='open';MBTN.setAttribute('aria-expanded',o);MBTN.setAttribute('aria-label',o?'Close menu':'Menu');lockScroll()});
+/* the button shows the X only while the menu is really open: it reads the menu's actual state on every open/close
+   and again after any tap or key, so it can't get stuck on the X if a browser (iPhone Safari) skips a close event */
+const syncNav=()=>{const o=NAVM.matches(':popover-open');if(MBTN.getAttribute('aria-expanded')!==String(o)){MBTN.setAttribute('aria-expanded',o);MBTN.setAttribute('aria-label',o?'Close menu':'Menu')}lockScroll()};
+NAVM.addEventListener('toggle',syncNav);NAVM.addEventListener('beforetoggle',()=>requestAnimationFrame(syncNav));
+['click','keyup','pointerup'].forEach(t=>document.addEventListener(t,()=>requestAnimationFrame(syncNav),true));addEventListener('pageshow',syncNav);
 matchMedia('(min-width: 761px)').addEventListener('change',e=>{if(e.matches&&NAVM.matches(':popover-open'))NAVM.hidePopover()});
 document.addEventListener('click',e=>{const a=e.target.closest('a[href="#dir"]:not([data-dir])');if(!a)return;e.preventDefault();const go=()=>$('dir').scrollIntoView({block:'start',behavior:'instant'});go();let n=0;const fix=()=>{if(n++>40)return;if(Math.abs($('dir').getBoundingClientRect().top)>2)go();requestAnimationFrame(fix)};requestAnimationFrame(fix);history.replaceState(null,'','#dir')});
 /* the hero video keeps playing behind open windows; it only rests while it is scrolled out of view or the tab is in the background, where nobody can see it */
