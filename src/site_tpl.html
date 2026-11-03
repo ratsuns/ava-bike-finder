@@ -132,6 +132,10 @@ main.grid{padding-block:14px 56px;display:grid;grid-template-columns:repeat(auto
 /* a short pause before it grows so it doesn't feel abrupt; closing has no pause */
 #feetip:popover-open{opacity:1;transform:none;transition-duration:200ms;transition-delay:120ms}
 @starting-style{#feetip:popover-open{opacity:0;transform:scale(.9)}}
+/* the pointer aims at whatever was tapped, even when the bubble had to shift to stay on screen */
+#feetip::after{content:"";position:absolute;left:var(--ax,50%);width:8px;height:8px;margin-left:-4px;background:inherit;transform:rotate(45deg);border-radius:1px}
+#feetip[data-side="above"]::after{bottom:-4px}
+#feetip[data-side="below"]::after{top:-4px}
 @media (prefers-reduced-motion:reduce){#feetip,#feetip:popover-open{transform:none}@starting-style{#feetip:popover-open{transform:none}}}
 .list{font-size:var(--t-meta);color:var(--fg3);font-variant-numeric:tabular-nums}
 .list s{text-decoration-thickness:1px}
@@ -1638,7 +1642,7 @@ addEventListener('pointerdown',()=>{SWIPE_EAT=false},{capture:true,passive:true}
 (()=>{const tip=document.createElement('div');tip.id='feetip';tip.setAttribute('popover','manual');tip.setAttribute('role','tooltip');document.body.append(tip);
  let cur=null;
  const place=b=>{const r=b.getBoundingClientRect(),w=tip.offsetWidth,h=tip.offsetHeight,m=8;let x=r.left+r.width/2-w/2;x=Math.max(m,Math.min(x,innerWidth-w-m));
-  const g=7,up=r.top-h-g>=m;tip.style.left=x+'px';tip.style.top=(up?r.top-h-g:r.bottom+g)+'px'};
+  const g=7,up=r.top-h-g>=m;tip.dataset.side=up?'above':'below';tip.style.left=x+'px';tip.style.top=(up?r.top-h-g:r.bottom+g)+'px';tip.style.setProperty('--ax',Math.round(Math.min(Math.max(r.left+r.width/2-x,12),w-12))+'px')};
  /* hug the text: balanced lines leave the box at its max width with empty space on the right, so size it to the longest line.
     Measured from the text's line boxes, corrected for the grow-in scale that may be running */
  const fit=()=>{tip.style.width='';const rg=document.createRange();rg.selectNodeContents(tip);const ls=[...rg.getClientRects()];if(!ls.length)return;
