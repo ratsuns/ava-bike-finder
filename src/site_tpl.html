@@ -140,6 +140,9 @@ main.grid{padding-block:14px 56px;display:grid;grid-template-columns:repeat(auto
 .chips{display:flex;flex-wrap:nowrap;gap:6px;overflow:hidden;min-width:0}
 .chip{white-space:nowrap;flex:none}
 .chip{font-size:var(--t-micro);font-weight:500;color:var(--fg2);background:var(--well);border-radius:4px;padding:2px 8px}
+/* chips that explain themselves: same look as a plain chip, sit above the card's "See details" layer, and show the bubble */
+.tipc{border:0;margin:0;font-family:inherit;line-height:inherit;letter-spacing:inherit;cursor:default;position:relative;z-index:2;-webkit-tap-highlight-color:transparent}
+.tipc:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .c.off::after{content:"";position:absolute;inset:0;border-radius:inherit;background:rgba(10,12,11,.42);pointer-events:none;z-index:3}
 .c.off .ph img{filter:grayscale(.85) contrast(.9)}
 .stag{position:relative;z-index:4;font-weight:600;color:var(--fg);background:var(--surface);border:1px solid var(--line2)}
@@ -1113,7 +1116,7 @@ const mailUrl=(s,b)=>{const subj=b?`Question about the ${b.name} (Ava e-bike reb
   :`Hi ${s.name},\n\nI'm shopping for an e-bike and plan to use my Ava Community Energy e-bike rebate. Which rebate-eligible bikes do you have in stock right now?\n\nThank you!\n`;
  return `mailto:${s.email}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(body.replace(/\n/g,'\r\n'))}`};
 /* shop logo in a round badge; shops without a published logo get their initials */
-const slogo=s=>{const tag=s.url?`a href="${esc(s.url)}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" title="${esc(s.name)} website"`:'span aria-hidden="true"',end=s.url?'a':'span';return s.logo?`<${tag} class="slogo"><img src="${esc(s.logo)}" alt="" width="36" height="36" loading="lazy" decoding="async"></${end}>`:`<${tag} class="slogo ini">${esc(s.name.replace(/^the\s+/i,'').split(/\s+/).filter(w=>/^[A-Za-z]/.test(w)).slice(0,2).map(w=>w[0].toUpperCase()).join(''))}</${end}>`};
+const slogo=s=>{const tag=s.url?`a href="${esc(s.url)}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"`:'span aria-hidden="true"',end=s.url?'a':'span';return s.logo?`<${tag} class="slogo"><img src="${esc(s.logo)}" alt="" width="36" height="36" loading="lazy" decoding="async"></${end}>`:`<${tag} class="slogo ini">${esc(s.name.replace(/^the\s+/i,'').split(/\s+/).filter(w=>/^[A-Za-z]/.test(w)).slice(0,2).map(w=>w[0].toUpperCase()).join(''))}</${end}>`};
 const shopLines=(s,b)=>`${s.address||s.city?`<a class="maplink" href="${mapUrl(s)}" target="_blank" rel="noopener">${PIN}<span>${esc([s.address,s.city].filter(Boolean).join(', '))}</span></a>`:''}${s.phone?`<a class="maplink tel" href="${telUrl(s.phone)}">${PHONE}<span>${esc(s.phone)}</span></a>`:''}${s.hours?`<div class="maplink hrs">${CLOCK}<div><ul>${s.hours.split(' · ').map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div></div>`:''}${s.email?`<a class="maplink mail" href="${mailUrl(s,b)}">${MAIL}<span>${esc(s.email)}</span></a>`:s.contact?`<a class="maplink mail" href="${esc(s.contact)}" target="_blank" rel="noopener">${MAIL}<span>Email via contact form</span></a>`:''}`;
 const ARROW='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>';
 const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
@@ -1166,15 +1169,15 @@ function cardHTML(b){
   ?`<div class="price"><div class="pay"><strong>${money(b.you)}</strong><span class="payl">you pay + tax${FEETIP}</span></div><div class="list"><s>${money(b.price)}</s> minus ${money(b.reb)} rebate.</div></div>`
   :`<div class="price na"><div class="pay"><strong>Price not listed</strong></div><div class="list">Ask the shop for the price.</div></div>`;
  const allNa=[b.spd,b.tq,b.load,b.range].every(v=>v==null||v==='');
- const ac0=activeColor(b),sw=b.cv.length?`<div class="sws" role="group" aria-label="Colors">${b.cv.map((c,ci)=>`<button type="button" class="sw${c.img?'':' np'}${swOff(b.cv.length,ac0,ci)}" data-c="${ci}" tabindex="${ci===(ac0??0)?0:-1}" aria-pressed="${ci===ac0}" aria-label="${esc(c.n)}" title="${esc(c.n)}${c.img?'':' (no photo yet)'}"><i style="background:${c.hex||CHEX[c.f]}"></i></button>`).join('')}${swMore(b.cv.length)}</div><span class="npn"${ac0!=null&&!b.cv[ac0].img?'':' hidden'}>${ac0!=null&&!b.cv[ac0].img?esc(npNote(b.cv[ac0])):''}</span>`:'';
+ const ac0=activeColor(b),sw=b.cv.length?`<div class="sws" role="group" aria-label="Colors">${b.cv.map((c,ci)=>`<button type="button" class="sw${c.img?'':' np'}${swOff(b.cv.length,ac0,ci)}" data-c="${ci}" tabindex="${ci===(ac0??0)?0:-1}" aria-pressed="${ci===ac0}" aria-label="${esc(c.n)}${c.img?'':', no photo yet'}"><i style="background:${c.hex||CHEX[c.f]}"></i></button>`).join('')}${swMore(b.cv.length)}</div><span class="npn"${ac0!=null&&!b.cv[ac0].img?'':' hidden'}>${ac0!=null&&!b.cv[ac0].img?esc(npNote(b.cv[ac0])):''}</span>`:'';
  return `<article class="c${pk?' pick':''}${b.st?' off':''}" data-b="${b.i}">
  <div class="ph"><img loading="lazy" decoding="async" src="${shownSrc(b)}" alt="${esc(b.name)}">${sw}<span class="tag${b.reb===900?'':' s400'}"><i></i>${money(b.reb)} off</span>${pk?`<span class="picktag">${STAR}${pk.tag}</span>`:''}</div>
  <div class="b">
-  <div class="id"><span class="br">${esc(b.brand)}</span><h3 class="n" title="${esc(b.model)}"><span class="vh">${esc(b.brand)} </span>${esc(b.mn)}</h3></div>
+  <div class="id"><span class="br">${esc(b.brand)}</span><h3 class="n"><span class="vh">${esc(b.brand)} </span>${esc(b.mn)}</h3></div>
   ${price}
   ${allNa?'<p class="nospec">Specs not listed. Ask the shop.</p>':`<dl class="stats">${stat('Top speed',b.spd,'mph')}${stat('Torque',b.tq,'Nm')}${stat('Max load',b.load,'lb')}${stat('Range',b.range,'mi')}</dl>`}
   ${pk?`<p class="note picknote">${esc(pk.note)}</p>`:''}
-  <div class="chips">${b.st?`<span class="chip stag">${esc(STX[b.st][0])}</span>`:''}<span class="chip" title="${esc(TYPEX[b.type]||'')}">${esc(b.type)}</span>${b.cls?`<span class="chip" title="${esc(CLASSX[b.cls]||'')}">Class ${esc(b.cls)}</span>`:''}${b.fold==='Yes'?'<span class="chip">Folds</span>':''}</div>
+  <div class="chips">${b.st?`<span class="chip stag">${esc(STX[b.st][0])}</span>`:''}${TYPEX[b.type]?`<button type="button" class="chip tipc" data-tip="${esc(TYPEX[b.type])}">${esc(b.type)}</button>`:`<span class="chip">${esc(b.type)}</span>`}${b.cls?(CLASSX[b.cls]?`<button type="button" class="chip tipc" data-tip="${esc(CLASSX[b.cls])}">Class ${esc(b.cls)}</button>`:`<span class="chip">Class ${esc(b.cls)}</span>`):''}${b.fold==='Yes'?'<span class="chip">Folds</span>':''}</div>
   <button type="button" class="more" data-more="${b.i}"><span>See details<span class="vh"> for ${esc(b.name)}</span></span>${ARROW}</button>
  </div></article>`}
 const NODE=new Map();
@@ -1254,7 +1257,7 @@ $('g').addEventListener('click',e=>{
  if(e.target.closest('[data-expand]')){NEAR_MI+=10;draw();return}
  const t=e.target.closest('.sw');
  /* any click on a card opens its details, except on a color swatch */
- if(!t){const c=e.target.closest('.c[data-b]');if(c&&!e.target.closest('a,.sws,.tipb'))openBike(+c.dataset.b,c.querySelector('.more'));return}
+ if(!t){const c=e.target.closest('.c[data-b]');if(c&&!e.target.closest('a,.sws,[data-tip]'))openBike(+c.dataset.b,c.querySelector('.more'));return}
  const b=B[+t.closest('.c').dataset.b],k=+t.dataset.c,ac=activeColor(b);if(k!==ac)cardTrack(t.closest('.ph')).go(k,ac==null||k>ac?1:-1)});
 
 $('g').addEventListener('keydown',e=>{const t=e.target.closest('.sw');if(!t||!['ArrowLeft','ArrowRight'].includes(e.key))return;e.preventDefault();
@@ -1317,7 +1320,7 @@ function buildBike(i){const pre=i+'|'+F.city+'|'+F.q+'|'+(ME?NEAR_MI:'');if(BIKE
    <div class="list bmlist"><s>${money(b.price)}</s> minus ${money(b.reb)} rebate.</div>`
   :`<div class="bmpay na"><strong>Price not listed</strong></div>
    <p class="bmtax">Ask the shop for today's price. Your rebate takes ${money(b.reb)} off, and sales tax is extra.</p>`;
- const sws=b.cv.length?`<div class="sws" role="group" aria-label="Colors">${b.cv.map((c,ci)=>`<button type="button" class="sw${c.img?'':' np'}" data-c="${ci}" tabindex="-1" aria-pressed="false" aria-label="${esc(c.n)}" title="${esc(c.n)}${c.img?'':' (no photo yet)'}"><i style="background:${c.hex||CHEX[c.f]}"></i></button>`).join('')}${swMore(b.cv.length)}</div>`:'';
+ const sws=b.cv.length?`<div class="sws" role="group" aria-label="Colors">${b.cv.map((c,ci)=>`<button type="button" class="sw${c.img?'':' np'}" data-c="${ci}" tabindex="-1" aria-pressed="false" aria-label="${esc(c.n)}${c.img?'':', no photo yet'}"><i style="background:${c.hex||CHEX[c.f]}"></i></button>`).join('')}${swMore(b.cv.length)}</div>`:'';
  const gi='https://www.google.com/search?tbm=isch&q='+encodeURIComponent(b.name+' e-bike');
  $('bike-br').textContent=b.brand;
  $('bike-h').innerHTML=`<span class="vh">${esc(b.brand)} </span>${esc(b.mn)}`;
@@ -1345,7 +1348,7 @@ let BIKE_OPENING=0;
 function openBike(i,opener){if(BIKE.open)return;const tok=++BIKE_OPENING;buildBike(i);DT.reset();BIKE_I=i;BIKE_AC=activeColor(B[i]);syncBike();
  const im=$('bike-img'),show=()=>{if(tok!==BIKE_OPENING||BIKE.open)return;showDlg(BIKE,opener);$('bike-body').scrollTop=0};
  Promise.race([im.decode().catch(()=>{}),new Promise(r=>setTimeout(r,150))]).then(show)}
-$('g').addEventListener('pointerdown',e=>{if(BIKE.open||e.button)return;const c=e.target.closest('.c[data-b]');if(c&&!e.target.closest('a,.sws,.tipb'))buildBike(+c.dataset.b)},{passive:true});
+$('g').addEventListener('pointerdown',e=>{if(BIKE.open||e.button)return;const c=e.target.closest('.c[data-b]');if(c&&!e.target.closest('a,.sws,[data-tip]'))buildBike(+c.dataset.b)},{passive:true});
 function syncBike(){
  if(BIKE_I==null||!BIKE.contains($('bike-img')))return;const b=B[BIKE_I],ac=BIKE_AC,img=$('bike-img'),cap=$('bike-cap');
  const np=ac!=null&&!b.cv[ac].img,src=np?(img.getAttribute('src')||b.img):ac!=null?b.cv[ac].img:b.img;
@@ -1646,10 +1649,10 @@ addEventListener('pointerdown',()=>{SWIPE_EAT=false},{capture:true,passive:true}
   if(cur){unmark(cur);cur=b;mark(b);fit();place(b);return}
   cur=b;mark(b);tip.showPopover();fit();place(b)};
  const hide=()=>{if(!cur)return;unmark(cur);cur=null;if(tip.matches(':popover-open'))tip.hidePopover()};
- document.addEventListener('click',e=>{const b=e.target.closest('.tipb');if(!b){hide();return}e.preventDefault();e.stopPropagation();cur===b?hide():show(b)},true);
- document.addEventListener('pointerover',e=>{if(e.pointerType!=='mouse')return;const b=e.target.closest('.tipb');if(b)show(b)});
- document.addEventListener('pointerout',e=>{if(e.pointerType!=='mouse')return;const b=e.target.closest('.tipb');if(b&&b===cur&&!b.contains(e.relatedTarget))hide()});
- document.addEventListener('focusin',e=>{const b=e.target.closest&&e.target.closest('.tipb');if(b&&KBD)show(b)});
+ document.addEventListener('click',e=>{const b=e.target.closest('[data-tip]');if(!b){hide();return}e.preventDefault();e.stopPropagation();cur===b?hide():show(b)},true);
+ document.addEventListener('pointerover',e=>{if(e.pointerType!=='mouse')return;const b=e.target.closest('[data-tip]');if(b)show(b)});
+ document.addEventListener('pointerout',e=>{if(e.pointerType!=='mouse')return;const b=e.target.closest('[data-tip]');if(b&&b===cur&&!b.contains(e.relatedTarget))hide()});
+ document.addEventListener('focusin',e=>{const b=e.target.closest&&e.target.closest('[data-tip]');if(b&&KBD)show(b)});
  document.addEventListener('focusout',e=>{if(e.target===cur)hide()});
  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&cur)hide()});
  addEventListener('scroll',hide,{capture:true,passive:true});addEventListener('resize',hide)})();
