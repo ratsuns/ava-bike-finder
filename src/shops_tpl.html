@@ -5,6 +5,10 @@ __HEAD__
 /* home page rules this page uses (build2.py copies them from site_tpl.html, so tokens, themes and the shop cards stay identical) */
 __BASE_CSS__
 /* shops page */
+/* going between this page and the home page crossfades instead of flashing */
+@view-transition{navigation:auto}
+@media (prefers-reduced-motion:reduce){@view-transition{navigation:none}}
+::view-transition-old(root),::view-transition-new(root){animation-duration:.3s;animation-timing-function:ease}
 :root{--mapbg:#f8f4f0}
 .sbar{position:sticky;top:0;z-index:20;background:var(--bg);padding-top:env(safe-area-inset-top,0px);--hink:18,22,20}
 :root[data-theme="dark"] .sbar{--hink:238,241,238}
@@ -158,6 +162,10 @@ SH.sort((a,b)=>(a.city||'').localeCompare(b.city||'')||a.name.localeCompare(b.na
 /* the first few logos load right away; the rest wait until they're scrolled near */
 $('list').innerHTML=SH.map((s,i)=>{const h=__CARD__;return i<6?h.replace('loading="lazy"','loading="eager"'):h}).join('');
 const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
+/* page-to-page crossfade: when the browser skips it (e.g. going back), that's fine; don't report it as an error */
+for(const ev of ['pagereveal','pageswap'])addEventListener(ev,e=>{const v=e.viewTransition;if(!v)return;[v.ready,v.finished,v.updateCallbackDone].forEach(p=>p&&p.catch(()=>{}));
+ /* only forward links crossfade; the back and forward buttons switch straight away */
+ const ty=ev==='pageswap'?e.activation&&e.activation.navigationType:window.navigation&&navigation.activation&&navigation.activation.navigationType;if(ty==='traverse')v.skipTransition()});
 /* light / dark toggle: same as the home page (remembered per browser, crossfades where view transitions exist) */
 (()=>{const b=$('themebtn');if(!b)return;const H=document.documentElement;
  const cur=()=>H.dataset.theme==='light'?'light':'dark';
@@ -217,7 +225,10 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
  const sync=()=>{const o=M.matches(':popover-open');if(B.getAttribute('aria-expanded')!==String(o)){B.setAttribute('aria-expanded',o);B.setAttribute('aria-label',o?'Close menu':'Menu')}H.classList.toggle('locked',o||!!document.querySelector('dialog[open]:not([data-state="closing"])'))};
  M.addEventListener('toggle',sync);M.addEventListener('beforetoggle',()=>requestAnimationFrame(sync));
  ['click','keyup','pointerup'].forEach(t=>document.addEventListener(t,()=>requestAnimationFrame(sync),true));addEventListener('pageshow',sync);
- M.addEventListener('click',e=>{if(e.target.closest('.nml a'))M.hidePopover()});/* the menu's guide and rebate buttons close it and open their panel (see above) */
+ /* the menu's guide and rebate buttons close it and open their panel (see above). Its link to this same page just closes the menu;
+    a link to another page leaves it open while that page loads, and it's put away once this page is gone (so back finds it closed) */
+ M.addEventListener('click',e=>{const a=e.target.closest('.nml a');if(a&&a.getAttribute('aria-current')==='page'){e.preventDefault();M.hidePopover()}});
+ addEventListener('pagehide',()=>{if(M.matches(':popover-open'))M.hidePopover()});
  matchMedia('(min-width: 761px)').addEventListener('change',e=>{if(e.matches&&M.matches(':popover-open'))M.hidePopover()})})();
 /* map: starts as soon as MapLibre (loaded with defer in the head) is ready */
 (()=>{const box=$('map'),list=$('list'),H=document.documentElement;

@@ -275,7 +275,7 @@ if SITE:
     open(SITE+'/llms-full.txt','w').write(_hdr.replace('## Files','## Notes\n\n- "After rebate" uses the regular $400 (standard) or $900 (cargo and adaptive) rebate. Sales tax is extra.\n- Prices are the maker\'s US list price, or the selling shop\'s price when the maker has none.\n\n## Files',1)+f"\n## All {len(out)} e-bikes\n\n"+"\n".join(_rows)+"\n\n## Participating shops\n\n"+"\n\n".join(_shops)+"\n")
     open(SITE+'/sitemap.xml','w').write(f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>{URL}</loc><lastmod>{datetime.date.today().isoformat()}</lastmod></url>'+('' if SHOPS_PREVIEW else f'<url><loc>{URL}browse-vendors/</loc><lastmod>{datetime.date.today().isoformat()}</lastmod></url>')+'</urlset>')
     PAGE=PAGE.replace('<title>Ava Rebate Bike Finder</title>','',1)
-if SITE: open(SITE+'/index.html','w').write('<!doctype html><html lang="en" data-theme="dark" data-overlayscrollbars-initialize><head><meta charset="utf-8"><link rel="stylesheet" href="vendor/overlayscrollbars-2.16.0.min.css"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#0f1211">'+SEO+'<script>if(location.hash==="#dir")location.replace("browse-vendors/");try{if(!matchMedia("(hover: hover) and (pointer: fine)").matches||matchMedia("(any-pointer: coarse)").matches)document.documentElement.removeAttribute("data-overlayscrollbars-initialize");var t=localStorage.getItem("theme");if(t==="light"){document.documentElement.dataset.theme="light";document.querySelector("meta[name=color-scheme]").content="light";document.querySelector("meta[name=theme-color]").content="#f6f7f5"}}catch(e){}</script></head><body data-overlayscrollbars-initialize style="margin:0">'+PAGE+'</body></html>')
+if SITE: open(SITE+'/index.html','w').write('<!doctype html><html lang="en" data-theme="dark" data-overlayscrollbars-initialize><head><meta charset="utf-8"><link rel="stylesheet" href="vendor/overlayscrollbars-2.16.0.min.css"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#0f1211">'+SEO+'<script>if(location.hash==="#dir")location.replace("browse-vendors/");try{if(!matchMedia("(hover: hover) and (pointer: fine)").matches||matchMedia("(any-pointer: coarse)").matches)document.documentElement.removeAttribute("data-overlayscrollbars-initialize");var t=localStorage.getItem("theme");if(t==="light"){document.documentElement.dataset.theme="light";document.querySelector("meta[name=color-scheme]").content="light";document.querySelector("meta[name=theme-color]").content="#f6f7f5"}}catch(e){}</script><script type="speculationrules">{"prefetch":[{"where":{"href_matches":"*browse-vendors/*"},"eagerness":"moderate"}]}</script></head><body data-overlayscrollbars-initialize style="margin:0">'+PAGE+'</body></html>')
 # shops.html: every shop location as the home page's shop card, next to a map with a pin per shop
 def _css_keep(css,classes,types):
     # copies the home page rules whose selectors only use the given classes and element types (rule order kept, @media/@supports filtered inside)
@@ -295,7 +295,7 @@ def _css_keep(css,classes,types):
             while d:
                 d+={'{':1,'}':-1}.get(t[k],0);k+=1
             body=t[j+1:k-1];i=k
-            if pre.startswith('@media') or pre.startswith('@supports'):
+            if pre.startswith('@media') or pre.startswith('@supports') or pre.startswith('@starting-style'):
                 inner=walk(body)
                 if inner: o.append(pre+'{'+inner+'}')
             elif pre.startswith('@'): continue
@@ -330,6 +330,7 @@ if SITE:
      +('<meta name="robots" content="noindex">' if SHOPS_PREVIEW else '')+
      '<link rel="icon" href="favicon.ico" sizes="48x48"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="manifest" href="site.webmanifest">'
      # the map style for the current theme starts downloading right away, alongside MapLibre (deferred, so it never holds up the page)
+     '<script type="speculationrules">{"prefetch":[{"where":{"selector_matches":"a.brand, a[href=\\"./\\"]"},"eagerness":"moderate"}]}</script>'
      '<link rel="preconnect" href="https://tiles.openfreemap.org" crossorigin>'
      # the map's tile index is also fetched up front, in parallel, instead of only after the style arrives
      '<link rel="preload" as="fetch" crossorigin href="https://tiles.openfreemap.org/planet">'

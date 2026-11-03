@@ -311,6 +311,9 @@ dialog[open]::backdrop{opacity:1}
 @media (max-width:760px){.themebtn{margin-left:0;width:44px;height:44px}}
 @media (prefers-reduced-motion:reduce){.themebtn .tm-core,.themebtn .tm-cut,.themebtn .tm-rays{transition:none}}
 ::view-transition-old(root),::view-transition-new(root){animation-duration:.3s;animation-timing-function:ease}
+/* going between this page and the vendor page crossfades instead of flashing */
+@view-transition{navigation:auto}
+@media (prefers-reduced-motion:reduce){@view-transition{navigation:none}}
 /* the toggle itself is shown live during the crossfade, so its morph plays instead of being frozen in a snapshot */
 ::view-transition-old(themebtn){display:none}
 ::view-transition-new(themebtn){animation:none}
@@ -668,20 +671,20 @@ main.grid{padding-bottom:96px}
 @media (max-width:760px){.hero{min-height:min(52svh,440px);align-items:flex-end}.hero .wrap{padding-block:128px 40px}}
 @media (prefers-reduced-motion:reduce){.hero-media video{display:none}.hero-media{background:url(__HERO_JPG__) center/cover}}
 
-/* the top nav stays pinned while the page scrolls: see-through with white text over the hero video, then the page's own background and text colours once the hero is scrolled past */
-.topbar{position:fixed;inset:0 0 auto;z-index:30;padding-top:env(safe-area-inset-top);--hink:255,255,255;background-color:transparent;transition:background-color .2s ease}
-.topbar.solid{background-color:var(--bg);--hink:18,22,20}
-:root[data-theme="dark"] .topbar.solid{--hink:238,241,238}
-/* scrolled: frosted glass. A see-through tint of the page colour over a strong blur, so what scrolls underneath turns to soft colour and never fights the nav text;
-   a faint edge and soft shadow separate it from the page. Browsers without the blur keep the solid bar above */
-@supports ((-webkit-backdrop-filter:blur(1px)) or (backdrop-filter:blur(1px))){
- .topbar.solid{background-color:color-mix(in srgb,var(--bg) 72%,transparent);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);
-  box-shadow:0 1px 0 rgba(18,22,20,.08),0 8px 24px -12px rgba(18,22,20,.18)}
- :root[data-theme="dark"] .topbar.solid{background-color:color-mix(in srgb,var(--bg) 64%,transparent);box-shadow:0 1px 0 rgba(255,255,255,.07),0 8px 24px -12px rgba(0,0,0,.6)}
-}
-.topbar{transition:background-color .2s ease,box-shadow .2s ease}
-@media (prefers-reduced-motion:reduce){.topbar{transition:none}}
-@media (prefers-reduced-motion:reduce){.topbar{transition:none}}
+/* the top nav stays pinned while the page scrolls: see-through over the hero video at the very top, then frosted glass the rest of the way down
+   (a see-through tint of the page colour over a strong blur, so whatever scrolls underneath turns to soft colour and never clashes with the nav text).
+   The two states crossfade */
+.topbar{position:fixed;inset:0 0 auto;z-index:30;padding-top:env(safe-area-inset-top);--hink:255,255,255;
+ background-color:rgba(246,247,245,0);-webkit-backdrop-filter:blur(0px);backdrop-filter:blur(0px);box-shadow:0 1px 0 rgba(18,22,20,0),0 8px 24px -12px rgba(18,22,20,0);
+ transition:background-color .35s ease,-webkit-backdrop-filter .35s ease,backdrop-filter .35s ease,box-shadow .35s ease}
+:root[data-theme="dark"] .topbar{background-color:rgba(15,18,17,0)}
+.topbar.frost{--hink:18,22,20;background-color:color-mix(in srgb,var(--bg) 80%,transparent);-webkit-backdrop-filter:saturate(180%) blur(24px);backdrop-filter:saturate(180%) blur(24px);
+ box-shadow:0 1px 0 rgba(18,22,20,.08),0 8px 24px -12px rgba(18,22,20,.18)}
+:root[data-theme="dark"] .topbar.frost{--hink:238,241,238;background-color:color-mix(in srgb,var(--bg) 74%,transparent);box-shadow:0 1px 0 rgba(255,255,255,.07),0 8px 24px -12px rgba(0,0,0,.6)}
+/* browsers without the blur get a solid bar instead */
+@supports not ((-webkit-backdrop-filter:blur(1px)) or (backdrop-filter:blur(1px))){.topbar.frost,:root[data-theme="dark"] .topbar.frost{background-color:var(--bg)}}
+/* the nav's text and icons fade between white and the page's text colour along with the background */
+.topbar .brand,.topbar .navlinks a,.topbar .navlinks button,.topbar .themebtn,.topbar .menubtn{transition:color .35s ease,background-color .15s ease,transform .12s var(--ease-out)}
 .topbar .topnav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px;padding-block:0}
 .brand{display:inline-flex;align-items:center;gap:10px;color:rgb(var(--hink));text-decoration:none;font-weight:600;font-size:15px;letter-spacing:-.01em;min-height:44px}
 .brand svg{flex:none}
@@ -732,9 +735,11 @@ article.c .b{container-type:inline-size}
 .menubtn[aria-expanded="true"] .mi-close{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.menubtn svg{transition:opacity .12s ease;transform:none!important}}
 /* mobile menu: a full-screen page that replaces the view, like most product sites */
-.navmenu{position:fixed;inset:0;width:100%;height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;background:var(--bg);color:var(--fg);overflow-y:auto;overscroll-behavior:contain;opacity:0;transform:translateY(-6px);transition:opacity .2s var(--ease-out),transform .2s var(--ease-out),overlay .2s allow-discrete,display .2s allow-discrete}
-.navmenu:popover-open{opacity:1;transform:none}
-@starting-style{.navmenu:popover-open{opacity:0;transform:translateY(-6px)}}
+.navmenu{position:fixed;inset:0;width:100%;height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;background:var(--bg);color:var(--fg);overflow-y:auto;overscroll-behavior:contain;transition:overlay .2s allow-discrete,display .2s allow-discrete}
+/* the menu's top row (logo, close button) lands exactly where the nav's is and doesn't move, so nothing up there flickers; only the links below slide in */
+.navmenu .nml{opacity:0;transform:translateY(-6px);transition:opacity .2s var(--ease-out),transform .2s var(--ease-out)}
+.navmenu:popover-open .nml{opacity:1;transform:none}
+@starting-style{.navmenu:popover-open .nml{opacity:0;transform:translateY(-6px)}}
 .navmenu::backdrop{background:transparent}
 .nmh{padding-top:env(safe-area-inset-top,0px);border-bottom:1px solid var(--line)}
 .nmh .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;padding-block:0}
@@ -749,7 +754,7 @@ article.c .b{container-type:inline-size}
 .nml span{flex:1}
 .nml .nmc{color:var(--fg3)}
 .navmenu :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
-@media (prefers-reduced-motion:reduce){.navmenu,.navmenu:popover-open{transform:none;transition:opacity .15s ease,overlay .15s allow-discrete,display .15s allow-discrete}@starting-style{.navmenu:popover-open{transform:none}}.nmx:active{transform:none}}
+@media (prefers-reduced-motion:reduce){.navmenu .nml,.navmenu:popover-open .nml{transform:none;transition:opacity .15s ease}@starting-style{.navmenu:popover-open .nml{transform:none}}.nmx:active{transform:none}}
 .topbar .navmenu .wrap{padding-block:0;display:block}
 .topbar .navmenu .nmh .wrap{display:flex}
 /* contact icons sit on the centre of the first line of text, even when an address wraps */
@@ -1342,11 +1347,16 @@ document.querySelectorAll('dialog').forEach(d=>{
  d.querySelectorAll('.dclose').forEach(x=>x.onclick=()=>d.close())});
 document.querySelectorAll('[data-open]').forEach(btn=>btn.onclick=()=>showDlg($(btn.dataset.open),btn));
 /* the shops page links here as ./#guide and ./#rebate: open that window, then tidy the address */
-/* top nav: solid once the hero has scrolled up under it */
+/* page-to-page crossfade: when the browser skips it (e.g. going back), that's fine; don't report it as an error */
+for(const ev of ['pagereveal','pageswap'])addEventListener(ev,e=>{const v=e.viewTransition;if(!v)return;[v.ready,v.finished,v.updateCallbackDone].forEach(p=>p&&p.catch(()=>{}));
+ /* only forward links crossfade; the back and forward buttons switch straight away */
+ const ty=ev==='pageswap'?e.activation&&e.activation.navigationType:window.navigation&&navigation.activation&&navigation.activation.navigationType;if(ty==='traverse')v.skipTransition()});
+/* top nav: frosted as soon as the page scrolls at all (a marker at the very top of the page tells when it has left the screen) */
 (()=>{const bar=document.getElementById('topbar'),hero=document.getElementById('top');if(!bar||!hero)return;
  /* jumps to a part of the page stop below the pinned nav */
  document.documentElement.style.scrollPaddingTop='72px';
- if('IntersectionObserver' in window)new IntersectionObserver(([e])=>bar.classList.toggle('solid',!e.isIntersecting),{rootMargin:'-64px 0px 0px 0px'}).observe(hero);else bar.classList.add('solid')})();
+ const mk=document.createElement('div');mk.setAttribute('aria-hidden','true');mk.style.cssText='position:absolute;top:0;left:0;width:1px;height:4px;pointer-events:none';hero.prepend(mk);
+ if('IntersectionObserver' in window)new IntersectionObserver(([e])=>bar.classList.toggle('frost',!e.isIntersecting)).observe(mk);else bar.classList.add('frost')})();
 {const fromHash=()=>{const h=location.hash.slice(1);if(h==='dir'){location.replace('browse-vendors/');return}if(h==='guide'||h==='rebate'){history.replaceState(null,'',location.pathname+location.search);requestAnimationFrame(()=>{if(!$(h).open)showDlg($(h))})}};fromHash();addEventListener('hashchange',fromHash)}
 /* bike detail modal */
 const BIKE=$('bike');let BIKE_I=null,BIKE_AC=null;/* the modal's colour is its own: picking one there never changes the card */
@@ -1628,7 +1638,10 @@ $('achips').addEventListener('click',e=>{const x=e.target.closest('[data-rm]');i
  draw().then(()=>{if(!kbd){const a=document.activeElement;if(a&&a!==document.body)a.blur();return}const now=[...$('achips').querySelectorAll('[data-rm]')];const t=now[Math.min(i,now.length-2)]||$('count');if(t===$('count'))t.tabIndex=-1;t.focus({preventScroll:true})})});
 
 render();
-const NAVM=document.getElementById('navmenu'),MBTN=document.querySelector('.menubtn');NAVM.addEventListener('click',e=>{if(e.target.closest('.nml button,.nml a'))NAVM.hidePopover()});
+const NAVM=document.getElementById('navmenu'),MBTN=document.querySelector('.menubtn');/* menu buttons and links within this page close the menu; a link to another page leaves it open while that page loads (no flash of this page in
+   between) and the menu is put away once this page is gone, so coming back with the browser's back button finds it closed */
+NAVM.addEventListener('click',e=>{const a=e.target.closest('.nml a');if(e.target.closest('.nml button')||(a&&(a.getAttribute('href')||'').startsWith('#')))NAVM.hidePopover()});
+addEventListener('pagehide',()=>{if(NAVM.matches(':popover-open'))NAVM.hidePopover()});
 /* the menu is a small modal: it sits under its button, dims and freezes the page while open, and the button turns into a close icon */
 /* a tap on the dimmed page only closes the menu; it must not also open the bike underneath */
 let NAV_SWALLOW=0;document.addEventListener('pointerdown',e=>{if(NAVM.matches(':popover-open')&&!e.target.closest('#navmenu,.menubtn'))NAV_SWALLOW=performance.now()+600},true);
