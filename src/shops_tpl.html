@@ -139,6 +139,13 @@ a.mcl span{text-decoration:underline;text-decoration-color:var(--line2);text-und
 .spmap .maplibregl-ctrl-attrib{font-family:var(--font);font-size:11px;color:#4d5651}
 .spmap .maplibregl-ctrl-attrib a{color:#4d5651}
 .spmap .maplibregl-ctrl-attrib.maplibregl-compact{background:#fff}
+/* "find me" button (under the zoom buttons), your location dot, and a short note if location isn't available */
+.spmap .mloc{display:grid;place-items:center;color:#333;touch-action:manipulation}
+.spmap .mloc[aria-busy="true"]{color:var(--accent-ink)}
+.spmap .me{width:16px;height:16px;border-radius:50%;background:#1f2937;box-shadow:0 0 0 3px #fff,0 1px 4px rgba(0,0,0,.35)}
+.spmap .mtoast{position:absolute;left:50%;top:12px;z-index:6;max-width:calc(100% - 120px);transform:translate(-50%,-6px);opacity:0;visibility:hidden;pointer-events:none;padding:8px 12px;border-radius:8px;background:#1f2937;color:#fff;font-size:var(--t-ui);line-height:1.35;text-align:center;box-shadow:0 4px 14px rgba(0,0,0,.25);transition:opacity .18s var(--ease-out),transform .18s var(--ease-out),visibility 0s linear .18s}
+.spmap .mtoast.on{opacity:1;visibility:visible;transform:translate(-50%,0);transition:opacity .18s var(--ease-out),transform .18s var(--ease-out),visibility 0s}
+@media (prefers-reduced-motion:reduce){.spmap .mtoast{transform:translate(-50%,0)}}
 </style>
 </head><body data-overlayscrollbars-initialize style="margin:0">
 <header class="sbar">__NAV__</header>
@@ -287,26 +294,23 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
   for(const el of [sheet.querySelector('.shandle'),sheet.querySelector('.sphead')])el.addEventListener('touchstart',e=>start(e,false),{passive:true});
   list.addEventListener('touchstart',e=>start(e,true),{passive:true});
   sheet.addEventListener('touchmove',move,{passive:false});sheet.addEventListener('touchend',end);sheet.addEventListener('touchcancel',end)}
- /* the tiles for the starting view start downloading now, alongside the map program, instead of only once it has loaded and read its
-    style. Same view maths as the map's own fit to all shops (padding, zoom limits); tile files are versioned and cached for years, so the
-    map then finds them already downloaded */
+ /* the map starts zoomed in on the first shop in the list (on phones its pin sits in the open map above the row of cards) */
+ const START_Z=10,MX=l=>(l+180)/360,MY=a=>{const s=Math.sin(a*Math.PI/180);return .5-Math.log((1+s)/(1-s))/(4*Math.PI)};
+ const startView=()=>{const s=SH[0],ws=512*2**START_Z,off=WIDE.matches?0:Math.round(openTop()/2-box.clientHeight/2+20),cx=MX(s.lng)*ws,cy=MY(s.lat)*ws-off;
+  return {cx,cy,zoom:START_Z,center:[cx/ws*360-180,Math.atan(Math.sinh(Math.PI*(1-2*cy/ws)))*180/Math.PI]}};
+ /* the tiles for that starting view start downloading now, alongside the map program, instead of only once it has loaded and read its
+    style; tile files are versioned and cached for years, so the map then finds them already downloaded */
  (()=>{try{const W=box.clientWidth,Hh=box.clientHeight;if(!W||!Hh||!window.fetch)return;
-  const pT=56,pB=WIDE.matches?32:Math.max(32,Hh-dock.offsetTop+16),pL=32,pR=32;
-  const X=l=>(l+180)/360,Y=a=>{const s=Math.sin(a*Math.PI/180);return .5-Math.log((1+s)/(1-s))/(4*Math.PI)};
-  let x0=1,x1=0,y0=1,y1=0;SH.forEach(s=>{const x=X(s.lng),y=Y(s.lat);x0=Math.min(x0,x);x1=Math.max(x1,x);y0=Math.min(y0,y);y1=Math.max(y1,y)});
-  const z=Math.max(7,Math.min(13,Math.log2(Math.min((W-pL-pR)/((x1-x0)*512),(Hh-pT-pB)/((y1-y0)*512)))));
-  const ws=512*2**z,cx=(x0+x1)/2*ws+(pR-pL)/2,cy=(y0+y1)/2*ws+(pB-pT)/2,tz=Math.floor(z),ts=512*2**(z-tz),n=2**tz,want=[];
+  const v=startView(),z=v.zoom,cx=v.cx,cy=v.cy,tz=Math.floor(z),ts=512*2**(z-tz),n=2**tz,want=[];
   for(let tx=Math.floor((cx-W/2)/ts);tx<=Math.floor((cx+W/2)/ts);tx++)for(let ty=Math.floor((cy-Hh/2)/ts);ty<=Math.floor((cy+Hh/2)/ts);ty++)if(tx>=0&&ty>=0&&tx<n&&ty<n)want.push([tz,tx,ty]);
   if(!want.length||want.length>30)return;window.__tilePrefetch=want;
   fetch('https://tiles.openfreemap.org/planet').then(r=>r.json()).then(j=>{const u=j.tiles&&j.tiles[0];if(u)want.forEach(([z,x,y])=>fetch(u.replace('{z}',z).replace('{x}',x).replace('{y}',y)).catch(()=>{}))}).catch(()=>{})}catch(e){}})();
  /* if the map can't load, phones show the list instead (it can't be closed then) */
  const noMap=()=>{box.classList.add('nomap');stage.classList.add('nomap');listOpen()};
  const init=()=>{if(!window.maplibregl){noMap();return}
-  const bounds=new maplibregl.LngLatBounds();SH.forEach(s=>bounds.extend([s.lng,s.lat]));
-  /* on phones the pins fit in the map above the row of cards */
-  const padB=WIDE.matches?32:Math.max(32,box.clientHeight-dock.offsetTop+16);
+  const sv=startView();
   let map;
-  try{map=new maplibregl.Map({container:box,style:STY[theme()],bounds,fitBoundsOptions:{padding:{top:56,bottom:padB,left:32,right:32},maxZoom:13},
+  try{map=new maplibregl.Map({container:box,style:STY[theme()],center:sv.center,zoom:sv.zoom,
    minZoom:7,maxZoom:17,maxBounds:[[-123.4,36.3],[-120.4,38.6]],renderWorldCopies:false,fadeDuration:0,pixelRatio:Math.min(devicePixelRatio||1,2),
    dragRotate:false,pitchWithRotate:false,touchPitch:false,
    /* like the Google Maps app: one finger moves the map, two fingers zoom */
@@ -322,6 +326,25 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
    new MutationObserver(fold).observe(at,{attributes:true,attributeFilter:['class']});fold()}
   map.on('styleimagemissing',e=>{if(!map.hasImage(e.id))map.addImage(e.id,{width:1,height:1,data:new Uint8Array(4)})});
   map.addControl(new maplibregl.NavigationControl({showCompass:false}),'top-right');
+  /* "find me": zooms to show you and the shops within 10 miles of you (the nearest one if none are that close) */
+  const ME_MI=10;let me=null,toastT=0;
+  const toast=msg=>{let el=box.querySelector('.mtoast');if(!el){el=document.createElement('div');el.className='mtoast';el.setAttribute('role','status');box.append(el)}el.textContent=msg;el.classList.add('on');clearTimeout(toastT);toastT=setTimeout(()=>el.classList.remove('on'),4000)};
+  const miles=(a,b)=>{const r=Math.PI/180,dl=(b.lat-a.lat)*r,dg=(b.lng-a.lng)*r,h=Math.sin(dl/2)**2+Math.cos(a.lat*r)*Math.cos(b.lat*r)*Math.sin(dg/2)**2;return 7917.6*Math.asin(Math.sqrt(h))};
+  map.addControl({onAdd(){const g=document.createElement('div');g.className='maplibregl-ctrl maplibregl-ctrl-group';
+   const b=document.createElement('button');b.type='button';b.className='mloc';b.title='Shops near me';b.setAttribute('aria-label','Show shops near me');
+   b.innerHTML='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.2" fill="currentColor" stroke="none"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>';
+   b.addEventListener('click',()=>{if(!navigator.geolocation){toast("This browser can't share your location.");return}
+    if(b.getAttribute('aria-busy')==='true')return;b.setAttribute('aria-busy','true');
+    navigator.geolocation.getCurrentPosition(pos=>{b.removeAttribute('aria-busy');const u={lat:pos.coords.latitude,lng:pos.coords.longitude};
+     if(!me){const d=document.createElement('div');d.className='me';d.setAttribute('aria-label','You are here');me=new maplibregl.Marker({element:d}).setLngLat([u.lng,u.lat]).addTo(map)}else me.setLngLat([u.lng,u.lat]);
+     const by=SH.map(s=>({s,d:miles(u,s)})).sort((a,b)=>a.d-b.d),near=by.filter(x=>x.d<=ME_MI);const show=(near.length?near:by.slice(0,1)).map(x=>x.s);
+     const bb=new maplibregl.LngLatBounds([u.lng,u.lat],[u.lng,u.lat]);show.forEach(s=>bb.extend([s.lng,s.lat]));
+     const H=box.clientHeight,pad=WIDE.matches?{top:64,bottom:48,left:48,right:64}:{top:64,bottom:Math.max(48,H-openTop()+24),left:32,right:32};
+     if(!WIDE.matches)pick(by[0].s.k,false,true,true);
+     map.fitBounds(bb,Object.assign({padding:pad,maxZoom:13,essential:true},REDUCE.matches?{duration:0}:{}))},
+    err=>{b.removeAttribute('aria-busy');toast(err.code===1?'Location is off for this site. Turn it on in your browser to see shops near you.':"Couldn't find your location. Try again.")},
+    {enableHighAccuracy:false,timeout:10000,maximumAge:300000})});
+   g.append(b);return g},onRemove(){}},'top-right');
   map.once('load',()=>performance.mark('map-load'));
   /* if the map style can't load, say so; the list works without it */
   let styled=false;map.once('style.load',()=>{styled=true});map.on('error',()=>{if(!styled)noMap()});
@@ -337,17 +360,20 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
   /* phones: keep the pin in the open map above "Show list" and the row of cards.
      Desktop: the card goes above the pin when it fits, else below; never over the credits at the bottom. A clicked pin whose card doesn't fit either way nudges the map */
   const above=()=>Math.round(openTop()/2-box.clientHeight/2+20);
-  place=(s,pan)=>{if(!WIDE.matches){const p=map.project([s.lng,s.lat]),ct=openTop();
+  place=(s,pan,at)=>{if(!WIDE.matches){const p=map.project([s.lng,s.lat]),ct=openTop();
     /* glide to it: short hops are quick, far ones take longer and pull out a little on the way (like Google Maps) */
     if(pan&&(p.y>ct-8||p.y<52||p.x<24||p.x>box.clientWidth-24)){const o={center:[s.lng,s.lat],offset:[0,above()]};
      if(REDUCE.matches)map.easeTo({...o,duration:0});else{/* time grows with how far it is on screen, so even far hops always animate (never a jump) */
       const c=map.project(map.getCenter()),d=Math.hypot(p.x-c.x,p.y-c.y);
       map.flyTo({...o,curve:1.3,duration:Math.round(Math.min(1500,450+260*Math.log2(1+d/300))),essential:true})}}return}
-   const p=map.project([s.lng,s.lat]),W=box.clientWidth,Hh=box.clientHeight,w=card.offsetWidth,h=card.offsetHeight,cr=box.querySelector('.maplibregl-ctrl-bottom-right'),top=8,bot=Math.min(Hh-8-(cr?cr.offsetHeight:0),(window.sheetTop?window.sheetTop():Infinity)-box.getBoundingClientRect().top-8);
+   const f=fit(at||map.project([s.lng,s.lat]));
+   cm.setOffset([f.dx,f.up?-46:f.h+10]);card.style.transformOrigin=`${Math.round(f.w/2-f.dx)}px ${f.up?'100%':'0'}`;
+   if(pan&&f.dy)map.panBy([0,f.dy],{duration:REDUCE.matches?0:250})};
+  /* where the card goes for a pin at screen point p: above or below it, kept inside the map; dy = how far the map must move for it to fit */
+  const fit=p=>{const W=box.clientWidth,Hh=box.clientHeight,w=card.offsetWidth,h=card.offsetHeight,cr=box.querySelector('.maplibregl-ctrl-bottom-right'),top=8,bot=Math.min(Hh-8-(cr?cr.offsetHeight:0),(window.sheetTop?window.sheetTop():Infinity)-box.getBoundingClientRect().top-8);
    const upTop=p.y-46-h,dnBot=p.y+10+h,up=upTop>=top||(dnBot>bot&&p.y-46-top>=bot-p.y-10);
    const l=p.x-w/2,dx=Math.round(Math.min(Math.max(l,8),W-8-w)-l);
-   cm.setOffset([dx,up?-46:h+10]);card.style.transformOrigin=`${Math.round(w/2-dx)}px ${up?'100%':'0'}`;
-   if(pan){const dy=up?Math.min(0,upTop-top):Math.max(0,dnBot-bot);if(dy)map.panBy([0,Math.round(dy)],{duration:REDUCE.matches?0:250})}};
+   return {w,h,up,dx,dy:Math.round(up?Math.min(0,upTop-top):Math.max(0,dnBot-bot))}};
   const show=(k,pan)=>{clearTimeout(t);const s=BY[k];if(!s)return;
    if(!WIDE.matches){pick(k,pan,true,true);return}
    if(card.parentNode!==cw)cw.append(card);
@@ -382,11 +408,11 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
    const fast=REDUCE.matches;
    /* phones and tablets: the list closes, the shop's card comes up in the row and the map flies to its pin */
    if(!WIDE.matches){listClose(false);pick(k,false,true,false);map.easeTo({center:[s.lng,s.lat],zoom:Math.max(map.getZoom(),13),offset:[0,above()],duration:fast?0:600});return}
-   /* desktop: the pin turns red and its card opens right away, riding along with the pin while the map moves there;
-      once the map has stopped, the card settles where it fits best */
+   /* desktop: the pin turns red and its card opens right away, already set where it will sit once the map stops,
+      so it rides along with the pin in one smooth move and never shifts at the end */
    pinned=k;mark(k);show(k);
-   map.easeTo({center:[s.lng,s.lat],zoom:Math.max(map.getZoom(),13),duration:fast?0:600});
-   map.once('moveend',()=>{if(pinned===k&&cur===k)place(s,true)})});
+   const f=fit({x:box.clientWidth/2,y:box.clientHeight/2});place(s,false,{x:box.clientWidth/2,y:box.clientHeight/2-f.dy});
+   map.easeTo({center:[s.lng,s.lat],zoom:Math.max(map.getZoom(),13),offset:[0,-f.dy],duration:fast?0:600})});
   /* follow the site theme. Once the map is idle the other theme's style is fetched, so switching is instant (markers and the card stay) */
  };
  /* the map starts as soon as both its script and its stylesheet have arrived (they download in parallel with the page) */
