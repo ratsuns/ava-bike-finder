@@ -13,16 +13,19 @@ __BASE_CSS__
 .navlinks a[aria-current="page"]{color:rgb(var(--hink))}
 .navmenu .wrap{padding-block:0;display:block}
 .navmenu .nmh .wrap{display:flex}
-.spg{max-width:1440px;padding-block:24px 72px;display:grid;gap:16px;grid-template-columns:minmax(0,1fr);grid-template-areas:"head" "map" "list"}
-.sphead{grid-area:head}
-.sphead h1{font-size:var(--t-h2);line-height:1.2;letter-spacing:-.025em;font-weight:700;margin:0 0 4px;text-wrap:balance}
-.sphead p{margin:0;color:var(--fg2);text-wrap:pretty}
-.sphead .spcount{margin-top:8px;font-size:var(--t-ui)}
+/* hero: big title like the home page, over a dotted world map (dots near the pointer twinkle; the Bay Area glows in the accent colour) */
+.sphero{position:relative;isolation:isolate;overflow:hidden;display:grid;place-items:center;text-align:center;min-height:clamp(280px,46vh,460px);min-height:clamp(280px,46svh,460px);border-bottom:1px solid var(--line)}
+.spdots{position:absolute;inset:0;width:100%;height:100%;z-index:-2;display:block}
+.sphero-in{padding-block:56px}
+.sphero h1{margin:0 auto;font-size:clamp(40px,6vw,72px);line-height:1.02;letter-spacing:-.035em;font-weight:700;text-wrap:balance}
+.sphero .lede{margin:16px auto 0;color:var(--fg2);font-size:clamp(16px,1.5vw,19px);line-height:1.55;max-width:52ch;text-wrap:balance}
+.sphero .spcount{margin:12px 0 0;font-size:var(--t-ui);color:var(--fg2)}
+.spg{max-width:1440px;padding-block:24px 72px;display:grid;gap:16px;grid-template-columns:minmax(0,1fr);grid-template-areas:"map" "list"}
 .spcount b{color:var(--fg);font-weight:600}
 .spmap{grid-area:map;position:relative;height:clamp(280px,45vh,460px);height:clamp(280px,45svh,460px);border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--mapbg);isolation:isolate}
 .splist{grid-area:list;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;align-content:start}
 @media (min-width:1024px){
- .spg{grid-template-columns:minmax(360px,440px) minmax(0,1fr);grid-template-rows:auto 1fr;grid-template-areas:"head map" "list map";column-gap:24px}
+ .spg{grid-template-columns:minmax(360px,440px) minmax(0,1fr);grid-template-areas:"list map";column-gap:24px}
  .spmap{position:sticky;top:72px;align-self:start;height:calc(100vh - 88px);height:calc(100svh - 88px)}
  .splist{grid-template-columns:minmax(0,1fr)}
 }
@@ -66,7 +69,8 @@ a.mcl span{text-decoration:underline;text-decoration-color:var(--line2);text-und
 @media (hover:hover) and (pointer:fine){a.mcl:hover{color:var(--fg)}a.mcl:hover span{text-decoration-color:currentColor}.mcbtn:hover{border-color:var(--fg3)}.mcbtn.pri:hover{background:var(--accent-ink);border-color:var(--accent-ink)}:root[data-theme="dark"] .mcbtn.pri:hover{background:#3cc08c;border-color:#3cc08c}}
 @media (pointer:coarse){.mcbtn{height:40px}.mcl{padding-block:3px}}
 /* map controls in the site's colors */
-.spmap .maplibregl-ctrl-group{background:#fff;border-radius:8px;box-shadow:0 0 0 1px var(--line2),0 2px 8px rgba(18,22,20,.08)}
+.spmap .maplibregl-ctrl-group,.spmap .maplibregl-ctrl-attrib.maplibregl-compact{box-shadow:0 0 0 1px rgba(18,22,20,.08),0 1px 3px rgba(18,22,20,.14)}
+.spmap .maplibregl-ctrl-group{background:#fff;border-radius:8px}
 .spmap .maplibregl-ctrl-group button+button{border-top-color:#e3e7e2}
 .spmap .maplibregl-ctrl-attrib{font-family:var(--font);font-size:11px;color:#4d5651}
 .spmap .maplibregl-ctrl-attrib a{color:#4d5651}
@@ -74,8 +78,8 @@ a.mcl span{text-decoration:underline;text-decoration-color:var(--line2);text-und
 </style>
 </head><body data-overlayscrollbars-initialize style="margin:0">
 <header class="sbar">__NAV__</header>
+<section class="sphero" aria-labelledby="sph"><canvas class="spdots" aria-hidden="true"></canvas><div class="wrap sphero-in"><h1 id="sph">Vendor directory</h1><p class="lede">Every participating shop. Call ahead to check stock; the rebate only works in person.</p><p class="spcount"><b>__COUNT__</b> shops</p></div></section>
 <main class="wrap spg">
-<div class="sphead"><h1>Where to buy</h1><p>Every participating shop. Call ahead to check stock; the rebate only works in person.</p><p class="spcount"><b>__COUNT__</b> shops</p></div>
 <div class="spmap" id="map" role="region" aria-label="Map of the shops"></div>
 <div class="splist" id="list"></div>
 </main>
@@ -96,6 +100,35 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
  label();
  b.addEventListener('click',()=>{const next=cur()==='dark'?'light':'dark';
   if(document.startViewTransition&&!REDUCE.matches){b.style.viewTransitionName='themebtn';const vt=document.startViewTransition(()=>apply(next));vt.finished.finally(()=>{b.style.viewTransitionName=''})}else apply(next)})})();
+/* hero dots: drawn once to a hidden canvas; only while a pointer is over the hero do the dots near it twinkle, then everything stops */
+(()=>{const sec=document.querySelector('.sphero'),cv=sec&&sec.querySelector('.spdots');if(!cv||!cv.getContext)return;const W=__WORLD__;
+ const bits=Uint8Array.from(atob(W.b),c=>c.charCodeAt(0)),cells=[];
+ for(let r=0;r<W.rows;r++)for(let c=0;c<W.cols;c++){const i=r*W.cols+c;if(bits[i>>3]>>(i&7)&1)cells.push([c+(r%2?.5:0),r])}
+ const N=cells.length,X=new Float32Array(N),Y=new Float32Array(N),A=new Float32Array(N),ph=new Float32Array(N),fq=new Float32Array(N),hl=new Uint8Array(N);
+ /* the Bay Area, where the shops are */
+ const bx=(-122.15+180)/W.dx-.5,by=(W.lat0-37.75)/W.dy;
+ for(let i=0;i<N;i++){ph[i]=Math.random()*6.283;fq[i]=.7+Math.random()*1.1;const[c,r]=cells[i];if(Math.hypot(c-bx,r-by)<2.2)hl[i]=1}
+ const rgb=v=>{v=v.trim();if(v[0]==='#'){if(v.length===4)v='#'+[...v.slice(1)].map(x=>x+x).join('');const n=parseInt(v.slice(1),16);return(n>>16&255)+','+(n>>8&255)+','+(n&255)}const m=v.match(/[\d.]+/g);return m?m.slice(0,3).join(','):'0,0,0'};
+ const ctx=cv.getContext('2d');let w=0,h=0,dpr=1,rad=1,base=null,col='0,0,0',acc='0,0,0',px=-1e4,py=-1e4,on=0,target=0,raf=0,last=0;const R=120;
+ const paint=t=>{ctx.setTransform(1,0,0,1,0,0);ctx.clearRect(0,0,cv.width,cv.height);if(base)ctx.drawImage(base,0,0);if(on<=.001)return;ctx.setTransform(dpr,0,0,dpr,0,0);const s=t/1000;
+  for(let i=0;i<N;i++){const dx=X[i]-px,dy=Y[i]-py,d2=dx*dx+dy*dy;if(d2>R*R)continue;const f=1-Math.sqrt(d2)/R,a=f*f*on*(.5+.5*Math.sin(s*fq[i]*6.283+ph[i]));if(a<.02)continue;
+   ctx.fillStyle='rgba('+(hl[i]||ph[i]<.9?acc:col)+','+Math.min(1,a)+')';ctx.beginPath();ctx.arc(X[i],Y[i],rad*(1+.6*a),0,6.283);ctx.fill()}};
+ const layout=()=>{const b=sec.getBoundingClientRect();w=b.width;h=b.height;if(!w||!h)return;dpr=Math.min(devicePixelRatio||1,2);cv.width=Math.round(w*dpr);cv.height=Math.round(h*dpr);
+  /* the map fills the hero's height; on narrow screens its sides are cropped, keeping the Bay Area in view */
+  const asp=(W.cols*W.dx)/(W.rows*W.dy),mw=Math.min((h-24)*asp,Math.max(w-32,w*2)),mh=mw/asp,bf=(bx+.5)/W.cols,ox=mw>w-32?Math.min(0,Math.max(w-mw,w*.14-bf*mw)):(w-mw)/2,oy=(h-mh)/2,sx=mw/W.cols,sy=mh/W.rows;rad=Math.max(.75,sx*.19);
+  /* dots fade toward the top and the far south (like the reference), and softly behind the title so it stays easy to read */
+  for(let i=0;i<N;i++){const[c,r]=cells[i];X[i]=ox+(c+.5)*sx;Y[i]=oy+(r+.5)*sy;const t=r/W.rows;let a=(t<.32?.18+.82*t/.32:1)*(t>.86?Math.max(.2,1-(t-.86)/.14*.8):1);
+   const narrow=w<700,ex=(X[i]-w/2)/(narrow?w*.52:Math.min(w*.34,420)),ey=(Y[i]-h/2)/(h*(narrow?.36:.3)),e=Math.sqrt(ex*ex+ey*ey);if(e<1){const k=e*e*(3-2*e);a*=.12+.88*k}A[i]=a}
+  const cs=getComputedStyle(document.documentElement);col=rgb(cs.getPropertyValue('--fg'));acc=rgb(cs.getPropertyValue('--accent'));const dotA=document.documentElement.dataset.theme==='light'?.55:.42;
+  base=document.createElement('canvas');base.width=cv.width;base.height=cv.height;const g=base.getContext('2d');g.scale(dpr,dpr);
+  for(let i=0;i<N;i++){g.fillStyle=hl[i]?'rgba('+acc+',.95)':'rgba('+col+','+(dotA*A[i])+')';g.beginPath();g.arc(X[i],Y[i],hl[i]?rad*1.35:rad,0,6.283);g.fill()}
+  paint(0)};
+ const loop=t=>{const dt=Math.min(64,t-(last||t));last=t;on+=(target-on)*Math.min(1,dt/140);paint(t);if(target||on>.01)raf=requestAnimationFrame(loop);else{raf=0;last=0;on=0;paint(t)}};
+ const still=matchMedia('(prefers-reduced-motion: reduce)');
+ sec.addEventListener('pointermove',e=>{if(still.matches)return;const b=sec.getBoundingClientRect();px=e.clientX-b.left;py=e.clientY-b.top;target=1;if(!raf)raf=requestAnimationFrame(loop)},{passive:true});
+ sec.addEventListener('pointerleave',()=>{target=0;if(!raf&&on>0)raf=requestAnimationFrame(loop)});
+ new ResizeObserver(layout).observe(sec);
+ new MutationObserver(layout).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']})})();
 /* phone menu: same behaviour as the home page (the button shows the X only while the menu is really open; the page behind doesn't scroll) */
 (()=>{const M=$('navmenu'),B=document.querySelector('.menubtn'),H=document.documentElement;if(!M||!B)return;
  const sync=()=>{const o=M.matches(':popover-open');if(B.getAttribute('aria-expanded')!==String(o)){B.setAttribute('aria-expanded',o);B.setAttribute('aria-label',o?'Close menu':'Menu')}H.classList.toggle('locked',o)};

@@ -342,7 +342,7 @@ if SITE:
     _nav=re.sub(r'<button type="button" data-open="(\w+)">(.*?)</button>',r'<a href="./#\1">\2</a>',_nav,flags=re.S)
     assert 'data-open' not in _nav and _nav.count('aria-current')==2
     SP=open('shops_tpl.html').read()
-    for a,b in (('__HEAD__',SHEAD),('__BASE_CSS__',BASE_CSS),('__HELPERS__',HELPERS),('__CARD__',CARD),('__NAV__',_nav),('__COUNT__',str(len(SHL))),('__SHOPS__',json.dumps(SHL,separators=(',',':'),ensure_ascii=False).replace('</','<\\/'))):
+    for a,b in (('__HEAD__',SHEAD),('__BASE_CSS__',BASE_CSS),('__HELPERS__',HELPERS),('__CARD__',CARD),('__NAV__',_nav),('__COUNT__',str(len(SHL))),('__WORLD__',open('worlddots.json').read().strip()),('__SHOPS__',json.dumps(SHL,separators=(',',':'),ensure_ascii=False).replace('</','<\\/'))):
         assert SP.count(a)==1,a; SP=SP.replace(a,b)
     open(SITE+'/shops.html','w').write(SP)
     print('shops.html',len(SHL),'locations',len(SP),'bytes')
