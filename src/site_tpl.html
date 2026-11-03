@@ -154,8 +154,9 @@ main.grid{padding-block:14px 56px;display:grid;grid-template-columns:repeat(auto
 /* discontinued cards are dimmed: lightly in light mode, as before in dark mode */
 .c.off::after{content:"";position:absolute;inset:0;border-radius:inherit;background:var(--offveil);pointer-events:none;z-index:3}
 .c.off .ph img{filter:grayscale(.85) contrast(.9)}
-.stag{position:relative;z-index:4;font-weight:600;color:var(--fg);background:var(--surface);border:1px solid var(--line2)}
-.ph .stag{position:absolute;left:12px;top:12px;color:var(--offc);background:var(--offbg);border-color:var(--offbd)}
+/* the status badge looks the same everywhere: on the card photo and in the bike details */
+.stag{position:relative;z-index:4;font-weight:600;color:var(--offc);background:var(--offbg);border:1px solid var(--offbd)}
+.ph .stag{position:absolute;left:12px;top:12px}
 .bmst{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 4px;font-size:var(--t-meta);color:var(--fg2);line-height:1.45}
 .stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:6px;overflow:hidden;margin:0}
 .stats div{background:var(--well);padding:7px 10px 8px;min-width:0}
