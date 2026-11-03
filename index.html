@@ -87,7 +87,7 @@ main.grid{padding-block:14px 56px;display:grid;grid-template-columns:repeat(auto
 /* nothing in the grid (like the pick cards' electric border glow) may push the page wider than the screen */
 main.grid{overflow-x:clip}
 
-.c{background:var(--surface);border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0;overflow:hidden;view-transition-class:bike;scroll-margin:80px}
+.c{background:var(--surface);border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0;overflow:hidden;view-transition-class:bike;scroll-margin:4px}
 .c.flash{animation:flash 1.4s var(--ease-out)}
 @keyframes flash{0%,30%{box-shadow:0 0 0 3px var(--accent),var(--shadow)}}
 .c.pick{border-color:var(--pick);box-shadow:0 0 0 1px var(--pick),var(--shadow)}
@@ -1502,7 +1502,7 @@ $('cmd-res').addEventListener('keydown',e=>{
  e.preventDefault();const n=all[i+(e.key==='ArrowDown'?1:-1)];(n||(e.key==='ArrowUp'?$('cq'):all[i])).focus()});
 $('cmd-show').onclick=()=>{CMD._go=true;CMD.close()};
 function scrollToResults(){const t=$('status').getBoundingClientRect().top;if(t>=76)return;scrollTo({top:Math.max(0,t+scrollY-76),behavior:REDUCE.matches?'auto':'smooth'})}
-function goTo(i){const x=LIST.findIndex(b=>b.i===i);if(x>=SHOWN)showUpTo(Math.ceil((x+1)/PAGE)*PAGE);const el=NODE.get(i);if(!el||!el.isConnected)return;el.scrollIntoView({block:'center',behavior:REDUCE.matches?'auto':'smooth'});el.classList.remove('flash');void el.offsetWidth;el.classList.add('flash')}
+function goTo(i){const x=LIST.findIndex(b=>b.i===i);if(x>=SHOWN)showUpTo(Math.ceil((x+1)/PAGE)*PAGE);const el=NODE.get(i);if(!el||!el.isConnected)return;/* the bike's card lands with its top just below the pinned nav */el.scrollIntoView({block:'start',behavior:REDUCE.matches?'auto':'smooth'});el.classList.remove('flash');void el.offsetWidth;el.classList.add('flash')}
 document.addEventListener('keydown',e=>{
  const isK=e.key.toLowerCase()==='k'&&(e.metaKey||e.ctrlKey)&&!e.altKey&&!e.shiftKey;
  if(isK&&CMD.open){e.preventDefault();CMD.classList.add('instant');CMD.close();return}
