@@ -332,7 +332,8 @@ if SITE:
      # the map style for the current theme starts downloading right away, alongside MapLibre (deferred, so it never holds up the page)
      '<link rel="preconnect" href="https://tiles.openfreemap.org" crossorigin>'
      f'<script>try{{if(!matchMedia("(hover: hover) and (pointer: fine)").matches||matchMedia("(any-pointer: coarse)").matches)document.documentElement.removeAttribute("data-overlayscrollbars-initialize");var t=localStorage.getItem("theme");if(t==="light"){{document.documentElement.dataset.theme="light";document.querySelector("meta[name=color-scheme]").content="light";document.querySelector("meta[name=theme-color]").content="#f6f7f5"}}}}catch(e){{}}(function(){{var l=document.createElement("link");l.rel="preload";l.as="fetch";l.crossOrigin="anonymous";l.href=document.documentElement.dataset.theme==="light"?"{STY_URL["light"]}":"{STY_URL["dark"]}";document.head.appendChild(l)}})()</script>'
-     '<link rel="stylesheet" href="vendor/maplibre-gl-5.24.0.min.css"><script defer src="vendor/maplibre-gl-5.24.0.min.js"></script>')
+     # the map's stylesheet downloads in parallel but never holds up the cards: it's applied when it arrives, and the map starts once it's in
+     '<link rel="preload" as="style" href="vendor/maplibre-gl-5.24.0.min.css" onload="this.onload=null;this.rel=\'stylesheet\';window.MLCSS=1;document.dispatchEvent(new Event(\'mlcss\'))" onerror="window.MLCSS=1;document.dispatchEvent(new Event(\'mlcss\'))"><script defer src="vendor/maplibre-gl-5.24.0.min.js"></script>')
     SP=open('shops_tpl.html').read()
     for a,b in (('__HEAD__',SHEAD),('__BASE_CSS__',BASE_CSS),('__HELPERS__',HELPERS),('__CARD__',CARD),('__SHOPS__',json.dumps(SHL,separators=(',',':'),ensure_ascii=False).replace('</','<\\/'))):
         assert SP.count(a)==1,a; SP=SP.replace(a,b)

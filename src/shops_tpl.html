@@ -162,7 +162,9 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
   map.once('idle',()=>{const o=theme()==='light'?'dark':'light';fetch(STY[o]).then(r=>r.ok?r.text():null).then(x=>{if(x)SJ[o]=x}).catch(()=>{})});
   new MutationObserver(()=>{const t=theme();if(t===shown)return;try{SJ[shown]=JSON.stringify(map.getStyle())}catch(e){}shown=t;map.setStyle(SJ[t]?JSON.parse(SJ[t]):STY[t])}).observe(H,{attributes:true,attributeFilter:['data-theme']});
  };
- if(window.maplibregl)init();else document.addEventListener('DOMContentLoaded',init,{once:true});
+ /* the map starts as soon as both its script and its stylesheet have arrived (they download in parallel with the page) */
+ let started=false;const go=()=>{if(started||!window.MLCSS||(!window.maplibregl&&document.readyState!=='complete'&&!go.dcl))return;started=true;init()};
+ document.addEventListener('DOMContentLoaded',()=>{go.dcl=1;go()});document.addEventListener('mlcss',go);go();
 })();
 </script>
 <script src="vendor/overlayscrollbars-2.16.0.min.js" onerror="document.documentElement.removeAttribute('data-overlayscrollbars-initialize');document.body.removeAttribute('data-overlayscrollbars-initialize')"></script>
