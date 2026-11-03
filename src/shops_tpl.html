@@ -37,7 +37,23 @@ __BASE_CSS__
  .spg{margin-top:-56px;grid-template-columns:minmax(360px,440px) minmax(0,1fr);grid-template-rows:auto 1fr;grid-template-areas:"count ." "list map";column-gap:24px;row-gap:12px}
  .spmap{position:sticky;top:72px;align-self:start;height:calc(100vh - 88px);height:calc(100svh - 88px)}
  .splist{grid-template-columns:minmax(0,1fr)}
+ .spsheet{display:contents}
+ .shandle{display:none}
 }
+/* phones and tablets: like Yelp's map view. The map fills the screen and the shop list is a sheet over it that drags between
+   just the heading, half the screen and nearly full screen */
+@media (max-width:1023px){
+ .spg{display:block;max-width:none;padding:0;height:calc(100vh - 64px);height:calc(100svh - 64px);overflow:hidden}
+ .spmap{position:absolute;inset:0;height:auto;border:0;border-radius:16px 16px 0 0}
+ .spsheet{position:absolute;left:0;right:0;bottom:0;top:12px;z-index:3;display:flex;flex-direction:column;background:var(--bg);border-radius:16px 16px 0 0;box-shadow:0 -1px 0 var(--line),0 -10px 30px rgba(10,12,11,.16);transform:translateY(50%);transition:transform .32s var(--ease-drawer);will-change:transform}
+ .shandle{flex:none;width:36px;height:5px;border-radius:3px;background:var(--line2);margin:8px auto 4px}
+ .spsheet .sphead{flex:none;align-self:stretch;padding:6px 16px 12px;cursor:grab;-webkit-user-select:none;user-select:none}
+ .shandle,.spsheet .sphead{touch-action:none}
+ .spsheet .splist{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:0 16px calc(24px + env(safe-area-inset-bottom,0px))}
+ .splist .shop{scroll-margin:8px}
+}
+@media (max-width:1023px) and (prefers-reduced-motion:reduce){.spsheet{transition:none}}
+
 .splist .shop{scroll-margin:72px 0 16px}
 .shop.on{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
 /* clicking a shop card shows it on the map */
@@ -90,8 +106,8 @@ a.mcl span{text-decoration:underline;text-decoration-color:var(--line2);text-und
 <section class="sphero" aria-labelledby="sph"><canvas class="spdots" aria-hidden="true"></canvas><div class="wrap sphero-in"><h1 id="sph">Vendor directory</h1><p class="lede">Every participating shop. Call ahead to check stock; the rebate only works in person.</p></div></section>
 <main class="wrap spg">
 <div class="spmap" id="map" role="region" aria-label="Map of the shops"></div>
-<div class="sphead"><h2>Where to buy</h2><p class="spcount"><b>__COUNT__</b> shops</p></div>
-<div class="splist" id="list"></div>
+<section class="spsheet" id="sheet" aria-labelledby="sph2"><div class="shandle" aria-hidden="true"></div><div class="sphead"><h2 id="sph2">Where to buy</h2><p class="spcount"><b>__COUNT__</b> shops</p></div>
+<div class="splist" id="list"></div></section>
 </main>
 __DIALOGS__
 <script>
@@ -157,6 +173,30 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
    if(e.shiftKey&&(document.activeElement===a||document.activeElement===d)){e.preventDefault();z.focus()}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus()}}});
  /* soft fades at the top and bottom of a panel's text while there's more to scroll */
  document.querySelectorAll('dialog.drawer .dbody').forEach(el=>{const upd=()=>{el.classList.toggle('has-more',el.scrollHeight-el.scrollTop-el.clientHeight>4);el.classList.toggle('has-above',el.scrollTop>4)};el.addEventListener('scroll',upd,{passive:true});new ResizeObserver(upd).observe(el)})})();
+/* the list sheet on phones and tablets: drag the handle or heading, or the list itself (up opens it fully before the list scrolls;
+   down at the top of the list closes it), and it settles at the nearest stop or follows a flick. A tap on the heading steps it open */
+(()=>{const sh=$('sheet'),list=$('list');if(!sh)return;const MOB=matchMedia('(max-width: 1023px)'),PEEK=104;let H=0,pos=0,stops=[0,0,0];
+ const measure=()=>{H=sh.offsetHeight;stops=[0,Math.round(H*.5),Math.max(0,H-PEEK)]};
+ const name=()=>pos<=1?'full':Math.abs(pos-stops[2])<=1?'peek':'half';
+ const set=(y,anim)=>{pos=y;sh.style.transition=anim?'':'none';sh.style.transform=MOB.matches?'translateY('+y+'px)':'';sh.dataset.snap=name()};
+ window.sheetTo=n=>{if(!MOB.matches)return;measure();set(stops[{full:0,half:1,peek:2}[n]],!REDUCE.matches)};
+ window.sheetTop=()=>MOB.matches?sh.getBoundingClientRect().top:Infinity;
+ const reset=()=>{if(!MOB.matches){sh.style.transform='';sh.style.transition='';delete sh.dataset.snap;return}measure();set(stops[1],false)};
+ reset();MOB.addEventListener('change',reset);
+ new ResizeObserver(()=>{if(!MOB.matches)return;const n=sh.dataset.snap||'half';measure();set(stops[{full:0,half:1,peek:2}[n]],false)}).observe(sh);
+ let y0=0,p0=0,ly=0,lt=0,v=0,st=0;
+ const start=(e,fromList)=>{if(!MOB.matches||e.touches.length>1)return;y0=ly=e.touches[0].clientY;lt=performance.now();p0=pos;v=0;st=fromList?1:2;if(st===2)sh.style.transition='none'};
+ const move=e=>{if(!st)return;const y=e.touches[0].clientY,dy=y-y0;
+  if(st===1){if(Math.abs(dy)<6)return;if((dy<0&&pos>1)||(dy>0&&list.scrollTop<=0)){st=2;y0=y;p0=pos;sh.style.transition='none'}else{st=0;return}}
+  e.preventDefault();const now=performance.now();v=(y-ly)/Math.max(1,now-lt);ly=y;lt=now;
+  let n=p0+(y-y0);const mx=stops[2];if(n<0)n=-Math.sqrt(-n)*2;else if(n>mx)n=mx+Math.sqrt(n-mx)*2;set(n,false)};
+ const end=()=>{if(st!==2){st=0;return}st=0;let to;
+  if(Math.abs(v)>.45){const d=v>0?1:-1,c=stops.filter(s=>d>0?s>pos+1:s<pos-1);to=c.length?(d>0?Math.min(...c):Math.max(...c)):(d>0?stops[2]:0)}
+  else to=stops.reduce((a,b)=>Math.abs(b-pos)<Math.abs(a-pos)?b:a);set(to,!REDUCE.matches)};
+ for(const el of [sh.querySelector('.shandle'),sh.querySelector('.sphead')])el.addEventListener('touchstart',e=>start(e,false),{passive:true});
+ list.addEventListener('touchstart',e=>start(e,true),{passive:true});
+ sh.addEventListener('touchmove',move,{passive:false});sh.addEventListener('touchend',end);sh.addEventListener('touchcancel',end);
+ sh.querySelector('.sphead').addEventListener('click',()=>{if(!MOB.matches)return;const n=sh.dataset.snap;window.sheetTo(n==='peek'?'half':n==='half'?'full':'half')})})();
 /* phone menu: same behaviour as the home page (the button shows the X only while the menu is really open; the page behind doesn't scroll) */
 (()=>{const M=$('navmenu'),B=document.querySelector('.menubtn'),H=document.documentElement;if(!M||!B)return;
  const sync=()=>{const o=M.matches(':popover-open');if(B.getAttribute('aria-expanded')!==String(o)){B.setAttribute('aria-expanded',o);B.setAttribute('aria-label',o?'Close menu':'Menu')}H.classList.toggle('locked',o||!!document.querySelector('dialog[open]:not([data-state="closing"])'))};
@@ -193,7 +233,7 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
   map.touchZoomRotate.disableRotation();map.keyboard.disableRotation();
   /* the map style mentions a few icons it doesn't ship; fill them with a blank so nothing errors */
   /* the map credit stays folded into its (i) button until someone clicks it */
-  map.addControl(new maplibregl.AttributionControl({compact:true}),'bottom-right');
+  map.addControl(new maplibregl.AttributionControl({compact:true}),WIDE.matches?'bottom-right':'top-left');
   {const at=box.querySelector('.maplibregl-ctrl-attrib');let asked=false;
    at.querySelector('.maplibregl-ctrl-attrib-button').addEventListener('click',()=>{asked=true},true);
    const fold=()=>{if(!asked&&at.classList.contains('maplibregl-compact-show')){at.classList.remove('maplibregl-compact-show');at.setAttribute('open','')}};
@@ -212,7 +252,7 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
   const cm=new maplibregl.Marker({element:cw,anchor:'bottom'}).setLngLat([SH[0].lng,SH[0].lat]).addTo(map);
   let cur=null,pinned=null,t=0,onCard=null;
   /* above the pin when it fits, else below; never over the credits at the bottom. A tapped or clicked pin whose card doesn't fit either way nudges the map */
-  const place=(s,pan)=>{const p=map.project([s.lng,s.lat]),W=box.clientWidth,Hh=box.clientHeight,w=card.offsetWidth,h=card.offsetHeight,cr=box.querySelector('.maplibregl-ctrl-bottom-right'),top=8,bot=Hh-8-(cr?cr.offsetHeight:0);
+  const place=(s,pan)=>{const p=map.project([s.lng,s.lat]),W=box.clientWidth,Hh=box.clientHeight,w=card.offsetWidth,h=card.offsetHeight,cr=box.querySelector('.maplibregl-ctrl-bottom-right'),top=8,bot=Math.min(Hh-8-(cr?cr.offsetHeight:0),(window.sheetTop?window.sheetTop():Infinity)-box.getBoundingClientRect().top-8);
    const upTop=p.y-46-h,dnBot=p.y+10+h,up=upTop>=top||(dnBot>bot&&p.y-46-top>=bot-p.y-10);
    const l=p.x-w/2,dx=Math.round(Math.min(Math.max(l,8),W-8-w)-l);
    cm.setOffset([dx,up?-46:h+10]);card.style.transformOrigin=`${Math.round(w/2-dx)}px ${up?'100%':'0'}`;
@@ -228,7 +268,8 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
   box.addEventListener('pointerover',e=>{if(e.pointerType!=='mouse')return;const p=e.target.closest('.pin');if(p)show(p.dataset.k);else if(e.target.closest('.mcw'))clearTimeout(t)});
   box.addEventListener('pointerout',e=>{if(e.pointerType!=='mouse')return;const from=e.target.closest('.pin,.mcw');if(!from)return;const to=e.relatedTarget&&e.relatedTarget.closest?e.relatedTarget.closest('.pin,.mcw'):null;if(to!==from)hideSoon()});
   box.addEventListener('click',e=>{const p=e.target.closest('.pin');if(!p)return;const k=p.dataset.k;pinned=k;show(k,true);
-   if(ptype==='mouse'||!e.detail){mark(k);if(WIDE.matches&&onCard)onCard.scrollIntoView({block:'nearest',behavior:REDUCE.matches?'auto':'smooth'})}});
+   if(ptype==='mouse'||!e.detail){mark(k);if(WIDE.matches&&onCard)onCard.scrollIntoView({block:'nearest',behavior:REDUCE.matches?'auto':'smooth'})}
+   else{mark(k);if(onCard){const lr=list.getBoundingClientRect(),cr=onCard.getBoundingClientRect();list.scrollTo({top:list.scrollTop+cr.top-lr.top-8,behavior:REDUCE.matches?'auto':'smooth'})}}});
   /* a tap or click on the map itself closes the card */
   map.on('click',e=>{const tg=e.originalEvent&&e.originalEvent.target;if(tg&&tg.closest&&tg.closest('.pin,.mcw'))return;hide()});
   box.addEventListener('focusin',e=>{const p=e.target.closest('.pin');if(p)show(p.dataset.k)});
@@ -244,9 +285,9 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
   list.addEventListener('click',e=>{if(e.target.closest('a,button')||!list.classList.contains('hasmap'))return;const c=e.target.closest('.shop');if(!c)return;const k=c.dataset.shop,s=BY[k];if(!s)return;
    if(getSelection&&String(getSelection()).length)return;
    if(cur&&cur!==k)hide();pinned=k;mark(k);const fast=REDUCE.matches;
-   /* one column: the map sits above the list, so scroll up to it first */
-   if(!WIDE.matches){const r=box.getBoundingClientRect();if(r.top<0||r.bottom>innerHeight)scrollTo({top:scrollY+r.top-72,behavior:fast?'auto':'smooth'})}
-   map.easeTo({center:[s.lng,s.lat],zoom:Math.max(map.getZoom(),13),duration:fast?0:600});
+   /* phones and tablets: lower the sheet so the map shows, make the map fill the screen, and keep the shop above the sheet */
+   let off=[0,0];if(!WIDE.matches){if(window.sheetTo)window.sheetTo('peek');const r=box.getBoundingClientRect();if(Math.abs(r.top-64)>2)scrollTo({top:scrollY+r.top-64,behavior:fast?'auto':'smooth'});off=[0,-52]}
+   map.easeTo({center:[s.lng,s.lat],zoom:Math.max(map.getZoom(),13),offset:off,duration:fast?0:600});
    let done=false;const open=()=>{if(done||pinned!==k)return;done=true;show(k,true)};map.once('moveend',open);setTimeout(open,fast?50:700)});
   /* follow the site theme. Once the map is idle the other theme's style is fetched, so switching is instant (markers and the card stay) */
  };
