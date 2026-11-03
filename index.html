@@ -1637,10 +1637,15 @@ addEventListener('pointerdown',()=>{SWIPE_EAT=false},{capture:true,passive:true}
  let cur=null;
  const place=b=>{const r=b.getBoundingClientRect(),w=tip.offsetWidth,h=tip.offsetHeight,m=8;let x=r.left+r.width/2-w/2;x=Math.max(m,Math.min(x,innerWidth-w-m));
   const g=7,up=r.top-h-g>=m;tip.style.left=x+'px';tip.style.top=(up?r.top-h-g:r.bottom+g)+'px'};
+ /* hug the text: balanced lines leave the box at its max width with empty space on the right, so size it to the longest line.
+    Measured from the text's line boxes, corrected for the grow-in scale that may be running */
+ const fit=()=>{tip.style.width='';const rg=document.createRange();rg.selectNodeContents(tip);const ls=[...rg.getClientRects()];if(!ls.length)return;
+  const sc=tip.getBoundingClientRect().width/tip.offsetWidth||1,cs=getComputedStyle(tip),pad=cs.boxSizing==='border-box'?parseFloat(cs.paddingLeft)+parseFloat(cs.paddingRight):0;
+  tip.style.width=Math.ceil(Math.max(...ls.map(l=>l.width))/sc+pad+1)+'px'};
  const mark=b=>{b.setAttribute('aria-expanded','true');b.setAttribute('aria-describedby','feetip')},unmark=b=>{b.removeAttribute('aria-expanded');b.removeAttribute('aria-describedby')};
  const show=b=>{if(cur===b)return;tip.textContent=b.dataset.tip;
-  if(cur){unmark(cur);cur=b;mark(b);place(b);return}
-  cur=b;mark(b);tip.showPopover();place(b)};
+  if(cur){unmark(cur);cur=b;mark(b);fit();place(b);return}
+  cur=b;mark(b);tip.showPopover();fit();place(b)};
  const hide=()=>{if(!cur)return;unmark(cur);cur=null;if(tip.matches(':popover-open'))tip.hidePopover()};
  document.addEventListener('click',e=>{const b=e.target.closest('.tipb');if(!b){hide();return}e.preventDefault();e.stopPropagation();cur===b?hide():show(b)},true);
  document.addEventListener('pointerover',e=>{if(e.pointerType!=='mouse')return;const b=e.target.closest('.tipb');if(b)show(b)});
