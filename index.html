@@ -1477,7 +1477,9 @@ CMD.addEventListener('close',()=>{if(!CMD._hit&&(CMD._go||CMD._sig!==fsig()))req
 $('cmd-clear').onclick=()=>{clearAll();render();if(KBD)$('cq').focus({preventScroll:true});else document.activeElement?.blur()};
 CMD.addEventListener('click',e=>{
  if(e.target.closest('[data-clearf]')){clearFilters();render();if(KBD)$('cq').focus({preventScroll:true});else document.activeElement?.blur();return}
- const g=e.target.closest('[data-go]');if(g){const el=NODE.get(+g.dataset.go);if(el)CMD._opener=el.querySelector('.more');CMD._hit=true;CMD.close();goTo(+g.dataset.go);return}});
+ const g=e.target.closest('[data-go]');if(g){const el=NODE.get(+g.dataset.go);if(el)CMD._opener=el.querySelector('.more');CMD._hit=true;
+  /* picking a bike: the page behind clears its blur at once (no fade) so the scroll to the bike runs smoothly; fading a blur on the whole list while it scrolls makes phones stall */
+  DIMR.forEach(r=>r.style.transition='none');CMD.close();goTo(+g.dataset.go);requestAnimationFrame(()=>requestAnimationFrame(()=>DIMR.forEach(r=>r.style.transition='')));return}});
 let qt;$('cq').addEventListener('input',()=>{F.q=$('q').value=$('cq').value;clearTimeout(qt);qt=setTimeout(render,100)});
 $('cq').addEventListener('keydown',e=>{
  if(e.key==='Enter'){e.preventDefault();clearTimeout(qt);render();CMD._go=true;CMD.close()}
