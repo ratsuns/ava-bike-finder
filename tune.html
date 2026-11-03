@@ -2601,10 +2601,10 @@ catch(e){document.documentElement.removeAttribute('data-overlayscrollbars-initia
 </div>
 <script>
 (()=>{const $=i=>document.getElementById(i),css=$('tune-css');
-const upd=()=>{const w=+$('tw').value,h=+$('th').value,d=+$('td').value,m=Math.max(w,h);$('tw-v').textContent=w+'px';$('th-v').textContent=h+'px';$('td-v').textContent=d+'px';
- css.textContent=`.os-theme-ava{--os-size:${m+d+4}px;--os-handle-perpendicular-size:${w}px;--os-handle-perpendicular-size-hover:${h}px;--os-handle-perpendicular-size-active:${h}px}
- .os-theme-ava.os-scrollbar-vertical{padding:4px ${d}px 4px 4px}
- .os-theme-ava.os-scrollbar-vertical .os-scrollbar-handle{left:auto;right:0;margin:0}`};
+const upd=()=>{const w=+$('tw').value,h=+$('th').value,d=+$('td').value,m=Math.max(w,h),pr=Math.max(0,d-(m-w)/2);$('tw-v').textContent=w+'px';$('th-v').textContent=h+'px';$('td-v').textContent=d+'px';
+ css.textContent=`.os-theme-ava{--os-size:${4+m+pr}px;--os-handle-perpendicular-size:${w}px;--os-handle-perpendicular-size-hover:${h}px;--os-handle-perpendicular-size-active:${h}px}
+ .os-theme-ava.os-scrollbar-vertical{padding:4px ${pr}px 4px 4px}
+ .os-theme-ava.os-scrollbar-vertical .os-scrollbar-handle{left:0;right:0;margin-inline:auto}`};
 ['tw','th','td'].forEach(i=>$(i).addEventListener('input',upd));upd();
 const keep=()=>{try{OverlayScrollbarsGlobal.OverlayScrollbars(document.body).options({scrollbars:{autoHide:$('tk').checked?'never':'scroll'}})}catch(e){}};
 $('tk').addEventListener('change',keep);setTimeout(keep,300)})();
