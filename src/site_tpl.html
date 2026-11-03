@@ -81,6 +81,8 @@ main.grid .c{content-visibility:auto;contain-intrinsic-size:auto 680px}
 .morebtn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 #more-n{margin:0;font-size:var(--t-meta);color:var(--fg3)}
 main.grid{padding-block:14px 56px;display:grid;grid-template-columns:repeat(auto-fill,minmax(272px,1fr));gap:18px;align-items:stretch}
+/* nothing in the grid (like the pick cards' electric border glow) may push the page wider than the screen */
+main.grid{overflow-x:clip}
 
 .c{background:var(--surface);border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0;overflow:hidden;view-transition-class:bike;scroll-margin:80px}
 .c.flash{animation:flash 1.4s var(--ease-out)}
