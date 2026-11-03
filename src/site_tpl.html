@@ -125,7 +125,7 @@ main.grid{padding-block:14px 56px;display:grid;grid-template-columns:repeat(auto
 .tipb:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .tipb[aria-expanded="true"]{color:var(--fg)}
 /* the bubble: one shared popover, so it also shows above the details window */
-#feetip{position:fixed;inset:auto;margin:0;padding:7px 11px;width:max-content;max-width:min(196px,calc(100vw - 32px));text-wrap:balance;border:0;border-radius:8px;background:var(--fg);color:var(--bg);font-size:var(--t-meta);line-height:1.35;box-shadow:0 6px 20px rgba(0,0,0,.28);pointer-events:none;overflow:visible;
+#feetip{position:fixed;inset:auto;margin:0;padding:7px 11px;width:max-content;max-width:min(240px,calc(100vw - 32px));text-wrap:balance;border:0;border-radius:8px;background:var(--fg);color:var(--bg);font-size:var(--t-meta);line-height:1.35;box-shadow:0 6px 20px rgba(0,0,0,.28);pointer-events:none;overflow:visible;
  /* tooltip: grows out of its own centre like a bubble inflating (from 90%, the smallest the animation rules allow, never from 0),
     200ms in on the softer-starting drawer curve so the growth is visible; 150ms out, shrinking back into the centre */
  transform-origin:center;opacity:0;transform:scale(.9);transition:opacity 150ms var(--ease-drawer),transform 150ms var(--ease-drawer),overlay 150ms allow-discrete,display 150ms allow-discrete}
@@ -1605,7 +1605,7 @@ document.addEventListener('click',e=>{const a=e.target.closest('a[href="#dir"]:n
 /* light / dark toggle: remembered per browser; the page crossfades between themes where view transitions exist */
 (()=>{const b=$('themebtn');if(!b)return;const H=document.documentElement;
  const cur=()=>H.dataset.theme==='light'?'light':'dark';
- const label=()=>{const t=cur();b.setAttribute('aria-label',t==='dark'?'Switch to light mode':'Switch to dark mode');b.title=b.getAttribute('aria-label')};
+ const label=()=>{const t=cur();b.setAttribute('aria-label',t==='dark'?'Switch to light mode':'Switch to dark mode');b.dataset.tip=b.getAttribute('aria-label');b.setAttribute('data-tiphover','')};
  const apply=t=>{H.dataset.theme=t;const cs=document.querySelector('meta[name="color-scheme"]'),tc=document.querySelector('meta[name="theme-color"]');if(cs)cs.content=t;if(tc)tc.content=t==='light'?'#f6f7f5':'#0f1211';try{localStorage.setItem('theme',t)}catch(e){}label()};
  label();
  b.addEventListener('click',()=>{const next=cur()==='dark'?'light':'dark';
@@ -1659,7 +1659,7 @@ let LASTPTR='mouse';addEventListener('pointerdown',e=>{LASTPTR=e.pointerType},{c
  const hide=()=>{clearTimeout(out);if(!cur)return;unmark(cur);cur=null;if(tip.matches(':popover-open'))tip.hidePopover()};
  /* touch has no hover: a tap on a chip or the icon toggles the bubble. With a mouse the bubble comes from hovering,
     so a click goes through to the card and opens the details like anywhere else on it */
- document.addEventListener('click',e=>{const b=e.target.closest('[data-tip]');if(!b||LASTPTR==='mouse'){hide();return}
+ document.addEventListener('click',e=>{const b=e.target.closest('[data-tip]');if(!b||LASTPTR==='mouse'||b.hasAttribute('data-tiphover')){hide();return}
   e.preventDefault();e.stopPropagation();cur===b?hide():show(b,'touch')},true);
  /* mouse: opens at once; moving to the next chip swaps it instantly; leaving waits 0.1s so crossing the gap between chips doesn't flicker */
  document.addEventListener('pointerover',e=>{if(e.pointerType!=='mouse')return;const b=e.target.closest('[data-tip]');if(b)show(b,'mouse')});
