@@ -295,6 +295,18 @@ for(const ev of ['pagereveal','pageswap'])addEventListener(ev,e=>{const v=e.view
   for(const el of [sheet.querySelector('.shandle'),sheet.querySelector('.sphead')])el.addEventListener('touchstart',e=>start(e,false),{passive:true});
   list.addEventListener('touchstart',e=>start(e,true),{passive:true});
   sheet.addEventListener('touchmove',move,{passive:false});sheet.addEventListener('touchend',end);sheet.addEventListener('touchcancel',end)}
+ /* the tiles for the starting view start downloading now, alongside the map program, instead of only once it has loaded and read its
+    style. Same view maths as the map's own fit to all shops (padding, zoom limits); tile files are versioned and cached for years, so the
+    map then finds them already downloaded */
+ (()=>{try{const W=box.clientWidth,Hh=box.clientHeight;if(!W||!Hh||!window.fetch)return;
+  const pT=56,pB=WIDE.matches?32:Math.max(32,Hh-dock.offsetTop+16),pL=32,pR=32;
+  const X=l=>(l+180)/360,Y=a=>{const s=Math.sin(a*Math.PI/180);return .5-Math.log((1+s)/(1-s))/(4*Math.PI)};
+  let x0=1,x1=0,y0=1,y1=0;SH.forEach(s=>{const x=X(s.lng),y=Y(s.lat);x0=Math.min(x0,x);x1=Math.max(x1,x);y0=Math.min(y0,y);y1=Math.max(y1,y)});
+  const z=Math.max(7,Math.min(13,Math.log2(Math.min((W-pL-pR)/((x1-x0)*512),(Hh-pT-pB)/((y1-y0)*512)))));
+  const ws=512*2**z,cx=(x0+x1)/2*ws+(pR-pL)/2,cy=(y0+y1)/2*ws+(pB-pT)/2,tz=Math.floor(z),ts=512*2**(z-tz),n=2**tz,want=[];
+  for(let tx=Math.floor((cx-W/2)/ts);tx<=Math.floor((cx+W/2)/ts);tx++)for(let ty=Math.floor((cy-Hh/2)/ts);ty<=Math.floor((cy+Hh/2)/ts);ty++)if(tx>=0&&ty>=0&&tx<n&&ty<n)want.push([tz,tx,ty]);
+  if(!want.length||want.length>30)return;window.__tilePrefetch=want;
+  fetch('https://tiles.openfreemap.org/planet').then(r=>r.json()).then(j=>{const u=j.tiles&&j.tiles[0];if(u)want.forEach(([z,x,y])=>fetch(u.replace('{z}',z).replace('{x}',x).replace('{y}',y)).catch(()=>{}))}).catch(()=>{})}catch(e){}})();
  /* if the map can't load, phones show the list instead (it can't be closed then) */
  const noMap=()=>{box.classList.add('nomap');stage.classList.add('nomap');listOpen()};
  const init=()=>{if(!window.maplibregl){noMap();return}
