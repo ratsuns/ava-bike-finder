@@ -327,7 +327,7 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
   map.on('styleimagemissing',e=>{if(!map.hasImage(e.id))map.addImage(e.id,{width:1,height:1,data:new Uint8Array(4)})});
   map.addControl(new maplibregl.NavigationControl({showCompass:false}),'top-right');
   /* "find me": zooms to show you and the shops within 10 miles of you (the nearest one if none are that close) */
-  const ME_MI=10;let me=null,toastT=0;
+  const ME_MI=10;let me=null,toastT=0,hideCard=()=>{};
   const toast=msg=>{let el=box.querySelector('.mtoast');if(!el){el=document.createElement('div');el.className='mtoast';el.setAttribute('role','status');box.append(el)}el.textContent=msg;el.classList.add('on');clearTimeout(toastT);toastT=setTimeout(()=>el.classList.remove('on'),4000)};
   const miles=(a,b)=>{const r=Math.PI/180,dl=(b.lat-a.lat)*r,dg=(b.lng-a.lng)*r,h=Math.sin(dl/2)**2+Math.cos(a.lat*r)*Math.cos(b.lat*r)*Math.sin(dg/2)**2;return 7917.6*Math.asin(Math.sqrt(h))};
   map.addControl({onAdd(){const g=document.createElement('div');g.className='maplibregl-ctrl maplibregl-ctrl-group';
@@ -340,7 +340,7 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
      const by=SH.map(s=>({s,d:miles(u,s)})).sort((a,b)=>a.d-b.d),near=by.filter(x=>x.d<=ME_MI);const show=(near.length?near:by.slice(0,1)).map(x=>x.s);
      const bb=new maplibregl.LngLatBounds([u.lng,u.lat],[u.lng,u.lat]);show.forEach(s=>bb.extend([s.lng,s.lat]));
      const H=box.clientHeight,pad=WIDE.matches?{top:64,bottom:48,left:48,right:64}:{top:64,bottom:Math.max(48,H-openTop()+24),left:32,right:32};
-     if(!WIDE.matches)pick(by[0].s.k,false,true,true);
+     if(!WIDE.matches)pick(by[0].s.k,false,true,true);else hideCard();
      map.fitBounds(bb,Object.assign({padding:pad,maxZoom:13,essential:true},REDUCE.matches?{duration:0}:{}))},
     err=>{b.removeAttribute('aria-busy');toast(err.code===1?'Location is off for this site. Turn it on in your browser to see shops near you.':"Couldn't find your location. Try again.")},
     {enableHighAccuracy:false,timeout:10000,maximumAge:300000})});
@@ -395,6 +395,9 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
   box.addEventListener('focusout',e=>{if(!e.relatedTarget||!e.relatedTarget.closest||!e.relatedTarget.closest('.pin,.mcw'))hideSoon()});
   document.addEventListener('keydown',e=>{if(e.key==='Escape'&&cur){const k=cur;hide();const p=pins.get(k);if(p&&box.contains(document.activeElement))p.blur()}});
   map.on('moveend',()=>{if(cur)place(BY[cur])});
+  /* desktop: when you drag or scroll the map so the open shop's pin leaves the map, its card closes (no card left floating without its pin) */
+  hideCard=hide;
+  map.on('move',e=>{if(!WIDE.matches||!cur||!e.originalEvent)return;const s=BY[cur],p=map.project([s.lng,s.lat]);if(p.x<0||p.y<0||p.x>box.clientWidth||p.y>box.clientHeight)hide()});
   /* switching between the phone and desktop layouts (e.g. a resized window) */
   WIDE.addEventListener('change',()=>{card.classList.remove('open');card.setAttribute('aria-hidden','true');pinned=null;if(WIDE.matches){listClose(false);selPin(null);mark(null)}else pick(cur||SH[0].k,false,true)});
   /* hovering a shop in the list lights up its pin */
