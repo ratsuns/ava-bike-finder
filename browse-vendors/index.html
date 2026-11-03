@@ -655,17 +655,28 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
   map.addControl({onAdd(){const g=document.createElement('div');g.className='maplibregl-ctrl maplibregl-ctrl-group';
    const b=document.createElement('button');b.type='button';b.className='mloc';b.title='Shops near me';b.setAttribute('aria-label','Show shops near me');
    b.innerHTML='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.2" fill="currentColor" stroke="none"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>';
+   /* the same saved location the home page uses (this tab only, up to 10 minutes old, never sent anywhere): if there is one, the map goes there at once
+      and a fresh reading is taken quietly; the map only moves again if you've moved */
+   const ME_KEY='ava-near',ME_TTL=600000;
+   const saved=()=>{try{const v=JSON.parse(sessionStorage.getItem(ME_KEY)||'null');if(v&&Date.now()-v.t<ME_TTL)return v}catch(e){}return null};
+   const save=u=>{try{sessionStorage.setItem(ME_KEY,JSON.stringify({lat:u.lat,lng:u.lng,t:Date.now()}))}catch(e){}};
    b.addEventListener('click',()=>{if(!navigator.geolocation){toast("This browser can't share your location.");return}
-    if(b.getAttribute('aria-busy')==='true')return;b.setAttribute('aria-busy','true');
-    navigator.geolocation.getCurrentPosition(pos=>{b.removeAttribute('aria-busy');const u={lat:pos.coords.latitude,lng:pos.coords.longitude};
+    if(b.getAttribute('aria-busy')==='true')return;
+    const had=saved();if(had)goMe(had);
+    if(had&&Date.now()-had.t<60000)return;
+    if(!had)b.setAttribute('aria-busy','true');
+    navigator.geolocation.getCurrentPosition(pos=>{b.removeAttribute('aria-busy');const u={lat:pos.coords.latitude,lng:pos.coords.longitude};save(u);
+     if(!had||miles(had,u)>0.25)goMe(u)},
+    err=>{b.removeAttribute('aria-busy');if(had)return;toast(err.code===1?'Location is off for this site. Turn it on in your browser to see shops near you.':"Couldn't find your location. Try again.")},
+    {enableHighAccuracy:false,timeout:10000,maximumAge:300000})});
+   /* show your dot and zoom to the shops within 10 miles of you (or the nearest one) */
+   const goMe=u=>{
      if(!me){const d=document.createElement('div');d.className='me';d.setAttribute('aria-label','You are here');me=new maplibregl.Marker({element:d}).setLngLat([u.lng,u.lat]).addTo(map)}else me.setLngLat([u.lng,u.lat]);
      const by=SH.map(s=>({s,d:miles(u,s)})).sort((a,b)=>a.d-b.d),near=by.filter(x=>x.d<=ME_MI);const show=(near.length?near:by.slice(0,1)).map(x=>x.s);
      const bb=new maplibregl.LngLatBounds([u.lng,u.lat],[u.lng,u.lat]);show.forEach(s=>bb.extend([s.lng,s.lat]));
      const H=box.clientHeight,pad=WIDE.matches?{top:64,bottom:48,left:48,right:64}:{top:64,bottom:Math.max(48,H-openTop()+24),left:32,right:32};
      if(!WIDE.matches)pick(by[0].s.k,false,true,true);else hideCard();
-     map.fitBounds(bb,Object.assign({padding:pad,maxZoom:13,essential:true},REDUCE.matches?{duration:0}:{}))},
-    err=>{b.removeAttribute('aria-busy');toast(err.code===1?'Location is off for this site. Turn it on in your browser to see shops near you.':"Couldn't find your location. Try again.")},
-    {enableHighAccuracy:false,timeout:10000,maximumAge:300000})});
+     map.fitBounds(bb,Object.assign({padding:pad,maxZoom:13,essential:true},REDUCE.matches?{duration:0}:{}))};
    g.append(b);return g},onRemove(){}},'top-right');
   map.once('load',()=>performance.mark('map-load'));
   /* if the map style can't load, say so; the list works without it */
