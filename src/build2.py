@@ -324,13 +324,15 @@ if SITE:
     SHL=list(_loc.values())
     SURL=URL+'shops.html'
     SDESC='Every shop that takes the Ava Community Energy e-bike rebate, on a map with each address, phone number and opening hours.'
-    STY_URL={'light':'https://tiles.openfreemap.org/styles/positron','dark':'https://tiles.openfreemap.org/styles/dark'}
+    STY_URL={'light':'https://tiles.openfreemap.org/styles/bright','dark':'https://tiles.openfreemap.org/styles/bright'}  # OSM Bright in both themes
     SHEAD=('<!doctype html><html lang="en" data-theme="dark" data-overlayscrollbars-initialize><head><meta charset="utf-8"><link rel="stylesheet" href="vendor/overlayscrollbars-2.16.0.min.css"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#0f1211">'
      f'<title>Participating shops | Ava Rebate Bike Finder</title><meta name="description" content="{e(SDESC)}"><link rel="canonical" href="{SURL}">'
      +('<meta name="robots" content="noindex">' if SHOPS_PREVIEW else '')+
      '<link rel="icon" href="favicon.ico" sizes="48x48"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="manifest" href="site.webmanifest">'
      # the map style for the current theme starts downloading right away, alongside MapLibre (deferred, so it never holds up the page)
      '<link rel="preconnect" href="https://tiles.openfreemap.org" crossorigin>'
+     # the map's tile index and its label font are also fetched up front, in parallel, instead of one after another once the map starts
+     '<link rel="preload" as="fetch" crossorigin href="https://tiles.openfreemap.org/planet"><link rel="preload" as="fetch" crossorigin href="https://tiles.openfreemap.org/fonts/Noto%20Sans%20Regular/0-255.pbf">'
      f'<script>try{{if(!matchMedia("(hover: hover) and (pointer: fine)").matches||matchMedia("(any-pointer: coarse)").matches)document.documentElement.removeAttribute("data-overlayscrollbars-initialize");var t=localStorage.getItem("theme");if(t==="light"){{document.documentElement.dataset.theme="light";document.querySelector("meta[name=color-scheme]").content="light";document.querySelector("meta[name=theme-color]").content="#f6f7f5"}}}}catch(e){{}}(function(){{var l=document.createElement("link");l.rel="preload";l.as="fetch";l.crossOrigin="anonymous";l.href=document.documentElement.dataset.theme==="light"?"{STY_URL["light"]}":"{STY_URL["dark"]}";document.head.appendChild(l)}})()</script>'
      # the map's stylesheet downloads in parallel but never holds up the cards: it's applied when it arrives, and the map starts once it's in
      '<link rel="preload" as="style" href="vendor/maplibre-gl-5.24.0.min.css" onload="this.onload=null;this.rel=\'stylesheet\';window.MLCSS=1;document.dispatchEvent(new Event(\'mlcss\'))" onerror="window.MLCSS=1;document.dispatchEvent(new Event(\'mlcss\'))"><script defer src="vendor/maplibre-gl-5.24.0.min.js"></script>')

@@ -5,8 +5,7 @@ __HEAD__
 /* home page rules this page uses (build2.py copies them from site_tpl.html, so tokens, themes and the shop cards stay identical) */
 __BASE_CSS__
 /* shops page */
-:root{--mapbg:rgb(242,243,240)}
-:root[data-theme="dark"]{--mapbg:rgb(12,12,12)}
+:root{--mapbg:#f8f4f0}
 .sbar{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px);--hink:18,22,20}
 :root[data-theme="dark"] .sbar{--hink:238,241,238}
 .sbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:56px;max-width:1440px}
@@ -93,7 +92,8 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
   if(document.startViewTransition&&!REDUCE.matches){b.style.viewTransitionName='themebtn';const vt=document.startViewTransition(()=>apply(next));vt.finished.finally(()=>{b.style.viewTransitionName=''})}else apply(next)})})();
 /* map: starts as soon as MapLibre (loaded with defer in the head) is ready */
 (()=>{const box=$('map'),list=$('list'),H=document.documentElement;
- const STY={light:'https://tiles.openfreemap.org/styles/positron',dark:'https://tiles.openfreemap.org/styles/dark'};
+ /* OSM Bright in both light and dark mode, so switching the site's theme never reloads the map */
+ const STY={light:'https://tiles.openfreemap.org/styles/bright',dark:'https://tiles.openfreemap.org/styles/bright'};
  const theme=()=>H.dataset.theme==='light'?'light':'dark';
  const BY={};SH.forEach(s=>BY[s.k]=s);
  const dirUrl=s=>'https://www.google.com/maps/dir/?api=1&destination='+encodeURIComponent([s.name,s.address,s.city,'CA'].filter(Boolean).join(', '));
@@ -117,6 +117,8 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
    cooperativeGestures:!WIDE.matches})}
   catch(e){box.classList.add('nomap');return}
   map.touchZoomRotate.disableRotation();map.keyboard.disableRotation();
+  /* the map style mentions a few icons it doesn't ship; fill them with a blank so nothing errors */
+  map.on('styleimagemissing',e=>{if(!map.hasImage(e.id))map.addImage(e.id,{width:1,height:1,data:new Uint8Array(4)})});
   map.addControl(new maplibregl.NavigationControl({showCompass:false}),'top-right');
   map.once('load',()=>performance.mark('map-load'));
   /* if the map style can't load, say so; the list works without it */
@@ -158,9 +160,6 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
   list.addEventListener('pointerover',e=>{if(e.pointerType!=='mouse')return;const c=e.target.closest('.shop');setHot(c?c.dataset.shop:null)});
   list.addEventListener('pointerleave',()=>setHot(null));
   /* follow the site theme. Once the map is idle the other theme's style is fetched, so switching is instant (markers and the card stay) */
-  const SJ={};let shown=theme();
-  map.once('idle',()=>{const o=theme()==='light'?'dark':'light';fetch(STY[o]).then(r=>r.ok?r.text():null).then(x=>{if(x)SJ[o]=x}).catch(()=>{})});
-  new MutationObserver(()=>{const t=theme();if(t===shown)return;try{SJ[shown]=JSON.stringify(map.getStyle())}catch(e){}shown=t;map.setStyle(SJ[t]?JSON.parse(SJ[t]):STY[t])}).observe(H,{attributes:true,attributeFilter:['data-theme']});
  };
  /* the map starts as soon as both its script and its stylesheet have arrived (they download in parallel with the page) */
  let started=false;const go=()=>{if(started||!window.MLCSS||(!window.maplibregl&&document.readyState!=='complete'&&!go.dcl))return;started=true;init()};
