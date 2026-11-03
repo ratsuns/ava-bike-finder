@@ -26,7 +26,7 @@ __BASE_CSS__
 .spmap{grid-area:map;position:relative;height:clamp(280px,45vh,460px);height:clamp(280px,45svh,460px);border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--mapbg);isolation:isolate}
 .splist{grid-area:list;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;align-content:start}
 @media (min-width:1024px){
- .sphero{--ov:56px}
+ .sphero{--ov:56px;min-height:clamp(420px,58vh,580px);min-height:clamp(420px,58svh,580px)}
  .spg{margin-top:-56px;grid-template-columns:minmax(360px,440px) minmax(0,1fr);grid-template-areas:"list map";column-gap:24px}
  .spmap{position:sticky;top:72px;align-self:start;height:calc(100vh - 88px);height:calc(100svh - 88px)}
  .splist{grid-template-columns:minmax(0,1fr)}
@@ -118,9 +118,10 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
  const layout=()=>{const b=sec.getBoundingClientRect();w=b.width;h=b.height;if(!w||!h)return;dpr=Math.min(devicePixelRatio||1,2);cv.width=Math.round(w*dpr);cv.height=Math.round(h*dpr);
   /* the map fills the hero's height; on narrow screens its sides are cropped, keeping the Bay Area in view */
   const asp=(W.cols*W.dx)/(W.rows*W.dy),mw=Math.min((h-24)*asp,Math.max(w-32,w*2)),mh=mw/asp,bf=(bx+.5)/W.cols,ox=mw>w-32?Math.min(0,Math.max(w-mw,w*.14-bf*mw)):(w-mw)/2,oy=(h-mh)/2,sx=mw/W.cols,sy=mh/W.rows;rad=Math.max(.75,sx*.19);
-  /* dots fade toward the top and the far south (like the reference), and softly behind the title so it stays easy to read */
+  /* dots fade toward the top and the far south (like the reference), softly behind the title so it stays easy to read, and away along the bottom edge into the page */
   for(let i=0;i<N;i++){const[c,r]=cells[i];X[i]=ox+(c+.5)*sx;Y[i]=oy+(r+.5)*sy;const t=r/W.rows;let a=(t<.32?.18+.82*t/.32:1)*(t>.86?Math.max(.2,1-(t-.86)/.14*.8):1);
-   const narrow=w<700,ex=(X[i]-w/2)/(narrow?w*.52:Math.min(w*.34,420)),ey=(Y[i]-h/2)/(h*(narrow?.36:.3)),e=Math.sqrt(ex*ex+ey*ey);if(e<1){const k=e*e*(3-2*e);a*=.12+.88*k}A[i]=a}
+   const narrow=w<700,fb=narrow?90:130,yb=(h-Y[i])/fb;if(yb<1){const k=Math.max(0,yb);a*=k*k*(3-2*k)}
+   const ex=(X[i]-w/2)/(narrow?w*.52:Math.min(w*.34,420)),ey=(Y[i]-h/2)/(h*(narrow?.36:.3)),e=Math.sqrt(ex*ex+ey*ey);if(e<1){const k=e*e*(3-2*e);a*=.12+.88*k}A[i]=a}
   const cs=getComputedStyle(document.documentElement);col=rgb(cs.getPropertyValue('--fg'));acc=rgb(cs.getPropertyValue('--accent'));const dotA=document.documentElement.dataset.theme==='light'?.55:.42;
   base=document.createElement('canvas');base.width=cv.width;base.height=cv.height;const g=base.getContext('2d');g.scale(dpr,dpr);
   for(let i=0;i<N;i++){g.fillStyle=hl[i]?'rgba('+acc+',.95)':'rgba('+col+','+(dotA*A[i])+')';g.beginPath();g.arc(X[i],Y[i],hl[i]?rad*1.35:rad,0,6.283);g.fill()}
