@@ -323,8 +323,8 @@ input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;width:1
 .sws{left:50%;transform:translateX(-50%);width:max-content;flex-wrap:nowrap}
 /* more than 6 colors: 5 dots show at a time and slide along with the picked one; "+N" says how many more there are */
 .sw.off{display:none}
-.swmore{font-size:var(--t-meta);font-weight:600;color:rgba(18,22,20,.6);padding:0 6px 0 3px;line-height:22px;pointer-events:none}
-@media (pointer:coarse){.swmore{line-height:26px}}
+.swmore{display:flex;align-items:center;height:22px;font-size:var(--t-meta);font-weight:600;line-height:1;font-variant-numeric:tabular-nums;color:rgba(18,22,20,.6);padding:0 6px 0 3px;pointer-events:none}
+@media (pointer:coarse){.swmore{height:26px}}
 .more:focus-visible{outline:none}
 .c:has(.more:focus-visible){outline:2px solid var(--accent);outline-offset:2px}
 .c:active:not(:has(.sw:active)){transform:scale(.985)}
@@ -343,8 +343,8 @@ input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;width:1
 .bmb{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain}
 .bmg{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px 28px;padding:20px 24px 28px;align-items:start}
 @media (min-height:720px){.bml{position:sticky;top:20px;z-index:4}} /* the pinned photo column stays above the top fade */
-.bmph{position:relative;aspect-ratio:4/3;background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden}
-.bmph img{width:100%;height:100%;object-fit:contain;display:block}
+.bmph{position:relative;aspect-ratio:4/3;background:transparent;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.bmph img{width:100%;height:100%;object-fit:contain;display:block;background:#fff}
 .bmcap{margin:8px 0 0;font-size:var(--t-meta);color:var(--fg2)}
 .bmp{margin-top:16px;padding-top:16px;border-top:1px solid var(--line);display:grid;gap:10px}
 .bmpay{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
@@ -1320,7 +1320,7 @@ function buildBike(i){const pre=i+'|'+F.city+'|'+F.q+'|'+(ME?NEAR_MI:'');if(BIKE
 /* the photo is decoded before the window is shown, so its first painted frame already has the picture (no blank-then-image flash).
    decoding starts on pointerdown, so by the time the tap lands it is normally finished; a short cap keeps a slow decode from holding the window back */
 let BIKE_OPENING=0;
-function openBike(i,opener){if(BIKE.open)return;const tok=++BIKE_OPENING;buildBike(i);BIKE_I=i;BIKE_AC=activeColor(B[i]);syncBike();
+function openBike(i,opener){if(BIKE.open)return;const tok=++BIKE_OPENING;buildBike(i);DT.reset();BIKE_I=i;BIKE_AC=activeColor(B[i]);syncBike();
  const im=$('bike-img'),show=()=>{if(tok!==BIKE_OPENING||BIKE.open)return;showDlg(BIKE,opener);$('bike-body').scrollTop=0};
  Promise.race([im.decode().catch(()=>{}),new Promise(r=>setTimeout(r,150))]).then(show)}
 $('g').addEventListener('pointerdown',e=>{if(BIKE.open||e.button)return;const c=e.target.closest('.c[data-b]');if(c&&!e.target.closest('a,.sws'))buildBike(+c.dataset.b)},{passive:true});
@@ -1334,8 +1334,7 @@ function syncBike(){
 BIKE.addEventListener('click',e=>{
  if(e.target.closest('[data-dir]')){e.preventDefault();BIKE.close();requestAnimationFrame(()=>$('dir').scrollIntoView({behavior:REDUCE.matches?'auto':'smooth'}));return}
  const t=e.target.closest('.sw');if(!t||BIKE_I==null)return;
- const img=$('bike-img'),before=img.getAttribute('src');BIKE_AC=+t.dataset.c;syncBike();
- if(!REDUCE.matches&&img.getAttribute('src')!==before)img.decode().then(()=>img.animate([{opacity:.35,filter:'blur(3px)'},{opacity:1,filter:'blur(0)'}],{duration:200,easing:'cubic-bezier(.23,1,.32,1)'})).catch(()=>{})});
+ const k=+t.dataset.c;if(k!==BIKE_AC)DT.go(k,BIKE_AC==null||k>BIKE_AC?1:-1)});
 BIKE.addEventListener('keydown',e=>{const t=e.target.closest('.sw');if(!t||!['ArrowLeft','ArrowRight'].includes(e.key))return;e.preventDefault();
  const all=[...t.parentElement.querySelectorAll('.sw')],i=all.indexOf(t),n=all[(i+(e.key==='ArrowRight'?1:-1)+all.length)%all.length];n.click();n.focus()});
 BIKE.addEventListener('close',()=>{BIKE_I=null;BIKE_AC=null});
@@ -1619,85 +1618,89 @@ function swipeColors(root,photoSel){let x0=0,y0=0,el=null;
   SWIPED=performance.now();stepDots([...box.querySelectorAll('.sw')],dx<0?1:-1)},{passive:true});
  /* a swipe is not a tap: don't let it open the details */
  root.addEventListener('click',e=>{if(performance.now()-SWIPED<400&&!e.target.closest('.sw')){e.stopPropagation();e.preventDefault()}},true)}
-swipeColors($('g'),'.ph');swipeColors(BIKE,'.bmph');
+swipeColors($('g'),'.ph');
 
 /* tap the photo in the details to see it larger; swipe or tap the color dots there too */
 const ZOOM=$('zoom');
-function syncZoom(){const img=$('bike-img');if(!img)return;zreset();$('zoom-img').src=img.currentSrc||img.src;$('zoom-img').alt=img.alt;zmeta()}
+function syncZoom(){const img=$('bike-img');if(!img)return;ZT.reset();$('zoom-img').src=img.currentSrc||img.src;$('zoom-img').alt=img.alt;zmeta()}
 function zmeta(){const b=BIKE_I!=null?B[BIKE_I]:null,on=BIKE.querySelector('.bmph .sw[aria-pressed="true"]');$('zoom-cap').textContent=b?(b.name+(on?' · '+on.getAttribute('aria-label'):'')):'';
  const np=b&&BIKE_AC!=null&&!b.cv[BIKE_AC].img,zn=$('zoom-note');zn.hidden=!np;zn.textContent=np?npNote(b.cv[BIKE_AC]):'';
  const src=BIKE.querySelector('.bmph .sws'),zw=$('zoom-sws');zw.innerHTML=src?src.innerHTML:'';zw.querySelectorAll('.off').forEach(d=>d.classList.remove('off'));zw.querySelector('.swmore')?.remove();zArrows()}
 BIKE.addEventListener('click',e=>{if(e.target.id==='bike-img'&&performance.now()-SWIPED>400){syncZoom();showDlg(ZOOM,e.target)}});
 ZOOM.querySelector('.zx').onclick=()=>ZOOM.close();
-ZOOM.addEventListener('click',e=>{const t=e.target.closest('.sw');if(t){const zs=[...ZOOM.querySelectorAll('.sw')],ni=zs.indexOf(t),oi=zs.findIndex(s=>s.getAttribute('aria-pressed')==='true'),twin=BIKE.querySelectorAll('.bmph .sw')[ni];if(twin&&ni!==oi)zgo(ni,ni>oi?1:-1);return}
+ZOOM.addEventListener('click',e=>{const t=e.target.closest('.sw');if(t){const zs=[...ZOOM.querySelectorAll('.sw')],ni=zs.indexOf(t),oi=zs.findIndex(s=>s.getAttribute('aria-pressed')==='true'),twin=BIKE.querySelectorAll('.bmph .sw')[ni];if(twin&&ni!==oi)ZT.go(ni,ni>oi?1:-1);return}
  if(!e.target.closest('img,.zsws,.zx,.zarr')&&performance.now()-SWIPED>400)ZOOM.close()});
-/* the photo frame works like a carousel track: the frame stays put and the photos sit side by side inside it.
+/* both bike photos (in the details and the full-screen view) work like a carousel track: the frame stays put and the photos sit side by side inside it.
    dragging with a finger moves the track with the finger; letting go snaps to the next photo (or back) with a spring that keeps the finger's speed.
    arrows, keys and the color dots use the same snap. touching the photo mid-snap catches it where it is, so nothing jumps */
-const zst=()=>$('zoom-img').parentElement,ZGAP=16;
-const zxOf=p=>{const t=getComputedStyle(p).transform;return t&&t!=='none'?new DOMMatrix(t).m41:0};
-const zput=(p,x)=>{p._x=x;p.style.transform=x?`translateX(${x}px)`:''};
-const ZLIN=CSS.supports('transition-timing-function','linear(0, 1)');
-let ZT=null,ZSEQ=0;
+const TGAP=16,TLIN=CSS.supports('transition-timing-function','linear(0, 1)');
+const txOf=p=>{const t=getComputedStyle(p).transform;return t&&t!=='none'?new DOMMatrix(t).m41:0};
+const tput=(p,x)=>{p._x=x;p.style.transform=x?`translateX(${x}px)`:''};
 /* Apple-style spring (duration .5s) with bounce 0: a paging photo shouldn't wobble. v0 carries the finger's speed into the snap */
-function zspring(dist,v){if(!ZLIN)return {duration:300,easing:'cubic-bezier(.32,.72,0,1)'};
+function tspring(dist,v){if(!TLIN)return {duration:300,easing:'cubic-bezier(.32,.72,0,1)'};
  const w=2*Math.PI/.5,v0=dist?v/dist:0,eps=Math.min(.01,.5/Math.max(1,dist)),y=t=>(-1+(v0-w)*t)*Math.exp(-w*t);
  let T=.05;while(T<1.5&&(1+Math.abs(v0-w)*T)*Math.exp(-w*T)>eps)T+=1/120;
  const n=Math.max(8,Math.round(T*60)),pts=[];for(let i=0;i<n;i++)pts.push((1+y(T*i/n)).toFixed(4));pts.push('1');
  return {duration:T*1000,easing:`linear(${pts.join(',')})`}}
-function zinfo(k){const b=B[BIKE_I],c=k!=null&&k>=0&&b.cv?b.cv[k]:null;return {src:c&&c.img?c.img:b.img,alt:b.name+(c?', '+c.n:'')}}
-function zidx(dir){if(BIKE_I==null)return null;const cv=B[BIKE_I].cv||[],n=cv.length,cur=BIKE_AC??-1;let i=BIKE_AC==null?(dir>0?-1:n):BIKE_AC;
+function tinfo(k){const b=B[BIKE_I],c=k!=null&&k>=0&&b.cv?b.cv[k]:null;return {src:c&&c.img?c.img:b.img,alt:b.name+(c?', '+c.n:'')}}
+/* the next color with a real photo, either way round */
+function tidx(dir){if(BIKE_I==null)return null;const cv=B[BIKE_I].cv||[],n=cv.length,cur=BIKE_AC??-1;let i=BIKE_AC==null?(dir>0?-1:n):BIKE_AC;
  for(let k=1;k<=n;k++){const j=((i+dir*k)%n+n)%n;if(j!==cur&&cv[j].img)return j}return null}
-function zpane(k,x){const f=zinfo(k),p=new Image();p.className='zghost';p.alt='';p.setAttribute('aria-hidden','true');p.dataset.alt=f.alt;p.decoding='sync';p.src=f.src;zput(p,x);zst().appendChild(p);return p}
-function zmain(t){const o=$('zoom-img');if(t===o)return;o.removeAttribute('id');o.className='zghost';o.alt='';o.setAttribute('aria-hidden','true');
- t.id='zoom-img';t.className='';t.removeAttribute('aria-hidden');t.alt=t.dataset.alt||''}
-/* stop any snap where it is, so the next move starts from what's on screen */
-function zfreeze(){const ps=[...zst().querySelectorAll('img')],xs=ps.map(zxOf);ps.forEach((p,i)=>{p.getAnimations().forEach(a=>a.cancel());zput(p,xs[i])});ZT=null;return ps}
-function zreset(){const m=$('zoom-img');if(!m)return;zst().querySelectorAll('img').forEach(p=>{if(p!==m)p.remove()});m.getAnimations().forEach(a=>a.cancel());zput(m,0);ZT=null}
-/* move every photo by the same amount so the target lands in the frame */
-function zsnap(t,v){const ps=[...zst().querySelectorAll('img')],d=-(t._x||0),wasMain=t===$('zoom-img');zmain(t);
- const done=()=>{zst().querySelectorAll('img').forEach(p=>{if(p!==t)p.remove()});t.getAnimations().forEach(a=>a.cancel());zput(t,0)};
- if(REDUCE.matches){done();if(!wasMain)t.animate([{opacity:0},{opacity:1}],{duration:150,easing:'ease'});return}
- if(!d){done();return}
- const sp=zspring(Math.abs(d),v*Math.sign(d)),me={t};ZT=me;
- const an=ps.map(p=>p.animate([{transform:`translateX(${p._x||0}px)`},{transform:`translateX(${(p._x||0)+d}px)`}],{duration:sp.duration,easing:sp.easing,fill:'forwards'}));
- an[ps.indexOf(t)].finished.then(()=>{if(ZT===me){ZT=null;done()}},()=>{})}
-/* warm the neighbours so a drag never shows an empty slot */
-function zwarm(){[1,-1].forEach(d=>{const k=zidx(d);if(k!=null){const i=new Image();i.src=zinfo(k).src}})}
-function zgo(k,dir){if(k==null||BIKE_I==null)return;
+function pickColor(k){BIKE_AC=k;syncBike()}
+function mkTrack(o){let T=null,SEQ=0;
+ const main=()=>$(o.id),st=()=>main().parentElement,imgs=()=>[...st().querySelectorAll(':scope > img')];
+ const same=src=>new URL(src,location.href).href===new URL(main().getAttribute('src'),location.href).href;
+ const pane=(k,x)=>{const f=tinfo(k),p=new Image();p.className='zghost';p.alt='';p.setAttribute('aria-hidden','true');p.dataset.alt=f.alt;p.decoding='sync';p.src=f.src;tput(p,x);st().insertBefore(p,main().nextSibling);return p};
+ /* the photo being moved to takes over as the main photo, so whatever reads the photo afterwards gets the right one */
+ const swap=t=>{const m=main();if(t===m)return;m.removeAttribute('id');m.className='zghost';m.alt='';m.setAttribute('aria-hidden','true');t.id=o.id;t.className='';t.removeAttribute('aria-hidden');t.alt=t.dataset.alt||''};
+ /* stop any snap where it is, so the next move starts from what's on screen */
+ const freeze=()=>{const ps=imgs(),xs=ps.map(txOf);ps.forEach((p,i)=>{p.getAnimations().forEach(a=>a.cancel());tput(p,xs[i])});T=null;return ps};
+ const reset=()=>{const m=main();if(!m)return;imgs().forEach(p=>{if(p!==m)p.remove()});m.getAnimations().forEach(a=>a.cancel());tput(m,0);T=null};
+ /* move every photo by the same amount so the target lands in the frame */
+ const snap=(t,v,fresh)=>{const ps=imgs(),d=-(t._x||0);swap(t);
+  const done=()=>{imgs().forEach(p=>{if(p!==t)p.remove()});t.getAnimations().forEach(a=>a.cancel());tput(t,0)};
+  if(REDUCE.matches){done();if(fresh)t.animate([{opacity:0},{opacity:1}],{duration:150,easing:'ease'});return}
+  if(!d){done();return}
+  const sp=tspring(Math.abs(d),v*Math.sign(d)),me={t};T=me;
+  const an=ps.map(p=>p.animate([{transform:`translateX(${p._x||0}px)`},{transform:`translateX(${(p._x||0)+d}px)`}],{duration:sp.duration,easing:sp.easing,fill:'forwards'}));
+  an[ps.indexOf(t)].finished.then(()=>{if(T===me){T=null;done()}},()=>{})};
+ /* warm the neighbours so a drag never shows an empty slot */
+ const warm=()=>{[1,-1].forEach(d=>{const k=tidx(d);if(k!=null){const i=new Image();i.src=tinfo(k).src}})};
+ const choose=k=>{pickColor(k);o.after&&o.after();warm()};
  /* a color with no photo, or one whose photo is already showing, just changes the name: nothing slides */
- if(!B[BIKE_I].cv[k].img||zsame(zinfo(k).src)){BIKE.querySelectorAll('.bmph .sw')[k].click();zmeta();return}
- const seq=++ZSEQ;zfreeze();const m=$('zoom-img'),p=zpane(k,(m._x||0)+dir*(zst().clientWidth+ZGAP));
- BIKE.querySelectorAll('.bmph .sw')[k].click();zmeta();zwarm();
- if(p.complete&&p.naturalWidth){zsnap(p,0);return}
- Promise.race([p.decode().catch(()=>{}),new Promise(r=>setTimeout(r,300))]).then(()=>{if(seq===ZSEQ&&p.isConnected)zsnap(p,0)})}
-const zsame=src=>new URL(src,location.href).href===new URL($('zoom-img').getAttribute('src'),location.href).href;
-function zstep(dir){zgo(zidx(dir),dir)}
-(()=>{let id=null,x0=0,y0=0,mode=null,inPh=false,trk=[],nb=null,w=0;
- const begin=()=>{ZSEQ++;const ps=zfreeze(),m=$('zoom-img');ps.forEach(p=>{if(p!==m)p.remove()});w=zst().clientWidth+ZGAP;
-  const mx=m._x||0,many=zidx(1)!=null&&!zsame(zinfo(zidx(1)).src);nb={m,n:many?zpane(zidx(1),mx+w):null,p:many?zpane(zidx(-1),mx-w):null};
-  [nb.m,nb.n,nb.p].forEach(p=>{if(p)p._b=p._x||0});mode='h';try{zst().setPointerCapture(id)}catch(_){}};
+ const go=(k,dir)=>{if(k==null||BIKE_I==null)return;
+  if(!B[BIKE_I].cv[k].img||same(tinfo(k).src)){choose(k);return}
+  const seq=++SEQ;freeze();const m=main(),p=pane(k,(m._x||0)+dir*(st().clientWidth+TGAP));swap(p);choose(k);
+  if(p.complete&&p.naturalWidth){snap(p,0,true);return}
+  Promise.race([p.decode().catch(()=>{}),new Promise(r=>setTimeout(r,300))]).then(()=>{if(seq===SEQ&&p.isConnected)snap(p,0,true)})};
+ let id=null,x0=0,y0=0,mode=null,inPh=false,trk=[],nb=null,w=0;
+ const begin=()=>{SEQ++;const ps=freeze(),m=main();ps.forEach(p=>{if(p!==m)p.remove()});w=st().clientWidth+TGAP;
+  const mx=m._x||0,many=tidx(1)!=null&&!same(tinfo(tidx(1)).src);nb={m,n:many?pane(tidx(1),mx+w):null,p:many?pane(tidx(-1),mx-w):null};
+  [nb.m,nb.n,nb.p].forEach(p=>{if(p)p._b=p._x||0});mode='h';try{st().setPointerCapture(id)}catch(_){}};
  const move=dx=>{const lim=nb.n?w:0,ov=Math.abs(dx)-lim,off=ov>0?Math.sign(dx)*(lim+(1-1/(ov*.55/w+1))*w):dx;
-  [nb.m,nb.n,nb.p].forEach(p=>{if(p)zput(p,p._b+off)})};
+  [nb.m,nb.n,nb.p].forEach(p=>{if(p)tput(p,p._b+off)})};
  const end=(e,ok)=>{if(e.pointerId!==id)return;id=null;
   if(mode==='h'){SWIPED=performance.now();const now=e.timeStamp,rec=trk.filter(s=>now-s[0]<=100);let v=0;
    if(ok&&rec.length>1){const a=rec[0],b=rec[rec.length-1];if(b[0]>a[0])v=(b[1]-a[1])/(b[0]-a[0])*1000}
-   const off=(nb.m._x||0)-nb.m._b,go=ok&&nb.n&&off&&!(Math.abs(v)>110&&Math.sign(v)!==Math.sign(off))&&(Math.abs(off)>w*.25||Math.abs(v)>110);
-   let t=nb.m;if(go){const dir=off<0?1:-1,k=zidx(dir);t=dir>0?nb.n:nb.p;BIKE.querySelectorAll('.bmph .sw')[k].click();zmeta();zwarm()}
-   nb=null;mode=null;zsnap(t,v);return}
-  if(ok&&mode==='v'){const dx=e.clientX-x0,dy=e.clientY-y0;if(dy>80&&Math.abs(dy)>Math.abs(dx)*1.3){SWIPED=performance.now();ZOOM.close()}}mode=null};
- ZOOM.addEventListener('pointerdown',e=>{if(id!==null||e.pointerType!=='touch'||e.target.closest('.sw,.zx,.zarr'))return;
-  id=e.pointerId;x0=e.clientX;y0=e.clientY;mode=null;trk=[[e.timeStamp,e.clientX]];inPh=!!e.target.closest('.zstage');
-  if(inPh&&ZT)begin()},{passive:true});
- ZOOM.addEventListener('pointermove',e=>{if(e.pointerId!==id)return;const dx=e.clientX-x0,dy=e.clientY-y0;
+   const off=(nb.m._x||0)-nb.m._b,go2=ok&&nb.n&&off&&!(Math.abs(v)>110&&Math.sign(v)!==Math.sign(off))&&(Math.abs(off)>w*.25||Math.abs(v)>110);
+   let t=nb.m,k=null;if(go2){const dir=off<0?1:-1;k=tidx(dir);t=dir>0?nb.n:nb.p}
+   nb=null;mode=null;swap(t);if(k!=null)choose(k);snap(t,v,false);return}
+  if(ok&&mode==='v'&&o.onDown){const dx=e.clientX-x0,dy=e.clientY-y0;if(dy>80&&Math.abs(dy)>Math.abs(dx)*1.3){SWIPED=performance.now();o.onDown()}}mode=null};
+ o.root.addEventListener('pointerdown',e=>{if(id!==null||e.pointerType!=='touch'||e.target.closest('.sw,.zx,.zarr'))return;
+  id=e.pointerId;x0=e.clientX;y0=e.clientY;mode=null;trk=[[e.timeStamp,e.clientX]];inPh=!!e.target.closest(o.photo);
+  if(inPh&&T)begin()},{passive:true});
+ o.root.addEventListener('pointermove',e=>{if(e.pointerId!==id)return;const dx=e.clientX-x0,dy=e.clientY-y0;
   if(!mode){if(Math.abs(dx)<8&&Math.abs(dy)<8)return;if(inPh&&Math.abs(dx)>Math.abs(dy))begin();else{mode='v';return}}
   if(mode!=='h')return;trk.push([e.timeStamp,e.clientX]);if(trk.length>12)trk.shift();move(dx)},{passive:true});
- ZOOM.addEventListener('pointerup',e=>end(e,true),{passive:true});
- ZOOM.addEventListener('pointercancel',e=>end(e,false),{passive:true})})();
-document.addEventListener('keydown',e=>{if(!ZOOM.open||!['ArrowLeft','ArrowRight'].includes(e.key))return;e.preventDefault();zstep(e.key==='ArrowRight'?1:-1)});
-ZOOM.querySelector('.zprev').onclick=()=>zstep(-1);ZOOM.querySelector('.znext').onclick=()=>zstep(1);
+ o.root.addEventListener('pointerup',e=>end(e,true),{passive:true});
+ o.root.addEventListener('pointercancel',e=>end(e,false),{passive:true});
+ return {go,step:dir=>go(tidx(dir),dir),reset}}
+const ZT=mkTrack({id:'zoom-img',root:ZOOM,photo:'.zstage',after:zmeta,onDown:()=>ZOOM.close()});
+const DT=mkTrack({id:'bike-img',root:BIKE,photo:'.bmph'});
+document.addEventListener('keydown',e=>{if(!ZOOM.open||!['ArrowLeft','ArrowRight'].includes(e.key))return;e.preventDefault();ZT.step(e.key==='ArrowRight'?1:-1)});
+ZOOM.querySelector('.zprev').onclick=()=>ZT.step(-1);ZOOM.querySelector('.znext').onclick=()=>ZT.step(1);
 /* arrows only when there is another photo to go to */
-const zArrows=()=>{const many=zidx(1)!=null;ZOOM.querySelector('.zprev').hidden=!many;ZOOM.querySelector('.znext').hidden=!many};
+const zArrows=()=>{const many=tidx(1)!=null;ZOOM.querySelector('.zprev').hidden=!many;ZOOM.querySelector('.znext').hidden=!many};
 ZOOM.addEventListener('toggle',zArrows);
 /* sort menu behaviour: opens under its button, arrow keys move, Enter or a tap picks, Escape or a tap outside closes */
 (()=>{const btn=$('sortbtn'),menu=$('sortmenu'),sel=$('sort'),opts=[...menu.querySelectorAll('.sopt')];
