@@ -1653,8 +1653,11 @@ addEventListener('pointerdown',()=>{SWIPE_EAT=false},{capture:true,passive:true}
   if(cur){unmark(cur);cur=b;mark(b);fit();place(b);return}
   cur=b;mark(b);tip.showPopover();fit();place(b)};
  const hide=()=>{if(!cur)return;unmark(cur);cur=null;if(tip.matches(':popover-open'))tip.hidePopover()};
- document.addEventListener('click',e=>{const b=e.target.closest('[data-tip]');if(!b){hide();return}e.preventDefault();e.stopPropagation();cur===b?hide():show(b)},true);
- document.addEventListener('pointerover',e=>{if(e.pointerType!=='mouse')return;const b=e.target.closest('[data-tip]');if(b)show(b)});
+ /* a click on a trigger the mouse just opened keeps it open (the hover already showed it); the next click closes it */
+ let hov=null;
+ document.addEventListener('click',e=>{const b=e.target.closest('[data-tip]');if(!b){hide();return}e.preventDefault();e.stopPropagation();
+  if(cur===b&&hov===b){hov=null;return}cur===b?hide():show(b)},true);
+ document.addEventListener('pointerover',e=>{if(e.pointerType!=='mouse')return;const b=e.target.closest('[data-tip]');if(b&&b!==cur){show(b);hov=b}});
  document.addEventListener('pointerout',e=>{if(e.pointerType!=='mouse')return;const b=e.target.closest('[data-tip]');if(b&&b===cur&&!b.contains(e.relatedTarget))hide()});
  document.addEventListener('focusin',e=>{const b=e.target.closest&&e.target.closest('[data-tip]');if(b&&KBD)show(b)});
  document.addEventListener('focusout',e=>{if(e.target===cur)hide()});
