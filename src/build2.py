@@ -323,12 +323,36 @@ if SITE:
         _loc.setdefault((s['name'],s.get('address')),dict(k=k,**{f:s[f] for f in ('name','address','city','phone','url','email','contact','hours','lat','lng','logo') if s.get(f) is not None}))
     SHL=list(_loc.values())
     SURL=URL+'browse-vendors/'
-    SDESC='Every shop that takes the Ava Community Energy e-bike rebate, on a map with each address, phone number and opening hours.'
+    STITLE='Participating Shops for the Ava E-Bike Rebate | Ava Bike Finder'
+    SDESC=f'All {len(SHL)} shops that take the Ava Community Energy e-bike rebate in Alameda and San Joaquin County, on a map with each address, phone number and opening hours.'
+    # the vendor page's own share card (the page itself on the share card's grid; made by verify/seo/og-vendors-shot.js); hashed name like og.jpg
+    OGV='og-vendors-'+hashlib.md5(open('verify/seo/og-vendors.jpg','rb').read()).hexdigest()[:8]+'.jpg'
+    shutil.copy('verify/seo/og-vendors.jpg',SITE+'/'+OGV)
+    _OGV_ALT=f'Ava Bike Finder vendor directory: the list of shops that take the Ava e-bike rebate next to a map with a pin for each shop.'
+    _today=datetime.date.today().isoformat()
+    # structured data: this page, where it sits in the site, and every shop on it (with its map location)
+    _vs=[]
+    for _s in sorted(SHL,key=lambda x:(x.get('city') or '',x['name'])):
+        _d={"@type":"BikeStore","name":_s['name'],"address":{"@type":"PostalAddress","streetAddress":_s.get('address'),"addressLocality":_s.get('city'),"addressRegion":"CA","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":_s['lat'],"longitude":_s['lng']}}
+        for a,b in (('phone','telephone'),('url','url'),('email','email')):
+            if _s.get(a): _d[b]=_s[a]
+        if _s.get('logo'): _d["logo"]=URL+_s['logo']
+        _vs.append(_d)
+    SLD={"@context":"https://schema.org","@graph":[
+     {"@type":"CollectionPage","@id":SURL,"url":SURL,"name":STITLE,"description":SDESC,"inLanguage":"en-US","isPartOf":{"@id":URL+"#site"},"breadcrumb":{"@id":SURL+"#crumbs"},"primaryImageOfPage":URL+OGV,"dateModified":_today,"mainEntity":{"@id":SURL+"#shops"}},
+     {"@type":"BreadcrumbList","@id":SURL+"#crumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Ava Bike Finder","item":URL},{"@type":"ListItem","position":2,"name":"Browse vendors","item":SURL}]},
+     {"@type":"WebSite","@id":URL+"#site","name":"Ava Bike Finder","url":URL},
+     {"@type":"ItemList","@id":SURL+"#shops","name":"Shops that accept the Ava e-bike rebate","numberOfItems":len(_vs),"itemListElement":[{"@type":"ListItem","position":i+1,"item":x} for i,x in enumerate(_vs)]}]}
+    # share-card tags, used by the page and by the old shops.html address
+    SOG=(f'<meta property="og:type" content="website"><meta property="og:site_name" content="Ava Bike Finder"><meta property="og:url" content="{SURL}"><meta property="og:title" content="{e("Every shop that takes the Ava e-bike rebate")}"><meta property="og:description" content="{e(SDESC)}">'
+     f'<meta property="og:image" content="{URL}{OGV}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:alt" content="{e(_OGV_ALT)}"><meta property="og:locale" content="en_US">'
+     f'<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{e("Every shop that takes the Ava e-bike rebate")}"><meta name="twitter:description" content="{e(SDESC)}"><meta name="twitter:image" content="{URL}{OGV}"><meta name="twitter:image:alt" content="{e(_OGV_ALT)}">')
     STY_URL={'light':'https://tiles.openfreemap.org/styles/bright','dark':'https://tiles.openfreemap.org/styles/bright'}  # OSM Bright in both themes
     SHEAD=('<!doctype html><html lang="en" data-theme="dark" data-overlayscrollbars-initialize><head><meta charset="utf-8"><link rel="stylesheet" href="vendor/overlayscrollbars-2.16.0.min.css"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#0f1211">'
-     f'<title>Participating shops | Ava Rebate Bike Finder</title><meta name="description" content="{e(SDESC)}"><link rel="canonical" href="{SURL}">'
-     +('<meta name="robots" content="noindex">' if SHOPS_PREVIEW else '')+
-     '<link rel="icon" href="favicon.ico" sizes="48x48"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="manifest" href="site.webmanifest">'
+     f'<title>{e(STITLE)}</title><meta name="description" content="{e(SDESC)}"><link rel="canonical" href="{SURL}">'
+     +('<meta name="robots" content="noindex">' if SHOPS_PREVIEW else '<meta name="robots" content="index,follow,max-image-preview:large">')+
+     '<link rel="icon" href="favicon.ico" sizes="48x48"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="manifest" href="site.webmanifest"><link rel="alternate" type="text/markdown" title="Full bike and shop list" href="llms-full.txt">'
+     +SOG+
      # the map style for the current theme starts downloading right away, alongside MapLibre (deferred, so it never holds up the page)
      '<script type="speculationrules">{"prefetch":[{"where":{"selector_matches":"a.brand, a[href=\\"./\\"]"},"eagerness":"moderate"}]}</script>'
      '<link rel="preconnect" href="https://tiles.openfreemap.org" crossorigin>'
@@ -351,9 +375,12 @@ if SITE:
         assert SP.count(a)==1,a; SP=SP.replace(a,b)
     # the page lives at browse-vendors/ (clean address); every relative link in it resolves from the site root
     SP=SP.replace('<meta charset="utf-8">','<meta charset="utf-8"><base href="../">',1)
+    # the structured data goes at the end of the page, so it never delays the first paint (search engines read it anywhere)
+    assert SP.rstrip().endswith('</body></html>')
+    SP=SP.rstrip()[:-len('</body></html>')]+'<script type="application/ld+json">'+json.dumps(SLD,separators=(',',':'),ensure_ascii=False).replace('</','<\\/')+'</script></body></html>'
     os.makedirs(SITE+'/browse-vendors',exist_ok=True);open(SITE+'/browse-vendors/index.html','w').write(SP)
     # the old shops.html address forwards to browse-vendors/ (keeping any #part of the link)
-    open(SITE+'/shops.html','w').write(f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Participating shops | Ava Rebate Bike Finder</title><link rel="canonical" href="{SURL}"><meta name="robots" content="noindex"><meta http-equiv="refresh" content="0;url=browse-vendors/"><script>location.replace("browse-vendors/"+location.search+location.hash)</script></head><body><a href="browse-vendors/">Participating shops</a></body></html>')
+    open(SITE+'/shops.html','w').write(f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>{e(STITLE)}</title><meta name="description" content="{e(SDESC)}"><link rel="canonical" href="{SURL}"><meta name="robots" content="noindex">{SOG}<meta http-equiv="refresh" content="0;url=browse-vendors/"><script>location.replace("browse-vendors/"+location.search+location.hash)</script></head><body><a href="browse-vendors/">Participating shops</a></body></html>')
     print('shops.html',len(SHL),'locations',len(SP),'bytes')
 open('Ava_Rebate_Bike_Finder_local.html','w').write('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head><body style="margin:0">'+html+'</body></html>')
 print(os.path.getsize('Ava_Rebate_Bike_Finder.html'))
