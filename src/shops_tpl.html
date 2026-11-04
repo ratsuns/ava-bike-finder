@@ -168,8 +168,9 @@ const SH=__SHOPS__;
 const $=id=>document.getElementById(id);
 __HELPERS__
 SH.sort((a,b)=>(a.city||'').localeCompare(b.city||'')||a.name.localeCompare(b.name));
-/* the first few logos load right away; the rest wait until they're scrolled near */
-$('list').innerHTML=SH.map((s,i)=>{const h=__CARD__;return i<6?h.replace('loading="lazy"','loading="eager"'):h}).join('');
+/* the first few logos load right away; the rest wait until they're scrolled near.
+   The build already puts these cards in the page (this same code, run at build time), so normally nothing is redrawn here */
+if(!$('list').firstElementChild)$('list').innerHTML=SH.map((s,i)=>{const h=__CARD__;return i<6?h.replace('loading="lazy"','loading="eager"'):h}).join('');
 const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
 /* light / dark toggle: same as the home page (remembered per browser, crossfades where view transitions exist) */
 (()=>{const b=$('themebtn');if(!b)return;const H=document.documentElement;

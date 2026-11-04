@@ -1,16 +1,36 @@
 name: Ping search engines (IndexNow)
+# Runs when a page's content changed: the build updates src/verify/seo/lastmod.json only then
+# (code and style changes don't count), and only the pages whose date or fingerprint changed are sent.
 on:
   push:
     branches: [main]
-    paths: ['index.html', 'browse-vendors/index.html', 'llms.txt', 'llms-full.txt', 'sitemap.xml']
+    paths: ['src/verify/seo/lastmod.json']
 jobs:
   ping:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
       - name: Wait for GitHub Pages to publish
         run: sleep 90
-      - name: Tell IndexNow the page changed
+      - name: Tell IndexNow which pages changed
         run: |
-          curl -s -o /dev/null -w "IndexNow: %{http_code}\n" -X POST "https://api.indexnow.org/indexnow" \
-            -H "Content-Type: application/json; charset=utf-8" \
-            -d '{"host":"ratsuns.github.io","key":"3ef55a8fd8c77a4982e3f3d6703f0926","keyLocation":"https://ratsuns.github.io/ava-bike-finder/3ef55a8fd8c77a4982e3f3d6703f0926.txt","urlList":["https://ratsuns.github.io/ava-bike-finder/","https://ratsuns.github.io/ava-bike-finder/browse-vendors/","https://ratsuns.github.io/ava-bike-finder/llms.txt","https://ratsuns.github.io/ava-bike-finder/llms-full.txt"]}'
+          python3 - <<'PY'
+          import json, subprocess, urllib.request
+          new = json.load(open('src/verify/seo/lastmod.json'))
+          try:
+              old = json.loads(subprocess.run(['git', 'show', 'HEAD~1:src/verify/seo/lastmod.json'], capture_output=True, text=True, check=True).stdout)
+          except Exception:
+              old = {}
+          urls = sorted(u for u, v in new.items() if old.get(u) != v)
+          print('changed:', urls)
+          if urls:
+              body = json.dumps({"host": "ratsuns.github.io", "key": "3ef55a8fd8c77a4982e3f3d6703f0926",
+                                 "keyLocation": "https://ratsuns.github.io/ava-bike-finder/3ef55a8fd8c77a4982e3f3d6703f0926.txt",
+                                 "urlList": urls}).encode()
+              req = urllib.request.Request("https://api.indexnow.org/indexnow", data=body, method="POST",
+                                           headers={"Content-Type": "application/json; charset=utf-8"})
+              with urllib.request.urlopen(req) as r:
+                  print('IndexNow:', r.status)
+          PY

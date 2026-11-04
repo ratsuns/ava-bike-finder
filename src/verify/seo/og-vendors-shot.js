@@ -1,11 +1,11 @@
 // Makes og-vendors.jpg, the share card for browse-vendors/: the real page at 1200x630 (2x), on the share card's grid
 // (72px sides like og.jpg, brand mark top-left, no top nav). og-vendors-map.jpg is the real map (OpenFreeMap, OSM Bright)
 // at the page's start view for this map size (590x540, zoom 10), captured in a browser.
-// Run: node og-vendors-shot.js <site folder> shot   (GEIST=path to Geist-Variable.woff2 from the geist npm package)
-// then scale og-vendors.png to 1200x630 and save as og-vendors.jpg
+// The build runs it (node og-vendors-shot.js <site folder> shot) whenever the vendor page's content changes, then scales og-vendors.png to og-vendors.jpg.
+// It prints the map's size, center and zoom; the build checks those against og-vendors-map.jpg and warns if the map photo needs re-capturing.
 const pw=require('playwright'),http=require('http'),fs=require('fs'),path=require('path');
 const T={html:'text/html',js:'text/javascript',css:'text/css',webp:'image/webp',svg:'image/svg+xml',png:'image/png',jpg:'image/jpeg'};
-const root=process.argv[2];const s=http.createServer((q,r)=>{const u=decodeURIComponent(q.url.split('?')[0]);const f=path.join(root,u.endsWith('/')?u+'index.html':u);fs.readFile(f,(e,d)=>{if(e){r.writeHead(404);r.end();return}r.writeHead(200,{'content-type':T[f.split('.').pop()]||'application/octet-stream'});r.end(d)})}).listen(9954);
+const root=process.argv[2];const s=http.createServer((q,r)=>{const u=decodeURIComponent(q.url.split('?')[0]);const f=path.join(root,u.endsWith('/')?u+'index.html':u);fs.readFile(f,(e,d)=>{if(e){r.writeHead(404);r.end();return}r.writeHead(200,{'content-type':T[f.split('.').pop()]||'application/octet-stream'});r.end(d)})}).listen(0);
 const STYLE=JSON.stringify({version:8,sources:{openmaptiles:{type:'vector',url:'https://tiles.openfreemap.org/planet'}},layers:[{id:'bg',type:'background',paint:{'background-color':'#f8f4f0'}},{id:'w',type:'fill',source:'openmaptiles','source-layer':'water',paint:{'fill-color':'#9cf'}}]});
 const TJ=JSON.stringify({tiles:['https://tiles.openfreemap.org/planet/TEST/{z}/{x}/{y}.pbf'],minzoom:0,maxzoom:14});
 const ok=(c,m)=>console.log((c?'PASS ':'FAIL ')+m);
@@ -20,7 +20,7 @@ const OGCSS='<style id="ogcard">html,body{scrollbar-width:none!important}html::-
  await c.route(/\/__maptop\.jpg/,r=>r.fulfill({contentType:'image/jpeg',body:fs.readFileSync(path.join(W,'og-vendors-map.jpg'))}));
  await c.route(/browse-vendors\/$/,async r=>{const res=await r.fetch();const t=(await res.text()).replace('</head>',OGCSS+'</head>');r.fulfill({response:res,body:t})});
  const p=await c.newPage();await p.addInitScript(()=>{let v;Object.defineProperty(window,'maplibregl',{configurable:true,get(){return v},set(x){v=x;const o=x.Map.prototype.addControl;x.Map.prototype.addControl=function(...q){window.__m=this;return o.apply(this,q)}}})});
- await p.goto('http://localhost:9954/browse-vendors/');await p.waitForFunction(()=>document.getElementById('list').classList.contains('hasmap'),null,{timeout:20000});
+ await p.goto(`http://localhost:${s.address().port}/browse-vendors/`);await p.waitForFunction(()=>document.getElementById('list').classList.contains('hasmap'),null,{timeout:20000});
  await p.evaluate(()=>document.fonts.ready);await p.waitForTimeout(1500);
  const g=await p.evaluate(()=>{const m=document.getElementById('map'),r=m.getBoundingClientRect(),l=document.querySelector('.shop').getBoundingClientRect(),h=document.querySelector('#sph2,.spg h2');const hr=h?h.getBoundingClientRect():null;
   return {w:m.clientWidth,h:m.clientHeight,mapLeft:r.left,mapRight:r.right,mapTop:r.top,cardLeft:l.left,headLeft:hr&&hr.left,c:__m.getCenter(),z:__m.getZoom()}});

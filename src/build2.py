@@ -80,21 +80,30 @@ KEEP=json.load(open('verify/keep.json'))
 NEW=json.load(open('verify/newphotos.json')) if os.path.exists('verify/newphotos.json') else {}
 SITE=os.environ.get('SITE_DIR')
 if SITE: os.makedirs(SITE+'/img',exist_ok=True)
-def emit(u,name,size=(480,360),q=62):
+# photo file names say what they show (brand, model, color), plus a short code from the photo itself:
+# names never clash, and a name only changes when the photo changes (so browsers only re-download changed photos)
+def slugify(s): return re.sub(r'[^a-z0-9]+','-',str(s).lower().replace('+',' plus ')).strip('-')[:80].rstrip('-')
+# the same photo used twice (say a bike's main photo and one of its colors) is one file, so it downloads once
+_PH={}
+def photo_name(label,data):
+    h=hashlib.md5(data).hexdigest()
+    return _PH.setdefault(h,f"{slugify(label)}-{h[:8]}")
+def emit(u,label,size=(480,360),q=62):
     im=Image.open(io.BytesIO(base64.b64decode(u.split(',')[1]))).convert('RGB')
     if im.size!=size: im=im.resize(size,Image.LANCZOS)
     b=io.BytesIO();im.save(b,'WEBP',quality=q,method=6);data=b.getvalue()
     if SITE:
-        open(f'{SITE}/img/{name}.webp','wb').write(data);return f'img/{name}.webp'
+        name=photo_name(label,data);open(f'{SITE}/img/{name}.webp','wb').write(data);return f'img/{name}.webp'
     return 'data:image/webp;base64,'+base64.b64encode(data).decode()
 for i,o in enumerate(out):
     v=VER.get(i,{})
     # main photo
     # photos re-checked in the October audit (wrong model, lifestyle shots, crops) take priority
     fx=f'verify/mainfix/{i}.png'
-    if os.path.exists(fx): o['img']=emit('data:image/png;base64,'+base64.b64encode(open(fx,'rb').read()).decode(),f'{i}')
-    elif f'm{i}' in NEW: o['img']=emit(NEW[f'm{i}'],f'{i}')
-    else: o['img']=emit(o['img'],f'{i}')
+    _lb=f"{o['brand']} {o['model']}"
+    if os.path.exists(fx): o['img']=emit('data:image/png;base64,'+base64.b64encode(open(fx,'rb').read()).decode(),_lb)
+    elif f'm{i}' in NEW: o['img']=emit(NEW[f'm{i}'],_lb)
+    else: o['img']=emit(o['img'],_lb)
     cv=[]
     for j,c in enumerate(v.get('colors') or []):
         f=c.get('family') or fam(c['name'])
@@ -104,7 +113,7 @@ for i,o in enumerate(out):
         if os.path.exists(cf): u='data:image/png;base64,'+base64.b64encode(open(cf,'rb').read()).decode()
         elif f'c{k}' in NEW: u=NEW[f'c{k}']
         elif k in KEEP and KEEP[k] in CP: u=CP[KEEP[k]]['img']
-        cv.append(dict(n=c['name'],f=f,hex=c.get('hex'),img=emit(u,f'{i}-{j}') if u else None))
+        cv.append(dict(n=c['name'],f=f,hex=c.get('hex'),img=emit(u,f"{_lb} {c['name']}") if u else None))
     o['cv']=cv
     # display photo: where the main photo is a lifestyle/padded shot, show a clean photo of one of its colors instead (no color is selected)
     j=DISP.get(str(i))
@@ -119,10 +128,10 @@ if CARDS:
         try: r,g,b=int(h[1:3],16),int(h[3:5],16),int(h[5:7],16)
         except Exception: return None
         return min(CHX,key=lambda f:sum((a-c)**2 for a,c in zip((r,g,b),CHX[f])))
-    def emitf(name):
+    def emitf(name,label):
         src=f'verify/cardphotos/{name}.webp'
         if SITE:
-            shutil.copy(src,f'{SITE}/img/c-{name}.webp');return f'img/c-{name}.webp'
+            nm=photo_name(label,open(src,'rb').read());shutil.copy(src,f'{SITE}/img/{nm}.webp');return f'img/{nm}.webp'
         return 'data:image/webp;base64,'+base64.b64encode(open(src,'rb').read()).decode()
     import shutil
     for i,c in CARDS.items():
@@ -144,9 +153,9 @@ if CARDS:
                 for x in c['cv']:
                     f=fam(x['n']) or (hexfam(x['hex']) if x.get('hex') else None)
                     if not f: continue
-                    cv.append(dict(n=x['n'],f=f,hex=x.get('hex'),img=emitf(x['img']) if x.get('img') else None))
+                    cv.append(dict(n=x['n'],f=f,hex=x.get('hex'),img=emitf(x['img'],f"{n['brand']} {n['model']} {x['n']}") if x.get('img') else None))
                 if cv or not o['cv']: n['cv']=cv
-            if c.get('img'): n['img']=emitf(c['img'])
+            if c.get('img'): n['img']=emitf(c['img'],f"{n['brand']} {n['model']}")
             elif n['cv'] is not o['cv'] and any(x['img'] for x in n['cv']): n['img']=next(x['img'] for x in n['cv'] if x['img'])
             new.append(n)
     out=new
@@ -373,6 +382,15 @@ if SITE:
     SP=open('shops_tpl.html').read()
     for a,b in (('__HEAD__',SHEAD),('__BASE_CSS__',BASE_CSS),('__HELPERS__',HELPERS),('__CARD__',CARD),('__NAV__',_nav),('__DIALOGS__',_dl),('__COUNT__',str(len(SHL))),('__WORLD__',open('worlddots.json').read().strip()),('__SHOPS__',json.dumps(SHL,separators=(',',':'),ensure_ascii=False).replace('</','<\\/'))):
         assert SP.count(a)==1,a; SP=SP.replace(a,b)
+    # the shop list is put into the page at build time, so it shows at once and search engines see every shop without running the page.
+    # It is made by the page's own card code (run here in Node), so the built list and the live one can never differ
+    import subprocess
+    _s=SP.index('const SH=');_e=SP.index("$('list').innerHTML=",_s);_e=SP.index('\n',_e)
+    _code='const document={getElementById:id=>id==="list"?L:{}},L={firstElementChild:null,innerHTML:""};'+SP[_s:_e]+'\nprocess.stdout.write(L.innerHTML)'
+    _list=subprocess.run(['node','-e',_code],capture_output=True,text=True,check=True).stdout
+    assert _list.count('class="shop"')==len(SHL),'prerendered shop list'
+    assert SP.count('<div class="splist" id="list"></div>')==1
+    SP=SP.replace('<div class="splist" id="list"></div>','<div class="splist" id="list">'+_list+'</div>',1)
     # the page lives at browse-vendors/ (clean address); every relative link in it resolves from the site root
     SP=SP.replace('<meta charset="utf-8">','<meta charset="utf-8"><base href="../">',1)
     # the structured data goes at the end of the page, so it never delays the first paint (search engines read it anywhere)
@@ -382,5 +400,49 @@ if SITE:
     # the old shops.html address forwards to browse-vendors/ (keeping any #part of the link)
     open(SITE+'/shops.html','w').write(f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>{e(STITLE)}</title><meta name="description" content="{e(SDESC)}"><link rel="canonical" href="{SURL}"><meta name="robots" content="noindex">{SOG}<meta http-equiv="refresh" content="0;url=browse-vendors/"><script>location.replace("browse-vendors/"+location.search+location.hash)</script></head><body><a href="browse-vendors/">Participating shops</a></body></html>')
     print('shops.html',len(SHL),'locations',len(SP),'bytes')
+    # the vendor page's share card is a picture of the page itself, so it is re-made whenever the page changes
+    # (shop list, count, wording, layout). og-vendors-map.jpg is the real map behind the pins, captured in a browser;
+    # the build warns when the page's map view no longer matches it (for example a different first shop)
+    _OGJ='verify/seo/og-vendors.json';_og=json.load(open(_OGJ)) if os.path.exists(_OGJ) else {}
+    _pg=re.sub(r'og-vendors-[0-9a-f]{8}\.jpg','OGV',open(SITE+'/browse-vendors/index.html').read())
+    _ogfp=hashlib.sha256((_pg+''.join(hashlib.md5(open('verify/seo/'+x,'rb').read()).hexdigest() for x in ('og-vendors-shot.js','og-vendors-map.jpg','Geist-Variable.woff2'))).encode()).hexdigest()
+    if _og.get('fp')!=_ogfp or not os.path.exists('verify/seo/og-vendors.jpg'):
+        _r=subprocess.run(['node','verify/seo/og-vendors-shot.js',os.path.abspath(SITE),'shot'],capture_output=True,text=True,check=True)
+        _view=json.loads(_r.stdout.strip().splitlines()[-1])
+        Image.open('verify/seo/og-vendors.png').convert('RGB').resize((1200,630),Image.LANCZOS).save('verify/seo/og-vendors.jpg',quality=90,optimize=True,progressive=True)
+        os.remove('verify/seo/og-vendors.png')
+        _m=_og.get('map')
+        if _m and (abs(_view['c']['lng']-_m['lng'])>1e-6 or abs(_view['c']['lat']-_m['lat'])>1e-6 or _view['z']!=_m['zoom'] or _view['w']!=_m['w']):
+            print('WARNING: the vendor share card map photo (verify/seo/og-vendors-map.jpg) no longer matches the page map view',_view,'- re-capture it')
+        _og={'fp':_ogfp,'map':_m or {'lng':_view['c']['lng'],'lat':_view['c']['lat'],'zoom':_view['z'],'w':_view['w'],'h':_view['h']}}
+        json.dump(_og,open(_OGJ,'w'),indent=1)
+        _new='og-vendors-'+hashlib.md5(open('verify/seo/og-vendors.jpg','rb').read()).hexdigest()[:8]+'.jpg'
+        if _new!=OGV:
+            shutil.copy('verify/seo/og-vendors.jpg',SITE+'/'+_new)
+            for _x in ('browse-vendors/index.html','shops.html'):
+                _p=SITE+'/'+_x;open(_p,'w').write(open(_p).read().replace(OGV,_new))
+            if os.path.exists(SITE+'/'+OGV): os.remove(SITE+'/'+OGV)
+            OGV=_new
+        print('vendor share card re-made:',OGV)
+    # "last updated" dates (sitemap, the pages' structured data, llms.txt) are the day a page's content last changed, not the build day.
+    # A page's fingerprint is its words, its structured data and its data file, so code and style changes don't count as content changes.
+    # Fingerprints and dates are kept in verify/seo/lastmod.json (committed with the site)
+    _LMF='verify/seo/lastmod.json';_LM=json.load(open(_LMF)) if os.path.exists(_LMF) else {}
+    _iso=datetime.date.today().isoformat();_long=datetime.date.today().strftime('%B %-d, %Y')
+    def _fp(s):
+        s=s.replace(_iso,'@D').replace(_long,'@D')
+        ld=''.join(re.findall(r'<script type="application/ld\+json">.*?</script>',s,re.S))
+        data=''.join(re.findall(r'data-[0-9a-f]{8}\.js',s))
+        txt=re.sub(r'<script\b.*?</script>|<style\b.*?</style>','',s,flags=re.S);txt=re.sub(r'<[^>]+>',' ',txt);txt=re.sub(r'\s+',' ',txt)
+        return hashlib.sha256((txt+ld+data).encode()).hexdigest()
+    _dates={}
+    for _f,_u in (('index.html',URL),('browse-vendors/index.html',SURL),('llms.txt',URL+'llms.txt'),('llms-full.txt',URL+'llms-full.txt')):
+        _p=SITE+'/'+_f;_s=open(_p).read();_h=_fp(_s);_o=_LM.get(_u)
+        if not _o or _o['fp']!=_h: _o=_LM[_u]={'fp':_h,'date':_iso}
+        _d=datetime.date.fromisoformat(_o['date']);_dates[_u]=_o['date']
+        open(_p,'w').write(_s.replace(_iso,_o['date']).replace(_long,_d.strftime('%B %-d, %Y')))
+    json.dump(_LM,open(_LMF,'w'),indent=1,sort_keys=True)
+    open(SITE+'/sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(f'<url><loc>{u}</loc><lastmod>{_dates[u]}</lastmod></url>' for u in ([URL]+([] if SHOPS_PREVIEW else [SURL])))+'</urlset>')
+    print('last updated',_dates)
 open('Ava_Rebate_Bike_Finder_local.html','w').write('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head><body style="margin:0">'+html+'</body></html>')
 print(os.path.getsize('Ava_Rebate_Bike_Finder.html'))
