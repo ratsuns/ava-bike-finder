@@ -336,7 +336,7 @@ if SITE:
         _d={"@type":"BikeStore","name":_s['name'],"address":{"@type":"PostalAddress","streetAddress":_s.get('address'),"addressLocality":_s.get('city'),"addressRegion":"CA","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":_s['lat'],"longitude":_s['lng']}}
         for a,b in (('phone','telephone'),('url','url'),('email','email')):
             if _s.get(a): _d[b]=_s[a]
-        if _s.get('logo'): _d["logo"]=URL+_s['logo']
+        if _s.get('logo'): _d["logo"]=_d["image"]=URL+_s['logo']
         _vs.append(_d)
     SLD={"@context":"https://schema.org","@graph":[
      {"@type":"CollectionPage","@id":SURL,"url":SURL,"name":STITLE,"description":SDESC,"inLanguage":"en-US","isPartOf":{"@id":URL+"#site"},"breadcrumb":{"@id":SURL+"#crumbs"},"primaryImageOfPage":URL+OGV,"dateModified":_today,"mainEntity":{"@id":SURL+"#shops"}},
