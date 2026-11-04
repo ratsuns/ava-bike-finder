@@ -88,10 +88,10 @@ __BASE_CSS__
 /* hover card: one element, reused for every pin; it grows out of the pin (or drops below it near the top edge) */
 .maplibregl-marker.mcw{z-index:6;pointer-events:none}
 .mcard{width:296px;max-width:calc(100vw - 58px);display:grid;gap:10px;padding:14px 16px;background:var(--surface);color:var(--fg);border:1px solid var(--line);border-radius:12px;font-size:var(--t-ui);line-height:1.45;text-align:left;
- box-shadow:0 1px 2px rgba(18,22,20,.06),0 12px 32px rgba(18,22,20,.16);
+ box-shadow:0 1px 2px rgba(18,22,20,.05),0 8px 24px rgba(18,22,20,.11);
  pointer-events:none;visibility:hidden;opacity:0;transform:scale(.96);transition:opacity .12s var(--ease-out),transform .12s var(--ease-out),visibility 0s linear .12s}
 .mcard.open{pointer-events:auto;visibility:visible;opacity:1;transform:none;transition:opacity .15s var(--ease-out),transform .15s var(--ease-out),visibility 0s}
-:root[data-theme="dark"] .mcard{border-color:var(--line2);box-shadow:0 2px 6px rgba(0,0,0,.35),0 16px 40px rgba(0,0,0,.55)}
+:root[data-theme="dark"] .mcard{border-color:var(--line2);box-shadow:0 2px 6px rgba(0,0,0,.28),0 12px 32px rgba(0,0,0,.42)}
 @media (prefers-reduced-motion:reduce){.mcard,.mcard.open{transform:none}.pin svg{transition:none}}
 /* phones and tablets: "Show list" and a row of shop cards at the bottom of the map; swipe the row left or right to go through the shops */
 .mdock{display:none}
