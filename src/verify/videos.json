@@ -463,7 +463,16 @@
    "du": 722
   }
  ],
- "Cannondale|Adventure Neo": [],
+ "Cannondale|Adventure Neo": [
+  {
+   "id": "RUZyWZG3Q9A",
+   "t": "Cannondale Adventure 2 Neo ebike Review",
+   "c": "Kyosti Poysti",
+   "d": "2025-11-07",
+   "vw": 772,
+   "du": 897
+  }
+ ],
  "Cannondale|Cargowagen Neo": [],
  "Cannondale|Mavaro Neo 1": [],
  "Cannondale|Mavaro Neo 2": [],
@@ -736,9 +745,26 @@
    "d": "2025-12-05",
    "vw": 42,
    "du": 90
+  },
+  {
+   "id": "SzFdAinUl_Q",
+   "t": "Ultimate Comfort Meets Performance | The New Gazelle Ultimate eBikes Explained (T10 vs C5 vs C380)",
+   "c": "Royal Dutch Gazelle North America",
+   "d": "2026-09-24",
+   "vw": 1524,
+   "du": 156
   }
  ],
- "Gazelle|Ultimate C5": [],
+ "Gazelle|Ultimate C5": [
+  {
+   "id": "SzFdAinUl_Q",
+   "t": "Ultimate Comfort Meets Performance | The New Gazelle Ultimate eBikes Explained (T10 vs C5 vs C380)",
+   "c": "Royal Dutch Gazelle North America",
+   "d": "2026-09-24",
+   "vw": 1524,
+   "du": 156
+  }
+ ],
  "Gazelle|Ultimate C8": [
   {
    "id": "p1VCeF52ITA",
@@ -765,6 +791,14 @@
    "d": "2024-11-12",
    "vw": 24866,
    "du": 373
+  },
+  {
+   "id": "fJo2p6U5tNI",
+   "t": "Gazelle's NIEUWE Ultimate! De C380! Met #PX #BOSCH middenmotor! #gazelle #bicycle #ebike #Cadzand",
+   "c": "Neptunus Tweewielers",
+   "d": "2025-10-11",
+   "vw": 30366,
+   "du": 60
   }
  ],
  "Gazelle|Ultimate T11+": [],
@@ -786,7 +820,24 @@
    "du": 923
   }
  ],
- "Gazelle|Arroyo C5 Elite": [],
+ "Gazelle|Arroyo C5 Elite": [
+  {
+   "id": "1MSKarzxPmw",
+   "t": "Gazelle Arroyo C5 HMB Elite Review: The Ultimate Commuter E-Bike! 🚲",
+   "c": "EMOTO Supply Co.",
+   "d": "2025-03-18",
+   "vw": 6595,
+   "du": 581
+  },
+  {
+   "id": "pw_NNETVSWM",
+   "t": "Meet the NEW Gazelle Arroyo C5 & C380 Elite. Best Electric Bike for Comfort?",
+   "c": "SCOOTERETTI",
+   "d": "2025-12-03",
+   "vw": 3441,
+   "du": 272
+  }
+ ],
  "Gazelle|Arroyo C8 Elite": [],
  "Gazelle|Arroyo C380 Elite": [
   {
@@ -941,8 +992,58 @@
    "du": 436
   }
  ],
- "Hase|Pino E (Tandem)": [],
- "Hase|Pino E Cargo": [],
+ "Hase|Pino E (Tandem)": [
+  {
+   "id": "Zo6xcHdq2Bo",
+   "t": "Hase Pino eBike Review: Tandem, Cargo, Kid Taxi",
+   "c": "Citrus Cycles Ltd.",
+   "d": "2025-07-18",
+   "vw": 2916,
+   "du": 711
+  },
+  {
+   "id": "DlF_zT-LGQ8",
+   "t": "What An Amazing Tandem/Cargo Bike! A Hase Pino Review ",
+   "c": "Nomad Cycles",
+   "d": "2025-11-07",
+   "vw": 2484,
+   "du": 272
+  },
+  {
+   "id": "CwvNsGstWog",
+   "t": "Hase Pino Cargo Tandem Bike: Unmatched Versatility",
+   "c": "Hostel Shoppe",
+   "d": "2026-03-27",
+   "vw": 2409,
+   "du": 419
+  }
+ ],
+ "Hase|Pino E Cargo": [
+  {
+   "id": "Zo6xcHdq2Bo",
+   "t": "Hase Pino eBike Review: Tandem, Cargo, Kid Taxi",
+   "c": "Citrus Cycles Ltd.",
+   "d": "2025-07-18",
+   "vw": 2916,
+   "du": 711
+  },
+  {
+   "id": "DlF_zT-LGQ8",
+   "t": "What An Amazing Tandem/Cargo Bike! A Hase Pino Review ",
+   "c": "Nomad Cycles",
+   "d": "2025-11-07",
+   "vw": 2484,
+   "du": 272
+  },
+  {
+   "id": "CwvNsGstWog",
+   "t": "Hase Pino Cargo Tandem Bike: Unmatched Versatility",
+   "c": "Hostel Shoppe",
+   "d": "2026-03-27",
+   "vw": 2409,
+   "du": 419
+  }
+ ],
  "Himiway|A7 Commuter eBike (step-through)": [
   {
    "id": "3LGZR1CPEpU",
@@ -1042,6 +1143,14 @@
    "d": "2026-04-08",
    "vw": 2259,
    "du": 1221
+  },
+  {
+   "id": "9kd58Ja9C-E",
+   "t": "CRAZY Range! The Himiway D5 ST 2.0 Goes WAY Farther Than It Should",
+   "c": "Auto Auction Rebuilds",
+   "d": "2026-07-14",
+   "vw": 7824,
+   "du": 1167
   }
  ],
  "Himiway|D5 2.0 20\"": [
@@ -1206,7 +1315,32 @@
    "du": 1615
   }
  ],
- "Lectric|XP4 750 Long-Range": [],
+ "Lectric|XP4 750 Long-Range": [
+  {
+   "id": "OWci9UTc-Tg",
+   "t": "I Tested America's Best Selling Ebike - Lectric XP4 750 Review",
+   "c": "TailHappyTV",
+   "d": "2025-11-13",
+   "vw": 254599,
+   "du": 1605
+  },
+  {
+   "id": "BryCgFQEul8",
+   "t": "Lectric XP 4 (750 Watt) Review | Reraising The Bar?",
+   "c": "Electric Bike Report",
+   "d": "2025-05-06",
+   "vw": 173865,
+   "du": 2223
+  },
+  {
+   "id": "JR15-n701IE",
+   "t": "I Rode the LECTRIC XP4 750W on a THROTTLE ONLY Test - Here's How it Did",
+   "c": "Tom's Gadget Garage",
+   "d": "2025-06-19",
+   "vw": 103613,
+   "du": 1110
+  }
+ ],
  "Lectric|Xpeak": [
   {
    "id": "K-8zv0amz1M",
@@ -1405,6 +1539,14 @@
    "d": "2026-07-29",
    "vw": 11319,
    "du": 513
+  },
+  {
+   "id": "2jB-fACTFKQ",
+   "t": "MAX POWER - Lectric XP Trike 2.0 750W Motor Review",
+   "c": "Ride Electric Reviews",
+   "d": "2025-10-29",
+   "vw": 13992,
+   "du": 1206
   }
  ],
  "Lectric|Lectric ONE": [
@@ -2103,8 +2245,42 @@
   }
  ],
  "Radio Flyer|Flyer Via Pro": [],
- "Retrospec|Beaumont Rev 2 City": [],
- "Retrospec|Judd Rev Folding": [],
+ "Retrospec|Beaumont Rev 2 City": [
+  {
+   "id": "wkCFF2zIE7s",
+   "t": "Retrospec Beaumont Rev 2 Review: Affordable Cruiser!",
+   "c": "ElectricBikeReview.com",
+   "d": "2025-01-23",
+   "vw": 4312,
+   "du": 1416
+  },
+  {
+   "id": "a1xjf2DYTsI",
+   "t": "Is This the Most Stylish E-Bike for the Price? | Retrospec Beaumont Rev 2 (Sponsored)",
+   "c": "Electrek.co",
+   "d": "2025-07-26",
+   "vw": 3608,
+   "du": 270
+  }
+ ],
+ "Retrospec|Judd Rev Folding": [
+  {
+   "id": "-PGDJ4aCY7c",
+   "t": "Retrospec Judd Rev 2 Folding E-bike Review",
+   "c": "hoohoohoblin",
+   "d": "2026-07-04",
+   "vw": 746,
+   "du": 654
+  },
+  {
+   "id": "1e8CRiCKtNc",
+   "t": "Retrospec Judd Rev 2: A Refreshingly Simple Electric Folding Bike",
+   "c": "nikareklama",
+   "d": "2026-04-02",
+   "vw": 346,
+   "du": 192
+  }
+ ],
  "Retrospec|Valen Rev+": [
   {
    "id": "5nlmmzu8gXg",
@@ -2185,8 +2361,26 @@
   }
  ],
  "Retrospec|Chatham Rev 3 (and Step Through)": [],
- "Retrospec|Joe Rev BMX Electric Bike (Rev 1)": [],
- "Retrospec|Joe Rev 2 BMX Electric Bike": [],
+ "Retrospec|Joe Rev BMX Electric Bike (Rev 1)": [
+  {
+   "id": "2wPANRwzCPs",
+   "t": "FINALLY! An affordable BMX E-Bike | Retrospec Joe Rev Review",
+   "c": "Ride Review",
+   "d": "2024-11-20",
+   "vw": 15740,
+   "du": 893
+  }
+ ],
+ "Retrospec|Joe Rev 2 BMX Electric Bike": [
+  {
+   "id": "YXKKIDdCCXg",
+   "t": "This Electric BMX Will Make You feel Like a Kid Again! Retrospec Joe Rev 2",
+   "c": "Chris Crossed",
+   "d": "2026-06-24",
+   "vw": 4308,
+   "du": 1142
+  }
+ ],
  "Retrospec|Abbot Rev 2 (and Step Through)": [],
  "Retrospec|Napa Rev": [],
  "Retrospec|Koa Rev 3 (and Step Through)": [],
@@ -2200,8 +2394,58 @@
    "du": 1222
   }
  ],
- "Retrospec|Roo Rev Cargo Electric Bike": [],
- "Retrospec|Roo Rev XL Cargo Electric Bike": [],
+ "Retrospec|Roo Rev Cargo Electric Bike": [
+  {
+   "id": "OEJgO9Uskms",
+   "t": "Retrospec Roo Rev Review | A Ready-To-Roll, Reliable Ride",
+   "c": "Electric Bike Report",
+   "d": "2025-09-15",
+   "vw": 2089,
+   "du": 1333
+  },
+  {
+   "id": "JFHMfIr4rks",
+   "t": "Retrospec Roo Rev Review — Budget Cargo E-Bike Done Right?",
+   "c": "ElectricBikeReview.com",
+   "d": "2025-10-30",
+   "vw": 1752,
+   "du": 1784
+  },
+  {
+   "id": "DWMVDVLXdSs",
+   "t": "A Great Step-Thru Ebike ✅ Retrospec Roo Rev",
+   "c": "Chris Crossed",
+   "d": "2025-12-05",
+   "vw": 745,
+   "du": 1113
+  }
+ ],
+ "Retrospec|Roo Rev XL Cargo Electric Bike": [
+  {
+   "id": "dm9pceHPoX8",
+   "t": "Retrospec Rev Roo XL Review (2025) — $1,999 Cargo ‘Sleeper’ That Hauls 400 lbs?!",
+   "c": "ElectricBikeReview.com",
+   "d": "2025-09-19",
+   "vw": 1258,
+   "du": 2121
+  },
+  {
+   "id": "oqJhv4uq0_k",
+   "t": "Retrospec Roo Rev XL Review | This Wallaby Wants to Work",
+   "c": "Electric Bike Report",
+   "d": "2025-09-23",
+   "vw": 1172,
+   "du": 1571
+  },
+  {
+   "id": "TQAlEnxo5sI",
+   "t": "Can One E-Bike Really Carry 4 Kids? | Retrospec Rev Roo XL Review",
+   "c": "Austin Rides",
+   "d": "2026-09-23",
+   "vw": 440,
+   "du": 431
+  }
+ ],
  "Revi Bikes|Runabout.2": [],
  "Riese and Muller|Load4 75 vario": [],
  "Riese and Muller|Load4 60 vario": [],
@@ -2529,6 +2773,14 @@
    "d": "2025-12-27",
    "vw": 839,
    "du": 169
+  },
+  {
+   "id": "t-wA7AnBf5U",
+   "t": "Tern Orox R14 & S12: The Beastly Cargo E-MTB That Redefines Power and Adventure",
+   "c": "NH Auto",
+   "d": "2025-10-26",
+   "vw": 820,
+   "du": 495
   }
  ],
  "Tern|Orox R14 (27.5\")": [
@@ -2859,7 +3111,16 @@
   }
  ],
  "Troxus|Trax Plus 750/30": [],
- "Troxus|Trax Plus LR iQ": [],
+ "Troxus|Trax Plus LR iQ": [
+  {
+   "id": "1YEbesmAp3g",
+   "t": "Troxus Trax Plus LR - First Impressions Ride - High End Commuter E-Bike w/ Ride IQ AND 30Ah Battery!",
+   "c": "DavesEBikes",
+   "d": "2026-08-29",
+   "vw": 3475,
+   "du": 1196
+  }
+ ],
  "Troxus|Trax SUV": [
   {
    "id": "GWsWs_8i8f8",
@@ -2916,7 +3177,16 @@
   }
  ],
  "Troxus|Lynx Cargo": [],
- "Troxus|Lynx Folding": [],
+ "Troxus|Lynx Folding": [
+  {
+   "id": "ACYg_1ORI6w",
+   "t": "Here's Why This Folding E-Bike is So Nice! – Troxus Lynx Review!",
+   "c": "Hello Gear",
+   "d": "2026-04-10",
+   "vw": 948,
+   "du": 720
+  }
+ ],
  "Troxus|Explorer Plus iQ": [
   {
    "id": "nlBZtX-QEPA",
@@ -3033,6 +3303,14 @@
    "d": "2026-09-18",
    "vw": 1342,
    "du": 988
+  },
+  {
+   "id": "Ia7IY_8fVHI",
+   "t": "The New Urtopia Joy Carbon Ebike is Lightweight, Compact, and Strong",
+   "c": "TailHappyTV",
+   "d": "2025-04-15",
+   "vw": 23687,
+   "du": 1446
   }
  ],
  "Urtopia|Carbon Joy Ultra": [
@@ -3051,6 +3329,14 @@
    "d": "2025-12-24",
    "vw": 3375,
    "du": 481
+  },
+  {
+   "id": "XUbZgilzKP4",
+   "t": "Urtopia Joy Ultra Review: The Carbon Approach to Utility Ebikes",
+   "c": "Ebike Escape",
+   "d": "2026-03-01",
+   "vw": 6452,
+   "du": 1120
   }
  ],
  "Urtopia|Carbon 1 ST": [
@@ -3141,7 +3427,32 @@
    "du": 1082
   }
  ],
- "Urtopia|Carbon Atom E-Bike": [],
+ "Urtopia|Carbon Atom E-Bike": [
+  {
+   "id": "YaaFhKve7Sw",
+   "t": "Urtopia Carbon Atom Review: The Most Premium E-Bike I’ve Ridden?",
+   "c": "The Oh Family",
+   "d": "2026-09-09",
+   "vw": 47869,
+   "du": 749
+  },
+  {
+   "id": "XI6RLlnkJ_w",
+   "t": "Urtopia Carbon Atom is a NEW \"Lightweight\" Carbon Fiber Ebike",
+   "c": "TailHappyTV",
+   "d": "2026-06-25",
+   "vw": 12289,
+   "du": 1581
+  },
+  {
+   "id": "w2g6ZtspGRA",
+   "t": "This Carbon Fiber E-Bike Does Almost Everything: Urtopia Carbon Atom Review",
+   "c": "Electric Bike Report",
+   "d": "2026-06-25",
+   "vw": 5286,
+   "du": 2108
+  }
+ ],
  "Velotric|Breeze 1": [
   {
    "id": "93duezTTQzo",
@@ -3527,7 +3838,32 @@
  ],
  "Xtracycle|RFA (Shimano EP8, Class 1)": [],
  "Xtracycle|RFA (Shimano EP6, Class 3)": [],
- "Xtracycle|The Hopper": [],
+ "Xtracycle|The Hopper": [
+  {
+   "id": "GLScyBqHIbw",
+   "t": "Xtracycle Hopper Review: Lower-Cost Premium Cargo E-Bike!",
+   "c": "Electrek.co",
+   "d": "2024-12-26",
+   "vw": 9533,
+   "du": 464
+  },
+  {
+   "id": "zsUrheAAM5Q",
+   "t": "BEST Budget Electric Cargo Bike of 2025! Xtracycle Hopper E-Bike Review",
+   "c": "Bike Zone",
+   "d": "2025-01-16",
+   "vw": 1013,
+   "du": 405
+  },
+  {
+   "id": "2AP7HrUfQOM",
+   "t": "25 years in the making | Xtracycle Hopper: what we like",
+   "c": "Ebike Escape",
+   "d": "2025-01-27",
+   "vw": 850,
+   "du": 86
+  }
+ ],
  "Yuba|Boda Boda": [
   {
    "id": "klufjF-Ai0Y",

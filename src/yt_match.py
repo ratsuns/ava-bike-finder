@@ -55,6 +55,7 @@ def core(model, brand_phrases):
         if toks[:len(b)] == b: toks = toks[len(b):]
     return toks
 
+FILLER = set('long range electric bike ebike e cargo folding city tricycle trike bmx the w edition rev1'.split())
 GENERIC = set('one go pro plus cargo family max mini lite core sport city step trike bike e st x'.split())
 TRIM = re.compile(r'^(?:[A-Za-z]{1,3}\d+[A-Za-z]{0,2}|[A-Za-z]+|\d+W)$')   # S10, P5i, EP600, D9, Q9, REC, ADV, 750W
 
@@ -115,7 +116,23 @@ def main(site):
                         if n == best: got[mo].append(i)
             return got
         # exact model name only: a family fallback put sister models' reviews on the wrong bike (Vektron P5i on Vektron Q9)
-        levels = [pick({mo: [c] for mo, c in cores.items()})]
+        # 2nd step: reviewers drop or reorder words the list uses ("XP4 750 Long-Range" is reviewed as "XP4 750",
+        # "Arroyo C5 Elite" as "Arroyo C5 HMB Elite"): every identifying word must be in the title, in any order.
+        # Each match from this step is checked by a reviewer before it is shown (verify/yt_reject.json).
+        def keys(mo):
+            k = [t for t in cores[mo] if t not in FILLER]
+            return k if k and (len(k) >= 2 or any(ch.isdigit() for ch in k[0]) or len(k[0]) >= 4) else []
+        def pick_any(names):
+            got = collections.defaultdict(list)
+            for i in vids:
+                ws = set(titles[i].split())
+                hits = [(len(k), mo) for mo, k in names.items() if k and all(t in ws for t in k)]
+                if hits:
+                    best = max(h[0] for h in hits)
+                    for n, mo in set(hits):
+                        if n == best: got[mo].append(i)
+            return got
+        levels = [pick({mo: [c] for mo, c in cores.items()}), pick_any({mo: keys(mo) for mo in mos})]
         for mo in mos:
             ids = []
             for lv in levels:
