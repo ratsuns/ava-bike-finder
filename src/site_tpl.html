@@ -1880,7 +1880,7 @@ ZOOM.addEventListener('click',e=>{const t=e.target.closest('.sw');if(t){const zs
 /* both bike photos (in the details and the full-screen view) work like a carousel track: the frame stays put and the photos sit side by side inside it.
    dragging with a finger moves the track with the finger; letting go snaps to the next photo (or back) with a spring that keeps the finger's speed.
    arrows, keys and the color dots use the same snap. touching the photo mid-snap catches it where it is, so nothing jumps */
-const TGAP=16,TLIN=CSS.supports('transition-timing-function','linear(0, 1)');
+const TGAP=0,TLIN=CSS.supports('transition-timing-function','linear(0, 1)');
 const txOf=p=>{const t=getComputedStyle(p).transform;return t&&t!=='none'?new DOMMatrix(t).m41:0};
 const tput=(p,x)=>{p._x=x;p.style.transform=x?`translateX(${x}px)`:''};
 /* Apple-style spring (duration .5s) with bounce 0: a paging photo shouldn't wobble. v0 carries the finger's speed into the snap */
