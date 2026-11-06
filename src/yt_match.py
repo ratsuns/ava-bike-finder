@@ -73,6 +73,20 @@ def families(model, brand_phrases):
     if len(c) > 1 and len(c[0]) >= 6 and c[0] not in GENERIC and [c[0]] not in out: out.append([c[0]])
     return out
 
+try:
+    from wordfreq import zipf_frequency
+    def common(w): return zipf_frequency(w, 'en') >= 2.5
+except ImportError:          # without the word list, only names with a number or 3+ words stand alone
+    def common(w): return True
+def distinctive(c):
+    """a model name that can stand without its brand: not an everyday word ("Adventure", "Avenue") and not a bare
+    letter+number that also names cameras or cars ("A7", "X2"); its first word must be unusual, or it has 3+ words"""
+    if not c: return False
+    first = c[0]
+    if len(c) == 1: return len(first) >= 5 and first.isalpha() and not common(first)
+    if len(first) < 3: return False
+    return (len(c) >= 3 and len(first) >= 4) or (first.isalpha() and not common(first))
+
 def seconds(iso):
     m = re.fullmatch(r'P(?:(\d+)D)?T?(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?', iso or '')
     if not m: return 0
@@ -90,19 +104,24 @@ def main(site):
           and seconds(v.get('du')) >= 60}
     for v in ok.values(): v['t'] = html.unescape(v['t'])
     # not reviews: sale listings, setup guides, parts and repairs; plus videos a reviewer judged wrong (verify/yt_reject.json)
-    JUNK = re.compile(r'refurb|gebruikte|te koop|for sale|demo bikes|assembl|tutorial|quick start|how to (enable|install|assemble)|recall|battery w|tire blowout|install|accessor|spare part|how to |replacement|fitting|stroller|wagon|giveaway|sizing', re.I)
+    JUNK = re.compile(r'refurb|gebruikte|te koop|for sale|demo bikes|assembl|tutorial|quick start|how to (enable|install|assemble)|recall|battery w|tire blowout|install|accessor|spare part|how to |replacement|fitting|stroller|giveaway|sizing', re.I)
     NOFAM = set(json.load(open('verify/yt_nofamily.json'))) if os.path.exists('verify/yt_nofamily.json') else set()
+    MANUAL = json.load(open('verify/yt_manual.json')) if os.path.exists('verify/yt_manual.json') else {}
     rej = json.load(open('verify/yt_reject.json')) if os.path.exists('verify/yt_reject.json') else {}   # {"Brand|Model": [ids]}
     FOREIGN = re.compile(r'\b(de|het|een|voor|van|fiets|und|der|die|das|mit|für|ist|zum|rower|na|miasta|otro|mundo|elcykel|erfahrung|vergleich|prueba|bicicleta|vélo|elektrische)\b|[^\x00-\u024f\u2000-\u2bff\U0001F000-\U0001FAFF\s]', re.I)
     ok = {i: v for i, v in ok.items() if not JUNK.search(v['t'])
           and (not v.get('la') or v['la'].lower().startswith('en')) and not FOREIGN.search(v['t'])}
     titles = {i: norm(v['t']) for i, v in ok.items()}
+    ALLBRANDS = [p for br in {b for b, _ in models} for p in BRAND_NAMES.get(br, [norm(br)])]
+    BIKEWORD = re.compile(r'\b(e ?bikes?|ebikes?|bikes?|bicycles?|cargo|trikes?)\b')
+    nobrand_all = [i for i, tt in titles.items() if BIKEWORD.search(tt) and not any(has(tt, bp) for bp in ALLBRANDS)]
     by_brand = collections.defaultdict(list)
     for (br, mo) in models: by_brand[br].append(mo)
     out = {}; pool = {}
     for br, mos in by_brand.items():
         bps = BRAND_NAMES.get(br, [norm(br)])
         vids = [i for i, tt in titles.items() if any(has(tt, bp) for bp in bps)]
+        nobrand = [i for i in nobrand_all if i not in set(vids)]
         cores = {mo: core(mo, bps) for mo in mos}
         full = set(' '.join(c) for c in cores.values())
         fams = {mo: families(mo, bps) for mo in mos}
@@ -139,6 +158,15 @@ def main(site):
                         if n == best: got[mo].append(i)
             return got
         l1, l2 = pick({mo: [c] for mo, c in cores.items()}), pick_any({mo: keys(mo) for mo in mos})
+        # reviewers often drop the brand when the model name is distinctive ("Flyer Via Pro Review", "XPedition 2.0"):
+        # a title without any brand counts when it has the bike's full model name and a bike word
+        for i in nobrand:
+            tt = titles[i]
+            hits = [(len(c), mo) for mo, c in cores.items() if distinctive(c) and has(tt, ' '.join(c))]
+            if hits:
+                best = max(h[0] for h in hits)
+                for n, mo in set(hits):
+                    if n == best and i not in l1[mo]: l1[mo].append(i)
         # 3rd step (Chris: "same model family is OK"): a general review of the family ("Tern GSD") may fill open spots,
         # but never one that names a different model code ("GSD S10" on the GSD P10) or that matched another bike
         taken = collections.defaultdict(set)
@@ -159,16 +187,17 @@ def main(site):
                     if i not in l3[mo]: l3[mo].append(i)
         levels = [l1, l2, l3]
         for mo in mos:
-            ids = []
+            # videos Chris chose (verify/yt_manual.json) come first, in his order
+            ids = [i for i in MANUAL.get(br + '|' + mo, []) if i in cand][:3]
             for lv in levels:
                 # the last 2 years first (most viewed), then older reviews fill any open spots: older bikes only have older reviews
                 for i in sorted(lv.get(mo, []), key=lambda i: (ok[i]['d'] < since, -ok[i]['vw'])):
                     if i not in ids and i not in rej.get(br + '|' + mo, ()): ids.append(i)
                 if len(ids) >= 3: break
-            pool[br + '|' + mo] = [[i, ok[i]['t'], ok[i]['vw']] for i in ids]
+            pool[br + '|' + mo] = [[i, cand[i]['t'], cand[i]['vw']] for i in ids]
             ids = ids[:3]
-            out[br + '|' + mo] = [{'id': i, 't': ok[i]['t'], 'c': ok[i]['c'], 'd': ok[i]['d'][:10], 'vw': ok[i]['vw'],
-                                   'du': seconds(ok[i]['du'])} for i in ids]
+            out[br + '|' + mo] = [{'id': i, 't': html.unescape(cand[i]['t']), 'c': cand[i]['c'], 'd': cand[i]['d'][:10], 'vw': cand[i]['vw'],
+                                   'du': seconds(cand[i]['du'])} for i in ids]
     json.dump(out, open('verify/videos.json', 'w'), indent=1, ensure_ascii=False)
     json.dump(pool, open('verify/yt_pool.json', 'w'), indent=1, ensure_ascii=False)
     n = collections.Counter(len(v) for v in out.values())
