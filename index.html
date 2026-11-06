@@ -441,7 +441,14 @@ input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;width:1
 }
 /* the video's own picture shows the moment the player opens, until YouTube's player has loaded over it */
 .vbox{background:#000 center/cover no-repeat}
-.vbox:fullscreen{aspect-ratio:auto;border-radius:0;box-shadow:none;background:#000}
+/* full screen: the player fills it edge to edge on black (the notch gap is only for the sideways fill above) */
+.vpv .vbox:fullscreen{aspect-ratio:auto;border-radius:0;box-shadow:none;background:#000!important}
+.vpv .vbox:fullscreen iframe{top:0;left:0;width:100%;height:100%}
+/* upright phone: the player spans the screen's width, like YouTube's; its title keeps the photo caption's spacing */
+@media (orientation:portrait) and (pointer:coarse) and (max-width:540px){
+ .zoomv.vpv{padding-left:0;padding-right:0}
+ .vpv .vbox{border-radius:0;box-shadow:none}
+}
 .vpv .zcap{text-align:center;text-wrap:balance}
 .bmr{display:grid;gap:24px;min-width:0}
 .bmr h3{margin:0 0 10px;font-size:var(--t-body);font-weight:600;letter-spacing:-.01em}
@@ -1431,27 +1438,31 @@ const vpStop=()=>{if(inPlayer())document.exitFullscreen().catch(()=>{});VP.class
 /* turning and full screen, as in Google's guide to mobile video and YouTube's app:
    - phone turned sideways: the video fills the screen (the CSS above), and goes truly full screen where Android allows it
      (for a few seconds after a tap)
-   - phone turned upright: always back to the normal player, whichever full screen was on (ours or YouTube's button)
+   - phone turned upright: always back to the normal player, whichever full screen was on (ours or YouTube's button).
+     In full screen the screen can be held sideways (YouTube's player does that, and so do we for its expand button on an
+     upright phone), so then the turn is read from the phone's tilt instead of the screen
    - YouTube's collapse button: leaves full screen entirely and shows the small player until the phone is upright
-   - YouTube's expand button on an upright Android phone: the video turns sideways (orientation lock); collapsing, or
-     turning the phone sideways and back upright, returns it upright */
+   - YouTube's expand button on an upright Android phone: the video turns sideways */
 {const side=matchMedia('(orientation:landscape) and (pointer:coarse) and (max-height:540px)');
  const upright=matchMedia('(orientation:portrait) and (pointer:coarse) and (max-width:540px)');
  const unlock=()=>{try{screen.orientation.unlock()}catch(e){}};
  let viaButton=false,tilt=null;
  const stopTilt=()=>{if(tilt){removeEventListener('deviceorientation',tilt);tilt=null}};
- const watchTurnBack=()=>{let turned=false;stopTilt();
-  tilt=e=>{if(e.beta==null)return;const sw=Math.abs(e.gamma)>60&&Math.abs(e.beta)<35,up=Math.abs(e.beta)>60&&Math.abs(e.gamma)<35;
-   if(sw)turned=true;else if(turned&&up&&inPlayer())document.exitFullscreen().catch(()=>{})};
+ const watchTilt=()=>{if(tilt)return;let wasSideways=false;
+  tilt=e=>{if(e.beta==null||e.gamma==null)return;const b=Math.abs(e.beta),g=Math.abs(e.gamma);
+   if(g>55&&b<40)wasSideways=true;                                          // held sideways
+   else if(b>55&&g<35&&wasSideways&&inPlayer())document.exitFullscreen().catch(()=>{})};   // then upright again
   addEventListener('deviceorientation',tilt)};
  side.addEventListener('change',()=>{if(!VP.open)return;
   if(side.matches){if(!VP.classList.contains('small')&&!document.fullscreenElement&&VBOX.requestFullscreen&&navigator.userActivation&&navigator.userActivation.isActive)
     VBOX.requestFullscreen({navigationUI:'hide'}).catch(()=>{})}
   else{VP.classList.remove('small');if(inPlayer())document.exitFullscreen().catch(()=>{})}});
  document.addEventListener('fullscreenchange',()=>{if(!VP.open)return;const f=document.fullscreenElement;
-  if(f&&f!==VBOX&&VBOX.contains(f)){viaButton=true;                          // YouTube's expand button
-   if(upright.matches&&screen.orientation&&screen.orientation.lock)screen.orientation.lock('landscape').then(watchTurnBack).catch(()=>{});return}
-  if(f===VBOX&&viaButton){viaButton=false;document.exitFullscreen().catch(()=>{});return}   // its collapse button inside ours: leave entirely
+  if(f===VBOX&&viaButton){viaButton=false;document.exitFullscreen().catch(()=>{});return}   // YouTube's collapse inside ours: leave entirely
+  if(inPlayer()){watchTilt();
+   if(f!==VBOX){viaButton=true;                                                             // YouTube's expand button
+    if(upright.matches&&screen.orientation&&screen.orientation.lock)screen.orientation.lock('landscape').catch(()=>{})}
+   return}
   if(!f){viaButton=false;stopTilt();unlock();if(side.matches)VP.classList.add('small')}})}   // left full screen while sideways: small player
 /* the player starts sooner: the connections YouTube's player needs open while the bike window is up, before a video is
    tapped (the same list lite-youtube-embed warms) */
@@ -1462,6 +1473,7 @@ function warmYT(){if(ytWarm)return;ytWarm=true;
 BIKE.addEventListener('click',e=>{const it=e.target.closest('.vit');if(!it)return;
  const vid=encodeURIComponent(it.dataset.v);VBOX.style.backgroundImage=`url(https://i.ytimg.com/vi/${vid}/hqdefault.jpg),url(https://i.ytimg.com/vi/${vid}/mqdefault.jpg)`;
  VBOX.innerHTML=`<iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(it.dataset.v)}?autoplay=1&rel=0&playsinline=1" title="${esc(it.dataset.t)}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>`;
+ VBOX.firstChild.addEventListener('load',()=>{VBOX.style.backgroundImage=''},{once:true});   // the picture only covers the wait
  VP.querySelector('.zcap').textContent=it.dataset.t+' · '+it.dataset.c;showDlg(VP,it)});
 {const c0=VP.close;VP.close=function(){vpStop();return c0.call(this)}}
 VP.querySelector('.zx').onclick=()=>VP.close();
