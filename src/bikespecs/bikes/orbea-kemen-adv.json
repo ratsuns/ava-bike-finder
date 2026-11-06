@@ -1,0 +1,167 @@
+{
+ "bike": "Orbea|Kemen Adv",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": 4961,
+    "url": "https://www.orbea.com/en-us/kemen-adv-10-28mph",
+    "quote": "$4,961 ⟶ View summary",
+    "basis": "Kemen Adv 10 28mph standard configuration; no crossed-out price shown"
+   },
+   {
+    "kind": "retailer",
+    "value": 5353.95,
+    "url": "https://www.n1bikes.com/products/orbea-kemen-adv-10-28mph?id=379e0e80818ded9e6722a3e362ca078341634bf0f8dc9f3e1797192b5dfffa8d&variant=T71505W6",
+    "quote": "$5,353.95 ⟶ Earn 53,539 points on this item",
+    "basis": "dealer price, higher than Orbea's own US price"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.orbea.com/en-us/kemen-adv-10-28mph",
+    "quote": "",
+    "basis": "maker page states no class; the model name says 28mph, which would be Class 3"
+   },
+   {
+    "kind": "retailer",
+    "value": 3,
+    "url": "https://aroundthecycle.com/products/new-2027-orbea-kemen-adv-20-28mph-electric-hybrid-bike",
+    "quote": "How fast is the Orbea Kemen ADV 20? It's a Class 3 e-bike with pedal assist up to 28 mph.",
+    "basis": "Around the Cycle (US dealer) page for the 2027 Kemen ADV 20 28mph, a sister build of the Kemen Adv 10 28mph used for this row (same 28mph setting); its 2025 Kemen ADV 10 28mph page gives no class line"
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": 28,
+    "url": "https://www.orbea.com/en-us/kemen-adv-10-28mph",
+    "quote": "Kemen Adv 10 28mph ⟶ Change model",
+    "basis": "from the model name; a 20mph version is also sold"
+   },
+   {
+    "kind": "retailer",
+    "value": 28,
+    "url": "https://www.n1bikes.com/products/orbea-kemen-adv-10-28mph?id=379e0e80818ded9e6722a3e362ca078341634bf0f8dc9f3e1797192b5dfffa8d&variant=T71505W6",
+    "quote": "Orbea Kemen Adv 10 28mph",
+    "basis": "from the model name"
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": 85,
+    "url": "https://www.orbea.com/en-us/kemen-adv-10-28mph",
+    "quote": "The powerful EP motor system offers 85Nm of assistance to help speed you up the steepest climbs, or carry heavy loads."
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://bikeattack.com/orbea-kemen-adv-10-2026/",
+    "quote": ""
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": 630,
+    "url": "https://www.orbea.com/en-us/kemen-adv-10-28mph",
+    "quote": "Battery ⟶ Orbea 630 Wh Battery"
+   },
+   {
+    "kind": "retailer",
+    "value": 630,
+    "url": "https://www.n1bikes.com/products/orbea-kemen-adv-10-28mph?id=379e0e80818ded9e6722a3e362ca078341634bf0f8dc9f3e1797192b5dfffa8d&variant=T71505W6",
+    "quote": "Battery\tOrbea 630 Wh Battery"
+   },
+   {
+    "kind": "retailer",
+    "value": 630,
+    "url": "https://bikeattack.com/orbea-kemen-adv-10-2026/",
+    "quote": "BATTERY ⟶ Orbea Internal 630Wh"
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.orbea.com/en-us/kemen-adv-10-28mph",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://bikeattack.com/orbea-kemen-adv-10-2026/",
+    "quote": ""
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.orbea.com/en-us/kemen-adv-10-28mph",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://bikeattack.com/orbea-kemen-adv-10-2026/",
+    "quote": ""
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.orbea.com/en-us/kemen-adv-10-28mph",
+    "quote": "",
+    "basis": "only the rear rack limit is given (Max. 30Kg), no bike max load"
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "Shimano EP600",
+    "url": "https://www.orbea.com/en-us/kemen-adv-10-28mph",
+    "quote": "Motor ⟶ Shimano EP600"
+   },
+   {
+    "kind": "retailer",
+    "value": "Shimano EP600",
+    "url": "https://www.n1bikes.com/products/orbea-kemen-adv-10-28mph?id=379e0e80818ded9e6722a3e362ca078341634bf0f8dc9f3e1797192b5dfffa8d&variant=T71505W6",
+    "quote": "Motor\tShimano EP600"
+   },
+   {
+    "kind": "retailer",
+    "value": "Shimano EP600",
+    "url": "https://bikeattack.com/orbea-kemen-adv-10-2026/",
+    "quote": "MOTOR ⟶ Shimano EP600"
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": "5'0\"-6'9\"",
+    "url": "https://www.orbea.com/en-us/kemen-adv-10-28mph",
+    "quote": "S | 153-172 cm | M | 164-183 cm | L | 176-195 cm | XL | 187-206 cm",
+    "basis": "size guide by height (View size guide), 153-206 cm converted to ft/in"
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://www.orbea.com/en-us/kemen-adv-10-28mph",
+    "quote": "Frame ⟶ Orbea Kemen Top bar 2026, Hydroformed Alloy 6061, High Polished, OLD 148, Belt drive compatible, Orbea cockpit and equipment ecosystem, w/ Kickstand, Trailer compatible.",
+    "basis": "rigid frame; no folding mentioned"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "Uses the Kemen Adv 10 28mph build (src link); 20mph and MID versions also exist. Orbea's US configurator gives no class, speed spec, range, weight or max load; no independent review of this exact model found (one WebSearch turned up only EU shops and a Shimano story). Dealers N+1 Bikes and Bike Attack both list $5,353.95, higher than Orbea's $4,961. Class 3 is implied by 28mph but no page states it. Recheck: Around the Cycle (US dealer) Kemen ADV 20 28mph page says Class 3 / 28 mph; its 2025 Kemen ADV 10 28mph page has no class line."
+}

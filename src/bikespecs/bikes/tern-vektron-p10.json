@@ -1,0 +1,40 @@
+{"bike": "Tern|Vektron P10", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 3699, "url": "https://www.ternbicycles.com/us/bikes/474/vektron-p10", "quote": "RIDE IT, FOLD IT, GO FURTHER ⟶ $3,699"},
+   {"kind": "review", "value": 3699, "url": "https://electrek.co/2025/11/13/tern-launches-next-gen-vektron-folding-e-bike-in-the-us-now-with-belt-drive/", "quote": "The Vektron P10 will retail for $3,699 USD, while the belt-drive P5i model comes in at $4,099 USD. Both are expected to land in North American bike shops by the end of the year."}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://www.ternbicycles.com/us/bikes/474/vektron-p10", "quote": "MOTOR: ⟶ Bosch BES2 Performance, max speed 20 mph", "basis": "20 mph pedal assist, no throttle = Class 1 (class not stated on page)"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.ternbicycles.com/us/bikes/474/vektron-p10", "quote": "MOTOR: ⟶ Bosch BES2 Performance, max speed 20 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 65, "url": "https://www.ternbicycles.com/us/bikes/474/vektron-p10", "quote": "Powerful Bosch BES2 Performance motor provides up to 65 Nm of torque and 300% support"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 400, "url": "https://www.ternbicycles.com/us/bikes/474/vektron-p10", "quote": "RANGE: ⟶ 400 Wh: 28-70 mi"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "28–70", "url": "https://www.ternbicycles.com/us/bikes/474/vektron-p10", "quote": "RANGE: ⟶ 400 Wh: 28-70 mi"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 49.6, "url": "https://www.ternbicycles.com/us/bikes/474/vektron-p10", "quote": "WEIGHT: ⟶ 22.5 kg (49.6 lb)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 275.6, "url": "https://www.ternbicycles.com/us/bikes/474/vektron-p10", "quote": "MAX GROSS VEHICLE WEIGHT: ⟶ 125 kg (275.6 lb)", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch BES2 Performance", "url": "https://www.ternbicycles.com/us/bikes/474/vektron-p10", "quote": "MOTOR: ⟶ Bosch BES2 Performance, max speed 20 mph"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'10\"-6'5\"", "url": "https://www.ternbicycles.com/us/bikes/474/vektron-p10", "quote": "Adjustable cockpit resizes in seconds to comfortably fit riders 147 - 195 cm (4’10” - 6’5”)"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "Yes", "url": "https://www.ternbicycles.com/us/bikes/474/vektron-p10", "quote": "Folds down compact in 10 seconds to fit in cars, trains, and closets ⟶ Stands upright and rolls when folded—easy to move, easy to store"},
+   {"kind": "review", "value": "Yes", "url": "https://electrek.co/2025/11/13/tern-launches-next-gen-vektron-folding-e-bike-in-the-us-now-with-belt-drive/", "quote": "Despite its compact size, the Vektron delivers big design features. Reinforced frame components, including Tern’s robust OCL+ folding joint, give it a stable and confidence-inspiring ride that the company says sets it apart from other folders on the market."}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Vektron Gen 4 (maker breadcrumb 'VEKTRON GEN 4'). Independent source is Electrek's Gen 4 US launch article (price and folding only); no Gen 4 P10 review/spec table found (EBR only has older Vektron/Q9 reviews; n1bikes and mikesbikes don't carry Tern). Class not stated by maker: 20 mph, no throttle -> Class 1. Max load is max gross vehicle weight (total); max rider 231.5 lb; rack 27 kg."}

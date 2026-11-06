@@ -1,0 +1,150 @@
+{
+ "bike": "Cannondale|Mavaro Neo 2",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": 4399,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-2-low-stepthru",
+    "quote": "$4,399 ⟶ 0% APRor as low as $153/mo with Affirm. See if you qualify"
+   },
+   {
+    "kind": "retailer",
+    "value": 4399,
+    "url": "https://www.n1bikes.com/products/mavaro-2-low-stepthru?id=2fb45f494530e81cb0df6ed17c42181be3a8ce2a0891a067a226b24867564e71&variant=C68223U10LG",
+    "quote": "$4,399.00"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": 3,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-2-low-stepthru",
+    "quote": "Bosch Smart System - Performance Line Sport 28mph drive-unit / 625Wh battery / Range: up to 87 mi ⟶ Certifications",
+    "basis": "no class line; 28 mph assist = Class 3"
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": 28,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-2-low-stepthru",
+    "quote": "Bosch Performance Line Sport, Smart System, 28 mph ⟶ Battery"
+   },
+   {
+    "kind": "retailer",
+    "value": 28,
+    "url": "https://www.n1bikes.com/products/mavaro-2-low-stepthru?id=2fb45f494530e81cb0df6ed17c42181be3a8ce2a0891a067a226b24867564e71&variant=C68223U10LG",
+    "quote": "Max Speed\t28 mph"
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-2-low-stepthru",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.n1bikes.com/products/mavaro-2-low-stepthru?id=2fb45f494530e81cb0df6ed17c42181be3a8ce2a0891a067a226b24867564e71&variant=C68223U10LG",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": 63,
+    "url": "https://bikes.fan/cannondale-mavaro-2-low-stepthru-2024/",
+    "quote": "MOTOR ⟶ Bosch 600W 63Nm mid-drive",
+    "basis": "bike database page for the 2024 Mavaro 2 Low StepThru; same page lists 'Motor ⟶ Bosch Performance Line Sport, Smart System, 28 mph' and 625Wh, matching the maker spec"
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": 625,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-2-low-stepthru",
+    "quote": "Battery ⟶ Bosch PowerTube, 625Wh"
+   },
+   {
+    "kind": "retailer",
+    "value": 625,
+    "url": "https://www.n1bikes.com/products/mavaro-2-low-stepthru?id=2fb45f494530e81cb0df6ed17c42181be3a8ce2a0891a067a226b24867564e71&variant=C68223U10LG",
+    "quote": "Battery\tBosch PowerTube, 625Wh"
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": "87",
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-2-low-stepthru",
+    "quote": "Bosch Smart System - Performance Line Sport 28mph drive-unit / 625Wh battery / Range: up to 87 mi ⟶ Certifications"
+   },
+   {
+    "kind": "retailer",
+    "value": "87",
+    "url": "https://www.n1bikes.com/products/mavaro-2-low-stepthru?id=2fb45f494530e81cb0df6ed17c42181be3a8ce2a0891a067a226b24867564e71&variant=C68223U10LG",
+    "quote": "Range\tUp to 87 miles"
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-2-low-stepthru",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.n1bikes.com/products/mavaro-2-low-stepthru?id=2fb45f494530e81cb0df6ed17c42181be3a8ce2a0891a067a226b24867564e71&variant=C68223U10LG",
+    "quote": ""
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-2-low-stepthru",
+    "quote": "Axa Compactline 35E front light, Axa Blueline rear light, Tubus rear rack (25kg, Racktime SnapIt 1.0 compatible), full-coverage fenders",
+    "basis": "only the rear rack rating (25 kg) is given, not a bike max load"
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "Bosch Performance Line Sport",
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-2-low-stepthru",
+    "quote": "Bosch Performance Line Sport, Smart System, 28 mph ⟶ Battery"
+   },
+   {
+    "kind": "retailer",
+    "value": "Bosch Performance Line Sport",
+    "url": "https://www.n1bikes.com/products/mavaro-2-low-stepthru?id=2fb45f494530e81cb0df6ed17c42181be3a8ce2a0891a067a226b24867564e71&variant=C68223U10LG",
+    "quote": "Motor Type\tBosch Performance Line Sport"
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": "4'11\"-6'7\"",
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-2-low-stepthru",
+    "quote": "Height - 4'11\" - 5'7\" | Height - 5'5\" - 6'1\" | Height - 5'11\" - 6'7\"",
+    "basis": "three size selectors (SM, MD, LG) shown one at a time on the page; joined"
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-2-low-stepthru",
+    "quote": "SmartForm C2 Alloy, low step-thru, removable 625Wh downtube battery, integrated headtube reflector, tapered headtube, internal cable routing, 135mm QR hub spacing, IS disc mount, motor protection ⟶ Fork"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker page is the Mavaro 2 Low StepThru (C68223U). Maker gives no torque, weight or max load. No independent review of this US model found (EBR has only the older Mavaro Performance; REI blocked; Mike's Bikes doesn't stock it). Only 2 sources (maker + N+1 Bikes dealer). No WebSearch used. recheck (tq): no torque on Bicycle Warehouse or Bike World Iowa dealer pages. Bikes.Fan (2024 Mavaro 2 Low StepThru) states 63Nm, not the site's 75; 99 Spokes' 2025 Mavaro 2 Low StepThru (a belt/Nexus build, so not recorded) shows the same 'Bosch 600W 63Nm mid-drive' wording, so Bikes.Fan likely shares that database. No page found stating 75Nm. Used the bike's one WebSearch."
+}

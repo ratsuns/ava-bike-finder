@@ -1,0 +1,49 @@
+{"bike": "Urtopia|Carbon Joy Ultra", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2499, "url": "https://newurtopia.com/products/urtopia-carbon-joy-ultra-ebike", "quote": "$1,999.00 ⟶ $2,499.00", "basis": "crossed-out regular price; $1,999 is the Black Friday sale price"},
+   {"kind": "review", "value": 2199, "url": "https://electricbikereview.com/urtopia/carbon-joy-ultra-review/", "quote": "PRICE: ⟶ $2,199", "basis": "2025 model-year review price"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://newurtopia.com/products/urtopia-carbon-joy-ultra-ebike", "quote": "Class | Class 2 by default | Class 3 upon unlock", "basis": "ships Class 2 (20 mph with throttle); unlockable to Class 3"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereview.com/urtopia/carbon-joy-ultra-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 2 (can be unlocked to 25 mph)"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://newurtopia.com/products/urtopia-carbon-joy-ultra-ebike", "quote": "Top Speed | 20mph by default | 25mph upon unlock", "basis": "adjustable to 25 mph"},
+   {"kind": "review", "value": 25, "url": "https://electricbikereview.com/urtopia/carbon-joy-ultra-review/", "quote": "TOP SPEED: ⟶ 25 MPH mph", "basis": "unlocked top speed"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 50, "url": "https://newurtopia.com/products/urtopia-carbon-joy-ultra-ebike", "quote": "Motor Max. Torque | 50Nm"},
+   {"kind": "review", "value": 60, "url": "https://electricbikereview.com/urtopia/carbon-joy-ultra-review/", "quote": "MOTOR TORQUE: ⟶ 60Nm Newton meters"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 529.2, "url": "https://newurtopia.com/products/urtopia-carbon-joy-ultra-ebike", "quote": "Battery | 36V, 14,7Ah (529.2Wh) Samsung Li-ion, Removable, UL 2271 Certified"},
+   {"kind": "review", "value": 529.2, "url": "https://electricbikereview.com/urtopia/carbon-joy-ultra-review/", "quote": "BATTERY WATT HOURS: ⟶ 529.2Wh wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "65", "url": "https://newurtopia.com/products/urtopia-carbon-joy-ultra-ebike", "quote": "Pedal Assist Range | Up to 65 miles"},
+   {"kind": "review", "value": "70", "url": "https://electricbikereview.com/urtopia/carbon-joy-ultra-review/", "quote": "Estimated Range (from Urtopia): ⟶ Up to 70 miles", "basis": "reviewer's tested PAS 1 range was 62 miles"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 50, "url": "https://newurtopia.com/products/urtopia-carbon-joy-ultra-ebike", "quote": "Bike Weight | 50 lbs (22.7kg) | Net Weight | 45.6 lbs (20.7kg) w/ battery 38.8 lbs (17.6kg) w/o battery", "basis": "50 lbs as shipped with battery and accessories; net 45.6 lbs with battery"},
+   {"kind": "review", "value": 50, "url": "https://electricbikereview.com/urtopia/carbon-joy-ultra-review/", "quote": "A Fully Carbon Fiber frame and fork coming in at just 43lbs (50lbs with accessories and battery)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 330, "url": "https://newurtopia.com/products/urtopia-carbon-joy-ultra-ebike", "quote": "Total Payload Limit | 330 lbs"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/urtopia/carbon-joy-ultra-review/", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W rear hub (750W peak)", "url": "https://newurtopia.com/products/urtopia-carbon-joy-ultra-ebike", "quote": "Motor Power | Rated Power 500W (Peak Power 750W) rear hub"},
+   {"kind": "review", "value": "500W rear hub (750W peak)", "url": "https://electricbikereview.com/urtopia/carbon-joy-ultra-review/", "quote": "MOTOR NOMINAL OUTPUT: ⟶ 500W watts | MOTOR PEAK OUTPUT: ⟶ 750W watts"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'1\"", "url": "https://newurtopia.com/products/urtopia-carbon-joy-ultra-ebike", "quote": "Rider Height | Regular: 5'1\"–6'1\"", "basis": "same page's comparison table says 4’11”–6’3”"},
+   {"kind": "review", "value": "4'11\"-6'3\"", "url": "https://electricbikereview.com/urtopia/carbon-joy-ultra-review/", "quote": "GEOMETRY MEASUREMENTS: ⟶ 4’ 11” to 6’ 3”"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://newurtopia.com/products/urtopia-carbon-joy-ultra-ebike", "quote": "Folding | No"},
+   {"kind": "review", "value": "No", "url": "https://electricbikereview.com/urtopia/carbon-joy-ultra-review/", "quote": "FRAME TYPES: ⟶ Carbon Fiber Step-Through Frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page contradicts itself on rider height: spec table and size selector say 5'1\"–6'1\", the comparison table says 4’11”–6’3”. Maker spec says 50Nm torque; EBR (2025 review) says 60Nm. EBR price $2,199 vs maker's current crossed-out $2,499. Lines joined with ' | ' are consecutive lines from the maker's Specs tab (opened by clicking)."}

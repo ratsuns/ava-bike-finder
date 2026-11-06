@@ -1,0 +1,45 @@
+{"bike": "Trek|Dual Sport+", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2399.99, "url": "https://www.trekbikes.com/us/en_US/pre-owned-bikes/pre-owned-hybrid-bikes/dual-sport-2--2023-x-large/p/95006/", "quote": "$1,499.99 | $2,399.99 | Comp. Value | Original price", "basis": "Trek's pre-owned listing of a 2023 Dual Sport+ 2 gives the original price"},
+   {"kind": "review", "value": 2399, "url": "https://electricbikereport.com/e-bike-news-treks-new-affordable-e-bikes-bimotal-final-pilot-and-much-more/", "quote": "Trek has just released its lowest priced e-bikes in its current range – the Dual Sport+ and the FX+, with the former retailing at $2399 / £2150 and the more urban styled latter at $2499 / £2250. On both e-bikes costs are kept relatively low by using a 250W hub motor with a modest 40Nm torque rating."}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://electra.trekbikes.com/us/en_US/dual-sport-plus/", "quote": "Up to  20mph", "basis": "20 mph pedal assist, no throttle = Class 1 (class not stated on maker page)"},
+   {"kind": "review", "value": 1, "url": "https://electricbikereport.com/e-bike-news-treks-new-affordable-e-bikes-bimotal-final-pilot-and-much-more/", "quote": "There are some nice touches as you would expect from Trek, including a frame-integrated battery, small handlebar-mounted display control and best of all from a performance point of view, a torque sensor in the bottom bracket. Range extender batteries are available for both models. They are both 20mph / class 1 pedelecs in the US (Euro spec also available elsewhere) with respective claimed weights of 17.5 and 17.7kg – or both just under 37.5lbs."}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://electra.trekbikes.com/us/en_US/dual-sport-plus/", "quote": "Up to  20mph"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/e-bike-news-treks-new-affordable-e-bikes-bimotal-final-pilot-and-much-more/", "quote": "There are some nice touches as you would expect from Trek, including a frame-integrated battery, small handlebar-mounted display control and best of all from a performance point of view, a torque sensor in the bottom bracket. Range extender batteries are available for both models. They are both 20mph / class 1 pedelecs in the US (Euro spec also available elsewhere) with respective claimed weights of 17.5 and 17.7kg – or both just under 37.5lbs."}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 40, "url": "https://www.trekbikes.com/us/en_US/pre-owned-bikes/pre-owned-hybrid-bikes/dual-sport-2--2023-x-large/p/95006/", "quote": "Bontrager Connection, double-wall, 32-hole, 20mm width, presta valve, Hyena hub drive motor, 40Nm, 250W, Formula DC-20, alloy, 6-bolt, 5x100mm QR"},
+   {"kind": "review", "value": 40, "url": "https://electricbikereport.com/e-bike-news-treks-new-affordable-e-bikes-bimotal-final-pilot-and-much-more/", "quote": "Trek has just released its lowest priced e-bikes in its current range – the Dual Sport+ and the FX+, with the former retailing at $2399 / £2150 and the more urban styled latter at $2499 / £2250. On both e-bikes costs are kept relatively low by using a 250W hub motor with a modest 40Nm torque rating."}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 250, "url": "https://electra.trekbikes.com/us/en_US/dual-sport-plus/", "quote": "A reliable 250Wh internal battery system looks clean and lets you ride farther, faster."},
+   {"kind": "maker", "value": 250, "url": "https://www.trekbikes.com/us/en_US/pre-owned-bikes/pre-owned-hybrid-bikes/dual-sport-2--2023-x-large/p/95006/", "quote": "Battery ⟶ 250Wh, integrated in down tube"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "35", "url": "https://electra.trekbikes.com/us/en_US/dual-sport-plus/", "quote": "Up to 35 miles", "basis": "up to; standard 250Wh battery (optional Range Extender doubles it)"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 38.39, "url": "https://www.trekbikes.com/us/en_US/pre-owned-bikes/pre-owned-hybrid-bikes/dual-sport-2--2023-x-large/p/95006/", "quote": "17.41 kg / 38.39 lbs", "basis": "listed on an X-Large pre-owned listing; size of weight not stated"},
+   {"kind": "review", "value": 37.5, "url": "https://electricbikereport.com/e-bike-news-treks-new-affordable-e-bikes-bimotal-final-pilot-and-much-more/", "quote": "There are some nice touches as you would expect from Trek, including a frame-integrated battery, small handlebar-mounted display control and best of all from a performance point of view, a torque sensor in the bottom bracket. Range extender batteries are available for both models. They are both 20mph / class 1 pedelecs in the US (Euro spec also available elsewhere) with respective claimed weights of 17.5 and 17.7kg – or both just under 37.5lbs.", "basis": "'just under 37.5lbs' (17.5 kg claimed)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.trekbikes.com/us/en_US/pre-owned-bikes/pre-owned-hybrid-bikes/dual-sport-2--2023-x-large/p/95006/", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "250W Hyena rear hub", "url": "https://www.trekbikes.com/us/en_US/pre-owned-bikes/pre-owned-hybrid-bikes/dual-sport-2--2023-x-large/p/95006/", "quote": "Bontrager Connection, double-wall, 32-hole, 20mm width, presta valve, Hyena hub drive motor, 40Nm, 250W, Formula DC-20, alloy, 6-bolt, 5x100mm QR", "basis": "rear: maker page says 'rear wheel drive electric motor'"},
+   {"kind": "review", "value": "250W hub", "url": "https://electricbikereport.com/e-bike-news-treks-new-affordable-e-bikes-bimotal-final-pilot-and-much-more/", "quote": "Trek has just released its lowest priced e-bikes in its current range – the Dual Sport+ and the FX+, with the former retailing at $2399 / £2150 and the more urban styled latter at $2499 / £2250. On both e-bikes costs are kept relatively low by using a 250W hub motor with a modest 40Nm torque rating."}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://electra.trekbikes.com/us/en_US/dual-sport-plus/", "quote": "", "basis": "sized frames; no rider height range found"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.trekbikes.com/us/en_US/pre-owned-bikes/pre-owned-hybrid-bikes/dual-sport-2--2023-x-large/p/95006/", "quote": "Alpha Gold Aluminum, internal cable routing, internal battery, rack & fender mounts, post mount disc, kickstand mount, 144.5mm OLD hub motor spacing ⟶ Fork"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Likely discontinued as a new bike, but the maker doesn't say so: the src (electra.trekbikes.com landing page, Trek-owned) still exists but its 'SHOP DUAL SPORT+' link returns 404, and Trek's own search shows only pre-owned Dual Sport+ 2 listings (no new ones). Specs taken from that Trek pre-owned listing (2023 Dual Sport+ 2, Hyena hub) and the landing page. EBR's 'Dual Sport+' review is the 2019 Bosch Active Line Plus version (different bike), not used. EBReport news item covers the Hyena-hub launch. No max load or rider height published."}

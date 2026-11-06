@@ -1,0 +1,59 @@
+{"bike": "Velotric|GoMad", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1999, "url": "https://www.velotricbike.com/products/velotric-gomad-utility-ebike", "quote": "$1,899.00 | $1,999.00 | Save $100.00", "basis": "with Package \"GoMad Only\" selected: $1,999.00 crossed out, $1,899.00 Black Friday sale; the default package (with Young Passenger Kit) shows $1,899.00 / $2,283.99"},
+   {"kind": "review", "value": 1999, "url": "https://electricbikereview.com/velotric/gomad-review/", "quote": "PRICE: ⟶ $1,999"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/velotric-gomad-review/", "quote": ""}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.velotricbike.com/products/velotric-gomad-utility-ebike", "quote": "Ebike Class ⟶ 1/2/3", "basis": "multi-class; out of box is \"Max Speed (Default） ⟶ 20MPH\" with a throttle (\"Throttle Range ⟶ 50 Miles\"), i.e. Class 2"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/velotric/gomad-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Selectable Class 1, 2, and 3", "basis": "multi-class; doesn't say which it ships in"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/velotric-gomad-review/", "quote": "CLASS 3 (PEDAL ASSIST TO 28 MPH) ⟶ SPONSOR", "basis": "lists Class 1, 2 and 3; doesn't say which it ships in"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.velotricbike.com/products/velotric-gomad-utility-ebike", "quote": "Max Speed (Default） ⟶ 20MPH", "basis": "default; adjustable to 28 mph (\"Max Speed Adjustable Range ⟶ 12~28MPH\")"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/velotric/gomad-review/", "quote": "TOP SPEED: ⟶ 28MPH mph", "basis": "max adjustable, not default"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereport.com/velotric-gomad-review/", "quote": "CLASS 3 (PEDAL ASSIST TO 28 MPH) ⟶ SPONSOR", "basis": "max class rating; also lists Class 1/2 to 20 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://www.velotricbike.com/products/velotric-gomad-utility-ebike", "quote": "Motor ⟶ 48V, 750W, (1300W Peak Power), 85Nm"},
+   {"kind": "review", "value": 85, "url": "https://electricbikereview.com/velotric/gomad-review/", "quote": "MOTOR TORQUE: ⟶ 85Nm Newton meters"},
+   {"kind": "review", "value": 85, "url": "https://electricbikereport.com/velotric-gomad-review/", "quote": "Motor: 48V, 750W (1300W Peak Power), 85Nm ⟶ Headlight: 500 LM high-output integrated LED, adjustable angle"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 801.6, "url": "https://www.velotricbike.com/products/velotric-gomad-utility-ebike", "quote": "Battery ⟶ 48V, 16.7Ah (801.6Wh), IPX7, Certificated by UL2271"},
+   {"kind": "review", "value": 801.6, "url": "https://electricbikereview.com/velotric/gomad-review/", "quote": "BATTERY WATT HOURS: ⟶ 801.6Wh wh"},
+   {"kind": "review", "value": 801.6, "url": "https://electricbikereport.com/velotric-gomad-review/", "quote": "Battery: 48V, 16.7Ah (801.6Wh), IPX7, Certificated by UL 2271 ⟶ Charger: 48V, 3A Fast Charger"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "75", "url": "https://www.velotricbike.com/products/velotric-gomad-utility-ebike", "quote": "Pedal Assist Range ⟶ 75 Miles", "basis": "single battery; maker footnote: \"*A 187-lb rider using Eco mode on flat roads.\"; up to 150 miles with optional second battery"},
+   {"kind": "review", "value": "75", "url": "https://electricbikereview.com/velotric/gomad-review/", "quote": "Estimated Range (from Velotric): ⟶ Up to 75 Miles", "basis": "maker claim; tested Eco 81 miles, Boost 38 miles"},
+   {"kind": "review", "value": "75", "url": "https://electricbikereport.com/velotric-gomad-review/", "quote": "Claimed Range: 75Miles ⟶ Throttle: Trigger-control, removable", "basis": "maker claim; tested Eco 80.1 miles, Boost 37.2 miles"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 77, "url": "https://www.velotricbike.com/products/velotric-gomad-utility-ebike", "quote": "Bike Weight ⟶ 77 lbs", "basis": "with battery: maker separately lists \"Bike Weight (Without Battery) ⟶ 67 lbs\""},
+   {"kind": "review", "value": 78, "url": "https://electricbikereview.com/velotric/gomad-review/", "quote": "<ul> <li>Advertised: 77lbs *without fenders, kickstands, and pedals</li> <li>Tested Complete: 78 lbs</li> <li>Tested w/Out Battery: 67.5 lbs</li> <li>Battery Weight: 10.3 lbs</li> </ul> lbs ⟶ BATTERY WEIGHT:", "basis": "tested complete; advertised 77 lbs"},
+   {"kind": "review", "value": 77.8, "url": "https://electricbikereport.com/velotric-gomad-review/", "quote": "Tested Weight: 77.8 lbs ⟶ Rider height range: 5’0” ~ 6’3”", "basis": "tested; claimed 77 lbs without fenders, kickstands, and pedals"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 500, "url": "https://www.velotricbike.com/products/velotric-gomad-utility-ebike", "quote": "Max Bike Load Capacity ⟶ 500 lbs", "basis": "total: maker FAQ says \"*The total payload includes the combined weight of the bike, rider, cargo, and any passenger.\""},
+   {"kind": "review", "value": 500, "url": "https://electricbikereview.com/velotric/gomad-review/", "quote": "A 500 lb total payload means this thing can genuinely haul, and it shows."},
+   {"kind": "review", "value": 500, "url": "https://electricbikereport.com/velotric-gomad-review/", "quote": "Total payload capacity: 500 lbs ⟶ COMPONENTS & ACCESSORIES"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub (1,300W peak)", "url": "https://www.velotricbike.com/products/velotric-gomad-utility-ebike", "quote": "A 750W motor peaks at 1,300W with 85 Nm of torque tackles steep hills and heavy loads with ease, even fully loaded.", "basis": "rear hub per both reviews"},
+   {"kind": "review", "value": "750W rear hub (1,300W peak)", "url": "https://electricbikereview.com/velotric/gomad-review/", "quote": "MOTOR PEAK OUTPUT: ⟶ 1300W watts", "basis": "\"MOTOR TYPE: ⟶ Rear Hub\" and \"MOTOR NOMINAL OUTPUT: ⟶ 750W watts\" on same page"},
+   {"kind": "review", "value": "750W rear hub", "url": "https://electricbikereport.com/velotric-gomad-review/", "quote": "Riding can be engaging and responsive or relaxed and steady, with both torque and cadence sensing modes for the GoMad’s 750W rear-hub motor."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'0\"-6'3\"", "url": "https://www.velotricbike.com/products/velotric-gomad-utility-ebike", "quote": "User Height Range ⟶ 5'0'' ~ 6'3''"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/velotric/gomad-review/", "quote": ""},
+   {"kind": "review", "value": "5'0\"-6'3\"", "url": "https://electricbikereport.com/velotric-gomad-review/", "quote": "Tested Weight: 77.8 lbs ⟶ Rider height range: 5’0” ~ 6’3”"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.velotricbike.com/products/velotric-gomad-utility-ebike", "quote": "IPX7 Battery, IPX6 Frame ⟶ Compact Cargo Ebike", "basis": "rigid compact cargo frame; adjustable quill stem only; no folding mentioned"},
+   {"kind": "review", "value": "No", "url": "https://electricbikereport.com/velotric-gomad-review/", "quote": "It feels both nimble and planted, thanks to its maneuverable 20×4” tires, capable motor, and weight of around 78 lbs.", "basis": "non-folding utility frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Default package on the maker page bundles a Young Passenger Kit ($1,899 sale vs $2,283.99 crossed out); with 'GoMad Only' selected the crossed-out regular price is $1,999 (matches EBR). Maker: default 20 mph with throttle, adjustable 12-28 mph, 'Ebike Class 1/2/3' -> Class 2; Custom Mode allows 28 mph throttle (not in California). Maker lists 77 lbs with battery / 67 lbs without (EBR/EBReport quote the 77 lbs as 'without fenders, kickstands, and pedals'). Maker's 500 lb payload is a total including the bike's weight."}

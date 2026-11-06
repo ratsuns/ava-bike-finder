@@ -1,0 +1,238 @@
+{
+ "bike": "Riese and Muller|Load4 75 vario",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.r-m.de/en-us/bikes/load4-75/load4-75-vario/",
+    "quote": "",
+    "basis": "maker page redirects to /en-en/ and returns 404"
+   },
+   {
+    "kind": "review",
+    "value": 12559,
+    "url": "https://99spokes.com/bikes/rieseandmuller/2025/load4-75-vario",
+    "quote": "Manufacturer Price ⟶ $12,559",
+    "basis": "2025 model on 99 Spokes spec database"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://bikes.fan/rieseandmuller-load4-75-vario-2024/",
+    "quote": "Estimate price | ⟶ 8,812$",
+    "basis": "site's own estimate, not a regular price"
+   },
+   {
+    "kind": "retailer",
+    "value": 10749,
+    "url": "https://dev2.propelbikes.com/product/riese-muller-load4-75-vario/",
+    "quote": "Riese & Muller Load4 75 Vario ⟶ $10,749.00",
+    "basis": "US dealer Propel (page on its dev2 subdomain); base price before options"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.r-m.de/en-us/bikes/load4-75/load4-75-vario/",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://99spokes.com/bikes/rieseandmuller/2025/load4-75-vario",
+    "quote": ""
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.r-m.de/en-us/bikes/load4-75/load4-75-vario/",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://99spokes.com/bikes/rieseandmuller/2025/load4-75-vario",
+    "quote": ""
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.r-m.de/en-us/bikes/load4-75/load4-75-vario/",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://99spokes.com/bikes/rieseandmuller/2025/load4-75-vario",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": 85,
+    "url": "https://dev2.propelbikes.com/product/riese-muller-load4-75-vario/",
+    "quote": "Whether you’re tackling a steep hill, or pedalling on the flat, 85 Nm of torque and a perfectly tuned transmission provide powerful yet natural support."
+   },
+   {
+    "kind": "retailer",
+    "value": 85,
+    "url": "https://shop.roulezjeunesse.com/products/riese-muller-load4-75-vario",
+    "quote": "Puissance : 250 W ⟶ Couple : 85 Nm",
+    "basis": "EU dealer"
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.r-m.de/en-us/bikes/load4-75/load4-75-vario/",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": 725,
+    "url": "https://99spokes.com/bikes/rieseandmuller/2025/load4-75-vario",
+    "quote": "MotorBosch mid-drive ⟶ BatteryBosch 725Wh",
+    "basis": "spec list: 'Akku Bosch PowerPack Frame 725'"
+   },
+   {
+    "kind": "retailer",
+    "value": 725,
+    "url": "https://dev2.propelbikes.com/product/riese-muller-load4-75-vario/",
+    "quote": "Battery: More power and stamina: PowerPack 725 wh is the perfect choice for longer tours or more demanding rides. it is ideally suited to cargo bikes or speed pedelecs with higher energy requirements.",
+    "basis": "spec table also lists 'Battery Bosch PowerPack 545wh, Bosch PowerPack 725Wh'"
+   },
+   {
+    "kind": "retailer",
+    "value": 725,
+    "url": "https://shop.roulezjeunesse.com/products/riese-muller-load4-75-vario",
+    "quote": "Capacité : 725 Wh ⟶ Display"
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.r-m.de/en-us/bikes/load4-75/load4-75-vario/",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://99spokes.com/bikes/rieseandmuller/2025/load4-75-vario",
+    "quote": ""
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.r-m.de/en-us/bikes/load4-75/load4-75-vario/",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": 84.0,
+    "url": "https://99spokes.com/bikes/rieseandmuller/2025/load4-75-vario",
+    "quote": "$12,559 ⟶ Weight84.0 lbs"
+   },
+   {
+    "kind": "review",
+    "value": 81.8,
+    "url": "https://bikes.fan/rieseandmuller-load4-75-vario-2024/",
+    "quote": "Weight | 37.1 kg ⟶ E-bike",
+    "basis": "37.1 kg = 81.8 lb; 2024 model"
+   },
+   {
+    "kind": "retailer",
+    "value": 86.4,
+    "url": "https://dev2.propelbikes.com/product/riese-muller-load4-75-vario/",
+    "quote": "Weight 86.4 lbs",
+    "basis": "spec table also says 'Weight 39 kg, 86 lbs'; battery inclusion not stated"
+   },
+   {
+    "kind": "retailer",
+    "value": 84.2,
+    "url": "https://shop.roulezjeunesse.com/products/riese-muller-load4-75-vario",
+    "quote": "Poids à vide : 38.2 kg ⟶ Charge max totale : 200.0 kg",
+    "basis": "38.2 kg converted; 'poids à vide' (empty weight), battery inclusion not stated"
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.r-m.de/en-us/bikes/load4-75/load4-75-vario/",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://99spokes.com/bikes/rieseandmuller/2025/load4-75-vario",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": 440.9,
+    "url": "https://shop.roulezjeunesse.com/products/riese-muller-load4-75-vario",
+    "quote": "Poids à vide : 38.2 kg ⟶ Charge max totale : 200.0 kg",
+    "basis": "total; 200 kg converted. Page also says 'Capacité de charge de plus de 100 kg (220 lbs)'"
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.r-m.de/en-us/bikes/load4-75/load4-75-vario/",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": "Bosch Cargo Line (smart system)",
+    "url": "https://99spokes.com/bikes/rieseandmuller/2025/load4-75-vario",
+    "quote": "Motor ⟶ Bosch Cargo Line (smart system)",
+    "basis": "Bosch publishes no rated watts"
+   },
+   {
+    "kind": "review",
+    "value": "Bosch Cargo Line (smart system)",
+    "url": "https://bikes.fan/rieseandmuller-load4-75-vario-2024/",
+    "quote": "Motor ⟶ Bosch Cargo Line (smart system)"
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.r-m.de/en-us/bikes/load4-75/load4-75-vario/",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://bikes.fan/rieseandmuller-load4-75-vario-2024/",
+    "quote": "Rider Min Height\t120 cm ⟶ Rieseandmuller E Load4",
+    "basis": "gives only a minimum, no range"
+   }
+  ],
+  "fold": [
+   {
+    "kind": "review",
+    "value": "No",
+    "url": "https://99spokes.com/bikes/rieseandmuller/2025/load4-75-vario",
+    "quote": "Stem | Riese & Müller, adjustable height and angle",
+    "basis": "front-loader box cargo bike with fixed aluminum frame; only the stem adjusts, frame does not fold"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "LIKELY DISCONTINUED / REPLACED BY LOAD5: the given maker URL (en-us) redirects to /en-en/ and 404s; the en-nz URL also 404s; R&M's cargo/load-models pages now list only Load5 60 and Load5 75; Fly Rides USA's Load4 75 vario URL redirects to the Load5 75 Vario. Maker never explicitly says 'discontinued', so status left empty. No maker specs available. No EBR/ElectricBikeReview/N+1/Mike's Bikes page; Boulder Nordic would not load; web archive not permitted. Remaining sources are spec databases (99 Spokes 2025, bikes.fan 2024) with no class, speed, torque, range, load or rider height. 99 Spokes says it was 'Not listed for 139 days'. recheck: looked at Propel Electric Bikes (US dealer, dev2 subdomain: $10,749, 85 Nm, 725 Wh, 86.4 lb), Roulez Jeunesse Load4 75 page (EU: 85 Nm, 725 Wh, 38.2 kg, 200 kg total), EBR search, 1 WebSearch. No page found stating US class or top speed."
+}

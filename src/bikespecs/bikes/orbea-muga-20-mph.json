@@ -1,0 +1,49 @@
+{"bike": "Orbea|Muga 20 mph", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 7829, "url": "https://www.orbea.com/en-us/muga-10-20mph", "quote": "$7,829 ⟶ View summary", "basis": "Muga 10 20mph standard configuration; no crossed-out price shown"},
+   {"kind": "review", "value": 7829, "url": "https://99spokes.com/bikes/orbea/2026/muga-10-20mph", "quote": "Manufacturer Price ⟶ $7,829"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://www.orbea.com/en-us/muga-10-20mph", "quote": "", "basis": "maker page states no class; model name says 20mph"},
+   {"kind": "review", "value": null, "url": "https://bikerumor.com/the-new-orbea-muga-is-an-ebike-for-urban-adventures-and-exploration/", "quote": "The Performance Line CX system includes a handlebar-mounted Bosch MiniRemote to shift through the various levels of pedal assist. It also includes the top tube integrated Bosch System Controller display to monitor battery levels and pedal assist mode. Curiously, we couldn’t find the Muga’s e-bike classification or top speed listed anywhere on the brand’s website or in the press materials, but it’s fair to assume that it will comply with regional regulations and standards. ⟶ A look inside the Muga frame.", "basis": "reviewer says class is not published"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.orbea.com/en-us/muga-10-20mph", "quote": "Muga 10 20mph ⟶ Change model", "basis": "from the model name; no separate speed spec on page"},
+   {"kind": "review", "value": 20, "url": "https://99spokes.com/bikes/orbea/2026/muga-10-20mph", "quote": "Muga 10 20mph ⟶ A 29″ aluminum frame full suspension trail e-bike with high-end components.", "basis": "from the model name"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://www.orbea.com/en-us/muga-10-20mph", "quote": ""},
+   {"kind": "review", "value": 85, "url": "https://99spokes.com/bikes/orbea/2026/muga-10-20mph", "quote": "MotorBosch 600W 85Nm mid-drive ⟶ BatteryBosch 750Wh"},
+   {"kind": "review", "value": 100, "url": "https://www.electricbikejournal.com/adventure-ready-urban-explore-ebike-orbea-launches-muga/", "quote": "Worth mentioning, is that with the new update from Bosch, this CX drive unit will be a candidate for 750W of peak power and 100Nm of torque. Having spent some time on various eMTB’s with the new update, it is quite the dramatic increase in power that impressively doesn’t take away too much of the range.", "basis": "Muga launch story; 100Nm only after a Bosch software update; no stock torque given"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 750, "url": "https://www.orbea.com/en-us/muga-10-20mph", "quote": "Battery ⟶ Bosch PowerTube 750 BBP3775"},
+   {"kind": "review", "value": 750, "url": "https://99spokes.com/bikes/orbea/2026/muga-10-20mph", "quote": "MotorBosch 600W 85Nm mid-drive ⟶ BatteryBosch 750Wh"},
+   {"kind": "review", "value": 750, "url": "https://bikerumor.com/the-new-orbea-muga-is-an-ebike-for-urban-adventures-and-exploration/", "quote": "Between the three complete Muga builds currently offered, riders have the option to choose either a longer-range 750 Wh battery (Muga 10 and 20) or a lighter-weight 600 Wh battery (Muga 30). Along with those options, riders can add the optional Bosch PowerMore 250 Wh Range Extender ($549) when purchasing to bump the battery capacity up to 1,000 Wh or 850 Wh, respectively. ⟶ Integrated Safety Features"}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://www.orbea.com/en-us/muga-10-20mph", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://bikerumor.com/the-new-orbea-muga-is-an-ebike-for-urban-adventures-and-exploration/", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://www.orbea.com/en-us/muga-10-20mph", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://bikerumor.com/the-new-orbea-muga-is-an-ebike-for-urban-adventures-and-exploration/", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.orbea.com/en-us/muga-10-20mph", "quote": "", "basis": "only the rear rack limit is given (Max. 30Kg), no bike max load"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Performance Line CX", "url": "https://www.orbea.com/en-us/muga-10-20mph", "quote": "Motor ⟶ Performance Line CX", "basis": "Bosch publishes no rated watts"},
+   {"kind": "review", "value": "Performance Line CX", "url": "https://99spokes.com/bikes/orbea/2026/muga-10-20mph", "quote": "Motor ⟶ Performance Line CX", "basis": "99 Spokes summary also says 'Bosch 600W 85Nm mid-drive' (600W is not a rated figure)"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'0\"-6'9\"", "url": "https://www.orbea.com/en-us/muga-10-20mph", "quote": "S | 153-172 cm | M | 164-183 cm | L | 176-195 cm | XL | 187-206 cm", "basis": "size guide by height (View size guide), 153-206 cm converted to ft/in"},
+   {"kind": "review", "value": "5'0\"-6'10\"", "url": "https://99spokes.com/bikes/orbea/2026/muga-10-20mph", "quote": "5'0\" – 5'8\" | MD | 5'4\" – 6'1\" | LG | 5'9\" – 6'5\" | XL | 6'1\" – 6'10\""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.orbea.com/en-us/muga-10-20mph", "quote": "Frame ⟶ Orbea Muga 2026, Hydroformed Alloy 6061, OLD 148, Belt drive compatible, Orbea cockpit and equipment ecosystem, w/ Custom Kickstand, Carrier compatible.", "basis": "full-suspension rigid frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Uses the Muga 10 20mph build (src link): Bosch Performance Line CX, 750Wh, Enviolo/Gates. Orbea's US configurator gives no class, speed spec, torque, range, weight or max load. Bikerumor notes Orbea does not publish class or top speed. 99 Spokes lists 85Nm and 750Wh. No Muga on electricbikereview.com; no weight found anywhere. Recheck: looked at Orbea Muga catalog page full text (no class or torque), N+1 Bikes Muga search (no 20mph Muga 10 page; its Muga pages give no class/torque), New Atlas and Electric Bike Journal launch stories, Around The Cycle and Contender (only 28mph Mugas), Electrek search (nothing), one web search. Electric Bike Report's general Orbea page says all Orbea e-bikes are Class 1 but is not Muga-specific, so not recorded."}

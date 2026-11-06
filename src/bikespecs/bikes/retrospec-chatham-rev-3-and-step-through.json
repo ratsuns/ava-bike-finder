@@ -1,0 +1,51 @@
+{"bike": "Retrospec|Chatham Rev 3 (and Step Through)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 999.99, "url": "https://retrospec.com/products/chatham-rev-electric-beach-cruiser-bike", "quote": "$999.99 ⟶ Regular price", "basis": "no crossed-out price shown; $999.99 is the listed price"},
+   {"kind": "review", "value": 999, "url": "https://www.ebikereviewlab.com/electric-cruiser-bikes/chatham-rev-3-review", "quote": "You're riding flat terrain and $999 fits your budget comfortably"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://retrospec.com/products/chatham-rev-electric-beach-cruiser-bike", "quote": "Pedal Assist ⟶ 5 levels with Anytime Throttle and Walk Mode", "basis": "maker states no class; 20 mph top assisted speed with a throttle = Class 2"},
+   {"kind": "review", "value": 2, "url": "https://www.ebikereviewlab.com/electric-cruiser-bikes/chatham-rev-3-review", "quote": "TOP SPEED ⟶ 20 mph (Class 2 e-bike)"},
+   {"kind": "maker", "value": 2, "url": "https://help.retrospec.com/en-US/what-does-%22class-2%22-mean-629518", "quote": "All of our e-bikes are \"Class 2\" which means they have pedal assist and/or throttle with assistance of 20mph max. Top speed is dependent on the bike model.", "basis": "Retrospec help-center article covering all its e-bikes (updated 2 days ago), not model-specific"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://retrospec.com/products/chatham-rev-electric-beach-cruiser-bike", "quote": "20 mph Top Assisted Speed"},
+   {"kind": "review", "value": 20, "url": "https://www.ebikereviewlab.com/electric-cruiser-bikes/chatham-rev-3-review", "quote": "TOP SPEED ⟶ 20 mph (Class 2 e-bike)"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://retrospec.com/products/chatham-rev-electric-beach-cruiser-bike", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://www.ebikereviewlab.com/electric-cruiser-bikes/chatham-rev-3-review", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 360, "url": "https://retrospec.com/products/chatham-rev-electric-beach-cruiser-bike", "quote": "36V/360Wh Li-Ion Battery"},
+   {"kind": "review", "value": 360, "url": "https://www.ebikereviewlab.com/electric-cruiser-bikes/chatham-rev-3-review", "quote": "BATTERY ⟶ 36V / 360Wh Lithium-Ion, frame-mounted"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "42", "url": "https://retrospec.com/products/chatham-rev-electric-beach-cruiser-bike", "quote": "Up to 42-Mile Range"},
+   {"kind": "review", "value": "42", "url": "https://www.ebikereviewlab.com/electric-cruiser-bikes/chatham-rev-3-review", "quote": "CLAIMED RANGE ⟶ Up to 42 miles", "basis": "reviewer expects 28-35 miles real-world"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 58, "url": "https://retrospec.com/products/chatham-rev-electric-beach-cruiser-bike", "quote": "Item Weight ⟶ 58lbs"},
+   {"kind": "maker", "value": 58, "url": "https://retrospec.com/products/chatham-rev-electric-beach-cruiser-bike-step-through", "quote": "Item Weight  58 lbs (battery included)", "basis": "step-through page"},
+   {"kind": "review", "value": 58, "url": "https://www.ebikereviewlab.com/electric-cruiser-bikes/chatham-rev-3-review", "quote": "BIKE WEIGHT ⟶ 58 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 350, "url": "https://retrospec.com/products/chatham-rev-electric-beach-cruiser-bike", "quote": "Recommended Weight Limit ⟶ 350lbs / 158kgs Including Bike Weight", "basis": "total"},
+   {"kind": "review", "value": 350, "url": "https://www.ebikereviewlab.com/electric-cruiser-bikes/chatham-rev-3-review", "quote": "WEIGHT LIMIT ⟶ 350 lbs (including bike weight)", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "350W geared hub", "url": "https://retrospec.com/products/chatham-rev-electric-beach-cruiser-bike", "quote": "350W Planetary Geared Hub Motor"},
+   {"kind": "review", "value": "350W geared hub", "url": "https://www.ebikereviewlab.com/electric-cruiser-bikes/chatham-rev-3-review", "quote": "MOTOR ⟶ 350W Planetary Geared Hub Motor (36V)"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'6\"-6'4\"", "url": "https://retrospec.com/products/chatham-rev-electric-beach-cruiser-bike", "quote": "Frame: 18\" | 5'6\"-6'4\"", "basis": "step-over frame (size chart)"},
+   {"kind": "maker", "value": "5'0\"-6'2\"", "url": "https://retrospec.com/products/chatham-rev-electric-beach-cruiser-bike-step-through", "quote": "Frame: 16\" | 5'-6'2\"", "basis": "step-through frame (size chart)"},
+   {"kind": "review", "value": "5'6\"-6'4\"", "url": "https://www.ebikereviewlab.com/electric-cruiser-bikes/chatham-rev-3-review", "quote": "One size: suited for riders 5'6\" to 6'4\"", "basis": "step-over frame only"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://retrospec.com/products/chatham-rev-electric-beach-cruiser-bike", "quote": "Sizes ⟶ 18\" Step Over", "basis": "fixed step-over / step-through steel cruiser frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Combined height range across both frames is 5'0\"-6'4\". Step-through is a separate maker page with the same specs. No class stated by maker; Class 2 inferred from 20 mph + throttle. Independent source is ebikereviewlab.com (found by WebSearch; no EBR/ElectricBikeReview review of Rev 3). Scheels lists it at $999.99 but its spec tab could not be read. Recheck: looked at the product page (20 mph, Anytime Throttle) and the Chatham Rev 3 2026 manual PDF it links (20 mph, 50Nm; no class), and Retrospec's help-center 'What does Class 2 mean?' article (all its e-bikes are Class 2)."}

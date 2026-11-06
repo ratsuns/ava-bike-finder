@@ -1,0 +1,50 @@
+{"bike": "Specialized|Turbo Vado 2 (5.0 IGH)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 5249.99, "url": "https://www.specialized.com/us/en/turbo-vado-2-50-igh/p/4263673", "quote": "$4,749.99 ⟶ $5,249.99", "basis": "$5,249.99 is the crossed-out regular price; $4,749.99 is a sale price"},
+   {"kind": "review", "value": 5249.99, "url": "https://eridehero.com/products/specialized-turbo-vado-5-0-igh-2026/", "quote": "$5,249.99"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-vado-2-50-igh/p/4263673", "quote": "The speed limit at which the motor will stop supporting may vary significantly by region and is based on local requirements. It may also affect range: a higher speed limit may result in less range."},
+   {"kind": "review", "value": 3, "url": "https://eridehero.com/products/specialized-turbo-vado-5-0-igh-2026/", "quote": "E-Bike Class\tClass 3"},
+   {"kind": "retailer", "value": 3, "url": "https://www.eriksbikeshop.com/products/specialized-2025-turbo-vado-5-0-igh-electric-bike-pr5a25120", "quote": "CLASS 3 ⟶ Pedal assist only, top speed of 28mph", "basis": "ERIK'S dealer page, 2025 Vado 5.0 IGH (Full Power 2.2, 710Wh); its EBIKE CLASSIFICATION block lists Class 1/2/3 and marks Class 3 with the selected checkmark (checked in the page HTML)"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-vado-2-50-igh/p/4263673", "quote": ""},
+   {"kind": "review", "value": 28, "url": "https://eridehero.com/products/specialized-turbo-vado-5-0-igh-2026/", "quote": "Top Assist Speed\t28 mph"},
+   {"kind": "maker", "value": 28, "url": "https://www.specialized.com/us/en/turbo-vado-2-50-igh/p/4263673", "quote": "Turbo Full Power 2.2 motor and 710Wh battery offer an unparalleled riding experience, providing a smooth, seamless, and shockingly quiet amplification of your efforts, up to 28 mph."},
+   {"kind": "retailer", "value": 28, "url": "https://www.eriksbikeshop.com/products/specialized-2025-turbo-vado-5-0-igh-electric-bike-pr5a25120", "quote": "TOP SPEED: ⟶ 28 MPH"},
+   {"kind": "retailer", "value": 28, "url": "https://bicyclewarehouse.com/products/vado-5-0-igh-2026", "quote": "Turbo Full Power 2.2 motor and 710Wh battery offer an unparalleled riding experience, providing a smooth, seamless, and shockingly quiet amplification of your efforts, up to 28 mph.", "basis": "dealer copy of maker text, 2026 model"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 90, "url": "https://www.specialized.com/us/en/turbo-vado-2-50-igh/p/4263673", "quote": "Motor ⟶ Specialized 2.2, 90Nm torque, custom tuned motor, 250W nominal"},
+   {"kind": "review", "value": 90, "url": "https://eridehero.com/products/specialized-turbo-vado-5-0-igh-2026/", "quote": "Torque\t90 Nm"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 710, "url": "https://www.specialized.com/us/en/turbo-vado-2-50-igh/p/4263673", "quote": "Battery ⟶ Specialized integrated battery, state of charge display, 710Wh, UL"},
+   {"kind": "review", "value": 710, "url": "https://eridehero.com/products/specialized-turbo-vado-5-0-igh-2026/", "quote": "710 Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "62", "url": "https://www.specialized.com/us/en/turbo-vado-2-50-igh/p/4263673", "quote": "Long-Range - With a ride-anywhere range, go up to 62 miles (100 km) or 4.5 hours on a single charge (eco mode). ⟶ Technical Specifications", "basis": "eco mode"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 59.7, "url": "https://www.specialized.com/us/en/turbo-vado-2-50-igh/p/4263673", "quote": "Weight ⟶ 27.1 kg (59 lb, 11.9 oz)", "basis": "size MD; 59 lb 11.9 oz = 59.7 lb"},
+   {"kind": "review", "value": 60, "url": "https://eridehero.com/products/specialized-turbo-vado-5-0-igh-2026/", "quote": "Weight\t60 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-vado-2-50-igh/p/4263673", "quote": "Specialized rack, MIK HD interface, built-in pannier mounts, 27kg max load ⟶ Bike Lock", "basis": "only the rear rack limit (27 kg) is published"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "250W mid-drive (Specialized 2.2)", "url": "https://www.specialized.com/us/en/turbo-vado-2-50-igh/p/4263673", "quote": "Motor ⟶ Specialized 2.2, 90Nm torque, custom tuned motor, 250W nominal"},
+   {"kind": "review", "value": "250W mid-drive", "url": "https://eridehero.com/products/specialized-turbo-vado-5-0-igh-2026/", "quote": "Class 3 E-Bike, 60 lbs, 250W 90Nm mid mid-drive, 710Wh (50V × 14.2Ah) battery, Shimano CUES BL-U8000 hydraulic disc, aluminum step-over frame, 80mm air fork, 29\"/27.5\"×2.3\" Specialized Pathfinder Sport hybrid tires, suspension seatpost"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-vado-2-50-igh/p/4263673", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.specialized.com/us/en/turbo-vado-2-50-igh/p/4263673", "quote": "E5 Aluminum, bottom bracket motor mount, fully integrated & lockable downtube battery, internal cable routing, lock and front rack mount, sliding dropout ⟶ Seat Binder", "basis": "fixed aluminum frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker gives no class/speed. ERideHero's page is named 'Turbo Vado 5.0 IGH 2026' (no '2'); price, motor, battery, Enviolo Automatiq match the maker's 'Turbo Vado 2 5.0 IGH'. Class 3 / 28 mph / no throttle from ERideHero. | recheck: maker description says up to 28 mph (Full Power 2.2), no class; ERIK'S dealer page (2025) marks Class 3 and lists top speed 28 MPH; Bicycle Warehouse 2026 repeats maker text; EBR has no 5.0 IGH review."
+}

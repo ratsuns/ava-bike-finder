@@ -1,0 +1,49 @@
+{"bike": "Urtopia|Carbon Classic Step-Thru", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2299, "url": "https://newurtopia.com/products/urtopia-carbon-classic-step-thru-ebike", "quote": "$1,999.00 | $2,299.00 | -$300.00", "basis": "crossed-out regular price; $1,999 is the Black Friday sale price"},
+   {"kind": "retailer", "value": 2299, "url": "https://ebikesupershop.com/products/ebike-urtopia-carbon-classic-step-thru-creme-in-a-box?variant=53621198848276", "quote": "eBike Urtopia Carbon Classic - Step Thru - Creme - In a Box ⟶ $2,299.00"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://newurtopia.com/products/urtopia-carbon-classic-step-thru-ebike", "quote": "Throttle | Yes (up to 20mph) | Class | Class 2 by default | Class 3 upon unlock", "basis": "ships Class 2 (20 mph with throttle); unlockable to Class 3"},
+   {"kind": "retailer", "value": 2, "url": "https://ebikesupershop.com/products/ebike-urtopia-carbon-classic-step-thru-creme-in-a-box?variant=53621198848276", "quote": "Class\tClass 2 ⟶ Motor\t750W (peak) rear hub, 60Nm"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://newurtopia.com/products/urtopia-carbon-classic-step-thru-ebike", "quote": "Top Speed | 20mph by default | 25mph upon unlock", "basis": "adjustable to 25 mph"},
+   {"kind": "retailer", "value": 20, "url": "https://ebikesupershop.com/products/ebike-urtopia-carbon-classic-step-thru-creme-in-a-box?variant=53621198848276", "quote": "Top Speed\t20mph by default / 25mph upon unlock ⟶ Total Weight Limit\t240 lbs", "basis": "adjustable to 25 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 45, "url": "https://newurtopia.com/products/urtopia-carbon-classic-step-thru-ebike", "quote": "Motor Max. Torque | 45Nm"},
+   {"kind": "retailer", "value": 60, "url": "https://ebikesupershop.com/products/ebike-urtopia-carbon-classic-step-thru-creme-in-a-box?variant=53621198848276", "quote": "Motor\t750W (peak) rear hub, 60Nm ⟶ Battery\t352.8Wh Samsung Li-ion, certified to UL-2271, removable battery"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 352.8, "url": "https://newurtopia.com/products/urtopia-carbon-classic-step-thru-ebike", "quote": "Battery | 36V 9.8Ah (352.8Wh) Samsung Li-ion, Removable, UL 2271 & EN 50604 Certified"},
+   {"kind": "retailer", "value": 352.8, "url": "https://ebikesupershop.com/products/ebike-urtopia-carbon-classic-step-thru-creme-in-a-box?variant=53621198848276", "quote": "Battery\t352.8Wh Samsung Li-ion, certified to UL-2271, removable battery ⟶ Pedal Assist\t5 levels"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "72", "url": "https://newurtopia.com/products/urtopia-carbon-classic-step-thru-ebike", "quote": "Pedal Assist Range | Up to 72 miles"},
+   {"kind": "retailer", "value": "75", "url": "https://ebikesupershop.com/products/ebike-urtopia-carbon-classic-step-thru-creme-in-a-box?variant=53621198848276", "quote": "Range\tUp to 75 miles (*The 75-mile range was tested with a 180 lb rider, riding in ECO mode on flat roads.) ⟶ Top Speed\t20mph by default / 25mph upon unlock"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 41, "url": "https://newurtopia.com/products/urtopia-carbon-classic-step-thru-ebike", "quote": "Bike Weight | 41 lbs (18.6kg) | Net Weight | 38 lbs (17.4kg) w/ battery | 33 lbs (15.2kg) w/o battery", "basis": "41 lbs as shipped with battery and accessories; net 38 lbs with battery"},
+   {"kind": "retailer", "value": 38, "url": "https://ebikesupershop.com/products/ebike-urtopia-carbon-classic-step-thru-creme-in-a-box?variant=53621198848276", "quote": "Model\tCarbon Classic Lightweight E-bike ⟶ Net Weight\t38 lbs w/o acc.", "basis": "without accessories"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 240, "url": "https://newurtopia.com/products/urtopia-carbon-classic-step-thru-ebike", "quote": "Total Payload Limit | 240 lbs"},
+   {"kind": "retailer", "value": 240, "url": "https://ebikesupershop.com/products/ebike-urtopia-carbon-classic-step-thru-creme-in-a-box?variant=53621198848276", "quote": "Total Weight Limit\t240 lbs ⟶ Rider Height\t5’3” - 6’5”"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "350W rear hub (500W peak)", "url": "https://newurtopia.com/products/urtopia-carbon-classic-step-thru-ebike", "quote": "Motor Power | Rated Power 350W (Peak Power 500W) rear hub"},
+   {"kind": "retailer", "value": "Rear hub (750W peak)", "url": "https://ebikesupershop.com/products/ebike-urtopia-carbon-classic-step-thru-creme-in-a-box?variant=53621198848276", "quote": "Motor\t750W (peak) rear hub, 60Nm ⟶ Battery\t352.8Wh Samsung Li-ion, certified to UL-2271, removable battery"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-5'9\"", "url": "https://newurtopia.com/products/urtopia-carbon-classic-step-thru-ebike", "quote": "Rider Height | Regular: 5'1\" - 5'9\""},
+   {"kind": "retailer", "value": "5'3\"-6'5\"", "url": "https://ebikesupershop.com/products/ebike-urtopia-carbon-classic-step-thru-creme-in-a-box?variant=53621198848276", "quote": "Total Weight Limit\t240 lbs ⟶ Rider Height\t5’3” - 6’5”", "basis": "appears copied from the step-over Carbon Classic (S/M/L sizes)"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://newurtopia.com/products/urtopia-carbon-classic-step-thru-ebike", "quote": "Folding | No"},
+   {"kind": "retailer", "value": null, "url": "https://ebikesupershop.com/products/ebike-urtopia-carbon-classic-step-thru-creme-in-a-box?variant=53621198848276", "quote": ""}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "No review of the Step-Thru found (EBR/EBReport only reviewed the step-over Carbon Classic); used one WebSearch and the eBike Super Shop (authorized Urtopia dealer) Step Thru page. That dealer's spec table looks copied from the step-over model (S/M/L size chart, 5'3\"-6'5\", 750W peak/60Nm, 75 mi) and conflicts with the maker's current spec (one size 5'1\"-5'9\", 500W peak, 45Nm, 72 mi). Maker quotes joined with ' | ' are consecutive lines from the Specs tab (opened by clicking). Dealer quotes contain tab characters as returned by the page."}

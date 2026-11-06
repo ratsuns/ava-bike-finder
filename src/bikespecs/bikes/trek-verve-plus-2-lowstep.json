@@ -1,0 +1,47 @@
+{"bike": "Trek|Verve+ 2 Lowstep", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 3149.99, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/verve/f/F436/verve%252b-2-lowstep/41518/", "quote": "Verve+ 2 Lowstep | $2,399.93 | Model 5299645 | $3,149.99 | Comp. Value | Original price", "basis": "original (crossed-out) price; $2,399.93 is a sale price"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/verve/f/F436/verve%252b-2-lowstep/41518/", "quote": "E-bike Classification | Class 1 | Max assist speed | 20 mph"},
+   {"kind": "review", "value": 1, "url": "https://eridehero.com/products/trek-verve-2-lowstep-2026/", "quote": "E-Bike Class\tClass 1"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/verve/f/F436/verve%252b-2-lowstep/41518/", "quote": "Max assist speed | 20 mph"},
+   {"kind": "review", "value": 20, "url": "https://eridehero.com/products/trek-verve-2-lowstep-2026/", "quote": "Top Assist Speed\t20 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 50, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/verve/f/F436/verve%252b-2-lowstep/41518/", "quote": "Torque 50Nm"},
+   {"kind": "review", "value": 50, "url": "https://eridehero.com/products/trek-verve-2-lowstep-2026/", "quote": "Torque\t50 Nm"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 400, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/verve/f/F436/verve%252b-2-lowstep/41518/", "quote": "Battery | Bosch CompactTube 400Wh"},
+   {"kind": "review", "value": 400, "url": "https://eridehero.com/products/trek-verve-2-lowstep-2026/", "quote": "Battery Capacity | 400 Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "50", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/verve/f/F436/verve%252b-2-lowstep/41518/", "quote": "Range Up to 50 mi"},
+   {"kind": "review", "value": "50", "url": "https://eridehero.com/products/trek-verve-2-lowstep-2026/", "quote": "Max Range\t50 mi"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 51.81, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/verve/f/F436/verve%252b-2-lowstep/41518/", "quote": "Weight | M - 23.50 kg / 51.81 lbs", "basis": "size M"},
+   {"kind": "review", "value": 51.8, "url": "https://eridehero.com/products/trek-verve-2-lowstep-2026/", "quote": "Weight\t51.8 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 300, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/verve/f/F436/verve%252b-2-lowstep/41518/", "quote": "This bike has a maximum total weight limit (combined weight of bicycle, rider, and cargo) of 300 pounds (136 kg).", "basis": "total"},
+   {"kind": "review", "value": 300, "url": "https://eridehero.com/products/trek-verve-2-lowstep-2026/", "quote": "Weight Limit\t300 lbs", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "250W Bosch Active Line Plus", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/verve/f/F436/verve%252b-2-lowstep/41518/", "quote": "Motor Bosch Active Line Plus, 250W"},
+   {"kind": "review", "value": "250W mid-drive", "url": "https://eridehero.com/products/trek-verve-2-lowstep-2026/", "quote": "Class 1 E-Bike, 51.81 lbs, 250W 50Nm mid mid-drive, 400Wh (36V × 11.1Ah) battery"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'1\"", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/verve/f/F436/verve%252b-2-lowstep/41518/", "quote": "S | 155 - 165 cm | 5'1\" - 5'5\" | 72 - 78 cm | 28\" - 31\" | M | 165 - 175 cm | 5'5\" - 5'9\" | 77 - 83 cm | 30\" - 33\" | L | 175 - 186 cm | 5'9\" - 6'1\""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/verve/f/F436/verve%252b-2-lowstep/41518/", "quote": "Alpha Smooth Aluminum, Bosch Compact PowerTube, internal cable routing, post-mount disc, 135X5mm QR", "basis": "rigid non-folding lowstep frame"},
+   {"kind": "review", "value": "No", "url": "https://eridehero.com/products/trek-verve-2-lowstep-2026/", "quote": "aluminum step-through frame", "basis": "step-through frame, not folding"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker shows a sale ($2,399.93) with original price $3,149.99. Given src link (/us/en_US/ prefix) returns a Trek server error; same product loads via the path without the locale prefix. electricbikereview/electricbikereport Verve+ 2 reviews are the 2020 generation (Active Line Cruise, PowerPack 400) so not used; ERideHero spec page (found with one WebSearch) used as the independent source. Maker spec table names the motor only as 'Bosch Active Line Plus'; the 250W comes from the page's summary line. Trek weight is pre-production, size M."}

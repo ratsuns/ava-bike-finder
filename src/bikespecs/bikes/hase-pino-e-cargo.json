@@ -1,0 +1,43 @@
+{"bike": "Hase|Pino E Cargo", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/pino-e-cargo", "quote": "from 11.243,– ⟶ including VAT, excluding delivery", "basis": "EUR only, no USD price published"},
+   {"kind": "retailer", "value": 13020, "url": "https://newwheel.net/products/hase-pino-electric-tandem?variant=42217582428238", "quote": "Sale price ⟶ $13,020.00", "basis": "dealer price for its 'Pino Cargo' option, described with a Shimano EP8 85Nm drive (older spec than the maker's current EP6 Cargo)"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/pino-e-cargo", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://newwheel.net/products/hase-pino-electric-tandem?variant=42217582428238", "quote": ""}
+  ],
+  "spd": [
+   {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/pino-e-cargo", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://newwheel.net/products/hase-pino-electric-tandem?variant=42217582428238", "quote": "SPEED ⟶ Low"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://www.hasebikes.com/en/pino-e-cargo", "quote": "Electric motor ⟶ Shimano EP6 Cargo, 85 Nm"},
+   {"kind": "retailer", "value": 85, "url": "https://newwheel.net/products/hase-pino-electric-tandem?variant=42217582428238", "quote": "Premium configuration featuring a Shimano EP8 mid-drive motor with 85Nm torque, and everything on the standard Pino Steps along with length-adjustable front cranks, included Porter Rack and Porter Pack, and an extra-sturdy Hase double kickstand. Select either a 504wh or 640wh battery. ⟶ MODEL:"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 630, "url": "https://www.hasebikes.com/en/pino-e-cargo", "quote": "Battery ⟶ 630 Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/pino-e-cargo", "quote": ""},
+   {"kind": "retailer", "value": "50", "url": "https://newwheel.net/products/hase-pino-electric-tandem?variant=42217582428238", "quote": "Choose from a powerful and reliable Shimano mid-drive motor with either 60nm or 85nm of torque to get you up the steepest hills. Looking to take longer adventures, upgrade to a high capacity Shimano 630wh battery for up to 50 miles of range on a charge. ⟶ MADE IN GERMANY", "basis": "\"up to\", with the 630wh battery"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 84, "url": "https://www.hasebikes.com/en/pino-e-cargo", "quote": "Weight ⟶ 38 kg (84 lb)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 496, "url": "https://www.hasebikes.com/en/pino-e-cargo", "quote": "Max. load ⟶ 225 kg (496 lb)"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Shimano EP6 Cargo", "url": "https://www.hasebikes.com/en/pino-e-cargo", "quote": "Electric motor ⟶ Shimano EP6 Cargo, 85 Nm"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "Rear 4'11\"-6'7\" / front 3'3\"-6'7\"", "url": "https://www.hasebikes.com/en/pino-e-cargo", "quote": "Height of rider ⟶ Rear 150-200 cm (4’11”-6’7”) / front 100-200 cm (3’3”-6’7”)"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.hasebikes.com/en/pino-e-cargo", "quote": "Aluminum, telescoping ⟶ Total length"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Given src (newwheel.net) is a dealer page for the whole Pino line; maker page found at https://www.hasebikes.com/en/pino-e-cargo. Maker gives EUR price only and no US class/speed/range. newwheel's 'Pino Cargo' option is described with a Shimano EP8 drive and 504/640 Wh options (older spec), so its battery figures weren't recorded; price flagged. Max. load 225 kg: maker doesn't say total vs. riders+cargo. Frame telescopes, doesn't fold. | recheck: RAD Innovations' Pino Cargo page gives no price (and describes a Shimano EP8 drive); Hostel Shoppe's 'Pino EP6 Cargo' ($13,899) was recorded under Pino E (Tandem) since it reads as the standard EP6-Cargo Pino with the Porter bag sold separately. looked for a US class / mph on hasebikes.com (incl. hidden text), RAD Innovations, Hostel Shoppe, Laid Back Cycles, Utah Trikes (404) and 1 WebSearch: no page states a class or a US top speed."}

@@ -1,0 +1,50 @@
+{"bike": "Specialized|Turbo Vado 3 X", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 5499.99, "url": "https://www.specialized.com/us/en/turbo-vado-3-x-40/p/4293140", "quote": "$5,499.99 ⟶ 4.9", "basis": "4.0 trim (base Vado 3 X)"},
+   {"kind": "review", "value": 5500, "url": "https://electrek.co/2026/05/22/specialized-launches-impressive-full-suspension-vado-3-x-commuter-e-bike/", "quote": "Pricing varies depending on the build level and component package. The Vado 3 X 4.0 starts at around US $5,500, while the higher-spec Vado 3 X 6.0 climbs to approximately $8,000."}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-vado-3-x-40/p/4293140", "quote": ""},
+   {"kind": "review", "value": 3, "url": "https://eridehero.com/products/specialized-turbo-vado-3-x-4-0-2026/", "quote": "E-Bike Class\tClass 3"},
+   {"kind": "retailer", "value": 3, "url": "https://www.eriksbikeshop.com/products/specialized-turbo-vado-3-x-4-0-full-suspension-electric-bike-pr5a27784", "quote": "CLASS 3 ⟶ Pedal assist only, top speed of 28mph", "basis": "ERIK'S dealer page for Vado X 3 4.0; its EBIKE CLASSIFICATION block marks Class 3 with the selected checkmark (checked in the page HTML); the 28mph is the class definition, not a stated top speed"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-vado-3-x-40/p/4293140", "quote": ""},
+   {"kind": "review", "value": 28, "url": "https://eridehero.com/products/specialized-turbo-vado-3-x-4-0-2026/", "quote": "Top Assist Speed\t28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 105, "url": "https://www.specialized.com/us/en/turbo-vado-3-x-40/p/4293140", "quote": "Motor ⟶ Specialized 3.1 Motor, 105Nm torque, 810W power"},
+   {"kind": "review", "value": 105, "url": "https://eridehero.com/products/specialized-turbo-vado-3-x-4-0-2026/", "quote": "Torque\t105 Nm"},
+   {"kind": "review", "value": 105, "url": "https://electrek.co/2026/05/22/specialized-launches-impressive-full-suspension-vado-3-x-commuter-e-bike/", "quote": "That means Specialized’s latest 3.1 motor system remains at the heart of the bike, producing up to 810W of peak power and 105 Nm of torque. Those are seriously healthy numbers for a commuter-oriented e-bike and are heavily derived from the company’s Levo electric mountain bike platform."}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 840, "url": "https://www.specialized.com/us/en/turbo-vado-3-x-40/p/4293140", "quote": "Battery ⟶ Specialized Turbo X2 840Wh integrated battery pack"},
+   {"kind": "review", "value": 840, "url": "https://eridehero.com/products/specialized-turbo-vado-3-x-4-0-2026/", "quote": "840 Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "93", "url": "https://www.specialized.com/us/en/turbo-vado-3-x-40/p/4293140", "quote": "Specialized 3.1 motor w/ 810 W & 105 Nm, 840 Wh Battery with up to 150 km range ⟶ Tires", "basis": "150 km -> 93 miles"},
+   {"kind": "review", "value": "93", "url": "https://eridehero.com/products/specialized-turbo-vado-3-x-4-0-2026/", "quote": "Max Range\t93 mi"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 68.1, "url": "https://www.specialized.com/us/en/turbo-vado-3-x-40/p/4293140", "quote": "Weight ⟶ 30.9 kg (68 lb, 2.0 oz)", "basis": "size MD; 68 lb 2.0 oz = 68.1 lb"},
+   {"kind": "review", "value": 68, "url": "https://eridehero.com/products/specialized-turbo-vado-3-x-4-0-2026/", "quote": "Weight\t68 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-vado-3-x-40/p/4293140", "quote": "MIK 25 kg rear rack with integrated elastics, MIK front rack 10kg compatible (not included) ⟶ Headlight", "basis": "only the rear rack limit is published"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Specialized 3.1 mid-drive (810W)", "url": "https://www.specialized.com/us/en/turbo-vado-3-x-40/p/4293140", "quote": "Motor ⟶ Specialized 3.1 Motor, 105Nm torque, 810W power", "basis": "810W is peak per Electrek/ERideHero"},
+   {"kind": "review", "value": "250W mid-drive (810W peak)", "url": "https://eridehero.com/products/specialized-turbo-vado-3-x-4-0-2026/", "quote": "Nominal Power | 250 W | Peak Power | 810 W"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-vado-3-x-40/p/4293140", "quote": ""},
+   {"kind": "retailer", "value": "5'1\"-6'4\"", "url": "https://steedcycles.com/products/specialized-turbo-vado-x-3-4-0", "quote": "S\t5'1\" - 5'5\"\t158 - 165cm | M\t5'5\" - 5'10\"\t165 - 178cm | L\t5'10\" - 6'1\"\t178 - 185cm | XL\t6'1\" - 6'4\"\t185 - 193cm", "basis": "Steed Cycles (Specialized dealer) size table for Turbo Vado X 3 4.0, S-XL"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.specialized.com/us/en/turbo-vado-3-x-40/p/4293140", "quote": "Vado X frame, premium comfort with 120mm rear travel, side entry battery ⟶ Seat Binder", "basis": "full-suspension fixed frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Recorded base 4.0 trim (src link); 6.0 trim is $7,999.99. Maker gives no class/speed; class 3 / 28 mph / no throttle from ERideHero. Maker lists a 25 kg rear rack while Electrek says 27 kg. | recheck: ERIK'S dealer page marks Class 3 (no top-speed line for this model); Steed Cycles dealer size table S 5'1\"-5'5\" to XL 6'1\"-6'4\". No page found stating a top speed number for Vado 3 X."
+}

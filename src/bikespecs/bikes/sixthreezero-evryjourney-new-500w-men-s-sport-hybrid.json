@@ -1,0 +1,50 @@
+{"bike": "Sixthreezero|EVRYjourney NEW 500W (Men's Sport Hybrid)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1999.99, "url": "https://www.sixthreezero.com/products/mens-evry-new-sport-hybrid-beach-cruiser-ebike", "quote": "$1299.99 ⟶ $1999.99", "basis": "higher listed price beside the $1299.99 sale price"},
+   {"kind": "retailer", "value": 1199.99, "url": "https://omahasportsandgames.com/products/six-three-zero-evryjourney-mens-500w-electric-bike", "quote": "Regular price ⟶ $1,199.99 USD"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.sixthreezero.com/products/mens-evry-new-sport-hybrid-beach-cruiser-ebike", "quote": "Top speed of 20mph for both full electric and with pedal assist", "basis": "maker states no class; 20 mph with thumb throttle = Class 2"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/sixthreezero-evryjourney-500w-review/", "quote": "CLASS 2 E-BIKE: ⟶ THROTTLE AND PEDAL ASSIST UP TO 20 MPH (CAN BE ADJUSTED TO CLASS 3).", "basis": "review of the women's EVRYjourney 500W (same motor/battery)"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.sixthreezero.com/products/mens-evry-new-sport-hybrid-beach-cruiser-ebike", "quote": "Top speed of 20mph for both full electric and with pedal assist"},
+   {"kind": "retailer", "value": 20, "url": "https://omahasportsandgames.com/products/six-three-zero-evryjourney-mens-500w-electric-bike", "quote": "• Top Speed: 20 mph on both pedal assist and full electric"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/sixthreezero-evryjourney-500w-review/", "quote": "THROTTLE AND PEDAL ASSIST UP TO 20 MPH (CAN BE ADJUSTED TO CLASS 3).", "basis": "adjustable to Class 3 per review"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://www.sixthreezero.com/products/mens-evry-new-sport-hybrid-beach-cruiser-ebike", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 500, "url": "https://www.sixthreezero.com/products/mens-evry-new-sport-hybrid-beach-cruiser-ebike", "quote": "500 Watt Hour Battery that will take you 20 miles using full electric and 20 - 40 miles on pedal assist mode"},
+   {"kind": "retailer", "value": 500, "url": "https://omahasportsandgames.com/products/six-three-zero-evryjourney-mens-500w-electric-bike", "quote": "• Battery: 500 Watt Hour; 20 miles on full electric, 20–40 miles on pedal assist"},
+   {"kind": "review", "value": 500, "url": "https://electricbikereport.com/sixthreezero-evryjourney-500w-review/", "quote": "Battery: 500wh (48V 10.4Ah Lithium-Ion Battery) ⟶ Display: Duo-Tone LCD"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "20–40", "url": "https://www.sixthreezero.com/products/mens-evry-new-sport-hybrid-beach-cruiser-ebike", "quote": "500 Watt Hour Battery that will take you 20 miles using full electric and 20 - 40 miles on pedal assist mode"},
+   {"kind": "retailer", "value": "20–40", "url": "https://omahasportsandgames.com/products/six-three-zero-evryjourney-mens-500w-electric-bike", "quote": "• Battery: 500 Watt Hour; 20 miles on full electric, 20–40 miles on pedal assist"},
+   {"kind": "review", "value": "22.9–50.5", "url": "https://electricbikereport.com/sixthreezero-evryjourney-500w-review/", "quote": "Range: Claimed: 20-40 miles and EBR Test Result was 22.9 – 50.5 miles. ⟶ Throttle: Left Side Thumb Throttle", "basis": "tested, women's frame"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 62.4, "url": "https://www.sixthreezero.com/products/mens-evry-new-sport-hybrid-beach-cruiser-ebike", "quote": "Weight ⟶ 62.4 Lbs Assembled"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 300, "url": "https://www.sixthreezero.com/products/mens-evry-new-sport-hybrid-beach-cruiser-ebike", "quote": "300 Lb Maximum Rider Weight (recommended) ⟶ Battery Compliant to the UL 2271 Standard as Tested by ACT Labs", "basis": "max rider weight"},
+   {"kind": "retailer", "value": 300, "url": "https://omahasportsandgames.com/products/six-three-zero-evryjourney-mens-500w-electric-bike", "quote": "• Rider Fit: Suitable for riders 5'0\" to 6'4\", recommended max weight 300 lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W rear hub", "url": "https://www.sixthreezero.com/products/mens-evry-new-sport-hybrid-beach-cruiser-ebike", "quote": "Motor ⟶ 500 Watt Rear Hub Motor"},
+   {"kind": "retailer", "value": "500W rear hub", "url": "https://omahasportsandgames.com/products/six-three-zero-evryjourney-mens-500w-electric-bike", "quote": "• Motor: 500 Watt rear hub drive, smooth operation with pedal assist or full electric mode ⟶ • Top Speed: 20 mph on both pedal assist and full electric"},
+   {"kind": "review", "value": "500W rear hub", "url": "https://electricbikereport.com/sixthreezero-evryjourney-500w-review/", "quote": "Motor: Rear Hub 500W ⟶ Headlight:No, but they sell them on their Accessories page."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'0\"-6'4\"", "url": "https://www.sixthreezero.com/products/mens-evry-new-sport-hybrid-beach-cruiser-ebike", "quote": "Height Range ⟶ 5' - 6'4\""},
+   {"kind": "retailer", "value": "5'0\"-6'4\"", "url": "https://omahasportsandgames.com/products/six-three-zero-evryjourney-mens-500w-electric-bike", "quote": "• Rider Fit: Suitable for riders 5'0\" to 6'4\", recommended max weight 300 lbs"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.sixthreezero.com/products/mens-evry-new-sport-hybrid-beach-cruiser-ebike", "quote": "Electric Touring Cruiser Bike with 500 Watt Rear Hub Drive Motor with an ergonomically designed frame for maximum comfort and riding ease.", "basis": "'Folding' appears only as a shop-menu filter"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker shows $1299.99 next to $1999.99; recorded the higher one as regular. Retailer Omaha Sports & Games lists 'Regular price $1,199.99' (sold out) — differs from maker. Maker states no class; 20 mph throttle -> Class 2. Electric Bike Report's EVRYjourney 500W review is the female-focused step-thru version (same 500W rear hub, 48V 10.4Ah/500Wh); used only for electrical specs, not weight/fit; it notes it 'CAN BE ADJUSTED TO CLASS 3'. Maker weight 62.4 lb is identical to the 250W men's page (possible copy-paste)."}

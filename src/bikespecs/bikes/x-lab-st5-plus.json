@@ -1,0 +1,175 @@
+{
+ "bike": "X-Lab|ST5+",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": 1999,
+    "url": "https://xds.co/products/st5-plus",
+    "quote": "$1,999 ⟶ Mid-Drive utility machine that's commuter ready"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://cambriabike.com/products/x-lab-st5-plus-27-5-mercury-silver",
+    "quote": "SOLD OUT",
+    "basis": "no price shown (sold out)"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": 2,
+    "url": "https://xds.co/products/st5-plus",
+    "quote": "Pedal-assist and Throttle, Class 2 20mph (Unlock to Class 3 via the X-Lab Bikes Mobile App) ⟶ RANGE",
+    "basis": "ships Class 2 at 20 mph with throttle; unlockable to Class 3"
+   },
+   {
+    "kind": "retailer",
+    "value": 2,
+    "url": "https://cambriabike.com/products/x-lab-st5-plus-27-5-mercury-silver",
+    "quote": "Speed\tPedal-assist & Throttle, Class 2 20mph (Unlock to Class 3 via App) ⟶ Range\tUp to 75 miles per charge",
+    "basis": "ships Class 2; unlockable to Class 3"
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": 20,
+    "url": "https://xds.co/products/st5-plus",
+    "quote": "Pedal-assist and Throttle, Class 2 20mph (Unlock to Class 3 via the X-Lab Bikes Mobile App) ⟶ RANGE",
+    "basis": "adjustable to Class 3 (28 mph) via app; 28 not stated on page"
+   },
+   {
+    "kind": "retailer",
+    "value": 20,
+    "url": "https://cambriabike.com/products/x-lab-st5-plus-27-5-mercury-silver",
+    "quote": "Speed\tPedal-assist & Throttle, Class 2 20mph (Unlock to Class 3 via App) ⟶ Range\tUp to 75 miles per charge"
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": 95,
+    "url": "https://xds.co/products/st5-plus",
+    "quote": "Power, 470 Watt Peak Power, 95Nm Peak Torque, Dual-sided Torque Sensor ⟶ BATTERY"
+   },
+   {
+    "kind": "retailer",
+    "value": 95,
+    "url": "https://cambriabike.com/products/x-lab-st5-plus-27-5-mercury-silver",
+    "quote": "Motor\tXDS Mid-drive X800, 250W Continuous, 470W Peak, 95Nm Torque, Dual-sided Torque Sensor ⟶ Battery\tXDS Rechargeable Li-ion, 619Wh, LG Cells, 3A Charger (0-100% in 5 hrs)"
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": 619,
+    "url": "https://xds.co/products/st5-plus",
+    "quote": "XDS Rechargeable Li-ion Battery, 619Wh, LG Battery Cells, 3A Charger (0-100% 5hr) ⟶ LIGHTS"
+   },
+   {
+    "kind": "retailer",
+    "value": 619,
+    "url": "https://cambriabike.com/products/x-lab-st5-plus-27-5-mercury-silver",
+    "quote": "Battery\tXDS Rechargeable Li-ion, 619Wh, LG Cells, 3A Charger (0-100% in 5 hrs) ⟶ Lights\tIntegrated Front & Rear Lights (+ Brake Lights)"
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": "75",
+    "url": "https://xds.co/products/st5-plus",
+    "quote": "RANGE ⟶ Ride up to 75 miles on a Single Charge",
+    "basis": "up to"
+   },
+   {
+    "kind": "retailer",
+    "value": "75",
+    "url": "https://cambriabike.com/products/x-lab-st5-plus-27-5-mercury-silver",
+    "quote": "Range\tUp to 75 miles per charge",
+    "basis": "up to"
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": 54.58,
+    "url": "https://xds.co/products/st5-plus",
+    "quote": "WEIGHT ⟶ 24.76 kg / 54.58 lbs (Size L)",
+    "basis": "size L"
+   },
+   {
+    "kind": "retailer",
+    "value": 54.58,
+    "url": "https://cambriabike.com/products/x-lab-st5-plus-27-5-mercury-silver",
+    "quote": "Weight\t24.76 kg / 54.58 lbs (Size L) ⟶ Size Options\tM / L",
+    "basis": "size L"
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": 330,
+    "url": "https://xds.co/products/st5-plus",
+    "quote": "LOAD CAPACITY ⟶ Max Load 330 lbs (150 kg)"
+   },
+   {
+    "kind": "retailer",
+    "value": 330,
+    "url": "https://cambriabike.com/products/x-lab-st5-plus-27-5-mercury-silver",
+    "quote": "Load Capacity\t330 lbs (150 kg) ⟶ Connectivity\tApple Find My, Bluetooth, OTA Updates"
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "250W mid-drive (470W peak)",
+    "url": "https://xds.co/products/st5-plus",
+    "quote": "XDS Mid-drive X800 Motor, 250 Watt Continuous Rated ⟶ Power, 470 Watt Peak Power, 95Nm Peak Torque, Dual-sided Torque Sensor"
+   },
+   {
+    "kind": "retailer",
+    "value": "250W mid-drive (470W peak)",
+    "url": "https://cambriabike.com/products/x-lab-st5-plus-27-5-mercury-silver",
+    "quote": "Motor\tXDS Mid-drive X800, 250W Continuous, 470W Peak, 95Nm Torque, Dual-sided Torque Sensor ⟶ Battery\tXDS Rechargeable Li-ion, 619Wh, LG Cells, 3A Charger (0-100% in 5 hrs)"
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://xds.co/products/st5-plus",
+    "quote": "SIZE OPTIONS | M / L",
+    "basis": "sizes listed, no rider height range"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://cambriabike.com/products/x-lab-st5-plus-27-5-mercury-silver",
+    "quote": "Size Options\tM / L"
+   },
+   {
+    "kind": "maker",
+    "value": "5'2\"-6'2\" (M-L)",
+    "url": "https://xds.co/products/st5-plus",
+    "quote": "Size Chart | ST5+ | Frame Size | Rider Height | M | 157 cm – 173 cm | 5' 2\" - 5' 8\" | L | 173 cm – 188 cm | 5' 8\" - 6' 2\"",
+    "basis": "maker size chart (hidden modal on product page): M 5'2\"-5'8\", L 5'8\"-6'2\""
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://xds.co/products/st5-plus",
+    "quote": "A durable alloy frame and a complete build around 54 lbs delivers stability and confidence that prepares the rider for commutes, errands, and long rides with real utility in mind. ⟶ Mid-Drive Power Engineered In-House",
+    "basis": "rigid alloy commuter frame; no folding mentioned"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "EBR, Electrek and Mike's Bikes had no ST5+. Used one WebSearch to find Cambria Bike dealer page (sold out, no price shown). No rider height range published by either source. Recheck: maker product page has a hidden Size Chart modal with rider heights per frame size (read via text nodes)."
+}

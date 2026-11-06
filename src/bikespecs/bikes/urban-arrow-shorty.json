@@ -1,0 +1,148 @@
+{
+ "bike": "Urban Arrow|Shorty",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.urbanarrow.com/family-bikes/shorty",
+    "quote": "Shorty Performance Line | Black / White | Bosch Performance Line (65 Nm) | PowerPack 500 | Bosch Intuvia | Enviolo Heavy Duty | KMC Chain | Tektro Dorado | € | 4999 | incl. VAT",
+    "basis": "EUR only (€4,999 incl. VAT); no USD price — Shorty is not on the North America site"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.urbanarrow.com/family-bikes/shorty",
+    "quote": "What is the maximum speed of the Urban Arrow Shorty cargo bike? ⟶ The maximum speed is 25 km/u.",
+    "basis": "EU pedelec (25 km/h); no US class"
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": 15.5,
+    "url": "https://www.urbanarrow.com/family-bikes/shorty",
+    "quote": "What is the maximum speed of the Urban Arrow Shorty cargo bike? ⟶ The maximum speed is 25 km/u.",
+    "basis": "25 km/h converted"
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": 65,
+    "url": "https://www.urbanarrow.com/family-bikes/shorty",
+    "quote": "Bosch Performance Line (65 Nm) ⟶ PowerPack 500"
+   },
+   {
+    "kind": "retailer",
+    "value": 75,
+    "url": "https://www.mantel.com/en/urban-arrow-shorty-performance-essential",
+    "quote": "Torque ⟶ 75Nm",
+    "basis": "Shorty Performance Essential (Smart System) variant"
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": 500,
+    "url": "https://www.urbanarrow.com/family-bikes/shorty",
+    "quote": "Bosch Performance Line (65 Nm) ⟶ PowerPack 500",
+    "basis": "Bosch PowerPack 500 battery"
+   },
+   {
+    "kind": "retailer",
+    "value": 400,
+    "url": "https://www.mantel.com/en/urban-arrow-shorty-performance-essential",
+    "quote": "Total battery capacity ⟶ 400 Wh",
+    "basis": "Shorty Performance Essential variant"
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": "31",
+    "url": "https://www.urbanarrow.com/family-bikes/shorty",
+    "quote": "The average range of the cargo bike is 50km depending on the factors listed in this article. You can double the range of your cargo bike with our double battery set. ⟶ What is the main difference between Urban Arrow and other cargo bike brands?",
+    "basis": "average 50 km converted"
+   },
+   {
+    "kind": "retailer",
+    "value": "31–37",
+    "url": "https://www.mantel.com/en/urban-arrow-shorty-performance-essential",
+    "quote": "Realistic range ⟶ 50 km - 60 km",
+    "basis": "realistic range converted; Performance Essential variant (claims up to 80 km)"
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": 101.4,
+    "url": "https://www.urbanarrow.com/family-bikes/shorty",
+    "quote": "What is the weight of the Urban Arrow Shorty cargo bike? ⟶ The total weight of the cargo bike is 46kg.",
+    "basis": "46 kg converted"
+   },
+   {
+    "kind": "retailer",
+    "value": 92.6,
+    "url": "https://www.mantel.com/en/urban-arrow-shorty-performance-essential",
+    "quote": "Weight ⟶ 42 kg",
+    "basis": "42 kg converted; Performance Essential variant"
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": 496,
+    "url": "https://www.urbanarrow.com/family-bikes/shorty",
+    "quote": "What is the maximum total weight on the Urban Arrow Shorty cargo bike? ⟶ The maximum weight is 225kg.",
+    "basis": "total; 225 kg converted"
+   },
+   {
+    "kind": "retailer",
+    "value": 496,
+    "url": "https://www.mantel.com/en/urban-arrow-shorty-performance-essential",
+    "quote": "Weight Limit ⟶ 225 kg",
+    "basis": "225 kg converted"
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "Bosch Performance Line",
+    "url": "https://www.urbanarrow.com/family-bikes/shorty",
+    "quote": "Bosch Performance Line (65 Nm) ⟶ PowerPack 500"
+   },
+   {
+    "kind": "retailer",
+    "value": "Bosch Performance Line",
+    "url": "https://www.mantel.com/en/urban-arrow-shorty-performance-essential",
+    "quote": "Motor Type ⟶ Bosch Performance Line BES3 (75Nm)"
+   }
+  ],
+  "height": [
+   {
+    "kind": "retailer",
+    "value": "5'3\"-6'7\"",
+    "url": "https://www.mantel.com/en/urban-arrow-shorty-performance-essential",
+    "quote": "Frame Size ⟶ One Size 1.59m - 2.00m",
+    "basis": "1.59–2.00 m converted"
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://www.urbanarrow.com/family-bikes/shorty",
+    "quote": "Don’t let the small size fool you. The Urban Arrow Shorty can carry quite a load. With the extra layer in the EPP box, you can carry goods both out of sight and in sight. The optional lockable lid protects your cargo from theft and rain.",
+    "basis": "front-box cargo bike; no folding frame mentioned"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "Shorty is not sold on Urban Arrow's North America site (not in en-na menus); the src link /en/shorty redirected to the EU page urbanarrow.com/family-bikes/shorty with EUR prices only (€4,999 Performance Line / €5,899 Cargo Line, plus a '€ 3.999' figure near the top), so no USD price recorded. Maker FAQ uses metric (25 km/h, 50 km, 46 kg, 225 kg) — values converted. Maker spec table (65 Nm / PowerPack 500) differs from Mantel's 'Shorty Performance Essential' (Smart System 75Nm / 400Wh / 42 kg), which looks like a different generation/trim. No US review or dealer found (one WebSearch used). Price quote joins consecutive page lines with ' | '. Probably should be excluded from a US rebate finder. Recheck: maker EU Shorty page FAQ gives only 'The maximum speed is 25 km/u.' (EU pedelec); no US class anywhere; /documents redirects to a Pon brand portal. Nothing new recorded."
+}

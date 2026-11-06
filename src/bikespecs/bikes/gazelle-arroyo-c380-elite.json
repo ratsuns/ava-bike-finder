@@ -1,0 +1,49 @@
+{"bike": "Gazelle|Arroyo C380 Elite", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 4499, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-arroyo-c380-elite", "quote": "$4,499 | Shop stock: First, configure your bike", "basis": "no crossed-out price shown"},
+   {"kind": "retailer", "value": 4498.99, "url": "https://mikesbikes.com/products/gazelle-arroyo-c380-elite", "quote": "Regular price | $4,498.99"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-arroyo-c380-elite", "quote": "Ebike Max Speed | 20 mph", "basis": "no class stated; 20 mph pedal assist with no throttle listed (Bosch Smart System) means Class 1"},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/gazelle-arroyo-c380-elite", "quote": ""}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-arroyo-c380-elite", "quote": "Ebike Max Speed | 20 mph"},
+   {"kind": "retailer", "value": 20, "url": "https://mikesbikes.com/products/gazelle-arroyo-c380-elite", "quote": "Max Assisted Speed | 20mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 75, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-arroyo-c380-elite", "quote": "Engine Max Torque (Nm) | 75"},
+   {"kind": "retailer", "value": 75, "url": "https://mikesbikes.com/products/gazelle-arroyo-c380-elite", "quote": "Powerful motor (75 Nm) with attention to integration"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 540, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-arroyo-c380-elite", "quote": "540 Wh: up to 80 mi | Included"},
+   {"kind": "retailer", "value": 540, "url": "https://mikesbikes.com/products/gazelle-arroyo-c380-elite", "quote": "Battery\t540 Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "30–80", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-arroyo-c380-elite", "quote": "Eco\t80 mi\t80 mi | Tour\t50 mi\t50 mi | Auto\t35 mi\t35 mi | Turbo\t30 mi\t30 mi", "basis": "Turbo to Eco assist modes, 540 Wh battery"},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/gazelle-arroyo-c380-elite", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 60.8, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-arroyo-c380-elite", "quote": "Weight (lbs) | 60.8 lbs excl. battery", "basis": "without battery"},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/gazelle-arroyo-c380-elite", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-arroyo-c380-elite", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/gazelle-arroyo-c380-elite", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Performance Line mid-drive", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-arroyo-c380-elite", "quote": "Motor | Performance Line | Ebike Engine Position | Mid", "basis": "no rated watts published"},
+   {"kind": "retailer", "value": "Bosch Smart System Performance Line", "url": "https://mikesbikes.com/products/gazelle-arroyo-c380-elite", "quote": "Motor\tBosch Smart System Performance Line, 75&Nm"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'10\"-6'4\"", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-arroyo-c380-elite", "quote": "46 | 4'10\" - 5'6\" | 53 | 5'6\" - 5'10\" | 57 | 5'10\" - 6'4\"", "basis": "frame sizes 46/53/57"},
+   {"kind": "retailer", "value": "4'10\"-6'4\"", "url": "https://mikesbikes.com/products/gazelle-arroyo-c380-elite", "quote": "SM (4'10\" - 5'6\") | MD (5'6\" - 5'10\") | LG (5'10\" - 6'4\")"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-arroyo-c380-elite", "quote": "Frame hape | Low-Step", "basis": "rigid low-step frame; no folding mentioned"},
+   {"kind": "retailer", "value": "No", "url": "https://mikesbikes.com/products/gazelle-arroyo-c380-elite", "quote": "This is a low-step and spacious frame, single tube and lovely integrated cables"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Class not stated by either source; set to 1 from 20 mph and no throttle. Maker gives weight without battery only and no max load. Mike's Bikes is special-order. electricbikereview/electricbikereport had no review; REI returned 'Access denied'."}

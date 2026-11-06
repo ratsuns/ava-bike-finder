@@ -1,0 +1,175 @@
+{
+ "bike": "Bulls|Evo TR 1",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": 5799,
+    "url": "https://bullsbikesusa.com/products/iconic-evo-tr-1-750",
+    "quote": "$3,299.00 ⟶ $5,799.00",
+    "basis": "crossed-out regular price; $3,299 is a sale price ('Save $2,500')"
+   },
+   {
+    "kind": "review",
+    "value": 6299,
+    "url": "https://electricbikereview.com/bulls/2022-iconic-evo-tr-1-750/",
+    "quote": "PRICE: | $6299",
+    "basis": "2022/2023 review-time price"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": 1,
+    "url": "https://bullsbikesusa.com/products/iconic-evo-tr-1-750",
+    "quote": "Class-1 eBike: Pedal assist up to 20 mph for efficient commuting and trail use."
+   },
+   {
+    "kind": "review",
+    "value": 1,
+    "url": "https://electricbikereview.com/bulls/2022-iconic-evo-tr-1-750/",
+    "quote": "ELECTRIC BIKE CLASS: | Pedal Assist (Class 1)"
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": 20,
+    "url": "https://bullsbikesusa.com/products/iconic-evo-tr-1-750",
+    "quote": "Class-1 eBike: Pedal assist up to 20 mph for efficient commuting and trail use."
+   },
+   {
+    "kind": "review",
+    "value": 20,
+    "url": "https://electricbikereview.com/bulls/2022-iconic-evo-tr-1-750/",
+    "quote": "TOP SPEED: | 20 mph (32 kph)"
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": 85,
+    "url": "https://bullsbikesusa.com/products/iconic-evo-tr-1-750",
+    "quote": "Motor: Bosch Gen4 Performance Line CX with 85 Nm of torque. A Class-1 pedal-assist system (eBike2), this motor delivers strong acceleration and intuitive responsiveness on any terrain."
+   },
+   {
+    "kind": "review",
+    "value": 85,
+    "url": "https://electricbikereview.com/bulls/2022-iconic-evo-tr-1-750/",
+    "quote": "MOTOR TORQUE: | 85 Newton meters"
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": 750,
+    "url": "https://bullsbikesusa.com/products/iconic-evo-tr-1-750",
+    "quote": "Battery: Bosch PowerTube 750 Wh Smart System ⟶ Charger: Bosch Smart System 4A"
+   },
+   {
+    "kind": "review",
+    "value": 750,
+    "url": "https://electricbikereview.com/bulls/2022-iconic-evo-tr-1-750/",
+    "quote": "BATTERY WATT HOURS: | 750 wh"
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://bullsbikesusa.com/products/iconic-evo-tr-1-750",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": "40–120",
+    "url": "https://electricbikereview.com/bulls/2022-iconic-evo-tr-1-750/",
+    "quote": "ESTIMATED MIN RANGE: | 40 miles (64 km) | ESTIMATED MAX RANGE: | 120 miles (193 km)"
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": 58.5,
+    "url": "https://bullsbikesusa.com/products/iconic-evo-tr-1-750",
+    "quote": "Weight: 58.5 lbs. ⟶ * Specifications subject to change without notice",
+    "basis": "battery not stated"
+   },
+   {
+    "kind": "review",
+    "value": 65.8,
+    "url": "https://electricbikereview.com/bulls/2022-iconic-evo-tr-1-750/",
+    "quote": "TOTAL WEIGHT: | 65.8 lbs (29.85 kg)"
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://bullsbikesusa.com/products/iconic-evo-tr-1-750",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://electricbikereview.com/bulls/2022-iconic-evo-tr-1-750/",
+    "quote": ""
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "Bosch CX Smart System",
+    "url": "https://bullsbikesusa.com/products/iconic-evo-tr-1-750",
+    "quote": "DriveUnit: Bosch CX Smart System | Battery: Bosch PowerTube 750 Wh Smart System"
+   },
+   {
+    "kind": "review",
+    "value": "250W Bosch Performance Line CX (The Smart System)",
+    "url": "https://electricbikereview.com/bulls/2022-iconic-evo-tr-1-750/",
+    "quote": "MOTOR BRAND: | Bosch Performance Line CX (The Smart System) | MOTOR TYPE: | Mid-Mounted Geared Motor | Learn more about Ebike motors | MOTOR NOMINAL OUTPUT: | 250 watts"
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://bullsbikesusa.com/products/iconic-evo-tr-1-750",
+    "quote": "Frame: Lightweight 6061 aluminum frame with internal cable routing. Available in four frame sizes (41/44/48/54 cm) to fit most riders. ⟶ Drivetrain and Brakes",
+    "basis": "frame sizes only, no rider heights"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://electricbikereview.com/bulls/2022-iconic-evo-tr-1-750/",
+    "quote": ""
+   },
+   {
+    "kind": "maker",
+    "value": "5'5\"-6'8\"",
+    "url": "https://bullsbikesusa.com/products/iconic-evo-tr-1-750",
+    "quote": "41(CM)\t5'5\" to 5’9\"\t30\" to 32” | 44(CM)\t5'9\" to 5’11\"\t32\" to 34” | 48(CM)\t5’11\" to 6'3\"\t33” to 36” | 54(CM)\t6'3\" to 6’8\"\t34” to 38”",
+    "basis": "Sizing Tool table: frame size, rider height, inseam"
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://bullsbikesusa.com/products/iconic-evo-tr-1-750",
+    "quote": "Frame: Lightweight 6061 aluminum frame with internal cable routing. Available in four frame sizes (41/44/48/54 cm) to fit most riders. ⟶ Drivetrain and Brakes"
+   },
+   {
+    "kind": "review",
+    "value": "No",
+    "url": "https://electricbikereview.com/bulls/2022-iconic-evo-tr-1-750/",
+    "quote": "FRAME MATERIAL: | 6061 Aluminium Alloy"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker name is 'Iconic EVO TR 1 750' (full suspension). Maker contradicts itself on motor generation: description says 'Bosch Gen4 Performance Line CX ... (eBike2)', spec table says 'Bosch CX Smart System' with 'PowerTube 750 Wh Smart System'; EBR (2022/2023 model) also says Smart System. Weight differs: maker 58.5 lbs vs EBR measured 65.8 lbs. On sale at maker ($3,299, regular $5,799). EBR's /bulls/iconic-evo-tr-1/ page is the 2019 model (500Wh, Class 3) and was not used. recheck (height): the maker product page has a hidden 'Sizing Tool' modal ('WHAT IS MY FRAME SIZE?') with rider heights per frame size; read via page text."
+}

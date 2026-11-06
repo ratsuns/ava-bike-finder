@@ -1,0 +1,49 @@
+{"bike": "Letrigo|Workhorse", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2999, "url": "https://letrigo.com/products/workhorse", "quote": "$2,999.00 USD ⟶ Color"},
+   {"kind": "retailer", "value": 2999, "url": "https://www.citygrounds.com/products/letrigo-workhorse-electric-bike", "quote": "$2,999.00"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://letrigo.com/products/workhorse", "quote": "Intelligent 5 level pedal assist. Throttle on demand ⟶ Speed | Speed ⟶ Class 2:20mph | Class 2:20mph ⟶ Max speed up to 28mph", "basis": "states Class 2: 20 mph with throttle; max speed adjustable up to 28 mph"},
+   {"kind": "retailer", "value": 2, "url": "https://www.citygrounds.com/products/letrigo-workhorse-electric-bike", "quote": "Speed:Class 2: 20 MPH (Max up to 28 MPH)"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://letrigo.com/products/workhorse", "quote": "Speed ⟶ Class 2:20mph | Class 2:20mph ⟶ Max speed up to 28mph", "basis": "adjustable to 28 mph"},
+   {"kind": "retailer", "value": 20, "url": "https://www.citygrounds.com/products/letrigo-workhorse-electric-bike", "quote": "Speed:Class 2: 20 MPH (Max up to 28 MPH)", "basis": "adjustable to 28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 130, "url": "https://letrigo.com/products/workhorse", "quote": "130 Nm of torque ⟶ Battery"},
+   {"kind": "retailer", "value": 130, "url": "https://www.citygrounds.com/products/letrigo-workhorse-electric-bike", "quote": "Motor:Ananda Cargoline Torque-Sensing Mid Motor, 500W Rated / 750W Peak, 130Nm Torque"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 960, "url": "https://letrigo.com/products/workhorse", "quote": "Battery ⟶ Default built-in 48V/20AH battery", "basis": "48V x 20Ah"},
+   {"kind": "retailer", "value": 960, "url": "https://www.citygrounds.com/products/letrigo-workhorse-electric-bike", "quote": "Battery:48V / 20Ah (21700 Samsung Cells), UL Certified", "basis": "48V x 20Ah"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "60", "url": "https://letrigo.com/products/workhorse", "quote": "Max Range ⟶ 60Miles(100Km)"},
+   {"kind": "retailer", "value": null, "url": "https://www.citygrounds.com/products/letrigo-workhorse-electric-bike", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 78, "url": "https://letrigo.com/products/workhorse", "quote": "Net Weight ⟶ 78lbs", "basis": "net weight; page does not say whether battery is included (battery is built-in)"},
+   {"kind": "retailer", "value": 78, "url": "https://www.citygrounds.com/products/letrigo-workhorse-electric-bike", "quote": "Net Weight:78 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 500, "url": "https://letrigo.com/products/workhorse", "quote": "Load Capacity ⟶ Payload Capacity: 500lbs"},
+   {"kind": "retailer", "value": 500, "url": "https://www.citygrounds.com/products/letrigo-workhorse-electric-bike", "quote": "Load Capacity:500 lbs Total / 150 lbs Rear Seat"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W mid-drive (750W peak)", "url": "https://letrigo.com/products/workhorse", "quote": "Ananda Cargoline torque sensing mid motor ⟶ 500W rated power, peak 750w"},
+   {"kind": "retailer", "value": "500W mid-drive (750W peak)", "url": "https://www.citygrounds.com/products/letrigo-workhorse-electric-bike", "quote": "Motor:Ananda Cargoline Torque-Sensing Mid Motor, 500W Rated / 750W Peak, 130Nm Torque"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://letrigo.com/products/workhorse", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://www.citygrounds.com/products/letrigo-workhorse-electric-bike", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://letrigo.com/products/workhorse", "quote": "Frame ⟶ 6061 aluminum, heavy duty design, reinforced triangles", "basis": "long-tail cargo frame; no folding mentioned"},
+   {"kind": "retailer", "value": "No", "url": "https://www.citygrounds.com/products/letrigo-workhorse-electric-bike", "quote": "Frame:6061 Aluminum, Reinforced Heavy-Duty Design"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker Shopify data: compare_at = price ($2,999), so regular. Maker range '60Miles(100Km)' is labelled Max Range. Canadian version 500W / 32 km/h. No EBR/EBReport/Electrek coverage; City Grounds dealer specs used. Rider height not published."}

@@ -1,0 +1,49 @@
+{"bike": "Gazelle|Ultimate T10", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 3499, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-t10", "quote": "$3,499 | Shop stock: First, configure your bike", "basis": "single price shown, no crossed-out price"},
+   {"kind": "retailer", "value": 3498.99, "url": "https://mikesbikes.com/products/gazelle-ultimate-t10-2027", "quote": "Regular price ⟶ $3,498.99"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-t10", "quote": "Ebike Max Speed | 20 mph", "basis": "no class stated on maker spec; 20 mph Bosch Active Line Plus pedal-assist with no throttle, so Class 1 (dealer says Class 1)"},
+   {"kind": "retailer", "value": 1, "url": "https://mikesbikes.com/products/gazelle-ultimate-t10-2027", "quote": "Max Assisted Speed\tClass 1, 20 mph ⟶ Charger\tBosch Compact Charger, 2A"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-t10", "quote": "Ebike Max Speed | 20 mph"},
+   {"kind": "retailer", "value": 20, "url": "https://mikesbikes.com/products/gazelle-ultimate-t10-2027", "quote": "Max Assisted Speed\tClass 1, 20 mph ⟶ Charger\tBosch Compact Charger, 2A"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 60, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-t10", "quote": "Engine Max Torque (Nm) | 60"},
+   {"kind": "retailer", "value": 60, "url": "https://mikesbikes.com/products/gazelle-ultimate-t10-2027", "quote": "Motor\tBosch Smart System Active Line Plus, 60 Nm ⟶ Battery\t540 Wh, integrated in the frame"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 540, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-t10", "quote": "540 Wh: up to 85 mi"},
+   {"kind": "retailer", "value": 540, "url": "https://mikesbikes.com/products/gazelle-ultimate-t10-2027", "quote": "Battery\t540 Wh, integrated in the frame ⟶ Display/Controller\tBosch Purion 200"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "35–85", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-t10", "quote": "Eco\t85 mi | Tour\t50 mi | Auto\t40 mi | Turbo\t35 mi", "basis": "four consecutive lines of the maker's 'Battery and Range' spec (\" | \" = line break)"},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/gazelle-ultimate-t10-2027", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 57.3, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-t10", "quote": "Weight (lbs) | 57.3 lbs excl. battery", "basis": "without battery"},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/gazelle-ultimate-t10-2027", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-t10", "quote": "", "basis": "no max load / permissible weight on the page"},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/gazelle-ultimate-t10-2027", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Active Line Plus (mid-drive)", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-t10", "quote": "Motor | Active Line Plus | Ebike Engine Position | Mid | Ebike System Brand | Bosch Smart System", "basis": "consecutive spec lines; no rated watts published"},
+   {"kind": "retailer", "value": "Bosch Smart System Active Line Plus", "url": "https://mikesbikes.com/products/gazelle-ultimate-t10-2027", "quote": "Motor\tBosch Smart System Active Line Plus, 60 Nm ⟶ Battery\t540 Wh, integrated in the frame"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'10\"-6'4\"", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-t10", "quote": "Frame size | 46 | 4'10\" - 5'6\" | 53 | 5'6\" - 5'10\" | 57 | 5'10\" - 6'4\"", "basis": "consecutive lines of the frame-size selector, S 46 to L 57"},
+   {"kind": "retailer", "value": "4'10\"-6'4\"", "url": "https://mikesbikes.com/products/gazelle-ultimate-t10-2027", "quote": "SM (4'10\"-5'6\") ⟶ MD (5'6\"-5'10\") | LG (5'10\"-6'4\")"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-t10", "quote": "Frame hape | Low-Step", "basis": "fixed low-step frame; nothing about folding"},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/gazelle-ultimate-t10-2027", "quote": ""}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Current generation = Bosch Smart System Active Line Plus 60 Nm / 540 Wh. Fly Rides 'Ultimate T10' pages and electricbikereview 'Ultimate T10 HMB' review are an older generation (Performance Line 75 Nm / 625 Wh, $3,999) and were not used. Mike's Bikes (dealer) page is the 2027 model and matches the maker. Used 1 WebSearch to find it. Multi-line quotes joined with ' | ' as page line breaks."}

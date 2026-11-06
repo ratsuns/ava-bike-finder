@@ -1,0 +1,129 @@
+{
+ "bike": "Macfox|M20X",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://macfoxbike.com/blogs/news/meet-best-commuter-ebike-macfox-m20x",
+    "quote": ""
+   },
+   {
+    "kind": "maker",
+    "value": 1199,
+    "url": "https://macfoxbike.com/blogs/news/budget-commuter-ebikes",
+    "quote": "The Macfox M20X is a compact, easy-handling commuter specifically built for city use. At just over $1,199, it undercuts many commuter e-bikes in price while still offering strong specs. Like the X1S, the M20X uses a 500W (750W peak) brushless motor with 65 Nm torque. It accelerates briskly for quick merges and keeps a steady pace even uphill.",
+    "basis": "maker blog, 'just over $1,199'; section headed 'Macfox M20X: Compact City Rider(No longer available)'; not clearly the regular price"
+   },
+   {
+    "kind": "maker",
+    "value": 999,
+    "url": "https://macfoxbike.com/blogs/news/comprehensive-guide-lithium-batteries-for-electric-bikes",
+    "quote": "Macfox M20X | From $999.00 | Buy it Now",
+    "basis": "old product card embedded in a maker blog post; 'From' price, may have been a sale price"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": 2,
+    "url": "https://macfoxbike.com/blogs/news/meet-best-commuter-ebike-macfox-m20x",
+    "quote": "Throttle\tTwist throttle\tCheck for predictable engagement and return during a low-speed test. ⟶ Bike weight\t65 lb\tIt was not a lightweight carry-up-stairs commuter. | Top speed\t20 mph\tDo not rely on old listings that claim a higher stock speed.",
+    "basis": "no class line; twist throttle and 20 mph -> Class 2"
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": 20,
+    "url": "https://macfoxbike.com/blogs/news/meet-best-commuter-ebike-macfox-m20x",
+    "quote": "Top speed\t20 mph\tDo not rely on old listings that claim a higher stock speed."
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://macfoxbike.com/blogs/news/meet-best-commuter-ebike-macfox-m20x",
+    "quote": ""
+   },
+   {
+    "kind": "maker",
+    "value": 65,
+    "url": "https://macfoxbike.com/blogs/news/budget-commuter-ebikes",
+    "quote": "The Macfox M20X is a compact, easy-handling commuter specifically built for city use. At just over $1,199, it undercuts many commuter e-bikes in price while still offering strong specs. Like the X1S, the M20X uses a 500W (750W peak) brushless motor with 65 Nm torque. It accelerates briskly for quick merges and keeps a steady pace even uphill."
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": 499.2,
+    "url": "https://macfoxbike.com/blogs/news/meet-best-commuter-ebike-macfox-m20x",
+    "quote": "Battery\t48V 10.4Ah\tA used battery must be judged by its present condition.",
+    "basis": "48V x 10.4Ah"
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": "40+",
+    "url": "https://macfoxbike.com/blogs/news/meet-best-commuter-ebike-macfox-m20x",
+    "quote": "Historical range rating\t40+ miles\tReal range varies with battery age, load, route, speed, temperature, assist use, and tire pressure.",
+    "basis": "'historical range rating'; assist mode not stated"
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": 65,
+    "url": "https://macfoxbike.com/blogs/news/meet-best-commuter-ebike-macfox-m20x",
+    "quote": "Bike weight\t65 lb\tIt was not a lightweight carry-up-stairs commuter."
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": 220,
+    "url": "https://macfoxbike.com/blogs/news/meet-best-commuter-ebike-macfox-m20x",
+    "quote": "Payload\t220 lb\tCount the rider and anything carried on the bike."
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "500W (750W peak)",
+    "url": "https://macfoxbike.com/blogs/news/meet-best-commuter-ebike-macfox-m20x",
+    "quote": "Motor\t500W nominal / 750W peak\tConfirm that power delivery is smooth during a test ride."
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://macfoxbike.com/blogs/news/meet-best-commuter-ebike-macfox-m20x",
+    "quote": ""
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://macfoxbike.com/blogs/news/meet-best-commuter-ebike-macfox-m20x",
+    "quote": "Frame\tSteel\tInspect the frame, weld areas, fork, and alignment for damage.",
+    "basis": "steel moped-style frame; no folding mentioned"
+   }
+  ]
+ },
+ "status": {
+  "sources": [
+   {
+    "kind": "maker",
+    "value": "discontinued",
+    "url": "https://macfoxbike.com/blogs/news/meet-best-commuter-ebike-macfox-m20x",
+    "quote": "The Macfox M20X is a historical Macfox model that is not currently listed for sale on the U.S. store."
+   }
+  ]
+ },
+ "notes": "Discontinued: maker blog (the given src) is a 'historical model / used-bike guide'; no product page exists (/products/macfox-m20x 404). Maker blog also says the M20X was the predecessor to the X1S. Only source is the maker blog: EBR, EBReport and Electrek have no M20X page and the one WebSearch returned nothing relevant. No price, torque or rider height published. Wh computed 48V x 10.4Ah = 499.2. Recheck: scanned the maker's blog articles that mention M20X: 'budget-commuter-ebikes' gives 65 Nm and 'just over $1,199'; older posts carry an M20X product card 'From $999.00' (also 65 lbs, 325 lb limit). No page states $1,399."
+}

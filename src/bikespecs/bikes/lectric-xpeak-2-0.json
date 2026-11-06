@@ -1,0 +1,51 @@
+{"bike": "Lectric|XPeak 2.0", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1499, "url": "https://lectricebikes.com/products/xpeak-high-step-ebike", "quote": "Previously listed at $1499, now marked down to $1399!"},
+   {"kind": "review", "value": 1499, "url": "https://electricbikereview.com/lectric-ebikes/xpeak-2-review/", "quote": "Price ⟶ MSRP: $1,499"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://lectricebikes.com/products/xpeak-high-step-ebike", "quote": "Five levels of pedal-assist and a throttle delivers the speed and power to own the road as a Class 1, 2, or 3 eBike.** ⟶ Thumb Throttle", "basis": "Class 1/2/3 with throttle; maker FAQ says it ships as Class 2"},
+   {"kind": "maker", "value": 2, "url": "https://lectricebikes.com/pages/faq", "quote": "All Lectric eBikes ship as a class 2 electric bike, meaning it has a throttle capable of propelling the bike at speeds of up to 20mph."},
+   {"kind": "review", "value": 3, "url": "https://electricbikereview.com/lectric-ebikes/xpeak-2-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 3", "basis": "reviewer lists the unlocked class"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://lectricebikes.com/products/xpeak-high-step-ebike", "quote": "TOP SPEED ⟶ 28 mph", "basis": "ships at 20 mph"},
+   {"kind": "maker", "value": 28, "url": "https://lectricebikes.com/pages/faq", "quote": "If you would like to go faster, the XP, XPedition, XPeak, XPress, and XPress Lite bikes can be unlocked to achieve class 3 settings. This will allow you to reach pedal-assist speeds of up to 28mph!", "basis": "ships at 20 mph"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/lectric-ebikes/xpeak-2-review/", "quote": "TOP SPEED: ⟶ 28 Mph mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://lectricebikes.com/products/xpeak-high-step-ebike", "quote": "A 750W rear hub-motor (1310W Peak) with 85Nm of torque delivers power and speed quicker than ever before."},
+   {"kind": "review", "value": 85, "url": "https://electricbikereview.com/lectric-ebikes/xpeak-2-review/", "quote": "MOTOR TORQUE: ⟶ 85Nm Newton meters"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 720, "url": "https://lectricebikes.com/products/xpeak-high-step-ebike", "quote": "A removable 48V, 15Ah (720Wh) lithium-ion battery certified to UL 2271"},
+   {"kind": "review", "value": 720, "url": "https://electricbikereview.com/lectric-ebikes/xpeak-2-review/", "quote": "BATTERY WATT HOURS: ⟶ 720Wh wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "60", "url": "https://lectricebikes.com/products/xpeak-high-step-ebike", "quote": "RANGE ⟶ up to 60 miles"},
+   {"kind": "review", "value": "44–62", "url": "https://electricbikereview.com/lectric-ebikes/xpeak-2-review/", "quote": "Real World Range Test Results: | MAX Range Test: 44 mi | MIN Range Test: 62 mi", "basis": "reviewer's own tests at PAS 5 and PAS 1, 720Wh battery"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 75, "url": "https://lectricebikes.com/products/xpeak-high-step-ebike", "quote": "With the battery removed, the XPeak 2.0 is just 64.5 lbs. The battery weighs 10.5 lbs.", "basis": "64.5 lbs without battery + 10.5 lbs battery"},
+   {"kind": "review", "value": 75, "url": "https://electricbikereview.com/lectric-ebikes/xpeak-2-review/", "quote": "Advertised Weight: 64.5 lbs lbs | BATTERY WEIGHT: | 10.5 lbs (4.76 kg)", "basis": "64.5 lbs advertised (maker says without battery) + 10.5 lbs battery"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 330, "url": "https://lectricebikes.com/products/xpeak-high-step-ebike", "quote": "PAYLOAD CAPACITY ⟶ 330 lbs"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/lectric-ebikes/xpeak-2-review/", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub (1,310W peak)", "url": "https://lectricebikes.com/products/xpeak-high-step-ebike", "quote": "A 750W rear hub-motor (1310W Peak) with 85Nm of torque delivers power and speed quicker than ever before."},
+   {"kind": "review", "value": "750W rear hub (1,310W peak)", "url": "https://electricbikereview.com/lectric-ebikes/xpeak-2-review/", "quote": "MOTOR NOMINAL OUTPUT: | 750W watts | MOTOR PEAK OUTPUT: | 1310W watts"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'4\"-6'5\"", "url": "https://lectricebikes.com/products/xpeak-high-step-ebike", "quote": "Rider Height ⟶ 5’4” - 6’5”", "basis": "High-Step frame"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/lectric-ebikes/xpeak-2-review/", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://lectricebikes.com/products/xpeak-high-step-ebike", "quote": "The lightweight and sturdy 6000 series aluminum is available in 2 different frame styles; a diamond High-Step and an easily mountable Step-Thru.", "basis": "rigid frame; no folding frame listed"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/lectric-ebikes/xpeak-2-review/", "quote": ""}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page (High-Step, standard 720Wh battery) shows $1,399 Black Friday sale with $1,933 crossed out, but the same page says 'Previously listed at $1499' (used, per rule; EBR MSRP agrees). Ships as Class 2 (maker FAQ), unlockable to Class 3 / 28 mph; EBR lists Class 3. Maker range 'up to 60 miles' does not say pedal assist vs throttle (footnote only says range varies). EBR's weight line is labelled TOTAL WEIGHT but is the maker's 64.5 lb without-battery figure, so battery added. Rider height is for the High-Step frame."}

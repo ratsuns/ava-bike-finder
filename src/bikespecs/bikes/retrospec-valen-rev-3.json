@@ -1,0 +1,47 @@
+{"bike": "Retrospec|Valen Rev 3", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1499.99, "url": "https://retrospec.com/products/valen-rev-3-fat-tire-electric-bike", "quote": "$1,499.99 ⟶ Regular price", "basis": "no crossed-out price (compare_at_price null)"},
+   {"kind": "review", "value": 1499, "url": "https://electricbikereview.com/retrospec/valen-rev-3-review/", "quote": "Price ⟶ MSRP: $1,499"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://retrospec.com/products/valen-rev-3-fat-tire-electric-bike", "quote": "20mph Top Assisted Speed ⟶ Up to 60 Mile Range", "basis": "20 mph with throttle ('Pedal Assist ⟶ 5 Levels, Throttle and Walk-Mode'); class not named"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereview.com/retrospec/valen-rev-3-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 2"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://retrospec.com/products/valen-rev-3-fat-tire-electric-bike", "quote": "20mph Top Assisted Speed ⟶ Up to 60 Mile Range"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereview.com/retrospec/valen-rev-3-review/", "quote": "20 MPH mph ⟶ Bicycle Details", "basis": "TOP SPEED field"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://retrospec.com/products/valen-rev-3-fat-tire-electric-bike", "quote": "", "basis": "torque not published"},
+   {"kind": "review", "value": 85, "url": "https://electricbikereview.com/retrospec/valen-rev-3-review/", "quote": "MOTOR TORQUE: ⟶ 85Nm Newton meters"},
+   {"kind": "maker", "value": 85, "url": "https://cdn.accentuate.io/8432205398188/1765913054544/Valen-Rev-3-Owners-Manual.pdf", "quote": "Rated Torque 85Nm", "basis": "Valen Rev 3 owner's manual PDF linked from the product page, Main Technical Specifications table"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 500, "url": "https://retrospec.com/products/valen-rev-3-fat-tire-electric-bike", "quote": "750W Planetary Geared Hub Motor ⟶ 48V/500Wh LG Li-ion Battery"},
+   {"kind": "review", "value": 500, "url": "https://electricbikereview.com/retrospec/valen-rev-3-review/", "quote": "BATTERY WATT HOURS: ⟶ 500Wh wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "60", "url": "https://retrospec.com/products/valen-rev-3-fat-tire-electric-bike", "quote": "48V/500W range ⟶ Up to 60 miles"},
+   {"kind": "review", "value": "27–60", "url": "https://electricbikereview.com/retrospec/valen-rev-3-review/", "quote": "The honest range for most real-world riders on the Valen Rev 3 lands somewhere between 27 and 60 miles depending on how hard you push it. For a moped-style e-bike in this price range, that’s a solid spread and more than enough for the kind of riding this bike is actually built for. ⟶ Power (Motor & Battery)", "basis": "27 mi is EBR's throttle-only test; EBR says Retrospec estimates 'Up to 75 miles'"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 67, "url": "https://retrospec.com/products/valen-rev-3-fat-tire-electric-bike", "quote": "Item Weight ⟶ 67 lbs (battery included)"},
+   {"kind": "review", "value": 66, "url": "https://electricbikereview.com/retrospec/valen-rev-3-review/", "quote": "<ul> <li><strong>Advertised:</strong> 78 lb</li> <li><strong>Our Tested Unit Weight:</strong> 66 lbs with Battery and 60lbs without the battery</li> </ul> lbs ⟶ FRAME MATERIAL:", "basis": "tested with battery; EBR's 'advertised 78 lb' disagrees with maker's 67 lb"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 350, "url": "https://retrospec.com/products/valen-rev-3-fat-tire-electric-bike", "quote": "Recommended Weight Limit ⟶ 350lbs", "basis": "page also says the saddle can 'accommodate riders up to 350 lbs'"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub", "url": "https://retrospec.com/products/valen-rev-3-fat-tire-electric-bike", "quote": "Motor ⟶ 750W Rear Hub"},
+   {"kind": "review", "value": "750W rear hub", "url": "https://electricbikereview.com/retrospec/valen-rev-3-review/", "quote": "MOTOR NOMINAL OUTPUT: ⟶ 750W watts"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'7\"-6'2\"", "url": "https://retrospec.com/products/valen-rev-3-fat-tire-electric-bike", "quote": "20\"5'7\" - 6'2\"32.5\"", "basis": "sizing table: SIZE 20\", HEIGHT RANGE 5'7\" - 6'2\", STANDOVER 32.5\""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://retrospec.com/products/valen-rev-3-fat-tire-electric-bike", "quote": "V2 Valen 6061 hydroformed aluminum with, external downtube battery and replaceable derailleur hanger ⟶ Fork", "basis": "non-folding frame; no fold mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "EBR's 'advertised' figures differ from the maker page: EBR says advertised 78 lb and up to 75 mi; maker says 67 lb (battery included) and up to 60 mi. EBR's tested weight 66 lb w/ battery is close to the maker's 67 lb. Recheck: read the Valen Rev 3 owner's manual PDF linked from the product page (Rated Torque 85Nm; its spec table also lists 47.9V 9.6Ah 459.8Wh)."}

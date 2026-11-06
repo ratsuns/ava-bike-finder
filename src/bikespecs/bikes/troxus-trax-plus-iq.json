@@ -1,0 +1,43 @@
+{"bike": "Troxus|Trax Plus iQ", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2099, "url": "https://www.troxusmobility.com/products/trax-plus-iq", "quote": "Regular price | $2,099.00 USD | Size"},
+   {"kind": "review", "value": 2299, "url": "https://gearjunkie.com/biking/free-gear-fridays-win-trax-plus-iq-e-bike-troxus", "quote": "For Troxus riders, that means advanced, switchable torque and cadence sensor modes that create a smooth, more tailored riding experience. The e-bike retails for $2,299."}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://www.troxusmobility.com/products/trax-plus-iq", "quote": "28 mph | Max Speed | Up to 70 Miles | Per Charge | Class 1/2/3 eBike | As Sold", "basis": "Class 1/2/3; maker shows 28 mph max speed as sold, so Class 3 (uncertain, see notes)"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.troxusmobility.com/products/trax-plus-iq", "quote": "28 mph ⟶ Max Speed"},
+   {"kind": "maker", "value": 28, "url": "https://www.troxusmobility.com/products/trax-plus-iq", "quote": "Max Speed\tUp To 20 MPH on Throttle / Up To 28 MPH on Pedal Assist"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 65, "url": "https://www.troxusmobility.com/products/trax-plus-iq", "quote": "Motor\tAnanda® 48V/500W Hub-Drive Motor, 65Nm Max. Torque"},
+   {"kind": "review", "value": null, "url": "https://gearjunkie.com/biking/free-gear-fridays-win-trax-plus-iq-e-bike-troxus", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 720, "url": "https://www.troxusmobility.com/products/trax-plus-iq", "quote": "Battery\tUL-2271 Certified / Internal / Removable / Lithium Ion, 48V/15Ah (720Wh) with Samsung® Cells"},
+   {"kind": "review", "value": null, "url": "https://gearjunkie.com/biking/free-gear-fridays-win-trax-plus-iq-e-bike-troxus", "quote": ""}
+  ],
+  "range": [
+   {"kind": "maker", "value": "70", "url": "https://www.troxusmobility.com/products/trax-plus-iq", "quote": "Range\tUp To 70 Miles Per Charge"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 68.5, "url": "https://www.troxusmobility.com/products/trax-plus-iq", "quote": "Net Weight\t68.5 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 383, "url": "https://www.troxusmobility.com/products/trax-plus-iq", "quote": "Weight Limit\tMaximum Load: 383 lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W rear hub", "url": "https://www.troxusmobility.com/products/trax-plus-iq", "quote": "Rear Hub\t48V 500W/ 28 MPH. 65Nm"},
+   {"kind": "review", "value": "500W hub", "url": "https://gearjunkie.com/biking/free-gear-fridays-win-trax-plus-iq-e-bike-troxus", "quote": "This week, three lucky winners will receive a Trax Plus iQ e-bike from Troxus. Built on a proven platform that’s driven by a 500W hub-drive motor, this high-performance commuter is up-leveled with smart technology, which introduces enhanced connectivity and expanded controls without changing any popular ride characteristics."}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://www.troxusmobility.com/products/trax-plus-iq", "quote": "Frame Size\tSmall / 15\"\tMedium / 17\"\tLarge / 20\""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.troxusmobility.com/products/trax-plus-iq", "quote": "Frame\tHydroformed Aluminum Frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Class uncertain: maker says 'Class 1/2/3 eBike As Sold' with '28 mph Max Speed' (recorded Class 3), but the Trax Whim iQ uses the same wording and EBR found it ships as Class 2. Price conflict: maker $2,099 vs GearJunkie giveaway article 'retails for $2,299'. Only independent source found is a GearJunkie giveaway article (one WebSearch); no reviews/retailers on EBR, EBReport, N+1, Best Buy. Maker gives frame sizes but no rider height range."}

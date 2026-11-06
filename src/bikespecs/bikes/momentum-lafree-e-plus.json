@@ -1,0 +1,160 @@
+{
+ "bike": "Momentum|Lafree E+",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": 2400,
+    "url": "https://www.momentum-biking.com/us/lafree-eplus-2022",
+    "quote": "$2,400 * ⟶ CHOOSE YOUR SIZE"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.bicyclehabitat.com/product/momentum-lafree-e-402261-1.htm",
+    "quote": "",
+    "basis": "no price shown"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": 1,
+    "url": "https://www.momentum-biking.com/us/lafree-eplus-2022",
+    "quote": "60Nm torque, 250W Mid Drive Motor, power by YAMAHA, SyncDrive Life motor, Class 1, Max Assist Speed: 20MPH ⟶ Controller"
+   },
+   {
+    "kind": "retailer",
+    "value": 1,
+    "url": "https://www.bicyclehabitat.com/product/momentum-lafree-e-402261-1.htm",
+    "quote": "Motor\tGiant SyncDrive Life, 60Nm, 5-mode plus automatic, 300% tunable support, powered by YAMAHA. Pedal assist to 20 mph. ⟶ Battery\tEnergyPak 400Wh, 36V, 11.3Ah rechargeable lithium-ion",
+    "basis": "pedal assist to 20 mph, no throttle -> Class 1"
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": 20,
+    "url": "https://www.momentum-biking.com/us/lafree-eplus-2022",
+    "quote": "60Nm torque, 250W Mid Drive Motor, power by YAMAHA, SyncDrive Life motor, Class 1, Max Assist Speed: 20MPH ⟶ Controller"
+   },
+   {
+    "kind": "retailer",
+    "value": 20,
+    "url": "https://www.bicyclehabitat.com/product/momentum-lafree-e-402261-1.htm",
+    "quote": "Motor\tGiant SyncDrive Life, 60Nm, 5-mode plus automatic, 300% tunable support, powered by YAMAHA. Pedal assist to 20 mph. ⟶ Battery\tEnergyPak 400Wh, 36V, 11.3Ah rechargeable lithium-ion"
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": 60,
+    "url": "https://www.momentum-biking.com/us/lafree-eplus-2022",
+    "quote": "60Nm torque, 250W Mid Drive Motor, power by YAMAHA, SyncDrive Life motor, Class 1, Max Assist Speed: 20MPH ⟶ Controller"
+   },
+   {
+    "kind": "retailer",
+    "value": 60,
+    "url": "https://www.bicyclehabitat.com/product/momentum-lafree-e-402261-1.htm",
+    "quote": "Motor\tGiant SyncDrive Life, 60Nm, 5-mode plus automatic, 300% tunable support, powered by YAMAHA. Pedal assist to 20 mph. ⟶ Battery\tEnergyPak 400Wh, 36V, 11.3Ah rechargeable lithium-ion"
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": 400,
+    "url": "https://www.momentum-biking.com/us/lafree-eplus-2022",
+    "quote": "Battery ⟶ 400Wh capacity Integrated Panasonic cell, partner with Panasonic, EnergyPak 400"
+   },
+   {
+    "kind": "retailer",
+    "value": 400,
+    "url": "https://www.bicyclehabitat.com/product/momentum-lafree-e-402261-1.htm",
+    "quote": "Battery\tEnergyPak 400Wh, 36V, 11.3Ah rechargeable lithium-ion ⟶ Controller/Display\tGiant RideControl Ergo"
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.momentum-biking.com/us/lafree-eplus-2022",
+    "quote": "",
+    "basis": "no range figure on page"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.bicyclehabitat.com/product/momentum-lafree-e-402261-1.htm",
+    "quote": ""
+   },
+   {
+    "kind": "maker",
+    "value": "up to 65",
+    "url": "https://www.momentum-biking.com/us/lafree-eplus-2022",
+    "quote": "The EnergyPak is simple to charge on or off the bike with the included fast charger and any standard wall outlet. It delivers a long range of upto 65 miles on a single charge.",
+    "basis": "maker product description (collapsed overview text, read via textContent); doesn't say which assist mode"
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": 53,
+    "url": "https://www.momentum-biking.com/us/lafree-eplus-2022",
+    "quote": "Weight for the Lafree E+ is ~53lbs for Medium frame. Note:all manufactured goods and related sub-assembly parts & finishing have a +/- % of tolerance rate. This will result in individual piece variance and subtle unique weight differences for each bike sold. ⟶ Was this answer helpful to you",
+    "basis": "Momentum 'Verified Reply' in the page's Q&A to 'What is the weight of the bike, including the battery?'; spec table Weight row has no number"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.bicyclehabitat.com/product/momentum-lafree-e-402261-1.htm",
+    "quote": ""
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": 344,
+    "url": "https://www.momentum-biking.com/us/lafree-eplus-2022",
+    "quote": "The maximum permissible total weight (bicycle, rider and luggage) for our E-bikes is 156 kg (344 lbs). ⟶ Was this answer helpful to you",
+    "basis": "total; from the page's Q&A answer"
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "250W mid-drive (SyncDrive Life, Yamaha)",
+    "url": "https://www.momentum-biking.com/us/lafree-eplus-2022",
+    "quote": "60Nm torque, 250W Mid Drive Motor, power by YAMAHA, SyncDrive Life motor, Class 1, Max Assist Speed: 20MPH ⟶ Controller"
+   },
+   {
+    "kind": "retailer",
+    "value": "SyncDrive Life",
+    "url": "https://www.bicyclehabitat.com/product/momentum-lafree-e-402261-1.htm",
+    "quote": "Motor\tGiant SyncDrive Life, 60Nm, 5-mode plus automatic, 300% tunable support, powered by YAMAHA. Pedal assist to 20 mph. ⟶ Battery\tEnergyPak 400Wh, 36V, 11.3Ah rechargeable lithium-ion"
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": "5'3\"-6'3\"",
+    "url": "https://www.momentum-biking.com/us/lafree-eplus-2022",
+    "quote": "S\t5’3” to 5’7”\t19.3\" | M\t5’7” to 5’11”\t18.9\" | L\t5’11” to 6’3”\t18.5\"",
+    "basis": "S/M/L combined"
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://www.momentum-biking.com/us/lafree-eplus-2022",
+    "quote": "Lowered top tube makes it easy to get on and off, and the lower, centralized motor position creates a balanced, stable ride quality. ⟶ INTUITIVE CONTROLS",
+    "basis": "step-through frame; no folding"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "src link redirected to https://www.momentum-biking.com/us/lafree-eplus-2022 — maker page is the 2022 model, still listed with Add to Cart at $2,400. No range published anywhere checked. Weight and total load come from Momentum's verified replies in the page's Q&A, not the spec table. ElectricBikeReview has no review; Mike's Bikes product page is 404 (search only found unrelated items). Only one independent source (Bicycle Habitat, NYC dealer), which shows no price. Recheck: maker page's collapsed description (textContent) says 'a long range of upto 65 miles on a single charge'."
+}

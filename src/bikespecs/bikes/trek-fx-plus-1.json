@@ -1,0 +1,53 @@
+{"bike": "Trek|FX+ 1", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1999.99, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465T/fx%252b-1/56161/", "quote": "FX+ 1 | $1,999.99 | Model 5335257"},
+   {"kind": "review", "value": 1999, "url": "https://electrek.co/2025/05/25/trek-breaks-new-ground-with-its-first-throttle-equipped-electric-bike/", "quote": "relative affordability (for a Trek) at $1,999 makes it a compelling option"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465T/fx%252b-1/56161/", "quote": "E-bike Classification | Class 2 | Max assist speed | 20 mph", "basis": "maker states Class 2; 20 mph with thumb throttle"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereview.com/trek/fx-plus-1s-review/", "quote": "Available in both a Class 3 version (FX+1S) and a California compliant class 2 version (FX+1)"},
+   {"kind": "review", "value": 2, "url": "https://electrek.co/2025/05/25/trek-breaks-new-ground-with-its-first-throttle-equipped-electric-bike/", "quote": "the standard FX+ 1, a Class 2 e-bike with pedal assist and throttle support up to 20mph"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465T/fx%252b-1/56161/", "quote": "Max assist speed | 20 mph"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereview.com/trek/fx-plus-1s-review/", "quote": "The FX+1 is limited to 20MPH and available to all, the FX+1S is limited to 28MPH"},
+   {"kind": "review", "value": 20, "url": "https://electrek.co/2025/05/25/trek-breaks-new-ground-with-its-first-throttle-equipped-electric-bike/", "quote": "the standard FX+ 1, a Class 2 e-bike with pedal assist and throttle support up to 20mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 60, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465T/fx%252b-1/56161/", "quote": "Motor | Hub drive motor, 60 Nm, 500W, 36H, black"},
+   {"kind": "review", "value": 60, "url": "https://electricbikereview.com/trek/fx-plus-1s-review/", "quote": "The 500W rear hub motor (made by Hyena) is torque sensor activated and puts out 60 Nm of torque."},
+   {"kind": "review", "value": 60, "url": "https://electrek.co/2025/05/25/trek-breaks-new-ground-with-its-first-throttle-equipped-electric-bike/", "quote": "a 500W Hyena rear hub motor delivering 60 Nm of torque"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 520, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465T/fx%252b-1/56161/", "quote": "Battery | 520Wh, integrated in down tube"},
+   {"kind": "review", "value": 520, "url": "https://electricbikereview.com/trek/fx-plus-1s-review/", "quote": "The battery is a 48V, 10.6 amp-hours with 520Wh’s of juice to power the ride"},
+   {"kind": "review", "value": 540, "url": "https://electrek.co/2025/05/25/trek-breaks-new-ground-with-its-first-throttle-equipped-electric-bike/", "quote": "The motor is paired with a UL-certified 540 Wh battery integrated into the downtube"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "50", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465T/fx%252b-1/56161/", "quote": "Range Up to 50 mi"},
+   {"kind": "review", "value": "50", "url": "https://electricbikereview.com/trek/fx-plus-1s-review/", "quote": "with a range Trek markets as ‘up to 50 miles)."},
+   {"kind": "review", "value": "50", "url": "https://electrek.co/2025/05/25/trek-breaks-new-ground-with-its-first-throttle-equipped-electric-bike/", "quote": "offering a range of up to 50 miles on a single charge."}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 48.73, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465T/fx%252b-1/56161/", "quote": "Weight | M - 22.10 kg / 48.73 lbs", "basis": "size M"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/trek/fx-plus-1s-review/", "quote": "", "basis": "review's 48.3 lbs weight is for the FX+1S it tested"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 300, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465T/fx%252b-1/56161/", "quote": "This bike has a maximum total weight limit (combined weight of bicycle, rider, and cargo) of 300 pounds (136 kg).", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W hub drive", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465T/fx%252b-1/56161/", "quote": "Motor | Hub drive motor, 60 Nm, 500W, 36H, black"},
+   {"kind": "review", "value": "500W rear hub", "url": "https://electricbikereview.com/trek/fx-plus-1s-review/", "quote": "The 500W rear hub motor (made by Hyena) is torque sensor activated and puts out 60 Nm of torque."},
+   {"kind": "review", "value": "500W rear hub", "url": "https://electrek.co/2025/05/25/trek-breaks-new-ground-with-its-first-throttle-equipped-electric-bike/", "quote": "a 500W Hyena rear hub motor delivering 60 Nm of torque"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'6\"", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465T/fx%252b-1/56161/", "quote": "S | 155 - 165 cm | 5'1\" - 5'5\" | 72 - 78 cm | 28\" - 31\" | M | 165 - 175 cm | 5'5\" - 5'9\" | 77 - 83 cm | 30\" - 33\" | L | 175 - 186 cm | 5'9\" - 6'1\" | 82 - 88 cm | 32\" - 35\" | XL | 186 - 197 cm | 6'1\" - 6'6\""},
+   {"kind": "review", "value": "5'1\"-6'6\"", "url": "https://electrek.co/2025/05/25/trek-breaks-new-ground-with-its-first-throttle-equipped-electric-bike/", "quote": "accommodating riders from 5’1” to 6’6”"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465T/fx%252b-1/56161/", "quote": "Alpha Gold Aluminum, internal cable routing, internal battery, rack & fender mounts, flat mount disc brake, kickstand mount, 144.5mm OLD hub motor spacing", "basis": "rigid non-folding aluminum frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Given src link (/us/en_US/.../fx-1/p/56161/) returned a Trek server error; the same product loads via https://www.trekbikes.com/bikes/hybrid-bikes/electric-hybrid-bikes/fx/fx-1/p/56161/ which redirects to the URL used. Specs read from the page's Specs and Sizing tabs with FX+ 1 selected. Electrek states 540 Wh vs Trek's 520Wh, and also says top speed can be user-adjusted to 20 or 28 mph, which contradicts Trek/EBR (FX+ 1 is Class 2, 20 mph; the 28 mph version is the FX+ 1S). EBR review is of the FX+1S but explicitly covers the FX+1 differences; only shared specs used from it. Trek weight is pre-production, size M."}

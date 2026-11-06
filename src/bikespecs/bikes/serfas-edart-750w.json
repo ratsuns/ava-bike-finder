@@ -1,0 +1,157 @@
+{
+ "bike": "Serfas|eDART 750W",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": 2549.99,
+    "url": "https://serfas.com/products/serfas-edart-750w-e-bike",
+    "quote": "$2,549.99 ⟶ Shipping calculated at checkout."
+   },
+   {
+    "kind": "retailer",
+    "value": 2550,
+    "url": "https://www.trailheadcycling.com/product/serfas-edart-750w-step-thru-e-bike-846538-1.htm",
+    "quote": "$2,550.00 ⟶ Color: Matte Red"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": 3,
+    "url": "https://serfas.com/products/serfas-edart-750w-e-bike",
+    "quote": "Speed: Class 3, 28mph, Thumb Throttle (20mph)",
+    "basis": "maker states Class 3, 28 mph assist"
+   },
+   {
+    "kind": "retailer",
+    "value": 3,
+    "url": "https://www.trailheadcycling.com/product/serfas-edart-750w-step-thru-e-bike-846538-1.htm",
+    "quote": "- Throttle: 20mph (Class 3)"
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": 28,
+    "url": "https://serfas.com/products/serfas-edart-750w-e-bike",
+    "quote": "Speed: Class 3, 28mph, Thumb Throttle (20mph)"
+   },
+   {
+    "kind": "retailer",
+    "value": 28,
+    "url": "https://www.trailheadcycling.com/product/serfas-edart-750w-step-thru-e-bike-846538-1.htm",
+    "quote": "- Pedal Assist: 28mph"
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://serfas.com/products/serfas-edart-750w-e-bike",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.trailheadcycling.com/product/serfas-edart-750w-step-thru-e-bike-846538-1.htm",
+    "quote": ""
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": 633.6,
+    "url": "https://serfas.com/products/serfas-edart-750w-e-bike",
+    "quote": "Battery: Lithium-ion 48V, 13.2Ah, UL2271 Certified",
+    "basis": "48V x 13.2Ah"
+   },
+   {
+    "kind": "retailer",
+    "value": 633.6,
+    "url": "https://www.trailheadcycling.com/product/serfas-edart-750w-step-thru-e-bike-846538-1.htm",
+    "quote": "Battery\tLithium-ion 48V, 13.2Ah, UL-2771 Certified",
+    "basis": "48V x 13.2Ah"
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": "30",
+    "url": "https://serfas.com/products/serfas-edart-750w-e-bike",
+    "quote": "Range: 30 Miles +/-"
+   },
+   {
+    "kind": "retailer",
+    "value": "30–60",
+    "url": "https://www.trailheadcycling.com/product/serfas-edart-750w-step-thru-e-bike-846538-1.htm",
+    "quote": "- Range: 30-60 Miles"
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://serfas.com/products/serfas-edart-750w-e-bike",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": 75,
+    "url": "https://www.trailheadcycling.com/product/serfas-edart-750w-step-thru-e-bike-846538-1.htm",
+    "quote": "- Weight: 75lbs"
+   },
+   {
+    "kind": "retailer",
+    "value": 75,
+    "url": "https://www.globalbikes.info/product/serfas-edart-750w-step-thru-e-bike-846538-1.htm",
+    "quote": "- Weight: 75lbs",
+    "basis": "same dealer-catalog text as Trailhead Cycling; battery inclusion not stated"
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": 300,
+    "url": "https://serfas.com/products/serfas-edart-750w-e-bike",
+    "quote": "Capacity: Up to 300lbs Cargo/Rider total",
+    "basis": "total"
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "750W (1,000W peak)",
+    "url": "https://serfas.com/products/serfas-edart-750w-e-bike",
+    "quote": "Motor: 750W, 1000W Peak, 48V Brushless Motor"
+   },
+   {
+    "kind": "retailer",
+    "value": "750W (1,000W peak)",
+    "url": "https://www.trailheadcycling.com/product/serfas-edart-750w-step-thru-e-bike-846538-1.htm",
+    "quote": "Motor\t750W Nominal, 1000W Peak, 48v Brushless Motor"
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://serfas.com/products/serfas-edart-750w-e-bike",
+    "quote": "Frame: 6061 Aluminum Alloy.  2 Frame Sizes: Small/Medium, Medium/Large"
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://serfas.com/products/serfas-edart-750w-e-bike",
+    "quote": "Frame: 6061 Aluminum Alloy.  2 Frame Sizes: Small/Medium, Medium/Large"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker page labels the price 'Sale price' (Shopify default) with no crossed-out price shown; recorded as the listed price. Maker gives only V and Ah. Dealer (Trailhead Cycling) range 30-60 likely includes the optional rack-mounted second battery it mentions ('For Double The Range'). Dealer lists 'Serfas E-Drifter' tires vs maker 'Serfas Voltage' — possibly a different production run. Motor hub position not stated on either page. No EBR/Electric Bike Report/Electrek/Best Buy/Mike's Bikes coverage of Serfas found. recheck: Global Bikes (AZ dealer) eDART 750W page: '- Weight: 75lbs'."
+}

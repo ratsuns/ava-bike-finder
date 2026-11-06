@@ -1,0 +1,49 @@
+{"bike": "Radio Flyer|Flyer Via Pro", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1699, "url": "https://www.radioflyer.com/products/flyer-via-pro", "quote": "$1,699.00 ⟶ Color: Black", "basis": "no crossed-out price shown (compare_at_price null)"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.radioflyer.com/products/flyer-via-pro", "quote": "Our Flyer Via Pro cargo ebike can go up to 20 MPH in throttle-only mode.", "basis": "20 mph with throttle (\"Up to 20 mph ⟶ Pedal Assist & Throttle\")"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/flyer-via-pro-review/", "quote": "CLASS 1 (PEDAL ASSIST TO 20 MPH) ⟶ CLASS 2 (THROTTLE TO 20 MPH)", "basis": "20 mph PAS + 20 mph throttle"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.radioflyer.com/products/flyer-via-pro", "quote": "Weight Capacity ⟶ Up to 20 mph"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/flyer-via-pro-review/", "quote": "E-BIKE CLASS: ⟶ CLASS 1 (PEDAL ASSIST TO 20 MPH)"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://www.radioflyer.com/products/flyer-via-pro", "quote": "", "basis": "torque not published"},
+   {"kind": "review", "value": 85, "url": "https://electricbikereport.com/flyer-via-pro-review/", "quote": "We attribute the Via Pro’s performance to two factors. First, its weight was, once again, an advantage. Second, the bike’s powerful motor was able to outpace many of its peers thanks to its peak of 1100 watts and 85 Newton meters of torque."},
+   {"kind": "maker", "value": 85, "url": "https://images.radioflyer.com/media/flyer/specs/886.pdf", "quote": "Motor System 750W Brushless Hub Motor, 85 N•m", "basis": "Radio Flyer Flyer Via Pro spec sheet PDF linked from the product page"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": null, "url": "https://www.radioflyer.com/products/flyer-via-pro", "quote": "", "basis": "battery capacity not on the page"},
+   {"kind": "review", "value": 687, "url": "https://electricbikereport.com/flyer-via-pro-review/", "quote": "Battery : 48V 15Ah (687Wh) UL Tested Lithium-Ion Samsung 50E 21700 Cells ⟶ Display: Color LED"},
+   {"kind": "maker", "value": 687, "url": "https://images.radioflyer.com/media/flyer/specs/886.pdf", "quote": "Battery Pack 48V 15Ah (687Wh) UL Tested Lithium-Ion Samsung 50E 21700 Cells", "basis": "stated Wh; note 48V x 15Ah would be 720Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "30–50", "url": "https://www.radioflyer.com/products/flyer-via-pro", "quote": "30 – 50+ Miles ⟶ Battery Range"},
+   {"kind": "review", "value": "38.9–65.6", "url": "https://electricbikereport.com/flyer-via-pro-review/", "quote": "We tested the Via Pro’s range by riding in PAS 5 and PAS 1 until the bike’s 48V, 687 Wh battery expired, using Strava to track our mileage. Flyer advertises a range of 30 to 50 miles on a single charge, and our results exceeded both ends of this estimated range; we measured 38.9 and 65.6 miles.", "basis": "tested PAS 5 / PAS 1"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 73, "url": "https://www.radioflyer.com/products/flyer-via-pro", "quote": "Bike Weight | 72.5 lbs (small) | 73 lbs (medium) | 73.5 lbs (large)", "basis": "Medium; page doesn't say whether battery included"},
+   {"kind": "review", "value": 75.5, "url": "https://electricbikereport.com/flyer-via-pro-review/", "quote": "Claimed weight: 73.5 lbs ⟶ Tested Weight: 75.5 lbs", "basis": "tested (size not stated; claimed 73.5 = Large)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 400, "url": "https://www.radioflyer.com/products/flyer-via-pro", "quote": "Maximum Load | 400 lbs"},
+   {"kind": "review", "value": 400, "url": "https://electricbikereport.com/flyer-via-pro-review/", "quote": "Maximum load on rear rack: 150 lbs ⟶ Total payload capacity: 400lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub", "url": "https://www.radioflyer.com/products/flyer-via-pro", "quote": "Flight Speed® Motor ⟶ 750W rear hub motor"},
+   {"kind": "review", "value": "750W rear hub (1,100W peak)", "url": "https://electricbikereport.com/flyer-via-pro-review/", "quote": "We attribute the Via Pro’s performance to two factors. First, its weight was, once again, an advantage. Second, the bike’s powerful motor was able to outpace many of its peers thanks to its peak of 1100 watts and 85 Newton meters of torque."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'10\"-6'10\"", "url": "https://www.radioflyer.com/products/flyer-via-pro", "quote": "Small | 4’10” – 5’10” | 26\"-32\" | Medium | 5’3” – 6’3” | 28\"-34\" | Large | 5’10” – 6’10”", "basis": "across 3 frame sizes"},
+   {"kind": "review", "value": "4'10\"-6'10\"", "url": "https://electricbikereport.com/flyer-via-pro-review/", "quote": "Fits a HUGE range of riders between 4’10” and 6’10” between three frame sizes. ⟶ CONS"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.radioflyer.com/products/flyer-via-pro", "quote": "We offer 3 frame sizes that are designed to accomodate all heights and body types. We have an eBike size for every rider, ensuring a comfortable and personalized fit. No matter your size, we’ve got the perfect ride waiting for you. ⟶ Frame Size", "basis": "non-folding cargo frame; no fold mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page has no battery Wh or torque; EBReport gives 687 Wh (48V 15Ah) and 85 Nm / 1,100W peak. Weight/load/height quotes on the maker page are consecutive spec lines joined with ' | '. Recheck: read the Flyer Via Pro spec sheet PDF linked from radioflyer.com (85 N•m, 48V 15Ah (687Wh); 48 x 15 = 720, so the sheet's own numbers don't match each other)."}

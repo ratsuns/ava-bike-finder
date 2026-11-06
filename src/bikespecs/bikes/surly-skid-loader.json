@@ -1,0 +1,49 @@
+{"bike": "Surly|Skid Loader", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 4599, "url": "https://surlybikes.com/products/skid-loader-illegal-smile-green", "quote": "Regular price ⟶ $4,599.00 USD", "basis": "regular price; page also shows a sale price of $4,199.00"},
+   {"kind": "review", "value": 4599, "url": "https://www.cyclingweekly.com/reviews/e-bikes/surly-skid-loader-reviewed-a-rugged-cargo-e-bike-built-for-more-than-city-streets", "quote": "MSRP:  $4,599.00 ⟶ THE RIDE"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://surlybikes.com/products/skid-loader-illegal-smile-green", "quote": "Ebike Classification ⟶ Class 1"},
+   {"kind": "review", "value": null, "url": "https://www.cyclingweekly.com/reviews/e-bikes/surly-skid-loader-reviewed-a-rugged-cargo-e-bike-built-for-more-than-city-streets", "quote": "", "basis": "review gives no class"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://surlybikes.com/products/skid-loader-illegal-smile-green", "quote": "Max Assist Speed ⟶ 20 mph"},
+   {"kind": "review", "value": 20, "url": "https://www.cyclingweekly.com/reviews/e-bikes/surly-skid-loader-reviewed-a-rugged-cargo-e-bike-built-for-more-than-city-streets", "quote": "Max speed: 20mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://surlybikes.com/products/skid-loader-illegal-smile-green", "quote": "Motor Torque ⟶ 85Nm"},
+   {"kind": "review", "value": 85, "url": "https://www.cyclingweekly.com/reviews/e-bikes/surly-skid-loader-reviewed-a-rugged-cargo-e-bike-built-for-more-than-city-streets", "quote": "Motor: Bosch Performance Line Cargo smart system with four levels of ride assist (Eco, Tour+, Cargo, Turbo) and 85Nm of torque ⟶ Handlebar Remote: Purion 200"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 545, "url": "https://surlybikes.com/products/skid-loader-illegal-smile-green", "quote": "Battery Capacity Watt Hours ⟶ 545Wh"},
+   {"kind": "review", "value": 545, "url": "https://www.cyclingweekly.com/reviews/e-bikes/surly-skid-loader-reviewed-a-rugged-cargo-e-bike-built-for-more-than-city-streets", "quote": "Battery: Bosch PowerPack 545Wh battery included. Secondary batteries available aftermarket ⟶ Charge time: 4-5 hours"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "15–50", "url": "https://surlybikes.com/products/skid-loader-illegal-smile-green", "quote": "A 15–50 mile range is normal for Skid Loader, but your mileage may vary depending on support mode, rider weight, cargo load, and other variables. Peruse the Bosch E-bike Range Calculator to learn how you can extend your bike’s range. https://www.bosch-ebike.com/range-cockpit/?language=en-us ⟶ Gross Payload"},
+   {"kind": "review", "value": null, "url": "https://www.cyclingweekly.com/reviews/e-bikes/surly-skid-loader-reviewed-a-rugged-cargo-e-bike-built-for-more-than-city-streets", "quote": "Range: 15-150 miles ⟶ Drivetrain: Shimano Cues 1x10", "basis": "not recorded: 150-mile upper figure appears to include the optional second battery; not stated as standard-battery range"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 60.9, "url": "https://surlybikes.com/products/skid-loader-illegal-smile-green", "quote": "60 lbs 15 oz for Medium ⟶ *Specifications are subject to change without notice", "basis": "listed under \"Weight ⟶ Complete Bike\"; size Medium; 60 lb 15 oz = 60.9 lb"},
+   {"kind": "review", "value": 60, "url": "https://www.cyclingweekly.com/reviews/e-bikes/surly-skid-loader-reviewed-a-rugged-cargo-e-bike-built-for-more-than-city-streets", "quote": "Weight: 60lbs ⟶ MSRP:  $4,599.00"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 400, "url": "https://surlybikes.com/products/skid-loader-illegal-smile-green", "quote": "Gross Payload ⟶ 400-lb. max weight capacity (rider plus cargo)", "basis": "rider plus cargo (not including bike); rear rack rated 100 lb"},
+   {"kind": "review", "value": 400, "url": "https://www.cyclingweekly.com/reviews/e-bikes/surly-skid-loader-reviewed-a-rugged-cargo-e-bike-built-for-more-than-city-streets", "quote": "Total weight capacity (rider and cargo): 400lbs ⟶ Weight: 60lbs", "basis": "rider and cargo"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Performance Line Cargo (Smart System)", "url": "https://surlybikes.com/products/skid-loader-illegal-smile-green", "quote": "Bosch Performance Line Cargo (Smart System) with Purion 200 Remote ⟶ Ebike Classification", "basis": "no rated watts published"},
+   {"kind": "review", "value": "Bosch Performance Line Cargo smart system", "url": "https://www.cyclingweekly.com/reviews/e-bikes/surly-skid-loader-reviewed-a-rugged-cargo-e-bike-built-for-more-than-city-streets", "quote": "Motor: Bosch Performance Line Cargo smart system with four levels of ride assist (Eco, Tour+, Cargo, Turbo) and 85Nm of torque ⟶ Handlebar Remote: Purion 200", "basis": "no rated watts given"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'10\"-6'5\"", "url": "https://surlybikes.com/products/skid-loader-illegal-smile-green", "quote": "Recommended Rider Height\t147.0 - 175.0\t157.0 - 185.0\t167.0 - 195.0 ⟶ Stem Length\t60.0\t70.0\t80.0", "basis": "geometry table in cm across Small/Medium/Large: 147-195 cm converted"},
+   {"kind": "review", "value": "5'0\"-6'6\"", "url": "https://www.cyclingweekly.com/reviews/e-bikes/surly-skid-loader-reviewed-a-rugged-cargo-e-bike-built-for-more-than-city-streets", "quote": "The sloping top tube, generous standover, and three broad size options allow it to comfortably fit riders from 5'0” to 6'6”, while the stock dropper post helps fine-tune the fit for shared use."}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://surlybikes.com/products/skid-loader-illegal-smile-green", "quote": "Skid Loader - Illegal Smile Green ⟶ Commuting – 1 Child Passenger – E-Assist Midtail", "basis": "judgment: steel midtail; page mentions no folding frame"},
+   {"kind": "review", "value": "No", "url": "https://www.cyclingweekly.com/reviews/e-bikes/surly-skid-loader-reviewed-a-rugged-cargo-e-bike-built-for-more-than-city-streets", "quote": "At its core is Surly’s custom-butted ‘Natch’ steel tubeset, engineered for strength, durability and a ride quality that feels reassuringly Surly.", "basis": "judgment: no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Specs are in the maker page's Build Kit / Geometry tabs. Review is Cycling Weekly (found via one WebSearch) and covers the current version (Bosch Smart System, 545Wh) — EBR, EBReport and Mike's Bikes searches had no product page. Review range '15-150 miles' not recorded (likely dual battery). Maker rider-height range converted from cm (147-195 cm); review says 5'0\"-6'6\". Maker 'Gross Payload' 400 lb is rider plus cargo, so payload excluding bike weight."}

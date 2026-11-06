@@ -1,0 +1,49 @@
+{"bike": "Cannondale|Adventure Neo Allroad Speed", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2199, "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/adventure-neo-allroad/adventure-neo-allroad-speed-c68554m", "quote": "$2,199 ⟶ 0% APRor as low as $107/mo with Affirm. See if you qualify"},
+   {"kind": "retailer", "value": 2199, "url": "https://www.n1bikes.com/products/adventure-neo-allroad-speed?id=53966ac8e3222b5546edf5cf70f927de3c1691ef9a2c06ddef43ec0f13382e69&variant=C68554M20LG", "quote": "$2,199.00"},
+   {"kind": "review", "value": 2025, "url": "https://www.electricbikejournal.com/cannondale-adventure-neo-allroad-review/", "quote": "If you’re looking for more speed and comfort, Cannondale offers the Adventure NEO Allroad SPEED for $2025 as a Class 3 outfitted the same as the EQ with the addition of a front suspension fork.", "basis": "older launch price quoted in review"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/adventure-neo-allroad/adventure-neo-allroad-speed-c68554m", "quote": "The S is Adventure Neo Allroad unleashed. It’s a rugged Class 3 electric bike with a powerful electric motor, giving you huge range and boosting your speed up to 28mph. ⟶ Where it thrives"},
+   {"kind": "retailer", "value": 3, "url": "https://www.n1bikes.com/products/adventure-neo-allroad-speed?id=53966ac8e3222b5546edf5cf70f927de3c1691ef9a2c06ddef43ec0f13382e69&variant=C68554M20LG", "quote": "Class\tClass 3"},
+   {"kind": "review", "value": 3, "url": "https://www.electricbikejournal.com/cannondale-adventure-neo-allroad-review/", "quote": "If you’re looking for more speed and comfort, Cannondale offers the Adventure NEO Allroad SPEED for $2025 as a Class 3 outfitted the same as the EQ with the addition of a front suspension fork."}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/adventure-neo-allroad/adventure-neo-allroad-speed-c68554m", "quote": "Bafang G0900 hub motor, 750W (28mph) ⟶ Battery"},
+   {"kind": "retailer", "value": 28, "url": "https://www.n1bikes.com/products/adventure-neo-allroad-speed?id=53966ac8e3222b5546edf5cf70f927de3c1691ef9a2c06ddef43ec0f13382e69&variant=C68554M20LG", "quote": "Max Speed\t28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/adventure-neo-allroad/adventure-neo-allroad-speed-c68554m", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://www.n1bikes.com/products/adventure-neo-allroad-speed?id=53966ac8e3222b5546edf5cf70f927de3c1691ef9a2c06ddef43ec0f13382e69&variant=C68554M20LG", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 720, "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/adventure-neo-allroad/adventure-neo-allroad-speed-c68554m", "quote": "Battery ⟶ HWT 48V, 720Wh, Taiwan-made"},
+   {"kind": "retailer", "value": 720, "url": "https://www.n1bikes.com/products/adventure-neo-allroad-speed?id=53966ac8e3222b5546edf5cf70f927de3c1691ef9a2c06ddef43ec0f13382e69&variant=C68554M20LG", "quote": "Battery\tHWT 48V, 720Wh, Taiwan-made"},
+   {"kind": "review", "value": 720, "url": "https://www.electricbikejournal.com/cannondale-adventure-neo-allroad-review/", "quote": "They use a 418Wh battery that is semi-integrated into the frame and removable with a key and can offer up to 47 miles on a single charge. The SPEED uses a 720Wh battery and can support up to 71 miles."}
+  ],
+  "range": [
+   {"kind": "maker", "value": "71", "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/adventure-neo-allroad/adventure-neo-allroad-speed-c68554m", "quote": "Up to 71-mile range on a single charge"},
+   {"kind": "review", "value": "71", "url": "https://www.electricbikejournal.com/cannondale-adventure-neo-allroad-review/", "quote": "They use a 418Wh battery that is semi-integrated into the frame and removable with a key and can offer up to 47 miles on a single charge. The SPEED uses a 720Wh battery and can support up to 71 miles."}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/adventure-neo-allroad/adventure-neo-allroad-speed-c68554m", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://www.n1bikes.com/products/adventure-neo-allroad-speed?id=53966ac8e3222b5546edf5cf70f927de3c1691ef9a2c06ddef43ec0f13382e69&variant=C68554M20LG", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/adventure-neo-allroad/adventure-neo-allroad-speed-c68554m", "quote": "USB charger, headlight, taillight w/ brake light function, kickstand, rear rack (25kg), composite fenders w/ stainless steel struts", "basis": "only the rear rack rating (25 kg) is given, not a bike max load"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub", "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/adventure-neo-allroad/adventure-neo-allroad-speed-c68554m", "quote": "(F) Sealed alloy disc, 36 hole, 110mm x 15mm thru-axle / (R) Bafang G0900 hub motor, 750W ⟶ Tires"},
+   {"kind": "retailer", "value": "750W rear hub", "url": "https://www.n1bikes.com/products/adventure-neo-allroad-speed?id=53966ac8e3222b5546edf5cf70f927de3c1691ef9a2c06ddef43ec0f13382e69&variant=C68554M20LG", "quote": "Rear Hub\tBafang G0900 hub motor, 750W"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'5\"-6'5\"", "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/adventure-neo-allroad/adventure-neo-allroad-speed-c68554m", "quote": "Height - 5'5\" - 5'10\" | Height - 5'9\" - 6'5\"", "basis": "two size selectors (MD, LG) shown one at a time on the page; joined"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/adventure-neo-allroad/adventure-neo-allroad-speed-c68554m", "quote": "SmartForm C3 Alloy frame, removable downtube battery, semi-internal cable routing, tapered 1-1/8\"-1.5\" headtube, post mount disc, waterbottle and headtube rack mounts ⟶ Fork"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page gives no torque, weight or max load; no throttle mentioned (Class 3 stated). Review (Electric Bike Journal) is of the Allroad line; its Speed lines quote an older $2025 price. EBR/EBReport/Electrek had no match; REI blocked. Mike's Bikes dealer page also matches (regular $2,199.99, on sale $1,868.95) but not used. One WebSearch used; found no published weight."}

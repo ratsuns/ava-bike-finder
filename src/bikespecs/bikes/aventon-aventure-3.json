@@ -1,0 +1,49 @@
+{"bike": "Aventon|Aventure 3", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1999, "url": "https://www.aventon.com/products/aventure-3-ebike", "quote": "$1,799.00 | $1,999.00", "basis": "regular $1,999; sale $1,799 ($200 off)"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/aventon-aventure-3-review/", "quote": ""}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.aventon.com/products/aventure-3-ebike", "quote": "Ebike Class | Class 2 Ebike"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/aventon-aventure-3-review/", "quote": "The Aventure 3 has a maximum speed of 20 mph when it arrives, but it can be adjusted to the Class 3 maximum of 28 mph through the Aventon app.", "basis": "ships 20 mph with throttle"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.aventon.com/products/aventure-3-ebike", "quote": "Top Speed | Max 28 MPH", "basis": "maximum after app adjustment; ships Class 2 (20 mph)"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/aventon-aventure-3-review/", "quote": "The Aventure 3 has a maximum speed of 20 mph when it arrives, but it can be adjusted to the Class 3 maximum of 28 mph through the Aventon app.", "basis": "adjustable to 28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 80, "url": "https://www.aventon.com/products/aventure-3-ebike", "quote": "Motor Torque | 80Nm"},
+   {"kind": "review", "value": 80, "url": "https://electricbikereport.com/aventon-aventure-3-review/", "quote": "Motor: 36V/750W Hub Drive (1188W Peak), 80 Nm torque ⟶ Headlight: Integrated LED"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 733, "url": "https://www.aventon.com/products/aventure-3-ebike", "quote": "Battery | Removable Internal Lithium-ion. 36V, 20Ah, 733Wh, LG 21700 cells"},
+   {"kind": "review", "value": 733, "url": "https://electricbikereport.com/aventon-aventure-3-review/", "quote": "Battery: Removable Internal Lithium-Ion, 36V, 19.88 Ah, 733Wh, LG 21700 cells ⟶ Display: Aventon BC280"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "65", "url": "https://www.aventon.com/products/aventure-3-ebike", "quote": "Range | Up to 65 miles"},
+   {"kind": "review", "value": "65", "url": "https://electricbikereport.com/aventon-aventure-3-review/", "quote": "Claimed Range: Up to 65 miles ⟶ Throttle:Aventon LH Handlebar Mounted"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 76, "url": "https://www.aventon.com/products/aventure-3-ebike", "quote": "Weight | 76 lbs"},
+   {"kind": "review", "value": 77, "url": "https://electricbikereport.com/aventon-aventure-3-review/", "quote": "WEIGHT & DIMENSIONS ⟶ Claimed weight: 77 lbs", "basis": "claimed; tested 78 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 400, "url": "https://www.aventon.com/products/aventure-3-ebike", "quote": "Total Weight Limit | 400 lbs", "basis": "total"},
+   {"kind": "review", "value": 400, "url": "https://electricbikereport.com/aventon-aventure-3-review/", "quote": "Total payload capacity: 400 lbs ⟶ COMPONENTS & ACCESSORIES"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub (1,440W peak in Boost)", "url": "https://www.aventon.com/products/aventure-3-ebike", "quote": "Motor Power | 750W (1440W under Boost Mode)"},
+   {"kind": "review", "value": "750W hub (1,188W peak)", "url": "https://electricbikereport.com/aventon-aventure-3-review/", "quote": "Motor: 36V/750W Hub Drive (1188W Peak), 80 Nm torque ⟶ Headlight: Integrated LED"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'3\"-6'4\"", "url": "https://www.aventon.com/products/aventure-3-ebike", "quote": "Rider Height | R: 5'3\" -5'10\" | L: 5'10\" - 6'4\"", "basis": "Step-Over frame, two sizes combined"},
+   {"kind": "review", "value": "5'3\"-6'4\"", "url": "https://electricbikereport.com/aventon-aventure-3-review/", "quote": "Rider height range: 5’3” to 6’4” ⟶ Total payload capacity: 400 lbs", "basis": "Step-Over; review says the step-through fits 4’11” to 6’1”"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.aventon.com/products/aventure-3-ebike", "quote": "Frame Style | Step-Over"},
+   {"kind": "review", "value": "No", "url": "https://electricbikereport.com/aventon-aventure-3-review/", "quote": "Frame: Gravity Cast Aluminum Front Triangle ⟶ Drivetrain:8-Speed Shimano Altus, 48T chainring, 12-32T cassette"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker values from the top banner and Specifications section (default variant: Step-Over, Regular); ' | ' joins consecutive page lines. The same page also sells a Step-Through frame (EBR says ST fits 4'11\"-6'1\"). Weight differs: maker 76 lbs vs EBR claimed 77 lbs. Maker top speed 'Max 28 MPH' is the app-unlocked Class 3 maximum; ships Class 2 at 20 mph. Only one independent source (EBR)."}

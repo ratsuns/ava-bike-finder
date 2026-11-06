@@ -1,0 +1,176 @@
+{
+ "bike": "Bulls|Iconic Evo TR",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": 6299,
+    "url": "https://bullsbikesusa.com/products/iconic-evo-tr-2-speed",
+    "quote": "$3,499.00 ⟶ $6,299.00",
+    "basis": "crossed-out regular price; $3,499 is a sale price ('Save $2,800')"
+   },
+   {
+    "kind": "review",
+    "value": 6299,
+    "url": "https://electricbikereview.com/bulls/2023-iconic-evo-tr-2-speed/",
+    "quote": "PRICE: | $6299"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": 3,
+    "url": "https://bullsbikesusa.com/products/iconic-evo-tr-2-speed",
+    "quote": "Class-3 eBike: Pedal-assist up to 28 mph means you're ready for urban streets and long rides alike. ⟶ Who It’s For"
+   },
+   {
+    "kind": "review",
+    "value": 3,
+    "url": "https://electricbikereview.com/bulls/2023-iconic-evo-tr-2-speed/",
+    "quote": "TOP SPEED: | 28 mph (45 kph)",
+    "basis": "28 mph top assisted speed = Class 3; EBR's class field says 'Pedal Assist (Class 1)', which contradicts its own top speed"
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": 28,
+    "url": "https://bullsbikesusa.com/products/iconic-evo-tr-2-speed",
+    "quote": "Class-3 eBike: Pedal-assist up to 28 mph means you're ready for urban streets and long rides alike. ⟶ Who It’s For"
+   },
+   {
+    "kind": "review",
+    "value": 28,
+    "url": "https://electricbikereview.com/bulls/2023-iconic-evo-tr-2-speed/",
+    "quote": "TOP SPEED: | 28 mph (45 kph)"
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": 85,
+    "url": "https://bullsbikesusa.com/products/iconic-evo-tr-2-speed",
+    "quote": "Motor: The Gen4 Performance Speed motor delivers up to 85 Nm of torque and pedal assist up to 28 mph, giving you smooth and consistent power on commutes, bike paths, and everything in between."
+   },
+   {
+    "kind": "review",
+    "value": 85,
+    "url": "https://electricbikereview.com/bulls/2023-iconic-evo-tr-2-speed/",
+    "quote": "MOTOR TORQUE: | 85 Newton meters"
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": 625,
+    "url": "https://bullsbikesusa.com/products/iconic-evo-tr-2-speed",
+    "quote": "Battery: Bosch PowerTube 625 Wh ⟶ Charger: Bosch 4A"
+   },
+   {
+    "kind": "review",
+    "value": 626.4,
+    "url": "https://electricbikereview.com/bulls/2023-iconic-evo-tr-2-speed/",
+    "quote": "BATTERY WATT HOURS: | 626.4 wh"
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://bullsbikesusa.com/products/iconic-evo-tr-2-speed",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": "40–100",
+    "url": "https://electricbikereview.com/bulls/2023-iconic-evo-tr-2-speed/",
+    "quote": "ESTIMATED MIN RANGE: | 40 miles (64 km) | ESTIMATED MAX RANGE: | 100 miles (161 km)"
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": 56.8,
+    "url": "https://bullsbikesusa.com/products/iconic-evo-tr-2-speed",
+    "quote": "Weight: 56.8 lbs. ⟶ * Specifications subject to change without notice",
+    "basis": "battery not stated"
+   },
+   {
+    "kind": "review",
+    "value": 64.1,
+    "url": "https://electricbikereview.com/bulls/2023-iconic-evo-tr-2-speed/",
+    "quote": "TOP SPEED: | 28 mph (45 kph) | Bicycle Details | TOTAL WEIGHT: | 64.1 lbs (29.08 kg)"
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://bullsbikesusa.com/products/iconic-evo-tr-2-speed",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://electricbikereview.com/bulls/2023-iconic-evo-tr-2-speed/",
+    "quote": ""
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "Bosch Gen4 Performance Speed",
+    "url": "https://bullsbikesusa.com/products/iconic-evo-tr-2-speed",
+    "quote": "Motor: The Gen4 Performance Speed motor delivers up to 85 Nm of torque and pedal assist up to 28 mph, giving you smooth and consistent power on commutes, bike paths, and everything in between.",
+    "basis": "spec table: 'DriveUnit: Bosch Performance Speed'"
+   },
+   {
+    "kind": "review",
+    "value": "250W Gen 4 Bosch Performance Line Speed",
+    "url": "https://electricbikereview.com/bulls/2023-iconic-evo-tr-2-speed/",
+    "quote": "MOTOR BRAND: | Gen 4 Bosch Performance Line Speed | MOTOR TYPE: | Mid-Mounted Geared Motor | Learn more about Ebike motors | MOTOR NOMINAL OUTPUT: | 250 watts"
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://bullsbikesusa.com/products/iconic-evo-tr-2-speed",
+    "quote": "Frame: Built with lightweight 6061 aluminum and internal cable routing for a clean look. Frame sizes range from S to XL for a dialed fit. ⟶ Drivetrain and Brakes",
+    "basis": "frame sizes only, no rider heights"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://electricbikereview.com/bulls/2023-iconic-evo-tr-2-speed/",
+    "quote": ""
+   },
+   {
+    "kind": "maker",
+    "value": "5'4\"-6'6\"",
+    "url": "https://bullsbikesusa.com/products/iconic-evo-tr-2-speed",
+    "quote": "41(CM)\t5'4\" to 5’6\"\t30\" to 32” | 44(CM)\t5'6\" to 5’8\"\t32\" to 33” | 48(CM)\t5’8\" to 6'2\"\t33” to 34.5” | 54(CM)\t6'2\" to 6’6\"\t34.5” to 37”",
+    "basis": "Sizing Tool table: frame size, rider height, inseam"
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://bullsbikesusa.com/products/iconic-evo-tr-2-speed",
+    "quote": "Frame: Built with lightweight 6061 aluminum and internal cable routing for a clean look. Frame sizes range from S to XL for a dialed fit. ⟶ Drivetrain and Brakes"
+   },
+   {
+    "kind": "review",
+    "value": "No",
+    "url": "https://electricbikereview.com/bulls/2023-iconic-evo-tr-2-speed/",
+    "quote": "FRAME MATERIAL: | 6061 Aluminium Alloy"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "Src link is the 'Iconic EVO TR 2 Speed' (full suspension, Class 3, Bosch Gen4 Performance Speed, PowerTube 625). EBR reviewed the 2023 model with the same spec; EBR's class field wrongly says Class 1 (its top speed is 28 mph). Maker weight 56.8 lbs vs EBR 64.1 lbs. On sale at maker ($3,499, regular $6,299). No load or rider height published. recheck (height): the maker product page has a hidden 'Sizing Tool' modal ('WHAT IS MY FRAME SIZE?') with rider heights per frame size; read via page text."
+}

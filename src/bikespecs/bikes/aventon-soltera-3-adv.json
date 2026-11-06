@@ -1,0 +1,49 @@
+{"bike": "Aventon|Soltera 3 ADV", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1499, "url": "https://www.aventon.com/products/soltera-3-ebike", "quote": "Refined simplicity. | $1,499.00", "basis": "single price shown, no sale"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/aventon-soltera-3-adv-review/", "quote": ""}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://www.aventon.com/products/soltera-3-ebike", "quote": "Speed | Class 1"},
+   {"kind": "review", "value": 1, "url": "https://electricbikereport.com/aventon-soltera-3-adv-review/", "quote": "With the Soltera 3 ADV being a Class 1 e-bike with no throttle, we performed a single Hill Test using its highest pedal assist level at the Devil’s Backbone (see the graphic above for more info). The bike’s result was a time of 2:21, with our test rider, Justin, pedaling at an average of 12.9 mph."}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.aventon.com/products/soltera-3-ebike", "quote": "Top Speed | 20MPH"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/aventon-soltera-3-adv-review/", "quote": "While riders can tune the motor via the Ride Tune feature Aventon app, the bike is limited to a strict 20 mph speed limit."}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 40, "url": "https://www.aventon.com/products/soltera-3-ebike", "quote": "Motor Torque | 40Nm"},
+   {"kind": "review", "value": 40, "url": "https://electricbikereport.com/aventon-soltera-3-adv-review/", "quote": "Motor: 36V, 250W, 40 Nm Torque ⟶ Headlight: Integrated LED"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 366.8, "url": "https://www.aventon.com/products/soltera-3-ebike", "quote": "Battery | Integrated Lithium-ion 36.9V, 9.94Ah, 366.8Wh"},
+   {"kind": "review", "value": 366.8, "url": "https://electricbikereport.com/aventon-soltera-3-adv-review/", "quote": "Battery: Integrated Lithium-ion 36.9V, 9.94Ah, 366.8Wh ⟶ Charger: 36V Output: 42V/ 4A"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "70", "url": "https://www.aventon.com/products/soltera-3-ebike", "quote": "Range | Up to 70 Miles"},
+   {"kind": "review", "value": "70", "url": "https://electricbikereport.com/aventon-soltera-3-adv-review/", "quote": "Claimed Range: Up to 70 Miles ⟶ Throttle:None"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 37, "url": "https://www.aventon.com/products/soltera-3-ebike", "quote": "Weight | 37lbs"},
+   {"kind": "review", "value": 37, "url": "https://electricbikereport.com/aventon-soltera-3-adv-review/", "quote": "WEIGHT & DIMENSIONS ⟶ Claimed weight: 37 lbs", "basis": "claimed; tested 39 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 300, "url": "https://www.aventon.com/products/soltera-3-ebike", "quote": "Total Weight Limit | 300 lbs", "basis": "total"},
+   {"kind": "review", "value": 300, "url": "https://electricbikereport.com/aventon-soltera-3-adv-review/", "quote": "Total payload capacity: 300 lbs ⟶ COMPONENTS & ACCESSORIES"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "250W rear hub (540W peak)", "url": "https://www.aventon.com/products/soltera-3-ebike", "quote": "Motor Power | 250W | 540W Peak Motor"},
+   {"kind": "review", "value": "250W rear hub", "url": "https://electricbikereport.com/aventon-soltera-3-adv-review/", "quote": "A 250W rear hub motor provides a pleasant boost that’s right in line with the Soltera’s weight and style."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'4\"", "url": "https://www.aventon.com/products/soltera-3-ebike", "quote": "Rider Height | S 5'1\"-5'5\", M 5'5\"-5'9\", L 5'9\"-6'1\", XL 5'1\"-6'4\"", "basis": "four sizes combined"},
+   {"kind": "review", "value": "5'1\"-6'4\"", "url": "https://electricbikereport.com/aventon-soltera-3-adv-review/", "quote": "Rider height range: S – 5’1″-5’5″, M – 5’5″-5’9″, L – 5’9″-6’1″, XL – 6’1″-6’4″ ⟶ Total payload capacity: 300 lbs", "basis": "four sizes combined"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.aventon.com/products/soltera-3-ebike", "quote": "Frame Style | Step-Over"},
+   {"kind": "review", "value": "No", "url": "https://electricbikereport.com/aventon-soltera-3-adv-review/", "quote": "Frame: 6061 Double-Butted Aluminum Alloy with Internal Battery"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "src link resolves to the Soltera 3 ADV page (correct model). Maker values from Specifications section and top banner; ' | ' joins consecutive page lines. Maker's XL height reads 5'1\"-6'4\" (apparent typo; EBR says XL 6'1\"-6'4\"); overall range is the same. Class 1, no throttle. Page shows 'Limited stock available.' Only one independent source (EBR)."}

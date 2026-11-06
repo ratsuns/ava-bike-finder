@@ -1,0 +1,41 @@
+{"bike": "Trek|Allant+", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": null, "url": "https://www.trekbikes.com/us/en_US/allant-plus/faq/", "quote": ""}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://www.trekbikes.com/us/en_US/allant-plus/faq/", "quote": "All other Allant+ models feature the all new Performance Line CX (250Watt 75Nm, 25km/h or 20mph).", "basis": "family-wide FAQ; speedpedelec (S) models are 28 mph, others 20 mph; no single model to classify"},
+   {"kind": "review", "value": 3, "url": "https://electricbikereview.com/trek/allant-plus-8s-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 3", "basis": "EBR review of the Allant+ 8S (625Wh, 28 MPH) - the S (speed) trims only"},
+   {"kind": "review", "value": 1, "url": "https://electricbikereview.com/trek/allant-plus-7/", "quote": "ELECTRIC BIKE CLASS: ⟶ Pedal Assist (Class 1)", "basis": "EBR review of the 2020 Allant+ 7 (20 mph) - non-S trims are Class 1"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.trekbikes.com/us/en_US/allant-plus/faq/", "quote": "All other Allant+ models feature the all new Performance Line CX (250Watt 75Nm, 25km/h or 20mph).", "basis": "non-S Allant+ models; 'All Allant+ speedpedelec models feature the all new Performance Line Speed (250Watt, 75Nm, 45km/h or 28mph).'"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 75, "url": "https://www.trekbikes.com/us/en_US/allant-plus/faq/", "quote": "All other Allant+ models feature the all new Performance Line CX (250Watt 75Nm, 25km/h or 20mph).", "basis": "family-wide FAQ"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 500, "url": "https://www.trekbikes.com/us/en_US/allant-plus/faq/", "quote": "What battery is featured on Allant+? ⟶ Allant+ 7S, 7 and 8 features the Bosch Powertube 500Wh.", "basis": "FAQ (older lineup); Allant+ landing page says 'Every Allant+ has a large capacity 625Wh or 500Wh Bosch battery'"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "15–100", "url": "https://www.trekbikes.com/us/en_US/allant-plus/faq/", "quote": "As a result, range can vary from 15-100 miles/32-160 kilometers.", "basis": "family-wide FAQ; landing page https://www.trekbikes.com/us/en_US/allant-plus/ says 'Range | Up to 90 miles per charge'"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://www.trekbikes.com/us/en_US/allant-plus/faq/", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.trekbikes.com/us/en_US/allant-plus/faq/", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "250W Bosch Performance Line CX", "url": "https://www.trekbikes.com/us/en_US/allant-plus/faq/", "quote": "All other Allant+ models feature the all new Performance Line CX (250Watt 75Nm, 25km/h or 20mph).", "basis": "non-S Allant+ models"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://www.trekbikes.com/us/en_US/allant-plus/faq/", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.trekbikes.com/us/en_US/allant-plus/", "quote": "Choose from high- or low-step frame options to find the bike that best fits your needs.", "basis": "standard high/low-step frames, not folding"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "PROBLEM: 'Allant+' is a model family (Allant+ 7, 7S, 8, 8S, etc.), not one model, and the given src is the family FAQ page, so no single model's price/weight/height/load exists. Values recorded are family-wide FAQ statements only. The Allant+ landing page's 'SHOP THE BIKES' link (https://www.trekbikes.com/f/F473) and Trek's site search for 'Allant+' both land on a 404 'Not Found' page (…/electric-hybrid-bikes/allant/c/B473/), so the Allant+ line appears to be no longer sold on trekbikes.com US — but Trek does not explicitly say 'discontinued', so status is not set. Landing page also says 'Assist | Up to 28mph' and 'Battery | Up to 625Wh'. No independent source used because no specific model is named; recommend the coordinator pick a specific model (e.g. Allant+ 8S) or drop this entry. | recheck: class depends on trim: EBR Allant+ 8S review = Class 3 (28 mph); EBR 2020 Allant+ 7 review = Class 1 (20 mph). Trek's Allant+ landing page says 'Up to 28mph' but states no class. Family entry, so the site's single value 3 only fits the S trims."
+}

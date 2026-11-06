@@ -1,0 +1,50 @@
+{"bike": "Xtracycle|RFA (Shimano EP6, Class 3)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 4999, "url": "https://xtracycle.com/products/rfa-2", "quote": "White (sold out) - $4,999.00 ⟶ Black (sold out) - $4,999.00", "basis": "page buy box says 'This is the RFA Class 3, with a Shimano EP6 mid-drive motor.'; no crossed-out price shown"},
+   {"kind": "review", "value": 5499, "url": "https://www.electricbikejournal.com/xtracycle-rfa/", "quote": "On test we had the Class 3 rated Shimano EP6 with Shimano drivetrain for $5499.", "basis": "earlier price at time of review"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://xtracycle.com/products/rfa-2", "quote": "E-assist class\tClass 3 ⟶ Max e-assist speed\t28 mph", "basis": "from 'RFA Shimano EP6 (Class 3) component specs' section"},
+   {"kind": "review", "value": 3, "url": "https://www.electricbikejournal.com/xtracycle-rfa/", "quote": "630Wh Battery ⟶ Class 3"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://xtracycle.com/products/rfa-2", "quote": "Max e-assist speed\t28 mph ⟶ Specifications are subject to change without notice.", "basis": "EP6 (Class 3) section"},
+   {"kind": "review", "value": null, "url": "https://www.electricbikejournal.com/xtracycle-rfa/", "quote": "Class 3 ⟶ Shimano Deore 10-speed", "basis": "class only, no mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://xtracycle.com/products/rfa-2", "quote": "The Shimano STEPS EP series motor delivers up to 85 nM of torque for hilly terrain & heavy loads. With up to 400% of e-assist, you’ll be cruising up hills, no matter your loaded. ⟶ Empty heading", "basis": "stated for the 'EP series' generally"},
+   {"kind": "review", "value": null, "url": "https://www.electricbikejournal.com/xtracycle-rfa/", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 630, "url": "https://xtracycle.com/products/rfa-2", "quote": "Battery\tShimano STEPS BT-EN606-A, 630 wH (frame, external), up to 60mi per charge depending on riding conditions and load ⟶ Front hub\tKT QL-XC2F, 15mm, 100mm thru axle"},
+   {"kind": "review", "value": 630, "url": "https://www.electricbikejournal.com/xtracycle-rfa/", "quote": "The RFA uses a Shimano EP6 mid drive system and a Shimano 630Wh battery with an estimated range of up to 60 miles per charge."}
+  ],
+  "range": [
+   {"kind": "maker", "value": "60", "url": "https://xtracycle.com/products/rfa-2", "quote": "Battery\tShimano STEPS BT-EN606-A, 630 wH (frame, external), up to 60mi per charge depending on riding conditions and load ⟶ Front hub\tKT QL-XC2F, 15mm, 100mm thru axle", "basis": "up to"},
+   {"kind": "review", "value": "60", "url": "https://www.electricbikejournal.com/xtracycle-rfa/", "quote": "The RFA uses a Shimano EP6 mid drive system and a Shimano 630Wh battery with an estimated range of up to 60 miles per charge.", "basis": "up to"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 60.2, "url": "https://xtracycle.com/products/rfa-2", "quote": "Bike weight\t60.2 lbs ⟶ Max Gross Vehicle Weight\t470 pounds"},
+   {"kind": "review", "value": 60, "url": "https://www.electricbikejournal.com/xtracycle-rfa/", "quote": "Weight: 60lbs ⟶ Load Capacity: 470 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 470, "url": "https://xtracycle.com/products/rfa-2", "quote": "Max Gross Vehicle Weight\t470 pounds ⟶ Frame material\t4130 Chromoly steel", "basis": "total"},
+   {"kind": "review", "value": 470, "url": "https://www.electricbikejournal.com/xtracycle-rfa/", "quote": "The steel frame is durable and robust with a max load capacity of 470 lbs.", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Shimano STEPS EP6", "url": "https://xtracycle.com/products/rfa-2", "quote": "E-assist\tShimano STEPS EP6 ⟶ E-assist cycling computer\tShimano SC-EN500", "basis": "no watts on maker page"},
+   {"kind": "review", "value": "250W Shimano EP6 mid-drive", "url": "https://www.electricbikejournal.com/xtracycle-rfa/", "quote": "Shimano EP6 250w ⟶ 630Wh Battery"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'3\"-6'3\"", "url": "https://xtracycle.com/products/rfa-2", "quote": "If you are shorter than 5'3\" you may wish to have a smaller handlebar stem to accommodate a shorter reach. If you are taller than 6'3\" you may wish to have a longer seat post and stem for a more comfortable ride.", "basis": "stock fit range; FitKit available outside it"},
+   {"kind": "review", "value": "5'3\"-6'3\"", "url": "https://www.electricbikejournal.com/xtracycle-rfa/", "quote": "With that length and this particular low step frame design, the RFA has a rider height range of 5’3″ to 6’3″."}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://xtracycle.com/products/rfa-2", "quote": "With it's easy to mount mid-step frame geometry, the RFA is the perfect multi-purpose compact cargo bike. Dual 24\" wheels on a mid-tail frame keeps your weight low & centered for outstanding maneuverability, wherever your adventures take you. ⟶ Details Matter", "basis": "steel mid-tail frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": [
+   {"kind": "maker", "value": "sold out", "url": "https://xtracycle.com/products/rfa-2", "quote": "White (sold out) - $4,999.00 ⟶ Black (sold out) - $4,999.00", "basis": "both colors sold out; not stated as discontinued"}
+ ]},
+ "notes": "Maker now lists the RFA Class 3 (EP6) at $4,999 (both colors sold out); Electric Bike Journal review listed it at $5,499 earlier. Maker's 470 lb is 'Max Gross Vehicle Weight' (total). Used one WebSearch (found Electric Bike Journal)."}

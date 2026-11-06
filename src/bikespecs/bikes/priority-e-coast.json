@@ -1,0 +1,46 @@
+{"bike": "Priority|E-Coast", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1999, "url": "https://www.prioritybicycles.com/products/ecoast", "quote": "$ 1,999.00 ⟶ LOW INVENTORY! GET YOURS BEFORE THEY’RE GONE!", "basis": "no crossed-out price shown (compare_at_price null)"},
+   {"kind": "review", "value": 1999, "url": "https://electrek.co/2023/11/22/review-testing-the-best-and-only-belt-drive-electric-cruiser-bike-the-priority-e-coast/", "quote": "I won’t bury the lede here; the Priority E-Coast is priced at US $1,999. That’s on the higher end of the spectrum for beach cruiser e-bikes, but you’re about to see why. [Note: For the next five days you can save $300 with the Black Friday sale by using code MOBF15 at checkout]."}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.prioritybicycles.com/products/ecoast", "quote": "The e-Coast ships Class 2 with a max speed of 20 mph. Using the display, it can be re-programmed to Class 3 with a max speed of 28 mph using pedal assist. Please check your local regulations. The maximum speed using the throttle is limited to 20 mph and is not re-programmable. ⟶ What should I expect in terms of water and rust-resistance?"},
+   {"kind": "review", "value": null, "url": "https://electrek.co/2023/11/22/review-testing-the-best-and-only-belt-drive-electric-cruiser-bike-the-priority-e-coast/", "quote": "", "basis": "class not stated"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.prioritybicycles.com/products/ecoast", "quote": "The e-Coast ships Class 2 with a max speed of 20 mph. Using the display, it can be re-programmed to Class 3 with a max speed of 28 mph using pedal assist. Please check your local regulations. The maximum speed using the throttle is limited to 20 mph and is not re-programmable. ⟶ What should I expect in terms of water and rust-resistance?", "basis": "adjustable to 28 mph"},
+   {"kind": "review", "value": 28, "url": "https://electrek.co/2023/11/22/review-testing-the-best-and-only-belt-drive-electric-cruiser-bike-the-priority-e-coast/", "quote": "Motor: 500W rear geared hub motor ⟶ Top speed: 45 km/h (28 mph)", "basis": "max after re-programming; ships at 20 mph per maker"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://www.prioritybicycles.com/products/ecoast", "quote": "", "basis": "torque not published"},
+   {"kind": "review", "value": null, "url": "https://electrek.co/2023/11/22/review-testing-the-best-and-only-belt-drive-electric-cruiser-bike-the-priority-e-coast/", "quote": "", "basis": "torque not stated"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 576, "url": "https://www.prioritybicycles.com/products/ecoast", "quote": "The Priority 500-watt motor is powered by a 576 watt-hour battery that's integrated into the rear rack, keeping the lines of The e-Coast super clean. The battery is easily removable and can be charged on or off the bike. The integrated rack is perfect for loading up all your essentials for a day at the beach, or wherever you plan to set sail. eBike battery UL 2271 certified by SGS. Please review NYC Lithium-Ion Battery Safety information."},
+   {"kind": "review", "value": 576, "url": "https://electrek.co/2023/11/22/review-testing-the-best-and-only-belt-drive-electric-cruiser-bike-the-priority-e-coast/", "quote": "Range: Up to 32-96 km (20-60 mi) ⟶ Battery: 48V 12Ah (576 Wh)"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "20–60", "url": "https://www.prioritybicycles.com/products/ecoast", "quote": "We see a typical battery range of 20-60 miles. Range depends on the pedal assist level, rider and cargo weight, speed, elevation, temperature, tire pressure, head wind and terrain. ⟶ Is this a Class 1, 2 or 3 electric bike?"},
+   {"kind": "review", "value": "20–60", "url": "https://electrek.co/2023/11/22/review-testing-the-best-and-only-belt-drive-electric-cruiser-bike-the-priority-e-coast/", "quote": "Top speed: 45 km/h (28 mph) ⟶ Range: Up to 32-96 km (20-60 mi)"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 56, "url": "https://www.prioritybicycles.com/products/ecoast", "quote": "56 LBS ⟶ STABLE ON THE BOARDWALK, AND LIGHTER THAN THE COMPETITION", "basis": "page doesn't say whether this includes the battery"},
+   {"kind": "review", "value": null, "url": "https://electrek.co/2023/11/22/review-testing-the-best-and-only-belt-drive-electric-cruiser-bike-the-priority-e-coast/", "quote": "", "basis": "weight not stated"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 300, "url": "https://www.prioritybicycles.com/products/ecoast", "quote": "What is the weight limit? ⟶ 300 lbs max combined weight (rider, bicycle, and any cargo).", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W rear hub", "url": "https://www.prioritybicycles.com/products/ecoast", "quote": "DUAL-CONTROL MOTOR (PEDAL ASSIST OR THROTTLE) | 500W | POWERFUL HUB MOTOR"},
+   {"kind": "review", "value": "500W rear geared hub", "url": "https://electrek.co/2023/11/22/review-testing-the-best-and-only-belt-drive-electric-cruiser-bike-the-priority-e-coast/", "quote": "Motor: 500W rear geared hub motor ⟶ Top speed: 45 km/h (28 mph)"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'0\"-6'4\"", "url": "https://www.prioritybicycles.com/products/ecoast", "quote": "DIAMOND: Min. Standover 32\", fits riders who are 5'6\" - 6'4\" ⟶ STEP-THROUGH: Min. Standover 26\", fits riders who are 5' - 6'", "basis": "Diamond 5'6\"-6'4\", Step-Through 5'0\"-6'0\" combined"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.prioritybicycles.com/products/ecoast", "quote": "We modified our standard Coast frame significantly to accommodate the motor, battery, and 3 inch wide tires, and stiffened it for higher speed use. Not only is the frame strong, but it can withstand the salt, sand, and water that eat away at other beach cruisers. No rusty rides here! ⟶ 07", "basis": "standard (non-folding) cruiser frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Only one independent source found (Electrek 2023 review); EBR and EBReport have no e-Coast page. Torque not published anywhere read. Maker weight 56 lb not labeled with/without battery. Load is total combined weight."}

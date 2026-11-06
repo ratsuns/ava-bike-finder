@@ -1,0 +1,168 @@
+{
+ "bike": "Macfox|M16",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": 1099,
+    "url": "https://macfoxbike.com/products/macfox-m16-ebike",
+    "quote": "$1,099.00 USD ⟶ 4'0\"–5'3\""
+   },
+   {
+    "kind": "retailer",
+    "value": 1049,
+    "url": "https://www.wellbots.com/products/macfox-e-bike-m16",
+    "quote": "Sale price ⟶ $1,049.00",
+    "basis": "labelled 'Sale price'; no regular price shown"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": 2,
+    "url": "https://macfoxbike.com/products/macfox-m16-ebike",
+    "quote": "Yes, in most US states. The M16 is a Class 2 ebike with a 20 mph top assisted speed on both pedal assist and throttle, and it is UL 2849 certified. Local rules on rider age, helmets and throttle use vary, so check your state and city before riding. ⟶ How far can the Macfox M16 go on one charge?"
+   },
+   {
+    "kind": "retailer",
+    "value": 2,
+    "url": "https://www.wellbots.com/products/macfox-e-bike-m16",
+    "quote": "500W Motor (750W Peak Power) – Class 2 compliant motor with a top speed of 20 mph for legal and safe riding"
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": 20,
+    "url": "https://macfoxbike.com/products/macfox-m16-ebike",
+    "quote": "Top Speed ⟶ 20mph"
+   },
+   {
+    "kind": "retailer",
+    "value": 20,
+    "url": "https://www.wellbots.com/products/macfox-e-bike-m16",
+    "quote": "Top Speed: 20 mph ⟶ Range: Up to 25 miles"
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://macfoxbike.com/products/macfox-m16-ebike",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.wellbots.com/products/macfox-e-bike-m16",
+    "quote": ""
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": 499,
+    "url": "https://macfoxbike.com/products/macfox-m16-ebike",
+    "quote": "Battery ⟶ 499Wh (48V 10.4Ah)"
+   },
+   {
+    "kind": "retailer",
+    "value": 499,
+    "url": "https://www.wellbots.com/products/macfox-e-bike-m16",
+    "quote": "Battery: 499Wh (48V 10.4Ah) ⟶ Charge Time: 5–6 hours"
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": "25",
+    "url": "https://macfoxbike.com/products/macfox-m16-ebike",
+    "quote": "Range(Single Battery) ⟶ Up to 25miles"
+   },
+   {
+    "kind": "retailer",
+    "value": "25",
+    "url": "https://www.wellbots.com/products/macfox-e-bike-m16",
+    "quote": "Top Speed: 20 mph ⟶ Range: Up to 25 miles"
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": 65.7,
+    "url": "https://macfoxbike.com/products/macfox-m16-ebike",
+    "quote": "Vehicle Weight ⟶ 65.7 lbs"
+   },
+   {
+    "kind": "retailer",
+    "value": 65.7,
+    "url": "https://www.wellbots.com/products/macfox-e-bike-m16",
+    "quote": "Vehicle Weight: 65.7 lbs ⟶ Rider Weight Limit: 220 lbs"
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": 220,
+    "url": "https://macfoxbike.com/products/macfox-m16-ebike",
+    "quote": "Rider Weight Limit ⟶ 220 lbs",
+    "basis": "rider weight limit"
+   },
+   {
+    "kind": "retailer",
+    "value": 220,
+    "url": "https://www.wellbots.com/products/macfox-e-bike-m16",
+    "quote": "Rider Weight Limit: 220 lbs ⟶ Seat Height: 28.7”",
+    "basis": "rider weight limit"
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "500W (750W peak)",
+    "url": "https://macfoxbike.com/products/macfox-m16-ebike",
+    "quote": "The M16 offers up to 25 miles on a single battery. Real-world range depends on rider weight, terrain, assist level and temperature. Its 500W rated (750W peak) motor stays within Class 2 at 20 mph. ⟶ Is the M16 a good first ebike for younger teens?"
+   },
+   {
+    "kind": "retailer",
+    "value": "500W (750W peak)",
+    "url": "https://www.wellbots.com/products/macfox-e-bike-m16",
+    "quote": "Range: Up to 25 miles ⟶ Motor: 500W (750W peak)"
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": "4'0\"-5'3\"",
+    "url": "https://macfoxbike.com/products/macfox-m16-ebike",
+    "quote": "Recommended Rider Height ⟶ 4'0\"–5'3\""
+   },
+   {
+    "kind": "retailer",
+    "value": "3'11\" and up",
+    "url": "https://www.wellbots.com/products/macfox-e-bike-m16",
+    "quote": "Recommended Rider Height: 3’11” and up ⟶ What’s in the Box"
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://macfoxbike.com/products/macfox-m16-ebike",
+    "quote": "Frame ⟶ High-Strength Carbon Steel",
+    "basis": "youth moped-style frame; no folding mentioned"
+   },
+   {
+    "kind": "retailer",
+    "value": "No",
+    "url": "https://www.wellbots.com/products/macfox-e-bike-m16",
+    "quote": "Gearing: Single speed ⟶ Frame: Steel"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker Shopify data: compare_at = price ($1,099), so regular; page shows BF50 $50-off code (not recorded). Height differs: maker 4'0\"-5'3\" vs Wellbots '3'11\" and up'. Torque not published. No EBR/EBReport/Electrek review; independent source is Wellbots retailer (sale price $1,049)."
+}

@@ -1,0 +1,57 @@
+{"bike": "Blix|Sol X", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1899, "url": "https://blixbike.com/products/sol-x-cruiser-ebike", "quote": "Sol X Comfort Ebike | $1,899.00 | Product information"},
+   {"kind": "review", "value": 1799, "url": "https://electricbikereview.com/blix/sol-x-review/", "quote": "PRICE: ⟶ $1799", "basis": "price at time of review; maker now lists $1,899"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/blix-sol-x-review/", "quote": ""}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://blixbike.com/products/sol-x-cruiser-ebike", "quote": "Throttle ⟶ Yes", "basis": "maker Sol X page gives no class or speed; its class FAQ answer is about the Vika X"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/blix-sol-x-review/", "quote": "E-BIKE CLASS: ⟶ CLASS 2 (THROTTLE TO 20 MPH) | CLASS 3 (PEDAL ASSIST TO 28 MPH)", "basis": "switchable 2/3 in app; review says 'our results were based on the Sol X’s Class 2 settings' and a throttle is fitted, so Class 2 recorded as shipped"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereview.com/blix/sol-x-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 2 & 3", "basis": "Class 2 & 3 (switchable)"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": null, "url": "https://blixbike.com/products/sol-x-cruiser-ebike", "quote": ""},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/blix-sol-x-review/", "quote": "E-BIKE CLASS: ⟶ CLASS 2 (THROTTLE TO 20 MPH) | CLASS 3 (PEDAL ASSIST TO 28 MPH)", "basis": "20 mph in Class 2 setting; adjustable to 28 mph"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/blix/sol-x-review/", "quote": "TOP SPEED: ⟶ 28 MPH mph", "basis": "maximum (Class 3 setting)"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 70, "url": "https://blixbike.com/products/sol-x-cruiser-ebike", "quote": "Motor ⟶ Rear Hub, Geared, 750W, 70Nm Torque"},
+   {"kind": "review", "value": 70, "url": "https://electricbikereview.com/blix/sol-x-review/", "quote": "MOTOR TORQUE: ⟶ 70 Newton meters"},
+   {"kind": "review", "value": 70, "url": "https://electricbikereport.com/blix-sol-x-review/", "quote": "Motor: Rear Hub, Geared, 750W, 70Nm Torque ⟶ Headlight:Integrated, Low-beam 70 lux, High-beam 120 lux"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 614.4, "url": "https://blixbike.com/products/sol-x-cruiser-ebike", "quote": "Battery ⟶ 614.4Wh (48V)"},
+   {"kind": "review", "value": 614.4, "url": "https://electricbikereview.com/blix/sol-x-review/", "quote": "BATTERY WATT HOURS: ⟶ 614.4 wh"},
+   {"kind": "review", "value": 614.4, "url": "https://electricbikereport.com/blix-sol-x-review/", "quote": "Battery:614.4Wh (48V) ⟶ Display: Color LCD"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "70", "url": "https://blixbike.com/products/sol-x-cruiser-ebike", "quote": "Range ⟶ Up to 70 miles"},
+   {"kind": "review", "value": "70", "url": "https://electricbikereport.com/blix-sol-x-review/", "quote": "Claimed Range: Up to 70 Miles ⟶ Throttle:Yes"},
+   {"kind": "review", "value": "38–86", "url": "https://electricbikereview.com/blix/sol-x-review/", "quote": "Real World Range Test Results: ⟶ PAS 1: 86 miles | PAS 5: 38 miles", "basis": "reviewer's own test"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 62, "url": "https://blixbike.com/products/sol-x-cruiser-ebike", "quote": "Weight ⟶ 62 lbs"},
+   {"kind": "review", "value": 62, "url": "https://electricbikereview.com/blix/sol-x-review/", "quote": "TOTAL WEIGHT: ⟶ 62 lbs (28.12 kg)"},
+   {"kind": "review", "value": 60.8, "url": "https://electricbikereport.com/blix-sol-x-review/", "quote": "Claimed weight: 62 lbs ⟶ Tested Weight: 60.8 lbs", "basis": "tested weight"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 400, "url": "https://blixbike.com/products/sol-x-cruiser-ebike", "quote": "Payload ⟶ 400 lbs, 318 lbs max rider weight"},
+   {"kind": "review", "value": 400, "url": "https://electricbikereport.com/blix-sol-x-review/", "quote": "Total payload capacity: 400 lbs, 318 lbs max rider weight ⟶ COMPONENTS & ACCESSORIES"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub, geared", "url": "https://blixbike.com/products/sol-x-cruiser-ebike", "quote": "Motor ⟶ Rear Hub, Geared, 750W, 70Nm Torque"},
+   {"kind": "review", "value": "750W rear hub", "url": "https://electricbikereview.com/blix/sol-x-review/", "quote": "MOTOR NOMINAL OUTPUT: ⟶ 750 watts"},
+   {"kind": "review", "value": "750W rear hub, geared", "url": "https://electricbikereport.com/blix-sol-x-review/", "quote": "Motor: Rear Hub, Geared, 750W, 70Nm Torque ⟶ Headlight:Integrated, Low-beam 70 lux, High-beam 120 lux"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'2\"", "url": "https://blixbike.com/products/sol-x-cruiser-ebike", "quote": "Recommended Rider Height ⟶ 5'1\" - 6'2\""},
+   {"kind": "review", "value": "5'1\"-6'2\"", "url": "https://electricbikereport.com/blix-sol-x-review/", "quote": "Rider height range: 5’1” – 6’2” ⟶ Total payload capacity: 400 lbs, 318 lbs max rider weight"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://blixbike.com/products/sol-x-cruiser-ebike", "quote": "Frame | Aluminum Alloy | Fork | Steel"},
+   {"kind": "review", "value": "No", "url": "https://electricbikereport.com/blix-sol-x-review/", "quote": "This relaxed beach cruiser boasts a powerful 750W motor, a responsive and natural ride, electronic shifting, and a cool, contemporary design."}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker Sol X page gives no top speed or class; its FAQ answers (class, weight) are copied from the Vika X ('The Vika X is a class 2 ebike...') so not used. Class 2/3 switchable in the Blix app; Class 2 (20 mph) recorded as shipped per Electric Bike Report testing in Class 2 settings. EBR lists $1799 and in text says $1,499; maker lists $1,899 (no compare-at/sale). Rear rack 60 lbs (maker)."}

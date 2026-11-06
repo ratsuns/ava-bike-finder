@@ -1,0 +1,45 @@
+{"bike": "Electra|Ponto Go!", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2699.99, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/comfort-ebikes/ponto-go/ponto-go/p/59517/", "quote": "Ponto Go! | $1,999.93 | Model 5341187 | $2,699.99 | Comp. Value | Original price", "basis": "original price; $1,999.93 is a sale price"},
+   {"kind": "review", "value": 2699, "url": "https://electrek.co/2023/08/11/trek-launches-first-throttle-controlled-electric-moped-electra-ponto-go/", "quote": "Priced at $2,699, the Electra Ponto Go! e-bike comes in four colors and one size."}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/comfort-ebikes/ponto-go/ponto-go/p/59517/", "quote": "E-bike Classification Class 2 ⟶ Motor 750W"},
+   {"kind": "review", "value": null, "url": "https://electrek.co/2023/08/11/trek-launches-first-throttle-controlled-electric-moped-electra-ponto-go/", "quote": "The 78 lb (35 kg) Class 3 e-bike can hit speeds of up to 20 mph (32 km/h) on throttle-only control, or even higher speeds of up to 26 mph (42 km) in pedal assist.", "basis": "2023 launch spec (Class 3, 26 mph); current Ponto Go! is Class 2, so not counted"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/comfort-ebikes/ponto-go/ponto-go/p/59517/", "quote": "Max assist speed ⟶ 20 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 60, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/comfort-ebikes/ponto-go/ponto-go/p/59517/", "quote": "Motor ⟶ BEP hub drive motor, 60Nm, 36h"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 625, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/comfort-ebikes/ponto-go/ponto-go/p/59517/", "quote": "Battery ⟶ 625Wh removable, lockable battery"},
+   {"kind": "review", "value": null, "url": "https://electrek.co/2023/08/11/trek-launches-first-throttle-controlled-electric-moped-electra-ponto-go/", "quote": "The bike also carries a rather large battery at 650Wh, which Electra claims offers a maximum range of 60 miles (96 km).", "basis": "2023 launch spec says 650Wh; differs from current 625Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "60", "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/comfort-ebikes/ponto-go/ponto-go/p/59517/", "quote": "Torque 60Nm ⟶ Range Up to 60 mi"},
+   {"kind": "review", "value": "60", "url": "https://electrek.co/2023/08/11/trek-launches-first-throttle-controlled-electric-moped-electra-ponto-go/", "quote": "The bike also carries a rather large battery at 650Wh, which Electra claims offers a maximum range of 60 miles (96 km)."}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 80.01, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/comfort-ebikes/ponto-go/ponto-go/p/59517/", "quote": "Weight ⟶ 36.29 kg / 80.01 lbs"},
+   {"kind": "review", "value": 78, "url": "https://electrek.co/2023/08/11/trek-launches-first-throttle-controlled-electric-moped-electra-ponto-go/", "quote": "The 78 lb (35 kg) Class 3 e-bike can hit speeds of up to 20 mph (32 km/h) on throttle-only control", "basis": "2023 launch spec"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 440, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/comfort-ebikes/ponto-go/ponto-go/p/59517/", "quote": "This bike has a maximum total weight limit (combined weight of bicycle, rider, and cargo) of 440 pounds (199 kg).", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W BEP rear hub", "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/comfort-ebikes/ponto-go/ponto-go/p/59517/", "quote": "E-bike Classification Class 2 ⟶ Motor 750W", "basis": "spec table: 'BEP hub drive motor, 60Nm, 36h'"},
+   {"kind": "review", "value": "750W rear hub", "url": "https://electrek.co/2023/08/11/trek-launches-first-throttle-controlled-electric-moped-electra-ponto-go/", "quote": "That’s thanks to a powerful 750W hub motor in the rear, maxing out the legal limit for e-bike power in the US."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'11\"-6'10\"", "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/comfort-ebikes/ponto-go/ponto-go/p/59517/", "quote": "Size\tRider Height ⟶ One size fits most | 4'11\" - 6'10\""},
+   {"kind": "review", "value": "4'10\"-6'2\"", "url": "https://electrek.co/2023/08/11/trek-launches-first-throttle-controlled-electric-moped-electra-ponto-go/", "quote": "The company says that the bike can support riders in the height range of 4’10” to 6’2″ (147 to 188 cm) and has a payload capacity of 360 lb (163 kg).", "basis": "2023 launch spec"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/comfort-ebikes/ponto-go/ponto-go/p/59517/", "quote": ""}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker link redirects to .../ponto-go/f/EF275/ponto-go%2521/59517/ (model 5341187). On sale at $1,999.93; original $2,699.99. Electrek is the Aug 2023 launch article, which describes a Class 3 / 26 mph / 650Wh bike; the current Ponto Go! is Class 2 / 20 mph / 625Wh (the Class 2/3 version is now the separate Ponto Go! S), so Electrek is used only for specs that match (price, motor, range) and listed for others as context. Rider height differs a lot: maker 4'11\"-6'10\" vs Electrek 4'10\"-6'2\" (2023). Electrek also gives a 360 lb payload (2023); maker gives 440 lb total. EBR has no Ponto Go! review."}

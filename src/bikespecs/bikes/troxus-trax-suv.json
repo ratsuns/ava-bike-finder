@@ -1,0 +1,48 @@
+{"bike": "Troxus|Trax SUV", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2599, "url": "https://www.troxusmobility.com/products/trax-suv-15-750-e-bike", "quote": "Sale price | $1,999.00 USD | Regular price | $2,599"},
+   {"kind": "retailer", "value": 2799, "url": "https://www.bikeberry.com/products/troxus-750w-trax-suv-15-750-electric-bike", "quote": "Sale price | $2,659.05 | Regular price | $2,799"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://www.troxusmobility.com/products/trax-suv-15-750-e-bike", "quote": "Class 3 eBike ⟶ As Sold"},
+   {"kind": "retailer", "value": 2, "url": "https://www.bikeberry.com/products/troxus-750w-trax-suv-15-750-electric-bike", "quote": "Class II ⟶ Frame Type:", "basis": "retailer says Class II but lists 28 mph pedal assist; conflicts with maker"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.troxusmobility.com/products/trax-suv-15-750-e-bike", "quote": "Max Speed\tMax Speed Up To 20 MPH on Throttle / Up To 28 MPH on Pedal Assist"},
+   {"kind": "retailer", "value": 28, "url": "https://www.bikeberry.com/products/troxus-750w-trax-suv-15-750-electric-bike", "quote": "Top Speed: Up to 28 MPH (Pedal Assist) / Up to 20 MPH (Throttle). ⟶ Range: Extended riding distance of up to 70 Miles per charge."}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://www.troxusmobility.com/products/trax-suv-15-750-e-bike", "quote": "Motor\tBafang® 48V/750W Hub-Drive Motor, 85Nm Peak Torque"},
+   {"kind": "retailer", "value": 85, "url": "https://www.bikeberry.com/products/troxus-750w-trax-suv-15-750-electric-bike", "quote": "Motor: Powerful Bafang® 48V/750W Hub-Drive Motor, delivering 85Nm Peak Torque."}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 720, "url": "https://www.troxusmobility.com/products/trax-suv-15-750-e-bike", "quote": "Battery\tUL-2271 Certified / Internal / Removable / Lithium Ion, 48V/15Ah (720Wh) with Samsung® Cells"},
+   {"kind": "retailer", "value": 720, "url": "https://www.bikeberry.com/products/troxus-750w-trax-suv-15-750-electric-bike", "quote": "Battery: High-capacity Removable 48V/15Ah (720Wh) Lithium Ion battery with Samsung® Cells. ⟶ Top Speed: Up to 28 MPH (Pedal Assist) / Up to 20 MPH (Throttle)."}
+  ],
+  "range": [
+   {"kind": "maker", "value": "70", "url": "https://www.troxusmobility.com/products/trax-suv-15-750-e-bike", "quote": "Range\tUp To 70 Miles Per Charge"},
+   {"kind": "retailer", "value": "70", "url": "https://www.bikeberry.com/products/troxus-750w-trax-suv-15-750-electric-bike", "quote": "Range: Extended riding distance of up to 70 Miles per charge."}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 75, "url": "https://www.troxusmobility.com/products/trax-suv-15-750-e-bike", "quote": "Net Weight\t75 lbs."},
+   {"kind": "retailer", "value": 75, "url": "https://www.bikeberry.com/products/troxus-750w-trax-suv-15-750-electric-bike", "quote": "Weight: Net Weight of 75 lbs."}
+  ],
+  "load": [
+   {"kind": "maker", "value": 300, "url": "https://www.troxusmobility.com/products/trax-suv-15-750-e-bike", "quote": "Weight Limit\tMaximum Load: 300 lbs. / Rider: 245 Lbs. / Rear Rack: 55 lbs."},
+   {"kind": "retailer", "value": 300, "url": "https://www.bikeberry.com/products/troxus-750w-trax-suv-15-750-electric-bike", "quote": "Maximum Load: Total weight limit is 300 lbs (Rider limit: 245 Lbs. / Rack limit: 55 lbs.). ⟶ Frame Options: Available in Step-Thru (Medium) and Step-Over (Large) options."}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub", "url": "https://www.troxusmobility.com/products/trax-suv-15-750-e-bike", "quote": "Rear Hub\tBafang® 48V 750W/ 28 MPH. 85Nm"},
+   {"kind": "retailer", "value": "750W hub", "url": "https://www.bikeberry.com/products/troxus-750w-trax-suv-15-750-electric-bike", "quote": "Motor: Powerful Bafang® 48V/750W Hub-Drive Motor, delivering 85Nm Peak Torque."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'5\"-6'4\"", "url": "https://www.troxusmobility.com/products/trax-suv-15-750-e-bike", "quote": "Frame Size\tMedium: 5'5\" - 5'10\" (166 - 178cms)\tLarge: 5'10\" - 6'4\" (176 - 193 cms)"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.troxusmobility.com/products/trax-suv-15-750-e-bike", "quote": "Frame\t6061-T6 Aluminum Frame, Dual Suspension, Travel 75mm"},
+   {"kind": "retailer", "value": "No", "url": "https://www.bikeberry.com/products/troxus-750w-trax-suv-15-750-electric-bike", "quote": "Sensor: Advanced system with Switchable Torque And Cadence Sensor Modes. ⟶ Frame: Durable 6061-T6 Aluminum Frame with Full Dual Suspension (75mm travel)."}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker regular $2,599 (sale $1,999) vs BikeBerry regular $2,799. BikeBerry labels it 'Class II' though it lists 28 mph pedal assist; maker says 'Class 3 eBike As Sold' — recorded maker class 3. Locally.com dealer page was behind a bot check. Used one WebSearch to find BikeBerry."}

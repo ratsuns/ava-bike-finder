@@ -1,0 +1,48 @@
+{"bike": "Benno|46er Performance Speed", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 5299, "url": "https://bennobikes.com/e-bikes/46er/", "quote": "Performance Speed: $5,299 USD"},
+   {"kind": "retailer", "value": 5299, "url": "https://bouldernordic.com/products/benno-46er-10d-evo-1-performance-speed-class-3-ebike-500wh-easy-on-anthracite-gray", "quote": "$4,599.00 | $5,299.00 | Save $700", "basis": "regular (crossed-out) price; $4,599 is a dealer sale price"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://bennobikes.com/e-bikes/46er/", "quote": "Assisted Speed\tUSA 28mph, NZ/CH 45km/h\tUSA/CAN 20mph, EU 25km/h", "basis": "maker states no class; Performance Speed column (1st) is USA 28mph, no throttle -> Class 3"},
+   {"kind": "retailer", "value": 3, "url": "https://bouldernordic.com/products/benno-46er-10d-evo-1-performance-speed-class-3-ebike-500wh-easy-on-anthracite-gray", "quote": "Ebike Class\tClass 3"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://bennobikes.com/e-bikes/46er/", "quote": "Max Speed: 28mph USA, 45km/h NZ"},
+   {"kind": "retailer", "value": 28, "url": "https://bouldernordic.com/products/benno-46er-10d-evo-1-performance-speed-class-3-ebike-500wh-easy-on-anthracite-gray", "quote": "Assist Speed (Mph)\t28"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://bennobikes.com/e-bikes/46er/", "quote": "Motor\tBosch Performance Speed 250W, 85Nm, GEN 4\tBosch Performance CX 250W, 85Nm, GEN 4"},
+   {"kind": "retailer", "value": 85, "url": "https://bouldernordic.com/products/benno-46er-10d-evo-1-performance-speed-class-3-ebike-500wh-easy-on-anthracite-gray", "quote": "Motor Torque (Nm)\t85"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 500, "url": "https://bennobikes.com/e-bikes/46er/", "quote": "Battery: 500Wh/1000Wh DualBattery", "basis": "single 500Wh standard; 1000Wh with optional second battery"},
+   {"kind": "retailer", "value": 500, "url": "https://bouldernordic.com/products/benno-46er-10d-evo-1-performance-speed-class-3-ebike-500wh-easy-on-anthracite-gray", "quote": "Battery Power (Wh)\t500"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "25–75", "url": "https://bennobikes.com/e-bikes/46er/", "quote": "Range Single Battery: 25-75mi (40-120km)"},
+   {"kind": "retailer", "value": "30–80", "url": "https://bouldernordic.com/products/benno-46er-10d-evo-1-performance-speed-class-3-ebike-500wh-easy-on-anthracite-gray", "quote": "Range Estimate (Mi)\t30-80"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://bennobikes.com/e-bikes/46er/", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://bouldernordic.com/products/benno-46er-10d-evo-1-performance-speed-class-3-ebike-500wh-easy-on-anthracite-gray", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": 420, "url": "https://bennobikes.com/e-bikes/46er/", "quote": "MAX GROSS WEIGHT 420LB/190KG (RIDER+CARGO+BIKE)", "basis": "total"},
+   {"kind": "retailer", "value": 420, "url": "https://bouldernordic.com/products/benno-46er-10d-evo-1-performance-speed-class-3-ebike-500wh-easy-on-anthracite-gray", "quote": "Gross Payload (Lbs)\t420", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Performance Speed 250W (GEN 4)", "url": "https://bennobikes.com/e-bikes/46er/", "quote": "Motor\tBosch Performance Speed 250W, 85Nm, GEN 4\tBosch Performance CX 250W, 85Nm, GEN 4"},
+   {"kind": "retailer", "value": "Bosch Performance Speed 250W (GEN 3)", "url": "https://bouldernordic.com/products/benno-46er-10d-evo-1-performance-speed-class-3-ebike-500wh-easy-on-anthracite-gray", "quote": "Bosch Performance Speed 250W 85Nm GEN 3 28MPH"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'3\"", "url": "https://bennobikes.com/e-bikes/46er/", "quote": "Frame Size\tOne Size – Fits Riders from 5’1” to 6’3”"},
+   {"kind": "retailer", "value": "5'1\"-6'3\"", "url": "https://bouldernordic.com/products/benno-46er-10d-evo-1-performance-speed-class-3-ebike-500wh-easy-on-anthracite-gray", "quote": "One Frame Size (Fits Riders From 5'1\" to 6'3\")"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://bennobikes.com/e-bikes/46er/", "quote": "Frame\t6061 Aluminum Alloy with Front Tray Mounts"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker specs from the 46er page's FULL SPECIFICATIONS, MOTOR SPECS and SIZING & CAPACITY tabs (Performance Speed = 1st column). Maker publishes no bike weight. Retailer (Boulder Nordic, '46er 10D Evo 1') says motor GEN 3 and range 30-80 mi; maker says GEN 4 and 25-75 mi (30-80 is the maker's CX figure). Retailer shows $4,599 sale with $5,299 crossed out. EBR search found no 46er review."}

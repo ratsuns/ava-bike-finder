@@ -1,0 +1,46 @@
+{"bike": "Emojo|Caddy Pro", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2799, "url": "https://emojobike.com/products/emojo-caddy-pro", "quote": "Regular price ⟶ $2,799.00", "basis": "sale price $2,599.00 not used"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://emojobike.com/products/emojo-caddy-pro", "quote": "Experience effortless power with our thumb throttle. Choose to use throttle-only or pedal alongside. Ergonomic leatherette grips ensure a comfortable touch. | Maximum Speed ⟶ 20 MPH", "basis": "maker states no class; thumb throttle and 20 mph -> 2"},
+   {"kind": "retailer", "value": 2, "url": "https://www.bikeberry.com/products/emojo-500w-caddy-pro-step-through-electric-tricycle", "quote": "Class II Throttle Pedal Assist"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://emojobike.com/products/emojo-caddy-pro", "quote": "Maximum Speed ⟶ 20 MPH"},
+   {"kind": "review", "value": 20, "url": "https://ridereview.com/reviews/emojo-caddy-pro-electric-trike-review", "quote": "Though the 500-watt motor power can easily reach 20 miles per hour and the battery can get 35 miles of use out of a single charge, there is no reverse function, which could make it somewhat difficult to back into a parking space."}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://emojobike.com/products/emojo-caddy-pro", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 720, "url": "https://emojobike.com/products/emojo-caddy-pro", "quote": "Battery ⟶ 720Wh (Lithium-ion)", "basis": "spec table: 48V/15Ah"},
+   {"kind": "retailer", "value": null, "url": "https://www.bikeberry.com/products/emojo-500w-caddy-pro-step-through-electric-tricycle", "quote": "Battery Capacity: 48V/15.6Ah", "basis": "older-generation listing (see notes); not used"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "65", "url": "https://emojobike.com/products/emojo-caddy-pro", "quote": "Range ⟶ 45 Miles | 65 Miles with Pedal Assist", "basis": "FAQ: 'up to 45 miles on throttle alone and up to 65 miles with pedal assist'"},
+   {"kind": "retailer", "value": null, "url": "https://www.bikeberry.com/products/emojo-500w-caddy-pro-step-through-electric-tricycle", "quote": "Battery Range: 35 Miles", "basis": "older-generation listing; not used"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 90, "url": "https://emojobike.com/products/emojo-caddy-pro", "quote": "Weight ⟶ 90 lbs (with battery)"},
+   {"kind": "retailer", "value": 90, "url": "https://www.bikeberry.com/products/emojo-500w-caddy-pro-step-through-electric-tricycle", "quote": "Vehicle Weight: 90 lbs (with battery)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 400, "url": "https://emojobike.com/products/emojo-caddy-pro", "quote": "Load ⟶ 400 lbs", "basis": "FAQ: 'supports up to 400 lbs total – rider plus cargo' (rider + cargo, not incl. trike)"},
+   {"kind": "retailer", "value": null, "url": "https://www.bikeberry.com/products/emojo-500w-caddy-pro-step-through-electric-tricycle", "quote": "Max. User Weight: 300 lbs", "basis": "older-generation listing; not used"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W hub (Bafang)", "url": "https://emojobike.com/products/emojo-caddy-pro", "quote": "Motor ⟶ 500W Brushless Motor | Brand | Bafang", "basis": "spec table: Power 500W, Type DC Brushless, Brand Bafang; FAQ calls it 'a 500W Emojo brushless motor'"},
+   {"kind": "retailer", "value": "500W front hub", "url": "https://www.bikeberry.com/products/emojo-500w-caddy-pro-step-through-electric-tricycle", "quote": "The Emojo Caddy Pro fat tire trike draws power from a 500W front hub motor, which can take the bike through dirt, mud, and uneven terrains."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'10\"-6'10\"", "url": "https://emojobike.com/products/emojo-caddy-pro", "quote": "Rider's Height ⟶ 4'10\"-6'10\" (Best for 5'4\"-6'10\")"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://emojobike.com/products/emojo-caddy-pro", "quote": "Frame | Aluminum 6061", "basis": "rigid fat-tire trike frame; no folding mentioned"},
+   {"kind": "retailer", "value": "No", "url": "https://www.bikeberry.com/products/emojo-500w-caddy-pro-step-through-electric-tricycle", "quote": "Frame: Aluminum 6061"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Fat-tire electric trike. BikeBerry and RideReview (Gadget Review) both describe an older Caddy Pro spec (48V/15.6Ah, 35 mi range, 300 lb max user, 26in front tire, $3,839.95) vs maker's current 48V/15Ah 720Wh, 65 mi PAS, 400 lb, 24in front - so those sources are used only for unchanged specs (class, speed, weight, motor). Maker spec table says Bafang motor; FAQ says Emojo motor."}

@@ -1,0 +1,49 @@
+{"bike": "Retrospec|Roo Rev XL Cargo Electric Bike", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1999.99, "url": "https://retrospec.com/products/roo-rev-xl-cargo-electric-bike", "quote": "Original Price: $1,999.99", "basis": "page shows sale price $1,299.99 with regular price $1,999.99"},
+   {"kind": "review", "value": 1999, "url": "https://electricbikereview.com/retrospec/roo-rev-xl-review/", "quote": "PRICE: ⟶ $1,999"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://retrospec.com/products/roo-rev-xl-cargo-electric-bike", "quote": "Pedal Assist  1-4 PAS Eco/Tour/Sport/Turbo; Throttle and walk-mode", "basis": "maker states no class; ships at 20 mph top assisted speed with a throttle = Class 2"},
+   {"kind": "review", "value": 3, "url": "https://electricbikereview.com/retrospec/roo-rev-xl-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 3", "basis": "review lists 28 mph; likely the setting after changing speed controls in the advanced menu"},
+   {"kind": "maker", "value": 2, "url": "https://help.retrospec.com/en-US/what-does-%22class-2%22-mean-629518", "quote": "All of our e-bikes are \"Class 2\" which means they have pedal assist and/or throttle with assistance of 20mph max. Top speed is dependent on the bike model.", "basis": "Retrospec help-center article covering all its e-bikes (updated 2 days ago), not model-specific"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://retrospec.com/products/roo-rev-xl-cargo-electric-bike", "quote": "20 mph Top Assisted Speed"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/retrospec/roo-rev-xl-review/", "quote": "TOP SPEED: ⟶ 28 MPH mph", "basis": "conflicts with maker's 20 mph; possibly the maximum after changing the speed setting"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://retrospec.com/products/roo-rev-xl-cargo-electric-bike", "quote": "Motor  750W Peak 1150W 85Nm torque"},
+   {"kind": "review", "value": 85, "url": "https://electricbikereview.com/retrospec/roo-rev-xl-review/", "quote": "MOTOR TORQUE: ⟶ 85Nm Newton meters"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 700, "url": "https://retrospec.com/products/roo-rev-xl-cargo-electric-bike", "quote": "48V/700Wh LG21700 Li-Ion Battery"},
+   {"kind": "review", "value": 700, "url": "https://electricbikereview.com/retrospec/roo-rev-xl-review/", "quote": "BATTERY WATT HOURS: ⟶ 700Wh wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "75", "url": "https://retrospec.com/products/roo-rev-xl-cargo-electric-bike", "quote": "Up to 75 Mile Range"},
+   {"kind": "review", "value": "75", "url": "https://electricbikereview.com/retrospec/roo-rev-xl-review/", "quote": "Range ⟶ Estimated Range (from Retrospec): Up to 75 miles", "basis": "tested 40 (PAS 4) to 64 (PAS 1) miles"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 72, "url": "https://retrospec.com/products/roo-rev-xl-cargo-electric-bike", "quote": "Item Weight  72 lbs (battery included)"},
+   {"kind": "review", "value": 71, "url": "https://electricbikereview.com/retrospec/roo-rev-xl-review/", "quote": "TOTAL WEIGHT: ⟶ 71 lbs lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 400, "url": "https://retrospec.com/products/roo-rev-xl-cargo-electric-bike", "quote": "400lbs Carry Capacity", "basis": "spec table: Recommended Weight Limit 400lbs; rear rack max 119 lbs"},
+   {"kind": "review", "value": 400, "url": "https://electricbikereview.com/retrospec/roo-rev-xl-review/", "quote": "All in all, it delivers on a punchy, capable ride that’s as quiet as it is competent. Plus with a 400-pound payload capacity, you’ve got room for the kids, the pets, or the groceries – all on your bike."}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W (1,150W peak)", "url": "https://retrospec.com/products/roo-rev-xl-cargo-electric-bike", "quote": "Motor  750W Peak 1150W 85Nm torque", "basis": "'750W Planetary Geared Hub Motor' also on page"},
+   {"kind": "review", "value": "750W rear hub (1,150W peak)", "url": "https://electricbikereview.com/retrospec/roo-rev-xl-review/", "quote": "The Rev Roo XL comes with a 750W rear hub motor, which seems like a standard for cargo bikes these days. With peaking power up to 1,150W’s and 85Nm of torque, the Roo Rev XL has the muscle needed to haul your cargo."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'5\"-6'5\"", "url": "https://retrospec.com/products/roo-rev-xl-cargo-electric-bike", "quote": "17\" | 5'5\" to 6'5\"", "basis": "size chart"},
+   {"kind": "review", "value": "5'5\"-6'5\"", "url": "https://electricbikereview.com/retrospec/roo-rev-xl-review/", "quote": "5' 5\" to 6' 5\" ⟶ FRAME TYPES:"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://retrospec.com/products/roo-rev-xl-cargo-electric-bike", "quote": "Frame  Hydroformed aluminum with seat tube battery and replaceable derailleur hanger", "basis": "fixed long-tail cargo frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker says 20 mph top assisted speed (Class 2 by throttle); ElectricBikeReview lists Class 3 / 28 mph, likely after changing speed controls. Maker spec table has mislabeled rows ('36V/350W range', '10.4Ah battery (350W)') although the bike is 48V/700Wh/750W. Recheck: read the Roo/Roo XL owner's manual PDF (20 mph; no class) and Retrospec's 'What does Class 2 mean?' help article."}

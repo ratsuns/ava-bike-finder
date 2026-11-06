@@ -1,0 +1,49 @@
+{"bike": "Letrigo|Minivan SE", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1899, "url": "https://letrigo.com/products/minivan-se", "quote": "$1,899.00 USD ⟶ (20)"},
+   {"kind": "retailer", "value": 1899, "url": "https://www.citygrounds.com/products/letrigo-minivan-se-electric-bike", "quote": "$1,899.00 ⟶ ADD TO CART"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://letrigo.com/products/minivan-se", "quote": "Speed ⟶ Class 2: 20mph | Class 3: 28mph | Intelligent 5 level pedal assist. Throttle on demand", "basis": "lists Class 2: 20mph first and Class 3: 28mph; has throttle -> recorded as Class 2 (20 mph with throttle), adjustable to Class 3"},
+   {"kind": "retailer", "value": 2, "url": "https://www.citygrounds.com/products/letrigo-minivan-se-electric-bike", "quote": "Speed:Class 2: 20mph / Class 3: 28mph"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://letrigo.com/products/minivan-se", "quote": "Speed ⟶ Class 2: 20mph", "basis": "adjustable to 28 mph (Class 3: 28mph)"},
+   {"kind": "retailer", "value": 20, "url": "https://www.citygrounds.com/products/letrigo-minivan-se-electric-bike", "quote": "Speed:Class 2: 20mph / Class 3: 28mph", "basis": "adjustable to 28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 90, "url": "https://letrigo.com/products/minivan-se", "quote": "Hentach, Heavy duty Cargoline motor, nylon-steel gears ⟶ 90 Nm of torque"},
+   {"kind": "retailer", "value": 90, "url": "https://www.citygrounds.com/products/letrigo-minivan-se-electric-bike", "quote": "Motor:750W (1200W peak) Hentach Cargoline motor, nylon-steel gears, 90Nm torque, 30,000km lifespan"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 672, "url": "https://letrigo.com/products/minivan-se", "quote": "Battery ⟶ 48V/14AH battery with smart CANBUS protocol", "basis": "48V x 14Ah"},
+   {"kind": "retailer", "value": 672, "url": "https://www.citygrounds.com/products/letrigo-minivan-se-electric-bike", "quote": "Battery:48V 14Ah LG lithium cells, CANBUS protocol, UL certified", "basis": "48V x 14Ah"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "40", "url": "https://letrigo.com/products/minivan-se", "quote": "Our 48v/14ah battery system, Certified to UL 2271 by SGS, can travel up to 40 miles(64 km). Ensure your journey is uninterrupted. Easily carry heavier loads without worrying about your bike's performance degradation. Enjoy every moment of your ride. ⟶ Tektro Hydraulic"},
+   {"kind": "retailer", "value": "40", "url": "https://www.citygrounds.com/products/letrigo-minivan-se-electric-bike", "quote": "up to 40 miles(64 km). Ensure your journey is uninterrupted."}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 71, "url": "https://letrigo.com/products/minivan-se", "quote": "Net Weight ⟶ 71lbs", "basis": "net weight; page does not say whether battery is included"},
+   {"kind": "retailer", "value": 71, "url": "https://www.citygrounds.com/products/letrigo-minivan-se-electric-bike", "quote": "Net Weight:71 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 450, "url": "https://letrigo.com/products/minivan-se", "quote": "Load Capacity ⟶ Total Load Capacity: 450lbs", "basis": "'Total Load Capacity' (rear seat 140 lbs); page does not say whether bike weight is included"},
+   {"kind": "retailer", "value": 450, "url": "https://www.citygrounds.com/products/letrigo-minivan-se-electric-bike", "quote": "Load Capacity:450 lbs total, 140 lbs rear seat"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub (1,200W peak)", "url": "https://letrigo.com/products/minivan-se", "quote": "Motor ⟶ 750W(peak power 1200W) | Rear Hub Motor"},
+   {"kind": "retailer", "value": "750W rear hub (1,200W peak)", "url": "https://www.citygrounds.com/products/letrigo-minivan-se-electric-bike", "quote": "Motor:750W (1200W peak) Hentach Cargoline motor, nylon-steel gears, 90Nm torque, 30,000km lifespan"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://letrigo.com/products/minivan-se", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://www.citygrounds.com/products/letrigo-minivan-se-electric-bike", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://letrigo.com/products/minivan-se", "quote": "Frame ⟶ 6061 aluminum, heavy duty design, with LED light strip integrated", "basis": "long-tail cargo frame; no folding mentioned"},
+   {"kind": "retailer", "value": "No", "url": "https://www.citygrounds.com/products/letrigo-minivan-se-electric-bike", "quote": "Frame:6061 aluminum, heavy duty, integrated LED light strip"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker Shopify data shows compare_at = price ($1,899), so $1,899 is regular. Canadian version: 500W motor, 32 km/h. No EBR/EBReport/Electrek coverage; City Grounds (dealer) spec tab used (read via textContent, tab content hidden). Rider height not published."}

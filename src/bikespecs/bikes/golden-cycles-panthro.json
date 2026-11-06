@@ -1,0 +1,49 @@
+{"bike": "Golden Cycles|Panthro", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1399, "url": "https://goldenbicycles.com/products/panthro-green", "quote": "$ 1,399.00 ⟶ Shipping calculated at checkout.", "basis": "Army Green; no crossed-out price shown"},
+   {"kind": "retailer", "value": 1399, "url": "https://electrixmotoco.com/products/golden-cycles-panthro", "quote": "$1,399.00 ⟶ Color"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://goldenbicycles.com/products/panthro-green", "quote": "Top Speed: 28mph*", "basis": "no class stated; description says 28 mph 'by pedal assist', so Class 3. Throttle not mentioned"},
+   {"kind": "retailer", "value": 3, "url": "https://electrixmotoco.com/products/golden-cycles-panthro", "quote": "750W Rear Hub Motor – Tame hills and cruise effortlessly with this powerful motor, reaching speeds up to 28 mph with pedal assist.", "basis": "28 mph pedal assist means Class 3; no class stated"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://goldenbicycles.com/products/panthro-green", "quote": "Top Speed: 28mph*"},
+   {"kind": "retailer", "value": 28, "url": "https://electrixmotoco.com/products/golden-cycles-panthro", "quote": "750W Rear Hub Motor – Tame hills and cruise effortlessly with this powerful motor, reaching speeds up to 28 mph with pedal assist."}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 51, "url": "https://goldenbicycles.com/products/panthro-green", "quote": "Torque: 51N.m"},
+   {"kind": "retailer", "value": null, "url": "https://electrixmotoco.com/products/golden-cycles-panthro", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 624, "url": "https://goldenbicycles.com/products/panthro-green", "quote": "Battery: 48v 13Ah", "basis": "no Wh stated; 48 V x 13 Ah = 624 Wh"},
+   {"kind": "retailer", "value": 624, "url": "https://electrixmotoco.com/products/golden-cycles-panthro", "quote": "48V 13Ah Battery – Go the distance with up to 45 miles per charge, so you can ride more and charge less.", "basis": "48 V x 13 Ah = 624 Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "45", "url": "https://goldenbicycles.com/products/panthro-green", "quote": "Range: 45 Miles", "basis": "assist mode not stated"},
+   {"kind": "retailer", "value": "45", "url": "https://electrixmotoco.com/products/golden-cycles-panthro", "quote": "48V 13Ah Battery – Go the distance with up to 45 miles per charge, so you can ride more and charge less."}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://goldenbicycles.com/products/panthro-green", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://electrixmotoco.com/products/golden-cycles-panthro", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://goldenbicycles.com/products/panthro-green", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://electrixmotoco.com/products/golden-cycles-panthro", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub", "url": "https://goldenbicycles.com/products/panthro-green", "quote": "Motor: 750W Motor | Derailleur : Shimano 7 Speed | Top Speed: 28mph* | Range: 45 Miles | Frame Material: Steel | Wheel Size: 20”*4.0 | Braking System: Hydraulic Disc Brake | Torque: 51N.m | Charging Time: 6-8 hours | Motor Position: Rear Hub Motor"},
+   {"kind": "retailer", "value": "750W rear hub", "url": "https://electrixmotoco.com/products/golden-cycles-panthro", "quote": "750W Rear Hub Motor – Tame hills and cruise effortlessly with this powerful motor, reaching speeds up to 28 mph with pedal assist."}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://goldenbicycles.com/products/panthro-green", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://electrixmotoco.com/products/golden-cycles-panthro", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": null, "url": "https://goldenbicycles.com/products/panthro-green", "quote": "Frame Material: Steel", "basis": "folding not mentioned either way"},
+   {"kind": "retailer", "value": null, "url": "https://electrixmotoco.com/products/golden-cycles-panthro", "quote": ""}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page (goldenbicycles.com, 'goldencycles', South El Monte CA) gives only a short spec list: no weight, load, rider height or fold info, no class and no throttle mention. Wh computed from 48v 13Ah. Page offers 'Racer' and 'Crusier' styles at the same price. 20x4.0 fat tires, steel frame. A different 'Strike Cycles Panthro' also exists at other dealers - not used. BikeBerry and EZE Ryders Panthro links from search were 404. | recheck: looked for folding info on the maker page (incl. hidden text), Stacked BMX Shop (same spec list: 'Frame Material: Steel', nothing on folding), 1 WebSearch; BikeBerry 404, City Grounds and eBike Super Shop redirect to home. No page says whether it folds."}

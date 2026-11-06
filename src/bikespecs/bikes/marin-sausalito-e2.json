@@ -1,0 +1,38 @@
+{"bike": "Marin|Sausalito E2", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 3899, "url": "https://marinbikes.com/products/2026-sausalito-e2-na", "quote": "$3,899.00 *"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://marinbikes.com/products/2026-sausalito-e2-na", "quote": "Bosch Performance Sport, 250W, 70Nm, Class 3 (28mph, 45Km/h)", "basis": "maker states Class 3"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://marinbikes.com/products/2026-sausalito-e2-na", "quote": "Bosch Performance Sport, 250W, 70Nm, Class 3 (28mph, 45Km/h)"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 70, "url": "https://marinbikes.com/products/2026-sausalito-e2-na", "quote": "Bosch Performance Sport, 250W, 70Nm, Class 3 (28mph, 45Km/h)"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 545, "url": "https://marinbikes.com/products/2026-sausalito-e2-na", "quote": "Bosch Power Pack 545, 545Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "25–93", "url": "https://marinbikes.com/products/2026-sausalito-e2-na", "quote": "25-93 miles/40-150km"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://marinbikes.com/products/2026-sausalito-e2-na", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://marinbikes.com/products/2026-sausalito-e2-na", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "250W Bosch Performance Sport mid-drive", "url": "https://marinbikes.com/products/2026-sausalito-e2-na", "quote": "Bosch Performance Sport, 250W, 70Nm, Class 3 (28mph, 45Km/h)"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://marinbikes.com/products/2026-sausalito-e2-na", "quote": "", "basis": "only an interactive height slider; no published range"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://marinbikes.com/products/2026-sausalito-e2-na", "quote": "Series 3 Butted and Formed 6061 Aluminum, 650B Wheel, Forged Motor Mount, Hydroformed Downtube Battery Mount, Integrated Wiring, Internal Housing, Kickstand, Rack, and Fender Mounts", "basis": "standard frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker only. 2026 Sausalito E2 (NA) is a new Bosch Performance Sport Class 3 version. No independent page for this generation: EBR search has no Marin results, 99 Spokes lists only 2021-2024 E2s, Revolution Bike Shop doesn't carry it, and the ebiketips review is the 2022 Shimano E6100 version (different motor), so not used. No weight, load or rider-height range on the maker page."}

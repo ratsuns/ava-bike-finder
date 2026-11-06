@@ -1,0 +1,47 @@
+{"bike": "MOD|Berlin Step-Thru 3", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1999, "url": "https://mod-bikes.com/products/mod-berlin-step-thru-commuter-ebike?variant=39631584854156", "quote": "$1,799 | $1,799 | Regular price | $1,999 | $1,999 | Sale price", "basis": "regular price $1,999; on sale at $1,799"},
+   {"kind": "review", "value": null, "url": "https://electrek.co/2024/07/17/europe-meets-texas-the-mod-berlin-electric-bike-seeks-to-find-the-best-of-both/", "quote": "Now launching for pre-order, the MOD Berlin currently carries a promotional price of US $2,199, marked down by $300 from its MSRP.", "basis": "July 2024 launch pricing ($2,499 MSRP); MOD now lists $1,999 regular"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://mod-bikes.com/products/mod-berlin-step-thru-commuter-ebike?variant=39631584854156", "quote": "Class | Class 2 (adjustable to Class 1 or 3)", "basis": "ships as Class 2"},
+   {"kind": "review", "value": null, "url": "https://electrek.co/2024/07/17/europe-meets-texas-the-mod-berlin-electric-bike-seeks-to-find-the-best-of-both/", "quote": "In the case of the new MOD Berlin, the bike sports a 750W hub motor and can reach a maximum speed of 28 mph (45 km/h) on pedal assist, maxing out the legally allowable performance specs while staying within Class 3 e-bike regulations (at least, when riders can maintain enough self-discipline to keep the thumb throttle disengaged).", "basis": "describes Class 3 capability; not the shipped setting"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://mod-bikes.com/products/mod-berlin-step-thru-commuter-ebike?variant=39631584854156", "quote": "Speed | Up to 20 mph (Off-road mode: up to 28 mph)", "basis": "adjustable to 28 mph (off-road mode)"},
+   {"kind": "review", "value": 28, "url": "https://electrek.co/2024/07/17/europe-meets-texas-the-mod-berlin-electric-bike-seeks-to-find-the-best-of-both/", "quote": "In the case of the new MOD Berlin, the bike sports a 750W hub motor and can reach a maximum speed of 28 mph (45 km/h) on pedal assist, maxing out the legally allowable performance specs while staying within Class 3 e-bike regulations (at least, when riders can maintain enough self-discipline to keep the thumb throttle disengaged).", "basis": "max pedal-assist speed"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 69, "url": "https://mod-bikes.com/products/mod-berlin-step-thru-commuter-ebike?variant=39631584854156", "quote": "Motor | MOD DRIVE 750W Geared Hub - 69 Nm of torque"},
+   {"kind": "review", "value": null, "url": "https://electrek.co/2024/07/17/europe-meets-texas-the-mod-berlin-electric-bike-seeks-to-find-the-best-of-both/", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 615, "url": "https://mod-bikes.com/products/mod-berlin-step-thru-commuter-ebike?variant=39631584854156", "quote": "Battery | MOD LG Powerpack – Li-ion 48V 12.8Ah (615Wh)"},
+   {"kind": "review", "value": 615, "url": "https://electrek.co/2024/07/17/europe-meets-texas-the-mod-berlin-electric-bike-seeks-to-find-the-best-of-both/", "quote": "The battery is a 615Wh unit rated at 48V and 12.8Ah, claiming a maximum of 45 miles (72 km) of range on pedal assist. With the ability to mount a second battery, riders can score up to 90 miles (145 km) of range."}
+  ],
+  "range": [
+   {"kind": "maker", "value": "45", "url": "https://mod-bikes.com/products/mod-berlin-step-thru-commuter-ebike?variant=39631584854156", "quote": "Range | Up to 45/100 miles (Dual Battery)", "basis": "45 single battery, 100 with optional second battery"},
+   {"kind": "review", "value": "45", "url": "https://electrek.co/2024/07/17/europe-meets-texas-the-mod-berlin-electric-bike-seeks-to-find-the-best-of-both/", "quote": "The battery is a 615Wh unit rated at 48V and 12.8Ah, claiming a maximum of 45 miles (72 km) of range on pedal assist. With the ability to mount a second battery, riders can score up to 90 miles (145 km) of range."}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 66, "url": "https://mod-bikes.com/products/mod-berlin-step-thru-commuter-ebike?variant=39631584854156", "quote": "Bike Weight (w/o battery) | 58.5 lbs | Battery Weight | 7.5 lbs", "basis": "58.5 lb without battery + 7.5 lb battery (page header also says 'Only 58 Lbs', i.e. without battery)"},
+   {"kind": "review", "value": 58, "url": "https://electrek.co/2024/07/17/europe-meets-texas-the-mod-berlin-electric-bike-seeks-to-find-the-best-of-both/", "quote": "On the mechanical side, the 58 lb (26 kg) electric bike features an aluminum frame with a step-through design and large diameter 29″ wheels.", "basis": "matches maker's without-battery figure"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 275, "url": "https://mod-bikes.com/products/mod-berlin-step-thru-commuter-ebike?variant=39631584854156", "quote": "Payload Capacity | 275 lbs"},
+   {"kind": "review", "value": null, "url": "https://electrek.co/2024/07/17/europe-meets-texas-the-mod-berlin-electric-bike-seeks-to-find-the-best-of-both/", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear geared hub", "url": "https://mod-bikes.com/products/mod-berlin-step-thru-commuter-ebike?variant=39631584854156", "quote": "Motor | MOD DRIVE 750W Geared Hub - 69 Nm of torque"},
+   {"kind": "review", "value": "750W hub", "url": "https://electrek.co/2024/07/17/europe-meets-texas-the-mod-berlin-electric-bike-seeks-to-find-the-best-of-both/", "quote": "In the case of the new MOD Berlin, the bike sports a 750W hub motor and can reach a maximum speed of 28 mph (45 km/h) on pedal assist, maxing out the legally allowable performance specs while staying within Class 3 e-bike regulations (at least, when riders can maintain enough self-discipline to keep the thumb throttle disengaged)."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'9\"", "url": "https://mod-bikes.com/products/mod-berlin-step-thru-commuter-ebike?variant=39631584854156", "quote": "6'9\" | Max Height | 5'1\" | Min Height"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://mod-bikes.com/products/mod-berlin-step-thru-commuter-ebike?variant=39631584854156", "quote": "Frame | High-performance 6061 aluminum frame", "basis": "non-folding frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker spec tables are in collapsed accordions (expanded to read). Electrek's July 2024 launch article covers the new (3rd-gen, torque-sensor, 615Wh) MOD Berlin step-through; its 58 lb matches the maker's without-battery weight, so with battery it's 66 lb. Launch MSRP $2,499; now $1,999 regular. MOD also sells a separate 'Berlin 3 Class 1' version (not covered here)."}

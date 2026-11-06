@@ -1,0 +1,51 @@
+{"bike": "Fuji|Conductor", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "retailer", "value": 1799.99, "url": "https://www.wyckoffcycle.com/bikes/electric-bikes/conductor-21-usa-19-satin-black__2244", "quote": "CONDUCTOR 2.1+ USA 19 SATIN BLACK | $999.99 | $1,799.99 | 44% off | This item is inactive", "basis": "regular $1,799.99 shown with $999.99 clearance price; listing is inactive"},
+   {"kind": "review", "value": 1699, "url": "https://99spokes.com/bikes/fuji/2019/conductor-2.1", "quote": "Manufacturer Price | $1,699", "basis": "99 Spokes spec aggregator, 2019 Conductor 2.1+"},
+   {"kind": "review", "value": 1799, "url": "https://99spokes.com/bikes/fuji/2025/conductor-2.1plus", "quote": "Manufacturer Price ⟶ $1,799", "basis": "2025 Conductor 2.1+"}
+  ],
+  "cls": [
+   {"kind": "retailer", "value": 1, "url": "https://www.wyckoffcycle.com/bikes/electric-bikes/conductor-21-usa-19-satin-black__2244", "quote": "Drive Unit | Bafang H400B rear hub motor, 250W rated power, 20mph OR 25kph maximum assist", "basis": "no class stated; 20 mph assist and no throttle in the parts list (display 'w/ walk assist' only), so Class 1"},
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/fuji/2019/conductor-2.1", "quote": ""},
+   {"kind": "review", "value": 1, "url": "https://99spokes.com/bikes/fuji/2025/conductor-2.1plus", "quote": "Motor ⟶ Bafang H400B rear hub motor, 250W rated power, 20mph OR 25kph maximum assist", "basis": "class not stated; inferred Class 1 from 20 mph max assist with no throttle listed (display line: 5 mode LED display w/ walk assist); 2025 Conductor 2.1+"}
+  ],
+  "spd": [
+   {"kind": "retailer", "value": 20, "url": "https://www.wyckoffcycle.com/bikes/electric-bikes/conductor-21-usa-19-satin-black__2244", "quote": "Drive Unit | Bafang H400B rear hub motor, 250W rated power, 20mph OR 25kph maximum assist"},
+   {"kind": "review", "value": 20, "url": "https://99spokes.com/bikes/fuji/2019/conductor-2.1", "quote": "Motor ⟶ Bafang H400B rear hub motor, 250W rated power, 20mph maximum assist"}
+  ],
+  "tq": [
+   {"kind": "retailer", "value": null, "url": "https://www.wyckoffcycle.com/bikes/electric-bikes/conductor-21-usa-19-satin-black__2244", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/fuji/2019/conductor-2.1", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "retailer", "value": 417, "url": "https://www.wyckoffcycle.com/bikes/electric-bikes/conductor-21-usa-19-satin-black__2244", "quote": "Battery | Fuji Power Pack 417Wh w/ 2A charger"},
+   {"kind": "review", "value": 417, "url": "https://99spokes.com/bikes/fuji/2019/conductor-2.1", "quote": "Battery ⟶ Fuji Power Pack 417Wh w/ 2A charger"}
+  ],
+  "range": [
+   {"kind": "retailer", "value": null, "url": "https://www.wyckoffcycle.com/bikes/electric-bikes/conductor-21-usa-19-satin-black__2244", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/fuji/2019/conductor-2.1", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "retailer", "value": null, "url": "https://www.wyckoffcycle.com/bikes/electric-bikes/conductor-21-usa-19-satin-black__2244", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/fuji/2019/conductor-2.1", "quote": ""}
+  ],
+  "load": [
+   {"kind": "retailer", "value": null, "url": "https://www.wyckoffcycle.com/bikes/electric-bikes/conductor-21-usa-19-satin-black__2244", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/fuji/2019/conductor-2.1", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "retailer", "value": "250W Bafang H400B rear hub", "url": "https://www.wyckoffcycle.com/bikes/electric-bikes/conductor-21-usa-19-satin-black__2244", "quote": "Drive Unit | Bafang H400B rear hub motor, 250W rated power, 20mph OR 25kph maximum assist"},
+   {"kind": "review", "value": "250W Bafang H400B rear hub", "url": "https://99spokes.com/bikes/fuji/2019/conductor-2.1", "quote": "Motor ⟶ Bafang H400B rear hub motor, 250W rated power, 20mph maximum assist"}
+  ],
+  "height": [
+   {"kind": "retailer", "value": null, "url": "https://www.wyckoffcycle.com/bikes/electric-bikes/conductor-21-usa-19-satin-black__2244", "quote": "Sizes | S (15\"), M (17\"), L (19\"), XL (21\"), XXL (23\")", "basis": "frame sizes only, no rider heights"},
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/fuji/2019/conductor-2.1", "quote": "Sizing | SM | 5'4\" – 5'11\" | MD | 5'8\" – 5'11\" | LG | 5'10\" – 6'4\"", "basis": "99 Spokes sizing lists only SM-LG and looks like its own estimate (the bike comes in S-XXL); not used"}
+  ],
+  "fold": [
+   {"kind": "retailer", "value": "No", "url": "https://www.wyckoffcycle.com/bikes/electric-bikes/conductor-21-usa-19-satin-black__2244", "quote": "Frame | Fuji A2-SL Custom-Butted Alloy, integrated head tube, down tube battery mount, fender and rack mounts", "basis": "fixed alloy frame; nothing about folding"},
+   {"kind": "review", "value": "No", "url": "https://99spokes.com/bikes/fuji/2025/conductor-2.1plus", "quote": "A 700c aluminum frame commuter e-bike with modest components and shimano hydraulic disc brakes.", "basis": "fixed aluminum frame; nothing about folding; 2025 Conductor 2.1+"}
+  ]
+ },
+ "status": {"sources": [{"kind": "retailer", "value": "discontinued", "url": "https://www.wyckoffcycle.com/bikes/electric-bikes/conductor-21-usa-19-satin-black__2244", "quote": "This item is inactive", "basis": "dealer listing for the 2019 model is inactive and on clearance; maker page could not be checked"}]},
+ "notes": "MAKER PAGE NOT REACHED: the browser refused every fujibikes.com URL ('navigation ... was denied or failed'). The given src link (conductor-21-19) is the 2019 Conductor 2.1+; sources used are for that model. Price differs: dealer regular $1,799.99 vs 99 Spokes 'Manufacturer Price' $1,699. Class 1 inferred (20 mph, no throttle listed). No weight, load, range, torque or rider heights found. Status 'discontinued' is only inferred from an inactive dealer listing for a 2019 model, not stated by the maker. 1 WebSearch used. | recheck: read 99 Spokes 2025 Conductor 2.1+ (manufacturer price $1,799, 20 mph assist, no throttle listed); fujibikes.com still blocked; no page states a class."}

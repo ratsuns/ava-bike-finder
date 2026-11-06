@@ -1,0 +1,47 @@
+{"bike": "Pedego|Latch (2025)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2095, "url": "https://pedegoelectricbikes.com/products/latch", "quote": "$2,095.00 ⟶ Top Speed", "basis": "price shown with the default 52V 10.5Ah battery; no crossed-out price shown"},
+   {"kind": "retailer", "value": 2795, "url": "https://www.practicalcycle.com/product/pedego-latch-folding-electric-bike/", "quote": "Original price was: $2,795.00. ⟶ $2,295.00", "basis": "dealer's regular price (battery size not stated, page mentions 17.5ah); on sale for $2,295.00"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://pedegoelectricbikes.com/products/latch", "quote": "SPEED ⟶ 20 MPH", "basis": "maker states 20 mph but no class and no throttle in the spec list"},
+   {"kind": "retailer", "value": 2, "url": "https://www.practicalcycle.com/product/pedego-latch-folding-electric-bike/", "quote": "Like all Pedegos, the Latch is designed with you in mind. It’s fully loaded with user friendly features that make riding even more fun and practical. It includes: ⟶ A twist-and-go throttle for full power on demand", "basis": "throttle + 20 mph = Class 2; page describes the Latch V2 (500 watt rear drive, 52v)"},
+   {"kind": "maker", "value": 2, "url": "https://pedegoelectricbikes.com/cdn/shop/files/FS23_-_Latch.pdf", "quote": "15.5 MPH MAX WITH PEDAL ASSIST; 20MPH MAX WITH THROTTLE ASSIST.", "basis": "Pedego FS23 Latch fact sheet (linked from the Latch: 2025 product page): twist throttle to 20 mph = Class 2; the sheet is dated FS23, so it may describe the earlier build"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://pedegoelectricbikes.com/products/latch", "quote": "SPEED ⟶ 20 MPH"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 45, "url": "https://pedegoelectricbikes.com/products/latch", "quote": "BLACK 52V BRUSHLESS GEARED REAR HUB MOTOR; 500 WATT NOMINAL POWER RATING; 45NM TORQUE; QUICK DISCONNECT CABLE W/ WATERPROOF CONNECTION ⟶ BATTERY"},
+   {"kind": "retailer", "value": null, "url": "https://www.practicalcycle.com/product/pedego-latch-folding-electric-bike/", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 546, "url": "https://pedegoelectricbikes.com/products/latch", "quote": "Battery: Battery - 52V 10.5Ah UL2271 ⟶ BATTERY - 52V 10.5AH UL2271", "basis": "52 V x 10.5 Ah, standard (default) battery; optional 52V 17.5Ah = 910 Wh"},
+   {"kind": "retailer", "value": null, "url": "https://www.practicalcycle.com/product/pedego-latch-folding-electric-bike/", "quote": "Note: Videos are using Latch V1 – Now Latch V2 has 500 watt Rear Drive and uses 52v x 10ah or 17.5ah battery. ⟶ How to Fold the Pedego Latch", "basis": "gives 52v x 10ah or 17.5ah, which does not match the maker's 10.5Ah exactly"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "75", "url": "https://pedegoelectricbikes.com/products/latch", "quote": "RANGE UP TO ⟶ 75 MILES", "basis": "'up to'; page does not say which battery"},
+   {"kind": "retailer", "value": null, "url": "https://www.practicalcycle.com/product/pedego-latch-folding-electric-bike/", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 56.0, "url": "https://pedegoelectricbikes.com/products/latch", "quote": "BIKE (NO BATTERY) | ONE SIZE: 47.2 LB. | BATTERY | 52V/17.5AH: 10 LB; 52V/10.5AH: 8.8 LB.", "basis": "47.2 lb bike + 8.8 lb standard 10.5Ah battery (57.2 lb with the 17.5Ah)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 250, "url": "https://pedegoelectricbikes.com/products/latch", "quote": "Payload ⟶ 250 LB"},
+   {"kind": "maker", "value": 250, "url": "https://pedegoelectricbikes.com/products/latch", "quote": "WEIGHT LIMIT ⟶ 250 LB"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W rear hub", "url": "https://pedegoelectricbikes.com/products/latch", "quote": "BLACK 52V BRUSHLESS GEARED REAR HUB MOTOR; 500 WATT NOMINAL POWER RATING; 45NM TORQUE; QUICK DISCONNECT CABLE W/ WATERPROOF CONNECTION ⟶ BATTERY"},
+   {"kind": "retailer", "value": "500W rear hub", "url": "https://www.practicalcycle.com/product/pedego-latch-folding-electric-bike/", "quote": "Note: Videos are using Latch V1 – Now Latch V2 has 500 watt Rear Drive and uses 52v x 10ah or 17.5ah battery. ⟶ How to Fold the Pedego Latch"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'11\"+", "url": "https://pedegoelectricbikes.com/products/latch", "quote": "RIDER HEIGHT ⟶ 4’11”+", "basis": "minimum only"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "Yes", "url": "https://pedegoelectricbikes.com/products/latch", "quote": "A nominal $15 Battery Recycling Fee is assessed with every lithium-ion battery we sell Read More ⟶ COMPACT FOLDING POWER FOR CITY EXPLORERS"},
+   {"kind": "retailer", "value": "Yes", "url": "https://www.practicalcycle.com/product/pedego-latch-folding-electric-bike/", "quote": "The Pedego Latch is an electric folding bike like no other – it rides like a dream and easily folds in about 30 seconds."}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page spec block is labelled 'Latch: 2025'. Shown price $2,095.00 is with the default 10.5Ah battery (the store's product data lists the bike variants at $1,346, apparently before the battery option). Maker spec list gives no class and no throttle; Practical Cycle (Pedego dealer, describes Latch V2 with 500 watt rear drive) lists a twist-and-go throttle, so Class 2. Its battery note (52v x 10ah) differs slightly from the maker's 10.5Ah. EBR's 'Pedego Latch Review' is the 2016 model (36V 250W front hub), so not used. Recheck: looked at the product page full text (Speed 20 MPH, no class; throttle only in customer reviews) and the FS23 Latch fact sheet PDF it links (twist-and-go throttle, 20MPH max with throttle). That fact sheet gives 15.5 MPH max with pedal assist, which differs from the product page's 20 MPH."}

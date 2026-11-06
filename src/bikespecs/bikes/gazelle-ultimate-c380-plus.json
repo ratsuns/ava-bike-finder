@@ -1,0 +1,54 @@
+{"bike": "Gazelle|Ultimate C380+", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 4999, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-c380plus", "quote": "$4,999 | Shop stock: First, configure your bike", "basis": "single price shown, no crossed-out price"},
+   {"kind": "retailer", "value": 4998.99, "url": "https://mikesbikes.com/products/gazelle-ultimate-c380-2026", "quote": "Regular price ⟶ $4,998.99"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/gazelle/ultimate-c380-plus-hmb/", "quote": "PRICE: ⟶ $4749", "basis": "review of the 2022 Ultimate C380+ HMB (older generation); price not used"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-c380plus", "quote": "Ebike Max Speed ⟶ 28 mph", "basis": "no class line on the maker spec; ships at 28 mph pedal assist, no throttle listed, segment 'Speed pedelec' -> Class 3"},
+   {"kind": "retailer", "value": 3, "url": "https://mikesbikes.com/products/gazelle-ultimate-c380-2026", "quote": "Bosch Performance Line Sport (85 Nm) ⟶ Class 3, 28 mph"},
+   {"kind": "review", "value": 3, "url": "https://electricbikereview.com/gazelle/ultimate-c380-plus-hmb/", "quote": "ELECTRIC BIKE CLASS: ⟶ Speed Pedelec (Class 3)", "basis": "2022 older generation; class unchanged"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-c380plus", "quote": "Ebike Max Speed ⟶ 28 mph"},
+   {"kind": "retailer", "value": 28, "url": "https://mikesbikes.com/products/gazelle-ultimate-c380-2026", "quote": "Max Assisted Speed\t28 mph ⟶ Charger\tBosch 4 Ah"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/gazelle/ultimate-c380-plus-hmb/", "quote": "TOP SPEED: ⟶ 28 mph (45 kph)", "basis": "2022 older generation; speed unchanged"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-c380plus", "quote": "Engine Max Torque (Nm) ⟶ 85"},
+   {"kind": "retailer", "value": 85, "url": "https://mikesbikes.com/products/gazelle-ultimate-c380-2026", "quote": "Motor\tBosch Performance Line Sport (85 Nm) ⟶ Battery\tBosch Integrated 540Wh"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/gazelle/ultimate-c380-plus-hmb/", "quote": "MOTOR TORQUE: ⟶ 85 Newton meters", "basis": "older generation motor (Performance Line Speed); not used"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 540, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-c380plus", "quote": "Battery and Range ⟶ 540 Wh"},
+   {"kind": "retailer", "value": 540, "url": "https://mikesbikes.com/products/gazelle-ultimate-c380-2026", "quote": "Battery\tBosch Integrated 540Wh ⟶ Display/Controller\tBosch Purion"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/gazelle/ultimate-c380-plus-hmb/", "quote": "BATTERY WATT HOURS: ⟶ 482.4 wh", "basis": "older generation battery (PowerTube 500); not the current 540 Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "25–65", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-c380plus", "quote": "Eco\t65 mi | Tour\t40 mi | Auto\t30 mi | Turbo\t25 mi", "basis": "four consecutive lines of the maker's 'Battery and Range' spec (\" | \" = line break)"},
+   {"kind": "retailer", "value": "50", "url": "https://mikesbikes.com/products/gazelle-ultimate-c380-2026", "quote": "Class 3, 28 mph ⟶ 540Wh battery, 50 miles range"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 59.5, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-c380plus", "quote": "Weight (lbs) ⟶ 59.5 lbs excl. battery", "basis": "without battery"},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/gazelle-ultimate-c380-2026", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-c380plus", "quote": "", "basis": "no max load / permissible weight on the page"},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/gazelle-ultimate-c380-2026", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Performance Line Sport (Mid)", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-c380plus", "quote": "Motor | Performance Line Sport | Ebike Engine Position | Mid | Ebike System Brand | Bosch Smart System", "basis": "consecutive spec lines; no rated watts published"},
+   {"kind": "retailer", "value": "Bosch Performance Line Sport", "url": "https://mikesbikes.com/products/gazelle-ultimate-c380-2026", "quote": "Motor\tBosch Performance Line Sport (85 Nm) ⟶ Battery\tBosch Integrated 540Wh"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'10\"-6'4\"", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-c380plus", "quote": "Frame size | 46 | 4'10\" - 5'6\" | 53 | 5'6\" - 5'10\" | 57 | 5'10\" - 6'4\"", "basis": "consecutive lines of the frame-size selector, S 46 to L 57"},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/gazelle-ultimate-c380-2026", "quote": "SIZE | Small | Medium | Large", "basis": "sizes listed without rider heights"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-c380plus", "quote": "Frame hape ⟶ Low-Step, High-Step", "basis": "fixed low-step / high-step frame; nothing about folding"},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/gazelle-ultimate-c380-2026", "quote": ""}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page: Bosch Smart System Performance Line Sport 85 Nm, 540 Wh Intube, 28 mph, $4,999, Enviolo stepless with Gates belt. Mike's Bikes 'gazelle-ultimate-c380-2026' is this model ($4,998.99 regular) but some lines differ from the maker: it lists both 'Bosch Purion 200 display' and 'Kiox 500 colour display', Schwalbe Energizer Plus tires (maker: Schwalbe Green Marathon) and Suntour Mobie 45 (maker: MOBIE 34), and a single '50 miles range' vs the maker's 25-65 mi by mode. electricbikereview has only the 2022 'Ultimate C380+ HMB' (Performance Line Speed, PowerTube 500), used only for class and speed. Maker gives weight without battery only; no max load published. Multi-line quotes joined with ' | ' as page line breaks."}

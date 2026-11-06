@@ -1,0 +1,212 @@
+{
+ "bike": "Cannondale|Adventure Neo Allroad",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": 1675,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/adventure-neo-allroad/adventure-neo-allroad-c68524m",
+    "quote": "$1,675 ⟶ 0% APRor as low as $105/mo with Affirm. See if you qualify"
+   },
+   {
+    "kind": "review",
+    "value": 1675,
+    "url": "https://www.electricbikejournal.com/cannondale-adventure-neo-allroad-review/",
+    "quote": "Price: starting $1675 ⟶ Sizes: Small, Medium, Large"
+   },
+   {
+    "kind": "retailer",
+    "value": 1675,
+    "url": "https://www.n1bikes.com/products/adventure-neo-allroad?id=c6747f0611a4940fd2e5ad7f5d1b5bf069fb1b36404816edc4f2b6e27999eb37&variant=C68524M10LG",
+    "quote": "$1,675.00 ⟶ Earn 16,750 points on this item"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": 2,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/adventure-neo-allroad/adventure-neo-allroad-c68524m",
+    "quote": "Powerful 250W hub motor with thumb throttle provides electric assist up to 20 mph ⟶ Up to 47-mile range on a single charge",
+    "basis": "maker gives no class; thumb throttle and 20 mph = Class 2"
+   },
+   {
+    "kind": "review",
+    "value": 2,
+    "url": "https://www.electricbikejournal.com/cannondale-adventure-neo-allroad-review/",
+    "quote": "418Wh Battery ⟶ Class 2"
+   },
+   {
+    "kind": "retailer",
+    "value": 2,
+    "url": "https://www.n1bikes.com/products/adventure-neo-allroad?id=c6747f0611a4940fd2e5ad7f5d1b5bf069fb1b36404816edc4f2b6e27999eb37&variant=C68524M10LG",
+    "quote": "Range\tUp to 47 miles ⟶ Features\tThumb throttle, front and rear lights, kickstand",
+    "basis": "no class stated; thumb throttle + 'Max Speed 20 mph' = Class 2"
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": 20,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/adventure-neo-allroad/adventure-neo-allroad-c68524m",
+    "quote": "Bafang G020 Hub, 250W (20mph) ⟶ Battery"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://www.electricbikejournal.com/cannondale-adventure-neo-allroad-review/",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": 20,
+    "url": "https://www.n1bikes.com/products/adventure-neo-allroad?id=c6747f0611a4940fd2e5ad7f5d1b5bf069fb1b36404816edc4f2b6e27999eb37&variant=C68524M10LG",
+    "quote": "Motor Power\t250W ⟶ Max Speed\t20 mph"
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/adventure-neo-allroad/adventure-neo-allroad-c68524m",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://www.electricbikejournal.com/cannondale-adventure-neo-allroad-review/",
+    "quote": ""
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": 418,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/adventure-neo-allroad/adventure-neo-allroad-c68524m",
+    "quote": "Battery ⟶ HWT 36V, 418Wh, Taiwan-made"
+   },
+   {
+    "kind": "review",
+    "value": 418,
+    "url": "https://www.electricbikejournal.com/cannondale-adventure-neo-allroad-review/",
+    "quote": "250w Motor ⟶ 418Wh Battery"
+   },
+   {
+    "kind": "retailer",
+    "value": 418,
+    "url": "https://www.n1bikes.com/products/adventure-neo-allroad?id=c6747f0611a4940fd2e5ad7f5d1b5bf069fb1b36404816edc4f2b6e27999eb37&variant=C68524M10LG",
+    "quote": "Drive Unit\tBafang G020 Hub, 250W (20mph) ⟶ Battery\tHWT 36V, 418Wh, Taiwan-made"
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": "47",
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/adventure-neo-allroad/adventure-neo-allroad-c68524m",
+    "quote": "Powerful 250W hub motor with thumb throttle provides electric assist up to 20 mph ⟶ Up to 47-mile range on a single charge"
+   },
+   {
+    "kind": "review",
+    "value": "47",
+    "url": "https://www.electricbikejournal.com/cannondale-adventure-neo-allroad-review/",
+    "quote": "They use a 418Wh battery that is semi-integrated into the frame and removable with a key and can offer up to 47 miles on a single charge. The SPEED uses a 720Wh battery and can support up to 71 miles."
+   },
+   {
+    "kind": "retailer",
+    "value": "47",
+    "url": "https://www.n1bikes.com/products/adventure-neo-allroad?id=c6747f0611a4940fd2e5ad7f5d1b5bf069fb1b36404816edc4f2b6e27999eb37&variant=C68524M10LG",
+    "quote": "Max Speed\t20 mph ⟶ Range\tUp to 47 miles"
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/adventure-neo-allroad/adventure-neo-allroad-c68524m",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": 48,
+    "url": "https://www.electricbikejournal.com/cannondale-adventure-neo-allroad-review/",
+    "quote": "Weight: ~48 lbs ⟶ Website: cannondale.com"
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/adventure-neo-allroad/adventure-neo-allroad-c68524m",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://www.electricbikejournal.com/cannondale-adventure-neo-allroad-review/",
+    "quote": ""
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "250W Bafang G020 rear hub",
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/adventure-neo-allroad/adventure-neo-allroad-c68524m",
+    "quote": "Bafang G020 Hub, 250W (20mph) ⟶ Battery",
+    "basis": "rear hub per 'Adventure Neo Allroad’s rear hub motor can boost your pedaling up to 20mph on the flats.'"
+   },
+   {
+    "kind": "review",
+    "value": "250W",
+    "url": "https://www.electricbikejournal.com/cannondale-adventure-neo-allroad-review/",
+    "quote": "250w Motor ⟶ 418Wh Battery"
+   },
+   {
+    "kind": "retailer",
+    "value": "250W rear hub",
+    "url": "https://www.n1bikes.com/products/adventure-neo-allroad?id=c6747f0611a4940fd2e5ad7f5d1b5bf069fb1b36404816edc4f2b6e27999eb37&variant=C68524M10LG",
+    "quote": "Motor Type\tRear hub motor ⟶ Motor Power\t250W"
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": "5'5\"-5'10\"",
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/adventure-neo-allroad/adventure-neo-allroad-c68524m",
+    "quote": "Height - 5'5\" - 5'10\"",
+    "basis": "MD size (default selection)"
+   },
+   {
+    "kind": "maker",
+    "value": "5'9\"-6'5\"",
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/adventure-neo-allroad/adventure-neo-allroad-c68524m",
+    "quote": "Height - 5'9\" - 6'5\"",
+    "basis": "LG size (shown after selecting LG). Only MD and LG are offered, so the model covers 5'5\"-6'5\" overall"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://www.electricbikejournal.com/cannondale-adventure-neo-allroad-review/",
+    "quote": "Price: starting $1675 ⟶ Sizes: Small, Medium, Large",
+    "basis": "sizes only, no heights"
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/adventure-neo-allroad/adventure-neo-allroad-c68524m",
+    "quote": "SmartForm C3 Alloy frame, removable downtube battery, semi-internal cable routing, tapered 1-1/8\"-1.5\" headtube, post mount disc, waterbottle and headtube rack mounts ⟶ Fork"
+   },
+   {
+    "kind": "review",
+    "value": "No",
+    "url": "https://www.electricbikejournal.com/cannondale-adventure-neo-allroad-review/",
+    "quote": "With an aluminum frame and fork, the Adventure NEO Allroad has a comfortable geometry allowing riders to have a very upright seated position. This makes long rides comfortable for all riders. ⟶ Quick Specs"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker page (model code C68524M, high-step) gives no weight, torque or max load. Rider height spans two sizes shown one at a time: MD 5'5\"-5'10\", LG 5'9\"-6'5\" (LG text only appears after selecting LG). Electric Bike Journal review covers the Allroad/EQ family (lists sizes S/M/L; current model code offers MD/LG). Not found on EBR, EBReport or REI; used 1 WebSearch. Added N+1 Bikes (dealer, TECH SPECS tab) as a third source; it gives no weight or load either."
+}

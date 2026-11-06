@@ -1,0 +1,49 @@
+{"bike": "Gazelle|Avignon C380", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 5199, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-avignon-c380", "quote": "$5,199$4,999 | Shop stock: First, configure your bike", "basis": "regular $5,199 shown crossed out next to sale price $4,999"},
+   {"kind": "retailer", "value": 5198.99, "url": "https://mikesbikes.com/products/gazelle-avignon-c380-hmb", "quote": "Regular price | $5,198.99 | Sale price | $4,998.95 Save 4%", "basis": "regular price; on sale for $4,998.95"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-avignon-c380", "quote": "Ebike Max Speed | 20 mph", "basis": "no class stated; 20 mph pedal assist with no throttle listed (Bosch Smart System) means Class 1"},
+   {"kind": "retailer", "value": 1, "url": "https://mikesbikes.com/products/gazelle-avignon-c380-hmb", "quote": "Max Assisted Speed | 20mph (Class 1)"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-avignon-c380", "quote": "Ebike Max Speed | 20 mph"},
+   {"kind": "retailer", "value": 20, "url": "https://mikesbikes.com/products/gazelle-avignon-c380-hmb", "quote": "Max Assisted Speed | 20mph (Class 1)"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 75, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-avignon-c380", "quote": "Engine Max Torque (Nm) | 75"},
+   {"kind": "retailer", "value": 75, "url": "https://mikesbikes.com/products/gazelle-avignon-c380-hmb", "quote": "Motor\tBosch Performance Line, 75nm of Torque"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 625, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-avignon-c380", "quote": "Battery and Range | 625 Wh"},
+   {"kind": "retailer", "value": 625, "url": "https://mikesbikes.com/products/gazelle-avignon-c380-hmb", "quote": "Battery\tLow-step: Integrated into frame, 625wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "45–110", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-avignon-c380", "quote": "Eco\t110 mi | Tour\t65 mi | Auto\t50 mi | Turbo\t45 mi", "basis": "Turbo to Eco assist modes, 625 Wh battery"},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/gazelle-avignon-c380-hmb", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 63.1, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-avignon-c380", "quote": "Weight (lbs) | 63.1 lbs excl. battery", "basis": "without battery"},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/gazelle-avignon-c380-hmb", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-avignon-c380", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/gazelle-avignon-c380-hmb", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Performance Line mid-drive", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-avignon-c380", "quote": "Motor | Performance Line | Ebike Engine Position | Mid", "basis": "no rated watts published"},
+   {"kind": "retailer", "value": "Bosch Performance Line", "url": "https://mikesbikes.com/products/gazelle-avignon-c380-hmb", "quote": "Motor\tBosch Performance Line, 75nm of Torque"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'10\"-6'4\"", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-avignon-c380", "quote": "46 | 4'10\" - 5'6\" | 53 | 5'6\" - 5'10\" | 57 | 5'10\" - 6'4\"", "basis": "frame sizes 46/53/57"},
+   {"kind": "retailer", "value": "4'10\"-6'4\"", "url": "https://mikesbikes.com/products/gazelle-avignon-c380-hmb", "quote": "SM (4'10\" - 5'6\") | MD (5'6\" - 5'10\") | LG (5'10\" - 6'4\")"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-avignon-c380", "quote": "Frame hape | Low-Step", "basis": "rigid low-step frame; no folding mentioned"},
+   {"kind": "retailer", "value": "No", "url": "https://mikesbikes.com/products/gazelle-avignon-c380-hmb", "quote": "Frame\tStable aluminum frame with 68.5° head tube angle and"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker shows the bike on sale ($5,199 crossed out, $4,999). Maker gives weight without battery only and no max load. Mike's Bikes lists it as 'Avignon C380 HMB' (same colors, 625 Wh, 75 Nm, Enviolo 380, belt); its display line says 'Bosch Intuvia LCD center' vs maker 'Bosch Intuvia 100'. electricbikereview/electricbikereport had no review; REI returned 'Access denied'."}

@@ -1,0 +1,47 @@
+{"bike": "Trek|Charter+ 4S", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 3999.99, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/charter/f/F467x/charter+-4s/64072/", "quote": "Charter+ 4S | $3,999.99 | Model 5343977"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/charter/f/F467x/charter+-4s/64072/", "quote": "E-bike Classification | Class 3 | Max assist speed", "basis": "ships at 28 mph pedal assist"},
+   {"kind": "review", "value": 3, "url": "https://eridehero.com/products/trek-charter-4s/", "quote": "E-Bike Class\tClass 3"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/charter/f/F467x/charter+-4s/64072/", "quote": "Max assist speed | 28 mph"},
+   {"kind": "review", "value": 28, "url": "https://eridehero.com/products/trek-charter-4s/", "quote": "Top Assist Speed\t28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/charter/f/F467x/charter+-4s/64072/", "quote": "Torque 85Nm", "basis": "product summary"},
+   {"kind": "maker", "value": 90, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/charter/f/F467x/charter+-4s/64072/", "quote": "Motor | Bosch Performance Line Sport, Smart System, 90Nm, 700W", "basis": "spec table on same page (contradicts summary)"},
+   {"kind": "review", "value": 85, "url": "https://eridehero.com/products/trek-charter-4s/", "quote": "Torque\t85 Nm"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 540, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/charter/f/F467x/charter+-4s/64072/", "quote": "Battery | Bosch PowerTube 540Wh"},
+   {"kind": "review", "value": 540, "url": "https://eridehero.com/products/trek-charter-4s/", "quote": "Battery Capacity | 540 Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "45", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/charter/f/F467x/charter+-4s/64072/", "quote": "Range Up to 45 mi"},
+   {"kind": "review", "value": "45", "url": "https://eridehero.com/products/trek-charter-4s/", "quote": "Max Range\t45 mi"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 67.58, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/charter/f/F467x/charter+-4s/64072/", "quote": "Weight | M - 30.65 kg / 67.58 lbs", "basis": "size M"},
+   {"kind": "review", "value": 67.6, "url": "https://eridehero.com/products/trek-charter-4s/", "quote": "Weight\t67.6 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 300, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/charter/f/F467x/charter+-4s/64072/", "quote": "This bike has a maximum total weight limit (combined weight of bicycle, rider, and cargo) of 300 pounds (136 kg).", "basis": "total"},
+   {"kind": "review", "value": 300, "url": "https://eridehero.com/products/trek-charter-4s/", "quote": "Weight Limit\t300 lbs", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Performance Line Sport, 750W", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/charter/f/F467x/charter+-4s/64072/", "quote": "Motor Bosch Performance Line Sport, 750W", "basis": "product summary; spec table on same page says 700W; likely a peak figure, no rated watts given"},
+   {"kind": "review", "value": "250W mid-drive (750W peak)", "url": "https://eridehero.com/products/trek-charter-4s/", "quote": "Nominal Power | 250 W | Peak Power | 750 W"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'5\"-6'8\"", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/charter/f/F467x/charter+-4s/64072/", "quote": "M | 165 - 173 cm | 5'5\" - 5'8\" | 79 - 96 cm | 31\" - 38\" | L | 170 - 185 cm | 5'7\" - 6'1\" | 80 - 99 cm | 31\" - 39\" | XL | 185 - 203 cm | 6'1\" - 6'8\""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/charter/f/F467x/charter+-4s/64072/", "quote": "Premium Alpha Platinum Aluminum frame, top-load Bosch CompactTube battery, integrated cockpit routing, integrated rack and fenders, adjustable bolt on dropout", "basis": "rigid non-folding frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Trek page contradicts itself: summary says 'Motor Bosch Performance Line Sport, 750W' / 'Torque 85Nm', spec table says '90Nm, 700W'; frame line says 'Bosch CompactTube battery' while battery line says 'Bosch PowerTube 540Wh'. Maker overview: 'a 28mph top speed and up to 45-mile range'. ERideHero's Charter+ 4S page covers step-through and step-over sizes together (S–XXL, rider height 64\"–80\"), so its height is not used."}

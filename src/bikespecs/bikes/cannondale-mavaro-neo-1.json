@@ -1,0 +1,150 @@
+{
+ "bike": "Cannondale|Mavaro Neo 1",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": 5799,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-1-low-stepthru",
+    "quote": "$5,799 ⟶ 0% APRor as low as $201/mo with Affirm. See if you qualify"
+   },
+   {
+    "kind": "retailer",
+    "value": 5799,
+    "url": "https://www.n1bikes.com/products/mavaro-1-low-stepthru?id=d169fca0f66ca6dcfa6060088ed934547803e070560381e60422a99405464aa3&variant=C68044U10LX",
+    "quote": "$5,799.00"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": 3,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-1-low-stepthru",
+    "quote": "This e-bike drive system provides pedal assist up to a maximum speed of 28mph. Above that, it’s all you. ⟶ Range up to 108 miles",
+    "basis": "no class line; pedal assist to 28 mph = Class 3"
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": 28,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-1-low-stepthru",
+    "quote": "Bosch Performance Line CX Speed, 28mph ⟶ Battery"
+   },
+   {
+    "kind": "retailer",
+    "value": 28,
+    "url": "https://www.n1bikes.com/products/mavaro-1-low-stepthru?id=d169fca0f66ca6dcfa6060088ed934547803e070560381e60422a99405464aa3&variant=C68044U10LX",
+    "quote": "Max Speed\t28 mph"
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-1-low-stepthru",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.n1bikes.com/products/mavaro-1-low-stepthru?id=d169fca0f66ca6dcfa6060088ed934547803e070560381e60422a99405464aa3&variant=C68044U10LX",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": 85,
+    "url": "https://bikes.fan/cannondale-mavaro-1-low-stepthru-2024/",
+    "quote": "MOTOR ⟶ Bosch 600W 85Nm mid-drive",
+    "basis": "bike database page for the 2024 Mavaro 1 Low StepThru; same page lists 'Motor ⟶ Bosch Performance Line CX Speed, 28mph' and 750Wh (US spec)"
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": 750,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-1-low-stepthru",
+    "quote": "Battery ⟶ Bosch PowerTube, 750Wh"
+   },
+   {
+    "kind": "retailer",
+    "value": 750,
+    "url": "https://www.n1bikes.com/products/mavaro-1-low-stepthru?id=d169fca0f66ca6dcfa6060088ed934547803e070560381e60422a99405464aa3&variant=C68044U10LX",
+    "quote": "Battery Capacity\t750Wh"
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": "108",
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-1-low-stepthru",
+    "quote": "With up to 108 miles of range on a single charge, you’ve got the power to go anywhere and do anything. Have fun. Ride longer. ⟶ Smart Power, Big Range"
+   },
+   {
+    "kind": "retailer",
+    "value": "108",
+    "url": "https://www.n1bikes.com/products/mavaro-1-low-stepthru?id=d169fca0f66ca6dcfa6060088ed934547803e070560381e60422a99405464aa3&variant=C68044U10LX",
+    "quote": "Range\tUp to 108 miles"
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-1-low-stepthru",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.n1bikes.com/products/mavaro-1-low-stepthru?id=d169fca0f66ca6dcfa6060088ed934547803e070560381e60422a99405464aa3&variant=C68044U10LX",
+    "quote": ""
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-1-low-stepthru",
+    "quote": "Integrated headtube running light, Cannondale Urban rear rack (25kg, Racktime SnapIt 1.0 compatible), Curana Apollo fenders, AXA Compactline 35E Front Light, AXA Blueline Rear Light, kickstand",
+    "basis": "only the rear rack rating (25 kg) is given, not a bike max load"
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "Bosch Performance Line CX Speed",
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-1-low-stepthru",
+    "quote": "Bosch Performance Line CX Speed, 28mph ⟶ Battery"
+   },
+   {
+    "kind": "retailer",
+    "value": "Bosch Performance Line CX Speed",
+    "url": "https://www.n1bikes.com/products/mavaro-1-low-stepthru?id=d169fca0f66ca6dcfa6060088ed934547803e070560381e60422a99405464aa3&variant=C68044U10LX",
+    "quote": "Drive Unit\tBosch Performance Line CX Speed, 28mph"
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": "4'11\"-6'5\"",
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-1-low-stepthru",
+    "quote": "Height - 4'11\" - 5'9\" | Height - 5'7\" - 6'5\"",
+    "basis": "two size selectors (S/M, L/XL) shown one at a time on the page; joined"
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-1-low-stepthru",
+    "quote": "SmartForm C1 Alloy, low step-thru, removable 750Wh downtube battery, integrated front running light, tapered headtube, internal cable routing, 135mm QR hub spacing, IS disc mount, motor protection ⟶ Fork"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker page is the Mavaro 1 Low StepThru (C68044U), the only US frame of the Neo 1. Maker gives no torque, weight or max load. No independent review of this US model found: EBR has only the older Mavaro Performance; WebSearch results were REI (blocked) and European Neo SL / older Neo 1 reviews. Only 2 sources (maker + N+1 Bikes dealer). One WebSearch used. recheck (tq): maker product page and Mavaro family page full text have no torque; Bike World Iowa dealer page has no torque. Bikes.Fan (bike database) lists 85Nm for the 2024 US-spec Mavaro 1 Low StepThru. Used the bike's one WebSearch."
+}

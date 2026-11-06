@@ -1,0 +1,46 @@
+{"bike": "Tern|Vektron Q9", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": null, "url": "https://www.ternbicycles.com/us/bikes/473/vektron-q9", "quote": "$2,999 (SALE PRICE)", "basis": "maker shows only a sale price; no regular price on the page"},
+   {"kind": "retailer", "value": null, "url": "https://scooteretti.com/collections/tern-electric-bicycles/products/tern-vektron-q9", "quote": "Sale price ⟶ $4,649.00 CAD", "basis": "Canadian dealer, CAD sale price only"},
+   {"kind": "maker", "value": 3249, "url": "https://store.ternbicycles.com/products/vektron-q9", "quote": "$2,999.00 ⟶ $3,249.00", "basis": "Tern's own US online store, Vektron Q9 (Gen 3); $3,249.00 is the compare-at (crossed-out) regular price, $2,999.00 is the sale price"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://www.ternbicycles.com/us/bikes/473/vektron-q9", "quote": "Class 1, Bosch Active Line Plus, 270% Assist, 50 Nm Torque, max speed 25 kph (EU); max speed 20 mph (US) ⟶ BATTERY:"},
+   {"kind": "review", "value": 1, "url": "https://electricbikereview.com/tern/vektron-q9/", "quote": "ELECTRIC BIKE CLASS: ⟶ Pedal Assist (Class 1)", "basis": "2019 model review (earlier Active Line version)"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.ternbicycles.com/us/bikes/473/vektron-q9", "quote": "Class 1, Bosch Active Line Plus, 270% Assist, 50 Nm Torque, max speed 25 kph (EU); max speed 20 mph (US) ⟶ BATTERY:"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereview.com/tern/vektron-q9/", "quote": "TOP SPEED: ⟶ 20 mph (32 kph)", "basis": "2019 model review"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 50, "url": "https://www.ternbicycles.com/us/bikes/473/vektron-q9", "quote": "Upgraded to the Bosch Active Line Plus electric drivetrain for 270% more assistance and 50 Nm of torque ⟶ Hydraulic disc brakes for all-weather stopping power"},
+   {"kind": "retailer", "value": 50, "url": "https://scooteretti.com/collections/tern-electric-bicycles/products/tern-vektron-q9", "quote": "50Nm ⟶ Of Torque"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 400, "url": "https://www.ternbicycles.com/us/bikes/473/vektron-q9", "quote": "BATTERY: ⟶ Bosch PowerPack 400 Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "35–70", "url": "https://www.ternbicycles.com/us/bikes/473/vektron-q9", "quote": "RANGE: ⟶ 400 Wh: 55 -110 km (35-70 mi)"},
+   {"kind": "retailer", "value": "66", "url": "https://scooteretti.com/collections/tern-electric-bicycles/products/tern-vektron-q9", "quote": "Of Torque ⟶ 106 Km's", "basis": "106 km = 66 mi, 'Range Between Charges'"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 48.3, "url": "https://www.ternbicycles.com/us/bikes/473/vektron-q9", "quote": "WEIGHT: ⟶ 21.9 kg (48.3 lb)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 275.6, "url": "https://www.ternbicycles.com/us/bikes/473/vektron-q9", "quote": "MAX GROSS VEHICLE WEIGHT: ⟶ 125 kg (275.6 lb)", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Active Line Plus", "url": "https://www.ternbicycles.com/us/bikes/473/vektron-q9", "quote": "Class 1, Bosch Active Line Plus, 270% Assist, 50 Nm Torque, max speed 25 kph (EU); max speed 20 mph (US) ⟶ BATTERY:"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'10\"-6'5\"", "url": "https://www.ternbicycles.com/us/bikes/473/vektron-q9", "quote": "Resizes in seconds to fit riders 147 – 195 cm (4’10” – 6’5”) so a single bike can be shared by the family ⟶ TECHNOLOGY"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "Yes", "url": "https://www.ternbicycles.com/us/bikes/473/vektron-q9", "quote": "FOLDING TIME: ⟶ 10 sec", "basis": "Vektron frame has the OCL+ folding joint"},
+   {"kind": "review", "value": "Yes", "url": "https://electricbikereview.com/tern/vektron-q9/", "quote": "Mid-Step, Folding ⟶ FRAME COLORS:", "basis": "2019 model review"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page is Vektron Gen 3 Q9 (Bosch Active Line Plus, 50 Nm). The only EBR review is the 2019 Q9 (Active Line, 40 Nm, $3199), so it is used only for class, speed and folding, which didn't change. Scooteretti (Canadian dealer, from one WebSearch) gives torque and a 106 km range figure; CAD prices only. Maker shows only '$2,999 (SALE PRICE)' with no regular price, so price left null. Gen 4 Vektron (P10/P5i) is now the current line; maker didn't say Q9 is discontinued. Max load is max gross vehicle weight (total); max rider 231.5 lb. | recheck: Tern US store regular price $3,249 (sale $2,999) - the site's 2999 is the sale price."
+}

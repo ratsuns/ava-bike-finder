@@ -1,0 +1,49 @@
+{"bike": "Ice Trikes|Full Fat", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 10059, "url": "https://icetrikes.co/buy/price-lists/ice-trikes-2026-full-price-list-usd/viewdocument/157", "quote": "FULL FAT E-ASSIST  Example  entry-level  specification  REAR SUSPENSION, ELECTRIC SYSTEM WITH EP6 CARGO, ONE 630WH BATTERY  DERAILLEUR GEARING, 8 SPEED REAR WHEEL WITH SHIMANO 11-32 CASSETTE,  BAR END SHIFTERS, DISC BRAKES, ERGO-FLOW SEAT, SCHWALBE ROAD  CRUISER TYRE & OTR PACK  $10,059", "basis": "maker's 2026 USD price list, example entry-level E-Assist build (non-assist entry example is $7,089)"},
+   {"kind": "retailer", "value": null, "url": "https://laidbackcycles.com/products/ice-full-fat", "quote": "Electric – Shimano ⟶ +$3,703", "basis": "configurator estimate only: $6,650.00 base plus Shimano electric option"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://icetrikes.co/products/shimano-steps-e-assist", "quote": "Supports assist level up to 25 km/h or 20mph depending on regional regulations.", "basis": "maker's e-assist page (all ICE Shimano trikes): pedal assist modes only, no throttle mentioned, 20 mph in the US, so Class 1"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://icetrikes.co/products/shimano-steps-e-assist", "quote": "Supports assist level up to 25 km/h or 20mph depending on regional regulations."},
+   {"kind": "retailer", "value": null, "url": "https://laidbackcycles.com/products/ice-full-fat", "quote": ""}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://icetrikes.co/products/full-fat", "quote": "The NEW EP8 system is beautifully integrated into the trike. It uses a powerful 250w electric motor, custom-designed ICE specific forged motor housing, 85Nm torque, 630Wh battery, custom display mount and Bluetooth connectivity."},
+   {"kind": "retailer", "value": 85, "url": "https://laidbackcycles.com/products/ice-full-fat", "quote": "It can. The Full Fat is available with a Shimano STEPS EP8 motor putting out 85Nm of torque, which is a real help if you want to cover more ground or push through soft sand and steep trail."}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 630, "url": "https://icetrikes.co/products/full-fat", "quote": "The NEW EP8 system is beautifully integrated into the trike. It uses a powerful 250w electric motor, custom-designed ICE specific forged motor housing, 85Nm torque, 630Wh battery, custom display mount and Bluetooth connectivity."},
+   {"kind": "retailer", "value": null, "url": "https://laidbackcycles.com/products/ice-full-fat", "quote": ""}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://icetrikes.co/products/shimano-steps-e-assist", "quote": "Range depends on riding conditions, temperature, tires, riding style, power assist mode, rider weight and many other factors. See Shimano's published figures for examples of estimated cycling range."},
+   {"kind": "retailer", "value": null, "url": "https://laidbackcycles.com/products/ice-full-fat", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 49.2, "url": "https://icetrikes.co/products/full-fat", "quote": "Overall weight (from) | 49.2lbs (22.3kg)", "basis": "without battery (lightest non-assist build; e-assist page says motor 2.6kg (EP801) / 2.9kg (EP6) and 'The 630Wh battery is 3.2kg.')"},
+   {"kind": "retailer", "value": null, "url": "https://laidbackcycles.com/products/ice-full-fat", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": 275, "url": "https://icetrikes.co/products/full-fat", "quote": "Rider weight limit | 275lbs (125kg)", "basis": "rider weight limit"},
+   {"kind": "retailer", "value": 275, "url": "https://laidbackcycles.com/products/ice-full-fat", "quote": "It's built for an X-seam of 37 to 50 inches, which covers most adult riders, and it's rated to carry 275 pounds."}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "250W Shimano STEPS EP8", "url": "https://icetrikes.co/products/full-fat", "quote": "The NEW EP8 system is beautifully integrated into the trike. It uses a powerful 250w electric motor, custom-designed ICE specific forged motor housing, 85Nm torque, 630Wh battery, custom display mount and Bluetooth connectivity."},
+   {"kind": "retailer", "value": "Shimano STEPS EP8", "url": "https://laidbackcycles.com/products/ice-full-fat", "quote": "It can. The Full Fat is available with a Shimano STEPS EP8 motor putting out 85Nm of torque, which is a real help if you want to cover more ground or push through soft sand and steep trail."}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://icetrikes.co/products/full-fat", "quote": "Rider size (X-seam) | 37\" - 50\" (940mm - 1270mm)", "basis": "maker sizes by X-seam (leg length), not rider height"},
+   {"kind": "retailer", "value": null, "url": "https://laidbackcycles.com/products/ice-full-fat", "quote": "It's built for an X-seam of 37 to 50 inches, which covers most adult riders, and it's rated to carry 275 pounds."},
+   {"kind": "retailer", "value": null, "url": "https://cardiffpedalpower.org/cycle-sales/sales-cycles/ice-full-fat", "quote": "Rider Height ⟶ 94-127 cm (External Leg)", "basis": "Cardiff Pedal Power (UK charity dealer) labels this 'Rider Height' but it is the external leg length (X-seam): 94-127 cm = 37-50 in, the same as ICE's X-seam and the site's text. Left null because our height field is rider height and no page gives one."}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "Yes", "url": "https://icetrikes.co/products/full-fat", "quote": "There's no denying that the Full Fat is a big trike, but it can still be folded. The ICE Compact Flat Twist fold is one of the many innovations that ICE has brought to the recumbent world. The fold is based around a lightweight heat-treated aluminium hinge on the main frame. All ICE trikes (except the VTX) can be folded for transporting in a car and for storing your trike."},
+   {"kind": "retailer", "value": "Yes", "url": "https://laidbackcycles.com/products/ice-full-fat", "quote": "Yes. The Full Fat uses ICE's Compact Flat Twist fold, so it collapses down in under 30 seconds for the back of a car or for storage."}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Recumbent fat-tire trike, built to order; sold with or without e-assist (recorded the e-assist version). Maker product page headline 'PRICES FROM: £4,700 | $6,650 | €5,150' is the non-assist trike. Maker contradicts itself on motor: product page says 'available exclusively with the NEW Shimano STEPS EP8', while the 2026 USD price list's entry e-assist build uses 'EP6 CARGO' (both 85Nm / 630Wh). Price list read in-browser via pdf.js; quote is extracted text with double spaces. Full Fat product page has no speed line, so speed/class come from the maker's Shimano e-assist page. No range figure; sized by X-seam, not height. Weight is the lightest non-assist build. Laid Back Cycles quotes come from its FAQ accordion text. | recheck: looked for a rider-height range: ICE product page and ICE Rider Sizing Guide (fit is by X-seam only, no height range per model), 1 WebSearch, Cardiff Pedal Power dealer page (X-seam 94-127 cm). No page gives a rider height; the site's 'X-seam ...' value is a leg measurement, which our rules checker can't match as a height."}

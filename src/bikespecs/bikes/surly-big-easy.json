@@ -1,0 +1,51 @@
+{"bike": "Surly|Big Easy", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 5499, "url": "https://surlybikes.com/products/big-easy", "quote": "Regular price ⟶ $5,499.00 USD", "basis": "regular price; page also shows a sale price of $4,674.00"},
+   {"kind": "review", "value": 5499, "url": "https://bikepacking.com/news/2024-surly-big-easy/", "quote": "The 2024 Surly Big Easy comes in three sizes (small, medium, and large), weighs in at 74 pounds (size medium), and is only offered as a complete build for $5,499 USD. Head over to SurlyBikes.com or stop by your local Surly dealer to learn more. ⟶ FURTHER READING"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://surlybikes.com/products/big-easy", "quote": "Ebike Classification ⟶ Class 1"},
+   {"kind": "review", "value": 1, "url": "https://bikepacking.com/news/2024-surly-big-easy/", "quote": "It’s a Class 1 e-bike, meaning it is pedal-assist only, with no throttle, and has a maximum assisted speed of 20 miles per hour. It comes as a complete build with a Bosch PowerPack 725Wh battery, Bosch 4A Charger, and a 9-speed Shimano Cues drivetrain. It has a gross payload of 400 pounds total (including rider and cargo)."}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://surlybikes.com/products/big-easy", "quote": "Max Assist Speed ⟶ 20 mph"},
+   {"kind": "review", "value": 20, "url": "https://bikepacking.com/news/2024-surly-big-easy/", "quote": "It’s a Class 1 e-bike, meaning it is pedal-assist only, with no throttle, and has a maximum assisted speed of 20 miles per hour. It comes as a complete build with a Bosch PowerPack 725Wh battery, Bosch 4A Charger, and a 9-speed Shimano Cues drivetrain. It has a gross payload of 400 pounds total (including rider and cargo)."}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://surlybikes.com/products/big-easy", "quote": "Motor Torque ⟶ 85Nm"},
+   {"kind": "review", "value": null, "url": "https://bikepacking.com/news/2024-surly-big-easy/", "quote": "", "basis": "article gives no torque"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 725, "url": "https://surlybikes.com/products/big-easy", "quote": "Battery Capacity Watt Hours ⟶ 725Wh"},
+   {"kind": "review", "value": 725, "url": "https://bikepacking.com/news/2024-surly-big-easy/", "quote": "It’s a Class 1 e-bike, meaning it is pedal-assist only, with no throttle, and has a maximum assisted speed of 20 miles per hour. It comes as a complete build with a Bosch PowerPack 725Wh battery, Bosch 4A Charger, and a 9-speed Shimano Cues drivetrain. It has a gross payload of 400 pounds total (including rider and cargo)."}
+  ],
+  "range": [
+   {"kind": "maker", "value": "15–50", "url": "https://surlybikes.com/products/big-easy", "quote": "A 15–50 mile range is normal for Big Easy, but your mileage may vary depending on support mode, rider weight, cargo load, etc. ⟶ Gross Payload"},
+   {"kind": "review", "value": null, "url": "https://bikepacking.com/news/2024-surly-big-easy/", "quote": "", "basis": "article gives no range"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://surlybikes.com/products/big-easy", "quote": "", "basis": "maker page (Build Kit/Geometry) lists no bike weight"},
+   {"kind": "review", "value": 74, "url": "https://bikepacking.com/news/2024-surly-big-easy/", "quote": "The 2024 Surly Big Easy comes in three sizes (small, medium, and large), weighs in at 74 pounds (size medium), and is only offered as a complete build for $5,499 USD. Head over to SurlyBikes.com or stop by your local Surly dealer to learn more. ⟶ FURTHER READING", "basis": "size medium; battery not mentioned either way"},
+   {"kind": "review", "value": 74, "url": "https://99spokes.com/bikes/surly/2024/big-easy", "quote": "Weight74.0 lbs ⟶ FrameSteel", "basis": "99 Spokes spec page for the 2024 Big Easy (Bosch Performance Line Cargo, 725Wh); does not say whether battery is included"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 400, "url": "https://surlybikes.com/products/big-easy", "quote": "Gross Payload ⟶ 400lb max total rider + cargo", "basis": "rider plus cargo (not including bike)"},
+   {"kind": "review", "value": 400, "url": "https://bikepacking.com/news/2024-surly-big-easy/", "quote": "It’s a Class 1 e-bike, meaning it is pedal-assist only, with no throttle, and has a maximum assisted speed of 20 miles per hour. It comes as a complete build with a Bosch PowerPack 725Wh battery, Bosch 4A Charger, and a 9-speed Shimano Cues drivetrain. It has a gross payload of 400 pounds total (including rider and cargo).", "basis": "rider and cargo"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Performance Line Cargo", "url": "https://surlybikes.com/products/big-easy", "quote": "Bosch Performance Line Cargo with Intuvia 100 Display and LED Remote ⟶ Ebike Classification", "basis": "no rated watts; page lists \"Max Motor Assist ⟶ 340%, 600W\" (600W is max output, not rated)"},
+   {"kind": "review", "value": "Bosch Performance Line Cargo", "url": "https://bikepacking.com/news/2024-surly-big-easy/", "quote": "The 2024 Big Easy comes equipped with a dropper post to accommodate more riders across the three frame sizes, four-piston Tektro hydraulic brakes, and Surly’s updated Big Dummy bags. It features a damping headset for smooth and stable handling under heavy loads, can run dual batteries for extended range, has an integrated dual-leg kickstand mount, and uses a Bosch Performance Line Cargo drive unit."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'7\"-6'4\"", "url": "https://surlybikes.com/products/big-easy", "quote": "Recommended Rider Height\t140.0 - 170.0\t157.0 - 184.0\t170.0 - 194.0 ⟶ Stem Length\t48.0\t48.0\t48.0", "basis": "geometry table in cm across Small/Medium/Large: 140-194 cm converted"},
+   {"kind": "review", "value": null, "url": "https://bikepacking.com/news/2024-surly-big-easy/", "quote": "", "basis": "article gives no rider height"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://surlybikes.com/products/big-easy", "quote": "Expanded rider fit per size and long throw dropper post compatibility to improve bike sharing among different-sized riders", "basis": "judgment: steel longtail; page mentions no folding frame"},
+   {"kind": "review", "value": null, "url": "https://bikepacking.com/news/2024-surly-big-easy/", "quote": "", "basis": "not mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page has no bike weight; 74 lb comes only from bikepacking.com (2024 model, same 725Wh/Performance Line Cargo build). EBR's Big Easy review is the 2019 model (Performance Line CX, PowerPack 500, $5000) — older generation, not used. EBReport only has old news posts. Independent source found via one WebSearch. Maker rider-height converted from cm (140-194 cm). Maker site banner says online ordering is down. | recheck: Surly page has no bike weight in its specs (only Shopify shipping weight in page data, not used); EBR and Electrek only cover the 2019 Big Easy (EBR: 68.5 lbs, older Bosch CX/500 model, not used); 99 Spokes 2024 page: 74.0 lbs."
+}

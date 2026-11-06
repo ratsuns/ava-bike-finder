@@ -1,0 +1,53 @@
+{"bike": "Fuji|Boulevard EVO", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "review", "value": 2249, "url": "https://99spokes.com/bikes/fuji/2025/boulevard-evo", "quote": "Manufacturer Price ⟶ $2,249", "basis": "99 Spokes spec aggregator, 2025 model; maker page could not be opened"},
+   {"kind": "retailer", "value": null, "url": "https://cambriabike.com/products/fuji-boulevard-evo-27-5-sage", "quote": "SOLD OUT", "basis": "no price shown"},
+   {"kind": "retailer", "value": null, "url": "https://www.chainwheeldrive.com/product/fuji-boulevard-evo-1241728-1.htm", "quote": "This item is currently not available.", "basis": "no price shown"}
+  ],
+  "cls": [
+   {"kind": "retailer", "value": 2, "url": "https://cambriabike.com/products/fuji-boulevard-evo-27-5-sage", "quote": "Certifications / Use Conditions\tClass 2 E-Bike, Use Condition 2, UL2849 compliant"},
+   {"kind": "retailer", "value": 2, "url": "https://www.chainwheeldrive.com/product/fuji-boulevard-evo-1241728-1.htm", "quote": "it delivers up to 40 miles of range with throttle-on-demand capability", "basis": "throttle + 20mph maximum assist (Motor line) = Class 2"},
+   {"kind": "review", "value": 1, "url": "https://99spokes.com/bikes/fuji/2025/boulevard-evo", "quote": "Motor ⟶ Bafang H400B rear hub motor, 250W rated power, 20mph maximum assist", "basis": "class not stated; inferred Class 1 from 20 mph max assist with no throttle in the spec list (display/controls line lists walk assist, no throttle)"},
+   {"kind": "review", "value": 1, "url": "https://bikes.fan/fuji-boulevard-evo-2025/", "quote": "Motor ⟶ Bafang H400B rear hub motor, 250W rated power, 20mph maximum assist", "basis": "class not stated; inferred Class 1 (20 mph assist, no throttle listed); same spec text as 99 Spokes"}
+  ],
+  "spd": [
+   {"kind": "retailer", "value": 20, "url": "https://cambriabike.com/products/fuji-boulevard-evo-27-5-sage", "quote": "Drive Unit\tBafang H400B rear hub motor, 250W rated power, 20mph maximum assist ⟶ Battery\tBafang 360Wh, 36V, internal"},
+   {"kind": "retailer", "value": 20, "url": "https://www.chainwheeldrive.com/product/fuji-boulevard-evo-1241728-1.htm", "quote": "Motor\tBafang H400B rear hub motor, 250W rated power, 20mph maximum assist ⟶ Battery\tBafang 360Wh, 36V, internal"}
+  ],
+  "tq": [
+   {"kind": "retailer", "value": null, "url": "https://cambriabike.com/products/fuji-boulevard-evo-27-5-sage", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://www.chainwheeldrive.com/product/fuji-boulevard-evo-1241728-1.htm", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "retailer", "value": 360, "url": "https://cambriabike.com/products/fuji-boulevard-evo-27-5-sage", "quote": "Battery\tBafang 360Wh, 36V, internal ⟶ Display\tBafang 5 mode LCD, walk assist, light control, remote"},
+   {"kind": "retailer", "value": 360, "url": "https://www.chainwheeldrive.com/product/fuji-boulevard-evo-1241728-1.htm", "quote": "Battery\tBafang 360Wh, 36V, internal"},
+   {"kind": "review", "value": 360, "url": "https://99spokes.com/bikes/fuji/2025/boulevard-evo", "quote": "MotorBafang 250W hub-drive ⟶ BatteryBafang 360Wh"}
+  ],
+  "range": [
+   {"kind": "retailer", "value": "40", "url": "https://cambriabike.com/products/fuji-boulevard-evo-27-5-sage", "quote": "Range\tUp to 40 miles", "basis": "'up to'; assist mode not stated"},
+   {"kind": "retailer", "value": "40", "url": "https://www.chainwheeldrive.com/product/fuji-boulevard-evo-1241728-1.htm", "quote": "it delivers up to 40 miles of range with throttle-on-demand capability", "basis": "phrase from the description paragraph; assist mode not stated"}
+  ],
+  "wt": [
+   {"kind": "retailer", "value": 50.6, "url": "https://cambriabike.com/products/fuji-boulevard-evo-27-5-sage", "quote": "Weight\t23.00 kg / 50.60 lbs ⟶ Note: Specifications are subject to change without notice.", "basis": "battery is internal; page does not say with/without battery"},
+   {"kind": "review", "value": 50.7, "url": "https://99spokes.com/bikes/fuji/2025/boulevard-evo", "quote": "Price History ⟶ Weight50.7 lbs"}
+  ],
+  "load": [
+   {"kind": "retailer", "value": 300, "url": "https://cambriabike.com/products/fuji-boulevard-evo-27-5-sage", "quote": "Weight Limit\t136 kg / 300 lbs total permissible weight including bicycle, rider, and cargo ⟶ Accessories\tAlloy adjustable kickstand, bell", "basis": "total"},
+   {"kind": "retailer", "value": 300, "url": "https://www.chainwheeldrive.com/product/fuji-boulevard-evo-1241728-1.htm", "quote": "136 kg / 300 lbs total permissible weight including bicycle, rider, and cargo ⟶ Geometry", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "retailer", "value": "250W Bafang H400B rear hub", "url": "https://cambriabike.com/products/fuji-boulevard-evo-27-5-sage", "quote": "Drive Unit\tBafang H400B rear hub motor, 250W rated power, 20mph maximum assist ⟶ Battery\tBafang 360Wh, 36V, internal"},
+   {"kind": "retailer", "value": "250W Bafang H400B rear hub", "url": "https://www.chainwheeldrive.com/product/fuji-boulevard-evo-1241728-1.htm", "quote": "Motor\tBafang H400B rear hub motor, 250W rated power, 20mph maximum assist ⟶ Battery\tBafang 360Wh, 36V, internal"}
+  ],
+  "height": [
+   {"kind": "retailer", "value": null, "url": "https://cambriabike.com/products/fuji-boulevard-evo-27-5-sage", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/fuji/2025/boulevard-evo", "quote": "3'11\" + ⟶ 🐐 Estimated", "basis": "99 Spokes only gives its own estimate, not a published rider-height range; not used"}
+  ],
+  "fold": [
+   {"kind": "retailer", "value": "No", "url": "https://www.chainwheeldrive.com/product/fuji-boulevard-evo-1241728-1.htm", "quote": "Available in both diamond and low-step frame styles", "basis": "fixed diamond / low-step frame; nothing about folding"},
+   {"kind": "review", "value": "No", "url": "https://99spokes.com/bikes/fuji/2025/boulevard-evo", "quote": "Frame ⟶ Fuji A1 Alloy, tapered head tube", "basis": "fixed alloy frame; nothing about folding"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "MAKER PAGE NOT REACHED: the browser refused every fujibikes.com URL ('navigation ... was denied or failed'), so there is no maker source. Specs come from two dealers (Cambria Bike, Chainwheel Drive; both now sold out / not available) and 99 Spokes (price = its 'Manufacturer Price', 2025 model). Electricbikereview / electricbikereport have no Boulevard review. 1 WebSearch used. | recheck: fujibikes.com still refused by the browser; Massey's Outfitters had a bot check. 99 Spokes 2025 and bikes.fan both say 20 mph max assist and list no throttle, so they point to Class 1, not the site's Class 2; no page states a class. 1 WebSearch used."}

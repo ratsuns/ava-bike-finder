@@ -1,0 +1,173 @@
+{
+ "bike": "Urban Arrow|Family",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": 6999,
+    "url": "https://www.urbanarrow.com/en-na/configurator?model=family&options=&step=1",
+    "quote": "US $6.999",
+    "basis": "maker configurator with Family selected; page writes the price with a period as thousands separator"
+   },
+   {
+    "kind": "retailer",
+    "value": 6999.99,
+    "url": "https://mikesbikes.com/products/urban-arrow-performance-smart-system",
+    "quote": "Regular price ⟶ $6,999.99",
+    "basis": "Urban Arrow Family Performance (Smart System) listing"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "retailer",
+    "value": 1,
+    "url": "https://clevercycles.com/products/urban-arrow-family-electric-cargo-bike-with-bosch",
+    "quote": "Motor & Power: Bosch Cargo Line (Smart System) mid-drive motor, 250W nominal power, with 85 Nm of torque. Purpose-built for cargo e-bikes to move heavy loads from a standstill and up sharp inclines. Assistance limited to 25 km/h (20 mph in the US).",
+    "basis": "pedal assist only, limited to 20 mph in the US = Class 1; this listing is the Cargo Line belt-drive Family variant"
+   },
+   {
+    "kind": "maker",
+    "value": 1,
+    "url": "https://urbanarrow.com/manual-familynext-na?locale=en-GB",
+    "quote": "The bike contains an electrical drive unit that assists you up to a speed of 25 km/h (EU) or 20 mph (US-CAN-NZ) when riding. As soon as you push on the pedals the assistance is switched on and it switches off as soon as you stop pedalling",
+    "basis": "derived: maker's NA Family/FamilyNext manual gives pedal assist only (no throttle) to 20 mph; no class number stated"
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": 15.5,
+    "url": "https://www.urbanarrow.com/en-na/family",
+    "quote": "The smooth electric pedal assist gets you cruising up to a top speed of 15.5 mph (25 km/h). ⟶ What are the exact dimensions of the Urban Arrow Family cargo bike?",
+    "basis": "maker FAQ on North America site states the EU 25 km/h figure"
+   },
+   {
+    "kind": "retailer",
+    "value": 20,
+    "url": "https://clevercycles.com/products/urban-arrow-family-electric-cargo-bike-with-bosch",
+    "quote": "Motor & Power: Bosch Cargo Line (Smart System) mid-drive motor, 250W nominal power, with 85 Nm of torque. Purpose-built for cargo e-bikes to move heavy loads from a standstill and up sharp inclines. Assistance limited to 25 km/h (20 mph in the US).",
+    "basis": "Cargo Line belt-drive variant"
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.urbanarrow.com/en-na/family",
+    "quote": "",
+    "basis": "maker Family page lists no motor or torque"
+   },
+   {
+    "kind": "retailer",
+    "value": 75,
+    "url": "https://mikesbikes.com/products/urban-arrow-performance-smart-system",
+    "quote": "Motor\tBosch Performance Line, Smart system, 75Nm ⟶ Battery\tBosch PowerPack, 545Wh"
+   },
+   {
+    "kind": "maker",
+    "value": 75,
+    "url": "https://www.urbanarrow.com/en-na/configurator?model=family&options=black&step=2",
+    "quote": "Bosch Performance Line (75Nm) - Smart System",
+    "basis": "maker configurator, Family options step"
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.urbanarrow.com/en-na/family",
+    "quote": "",
+    "basis": "maker Family page lists no battery capacity"
+   },
+   {
+    "kind": "retailer",
+    "value": 545,
+    "url": "https://mikesbikes.com/products/urban-arrow-performance-smart-system",
+    "quote": "Battery\tBosch PowerPack, 545Wh ⟶ Display/Controller"
+   },
+   {
+    "kind": "retailer",
+    "value": 545,
+    "url": "https://clevercycles.com/products/urban-arrow-family-electric-cargo-bike-with-bosch",
+    "quote": "Battery & Range\t545 Wh PowerPack\t545 Wh PowerPack (dual-battery optional)\t545 Wh PowerPack (dual-battery optional)"
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": "30",
+    "url": "https://www.urbanarrow.com/en-na/family",
+    "quote": "You’ll get an average of 30 miles (50 km) out of a full charge. Of course, this shifts a bit depending on your weight, the terrain, and whatever weather you’re riding through. ⟶ How fast does the Urban Arrow Family go?",
+    "basis": "average"
+   },
+   {
+    "kind": "retailer",
+    "value": "30",
+    "url": "https://clevercycles.com/products/urban-arrow-family-electric-cargo-bike-with-bosch",
+    "quote": "Battery & Range: 545 Wh Bosch PowerPack (Smart System). Typical single-battery range ~50 km (30 miles) under mixed conditions; dual-battery compatible for up to 100 km (60+ miles). Charge time about 4–6 hours with the standard charger; removable for indoor charging.",
+    "basis": "typical, single battery"
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": 110,
+    "url": "https://www.urbanarrow.com/en-na/family",
+    "quote": "The bike is 108 inches (274 cm) long, 27.5 inches (70 cm) wide, and 43 inches (110 cm) tall, weighing in at 110 lbs (50 kg). ⟶ How can I customize my Urban Arrow Family?"
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": 550,
+    "url": "https://www.urbanarrow.com/en-na/family",
+    "quote": "The total weight capacity is 550 lbs (250 kg). With a max rider weight of 275 lbs (125 kg), you’ve got more than enough room for the kids and all your everyday gear. ⟶ What is the rider height range?",
+    "basis": "total"
+   },
+   {
+    "kind": "retailer",
+    "value": 550,
+    "url": "https://clevercycles.com/products/urban-arrow-family-electric-cargo-bike-with-bosch",
+    "quote": "Load & Weight Limits\tBike + cargo up to 550 lb total; 275 lb front box\tBike + cargo up to 550 lb total; 275 lb front box\tBike + cargo up to 550 lb total; 275 lb front box",
+    "basis": "total"
+   }
+  ],
+  "motor": [
+   {
+    "kind": "retailer",
+    "value": "Bosch Performance Line",
+    "url": "https://mikesbikes.com/products/urban-arrow-performance-smart-system",
+    "quote": "Motor\tBosch Performance Line, Smart system, 75Nm ⟶ Battery\tBosch PowerPack, 545Wh"
+   },
+   {
+    "kind": "maker",
+    "value": "Bosch Performance Line (75Nm), Smart System",
+    "url": "https://www.urbanarrow.com/en-na/configurator?model=family&options=black&step=2",
+    "quote": "Bosch Performance Line (75Nm) - Smart System",
+    "basis": "maker configurator, Family options step"
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": "5'1\"-6'6\"",
+    "url": "https://www.urbanarrow.com/en-na/family",
+    "quote": "The Urban Arrow Family is designed with a one-size-fits-most frame that accommodates riders approximately 5'1\" to 6'6\" ⟶ How many kids can ride in the Urban Arrow Family's box?"
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://www.urbanarrow.com/en-na/family",
+    "quote": "The Urban Arrow Family is designed with a one-size-fits-most frame that accommodates riders approximately 5'1\" to 6'6\" ⟶ How many kids can ride in the Urban Arrow Family's box?",
+    "basis": "front-box cargo bike; no folding frame mentioned"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker Family page has no spec table (no motor, battery, price); price taken from the maker's own configurator with Family selected ('US $6.999', period as thousands separator). Maker FAQ says top speed 15.5 mph (25 km/h) even on the North America site; Clever Cycles says 20 mph in the US. Mike's Bikes 'Urban Arrow Performance Smart System' ($6,999.99, description says Family Performance line) gives Bosch Performance Line 75Nm / 545Wh. Clever Cycles page is the $7,999 Cargo Line (85Nm) belt-drive Family variant, so used only for speed/class/range/load/Wh. electricbikereview only has old Family reviews (2014/2019); EBR has none. Recheck: read maker configurator (Family: Bosch Performance Line (75Nm) - Smart System, PowerPack 540Wh) and maker NA Family/FamilyNext digital manual (assist to 20 mph US, pedal only; no class number). Maker's Family manual and spec-sheet downloads on /en-na/documents return 'Asset not found'."
+}

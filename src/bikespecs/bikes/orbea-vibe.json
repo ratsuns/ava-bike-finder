@@ -1,0 +1,45 @@
+{"bike": "Orbea|Vibe", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "review", "value": 3499, "url": "https://www.electricbikejournal.com/orbea-vibe-review/", "quote": "Price: $3499 ⟶ Sizes: Small, Medium, Large", "basis": "Vibe H30 EQ price at time of review; no current maker price found"}
+  ],
+  "cls": [
+   {"kind": "review", "value": 1, "url": "https://www.electricbikejournal.com/orbea-vibe-review/", "quote": "The Orbea Vibe H30 EQ is a class one electric bike with pedal assist up to 20 mph. There are a few iterations of the Orbea Vibe, this here H30 EQ is the misstep version. It comes with a rear rack and front/rear fenders. This is also the mid-step version, it is also available in a high-step version."},
+   {"kind": "review", "value": 1, "url": "https://upway.co/blogs/news/orbea-vibe-ebike-review", "quote": "Maximum Assistance: 20 mph / 32 km/h (US Class 1) or 15.5 mph / 25 km/h (UK/EU limits) ⟶ Peak Power: 250 W"}
+  ],
+  "spd": [
+   {"kind": "review", "value": 20, "url": "https://www.electricbikejournal.com/orbea-vibe-review/", "quote": "The Orbea Vibe H30 EQ is a class one electric bike with pedal assist up to 20 mph. There are a few iterations of the Orbea Vibe, this here H30 EQ is the misstep version. It comes with a rear rack and front/rear fenders. This is also the mid-step version, it is also available in a high-step version."},
+   {"kind": "review", "value": 20, "url": "https://upway.co/blogs/news/orbea-vibe-ebike-review", "quote": "Maximum Assistance: 20 mph / 32 km/h (US Class 1) or 15.5 mph / 25 km/h (UK/EU limits) ⟶ Peak Power: 250 W"}
+  ],
+  "tq": [
+   {"kind": "review", "value": 40, "url": "https://www.electricbikejournal.com/orbea-vibe-review/", "quote": "This isn’t the fastest ebike out there. The motor produces 40nm of torque, which is plenty for keeping a good speed around town. Even so, you aren’t going to win any ebike drag races with this bike, but it is very efficient. ⟶ Final Thoughts"},
+   {"kind": "review", "value": 40, "url": "https://upway.co/blogs/news/orbea-vibe-ebike-review", "quote": "Motor Torque: 40 Nm"}
+  ],
+  "wh": [
+   {"kind": "review", "value": 248, "url": "https://www.electricbikejournal.com/orbea-vibe-review/", "quote": "250w Motor ⟶ 248Wh Battery"},
+   {"kind": "review", "value": 248, "url": "https://upway.co/blogs/news/orbea-vibe-ebike-review", "quote": "Battery:248 Wh integrated internal down tube battery ⟶ Optional Range Extender: 208 Wh external water-bottle backup battery"}
+  ],
+  "range": [
+   {"kind": "review", "value": "77", "url": "https://www.electricbikejournal.com/orbea-vibe-review/", "quote": "In addition to the internal battery, there is an option for an external range extender battery. Estimated range with the internal battery is 125km (77mi) and with the range extender up to 220km. The Orbea Vibe H30 EQ weighs in just around 40lbs and has a price tag of $3,499. ⟶ Quick Specs", "basis": "estimated range, internal battery"},
+   {"kind": "review", "value": "56", "url": "https://upway.co/blogs/news/orbea-vibe-ebike-review", "quote": "Estimated Range: Up to 90 km (extending significantly further depending on terrain and range extender use) ⟶ Tire Clearance: Up to 700 x 45c maximum tire width", "basis": "90 km converted to miles"}
+  ],
+  "wt": [
+   {"kind": "review", "value": 39.6, "url": "https://www.electricbikejournal.com/orbea-vibe-review/", "quote": "Weight: 39.6lbs ⟶ Website: www.Orbea.com", "basis": "Vibe H30 EQ (with rack and fenders)"},
+   {"kind": "review", "value": 36.4, "url": "https://upway.co/blogs/news/orbea-vibe-ebike-review", "quote": "Weight: 14.5 kg to 16.5 kg (depending on build tier and EQ commuter accessory add-ons) ⟶ What urban features are on the Orbea Vibe?", "basis": "upper end of 14.5-16.5 kg (32.0-36.4 lb) range, varies by build"}
+  ],
+  "load": [
+   {"kind": "review", "value": null, "url": "https://upway.co/blogs/news/orbea-vibe-ebike-review", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "review", "value": "250W rear hub (Mahle X35 Plus)", "url": "https://upway.co/blogs/news/orbea-vibe-ebike-review", "quote": "Motor: Mahle X35 Plus brushless rear wheel hub-drive motor | Motor Torque: 40 Nm | Maximum Assistance: 20 mph / 32 km/h (US Class 1) or 15.5 mph / 25 km/h (UK/EU limits) | Peak Power: 250 W", "basis": "page gives 250 W as peak power"},
+   {"kind": "review", "value": "250W", "url": "https://www.electricbikejournal.com/orbea-vibe-review/", "quote": "250w Motor ⟶ 248Wh Battery"}
+  ],
+  "height": [
+   {"kind": "review", "value": null, "url": "https://www.electricbikejournal.com/orbea-vibe-review/", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "review", "value": "No", "url": "https://www.electricbikejournal.com/orbea-vibe-review/", "quote": "The Orbea Vibe H30 EQ is a class one electric bike with pedal assist up to 20 mph. There are a few iterations of the Orbea Vibe, this here H30 EQ is the misstep version. It comes with a rear rack and front/rear fenders. This is also the mid-step version, it is also available in a high-step version.", "basis": "mid-step / high-step rigid frames; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "No maker page: the Vibe is not in Orbea's current US lineup (the Urban & Active page lists Muga, Kemen Adv, Kemen Tour, Diem, Carpe, Vector; guessed configurator URLs 404; Orbea's own site search for 'vibe' returns only spare parts). Likely discontinued in the US, but no Orbea page says so, so status is left empty. Specs come from two reviews: Electric Bike Journal (Vibe H30 EQ) and Upway's model overview (covers the range of builds). Not on N+1 Bikes. Range numbers differ between the two (125 km vs 90 km)."}

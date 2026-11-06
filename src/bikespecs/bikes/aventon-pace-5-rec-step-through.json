@@ -1,0 +1,49 @@
+{"bike": "Aventon|Pace 5 REC Step-Through", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1799, "url": "https://www.aventon.com/products/pace-5-rec-step-through-ebike", "quote": "$1,599.00 ⟶ $1,799.00", "basis": "regular $1,799; on sale $1,599 ($200 off)"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/aventon-pace-5-rec-review/", "quote": ""}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.aventon.com/products/pace-5-rec-step-through-ebike", "quote": "Ebike Class | Class 2 Ebike"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/aventon-pace-5-rec-review/", "quote": "Turbo felt remarkably relaxed, reaching the Class 2 ceiling of 20 mph with only light pedal pressure and hitting 28 mph in Class 3 mode with almost none. In both modes, power stepped up intuitively and consistently.", "basis": "switchable Class 2 / Class 3 via app"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.aventon.com/products/pace-5-rec-step-through-ebike", "quote": "Speed ⟶ Max: 28 MPH", "basis": "maximum (Class 3 setting); maker lists the bike as Class 2 (20 mph), adjustable to 28 mph"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/aventon-pace-5-rec-review/", "quote": "Turbo felt remarkably relaxed, reaching the Class 2 ceiling of 20 mph with only light pedal pressure and hitting 28 mph in Class 3 mode with almost none. In both modes, power stepped up intuitively and consistently.", "basis": "Class 2 setting; adjustable to 28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 80, "url": "https://www.aventon.com/products/pace-5-rec-step-through-ebike", "quote": "Motor Torque | 80Nm (96Nm in Boost Mode)"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/aventon-pace-5-rec-review/", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 733, "url": "https://www.aventon.com/products/pace-5-rec-step-through-ebike", "quote": "Battery | Removable Internal Lithium-ion. 36V, 20Ah, 733Wh, LG 21700 cells"},
+   {"kind": "review", "value": 733, "url": "https://electricbikereport.com/aventon-pace-5-rec-review/", "quote": "Battery: Removable Internal Lithium-ion 36V, 20Ah, 733Wh, LG 21700 cells ⟶ Charger: 36V Output: 42V/4A"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "75", "url": "https://www.aventon.com/products/pace-5-rec-step-through-ebike", "quote": "RANGE ⟶ Up to 75 Miles**"},
+   {"kind": "review", "value": "75", "url": "https://electricbikereport.com/aventon-pace-5-rec-review/", "quote": "Claimed Range: Up to 75 Miles ⟶ Throttle: Aventon LH Handlebar Mounted"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 60.48, "url": "https://www.aventon.com/products/pace-5-rec-step-through-ebike", "quote": "Weight | 60.48lbs"},
+   {"kind": "review", "value": 60.48, "url": "https://electricbikereport.com/aventon-pace-5-rec-review/", "quote": "WEIGHT & DIMENSIONS ⟶ Claimed weight: 60.48 lbs", "basis": "claimed; tested 61.6 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 330, "url": "https://www.aventon.com/products/pace-5-rec-step-through-ebike", "quote": "Total Weight Limit | 330 lbs", "basis": "total"},
+   {"kind": "review", "value": 330, "url": "https://electricbikereport.com/aventon-pace-5-rec-review/", "quote": "Total payload capacity: 330 lbs ⟶ COMPONENTS & ACCESSORIES"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub (1,188W peak; 1,440W in Boost)", "url": "https://www.aventon.com/products/pace-5-rec-step-through-ebike", "quote": "Motor Power ⟶ 750W, 1188 Watt Peak (1440 watt peak in boost mode)"},
+   {"kind": "review", "value": "750W hub (1,440W peak in Boost)", "url": "https://electricbikereport.com/aventon-pace-5-rec-review/", "quote": "Motor: 36V, 750W Hub Motor (1440W Peak in Boost Mode) ⟶ Headlight: Integrated LED Always-On Headlight"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'0\"-6'3\"", "url": "https://www.aventon.com/products/pace-5-rec-step-through-ebike", "quote": "Rider Height | S/M: 5'0\" -5'9\" | L: 5'9\" - 6'3\"", "basis": "two sizes combined"},
+   {"kind": "review", "value": "5'0\"-6'3\"", "url": "https://electricbikereport.com/aventon-pace-5-rec-review/", "quote": "Rider height range: Regular – 5’0″-5’9″ / Large – 5’9″-6’3″ ⟶ Total payload capacity: 330 lbs", "basis": "two sizes combined"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.aventon.com/products/pace-5-rec-step-through-ebike", "quote": "Frame | 6061 Aluminum, Gravity Cast Front Triangle"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/aventon-pace-5-rec-review/", "quote": ""}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker spec table read from the page's Specifications section; quotes with ' | ' join consecutive page lines. Maker lists 'Class 2 Ebike' but 'Speed: Max: 28 MPH' (app-switchable to Class 3). 'Total Weight Limit 330 lbs' recorded with basis total since the maker labels it total. The 'DISCONTINUED' badges on the page belong to other bikes in a 'Recently Viewed' strip, not this one. Only one independent source (EBR)."}

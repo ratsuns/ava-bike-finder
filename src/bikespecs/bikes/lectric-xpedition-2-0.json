@@ -1,0 +1,51 @@
+{"bike": "Lectric|XPedition 2.0", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1804, "url": "https://lectricebikes.com/products/xpedition-single-battery", "quote": "$1,399 ⟶ $1,804", "basis": "crossed-out price; no 'Previously listed at' line on the page"},
+   {"kind": "review", "value": 1399, "url": "https://electricbikereview.com/lectric-ebikes/lectric-xpedition-2-review/", "quote": "Price ⟶ MSRP: $1399"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://lectricebikes.com/products/xpedition-single-battery", "quote": "Five levels of pedal-assist and a throttle delivers the speed and power to own the road as a Class 1, 2, or 3 eBike.* ⟶ Thumb Throttle", "basis": "Class 1/2/3 with throttle; maker FAQ says it ships as Class 2"},
+   {"kind": "maker", "value": 2, "url": "https://lectricebikes.com/pages/faq", "quote": "All Lectric eBikes ship as a class 2 electric bike, meaning it has a throttle capable of propelling the bike at speeds of up to 20mph."},
+   {"kind": "review", "value": 3, "url": "https://electricbikereview.com/lectric-ebikes/lectric-xpedition-2-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 3", "basis": "reviewer lists the unlocked class"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://lectricebikes.com/products/xpedition-single-battery", "quote": "TOP SPEED ⟶ 28 mph", "basis": "ships at 20 mph"},
+   {"kind": "maker", "value": 28, "url": "https://lectricebikes.com/pages/faq", "quote": "If you would like to go faster, the XP, XPedition, XPeak, XPress, and XPress Lite bikes can be unlocked to achieve class 3 settings. This will allow you to reach pedal-assist speeds of up to 28mph!", "basis": "ships at 20 mph"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/lectric-ebikes/lectric-xpedition-2-review/", "quote": "TOP SPEED: ⟶ 28 MPH mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://lectricebikes.com/products/xpedition-single-battery", "quote": "A 750W rear hub-motor (1310W Peak) with 85Nm of torque delivers power and speed quicker than ever before."},
+   {"kind": "review", "value": 85, "url": "https://electricbikereview.com/lectric-ebikes/lectric-xpedition-2-review/", "quote": "MOTOR TORQUE: ⟶ 85 Nm Newton meters"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 624, "url": "https://lectricebikes.com/products/xpedition-single-battery", "quote": "A removable 48V, 13Ah (624Wh) lithium-ion battery certified to UL 2271 makes for a clean design while powering your ride for up to 60 miles on a single charge.**"},
+   {"kind": "review", "value": 624, "url": "https://electricbikereview.com/lectric-ebikes/lectric-xpedition-2-review/", "quote": "From the 624Wh base to a 1680Wh dual battery setup, you’ve got flexibility for commutes or long hauls, between 60 and 170 miles in range (depending on battery option you pick)."}
+  ],
+  "range": [
+   {"kind": "maker", "value": "60", "url": "https://lectricebikes.com/products/xpedition-single-battery", "quote": "RANGE ⟶ up to 60 miles"},
+   {"kind": "review", "value": "60", "url": "https://electricbikereview.com/lectric-ebikes/lectric-xpedition-2-review/", "quote": "From the 624Wh base to a 1680Wh dual battery setup, you’ve got flexibility for commutes or long hauls, between 60 and 170 miles in range (depending on battery option you pick).", "basis": "60 is the low end, for the 624Wh base battery; EBR's own range tests used larger batteries"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 74, "url": "https://lectricebikes.com/products/xpedition-single-battery", "quote": "Total bike weight 65lbs without batteries installed. Each XPedition battery weighs 9lbs.", "basis": "65 lbs without battery + one 9 lb battery"},
+   {"kind": "review", "value": 74, "url": "https://electricbikereview.com/lectric-ebikes/lectric-xpedition-2-review/", "quote": "TOTAL WEIGHT: ⟶ 74 lbs (33.57 kg)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 450, "url": "https://lectricebikes.com/products/xpedition-single-battery", "quote": "PAYLOAD CAPACITY ⟶ 450 lbs"},
+   {"kind": "review", "value": 450, "url": "https://electricbikereview.com/lectric-ebikes/lectric-xpedition-2-review/", "quote": "A huge 450lb max payload and the rear rack alone can carry up to 300 lbs!"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub (1,310W peak)", "url": "https://lectricebikes.com/products/xpedition-single-battery", "quote": "A 750W rear hub-motor (1310W Peak) with 85Nm of torque delivers power and speed quicker than ever before."},
+   {"kind": "review", "value": "750W (1,310W peak)", "url": "https://electricbikereview.com/lectric-ebikes/lectric-xpedition-2-review/", "quote": "MOTOR NOMINAL OUTPUT: | 750 watts | MOTOR PEAK OUTPUT: | 1310 watts"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'11\"-6'5\"", "url": "https://lectricebikes.com/products/xpedition-single-battery", "quote": "Rider Height ⟶ 4’11” - 6’5”"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/lectric-ebikes/lectric-xpedition-2-review/", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://lectricebikes.com/products/xpedition-single-battery", "quote": "A foldable handlebar stem and adjustable seat height allows the XPedition to slide into compact spaces.", "basis": "folding handlebar stem only; frame does not fold"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/lectric-ebikes/lectric-xpedition-2-review/", "quote": ""}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page is the XPedition 2.0 single-battery (Stratus White). It shows $1,399 Black Friday sale with $1,804 crossed out and no 'Previously listed at' line, so $1,804 recorded per rule; EBR MSRP is $1,399 (the price Lectric has long sold it at), so the $1,804 compare-at price looks inflated. Ships as Class 2 (maker FAQ), unlockable to Class 3 / 28 mph; EBR lists Class 3. Maker range 'up to 60 miles' does not say pedal assist vs throttle. Folding stem only, so fold = No."}

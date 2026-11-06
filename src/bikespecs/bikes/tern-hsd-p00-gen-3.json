@@ -1,0 +1,51 @@
+{"bike": "Tern|HSD P00 (Gen 3)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 5699, "url": "https://www.ternbicycles.com/us/bikes/473/hsd-p00", "quote": "$5,699 ⟶ WHY HSD GEN 3 SPECS ACCESSORIES SUPPORT FIND A DEALER", "basis": "not marked as sale price"},
+   {"kind": "retailer", "value": 5699, "url": "https://www.seattleelectricbike.net/products/tern-hsd-p00-gen-3", "quote": "$5,699.00 ⟶ Type: Cargo Ebikes"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://www.ternbicycles.com/us/bikes/473/hsd-p00", "quote": "", "basis": "maker page gives no class; only \"max speed 20 mph (US)\""},
+   {"kind": "retailer", "value": null, "url": "https://www.seattleelectricbike.net/products/tern-hsd-p00-gen-3", "quote": "", "basis": "no class given"},
+   {"kind": "review", "value": 1, "url": "https://www.bikeride.com/tern-hsd/", "quote": "CLASS ⟶ Class 1", "basis": "BikeRide HSD family page; it describes the earlier HSD (50 Nm, S8i/S+), not Gen 3, so this is an older generation - class unchanged (20 mph, no throttle) but weak"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.ternbicycles.com/us/bikes/473/hsd-p00", "quote": "Bosch Performance (BDU34, 340% Assist, 75 Nm Torque, max speed 25 km/h (EU); max speed 20 mph (US) ⟶ BATTERY:"},
+   {"kind": "retailer", "value": 20, "url": "https://www.seattleelectricbike.net/products/tern-hsd-p00-gen-3", "quote": "Motor: Bosch Performance (BDU34, 340% Assist, 75 Nm Torque, max speed 25 km/h (EU); max speed 20 mph ⟶ Battery: Bosch PowerPack 545"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 75, "url": "https://www.ternbicycles.com/us/bikes/473/hsd-p00", "quote": "Bosch Performance (BDU34, 340% Assist, 75 Nm Torque, max speed 25 km/h (EU); max speed 20 mph (US) ⟶ BATTERY:"},
+   {"kind": "retailer", "value": 75, "url": "https://www.seattleelectricbike.net/products/tern-hsd-p00-gen-3", "quote": "Bosch Performance Line motor delivers up to 75 Nm of torque, boosting your pedaling power by up to 340%"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 545, "url": "https://www.ternbicycles.com/us/bikes/473/hsd-p00", "quote": "RANGE: ⟶ 545 Wh: 56-107 km (35-67 mi)", "basis": "battery listed as 'Bosch PowerPack 545'"},
+   {"kind": "retailer", "value": 545, "url": "https://www.seattleelectricbike.net/products/tern-hsd-p00-gen-3", "quote": "Range: 545 Wh: 56-107 km (35-67 mi) ⟶ Charger: Fast Charging, 220V, 4A (EU); 100-240V, 4A (US)"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "35–67", "url": "https://www.ternbicycles.com/us/bikes/473/hsd-p00", "quote": "RANGE: ⟶ 545 Wh: 56-107 km (35-67 mi)"},
+   {"kind": "retailer", "value": "35–67", "url": "https://www.seattleelectricbike.net/products/tern-hsd-p00-gen-3", "quote": "Range: 545 Wh: 56-107 km (35-67 mi) ⟶ Charger: Fast Charging, 220V, 4A (EU); 100-240V, 4A (US)"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 63.7, "url": "https://www.ternbicycles.com/us/bikes/473/hsd-p00", "quote": "WEIGHT: ⟶ 28.9 kg (63.7 lb)", "basis": "battery not mentioned either way"},
+   {"kind": "retailer", "value": 63.7, "url": "https://www.seattleelectricbike.net/products/tern-hsd-p00-gen-3", "quote": "Weight: 28.9 kg (63.7 lb) ⟶ Gear Inches: 28\" - 106\" (2.23 - 8.47 m)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 418.9, "url": "https://www.ternbicycles.com/us/bikes/473/hsd-p00", "quote": "MAX GROSS VEHICLE WEIGHT: ⟶ 190 kg (418.9 lb)", "basis": "total"},
+   {"kind": "retailer", "value": 418.9, "url": "https://www.seattleelectricbike.net/products/tern-hsd-p00-gen-3", "quote": "Max Gross Vehicle Weight: 190 kg (418.9 lb) ⟶ Max Rider Weight: 130 kg (286.6 lb)", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Performance (BDU34, 75 Nm)", "url": "https://www.ternbicycles.com/us/bikes/473/hsd-p00", "quote": "Bosch Performance (BDU34, 340% Assist, 75 Nm Torque, max speed 25 km/h (EU); max speed 20 mph (US) ⟶ BATTERY:", "basis": "no rated watts published"},
+   {"kind": "retailer", "value": "Bosch Performance Line (75 Nm)", "url": "https://www.seattleelectricbike.net/products/tern-hsd-p00-gen-3", "quote": "Bosch Performance Line motor delivers up to 75 Nm of torque, boosting your pedaling power by up to 340%", "basis": "no rated watts"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'11\"-6'7\"", "url": "https://www.ternbicycles.com/us/bikes/473/hsd-p00", "quote": "Easy-sharing cockpit adjusts without tools to fit riders 4'11\" - 6'7\" (150 - 200 cm) tall and weighing up to 287 lb (130 kg)"},
+   {"kind": "retailer", "value": "4'11\"-6'7\"", "url": "https://www.seattleelectricbike.net/products/tern-hsd-p00-gen-3", "quote": "Easy-sharing cockpit adjusts without tools to fit riders 4'11\" - 6'7\" (150 - 200 cm) tall and weighing up to 287 lb (130 kg)"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.ternbicycles.com/us/bikes/473/hsd-p00", "quote": "FOLDING SIZE: ⟶ 166 × 42 × 87 cm (65.4 × 16.5 × 34.3 in)", "basis": "judgment: folded length 166 cm is full bike length — only the handlebar folds, frame does not"},
+   {"kind": "retailer", "value": "No", "url": "https://www.seattleelectricbike.net/products/tern-hsd-p00-gen-3", "quote": "Standover Height: 48.5 cm (19.1 in) ⟶ Folding Size: 166 × 42 × 87 cm (65.4 × 16.5 × 34.3 in)", "basis": "judgment: same as maker — handlebar fold only"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page confirms 'GENERATION: ⟶ Gen 3'. Independent source is Seattle Electric Bike (US dealer, page 'NEW! Tern HSD P00 (Gen 3)'); its specs are copied from Tern. Maker gives no e-bike class (20 mph, no throttle). Max load is GVW 190 kg (418.9 lb) -> total; max rider 130 kg. | recheck: only class statement found is BikeRide's HSD family page (older HSD generation): Class 1, 20 mph. Tern pages state no class."
+}

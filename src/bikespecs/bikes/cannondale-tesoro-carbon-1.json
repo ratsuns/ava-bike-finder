@@ -1,0 +1,174 @@
+{
+ "bike": "Cannondale|Tesoro Carbon 1",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": 6599,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/tesoro-neo-carbon/tesoro-neo-carbon-1-c66124u",
+    "quote": "$4,769$6,599 ⟶ You Save $1,830",
+    "basis": "regular price $6,599; $4,769 is a sale price"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.n1bikes.com/products/tesoro-carbon-1?id=de84c382a680dd74dbeafc62186ffd1c9a59ddcf67ce41bd7b4c45d28ec42e87&variant=C66124U10XL",
+    "quote": "$4,769.00",
+    "basis": "dealer shows only the current sale price, matching the maker's sale price"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": 3,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/tesoro-neo-carbon/tesoro-neo-carbon-1-c66124u",
+    "quote": "Light, silent, Bosch SX Sprint 28-mph drive system, with a 400Wh battery ⟶ Wireless electronic SRAM Eagle 12-speed shifting",
+    "basis": "no class line; 28 mph assist = Class 3"
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": 28,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/tesoro-neo-carbon/tesoro-neo-carbon-1-c66124u",
+    "quote": "Bosch Performance Line Sprint, 28mph ⟶ Battery"
+   },
+   {
+    "kind": "retailer",
+    "value": 28,
+    "url": "https://www.n1bikes.com/products/tesoro-carbon-1?id=de84c382a680dd74dbeafc62186ffd1c9a59ddcf67ce41bd7b4c45d28ec42e87&variant=C66124U10XL",
+    "quote": "Drive Unit\tBosch Performance Line Sprint, 28mph"
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/tesoro-neo-carbon/tesoro-neo-carbon-1-c66124u",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.n1bikes.com/products/tesoro-carbon-1?id=de84c382a680dd74dbeafc62186ffd1c9a59ddcf67ce41bd7b4c45d28ec42e87&variant=C66124U10XL",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": 63,
+    "url": "https://99spokes.com/bikes/cannondale/2025/tesoro-carbon-1",
+    "quote": "MotorBosch 600W 63Nm mid-drive",
+    "basis": "99 Spokes spec summary ($6,599, 400Wh, GX Eagle AXS, matching the US build); 99 Spokes shows this same '600W 63Nm' wording for several other Bosch-equipped bikes, so it may be a generic placeholder"
+   },
+   {
+    "kind": "retailer",
+    "value": 55,
+    "url": "https://www.rabe-bike.de/en/cannondale-tesoro-neo-carbon-1-stealth-grey-2024",
+    "quote": "E-Engine\tBosch Performance Line SX (55 Nm / 25 km/h) ⟶ Display\tTop-tube System Controller mit Mini Remote",
+    "basis": "German dealer, European (25 km/h) version of the same model; also 'DRIVE UNIT ⟶ Bosch Perf. SX (55Nm) / PowerTube (400Wh)'"
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": 400,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/tesoro-neo-carbon/tesoro-neo-carbon-1-c66124u",
+    "quote": "Battery ⟶ Bosch Compact Powertube 400Wh"
+   },
+   {
+    "kind": "retailer",
+    "value": 400,
+    "url": "https://www.n1bikes.com/products/tesoro-carbon-1?id=de84c382a680dd74dbeafc62186ffd1c9a59ddcf67ce41bd7b4c45d28ec42e87&variant=C66124U10XL",
+    "quote": "Battery\tBosch Compact Powertube 400Wh"
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/tesoro-neo-carbon/tesoro-neo-carbon-1-c66124u",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.n1bikes.com/products/tesoro-carbon-1?id=de84c382a680dd74dbeafc62186ffd1c9a59ddcf67ce41bd7b4c45d28ec42e87&variant=C66124U10XL",
+    "quote": ""
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/tesoro-neo-carbon/tesoro-neo-carbon-1-c66124u",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": 35.3,
+    "url": "https://www.n1bikes.com/products/tesoro-carbon-1?id=de84c382a680dd74dbeafc62186ffd1c9a59ddcf67ce41bd7b4c45d28ec42e87&variant=C66124U10XL",
+    "quote": "Weight\t16kg",
+    "basis": "16 kg converted to lb; size and battery inclusion not stated"
+   },
+   {
+    "kind": "review",
+    "value": 35.3,
+    "url": "https://urbanbike.news/en/cannondale-tesoro-neo-carbon-lightweight-urban-e-bike-with-new-bosch-mid-drive-motor/",
+    "quote": "The highlight of the bike is its low weight, which is said to be only around 16 kg for the top model.",
+    "basis": "16 kg = 35.3 lb, 'around'; top model = Tesoro Neo Carbon 1 (European launch article, EUR prices); battery inclusion not stated"
+   },
+   {
+    "kind": "retailer",
+    "value": 35.3,
+    "url": "https://www.rabe-bike.de/en/cannondale-tesoro-neo-carbon-1-stealth-grey-2024",
+    "quote": "Weight\t16 kg ⟶ Frame",
+    "basis": "16 kg = 35.3 lb; European version; size and battery inclusion not stated"
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/tesoro-neo-carbon/tesoro-neo-carbon-1-c66124u",
+    "quote": "Included front and rear fenders keep off the grime, even in poor weather, and the pannier mounts out back mean you can add up to 8 kg / 17.5 lbs per side of cargo-carrying capacity whenever you need. ⟶ Lighten Up",
+    "basis": "only pannier capacity per side is given, not a bike max load"
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "Bosch Performance Line Sprint",
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/tesoro-neo-carbon/tesoro-neo-carbon-1-c66124u",
+    "quote": "Bosch Performance Line Sprint, 28mph ⟶ Battery"
+   },
+   {
+    "kind": "retailer",
+    "value": "Bosch Performance Line Sprint",
+    "url": "https://www.n1bikes.com/products/tesoro-carbon-1?id=de84c382a680dd74dbeafc62186ffd1c9a59ddcf67ce41bd7b4c45d28ec42e87&variant=C66124U10XL",
+    "quote": "Drive Unit\tBosch Performance Line Sprint, 28mph"
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": "5'2\"-6'9\"",
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/tesoro-neo-carbon/tesoro-neo-carbon-1-c66124u",
+    "quote": "Height - 5'2\" - 5'7\" | Height - 5'5\" - 5'9\" | Height - 5'9\" - 6'1\" | Height - 6'1\" - 6'3\" | Height - 6'3\" - 6'9\"",
+    "basis": "five size selectors (XS, SM, MD, LG, XL) shown one at a time on the page; joined"
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/tesoro-neo-carbon/tesoro-neo-carbon-1-c66124u",
+    "quote": "Tesoro Carbon, internal downtube battery, integrated cable routing, 148mm dropout spacing, 12mm thru-axle, SAVE, flat mount disc, removable kickstand mount (40mm Pletscher-style) ⟶ Fork"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker regular price $6,599, on sale $4,769. Maker page gives no torque, range, weight or max load; highlights call the motor 'Bosch SX Sprint' while specs say 'Bosch Performance Line Sprint'. Weight (16 kg) only from N+1 Bikes dealer, basis unknown. No independent review found (one WebSearch returned only maker regional pages and shops). Only 2 sources. recheck (tq, wt): maker page has no torque/weight. 99 Spokes 2025 Tesoro Carbon 1 says 63Nm (differs from site's 55). urbanbike.news launch article (European version) says around 16 kg for the top model (Carbon 1) and names the motor Bosch Performance Line SX, but gives no Nm. bike-x.de test showed no specs in readable text. Used the bike's one WebSearch. Also Rabe Bike (German dealer, EU 25 km/h version): 55 Nm and 16 kg."
+}

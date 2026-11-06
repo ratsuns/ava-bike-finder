@@ -1,0 +1,167 @@
+{
+ "bike": "Mokwheel|Scoria",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": 1999.99,
+    "url": "https://www.mokwheel.com/products/scoria",
+    "quote": "Regular price ⟶ $1,999.99",
+    "basis": "struck-through regular price; sale price $1,899.99"
+   },
+   {
+    "kind": "retailer",
+    "value": 1799,
+    "url": "https://ebikesupershop.com/products/ebike-mokwheel-scoria-2-0-white-in-a-box",
+    "quote": "$1,799.00 ⟶ ORDER NOW",
+    "basis": "dealer price (in a box)"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": 3,
+    "url": "https://www.mokwheel.com/products/scoria",
+    "quote": "Classification ⟶ Class 2/3",
+    "basis": "maker spec popup lists 'Speed Class ⟶ 20 mph (Throttle) / 28 mph (PAS)' with no lower default stated -> 28 mph PAS = Class 3 (throttle limited to 20 mph)"
+   },
+   {
+    "kind": "retailer",
+    "value": 3,
+    "url": "https://ebikesupershop.com/products/ebike-mokwheel-scoria-2-0-white-in-a-box",
+    "quote": "28 MPH Top Speed: Built for Class 3 pedal-assist cruising speeds up to 28 MPH."
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": 28,
+    "url": "https://www.mokwheel.com/products/scoria",
+    "quote": "Speed Class ⟶ 20 mph (Throttle) / 28 mph (PAS)",
+    "basis": "from the 'Technical & Specifications' popup; throttle 20 mph"
+   },
+   {
+    "kind": "retailer",
+    "value": 28,
+    "url": "https://ebikesupershop.com/products/ebike-mokwheel-scoria-2-0-white-in-a-box",
+    "quote": "Sensor\tTorque+Cadence ⟶ Top Speed\t28 MPH"
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": 90,
+    "url": "https://www.mokwheel.com/products/scoria",
+    "quote": "Motor Power ⟶ 750W/90Nm+"
+   },
+   {
+    "kind": "retailer",
+    "value": 90,
+    "url": "https://ebikesupershop.com/products/ebike-mokwheel-scoria-2-0-white-in-a-box",
+    "quote": "Motor Power\t750W / 90Nm+ (1100W Peak) ⟶ Sensor\tTorque+Cadence"
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": 940,
+    "url": "https://www.mokwheel.com/products/scoria",
+    "quote": "Equipped with a 48V 19.6Ah (940Wh) battery, Scoria offers a range of up to 80 miles. Ride farther and charge less, whether you're commuting or heading off-road. ⟶ Ride With Your Rhythm"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://ebikesupershop.com/products/ebike-mokwheel-scoria-2-0-white-in-a-box",
+    "quote": ""
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": "60–80",
+    "url": "https://www.mokwheel.com/products/scoria",
+    "quote": "Range ⟶ 60~80miles",
+    "basis": "from the 'Technical & Specifications' popup; headline says 'Up To 80 Miles'"
+   },
+   {
+    "kind": "retailer",
+    "value": "80",
+    "url": "https://ebikesupershop.com/products/ebike-mokwheel-scoria-2-0-white-in-a-box",
+    "quote": "Top Speed\t28 MPH ⟶ Range\tUp To 80 Miles"
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": 82,
+    "url": "https://www.mokwheel.com/products/scoria",
+    "quote": "Weight ⟶ 82 lbs",
+    "basis": "from the 'Technical & Specifications' popup"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://ebikesupershop.com/products/ebike-mokwheel-scoria-2-0-white-in-a-box",
+    "quote": ""
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": 350,
+    "url": "https://www.mokwheel.com/products/scoria",
+    "quote": "Payload Capability ⟶ 350 Lbs"
+   },
+   {
+    "kind": "retailer",
+    "value": 350,
+    "url": "https://ebikesupershop.com/products/ebike-mokwheel-scoria-2-0-white-in-a-box",
+    "quote": "Range\tUp To 80 Miles ⟶ Payload Capability\t350 Lbs"
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "750W rear hub (1,100W peak)",
+    "url": "https://www.mokwheel.com/products/scoria",
+    "quote": "With a peak motor output of 1100W, Scoria delivers strong power the moment you start. Climb hills, ride steep paths, and take on rough ground with confidence. ⟶ Extend Your Range",
+    "basis": "750W from 'Motor Power ⟶ 750W/90Nm+'"
+   },
+   {
+    "kind": "retailer",
+    "value": "750W (1,100W peak)",
+    "url": "https://ebikesupershop.com/products/ebike-mokwheel-scoria-2-0-white-in-a-box",
+    "quote": "Motor Power\t750W / 90Nm+ (1100W Peak) ⟶ Sensor\tTorque+Cadence"
+   },
+   {
+    "kind": "maker",
+    "value": "750W hub (1,100W peak)",
+    "url": "https://www.mokwheel.com/products/scoria",
+    "quote": "MotorContinuous Power: 750W Peak Power: 1100W Torque: 90Nm+",
+    "basis": "maker's 'Technical & Specifications' popup (hidden, read via textContent); page's product data also says 'Hub Motor' '750W(Peak 1100W),90Nm+'"
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": "5'0\"-6'2\"",
+    "url": "https://www.mokwheel.com/products/scoria",
+    "quote": "Rider Height ⟶ 5'0\" ~ 6'2\""
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://www.mokwheel.com/products/scoria",
+    "quote": "Scoria 2.0 comes in 1 size to suit most adults",
+    "basis": "one-size step-through fat-tire frame; no folding mentioned"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker page is Scoria 2.0 (torque sensor, 90Nm+, 940Wh). Weight, speed class and range lines are in the page's 'Technical & Specifications' popup (hidden until opened). Class: maker says 'Class 2/3' and '20 mph (Throttle) / 28 mph (PAS)' without a stated default; recorded 3 — unlike Basalt's page, which states a 20 mph default. Maker motor quote line for 750W: 'Motor Power ⟶ 750W/90Nm+'. ElectricBikeReview has no Scoria review; ElectricBikeReport only reviewed Scoria 1.0 (not used). Only independent source is an authorized dealer (eBike Super Shop) with a short spec table. Recheck: maker spec popup (textContent) states 'Continuous Power: 750W Peak Power: 1100W'."
+}

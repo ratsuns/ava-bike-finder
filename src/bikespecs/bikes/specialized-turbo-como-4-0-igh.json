@@ -1,0 +1,53 @@
+{"bike": "Specialized|Turbo Como 4.0 IGH", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 4249.99, "url": "https://www.specialized.com/us/en/turbo-como-40-igh/p/206177", "quote": "$4,249.99 ⟶ 4.3"},
+   {"kind": "retailer", "value": 4250, "url": "https://www.n1bikes.com/products/turbo-como-40-igh?id=092656ae3862d5eca798701df575e7c9b4766a089bf82f9beb28f19442f80a2d&variant=90422-4002", "quote": "$4,249.99 ⟶ $4,250.00", "basis": "crossed-out $4,250.00, sale $4,249.99"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-como-40-igh/p/206177", "quote": "The speed limit at which the motor will stop supporting may vary significantly by region and is based on local requirements. It may also affect range: a higher speed limit may result in less range."},
+   {"kind": "review", "value": 3, "url": "https://eridehero.com/products/specialized-turbo-como-4-0-igh-2026/", "quote": "E-Bike Class\tClass 3"},
+   {"kind": "retailer", "value": 3, "url": "https://cripplecreekbc.com/collections/specialized-como-3/products/specialized-turbo-como-4-0-igh-bike", "quote": "With a Class 3 top speed of 28 mph, turbo-charged pedal assist, and features like an 80mm front fork, Spring suspension seatpost, and Pathfinder tires, you'll experience a smooth ride and maximum comfort no matter how far you go.", "basis": "authorized dealer (Cripple Creek Backcountry); current gen (80mm fork, spring seatpost)"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-como-40-igh/p/206177", "quote": ""},
+   {"kind": "review", "value": 28, "url": "https://eridehero.com/products/specialized-turbo-como-4-0-igh-2026/", "quote": "Top Assist Speed\t28 mph"},
+   {"kind": "maker", "value": 28, "url": "https://www.specialized.com/us/en/turbo-como-40-igh/p/206177", "quote": "Turbo Full Power 2.0 motor and 710Wh battery offer an unparalleled riding experience, providing a smooth, seamless, and shockingly quiet amplification of your efforts, up to 28 mph."},
+   {"kind": "retailer", "value": 28, "url": "https://cripplecreekbc.com/collections/specialized-como-3/products/specialized-turbo-como-4-0-igh-bike", "quote": "With a Class 3 top speed of 28 mph, turbo-charged pedal assist, and features like an 80mm front fork, Spring suspension seatpost, and Pathfinder tires, you'll experience a smooth ride and maximum comfort no matter how far you go."}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 70, "url": "https://www.specialized.com/us/en/turbo-como-40-igh/p/206177", "quote": "Motor ⟶ Specialized 2.0, 70Nm torque, custom tuned motor, 250W nominal"},
+   {"kind": "retailer", "value": 70, "url": "https://www.n1bikes.com/products/turbo-como-40-igh?id=092656ae3862d5eca798701df575e7c9b4766a089bf82f9beb28f19442f80a2d&variant=90422-4002", "quote": "Motor\tSpecialized 2.0, 70Nm torque, custom tuned motor, 250W nominal ⟶ Battery\tSpecialized U2-710, alloy casing, state of charge display, 710Wh"},
+   {"kind": "review", "value": 70, "url": "https://eridehero.com/products/specialized-turbo-como-4-0-igh-2026/", "quote": "Torque\t70 Nm"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 710, "url": "https://www.specialized.com/us/en/turbo-como-40-igh/p/206177", "quote": "Battery ⟶ Specialized U2-710, alloy casing, state of charge display, 710Wh"},
+   {"kind": "retailer", "value": 710, "url": "https://www.n1bikes.com/products/turbo-como-40-igh?id=092656ae3862d5eca798701df575e7c9b4766a089bf82f9beb28f19442f80a2d&variant=90422-4002", "quote": "Battery\tSpecialized U2-710, alloy casing, state of charge display, 710Wh"},
+   {"kind": "review", "value": 710, "url": "https://eridehero.com/products/specialized-turbo-como-4-0-igh-2026/", "quote": "710 Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "75", "url": "https://www.specialized.com/us/en/turbo-como-40-igh/p/206177", "quote": "Long-Range - With true ride-anywhere range, go up to 75 miles (120 km) or 5.5 hours of range (eco mode). ⟶ Technical Specifications", "basis": "eco mode"},
+   {"kind": "review", "value": "75", "url": "https://eridehero.com/products/specialized-turbo-como-4-0-igh-2026/", "quote": "Max Range\t75 mi"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 64.3, "url": "https://www.specialized.com/us/en/turbo-como-40-igh/p/206177", "quote": "Weight ⟶ 29.15kg (64 lb, 4.2 oz)", "basis": "size MD; 64 lb 4.2 oz = 64.3 lb"},
+   {"kind": "retailer", "value": 64.3, "url": "https://www.n1bikes.com/products/turbo-como-40-igh?id=092656ae3862d5eca798701df575e7c9b4766a089bf82f9beb28f19442f80a2d&variant=90422-4002", "quote": "Weight\t29.15kg (64 lb, 4.2 oz) ⟶ Weight Size\tMD"},
+   {"kind": "review", "value": 62, "url": "https://eridehero.com/products/specialized-turbo-como-4-0-igh-2026/", "quote": "Weight\t62 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-como-40-igh/p/206177", "quote": "Specialized rack, MIK HD interface, built-in pannier mounts, 27kg max load ⟶ Bike Lock", "basis": "only the rear rack limit (27 kg) is published"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "250W mid-drive (Specialized 2.0)", "url": "https://www.specialized.com/us/en/turbo-como-40-igh/p/206177", "quote": "Motor ⟶ Specialized 2.0, 70Nm torque, custom tuned motor, 250W nominal"},
+   {"kind": "review", "value": "250W mid-drive", "url": "https://eridehero.com/products/specialized-turbo-como-4-0-igh-2026/", "quote": "Class 3 E-Bike, 62 lbs, 250W 70Nm mid mid-drive, 710Wh (50V × 14.2Ah) battery, SRAM Level hydraulic disc, aluminum step-through frame, 80mm coil fork, 27.5\"×2.3\" Specialized Hemisphere Flat Protection Reflect hybrid tires, suspension seatpost"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-como-40-igh/p/206177", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.specialized.com/us/en/turbo-como-40-igh/p/206177", "quote": "E5 Aluminum, bottom bracket motor mount, fully integrated &lockable downtube battery, internal cable routing, lock and front rack mount, sliding dropout ⟶ Seat Binder", "basis": "fixed aluminum frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page gives no class/speed. ERideHero labels its page '2026' and lists $4,599.99 and 62 lb vs maker $4,249.99 / 64 lb 4.2 oz; motor, battery, enviolo/Gates drivetrain and 75 mi range match, so used for class 3 / 28 mph only as a cross-check. N1 shows crossed-out $4,250.00. | recheck: maker description says up to 28 mph (a buyer review on the maker page quotes Specialized support: IGH set to 28 mph but cruises ~20-22 mph due to hub drag); Cripple Creek Backcountry dealer page states Class 3, 28 mph."
+}

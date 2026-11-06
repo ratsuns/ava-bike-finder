@@ -1,0 +1,48 @@
+{"bike": "Himiway|D5 Pro", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2599, "url": "https://himiwaybike.com/products/all-terrain-electric-bike-d5pro", "quote": "Regular price ⟶ $2,599.00", "basis": "regular price; on sale for $1,999"},
+   {"kind": "review", "value": 2599, "url": "https://www.webbikeworld.com/2024-himiway-d5-pro-mid-drive-review/", "quote": "MSRP:\t$2,599 USD / $3,599 CAD ⟶ Where to Buy:\tHimiway USA / Himiway Canada"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://himiwaybike.com/products/all-terrain-electric-bike-d5pro", "quote": "Thumb Throttle ⟶ Hydraulic Brakes", "basis": "throttle, but no class stated"},
+   {"kind": "review", "value": 3, "url": "https://www.webbikeworld.com/2024-himiway-d5-pro-mid-drive-review/", "quote": "eBike Class:\tClass 3"},
+   {"kind": "maker", "value": 2, "url": "https://himiwaybike.com/blogs/after-purchase/unlock-the-limit-of-the-speed", "quote": "Discover that Himiway e-bikes have the capability to operate as technically Class 3 e-bikes. While both of these bikes are shipped as Class 2 ebikes, users have the option to unlock the speed limiter, increasing the max speed to 25mph", "basis": "Himiway's 'Unlock the Limit of the Speed' page: ships as Class 2, unlockable; its per-model unlock list includes 'D5 Pro: watch video'"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://himiwaybike.com/products/all-terrain-electric-bike-d5pro", "quote": "Mid-Drive Motor ⟶ 20+ Mph", "basis": "maker says \"20+ Mph\" top speed"},
+   {"kind": "review", "value": 28, "url": "https://www.webbikeworld.com/2024-himiway-d5-pro-mid-drive-review/", "quote": "Top speed:\t20 mph / 32 kph on throttle alone, 28 mph / 45 kph with pedal assist ⟶ eBike Class:\tClass 3", "basis": "pedal assist 28 mph; throttle 20 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 130, "url": "https://himiwaybike.com/products/all-terrain-electric-bike-d5pro", "quote": "Mid-Drive Motor ⟶ 130 Nm"},
+   {"kind": "review", "value": 130, "url": "https://www.webbikeworld.com/2024-himiway-d5-pro-mid-drive-review/", "quote": "Torque: \t130 Nm ⟶ PAS: \tCustomizable, 0-9 settings"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 960, "url": "https://himiwaybike.com/products/all-terrain-electric-bike-d5pro", "quote": "960 Wh ⟶ Samsung/LG Battery"},
+   {"kind": "review", "value": 960, "url": "https://www.webbikeworld.com/2024-himiway-d5-pro-mid-drive-review/", "quote": "Battery: \t48V 20 Ah / 960 Wh with Samsung cells ⟶ Wheels & Tires: \tKenda Krusade 26×4” tires on spoked rims"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "60–80", "url": "https://himiwaybike.com/products/all-terrain-electric-bike-d5pro", "quote": "Range ⟶ 60-80 miles"},
+   {"kind": "review", "value": "45", "url": "https://www.webbikeworld.com/2024-himiway-d5-pro-mid-drive-review/", "quote": "Range:\tClaimed 80 miles / 128 km, wBW observed 45 miles / 72 km during aggressive riding ⟶ Bike Weight:\t79 lbs / 36 kg", "basis": "observed during aggressive off-road riding (claimed 80)"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 79, "url": "https://himiwaybike.com/products/all-terrain-electric-bike-d5pro", "quote": "Weight ⟶ 79 lb. (with battery)"},
+   {"kind": "review", "value": 79, "url": "https://www.webbikeworld.com/2024-himiway-d5-pro-mid-drive-review/", "quote": "Range:\tClaimed 80 miles / 128 km, wBW observed 45 miles / 72 km during aggressive riding ⟶ Bike Weight:\t79 lbs / 36 kg"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 400, "url": "https://himiwaybike.com/products/all-terrain-electric-bike-d5pro", "quote": "Max. payload capacity ⟶ 400 lb."},
+   {"kind": "review", "value": 400, "url": "https://www.webbikeworld.com/2024-himiway-d5-pro-mid-drive-review/", "quote": "Weight capacity:\t400 lbs / 181.5 kg"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W mid-drive", "url": "https://himiwaybike.com/products/all-terrain-electric-bike-d5pro", "quote": "Motor ⟶ 500W mid-drive motor"},
+   {"kind": "review", "value": "500W Bafang mid-drive", "url": "https://www.webbikeworld.com/2024-himiway-d5-pro-mid-drive-review/", "quote": "Motor:\tBafang 500-watt mid-drive (they don’t specify which, but it’s probably the M560/M600) ⟶ Torque: \t130 Nm"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'3\"-6'5\"", "url": "https://himiwaybike.com/products/all-terrain-electric-bike-d5pro", "quote": "Rider height ⟶ 5′3″ ~ 6′5″"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://himiwaybike.com/products/all-terrain-electric-bike-d5pro", "quote": "Frame ⟶ 6061 Aluminum frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker regular price $2,599, on sale $1,999. Maker gives top speed only as '20+ Mph' and no class. webBikeWorld (2024 D5 Pro review) says Class 3: 20 mph on throttle, 28 mph with pedal assist; maker's '20+' is consistent but doesn't confirm the out-of-box assist limit. wBW says the D5 Pro was formerly called the Zebra Pro and identifies the motor as a Bafang (probably M560/M600). wBW range figure is from aggressive off-road riding; it reports ~65 miles on pavement at PAS 1. | recheck: Himiway's own 'Unlock the Limit of the Speed' page says its e-bikes ship as Class 2 (unlockable to 25 mph) and lists this model's unlock video; 1 WebSearch used for the Himiway set. This contradicts webBikeWorld's Class 3. Upway has no D5 Pro listing."}

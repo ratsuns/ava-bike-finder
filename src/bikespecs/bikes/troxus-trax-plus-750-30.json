@@ -1,0 +1,45 @@
+{"bike": "Troxus|Trax Plus 750/30", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 3299, "url": "https://www.troxusmobility.com/products/trax-plus-commuter-e-bike-750w-30ah", "quote": "Sale price | $2,299.00 USD | Regular price | $3,299"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://www.troxusmobility.com/products/trax-plus-commuter-e-bike-750w-30ah", "quote": "Class 3 eBike ⟶ As Sold"},
+   {"kind": "review", "value": 3, "url": "https://electricbikereport.com/troxus-trax-review/", "quote": "CLASS 3 E-BIKE: ⟶ THROTTLE UP TO 20 MPH; PEDAL ASSIST UP TO 28 MPH.", "basis": "2023 review of the Trax 30/750 (earlier version)"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.troxusmobility.com/products/trax-plus-commuter-e-bike-750w-30ah", "quote": "Max Speed\tUp To 20 MPH on Throttle / Up To 28 MPH on Pedal Assist"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereport.com/troxus-trax-review/", "quote": "Class 3: throttle up to 20 mph, PAS 1-5 up to 28 mph ⟶ Range: 55-110 miles average", "basis": "2023 review of the Trax 30/750 (earlier version)"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 86, "url": "https://www.troxusmobility.com/products/trax-plus-commuter-e-bike-750w-30ah", "quote": "Motor\tBafang® 48V/750W Hub-Drive Motor, 86Nm Max. Torque"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 1440, "url": "https://www.troxusmobility.com/products/trax-plus-commuter-e-bike-750w-30ah", "quote": "Battery\tUL-2271 Certified / Internal / Removable / Lithium Ion, 48V/30Ah (1,440Wh) with Samsung® Cells"},
+   {"kind": "review", "value": 1440, "url": "https://electricbikereport.com/troxus-trax-review/", "quote": "Motor: Bafang 48V/750W hub-drive motor ⟶ Battery: Samsung 48V/30A/1440Wh, single cell capacity", "basis": "2023 review of the Trax 30/750 (earlier version)"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "120", "url": "https://www.troxusmobility.com/products/trax-plus-commuter-e-bike-750w-30ah", "quote": "Range\tUp To 120 Miles Per Charge"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/troxus-trax-review/", "quote": "Class 3: throttle up to 20 mph, PAS 1-5 up to 28 mph ⟶ Range: 55-110 miles average", "basis": "earlier version listed 55-110 miles; not counted for current model"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 80.5, "url": "https://www.troxusmobility.com/products/trax-plus-commuter-e-bike-750w-30ah", "quote": "Net Weight\t80.5 lbs"},
+   {"kind": "review", "value": 80.5, "url": "https://electricbikereport.com/troxus-trax-review/", "quote": "WEIGHT & DIMENSIONS ⟶ Claimed weight: 80.5 lbs", "basis": "2023 review of the Trax 30/750 (earlier version)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 350, "url": "https://www.troxusmobility.com/products/trax-plus-commuter-e-bike-750w-30ah", "quote": "Weight Limit\tMaximum Load: 350 lbs"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/troxus-trax-review/", "quote": "Claimed weight: 80.5 lbs ⟶ Maximum rider weight: 330 lbs.", "basis": "earlier version listed 330 lb max rider weight; not counted for current model"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub", "url": "https://www.troxusmobility.com/products/trax-plus-commuter-e-bike-750w-30ah", "quote": "Rear Hub\tBafang® 48V 750W/ 28 MPH. 86Nm"},
+   {"kind": "review", "value": "750W hub", "url": "https://electricbikereport.com/troxus-trax-review/", "quote": "Motor: Bafang 48V/750W hub-drive motor ⟶ Battery: Samsung 48V/30A/1440Wh, single cell capacity", "basis": "2023 review of the Trax 30/750 (earlier version)"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://www.troxusmobility.com/products/trax-plus-commuter-e-bike-750w-30ah", "quote": "Frame Size\tSmall / 15\"\tMedium / 17\"\tLarge / 20\""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.troxusmobility.com/products/trax-plus-commuter-e-bike-750w-30ah", "quote": "Frame\tAluminum Frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Only independent source is EBReport's Aug 2023 'Troxus Trax 30/750' review, which appears to be the earlier version of this bike (maker customer review mentions a 'new' rear rack and suspension seatpost on the Trax Plus). Used it only for specs that match the current maker page; load (330 vs 350) and range (55-110 vs 120) differ and were not counted. Sports Basement 750/30 page is gone (404); one WebSearch found no other current source. Maker regular $3,299, sale $2,299. No rider height range from maker."}

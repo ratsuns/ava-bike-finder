@@ -1,0 +1,48 @@
+{"bike": "Benno|46er Performance CX", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 4999, "url": "https://bennobikes.com/e-bikes/46er/", "quote": "Performance CX: $4,999 USD"},
+   {"kind": "retailer", "value": 4999, "url": "https://northwestbicycle.com/products/benno-46er-10d-evo-1-performance-cx-class-1-ebike-500wh", "quote": "Sale price | $4,999.00", "basis": "Shopify 'Sale price' label but no lower price shown; equals maker MSRP"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://bennobikes.com/e-bikes/46er/", "quote": "Assisted Speed\tUSA 28mph, NZ/CH 45km/h\tUSA/CAN 20mph, EU 25km/h", "basis": "maker states no class; Performance CX column (2nd) is USA/CAN 20mph, no throttle -> Class 1"},
+   {"kind": "retailer", "value": 1, "url": "https://northwestbicycle.com/products/benno-46er-10d-evo-1-performance-cx-class-1-ebike-500wh", "quote": "Ebike Class\tClass 1"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://bennobikes.com/e-bikes/46er/", "quote": "Max Speed: 20mph USA, 32km/h CAN/NZ, 25km/h EU/AUS"},
+   {"kind": "retailer", "value": 20, "url": "https://northwestbicycle.com/products/benno-46er-10d-evo-1-performance-cx-class-1-ebike-500wh", "quote": "Assist Speed (Mph)\t20"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://bennobikes.com/e-bikes/46er/", "quote": "Motor\tBosch Performance Speed 250W, 85Nm, GEN 4\tBosch Performance CX 250W, 85Nm, GEN 4"},
+   {"kind": "retailer", "value": 85, "url": "https://northwestbicycle.com/products/benno-46er-10d-evo-1-performance-cx-class-1-ebike-500wh", "quote": "Motor Torque (Nm)\t85"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 500, "url": "https://bennobikes.com/e-bikes/46er/", "quote": "Battery: 500Wh/1000Wh Dual Battery", "basis": "single 500Wh standard; 1000Wh with optional second battery"},
+   {"kind": "retailer", "value": 500, "url": "https://northwestbicycle.com/products/benno-46er-10d-evo-1-performance-cx-class-1-ebike-500wh", "quote": "Battery Power (Wh)\t500"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "30–80", "url": "https://bennobikes.com/e-bikes/46er/", "quote": "Range Single Battery: 30-80mi (50-130km)"},
+   {"kind": "retailer", "value": "30–80", "url": "https://northwestbicycle.com/products/benno-46er-10d-evo-1-performance-cx-class-1-ebike-500wh", "quote": "Range Estimate (Mi)\t30-80"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://bennobikes.com/e-bikes/46er/", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://northwestbicycle.com/products/benno-46er-10d-evo-1-performance-cx-class-1-ebike-500wh", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": 420, "url": "https://bennobikes.com/e-bikes/46er/", "quote": "MAX GROSS WEIGHT 420LB/190KG (RIDER+CARGO+BIKE)", "basis": "total"},
+   {"kind": "retailer", "value": 420, "url": "https://northwestbicycle.com/products/benno-46er-10d-evo-1-performance-cx-class-1-ebike-500wh", "quote": "Gross Payload (Lbs)\t420", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Performance CX 250W (GEN 4)", "url": "https://bennobikes.com/e-bikes/46er/", "quote": "Motor\tBosch Performance Speed 250W, 85Nm, GEN 4\tBosch Performance CX 250W, 85Nm, GEN 4"},
+   {"kind": "retailer", "value": "Bosch Performance CX 250W (GEN 4)", "url": "https://northwestbicycle.com/products/benno-46er-10d-evo-1-performance-cx-class-1-ebike-500wh", "quote": "Bosch Performance CX 250W 85Nm GEN 4 20MPH"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'3\"", "url": "https://bennobikes.com/e-bikes/46er/", "quote": "Frame Size\tOne Size – Fits Riders from 5’1” to 6’3”"},
+   {"kind": "retailer", "value": "5'1\"-6'3\"", "url": "https://northwestbicycle.com/products/benno-46er-10d-evo-1-performance-cx-class-1-ebike-500wh", "quote": "One Frame Size (Fits Riders From 5'1\" to 6'3\")"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://bennobikes.com/e-bikes/46er/", "quote": "Frame\t6061 Aluminum Alloy with Front Tray Mounts"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker specs from the 46er page's FULL SPECIFICATIONS, MOTOR SPECS and SIZING & CAPACITY tabs (Performance CX = 2nd column). Maker publishes no bike weight. Retailer is Northwest Bicycle ('46er 10D Evo 1'), shown sold out. EBR search found no 46er review; bikeparts.com link from search was 404."}

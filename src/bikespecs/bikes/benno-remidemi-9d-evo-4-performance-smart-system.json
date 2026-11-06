@@ -1,0 +1,39 @@
+{"bike": "Benno|RemiDemi 9D EVO 4 Performance (Smart System)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": null, "url": "https://bennobikes.com/e-bikes/remidemi/", "quote": "Currently unavailable in the United States", "basis": "no USD price published for EVO 4"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://bennobikes.com/e-bikes/remidemi/", "quote": "Assisted Speed\tUSA/CAN 20mph, EU/AUS 25km/h", "basis": "maker states no class; 20mph, no throttle -> Class 1"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://bennobikes.com/e-bikes/remidemi/", "quote": "Assisted Speed\tUSA/CAN 20mph, EU/AUS 25km/h"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 75, "url": "https://bennobikes.com/e-bikes/remidemi/", "quote": "Max Power/Torque: 600W/75Nm"},
+   {"kind": "maker", "value": 75, "url": "https://bennobikes.com/e-bikes/remidemi/", "quote": "Motor\tBosch Performance Smart System Gen4/BDU34 600W, 75Nn", "basis": "full-spec table; 'Nn' is the maker's typo"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 545, "url": "https://bennobikes.com/e-bikes/remidemi/", "quote": "Battery\tBosch Powerpack 545Wh Lithium-Ion"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "30–98", "url": "https://bennobikes.com/e-bikes/remidemi/", "quote": "Range Single Battery\t545Wh Battery: 30-98mi (50-157km)"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://bennobikes.com/e-bikes/remidemi/", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": 400, "url": "https://bennobikes.com/e-bikes/remidemi/", "quote": "REMIDEMI EVO 4 | MAX GROSS WEIGHT 400LB/180KG (RIDER+CARGO+BIKE)", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Performance Smart System Gen4/BDU34 (600W max)", "url": "https://bennobikes.com/e-bikes/remidemi/", "quote": "Motor\tBosch Performance Smart System Gen4/BDU34 600W, 75Nn", "basis": "600W is the maker's 'Max Power' figure, not a rated/nominal watt figure"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'1\"", "url": "https://bennobikes.com/e-bikes/remidemi/", "quote": "Frame Size\tOne Size – Fits Riders from 5’1” to 6’1”"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://bennobikes.com/e-bikes/remidemi/", "quote": "Frame\t6061 Aluminum Alloy with Front Tray Mounts, Thru-Axle"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "MAKER ONLY - no independent source found. Maker lists RemiDemi EVO 4 as 'Currently unavailable in the United States'; configurator shows 'REGION\tEurope only' and the drive block reads 'PERFORMANCE – SMART SYSTEM GEN4/BDU34 | (EUROPE ONLY)', yet the full-spec table still lists 'USA/CAN 20mph'. No USD price. Maker torque typo '75Nn' in full-spec table (75Nm in drive block). One WebSearch only found RemiDemi XL / EVO 2 / older pages (bike24 links were RemiDemi XL), so not used. Maker publishes no bike weight."}

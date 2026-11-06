@@ -1,0 +1,59 @@
+{"bike": "Velotric|Tempo", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1499, "url": "https://www.velotricbike.com/products/velotric-tempo-city-ebike", "quote": "$1,449.00 | $1,499.00 | Save $50.00", "basis": "$1,499.00 is the crossed-out regular price; $1,449.00 is the Black Friday sale price"},
+   {"kind": "review", "value": 1499, "url": "https://electricbikereview.com/velotric/tempo-review/", "quote": "PRICE: ⟶ $1,499"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/velotric-tempo-review/", "quote": ""}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.velotricbike.com/products/velotric-tempo-city-ebike", "quote": "Ebike Class ⟶ 1/2/3", "basis": "multi-class; out of box is \"Max Speed (Default） ⟶ 20MPH\" with a throttle (\"Throttle Range ⟶ 40 Miles\"), i.e. Class 2; maker says no throttle unlock in Class 3"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/velotric/tempo-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 1, 2 , 3 and Custom Tuning", "basis": "multi-class; doesn't say which it ships in"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/velotric-tempo-review/", "quote": "CLASS 3 (PEDAL ASSIST TO 28 MPH) ⟶ SPONSOR", "basis": "lists Class 1, 2 and 3; doesn't say which it ships in"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.velotricbike.com/products/velotric-tempo-city-ebike", "quote": "Max Speed (Default） ⟶ 20MPH", "basis": "default; adjustable to 28 mph (\"Max Speed Adjustable Range ⟶ 12~28MPH\")"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/velotric/tempo-review/", "quote": "TOP SPEED: ⟶ 28 MPH mph", "basis": "max adjustable, not default"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereport.com/velotric-tempo-review/", "quote": "CLASS 3 (PEDAL ASSIST TO 28 MPH) ⟶ SPONSOR", "basis": "max class rating; also lists Class 1/2 to 20 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 45, "url": "https://www.velotricbike.com/products/velotric-tempo-city-ebike", "quote": "Motor ⟶ 36V, 350W, 650W(Peak Power), 45Nm"},
+   {"kind": "review", "value": 45, "url": "https://electricbikereview.com/velotric/tempo-review/", "quote": "MOTOR TORQUE: ⟶ 45Nm Newton meters"},
+   {"kind": "review", "value": 45, "url": "https://electricbikereport.com/velotric-tempo-review/", "quote": "Motor: 36V, 350W, 650W(Peak Power), 45Nm ⟶ Headlight: 500 LM high-output integrated LED, adjustable angle"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 374, "url": "https://www.velotricbike.com/products/velotric-tempo-city-ebike", "quote": "Battery ⟶ 36V, 10.14Ah(374Wh), IPX7, Certificated by UL2271"},
+   {"kind": "review", "value": 374.4, "url": "https://electricbikereview.com/velotric/tempo-review/", "quote": "BATTERY WATT HOURS: ⟶ 374.4Wh wh"},
+   {"kind": "review", "value": 374, "url": "https://electricbikereport.com/velotric-tempo-review/", "quote": "Battery: 36V, 10.14Ah(374Wh), IPX7, Certificated by UL 2271 ⟶ Charger: 36V, 2A Fast Charger"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "60", "url": "https://www.velotricbike.com/products/velotric-tempo-city-ebike", "quote": "Pedal Assist Range ⟶ 60 Miles", "basis": "maker footnote: \"*A 187-lb rider using Eco mode on flat roads.\""},
+   {"kind": "review", "value": "60", "url": "https://electricbikereview.com/velotric/tempo-review/", "quote": "Throttle Range: 40 miles ⟶ Pedal Assist Range: 60 miles", "basis": "maker estimate; tested 71 miles low assist, 24 miles high assist (labels swapped on page)"},
+   {"kind": "review", "value": "60", "url": "https://electricbikereport.com/velotric-tempo-review/", "quote": "Claimed Range: Up to 60 miles ⟶ Throttle:Trigger-control, removable"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 39, "url": "https://www.velotricbike.com/products/velotric-tempo-city-ebike", "quote": "Bike Weight ⟶ 39 lbs", "basis": "with battery: maker separately lists \"Bike Weight (Without Battery) ⟶ 34 lbs\""},
+   {"kind": "review", "value": 41.8, "url": "https://electricbikereview.com/velotric/tempo-review/", "quote": "<ul> <li>Advertised: 39 lbs</li> <li>Tested w/out battery: 36.6 lbs</li> <li>Tested Complete: 41.8 lbs</li> </ul> lbs ⟶ BATTERY WEIGHT:", "basis": "tested complete; advertised 39 lbs"},
+   {"kind": "review", "value": 39, "url": "https://electricbikereport.com/velotric-tempo-review/", "quote": "Claimed weight: 39 lbs (including battery) ⟶ Tested Weight: 42 lbs (including battery)", "basis": "claimed; tested 42 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 330, "url": "https://www.velotricbike.com/products/velotric-tempo-city-ebike", "quote": "Max Bike Load Capacity ⟶ 330 lbs"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/velotric/tempo-review/", "quote": ""},
+   {"kind": "review", "value": 330, "url": "https://electricbikereport.com/velotric-tempo-review/", "quote": "Total payload capacity: 330 lbs ⟶ COMPONENTS & ACCESSORIES"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "350W rear hub (650W peak)", "url": "https://www.velotricbike.com/products/velotric-tempo-city-ebike", "quote": "Motor ⟶ 36V, 350W, 650W(Peak Power), 45Nm", "basis": "maker calls it a \"Quiet Hub Motor\"; rear per reviews"},
+   {"kind": "review", "value": "350W rear hub (650W peak)", "url": "https://electricbikereview.com/velotric/tempo-review/", "quote": "The Tempo runs a rear hub motor rated at 350W nominally, peaking at 650W with 45Nm of torque. Not massive numbers, but on a lightweight bike like this they don’t need to be, and as covered in the ride section, it gets the job done."},
+   {"kind": "review", "value": "350W rear hub (650W peak)", "url": "https://electricbikereport.com/velotric-tempo-review/", "quote": "Motor: 36V, 350W, 650W(Peak Power), 45Nm ⟶ Headlight: 500 LM high-output integrated LED, adjustable angle", "basis": "rear hub per same review (\"The Tempo’s 350W rear-hub motor\")"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'10\"-6'4\"", "url": "https://www.velotricbike.com/products/velotric-tempo-city-ebike", "quote": "User Height Range | MS/R：4'10''~5'5'' | MS/ L：5'3''~5'11'' | HS/R：4'11''~5'8'' | HS/ L：5'6''~6'4''", "basis": "across mid-step and high-step frames, Regular and Large sizes"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/velotric/tempo-review/", "quote": ""},
+   {"kind": "review", "value": "4'10\"-6'5\"", "url": "https://electricbikereport.com/velotric-tempo-review/", "quote": "Tested Weight: 42 lbs (including battery) ⟶ Rider height range: 4’10” – 6’5”"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.velotricbike.com/products/velotric-tempo-city-ebike", "quote": "Meet Tempo. At just 39 lbs, it keeps the light, classic silhouette of a real bike without bulky tubing or clutter. Concealed cabling, premium tan-wall tires, and an integrated rear light keep the design refined, simple, and unmistakably bike-first. ⟶ Mid-Step", "basis": "rigid city frame (mid-step / high-step); no folding mentioned"},
+   {"kind": "review", "value": "No", "url": "https://electricbikereport.com/velotric-tempo-review/", "quote": "We tested the high-step frame, but Velotric also offers a mid-step model with different colors and a lower standover height. ⟶ Velotric Tempo Review: Speed Test", "basis": "non-folding frames"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page is on Black Friday sale ($1,449); crossed-out regular $1,499 recorded. Maker: default 20 mph with throttle, adjustable 12-28 mph, 'Ebike Class 1/2/3' -> Class 2; Tempo does not support throttle unlock in Class 3. Maker weight 39 lbs with battery (34 lbs without). Maker height range spans 4 frame/size combos (4'10\"-6'4\"); EBReport says 4'10\"-6'5\". EBR's range test labels look swapped (Eco 24 / Turbo 71)."}

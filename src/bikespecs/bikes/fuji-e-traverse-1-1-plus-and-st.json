@@ -1,0 +1,51 @@
+{"bike": "Fuji|E-Traverse 1.1+ (and ST)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "review", "value": 2999, "url": "https://99spokes.com/bikes/fuji/2022/e-traverse-1.1plus-st", "quote": "Manufacturer Price | $2,999", "basis": "99 Spokes spec aggregator, 2022 E-Traverse 1.1+ ST"},
+   {"kind": "review", "value": 2999, "url": "https://bikes.fan/fuji-e-traverse-1-1plus-st-2023/", "quote": "Estimate price | ⟶ 2,999$", "basis": "Bikes.Fan aggregator, 2023 E-Traverse 1.1+ ST"}
+  ],
+  "cls": [
+   {"kind": "review", "value": 1, "url": "https://99spokes.com/bikes/fuji/2022/e-traverse-1.1plus-st", "quote": "Bosch Active Plus, 3th generation mid-motor, 250W rated power, 50Nm of torque, 25km/h maximum assist ⟶ Battery", "basis": "no class stated; pedal-assist Bosch Active Plus, no throttle listed, assist under 20 mph, so Class 1"},
+   {"kind": "review", "value": null, "url": "https://bikes.fan/fuji-e-traverse-1-1plus-st-2023/", "quote": ""},
+   {"kind": "retailer", "value": 1, "url": "https://upway.co/products/fuji-e-traverse-11-st-lae66", "quote": "e-Bike class: Class 1 ⟶ Electric Motors: Choosing the right one for your needs", "basis": "Upway certified-refurbished listing for the E-Traverse 1.1+ ST; same page: Max speed: 20 mph"}
+  ],
+  "spd": [
+   {"kind": "review", "value": 15.5, "url": "https://99spokes.com/bikes/fuji/2022/e-traverse-1.1plus-st", "quote": "Bosch Active Plus, 3th generation mid-motor, 250W rated power, 50Nm of torque, 25km/h maximum assist ⟶ Battery", "basis": "25 km/h = 15.5 mph as written; this looks like copied EU spec text, a US model would normally be 20 mph - not confirmed"},
+   {"kind": "review", "value": 15.5, "url": "https://bikes.fan/fuji-e-traverse-1-1plus-st-2023/", "quote": "Bosch Active Plus, 3th generation mid-motor, 250W rated power, 50Nm of torque, 25km/h maximum assist ⟶ Battery", "basis": "same 25 km/h text as 99 Spokes"}
+  ],
+  "tq": [
+   {"kind": "review", "value": 50, "url": "https://99spokes.com/bikes/fuji/2022/e-traverse-1.1plus-st", "quote": "MotorBosch 250W 50Nm mid-drive ⟶ BatteryBosch 500Wh"},
+   {"kind": "review", "value": 50, "url": "https://bikes.fan/fuji-e-traverse-1-1plus-st-2023/", "quote": "MOTOR ⟶ Bosch 250W 50Nm mid-drive"}
+  ],
+  "wh": [
+   {"kind": "review", "value": 500, "url": "https://99spokes.com/bikes/fuji/2022/e-traverse-1.1plus-st", "quote": "Battery ⟶ Bosch Power Pack 500Wh with 2A charger"},
+   {"kind": "review", "value": 500, "url": "https://bikes.fan/fuji-e-traverse-1-1plus-st-2023/", "quote": "BATTERY ⟶ Bosch Power Pack 500Wh with 2A charger"}
+  ],
+  "range": [
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/fuji/2022/e-traverse-1.1plus-st", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://bikes.fan/fuji-e-traverse-1-1plus-st-2023/", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/fuji/2022/e-traverse-1.1plus-st", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://bikes.fan/fuji-e-traverse-1-1plus-st-2023/", "quote": ""}
+  ],
+  "load": [
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/fuji/2022/e-traverse-1.1plus-st", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://bikes.fan/fuji-e-traverse-1-1plus-st-2023/", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "review", "value": "250W Bosch Active Plus mid-drive", "url": "https://99spokes.com/bikes/fuji/2022/e-traverse-1.1plus-st", "quote": "Bosch Active Plus, 3th generation mid-motor, 250W rated power, 50Nm of torque, 25km/h maximum assist ⟶ Battery"},
+   {"kind": "review", "value": "250W Bosch Active Plus mid-drive", "url": "https://bikes.fan/fuji-e-traverse-1-1plus-st-2023/", "quote": "Bosch Active Plus, 3th generation mid-motor, 250W rated power, 50Nm of torque, 25km/h maximum assist ⟶ Battery"}
+  ],
+  "height": [
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/fuji/2022/e-traverse-1.1plus-st", "quote": "6'1\" – 6'7\" ⟶ 🐐 Estimated", "basis": "99 Spokes rider heights are marked as its own estimate; not used"},
+   {"kind": "review", "value": null, "url": "https://bikes.fan/fuji-e-traverse-1-1plus-st-2023/", "quote": "Rider Min Height\t158 cm\t168 cm\t178 cm\t186 cm ⟶ Rider Max Height\t171 cm\t180 cm\t189 cm\t199 cm", "basis": "aggregator figures (158-199 cm = about 5'2\"-6'6\") that match 99 Spokes' estimate; not a maker figure, not used"}
+  ],
+  "fold": [
+   {"kind": "review", "value": "No", "url": "https://99spokes.com/bikes/fuji/2022/e-traverse-1.1plus-st", "quote": "Fuji A2-SL Custom-Butted alloy, integrated head tube, semi-integrated battery ⟶ BB Standard: Bosch, Press Fit", "basis": "fixed alloy hybrid frame; nothing about folding"},
+   {"kind": "retailer", "value": "No", "url": "https://upway.co/products/fuji-e-traverse-11-st-lae66", "quote": "Weight: 46 lb ⟶ Frame type: Open", "basis": "fixed open (step-through) aluminum frame; nothing about folding"},
+   {"kind": "review", "value": "No", "url": "https://99spokes.com/bikes/fuji/2025/e-traverse-1.1plus", "quote": "Frame ⟶ Fuji A2-SL Custom-Butted alloy, integrated head tube, semi-integrated battery", "basis": "fixed alloy frame; nothing about folding"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "MAKER PAGE NOT REACHED: the browser refused every fujibikes.com URL ('navigation ... was denied or failed'). No dealer or review page found for this exact model (electricbikereview / electricbikereport have none; the Upway listing is gone, 410; Dedham Bike has only the different E-Traverse EVO 1.1 ST). Both sources are spec aggregators (99 Spokes 2022 ST, Bikes.Fan 2023 ST) and look like copies of Fuji's spec text. Their '25km/h maximum assist' is suspicious for a US bike (would normally be 20 mph) - please verify on fujibikes.com. Bikes.Fan has obvious errors elsewhere (says the fork is steel). 1 WebSearch used. | recheck: read 99 Spokes 2023 and 2025 E-Traverse 1.1+ (25 km/h EU-style spec, no range), Upway refurbished 1.1+ ST (states Class 1, 20 mph, 50 Nm, 500 Wh, 46 lb, no range); 1 WebSearch; fujibikes.com still blocked. No source for the 'up to 75 mi' range."}

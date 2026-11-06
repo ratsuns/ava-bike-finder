@@ -1,0 +1,41 @@
+{
+ "bike": "Pedego|Element Core",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1995, "url": "https://pedegoelectricbikes.com/products/element-core", "quote": "$1,995.00 ⟶ CHOOSE OPTIONS"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://pedegoelectricbikes.com/products/element-core", "quote": "TOP SPEED | Class 1: 20MPH, Class 2: 20MPH", "basis": "Class 1 & 2; has 'Pedego Twist Throttle' and 20 mph -> Class 2"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://pedegoelectricbikes.com/products/element-core", "quote": "TOP SPEED | Class 1: 20MPH, Class 2: 20MPH"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://pedegoelectricbikes.com/products/element-core", "quote": "MOTOR | 500W Rear Hub Motor", "basis": "no torque given"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 460.8, "url": "https://pedegoelectricbikes.com/products/element-core", "quote": "PRIMARY BATTERY | 48V 9.6Ah UL2271 Certified Battery Pack", "basis": "48V x 9.6Ah (battery selector says 48V 10Ah = 480Wh)"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "38", "url": "https://pedegoelectricbikes.com/products/element-core", "quote": "Range Up to | 38 Miles", "basis": "'up to'"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 61.95, "url": "https://pedegoelectricbikes.com/products/element-core", "quote": "BIKE | 52.8lb / 23.9kg (w/o Battery) | PRIMARY BATTERY | 9.6Ah: 9.15lb / 4.15kg", "basis": "52.8 lb without battery + 9.15 lb battery"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 250, "url": "https://pedegoelectricbikes.com/products/element-core", "quote": "WEIGHT LIMIT | 250lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W rear hub", "url": "https://pedegoelectricbikes.com/products/element-core", "quote": "MOTOR | 500W Rear Hub Motor"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'11\"-6'1\"", "url": "https://pedegoelectricbikes.com/products/element-core", "quote": "RIDER HEIGHT | 4'11\" to 6'1\""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://pedegoelectricbikes.com/products/element-core", "quote": "MATERIAL | 6061-T6 Aluminum Alloy | TYPE | Fat Tire Adventure", "basis": "fixed 20in fat-tire step-thru frame; page never mentions folding"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page only. No independent page found for the new Element Core (EBR's Element review and Electrek's 2020 Element review are the original Element, a different generation). Battery: spec table says 48V 9.6Ah, selector says 48V 10Ah. No torque given."
+}

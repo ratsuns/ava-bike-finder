@@ -1,0 +1,48 @@
+{"bike": "Benno|Boost EVO 5 Performance Sport", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 4399, "url": "https://bennobikes.com/e-bikes/boost/", "quote": "Performance Sport: $4,399 USD"},
+   {"kind": "retailer", "value": 4399, "url": "https://www.bikeparts.com/BPC510504/benno-boost-10d-evo-5-performance-sport-class-3-ebike-400wh-regular-wasabi-green-", "quote": "PRICE: $4,399.00"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://bennobikes.com/e-bikes/boost/", "quote": "Assisted Speed\tUSA 28mph, NZ/CH 45km/h\tUSA/CAN 20mph, EU 25km/h\tUSA 28mph, NZ 45km/h\tUSA/CAN 20mph, EU 25km/h", "basis": "maker states no class; Performance Sport column (3rd) is USA 28mph, no throttle -> Class 3"},
+   {"kind": "retailer", "value": 3, "url": "https://www.bikeparts.com/BPC510504/benno-boost-10d-evo-5-performance-sport-class-3-ebike-400wh-regular-wasabi-green-", "quote": "Ebike Class\tClass 3"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://bennobikes.com/e-bikes/boost/", "quote": "Assisted Speed\tUSA 28mph, NZ/CH 45km/h\tUSA/CAN 20mph, EU 25km/h\tUSA 28mph, NZ 45km/h\tUSA/CAN 20mph, EU 25km/h", "basis": "EVO5 full-spec table, Performance Sport is the 3rd column"},
+   {"kind": "retailer", "value": 28, "url": "https://www.bikeparts.com/BPC510504/benno-boost-10d-evo-5-performance-sport-class-3-ebike-400wh-regular-wasabi-green-", "quote": "Assist Speed (Mph)\t28"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 65, "url": "https://bennobikes.com/e-bikes/boost/", "quote": "Bosch Performance Sport 250W, 65Nm, GEN 3"},
+   {"kind": "retailer", "value": 65, "url": "https://www.bikeparts.com/BPC510504/benno-boost-10d-evo-5-performance-sport-class-3-ebike-400wh-regular-wasabi-green-", "quote": "Motor Torque (Nm)\t65"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 400, "url": "https://bennobikes.com/e-bikes/boost/", "quote": "Bosch Powerpack 400Wh/500Wh Lithium-Ion", "basis": "maker lists 400Wh/500Wh for Performance Sport; the maker configurator's Performance Sport 400Wh variants are labelled 'USA Only' (500Wh 'NZ Only')"},
+   {"kind": "retailer", "value": 400, "url": "https://www.bikeparts.com/BPC510504/benno-boost-10d-evo-5-performance-sport-class-3-ebike-400wh-regular-wasabi-green-", "quote": "Battery Power (Wh)\t400"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "25–70", "url": "https://bennobikes.com/e-bikes/boost/", "quote": "Range 400Wh Battery: 25-70mi (40-110km)"},
+   {"kind": "retailer", "value": "25–70", "url": "https://www.bikeparts.com/BPC510504/benno-boost-10d-evo-5-performance-sport-class-3-ebike-400wh-regular-wasabi-green-", "quote": "Range Estimate (Mi)\t25-70"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://bennobikes.com/e-bikes/boost/", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://www.bikeparts.com/BPC510504/benno-boost-10d-evo-5-performance-sport-class-3-ebike-400wh-regular-wasabi-green-", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": 440, "url": "https://bennobikes.com/e-bikes/boost/", "quote": "MAX GROSS WEIGHT 440LB/200KG (RIDER+CARGO+BIKE)", "basis": "total"},
+   {"kind": "retailer", "value": 440, "url": "https://www.bikeparts.com/BPC510504/benno-boost-10d-evo-5-performance-sport-class-3-ebike-400wh-regular-wasabi-green-", "quote": "Gross Payload (Lbs)\t440", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Performance Sport 250W (GEN 3)", "url": "https://bennobikes.com/e-bikes/boost/", "quote": "Bosch Performance Sport 250W, 65Nm, GEN 3"},
+   {"kind": "retailer", "value": "Bosch Performance Sport 250W (GEN 3)", "url": "https://www.bikeparts.com/BPC510504/benno-boost-10d-evo-5-performance-sport-class-3-ebike-400wh-regular-wasabi-green-", "quote": "Bosch Performance Sport 250W, 65Nm, GEN 3, 28mph"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'3\"", "url": "https://bennobikes.com/e-bikes/boost/", "quote": "Frame Size\tOne Size – Fits Riders from 5’1” to 6’3”"},
+   {"kind": "retailer", "value": "5'1\"-6'3\"", "url": "https://www.bikeparts.com/BPC510504/benno-boost-10d-evo-5-performance-sport-class-3-ebike-400wh-regular-wasabi-green-", "quote": "One Frame Size (Fits Riders From 5'1\" to 6'3\")"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://bennobikes.com/e-bikes/boost/", "quote": "Frame\t6061 Aluminum Alloy with Front Tray Mounts"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page is one page for all Boost generations; specs taken from the 'BOOST EVO5 – FULL SPECIFICATIONS' tab (4 columns: Speed, CX, Sport, Performance) and the SIZING & CAPACITY tab. Maker publishes no bike weight. EVO 5.1/6/6.1/7 are listed as 'Currently unavailable in the United States'; EVO 5 is the US model. EBR only has an older 'Boost E 10D' review; EBR/EBReport had nothing for EVO 5; REI returned 'Access to this page has been denied'. Several dealer links from search were 404. Retailer source is bikeparts.com (Regular frame, Wasabi Green variant)."}

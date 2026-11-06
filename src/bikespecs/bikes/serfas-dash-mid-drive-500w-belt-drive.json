@@ -1,0 +1,38 @@
+{"bike": "Serfas|DASH Mid-Drive 500W Belt Drive", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 3349.99, "url": "https://serfas.com/products/dash-mid-500w-belt-drive", "quote": "$3,349.99"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://serfas.com/products/dash-mid-500w-belt-drive", "quote": "Max Speed: Up To Class 3, 28 mph. Can Modify Before Shipping To Meet State and Local Regulations", "basis": "ships at Class 3 / 28 mph unless modified before shipping on request"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://serfas.com/products/dash-mid-500w-belt-drive", "quote": "Max Speed: Up To Class 3, 28 mph. Can Modify Before Shipping To Meet State and Local Regulations"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://serfas.com/products/dash-mid-500w-belt-drive", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 672, "url": "https://serfas.com/products/dash-mid-500w-belt-drive", "quote": "Battery: BAFANG 500W - 48V - 14Ah Samsung Cells (UL-2771 Certified)", "basis": "48V x 14Ah"}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://serfas.com/products/dash-mid-500w-belt-drive", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://serfas.com/products/dash-mid-500w-belt-drive", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": 300, "url": "https://serfas.com/products/dash-mid-500w-belt-drive", "quote": "Capacity: Up To 300lbs Cargo/Rider Total", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W BAFANG M430 mid-drive", "url": "https://serfas.com/products/dash-mid-500w-belt-drive", "quote": "Motor: 500W BAFANG M430 Mid Drive Motor"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://serfas.com/products/dash-mid-500w-belt-drive", "quote": "Sizes: Med/Lrg"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://serfas.com/products/dash-mid-500w-belt-drive", "quote": "Drive: Michelin Belt"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Only the maker source found. Web search and EBR/EBReport/Electrek/Best Buy/Mike's turned up nothing independent for this belt-drive model (only dealers for the older chain-drive eDASH Plus 500W Mid-Drive, a different bike). Maker publishes no torque, range or weight. 'Up To Class 3, 28 mph', can be modified before shipping; no throttle mentioned. Price under Shopify 'Sale price' label, no crossed-out price; 'Only 2 products left'. Fold 'No' inferred (standard frame, no folding mentioned)."}

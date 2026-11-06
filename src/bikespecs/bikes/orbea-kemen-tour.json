@@ -1,0 +1,49 @@
+{"bike": "Orbea|Kemen Tour", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 5071, "url": "https://www.orbea.com/en-us/kemen-tour-10-28mph", "quote": "$5,071 ⟶ View summary", "basis": "Kemen Tour 10 28mph standard configuration; no crossed-out price shown"},
+   {"kind": "retailer", "value": 5248.95, "url": "https://www.n1bikes.com/products/orbea-kemen-tour-10-28mph?id=80410ea24b24d5330a31f136e61a8999c0e516a19f545f4e20633b74010eebaf&variant=T72209W9", "quote": "$5,248.95 ⟶ Earn 52,489 points on this item", "basis": "dealer price, higher than Orbea's own US price"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://www.orbea.com/en-us/kemen-tour-10-28mph", "quote": "", "basis": "maker page states no class; model name says 28mph"},
+   {"kind": "review", "value": 3, "url": "https://www.electricbikejournal.com/orbea-kemen-tour-review/", "quote": "The Kemen Tour is available in either a Class 1 (20mph) or Class 3 (28mph) Shimano EP6 mid-drive motor. Fortunately, the price is not affected by choosing between either Class rating, freeing you up to choose the right bike for your local ebike regulations.", "basis": "the src build is the 28mph version, so Class 3"},
+   {"kind": "review", "value": 3, "url": "https://upway.co/blogs/news/orbea-kemen-ebike-review", "quote": "Maximum Assistance: 20 mph / 32 km/h (US Class 1) or 28 mph / 45 km/h (US Class 3) or 15.5 mph / 25 km/h (UK/EU limits)", "basis": "Upway review of the Kemen family (Tour and SUV, likely the earlier generation); the 28 mph setting is Class 3"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.orbea.com/en-us/kemen-tour-10-28mph", "quote": "Kemen Tour 10 28mph ⟶ Change model", "basis": "from the model name; a 20mph version is also sold"},
+   {"kind": "review", "value": 28, "url": "https://www.electricbikejournal.com/orbea-kemen-tour-review/", "quote": "The Kemen Tour is available in either a Class 1 (20mph) or Class 3 (28mph) Shimano EP6 mid-drive motor. Fortunately, the price is not affected by choosing between either Class rating, freeing you up to choose the right bike for your local ebike regulations."}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://www.orbea.com/en-us/kemen-tour-10-28mph", "quote": "The powerful EP motor system offers 85Nm of assistance for a worry-free commute."},
+   {"kind": "review", "value": 85, "url": "https://www.electricbikejournal.com/orbea-kemen-tour-review/", "quote": "Shimano EP6 – 250W – 85Nm ⟶ 630Wh Battery"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 630, "url": "https://www.orbea.com/en-us/kemen-tour-10-28mph", "quote": "Battery ⟶ Orbea 630 Wh Battery"},
+   {"kind": "review", "value": 630, "url": "https://www.electricbikejournal.com/orbea-kemen-tour-review/", "quote": "Shimano EP6 – 250W – 85Nm ⟶ 630Wh Battery"},
+   {"kind": "retailer", "value": 630, "url": "https://www.n1bikes.com/products/orbea-kemen-tour-10-28mph?id=80410ea24b24d5330a31f136e61a8999c0e516a19f545f4e20633b74010eebaf&variant=T72209W9", "quote": "Battery\tOrbea 630 Wh Battery"}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://www.orbea.com/en-us/kemen-tour-10-28mph", "quote": ""},
+   {"kind": "review", "value": "40–50", "url": "https://www.electricbikejournal.com/orbea-kemen-tour-review/", "quote": "With an integrated 630Wh battery, riders should expect to see at least 40-50 miles of range. ⟶ Suspension, Drivetrain, Brakes", "basis": "reviewer estimate"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://www.orbea.com/en-us/kemen-tour-10-28mph", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://www.electricbikejournal.com/orbea-kemen-tour-review/", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.orbea.com/en-us/kemen-tour-10-28mph", "quote": "", "basis": "only the rear rack limit is given (Max. 20Kg), no bike max load"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Shimano EP600", "url": "https://www.orbea.com/en-us/kemen-tour-10-28mph", "quote": "Motor ⟶ Shimano EP600"},
+   {"kind": "review", "value": "Shimano EP6 250W", "url": "https://www.electricbikejournal.com/orbea-kemen-tour-review/", "quote": "Shimano EP6 – 250W – 85Nm ⟶ 630Wh Battery"},
+   {"kind": "retailer", "value": "Shimano EP600", "url": "https://www.n1bikes.com/products/orbea-kemen-tour-10-28mph?id=80410ea24b24d5330a31f136e61a8999c0e516a19f545f4e20633b74010eebaf&variant=T72209W9", "quote": "Motor\tShimano EP600"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'0\"-6'9\"", "url": "https://www.orbea.com/en-us/kemen-tour-10-28mph", "quote": "S | 153-172 cm | M | 164-183 cm | L | 176-195 cm | XL | 187-206 cm", "basis": "size guide by height (View size guide), 153-206 cm converted to ft/in"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.orbea.com/en-us/kemen-tour-10-28mph", "quote": "Frame ⟶ Orbea Kemen Top bar 2026, Hydroformed Alloy 6061, High Polished, OLD 148, Belt drive compatible, Orbea cockpit and equipment ecosystem, w/ Kickstand, Trailer compatible.", "basis": "rigid frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Uses the Kemen Tour 10 28mph build (src link); Orbea also sells 20mph and MID versions. Orbea's US configurator gives no speed spec, range, weight or max load. Electric Bike Journal's review lists an older price range ($3,799 – $4,799) and says the 10 has an 11-speed CUES drivetrain, while the current Tour 10 build lists Gates belt parts, so drivetrain/price may have changed since the review; motor (EP6, 85Nm) and 630Wh battery match. N+1 Bikes price ($5,248.95) is higher than Orbea's $5,071. Recheck: looked at Orbea configurator full text (no class), N+1 Bikes Kemen Tour 10 28mph (no class), Fly Rides (no class), Upway Kemen review (Class 3 at 28 mph)."}

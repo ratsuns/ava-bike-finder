@@ -1,0 +1,197 @@
+{
+ "bike": "BMC|AMP 257 AL Speed One",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": 4999,
+    "url": "https://us.bmc-switzerland.com/products/257-amp-al-speed-one-usa-bikes-bmc-24-10105-003",
+    "quote": "Regular price ⟶ USD 4,999.00",
+    "basis": "regular price; on sale for USD 2,999.00"
+   },
+   {
+    "kind": "retailer",
+    "value": 4999,
+    "url": "https://www.sportsbasement.com/products/amp-257-al-speed-one",
+    "quote": "AMP 257 AL SPEED ONE ⟶ $2,777.44 $4,999.00",
+    "basis": "crossed-out regular price; $2,777.44 is a sale price"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://us.bmc-switzerland.com/products/257-amp-al-speed-one-usa-bikes-bmc-24-10105-003",
+    "quote": "Drive Unit: | Bosch Performance Line Speed",
+    "basis": "maker gives no class or speed; 'ASTM Classification: Level 2' is a riding-use rating, not e-bike class"
+   },
+   {
+    "kind": "retailer",
+    "value": 3,
+    "url": "https://www.sportsbasement.com/products/amp-257-al-speed-one",
+    "quote": "TOP SPEED: CLASS 3: TOP SPEED 28 MPH"
+   },
+   {
+    "kind": "retailer",
+    "value": 3,
+    "url": "https://www.eriksbikeshop.com/products/bmc-2024-257-amp-al-speed-electric-bike-pr5a26673",
+    "quote": "TOP SPEED: ⟶ 28 MPH",
+    "basis": "class from the 28 mph top speed (page: 'THROTTLE ASSIST: No'); the page's 'EBIKE CLASSIFICATION: ⟶ CLASS 1' line is followed by a legend of all three classes, so it is not read as the value"
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://us.bmc-switzerland.com/products/257-amp-al-speed-one-usa-bikes-bmc-24-10105-003",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": 28,
+    "url": "https://www.sportsbasement.com/products/amp-257-al-speed-one",
+    "quote": "TOP SPEED: CLASS 3: TOP SPEED 28 MPH"
+   },
+   {
+    "kind": "retailer",
+    "value": 28,
+    "url": "https://www.eriksbikeshop.com/products/bmc-2024-257-amp-al-speed-electric-bike-pr5a26673",
+    "quote": "TOP SPEED: ⟶ 28 MPH"
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://us.bmc-switzerland.com/products/257-amp-al-speed-one-usa-bikes-bmc-24-10105-003",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": 85,
+    "url": "https://www.sportsbasement.com/products/amp-257-al-speed-one",
+    "quote": "BATTERY: BOSCH POWERTUBE, 625 WH ⟶ MAX TORQUE: 85 NM"
+   },
+   {
+    "kind": "retailer",
+    "value": 63,
+    "url": "https://99spokes.com/bikes/bmc/2024/257-amp-al-speed-one",
+    "quote": "MotorBosch 600W 63Nm mid-drive",
+    "basis": "99 Spokes listing priced in CHF (Swiss version); same page names the drive unit 'Bosch Performance Line Speed'"
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": 625,
+    "url": "https://us.bmc-switzerland.com/products/257-amp-al-speed-one-usa-bikes-bmc-24-10105-003",
+    "quote": "Battery Pack: ⟶ Bosch PowerTube | 625 Wh | Certified by Intertek Testing Services NA, Inc."
+   },
+   {
+    "kind": "retailer",
+    "value": 625,
+    "url": "https://www.sportsbasement.com/products/amp-257-al-speed-one",
+    "quote": "Battery Pack:\tBosch PowerTube, 625 Wh ⟶ Display:\tBosch Kiox"
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://us.bmc-switzerland.com/products/257-amp-al-speed-one-usa-bikes-bmc-24-10105-003",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.sportsbasement.com/products/amp-257-al-speed-one",
+    "quote": ""
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://us.bmc-switzerland.com/products/257-amp-al-speed-one-usa-bikes-bmc-24-10105-003",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.sportsbasement.com/products/amp-257-al-speed-one",
+    "quote": ""
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": 265,
+    "url": "https://us.bmc-switzerland.com/products/257-amp-al-speed-one-usa-bikes-bmc-24-10105-003",
+    "quote": "System Weight Limit: ⟶ 120kg",
+    "basis": "total"
+   },
+   {
+    "kind": "retailer",
+    "value": 265,
+    "url": "https://www.sportsbasement.com/products/amp-257-al-speed-one",
+    "quote": "System Weight Limit:\t120kg ⟶ * Specs subject to change",
+    "basis": "total"
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "Bosch Performance Line Speed",
+    "url": "https://us.bmc-switzerland.com/products/257-amp-al-speed-one-usa-bikes-bmc-24-10105-003",
+    "quote": "Drive Unit: | Bosch Performance Line Speed"
+   },
+   {
+    "kind": "retailer",
+    "value": "Bosch Performance Line Speed",
+    "url": "https://www.sportsbasement.com/products/amp-257-al-speed-one",
+    "quote": "Drive Unit:\tBosch Performance Line Speed ⟶ Battery Pack:\tBosch PowerTube, 625 Wh"
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://us.bmc-switzerland.com/products/257-amp-al-speed-one-usa-bikes-bmc-24-10105-003",
+    "quote": "Rider Height\t<168\t168-180\t178-190\t>190",
+    "basis": "geometry table in cm, open-ended at both ends (S <168 cm, XL >190 cm); no bounded range"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.sportsbasement.com/products/amp-257-al-speed-one",
+    "quote": ""
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://us.bmc-switzerland.com/products/257-amp-al-speed-one-usa-bikes-bmc-24-10105-003",
+    "quote": "257 AMP Premium Aluminium | Smoothwelded | Integrated Battery | Internal Cable Routing | Powder Coat Finish | Post Mount Disc | 12 x 142mm Thru-Axle ⟶ Fork:"
+   },
+   {
+    "kind": "retailer",
+    "value": "No",
+    "url": "https://www.sportsbasement.com/products/amp-257-al-speed-one",
+    "quote": "Frame:\t257 AMP Premium Aluminium, Smoothwelded, Integrated Battery, Internal Cable Routing, Powder Coat Finish, Post Mount Disc, 12 x 142mm Thru-Axle"
+   }
+  ]
+ },
+ "status": {
+  "sources": [
+   {
+    "kind": "maker",
+    "value": "archive product (model year 2024)",
+    "url": "https://us.bmc-switzerland.com/products/257-amp-al-speed-one-usa-bikes-bmc-24-10105-003",
+    "quote": "Color: Powder Anthracite | Model Year: 2024 | BMC Archive Product"
+   }
+  ]
+ },
+ "notes": "Given src link was BMC's Canada store (CAD 6,999 regular); used the same product on BMC's US store (us.bmc-switzerland.com) for USD. Maker page is marked 'BMC Archive Product', MY2024 (not explicitly 'discontinued'); a 2026 version appears at dealers. Maker gives no speed, class, torque, range or weight. Load is 120 kg system limit (= 264.6 lb total). No EBR/EBReport review found; used 1 WebSearch to find Sports Basement (retailer). recheck (cls, spd, tq, wt, height): ERIK'S (eriksbikeshop.com, '2024 BMC 257 AMP AL Speed', no 'One' in the name, but the build matches: CUES 1x11, Miranda CF3D cranks, ICS MTT stem) lists 28 MPH top speed, no throttle, and also '750 WATTS' motor power; its class block reads 'CLASS 1' then a legend of all classes (ambiguous). 99 Spokes 2024 page states 63Nm, contradicting Sports Basement's 85 NM. BMC Korea maker page has the same open-ended rider-height table and no weight (only a Shopify shipping weight field). No weight or bounded height range found anywhere. Used the bike's one WebSearch."
+}

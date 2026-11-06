@@ -1,0 +1,51 @@
+{"bike": "Xtracycle|RFA (Shimano EP8, Class 1)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 4999, "url": "https://xtracycle.com/products/rfa-2", "quote": "White (sold out) - $4,999.00 ⟶ Black (sold out) - $4,999.00", "basis": "the one price on the RFA page; page's buy box describes the Class 3 EP6, EP8 has no separate price"},
+   {"kind": "review", "value": 4999, "url": "https://cleantechnica.com/2023/07/18/the-xtracycle-rfa-electric-cargo-bike-cleantechnica-tested/", "quote": "MSRP: $4,999"},
+   {"kind": "review", "value": 4999, "url": "https://www.electricbikejournal.com/xtracycle-rfa/", "quote": "Coming in at $4999 (currently on sale for $4499), is the Class 1 rated Shimano EP8 powered RFA.", "basis": "regular price; $4499 was a sale price"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://xtracycle.com/products/rfa-2", "quote": "E-assist class\tClass 1 ⟶ Max e-assist speed\t20 mph", "basis": "from 'RFA Shimano EP8 (Class 1) component specs' section"},
+   {"kind": "review", "value": 1, "url": "https://cleantechnica.com/2023/07/18/the-xtracycle-rfa-electric-cargo-bike-cleantechnica-tested/", "quote": "E-bike Class: Class 1"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://xtracycle.com/products/rfa-2", "quote": "Max e-assist speed\t20 mph ⟶ Specifications are subject to change without notice.", "basis": "EP8 (Class 1) section"},
+   {"kind": "review", "value": 20, "url": "https://cleantechnica.com/2023/07/18/the-xtracycle-rfa-electric-cargo-bike-cleantechnica-tested/", "quote": "Max Speed: 20 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://xtracycle.com/products/rfa-2", "quote": "The Shimano STEPS EP series motor delivers up to 85 nM of torque for hilly terrain & heavy loads. With up to 400% of e-assist, you’ll be cruising up hills, no matter your loaded. ⟶ Empty heading", "basis": "stated for the 'EP series' generally"},
+   {"kind": "review", "value": 85, "url": "https://cleantechnica.com/2023/07/18/the-xtracycle-rfa-electric-cargo-bike-cleantechnica-tested/", "quote": "Motor Power: 250 watts continuous, 500 watts peak w/85 Nm torque"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 630, "url": "https://xtracycle.com/products/rfa-2", "quote": "Battery\tShimano STEPS BT-E8016, 630 wH (downtube, external), up to 60mi per charge depending on riding conditions and load ⟶ Front hub\tKT QL-XC2F, 15mm, 100mm thru axle"},
+   {"kind": "review", "value": 630, "url": "https://cleantechnica.com/2023/07/18/the-xtracycle-rfa-electric-cargo-bike-cleantechnica-tested/", "quote": "Battery Capacity: 630 Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "60", "url": "https://xtracycle.com/products/rfa-2", "quote": "Battery\tShimano STEPS BT-E8016, 630 wH (downtube, external), up to 60mi per charge depending on riding conditions and load ⟶ Front hub\tKT QL-XC2F, 15mm, 100mm thru axle", "basis": "up to"},
+   {"kind": "review", "value": null, "url": "https://cleantechnica.com/2023/07/18/the-xtracycle-rfa-electric-cargo-bike-cleantechnica-tested/", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 60.2, "url": "https://xtracycle.com/products/rfa-2", "quote": "Bike weight\t60.2 lbs ⟶ Max Gross Vehicle Weight\t470 pounds"},
+   {"kind": "review", "value": 60.2, "url": "https://cleantechnica.com/2023/07/18/the-xtracycle-rfa-electric-cargo-bike-cleantechnica-tested/", "quote": "Weight: 60.2 lb"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 470, "url": "https://xtracycle.com/products/rfa-2", "quote": "Max Gross Vehicle Weight\t470 pounds ⟶ Frame material\t4130 Chromoly steel", "basis": "total"},
+   {"kind": "review", "value": 400, "url": "https://cleantechnica.com/2023/07/18/the-xtracycle-rfa-electric-cargo-bike-cleantechnica-tested/", "quote": "Weight Capacity: 400 lb"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Shimano STEPS EP8", "url": "https://xtracycle.com/products/rfa-2", "quote": "E-assist\tShimano STEPS EP8 ⟶ E-assist cycling computer\tShimano SC-E5003", "basis": "no watts on maker page"},
+   {"kind": "review", "value": "250W mid-drive (500W peak)", "url": "https://cleantechnica.com/2023/07/18/the-xtracycle-rfa-electric-cargo-bike-cleantechnica-tested/", "quote": "Motor Power: 250 watts continuous, 500 watts peak w/85 Nm torque"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'3\"-6'3\"", "url": "https://xtracycle.com/products/rfa-2", "quote": "If you are shorter than 5'3\" you may wish to have a smaller handlebar stem to accommodate a shorter reach. If you are taller than 6'3\" you may wish to have a longer seat post and stem for a more comfortable ride.", "basis": "stock fit range; FitKit available outside it"},
+   {"kind": "review", "value": null, "url": "https://cleantechnica.com/2023/07/18/the-xtracycle-rfa-electric-cargo-bike-cleantechnica-tested/", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://xtracycle.com/products/rfa-2", "quote": "With it's easy to mount mid-step frame geometry, the RFA is the perfect multi-purpose compact cargo bike. Dual 24\" wheels on a mid-tail frame keeps your weight low & centered for outstanding maneuverability, wherever your adventures take you. ⟶ Details Matter", "basis": "steel mid-tail frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": [
+   {"kind": "maker", "value": "sold out", "url": "https://xtracycle.com/products/rfa-2", "quote": "Available colors\tBlack (matte) SOLD OUT, Off-white (glossy) SOLD OUT", "basis": "EP8 (Class 1) colors marked sold out; not stated as discontinued"}
+ ]},
+ "notes": "Maker page's buy box is for the RFA Class 3 (EP6); the EP8 Class 1 appears only as a spec section with both colors SOLD OUT. Maker gives 470 lb max gross vehicle weight (total); CleanTechnica (2023) says 400 lb weight capacity. EBR and Electrek RFA reviews are the 2019 Bosch version (different generation) and were not used. Used one WebSearch (found CleanTechnica)."}

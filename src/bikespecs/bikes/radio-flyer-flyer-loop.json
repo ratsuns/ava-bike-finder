@@ -1,0 +1,48 @@
+{"bike": "Radio Flyer|Flyer Loop", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1999, "url": "https://www.radioflyer.com/products/flyer-loop", "quote": "$1,999.00 ⟶ Color: Red", "basis": "no crossed-out price shown (compare_at_price null)"},
+   {"kind": "review", "value": 2999, "url": "https://electrek.co/2026/04/07/radio-flyer-launches-new-compact-cargo-e-bike-designed-to-make-family-riding-easier/", "quote": "Launched for sale today at an MSRP of US $2,999, the Flyer Loop’s launch continues Radio Flyer’s steady expansion into the e-bike space over the last five years. While the company is best known for its classic red wagons, it has quietly built a credible electric bike lineup focused on family use, leveraging its long history in consumer products and its emphasis on safety, reliability, and approachable design.", "basis": "launch MSRP in April 2026; maker now lists $1,999"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.radioflyer.com/products/flyer-loop", "quote": "Up to 20 mph ⟶ Pedal Assist & Throttle", "basis": "20 mph with throttle; maker states no class"},
+   {"kind": "review", "value": 2, "url": "https://electrek.co/2026/04/07/radio-flyer-launches-new-compact-cargo-e-bike-designed-to-make-family-riding-easier/", "quote": "Under the hood, the bike features a 750W rear hub motor paired with a torque sensor and four levels of pedal assist, along with a Class 2 top speed of 20 mph (32 km/h). A 48V 14.7Ah battery provides a claimed range of 30 to 50 miles (50-80 km), depending on usage. An 8-speed Shimano drivetrain rounds out the setup, giving riders flexibility for different terrain and loads."}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.radioflyer.com/products/flyer-loop", "quote": "Weight Capacity ⟶ Up to 20 mph"},
+   {"kind": "review", "value": 20, "url": "https://electrek.co/2026/04/07/radio-flyer-launches-new-compact-cargo-e-bike-designed-to-make-family-riding-easier/", "quote": "Under the hood, the bike features a 750W rear hub motor paired with a torque sensor and four levels of pedal assist, along with a Class 2 top speed of 20 mph (32 km/h). A 48V 14.7Ah battery provides a claimed range of 30 to 50 miles (50-80 km), depending on usage. An 8-speed Shimano drivetrain rounds out the setup, giving riders flexibility for different terrain and loads."}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://www.radioflyer.com/products/flyer-loop", "quote": "", "basis": "torque not published"},
+   {"kind": "review", "value": null, "url": "https://electrek.co/2026/04/07/radio-flyer-launches-new-compact-cargo-e-bike-designed-to-make-family-riding-easier/", "quote": "", "basis": "torque not stated"},
+   {"kind": "maker", "value": 87, "url": "https://images.radioflyer.com/media/flyer/specs/883_1.pdf", "quote": "Motor System FlightSpeed® 750W Hub Motor, 87Nm Peak Torque", "basis": "Radio Flyer Flyer Loop spec sheet PDF linked from the product page; peak torque"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": null, "url": "https://www.radioflyer.com/products/flyer-loop", "quote": "", "basis": "battery capacity not on the page (only in a spec-sheet PDF that couldn't be read)"},
+   {"kind": "review", "value": 705.6, "url": "https://electrek.co/2026/04/07/radio-flyer-launches-new-compact-cargo-e-bike-designed-to-make-family-riding-easier/", "quote": "Under the hood, the bike features a 750W rear hub motor paired with a torque sensor and four levels of pedal assist, along with a Class 2 top speed of 20 mph (32 km/h). A 48V 14.7Ah battery provides a claimed range of 30 to 50 miles (50-80 km), depending on usage. An 8-speed Shimano drivetrain rounds out the setup, giving riders flexibility for different terrain and loads.", "basis": "48V x 14.7Ah"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "30–50", "url": "https://www.radioflyer.com/products/flyer-loop", "quote": "30 – 50+ Miles ⟶ Battery Range"},
+   {"kind": "review", "value": "30–50", "url": "https://electrek.co/2026/04/07/radio-flyer-launches-new-compact-cargo-e-bike-designed-to-make-family-riding-easier/", "quote": "Under the hood, the bike features a 750W rear hub motor paired with a torque sensor and four levels of pedal assist, along with a Class 2 top speed of 20 mph (32 km/h). A 48V 14.7Ah battery provides a claimed range of 30 to 50 miles (50-80 km), depending on usage. An 8-speed Shimano drivetrain rounds out the setup, giving riders flexibility for different terrain and loads."}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 77, "url": "https://www.radioflyer.com/products/flyer-loop", "quote": "Bike Weight ⟶ 77 lbs.", "basis": "page doesn't say whether battery is included"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 440, "url": "https://www.radioflyer.com/products/flyer-loop", "quote": "With a max rider weight of 265 lbs. and a total payload capacity of 440 lbs., it’s ready for whatever the day brings. ⟶ 5'2\" Rider"},
+   {"kind": "review", "value": 440, "url": "https://electrek.co/2026/04/07/radio-flyer-launches-new-compact-cargo-e-bike-designed-to-make-family-riding-easier/", "quote": "Despite the smaller footprint, Radio Flyer hasn’t compromised on capability. The Flyer Loop boasts a hefty 440 lb (200 kg) payload capacity, including a 220 lb (100 kg) rear rack designed to carry up to two kids or a significant amount of cargo. That positions it squarely in the category of true car-replacement cargo e-bikes, even as it aims to feel less bulky and more manageable."}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub", "url": "https://www.radioflyer.com/products/flyer-loop", "quote": "Flight Speed® Motor ⟶ 750W rear hub motor"},
+   {"kind": "review", "value": "750W rear hub", "url": "https://electrek.co/2026/04/07/radio-flyer-launches-new-compact-cargo-e-bike-designed-to-make-family-riding-easier/", "quote": "Under the hood, the bike features a 750W rear hub motor paired with a torque sensor and four levels of pedal assist, along with a Class 2 top speed of 20 mph (32 km/h). A 48V 14.7Ah battery provides a claimed range of 30 to 50 miles (50-80 km), depending on usage. An 8-speed Shimano drivetrain rounds out the setup, giving riders flexibility for different terrain and loads."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'11\"-6'3\"", "url": "https://www.radioflyer.com/products/flyer-loop", "quote": "One bike, made to be shared. The Loop is designed to fit riders from 4'11\" to 6'3\", so it’s easy to hop on, adjust, and go—no matter who’s riding."}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.radioflyer.com/products/flyer-loop", "quote": "The foldable front stem makes storage and transport a whole lot easier. Collapse it down to fit in tight spaces like garages, bike rooms, or your SUV, so you can take the Loop along for the ride. ⟶ Power that Performs", "basis": "folding stem only; frame doesn't fold"},
+   {"kind": "review", "value": "No", "url": "https://electrek.co/2026/04/07/radio-flyer-launches-new-compact-cargo-e-bike-designed-to-make-family-riding-easier/", "quote": "Radio Flyer has also leaned into practical features that make day-to-day ownership easier. A folding stem helps reduce the bike’s storage footprint, while a wide range of accessories – including kid-carrying kits, baskets, and cargo solutions – allows riders to customize the bike for school runs, grocery trips, or weekend outings.", "basis": "folding stem only"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Used www.radioflyer.com/products/flyer-loop (same product as the checkout. link). Price conflict: Electrek's April 2026 launch article says MSRP $2,999; maker page now shows $1,999 with no crossed-out price. Maker page has no battery Wh or torque; its spec sheet is a PDF the browser script couldn't read. Only Electrek found as independent source (EBR has no Radio Flyer reviews). Recheck: read the Flyer Loop spec sheet PDF linked from radioflyer.com (87Nm peak torque, 687Wh, 77lbs, 440lbs payload incl. rider, rider height 4' 11\" to 6'3\")."}

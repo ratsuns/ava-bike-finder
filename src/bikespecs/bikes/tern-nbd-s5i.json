@@ -1,0 +1,50 @@
+{"bike": "Tern|NBD S5i", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": null, "url": "https://www.ternbicycles.com/us/bikes/471/nbd-s5i", "quote": "$3,899 (SALE PRICE)", "basis": "maker shows only a sale price; no regular price on the page"},
+   {"kind": "retailer", "value": null, "url": "https://www.amegoev.com/products/tern-nbd-s5i", "quote": "Regular price ⟶ $6,999.00 CAD", "basis": "Canadian dealer, CAD only"},
+   {"kind": "retailer", "value": 4499, "url": "https://www.seattleelectricbike.net/products/tern-nbd-s8i", "quote": "Regular price ⟶ $4,499.00", "basis": "US dealer Seattle Electric Bike, page titled 'Tern NBD S5i' (URL handle says s8i); regular price, sale price $3,899.00"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://www.ternbicycles.com/us/bikes/471/nbd-s5i", "quote": "Bosch Performance, 300% Assist, 65 Nm Torque, max speed 25 kph (EU); max speed 20 mph (US) ⟶ BATTERY:", "basis": "20 mph pedal assist, no throttle listed = Class 1 (class not stated on page)"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.ternbicycles.com/us/bikes/471/nbd-s5i", "quote": "Bosch Performance, 300% Assist, 65 Nm Torque, max speed 25 kph (EU); max speed 20 mph (US) ⟶ BATTERY:"},
+   {"kind": "retailer", "value": 20, "url": "https://www.amegoev.com/products/tern-nbd-s5i", "quote": "Speed: 32kmh/20mph ⟶ Range: 51-118 kms/32-74 miles"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 65, "url": "https://www.ternbicycles.com/us/bikes/471/nbd-s5i", "quote": "Bosch Performance Line motor provides up to 65 Nm of torque and 300% support ⟶ Bosch PowerPack 500 powers longer trips, commutes, and journeys"},
+   {"kind": "retailer", "value": 65, "url": "https://www.amegoev.com/products/tern-nbd-s5i", "quote": "Motor: Bosch Performance Line System 2 ⟶ Torque: 65 Nm"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 500, "url": "https://www.ternbicycles.com/us/bikes/471/nbd-s5i", "quote": "BATTERY: ⟶ Bosch PowerPack 500", "basis": "PowerPack 500 (500 Wh)"},
+   {"kind": "retailer", "value": 500, "url": "https://www.amegoev.com/products/tern-nbd-s5i", "quote": "BATTERY ⟶ Bosch PowerPack 500Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "32–74", "url": "https://www.ternbicycles.com/us/bikes/471/nbd-s5i", "quote": "RANGE: ⟶ 51-118 km (32-74 mi)"},
+   {"kind": "retailer", "value": "32–74", "url": "https://www.amegoev.com/products/tern-nbd-s5i", "quote": "Range: 51–118 km (32–74 miles) per full charge ⟶ Top speed: 32 km/h (20 mph)"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 51.6, "url": "https://www.ternbicycles.com/us/bikes/471/nbd-s5i", "quote": "WEIGHT: ⟶ 23.4 kg (51.6 lb)"},
+   {"kind": "retailer", "value": 51.6, "url": "https://www.amegoev.com/products/tern-nbd-s5i", "quote": "Weight: 51.6 lbs (23 kgs) ⟶ Load: 308.6 lbs (140 kgs)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 308.6, "url": "https://www.ternbicycles.com/us/bikes/471/nbd-s5i", "quote": "MAX GROSS VEHICLE WEIGHT: ⟶ 140 kg (308.6 lb)", "basis": "total"},
+   {"kind": "retailer", "value": 308.6, "url": "https://www.amegoev.com/products/tern-nbd-s5i", "quote": "Load: 308.6 lbs (140 kgs) ⟶ Included Accessories: Rack, fenders, lights", "basis": "total (same as maker's max gross vehicle weight)"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Performance Line", "url": "https://www.ternbicycles.com/us/bikes/471/nbd-s5i", "quote": "Bosch Performance Line motor provides up to 65 Nm of torque and 300% support ⟶ Bosch PowerPack 500 powers longer trips, commutes, and journeys"},
+   {"kind": "retailer", "value": "Bosch Performance Line", "url": "https://www.amegoev.com/products/tern-nbd-s5i", "quote": "MOTOR POWER ⟶ Bosch Performance Line System 2, 65 Nm"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'10\"-6'3\"", "url": "https://www.ternbicycles.com/us/bikes/471/nbd-s5i", "quote": "Fits riders 147 - 190 cm (4'10\" - 6'3\")"},
+   {"kind": "retailer", "value": "4'10\"-6'3\"", "url": "https://www.amegoev.com/products/tern-nbd-s5i", "quote": "Sizes: One size (4'10\"-6'3\") ⟶ Brakes: Magura MT4, hydraulic disc"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.ternbicycles.com/us/bikes/471/nbd-s5i", "quote": "Tern NBD, 6061-AL, Patented design, EFBE Tri-Test approved: 140 kg ⟶ FORK:", "basis": "rigid low step-thru frame; the listed 'FOLDING SIZE' is with the stem folded"},
+   {"kind": "retailer", "value": "No", "url": "https://www.amegoev.com/products/tern-nbd-s5i", "quote": "Frame: Tern NBD, 6061 aluminum, low-step through; EFBE Tri-Test approved 140 kg ⟶ Front suspension: Tern Tarsus fork, hydroformed aluminum"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page shows only '$3,899 (SALE PRICE)' with no regular price, so price left null; Amego (Canadian dealer) gives CAD prices only. Class not stated by maker: 20 mph, no throttle -> Class 1. Max load is the max gross vehicle weight (total); max rider 264.6 lb; rack 60 lb. Maker lists 'FOLDING SIZE' (stem folds) but the frame does not fold. Amego's text mentions an 'Enviolo hub' in one blurb but its spec list says Shimano Nexus 5-speed (not a spec we record). | recheck: Seattle Electric Bike (US dealer, page 'Tern NBD S5i') lists regular $4,499 (sale $3,899) - the site's 3899 matches the sale price; NBD is not in Tern's US online store."
+}

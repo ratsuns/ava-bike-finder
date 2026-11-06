@@ -1,0 +1,50 @@
+{"bike": "Himiway|A7 Pro Commuter eBike", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2899, "url": "https://himiwaybike.com/products/himiway-a7pro-commuter-ebike", "quote": "Regular price ⟶ $2,899.00", "basis": "regular price; on sale for $1,999"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://himiwaybike.com/products/himiway-a7pro-commuter-ebike", "quote": "Thumb Throttle ⟶ Technical Specifications", "basis": "maker page has a throttle but states no class or speed"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/himiway-a7-pro-review/", "quote": "E-BIKE CLASS: ⟶ CLASS 2 (THROTTLE TO 20 MPH)", "basis": "ships Class 2; unlockable to Class 3 (28 mph) with a passcode from Himiway"},
+   {"kind": "maker", "value": 2, "url": "https://himiwaybike.com/blogs/after-purchase/unlock-the-limit-of-the-speed", "quote": "Discover that Himiway e-bikes have the capability to operate as technically Class 3 e-bikes. While both of these bikes are shipped as Class 2 ebikes, users have the option to unlock the speed limiter, increasing the max speed to 25mph", "basis": "Himiway's 'Unlock the Limit of the Speed' page: ships as Class 2, unlockable; its per-model unlock list includes 'A7 Pro: watch video'"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": null, "url": "https://himiwaybike.com/products/himiway-a7pro-commuter-ebike", "quote": ""},
+   {"kind": "review", "value": 20, "url": "https://upway.co/blogs/news/himiway-a7-commuter-ebike-review", "quote": "Top speed\t20 mph\t20 mph default; adjustable up to 28 mph\t20 mph default; adjustable up to 28 mph", "basis": "right column = A7 Pro; adjustable to 28 mph"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/himiway-a7-pro-review/", "quote": "CLASS 2 (THROTTLE TO 20 MPH) ⟶ CLASS 3 (PEDAL ASSIST TO 28 MPH)", "basis": "adjustable to 28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 130, "url": "https://himiwaybike.com/products/himiway-a7pro-commuter-ebike", "quote": "Mid-Drive Motor ⟶ 130 Nm"},
+   {"kind": "review", "value": 100, "url": "https://electricbikereport.com/himiway-a7-pro-review/", "quote": "Motor: ANANDA M100 48V-500W mid-drive motor, 100 Nm torque ⟶ Controller: 48V/22A"},
+   {"kind": "review", "value": 130, "url": "https://upway.co/blogs/news/himiway-a7-commuter-ebike-review", "quote": "Torque\t60Nm\t70Nm\t130Nm ⟶ Battery\t720Wh\t720Wh\t720Wh", "basis": "right column = A7 Pro"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 720, "url": "https://himiwaybike.com/products/himiway-a7pro-commuter-ebike", "quote": "High-capacity 720Wh LG battery, 48V 15Ah, detachable and built with durable 21700 Li-ion cells for extended range and performance ⟶ 50 Miles"},
+   {"kind": "review", "value": 720, "url": "https://electricbikereport.com/himiway-a7-pro-review/", "quote": "Battery: Samsung/LG 48V 15Ah (720 Wh) ⟶ Charger: US standard 2.0 A smart charger"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "35–50", "url": "https://himiwaybike.com/products/himiway-a7pro-commuter-ebike", "quote": "Range ⟶ 35~50 miles"},
+   {"kind": "review", "value": "30–50", "url": "https://electricbikereport.com/himiway-a7-pro-review/", "quote": "Claimed Range: 30-50 miles ⟶ Throttle:Thumb throttle", "basis": "Himiway's claim as listed by the reviewer"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 77, "url": "https://himiwaybike.com/products/himiway-a7pro-commuter-ebike", "quote": "77 lb. ⟶ with Battery"},
+   {"kind": "review", "value": 74.3, "url": "https://electricbikereport.com/himiway-a7-pro-review/", "quote": "Tested Weight: 74.3 lbs. ⟶ Rider height range: 5’3” to 6’5”", "basis": "measured by reviewer (claimed 77 lbs)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 300, "url": "https://himiwaybike.com/products/himiway-a7pro-commuter-ebike", "quote": "Max. payload capacity ⟶ 300 lb."},
+   {"kind": "review", "value": 300, "url": "https://electricbikereport.com/himiway-a7-pro-review/", "quote": "Total payload capacity: 300 lbs. ⟶ COMPONENTS & ACCESSORIES"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W mid-drive (ANANDA M100)", "url": "https://himiwaybike.com/products/himiway-a7pro-commuter-ebike", "quote": "Motor ⟶ ANANDA M100 48V-500W mid-drive motor"},
+   {"kind": "review", "value": "500W mid-drive (ANANDA M100)", "url": "https://electricbikereport.com/himiway-a7-pro-review/", "quote": "Motor: ANANDA M100 48V-500W mid-drive motor, 100 Nm torque ⟶ Controller: 48V/22A"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'3\"-6'5\"", "url": "https://himiwaybike.com/products/himiway-a7pro-commuter-ebike", "quote": "Rider height ⟶ 5′3″ ~ 6′5″"},
+   {"kind": "review", "value": "5'3\"-6'5\"", "url": "https://electricbikereport.com/himiway-a7-pro-review/", "quote": "Rider height range: 5’3” to 6’5” ⟶ Total payload capacity: 300 lbs."}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://himiwaybike.com/products/himiway-a7pro-commuter-ebike", "quote": "Frame ⟶ 6061 Aluminum frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker regular price $2,899, currently on sale at $1,999. Maker page gives no class or top speed; Electric Bike Report says it ships Class 2 (20 mph) and can be unlocked to Class 3 / 28 mph with a passcode from Himiway. Torque conflict: maker and Upway say 130 Nm, Electric Bike Report's spec list says 100 Nm. Range: maker 35~50 mi, EBR lists claimed 30-50 mi (and its marketing banner says 50 Miles). Upway values are from the right-hand (A7 Pro) column of its comparison table. | recheck: Himiway's own 'Unlock the Limit of the Speed' page says its e-bikes ship as Class 2 (unlockable to 25 mph) and lists this model's unlock video; 1 WebSearch used for the Himiway set. Upway has no A7 Pro listing."}

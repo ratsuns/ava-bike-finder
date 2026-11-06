@@ -1,0 +1,49 @@
+{"bike": "Aventon|Abound LR", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1999, "url": "https://www.aventon.com/products/abound-lr-ebike", "quote": "$1,899.00 | $1,999.00", "basis": "regular $1,999; sale $1,899 ($100 off)"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/aventon-abound-lr-review/", "quote": ""}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.aventon.com/products/abound-lr-ebike", "quote": "Ebike Class | Class 2 Ebike"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/aventon-abound-lr-review/", "quote": "Out of the box, the Abound LR is a Class 2 e-bike offering throttle and pedal assist up to 20 mph. Through the Aventon app, users can increase the bike’s pedal-assisted speed to a maximum of 25 mph (making it a Class 3) and tune the motor’s output using the Ride Tune feature (more on that later)."}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.aventon.com/products/abound-lr-ebike", "quote": "Top Speed | 20MPH | (Adjustable to 25MPH)", "basis": "adjustable to 25 mph"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/aventon-abound-lr-review/", "quote": "Out of the box, the Abound LR is a Class 2 e-bike offering throttle and pedal assist up to 20 mph. Through the Aventon app, users can increase the bike’s pedal-assisted speed to a maximum of 25 mph (making it a Class 3) and tune the motor’s output using the Ride Tune feature (more on that later).", "basis": "adjustable to 25 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 80, "url": "https://www.aventon.com/products/abound-lr-ebike", "quote": "Motor Torque | 80Nm"},
+   {"kind": "review", "value": 80, "url": "https://electricbikereport.com/aventon-abound-lr-review/", "quote": "Our testing suggests that the motor’s torque output is a primary factor influencing the pedal portion of our Hill Test. The Abound LR’s motor produces 80 Newton meters (Nm) of torque, which does not stray far from the category average of 87 Nm. Once again, the bike’s results make sense."}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 733, "url": "https://www.aventon.com/products/abound-lr-ebike", "quote": "Battery | Removable Internal Lithium-ion. 36V, 20Ah, 733Wh, LG 21700 cells"},
+   {"kind": "review", "value": 708, "url": "https://electricbikereport.com/aventon-abound-lr-review/", "quote": "Battery: Removable Internal Lithium-ion. 36V, 20Ah, 708Wh, LG 21700 cells ⟶ Display: BC147 Side Display"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "60", "url": "https://www.aventon.com/products/abound-lr-ebike", "quote": "Range | Up to 60 miles"},
+   {"kind": "review", "value": "60", "url": "https://electricbikereport.com/aventon-abound-lr-review/", "quote": "Claimed Range: 60 miles ⟶ Throttle:Aventon LH Handlebar Mounted"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 88, "url": "https://www.aventon.com/products/abound-lr-ebike", "quote": "Weight | 88lbs"},
+   {"kind": "review", "value": 88, "url": "https://electricbikereport.com/aventon-abound-lr-review/", "quote": "WEIGHT & DIMENSIONS ⟶ Claimed weight: 88 lbs", "basis": "claimed; tested 88.3 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 440, "url": "https://www.aventon.com/products/abound-lr-ebike", "quote": "Payload Capacity | 440 lbs"},
+   {"kind": "review", "value": 440, "url": "https://electricbikereport.com/aventon-abound-lr-review/", "quote": "The Abound LR has a total payload capacity of 440 lbs (including the rider), allowing it to move kids and/or cargo wherever you need to go."}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub (1,188W peak; 1,440W in Boost)", "url": "https://www.aventon.com/products/abound-lr-ebike", "quote": "Motor | Shengyi 36V 750w Hub Drive with 6 speed sensors (1188W peak)", "basis": "banner also says '750W | 1440W Peak in Boost*'; spec lists 'Nutted Hub Drive Motor' on rear wheel"},
+   {"kind": "review", "value": "750W hub", "url": "https://electricbikereport.com/aventon-abound-lr-review/", "quote": "Motor: Shengyi 36V 750w Hub Drive with 6 speed sensors ⟶ Headlight: Integrated LED"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'11\"-6'3\"", "url": "https://www.aventon.com/products/abound-lr-ebike", "quote": "Rider Height | 4'11\" - 6'3\""},
+   {"kind": "review", "value": "4'11\"-6'6\"", "url": "https://electricbikereport.com/aventon-abound-lr-review/", "quote": "Rider height range: 4’11” to 6’6” ⟶ Total payload capacity: 440 lbs"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.aventon.com/products/abound-lr-ebike", "quote": "Frame Style | Step-Through"},
+   {"kind": "review", "value": "No", "url": "https://electricbikereport.com/aventon-abound-lr-review/", "quote": "Frame: Gravity Cast 6061 Single-Butted Aluminum Alloy with Internal Battery ⟶ Drivetrain:8-Speed Shimano Altus, 52T chainring, 12-32T cassette"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker values from the top banner and Specifications section; ' | ' joins consecutive page lines. Buy button currently reads 'PRE-ORDER NOW' (not discontinued). Battery Wh differs: maker 733Wh vs EBR 708Wh. Rider height differs: maker 4'11\"-6'3\" vs EBR 4'11\"-6'6\". Only one independent source (EBR)."}

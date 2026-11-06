@@ -1,0 +1,168 @@
+{
+ "bike": "Santa Cruz|Skitch CC Apex Flat Bar",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": 6499,
+    "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-apex-flat-bar-2026-1-1",
+    "quote": "$6,499.00 USD ⟶ Carbon CC Frame"
+   },
+   {
+    "kind": "retailer",
+    "value": 6499,
+    "url": "https://mikesbikes.com/products/26-skitch-1-1-apex-flat-bar",
+    "quote": "Regular price ⟶ $6,499.00",
+    "basis": "regular price; on sale for $5,499.00"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": 3,
+    "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-apex-flat-bar-2026-1-1",
+    "quote": "In the US, the Skitch is considered a Class 3 ebike with a 28mph max speed.",
+    "basis": "FAQ also says 'There is no throttle. The Skitch is pedal assist only.'"
+   },
+   {
+    "kind": "retailer",
+    "value": 3,
+    "url": "https://mikesbikes.com/products/26-skitch-1-1-apex-flat-bar",
+    "quote": "Max Assisted Speed ⟶ 28mph (Class 3)"
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": 28,
+    "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-apex-flat-bar-2026-1-1",
+    "quote": "In the US, the Skitch is considered a Class 3 ebike with a 28mph max speed."
+   },
+   {
+    "kind": "retailer",
+    "value": 28,
+    "url": "https://mikesbikes.com/products/26-skitch-1-1-apex-flat-bar",
+    "quote": "Max Assisted Speed ⟶ 28mph (Class 3)"
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-apex-flat-bar-2026-1-1",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://mikesbikes.com/products/26-skitch-1-1-apex-flat-bar",
+    "quote": ""
+   },
+   {
+    "kind": "maker",
+    "value": 60,
+    "url": "https://www.santacruzbicycles.com/cdn/shop/files/Fazua_Ride_60_User_Manual_English.pdf?v=3798883192847462864",
+    "quote": "s upport torque, max.   →   60   n m",
+    "basis": "Fazua Ride 60 drive-unit manual linked from the maker's Skitch page (data sheet, text as extracted from the PDF)"
+   },
+   {
+    "kind": "review",
+    "value": 60,
+    "url": "https://upway.co/blogs/news/santa-cruz-skitch-review",
+    "quote": "Maximum Torque\t60Nm ⟶ Battery\tFazua 480Wh integrated battery",
+    "basis": "Upway review of the Skitch Carbon CC (480Wh), not build-specific"
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": 480,
+    "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-apex-flat-bar-2026-1-1",
+    "quote": "Fazua 480Wh Integrated Battery",
+    "basis": "spec table; the same page's feature list says '430 Wh Battery'"
+   },
+   {
+    "kind": "retailer",
+    "value": 480,
+    "url": "https://mikesbikes.com/products/26-skitch-1-1-apex-flat-bar",
+    "quote": "Battery ⟶ Fazua 480 Wh Integrated Battery"
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-apex-flat-bar-2026-1-1",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://mikesbikes.com/products/26-skitch-1-1-apex-flat-bar",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": "75",
+    "url": "https://upway.co/blogs/news/santa-cruz-skitch-review",
+    "quote": "Claimed Range\tUp to 75 miles (120km) under ideal riding conditions ⟶ Maximum Assisted Speed\t20mph (US) / 25km/h (UK & EU)",
+    "basis": "Upway's statement of the maker's claim; reviewer thinks 30-50 mi is realistic. Not build-specific"
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": 30.91,
+    "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-apex-flat-bar-2026-1-1",
+    "quote": "WEIGHT (LBS) ⟶ 30.91",
+    "basis": "integrated battery; size not stated"
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-apex-flat-bar-2026-1-1",
+    "quote": ""
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "Fazua Ride 60",
+    "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-apex-flat-bar-2026-1-1",
+    "quote": "Fazua Ride 60 Drive Unit",
+    "basis": "no rated watts published"
+   },
+   {
+    "kind": "retailer",
+    "value": "Fazua Ride60",
+    "url": "https://mikesbikes.com/products/26-skitch-1-1-apex-flat-bar",
+    "quote": "Motor\tFazua Ride60 ⟶ Battery"
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": "5'1\"-6'6\"",
+    "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-apex-flat-bar-2026-1-1",
+    "quote": "Small 154cm 5'1\" - 167cm 5'6\" Reach: 390mm Medium 162cm 5'4\" - 177cm 5'10\" Reach: 405mm Large 170cm 5'7\" - 182cm 6'0\" Reach: 420mm X-Large 177cm 5'10\" - 190cm 6'3\" Reach: 435mm XX-Large 185cm 6'1\" - 198cm 6'6\" Reach: 450mm",
+    "basis": "size guide, S-XXL"
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-apex-flat-bar-2026-1-1",
+    "quote": "CC Carbon Frame",
+    "basis": "rigid carbon frame; no folding"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker page is the Skitch 1.1 (2026) Apex Flat Bar, Carbon CC; it contradicts itself on battery (spec 'Fazua 480Wh Integrated Battery' vs feature '430 Wh Battery'). Mike's sells this as 'Skitch Apex Flat Bar (480 Wh)' at $6,499 and a separate 430 Wh version at $6,399. No torque, range or max load on either page. Evo/competitivecyclist pages were the 2025 version or blocked (403). One WebSearch used. Size-guide quote is from the page's size guide (hidden pop-up text). recheck: maker page full text incl. FAQ (no range/torque stated; FAQ says US Class 3, 28 mph), Fazua Ride 60 manual PDF on maker site (60 Nm max), Upway Skitch review (60Nm, 480Wh, claimed up to 75 mi; its comparison table says 430Wh, so it is not fully consistent), Electric Bike Report first look (60Nm, '60 mi. or more' range, but for the original 430Wh Skitch, so not used for range), Contender Bicycles pages 404, 1 WebSearch shared across the four Skitch builds."
+}

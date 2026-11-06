@@ -1,0 +1,49 @@
+{"bike": "Troxus|Trax Mid-Drive", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 3299, "url": "https://www.troxusmobility.com/products/trax-mid-drive-e-bike", "quote": "Sale price | $1,999.00 USD | Regular price | $3,299"},
+   {"kind": "retailer", "value": 3299, "url": "https://www.bikeberry.com/products/troxus-500w-trax-mid-drive-electric-bike", "quote": "Sale price | $3,134.05 | Regular price | $3,299"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://www.troxusmobility.com/products/trax-mid-drive-e-bike", "quote": "Class 3 eBike ⟶ As Sold"},
+   {"kind": "maker", "value": 3, "url": "https://www.troxusmobility.com/products/trax-mid-drive-e-bike", "quote": "Class 3 28mph model with Troxus Premium Comfort Cockpit, adjustable stem, swept back handlebars, ergonomic grips and wide plush saddle for all day riding comfort. ⟶ Never Miss A Shift"},
+   {"kind": "retailer", "value": 2, "url": "https://www.bikeberry.com/products/troxus-500w-trax-mid-drive-electric-bike", "quote": "Class II ⟶ Frame Type:", "basis": "retailer says Class II but lists 28 mph pedal assist; conflicts with maker"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.troxusmobility.com/products/trax-mid-drive-e-bike", "quote": "Max Speed\tUp To 20 MPH on Throttle / Up To 28 MPH on Pedal Assist"},
+   {"kind": "retailer", "value": 28, "url": "https://www.bikeberry.com/products/troxus-500w-trax-mid-drive-electric-bike", "quote": "Max Speed: Up To 20 MPH on Throttle / Up To 28 MPH on Pedal Assist ⟶ Range: Up To 60 Miles Per Charge"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 130, "url": "https://www.troxusmobility.com/products/trax-mid-drive-e-bike", "quote": "Motor\tBafang® 48V/500W Mid-Motor, 130Nm Max. Torque"},
+   {"kind": "retailer", "value": 130, "url": "https://www.bikeberry.com/products/troxus-500w-trax-mid-drive-electric-bike", "quote": "Motor: Bafang® 48V/500W Mid-Motor, 130Nm Max. Torque"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 720, "url": "https://www.troxusmobility.com/products/trax-mid-drive-e-bike", "quote": "Battery\tUL-2271 Certified / Internal / Removable / Lithium Ion, 48V/15Ah (720Wh) with Samsung® Cells"},
+   {"kind": "retailer", "value": 720, "url": "https://www.bikeberry.com/products/troxus-500w-trax-mid-drive-electric-bike", "quote": "Battery: UL-2771 Certified / Internal / Removable / Lithium Ion, 48V/15Ah (720Wh) with Samsung® Cells ⟶ Display: Bafang® Color Display, Bluetooth, w/ Multi-Function Remote"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "60", "url": "https://www.troxusmobility.com/products/trax-mid-drive-e-bike", "quote": "Range\tUp To 60 Miles Per Charge"},
+   {"kind": "retailer", "value": "60", "url": "https://www.bikeberry.com/products/troxus-500w-trax-mid-drive-electric-bike", "quote": "Range: Up To 60 Miles Per Charge ⟶ Weight Limit: Maximum Load: 330 lbs"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 61, "url": "https://www.troxusmobility.com/products/trax-mid-drive-e-bike", "quote": "Net Weight\t61 lbs"},
+   {"kind": "retailer", "value": 61, "url": "https://www.bikeberry.com/products/troxus-500w-trax-mid-drive-electric-bike", "quote": "Net Weight: 61 lbs ⟶ Rack: Alloy Rear Model"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 330, "url": "https://www.troxusmobility.com/products/trax-mid-drive-e-bike", "quote": "Weight Limit\tMaximum Load: 330 lbs"},
+   {"kind": "retailer", "value": 330, "url": "https://www.bikeberry.com/products/troxus-500w-trax-mid-drive-electric-bike", "quote": "Weight Limit: Maximum Load: 330 lbs ⟶ Net Weight: 61 lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W mid-drive", "url": "https://www.troxusmobility.com/products/trax-mid-drive-e-bike", "quote": "Bafang® 500 watt mid-drive motor, with 720 Wh (15Ah) UL-certified battery, provides intuitive pedal assistance with all day range. ⟶ Our Most Comfortable All-Day Cruiser"},
+   {"kind": "retailer", "value": "500W mid-drive", "url": "https://www.bikeberry.com/products/troxus-500w-trax-mid-drive-electric-bike", "quote": "Features an efficient 500W Bafang Mid-Motor delivering high torque (130Nm) for superior climbing and power transfer ⟶ Speed & Range:"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://www.troxusmobility.com/products/trax-mid-drive-e-bike", "quote": "Frame Size\tSmall / 15.5\"\tMedium / 17.5\"\tLarge / 19\""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.troxusmobility.com/products/trax-mid-drive-e-bike", "quote": "Frame\tAluminum Frame"},
+   {"kind": "retailer", "value": "No", "url": "https://www.bikeberry.com/products/troxus-500w-trax-mid-drive-electric-bike", "quote": "Controller: Inside Motor ⟶ Frame: Aluminum Frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker says 'Class 3 eBike As Sold' and 'Class 3 28mph model'; BikeBerry labels it 'Class II' (conflict; recorded maker class 3). Maker regular $3,299 (sale $1,999). Maker gives frame sizes but no rider height range. Used one WebSearch to find BikeBerry."}

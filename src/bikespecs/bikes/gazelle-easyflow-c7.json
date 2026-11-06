@@ -1,0 +1,50 @@
+{"bike": "Gazelle|EasyFlow C7", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 3999, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-easyflow-c7", "quote": "$3,999 | Find a Store", "basis": "no crossed-out price shown"},
+   {"kind": "retailer", "value": 3998.99, "url": "https://mikesbikes.com/products/gazelle-easyflow-c7", "quote": "Regular price | $3,998.99"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-easyflow-c7", "quote": "Ebike Max Speed | 20 mph", "basis": "no class stated; 20 mph pedal assist with no throttle listed (Shimano EP5, 3 support levels) means Class 1"},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/gazelle-easyflow-c7", "quote": ""}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-easyflow-c7", "quote": "Ebike Max Speed | 20 mph"},
+   {"kind": "retailer", "value": 20, "url": "https://mikesbikes.com/products/gazelle-easyflow-c7", "quote": "Max Assisted Speed | 20 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 50, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-easyflow-c7", "quote": "Engine Max Torque (Nm) | 50"},
+   {"kind": "retailer", "value": 50, "url": "https://mikesbikes.com/products/gazelle-easyflow-c7", "quote": "Motor\tShimano EP5, 50Nm"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 504, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-easyflow-c7", "quote": "Battery and Range | 504 Wh"},
+   {"kind": "retailer", "value": 504, "url": "https://mikesbikes.com/products/gazelle-easyflow-c7", "quote": "Battery\t504Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-easyflow-c7", "quote": "", "basis": "Battery and Range section lists no miles for this Shimano bike"},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/gazelle-easyflow-c7", "quote": ""},
+   {"kind": "retailer", "value": "25-50", "url": "https://www.amegoev.com/products/gazelle-easyflow-c7", "quote": "Range: 40-80 kms/25-50 miles", "basis": "Amego (Canadian Gazelle dealer); same spec list: Shimano 504Wh 36V14A, Speed: 32kmh/20mph"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 54.5, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-easyflow-c7", "quote": "Weight (lbs) | 54.5 lbs excl. battery", "basis": "without battery"},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/gazelle-easyflow-c7", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-easyflow-c7", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/gazelle-easyflow-c7", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Shimano EP5 mid-drive", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-easyflow-c7", "quote": "Motor | EP5 | Ebike Engine Position | Mid | Ebike System Brand | Shimano", "basis": "no rated watts published"},
+   {"kind": "retailer", "value": "Shimano EP5", "url": "https://mikesbikes.com/products/gazelle-easyflow-c7", "quote": "Motor\tShimano EP5, 50Nm"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'10\"-5'6\"", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-easyflow-c7", "quote": "Frame size | 46 | 4'10\" - 5'6\"", "basis": "single frame size S(46)"},
+   {"kind": "retailer", "value": "4'10\"-5'6\"", "url": "https://mikesbikes.com/products/gazelle-easyflow-c7", "quote": "One-Size (4'10\" - 5'6\")"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-easyflow-c7", "quote": "Frame hape | Low-Step", "basis": "rigid low-step frame; no folding mentioned"},
+   {"kind": "retailer", "value": "No", "url": "https://mikesbikes.com/products/gazelle-easyflow-c7", "quote": "Comfortable mounting thanks to the bike’s special geometry"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Neither source gives a range or max load. Class not stated; set to 1 from 20 mph and no throttle. Maker gives weight without battery only (battery is on the frame, 'Ontube'). Small 20-inch-wheel (55-406) step-through, one size. electricbikereview/electricbikereport had no review; REI returned 'Access denied'. | recheck: maker page (incl. hidden spec data) gives no range; EBR and N+1 have no EasyFlow; 1 WebSearch; Amego dealer says 25-50 mi; Electric Bike Journal review only reports ~20 mi tested; Upway's Easyflow review quotes 'up to 90 miles' but for a 540 Wh / 15 mph (European) spec, so not recorded. No source for 'up to 80'."}

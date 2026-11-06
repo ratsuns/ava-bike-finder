@@ -1,0 +1,49 @@
+{"bike": "Specialized|Turbo Vado 2 (4.0)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 4099.99, "url": "https://www.specialized.com/us/en/turbo-vado-2-40/p/4277441", "quote": "$4,099.99 ⟶ 4.7"},
+   {"kind": "review", "value": 4099.99, "url": "https://eridehero.com/products/specialized-turbo-vado-4-0-2026/", "quote": "$4,099.99"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-vado-2-40/p/4277441", "quote": "The speed limit at which the motor will stop supporting may vary significantly by region and is based on local requirements. It may also affect range: a higher speed limit may result in less range."},
+   {"kind": "review", "value": 3, "url": "https://eridehero.com/products/specialized-turbo-vado-4-0-2026/", "quote": "E-Bike Class\tClass 3"},
+   {"kind": "review", "value": 3, "url": "https://electricbikereview.com/specialized/turbo-vado-4-0-step-through/", "quote": "ELECTRIC BIKE CLASS: ⟶ Speed Pedelec (Class 3)", "basis": "EBR review of the 2022 Turbo Vado 4.0 Step-Through (2nd-gen Vado, Specialized 2.0 motor, 710Wh); step-through frame of the same model"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-vado-2-40/p/4277441", "quote": ""},
+   {"kind": "review", "value": 28, "url": "https://eridehero.com/products/specialized-turbo-vado-4-0-2026/", "quote": "Top Assist Speed\t28 mph"},
+   {"kind": "maker", "value": 28, "url": "https://www.specialized.com/us/en/turbo-vado-2-40/p/4277441", "quote": "Turbo Full Power 2.0 motor and 710Wh battery offer an unparalleled riding experience, providing a smooth, seamless, and shockingly quiet amplification of your efforts, up to 28 mph."},
+   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/specialized/turbo-vado-4-0-step-through/", "quote": "TOP SPEED: ⟶ 28 mph (45 kph)", "basis": "2022 Turbo Vado 4.0 Step-Through (same 2nd-gen model)"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 70, "url": "https://www.specialized.com/us/en/turbo-vado-2-40/p/4277441", "quote": "Motor ⟶ Specialized 2.0, 70Nm torque, custom tuned motor, 250W nominal"},
+   {"kind": "review", "value": 70, "url": "https://eridehero.com/products/specialized-turbo-vado-4-0-2026/", "quote": "Torque\t70 Nm"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 710, "url": "https://www.specialized.com/us/en/turbo-vado-2-40/p/4277441", "quote": "Battery ⟶ Specialized U2-710, alloy casing, state of charge display, 710Wh"},
+   {"kind": "review", "value": 710, "url": "https://eridehero.com/products/specialized-turbo-vado-4-0-2026/", "quote": "710 Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "90", "url": "https://www.specialized.com/us/en/turbo-vado-2-40/p/4277441", "quote": "Long-Range - With a ride-anywhere range, go up to 90 miles (145 km) or 6.5 hours on a single charge (eco mode). ⟶ Technical Specifications", "basis": "eco mode"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 58.2, "url": "https://www.specialized.com/us/en/turbo-vado-2-40/p/4277441", "quote": "Weight ⟶ 26.4kg (58 lb, 3.2 oz)", "basis": "size MD; 58 lb 3.2 oz = 58.2 lb"},
+   {"kind": "review", "value": 58, "url": "https://eridehero.com/products/specialized-turbo-vado-4-0-2026/", "quote": "Weight\t58 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-vado-2-40/p/4277441", "quote": "Specialized rack, MIK HD interface, built-in pannier mounts, 27kg max load ⟶ Bike Lock", "basis": "only the rear rack limit (27 kg) is published"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "250W mid-drive (Specialized 2.0)", "url": "https://www.specialized.com/us/en/turbo-vado-2-40/p/4277441", "quote": "Motor ⟶ Specialized 2.0, 70Nm torque, custom tuned motor, 250W nominal"},
+   {"kind": "review", "value": "250W mid-drive", "url": "https://eridehero.com/products/specialized-turbo-vado-4-0-2026/", "quote": "Class 3 E-Bike, 58 lbs, 250W 70Nm mid mid-drive, 710Wh (50V × 14.2Ah) battery, Shimano BR-MT200 hydraulic disc, aluminum step-over frame, 80mm coil fork, 29\"/27.5\"×2.3\" Specialized Pathfinder Sport hybrid tires"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-vado-2-40/p/4277441", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.specialized.com/us/en/turbo-vado-2-40/p/4277441", "quote": "E5 Aluminum, mid-drive motor, fully integrated & lockable downtube battery, internal cable routing, wheel lock mount, and front rack compatible ⟶ Seat Binder", "basis": "fixed aluminum frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker gives no class/speed. ERideHero's page is named 'Turbo Vado 4.0 2026' (no '2'); its price, weight, motor, battery and CUES drivetrain match the maker's 'Turbo Vado 2 4.0', so treated as the same bike. Class 3 / 28 mph / no throttle from ERideHero. | recheck: maker description says up to 28 mph, no class; EBR 2022 Turbo Vado 4.0 Step-Through review (2nd gen, 710Wh) says Class 3 / 28 mph; EBR's turbo-vado-4-0 review is the 2020 Brose 1.2 gen, not used."
+}

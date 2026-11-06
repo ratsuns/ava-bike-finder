@@ -1,0 +1,21 @@
+{
+ "bike": "Ebike2U|EB030",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [],
+  "cls": [],
+  "spd": [],
+  "tq": [],
+  "wh": [],
+  "range": [],
+  "wt": [],
+  "load": [],
+  "motor": [],
+  "height": [],
+  "fold": []
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "NOT FOUND. No maker page located. WebSearch 'Ebike2U EB030 electric bike' returned no Ebike2U results (only Gotrax/Okai/Sharp etc.). ebike2u.com and ebike2u.shop failed to load in the browser. Electric Bike Review search for 'Ebike2U' returned nothing. Amazon search blocked ('Access restricted'). Needs a correct maker link or model name from the main session. recheck (price, cls, range): www.ebike2u.com still fails to load in the browser; one WebSearch for '\"EB030\" ebike 48V class 3 $1499' returned no Ebike2U or EB030 pages. Nothing recorded."
+}

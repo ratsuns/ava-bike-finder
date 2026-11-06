@@ -1,0 +1,45 @@
+{"bike": "Electra|Townie Go! 7D EQ", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1699.99, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go-7d-eq-step-thru/p/49995/", "quote": "$1,699.99 ⟶ Townie Go! 7D EQ Step-Thru"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go-7d-eq-step-thru/p/49995/", "quote": "E-bike Classification ⟶ Class 1"},
+   {"kind": "review", "value": 1, "url": "https://electricbikereview.com/electra/townie-go-7d-step-thru/", "quote": "ELECTRIC BIKE CLASS: ⟶ Pedal Assist (Class 1)"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go-7d-eq-step-thru/p/49995/", "quote": "Max assist speed ⟶ 20 mph"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereview.com/electra/townie-go-7d-step-thru/", "quote": "TOP SPEED: ⟶ 20 mph (32 kph)"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 40, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go-7d-eq-step-thru/p/49995/", "quote": "Motor 250W ⟶ Torque 40Nm"},
+   {"kind": "review", "value": 40, "url": "https://electricbikereview.com/electra/townie-go-7d-step-thru/", "quote": "MOTOR TORQUE: ⟶ 40 Newton meters"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 250, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go-7d-eq-step-thru/p/49995/", "quote": "Battery ⟶ 250Wh, integrated in down tube"},
+   {"kind": "review", "value": 250, "url": "https://electricbikereview.com/electra/townie-go-7d-step-thru/", "quote": "BATTERY WATT HOURS: ⟶ 250 wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "40", "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go-7d-eq-step-thru/p/49995/", "quote": "Torque 40Nm ⟶ Range Up to 40 mi"},
+   {"kind": "review", "value": "20–40", "url": "https://electricbikereview.com/electra/townie-go-7d-step-thru/", "quote": "ESTIMATED MIN RANGE: ⟶ 20 miles (32 km) | ESTIMATED MAX RANGE: ⟶ 40 miles (64 km)"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 46.1, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go-7d-eq-step-thru/p/49995/", "quote": "Weight ⟶ 20.91 kg / 46.1 lbs"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/electra/townie-go-7d-step-thru/", "quote": "TOTAL WEIGHT: ⟶ 45.3 lbs (20.55 kg)", "basis": "non-EQ 7D Step-Thru (no fenders/rack/lights); not this variant"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 300, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go-7d-eq-step-thru/p/49995/", "quote": "This bike has a maximum total weight limit (combined weight of bicycle, rider, and cargo) of 300 pounds (136 kg).", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "250W Hyena rear hub", "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go-7d-eq-step-thru/p/49995/", "quote": "Motor ⟶ Hyena hub drive motor, 250W"},
+   {"kind": "review", "value": "250W rear hub", "url": "https://electricbikereview.com/electra/townie-go-7d-step-thru/", "quote": "MOTOR NOMINAL OUTPUT: ⟶ 250 watts"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'11\"-5'11\"", "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go-7d-eq-step-thru/p/49995/", "quote": "150 - 180 cm ⟶ 4'11\" - 5'11\"", "basis": "size M (only size)"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go-7d-eq-step-thru/p/49995/", "quote": ""}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker link redirects to a Trek URL with /f/EF210-1/ but same product (Townie Go! 7D EQ Step-Thru, model 5332923). Rider height comes from the 'What is my size?' table. EBR review is the 2022 redesigned 7D Step-Thru (integrated downtube battery), which is the non-EQ version (rack/fenders/lights optional, $1,749); used for drive-system specs only, not price/weight. Fold 'No': nothing on page suggests a folding frame (standard cruiser)."}

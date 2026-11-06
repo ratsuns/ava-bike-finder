@@ -1,0 +1,179 @@
+{
+ "bike": "Velotric|Discover 2",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": 1999,
+    "url": "https://www.velotricbike.com/products/velotric-discover-2",
+    "quote": "$1,499.00 ⟶ $1,999.00",
+    "basis": "crossed-out regular price; $1,499 is the Black Friday sale price (maker comparison table also lists $1,499)"
+   },
+   {
+    "kind": "review",
+    "value": 1899,
+    "url": "https://electricbikereview.com/velotric/discover-2-review/",
+    "quote": "PRICE: ⟶ $1899",
+    "basis": "2024 review price"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": 2,
+    "url": "https://www.velotricbike.com/products/velotric-discover-2",
+    "quote": "Default Speed ⟶ 20 MPH | 12~28 MPH ⟶ Class | Class ⟶ 1/2/3 | Throttle Range ⟶ 60 Miles",
+    "basis": "ships at 20 mph with a throttle = Class 2; switchable 1/2/3"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://electricbikereview.com/velotric/discover-2-review/",
+    "quote": "ELECTRIC BIKE CLASS: ⟶ Can be operated as Class 1, 2 or 3",
+    "basis": "selectable; no shipped default stated"
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": 20,
+    "url": "https://www.velotricbike.com/products/velotric-discover-2",
+    "quote": "Default Speed ⟶ 20 MPH | Max Speed Adjustable Range ⟶ 12~28 MPH",
+    "basis": "adjustable to 28 mph"
+   },
+   {
+    "kind": "review",
+    "value": 28,
+    "url": "https://electricbikereview.com/velotric/discover-2-review/",
+    "quote": "TOP SPEED: ⟶ 28 mph max pedal-assist speed mph",
+    "basis": "max setting"
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": 75,
+    "url": "https://www.velotricbike.com/products/velotric-discover-2",
+    "quote": "Motor ⟶ 48V, 750W, 75Nm"
+   },
+   {
+    "kind": "review",
+    "value": 75,
+    "url": "https://electricbikereview.com/velotric/discover-2-review/",
+    "quote": "MOTOR TORQUE: ⟶ 75 Newton meters"
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": 705.6,
+    "url": "https://www.velotricbike.com/products/velotric-discover-2",
+    "quote": "Battery ⟶ 48V, 705.6Wh, IPX7, Certificated by UL 2271"
+   },
+   {
+    "kind": "review",
+    "value": 706,
+    "url": "https://electricbikereview.com/velotric/discover-2-review/",
+    "quote": "BATTERY WATT HOURS: ⟶ 706 wh"
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": "75",
+    "url": "https://www.velotricbike.com/products/velotric-discover-2",
+    "quote": "Pedal Assist Range ⟶ 75 Miles"
+   },
+   {
+    "kind": "review",
+    "value": "75",
+    "url": "https://electricbikereview.com/velotric/discover-2-review/",
+    "quote": "Estimated Range (from Velotric): Up to 75 mi.",
+    "basis": "EBR reports a real-world test of 85.6 mi"
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": 63,
+    "url": "https://www.velotricbike.com/products/velotric-discover-2",
+    "quote": "Bike Weight ⟶ 63lbs"
+   },
+   {
+    "kind": "review",
+    "value": 63,
+    "url": "https://electricbikereview.com/velotric/discover-2-review/",
+    "quote": "TOTAL WEIGHT: ⟶ 63 lbs (28.58 kg)"
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": 440,
+    "url": "https://www.velotricbike.com/products/velotric-discover-2",
+    "quote": "Max Bike Load Capacity ⟶ 440lbs"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://electricbikereview.com/velotric/discover-2-review/",
+    "quote": ""
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "750W hub (1,100W peak)",
+    "url": "https://www.velotricbike.com/products/velotric-discover-2",
+    "quote": "Motor & Performance ⟶ Power to Go Further | 750w/1100w ⟶ Peak Motor | Motor ⟶ 48V, 750W, 75Nm"
+   },
+   {
+    "kind": "review",
+    "value": "750W geared hub",
+    "url": "https://electricbikereview.com/velotric/discover-2-review/",
+    "quote": "MOTOR TYPE: ⟶ Brushless, geared | MOTOR NOMINAL OUTPUT: ⟶ 750 watts"
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": "4'11\"-6'4\"",
+    "url": "https://www.velotricbike.com/products/velotric-discover-2",
+    "quote": "User Height Range ⟶ Regular: 4'11\" ~ 5'9\"/Large: 5'6\" ~ 6'4\"",
+    "basis": "across Regular and Large sizes"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://electricbikereview.com/velotric/discover-2-review/",
+    "quote": "FRAME SIZES: ⟶ Regular, large"
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.velotricbike.com/products/velotric-discover-2",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": "No",
+    "url": "https://electricbikereview.com/velotric/discover-2-review/",
+    "quote": "FRAME TYPES: ⟶ Step-thru"
+   },
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://www.velotricbike.com/collections/electric-bikes",
+    "quote": "Velotric Discover 2 Ebike | Most Comfortable Commuter for Seniors | 798 reviews | Commuter/Cruiser | Bike Type",
+    "basis": "maker All Ebikes collection card gives Bike Type; maker uses 'Folding' only for Fold 1 / Fold 1 Plus"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker shows $1,999 crossed out with $1,499 Black Friday price; EBR's 2024 price was $1,899. Maker's Discover 3 vs 2 comparison table lists the Discover 2 motor as plain '750W, 75Nm' (no peak), but the Discover 2 page's own motor section says 750w/1100w peak. Maker page has no folding line (non-folding commuter). Recheck: maker All Ebikes collection lists Bike Type 'Commuter/Cruiser' (Folding is used only for Fold 1 / Fold 1 Plus); maker compare page Type row: 'Cruiser, Commuter'."
+}

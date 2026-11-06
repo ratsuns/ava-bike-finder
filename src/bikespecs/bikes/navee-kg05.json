@@ -1,0 +1,47 @@
+{"bike": "Navee|KG05", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1699.99, "url": "https://naveetech.us/products/kg05", "quote": "Regular price ⟶ $1,699.99 USD", "basis": "regular price; sale price $1,299.99"},
+   {"kind": "review", "value": 1299.99, "url": "https://www.bikeride.com/navee-kg05/", "quote": "$1,299.99 ⟶ NAVEE", "basis": "current sale price"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://naveetech.us/products/kg05", "quote": "20 MPH Max Speed (Default) ⟶ 12 ~ 32 MPH Max Speed Adjustable Range", "basis": "no class stated by maker; throttle + 20 mph default -> Class 2 (adjustable up to 32 mph, beyond Class 3)"},
+   {"kind": "review", "value": 2, "url": "https://www.bikeride.com/navee-kg05/", "quote": "CLASS ⟶ Class 2, Unrestricted"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://naveetech.us/products/kg05", "quote": "20 MPH Max Speed (Default) ⟶ 12 ~ 32 MPH Max Speed Adjustable Range", "basis": "default; adjustable to 32 mph"},
+   {"kind": "review", "value": 28, "url": "https://www.bikeride.com/navee-kg05/", "quote": "28 mph ⟶ WATTS"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://naveetech.us/products/kg05", "quote": "Motor power | Rated Power 500W｜Peak Power 1000W｜85Nm", "basis": "'Product details > Motor' accordion"},
+   {"kind": "review", "value": 85, "url": "https://www.bikeride.com/navee-kg05/", "quote": "TORQUE ⟶ 85 Nm"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 696, "url": "https://naveetech.us/products/kg05", "quote": "48V 14.5Ah Battery ⟶ Add an Optional Battery Anytime", "basis": "48 V x 14.5 Ah"},
+   {"kind": "review", "value": 696, "url": "https://www.bikeride.com/navee-kg05/", "quote": "VOLTS AND AMP HOURS | 48V 14.5Ah", "basis": "48 V x 14.5 Ah"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "37", "url": "https://naveetech.us/products/kg05", "quote": "Max range | Pure Electric 22 miles｜Pedal Assist 37 miles", "basis": "'Product details > Battery' accordion; hero says '37 miles ⟶ at 20 mph'"},
+   {"kind": "review", "value": "37", "url": "https://www.bikeride.com/navee-kg05/", "quote": "MAXIMUM RANGE ⟶ 37 Miles"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 104.7, "url": "https://naveetech.us/products/kg05", "quote": "Product weight | Net Weight 104.7 lbs｜Gross Weight 123.9 lbs", "basis": "net weight; 'Product details > General' accordion"},
+   {"kind": "review", "value": 105, "url": "https://www.bikeride.com/navee-kg05/", "quote": "WEIGHT ⟶ 105 lb"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 330, "url": "https://naveetech.us/products/kg05", "quote": "Max load | 330lbs｜150kg"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W rear hub (1,000W peak)", "url": "https://naveetech.us/products/kg05", "quote": "Motor power | Rated Power 500W｜Peak Power 1000W｜85Nm", "basis": "rear hub per '1000W ⟶ Peak Power Rear Hub Motor'"},
+   {"kind": "review", "value": "500W hub", "url": "https://www.bikeride.com/navee-kg05/", "quote": "WATTS ⟶ 500 W"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://naveetech.us/products/kg05", "quote": "", "basis": "no rider height on page"},
+   {"kind": "review", "value": null, "url": "https://www.bikeride.com/navee-kg05/", "quote": "NAVEE doesn’t provide an online user manual or key information about the bike, including geometry, recommended height range, water resistance rating, fork travel, and charger amperage. ⟶ Bottom line"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://naveetech.us/products/kg05", "quote": "KG05 1000W Peak Moped-Style Electric Bike – NAVEE_US", "basis": "page title; moped-style frame, no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker spec details (weight, max load, rated power, torque, range) are inside collapsed 'Product details' accordions; quotes there are the accordion's consecutive label/value lines joined with ' | '. Maker gives no class; 20 mph default with throttle, user-adjustable 12-32 mph (BikeRide calls it 'Class 2, Unrestricted'). BikeRide lists top speed 28 mph. No ElectricBikeReview/Electrek coverage found; one independent source (BikeRide)."}

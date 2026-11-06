@@ -1,0 +1,165 @@
+{
+ "bike": "Marin|Fairfax E (and ST)",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": 1799,
+    "url": "https://marinbikes.com/products/2026-fairfax-e",
+    "quote": "Fairfax Electric with Throttle ⟶ $1,799.00 *",
+    "basis": "MSRP; Shopify compare_at null (not on sale); ST also $1,799.00"
+   },
+   {
+    "kind": "retailer",
+    "value": 1899,
+    "url": "https://revolutionbikeshop.com/2026-marin-fairfax-e-na-green/",
+    "quote": "$1,899.00 ⟶ (No reviews yet)  Write a Review",
+    "basis": "dealer price for '2026 Marin Fairfax E NA'"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": 2,
+    "url": "https://marinbikes.com/products/2026-fairfax-e",
+    "quote": "The new throttle function is your secret weapon for steep climbs, traffic lights, or those moments when you just need a break. It accelerates up to 20mph meeting Class 2 regulations."
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": 20,
+    "url": "https://marinbikes.com/products/2026-fairfax-e",
+    "quote": "It accelerates up to 20mph meeting Class 2 regulations."
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://revolutionbikeshop.com/2026-marin-fairfax-e-na-green/",
+    "quote": ""
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": 40,
+    "url": "https://marinbikes.com/products/2026-fairfax-e",
+    "quote": "Motor ⟶ Bafang 250 Watt Hub Motor, 40Nm, 36H"
+   },
+   {
+    "kind": "retailer",
+    "value": 40,
+    "url": "https://revolutionbikeshop.com/2026-marin-fairfax-e-na-green/",
+    "quote": "Motor\tBafang 250 Watt Hub Motor, 40Nm, 36H ⟶ Pedals\tNylon Platform"
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": 340,
+    "url": "https://marinbikes.com/products/2026-fairfax-e",
+    "quote": "Battery ⟶ Bafang 340Wh, 36V, In-tube"
+   },
+   {
+    "kind": "maker",
+    "value": 360,
+    "url": "https://marinbikes.com/products/2026-fairfax-e-st",
+    "quote": "Battery ⟶ Bafang 360Wh, 36V, In-tube",
+    "basis": "ST spec table; same ST page's text says 340Wh"
+   },
+   {
+    "kind": "retailer",
+    "value": 340,
+    "url": "https://revolutionbikeshop.com/2026-marin-fairfax-e-na-green/",
+    "quote": "Battery\tBafang 340Wh, 36V, In-tube ⟶ Brake, Front\tTektro HDM-275 Hydraulic Disc, 160mm Rotor"
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": "62",
+    "url": "https://marinbikes.com/products/2026-fairfax-e",
+    "quote": "Turn ambitious routes and fun-filled commutes into actual plans with the Fairfax E’s smooth pedal assist and 62-mile range."
+   },
+   {
+    "kind": "retailer",
+    "value": "62",
+    "url": "https://revolutionbikeshop.com/2026-marin-fairfax-e-na-green/",
+    "quote": "Turn ambitious routes and fun-filled commutes into actual plans with the Fairfax E’s smooth pedal assist and 62 - mile range."
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://marinbikes.com/products/2026-fairfax-e",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://revolutionbikeshop.com/2026-marin-fairfax-e-na-green/",
+    "quote": "Weight: 60.00 LBS ⟶ Width: 58.00 (in)",
+    "basis": "not recorded: listed with box dimensions (58x10x32 in), looks like shipping weight"
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://marinbikes.com/products/2026-fairfax-e",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://revolutionbikeshop.com/2026-marin-fairfax-e-na-green/",
+    "quote": ""
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "250W rear hub",
+    "url": "https://marinbikes.com/products/2026-fairfax-e",
+    "quote": "Hub Rear | Bafang 250 Watt Hub Motor, 40Nm, 36H"
+   },
+   {
+    "kind": "retailer",
+    "value": "250W rear hub",
+    "url": "https://revolutionbikeshop.com/2026-marin-fairfax-e-na-green/",
+    "quote": "Hub, Rear\tBafang 250 Watt Hub Motor, 40Nm, 36H ⟶ Motor\tBafang 250 Watt Hub Motor, 40Nm, 36H"
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://marinbikes.com/products/2026-fairfax-e",
+    "quote": "Unsure about your size? Check with your local Marin dealer for personalized advice.",
+    "basis": "only an interactive height-slider size finder; no published rider height range"
+   },
+   {
+    "kind": "maker",
+    "value": "5'1\"–6'3\"",
+    "url": "https://marinbikes.com/products/2026-fairfax-e",
+    "quote": "Your Height 5'1\" / 155 cm slide the scale to your height measurement You ride a XS/S Fairfax Electric with Throttle | Your Height 6'3\" / 191 cm slide the scale to your height measurement You ride a XL Fairfax Electric with Throttle",
+    "basis": "maker's 'Find Your Fit' height slider (range input 59-75 in): read at two slider positions. Geometry table lists sizes S, M, L, XL; slider gives XS/S at 5'1\", S from 5'2\", XL up to 6'3\" (the slider's maximum), XS below 5'1\" (no XS frame listed)."
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://marinbikes.com/products/2026-fairfax-e",
+    "quote": "Frame | Series 2 Fitness, E-Bike Specific, 6061 Aluminum, 700c Wheels, Disc Specific, Fitness Geometry, Kickstand Mount, Fender and Rack Mounts",
+    "basis": "standard (non-folding) aluminum frame"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker page title 'Fairfax Electric with Throttle'; product JSON titled '2026 Fairfax E (INT)'. Class/speed line is in the page description (in page source/textContent, collapsed in the visible view). ST version (https://marinbikes.com/products/2026-fairfax-e-st, 'Fairfax Electric ST with Throttle', $1,799): spec table says 'Bafang 360Wh' and motor 'Bafang 250 Watt Hub Motor, 36H' (no Nm), Series 1 step-thru frame -- but ST page text says 340Wh / 62 miles, so ST page contradicts itself. Dealer Revolution Bike Shop lists '2026 Marin Fairfax E NA' at $1,899 vs maker $1,799. No weight or max load published by Marin. EBR/REI have no Fairfax E. 99spokes not tried (bot check earlier). Recheck: moved the maker's 'Find Your Fit' height slider through its whole range (4'11\"-6'3\"): XS/S at 5'1\", S 5'2\"-5'4\", M 5'6\"-5'7\", L 5'9\"-5'10\", XL 6'0\"-6'3\"; geometry lists S-XL."
+}

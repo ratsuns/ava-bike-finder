@@ -1,0 +1,170 @@
+{
+ "bike": "Benno|eJoy 10D Performance Sport",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": 3749,
+    "url": "https://bennobikes.com/e-bikes/ejoy/",
+    "quote": "10D Performance Sport: $3,749 USD"
+   },
+   {
+    "kind": "retailer",
+    "value": 3750,
+    "url": "https://bouldernordic.com/products/benno-ejoy-10d-evo-1-performance-sport-class-3-ebike-400wh-easy-on-niagara-blue",
+    "quote": "$3,299.00 | $3,750.00 | Save $451",
+    "basis": "regular (crossed-out) price; $3,299 is a dealer sale price"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": 3,
+    "url": "https://bennobikes.com/e-bikes/ejoy/",
+    "quote": "Speed: USA 28mph, NZ 45km/h",
+    "basis": "maker states no class; Performance Sport is USA 28mph, no throttle -> Class 3"
+   },
+   {
+    "kind": "retailer",
+    "value": 3,
+    "url": "https://bouldernordic.com/products/benno-ejoy-10d-evo-1-performance-sport-class-3-ebike-400wh-easy-on-niagara-blue",
+    "quote": "Ebike Class\t3"
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": 28,
+    "url": "https://bennobikes.com/e-bikes/ejoy/",
+    "quote": "Speed: USA 28mph, NZ 45km/h"
+   },
+   {
+    "kind": "retailer",
+    "value": 28,
+    "url": "https://bouldernordic.com/products/benno-ejoy-10d-evo-1-performance-sport-class-3-ebike-400wh-easy-on-niagara-blue",
+    "quote": "Assist Speed (Mph)\t28"
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": 65,
+    "url": "https://bennobikes.com/e-bikes/ejoy/",
+    "quote": "Motor\tBosch Performance 250W, 65Nm, GEN 3\tBosch Performance Sport 250W, 65Nm, GEN 3\tBosch Performance 250W, 65Nm, GEN 3"
+   },
+   {
+    "kind": "retailer",
+    "value": 65,
+    "url": "https://bouldernordic.com/products/benno-ejoy-10d-evo-1-performance-sport-class-3-ebike-400wh-easy-on-niagara-blue",
+    "quote": "Motor Torque (Nm)\t65"
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": 400,
+    "url": "https://bennobikes.com/e-bikes/ejoy/",
+    "quote": "Battery\tBosch Powerpack 400Wh/500Wh Lithium-Ion\tBosch Powerpack 400Wh/500Wh Lithium-Ion\tBosch Powerpack 400Wh/500Wh Lithium-Ion",
+    "basis": "maker lists 400Wh/500Wh; the maker configurator's only 10D Performance Sport variants are 400Wh, labelled 'USA only'"
+   },
+   {
+    "kind": "retailer",
+    "value": 400,
+    "url": "https://bouldernordic.com/products/benno-ejoy-10d-evo-1-performance-sport-class-3-ebike-400wh-easy-on-niagara-blue",
+    "quote": "Battery Power (Wh)\t400"
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": "25–70",
+    "url": "https://bennobikes.com/e-bikes/ejoy/",
+    "quote": "Range 400Wh Battery: 25-70mi (40-110km)"
+   },
+   {
+    "kind": "retailer",
+    "value": "25–70",
+    "url": "https://bouldernordic.com/products/benno-ejoy-10d-evo-1-performance-sport-class-3-ebike-400wh-easy-on-niagara-blue",
+    "quote": "Range Estimate (Mi)\t25-70"
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://bennobikes.com/e-bikes/ejoy/",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://bouldernordic.com/products/benno-ejoy-10d-evo-1-performance-sport-class-3-ebike-400wh-easy-on-niagara-blue",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": 55.1,
+    "url": "https://propelbikes.com/product/benno-ejoy-10d-performance-sport-2/",
+    "quote": "Weight 25kg",
+    "basis": "25 kg x 2.2046 = 55.1 lb; page does not say whether the battery is included"
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": 400,
+    "url": "https://bennobikes.com/e-bikes/ejoy/",
+    "quote": "MAX GROSS WEIGHT 400LB/180KG (RIDER+CARGO+BIKE)",
+    "basis": "total"
+   },
+   {
+    "kind": "retailer",
+    "value": 400,
+    "url": "https://bouldernordic.com/products/benno-ejoy-10d-evo-1-performance-sport-class-3-ebike-400wh-easy-on-niagara-blue",
+    "quote": "Gross Payload (Lbs)\t400",
+    "basis": "total"
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "Bosch Performance Sport 250W (GEN 3)",
+    "url": "https://bennobikes.com/e-bikes/ejoy/",
+    "quote": "Motor\tBosch Performance 250W, 65Nm, GEN 3\tBosch Performance Sport 250W, 65Nm, GEN 3\tBosch Performance 250W, 65Nm, GEN 3"
+   },
+   {
+    "kind": "retailer",
+    "value": "Bosch Performance Sport 250W (GEN 3)",
+    "url": "https://bouldernordic.com/products/benno-ejoy-10d-evo-1-performance-sport-class-3-ebike-400wh-easy-on-niagara-blue",
+    "quote": "Bosch Performance Sport 250W 65Nm GEN 3 28Mph"
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": "5'0\"-6'0\"",
+    "url": "https://bennobikes.com/e-bikes/ejoy/",
+    "quote": "Frame Size\tOne Size – Fits Riders from 5’0” to 6’0”"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://bouldernordic.com/products/benno-ejoy-10d-evo-1-performance-sport-class-3-ebike-400wh-easy-on-niagara-blue",
+    "quote": ""
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://bennobikes.com/e-bikes/ejoy/",
+    "quote": "Frame\t6061 Aluminum Alloy with Front Tray Mounts"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker specs from the eJoy page's FULL SPECIFICATIONS (3 columns: 5i Performance, 10D Performance Sport, 10D Performance), MOTOR SPECS and SIZING & CAPACITY tabs. Maker publishes no bike weight. Maker MSRP $3,749 vs retailer crossed-out $3,750. Retailer is Boulder Nordic ('eJoy 10D Evo 1'). EBR search found no eJoy review. recheck (wt): EBReport search found no eJoy review; Propel Electric Bikes (propelbikes.com) Additional information tab lists the attribute 'Weight 25kg' (recorded) and also a WooCommerce item weight 'Weight 74 lbs' (that field is usually the shipping weight, not recorded). Used the bike's one WebSearch."
+}

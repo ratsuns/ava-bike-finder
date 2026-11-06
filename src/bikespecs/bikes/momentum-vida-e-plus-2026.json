@@ -1,0 +1,53 @@
+{"bike": "Momentum|Vida E+ (2026)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1600, "url": "https://www.momentum-biking.com/us/vida-eplus", "quote": "$1,600 * ⟶ 0% APRor as low as $78/mo with Affirm. See if you qualify"},
+   {"kind": "review", "value": 2480, "url": "https://electricbikereview.com/momentum/vida-e-plus-review/", "quote": "PRICE: ⟶ $$2,480", "basis": "2025 launch price"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://www.momentum-biking.com/us/vida-eplus", "quote": "As a Class 3 e-bike, the Vida E+ provides pedal assist up to 28mph. But if that feels too much, you can use the RideControl app to adjust your maximum speed to match your preference while adhering to local laws. Ride with confidence, control, and complete customization. ⟶ SMART SECURITY"},
+   {"kind": "review", "value": 3, "url": "https://electricbikereview.com/momentum/vida-e-plus-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Can be set up class 1, class 2, or class 3"},
+   {"kind": "review", "value": 3, "url": "https://electricbikereport.com/momentum-vida-e-plus-review/", "quote": "CLASS 2 (THROTTLE TO 20 MPH) ⟶ CLASS 3 (PEDAL ASSIST TO 28 MPH)", "basis": "lists Class 1/2/3; throttle optional"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.momentum-biking.com/us/vida-eplus", "quote": "As a Class 3 e-bike, the Vida E+ provides pedal assist up to 28mph. But if that feels too much, you can use the RideControl app to adjust your maximum speed to match your preference while adhering to local laws. Ride with confidence, control, and complete customization. ⟶ SMART SECURITY", "basis": "adjustable lower in app; throttle to 20 mph"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/momentum/vida-e-plus-review/", "quote": "TOP SPEED: ⟶ 28 MPH mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 60, "url": "https://www.momentum-biking.com/us/vida-eplus", "quote": "Motor ⟶ SyncDrive Move S, rear hub, 60Nm, 48V, 500W"},
+   {"kind": "review", "value": 60, "url": "https://electricbikereview.com/momentum/vida-e-plus-review/", "quote": "MOTOR TORQUE: ⟶ 60Nm Newton meters"},
+   {"kind": "review", "value": 60, "url": "https://electricbikereport.com/momentum-vida-e-plus-review/", "quote": "Motor: SyncDrive Move S Motor, 60Nm torque, 500W rear hub (750W peak) ⟶ Headlight: (Optional) RECON E HL 50 STVZO"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 688, "url": "https://www.momentum-biking.com/us/vida-eplus", "quote": "Battery ⟶ Energy 700, 46.8Vdc 14.7Ah, 48V", "basis": "46.8 V x 14.7 Ah = 687.96 Wh"},
+   {"kind": "review", "value": 687.9, "url": "https://electricbikereview.com/momentum/vida-e-plus-review/", "quote": "BATTERY WATT HOURS: ⟶ 687.9Wh wh"},
+   {"kind": "review", "value": 687.9, "url": "https://electricbikereport.com/momentum-vida-e-plus-review/", "quote": "Battery: Energy 700 battery (687.9Wh)"}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://www.momentum-biking.com/us/vida-eplus", "quote": "", "basis": "maker page gives no range figure"},
+   {"kind": "review", "value": "40–55", "url": "https://electricbikereview.com/momentum/vida-e-plus-review/", "quote": "Estimated Range (from Momentum): ⟶ Pedal Assist: 40 to 55 miles"},
+   {"kind": "review", "value": "40–55", "url": "https://electricbikereport.com/momentum-vida-e-plus-review/", "quote": "Pedal Assist: Torque, speed, and cadence sensors, 3-level assist ⟶ Claimed Range: 40-55 miles"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 61.7, "url": "https://www.momentum-biking.com/us/vida-eplus", "quote": "Weight ⟶ 61.7lbs (28kg), including the main battery inside"},
+   {"kind": "review", "value": 61.7, "url": "https://electricbikereview.com/momentum/vida-e-plus-review/", "quote": "61.7 lbs. (69 lbs. as tested with optional front and rear rack, fenders, mirrors and headlight installed) lbs ⟶ BATTERY WEIGHT:"},
+   {"kind": "review", "value": 62, "url": "https://electricbikereport.com/momentum-vida-e-plus-review/", "quote": "WEIGHT & DIMENSIONS ⟶ Claimed weight: 62 lbs w/battery"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 300, "url": "https://www.momentum-biking.com/us/vida-eplus", "quote": "Total Load Weight Limit ⟶ 300 lbs (includes rider, cargo, and accessories)", "basis": "total"},
+   {"kind": "review", "value": 300, "url": "https://electricbikereport.com/momentum-vida-e-plus-review/", "quote": "Rear rack capacity: MIK rack; 55 lbs ⟶ Total payload capacity: 300 lbs", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W rear hub (SyncDrive Move S)", "url": "https://www.momentum-biking.com/us/vida-eplus", "quote": "Motor ⟶ SyncDrive Move S, rear hub, 60Nm, 48V, 500W"},
+   {"kind": "review", "value": "500W rear hub (750W peak)", "url": "https://electricbikereport.com/momentum-vida-e-plus-review/", "quote": "Motor: SyncDrive Move S Motor, 60Nm torque, 500W rear hub (750W peak) ⟶ Headlight: (Optional) RECON E HL 50 STVZO"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'3\"", "url": "https://www.momentum-biking.com/us/vida-eplus", "quote": "S\t5’1” to 5’9”\t16.5\" | L\t5’8” to 6’3”\t16.5\"", "basis": "S 5'1\"-5'9\", L 5'8\"-6'3\""},
+   {"kind": "review", "value": "5'1\"-6'3\"", "url": "https://electricbikereport.com/momentum-vida-e-plus-review/", "quote": "Tested Weight: 68.9 lbs (includes optional mirrors, fenders, and both racks) ⟶ Rider height range: S – 5’ 1” – 5’9”, L 5’8” – 6’3”"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.momentum-biking.com/us/vida-eplus", "quote": "Vida E+(2026) | Step-Through Throttle Ebike | Momentum Bikes US | Momentum Bikes US", "basis": "page title; step-through frame, no folding"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "src link redirected to https://www.momentum-biking.com/us/vida-eplus. Maker page has no range figure. Throttle is a separately sold accessory ('Vida E+ Throttle' listed at $65; EBR 'throttle is optional and sold separately'). Reviews are of the 2025 hub-motor relaunch with the same SyncDrive Move S 500W/60Nm and 687.9Wh battery; their launch price was $2,480 vs maker's current $1,600."}

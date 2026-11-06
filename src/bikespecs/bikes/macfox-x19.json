@@ -1,0 +1,98 @@
+{
+ "bike": "Macfox|X19",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://macfoxbike.com/search?q=X19",
+    "quote": ""
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://macfoxbike.com/search?q=X19",
+    "quote": ""
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://macfoxbike.com/search?q=X19",
+    "quote": ""
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://macfoxbike.com/search?q=X19",
+    "quote": ""
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://macfoxbike.com/search?q=X19",
+    "quote": ""
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://macfoxbike.com/search?q=X19",
+    "quote": ""
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://macfoxbike.com/search?q=X19",
+    "quote": ""
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://macfoxbike.com/search?q=X19",
+    "quote": ""
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://macfoxbike.com/search?q=X19",
+    "quote": ""
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://macfoxbike.com/search?q=X19",
+    "quote": ""
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://macfoxbike.com/search?q=X19",
+    "quote": ""
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "NOT FOUND: no Macfox model called X19 exists on macfoxbike.com. Given src was the homepage. Site search for 'X19' returns only X1S/X7/X2/M16 and parts; /products.json (57 products) has no X19; /products/macfox-x19 404; no blog article mentions X19. One WebSearch ('Macfox X19 electric bike specs') returned only M19 and X1S results. Possibly a typo for the M19 (teen bike; its maker URL /products/macfox-m19-electric-bike-for-teenager now redirects to the M16) or X1S. No values recorded; needs a human decision on which bike this row meant. Recheck: searched the maker's blog articles for 'X19' (none) and one WebSearch for \"Macfox X19\" (only M19 teen bike and X1/X2/X1S results). Still no X19 model found; no values recorded."
+}

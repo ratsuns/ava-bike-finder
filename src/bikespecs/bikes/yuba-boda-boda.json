@@ -1,0 +1,170 @@
+{
+ "bike": "Yuba|Boda Boda",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": 5299,
+    "url": "https://yubabikes.com/product/boda-boda/",
+    "quote": "$5,299.00 ⟶ Original price was: $5,299.00.",
+    "basis": "crossed-out regular price; on sale for $4,239.20"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://www.transitionvelo.com/test/test-yuba-boda-boda-entre-urbain-et-cargo-le-longtail-a-grandes-roues-tres-cool-a-piloter/",
+    "quote": "Prix ⟶ 5250 €",
+    "basis": "EUR price, not USD"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://yubabikes.com/product/boda-boda/",
+    "quote": "",
+    "basis": "class not stated on product page (full specs are in a PDF that could not be read as text)"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://www.transitionvelo.com/test/test-yuba-boda-boda-entre-urbain-et-cargo-le-longtail-a-grandes-roues-tres-cool-a-piloter/",
+    "quote": "",
+    "basis": "EU-market review (25 km/h EU pedelec)"
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://yubabikes.com/product/boda-boda/",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://www.transitionvelo.com/test/test-yuba-boda-boda-entre-urbain-et-cargo-le-longtail-a-grandes-roues-tres-cool-a-piloter/",
+    "quote": "",
+    "basis": "EU version only"
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": 85,
+    "url": "https://yubabikes.com/product/boda-boda/",
+    "quote": "Motor ⟶ Bosch Cargo Line (85Nm) - 500Wh integrated Battery"
+   },
+   {
+    "kind": "review",
+    "value": 85,
+    "url": "https://www.transitionvelo.com/test/test-yuba-boda-boda-entre-urbain-et-cargo-le-longtail-a-grandes-roues-tres-cool-a-piloter/",
+    "quote": "Il est équipé d’un moteur Bosch Cargo Line compatible avec le Smart System (85 Nm de couple) et accompagné d’une batterie PowerTube de 500 Wh."
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": 500,
+    "url": "https://yubabikes.com/product/boda-boda/",
+    "quote": "Motor ⟶ Bosch Cargo Line (85Nm) - 500Wh integrated Battery"
+   },
+   {
+    "kind": "review",
+    "value": 500,
+    "url": "https://www.transitionvelo.com/test/test-yuba-boda-boda-entre-urbain-et-cargo-le-longtail-a-grandes-roues-tres-cool-a-piloter/",
+    "quote": "Il est équipé d’un moteur Bosch Cargo Line compatible avec le Smart System (85 Nm de couple) et accompagné d’une batterie PowerTube de 500 Wh."
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://yubabikes.com/product/boda-boda/",
+    "quote": "",
+    "basis": "no range on product page"
+   },
+   {
+    "kind": "review",
+    "value": "31–43",
+    "url": "https://www.transitionvelo.com/test/test-yuba-boda-boda-entre-urbain-et-cargo-le-longtail-a-grandes-roues-tres-cool-a-piloter/",
+    "quote": "C’est une capacité dans la moyenne qui devrait offrir au vélo une autonomie oscillant entre 50 et 70 km en fonction des modes d’assistance sélectionnés",
+    "basis": "50–70 km converted to miles; reviewer's estimate"
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": 70,
+    "url": "https://yubabikes.com/product/boda-boda/",
+    "quote": "Bike Weight ⟶ 70 lbs",
+    "basis": "battery inclusion not stated"
+   },
+   {
+    "kind": "review",
+    "value": 70.5,
+    "url": "https://www.transitionvelo.com/test/test-yuba-boda-boda-entre-urbain-et-cargo-le-longtail-a-grandes-roues-tres-cool-a-piloter/",
+    "quote": "Un moteur adapté au programme de ce vélo porteur qui pèse 32 kg à vide et que nous avons de notre côté pesé à 34 kg avec ses accessoires (hors sacoches).",
+    "basis": "32 kg empty converted to lb"
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": 440,
+    "url": "https://yubabikes.com/product/boda-boda/",
+    "quote": "Maximum load ⟶ 440 lbs"
+   },
+   {
+    "kind": "review",
+    "value": 441,
+    "url": "https://www.transitionvelo.com/test/test-yuba-boda-boda-entre-urbain-et-cargo-le-longtail-a-grandes-roues-tres-cool-a-piloter/",
+    "quote": "C’est – sinon – un vélo cargo électrique tout ce qu’il y a de plus moderne, capable de transporter jusqu’à 200 kg et entièrement accessoirisable.",
+    "basis": "200 kg converted to lb"
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "Bosch Cargo Line",
+    "url": "https://yubabikes.com/product/boda-boda/",
+    "quote": "Motor ⟶ Bosch Cargo Line (85Nm) - 500Wh integrated Battery"
+   },
+   {
+    "kind": "review",
+    "value": "Bosch Cargo Line",
+    "url": "https://www.transitionvelo.com/test/test-yuba-boda-boda-entre-urbain-et-cargo-le-longtail-a-grandes-roues-tres-cool-a-piloter/",
+    "quote": "Moteur ⟶ Bosch Cargo Line"
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": "5'1\"-6'4\"",
+    "url": "https://yubabikes.com/product/boda-boda/",
+    "quote": "Rider Height ⟶ 5’1” to 6’4”"
+   },
+   {
+    "kind": "review",
+    "value": "5'1\"-6'5\"",
+    "url": "https://www.transitionvelo.com/test/test-yuba-boda-boda-entre-urbain-et-cargo-le-longtail-a-grandes-roues-tres-cool-a-piloter/",
+    "quote": "est proposé en une seule taille devant convenir aux cyclistes mesurant entre 1,55 et 1,95 cm.",
+    "basis": "1.55–1.95 m converted (page typo says cm)"
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://yubabikes.com/product/boda-boda/",
+    "quote": "Frame ⟶ Low Profile Aluminium Frame - easy Step-through",
+    "basis": "non-folding step-through frame"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker page on sale ($4,239.20; regular $5,299). Maker product page states no class, top speed or range; its full specs are only in a PDF (https://yubabikes.com/wp-content/uploads/2024/10/Boda-Boda_Tech-Specs-2024.pdf) not readable as page text. Only independent source for this generation is French Transition Vélo (EU 25 km/h version; metric values converted). EBR's review is the older elBoda Boda; Electrek, N+1 had nothing; boulder-nordic failed to load. Used one WebSearch. Recheck: maker tech-spec PDF (Boda-Boda_Tech-Specs-2024.pdf, read with pdf.js) lists only 'BOSCH Cargo Line 250W, 85N.m, 36V', no class/speed; yubabikes.com site search, EBR (older elBoda Boda only) and Electrek had nothing; Contender Bicycles dealer link from WebSearch is 404. Nothing new recorded."
+}

@@ -1,0 +1,49 @@
+{"bike": "Hase|Kettwiesel ONE (Shimano EP6 Cargo)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": "from 8.600,– | Euros including VAT, excluding delivery", "basis": "euro 'from' price only; no USD price on maker site"},
+   {"kind": "retailer", "value": null, "url": "https://newwheel.net/products/hase-kettwiesel-one-electric-trike", "quote": "Sale price | $10,210.00", "basis": "labelled 'Sale price' with no regular price shown, and for a different configuration (Shimano E6100 60Nm, Alfine 8) - not recorded as this bike's price"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://newwheel.net/products/hase-kettwiesel-one-electric-trike", "quote": ""}
+  ],
+  "spd": [
+   {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://newwheel.net/products/hase-kettwiesel-one-electric-trike", "quote": ""}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": "– Shimano EP6 Cargo, 85 Nm, 630 Wh, Shimano Inter-5E DI2"},
+   {"kind": "retailer", "value": 85, "url": "https://newwheel.net/products/hase-kettwiesel-one-electric-trike", "quote": "Choose from a powerful and reliable Shimano mid-drive motor with either 60nm or 85nm of torque to get you up the steepest hills. Looking to take longer adventures, upgrade to a high capacity Shimano 630wh battery for up to 50 miles of range on a charge.", "basis": "85 Nm option; motor model not named"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 630, "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": "– Shimano EP6 Cargo, 85 Nm, 630 Wh, Shimano Inter-5E DI2"},
+   {"kind": "retailer", "value": 630, "url": "https://newwheel.net/products/hase-kettwiesel-one-electric-trike", "quote": "Choose from a powerful and reliable Shimano mid-drive motor with either 60nm or 85nm of torque to get you up the steepest hills. Looking to take longer adventures, upgrade to a high capacity Shimano 630wh battery for up to 50 miles of range on a charge.", "basis": "630wh battery option"}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": ""},
+   {"kind": "retailer", "value": "50", "url": "https://newwheel.net/products/hase-kettwiesel-one-electric-trike", "quote": "Choose from a powerful and reliable Shimano mid-drive motor with either 60nm or 85nm of torque to get you up the steepest hills. Looking to take longer adventures, upgrade to a high capacity Shimano 630wh battery for up to 50 miles of range on a charge.", "basis": "'up to', with the 630wh battery"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 77, "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": "Weight | from 35 kg (77 lb)", "basis": "'from' weight (lightest configuration); whether battery is included is not stated"},
+   {"kind": "retailer", "value": null, "url": "https://newwheel.net/products/hase-kettwiesel-one-electric-trike", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": 309, "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": "140 kg (309 lb) | max. load, with adjustable suspension", "basis": "'max. load' - page does not say whether it includes the trike's weight"},
+   {"kind": "retailer", "value": null, "url": "https://newwheel.net/products/hase-kettwiesel-one-electric-trike", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Shimano EP6 Cargo", "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": "– Shimano EP6 Cargo, 85 Nm, 630 Wh, Shimano Inter-5E DI2", "basis": "no rated watts published"},
+   {"kind": "retailer", "value": null, "url": "https://newwheel.net/products/hase-kettwiesel-one-electric-trike", "quote": "", "basis": "base config described as Shimano E6100; 85 Nm option motor not named"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "3'7\"-6'7\"", "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": "Height of rider | 1.10-2.00 m (3’7”-6’7”)"},
+   {"kind": "retailer", "value": null, "url": "https://newwheel.net/products/hase-kettwiesel-one-electric-trike", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "Yes", "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": "The steplessly adjustable frame and handlebar can be shortened with just a few movements, folding the Kettwiesel ONE down to fit in a standard estate car.", "basis": "frame shortens and seatback/handlebar fold down for car transport (front boom pushes in; not a hinge fold)"},
+   {"kind": "retailer", "value": null, "url": "https://newwheel.net/products/hase-kettwiesel-one-electric-trike", "quote": ""}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Recumbent delta e-trike (Germany). Maker page is the EU English site: price in euros only ('from 8.600,–'), no top speed, class or range. EP6 Cargo config (ONE / ONE UP) is 85 Nm, 630 Wh, Inter-5E Di2; the ONE PLUS uses Bosch Performance Line CX. US dealer New Wheel lists 'Hase Kettwiesel One' at $10,210 but describes a Shimano E6100 60Nm / Alfine 8 base config with 85 Nm and 630 Wh options, so its price was not recorded. Fold: Hase says it folds down for transport (boom shortens, seatback and handlebar fold) - judge whether that counts as a folding frame. Max load 140 kg is labelled 'max. load' without saying total vs payload. | recheck: looked for a US class / mph on hasebikes.com (incl. hidden text), RAD Innovations, Hostel Shoppe, Laid Back Cycles, Utah Trikes (404) and 1 WebSearch: no page states a class or a US top speed."}

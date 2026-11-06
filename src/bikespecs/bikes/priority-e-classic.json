@@ -1,0 +1,42 @@
+{"bike": "Priority|E-Classic", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "review", "value": 1699, "url": "https://electrek.co/2023/08/04/high-end-brand-priority-bicycles-launches-its-lowest-priced-belt-drive-e-bike-yet/", "quote": "The $1,699 Priority e-Classic Plus, which is launching with a promotional discount bringing it down to just $1,399, features a number of high-end parts rarely seen at this price point. ⟶ As Priority Bicycles founder and CEO David Weiner explained:"},
+   {"kind": "review", "value": 1699, "url": "https://www.cyclingnews.com/reviews/priority-e-classic-plus-ebike-review-easy-mellow-cruising-on-a-budget/", "quote": "TECH SPECS: PRIORITY E-CLASSIC PLUS EBIKE ⟶ Price: $1699"}
+  ],
+  "cls": [
+   {"kind": "review", "value": 1, "url": "https://electrek.co/2023/08/04/high-end-brand-priority-bicycles-launches-its-lowest-priced-belt-drive-e-bike-yet/", "quote": "The 250W front hub motor is paired with a 374 Wh removable battery. The duo offers speeds of up to 20 mph (32 km/h) and a range of between 20-60 miles (32-96 km) depending on conditions. That longer range is possible because the Class 1 e-bike doesn’t have a throttle, meaning it only operates with more efficient pedal assist. ⟶ Top comment by Twerd Liked by 1 people"},
+   {"kind": "review", "value": 1, "url": "https://www.cyclingnews.com/reviews/priority-e-classic-plus-ebike-review-easy-mellow-cruising-on-a-budget/", "quote": "Performance\tAs a class 1 electric bike, it should be no secret that there are more powerful bikes available. Priority does what it says but if your only goal is performance, there are better options.\t7/10"}
+  ],
+  "spd": [
+   {"kind": "review", "value": 20, "url": "https://electrek.co/2023/08/04/high-end-brand-priority-bicycles-launches-its-lowest-priced-belt-drive-e-bike-yet/", "quote": "The 250W front hub motor is paired with a 374 Wh removable battery. The duo offers speeds of up to 20 mph (32 km/h) and a range of between 20-60 miles (32-96 km) depending on conditions. That longer range is possible because the Class 1 e-bike doesn’t have a throttle, meaning it only operates with more efficient pedal assist. ⟶ Top comment by Twerd Liked by 1 people"}
+  ],
+  "tq": [
+   {"kind": "review", "value": null, "url": "https://electrek.co/2023/08/04/high-end-brand-priority-bicycles-launches-its-lowest-priced-belt-drive-e-bike-yet/", "quote": "", "basis": "torque not stated"},
+   {"kind": "review", "value": null, "url": "https://www.cyclingnews.com/reviews/priority-e-classic-plus-ebike-review-easy-mellow-cruising-on-a-budget/", "quote": "", "basis": "torque not stated"}
+  ],
+  "wh": [
+   {"kind": "review", "value": 374, "url": "https://electrek.co/2023/08/04/high-end-brand-priority-bicycles-launches-its-lowest-priced-belt-drive-e-bike-yet/", "quote": "The 250W front hub motor is paired with a 374 Wh removable battery. The duo offers speeds of up to 20 mph (32 km/h) and a range of between 20-60 miles (32-96 km) depending on conditions. That longer range is possible because the Class 1 e-bike doesn’t have a throttle, meaning it only operates with more efficient pedal assist. ⟶ Top comment by Twerd Liked by 1 people"}
+  ],
+  "range": [
+   {"kind": "review", "value": "20–60", "url": "https://electrek.co/2023/08/04/high-end-brand-priority-bicycles-launches-its-lowest-priced-belt-drive-e-bike-yet/", "quote": "The 250W front hub motor is paired with a 374 Wh removable battery. The duo offers speeds of up to 20 mph (32 km/h) and a range of between 20-60 miles (32-96 km) depending on conditions. That longer range is possible because the Class 1 e-bike doesn’t have a throttle, meaning it only operates with more efficient pedal assist. ⟶ Top comment by Twerd Liked by 1 people"}
+  ],
+  "wt": [
+   {"kind": "review", "value": 49, "url": "https://www.cyclingnews.com/reviews/priority-e-classic-plus-ebike-review-easy-mellow-cruising-on-a-budget/", "quote": "Weight: 49lbs ⟶ Groupset: Gates Carbon Drive Belt with Shimano Nexus", "basis": "not stated whether battery included"}
+  ],
+  "load": [
+   {"kind": "review", "value": null, "url": "https://www.cyclingnews.com/reviews/priority-e-classic-plus-ebike-review-easy-mellow-cruising-on-a-budget/", "quote": "", "basis": "no maker load limit found"}
+  ],
+  "motor": [
+   {"kind": "review", "value": "250W front hub", "url": "https://electrek.co/2023/08/04/high-end-brand-priority-bicycles-launches-its-lowest-priced-belt-drive-e-bike-yet/", "quote": "The 250W front hub motor is paired with a 374 Wh removable battery. The duo offers speeds of up to 20 mph (32 km/h) and a range of between 20-60 miles (32-96 km) depending on conditions. That longer range is possible because the Class 1 e-bike doesn’t have a throttle, meaning it only operates with more efficient pedal assist. ⟶ Top comment by Twerd Liked by 1 people"},
+   {"kind": "review", "value": "250W front hub", "url": "https://cleantechnica.com/2024/03/19/the-priority-e-classic-amps-up-the-classic-high-end-road-cruiser-cleantechnica-tested/", "quote": "Tapping into that battery is a 250 watt front hub motor. Priority programmed the bike to offer three levels of pedal assist as well as a zero level that completely disengages the front motor."}
+  ],
+  "height": [
+   {"kind": "review", "value": "5'6\"-6'3\"", "url": "https://www.cyclingnews.com/reviews/priority-e-classic-plus-ebike-review-easy-mellow-cruising-on-a-budget/", "quote": "If you pick the step-over version, like my review example, then you'll have an option of two sizes. The smaller of the two lists the rider height as 5'6\" - 5'10\" while the larger spec is 5'11\" - 6'3.\" There are also two colours available with a choice of either a matte black or gloss blue covering a 6061 aluminium alloy frame and a steel fork. The included front and rear composite mudguards/fenders use the same colour as the rest of the bike.", "basis": "step-over frame sizes only"}
+  ],
+  "fold": [
+   {"kind": "review", "value": "No", "url": "https://cleantechnica.com/2024/03/19/the-priority-e-classic-amps-up-the-classic-high-end-road-cruiser-cleantechnica-tested/", "quote": "The Priority Bicycles Classic is the quintessential casual road cruiser, and the e-Classic takes all those ideals to the next level. It features the same standard frame geometry in both a diamond frame and a step-through, just with an oversized downtube where the battery lives. ⟶ Image credit: Kyle Field, CleanTechnica", "basis": "standard diamond/step-through frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "NO MAKER SOURCE: the given src was prioritybicycles.com/products.json. Priority's product catalog (all 240 products) has no E-Classic/e-Classic Plus, and prioritybicycles.com/products/eclassicplus now redirects to the Priority Glide page; likely discontinued/replaced by the Glide, but the maker doesn't say so in words. The bike is sold/reviewed as the 'e-Classic Plus' (Electrek 2023, Cyclingnews); CleanTechnica calls it 'e-Classic' with the same 250W front hub + Nexus 3 build. Speed/class/wh/range from Electrek launch article only. Used 1 WebSearch."}

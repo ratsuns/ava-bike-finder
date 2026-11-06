@@ -1,0 +1,44 @@
+{"bike": "Hase|Pino E (Tandem)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/pino-e", "quote": "from 9.990,– ⟶ Euros including VAT, excluding delivery", "basis": "EUR only, no USD price published"},
+   {"kind": "retailer", "value": 10990, "url": "https://newwheel.net/products/hase-pino-electric-tandem", "quote": "Sale price ⟶ $10,990.00", "basis": "dealer price for its 'Pino Steps' base option, described with a Shimano E6100 60Nm drive (older spec than the maker's current EP6)"},
+   {"kind": "retailer", "value": 12540, "url": "https://www.rad-innovations.com/hase-bikes-pino.html", "quote": "Pino E | $12,540* | In stock | *Pino E battery & charger separate", "basis": "US Hase dealer base price, battery & charger extra"},
+   {"kind": "retailer", "value": 13899, "url": "https://hostelshoppe.com/products/hase-pino-ep6-cargo-grey-beige-tandem-recumbent-bike", "quote": "Regular price ⟶ $13,899.00 USD", "basis": "Hostel Shoppe 'Hase Pino EP6 Cargo' tandem (Shimano EP6 Cargo 85 Nm, 630 Wh, which is the maker's Pino E drive); listing name could also be read as the Pino E Cargo"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/pino-e", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://newwheel.net/products/hase-pino-electric-tandem", "quote": ""}
+  ],
+  "spd": [
+   {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/pino-e", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://newwheel.net/products/hase-pino-electric-tandem", "quote": "SPEED ⟶ Low"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://www.hasebikes.com/en/pino-e", "quote": "Electric motor ⟶ Shimano EP6 Cargo, 85 Nm"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 630, "url": "https://www.hasebikes.com/en/pino-e", "quote": "Battery ⟶ 630 Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/pino-e", "quote": ""},
+   {"kind": "retailer", "value": "50", "url": "https://newwheel.net/products/hase-pino-electric-tandem", "quote": "Choose from a powerful and reliable Shimano mid-drive motor with either 60nm or 85nm of torque to get you up the steepest hills. Looking to take longer adventures, upgrade to a high capacity Shimano 630wh battery for up to 50 miles of range on a charge. ⟶ MADE IN GERMANY", "basis": "\"up to\", with the 630wh battery"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 73, "url": "https://www.hasebikes.com/en/pino-e", "quote": "Weight ⟶ 33 kg (73 lb)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 496, "url": "https://www.hasebikes.com/en/pino-e", "quote": "Maximum load ⟶ 225 kg (496 lb)"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Shimano EP6 Cargo", "url": "https://www.hasebikes.com/en/pino-e", "quote": "Electric motor ⟶ Shimano EP6 Cargo, 85 Nm"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "Rear 4'11\"-6'7\" / front 3'3\"-6'7\"", "url": "https://www.hasebikes.com/en/pino-e", "quote": "Height of rider ⟶ Rear 150-200 cm (4’11”-6’7”) / front 100-200 cm (3’3”-6’7”)"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.hasebikes.com/en/pino-e", "quote": "Frame | Aluminum, telescopic"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Hase is German; maker page gives EUR price only and no US class/speed/range. Tandem (recumbent front seat + upright rear). newwheel.net (US dealer) describes the base Pino with an older Shimano E6100 60Nm drive and 504/640 Wh options, so only its price and range claim were recorded (flagged). Maximum load 225 kg is for a tandem; maker doesn't say if it's total or riders+cargo. Frame telescopes, doesn't fold. One WebSearch used; the dealer pages it found (johnpreston) returned 404. | recheck: RAD Innovations lists 'Pino E' at $12,540 (battery/charger extra) - matches the site; Hostel Shoppe 'Pino EP6 Cargo' at $13,899. looked for a US class / mph on hasebikes.com (incl. hidden text), RAD Innovations, Hostel Shoppe, Laid Back Cycles, Utah Trikes (404) and 1 WebSearch: no page states a class or a US top speed."}

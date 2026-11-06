@@ -1,0 +1,50 @@
+{"bike": "Yuba|Spicy Curry V3", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 4999.99, "url": "https://yubabikes.com/product/spicy-curry-v3/", "quote": "$4,999.99 | Original price was: $4,999.99. | $3,999.99 | Current price is: $3,999.99.", "basis": "Class 1 version regular price (shown after selecting CLASS 1); Class 3 version regular $5,599.99 per page variant data; both on sale"},
+   {"kind": "review", "value": 4750, "url": "https://bikerumor.com/yuba-spicy-curry-cargo-bike-gets-hotter-w-bosch-cargo-line-motor-thru-axles-bigger-tires/", "quote": "pricing starts at $4,750.", "basis": "launch price"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://yubabikes.com/product/spicy-curry-v3/", "quote": "CLASS 1 (<20mph) ⟶ CLASS 3 (<28mph)", "basis": "sold as separate Class 1 (20 mph) and Class 3 (28 mph) versions; recorded base Class 1"},
+   {"kind": "review", "value": null, "url": "https://bikerumor.com/yuba-spicy-curry-cargo-bike-gets-hotter-w-bosch-cargo-line-motor-thru-axles-bigger-tires/", "quote": ""}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://yubabikes.com/product/spicy-curry-v3/", "quote": "CLASS 1 (<20mph) ⟶ CLASS 3 (<28mph)", "basis": "Class 1 version; Class 3 version is 28 mph"},
+   {"kind": "review", "value": null, "url": "https://bikerumor.com/yuba-spicy-curry-cargo-bike-gets-hotter-w-bosch-cargo-line-motor-thru-axles-bigger-tires/", "quote": ""}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://yubabikes.com/product/spicy-curry-v3/", "quote": "Motor ⟶ Bosch Cargo Line (85Nm) - 500Wh integrated Battery"},
+   {"kind": "review", "value": 75, "url": "https://bikerumor.com/yuba-spicy-curry-cargo-bike-gets-hotter-w-bosch-cargo-line-motor-thru-axles-bigger-tires/", "quote": "Importantly, the 75Nm of torque can be applied in full even at low cadences"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 500, "url": "https://yubabikes.com/product/spicy-curry-v3/", "quote": "The Bosch Cargo Line motor associated with its Powerpack 500 Wh battery provides an 85 nm torque power."},
+   {"kind": "review", "value": 500, "url": "https://bikerumor.com/yuba-spicy-curry-cargo-bike-gets-hotter-w-bosch-cargo-line-motor-thru-axles-bigger-tires/", "quote": "The Cargo Line Motor is paired with the Bosch Powerpack 500 battery which is a bit larger than the previous Powerpack 400."}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://yubabikes.com/product/spicy-curry-v3/", "quote": "", "basis": "no range on product page"},
+   {"kind": "review", "value": null, "url": "https://bikerumor.com/yuba-spicy-curry-cargo-bike-gets-hotter-w-bosch-cargo-line-motor-thru-axles-bigger-tires/", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 60.2, "url": "https://yubabikes.com/product/spicy-curry-v3/", "quote": "Bike Weight ⟶ 60.2 lbs", "basis": "battery inclusion not stated"},
+   {"kind": "review", "value": null, "url": "https://bikerumor.com/yuba-spicy-curry-cargo-bike-gets-hotter-w-bosch-cargo-line-motor-thru-axles-bigger-tires/", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": 440, "url": "https://yubabikes.com/product/spicy-curry-v3/", "quote": "Maximum load ⟶ 440 lbs"},
+   {"kind": "review", "value": 440, "url": "https://bikerumor.com/yuba-spicy-curry-cargo-bike-gets-hotter-w-bosch-cargo-line-motor-thru-axles-bigger-tires/", "quote": "the Spicy Curry is rated at 440lb of total payload or up to three passengers.", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Cargo Line", "url": "https://yubabikes.com/product/spicy-curry-v3/", "quote": "Motor ⟶ Bosch Cargo Line (85Nm) - 500Wh integrated Battery"},
+   {"kind": "review", "value": "Bosch Cargo Line", "url": "https://bikerumor.com/yuba-spicy-curry-cargo-bike-gets-hotter-w-bosch-cargo-line-motor-thru-axles-bigger-tires/", "quote": "Now fitted with the Bosch Cargo Line motor, this drive system is specifically engineered for the demands of hauling heavy cargo."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'3\"-6'5\"", "url": "https://yubabikes.com/product/spicy-curry-v3/", "quote": "Rider Height ⟶ 5 ft. 3 in - 6 ft. 5 in"},
+   {"kind": "review", "value": "4'8\"-6'5\"", "url": "https://bikerumor.com/yuba-spicy-curry-cargo-bike-gets-hotter-w-bosch-cargo-line-motor-thru-axles-bigger-tires/", "quote": "Sold in a single size that “Fits riders 4.7 to 6.4ft (1.45m to 1.98m)”", "basis": "1.45–1.98 m converted"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://yubabikes.com/product/spicy-curry-v3/", "quote": "Frame | Aluminium Frame with easy Step-Over", "basis": "non-folding longtail frame"}
+  ]
+ },
+ "status": {"sources": [
+   {"kind": "maker", "value": "mostly out of stock", "url": "https://yubabikes.com/product/spicy-curry-v3/", "quote": "CLASS 3 (<28mph) ⟶ Out of stock", "basis": "only Class 1 White in stock per page variant data; not stated as discontinued"}
+ ]},
+ "notes": "Maker sells V3 in Class 1 (20 mph, regular $4,999.99, sale $3,999.99) and Class 3 (28 mph, regular $5,599.99, sale $4,479.99) versions; Class 3 regular price is only in the page's variant data, not visible text. Maker V3 page says 85Nm; Bikerumor's V3 launch article says 75Nm (older Cargo Line rating) — conflict. Maker V3 weight 60.2 lbs and rider height 5'3\"-6'5\" differ from Bikerumor's 4.7-6.4 ft. Maker page quotes from the V4 press too, so its spec block may be partly shared with newer models. EBR reviews are older generations (2017). Price quote joins consecutive page lines with ' | '. No WebSearch used for this bike (Bikerumor found via earlier Spicy Curry search)."}

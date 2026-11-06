@@ -1,0 +1,51 @@
+{"bike": "Pedego|Cargo", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 3895, "url": "https://pedegoelectricbikes.com/products/cargo", "quote": "$3,895.00 ⟶ CHOOSE OPTIONS"},
+   {"kind": "review", "value": 3995, "url": "https://electrek.co/2024/05/01/pedego-launches-three-new-groundbreaking-e-bikes-including-moto-cargo-and-trike/", "quote": "The Pedego Cargo ($3,995) is a longtail cargo e-bike that features an extended rear rack.", "basis": "2024 launch price"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://pedegoelectricbikes.com/products/cargo", "quote": "SPEED ⟶ Class 1 & Class 2;", "basis": "maker says Class 1 & Class 2 (Class 3 ready); has a throttle and ships at 20 mph per reviews -> Class 2"},
+   {"kind": "review", "value": 2, "url": "https://upway.co/blogs/news/pedego-cargo-ebike-review", "quote": "Class\tClass 2 by default, Class 3 upgrade available through a Pedego dealer"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": null, "url": "https://pedegoelectricbikes.com/products/cargo", "quote": "Top Speed ⟶ CLASS 1 & CLASS 2;"},
+   {"kind": "review", "value": 20, "url": "https://electrek.co/2024/05/01/pedego-launches-three-new-groundbreaking-e-bikes-including-moto-cargo-and-trike/", "quote": "Just like the Moto, the new Pedego Cargo comes with a 20 mph (32 km/h) top speed but appears to be unlockable by those who prefer traveling at higher Class 3 speeds.", "basis": "adjustable to 28 mph (Class 3 upgrade at dealer)"},
+   {"kind": "review", "value": 20, "url": "https://upway.co/blogs/news/pedego-cargo-ebike-review", "quote": "The moped-style tires and coil front suspension absorb bumps well for a bike this heavy. Class 2's 20mph limited assisted top speed handles errands and school runs fine. But the Class 3 upgrade to 28mph makes more sense if you're regularly riding in heavy traffic and like to keep up."}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://pedegoelectricbikes.com/products/cargo", "quote": ""},
+   {"kind": "review", "value": 85, "url": "https://electricbikereport.com/new-pedego-bikes-2024/", "quote": "The Cargo is a long-tail compact cargo e-bike with a 750W brushless, geared hub motor that can produce 85Nm of torque—enough to get a parent and child up to speed."},
+   {"kind": "review", "value": 85, "url": "https://upway.co/blogs/news/pedego-cargo-ebike-review", "quote": "Motor\t750W rear hub, 1500W peak, 85Nm torque"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 480, "url": "https://pedegoelectricbikes.com/products/cargo", "quote": "Battery: Battery - 48V 10Ah UL2271 ⟶ BATTERY - 48V 10AH UL2271", "basis": "48V x 10Ah (default battery option; 48V 14Ah option shown sold out)"},
+   {"kind": "review", "value": 460, "url": "https://electrek.co/2024/05/01/pedego-launches-three-new-groundbreaking-e-bikes-including-moto-cargo-and-trike/", "quote": "Options for either 460Wh or 672Wh batteries give riders a choice between battery sizes to choose just how far they want to go.", "basis": "smaller of two battery options"},
+   {"kind": "review", "value": 460.8, "url": "https://upway.co/blogs/news/pedego-cargo-ebike-review", "quote": "Battery\t48V, 9.6Ah standard or 14Ah upgrade, optional 20Ah range extender", "basis": "48V x 9.6Ah standard"}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://pedegoelectricbikes.com/products/cargo", "quote": "Range Up to | 132 miles with | OPT. RANGE EXTENDER BATTERY*", "basis": "132 miles is with the optional range extender, not the standard battery"},
+   {"kind": "review", "value": "28–56", "url": "https://www.digitaltrends.com/outdoors/pedego-cargo-ebike-review/", "quote": "The Cargo is available with either a 9.6Ah or 14Ah 48V battery. The test bike had a 14Ah battery supplying 672 watt-hours of power, which Pedego estimates is good for 28 to 56 miles per charge. Range varies tremendously with e-bikes, depending on rider and cargo or passenger weight, speed, incline, road surface, and more. This variance is especially wide with cargo bikes.", "basis": "Pedego's estimate for the 14Ah (672Wh) battery, which is the upgrade; the standard is 9.6Ah"},
+   {"kind": "review", "value": "28–56", "url": "https://upway.co/blogs/news/pedego-cargo-ebike-review", "quote": "You get two battery options with the Pedego Cargo. The standard 9.6Ah battery keeps the price down, but the 14Ah upgrade has 672Wh and gets you 28 to 56 miles per charge. You can also add an optional 20Ah range extender for a claimed 132 miles. That is enough to replace a car for daily errands. Both batteries sit inside the frame and can be removed for indoor charging. It’s also reassuring to know that the system is SGS certified to the UL 2849 standard.", "basis": "14Ah upgrade battery; 132 miles needs the optional range extender"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://pedegoelectricbikes.com/products/cargo", "quote": ""},
+   {"kind": "review", "value": 106, "url": "https://upway.co/blogs/news/pedego-cargo-ebike-review", "quote": "Weight\t106 lbs bare, 130+ lbs with battery, rack, and passenger kit", "basis": "without battery"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 400, "url": "https://pedegoelectricbikes.com/products/cargo", "quote": "Payload ⟶ 400 LB"},
+   {"kind": "review", "value": 400, "url": "https://upway.co/blogs/news/pedego-cargo-ebike-review", "quote": "Payload\t400 lbs ⟶ Length\t79.2in"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W (1,500W peak)", "url": "https://pedegoelectricbikes.com/products/cargo", "quote": "UL Certified Components: UL1446, UL94, UL746C, UL758, UL796, UL224 750 Watt Nominal Rated, 1500 Watt Peak, 1 Piece Aluminum Wheel"},
+   {"kind": "review", "value": "750W rear hub (1,500W peak)", "url": "https://upway.co/blogs/news/pedego-cargo-ebike-review", "quote": "Motor\t750W rear hub, 1500W peak, 85Nm torque"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://pedegoelectricbikes.com/products/cargo", "quote": "RIDER HEIGHT ⟶ ELECTRONICS", "basis": "rider height field is blank on the spec table"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://pedegoelectricbikes.com/products/cargo", "quote": "ISO4210-2 Aluminum Alloy 6061, T4T6 Treated, Step Thru, Hand Grip, Bike Stand Compatible, Side Kickstand, Center Double Leg Kickstand", "basis": "fixed step-thru frame; only the footplates fold"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page shows $3,895 but its Shopify product data says 304600 (=$3,046) and both color variants unavailable; 48V 14Ah battery option marked SOLD OUT. Battery size varies by source: maker default option 48V 10Ah, reviews say 9.6Ah (460Wh) standard / 14Ah (672Wh) upgrade; maker spec table lists 48V14Ah. Maker rider-height field is blank; no maker weight, speed or torque. Upway's 106 lb is 'bare' (taken as without battery). EBR had no Cargo review. One WebSearch used (found Upway). Recheck: looked at Pedego Cargo page full text (only 132 miles with range extender), Pedego FS24 Cargo fact sheet PDF (no range), EBR search (no Cargo), one web search, Digital Trends and Upway reviews (28 to 56 miles on the 14Ah upgrade battery). No range found for the standard 9.6Ah battery."}

@@ -1,0 +1,48 @@
+{
+ "bike": "Pedego|Element Platinum Edition",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "retailer", "value": null, "url": "https://www.practicalcycle.com/product/pedego-element-platinum/", "quote": "PRICE ⟶ $2,495.00 $1,999.00", "basis": "this dealer URL for the Element Platinum now lists the 'Pedego Element Pro', so its price is the Element Pro's"},
+   {"kind": "maker", "value": 2549, "url": "https://pedegoelectricbikes.com/products/platinum-element", "quote": "$2,549.00 ⟶ CHOOSE OPTIONS", "basis": "no crossed-out price shown"}
+  ],
+  "cls": [
+   {"kind": "retailer", "value": null, "url": "https://www.practicalcycle.com/product/pedego-element-platinum/", "quote": ""},
+   {"kind": "maker", "value": 2, "url": "https://pedegoelectricbikes.com/cdn/shop/files/FS23_-_Element_Platinum.pdf", "quote": "CLASS 2: 2O MPH MAX, WITH PEDAL ASSIST AND THROTTLE ASSIST CLASS 3: 28 MPH | MAX, WITH PEDAL ASSIST ONLY (SOFTWARE UPGRADE AVAILABLE THROUGH PEDEGO | DEALER ONLY).", "basis": "Pedego FS23 fact sheet: ships Class 2 with twist throttle; Class 3 only via dealer software upgrade"},
+   {"kind": "maker", "value": null, "url": "https://pedegoelectricbikes.com/products/platinum-element", "quote": "Top Speed ⟶ CLASS 1 & CLASS 2;", "basis": "product page says 'Class 1 & Class 2; Class 3 Ready' and lists a twist-and-go throttle"}
+  ],
+  "spd": [
+   {"kind": "retailer", "value": null, "url": "https://www.practicalcycle.com/product/pedego-element-platinum/", "quote": ""},
+   {"kind": "maker", "value": 20, "url": "https://pedegoelectricbikes.com/cdn/shop/files/FS23_-_Element_Platinum.pdf", "quote": "CLASS 2: 2O MPH MAX, WITH PEDAL ASSIST AND THROTTLE ASSIST CLASS 3: 28 MPH", "basis": "the fact sheet text reads '2O' (letter O, a typo for 20); adjustable to 28 mph via dealer upgrade"}
+  ],
+  "tq": [
+   {"kind": "retailer", "value": null, "url": "https://www.practicalcycle.com/product/pedego-element-platinum/", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "retailer", "value": 728, "url": "https://www.practicalcycle.com/product/pedego-element-platinum/", "quote": "52V System, 749W Hub motor ⟶ 14AH Battery", "basis": "52V x 14Ah; from the page's Element Platinum description"}
+  ],
+  "range": [
+   {"kind": "retailer", "value": null, "url": "https://www.practicalcycle.com/product/pedego-element-platinum/", "quote": ""},
+   {"kind": "maker", "value": "56", "url": "https://pedegoelectricbikes.com/products/platinum-element", "quote": "RANGE UP TO ⟶ 56 MILES"},
+   {"kind": "maker", "value": "40", "url": "https://pedegoelectricbikes.com/cdn/shop/files/FS23_-_Element_Platinum.pdf", "quote": "can take you up to 40 miles on about 10 cents", "basis": "older FS23 fact sheet feature text; differs from the product page's 56"}
+  ],
+  "wt": [
+   {"kind": "retailer", "value": null, "url": "https://www.practicalcycle.com/product/pedego-element-platinum/", "quote": ""}
+  ],
+  "load": [
+   {"kind": "retailer", "value": null, "url": "https://www.practicalcycle.com/product/pedego-element-platinum/", "quote": ""},
+   {"kind": "maker", "value": 250, "url": "https://pedegoelectricbikes.com/products/platinum-element", "quote": "Payload ⟶ 250 LB"}
+  ],
+  "motor": [
+   {"kind": "retailer", "value": "749W hub", "url": "https://www.practicalcycle.com/product/pedego-element-platinum/", "quote": "52V System, 749W Hub motor ⟶ 14AH Battery"}
+  ],
+  "height": [
+   {"kind": "retailer", "value": null, "url": "https://www.practicalcycle.com/product/pedego-element-platinum/", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "retailer", "value": null, "url": "https://www.practicalcycle.com/product/pedego-element-platinum/", "quote": ""}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "No maker page: pedegoelectricbikes.com/products/element-platinum-edition is a 404 and the maker's product search shows only Element Core, Element Pro and Element 2. Pedego Canada has only a March 2023 blog post (CAD 'Starting at $3,595.00', no specs). Dealer Practical Cycle's Element Platinum URL now shows 'Pedego Element Pro' (with an FS26-Element-Pro spec sheet) but still carries the Platinum blurb ('52V System, 749W Hub motor', '14AH Battery') -- looks like the Element Platinum was replaced by the Element Pro and is no longer sold, but the maker doesn't say so. EBR/Electrek have no Element Platinum review. One WebSearch used. Almost all fields null. Recheck: found the maker page: pedegoelectricbikes.com/product/element-platinum/ (linked from a Pedego blog post) redirects to /products/platinum-element ($2,549.00, Class 1 & Class 2; Class 3 Ready, 56 miles, 250 LB payload, 749W 60NM motor, 48V 10Ah or 14Ah). Also read its FS23 fact sheet PDF (Class 2 20 mph with throttle, 'up to 40 miles') and the Pedego blog on the Element V2 Platinum Class 3 upgrade. The maker page says 48V, while Practical Cycle's blurb says 52V."
+}

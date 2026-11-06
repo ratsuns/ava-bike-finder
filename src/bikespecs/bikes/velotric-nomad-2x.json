@@ -1,0 +1,49 @@
+{"bike": "Velotric|Nomad 2X", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2399, "url": "https://www.velotricbike.com/products/velotric-nomad-2x", "quote": "$2,399.00 ⟶ Buy Now", "basis": "no crossed-out price shown; maker comparison table gives 'Price\t$2,299 - $2,399' depending on style"},
+   {"kind": "review", "value": 2399, "url": "https://electricbikereview.com/velotric/nomad-2x-review/", "quote": "PRICE: ⟶ $2399"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.velotricbike.com/products/velotric-nomad-2x", "quote": "Can I set the Nomad 2X to Class 1 or Class 3? ⟶ Yes. The default is Class 2 (throttle enabled, 20MPH max speed):", "basis": "ships Class 2; selectable 1/2/3"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/velotric/nomad-2x-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 1, 2 and 3", "basis": "selectable; no shipped default stated"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.velotricbike.com/products/velotric-nomad-2x", "quote": "Max Speed (Default） ⟶ 20MPH | Max Speed Adjustable Range ⟶ 12~28MPH", "basis": "adjustable to 28 mph"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/velotric/nomad-2x-review/", "quote": "TOP SPEED: ⟶ 28 MPH mph", "basis": "unlocked top speed"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 105, "url": "https://www.velotricbike.com/products/velotric-nomad-2x", "quote": "Motor ⟶ 48V, 750W, 105Nm"},
+   {"kind": "review", "value": 105, "url": "https://electricbikereview.com/velotric/nomad-2x-review/", "quote": "MOTOR TORQUE: ⟶ 105Nm Newton meters"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 801.6, "url": "https://www.velotricbike.com/products/velotric-nomad-2x", "quote": "Battery ⟶ 48V, 16.7Ah (801.6Wh), IPX7, Certificated by UL2271"},
+   {"kind": "review", "value": 801.6, "url": "https://electricbikereview.com/velotric/nomad-2x-review/", "quote": "BATTERY WATT HOURS: ⟶ 801.6 Wh wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "75", "url": "https://www.velotricbike.com/products/velotric-nomad-2x", "quote": "Pedal Assist Range ⟶ 75 Miles"},
+   {"kind": "review", "value": "75", "url": "https://electricbikereview.com/velotric/nomad-2x-review/", "quote": "Estimated Range (from Velotric): | Eco PAS 1: 75 miles"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 80, "url": "https://www.velotricbike.com/products/velotric-nomad-2x", "quote": "Bike Weight ⟶ 80lbs"},
+   {"kind": "review", "value": 80, "url": "https://electricbikereview.com/velotric/nomad-2x-review/", "quote": "TOTAL WEIGHT: ⟶ 80 lbs lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 560, "url": "https://www.velotricbike.com/products/velotric-nomad-2x", "quote": "Max Bike Load Capacity ⟶ 560lbs"},
+   {"kind": "review", "value": 560, "url": "https://electricbikereview.com/velotric/nomad-2x-review/", "quote": "With a 560-pound payload capacity and massive 1,000-pound towing capacity, the Nomad 2X offers cargo capabilities that are virtually unheard of in the e-bike market."}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub (1,400W peak)", "url": "https://www.velotricbike.com/products/velotric-nomad-2x", "quote": "750W / 105Nm Motor (1400W Peak) ⟶ Top-tier torque for steep climbs and heavy loads."},
+   {"kind": "review", "value": "750W rear hub (1,400W peak)", "url": "https://electricbikereview.com/velotric/nomad-2x-review/", "quote": "MOTOR TYPE: ⟶ Rear Hub | MOTOR NOMINAL OUTPUT: ⟶ 750W watts | MOTOR PEAK OUTPUT: ⟶ 1400W watts"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'11\"-6'5\"", "url": "https://www.velotricbike.com/products/velotric-nomad-2x", "quote": "User Height Range ⟶ Step-Thru: 4'11'' - 5'10'' | Step-Thru: 4'11'' - 5'10'' ⟶ High-Step: 5'10'' - 6'5''", "basis": "step-thru 4'11\"-5'10\", high-step 5'10\"-6'5\""},
+   {"kind": "review", "value": "4'11\"-6'5\"", "url": "https://electricbikereview.com/velotric/nomad-2x-review/", "quote": "GEOMETRY MEASUREMENTS: ⟶ <ul> <li>ST: 4'11''~5'10''</li> <li>HS: 5'10\"~6'5\"</li> </ul>", "basis": "across step-thru and high-step"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": null, "url": "https://www.velotricbike.com/products/velotric-nomad-2x", "quote": ""},
+   {"kind": "review", "value": "No", "url": "https://electricbikereview.com/velotric/nomad-2x-review/", "quote": "FRAME TYPES: ⟶ Triple Butted Aluminum Full Suspension"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Price varies by style ($2,299–$2,399 per maker comparison table); recorded the $2,399 shown on the product page for the default style. Maker page has no folding line (non-folding full-suspension fat-tire bike)."}

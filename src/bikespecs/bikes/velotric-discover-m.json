@@ -1,0 +1,59 @@
+{"bike": "Velotric|Discover M", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2499, "url": "https://www.velotricbike.com/products/velotric-discover-m-mid-drive-ebike", "quote": "$2,399.00 ⟶ $2,499.00", "basis": "$2,499.00 is the crossed-out regular price; $2,399.00 is the Black Friday sale price (\"Save $100.00\")"},
+   {"kind": "review", "value": 2499, "url": "https://electricbikereview.com/velotric/discover-m-review/", "quote": "PRICE: ⟶ $2,499"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/velotric-discover-m-review/", "quote": ""}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.velotricbike.com/products/velotric-discover-m-mid-drive-ebike", "quote": "Ebike Class ⟶ 1/2/3", "basis": "multi-class; out of box is \"Max Speed (Default） ⟶ 20MPH\" with a throttle (\"Throttle Range ⟶ 70 Miles\"), i.e. Class 2"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/velotric/discover-m-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 1, 2, 3 and Custom Mode", "basis": "multi-class; doesn't say which it ships in"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/velotric-discover-m-review/", "quote": "CLASS 3 (PEDAL ASSIST TO 28 MPH) ⟶ SPONSOR", "basis": "lists Class 1, 2 and 3; doesn't say which it ships in"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.velotricbike.com/products/velotric-discover-m-mid-drive-ebike", "quote": "Max Speed (Default） ⟶ 20MPH", "basis": "default; adjustable to 28 mph (\"Max Speed Adjustable Range ⟶ 12~28MPH\")"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/velotric/discover-m-review/", "quote": "TOP SPEED: ⟶ 28MPH mph", "basis": "max adjustable, not default"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereport.com/velotric-discover-m-review/", "quote": "CLASS 3 (PEDAL ASSIST TO 28 MPH) ⟶ SPONSOR", "basis": "max class rating; also lists Class 1/2 to 20 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 100, "url": "https://www.velotricbike.com/products/velotric-discover-m-mid-drive-ebike", "quote": "Motor ⟶ 48V, 500W, 960W(Peak Power) ,100Nm", "basis": "maker also says \"130Nm Max\""},
+   {"kind": "review", "value": 100, "url": "https://electricbikereview.com/velotric/discover-m-review/", "quote": "MOTOR TORQUE: ⟶ 100Nm Newton meters"},
+   {"kind": "review", "value": 100, "url": "https://electricbikereport.com/velotric-discover-m-review/", "quote": "Motor: 48V, 500W, 960W(Peak Power),100Nm ⟶ Headlight: 500LM High-output Integrated LED, Adjustable Angle"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 801.6, "url": "https://www.velotricbike.com/products/velotric-discover-m-mid-drive-ebike", "quote": "Battery ⟶ 48V, 16.7Ah (801.6Wh), IPX7, Certificated by UL 2271"},
+   {"kind": "review", "value": 801.6, "url": "https://electricbikereview.com/velotric/discover-m-review/", "quote": "BATTERY WATT HOURS: ⟶ 801.6Wh wh"},
+   {"kind": "review", "value": 801.6, "url": "https://electricbikereport.com/velotric-discover-m-review/", "quote": "Battery: 48V, 16.7Ah (801.6Wh), IPX7, Certificated by UL 2271 ⟶ Charger: 48V, 3A Fast Charger"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "95", "url": "https://www.velotricbike.com/products/velotric-discover-m-mid-drive-ebike", "quote": "Pedal Assist Range ⟶ 95 Miles", "basis": "maker footnote: \"*A 187-lb rider using Eco mode on flat roads.\""},
+   {"kind": "review", "value": "95", "url": "https://electricbikereview.com/velotric/discover-m-review/", "quote": "Estimated Range (from Velotric): ⟶ Pedal Assistance: ‘Up to 95 miles’", "basis": "maker claim; tested max assist 34 miles, Eco 87 miles"},
+   {"kind": "review", "value": "95", "url": "https://electricbikereport.com/velotric-discover-m-review/", "quote": "Claimed Range: Up to 95 Miles ⟶ Throttle:Trigger-control, Removable"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 60, "url": "https://www.velotricbike.com/products/velotric-discover-m-mid-drive-ebike", "quote": "Bike Weight ⟶ 60 lbs", "basis": "maker footnote: \"*Weight does not include fenders, kickstands, or pedals.\" Battery not mentioned either way"},
+   {"kind": "review", "value": 60, "url": "https://electricbikereview.com/velotric/discover-m-review/", "quote": "TOTAL WEIGHT: ⟶ 60lbs lbs", "basis": "total weight; battery listed separately as 10.26 lbs"},
+   {"kind": "review", "value": 66, "url": "https://electricbikereport.com/velotric-discover-m-review/", "quote": "Claimed weight: 60lbs ⟶ Tested Weight: 66 lbs (including 10 lb battery)", "basis": "tested with battery; claimed 60 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 440, "url": "https://www.velotricbike.com/products/velotric-discover-m-mid-drive-ebike", "quote": "Max Bike Load Capacity ⟶ 440 lbs"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/velotric/discover-m-review/", "quote": ""},
+   {"kind": "review", "value": 440, "url": "https://electricbikereport.com/velotric-discover-m-review/", "quote": "Total payload capacity: 440 lbs ⟶ COMPONENTS & ACCESSORIES"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W mid-drive (960W peak)", "url": "https://www.velotricbike.com/products/velotric-discover-m-mid-drive-ebike", "quote": "\"The Discover M feels remarkably natural, balanced, and responsive to pedal, thanks to its custom 500W mid-drive motor. It's incredibly customizable, with programmable pedal assist levels, torque and cadence sensing modes, and profile-based smart tuning.\" ⟶ Overview", "basis": "peak from \"Motor ⟶ 48V, 500W, 960W(Peak Power) ,100Nm\" on same page; maker names the system VeloCore"},
+   {"kind": "review", "value": "500W mid-drive (960W peak)", "url": "https://electricbikereview.com/velotric/discover-m-review/", "quote": "MOTOR PEAK OUTPUT: ⟶ 960W watts", "basis": "\"MOTOR TYPE: ⟶ Mid-Drive\" and \"MOTOR NOMINAL OUTPUT: ⟶ 500W watts\" on same page"},
+   {"kind": "review", "value": "500W mid-drive (960W peak)", "url": "https://electricbikereport.com/velotric-discover-m-review/", "quote": "Motor: 48V, 500W, 960W(Peak Power),100Nm ⟶ Headlight: 500LM High-output Integrated LED, Adjustable Angle", "basis": "mid-drive per same review (\"its custom 500W mid-drive motor\")"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'2\"-6'7\"", "url": "https://www.velotricbike.com/products/velotric-discover-m-mid-drive-ebike", "quote": "R：5'2''~5'11'' L：5'9''~6'7'' ⟶ （With Suspension Seatpost）", "basis": "with the included suspension seatpost, across both sizes; maker also lists \"R：4'11''~5'9'' L：5'6''~6'4''\" without it"},
+   {"kind": "review", "value": "5'2\"-6'7\"", "url": "https://electricbikereview.com/velotric/discover-m-review/", "quote": "<ul> <li>Regular: 5'2''~5'11'' L：5'9''~6'7''（With Suspension Seatpost）</li> <li>R：4'11''~5'9'' L：5'6''~6'4''（Without Suspension Seatpost）</li> </ul> ⟶ FRAME TYPES:", "basis": "with suspension seatpost; 4'11\"-6'4\" without"},
+   {"kind": "review", "value": "4'11\"-6'7\"", "url": "https://electricbikereport.com/velotric-discover-m-review/", "quote": "It’s suitable for riders of all heights and weights, with a 440-lb capacity and the ability to accommodate those between 4’11” and 6’7”.", "basis": "combined across both seatposts and sizes"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.velotricbike.com/products/velotric-discover-m-mid-drive-ebike", "quote": "IPX7 Battery, IPX6 Frame ⟶ Mid-Drive Commuter Ebike Powered by VeloCore™ System", "basis": "rigid step-thru commuter frame in two sizes; no folding mentioned"},
+   {"kind": "review", "value": "No", "url": "https://electricbikereport.com/velotric-discover-m-review/", "quote": "The step-thru frame boasts a glossy, automotive-quality paint job and a convenient standover height of just 15.6 inches. ⟶ CONS", "basis": "non-folding step-thru frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page is on Black Friday sale ($2,399); crossed-out regular $2,499 recorded. Maker: default 20 mph with throttle, adjustable 12-28 mph, 'Ebike Class 1/2/3' -> Class 2; Custom Mode allows 28 mph throttle (not in California). Maker torque 100Nm, '130Nm Max'. Maker weight 60 lbs excludes fenders, kickstand, pedals; EBReport tested 66 lbs with battery. Height: 5'2\"-6'7\" with included suspension seatpost, 4'11\"-6'4\" without."}

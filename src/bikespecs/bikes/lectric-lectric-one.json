@@ -1,0 +1,196 @@
+{
+ "bike": "Lectric|Lectric ONE",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": 2199,
+    "url": "https://lectricebikes.com/blogs/blog/introducing-the-lectric-one",
+    "quote": "Lectric eBikes is proud to present this new line that brings outstanding performance and world class componentry at an incredible price. Starting at $2,199, It's crafted for excellence, and engineered for daily mobility. Backed by a full one year warranty and exemplary customer service, the Lectric ONE ships free to your doorstep.",
+    "basis": "launch blog post 'Starting at' price; no live product page"
+   },
+   {
+    "kind": "review",
+    "value": 1999,
+    "url": "https://electricbikereview.com/lectric-ebikes/lectric-one-review/",
+    "quote": "Price ⟶ MSRP: $1999"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://lectricebikes.com/blogs/blog/introducing-the-lectric-one",
+    "quote": ""
+   },
+   {
+    "kind": "maker",
+    "value": 2,
+    "url": "https://lectricebikes.com/pages/faq",
+    "quote": "All Lectric eBikes ship as a class 2 electric bike, meaning it has a throttle capable of propelling the bike at speeds of up to 20mph. Pedal assist will also be limited to 12 or 20mph in this setting depending on the model.",
+    "basis": "maker FAQ 'What is the classification of Lectric eBikes?' says all Lectric eBikes ship as class 2; the FAQ's model lists don't name the Lectric ONE (likely discontinued), so this is the maker's general statement; the launch blog confirms a thumb throttle"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://electricbikereview.com/lectric-ebikes/lectric-one-review/",
+    "quote": "This is a Class 3 e-bike with a maximum assist speed of 28 mph. Thanks to the Gates belt Lectric ONE owners will never need to lubricate the chain. They will never discover black smudges on their pants and they will never experience a missed shift.",
+    "basis": "review says Class 1, 2 or 3 can be chosen on the display and calls it a Class 3 e-bike at 28 mph; doesn't say which class it ships in"
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://lectricebikes.com/blogs/blog/introducing-the-lectric-one",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": 28,
+    "url": "https://electricbikereview.com/lectric-ebikes/lectric-one-review/",
+    "quote": "TOP SPEED: ⟶ 28 mph (45 kph)"
+   },
+   {
+    "kind": "review",
+    "value": 20,
+    "url": "https://electricbikereport.com/lectric-one-review/",
+    "quote": "The ONE offers five levels of pedal assist, and it ships as a Class 2 e-bike with throttle and pedal assist up to 20 mph. Users can set it to a Class 3 e-bike with pedal assist up to 28 mph through its display menu. We recorded the speed of each pedal assist setting in both Class modes as we rode on paved shared-use paths in our Speed Test.",
+    "basis": "ships at 20 mph; adjustable to 28 mph"
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": 85,
+    "url": "https://lectricebikes.com/blogs/blog/introducing-the-lectric-one",
+    "quote": "Powering this ride is a Stealth M24, 750W motor sporting 85Nm of torque and 1350W of peak power. A 14Ah battery ensures over 70 miles of range. Complete with PWR Technology, you can control the speed at which power is delivered, get up to full speed in 6 seconds, or opt for an exhilarating 1-second burst."
+   },
+   {
+    "kind": "review",
+    "value": 85,
+    "url": "https://electricbikereview.com/lectric-ebikes/lectric-one-review/",
+    "quote": "MOTOR TORQUE: ⟶ 85 Newton meters"
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://lectricebikes.com/blogs/blog/introducing-the-lectric-one",
+    "quote": "Powering this ride is a Stealth M24, 750W motor sporting 85Nm of torque and 1350W of peak power. A 14Ah battery ensures over 70 miles of range. Complete with PWR Technology, you can control the speed at which power is delivered, get up to full speed in 6 seconds, or opt for an exhilarating 1-second burst.",
+    "basis": "gives 14Ah but no voltage or Wh"
+   },
+   {
+    "kind": "review",
+    "value": 499,
+    "url": "https://electricbikereview.com/lectric-ebikes/lectric-one-review/",
+    "quote": "BATTERY WATT HOURS: ⟶ 499 wh",
+    "basis": "standard battery; 672Wh optional"
+   },
+   {
+    "kind": "review",
+    "value": 672,
+    "url": "https://electricbikereport.com/lectric-one-review/",
+    "quote": "Battery:48V, 672 Wh ⟶ Display: Color LCD, USB-A port",
+    "basis": "review elsewhere says 61 lbs 'with the Long-Range battery option', so 672 Wh may be the long-range battery"
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": "70",
+    "url": "https://lectricebikes.com/blogs/blog/introducing-the-lectric-one",
+    "quote": "Powering this ride is a Stealth M24, 750W motor sporting 85Nm of torque and 1350W of peak power. A 14Ah battery ensures over 70 miles of range. Complete with PWR Technology, you can control the speed at which power is delivered, get up to full speed in 6 seconds, or opt for an exhilarating 1-second burst.",
+    "basis": "'over 70 miles' with the 14Ah battery"
+   },
+   {
+    "kind": "review",
+    "value": "45",
+    "url": "https://electricbikereview.com/lectric-ebikes/lectric-one-review/",
+    "quote": "Estimated Range (from Lectric): up to 45 mi. (499Wh), 60 mi. (672Wh) ⟶ Power (Motor & Battery)",
+    "basis": "499Wh standard battery"
+   }
+  ],
+  "wt": [
+   {
+    "kind": "review",
+    "value": 63,
+    "url": "https://electricbikereview.com/lectric-ebikes/lectric-one-review/",
+    "quote": "The Pinion gearbox is incredibly smooth and shifts very quickly. At 63 lbs. with battery, it’s surprisingly light and the handling is nimble."
+   },
+   {
+    "kind": "review",
+    "value": 55,
+    "url": "https://electricbikereport.com/lectric-one-review/",
+    "quote": "Claimed weight: 55 lbs. ⟶ Tested Weight: 61.2 lbs",
+    "basis": "claimed weight; review tested 61.2 lbs and says 'The ONE weighs a manageable 61 lbs with the Long-Range battery option.'"
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://lectricebikes.com/blogs/blog/introducing-the-lectric-one",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": 330,
+    "url": "https://electricbikereport.com/lectric-one-review/",
+    "quote": "Total payload capacity: 330 lbs. ⟶ COMPONENTS & ACCESSORIES",
+    "basis": "review's spec list, not the maker"
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "750W (1350W peak)",
+    "url": "https://lectricebikes.com/blogs/blog/introducing-the-lectric-one",
+    "quote": "Powering this ride is a Stealth M24, 750W motor sporting 85Nm of torque and 1350W of peak power. A 14Ah battery ensures over 70 miles of range. Complete with PWR Technology, you can control the speed at which power is delivered, get up to full speed in 6 seconds, or opt for an exhilarating 1-second burst."
+   },
+   {
+    "kind": "review",
+    "value": "750W rear geared hub (1310W peak)",
+    "url": "https://electricbikereview.com/lectric-ebikes/lectric-one-review/",
+    "quote": "MOTOR NOMINAL OUTPUT: ⟶ 750 watts | MOTOR PEAK OUTPUT: ⟶ 1310 watts",
+    "basis": "motor type listed as 'Rear-Mounted Geared Hub'"
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://lectricebikes.com/blogs/blog/introducing-the-lectric-one",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": "5'2\"–6'4\"",
+    "url": "https://electricbikereport.com/lectric-one-review/",
+    "quote": "Tested Weight: 61.2 lbs ⟶ Rider height range: 5’2” – 6’4”"
+   }
+  ],
+  "fold": [
+   {
+    "kind": "review",
+    "value": "No",
+    "url": "https://electricbikereview.com/lectric-ebikes/lectric-one-review/",
+    "quote": "With a quick-release seatpost and folding handlebar mast, the ONE can be made surprisingly compact for storage or transportation ⟶ Areas for Improvement",
+    "basis": "only the handlebar mast folds"
+   },
+   {
+    "kind": "review",
+    "value": "No",
+    "url": "https://electricbikereport.com/lectric-one-review/",
+    "quote": "While technically not a folding e-bike, the ONE has many features that make it much more portable than most full-size commuters. Its collapsible stem allows the handlebars to fold down, reducing the bike’s height. Its front wheel can easily be removed thanks to a quick-release thru-axle. The bike also has quick-release pedals to reduce its width.",
+    "basis": "only the stem collapses"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "Given src is Lectric's launch blog post, not a product page. The maker product URL (https://lectricebikes.com/products/lectric-one-ebike, linked from the blog) now redirects to the general eBikes collection, and the maker's site search finds no Lectric ONE product — likely discontinued, but the maker doesn't say so explicitly, so status is left empty. Blog and EBR conflict: blog says from $2,199, 14Ah battery, over 70 miles, 1350W peak; EBR says $1,999 MSRP, 499Wh standard (672Wh optional), 45 mi, 1310W peak. No maker class, speed, weight, payload or rider height available. Recheck: one WebSearch found Electric Bike Report's Lectric ONE review: ships Class 2 at 20 mph (Class 3/28 mph via display), 48V 672 Wh, claimed 55 lb (tested 61.2 lb; 61 lb with Long-Range battery), 330 lb payload, 5'2\"-6'4\", not a folding bike. Its cls quote also backs class 2 as shipped. Electrek search found no Lectric ONE review."
+}

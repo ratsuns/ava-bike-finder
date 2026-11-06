@@ -1,0 +1,44 @@
+{"bike": "Hase|Kettwiesel ONE PLUS", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": "from 8.600,– ⟶ Euros including VAT, excluding delivery", "basis": "EUR only, and this 'from' price is for the base ONE, not the PLUS"},
+   {"kind": "retailer", "value": 11820, "url": "https://newwheel.net/products/hase-kettwiesel-one-electric-trike?variant=42217374056526", "quote": "Sale price ⟶ $11,820.00", "basis": "dealer price for its 'Kettwiesel One Plus' option, which it describes with a Shimano EP8 85Nm drive (older PLUS spec; maker's current PLUS is Bosch CX)"},
+   {"kind": "retailer", "value": 13420, "url": "https://www.rad-innovations.com/hase-bikes-kettwiesel-one.html", "quote": "Kettwiesel ONE PLUS | $13,420* | in stock", "basis": "US Hase dealer base price; '*Battery & charger sold separately'; build: Bosch Performance Line CX 100 Nm, 545 Wh, Enviolo Automatiq"},
+   {"kind": "retailer", "value": 14988, "url": "https://hostelshoppe.com/products/hase-kettwiesel-one-plus-enviolo-bosch-performance-cx-pale-green-recumbent-trike", "quote": "Regular price ⟶ $14,988.00 USD", "basis": "Hostel Shoppe (US dealer) 'Kettwiesel One Plus Enviolo Bosch Performance CX'; sold out"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://newwheel.net/products/hase-kettwiesel-one-electric-trike?variant=42217374056526", "quote": ""}
+  ],
+  "spd": [
+   {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://newwheel.net/products/hase-kettwiesel-one-electric-trike?variant=42217374056526", "quote": "SPEED ⟶ Low"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 100, "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": "– BOSCH Performance Line CX, 100 Nm, 545 / 800 Wh, Enviolo Automatiq ⟶ Drive system"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 545, "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": "– BOSCH Performance Line CX, 100 Nm, 545 / 800 Wh, Enviolo Automatiq ⟶ Drive system", "basis": "545 Wh standard, 800 Wh option"}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://newwheel.net/products/hase-kettwiesel-one-electric-trike?variant=42217374056526", "quote": "BATTERY RANGE ⟶ Low"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 77, "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": "Weight ⟶ from 35 kg (77 lb)", "basis": "\"from\" weight for the whole ONE line; PLUS weight not given separately"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 309, "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": "140 kg (309 lb) ⟶ max. load, with adjustable suspension"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Performance Line CX (up to 750 W)", "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": "The newly available Bosch Performance Line CX motor with 100 Nm of torque and up to 750 W is extremely powerful, and the suspension delivers 70 mm of travel and is also highly responsive."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "3'7\"-6'7\"", "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": "Height of rider ⟶ 1.10-2.00 m (3’7”-6’7”)"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "Yes", "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": "It can be parked upright to save space or folded up for transport in a vehicle. ⟶ Re-imagined - down to the finest details"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Given src (newwheel.net) is a dealer, not the maker; maker page is https://www.hasebikes.com/en/kettwiesel-one (shared ONE / ONE PLUS page; hasebikes.com/en/kettwiesel redirects there). Maker shows EUR 'from' price for the ONE only, no PLUS price, no US class/speed/range. newwheel's 'One Plus' option is described with a Shimano EP8 drive, an older PLUS spec than the maker's current Bosch Performance Line CX version, so only its price was recorded (flagged). 750 W is an 'up to' (peak) figure. Weight is the line's 'from' weight. No independent review of the Bosch-equipped PLUS found. | recheck: current Bosch CX ONE PLUS: RAD Innovations base $13,420 (no battery/charger), Hostel Shoppe regular $14,988; neither matches 11820 (New Wheel, older EP8 spec). looked for a US class / mph on hasebikes.com (incl. hidden text), RAD Innovations, Hostel Shoppe, Laid Back Cycles, Utah Trikes (404) and 1 WebSearch: no page states a class or a US top speed."}

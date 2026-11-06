@@ -1,0 +1,44 @@
+{"bike": "MOD|Groove Step-Thru 3", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1999, "url": "https://mod-bikes.com/products/mod-groove-step-thru-electric-beach-cruiser", "quote": "$1,799 | $1,799 | Regular price | $1,999 | $1,999 | Sale price", "basis": "regular price $1,999; on sale at $1,799"},
+   {"kind": "review", "value": null, "url": "https://9to5toys.com/2025/03/10/mod-spring-sale-groove-step-thru-3-1849/", "quote": "MOD Spring Sale introduces new Groove Step-Thru 3 beach cruiser e-bike at $1,849 (Reg. $2,499), more", "basis": "March 2025 launch regular price $2,499; MOD now lists $1,999 regular"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://mod-bikes.com/products/mod-groove-step-thru-electric-beach-cruiser", "quote": "Class | Class 2 (adjustable to Class 1 or 3)", "basis": "ships as Class 2"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://mod-bikes.com/products/mod-groove-step-thru-electric-beach-cruiser", "quote": "Speed | Up to 20 mph (Off-road mode: up to 28 mph)", "basis": "adjustable to 28 mph (off-road mode)"},
+   {"kind": "review", "value": 28, "url": "https://9to5toys.com/2025/03/10/mod-spring-sale-groove-step-thru-3-1849/", "quote": "Coming in three colorway options, MOD’s Groove Step-Thru 3 returns to the scene sporting the previous generations’ classic Americana beach cruiser frame design, which houses a 750W geared hub motor paired with a removable 720Wh Samsung battery (improved from the previous 614Wh model). The cadence sensor from the previous generation has been replaced by a superior torque sensor, which supports the five customizable levels of pedal assistance to provide up to a 28 MPH top speed and 50 miles of travel on a single three to six hour charge – plus, it comes dual-battery capable to extend travel times up to 100 miles. There is also a throttle for pure electric cruises, though this will reduce your travel range.", "basis": "max unlocked speed"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 69, "url": "https://mod-bikes.com/products/mod-groove-step-thru-electric-beach-cruiser", "quote": "Motor | MOD DRIVE 750W Geared Hub - 69 Nm of torque"},
+   {"kind": "review", "value": null, "url": "https://9to5toys.com/2025/03/10/mod-spring-sale-groove-step-thru-3-1849/", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 720, "url": "https://mod-bikes.com/products/mod-groove-step-thru-electric-beach-cruiser", "quote": "Battery | Samsung Li-ion 48V 15Ah (720Wh) - Tested by SGS compliant to UL 2271"},
+   {"kind": "review", "value": 720, "url": "https://9to5toys.com/2025/03/10/mod-spring-sale-groove-step-thru-3-1849/", "quote": "Coming in three colorway options, MOD’s Groove Step-Thru 3 returns to the scene sporting the previous generations’ classic Americana beach cruiser frame design, which houses a 750W geared hub motor paired with a removable 720Wh Samsung battery (improved from the previous 614Wh model). The cadence sensor from the previous generation has been replaced by a superior torque sensor, which supports the five customizable levels of pedal assistance to provide up to a 28 MPH top speed and 50 miles of travel on a single three to six hour charge – plus, it comes dual-battery capable to extend travel times up to 100 miles. There is also a throttle for pure electric cruises, though this will reduce your travel range."}
+  ],
+  "range": [
+   {"kind": "maker", "value": "50", "url": "https://mod-bikes.com/products/mod-groove-step-thru-electric-beach-cruiser", "quote": "Range | Up to 50/100 miles (Dual Battery)", "basis": "50 single battery, 100 with optional second battery"},
+   {"kind": "review", "value": "50", "url": "https://9to5toys.com/2025/03/10/mod-spring-sale-groove-step-thru-3-1849/", "quote": "Coming in three colorway options, MOD’s Groove Step-Thru 3 returns to the scene sporting the previous generations’ classic Americana beach cruiser frame design, which houses a 750W geared hub motor paired with a removable 720Wh Samsung battery (improved from the previous 614Wh model). The cadence sensor from the previous generation has been replaced by a superior torque sensor, which supports the five customizable levels of pedal assistance to provide up to a 28 MPH top speed and 50 miles of travel on a single three to six hour charge – plus, it comes dual-battery capable to extend travel times up to 100 miles. There is also a throttle for pure electric cruises, though this will reduce your travel range."}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 75, "url": "https://mod-bikes.com/products/mod-groove-step-thru-electric-beach-cruiser", "quote": "Bike Weight (w/o battery) | 67.5 lbs | Battery Weight | 7.5 lbs", "basis": "67.5 lb without battery + 7.5 lb battery"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 275, "url": "https://mod-bikes.com/products/mod-groove-step-thru-electric-beach-cruiser", "quote": "Payload Capacity | 275 lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear geared hub", "url": "https://mod-bikes.com/products/mod-groove-step-thru-electric-beach-cruiser", "quote": "Motor | MOD DRIVE 750W Geared Hub - 69 Nm of torque"},
+   {"kind": "review", "value": "750W geared hub", "url": "https://9to5toys.com/2025/03/10/mod-spring-sale-groove-step-thru-3-1849/", "quote": "Coming in three colorway options, MOD’s Groove Step-Thru 3 returns to the scene sporting the previous generations’ classic Americana beach cruiser frame design, which houses a 750W geared hub motor paired with a removable 720Wh Samsung battery (improved from the previous 614Wh model). The cadence sensor from the previous generation has been replaced by a superior torque sensor, which supports the five customizable levels of pedal assistance to provide up to a 28 MPH top speed and 50 miles of travel on a single three to six hour charge – plus, it comes dual-battery capable to extend travel times up to 100 miles. There is also a throttle for pure electric cruises, though this will reduce your travel range."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'7\"", "url": "https://mod-bikes.com/products/mod-groove-step-thru-electric-beach-cruiser", "quote": "6'7\" | Max Height | 5'1\" | Min Height"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://mod-bikes.com/products/mod-groove-step-thru-electric-beach-cruiser", "quote": "Frame | High-performance 6061 aluminum frame", "basis": "non-folding cruiser frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker spec tables are in collapsed accordions (expanded to read). Only independent source is a 9to5Toys deal post (March 2025) announcing the Groove Step-Thru 3; it covers motor, battery, range and speed but not weight/load/torque. Launch regular price was $2,499; MOD now lists $1,999 regular. A web search found no full review of the Groove 3."}

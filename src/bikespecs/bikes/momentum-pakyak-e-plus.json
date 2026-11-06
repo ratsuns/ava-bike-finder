@@ -1,0 +1,46 @@
+{"bike": "Momentum|Pakyak E+", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 5600, "url": "https://www.momentum-biking.com/us/pakyak-eplus-2022", "quote": "$5,600 * ⟶ 0% APRor as low as $195/mo with Affirm. See if you qualify"},
+   {"kind": "review", "value": 5500, "url": "https://electricbikereview.com/momentum/momentum-pakyak-e-plus/", "quote": "PRICE: ⟶ $5500"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://www.momentum-biking.com/us/pakyak-eplus-2022", "quote": "80Nm torque, 250W Mid Drive Motor, power by YAMAHA, SyncDrive Pro motor, Class 3, Max Assist Speed: 28MPH ⟶ Controller"},
+   {"kind": "review", "value": 3, "url": "https://electricbikereview.com/momentum/momentum-pakyak-e-plus/", "quote": "ELECTRIC BIKE CLASS: ⟶ Pedal Assist (Class 1), Speed Pedelec (Class 3)", "basis": "settable 20 or 28 mph; maker ships Class 3"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.momentum-biking.com/us/pakyak-eplus-2022", "quote": "80Nm torque, 250W Mid Drive Motor, power by YAMAHA, SyncDrive Pro motor, Class 3, Max Assist Speed: 28MPH ⟶ Controller"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/momentum/momentum-pakyak-e-plus/", "quote": "20, 28 mph ⟶ Bicycle Details", "basis": "20 or 28 mph setting"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 80, "url": "https://www.momentum-biking.com/us/pakyak-eplus-2022", "quote": "80Nm torque, 250W Mid Drive Motor, power by YAMAHA, SyncDrive Pro motor, Class 3, Max Assist Speed: 28MPH ⟶ Controller"},
+   {"kind": "review", "value": 80, "url": "https://electricbikereview.com/momentum/momentum-pakyak-e-plus/", "quote": "MOTOR TORQUE: ⟶ 80 Newton meters"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 500, "url": "https://www.momentum-biking.com/us/pakyak-eplus-2022", "quote": "EnergyPak 500Wh Lithium-Ion battery with 6 AMP charger, which can fully charge in 3.8 hours. ⟶ MORE VA-VA-VOOM"},
+   {"kind": "review", "value": 496, "url": "https://electricbikereview.com/momentum/momentum-pakyak-e-plus/", "quote": "496 wh ⟶ BATTERY CHEMISTRY:"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "35–60", "url": "https://www.momentum-biking.com/us/pakyak-eplus-2022", "quote": "Primary battery: 35-60 mi (55-97 km); with optional auxiliary battery: 70-120 mi (110-194 km). Depending on riding mode and terrain. ⟶ Charger", "basis": "primary battery; 70-120 mi with optional second battery"},
+   {"kind": "review", "value": "35–60", "url": "https://electricbikereview.com/momentum/momentum-pakyak-e-plus/", "quote": "ESTIMATED MIN RANGE: | 35 miles (56 km) | ESTIMATED MAX RANGE: | 60 miles (97 km)"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 79, "url": "https://www.momentum-biking.com/us/pakyak-eplus-2022", "quote": "Weight ⟶ 79lbs(36kg), including the main battery inside.(w/o kickstand and front basket)", "basis": "with battery, without kickstand and front basket"},
+   {"kind": "review", "value": 84, "url": "https://electricbikereview.com/momentum/momentum-pakyak-e-plus/", "quote": "TOTAL WEIGHT: ⟶ 84 lbs (38.1 kg)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 361, "url": "https://www.momentum-biking.com/us/pakyak-eplus-2022", "quote": "Total Load Weight Limit ⟶ 361 lbs (164kg)", "basis": "maker's 'Total Load Weight Limit'; page doesn't say whether the bike's weight is included"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "250W mid-drive (SyncDrive Pro, Yamaha)", "url": "https://www.momentum-biking.com/us/pakyak-eplus-2022", "quote": "80Nm torque, 250W Mid Drive Motor, power by YAMAHA, SyncDrive Pro motor, Class 3, Max Assist Speed: 28MPH ⟶ Controller"},
+   {"kind": "review", "value": "250W mid-drive (SyncDrive Pro)", "url": "https://electricbikereview.com/momentum/momentum-pakyak-e-plus/", "quote": "MOTOR BRAND: ⟶ Giant SyncDrive Pro, (Based on Yamaha PW-X)"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'3\"", "url": "https://www.momentum-biking.com/us/pakyak-eplus-2022", "quote": "Frame Size\tRider Height\tStandover Height ⟶ One Size\t5’1” to 6’3”\t22.8\"", "basis": "geometry table; marketing copy on same page says 5'2\"-6'2\""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.momentum-biking.com/us/pakyak-eplus-2022", "quote": "Pakyak E+ | Best Family E Bike | Electric Bike with Cargo Carriers | Momentum Bikes US", "basis": "page title; longtail cargo frame, no folding"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "src link redirected to https://www.momentum-biking.com/us/pakyak-eplus-2022 (2022 model, still listed at $5,600 with Add to Cart). Maker page contradicts itself on rider height: geometry table 5'1\"-6'3\", copy 'from 5’2”-6’2”'. Review is ElectricBikeReview's 2022 review (same generation). The EBR range quote joins two consecutive label/value pairs with ' | '. ElectricBikeReport has no PakYak review; only one independent source."}

@@ -1,0 +1,45 @@
+{"bike": "Himiway|A7 Commuter eBike (step-through)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1999, "url": "https://himiwaybike.com/products/himiway-a7-commuter-ebike", "quote": "Regular price ⟶ $1,999.00"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://himiwaybike.com/products/himiway-a7-commuter-ebike", "quote": "Class ⟶ 1/2/3", "basis": "Class 1/2/3 bike with a throttle and 20 mph default -> 2"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://himiwaybike.com/products/himiway-a7-commuter-ebike", "quote": "Max speed (default) ⟶ 20 MPH", "basis": "adjustable to 28 mph"},
+   {"kind": "review", "value": 20, "url": "https://upway.co/blogs/news/himiway-a7-commuter-ebike-review", "quote": "Top speed\t20 mph\t20 mph default; adjustable up to 28 mph\t20 mph default; adjustable up to 28 mph", "basis": "middle column = current A7; adjustable to 28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 70, "url": "https://himiwaybike.com/products/himiway-a7-commuter-ebike", "quote": "Motor ⟶ 48V, 750W, 70Nm"},
+   {"kind": "review", "value": 70, "url": "https://upway.co/blogs/news/himiway-a7-commuter-ebike-review", "quote": "Torque\t60Nm\t70Nm\t130Nm ⟶ Battery\t720Wh\t720Wh\t720Wh", "basis": "middle column = current A7"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 720, "url": "https://himiwaybike.com/products/himiway-a7-commuter-ebike", "quote": "Battery ⟶ 48V, 15Ah , IPX6", "basis": "48V x 15Ah"},
+   {"kind": "review", "value": 720, "url": "https://upway.co/blogs/news/himiway-a7-commuter-ebike-review", "quote": "Battery\t720Wh\t720Wh\t720Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "70", "url": "https://himiwaybike.com/products/himiway-a7-commuter-ebike", "quote": "Pedal assist range ⟶ 70 Miles"},
+   {"kind": "review", "value": "70", "url": "https://upway.co/blogs/news/himiway-a7-commuter-ebike-review", "quote": "Claimed range\tUp to 50 miles\tUp to 70 miles PAS / 40 miles throttle\t35–50 miles ⟶ Bike weight\t73 lb.\t84 lb.\t77 lb.", "basis": "middle column = current A7; Himiway's claim"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 84, "url": "https://himiwaybike.com/products/himiway-a7-commuter-ebike", "quote": "Bike weight ⟶ 84lbs"},
+   {"kind": "review", "value": 84, "url": "https://upway.co/blogs/news/himiway-a7-commuter-ebike-review", "quote": "Comfort comes with a weight penalty. At 84 pounds, the current A7 is a much better fit for ground-level storage than frequent carrying. ⟶ Check our e-Bikes"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 400, "url": "https://himiwaybike.com/products/himiway-a7-commuter-ebike", "quote": "Bike load capacity ⟶ 400lbs"},
+   {"kind": "review", "value": 400, "url": "https://upway.co/blogs/news/himiway-a7-commuter-ebike-review", "quote": "Payload\t330 lb.\t400 lb.\t300 lb. ⟶ Rear rack capacity\t55 lb.\t120 lb.\t55 lb.", "basis": "middle column = current A7"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W", "url": "https://himiwaybike.com/products/himiway-a7-commuter-ebike", "quote": "Motor ⟶ 48V, 750W, 70Nm"},
+   {"kind": "review", "value": "750W rear hub", "url": "https://upway.co/blogs/news/himiway-a7-commuter-ebike-review", "quote": "Motor\t500W rear hub\t750W rear hub\t500W Ananda mid-drive ⟶ Torque\t60Nm\t70Nm\t130Nm", "basis": "middle column = current A7"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'3\"", "url": "https://himiwaybike.com/products/himiway-a7-commuter-ebike", "quote": "Size: Regular / 5'1\"~6'3\" ⟶ Size guide", "basis": "Regular size; Large is 5'3\"~6'1\""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://himiwaybike.com/products/himiway-a7-commuter-ebike", "quote": "Frame | Aluminum Alloy"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker regular price $1,999 (Shopify compare-at equals price, not on sale). Upway's review has a 3-column table (earlier A7 / current A7 / A7 Pro); values taken from the current-A7 column. Earlier A7s had a 500W/60Nm motor, 73 lb, 330 lb payload. Maker 'Hub Motor' label appears on page; '750W hub' wording from that and the spec line. Height range listed per size: Regular 5'1\"~6'3\", Large 5'3\"~6'1\" (as written by Himiway). No EBR/Electric Bike Report/Electrek review of the non-Pro A7 found; one WebSearch used."}

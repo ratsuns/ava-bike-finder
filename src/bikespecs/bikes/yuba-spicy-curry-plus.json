@@ -1,0 +1,183 @@
+{
+ "bike": "Yuba|Spicy Curry+",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": 6499.99,
+    "url": "https://yubabikes.com/product/spicy-curry-plus/",
+    "quote": "Original price was: $6,499.99.",
+    "basis": "crossed-out regular price; on sale for $5,199.99"
+   },
+   {
+    "kind": "retailer",
+    "value": 6499.99,
+    "url": "https://mikesbikes.com/products/yuba-spicy-curry",
+    "quote": "Regular price ⟶ $6,499.99"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://yubabikes.com/product/spicy-curry-plus/",
+    "quote": "",
+    "basis": "class not stated on product page"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://mikesbikes.com/products/yuba-spicy-curry",
+    "quote": "Max Assisted Speed ⟶ N/A"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://upway.co/blogs/news/yuba-spicy-curry-ebike-review",
+    "quote": "No. Current Spicy Curry, Spicy Curry+, and Spicy Curry POW models use Bosch Cargo Line mid-drive systems with pedal assist, not a throttle. ⟶ How long is the Yuba Spicy Curry?",
+    "basis": "pedal-assist only, no throttle; class/speed not stated"
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://yubabikes.com/product/spicy-curry-plus/",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://mikesbikes.com/products/yuba-spicy-curry",
+    "quote": "Max Assisted Speed ⟶ N/A"
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": 85,
+    "url": "https://yubabikes.com/product/spicy-curry-plus/",
+    "quote": "Motor | Bosch Cargo Line (85Nm) - 625Wh integrated Battery"
+   },
+   {
+    "kind": "retailer",
+    "value": 85,
+    "url": "https://mikesbikes.com/products/yuba-spicy-curry",
+    "quote": "Motor\tBOSCH Cargo Line 250W, 85N.m, 36V ⟶ Battery\tPowerTube 625Wh integrated / PowerMore 250Wh compatible"
+   },
+   {
+    "kind": "review",
+    "value": 85,
+    "url": "https://upway.co/blogs/news/yuba-spicy-curry-ebike-review",
+    "quote": "Torque\t85 Nm\t85 Nm\t85 Nm ⟶ Battery\t500 Wh\t625 Wh\t625 Wh"
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": 625,
+    "url": "https://yubabikes.com/product/spicy-curry-plus/",
+    "quote": "Motor | Bosch Cargo Line (85Nm) - 625Wh integrated Battery"
+   },
+   {
+    "kind": "retailer",
+    "value": 625,
+    "url": "https://mikesbikes.com/products/yuba-spicy-curry",
+    "quote": "Battery\tPowerTube 625Wh integrated / PowerMore 250Wh compatible ⟶ Display/Controller"
+   },
+   {
+    "kind": "review",
+    "value": 625,
+    "url": "https://upway.co/blogs/news/yuba-spicy-curry-ebike-review",
+    "quote": "The Yuba Spicy Curry+ retains the same basic platform but bumps battery capacity to 625 Wh."
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://yubabikes.com/product/spicy-curry-plus/",
+    "quote": "",
+    "basis": "no range on product page"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://mikesbikes.com/products/yuba-spicy-curry",
+    "quote": ""
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": 70,
+    "url": "https://yubabikes.com/product/spicy-curry-plus/",
+    "quote": "Bike Weight | 70 lbs",
+    "basis": "battery inclusion not stated"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://mikesbikes.com/products/yuba-spicy-curry",
+    "quote": ""
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": 440,
+    "url": "https://yubabikes.com/product/spicy-curry-plus/",
+    "quote": "Maximum load | 440 lbs",
+    "basis": "total (Upway says the Spicy Curry 440 lb figure includes bike, rider, passengers and cargo)"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://mikesbikes.com/products/yuba-spicy-curry",
+    "quote": ""
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "Bosch Cargo Line",
+    "url": "https://yubabikes.com/product/spicy-curry-plus/",
+    "quote": "Motor | Bosch Cargo Line (85Nm) - 625Wh integrated Battery"
+   },
+   {
+    "kind": "retailer",
+    "value": "250W Bosch Cargo Line mid-drive",
+    "url": "https://mikesbikes.com/products/yuba-spicy-curry",
+    "quote": "Motor\tBOSCH Cargo Line 250W, 85N.m, 36V ⟶ Battery\tPowerTube 625Wh integrated / PowerMore 250Wh compatible"
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": "5'1\"-6'4\"",
+    "url": "https://yubabikes.com/product/spicy-curry-plus/",
+    "quote": "Rider Height | 5 ft. 1 in - 6 ft. 4 in"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://mikesbikes.com/products/yuba-spicy-curry",
+    "quote": ""
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://yubabikes.com/product/spicy-curry-plus/",
+    "quote": "Frame | Aluminium Frame with easy Step-Over",
+    "basis": "non-folding longtail frame"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker page on sale ($5,199.99; regular $6,499.99), Mike's Bikes regular $6,499.99. No class, top speed or range published by maker or Mike's Bikes ('Max Assisted Speed N/A'); Upway says pedal assist only, no throttle. Maker quotes join label and value lines with ' | '. Used one WebSearch (found Mike's Bikes page). Recheck: yubabikes.com site search for 'class 1' only matched 'best-in-class' wording; maker page has no class/speed. Nothing new recorded. Recheck: One WebSearch: Around The Cycle dealer page (Spicy Curry Plus, Cargo Line 85Nm, 625Wh) gives no class/speed; BikeBike Calgary link is 404."
+}

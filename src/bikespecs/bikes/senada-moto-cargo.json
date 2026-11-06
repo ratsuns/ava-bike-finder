@@ -1,0 +1,104 @@
+{
+ "bike": "Senada|Moto Cargo",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "retailer",
+    "value": 1899,
+    "url": "https://ebikes2u.com/product/senada-moto-cargo-dual-seat-900w-peak-motor-hydraulic-brakes-ul-2849-certified-fremont/",
+    "quote": "$1,899.00 | Original price was: $1,899.00.",
+    "basis": "dealer's crossed-out regular price; on sale for $1,699"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://ebikes2u.com/product/senada-moto-cargo-dual-seat-900w-peak-motor-hydraulic-brakes-ul-2849-certified-fremont/",
+    "quote": "4. Speed: 23 mph",
+    "basis": "no class stated; 23 mph doesn't map cleanly to Class 1/2/3"
+   }
+  ],
+  "spd": [
+   {
+    "kind": "retailer",
+    "value": 23,
+    "url": "https://ebikes2u.com/product/senada-moto-cargo-dual-seat-900w-peak-motor-hydraulic-brakes-ul-2849-certified-fremont/",
+    "quote": "4. Speed: 23 mph"
+   }
+  ],
+  "tq": [
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://ebikes2u.com/product/senada-moto-cargo-dual-seat-900w-peak-motor-hydraulic-brakes-ul-2849-certified-fremont/",
+    "quote": ""
+   }
+  ],
+  "wh": [
+   {
+    "kind": "retailer",
+    "value": 1200,
+    "url": "https://ebikes2u.com/product/senada-moto-cargo-dual-seat-900w-peak-motor-hydraulic-brakes-ul-2849-certified-fremont/",
+    "quote": "2. Battery: 48V 25AH",
+    "basis": "48V x 25Ah"
+   }
+  ],
+  "range": [
+   {
+    "kind": "retailer",
+    "value": "19–31",
+    "url": "https://ebikes2u.com/product/senada-moto-cargo-dual-seat-900w-peak-motor-hydraulic-brakes-ul-2849-certified-fremont/",
+    "quote": "6. Estimated Range: 30-50KM",
+    "basis": "30–50 km converted to miles; assist mode not stated"
+   }
+  ],
+  "wt": [
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://ebikes2u.com/product/senada-moto-cargo-dual-seat-900w-peak-motor-hydraulic-brakes-ul-2849-certified-fremont/",
+    "quote": ""
+   }
+  ],
+  "load": [
+   {
+    "kind": "retailer",
+    "value": 265,
+    "url": "https://ebikes2u.com/product/senada-moto-cargo-dual-seat-900w-peak-motor-hydraulic-brakes-ul-2849-certified-fremont/",
+    "quote": "3. Load: 120kg",
+    "basis": "120 kg converted to lb"
+   }
+  ],
+  "motor": [
+   {
+    "kind": "retailer",
+    "value": "750W (900W peak)",
+    "url": "https://ebikes2u.com/product/senada-moto-cargo-dual-seat-900w-peak-motor-hydraulic-brakes-ul-2849-certified-fremont/",
+    "quote": "1. 20inch X 4inch fat-tire wheel with 750W /900W Peak"
+   }
+  ],
+  "height": [
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://ebikes2u.com/product/senada-moto-cargo-dual-seat-900w-peak-motor-hydraulic-brakes-ul-2849-certified-fremont/",
+    "quote": ""
+   }
+  ],
+  "fold": [
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://ebikes2u.com/product/senada-moto-cargo-dual-seat-900w-peak-motor-hydraulic-brakes-ul-2849-certified-fremont/",
+    "quote": "",
+    "basis": "folding not mentioned either way"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "NO MAKER SOURCE: Senada's own site (senadabikes.com) shows 'This store is unavailable'. Only source is the given dealer page (ebikes2u, Fremont), which has a short 10-line spec list: no weight, torque, rider height or folding info. 48V 25Ah (1,200 Wh) with only 30-50 km range is an odd pairing. Didn't spend a WebSearch on this one (earlier Senada searches found no official or review pages for current models). recheck: senadabikes.com still unavailable; ebikes2u Senada search shows only the one Moto Cargo listing; no independent page found."
+}

@@ -1,0 +1,59 @@
+{"bike": "Velotric|Packer 1", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2199, "url": "https://www.velotricbike.com/products/velotric-packer-1-e-bike", "quote": "$2,199.00", "basis": "only price shown, no crossed-out price; page says the bike is no longer available"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/velotric-packer-review/", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://electrek.co/2023/08/14/velotric-packer-review-electric-cargo-bike/", "quote": ""}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.velotricbike.com/products/velotric-packer-1-e-bike", "quote": "Default Speed ⟶ 20 MPH, Class 2", "basis": "ships Class 2; unlockable to 25 mph (\"Max Speed (Unlock) ⟶ 25 MPH\")"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/velotric-packer-review/", "quote": "THROTTLE AND PEDAL ASSIST UP TO 20 MPH (CAN BE UNLOCKED TO A CLASS 3 WITH PEDAL ASSIST UP TO 28) ⟶ SPONSOR", "basis": "under heading \"CLASS 2 E-BIKE:\""},
+   {"kind": "review", "value": 2, "url": "https://electrek.co/2023/08/14/velotric-packer-review-electric-cargo-bike/", "quote": "Top speed: 20 mph (32 km/h) or 25 mph (40 km/h) when unlocked ⟶ Range: Up to 52 miles (84 km)", "basis": "20 mph default with throttle = Class 2"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.velotricbike.com/products/velotric-packer-1-e-bike", "quote": "Top Speed: 25MPH (unlocked) | 20 MPH (default) ⟶ Max Range: 52 Miles", "basis": "default; adjustable to 25 mph"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/velotric-packer-review/", "quote": "A 750W rear-hub motor with 1200W of peak output keeps the bike moving up to the Class 2 limit of 20 mph.", "basis": "default; review says unlockable to 28 mph (maker says 25 mph)"},
+   {"kind": "review", "value": 20, "url": "https://electrek.co/2023/08/14/velotric-packer-review-electric-cargo-bike/", "quote": "Top speed: 20 mph (32 km/h) or 25 mph (40 km/h) when unlocked ⟶ Range: Up to 52 miles (84 km)", "basis": "default; adjustable to 25 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 75, "url": "https://www.velotricbike.com/products/velotric-packer-1-e-bike", "quote": "Motor Hub ⟶ 750W, 75Nm"},
+   {"kind": "review", "value": 75, "url": "https://electricbikereport.com/velotric-packer-review/", "quote": "Motor: 750W, Peak 1200W, 75Nm ⟶ Controller:"},
+   {"kind": "review", "value": null, "url": "https://electrek.co/2023/08/14/velotric-packer-review-electric-cargo-bike/", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 691.2, "url": "https://www.velotricbike.com/products/velotric-packer-1-e-bike", "quote": "Battery ⟶ 48V, 14.4Ah, 691.2Wh"},
+   {"kind": "review", "value": 691.2, "url": "https://electricbikereport.com/velotric-packer-review/", "quote": "Battery: 48V, 14.4Ah, 691.2Wh w/ LG 21700 cells"},
+   {"kind": "review", "value": 692, "url": "https://electrek.co/2023/08/14/velotric-packer-review-electric-cargo-bike/", "quote": "Battery: 48V 15Ah (692 Wh) ⟶ Weight: 75 lb (34 kg)"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "52", "url": "https://www.velotricbike.com/products/velotric-packer-1-e-bike", "quote": "Pedal Assist Range ⟶ Up to 52 miles"},
+   {"kind": "review", "value": "52", "url": "https://electricbikereport.com/velotric-packer-review/", "quote": "Range: Up to 52 miles (claimed) ⟶ Throttle: Thumb-control, removable"},
+   {"kind": "review", "value": "52", "url": "https://electrek.co/2023/08/14/velotric-packer-review-electric-cargo-bike/", "quote": "Range: Up to 52 miles (84 km) ⟶ Battery: 48V 15Ah (692 Wh)"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 75, "url": "https://www.velotricbike.com/products/velotric-packer-1-e-bike", "quote": "Bike Weight ⟶ 75lbs (34.2kg)", "basis": "maker doesn't say whether battery is included"},
+   {"kind": "review", "value": 75, "url": "https://electricbikereport.com/velotric-packer-review/", "quote": "Claimed weight: 75 lbs (91.5 actual) ⟶ Rider height range: 5’-3” to 6’-6”", "basis": "claimed; measured 91.5 lbs (likely with accessories)"},
+   {"kind": "review", "value": 75, "url": "https://electrek.co/2023/08/14/velotric-packer-review-electric-cargo-bike/", "quote": "Weight: 75 lb (34 kg) ⟶ Payload capacity: 440 lb (200 kg)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 440, "url": "https://www.velotricbike.com/products/velotric-packer-1-e-bike", "quote": "Max Bike Load ⟶ 440lbs", "basis": "page summary calls it \"Total Payload Capacity: 440 LBS\"; rear rack 176 lbs"},
+   {"kind": "review", "value": 440, "url": "https://electricbikereport.com/velotric-packer-review/", "quote": "Total payload capacity: 440 lbs ⟶ COMPONENTS & ACCESSORIES"},
+   {"kind": "review", "value": 440, "url": "https://electrek.co/2023/08/14/velotric-packer-review-electric-cargo-bike/", "quote": "Payload capacity: 440 lb (200 kg) ⟶ Tires: 26 x 2.4″ (front) and 20 x 3.0″ (rear)"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub", "url": "https://www.velotricbike.com/products/velotric-packer-1-e-bike", "quote": "Motor Hub ⟶ 750W, 75Nm", "basis": "maker gives no peak; rear hub per reviews"},
+   {"kind": "review", "value": "750W rear hub (1,200W peak)", "url": "https://electricbikereport.com/velotric-packer-review/", "quote": "A 750W rear-hub motor with 1200W of peak output keeps the bike moving up to the Class 2 limit of 20 mph."},
+   {"kind": "review", "value": "750W rear geared hub (1,200W peak)", "url": "https://electrek.co/2023/08/14/velotric-packer-review-electric-cargo-bike/", "quote": "Motor: 750W (1,200W peak) rear-geared hub motor ⟶ Top speed: 20 mph (32 km/h) or 25 mph (40 km/h) when unlocked"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'3\"-6'6\"", "url": "https://www.velotricbike.com/products/velotric-packer-1-e-bike", "quote": "Rear Cargo Capacity: 176 LBS ⟶ Fits Riders: 5’3” - 6’6”"},
+   {"kind": "review", "value": "5'3\"-6'6\"", "url": "https://electricbikereport.com/velotric-packer-review/", "quote": "Claimed weight: 75 lbs (91.5 actual) ⟶ Rider height range: 5’-3” to 6’-6”"},
+   {"kind": "review", "value": null, "url": "https://electrek.co/2023/08/14/velotric-packer-review-electric-cargo-bike/", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.velotricbike.com/products/velotric-packer-1-e-bike", "quote": "Frame: 6061 Aluminum, integrated wiring, removable battery ⟶ Sensor: Speed", "basis": "rigid cargo frame; no folding mentioned"},
+   {"kind": "review", "value": "No", "url": "https://electricbikereport.com/velotric-packer-review/", "quote": "Easy for anyone to hop on and ride with a step-thru frame and a standover height of 16.25”. ⟶ CON’S", "basis": "non-folding step-thru cargo frame"}
+  ]
+ },
+ "status": {"sources": [{"kind": "maker", "value": "discontinued", "url": "https://www.velotricbike.com/products/velotric-packer-1-e-bike", "quote": "Velotric Paker 1 is no longer available. But don't worry, we've got something even better for you!"}]},
+ "notes": "Maker page says the bike is no longer available (typo 'Paker 1'); shows $2,199.00 with no crossed-out price. Neither review gives a price. Ships Class 2 at 20 mph; maker says unlockable to 25 mph, EBReport says unlockable to Class 3/28 mph. Maker gives no peak watts; both reviews say 1,200W peak. EBReport measured 91.5 lbs vs 75 lbs claimed. Electrek lists 48V 15Ah; maker says 14.4Ah/691.2Wh."}

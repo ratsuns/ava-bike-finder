@@ -1,0 +1,50 @@
+{"bike": "MOD|MOD Black 3", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2399, "url": "https://mod-bikes.com/products/mod-black-off-road-electric-bike", "quote": "$2,199 | $2,199 | Regular price | $2,399 | $2,399 | Sale price", "basis": "regular price $2,399; currently on sale at $2,199"},
+   {"kind": "maker", "value": 2399, "url": "https://mod-bikes.com/products/mod-black-3-class-1", "quote": "Regular price ⟶ $2,399", "basis": "Class 1 (HSA/FSA) version, same regular price"},
+   {"kind": "review", "value": null, "url": "https://www.bikeride.com/mod-black-3/", "quote": "$2,199.00 ⟶ MOD BIKES", "basis": "current sale price, not the regular price"},
+   {"kind": "review", "value": null, "url": "https://www.tomsguide.com/home/electric-bikes/mod-bikes-black-3-review", "quote": "The Mod Bikes Black 3 retails for $3,499 but is is sometimes on sale for around $2,699. While it’s on the higher end, the included features like leather ergonomic handles, adjustable suspension, and proprietary easy snap-on accessory system make it a worthy investment for riders who plan on pushing their bike beyond city streets.", "basis": "older launch-era list price; MOD now lists $2,399 regular"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://mod-bikes.com/products/mod-black-off-road-electric-bike", "quote": "Class | Class 2 (adjustable to Class 1 or 3)", "basis": "ships as Class 2; a separate Class 1 version (no throttle) exists at /products/mod-black-3-class-1"},
+   {"kind": "review", "value": null, "url": "https://www.bikeride.com/mod-black-3/", "quote": "CLASS ⟶ Class 2, Class 3", "basis": "lists both classes, doesn't say which it ships in"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://mod-bikes.com/products/mod-black-off-road-electric-bike", "quote": "Speed | Up to 20 mph (Off-road mode: up to 28 mph)", "basis": "adjustable to 28 mph (off-road mode)"},
+   {"kind": "review", "value": 28, "url": "https://www.bikeride.com/mod-black-3/", "quote": "TOP SPEED ⟶ 28 mph", "basis": "max unlocked speed"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 69, "url": "https://mod-bikes.com/products/mod-black-off-road-electric-bike", "quote": "Motor | MOD DRIVE 750W Geared Hub - 69 Nm of torque"},
+   {"kind": "review", "value": 69, "url": "https://www.bikeride.com/mod-black-3/", "quote": "TORQUE ⟶ 69 Nm"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 720, "url": "https://mod-bikes.com/products/mod-black-off-road-electric-bike", "quote": "Battery | Samsung Li-ion 48V 15Ah (720Wh) - Tested by SGS compliant to UL 2271"},
+   {"kind": "review", "value": 720, "url": "https://www.tomsguide.com/home/electric-bikes/mod-bikes-black-3-review", "quote": "The bike uses a Samsung Powerpack Li-ion 48V 15Ah (720Wh) removable battery which is integrated into the bottom half of its frame. Understandably, this is the thickest part of the bike, but I would have liked to see the battery fit in more seamlessly — it has a bit of a lip sticking out that interrupts the otherwise sleek design."}
+  ],
+  "range": [
+   {"kind": "maker", "value": "50", "url": "https://mod-bikes.com/products/mod-black-off-road-electric-bike", "quote": "Range | Up to 50/100 miles (Dual Battery)", "basis": "50 single battery, 100 with optional second battery"},
+   {"kind": "review", "value": "50", "url": "https://www.bikeride.com/mod-black-3/", "quote": "MAXIMUM RANGE ⟶ 50 Miles"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 74.5, "url": "https://mod-bikes.com/products/mod-black-off-road-electric-bike", "quote": "Bike Weight (w/o battery) | 65.5 lbs | Battery Weight | 9 lbs", "basis": "65.5 lb without battery + 9 lb battery"},
+   {"kind": "review", "value": 74.5, "url": "https://www.bikeride.com/mod-black-3/", "quote": "WEIGHT ⟶ 74.5 lb"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 275, "url": "https://mod-bikes.com/products/mod-black-off-road-electric-bike", "quote": "Payload Capacity | 275 lbs"},
+   {"kind": "review", "value": 265, "url": "https://www.bikeride.com/mod-black-3/", "quote": "The payload capacity of 265lb is well below average.", "basis": "BikeRide notes MOD lists conflicting capacities in its manual vs product page"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear geared hub", "url": "https://mod-bikes.com/products/mod-black-off-road-electric-bike", "quote": "Motor | MOD DRIVE 750W Geared Hub - 69 Nm of torque"},
+   {"kind": "review", "value": "750W", "url": "https://www.bikeride.com/mod-black-3/", "quote": "WATTS ⟶ 750 W"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'6\"-6'10\"", "url": "https://mod-bikes.com/products/mod-black-off-road-electric-bike", "quote": "6'10\" | Max Height | 5'6\" | Min Height"},
+   {"kind": "maker", "value": "5'3\"-6'10\"", "url": "https://mod-bikes.com/products/mod-black-3-class-1", "quote": "5'3\" Min Height - 6'10\" Max Height", "basis": "Class 1 version's page header gives a lower minimum"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://mod-bikes.com/products/mod-black-off-road-electric-bike", "quote": "Frame | High-performance 6061 aluminum frame", "basis": "full-suspension frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Two maker pages: the main MOD Black 3 (ships Class 2, adjustable to 1 or 3, 20 mph default / 28 mph off-road mode, optional throttle) and a separate 'MOD Black 3 (Class 1)' HSA/FSA version (no throttle, 20 mph, same 750W/69Nm/720Wh, same $2,399 regular). Spec tables are in collapsed accordions; I expanded them to read. Min rider height differs between the two pages (5'6\" vs 5'3\"). Payload: maker 275 lb vs BikeRide 265 lb (BikeRide says MOD's manual and product page conflict). EBR's MOD Black review is the 2019 Shengyi mid-drive model, not used. Tom's Guide's $3,499 is the old launch price."}

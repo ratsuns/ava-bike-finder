@@ -1,0 +1,164 @@
+{
+ "bike": "Dahon|E-Hemingway",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": 1599,
+    "url": "https://usa.dahon.com/collections/new-arrival/products/e-hemingway",
+    "quote": "$1,599.00 ⟶ 1 review"
+   },
+   {
+    "kind": "retailer",
+    "value": 1599,
+    "url": "https://cambriabike.com/products/dahon-e-hemingway-electric-obsidian-black",
+    "quote": "Regular price ⟶ $1,599.00"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://usa.dahon.com/collections/new-arrival/products/e-hemingway",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://cambriabike.com/products/dahon-e-hemingway-electric-obsidian-black",
+    "quote": ""
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://usa.dahon.com/collections/new-arrival/products/e-hemingway",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://cambriabike.com/products/dahon-e-hemingway-electric-obsidian-black",
+    "quote": ""
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": 42,
+    "url": "https://usa.dahon.com/collections/new-arrival/products/e-hemingway",
+    "quote": "Equipped with a high-power 250W high-speed hub motor, it delivers up to 42N·m of torque and excellent climbing performance."
+   },
+   {
+    "kind": "retailer",
+    "value": 42,
+    "url": "https://cambriabike.com/products/dahon-e-hemingway-electric-obsidian-black",
+    "quote": "Equipped with a high-power 250W high-speed hub motor, it delivers up to 42N·m of torque and excellent climbing performance."
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": 360,
+    "url": "https://usa.dahon.com/collections/new-arrival/products/e-hemingway",
+    "quote": "Concealed Seatpost Battery Design with intelligent BMS. ⟶ 360Wh Battery, 100km Range"
+   },
+   {
+    "kind": "retailer",
+    "value": 360,
+    "url": "https://cambriabike.com/products/dahon-e-hemingway-electric-obsidian-black",
+    "quote": "Concealed Seatpost Battery Design with intelligent BMS. ⟶ 360Wh Battery, 100km Range"
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": "62",
+    "url": "https://usa.dahon.com/collections/new-arrival/products/e-hemingway",
+    "quote": "Features a Safety Certified Battery EN15194 Standard. the 36V 10Ah battery offers up to 100km of pedal-assist range.",
+    "basis": "100 km converted to miles"
+   },
+   {
+    "kind": "retailer",
+    "value": "62",
+    "url": "https://cambriabike.com/products/dahon-e-hemingway-electric-obsidian-black",
+    "quote": "Rangeup to 100KM ⟶ Frame Aluminum",
+    "basis": "100 km converted to miles"
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": 41.9,
+    "url": "https://usa.dahon.com/collections/new-arrival/products/e-hemingway",
+    "quote": "Weight ⟶ 41.9 lbs"
+   },
+   {
+    "kind": "retailer",
+    "value": 41.9,
+    "url": "https://cambriabike.com/products/dahon-e-hemingway-electric-obsidian-black",
+    "quote": "Weight 19 kg ⟶ Rider Max Weight 105 kg (231 lbs)",
+    "basis": "19 kg converted to lb"
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": 231,
+    "url": "https://usa.dahon.com/collections/new-arrival/products/e-hemingway",
+    "quote": "Rider Max Weight ⟶ 105 kg (231 lbs)",
+    "basis": "rider max weight"
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "250W rear hub",
+    "url": "https://usa.dahon.com/collections/new-arrival/products/e-hemingway",
+    "quote": "Motor ⟶ 36V 250W Rear Hub-Motor"
+   },
+   {
+    "kind": "retailer",
+    "value": "250W rear hub",
+    "url": "https://cambriabike.com/products/dahon-e-hemingway-electric-obsidian-black",
+    "quote": "BatterySamsung 36V 9.5Ah ⟶ Motor36V 250W Rear Hub-Motor"
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": "4'9\"-6'3\"",
+    "url": "https://usa.dahon.com/collections/new-arrival/products/e-hemingway",
+    "quote": "Rider Height Range ⟶ 145-190cm",
+    "basis": "145-190 cm converted"
+   },
+   {
+    "kind": "retailer",
+    "value": "4'9\"-6'3\"",
+    "url": "https://cambriabike.com/products/dahon-e-hemingway-electric-obsidian-black",
+    "quote": "Rider Max Weight 105 kg (231 lbs) ⟶ Rider Height Range 145-190cm",
+    "basis": "145-190 cm converted"
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": "Yes",
+    "url": "https://usa.dahon.com/collections/new-arrival/products/e-hemingway",
+    "quote": "Folded Size ⟶ 34.25 ×15.75×28.35 inch"
+   },
+   {
+    "kind": "retailer",
+    "value": "Yes",
+    "url": "https://cambriabike.com/products/dahon-e-hemingway-electric-obsidian-black",
+    "quote": "Folded Size 87x40x72cm ⟶ Sizing & Geometry:"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker page contradicts itself on the battery: feature text says '360Wh' and '36V 10Ah', spec table says 'Samsung 36V 9.5Ah' (= 342Wh). Recorded the stated 360Wh. No top speed, class or throttle info on either page. Maker 'Up to 105KG' capacity line is rider max; Cambria's 'Up to 10KG' is the rack. Rider height 145-190cm converted to 4'9\"-6'3\". One WebSearch used. recheck (cls): maker page full text (incl. hidden spec JSON) gives no class, speed or throttle for the E-Hemingway; Dahon USA FAQ, comparison page and its 'Class 1, 2, or 3' blog name no model classes; EBReport only reviews the K-Feather; WebSearch found nothing for this model. Nothing recorded."
+}

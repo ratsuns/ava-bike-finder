@@ -1,0 +1,50 @@
+{"bike": "Giant|Roam E+", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2750, "url": "https://www.giant-bicycles.com/us/roam-eplus-gts-2021", "quote": "$2,750 * ⟶ CHOOSE YOUR SIZE", "basis": "Roam E+ GTS (2021); no crossed-out price shown"},
+   {"kind": "review", "value": 2750, "url": "https://99spokes.com/bikes/giant/2021/roam-eplus-gts", "quote": "Manufacturer Price ⟶ $2,750"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://www.giant-bicycles.com/us/roam-eplus-gts-2021", "quote": "Giant SyncDrive Core, 50Nm, 5-mode plus automatic, 360% tunable support, powered by YAMAHA. Pedal support to 20 mph.", "basis": "no class stated; pedal support to 20 mph and no throttle listed means Class 1"},
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/giant/2021/roam-eplus-gts", "quote": ""}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.giant-bicycles.com/us/roam-eplus-gts-2021", "quote": "Maximum Assisted Speed ⟶ 20 mph"},
+   {"kind": "review", "value": 20, "url": "https://99spokes.com/bikes/giant/2021/roam-eplus-gts", "quote": "Giant SyncDrive Core, 50Nm, 5-mode plus automatic, 360% tunable support, powered by YAMAHA. Pedal support to 20 mph. ⟶ Battery"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 50, "url": "https://www.giant-bicycles.com/us/roam-eplus-gts-2021", "quote": "Giant SyncDrive Core, 50Nm, 5-mode plus automatic, 360% tunable support, powered by YAMAHA. Pedal support to 20 mph."},
+   {"kind": "review", "value": 50, "url": "https://99spokes.com/bikes/giant/2021/roam-eplus-gts", "quote": "MotorYamaha 250W 50Nm mid-drive ⟶ Battery400Wh"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 400, "url": "https://www.giant-bicycles.com/us/roam-eplus-gts-2021", "quote": "Battery ⟶ EnergyPak 400Wh, 36V, 11.3Ah rechargeable lithium-ion"},
+   {"kind": "review", "value": 400, "url": "https://99spokes.com/bikes/giant/2021/roam-eplus-gts", "quote": "Battery400Wh ⟶ BrakesTektro Hydraulic Disc"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "34–93", "url": "https://www.giant-bicycles.com/us/roam-eplus-gts-2021", "quote": "Extreme: 34 miles | Good: 65 miles | Ideal: 93 miles", "basis": "Giant's extreme/good/ideal conditions, EnergyPak 400 / SyncDrive Core; 'Good' is 65"},
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/giant/2021/roam-eplus-gts", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://www.giant-bicycles.com/us/roam-eplus-gts-2021", "quote": "The most accurate way to determine any bike’s weight is to have your local dealer weigh it for you.", "basis": "no weight figure published"},
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/giant/2021/roam-eplus-gts", "quote": ""},
+   {"kind": "review", "value": 49.5, "url": "https://electricbikereview.com/giant/2022-roam-e-plus/", "quote": "TOTAL WEIGHT: ⟶ 49.5 lbs (22.45 kg)", "basis": "EBR measured weight, 2022 Roam E+ (same SyncDrive Core / EnergyPak 400 / $2750 generation as the 2021 GTS page); size not stated in this line"}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.giant-bicycles.com/us/roam-eplus-gts-2021", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/giant/2021/roam-eplus-gts", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Giant SyncDrive Core", "url": "https://www.giant-bicycles.com/us/roam-eplus-gts-2021", "quote": "Giant SyncDrive Core, 50Nm, 5-mode plus automatic, 360% tunable support, powered by YAMAHA. Pedal support to 20 mph.", "basis": "no rated watts on maker page"},
+   {"kind": "review", "value": "250W mid-drive (Yamaha)", "url": "https://99spokes.com/bikes/giant/2021/roam-eplus-gts", "quote": "MotorYamaha 250W 50Nm mid-drive ⟶ Battery400Wh"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'3\"-6'3\"", "url": "https://www.giant-bicycles.com/us/roam-eplus-gts-2021", "quote": "S | 5’3”  5’7” | M | 5’7”  5’11” | L | 5’11”  6’3”", "basis": "sizing guide, sizes S-L"},
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/giant/2021/roam-eplus-gts", "quote": "", "basis": "page shows a size table with MD/LG/XL rows not matching the maker's S/M/L; not used"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.giant-bicycles.com/us/roam-eplus-gts-2021", "quote": "Powerful SyncDrive Core motor, light and durable ALUXX aluminum frame, and wider tires give you the ability to ride any road, any route.", "basis": "rigid aluminum frame; no folding mentioned"},
+   {"kind": "review", "value": "No", "url": "https://99spokes.com/bikes/giant/2021/roam-eplus-gts", "quote": "A 700c aluminum frame hybrid e-bike with mid-range components and tektro hydraulic disc brakes."}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Used the given src, Giant US 'Roam E+ GTS (2021)' (diamond frame; a Roam E+ STA 2021 step-through also exists). It is a 2021 model but the US page still shows $2,750 and Add to Cart. Maker publishes no weight and no max load; range is a conditions bar (extreme 34 / good 65 / ideal 93 mi). 99 Spokes is a spec/price aggregator (kind 'review'); its observations text mentions 'Model Year: 2022'. Ridley's Cycle (Canada) page was empty. electricbikereview site search returned nothing. | recheck: found EBR's 2022 Roam E+ review via its site search; it states total weight 49.5 lb (also Class 1, 20 mph, 50 Nm, $2750)."}

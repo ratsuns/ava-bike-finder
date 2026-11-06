@@ -1,0 +1,182 @@
+{
+ "bike": "Electra|Cruiser Go!",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.trekbikes.com/us/en_US/pre-owned-bikes/pre-owned-hybrid-bikes/cruiser-go-step-thru--2024-medium/p/94768/?colorCode=white",
+    "quote": "$899.99 | $1,199.99 | Comp. Value | Original price",
+    "basis": "only a used (pre-owned) listing exists; $1,199.99 is labeled comp. value for a used 2024 bike, not the new regular price"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://electricbikereview.com/electra/2023-bali-cruiser-go-step-thru/",
+    "quote": "PRICE: ⟶ $1799",
+    "basis": "Bali Artist Series variant with lights/fenders; review says the plain model costs $200 less"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://electra.trekbikes.com/us/en_US/FAQ/cruisergo/",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": 1,
+    "url": "https://electricbikereview.com/electra/2023-bali-cruiser-go-step-thru/",
+    "quote": "ELECTRIC BIKE CLASS: ⟶ Pedal Assist (Class 1)"
+   },
+   {
+    "kind": "maker",
+    "value": 1,
+    "url": "https://electra.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/cruiser-go-step-thru/a/5261504/",
+    "quote": "Max assist speed ⟶ 20 mph",
+    "basis": "maker states no class; describes 'Pedal-assisted support' and lists no throttle, assist to 20 mph -> 1"
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://electra.trekbikes.com/us/en_US/FAQ/cruisergo/",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": 20,
+    "url": "https://electricbikereview.com/electra/2023-bali-cruiser-go-step-thru/",
+    "quote": "TOP SPEED: ⟶ 20 mph (32 kph)"
+   },
+   {
+    "kind": "maker",
+    "value": 20,
+    "url": "https://electra.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/cruiser-go-step-thru/a/5261504/",
+    "quote": "Max assist speed ⟶ 20 mph"
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": 40,
+    "url": "https://electra.trekbikes.com/us/en_US/FAQ/cruisergo/",
+    "quote": "The motor power is 250 W nominal rating with an output of 40 Nm of torque."
+   },
+   {
+    "kind": "review",
+    "value": 40,
+    "url": "https://electricbikereview.com/electra/2023-bali-cruiser-go-step-thru/",
+    "quote": "MOTOR TORQUE: ⟶ 40 Newton meters"
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": 250,
+    "url": "https://electra.trekbikes.com/us/en_US/FAQ/cruisergo/",
+    "quote": "The Hyena Gen 2 In-Tube 250 Wh battery weighs approximately 3.5 lb/1.6 kg."
+   },
+   {
+    "kind": "maker",
+    "value": 250,
+    "url": "https://www.trekbikes.com/us/en_US/pre-owned-bikes/pre-owned-hybrid-bikes/cruiser-go-step-thru--2024-medium/p/94768/?colorCode=white",
+    "quote": "Battery ⟶ Hyena 250Wh, includes 2 AMP charger"
+   },
+   {
+    "kind": "review",
+    "value": 250,
+    "url": "https://electricbikereview.com/electra/2023-bali-cruiser-go-step-thru/",
+    "quote": "BATTERY WATT HOURS: ⟶ 250 wh"
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": "40",
+    "url": "https://electra.trekbikes.com/us/en_US/FAQ/cruisergo/",
+    "quote": "The battery range is up to 40 mi/64 km."
+   },
+   {
+    "kind": "review",
+    "value": "20–40",
+    "url": "https://electricbikereview.com/electra/2023-bali-cruiser-go-step-thru/",
+    "quote": "ESTIMATED MIN RANGE: ⟶ 20 miles (32 km) | ESTIMATED MAX RANGE: ⟶ 40 miles (64 km)"
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": 44,
+    "url": "https://electra.trekbikes.com/us/en_US/FAQ/cruisergo/",
+    "quote": "Cruiser Go! weighs approximately 44 lb/20 kg."
+   },
+   {
+    "kind": "maker",
+    "value": 44.1,
+    "url": "https://www.trekbikes.com/us/en_US/pre-owned-bikes/pre-owned-hybrid-bikes/cruiser-go-step-thru--2024-medium/p/94768/?colorCode=white",
+    "quote": "Weight ⟶ 20.00 kg / 44.1 lbs",
+    "basis": "2024 Step-Thru, Medium"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://electricbikereview.com/electra/2023-bali-cruiser-go-step-thru/",
+    "quote": "TOTAL WEIGHT: ⟶ 46.1 lbs (20.91 kg)",
+    "basis": "Bali variant with fenders/lights; not the plain model"
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": 300,
+    "url": "https://electra.trekbikes.com/us/en_US/FAQ/cruisergo/",
+    "quote": "The total weight limit is 300 lb/136 kg as determined by the bicycle, rider and cargo combined.",
+    "basis": "total"
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "250W Hyena rear hub",
+    "url": "https://www.trekbikes.com/us/en_US/pre-owned-bikes/pre-owned-hybrid-bikes/cruiser-go-step-thru--2024-medium/p/94768/?colorCode=white",
+    "quote": "Motor ⟶ Hyena rear hub motor, 250 watts"
+   },
+   {
+    "kind": "maker",
+    "value": "250W",
+    "url": "https://electra.trekbikes.com/us/en_US/FAQ/cruisergo/",
+    "quote": "The motor power is 250 W nominal rating with an output of 40 Nm of torque."
+   },
+   {
+    "kind": "review",
+    "value": "250W rear hub",
+    "url": "https://electricbikereview.com/electra/2023-bali-cruiser-go-step-thru/",
+    "quote": "MOTOR NOMINAL OUTPUT: ⟶ 250 watts"
+   }
+  ],
+  "height": [],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://electra.trekbikes.com/us/en_US/FAQ/cruisergo/",
+    "quote": ""
+   },
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://electra.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/cruiser-go-step-thru/a/5261504/",
+    "quote": "Frame ⟶ 6061-T6 aluminum w/patented Flat Foot Technology®",
+    "basis": "frame spec names no folding mechanism (rigid cruiser frame)"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "The src link is a maker FAQ page (no price/class/speed/height). No new Cruiser Go! product page exists on trekbikes.com or electra.trekbikes.com (site search finds only a used 2024 Step-Thru listing and spare parts; Electra's e-bike menu lists only Townie Go! and Ponto Go!), so it looks discontinued, but no page says so — status left empty. No maker regular price found. Class and speed come only from the EBR review of the Bali Cruiser Go! Step-Thru (2022-2023 Artist Series variant, same 250W/40Nm/250Wh drive). Rider height not found. recheck (cls, spd, fold): found the maker's archived Cruiser Go! Step-Thru product page (via WebSearch; trekbikes.com link redirects to electra.trekbikes.com .../a/5261504/), marked 'ARCHIVED | 2022-2025' with 'See current models' and 'Sorry, we do not have a replacement available for this item' (no longer sold; status not changed). Specs: 'Hyena rear hub motor, 250 watts', 'Hyena 250Wh', 'Max assist speed 20 mph'. Mike's Bikes page 404; Landis Cyclery page shows no specs."
+}

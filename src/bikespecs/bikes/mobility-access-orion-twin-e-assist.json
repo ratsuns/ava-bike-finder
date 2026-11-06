@@ -1,0 +1,118 @@
+{
+ "bike": "Mobility Access|Orion Twin (E-assist)",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.mobilityaccess.com/price-information",
+    "quote": "Starting at $14,999",
+    "basis": "this 'starting at' price sits under the Orion images on the pricing page, but the Orion is sold with or without the motor, so it may not be the e-assist price; not recorded"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.mobilityaccess.com/orion",
+    "quote": "",
+    "basis": "no class, top speed or throttle mentioned; pedal-assist only ('The motor turns on when you start pedaling')"
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.mobilityaccess.com/orion",
+    "quote": ""
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.mobilityaccess.com/orion",
+    "quote": "250 Watt powerful high torque direct drive motor",
+    "basis": "says high torque but gives no Nm"
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": 396,
+    "url": "https://www.mobilityaccess.com/orion",
+    "quote": "Powerful 36V, 11AH battery and battery charger;",
+    "basis": "36 V x 11 Ah"
+   },
+   {
+    "kind": "maker",
+    "value": 396,
+    "url": "https://www.mobilityaccess.com/orion-models",
+    "quote": "Rechargeable Li-ION battery; 36 Volt, 11 Ah",
+    "basis": "36 V x 11 Ah"
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.mobilityaccess.com/orion",
+    "quote": ""
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.mobilityaccess.com/orion-models",
+    "quote": "",
+    "basis": "the 'Orion Technical Data' section is an image, not text"
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.mobilityaccess.com/orion-models",
+    "quote": "",
+    "basis": "the 'Orion Technical Data' section is an image, not text"
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "250W front hub (direct drive)",
+    "url": "https://www.mobilityaccess.com/orion",
+    "quote": "ORION is available with or without a pedal assist motor in the front wheel. The motor turns on when you start pedaling and has 3 power levels and 3 brake levels. | ​ | ORION comes standard with passenger pedal adjustment option controlled by driver: | 1. freewheel for passenger | 2. pedal and freewheel for passenger | 3. fully locked pedal mode for passenger | ​ | This feature enables you to select what is best for the passenger and adjust to his or her ability. | The motorized version comes with: | 250 Watt powerful high torque direct drive motor"
+   },
+   {
+    "kind": "maker",
+    "value": "250W direct drive",
+    "url": "https://www.mobilityaccess.com/orion-models",
+    "quote": "250 Watt high torque direct drive motor"
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.mobilityaccess.com/orion",
+    "quote": "",
+    "basis": "seats slide like a car seat; no rider-height range given"
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.mobilityaccess.com/orion",
+    "quote": ""
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "Orion is a side-by-side two-seat tandem tricycle (driver + passenger), sold by Mobility & Access with or without a front-hub pedal-assist motor; the e-assist model is called 'ORION ELECTRO'. Maker pages only; no independent source found (one web search returned nothing on this model). Weight/load are in an image ('Orion Technical Data') so can't be quoted. Pricing page shows 'Starting at $14,999' under the Orion image without saying whether that includes the motor. Fold left null: not stated. Recheck: read Mobility & Access 'orion' and 'orion-models' pages: ORION ELECTRO is '250 Watt high torque direct drive motor', 'Pedal assist through torque sensor', no throttle, but no top speed or class stated anywhere. Nothing new recorded for class."
+}

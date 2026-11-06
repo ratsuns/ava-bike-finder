@@ -1,0 +1,49 @@
+{"bike": "Specialized|Turbo Tero (HT)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2749.99, "url": "https://www.specialized.com/us/en/turbo-tero-30/p/188110", "quote": "2022 Turbo Tero 3.0 | $2,749.99", "basis": "no crossed-out price shown"},
+   {"kind": "review", "value": 2750, "url": "https://www.electricbikejournal.com/specialized-turbo-tero-3-0-review/", "quote": "Price: $2750 ⟶ Sizes: Small, Medium, Large"},
+   {"kind": "review", "value": 3250, "url": "https://electricbikereport.com/specialized-new-turbo-como-new-turbo-vado-new-turbo-tero/", "quote": "The new Turbo Tero also represents a lowering of the entry price into the Specialized lineup of eMTBs. Starting at $3,250, the Turbo Tero 3.0 costs more than $2,000 less than the previous cheapest Specialized eMTB, the base model Turbo Levo.", "basis": "launch price (2021 news article)"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-tero-30/p/188110", "quote": "The speed limit at which the motor will stop supporting may vary significantly by region and is based on local requirements. It may also affect range: a higher speed limit may result in less range."},
+   {"kind": "review", "value": 3, "url": "https://www.electricbikejournal.com/specialized-turbo-tero-3-0-review/", "quote": "The Turbo Tero 3.0 is a Class 3 electric bike with the Specialied 2.0E 250w mid-drive with 50Nm of torque. With up to 5 hours of range using the removable 530Wh battery."},
+   {"kind": "review", "value": 1, "url": "https://forums.electricbikereview.com/threads/tero-update-to-class-3.51038/", "quote": "Just got an email from Specialized offering to permanently change my Tero from Class 1 (US 20 mph restriction) to Class 3 (28 mph) at no charge.", "basis": "owner forum post (EBR forums), not an official spec; same thread: 'the mechanic, told me it is sold as a class 1 still, but you have the option to have them update to class 3 in the dealer settings'. Weak source."}
+  ],
+  "spd": [
+   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-tero-30/p/188110", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://www.electricbikejournal.com/specialized-turbo-tero-3-0-review/", "quote": "530Wh Battery ⟶ Class 3"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 50, "url": "https://www.specialized.com/us/en/turbo-tero-30/p/188110", "quote": "Specialized 2.0E, 50Nm torque, custom tuned motor, 250W nominal"},
+   {"kind": "review", "value": 50, "url": "https://www.electricbikejournal.com/specialized-turbo-tero-3-0-review/", "quote": "250w – 50Nm ⟶ 530Wh Battery"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 530, "url": "https://www.specialized.com/us/en/turbo-tero-30/p/188110", "quote": "Specialized U2-530, alloy casing, state of charge display, 530Wh"},
+   {"kind": "review", "value": 530, "url": "https://www.electricbikejournal.com/specialized-turbo-tero-3-0-review/", "quote": "530Wh Battery ⟶ Class 3"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "68", "url": "https://www.specialized.com/us/en/turbo-tero-30/p/188110", "quote": "Long-Range - With a ride-anywhere range, go up to 68 miles (110 km) or 5 hours on a single charge (eco mode). ⟶ Technical Specifications", "basis": "up to, eco mode"},
+   {"kind": "review", "value": null, "url": "https://www.electricbikejournal.com/specialized-turbo-tero-3-0-review/", "quote": "With an estimated range of 5 hours, we consistently find ourselves getting at least four hours of ride time. Our typical rides involve jumping through the different PAS modes, but mainly spending time in ECO and Trail. ⟶ Who is the Turbo Tero for?"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-tero-30/p/188110", "quote": "* Weights based on production painted frames as pictured. Actual weights will vary based on colorway, frame size, and component variation. Specifications are subject to change without notice. ⟶ Geometry"},
+   {"kind": "review", "value": 48, "url": "https://www.electricbikejournal.com/specialized-turbo-tero-3-0-review/", "quote": "Weight: 48lbs ⟶ Website: specialized.com"}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-tero-30/p/188110", "quote": "2022 Rider/Bike Weight Limits and Terrain Conditions ⟶ Charger User Manual (SBC-C04 / SBC-C05 / SBC-C06 / SBC-C07)"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "250W Specialized 2.0E mid-drive", "url": "https://www.specialized.com/us/en/turbo-tero-30/p/188110", "quote": "Specialized 2.0E, 50Nm torque, custom tuned motor, 250W nominal"},
+   {"kind": "review", "value": "250W Specialized 2.0E mid-drive", "url": "https://www.electricbikejournal.com/specialized-turbo-tero-3-0-review/", "quote": "The Turbo Tero 3.0 is a Class 3 electric bike with the Specialied 2.0E 250w mid-drive with 50Nm of torque. With up to 5 hours of range using the removable 530Wh battery."}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-tero-30/p/188110", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.specialized.com/us/en/turbo-tero-30/p/188110", "quote": "E5 Aluminum, bottom bracket motor mount, fully integrated &lockable downtube battery, internal cable routing, lock and front rack mount"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "src page is the '2022 Turbo Tero 3.0' (hardtail, 110mm SR Suntour XCM32 fork), still sold at $2,749.99 with no crossed-out price; EBReport's 2021 launch article says it started at $3,250 (Electric Bike Journal mentions both $2750 and $3250). Maker page gives no class or speed number (only a regional speed-limit disclaimer); Electric Bike Journal says Class 3 but quotes no mph, so spd left null. Maker publishes no weight on the page (EBJ: ~48 lb) and puts rider/load limits in a linked PDF ('2022 Rider/Bike Weight Limits'), not on the page. No rider height range on the page. EBR has reviews only of Tero X 6.0 and Tero 4.0 EQ, not the 3.0. | recheck: maker Tero 3.0 page states no class or speed (only buyer reviews); EBR has only Tero X 6.0 / Tero 4.0 EQ reviews; electrek no results; Ascent Outdoors dealer page no class; EBR forum owners say Teros ship Class 1 (20 mph) and a free dealer update to Class 3 (28 mph) is offered."
+}

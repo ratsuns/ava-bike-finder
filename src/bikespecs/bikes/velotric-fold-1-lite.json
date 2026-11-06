@@ -1,0 +1,49 @@
+{"bike": "Velotric|Fold 1 Lite", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1099, "url": "https://www.velotricbike.com/products/velotric-fold-1-lite", "quote": "Velotric Fold 1 Lite Ebike ⟶ $1,099.00", "basis": "only price shown, no crossed-out price; listed as sold out"},
+   {"kind": "review", "value": 1099, "url": "https://electrek.co/2024/08/06/velotric-launches-new-lower-cost-folding-e-bike-and-upgrades-its-most-popular-models/", "quote": "First off, let’s take a look at the specs on the newly released Velotric Fold Lite. It features the same frame and outward design as the existing Velotric Fold, but slashes the price of US $1,399 MSRP down to just $1,099.", "basis": "launch price $1,099 (the $1,399 is the regular Fold 1)"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.velotricbike.com/products/velotric-fold-1-lite", "quote": "Class ⟶ 1/2/3", "basis": "multi-class; out of box is \"Default Speed ⟶ 20 MPH\" with a throttle (\"Throttle Range ⟶ 40 Miles\"), i.e. Class 2"},
+   {"kind": "review", "value": null, "url": "https://electrek.co/2024/08/06/velotric-launches-new-lower-cost-folding-e-bike-and-upgrades-its-most-popular-models/", "quote": ""}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.velotricbike.com/products/velotric-fold-1-lite", "quote": "Default Speed ⟶ 20 MPH", "basis": "default; adjustable to 28 mph (\"Max Speed Adjustable Range ⟶ 12~28 MPH\")"},
+   {"kind": "review", "value": null, "url": "https://electrek.co/2024/08/06/velotric-launches-new-lower-cost-folding-e-bike-and-upgrades-its-most-popular-models/", "quote": ""}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 55, "url": "https://www.velotricbike.com/products/velotric-fold-1-lite", "quote": "Motor ⟶ 48V, 500W, 55Nm"},
+   {"kind": "review", "value": null, "url": "https://electrek.co/2024/08/06/velotric-launches-new-lower-cost-folding-e-bike-and-upgrades-its-most-popular-models/", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 486, "url": "https://www.velotricbike.com/products/velotric-fold-1-lite", "quote": "Battery ⟶ 48V, 486Wh, IPX7, Certificated by UL 2271"},
+   {"kind": "review", "value": 486, "url": "https://electrek.co/2024/08/06/velotric-launches-new-lower-cost-folding-e-bike-and-upgrades-its-most-popular-models/", "quote": "To get to that attractive price tag, the two biggest changes appear to be trimming the motor power from 750W to 500W, and reducing the UL-listed battery from 608 Wh of capacity down to 486 Wh, which amounts to around 20% less battery."}
+  ],
+  "range": [
+   {"kind": "maker", "value": "48", "url": "https://www.velotricbike.com/products/velotric-fold-1-lite", "quote": "Pedal Assist Range ⟶ 48 Miles"},
+   {"kind": "review", "value": null, "url": "https://electrek.co/2024/08/06/velotric-launches-new-lower-cost-folding-e-bike-and-upgrades-its-most-popular-models/", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 61, "url": "https://www.velotricbike.com/products/velotric-fold-1-lite", "quote": "Bike Weight ⟶ 61lbs", "basis": "maker doesn't say whether battery is included"},
+   {"kind": "review", "value": 61, "url": "https://electrek.co/2024/08/06/velotric-launches-new-lower-cost-folding-e-bike-and-upgrades-its-most-popular-models/", "quote": "The 61 lb (28 kg) folding e-bike includes a coil spring front suspension fork, hydraulic disc brakes, 20×3.0″ tires, and a Shimano 7-speed shifter."}
+  ],
+  "load": [
+   {"kind": "maker", "value": 440, "url": "https://www.velotricbike.com/products/velotric-fold-1-lite", "quote": "Max Bike Load Capacity ⟶ 440lbs"},
+   {"kind": "review", "value": null, "url": "https://electrek.co/2024/08/06/velotric-launches-new-lower-cost-folding-e-bike-and-upgrades-its-most-popular-models/", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W", "url": "https://www.velotricbike.com/products/velotric-fold-1-lite", "quote": "Motor ⟶ 48V, 500W, 55Nm", "basis": "maker gives no peak or hub position"},
+   {"kind": "review", "value": "500W", "url": "https://electrek.co/2024/08/06/velotric-launches-new-lower-cost-folding-e-bike-and-upgrades-its-most-popular-models/", "quote": "To get to that attractive price tag, the two biggest changes appear to be trimming the motor power from 750W to 500W, and reducing the UL-listed battery from 608 Wh of capacity down to 486 Wh, which amounts to around 20% less battery."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'9\"-6'5\"", "url": "https://www.velotricbike.com/products/velotric-fold-1-lite", "quote": "User Height Range ⟶ Regular: 4'9\" ~ 6'5\""},
+   {"kind": "review", "value": null, "url": "https://electrek.co/2024/08/06/velotric-launches-new-lower-cost-folding-e-bike-and-upgrades-its-most-popular-models/", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "Yes", "url": "https://www.velotricbike.com/products/velotric-fold-1-lite", "quote": "In 3 simple steps, the Fold 1 Lite fits easily inside the trunk of any car, SUV, closet or even boat! ⟶ Specification & Geometry"},
+   {"kind": "review", "value": "Yes", "url": "https://electrek.co/2024/08/06/velotric-launches-new-lower-cost-folding-e-bike-and-upgrades-its-most-popular-models/", "quote": "The 61 lb (28 kg) folding e-bike includes a coil spring front suspension fork, hydraulic disc brakes, 20×3.0″ tires, and a Shimano 7-speed shifter."}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page shows $1,099.00 (no crossed-out price) and 'Sold out' (not stated as discontinued). Not on electricbikereview or electricbikereport; only independent source found is Electrek's launch article (calls it 'Fold Lite'), which gives price, battery, weight and 500W motor only. Maker: default 20 mph with throttle, adjustable 12-28 mph, 'Class 1/2/3' -> Class 2."}

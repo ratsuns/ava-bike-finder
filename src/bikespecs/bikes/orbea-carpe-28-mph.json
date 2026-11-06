@@ -1,0 +1,181 @@
+{
+ "bike": "Orbea|Carpe 28 mph",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": 4630,
+    "url": "https://www.orbea.com/en-us/carpe-10-28mph",
+    "quote": "$4,630 ⟶ View summary",
+    "basis": "Carpe 10 28mph standard configuration; no crossed-out price shown"
+   },
+   {
+    "kind": "review",
+    "value": 4630,
+    "url": "https://99spokes.com/bikes/orbea/2026/carpe-10-28mph",
+    "quote": "Manufacturer Price ⟶ $4,630"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.orbea.com/en-us/carpe-10-28mph",
+    "quote": "",
+    "basis": "maker page states no class; model name says 28mph (Class 3)"
+   },
+   {
+    "kind": "retailer",
+    "value": 3,
+    "url": "https://aroundthecycle.com/products/new-2027-orbea-carpe-10-28mph-electric-hybrid-bike",
+    "quote": "How fast is the Orbea Carpe 10? It's a Class 3 e-bike with pedal assist up to 28 mph.",
+    "basis": "Around the Cycle (US dealer) page for the 2027 Carpe 10 28mph"
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": 28,
+    "url": "https://www.orbea.com/en-us/carpe-10-28mph",
+    "quote": "Carpe 10 28mph ⟶ Change model",
+    "basis": "from the model name; no separate speed spec on page"
+   },
+   {
+    "kind": "review",
+    "value": 28,
+    "url": "https://99spokes.com/bikes/orbea/2026/carpe-10-28mph",
+    "quote": "Carpe 10 28mph ⟶ Protect your investment",
+    "basis": "from the model name"
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": 85,
+    "url": "https://www.orbea.com/en-us/carpe-10-28mph",
+    "quote": "The powerful yet lightweight Shimano EP6 mid-drive motor delivers reliable performance and smooth, natural assistance. With a full 85 Nm of torque, it's easier to start on steeper roads or when fully loaded even when pedaling at lower cadences."
+   },
+   {
+    "kind": "review",
+    "value": 85,
+    "url": "https://ebikes-international.com/test-report-orbeas-new-carpe-10-urban-ebike-delivers-performance-lightweight-comfort/",
+    "quote": "The powerful Shimano EP6 motor has been customized for urban riding, with up to 85Nm of torque at low cadence for easy starts and quick inclines. A 420Wh battery is secured inside the downtube for protection from weather, bumps, and theft, and an additional 252Wh battery can be purchased to extend your range for longer commutes or all kinds of adventures."
+   },
+   {
+    "kind": "review",
+    "value": 85,
+    "url": "https://99spokes.com/bikes/orbea/2026/carpe-10-28mph",
+    "quote": "MotorShimano 600W 85Nm mid-drive ⟶ Battery420Wh"
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": 420,
+    "url": "https://www.orbea.com/en-us/carpe-10-28mph",
+    "quote": "Battery ⟶ Orbea 420 Wh Battery"
+   },
+   {
+    "kind": "review",
+    "value": 420,
+    "url": "https://ebikes-international.com/test-report-orbeas-new-carpe-10-urban-ebike-delivers-performance-lightweight-comfort/",
+    "quote": "The powerful Shimano EP6 motor has been customized for urban riding, with up to 85Nm of torque at low cadence for easy starts and quick inclines. A 420Wh battery is secured inside the downtube for protection from weather, bumps, and theft, and an additional 252Wh battery can be purchased to extend your range for longer commutes or all kinds of adventures."
+   },
+   {
+    "kind": "review",
+    "value": 420,
+    "url": "https://99spokes.com/bikes/orbea/2026/carpe-10-28mph",
+    "quote": "Battery ⟶ Orbea Internal 420Wh"
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.orbea.com/en-us/carpe-10-28mph",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://ebikes-international.com/test-report-orbeas-new-carpe-10-urban-ebike-delivers-performance-lightweight-comfort/",
+    "quote": ""
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.orbea.com/en-us/carpe-10-28mph",
+    "quote": "",
+    "basis": "described as lightweight but no weight given"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://ebikes-international.com/test-report-orbeas-new-carpe-10-urban-ebike-delivers-performance-lightweight-comfort/",
+    "quote": ""
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.orbea.com/en-us/carpe-10-28mph",
+    "quote": "",
+    "basis": "only the rear rack limit is given (Max. 20Kg), no bike max load"
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "Shimano EP600",
+    "url": "https://www.orbea.com/en-us/carpe-10-28mph",
+    "quote": "Motor ⟶ Shimano EP600"
+   },
+   {
+    "kind": "review",
+    "value": "Shimano EP600",
+    "url": "https://99spokes.com/bikes/orbea/2026/carpe-10-28mph",
+    "quote": "Motor ⟶ Shimano EP600",
+    "basis": "99 Spokes summary also says 'Shimano 600W 85Nm mid-drive' (600W is a peak figure, not rated)"
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": "5'0\"-6'9\"",
+    "url": "https://www.orbea.com/en-us/carpe-10-28mph",
+    "quote": "S | 153-172 cm | M | 164-183 cm | L | 176-195 cm | XL | 187-206 cm",
+    "basis": "size guide by height (View size guide), 153-206 cm converted to ft/in"
+   },
+   {
+    "kind": "review",
+    "value": "5'0\"-6'10\"",
+    "url": "https://99spokes.com/bikes/orbea/2026/carpe-10-28mph",
+    "quote": "5'0\" – 5'8\" | MD | 5'4\" – 6'1\" | LG | 5'9\" – 6'5\" | XL | 6'1\" – 6'10\""
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://www.orbea.com/en-us/carpe-10-28mph",
+    "quote": "Frame ⟶ Orbea Carpe 2026, Hydroformed Alloy 6061, OLD 135x9 / OLD 142x12, Headset Standard HS01, Orbea cockpit and equipment ecosystem, w/ Kickstand, Trailer compatible.",
+    "basis": "rigid frame; only the stem rotates 90 degrees and the pedals fold"
+   },
+   {
+    "kind": "review",
+    "value": "No",
+    "url": "https://ebikes-international.com/test-report-orbeas-new-carpe-10-urban-ebike-delivers-performance-lightweight-comfort/",
+    "quote": "An ingenious mechanism allows you to quickly rotate the handlebars 90 degrees, and the pedals fold flat too if parking space is at a premium.",
+    "basis": "handlebar rotates and pedals fold; frame does not fold"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "Uses the Carpe 10 28mph build (src link). Orbea's US configurator gives no class, speed spec, range, weight or max load. eBikes International's Carpe 10 test report (not speed-specific) confirms 85Nm and 420Wh; its 'SRP is $5,899' is likely a non-US price, so not used. 99 Spokes lists the same price and specs as Orbea. Space-saving stem and folding pedals, but the frame does not fold. Recheck: Around the Cycle (US dealer) 2027 Carpe 10 28mph page: 'Class 3 / 28mph pedal-assist e-bike', EP600 up to 85Nm."
+}

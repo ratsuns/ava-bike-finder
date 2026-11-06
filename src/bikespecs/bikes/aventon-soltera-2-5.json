@@ -1,0 +1,49 @@
+{"bike": "Aventon|Soltera 2.5", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1199, "url": "https://www.aventon.com/products/soltera-2-5-ebike", "quote": "Lightweight and Nimble for Conquering All Pavement | $1,199.00", "basis": "single price shown, no sale"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/aventon-soltera-2-5-review/", "quote": ""}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.aventon.com/products/soltera-2-5-ebike", "quote": "Ebike Class | Class 2 Ebike"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/aventon-soltera-2-5-review/", "quote": "I also appreciated the Soltera’s shifter. The Revoshift provides a satisfying click with each gear change, and the overall gear range feels well-suited to a bike designed for Class 2 speeds."}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.aventon.com/products/soltera-2-5-ebike", "quote": "Top Speed | 20MPH"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/aventon-soltera-2-5-review/", "quote": ""}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 45, "url": "https://www.aventon.com/products/soltera-2-5-ebike", "quote": "Motor Torque | 45Nm"},
+   {"kind": "review", "value": 45, "url": "https://electricbikereport.com/aventon-soltera-2-5-review/", "quote": "Motor: 36V, 350W brushless hub motor, 45Nm torque ⟶ Charger: 36V, 2 amp fast charger"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 345.6, "url": "https://www.aventon.com/products/soltera-2-5-ebike", "quote": "Battery | Removable Internal Lithium-ion 36V,9.6Ah(345.6Wh) with LG Cells"},
+   {"kind": "review", "value": 345.6, "url": "https://electricbikereport.com/aventon-soltera-2-5-review/", "quote": "Battery: Removable Internal Lithium-ion 36V,9.6Ah(345.6Wh) with LG Cells ⟶ Display: Aventon BC280, color display, USB-A port"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "46", "url": "https://www.aventon.com/products/soltera-2-5-ebike", "quote": "Range | Up to 46 Miles"},
+   {"kind": "review", "value": "46", "url": "https://electricbikereport.com/aventon-soltera-2-5-review/", "quote": "Claimed Range: 46 miles ⟶ Tested Range:"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 46, "url": "https://www.aventon.com/products/soltera-2-5-ebike", "quote": "Weight | 46 lbs"},
+   {"kind": "review", "value": 46, "url": "https://electricbikereport.com/aventon-soltera-2-5-review/", "quote": "WEIGHT & DIMENSIONS ⟶ Claimed weight: 46 lbs", "basis": "claimed; tested 45.6 lbs with battery"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 300, "url": "https://www.aventon.com/products/soltera-2-5-ebike", "quote": "Total Weight Limit | 300 lbs", "basis": "total"},
+   {"kind": "review", "value": 300, "url": "https://electricbikereport.com/aventon-soltera-2-5-review/", "quote": "Total payload capacity: 300 lbs ⟶ COMPONENTS & ACCESSORIES"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "350W hub (540W peak)", "url": "https://www.aventon.com/products/soltera-2-5-ebike", "quote": "Motor | 36V, 350W sustained, 540W peak brushless hub motor"},
+   {"kind": "review", "value": "350W hub", "url": "https://electricbikereport.com/aventon-soltera-2-5-review/", "quote": "Motor: 36V, 350W brushless hub motor, 45Nm torque ⟶ Charger: 36V, 2 amp fast charger"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'2\"", "url": "https://www.aventon.com/products/soltera-2-5-ebike", "quote": "Rider Height | S 5'1\"-5'5\", M 5'5\"-5'9\", L 5'10\"-6'2\"", "basis": "three sizes combined"},
+   {"kind": "review", "value": "5'1\"-6'2\"", "url": "https://electricbikereport.com/aventon-soltera-2-5-review/", "quote": "Rider height range: 5’1” -6’2” ⟶ Total payload capacity: 300 lbs"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.aventon.com/products/soltera-2-5-ebike", "quote": "Frame Style | Step-Over"},
+   {"kind": "review", "value": "No", "url": "https://electricbikereport.com/aventon-soltera-2-5-review/", "quote": "Frame: 6061 Double-Butted Aluminum Alloy with Internal Battery"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker spec values from the page's Specifications section and top banner; ' | ' joins consecutive page lines. Maker page shows only $1,199 (no crossed-out price). Maker spec text lists 'nutted hub drive motor' under both front and rear wheel (likely a copy error), so motor position not stated. Default variant is the Step-Over frame. Only one independent source (EBR, Feb 2025)."}

@@ -1,0 +1,189 @@
+{
+ "bike": "Macfox|X7",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": 1699,
+    "url": "https://macfoxbike.com/products/macfox-x7",
+    "quote": "$1,699.00 USD",
+    "basis": "regular (compare-at) price; Black variant currently shows sale $1,599.00 USD, other colors list $1,699; single battery"
+   },
+   {
+    "kind": "review",
+    "value": 1599,
+    "url": "https://electrek.co/2026/05/04/macfox-x7-review-a-street-legal-ul-listed-e-bike-that-feels-like-an-electric-moped/",
+    "quote": "The $1,599 Macfox X7 definitely still leans hard into that moped-style, with a full-on mini electric motorcycle vibe.",
+    "basis": "price at time of review (likely sale price)"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": 2,
+    "url": "https://macfoxbike.com/products/macfox-x7",
+    "quote": "This Class 2 e-bike features a 500W motor with a peak output of 750W, offering an ideal balance of power and road-legal performance. With a top speed of 20 mph, it delivers smooth, easy handling while prioritizing rider safety—making it a great choice for teens and everyday rides. ⟶ THE BATTERY MEETS RIGOROUS UL SAFETY STANDARDS."
+   },
+   {
+    "kind": "review",
+    "value": 2,
+    "url": "https://electricbikereport.com/macfox-x7-review/",
+    "quote": "E-BIKE CLASS: ⟶ CLASS 2"
+   },
+   {
+    "kind": "review",
+    "value": 2,
+    "url": "https://electrek.co/2026/05/04/macfox-x7-review-a-street-legal-ul-listed-e-bike-that-feels-like-an-electric-moped/",
+    "quote": "The X7 is limited to 20 mph (32 km/h) on throttle, making it a legitimate Class 2 e-bike, not one of those gray-area “wink wink” bikes that blur the line into e-moto territory."
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": 20,
+    "url": "https://macfoxbike.com/products/macfox-x7",
+    "quote": "Top Speed ⟶ 20mph"
+   },
+   {
+    "kind": "review",
+    "value": 20,
+    "url": "https://electrek.co/2026/05/04/macfox-x7-review-a-street-legal-ul-listed-e-bike-that-feels-like-an-electric-moped/",
+    "quote": "It’s capped at 20 mph (32 km/h), which keeps it firmly in Class 2 territory, but it gets there easily and holds speed well."
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://macfoxbike.com/products/macfox-x7",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://electricbikereport.com/macfox-x7-review/",
+    "quote": ""
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": 624,
+    "url": "https://macfoxbike.com/products/macfox-x7",
+    "quote": "Battery ⟶ 624Wh (48V 13Ah)"
+   },
+   {
+    "kind": "review",
+    "value": 624,
+    "url": "https://electricbikereport.com/macfox-x7-review/",
+    "quote": "Battery: 48V 13 Ah (624 Wh) ⟶ Charger: 54.6 V 2A"
+   },
+   {
+    "kind": "review",
+    "value": 624,
+    "url": "https://electrek.co/2026/05/04/macfox-x7-review-a-street-legal-ul-listed-e-bike-that-feels-like-an-electric-moped/",
+    "quote": "On paper, the Macfox X7 is fairly modest: a 500W motor with 750W peak output, paired with a 48V 13Ah battery, for a total capacity of 624 Wh."
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": "35",
+    "url": "https://macfoxbike.com/products/macfox-x7",
+    "quote": "Range(Single Battery) ⟶ Up to 35 miles",
+    "basis": "single battery; up to 70 with dual"
+   },
+   {
+    "kind": "review",
+    "value": "35",
+    "url": "https://electricbikereport.com/macfox-x7-review/",
+    "quote": "Claimed Range: 35 miles ⟶ Throttle: Thumb Throttle"
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": 87,
+    "url": "https://macfoxbike.com/products/macfox-x7",
+    "quote": "Vehicle Weight ⟶ 87 lbs"
+   },
+   {
+    "kind": "review",
+    "value": 88,
+    "url": "https://electricbikereport.com/macfox-x7-review/",
+    "quote": "Claimed weight: 87 lbs ⟶ Tested Weight: 88 lbs",
+    "basis": "tested weight"
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": 330,
+    "url": "https://macfoxbike.com/products/macfox-x7",
+    "quote": "Rider Weight Limit ⟶ 330 lbs",
+    "basis": "rider weight limit"
+   },
+   {
+    "kind": "review",
+    "value": 330,
+    "url": "https://electricbikereport.com/macfox-x7-review/",
+    "quote": "Rider height range: 5’1″ and up ⟶ Total payload capacity: 330 lbs"
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "500W (750W peak)",
+    "url": "https://macfoxbike.com/products/macfox-x7",
+    "quote": "This Class 2 e-bike features a 500W motor with a peak output of 750W, offering an ideal balance of power and road-legal performance. With a top speed of 20 mph, it delivers smooth, easy handling while prioritizing rider safety—making it a great choice for teens and everyday rides. ⟶ THE BATTERY MEETS RIGOROUS UL SAFETY STANDARDS."
+   },
+   {
+    "kind": "review",
+    "value": "500W hub",
+    "url": "https://electricbikereport.com/macfox-x7-review/",
+    "quote": "Motor: 500W Hub Motor ⟶ Headlight: Integrated LED"
+   },
+   {
+    "kind": "review",
+    "value": "500W (750W peak)",
+    "url": "https://electrek.co/2026/05/04/macfox-x7-review-a-street-legal-ul-listed-e-bike-that-feels-like-an-electric-moped/",
+    "quote": "On paper, the Macfox X7 is fairly modest: a 500W motor with 750W peak output, paired with a 48V 13Ah battery, for a total capacity of 624 Wh."
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": "5'1\" and up",
+    "url": "https://macfoxbike.com/products/macfox-x7",
+    "quote": "Recommended Rider Height (X7) ⟶ X7: 5'1'' and up",
+    "basis": "X7 (low frame); X7L high frame: 5'3'' and up"
+   },
+   {
+    "kind": "review",
+    "value": "5'1\" and up",
+    "url": "https://electricbikereport.com/macfox-x7-review/",
+    "quote": "Tested Weight: 88 lbs ⟶ Rider height range: 5’1″ and up"
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://macfoxbike.com/products/macfox-x7",
+    "quote": "Frame ⟶ High-Strength Carbon Steel",
+    "basis": "moped-style frame; only rear foot pegs fold"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://electricbikereport.com/macfox-x7-review/",
+    "quote": ""
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker Shopify data: Black variants on sale ($1,599 vs compare-at $1,699); other colors $1,699 with no discount -> regular $1,699. Electrek quoted $1,599 (sale). Page covers both X7 (low frame, 5'1\"+) and X7L (high frame, 5'3\"+), same price/specs. Both reviews (EBReport Jul 2026, Electrek May 2026) are the current 4.5\"/5.0\" tire version. Torque not published. EBR has no Macfox reviews."
+}

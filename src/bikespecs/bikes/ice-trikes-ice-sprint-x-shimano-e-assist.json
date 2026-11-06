@@ -1,0 +1,168 @@
+{
+ "bike": "Ice Trikes|ICE Sprint X (Shimano e-assist)",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": 10353,
+    "url": "https://icetrikes.co/buy/price-lists/ice-trikes-2026-full-price-list-usd/viewdocument/157",
+    "quote": "SPRINT X E-ASSIST  Example entry-  level specification  RIGID REAR FRAME, ELECTRIC SYSTEM WITH EP6 CARGO, ONE 630WH BATTERY  DERAILLEUR GEARING, 8 SPEED REAR WHEEL WITH SHIMANO 11-32 CASSETTE,  BAR END SHIFTERS, DISC BRAKES, ERGO-FLOW SEAT, SCHWALBE ROAD  CRUISER TYRE & OTR PACK  $10,353",
+    "basis": "maker's 2026 USD price list, example entry-level E-Assist build"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.rad-innovations.com/ice-sprint-x-recumbent-trike.html",
+    "quote": "Base Price: $5,250 (special order only) ⟶ FEATURES",
+    "basis": "non-assist base price only"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": 1,
+    "url": "https://icetrikes.co/products/sprint-x-recumbent-trike",
+    "quote": "Choose between Boost, Trail, Eco and intelligent Walk modes. Supports assist level up to 25 km/h or 20mph depending on regional regulations.",
+    "basis": "pedal assist modes only, no throttle mentioned, 20 mph in the US, so Class 1"
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": 20,
+    "url": "https://icetrikes.co/products/sprint-x-recumbent-trike",
+    "quote": "Supports assist level up to 25 km/h or 20mph depending on regional regulations."
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.rad-innovations.com/ice-sprint-x-recumbent-trike.html",
+    "quote": ""
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": 85,
+    "url": "https://icetrikes.co/products/sprint-x-recumbent-trike",
+    "quote": "Featuring a powerful 250w electric motor, custom-designed ICE specific forged motor housing, 85Nm torque, 630Wh battery."
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.rad-innovations.com/ice-sprint-x-recumbent-trike.html",
+    "quote": "E8000 - Powerful 250w electric motor, 70Nm torque, 504 Wh battery, Bluetooth connectivity, optional XT Di2 electronic gear shifting.",
+    "basis": "dealer lists older E6000/E8000 systems, not the current EP801/EP6"
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": 630,
+    "url": "https://icetrikes.co/products/sprint-x-recumbent-trike",
+    "quote": "Featuring a powerful 250w electric motor, custom-designed ICE specific forged motor housing, 85Nm torque, 630Wh battery."
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.rad-innovations.com/ice-sprint-x-recumbent-trike.html",
+    "quote": "",
+    "basis": "dealer lists older E6000/E8000 batteries only"
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://icetrikes.co/products/shimano-steps-e-assist",
+    "quote": "Range depends on riding conditions, temperature, tires, riding style, power assist mode, rider weight and many other factors. See Shimano's published figures for examples of estimated cycling range."
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.rad-innovations.com/ice-sprint-x-recumbent-trike.html",
+    "quote": ""
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": 36.9,
+    "url": "https://icetrikes.co/products/sprint-x-recumbent-trike",
+    "quote": "Overall weight (from) | 36.9lbs (16.7kg)",
+    "basis": "without battery (lightest non-assist build; e-assist page says motor 2.6kg (EP801) / 2.9kg (EP6) and 'The 630Wh battery is 3.2kg.')"
+   },
+   {
+    "kind": "retailer",
+    "value": 36.9,
+    "url": "https://www.rad-innovations.com/ice-sprint-x-recumbent-trike.html",
+    "quote": "Overall Weight ⟶ 36.9 lbs (16.7 kg)",
+    "basis": "without battery (non-assist trike)"
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": 229,
+    "url": "https://icetrikes.co/products/sprint-x-recumbent-trike",
+    "quote": "Rider weight limit (Air-Pro seat) | 229lbs (104kg)",
+    "basis": "rider weight limit with Air-Pro seat"
+   },
+   {
+    "kind": "retailer",
+    "value": 229,
+    "url": "https://www.rad-innovations.com/ice-sprint-x-recumbent-trike.html",
+    "quote": "Max. Load Capacity (Air-Pro Seat) ⟶ 229 lbs (104 kg)​"
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "250W Shimano EP801 / EP6",
+    "url": "https://icetrikes.co/products/sprint-x-recumbent-trike",
+    "quote": "The Sprint X is available with or without the EP801 or EP6 Shimano E-Bike motor systems. All the power you need at just the right time. Responsive, quiet, lightweight and controllable. Providing a seamless and easy ride from a standing start even on steep inclines. Featuring a powerful 250w electric motor, custom-designed ICE specific forged motor housing, 85Nm torque, 630Wh battery."
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.rad-innovations.com/ice-sprint-x-recumbent-trike.html",
+    "quote": "E6000 - Powerful 250w electric motor, 50Nm torque, 418 Wh battery, optional automatic rear hub gear shifting.",
+    "basis": "older Shimano STEPS generation, not current"
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://icetrikes.co/products/sprint-x-recumbent-trike",
+    "quote": "Rider size (X-seam) | 35\" - 50\" (889mm - 1270mm)",
+    "basis": "maker sizes by X-seam (leg length), not rider height"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.rad-innovations.com/ice-sprint-x-recumbent-trike.html",
+    "quote": "Rider Size (X-seam) ⟶ 35\" - 50\" (89-127 cm)"
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": "Yes",
+    "url": "https://icetrikes.co/products/sprint-x-recumbent-trike",
+    "quote": "The Sprint X extends the precision engineering and design of the standard Sprint X Tour range by utilising race-specification components. All trikes in the ICE Sprint X range are built on an optimised ICE frame featuring Compact Flat Twist Fold, No Brake Steer, and Rider Positioning System."
+   },
+   {
+    "kind": "retailer",
+    "value": "Yes",
+    "url": "https://www.rad-innovations.com/ice-sprint-x-recumbent-trike.html",
+    "quote": "​ICE Air-Pro Hard Shell Seat • Rear Suspension • Rigid Front • Compact Flat Twist Fold • Available with E-Assist ⟶ NEW 2018 SWEPT DESIGN CRUCIFORM AND SECURE INDEXED HANDLEBAR CLAMPS"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "Recumbent trike, built to order. Maker product page headline 'PRICES FROM: £4,250 | $6,000 | €4,600' is the non-assist trike; e-assist price from the maker's 2026 USD price list PDF (read in-browser via pdf.js; quote is extracted text with double spaces). Maker gives no range figure and sizes by X-seam, not height. Weight is the lightest non-assist build. Independent source RAD Innovations (dealer) is an older page (mentions 2018, Shimano E6000/E8000), so used only for frame specs that match the maker (weight, load, X-seam, fold). Laid Back Cycles' ice-sprint-x URL shows a Sprint X Tour configurator with no specs; Hostel Shoppe's Sprint X EP801 listing redirects to a collection page. Recheck: read maker rider-sizing page and product page again; fit is by X-seam (35\"-50\") only, no rider-height range published."
+}

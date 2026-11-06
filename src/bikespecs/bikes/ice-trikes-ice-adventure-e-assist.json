@@ -1,0 +1,49 @@
+{"bike": "Ice Trikes|ICE Adventure (E-Assist)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 7837, "url": "https://icetrikes.co/buy/price-lists/ice-trikes-2026-full-price-list-usd/viewdocument/157", "quote": "ADVENTURE 26 E-ASSIST  Example entry-  level specification  RIGID REAR FRAME, ELECTRIC SYSTEM WITH EP6 CARGO, ONE 630WH BATTERY  DERAILLEUR GEARING, 8 SPEED REAR WHEEL WITH SHIMANO 11-32 CASSETTE,  BAR END SHIFTERS, DISC BRAKES, ERGO-FLOW SEAT, SCHWALBE ROAD  CRUISER TYRE & OTR PACK  $7,837", "basis": "maker's 2026 USD price list, example entry-level 26\" E-Assist build; 20\" E-Assist entry example is $8,813"},
+   {"kind": "retailer", "value": null, "url": "https://laidbackcycles.com/products/ice-adventure-electric-assist-models", "quote": "ICE Trikes come in many different configurations (suspension, size, e-assist, color, etc.) - prices are estimates and availability varies. Call in to order.", "basis": "configurator estimate only (Electric – Shimano option '+$3,792' over a $4,400 base)"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://icetrikes.co/products/shimano-steps-e-assist", "quote": "Supports assist level up to 25 km/h or 20mph depending on regional regulations.", "basis": "pedal assist only (Boost, Trail, Eco and Walk modes; no throttle mentioned), 20 mph in the US, so Class 1"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://icetrikes.co/products/shimano-steps-e-assist", "quote": "Supports assist level up to 25 km/h or 20mph depending on regional regulations."},
+   {"kind": "retailer", "value": null, "url": "https://laidbackcycles.com/products/ice-adventure-electric-assist-models", "quote": ""}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://icetrikes.co/products/shimano-steps-e-assist", "quote": "Featuring a powerful 250w electric motor, custom-designed ICE specific forged motor housing, 85Nm torque, 630Wh battery."},
+   {"kind": "retailer", "value": 85, "url": "https://laidbackcycles.com/products/ice-adventure-electric-assist-models", "quote": "Available with powerful Shimano EP801 or EP6 motor systems, with 85Nm torque and a 630Wh battery. ⟶ COMPUTER AND CONTROLLER"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 630, "url": "https://icetrikes.co/products/shimano-steps-e-assist", "quote": "The systems comes as standard with the large capacity 36V/17.5Ah (630 Wh) Shimano lithium-ion battery."},
+   {"kind": "retailer", "value": 630, "url": "https://laidbackcycles.com/products/ice-adventure-electric-assist-models", "quote": "Available with powerful Shimano EP801 or EP6 motor systems, with 85Nm torque and a 630Wh battery. ⟶ COMPUTER AND CONTROLLER"}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://icetrikes.co/products/shimano-steps-e-assist", "quote": "Range depends on riding conditions, temperature, tires, riding style, power assist mode, rider weight and many other factors. See Shimano's published figures for examples of estimated cycling range."},
+   {"kind": "retailer", "value": null, "url": "https://laidbackcycles.com/products/ice-adventure-electric-assist-models", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 36.2, "url": "https://icetrikes.co/products/adventure", "quote": "Overall weight (from) ⟶ 36.2lbs (16.5kg)", "basis": "without battery (lightest non-assist build; e-assist page says motor 2.6kg (EP801) / 2.9kg (EP6) and 'The 630Wh battery is 3.2kg.')"},
+   {"kind": "retailer", "value": null, "url": "https://laidbackcycles.com/products/ice-adventure-electric-assist-models", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": 275, "url": "https://icetrikes.co/products/adventure", "quote": "Rider weight limit ⟶ 275lbs (125kg)", "basis": "rider weight limit"},
+   {"kind": "retailer", "value": null, "url": "https://laidbackcycles.com/products/ice-adventure-electric-assist-models", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "250W Shimano EP801 / EP6 Cargo", "url": "https://icetrikes.co/products/shimano-steps-e-assist", "quote": "The Shimano EP801 and EP6 Cargo E-Bike systems includes a powerful motor with a smooth output. All the power you need at just the right time. Responsive, quiet, lightweight and controllable. Providing a seamless and easy ride from a standing start even on steep inclines. Featuring a powerful 250w electric motor, custom-designed ICE specific forged motor housing, 85Nm torque, 630Wh battery."},
+   {"kind": "retailer", "value": "Shimano EP801 or EP6", "url": "https://laidbackcycles.com/products/ice-adventure-electric-assist-models", "quote": "Available with powerful Shimano EP801 or EP6 motor systems, with 85Nm torque and a 630Wh battery. ⟶ COMPUTER AND CONTROLLER"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://icetrikes.co/products/adventure", "quote": "Rider size (X-seam) ⟶ 37\"-48\" (940-1219mm)", "basis": "maker sizes by X-seam (leg length), not rider height"},
+   {"kind": "retailer", "value": null, "url": "https://laidbackcycles.com/products/ice-adventure-electric-assist-models", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://cardiffpedalpower.org/cycle-sales/sales-cycles/ice-adventure", "quote": "Rider Height ⟶ 94-122 cm (External Leg)", "basis": "Cardiff Pedal Power (UK charity dealer) labels this 'Rider Height' but it is the external leg length (X-seam): 94-122 cm = 37-48 in, the same as ICE's X-seam and the site's text. Left null because our height field is rider height and no page gives one."}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "Yes", "url": "https://icetrikes.co/products/adventure", "quote": "The ICE Compact Flat Twist fold is one of the many innovations that ICE has brought to the recumbent world. The fold is based around a lightweight heat-treated aluminium hinge on the main frame. All ICE trikes (except the VTX) can be folded for transporting in a car and for storing your trike."},
+   {"kind": "retailer", "value": "Yes", "url": "https://laidbackcycles.com/products/ice-adventure-electric-assist-models", "quote": "The Compact Flat Twist fold drops the Adventure down small enough for the back of a hatchback, no tools and under 30 seconds. ⟶ FREQUENTLY ASKED QUESTIONS"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Recumbent trike, built to order. Maker data spread across three icetrikes.co pages: the Adventure product page (dimensions/weights), the Shimano e-assist page (motor/battery/speed, applies to all ICE e-assist trikes), and the 2026 USD price list PDF (read in-browser via pdf.js; quotes are its extracted text, with its double spaces). Product page headline 'PRICES FROM £3,000 | $4,400 | €3,300' is the non-assist trike. Maker gives no range figure (defers to Shimano) and no rider height (X-seam 37\"-48\"). Weight 36.2 lb is the lightest non-assist build, not the e-assist trike. Laid Back Cycles URL redirects to its general ICE Adventure configurator page. Bike World Iowa's Adventure E-Assist page lists older EP8 64Nm / E6100 builds, so not used. | recheck: looked for a rider-height range: ICE product page and ICE Rider Sizing Guide (fit is by X-seam only, no height range per model), 1 WebSearch, Cardiff Pedal Power dealer page (X-seam 94-122 cm). No page gives a rider height; the site's 'X-seam ...' value is a leg measurement, which our rules checker can't match as a height."}

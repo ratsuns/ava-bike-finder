@@ -1,0 +1,191 @@
+{
+ "bike": "Mobility Access|Duet (E-assist)",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.hukabikes.com/collection/wheelchair-bike-duet/",
+    "quote": "€ 5545 ⟶ Excl. VAT",
+    "basis": "euro price excluding VAT, not USD; likely the base (non-electric) price"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.mobilityaccess.com/price-information",
+    "quote": "Starting at $7,795",
+    "basis": "US distributor's pricing page shows prices under product images with no text labels; this one sits under the Duet image, but it can't be told whether it's the Electro or the Plus; not recorded"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.hukabikes.com/collection/wheelchair-bike-duet/",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.mobilityaccess.com/duet",
+    "quote": "Pedal assist (motor turns on when pressure on pedals)",
+    "basis": "pedal assist only; no class or top speed stated"
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.hukabikes.com/collection/wheelchair-bike-duet/",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.mobilityaccess.com/duet",
+    "quote": "The motor settings HI-MED-LO have nothing to do with your actual \"speed\" but your top speed will be reached rather quickly.",
+    "basis": "no number given"
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.hukabikes.com/collection/wheelchair-bike-duet/",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.mobilityaccess.com/duet",
+    "quote": ""
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.hukabikes.com/collection/wheelchair-bike-duet/",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": 396,
+    "url": "https://www.mobilityaccess.com/duet",
+    "quote": "36 V, 11 Ah Li-Ion battery (life app. 600 charging cycles)",
+    "basis": "36 V x 11 Ah"
+   },
+   {
+    "kind": "maker",
+    "value": 750,
+    "url": "https://www.hukabikes.com/wp-content/uploads/2026/02/Price-list-2026-EN-Duet.pdf",
+    "quote": "469803 Electrical power assist Bafang, incl. 750Wh accu and 7-speed derailleur 3.150,00",
+    "basis": "Huka (maker) 2026 price list PDF, read in-browser via pdf.js text extraction; Mobility & Access (US) lists 36 V 11 Ah instead"
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.hukabikes.com/collection/wheelchair-bike-duet/",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.mobilityaccess.com/duet",
+    "quote": ""
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.hukabikes.com/collection/wheelchair-bike-duet/",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.mobilityaccess.com/duet-technical-data",
+    "quote": "",
+    "basis": "technical data is shown as images, not text"
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": 441,
+    "url": "https://www.hukabikes.com/collection/wheelchair-bike-duet/",
+    "quote": "Maximum load in kg ⟶ front: 100, rear: 100",
+    "basis": "front (wheelchair passenger) 100 kg + rear (rider) 100 kg = 200 kg; each position is limited to 100 kg (220 lb)"
+   },
+   {
+    "kind": "retailer",
+    "value": 275,
+    "url": "https://www.mobilityaccess.com/duet",
+    "quote": "The DUET accommodates kids and adults from ages 2 to 99+ and all sizes from 20 to 275 pounds!  DUET offers maximum maneuverability with minimum effort. The wheelchair's low center of gravity provides superior weight distribution and overall stability.",
+    "basis": "passenger weight range (20-275 lb), not a total payload"
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "Bafang rear hub (optional)",
+    "url": "https://www.hukabikes.com/collection/wheelchair-bike-duet/",
+    "quote": "option, Bafang rear wheel motor ⟶ Tyre size front in inch (ETRTO)",
+    "basis": "no watts given"
+   },
+   {
+    "kind": "retailer",
+    "value": "250W Heinzmann",
+    "url": "https://www.mobilityaccess.com/duet",
+    "quote": "250W Heinzmann Motor with Torque Sensor"
+   },
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.hukabikes.com/wp-content/uploads/2026/02/Price-list-2026-EN-Duet.pdf",
+    "quote": "469803 Electrical power assist Bafang, incl. 750Wh accu and 7-speed derailleur 3.150,00",
+    "basis": "names the motor brand Bafang only (no model or watts), so value left null. Huka 2026 price list; no watts given; differs from Mobility & Access's '250W Heinzmann'"
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.hukabikes.com/collection/wheelchair-bike-duet/",
+    "quote": "Inner leg length in mm | 780-930",
+    "basis": "rider inseam 780-930 mm, not a height range"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.mobilityaccess.com/duet",
+    "quote": "The DUET accommodates passenger height up to 6'8\"",
+    "basis": "passenger (wheelchair) height, not the rider's"
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://www.hukabikes.com/collection/wheelchair-bike-duet/",
+    "quote": "The wheelchair bicycle Duet is a handy combination of bicycle and wheelchair. One person rides the bike and the other sits in the wheelchair at the front. Arrived at your destination? Disconnect the chair and it will be a loose, manual wheelchair.",
+    "basis": "wheelchair detaches from the bike; frame doesn't fold"
+   },
+   {
+    "kind": "retailer",
+    "value": "No",
+    "url": "https://www.mobilityaccess.com/duet",
+    "quote": "For transportation in a i.e.:SUV it is necessary to disconnect the bike from the wheelchair. The onboard tools are used to loosen the handlebar and to lower it. The footrest pins are simply pulled out and the footrest is removed if more space is necessary.",
+    "basis": "you separate the two halves and lower the handlebar; no folding frame"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "The Duet is a wheelchair tandem (passenger in a wheelchair in front, rider behind) made by Huka (Netherlands) and sold in the US by Mobility & Access (as 'Duet Electro' for the e-assist version). The given src is a Huka user-manual PDF that the browser can't read as text, so I used Huka's product page (hukabikes.com) as maker and Mobility & Access as the US retailer/distributor. The two disagree on the motor: Huka says optional Bafang rear-wheel motor, Mobility & Access says 250W Heinzmann with torque sensor. No class, speed, torque, range or weight in text anywhere. Recheck: Huka's 2026 Duet price list PDF (pdf.js text) gives the e-assist option as 'Bafang, incl. 750Wh accu'; Huka's technical-info and leaflet PDFs have no text layer; Mobility & Access technical data is images only. No class/speed or weight found in text."
+}

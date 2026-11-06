@@ -1,0 +1,158 @@
+{
+ "bike": "Electra|Loft Go!",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "review",
+    "value": 1499,
+    "url": "https://99spokes.com/bikes/electra/2025/loft-go-7d-eq-step-thru",
+    "quote": "Manufacturer Price ⟶ $1,499",
+    "basis": "99 Spokes listing of the 2025 Loft Go! 7D EQ Step-Thru; maker no longer lists a price"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://skiisandbiikes.com/products/electra-loft-go-7d-eq-st-bike",
+    "quote": "Regular price ⟶ $2,599.99",
+    "basis": "Canadian dealer, CAD price, not USD"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": 1,
+    "url": "https://electra.trekbikes.com/ca/en_CA/FAQ/loftgo7deq/",
+    "quote": "The Loft Go! 7D EQ is a Class 1 e-bike with pedal-assist support up to 20 mph."
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": 20,
+    "url": "https://electra.trekbikes.com/ca/en_CA/FAQ/loftgo7deq/",
+    "quote": "The Loft Go! 7D EQ is a Class 1 e-bike with pedal-assist support up to 20 mph."
+   },
+   {
+    "kind": "retailer",
+    "value": 20,
+    "url": "https://skiisandbiikes.com/products/electra-loft-go-7d-eq-st-bike",
+    "quote": "Reach a top-assisted speed of 20 mph with support from the rear hub motor. ⟶ A fully-integrated 250Wh battery provides a range up to 40 miles."
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": 40,
+    "url": "https://electra.trekbikes.com/ca/en_CA/FAQ/loftgo7deq/",
+    "quote": "The motor power is 250 W nominal rating with an output of 40 Nm of torque."
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": 250,
+    "url": "https://electra.trekbikes.com/ca/en_CA/FAQ/loftgo7deq/",
+    "quote": "The Hyena Gen 2 In-Tube 250 Wh battery weighs approximately 3.5 lb/1.6 kg."
+   },
+   {
+    "kind": "retailer",
+    "value": 250,
+    "url": "https://skiisandbiikes.com/products/electra-loft-go-7d-eq-st-bike",
+    "quote": "A fully-integrated 250Wh battery provides a range up to 40 miles."
+   },
+   {
+    "kind": "review",
+    "value": 250,
+    "url": "https://99spokes.com/bikes/electra/2025/loft-go-7d-eq-step-thru",
+    "quote": "Battery ⟶ 250Wh, integrated in down tube"
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": "40",
+    "url": "https://electra.trekbikes.com/ca/en_CA/FAQ/loftgo7deq/",
+    "quote": "The battery range is up to 40 mi/64 km."
+   },
+   {
+    "kind": "retailer",
+    "value": "40",
+    "url": "https://skiisandbiikes.com/products/electra-loft-go-7d-eq-st-bike",
+    "quote": "A fully-integrated 250Wh battery provides a range up to 40 miles."
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": 46.3,
+    "url": "https://electra.trekbikes.com/ca/en_CA/FAQ/loftgo7deq/",
+    "quote": "The Loft Go! 7D EQ weighs 46.3 lb or 21 kg."
+   },
+   {
+    "kind": "review",
+    "value": 46.3,
+    "url": "https://99spokes.com/bikes/electra/2025/loft-go-7d-eq-step-thru",
+    "quote": "$1,499 ⟶ Weight46.3 lbs"
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": 300,
+    "url": "https://electra.trekbikes.com/ca/en_CA/FAQ/loftgo7deq/",
+    "quote": "The total weight limit is 300 lb/136 kg as determined by the bicycle, rider and cargo combined.",
+    "basis": "total"
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "250W",
+    "url": "https://electra.trekbikes.com/ca/en_CA/FAQ/loftgo7deq/",
+    "quote": "The motor power is 250 W nominal rating with an output of 40 Nm of torque."
+   },
+   {
+    "kind": "review",
+    "value": "250W Hyena rear hub",
+    "url": "https://99spokes.com/bikes/electra/2025/loft-go-7d-eq-step-thru",
+    "quote": "Motor ⟶ Hyena hub drive motor, 250W"
+   }
+  ],
+  "height": [
+   {
+    "kind": "review",
+    "value": "5'6\"-6'4\"",
+    "url": "https://99spokes.com/bikes/electra/2025/loft-go-7d-eq-step-thru",
+    "quote": "MD | 5'6\" – 6'4\"",
+    "basis": "Step-Thru, size MD (only size listed)"
+   },
+   {
+    "kind": "review",
+    "value": "5'8\"-6'4\"",
+    "url": "https://99spokes.com/bikes/electra/2025/loft-go-7d-eq-step-over",
+    "quote": "Sizing | LG | 5'8\" – 6'4\"",
+    "basis": "Step-Over frame, size LG (only size listed)"
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://electra.trekbikes.com/ca/en_CA/FAQ/loftgo7deq/",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": "No",
+    "url": "https://www.schellers.com/product/electra-loft-go-7d-eq-step-thru-419811-1.htm",
+    "quote": "Frame\t6061-T6 aluminum ⟶ Fork\tHi-ten steel unicrown, straight/tapered leg",
+    "basis": "frame spec names no folding mechanism"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "Src link is the maker FAQ for the Loft Go! 7D EQ (redirects to the US FAQ); it has no price or rider height. Trek site search for 'loft go' redirects to the Loft Go category, which is a 404, so it is no longer sold new, but no page says discontinued — status left empty. No maker USD price found; 99 Spokes (aggregator, kind 'review') gives 'Manufacturer Price $1,499'. Skiis & Biikes is a Canadian dealer (CAD prices; not used for price). EBR only has the older Bosch Loft Go! 8i (different bike, not used). REI listing exists but REI is bot-blocked. One WebSearch used. recheck (height, fold): maker product pages are gone (electra.trekbikes.com /p/36417 in US and ES both 404). Scheller's (US dealer) Loft Go! 7D EQ Step-Thru page: S and M sizes, 20 mph, 250Wh, non-folding 6061-T6 frame, but no rider heights. 99 Spokes Step-Over page lists LG 5'8\"-6'4\". No source found for the site's 5'0\"-6'3\"; combined 99 Spokes ranges are 5'6\"-6'4\". Used the bike's one WebSearch."
+}

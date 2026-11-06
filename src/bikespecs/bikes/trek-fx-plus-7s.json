@@ -1,0 +1,55 @@
+{"bike": "Trek|FX+ 7S", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 3999.99, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465/fx%252b-7s/47897/", "quote": "FX+ 7S | $3,199.93 | Model 5326708 | $3,999.99 | Comp. Value | Original price", "basis": "original (crossed-out) price; $3,199.93 is a sale price"},
+   {"kind": "review", "value": 4399, "url": "https://electricbikereview.com/trek/fx-plus-7s-review/", "quote": "PRICE: ⟶ $4,399", "basis": "price at time of review"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465/fx%252b-7s/47897/", "quote": "E-bike Classification | Class 3 | Max assist speed | 28 mph", "basis": "ships at 28 mph pedal assist, no throttle"},
+   {"kind": "review", "value": 3, "url": "https://electricbikereport.com/trek-fx7s-review/", "quote": "E-BIKE CLASS: ⟶ CLASS 3 (PEDAL ASSIST TO 28 MPH)"},
+   {"kind": "review", "value": 3, "url": "https://electricbikereview.com/trek/fx-plus-7s-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 3 Capable"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465/fx%252b-7s/47897/", "quote": "Max assist speed | 28 mph"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereport.com/trek-fx7s-review/", "quote": "E-BIKE CLASS: ⟶ CLASS 3 (PEDAL ASSIST TO 28 MPH)"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/trek/fx-plus-7s-review/", "quote": "TOP SPEED: ⟶ 28 MPH mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 50, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465/fx%252b-7s/47897/", "quote": "Motor | TQ-HPR50, 50 Nm, 250 watt maximum continuous rated power, 300 watt peak power"},
+   {"kind": "review", "value": 50, "url": "https://electricbikereport.com/trek-fx7s-review/", "quote": "Motor: TQ-HPR50, 50 Nm, 250-watt maximum continuous rated power, 300-watt peak power"},
+   {"kind": "review", "value": 50, "url": "https://electricbikereview.com/trek/fx-plus-7s-review/", "quote": "MOTOR TORQUE: ⟶ 50Nm Newton meters"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 360, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465/fx%252b-7s/47897/", "quote": "Battery | TQ 360Wh"},
+   {"kind": "review", "value": 360, "url": "https://electricbikereport.com/trek-fx7s-review/", "quote": "Battery: TQ 360Wh, 160Wh range extender availabe"},
+   {"kind": "review", "value": 360, "url": "https://electricbikereview.com/trek/fx-plus-7s-review/", "quote": "BATTERY WATT HOURS: ⟶ 360Wh wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "50", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465/fx%252b-7s/47897/", "quote": "Range Up to 50 mi"},
+   {"kind": "review", "value": "18.78–39.23", "url": "https://electricbikereport.com/trek-fx7s-review/", "quote": "we saw 18.78 miles on high assist and 39.23 miles on low.", "basis": "reviewer's real-world test; claimed range 50 miles"},
+   {"kind": "review", "value": "40", "url": "https://electricbikereview.com/trek/fx-plus-7s-review/", "quote": "Real World Range Test Results:40 miles", "basis": "reviewer's real-world test; Trek estimate 50 miles"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 41.12, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465/fx%252b-7s/47897/", "quote": "Weight | M - 18.65 kg / 41.12 lbs", "basis": "size M; battery is integrated"},
+   {"kind": "review", "value": 42.6, "url": "https://electricbikereport.com/trek-fx7s-review/", "quote": "Tested Weight: 42.6 lbs (L)", "basis": "size L, measured"},
+   {"kind": "review", "value": 41.1, "url": "https://electricbikereview.com/trek/fx-plus-7s-review/", "quote": "TOTAL WEIGHT: ⟶ 41.1 lbs lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 300, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465/fx%252b-7s/47897/", "quote": "This bike has a maximum total weight limit (combined weight of bicycle, rider, and cargo) of 300 pounds (136 kg).", "basis": "total"},
+   {"kind": "review", "value": 300, "url": "https://electricbikereport.com/trek-fx7s-review/", "quote": "Total payload capacity: 300 lbs.", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "250W TQ-HPR50 mid-drive (300W peak)", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465/fx%252b-7s/47897/", "quote": "Motor | TQ-HPR50, 50 Nm, 250 watt maximum continuous rated power, 300 watt peak power"},
+   {"kind": "review", "value": "250W TQ-HPR50 (300W peak)", "url": "https://electricbikereport.com/trek-fx7s-review/", "quote": "Motor: TQ-HPR50, 50 Nm, 250-watt maximum continuous rated power, 300-watt peak power"},
+   {"kind": "review", "value": "250W mid-drive TQ-HPR50 (300W peak)", "url": "https://electricbikereview.com/trek/fx-plus-7s-review/", "quote": "MOTOR TYPE: | Mid Drive Motor (TQ-HPR50) | Learn more about Ebike motors | MOTOR NOMINAL OUTPUT: | 250W watts | MOTOR PEAK OUTPUT: | 300W watts"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'6\"", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465/fx%252b-7s/47897/", "quote": "S | 155 - 165 cm | 5'1\" - 5'5\" | 72 - 78 cm | 28\" - 31\" | M | 165 - 175 cm | 5'5\" - 5'9\" | 77 - 83 cm | 30\" - 33\" | L | 175 - 186 cm | 5'9\" - 6'1\" | 82 - 88 cm | 32\" - 35\" | XL | 186 - 197 cm | 6'1\" - 6'6\""},
+   {"kind": "review", "value": "5'1\"-6'6\"", "url": "https://electricbikereport.com/trek-fx7s-review/", "quote": "Rider height range: 5’1” – 6’6”"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465/fx%252b-7s/47897/", "quote": "Alpha Platinum Aluminum, internal cable routing, dealer removable battery, rack & fender mounts, post mount disc, kickstand mount", "basis": "rigid non-folding aluminum frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker shows a sale ($3,199.93) with original price $3,999.99; EBR review lists $4,399 (earlier MSRP). Given src link (/us/en_US/ prefix) returns a Trek server error; same product loads via the path without the locale prefix. Trek weight is pre-production, size M."}

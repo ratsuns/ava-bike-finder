@@ -1,0 +1,49 @@
+{"bike": "Himiway|D5 2.0 ST", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2199, "url": "https://himiwaybike.com/products/himiway-d5-st", "quote": "Regular price ⟶ $2,199.00"},
+   {"kind": "retailer", "value": 2199, "url": "https://renewableoutdoors.com/products/himiway-d5-2-0-st-step-thru-full-suspension-electric-bike", "quote": "Original price ⟶ $2,199.00"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://himiwaybike.com/products/himiway-d5-st", "quote": "Class ⟶ 1/2/3", "basis": "Class 1/2/3 configurable; has throttle ('Torque / Cadence Switchable ⟶ Throttle') and 'Max speed (default) ⟶ 20 MPH' out of the box, so Class 2"},
+   {"kind": "retailer", "value": 2, "url": "https://renewableoutdoors.com/products/himiway-d5-2-0-st-step-thru-full-suspension-electric-bike", "quote": "Class 1/2/3 Configurable", "basis": "Ergonomic thumb throttle and 20 MPH default, so Class 2"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://himiwaybike.com/products/himiway-d5-st", "quote": "Max speed (default) ⟶ 20 MPH", "basis": "default; adjustable to 28 mph ('Max speed adjustable range ⟶ 4~28 MPH')"},
+   {"kind": "retailer", "value": 20, "url": "https://renewableoutdoors.com/products/himiway-d5-2-0-st-step-thru-full-suspension-electric-bike", "quote": "Max Speed (Default)\t20 MPH ⟶ Max Speed (Adjustable Range)\t4–28 MPH", "basis": "default; adjustable to 28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 90, "url": "https://himiwaybike.com/products/himiway-d5-st", "quote": "Motor ⟶ 48V, 750W, 90Nm"},
+   {"kind": "retailer", "value": 90, "url": "https://renewableoutdoors.com/products/himiway-d5-2-0-st-step-thru-full-suspension-electric-bike", "quote": "750W Rear Hub Motor with 90Nm Torque"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 720, "url": "https://himiwaybike.com/products/himiway-d5-st", "quote": "Battery ⟶ 48V, 15Ah , IPX6", "basis": "48V x 15Ah"},
+   {"kind": "retailer", "value": 720, "url": "https://renewableoutdoors.com/products/himiway-d5-2-0-st-step-thru-full-suspension-electric-bike", "quote": "48V 15Ah Samsung/LG Battery", "basis": "48V x 15Ah"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "70", "url": "https://himiwaybike.com/products/himiway-d5-st", "quote": "Pedal assist range ⟶ 70 Miles"},
+   {"kind": "retailer", "value": "70", "url": "https://renewableoutdoors.com/products/himiway-d5-2-0-st-step-thru-full-suspension-electric-bike", "quote": "Throttle Range\t40 miles ⟶ Pedal Assist Range\t70 miles"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 92, "url": "https://himiwaybike.com/products/himiway-d5-st", "quote": "Bike weight ⟶ 92lbs"},
+   {"kind": "retailer", "value": 92, "url": "https://renewableoutdoors.com/products/himiway-d5-2-0-st-step-thru-full-suspension-electric-bike", "quote": "Chain\t8-speed ⟶ Bike Weight\t92 lb."}
+  ],
+  "load": [
+   {"kind": "maker", "value": 400, "url": "https://himiwaybike.com/products/himiway-d5-st", "quote": "Bike load capacity ⟶ 400lbs"},
+   {"kind": "retailer", "value": null, "url": "https://renewableoutdoors.com/products/himiway-d5-2-0-st-step-thru-full-suspension-electric-bike", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub (1300W peak)", "url": "https://himiwaybike.com/products/himiway-d5-st", "quote": "750w / 1300w ⟶ Peak Motor | Peak Motor ⟶ 90Nm | 90Nm ⟶ Max Torque | Max Torque ⟶ Rear Hub"},
+   {"kind": "retailer", "value": "750W rear hub", "url": "https://renewableoutdoors.com/products/himiway-d5-2-0-st-step-thru-full-suspension-electric-bike", "quote": "750W Rear Hub Motor with 90Nm Torque"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'5\"", "url": "https://himiwaybike.com/products/himiway-d5-st", "quote": "Size: Regular / 5'1\" - 6'5\""},
+   {"kind": "retailer", "value": null, "url": "https://renewableoutdoors.com/products/himiway-d5-2-0-st-step-thru-full-suspension-electric-bike", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://himiwaybike.com/products/himiway-d5-st", "quote": "Himiway D5 2.0 ST eBike | Full Suspension eBike (750W / 90Nm)", "basis": "full-suspension step-thru fat bike; no folding frame mentioned"},
+   {"kind": "retailer", "value": "No", "url": "https://renewableoutdoors.com/products/himiway-d5-2-0-st-step-thru-full-suspension-electric-bike", "quote": "Full Suspension for All-Terrain Comfort", "basis": "no folding frame mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page shows sale price $1,999 (regular $2,199 recorded). Maker size selector lists 'Model: D5 2.0 ST' with 5'1\" - 6'5\"; the page's Size Guide table shows 5'5\"-6'5\" (appears to be the Regular D5 2.0 frame). Maker page customer review text mentions 440-lb payload and ~80 lbs, which contradicts the spec table (400 lbs / 92 lbs); spec table used. EBR, Electric Bike Report and Electrek searches had no D5 2.0 ST page; one WebSearch found the authorized dealer Renewable Outdoors."}

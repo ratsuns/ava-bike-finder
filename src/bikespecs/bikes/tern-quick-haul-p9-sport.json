@@ -1,0 +1,49 @@
+{"bike": "Tern|Quick Haul P9 Sport", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 3399, "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-p9-sport", "quote": "$3,399 ⟶ WHY QUICK HAUL SPECS ACCESSORIES SUPPORT FIND A DEALER BUY", "basis": "not marked as sale price"},
+   {"kind": "retailer", "value": 3399, "url": "https://www.seattleelectricbike.net/products/test-product", "quote": "$3,399.00 ⟶ Type: One Passenger"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-p9-sport", "quote": "MOTOR: ⟶ Class 3, Bosch Performance Sport, 300% Assist, 65 Nm Torque, max speed 28 mph"},
+   {"kind": "retailer", "value": 3, "url": "https://www.seattleelectricbike.net/products/test-product", "quote": "MOTOR: ⟶ Class 3, Bosch Performance Sport, 300% Assist, 65 Nm Torque, max speed 28 mph"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-p9-sport", "quote": "MOTOR: ⟶ Class 3, Bosch Performance Sport, 300% Assist, 65 Nm Torque, max speed 28 mph"},
+   {"kind": "retailer", "value": 28, "url": "https://www.seattleelectricbike.net/products/test-product", "quote": "MOTOR: ⟶ Class 3, Bosch Performance Sport, 300% Assist, 65 Nm Torque, max speed 28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 65, "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-p9-sport", "quote": "MOTOR: ⟶ Class 3, Bosch Performance Sport, 300% Assist, 65 Nm Torque, max speed 28 mph"},
+   {"kind": "retailer", "value": 65, "url": "https://www.seattleelectricbike.net/products/test-product", "quote": "MOTOR: ⟶ Class 3, Bosch Performance Sport, 300% Assist, 65 Nm Torque, max speed 28 mph"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 400, "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-p9-sport", "quote": "RANGE: ⟶ 400 Wh: 51 - 100 km (31.7 - 62.1 mi)", "basis": "battery listed as 'Bosch PowerPack 400'"},
+   {"kind": "retailer", "value": 400, "url": "https://www.seattleelectricbike.net/products/test-product", "quote": "RANGE:400 Wh: 51 - 100 km (31.7 - 62.1 mi) ⟶ CHARGER: Compact Charger, 100-240V, 2A"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "31.7–62.1", "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-p9-sport", "quote": "RANGE: ⟶ 400 Wh: 51 - 100 km (31.7 - 62.1 mi)"},
+   {"kind": "retailer", "value": "31.7–62.1", "url": "https://www.seattleelectricbike.net/products/test-product", "quote": "RANGE:400 Wh: 51 - 100 km (31.7 - 62.1 mi) ⟶ CHARGER: Compact Charger, 100-240V, 2A"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 50.7, "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-p9-sport", "quote": "WEIGHT: ⟶ 23 kg (50.7 lb)", "basis": "battery not mentioned either way"},
+   {"kind": "retailer", "value": 50.7, "url": "https://www.seattleelectricbike.net/products/test-product", "quote": "SPEEDS: 1 x 9 ⟶ WEIGHT:23 kg (50.7 lb)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 330.7, "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-p9-sport", "quote": "MAX GROSS VEHICLE WEIGHT: ⟶ 150 kg (330.7 lb)", "basis": "total"},
+   {"kind": "retailer", "value": 330.7, "url": "https://www.seattleelectricbike.net/products/test-product", "quote": "MAX GROSS VEHICLE WEIGHT: 150 kg (330.7 lb) ⟶ MAX RIDER WEIGHT: 120 kg (264.6 lb)", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Performance Sport (65 Nm)", "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-p9-sport", "quote": "MOTOR: ⟶ Class 3, Bosch Performance Sport, 300% Assist, 65 Nm Torque, max speed 28 mph", "basis": "no rated watts published"},
+   {"kind": "retailer", "value": "Bosch Performance Sport (65 Nm)", "url": "https://www.seattleelectricbike.net/products/test-product", "quote": "MOTOR: ⟶ Class 3, Bosch Performance Sport, 300% Assist, 65 Nm Torque, max speed 28 mph", "basis": "no rated watts"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'3\"-6'5\"", "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-p9-sport", "quote": "Fits riders 160 - 195 cm (5’3” - 6’5”), and also riders 145 - 180 cm (4’9” - 5'11\") when equipped with a shorter, 350 mm seatpost", "basis": "stock seatpost; 4'9\"-5'11\" with optional shorter 350 mm seatpost"},
+   {"kind": "retailer", "value": "5'3\"-6'5\"", "url": "https://www.seattleelectricbike.net/products/test-product", "quote": "SUGGESTED RIDER HEIGHT: 160 - 195 cm (63 - 76.8 in) ⟶ MAX GROSS VEHICLE WEIGHT: 150 kg (330.7 lb)", "basis": "160-195 cm (63-76.8 in) = 5'3\"-6'5\""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-p9-sport", "quote": "Atlas Q Rack, UpperDeck Mount System, Vertical Parking, 50 kg capacity", "basis": "judgment: compact cargo bike that parks vertically; no folding size/time listed"},
+   {"kind": "retailer", "value": null, "url": "https://www.seattleelectricbike.net/products/test-product", "quote": "", "basis": "not stated"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Independent source is Seattle Electric Bike (US dealer); its product URL slug is 'test-product' but the page title is 'Tern Quick Haul P9 Sport' and specs match. EBR only has a 2023 Quick Haul P9 (non-Sport) review — not used. Max load is gross vehicle weight 150 kg -> total; max rider 120 kg."}

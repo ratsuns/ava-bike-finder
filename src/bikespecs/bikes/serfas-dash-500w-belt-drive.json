@@ -1,0 +1,38 @@
+{"bike": "Serfas|DASH 500W Belt Drive", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2749.99, "url": "https://serfas.com/products/dash-500w-belt-drive", "quote": "$2,749.99"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://serfas.com/products/dash-500w-belt-drive", "quote": "Max Speed: Up To Class 3, 28 mph. Can Modify Before Shipping To Meet State and Local Regulations", "basis": "ships at Class 3 / 28 mph unless modified before shipping on request"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://serfas.com/products/dash-500w-belt-drive", "quote": "Max Speed: Up To Class 3, 28 mph. Can Modify Before Shipping To Meet State and Local Regulations"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://serfas.com/products/dash-500w-belt-drive", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 672, "url": "https://serfas.com/products/dash-500w-belt-drive", "quote": "Battery: BAFANG 500W - 48V - 14AhSamsung Cells (UL-2771 Certified)", "basis": "48V x 14Ah"}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://serfas.com/products/dash-500w-belt-drive", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://serfas.com/products/dash-500w-belt-drive", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": 300, "url": "https://serfas.com/products/dash-500w-belt-drive", "quote": "Capacity: Up To 300lbs Cargo/Rider Total", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W BAFANG hub drive with internal gears", "url": "https://serfas.com/products/dash-500w-belt-drive", "quote": "Motor: 500W BAFANG Hub Drive W/ Internal Gears"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://serfas.com/products/dash-500w-belt-drive", "quote": "Sizes: Med/Lrg"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://serfas.com/products/dash-500w-belt-drive", "quote": "Drive: Michelin Belt"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Only the maker source found. No independent coverage: EBR, Electric Bike Report, Electrek, Best Buy, Mike's Bikes have nothing on Serfas; web search only turned up dealers listing the older non-belt eDASH 500W (different bike). Maker page: 'Up To Class 3, 28 mph' and can be modified before shipping; no throttle mentioned; 2-speed auto-shift hub, torque or cadence sensor. No range or weight published. Price shown under Shopify 'Sale price' label with no crossed-out price; 'Only 4 products left'. Fold 'No' is inferred from a standard frame bike (page mentions no folding)."}

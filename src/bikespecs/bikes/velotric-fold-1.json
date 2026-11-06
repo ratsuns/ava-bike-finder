@@ -1,0 +1,60 @@
+{"bike": "Velotric|Fold 1", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1499, "url": "https://www.velotricbike.com/products/velotric-fold-1", "quote": "$1,299.00 ⟶ $1,499.00", "basis": "$1,499.00 is the crossed-out regular price; $1,299.00 is the Black Friday sale price (\"Save $200.00\")"},
+   {"kind": "review", "value": 1199, "url": "https://electricbikereview.com/velotric/fold-1-review/", "quote": "PRICE: ⟶ $1199", "basis": "price at time of review"},
+   {"kind": "review", "value": 1199, "url": "https://electricbikereport.com/velotric-fold-1-review/", "quote": "Then I learned that it was priced at $1199.", "basis": "price at time of review (May 2024)"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.velotricbike.com/products/velotric-fold-1", "quote": "Class ⟶ 1/2/3", "basis": "multi-class; out of box is \"Default Speed ⟶ 20 MPH\" with a throttle (\"Throttle Range ⟶ 45 Miles\"), i.e. Class 2"},
+   {"kind": "review", "value": 3, "url": "https://electricbikereview.com/velotric/fold-1-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 3", "basis": "max adjustable setting"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/velotric-fold-1-review/", "quote": "The bike ships as a Class 2 with throttle and pedal assist to 20 mph, but it can be unlocked to faster Class 3 speeds through its display."}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.velotricbike.com/products/velotric-fold-1", "quote": "Default Speed ⟶ 20 MPH", "basis": "default; adjustable to 28 mph (\"Max Speed Adjustable Range ⟶ 12~28 MPH\")"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/velotric/fold-1-review/", "quote": "TOP SPEED: ⟶ 28 MPH mph", "basis": "max adjustable, not default"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/velotric-fold-1-review/", "quote": "The bike ships as a Class 2 with throttle and pedal assist to 20 mph, but it can be unlocked to faster Class 3 speeds through its display.", "basis": "default; adjustable to 28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 70, "url": "https://www.velotricbike.com/products/velotric-fold-1", "quote": "Motor ⟶ 48V, 750W, 70Nm"},
+   {"kind": "review", "value": 70, "url": "https://electricbikereview.com/velotric/fold-1-review/", "quote": "MOTOR TORQUE: ⟶ 70Nm Newton meters"},
+   {"kind": "review", "value": 70, "url": "https://electricbikereport.com/velotric-fold-1-review/", "quote": "Motor: 48V, 750W (1050W Peak), 70Nm ⟶ Headlight: 60 Lux high-output integrated LED, adjustable angle"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 608, "url": "https://www.velotricbike.com/products/velotric-fold-1", "quote": "Battery ⟶ 48V, 608Wh, IPX7, Certificated by UL 2271"},
+   {"kind": "review", "value": 608, "url": "https://electricbikereview.com/velotric/fold-1-review/", "quote": "BATTERY WATT HOURS: ⟶ 608Wh wh"},
+   {"kind": "review", "value": 608, "url": "https://electricbikereport.com/velotric-fold-1-review/", "quote": "Battery:48V, 608Wh, IPX7, Certificated by UL 2271 ⟶ Display: 1.8″ LCD, High brightness"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "55", "url": "https://www.velotricbike.com/products/velotric-fold-1", "quote": "Pedal Assist Range ⟶ 55 Miles"},
+   {"kind": "review", "value": "55", "url": "https://electricbikereview.com/velotric/fold-1-review/", "quote": "Range ⟶ Estimated Range (from Velotric): Up to 55 Miles", "basis": "maker claim; tested MIN PAS 78 miles, MAX PAS 23 miles"},
+   {"kind": "review", "value": "55", "url": "https://electricbikereport.com/velotric-fold-1-review/", "quote": "Claimed Range: 45 Miles (Throttle), 55 Miles (Pedal Assist) ⟶ Throttle:Thumb-control, removable"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 63, "url": "https://www.velotricbike.com/products/velotric-fold-1", "quote": "Bike Weight ⟶ 63lbs", "basis": "maker doesn't say whether battery is included"},
+   {"kind": "review", "value": 63, "url": "https://electricbikereview.com/velotric/fold-1-review/", "quote": "TOTAL WEIGHT: ⟶ 63 lbs lbs", "basis": "total weight; battery listed separately as 10.1 lbs"},
+   {"kind": "review", "value": 63, "url": "https://electricbikereport.com/velotric-fold-1-review/", "quote": "Claimed weight: 63 lbs. ⟶ Tested Weight: 67 lbs", "basis": "claimed; tested 67 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 440, "url": "https://www.velotricbike.com/products/velotric-fold-1", "quote": "Max Bike Load Capacity ⟶ 440lbs"},
+   {"kind": "review", "value": 440, "url": "https://electricbikereview.com/velotric/fold-1-review/", "quote": "Impressive 440 lb max payload capacity means you and your gear have a place on the Fold 1"},
+   {"kind": "review", "value": 440, "url": "https://electricbikereport.com/velotric-fold-1-review/", "quote": "Total payload capacity: 440 lbs. ⟶ COMPONENTS & ACCESSORIES"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub", "url": "https://www.velotricbike.com/products/velotric-fold-1", "quote": "Motor ⟶ 48V, 750W, 70Nm", "basis": "maker gives no peak; rear hub per reviews"},
+   {"kind": "review", "value": "750W rear hub (1,050W peak)", "url": "https://electricbikereview.com/velotric/fold-1-review/", "quote": "The Fold 1 packs a punchier motor than we typically see in this category – a 750W rear hub unit (peaking at 1,050W) with 70Nm of torque. While most folders opt for a more modest 500W setup, this beefier motor delivers solid performance across most riding scenarios without feeling like overkill."},
+   {"kind": "review", "value": "750W rear hub (1,050W peak)", "url": "https://electricbikereport.com/velotric-fold-1-review/", "quote": "Motor: 48V, 750W (1050W Peak), 70Nm ⟶ Headlight: 60 Lux high-output integrated LED, adjustable angle", "basis": "rear hub per same review (\"a 750W rear-hub motor\")"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'9\"-6'5\"", "url": "https://www.velotricbike.com/products/velotric-fold-1", "quote": "User Height Range ⟶ Regular: 4'9\" ~ 6'5\""},
+   {"kind": "review", "value": "4'9\"-6'5\"", "url": "https://electricbikereview.com/velotric/fold-1-review/", "quote": "The Fold 1 takes a straightforward approach to its model lineup – one size, two colors (blue or grey), and a frame design that fits riders from 4’9″ up to 6’ 5”. No ‘analysis paralysis’ here, though if you’re north of 6’ 5” you might need to get creative for a good fit."},
+   {"kind": "review", "value": "4'9\"-6'5\"", "url": "https://electricbikereport.com/velotric-fold-1-review/", "quote": "Rider height range: 4’9″ ~ 6’5 ⟶ Total payload capacity: 440 lbs."}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "Yes", "url": "https://www.velotricbike.com/products/velotric-fold-1", "quote": "3-Step Folding: Simply unfasten the quick release to lower the stem, tuck in the pedals, and then use the quick release again to collapse the frame. ⟶ A BIKE BUILT FOR YOU"},
+   {"kind": "review", "value": "Yes", "url": "https://electricbikereview.com/velotric/fold-1-review/", "quote": "A simple 3-Step folding process with an included retentions strap. The included retention strap seems minor but saves you from that classic folding bike dance where it tries to unfold itself mid-lift."},
+   {"kind": "review", "value": "Yes", "url": "https://electricbikereport.com/velotric-fold-1-review/", "quote": "The Fold has plenty of expected features like a hinged frame and stem, 20×3” knobby tires, a 7-speed drivetrain, hydraulic brakes, and a front suspension."}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page is on Black Friday sale ($1,299); crossed-out regular $1,499 recorded. Both reviews list $1199 at review time. Maker: default 20 mph with throttle, adjustable 12-28 mph, 'Class 1/2/3' -> Class 2; EBReport confirms it ships as Class 2; EBR lists Class 3 (max). Maker gives no peak watts; both reviews say 1,050W peak. Maker top-of-page summary says 'Top Speed ⟶ 28 MPH' (max adjustable)."}

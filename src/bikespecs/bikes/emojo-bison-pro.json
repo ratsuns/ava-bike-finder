@@ -1,0 +1,46 @@
+{"bike": "Emojo|Bison Pro", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 3299, "url": "https://emojobike.com/products/bison-pro", "quote": "Regular price ⟶ $3,299.00", "basis": "sale price $2,999.00 not used"},
+   {"kind": "retailer", "value": null, "url": "https://www.bikeberry.com/products/emojo-750w-bison-pro-cargo-electric-trike", "quote": "Sale price | $2,999", "basis": "sale price only"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://emojobike.com/products/bison-pro", "quote": "Choose to use throttle-only or pedal alongside. Ergonomic leatherette grips ensure a comfortable touch for effortless power. | Maximum Speed ⟶ 20MPH", "basis": "maker states no class; thumb throttle and 20 mph -> 2"},
+   {"kind": "retailer", "value": 2, "url": "https://www.bikeberry.com/products/emojo-750w-bison-pro-cargo-electric-trike", "quote": "Class II: Throttle Pedal Assist"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://emojobike.com/products/bison-pro", "quote": "Maximum Speed ⟶ 20MPH"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://emojobike.com/products/bison-pro", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 1344, "url": "https://emojobike.com/products/bison-pro", "quote": "Battery ⟶ 1344 Wh (Lithium-ion)", "basis": "spec table: 48V/28Ah"},
+   {"kind": "retailer", "value": null, "url": "https://www.bikeberry.com/products/emojo-750w-bison-pro-cargo-electric-trike", "quote": "Battery capacity 48V/23.2Ah", "basis": "older-generation listing (see notes); not used"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "80", "url": "https://emojobike.com/products/bison-pro", "quote": "55 Miles ⟶ 80 Miles with Pedal Assist", "basis": "FAQ: 'Up to 55 miles on throttle only, and up to 80 miles with pedal assist.'"},
+   {"kind": "retailer", "value": null, "url": "https://www.bikeberry.com/products/emojo-750w-bison-pro-cargo-electric-trike", "quote": "Battery range 45 Miles", "basis": "older-generation listing; mode not stated; not used"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 123, "url": "https://emojobike.com/products/bison-pro", "quote": "Weight ⟶ 123lbs (with battery)"},
+   {"kind": "retailer", "value": null, "url": "https://www.bikeberry.com/products/emojo-750w-bison-pro-cargo-electric-trike", "quote": "Vehicle weight 110 lbs (with battery)", "basis": "older-generation listing (smaller battery); not used"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 330, "url": "https://emojobike.com/products/bison-pro", "quote": "Load ⟶ 330 lbs"},
+   {"kind": "retailer", "value": 330, "url": "https://www.bikeberry.com/products/emojo-750w-bison-pro-cargo-electric-trike", "quote": "Max. user weight 330 lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W hub (Bafang)", "url": "https://emojobike.com/products/bison-pro", "quote": "Motor ⟶ 750W Brushless Motor | Brand | Bafang", "basis": "spec table: Power 750W, Type DC Brushless, Brand Bafang"},
+   {"kind": "retailer", "value": "750W front hub", "url": "https://www.bikeberry.com/products/emojo-750w-bison-pro-cargo-electric-trike", "quote": "Motor Size: | 750 Watt DC Brushless | Battery: | 48V 23.2ah | Drive Mode: | Class II: Throttle Pedal Assist | Frame Type: | 6061 Aluminum Folding Step-Thru Trike | Wheel Size: | 24F\" 20R\" X 4\" | Motor Position: | Front Hub"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'10\"-6'10\"", "url": "https://emojobike.com/products/bison-pro", "quote": "Rider's Height ⟶ 4'10\"-6'10\" (Best for 5'4\"-6'10\")"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "Yes", "url": "https://emojobike.com/products/bison-pro", "quote": "Yes, the foldable step-through frame folds neatly for space-saving storage and convenient transport."},
+   {"kind": "retailer", "value": "Yes", "url": "https://www.bikeberry.com/products/emojo-750w-bison-pro-cargo-electric-trike", "quote": "6061 Aluminum Folding Step-Thru Trike"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Folding fat-tire electric trike. BikeBerry listing describes an older Bison Pro spec (48V/23.2Ah, 110 lb, 45 mi) vs maker's current 48V/28Ah 1344 Wh, 123 lb, 80 mi PAS - so BikeBerry used only for unchanged specs (class, load, motor, fold). Maker gives no class (throttle + 20 mph -> 2). No EBR/EBReport/Electrek page."}

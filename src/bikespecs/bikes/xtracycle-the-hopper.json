@@ -1,0 +1,177 @@
+{
+ "bike": "Xtracycle|The Hopper",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": 2499,
+    "url": "https://xtracycle.com/products/hopper-compact-cargo",
+    "quote": "Default Title - $2,499.00 ⟶ Add to Cart",
+    "basis": "no crossed-out price shown"
+   },
+   {
+    "kind": "review",
+    "value": 2999,
+    "url": "https://electrek.co/2024/12/26/xtracycle-hopper-review-a-better-cargo-e-bike-at-a-better-price/",
+    "quote": "it’s frankly kind of surprising that it’s priced at just $2,999.",
+    "basis": "price at time of Dec 2024 review"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": 2,
+    "url": "https://xtracycle.com/products/hopper-compact-cargo",
+    "quote": "The Hopper ships as a Class 2 bike and can ship as a Class 1 upon request. ⟶ Default Title - $2,499.00",
+    "basis": "ships Class 2 (20 mph with throttle); pedal assist user-adjustable to 28 mph"
+   },
+   {
+    "kind": "review",
+    "value": 2,
+    "url": "https://electrek.co/2024/12/26/xtracycle-hopper-review-a-better-cargo-e-bike-at-a-better-price/",
+    "quote": "a powerful motor that provides a top speed of 28 mph (45 km/h) if unlocked from the standard 20 mph (32 km/h) speed limit",
+    "basis": "standard 20 mph with throttle; unlockable to 28 mph"
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": 20,
+    "url": "https://xtracycle.com/products/hopper-compact-cargo",
+    "quote": "Max pedal assist speed\t20 mph (shipped), user adjustable 7-28mph maximum ⟶ (20 mph max in California)",
+    "basis": "adjustable to 28 mph"
+   },
+   {
+    "kind": "review",
+    "value": 20,
+    "url": "https://electrek.co/2024/12/26/xtracycle-hopper-review-a-better-cargo-e-bike-at-a-better-price/",
+    "quote": "a powerful motor that provides a top speed of 28 mph (45 km/h) if unlocked from the standard 20 mph (32 km/h) speed limit",
+    "basis": "adjustable to 28 mph"
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://xtracycle.com/products/hopper-compact-cargo",
+    "quote": "",
+    "basis": "no torque published"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://electrek.co/2024/12/26/xtracycle-hopper-review-a-better-cargo-e-bike-at-a-better-price/",
+    "quote": ""
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": 720,
+    "url": "https://xtracycle.com/products/hopper-compact-cargo",
+    "quote": "Battery\tXtracycle 720 watt hour integrated downtube, UL 2271 certified by SGS ⟶ Front hub\tXtracycle 13G x 36H x 100mm with M15 thru axle"
+   },
+   {
+    "kind": "review",
+    "value": 720,
+    "url": "https://electrek.co/2024/12/26/xtracycle-hopper-review-a-better-cargo-e-bike-at-a-better-price/",
+    "quote": "Battery: 720 Wh frame-integrated and removable battery"
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://xtracycle.com/products/hopper-compact-cargo",
+    "quote": "",
+    "basis": "no range published"
+   },
+   {
+    "kind": "review",
+    "value": "20–50",
+    "url": "https://electrek.co/2024/12/26/xtracycle-hopper-review-a-better-cargo-e-bike-at-a-better-price/",
+    "quote": "Range: 20-50 miles (32-80 km)"
+   },
+   {
+    "kind": "maker",
+    "value": "20–60",
+    "url": "https://cdn.shopify.com/s/files/1/0666/6652/9064/files/XTRACYCLE_HOPPER_CONTROLS_GUIDE_1.5.pdf?v=1765928905",
+    "quote": "Depending on pedal assist level, throttle usage, speed, outdoor | temperature, total load weight, the level of hills in your ride, we | see a range from 20 – 60 miles per charge.",
+    "basis": "maker Hopper Controls Guide v1.5 (Dec 2025), linked from product page; mixed PAS/throttle conditions"
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": 85,
+    "url": "https://xtracycle.com/products/hopper-compact-cargo",
+    "quote": "Bike weight\t85 lbs (with battery, Hooptie & PorterRack)",
+    "basis": "with battery and included Hooptie & PorterRack accessories"
+   },
+   {
+    "kind": "review",
+    "value": 85,
+    "url": "https://electrek.co/2024/12/26/xtracycle-hopper-review-a-better-cargo-e-bike-at-a-better-price/",
+    "quote": "Weight: 38.5 kg (85 lb) with all cargo accessories installed"
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": 500,
+    "url": "https://xtracycle.com/products/hopper-compact-cargo",
+    "quote": "Max Gross Weight Limit\tBike frame Rated to 230kg / 500lbs, Rear Rack Rated to 110kg / 242lbs, Front Rack Rated to 25kg / 55lbs ⟶ Frame material\tAl 6061",
+    "basis": "total"
+   },
+   {
+    "kind": "review",
+    "value": 500,
+    "url": "https://electrek.co/2024/12/26/xtracycle-hopper-review-a-better-cargo-e-bike-at-a-better-price/",
+    "quote": "In fact, the bike’s frame is rated to 500 lb total, the rear rack alone is rated to 242 lb, and the front rack is rated to 55 lb",
+    "basis": "total"
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "750W rear hub",
+    "url": "https://xtracycle.com/products/hopper-compact-cargo",
+    "quote": "E-assist\tXtracycle rear hub motor, 48V 750W, w/ integrated torque sensor, UL 2849 certified by SGS ⟶ Battery\tXtracycle 720 watt hour integrated downtube, UL 2271 certified by SGS"
+   },
+   {
+    "kind": "review",
+    "value": "750W hub",
+    "url": "https://electrek.co/2024/12/26/xtracycle-hopper-review-a-better-cargo-e-bike-at-a-better-price/",
+    "quote": "Motor: 750W hub motor with torque sensor"
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": "5'0\"-6'5\"",
+    "url": "https://xtracycle.com/products/hopper-compact-cargo",
+    "quote": "The Hopper is recommended for riders 5' to 6'5\". ⟶ The Hopper has a standover height of 22.5”."
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://electrek.co/2024/12/26/xtracycle-hopper-review-a-better-cargo-e-bike-at-a-better-price/",
+    "quote": ""
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://xtracycle.com/products/hopper-compact-cargo",
+    "quote": "The Hopper is designed to be the most intuitive, easy to ride, compact family cargo bicycle. It is quick and responsive, able to fit in tight spaces, boasts a 500-lb capacity, all in about the same length as most regular bicycles.",
+    "basis": "compact non-folding cargo frame"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker now lists $2,499 with no crossed-out price; Electrek's Dec 2024 review says $2,999 (launch price). Maker weight 85 lb includes battery plus Hooptie and PorterRack. Load is frame total rating (rear rack 242 lb, front rack 55 lb). Electric Bike Report search had no Hopper review. Recheck: maker Hopper Controls Guide PDF (linked from product page) gives a 20 – 60 miles per charge range; generic Xtracycle owner's manual has no range figure."
+}

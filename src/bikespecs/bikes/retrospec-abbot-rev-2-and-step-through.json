@@ -1,0 +1,49 @@
+{"bike": "Retrospec|Abbot Rev 2 (and Step Through)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1599.99, "url": "https://retrospec.com/products/abbot-rev-commuter-electric-bike", "quote": "Original Price: $1,599.99", "basis": "page shows sale price $1,299.99 with regular price $1,599.99"},
+   {"kind": "review", "value": 1599, "url": "https://www.bikes4sale.com/details/retrospec/abbot/abbot-rev-2", "quote": "Retrospec Abbot Rev 2 Price ⟶ $ 1599 [United States]"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://retrospec.com/products/abbot-rev-commuter-electric-bike", "quote": "Pedal Assist 1-5 Levels with Throttle and Walk-Mode; Class 2/3", "basis": "maker says Class 2/3; ships at 20 mph top assisted speed with a throttle = Class 2"},
+   {"kind": "review", "value": null, "url": "https://www.bikes4sale.com/details/retrospec/abbot/abbot-rev-2", "quote": "Pedal Assist System - PAS\t1-5 Levels, Throttle and Walk-Mode", "basis": "no class stated"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://retrospec.com/products/abbot-rev-commuter-electric-bike", "quote": "20mph Top Assisted Speed", "basis": "maker labels it Class 2/3, so it may be adjustable to Class 3; no unlocked speed stated"},
+   {"kind": "review", "value": null, "url": "https://www.bikes4sale.com/details/retrospec/abbot/abbot-rev-2", "quote": ""}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 65, "url": "https://retrospec.com/products/abbot-rev-commuter-electric-bike", "quote": "Motor  500W Rear Hub 65Nm Torq"},
+   {"kind": "review", "value": 65, "url": "https://www.bikes4sale.com/details/retrospec/abbot/abbot-rev-2", "quote": "Motor Details ⟶ 500W Rear Hub 65Nm Torque"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 500, "url": "https://retrospec.com/products/abbot-rev-commuter-electric-bike", "quote": "48V/500Wh LG21700 Li-Ion Battery"},
+   {"kind": "review", "value": 500, "url": "https://www.bikes4sale.com/details/retrospec/abbot/abbot-rev-2", "quote": "Battery\t500Wh/48VLG 21700 Cells ⟶ Head Lamp\tIntegrated Front with Option for Turn Signals 300 Lumens"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "75", "url": "https://retrospec.com/products/abbot-rev-commuter-electric-bike", "quote": "Up to 75-Mile Range"},
+   {"kind": "review", "value": "75", "url": "https://www.bikes4sale.com/details/retrospec/abbot/abbot-rev-2", "quote": "Range ⟶ Up to 75 Miles (120 km)"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://retrospec.com/products/abbot-rev-commuter-electric-bike", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://www.bikes4sale.com/details/retrospec/abbot/abbot-rev-2", "quote": ""},
+   {"kind": "maker", "value": 71, "url": "https://help.retrospec.com/en-US/how-heavy-are-your-ebikes-629616", "quote": "Abbot Rev ⟶ 71 lbs", "basis": "Retrospec help-center weight table; listed as 'Abbot Rev' with no generation number (Step Through also 71 lbs); does not say whether the battery is included"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 350, "url": "https://retrospec.com/products/abbot-rev-commuter-electric-bike", "quote": "Recommended Weight Limit  350lbs", "basis": "rear rack max load 59 lbs"},
+   {"kind": "review", "value": 350, "url": "https://www.bikes4sale.com/details/retrospec/abbot/abbot-rev-2", "quote": "Load Carrying Capacity\tRecommended Weight Limit: 350lbs (158.7 kg) ⟶ Stem\tDie-Cast Alloy. 31.8mm Clamp; 75mm"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W rear hub", "url": "https://retrospec.com/products/abbot-rev-commuter-electric-bike", "quote": "Motor  500W Rear Hub 65Nm Torq"},
+   {"kind": "review", "value": "500W rear hub", "url": "https://www.bikes4sale.com/details/retrospec/abbot/abbot-rev-2", "quote": "Motor Details ⟶ 500W Rear Hub 65Nm Torque"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'4\"-6'4\"", "url": "https://retrospec.com/products/abbot-rev-commuter-electric-bike", "quote": "17\" - M | 5'4\" - 6'4\"", "basis": "step-over frame (size chart)"},
+   {"kind": "maker", "value": "5'1\"-6'4\"", "url": "https://retrospec.com/products/abbot-rev-commuter-electric-bike-step-through", "quote": "16\" - S | 5'1\" - 6'4\"", "basis": "step-through frame (size chart)"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://retrospec.com/products/abbot-rev-commuter-electric-bike", "quote": "Fork  Rigid Steel", "basis": "fixed commuter frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker labels it 'Class 2/3' but only gives 20 mph top assisted speed; recorded Class 2 as shipped. No source shows a bike weight (maker page has only an invisible product tag 'Weight - 58lbs'). No EBR/ElectricBikeReview/dealer page found; independent source is bikes4sale.com (spec database, found by WebSearch). Public Lands dealer pages block automated reading. Recheck: read the Abbot Rev 2 manual PDF linked from the product page (spec table has no weight), and Retrospec's help-center weight table ('Abbot Rev' 71 lbs)."}

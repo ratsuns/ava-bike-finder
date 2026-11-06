@@ -1,0 +1,49 @@
+{"bike": "Lectric|XPress Lite", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1099, "url": "https://lectricebikes.com/products/xpress-lite-tan-ebike", "quote": "$1,099 ⟶ 0% APRor as low as $69/mo with Affirm", "basis": "no crossed-out price shown"},
+   {"kind": "review", "value": 1099, "url": "https://electricbikereview.com/lectric-ebikes/xpress-lite-review/", "quote": "Price ⟶ MSRP: $1,099"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://lectricebikes.com/products/xpress-lite-tan-ebike", "quote": "Five riding modes deliver the speed and power to own the road as a Class 1, 2, or 3 eBike.* New simplified labels, including Eco, Tour, Sport, Sport+, & Turbo, allow riders to choose their riding experience. ⟶ Thumb Throttle", "basis": "maker says Class 1, 2, or 3 (selectable) with a throttle; ships as Class 2 (20 mph) per the maker FAQ; the listed 28 mph top speed is the unlocked Class 3 setting"},
+   {"kind": "maker", "value": 2, "url": "https://lectricebikes.com/pages/faq", "quote": "All Lectric eBikes ship as a class 2 electric bike, meaning it has a throttle capable of propelling the bike at speeds of up to 20mph. Pedal assist will also be limited to 12 or 20mph in this setting depending on the model.", "basis": "maker FAQ 'What is the classification of Lectric eBikes?'; the same answer says the XP, XPedition, XPeak, XPress, and XPress Lite can be unlocked to class 3 (28 mph)"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereview.com/lectric-ebikes/xpress-lite-review/", "quote": "Class 1 / Class 2 / Class 3, ships as Class 2, California Class 3 mode available ⟶ Learn more about Ebike classes", "basis": "review says it ships as Class 2"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://lectricebikes.com/products/xpress-lite-tan-ebike", "quote": "TOP SPEED ⟶ 28 mph"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereview.com/lectric-ebikes/xpress-lite-review/", "quote": "TOP SPEED: ⟶ 28 mph in Class 3, 20 mph in Class 2 mph", "basis": "ships as Class 2 (20 mph); adjustable to 28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 61, "url": "https://lectricebikes.com/products/xpress-lite-tan-ebike", "quote": "A 500W rear hub motor (864W peak) with 61Nm of torque supplies power and speed quicker than ever before. Stealth M24 technology delivers a quieter motor experience without sacrificing power. ⟶ Motor Controller"},
+   {"kind": "review", "value": 61.2, "url": "https://electricbikereview.com/lectric-ebikes/xpress-lite-review/", "quote": "MOTOR TORQUE: ⟶ 61.2 Nm Newton meters"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 374, "url": "https://lectricebikes.com/products/xpress-lite-tan-ebike", "quote": "A removable 48V, 7.8Ah (374Wh) lithium-ion battery certified to UL 2271, integrated on the down tube of the frame, makes for a clean and easily-accessible design while powering your ride for up to 45 miles on a single charge.** The XPress Lite is also certified to UL 2849.† ⟶ Keyless Riding"},
+   {"kind": "review", "value": 374.4, "url": "https://electricbikereview.com/lectric-ebikes/xpress-lite-review/", "quote": "BATTERY WATT HOURS: ⟶ 374.4 Wh wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "45", "url": "https://lectricebikes.com/products/xpress-lite-tan-ebike", "quote": "RANGE ⟶ up to 45 miles"},
+   {"kind": "review", "value": "22–42", "url": "https://electricbikereview.com/lectric-ebikes/xpress-lite-review/", "quote": "ESTIMATED MIN RANGE: ⟶ 22.36 miles miles | ESTIMATED MAX RANGE: ⟶ 42.23 miles miles", "basis": "reviewer's estimated min/max range (22.36–42.23 mi)"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 51.6, "url": "https://lectricebikes.com/products/xpress-lite-tan-ebike", "quote": "At just 45.6lbs with the 6lb battery removed, the XPress Lite is easy to maneuver on the road and easier to handle when the ride is over. ⟶ Green Packaging", "basis": "45.6 lb without battery + 6 lb battery"},
+   {"kind": "review", "value": 53.54, "url": "https://electricbikereview.com/lectric-ebikes/xpress-lite-review/", "quote": "TOTAL WEIGHT: ⟶ 53.54 lbs measured with battery lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 275, "url": "https://lectricebikes.com/products/xpress-lite-tan-ebike", "quote": "PAYLOAD CAPACITY ⟶ 275 lbs"},
+   {"kind": "review", "value": 275, "url": "https://electricbikereview.com/lectric-ebikes/xpress-lite-review/", "quote": "Load Capacity: 275 lbs (rear rack accessory rated to 30 lbs); Rider Height Range: 5'4\" to 6'4\" ⟶ Reader Interactions"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W rear hub (864W peak)", "url": "https://lectricebikes.com/products/xpress-lite-tan-ebike", "quote": "A 500W rear hub motor (864W peak) with 61Nm of torque supplies power and speed quicker than ever before. Stealth M24 technology delivers a quieter motor experience without sacrificing power. ⟶ Motor Controller"},
+   {"kind": "review", "value": "500W geared rear hub (864W peak)", "url": "https://electricbikereview.com/lectric-ebikes/xpress-lite-review/", "quote": "MOTOR NOMINAL OUTPUT: ⟶ 500W watts | MOTOR PEAK OUTPUT: ⟶ 864W watts", "basis": "motor type listed as 'Brushless geared rear hub'"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'4\"-6'4\"", "url": "https://lectricebikes.com/products/xpress-lite-tan-ebike", "quote": "Rider Height ⟶ 5’4” - 6’4”"},
+   {"kind": "review", "value": "5'4\"-6'4\"", "url": "https://electricbikereview.com/lectric-ebikes/xpress-lite-review/", "quote": "Load Capacity: 275 lbs (rear rack accessory rated to 30 lbs); Rider Height Range: 5'4\" to 6'4\" ⟶ Reader Interactions"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://lectricebikes.com/products/xpress-lite-tan-ebike", "quote": "A newly designed 6000-series aluminum mid-step frame gives the XPress Lite its slim, lightweight profile and clean, classic look while lowering the step-over height for easier mounting and dismounting. ⟶ Bike Weight", "basis": "non-folding mid-step frame, fixed stem"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Class/speed conflict: maker lists 28 mph and 'Class 1, 2, or 3'; EBR says it ships as Class 2 (20 mph), adjustable to Class 3 (28 mph). This 'ships as Class 2' likely applies across the Lectric lineup."}

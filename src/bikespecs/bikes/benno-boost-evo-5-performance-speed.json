@@ -1,0 +1,51 @@
+{"bike": "Benno|Boost EVO 5 Performance Speed", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 5199, "url": "https://bennobikes.com/e-bikes/boost/", "quote": "Performance Speed: $5,199 USD"},
+   {"kind": "retailer", "value": 5199, "url": "https://bouldernordic.com/products/benno-boost-10d-evo-5-performance-speed-class-3-ebike-500wh-regular-machine-blue", "quote": "$4,199.00 | $5,199.00 | Save $1,000", "basis": "regular (crossed-out) price; $4,199 is a dealer sale price"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://bennobikes.com/e-bikes/boost/", "quote": "Assisted Speed\tUSA 28mph, NZ/CH 45km/h\tUSA/CAN 20mph, EU 25km/h\tUSA 28mph, NZ 45km/h\tUSA/CAN 20mph, EU 25km/h", "basis": "maker states no class; Performance Speed column (1st) is USA 28mph, no throttle -> Class 3"},
+   {"kind": "retailer", "value": 3, "url": "https://bouldernordic.com/products/benno-boost-10d-evo-5-performance-speed-class-3-ebike-500wh-regular-machine-blue", "quote": "Ebike Class\tClass 3"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://bennobikes.com/e-bikes/boost/", "quote": "Assisted Speed\tUSA 28mph, NZ/CH 45km/h\tUSA/CAN 20mph, EU 25km/h\tUSA 28mph, NZ 45km/h\tUSA/CAN 20mph, EU 25km/h", "basis": "EVO5 full-spec table, Performance Speed is the 1st column"},
+   {"kind": "retailer", "value": 28, "url": "https://bouldernordic.com/products/benno-boost-10d-evo-5-performance-speed-class-3-ebike-500wh-regular-machine-blue", "quote": "Assist Speed (Mph)\t28"},
+   {"kind": "retailer", "value": 28, "url": "https://www.phattirebikeshop.com/product/benno-boost-10d-evo-5-performance-speed-ebike-483453-1.htm", "quote": "- Bosch Performance Speed 250W, 85Nm, GEN 4, 28mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://bennobikes.com/e-bikes/boost/", "quote": "Bosch Performance Speed 250W, 85Nm, GEN 4"},
+   {"kind": "retailer", "value": 85, "url": "https://bouldernordic.com/products/benno-boost-10d-evo-5-performance-speed-class-3-ebike-500wh-regular-machine-blue", "quote": "Motor Torque (Nm)\t85"},
+   {"kind": "retailer", "value": 85, "url": "https://www.phattirebikeshop.com/product/benno-boost-10d-evo-5-performance-speed-ebike-483453-1.htm", "quote": "Motor\tBosch Performance Speed 250W, 85Nm, GEN 4"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 500, "url": "https://bennobikes.com/e-bikes/boost/", "quote": "Bosch Powerpack 500Wh Lithium-Ion, DualBattery Compatible (Not Included)"},
+   {"kind": "retailer", "value": 500, "url": "https://bouldernordic.com/products/benno-boost-10d-evo-5-performance-speed-class-3-ebike-500wh-regular-machine-blue", "quote": "Battery Power (Wh)\t500"},
+   {"kind": "retailer", "value": 500, "url": "https://www.phattirebikeshop.com/product/benno-boost-10d-evo-5-performance-speed-ebike-483453-1.htm", "quote": "- Bosch Powerpack 500Wh Lithium-Ion Battery (Dual Battery Compatible)"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "25–75", "url": "https://bennobikes.com/e-bikes/boost/", "quote": "Range Single Battery: 25-75mi (40-120km)"},
+   {"kind": "retailer", "value": "25–75", "url": "https://bouldernordic.com/products/benno-boost-10d-evo-5-performance-speed-class-3-ebike-500wh-regular-machine-blue", "quote": "Range Estimate (Mi)\t25-75"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://bennobikes.com/e-bikes/boost/", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://bouldernordic.com/products/benno-boost-10d-evo-5-performance-speed-class-3-ebike-500wh-regular-machine-blue", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": 440, "url": "https://bennobikes.com/e-bikes/boost/", "quote": "MAX GROSS WEIGHT 440LB/200KG (RIDER+CARGO+BIKE)", "basis": "total"},
+   {"kind": "retailer", "value": 440, "url": "https://bouldernordic.com/products/benno-boost-10d-evo-5-performance-speed-class-3-ebike-500wh-regular-machine-blue", "quote": "Gross Payload (Lbs)\t440", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Performance Speed 250W (GEN 4)", "url": "https://bennobikes.com/e-bikes/boost/", "quote": "Bosch Performance Speed 250W, 85Nm, GEN 4"},
+   {"kind": "retailer", "value": "Bosch Performance Speed 250W (GEN 4)", "url": "https://bouldernordic.com/products/benno-boost-10d-evo-5-performance-speed-class-3-ebike-500wh-regular-machine-blue", "quote": "Bosch Performance Speed 250W 85Nm GEN 4 28mph"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'3\"", "url": "https://bennobikes.com/e-bikes/boost/", "quote": "Frame Size\tOne Size – Fits Riders from 5’1” to 6’3”"},
+   {"kind": "retailer", "value": "5'1\"-6'3\"", "url": "https://bouldernordic.com/products/benno-boost-10d-evo-5-performance-speed-class-3-ebike-500wh-regular-machine-blue", "quote": "One Frame Size (Fits Riders From 5'1\" to 6'3\")"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://bennobikes.com/e-bikes/boost/", "quote": "Frame\t6061 Aluminum Alloy with Front Tray Mounts"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page covers all Boost generations; specs from the 'BOOST EVO5 – FULL SPECIFICATIONS' tab (Performance Speed = 1st column) and SIZING & CAPACITY tab. Maker publishes no bike weight. Boulder Nordic shows a $4,199 sale price with $5,199 crossed out. Several dealer links from search were 404 (spiritedcyclist, thebikehub)."}

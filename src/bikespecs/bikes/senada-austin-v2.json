@@ -1,0 +1,106 @@
+{
+ "bike": "Senada|Austin V2",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "retailer",
+    "value": 1799,
+    "url": "https://ebikes2u.com/product/senada-austin-v2-900w-peak-city-cargo-dual-seat-folding-ul-2849-certified-fremont/",
+    "quote": "$1,799.00 | Original price was: $1,799.00.",
+    "basis": "dealer's crossed-out regular price; on sale for $1,599"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://ebikes2u.com/product/senada-austin-v2-900w-peak-city-cargo-dual-seat-folding-ul-2849-certified-fremont/",
+    "quote": "Top Speed: 23 MPH",
+    "basis": "no class stated; 23 mph with a throttle (pure electric mode) doesn't fit Class 1/2/3 cleanly"
+   }
+  ],
+  "spd": [
+   {
+    "kind": "retailer",
+    "value": 23,
+    "url": "https://ebikes2u.com/product/senada-austin-v2-900w-peak-city-cargo-dual-seat-folding-ul-2849-certified-fremont/",
+    "quote": "Top Speed: 23 MPH",
+    "basis": "same page's lower marketing section also says 'Top speed 25mph'"
+   }
+  ],
+  "tq": [
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://ebikes2u.com/product/senada-austin-v2-900w-peak-city-cargo-dual-seat-folding-ul-2849-certified-fremont/",
+    "quote": ""
+   }
+  ],
+  "wh": [
+   {
+    "kind": "retailer",
+    "value": 720,
+    "url": "https://ebikes2u.com/product/senada-austin-v2-900w-peak-city-cargo-dual-seat-folding-ul-2849-certified-fremont/",
+    "quote": "Battery: Removable 48V 15Ah lithium-ion battery",
+    "basis": "48V x 15Ah; lower section of the page says '48V 14Ah'"
+   }
+  ],
+  "range": [
+   {
+    "kind": "retailer",
+    "value": "50",
+    "url": "https://ebikes2u.com/product/senada-austin-v2-900w-peak-city-cargo-dual-seat-folding-ul-2849-certified-fremont/",
+    "quote": "Range: Up to 50 miles in pedal-assist mode; 25–30 miles in pure electric mode",
+    "basis": "lower section of the page says '62 Miles | Max Range'"
+   }
+  ],
+  "wt": [
+   {
+    "kind": "retailer",
+    "value": 64.6,
+    "url": "https://ebikes2u.com/product/senada-austin-v2-900w-peak-city-cargo-dual-seat-folding-ul-2849-certified-fremont/",
+    "quote": "64.6 lbs | Bike Weight",
+    "basis": "from the page's lower (possibly V1) marketing section; battery inclusion not stated"
+   }
+  ],
+  "load": [
+   {
+    "kind": "retailer",
+    "value": 380,
+    "url": "https://ebikes2u.com/product/senada-austin-v2-900w-peak-city-cargo-dual-seat-folding-ul-2849-certified-fremont/",
+    "quote": "Weight Capacity: Up to 330–380 lbs (includes a rear passenger seat with a backrest)",
+    "basis": "page gives a range 330–380 lbs; upper figure recorded"
+   }
+  ],
+  "motor": [
+   {
+    "kind": "retailer",
+    "value": "900W peak hub",
+    "url": "https://ebikes2u.com/product/senada-austin-v2-900w-peak-city-cargo-dual-seat-folding-ul-2849-certified-fremont/",
+    "quote": "Motor: 900W Peak brushless hub motor",
+    "basis": "no rated watts in the key specs; lower section says '750W | Motor'"
+   }
+  ],
+  "height": [
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://ebikes2u.com/product/senada-austin-v2-900w-peak-city-cargo-dual-seat-folding-ul-2849-certified-fremont/",
+    "quote": ""
+   }
+  ],
+  "fold": [
+   {
+    "kind": "retailer",
+    "value": "Yes",
+    "url": "https://ebikes2u.com/product/senada-austin-v2-900w-peak-city-cargo-dual-seat-folding-ul-2849-certified-fremont/",
+    "quote": "Foldable Design: Folds down to make storage in cars, RVs, or small apartments easier."
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "NO MAKER SOURCE: Senada's own site (senadabikes.com) shows 'This store is unavailable'. Only source is the given dealer page (ebikes2u, Fremont). The page contradicts itself: 'Key Specifications' say 23 MPH, 48V 15Ah, up to 50 miles PAS, 900W peak; the lower marketing block (likely carried over from the original Austin) says 25mph, 48V 14Ah, 62 miles, 750W. Key-spec values recorded. Load given as a range 330–380 lbs. One WebSearch found only original (V1, 500W) Austin pages, not V2. recheck: senadabikes.com still 'This store is unavailable'; ebikes2u Senada search shows only its own listings; no independent page for the V2 found (no WebSearch spent; the earlier one found only V1)."
+}

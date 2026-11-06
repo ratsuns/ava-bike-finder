@@ -1,0 +1,49 @@
+{"bike": "Urtopia|Carbon 1 ST", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2499, "url": "https://newurtopia.com/products/urtopia-carbon-1-step-thru-ebike", "quote": "$1,899.00 | $2,499.00 | -$600.00", "basis": "crossed-out regular price; $1,899 is the Black Friday sale price"},
+   {"kind": "review", "value": 2199, "url": "https://electricbikereview.com/urtopia/carbon-1-st-review/", "quote": "PRICE: ⟶ $2,199", "basis": "2025 model-year review price"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://newurtopia.com/products/urtopia-carbon-1-step-thru-ebike", "quote": "Throttle | No | Class | Class 1", "basis": "maker says Class 1; no throttle, 20 mph by default"},
+   {"kind": "review", "value": 3, "url": "https://electricbikereview.com/urtopia/carbon-1-st-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 3", "basis": "reviewer lists the unlocked 25 mph setting"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://newurtopia.com/products/urtopia-carbon-1-step-thru-ebike", "quote": "Top Speed | 20mph by default | 25mph upon unlock", "basis": "adjustable to 25 mph"},
+   {"kind": "review", "value": 25, "url": "https://electricbikereview.com/urtopia/carbon-1-st-review/", "quote": "TOP SPEED: ⟶ 25 MPH mph", "basis": "unlocked top speed"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 45, "url": "https://newurtopia.com/products/urtopia-carbon-1-step-thru-ebike", "quote": "Motor Max. Torque | 45Nm"},
+   {"kind": "review", "value": 60, "url": "https://electricbikereview.com/urtopia/carbon-1-st-review/", "quote": "MOTOR TORQUE: ⟶ 60Nm Torque Newton meters"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 352.8, "url": "https://newurtopia.com/products/urtopia-carbon-1-step-thru-ebike", "quote": "Battery | 36V 9.8Ah (352.8Wh) Samsung Li-ion, Removable, UL 2271 Certified"},
+   {"kind": "review", "value": 352.8, "url": "https://electricbikereview.com/urtopia/carbon-1-st-review/", "quote": "BATTERY WATT HOURS: ⟶ 352.8Wh wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "81", "url": "https://newurtopia.com/products/urtopia-carbon-1-step-thru-ebike", "quote": "Pedal Assist Range | Up to 81 miles"},
+   {"kind": "review", "value": "80", "url": "https://electricbikereview.com/urtopia/carbon-1-st-review/", "quote": "Eco Mode (MIN PAS): Up To 80 miles", "basis": "Urtopia's estimate as quoted by reviewer; MAX PAS test 26 miles"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 41, "url": "https://newurtopia.com/products/urtopia-carbon-1-step-thru-ebike", "quote": "Bike Weight | 41 lbs (18.6kg) | Net Weight | 38 lbs (17.4kg) w/ battery | 33 lbs (15.2kg) w/o battery", "basis": "41 lbs as shipped with battery and accessories; net 38 lbs with battery"},
+   {"kind": "review", "value": 36, "url": "https://electricbikereview.com/urtopia/carbon-1-st-review/", "quote": "TOTAL WEIGHT: ⟶ 36 lbs w/o acc. lbs", "basis": "without accessories"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 240, "url": "https://newurtopia.com/products/urtopia-carbon-1-step-thru-ebike", "quote": "Total Payload Limit | 240 lbs"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/urtopia/carbon-1-st-review/", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "350W rear hub (500W peak)", "url": "https://newurtopia.com/products/urtopia-carbon-1-step-thru-ebike", "quote": "Motor Power | Rated Power 350W (Peak Power 500W) rear hub"},
+   {"kind": "review", "value": "Rear hub (750W peak)", "url": "https://electricbikereview.com/urtopia/carbon-1-st-review/", "quote": "MOTOR PEAK OUTPUT: ⟶ 750W watts"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-5'9\"", "url": "https://newurtopia.com/products/urtopia-carbon-1-step-thru-ebike", "quote": "Rider Height | Regular: 5'1\" - 5'9\""},
+   {"kind": "review", "value": "5'1\"-6'1\"", "url": "https://electricbikereview.com/urtopia/carbon-1-st-review/", "quote": "GEOMETRY MEASUREMENTS: ⟶ 5’ 1” to 6’ 1”"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://newurtopia.com/products/urtopia-carbon-1-step-thru-ebike", "quote": "Folding | No"},
+   {"kind": "review", "value": "No", "url": "https://electricbikereview.com/urtopia/carbon-1-st-review/", "quote": "FRAME TYPES: ⟶ Carbon Fiber Step-Through Frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "EBR's 2025 review differs from the current maker spec on class (Class 3 vs maker Class 1), torque (60Nm vs 45Nm), peak motor (750W vs 500W) and rider height (5'1\"-6'1\" vs 5'1\"-5'9\"); maker values are current. Maker quotes joined with ' | ' are consecutive lines from the Specs tab (opened by clicking)."}

@@ -1,0 +1,206 @@
+{
+ "bike": "Eunorau|E-FAT-MN",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://eunorau-ebike.com/collections/foldable-electric-bikes",
+    "quote": "For rough pavement, grass, gravel shoulders, and lower purchase price, compare E-FAT-MN first.",
+    "basis": "no price number given; product page redirects here"
+   },
+   {
+    "kind": "review",
+    "value": 1199,
+    "url": "https://electricbikereview.com/eunorau/e-fat-mn/",
+    "quote": "PRICE: ⟶ $1199",
+    "basis": "2019 model year review"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "review",
+    "value": 2,
+    "url": "https://electricbikereview.com/eunorau/e-fat-mn/",
+    "quote": "ELECTRIC BIKE CLASS: ⟶ Throttle on Demand (Class 2)",
+    "basis": "2019 model year review"
+   },
+   {
+    "kind": "maker",
+    "value": 3,
+    "url": "https://eunorau-ebike.com/collections/foldable-electric-bikes",
+    "quote": "E-FAT-MN displays UL-certified status, Class 3 labeling, mechanical disc brakes with motor cutoff, and a 20 MPH maximum speed in the spec table.",
+    "basis": "maker collection-page copy says 'Class 3 labeling' but a 20 MPH maximum speed in the same sentence (contradiction: 20 mph would be Class 1/2)"
+   },
+   {
+    "kind": "maker",
+    "value": 3,
+    "url": "https://ca.eunorau-ebike.com/products/e-fat-mn",
+    "quote": "CLASS ⟶ Class 3",
+    "basis": "maker's Canada store product page"
+   },
+   {
+    "kind": "retailer",
+    "value": 2,
+    "url": "https://www.bikeberry.com/products/eunorau-500w-20-foldable-fat-tire-electric-bike",
+    "quote": "Class II: Throttle Pedal Assist ⟶ Frame Type:"
+   }
+  ],
+  "spd": [
+   {
+    "kind": "review",
+    "value": 20,
+    "url": "https://electricbikereview.com/eunorau/e-fat-mn/",
+    "quote": "TOP SPEED: ⟶ 20 mph (32 kph)",
+    "basis": "2019 model year review"
+   },
+   {
+    "kind": "maker",
+    "value": 20,
+    "url": "https://eunorau-ebike.com/collections/foldable-electric-bikes",
+    "quote": "E-FAT-MN displays UL-certified status, Class 3 labeling, mechanical disc brakes with motor cutoff, and a 20 MPH maximum speed in the spec table."
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://eunorau-ebike.com/collections/foldable-electric-bikes",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://electricbikereview.com/eunorau/e-fat-mn/",
+    "quote": ""
+   },
+   {
+    "kind": "maker",
+    "value": 80,
+    "url": "https://ca.eunorau-ebike.com/products/e-fat-mn",
+    "quote": "A fat hub motor in the Rear wheel can crank out a continuous 500 watts of power with the ability to ratchet things up to over 750 peak watts of power for hill climbs and quicker acceleration. This motor has 80 Newton meters of torque.",
+    "basis": "maker's Canada store product page"
+   },
+   {
+    "kind": "retailer",
+    "value": 80,
+    "url": "https://www.bikeberry.com/products/eunorau-500w-20-foldable-fat-tire-electric-bike",
+    "quote": "A fat hub motor in the Rear wheel can crank out a continuous 500 watts of power with the ability to ratchet things up to over 750 peak watts of power for hill climbs and quicker acceleration. This motor has 80 Newton meters of torque. ⟶ 12.5Ah High Capacity Battery"
+   }
+  ],
+  "wh": [
+   {
+    "kind": "review",
+    "value": 500,
+    "url": "https://electricbikereview.com/eunorau/e-fat-mn/",
+    "quote": "BATTERY WATT HOURS: ⟶ 500 wh",
+    "basis": "2019 model year review; EBR also lists 48 volts / 12.5 ah (= 600 Wh), so its 500 wh figure is inconsistent"
+   },
+   {
+    "kind": "maker",
+    "value": 600,
+    "url": "https://ca.eunorau-ebike.com/products/e-fat-mn",
+    "quote": "BATTERY ⟶ Main 48V12.5Ah",
+    "basis": "48 V x 12.5 Ah = 600 Wh; maker's Canada store"
+   },
+   {
+    "kind": "retailer",
+    "value": 600,
+    "url": "https://www.bikeberry.com/products/eunorau-500w-20-foldable-fat-tire-electric-bike",
+    "quote": "Battery: 48V/12.5Ah",
+    "basis": "48 V x 12.5 Ah = 600 Wh"
+   }
+  ],
+  "range": [
+   {
+    "kind": "review",
+    "value": "20–35",
+    "url": "https://electricbikereview.com/eunorau/e-fat-mn/",
+    "quote": "ESTIMATED MIN RANGE: ⟶ 20 miles (32 km) | ESTIMATED MAX RANGE: ⟶ 35 miles (56 km)",
+    "basis": "2019 model year review"
+   },
+   {
+    "kind": "maker",
+    "value": "40–50",
+    "url": "https://ca.eunorau-ebike.com/products/e-fat-mn",
+    "quote": "RANGE ⟶ Up to 40-50 Miles",
+    "basis": "maker's Canada store; assist mode not stated"
+   },
+   {
+    "kind": "retailer",
+    "value": "40–50",
+    "url": "https://www.bikeberry.com/products/eunorau-500w-20-foldable-fat-tire-electric-bike",
+    "quote": "Range: 40-50 Miles ⟶ Motor: Shengyi 48V/500W Brushless DC hub motor HIGH TORQUE"
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": 62,
+    "url": "https://eunorau-ebike.com/collections/foldable-electric-bikes",
+    "quote": "For lifting and rack use, be honest about weight. META20 1.0 is listed at 63.4 lbs, and E-FAT-MN is listed at 62 lbs. That is manageable for some riders, but it is still heavy enough to affect stairs, trunk loading, and bike-rack selection.",
+    "basis": "battery inclusion not stated"
+   },
+   {
+    "kind": "review",
+    "value": 63.6,
+    "url": "https://electricbikereview.com/eunorau/e-fat-mn/",
+    "quote": "TOTAL WEIGHT: ⟶ 63.6 lbs (28.85 kg)",
+    "basis": "2019 model year review"
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": 330,
+    "url": "https://eunorau-ebike.com/collections/foldable-electric-bikes",
+    "quote": "For rough pavement, grass, gravel shoulders, and lower purchase price, compare E-FAT-MN first. Its 20 x 4.0 tire format gives more cushioning and grip than META20's 20 x 3.0 setup, while its 330 lb payload rating is higher than META20's 286 lb rating."
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "500W rear hub",
+    "url": "https://eunorau-ebike.com/collections/foldable-electric-bikes",
+    "quote": "Yes, when the fit, payload rating, brakes, and total weight match the rider. EUNORAU's folding electric bikes use adult-oriented 20-inch frames, 500W rear hub motors, removable batteries, and listed payload ratings of 286 lbs for META20,",
+    "basis": "general statement about Eunorau's folding bikes, not E-FAT-MN specifically"
+   },
+   {
+    "kind": "review",
+    "value": "500W rear hub (750W peak)",
+    "url": "https://electricbikereview.com/eunorau/e-fat-mn/",
+    "quote": "MOTOR NOMINAL OUTPUT: ⟶ 500 watts | MOTOR PEAK OUTPUT: ⟶ 750 watts",
+    "basis": "2019 model year review; MOTOR TYPE: Rear-Mounted Geared Hub, MOTOR BRAND: Shengyi"
+   }
+  ],
+  "height": [
+   {
+    "kind": "retailer",
+    "value": "5'6\"-6'1\"",
+    "url": "https://www.bikeberry.com/products/eunorau-500w-20-foldable-fat-tire-electric-bike",
+    "quote": "Recommended Rider Heights: 5'6\" ~ 6'1\" ⟶ Charger: US standard 2.0 A smart charger"
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": "Yes",
+    "url": "https://eunorau-ebike.com/collections/foldable-electric-bikes",
+    "quote": "For rough pavement, grass, gravel shoulders, and lower purchase price, compare E-FAT-MN first.",
+    "basis": "listed on maker's Foldable Electric Bikes collection page"
+   },
+   {
+    "kind": "review",
+    "value": "Yes",
+    "url": "https://electricbikereview.com/eunorau/e-fat-mn/",
+    "quote": "Folding ⟶ FRAME COLORS:",
+    "basis": "FRAME TYPES: Folding; folded dimensions given"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "Src product page (eunorau-ebike.com/products/e-fat-mn) redirects to the Foldable Electric Bikes collection, which has no E-FAT-MN product card (only META20 1.0) but its text still gives E-FAT-MN's 62 lb weight, 330 lb payload and 20 x 4.0 tires - used that as the maker source. No current maker price, class, speed or battery. Only independent source is EBR's 2019 model-year review (price $1199, Class 2, 20 mph, 48V 12.5Ah but listed as 500 wh - inconsistent); treat its values as possibly outdated. Upzy/BikeBerry don't list it. recheck (cls, spd, tq, wh, range, height): maker US Foldable collection copy states 'Class 3 labeling' and '20 MPH maximum speed' for E-FAT-MN (self-contradictory). Maker Canada store still has the product page (ca.eunorau-ebike.com/products/e-fat-mn): Class 3, 48V12.5Ah, up to 40-50 miles, 80 Nm, no top speed or rider height. BikeBerry has a live E-FAT-MN page (SKU EB-E-FAT-MN-B): Class II, 80 Nm, 48V/12.5Ah, 40-50 miles, rider heights 5'6\"-6'1\" (site shows 5'1\"-6'1\"), 330 lbs payload. urbanbikesdirect and electricrideco pages 404; eBike Super Shop redirects to home. Used the bike's one WebSearch."
+}

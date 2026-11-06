@@ -1,0 +1,127 @@
+{
+ "bike": "Segway|Muxi",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": 1699.99,
+    "url": "https://store.segway.com/muxi-electric-bike",
+    "quote": "Segway MUXI Cargo Electric Bike$1,699.99In Stock",
+    "basis": "not on sale"
+   },
+   {
+    "kind": "review",
+    "value": 1699,
+    "url": "https://electrek.co/2026/01/07/segway-launches-techie-myon-and-muxi-e-bikes-plus-xaber-300-electric-dirt-bike/",
+    "quote": "It’s a selectable Class 1 or 2 e-bike, priced at $1,699, and arriving in March 2026."
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": 2,
+    "url": "https://www.segway.com/ebike/products/muxi.html",
+    "quote": "Max. Speed ⟶ Class 1: 20 mph | Class 1: 20 mph ⟶ Class 2: 20 mph | Class 2: 20 mph ⟶ Class 3: 23 mph*",
+    "basis": "selectable modes; throttle at 20 mph = 2 per our rule; out-of-box mode not stated"
+   },
+   {
+    "kind": "review",
+    "value": 2,
+    "url": "https://electrek.co/2026/01/07/segway-launches-techie-myon-and-muxi-e-bikes-plus-xaber-300-electric-dirt-bike/",
+    "quote": "It’s a selectable Class 1 or 2 e-bike, priced at $1,699, and arriving in March 2026."
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": 20,
+    "url": "https://www.segway.com/ebike/products/muxi.html",
+    "quote": "Class 2: 20 mph ⟶ Class 3: 23 mph*",
+    "basis": "adjustable to 23 mph"
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": 80,
+    "url": "https://www.segway.com/ebike/products/muxi.html",
+    "quote": "Max. Torque ⟶ 80 Nm"
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": 717,
+    "url": "https://www.segway.com/ebike/products/muxi.html",
+    "quote": "Nominal Energy ⟶ 717 Wh"
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": "80",
+    "url": "https://www.segway.com/ebike/products/muxi.html",
+    "quote": "Max. Range ⟶ Up to 80 miles"
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": 72.75,
+    "url": "https://www.segway.com/ebike/products/muxi.html",
+    "quote": "Bike Weight ⟶ 72.75 lbs (33 kg)"
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": 265,
+    "url": "https://www.segway.com/ebike/products/muxi.html",
+    "quote": "Rider Weight Limitation ⟶ 265 lbs (120 kg)",
+    "basis": "rider weight limit; maker separately lists 'Rear Rack Load Capacity ⟶ 121 lbs (55 kg)' and 'Front Basket Load Capacity ⟶ 33 lbs (15 kg)'"
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "750W direct drive",
+    "url": "https://www.segway.com/ebike/products/muxi.html",
+    "quote": "MUXI's sophisticated direct drive motor is your confident copilot, packed with features like TCS (Traction Control System), Hill Descent Control, Hill Start Assist, Kinetic Energy Recovery and Adaptive Power. Together, they work to enhance control, safety, convenience, and efficiency on every ride. ⟶ 750 W"
+   },
+   {
+    "kind": "review",
+    "value": "direct drive",
+    "url": "https://electrek.co/2026/01/07/segway-launches-techie-myon-and-muxi-e-bikes-plus-xaber-300-electric-dirt-bike/",
+    "quote": "Muxi uses a single-speed drivetrain paired with a direct-drive motor, keeping things simple and approachable."
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": "4'8\"-6'0\"",
+    "url": "https://store.segway.com/muxi-electric-bike",
+    "quote": "Size: 4'8'~6'"
+   }
+  ],
+  "fold": [
+   {
+    "kind": "review",
+    "value": "No",
+    "url": "https://electrek.co/2026/01/07/segway-launches-techie-myon-and-muxi-e-bikes-plus-xaber-300-electric-dirt-bike/",
+    "quote": "Muxi is a short-tail utility e-bike designed to blur the line between a beach cruiser and a compact cargo bike."
+   },
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://www.segway.com/ebike/products/muxi.html",
+    "quote": "MUXI's twin-tube design keeps the center of gravity low for naturally balanced handling.",
+    "basis": "rigid twin-tube step-through frame; spec table gives one L × W × H (1693*741*1115 mm) and no folded size; folding not mentioned anywhere on the page"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker price from Segway's own store (Buy button on the product page); the store also sells a separate 'Segway MUXI Pro Cargo Electric Bike' - not this one. Maker Max. Speed lists Class 1/2/3 (23 mph) and 'Hybrid Mode: throttle to 20 mph & pedal assist to 23 mph*', while Electrek says 'selectable Class 1 or 2'. Maker gives no total payload, only rider limit plus rack/basket limits. Store height quote is written \"4'8'~6'\" (typo on page). Only one independent source (Electrek launch article). recheck: maker product page spec table and full text read: no folding mentioned (fold 'No' by absence). The page also says 'generous total payload capacity of 418 lbs', which the earlier note said the maker didn't give (load not changed here)."
+}

@@ -1,0 +1,45 @@
+{"bike": "Specialized|Turbo Como 5.0 IGH", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 6499.99, "url": "https://www.specialized.com/us/en/turbo-como-50-igh/p/4222075", "quote": "$6,499.99 ⟶ 4.3"},
+   {"kind": "retailer", "value": 6500, "url": "https://www.n1bikes.com/products/turbo-como-50-igh?id=4afaed11f52e3a76d1b2e64e495e70b2ea75b052db719314a5979d3fed01a02a&variant=90427-2104", "quote": "$6,500.00 ⟶ Earn 65,000 points on this item"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://www.specialized.com/us/en/turbo-como-50-igh/p/4222075", "quote": "Motor ⟶ Motor, Brose, gen2, torque 90nm, 28mph", "basis": "28 mph pedal assist, no throttle -> class 3 (class not named)"},
+   {"kind": "retailer", "value": 3, "url": "https://www.n1bikes.com/products/turbo-como-50-igh?id=4afaed11f52e3a76d1b2e64e495e70b2ea75b052db719314a5979d3fed01a02a&variant=90427-2104", "quote": "Motor\tMotor, Brose, gen2, torque 90nm, 28mph ⟶ Battery\tSpecialized integrated battery, state of charge display, 710Wh, UL", "basis": "28 mph -> class 3"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.specialized.com/us/en/turbo-como-50-igh/p/4222075", "quote": "Motor ⟶ Motor, Brose, gen2, torque 90nm, 28mph"},
+   {"kind": "retailer", "value": 28, "url": "https://www.n1bikes.com/products/turbo-como-50-igh?id=4afaed11f52e3a76d1b2e64e495e70b2ea75b052db719314a5979d3fed01a02a&variant=90427-2104", "quote": "Motor\tMotor, Brose, gen2, torque 90nm, 28mph ⟶ Battery\tSpecialized integrated battery, state of charge display, 710Wh, UL"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 90, "url": "https://www.specialized.com/us/en/turbo-como-50-igh/p/4222075", "quote": "Motor ⟶ Motor, Brose, gen2, torque 90nm, 28mph"},
+   {"kind": "retailer", "value": 90, "url": "https://www.n1bikes.com/products/turbo-como-50-igh?id=4afaed11f52e3a76d1b2e64e495e70b2ea75b052db719314a5979d3fed01a02a&variant=90427-2104", "quote": "Motor\tMotor, Brose, gen2, torque 90nm, 28mph ⟶ Battery\tSpecialized integrated battery, state of charge display, 710Wh, UL"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 710, "url": "https://www.specialized.com/us/en/turbo-como-50-igh/p/4222075", "quote": "Battery ⟶ Specialized integrated battery, state of charge display, 710Wh, UL"},
+   {"kind": "retailer", "value": 710, "url": "https://www.n1bikes.com/products/turbo-como-50-igh?id=4afaed11f52e3a76d1b2e64e495e70b2ea75b052db719314a5979d3fed01a02a&variant=90427-2104", "quote": "Battery\tSpecialized integrated battery, state of charge display, 710Wh, UL"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "62", "url": "https://www.specialized.com/us/en/turbo-como-50-igh/p/4222075", "quote": "Long-Range - With true ride-anywhere range, go up to 62 miles (100 km) or 4.5 hours of range (eco mode).", "basis": "eco mode"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 64.2, "url": "https://www.specialized.com/us/en/turbo-como-50-igh/p/4222075", "quote": "Weight ⟶ 29.1 kg (64 lb, 2.5 oz)", "basis": "size MD; 64 lb 2.5 oz = 64.2 lb"},
+   {"kind": "retailer", "value": 64.2, "url": "https://www.n1bikes.com/products/turbo-como-50-igh?id=4afaed11f52e3a76d1b2e64e495e70b2ea75b052db719314a5979d3fed01a02a&variant=90427-2104", "quote": "Weight\t29.1 kg (64 lb, 2.5 oz) ⟶ Weight Size\tMD"}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-como-50-igh/p/4222075", "quote": "Specialized rack, MIK HD interface, built-in pannier mounts, 27kg max load ⟶ Bike Lock", "basis": "only the rear rack limit (27 kg) is published"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Brose gen2", "url": "https://www.specialized.com/us/en/turbo-como-50-igh/p/4222075", "quote": "Motor ⟶ Motor, Brose, gen2, torque 90nm, 28mph", "basis": "no rated watts published"},
+   {"kind": "retailer", "value": "Brose gen2", "url": "https://www.n1bikes.com/products/turbo-como-50-igh?id=4afaed11f52e3a76d1b2e64e495e70b2ea75b052db719314a5979d3fed01a02a&variant=90427-2104", "quote": "Motor\tMotor, Brose, gen2, torque 90nm, 28mph ⟶ Battery\tSpecialized integrated battery, state of charge display, 710Wh, UL"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-como-50-igh/p/4222075", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.specialized.com/us/en/turbo-como-50-igh/p/4222075", "quote": "E5 Aluminum, bottom bracket motor mount, fully integrated &lockable downtube battery, internal cable routing, lock and front rack mount, sliding dropout ⟶ Seat Binder", "basis": "fixed aluminum frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Newer version with Brose gen2 motor and Enviolo Automatiq. Maker publishes 28mph in the motor line but no class name and no watts. Only one independent source (N+1 Bikes dealer copy of maker specs); ERideHero's '2026' 5.0 IGH page lists $5,799.99 and may be a different spec, not used."}
