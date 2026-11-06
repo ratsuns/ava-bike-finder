@@ -429,15 +429,15 @@ input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;width:1
 .vpv .vfig{margin:0;width:min(1100px,100%,calc((100dvh - 190px) * 16 / 9));display:grid;gap:12px}
 .vbox{position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#000;box-shadow:0 24px 64px rgba(0,0,0,.45)}
 .vbox iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-/* phone turned sideways while a video plays: the video fills the screen on black, clear of the notch, with nothing of
-   ours on top; turning it upright again brings back the normal player. Android goes truly full screen (script). After
-   YouTube's collapse button the player stays small (.small) until the phone is upright again, as in YouTube's app */
+/* phone turned sideways while a video plays: the player spans the screen edge to edge on black, clear of the notch,
+   with nothing of ours on top, whether or not it is in full screen (like YouTube's mobile site); turning the phone
+   upright brings back the upright player. Android also goes truly full screen when it allows (script) */
 @media (orientation:landscape) and (pointer:coarse) and (max-height:540px){
- .zoomv.vpv:not(.small){padding:0;gap:0;background:#000}
- .vpv:not(.small) .vfig{width:100%;height:100%;gap:0}
- .vpv:not(.small) .vbox{aspect-ratio:auto;height:100%;border-radius:0;box-shadow:none}
- .vpv:not(.small) .vbox iframe{top:0;left:env(safe-area-inset-left,0px);width:calc(100% - env(safe-area-inset-left,0px) - env(safe-area-inset-right,0px));height:calc(100% - env(safe-area-inset-bottom,0px))}
- .vpv:not(.small) .zcap,.vpv:not(.small) .zx{display:none}
+ .zoomv.vpv{padding:0;gap:0;background:#000}
+ .vpv .vfig{width:100%;height:100%;gap:0}
+ .vpv .vbox{aspect-ratio:auto;height:100%;border-radius:0;box-shadow:none}
+ .vpv .vbox iframe{top:0;left:env(safe-area-inset-left,0px);width:calc(100% - env(safe-area-inset-left,0px) - env(safe-area-inset-right,0px));height:calc(100% - env(safe-area-inset-bottom,0px))}
+ .vpv .zcap,.vpv .zx{display:none}
 }
 /* the video's own picture shows the moment the player opens, until YouTube's player has loaded over it */
 .vbox{background:#000 center/cover no-repeat}
@@ -1434,14 +1434,14 @@ addEventListener('resize',()=>{if(BIKE.open)fitBml()},{passive:true});
 const VP=$('vplay'),VBOX=VP.querySelector('.vbox');
 /* full screen belongs to the player when it is the box or YouTube's player inside it */
 const inPlayer=()=>{const f=document.fullscreenElement;return !!f&&(f===VBOX||VBOX.contains(f))};
-const vpStop=()=>{if(inPlayer())document.exitFullscreen().catch(()=>{});VP.classList.remove('small');VBOX.textContent='';VBOX.style.backgroundImage=''};
+const vpStop=()=>{if(inPlayer())document.exitFullscreen().catch(()=>{});VBOX.textContent='';VBOX.style.backgroundImage=''};
 /* turning and full screen, as in Google's guide to mobile video and YouTube's app:
    - phone turned sideways: the video fills the screen (the CSS above), and goes truly full screen where Android allows it
      (for a few seconds after a tap)
    - phone turned upright: always back to the normal player, whichever full screen was on (ours or YouTube's button).
      In full screen the screen can be held sideways (YouTube's player does that, and so do we for its expand button on an
      upright phone), so then the turn is read from the phone's tilt instead of the screen
-   - YouTube's collapse button: leaves full screen entirely and shows the small player until the phone is upright
+   - leaving full screen while sideways (YouTube's collapse button, or Android's back): the player stays edge to edge
    - YouTube's expand button on an upright Android phone: the video turns sideways */
 {const side=matchMedia('(orientation:landscape) and (pointer:coarse) and (max-height:540px)');
  const upright=matchMedia('(orientation:portrait) and (pointer:coarse) and (max-width:540px)');
@@ -1454,16 +1454,16 @@ const vpStop=()=>{if(inPlayer())document.exitFullscreen().catch(()=>{});VP.class
    else if(b>55&&g<35&&wasSideways&&inPlayer())document.exitFullscreen().catch(()=>{})};   // then upright again
   addEventListener('deviceorientation',tilt)};
  side.addEventListener('change',()=>{if(!VP.open)return;
-  if(side.matches){if(!VP.classList.contains('small')&&!document.fullscreenElement&&VBOX.requestFullscreen&&navigator.userActivation&&navigator.userActivation.isActive)
+  if(side.matches){if(!document.fullscreenElement&&VBOX.requestFullscreen&&navigator.userActivation&&navigator.userActivation.isActive)
     VBOX.requestFullscreen({navigationUI:'hide'}).catch(()=>{})}
-  else{VP.classList.remove('small');if(inPlayer())document.exitFullscreen().catch(()=>{})}});
+  else if(inPlayer())document.exitFullscreen().catch(()=>{})});
  document.addEventListener('fullscreenchange',()=>{if(!VP.open)return;const f=document.fullscreenElement;
   if(f===VBOX&&viaButton){viaButton=false;document.exitFullscreen().catch(()=>{});return}   // YouTube's collapse inside ours: leave entirely
   if(inPlayer()){watchTilt();
    if(f!==VBOX){viaButton=true;                                                             // YouTube's expand button
     if(upright.matches&&screen.orientation&&screen.orientation.lock)screen.orientation.lock('landscape').catch(()=>{})}
    return}
-  if(!f){viaButton=false;stopTilt();unlock();if(side.matches)VP.classList.add('small')}})}   // left full screen while sideways: small player
+  if(!f){viaButton=false;stopTilt();unlock()}})}
 /* the player starts sooner: the connections YouTube's player needs open while the bike window is up, before a video is
    tapped (the same list lite-youtube-embed warms) */
 let ytWarm=false;
