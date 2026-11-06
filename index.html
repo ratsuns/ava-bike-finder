@@ -407,6 +407,29 @@ input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;width:1
 .bmpl dt{color:var(--fg2)}
 .bmpl dd{margin:0;font-weight:600}
 .bmtax{margin:0;font-size:var(--t-meta);color:var(--fg2);line-height:1.45;text-wrap:pretty}
+.bmv{margin-top:16px;padding-top:16px;border-top:1px solid var(--line)}
+.bmv h3{margin:0 0 10px;font-size:var(--t-body);font-weight:600;letter-spacing:-.01em}
+.vlist{list-style:none;margin:0 -6px 4px;padding:0;display:grid;gap:4px} /* rows have 6px of hover padding; the list steps out by that so thumbnails line up with the heading */
+/* one review: thumbnail (YouTube's minimum for a play button is 120 x 70) and its title, channel, views and age */
+.vit{display:grid;grid-template-columns:128px minmax(0,1fr);gap:12px;align-items:start;width:100%;margin:0;padding:6px;border:0;border-radius:8px;background:none;color:inherit;font:inherit;text-align:left;cursor:pointer;transition:background-color .15s ease}
+.vit:focus-visible{outline:2px solid var(--accent);outline-offset:0}
+@media (hover:hover) and (pointer:fine){.vit:hover{background:var(--well)}}
+.vit:active{background:var(--well)}
+.vth{position:relative;width:128px;height:72px;border-radius:6px;overflow:hidden;background:var(--well)}
+.vth img{width:100%;height:100%;object-fit:cover;display:block}
+.vd{position:absolute;right:4px;bottom:4px;padding:1px 4px;border-radius:4px;background:rgba(0,0,0,.8);color:#fff;font-size:11px;font-weight:600;line-height:16px;font-variant-numeric:tabular-nums}
+.vtx{display:grid;gap:3px;min-width:0;padding-top:1px}
+.vt{font-size:var(--t-ui);font-weight:600;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;overflow-wrap:anywhere}
+.vm{font-size:var(--t-meta);color:var(--fg2);line-height:1.35}
+.vmore{display:inline-flex;align-items:center;gap:6px;margin-top:6px;font-size:var(--t-ui);font-weight:500;text-decoration:none}
+@media (hover:hover) and (pointer:fine){.vmore:hover{text-decoration:underline}}
+@media (pointer:coarse){.vmore{min-height:44px;margin-top:0}}
+.vnone{margin:0 0 2px;font-size:var(--t-meta);color:var(--fg2)}
+/* the player: YouTube's own, centred on a dark screen like the photo viewer; nothing of ours sits on top of it */
+.vpv .vfig{margin:0;width:min(1100px,100%,calc((100dvh - 190px) * 16 / 9));display:grid;gap:12px}
+.vbox{position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#000;box-shadow:0 24px 64px rgba(0,0,0,.45)}
+.vbox iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vpv .zcap{text-align:center;text-wrap:balance}
 .bmr{display:grid;gap:24px;min-width:0}
 .bmr h3{margin:0 0 10px;font-size:var(--t-body);font-weight:600;letter-spacing:-.01em}
 .bmpick{display:grid;gap:4px;margin:0 0 4px;padding:0}
@@ -1117,6 +1140,7 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
 </div>
 </dialog>
 <dialog id="zoom" class="zoomv" aria-label="Bike photo"><button type="button" class="zx" aria-label="Close photo"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button><figure class="zfig"><div class="zstage"><img id="zoom-img" alt=""></div><div class="zbar"><button type="button" class="zarr zprev" aria-label="Previous color"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg></button><div class="zmeta"><p class="zcap" id="zoom-cap"></p><p class="znote" id="zoom-note" hidden></p><div class="zsws" id="zoom-sws" role="group" aria-label="Colors"></div></div><button type="button" class="zarr znext" aria-label="Next color"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></button></div></figure></dialog>
+<dialog id="vplay" class="zoomv vpv" aria-label="Video review"><button type="button" class="zx" aria-label="Close video"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button><figure class="vfig"><div class="vbox"></div><figcaption class="zcap"></figcaption></figure></dialog>
 <dialog id="bike" class="bm" aria-labelledby="bike-h">
  <div class="bmh"><div><span class="br" id="bike-br" aria-hidden="true"></span><h2 id="bike-h"></h2></div>
  <button type="button" class="dclose" aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
@@ -1357,6 +1381,41 @@ document.querySelectorAll('[data-open]').forEach(btn=>btn.onclick=()=>showDlg($(
 {const fromHash=()=>{const h=location.hash.slice(1);if(h==='dir'){location.replace('browse-vendors/');return}if(h==='guide'||h==='rebate'){history.replaceState(null,'',location.pathname+location.search);requestAnimationFrame(()=>{if(!$(h).open)showDlg($(h))})}};fromHash();addEventListener('hashchange',fromHash)}
 /* bike detail modal */
 const BIKE=$('bike');let BIKE_I=null,BIKE_AC=null;/* the modal's colour is its own: picking one there never changes the card */
+/* video reviews: the 3 most-watched recent reviews per bike (found with YouTube's official search when the site is built).
+   They live in their own small file, fetched once the page is idle, so they never slow the first view */
+const VURL='videos-55a4dc80.json';let VIDS=null,VIDP=null;
+const loadVids=()=>VIDP||(VIDP=fetch(VURL).then(r=>r.ok?r.json():Promise.reject()).then(j=>VIDS=j).catch(()=>{VIDP=null;return null}));
+(window.requestIdleCallback||(f=>setTimeout(f,1500)))(()=>loadVids());
+const nViews=n=>n>=1e6?(n/1e6).toFixed(n<1e7?1:0).replace(/\.0$/,'')+'M':n>=1e3?(n/1e3).toFixed(n<1e4?1:0).replace(/\.0$/,'')+'K':String(n);
+const vAge=d=>{const m=Math.max(0,Math.round((Date.now()-Date.parse(d))/2629800000));return m<1?'this month':m<12?m+(m===1?' month':' months')+' ago':(m=Math.round(m/12))+(m===1?' year':' years')+' ago'};
+const vDur=s=>{const h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=String(s%60).padStart(2,'0');return h?h+':'+String(m).padStart(2,'0')+':'+x:m+':'+x};
+function vidsHTML(b){const list=VIDS?VIDS[b.brand+'|'+b.model]||[]:null;
+ const more=`<a class="vmore" href="https://www.youtube.com/results?search_query=${encodeURIComponent(b.name+' review')}" target="_blank" rel="noopener">View more video reviews on YouTube${EXT}</a>`;
+ if(list===null)return `<h3>Video reviews</h3>${more}`;
+ if(!list.length)return `<h3>Video reviews</h3><p class="vnone">No recent reviews we could match to this exact bike yet.</p>${more}`;
+ return `<h3>Video reviews</h3><ul class="vlist">${list.map(([id,t,c,vw,d,du])=>`<li><button type="button" class="vit" data-v="${esc(id)}" data-t="${esc(t)}" data-c="${esc(c)}" aria-label="Play video: ${esc(t)}, by ${esc(c)}"><span class="vth"><img src="https://i.ytimg.com/vi/${esc(id)}/mqdefault.jpg" alt="" width="128" height="72" loading="lazy" decoding="async"><span class="vd">${vDur(du)}</span></span><span class="vtx"><span class="vt">${esc(t)}</span><span class="vm">${esc(c)} · ${nViews(vw)} views · ${vAge(d)}</span></span></button></li>`).join('')}</ul>${more}`}
+/* if the videos arrive after a bike window was built, fill its section in place */
+function fillVids(){const s=$('bike-vids');if(!s||!VIDS)return;const i=B.findIndex(x=>x.brand+'|'+x.model===s.dataset.k);if(i>=0&&!s.querySelector('.vlist,.vnone')){s.innerHTML=vidsHTML(B[i]);fitBml()}}
+/* the photo column stays pinned while the details scroll; when it's taller than the window it scrolls up first, then pins */
+function fitBml(){const c=BIKE.querySelector('.bml'),bb=$('bike-body');if(c&&bb)c.style.top=Math.min(20,bb.clientHeight-c.offsetHeight-20)+'px'}
+addEventListener('resize',()=>{if(BIKE.open)fitBml()},{passive:true});
+/* resting the mouse on a thumbnail flips through the 3 still frames YouTube makes of every video (our picture only; the player isn't touched) */
+{let vt=0,vimg=null;const stop=()=>{clearInterval(vt);vt=0;if(vimg){vimg.src=vimg.dataset.src0;vimg=null}};
+ BIKE.addEventListener('pointerover',e=>{const it=e.target.closest('.vit');if(!it||e.pointerType!=='mouse'||matchMedia('(prefers-reduced-motion: reduce)').matches)return;const im=it.querySelector('img');if(im===vimg)return;stop();
+  const id=it.dataset.v,fr=['mq1','mq2','mq3'].map(n=>`https://i.ytimg.com/vi/${id}/${n}.jpg`);fr.forEach(u=>{const p=new Image();p.src=u});
+  vimg=im;im.dataset.src0=im.dataset.src0||im.src;let k=0;vt=setInterval(()=>{im.src=fr[k++%3]},700)});
+ BIKE.addEventListener('pointerout',e=>{const it=e.target.closest('.vit');if(it&&!it.contains(e.relatedTarget))stop()});
+ BIKE.addEventListener('close',stop)}
+/* clicking a review opens YouTube's player on a dark screen; closing it stops the video and returns to the bike */
+const VP=$('vplay'),VBOX=VP.querySelector('.vbox');
+const vpStop=()=>{VBOX.textContent=''};
+BIKE.addEventListener('click',e=>{const it=e.target.closest('.vit');if(!it)return;
+ VBOX.innerHTML=`<iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(it.dataset.v)}?autoplay=1&rel=0&playsinline=1" title="${esc(it.dataset.t)}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>`;
+ VP.querySelector('.zcap').textContent=it.dataset.t+' · '+it.dataset.c;showDlg(VP,it)});
+{const c0=VP.close;VP.close=function(){vpStop();return c0.call(this)}}
+VP.querySelector('.zx').onclick=()=>VP.close();
+VP.addEventListener('click',e=>{if(!e.target.closest('.vbox,.zx'))VP.close()});
+VP.addEventListener('close',vpStop);
 const EXT='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>';
 /* the details are built as soon as a finger or mouse goes down on a card, so by the time the tap lands the window only has to slide in */
 let BIKE_PRE=null;
@@ -1388,6 +1447,7 @@ function buildBike(i){const pre=i+'|'+F.city+'|'+F.q+'|'+(ME?NEAR_MI:'');if(BIKE
   <div class="bmph"><img id="bike-img" src="${shownSrc(b)}" decoding="sync" alt="${esc(b.name)}">${sws}</div>
   <p class="bmcap" id="bike-cap" hidden></p>
   <div class="bmp">${b.st?`<p class="bmst"><span class="chip stag">${esc(STX[b.st][0])}</span>${esc(STX[b.st][1])}</p>`:''}${price}${b.note?`<p class="bmtax">About the price: ${esc(b.note)}</p>`:''}</div>
+  <section class="bmv" id="bike-vids" data-k="${esc(b.brand+'|'+b.model)}">${vidsHTML(b)}</section>
  </div>
  <div class="bmr">
   ${pk?`<div class="bmpick"><span class="bmpk">${STAR}${esc(pk.tag)}</span><p><b>${esc(pk.head)}</b> ${esc(pk.sub)}</p></div>`:''}
@@ -1398,6 +1458,7 @@ function buildBike(i){const pre=i+'|'+F.city+'|'+F.q+'|'+(ME?NEAR_MI:'');if(BIKE
  </div>
 </div>`;
  $('bike-img').decode().catch(()=>{});
+ if(!VIDS)loadVids().then(fillVids);
 }
 /* the details open on exactly the photo the card shows: the color picked on the card if there is one, otherwise the display photo with no dot selected.
    the same image is already decoded from the card, so nothing swaps or flickers while the window slides in */
@@ -1405,7 +1466,7 @@ function buildBike(i){const pre=i+'|'+F.city+'|'+F.q+'|'+(ME?NEAR_MI:'');if(BIKE
    decoding starts on pointerdown, so by the time the tap lands it is normally finished; a short cap keeps a slow decode from holding the window back */
 let BIKE_OPENING=0;
 function openBike(i,opener){if(BIKE.open)return;const tok=++BIKE_OPENING;buildBike(i);DT.reset();BIKE_I=i;BIKE_AC=activeColor(B[i]);syncBike();
- const im=$('bike-img'),show=()=>{if(tok!==BIKE_OPENING||BIKE.open)return;showDlg(BIKE,opener);$('bike-body').scrollTop=0};
+ const im=$('bike-img'),show=()=>{if(tok!==BIKE_OPENING||BIKE.open)return;showDlg(BIKE,opener);$('bike-body').scrollTop=0;fitBml()};
  Promise.race([im.decode().catch(()=>{}),new Promise(r=>setTimeout(r,150))]).then(show)}
 $('g').addEventListener('pointerdown',e=>{if(BIKE.open||e.button)return;const c=e.target.closest('.c[data-b]');if(c&&!e.target.closest('a,.sws')&&!(e.target.closest('[data-tip]')&&e.pointerType!=='mouse'))buildBike(+c.dataset.b)},{passive:true});
 function syncBike(){

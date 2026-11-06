@@ -190,7 +190,16 @@ if SITE:
     DJ='window.AVA_B='+json.dumps(out,separators=(',',':'))+';window.AVA_S='+json.dumps(S,separators=(',',':'))+';'
     DN='data-'+hashlib.md5(DJ.encode()).hexdigest()[:8]+'.js'
     open(os.path.join(SITE,DN),'w').write(DJ)
-    PAGE=open('site_tpl.html').read().replace('__HERO_MP4__',HM).replace('__HERO_JPG__',HJ)
+    # video reviews (verify/videos.json, made by yt_match.py from YouTube's official search): kept in their own small file
+    # that the page loads after it's up, so they never slow the first view. Each: [video id, title, channel, views, date, seconds]
+    for f in os.listdir(SITE):
+        if f.startswith('videos-') and f.endswith('.json'): os.remove(os.path.join(SITE,f))
+    _vj=json.load(open('verify/videos.json')) if os.path.exists('verify/videos.json') else {}
+    VJ=json.dumps({k:[[x['id'],x['t'],x['c'],x['vw'],x['d'],x['du']] for x in v] for k,v in _vj.items() if v},separators=(',',':'),ensure_ascii=False)
+    assert 'AIza' not in VJ  # never publish an API key
+    VN='videos-'+hashlib.md5(VJ.encode()).hexdigest()[:8]+'.json'
+    open(os.path.join(SITE,VN),'w').write(VJ)
+    PAGE=open('site_tpl.html').read().replace('__HERO_MP4__',HM).replace('__HERO_JPG__',HJ).replace('__VIDS__',VN)
     PAGE=PAGE.replace('<script>\nconst B=__BIKES__;\nconst S=__SHOPS__;',f'<script src="{DN}"></script>\n<script>\nconst B=window.AVA_B;\nconst S=window.AVA_S;',1)
     assert '__BIKES__' not in PAGE
     # plain-text copy of the list for search engines and browsers that don't run the page script
