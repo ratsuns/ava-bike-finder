@@ -1,0 +1,46 @@
+{"bike": "Momentum|Cito E+", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 3200, "url": "https://www.momentum-biking.com/us/cito-eplus-2024", "quote": "$3,200 * ⟶ 0% APRor as low as $111/mo with Affirm. See if you qualify"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://www.momentum-biking.com/us/cito-eplus-2024", "quote": "SyncDrive Move S 80Nm torque 750W Rear Hub Motor, Class 2 | 3, Max Assist Speed: 20mph (Throttle) | 28 (PA)MPH ⟶ Controller", "basis": "pedal assist to 28 mph out of the box (throttle to 20 mph) -> Class 3"},
+   {"kind": "review", "value": 3, "url": "https://electricbikereport.com/momentum-cito-e-plus-review/", "quote": "CLASS 2 (THROTTLE TO 20 MPH) ⟶ CLASS 3 (PEDAL ASSIST TO 28 MPH)"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.momentum-biking.com/us/cito-eplus-2024", "quote": "SyncDrive Move S motor has 80Nm torque, 750W Rear Hub Motor, and speeds up to 28mph with pedal assist; up to 20mph with throttle function. ⟶ POWERFUL CHARGING"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereport.com/momentum-cito-e-plus-review/", "quote": "CLASS 2 (THROTTLE TO 20 MPH) ⟶ CLASS 3 (PEDAL ASSIST TO 28 MPH)"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 80, "url": "https://www.momentum-biking.com/us/cito-eplus-2024", "quote": "SyncDrive Move S 80Nm torque 750W Rear Hub Motor, Class 2 | 3, Max Assist Speed: 20mph (Throttle) | 28 (PA)MPH ⟶ Controller"},
+   {"kind": "review", "value": 80, "url": "https://electricbikereport.com/momentum-cito-e-plus-review/", "quote": "Motor: SyncDrive Move S 80Nm torque 750W Rear Hub Motor ⟶ Headlight:Hi /Low 1900 Lumen, Daytime running lights"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 780, "url": "https://www.momentum-biking.com/us/cito-eplus-2024", "quote": "Battery ⟶ EnergyPak 780Wh 48V Panasonic 22700 Cell Battery"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "30–75", "url": "https://www.momentum-biking.com/us/cito-eplus-2024", "quote": "Pedal (Class 3): Up to 28mph, ECO: 60-75 miles, ACTIVE: 40-45 miles ,POWER: 30-35 miles Throttle(Class 2): Up to 20mph, ECO: 40-45 miles, ACTIVE: 25-30 miles, POWER: 25-30miles ⟶ Charger", "basis": "pedal assist, Power to Eco; marketing copy elsewhere says '45-75 mile range'"},
+   {"kind": "review", "value": "30–75", "url": "https://electricbikereport.com/momentum-cito-e-plus-review/", "quote": "Claimed Range: ⟶ PAS: 30-75 miles"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 86, "url": "https://www.momentum-biking.com/us/cito-eplus-2024", "quote": "Weight ⟶ 86lbs (39kg), including the main battery inside"},
+   {"kind": "review", "value": 86, "url": "https://electricbikereport.com/momentum-cito-e-plus-review/", "quote": "WEIGHT & DIMENSIONS ⟶ Claimed weight: 86 lbs.", "basis": "tested 87.5 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 408, "url": "https://www.momentum-biking.com/us/cito-eplus-2024", "quote": "Total Load Weight Limit ⟶ Up to 408lbs, Rider limit 242lbs", "basis": "maker's 'total capacity' = rider + racks per its copy ('Up to 408lbs total capacity: rider up to 243lbs, integrated rear rack holds up to 132lbs, and optional front rack holds up to 33lbs'); does not say it includes the bike"},
+   {"kind": "review", "value": 408, "url": "https://electricbikereport.com/momentum-cito-e-plus-review/", "quote": "Total payload capacity: ⟶ Up to 408lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub (SyncDrive Move S)", "url": "https://www.momentum-biking.com/us/cito-eplus-2024", "quote": "SyncDrive Move S 80Nm torque 750W Rear Hub Motor, Class 2 | 3, Max Assist Speed: 20mph (Throttle) | 28 (PA)MPH ⟶ Controller"},
+   {"kind": "review", "value": "750W rear hub (SyncDrive Move S)", "url": "https://electricbikereport.com/momentum-cito-e-plus-review/", "quote": "Motor: SyncDrive Move S 80Nm torque 750W Rear Hub Motor ⟶ Headlight:Hi /Low 1900 Lumen, Daytime running lights"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'9\"-6'3\"", "url": "https://www.momentum-biking.com/us/cito-eplus-2024", "quote": "Frame Size\tRider Height\tStandover Height ⟶ One Size\t4’9” to 6’3”\t16.1\""},
+   {"kind": "review", "value": "4'9\"-6'3\"", "url": "https://electricbikereport.com/momentum-cito-e-plus-review/", "quote": "Tested Weight: 87.5 lbs ⟶ Rider height range: 4’9” to 6’3”"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.momentum-biking.com/us/cito-eplus-2024", "quote": "Best City E-bike | Throttle And Pedal Assist E-bike | Cito E+ (2024) | Momentum Bikes US", "basis": "page title; compact cargo frame, no folding (EBR notes it 'Stores vertically')"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "src link redirected to https://www.momentum-biking.com/us/cito-eplus-2024. Maker rider limit given as both 242 lbs (spec table) and 243 lbs (marketing copy). ElectricBikeReview has no Cito review; only one independent source (ElectricBikeReport), which shows no price."}

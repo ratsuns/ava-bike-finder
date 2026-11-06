@@ -1,0 +1,41 @@
+{
+ "bike": "Pedego|Avenue Core",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1995, "url": "https://pedegoelectricbikes.com/products/avenue-core", "quote": "$1,995.00 ⟶ CHOOSE OPTIONS"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://pedegoelectricbikes.com/products/avenue-core", "quote": "Class 1 - 20mph Pedal Assist; Class 2 - 20mph Pedal Assist & Throttle", "basis": "Class 1 & 2; has a twist throttle ('THROTTLE | Pedego Twist Throttle') and 20 mph -> Class 2"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://pedegoelectricbikes.com/products/avenue-core", "quote": "Class 1 - 20mph Pedal Assist; Class 2 - 20mph Pedal Assist & Throttle"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 75, "url": "https://pedegoelectricbikes.com/products/avenue-core", "quote": "MOTOR | 48V, 500W, 75Nm Torque"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 504, "url": "https://pedegoelectricbikes.com/products/avenue-core", "quote": "48V 10.5Ah 504Wh, UL2271 Certified Pack, UL2580 Certified Cells, Removable Battery"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "42", "url": "https://pedegoelectricbikes.com/products/avenue-core", "quote": "Range Up to | 42 Miles", "basis": "'up to'"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 53, "url": "https://pedegoelectricbikes.com/products/avenue-core", "quote": "BIKE | 45lbs | 20.4kgs (w/o Battery) | BATTERY | 8lbs / 3.6 kg", "basis": "45 lb without battery + 8 lb battery"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 250, "url": "https://pedegoelectricbikes.com/products/avenue-core", "quote": "Payload Up to | 250 Lb"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W", "url": "https://pedegoelectricbikes.com/products/avenue-core", "quote": "MOTOR | 48V, 500W, 75Nm Torque"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://pedegoelectricbikes.com/products/avenue-core", "quote": "RIDER HEIGHT | ELECTRONICS", "basis": "rider height field is blank"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://pedegoelectricbikes.com/products/avenue-core", "quote": "MATERIAL | 6061 Aluminum Alloy | TYPE | Commuter", "basis": "fixed commuter frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page only. No independent page for this exact model: EBR, EBReport and Electrek have only the older Avenue; the one WebSearch found only older-Avenue pages. Upway's Avenue review lumps 'Gen 1 / Core' together with 45 Nm, contradicting the maker's 75Nm for the Core, so it was not used. Maker rider-height field is blank."
+}

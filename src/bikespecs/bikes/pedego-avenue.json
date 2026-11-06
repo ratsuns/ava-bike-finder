@@ -1,0 +1,50 @@
+{
+ "bike": "Pedego|Avenue",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1999, "url": "https://pedegoelectricbikes.com/products/avenue", "quote": "$1,999.00 ⟶ CHOOSE OPTIONS"},
+   {"kind": "review", "value": 2000, "url": "https://electricbikereport.com/pedego-avenue-review/", "quote": "The standard version Pedego Avenue comes with the 10.4-amp hour battery that weighs 6.4 lbs, and sells for around $2000 (the 14-amp hour battery is $250 more).", "basis": "'around $2000'"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://pedegoelectricbikes.com/products/avenue", "quote": "SPEED ⟶ 20 MPH", "basis": "maker states 20 mph but no class or throttle on this page"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/pedego-avenue-review/", "quote": "BIKE CLASS: ⟶ CLASS 2: PAS/THROTTLE ASSIST, UP TO 20 MPH"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://pedegoelectricbikes.com/products/avenue", "quote": "SPEED ⟶ 20 MPH"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/pedego-avenue-review/", "quote": "BIKE CLASS: ⟶ CLASS 2: PAS/THROTTLE ASSIST, UP TO 20 MPH"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 60, "url": "https://pedegoelectricbikes.com/products/avenue", "quote": "BLACK 48V BRUSHLESS GEARED REAR HUB MOTOR; 500 WATT NOMINAL POWER RATING; 45NM NOMINAL TORQUE RATING / 60NM MAX TORQUE; QUICK DISCONNECT CABLE W/ WATERPROOF CONNECTION.", "basis": "60Nm max (45Nm nominal)"},
+   {"kind": "review", "value": 60, "url": "https://electricbikereport.com/pedego-avenue-review/", "quote": "Motor: Black 48-volt brushless geared rear hub motor; 500-watt nominal power rating; 45 nm nominal torque rating / 60 nm max torque; quick disconnect cable w/ waterproof connection.", "basis": "60 nm max (45 nm nominal)"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 499.2, "url": "https://pedegoelectricbikes.com/products/avenue", "quote": "48V/10.4Ah or 48V/14Ah BATTERY W/ PREMIUM LI-ION CELLS.", "basis": "48V x 10.4Ah standard battery (option selector says 48V 10.5Ah)"},
+   {"kind": "review", "value": 499.2, "url": "https://electricbikereport.com/pedego-avenue-review/", "quote": "Battery: 48-volt /10.4-amp hour (or 48-volt/14-amp hour option).", "basis": "48V x 10.4Ah"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "56", "url": "https://pedegoelectricbikes.com/products/avenue", "quote": "RANGE UP TO ⟶ 56 Miles", "basis": "'up to'; battery not specified"},
+   {"kind": "review", "value": "28–56", "url": "https://electricbikereport.com/pedego-avenue-review/", "quote": "Range: 28 – 56 miles."}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 51.4, "url": "https://pedegoelectricbikes.com/products/avenue", "quote": "BATTERY | 48V/10.5Ah: 6.4LB; 48V/14Ah: 7.8 LB. | BIKE (NO BATTERY) | AVENUE CLASSIC 28”: 44.6 LB; AVENUE STEP THRU 28”: 45 LB.", "basis": "28in Step Thru 45 lb + 6.4 lb standard battery (Classic 28in: 44.6 + 6.4 = 51.0)"},
+   {"kind": "review", "value": 52.8, "url": "https://electricbikereport.com/pedego-avenue-review/", "quote": "Claimed weight: Avenue Classic 28”- 52.2 lbs; Avenue Step-Thru 28” – 52.8 lbs", "basis": "Step-Thru 28in"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 250, "url": "https://pedegoelectricbikes.com/products/avenue", "quote": "WEIGHT LIMIT ⟶ 250 LB"},
+   {"kind": "review", "value": 250, "url": "https://electricbikereport.com/pedego-avenue-review/", "quote": "Maximum rider weight: spoke wheels – 250 lbs; magnesium wheels – 400 lbs", "basis": "spoke wheels (400 lb with mag wheels)"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W rear hub", "url": "https://pedegoelectricbikes.com/products/avenue", "quote": "BLACK 48V BRUSHLESS GEARED REAR HUB MOTOR; 500 WATT NOMINAL POWER RATING; 45NM NOMINAL TORQUE RATING / 60NM MAX TORQUE; QUICK DISCONNECT CABLE W/ WATERPROOF CONNECTION."},
+   {"kind": "review", "value": "500W rear hub", "url": "https://electricbikereport.com/pedego-avenue-review/", "quote": "Motor: Black 48-volt brushless geared rear hub motor; 500-watt nominal power rating; 45 nm nominal torque rating / 60 nm max torque; quick disconnect cable w/ waterproof connection."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'11\"-6'4\"+", "url": "https://pedegoelectricbikes.com/products/avenue", "quote": "RIDER HEIGHT ⟶ 4'11\" to 6'4\"+"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://pedegoelectricbikes.com/products/avenue", "quote": "28” 6061-T6 ALUMINUM ALLOY; INTEGRATED DOWNTUBE BATTERY; SEMI-INTERNAL CABLE ROUTING.", "basis": "fixed aluminum frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page displays $1,999 but its Shopify product data says 115000 (=$1,150) for spoke wheels / 135000 for mag wheels; most variants unavailable and the 14Ah battery option is SOLD OUT. Maker page doesn't state class or throttle; EBReport says Class 2 with twist throttle. Maker weight is frame-without-battery plus battery listed separately (summed). Payload is 400 lb with mag wheels per EBReport."
+}

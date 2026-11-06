@@ -1,0 +1,49 @@
+{"bike": "Fuji|E-Crosstown", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "review", "value": 2249, "url": "https://99spokes.com/bikes/fuji/2019/e-crosstown", "quote": "Manufacturer Price | $2,249", "basis": "99 Spokes spec aggregator, 2019 E-Crosstown"},
+   {"kind": "retailer", "value": 1499.99, "url": "https://www.sunandski.com/product/fuji-fuji-e-crosstown-electric-bike-33565", "quote": "Clearance | $ 699.84 | $ 1,499.99 | 53% OFF", "basis": "crossed-out regular price $1,499.99 next to $699.84 clearance price; conflicts with 99 Spokes' $2,249"},
+   {"kind": "retailer", "value": null, "url": "https://www.dedhambike.com/product/fuji-e-crosstown-347793-1.htm", "quote": "This item is currently not available.", "basis": "no price shown"}
+  ],
+  "cls": [
+   {"kind": "retailer", "value": 1, "url": "https://www.dedhambike.com/product/fuji-e-crosstown-347793-1.htm", "quote": "- Rear hub pedal assist motor has 250w of rated power, up to 20mph.", "basis": "no class stated; 20 mph pedal assist, no throttle in the parts list (display 'w/ walk assist' only), so Class 1"},
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/fuji/2019/e-crosstown", "quote": ""}
+  ],
+  "spd": [
+   {"kind": "retailer", "value": 20, "url": "https://www.dedhambike.com/product/fuji-e-crosstown-347793-1.htm", "quote": "Drive System\tBafang H400B rear hub motor, 250W rated power, 20mph maximum assist"},
+   {"kind": "review", "value": 20, "url": "https://99spokes.com/bikes/fuji/2019/e-crosstown", "quote": "Motor | Bafang H400B rear hub motor, 250W rated power, 20mph maximum assist"}
+  ],
+  "tq": [
+   {"kind": "retailer", "value": null, "url": "https://www.dedhambike.com/product/fuji-e-crosstown-347793-1.htm", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/fuji/2019/e-crosstown", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "retailer", "value": 468, "url": "https://www.dedhambike.com/product/fuji-e-crosstown-347793-1.htm", "quote": "Battery Type/Weight\tFuji Power Pack 468Wh w/ 2A charger"},
+   {"kind": "review", "value": 468, "url": "https://99spokes.com/bikes/fuji/2019/e-crosstown", "quote": "Battery | Fuji Power Pack 468Wh w/ 2A charger"}
+  ],
+  "range": [
+   {"kind": "retailer", "value": null, "url": "https://www.dedhambike.com/product/fuji-e-crosstown-347793-1.htm", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/fuji/2019/e-crosstown", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "review", "value": 55.8, "url": "https://99spokes.com/bikes/fuji/2019/e-crosstown", "quote": "Manufacturer Price | $2,249 | Weight55.8 lbs", "basis": "99 Spokes; does not say with/without battery"},
+   {"kind": "retailer", "value": null, "url": "https://www.dedhambike.com/product/fuji-e-crosstown-347793-1.htm", "quote": ""}
+  ],
+  "load": [
+   {"kind": "retailer", "value": null, "url": "https://www.dedhambike.com/product/fuji-e-crosstown-347793-1.htm", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/fuji/2019/e-crosstown", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "retailer", "value": "250W Bafang H400B rear hub", "url": "https://www.dedhambike.com/product/fuji-e-crosstown-347793-1.htm", "quote": "Drive System\tBafang H400B rear hub motor, 250W rated power, 20mph maximum assist"},
+   {"kind": "review", "value": "250W Bafang H400B rear hub", "url": "https://99spokes.com/bikes/fuji/2019/e-crosstown", "quote": "Motor | Bafang H400B rear hub motor, 250W rated power, 20mph maximum assist"}
+  ],
+  "height": [
+   {"kind": "retailer", "value": null, "url": "https://www.dedhambike.com/product/fuji-e-crosstown-347793-1.htm", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/fuji/2019/e-crosstown", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "retailer", "value": "No", "url": "https://www.dedhambike.com/product/fuji-e-crosstown-347793-1.htm", "quote": "Frame\tFuji A1-SL Custom-Butted Alloy, integrated head tube, rear rack mounted battery, fender mounts", "basis": "fixed alloy frame; nothing about folding"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "MAKER PAGE NOT REACHED: the browser refused every fujibikes.com URL ('navigation ... was denied or failed'). src link is the 2019 E-Crosstown; Dedham Bike (inactive listing) and 99 Spokes 2019 both show the 468Wh rear-rack-battery version; Sun & Ski (clearance) shows the same Bafang H400B / Vera Rove 700x42c / MT200 parts but no Wh. PRICE CONFLICT: 99 Spokes 'Manufacturer Price' $2,249 vs Sun & Ski crossed-out $1,499.99. Newer E-Crosstown (LS, 2023+) pages exist on 99 Spokes but were not used. Both dealer listings are sold out / clearance, possibly discontinued (not confirmed by maker). 1 WebSearch used."}

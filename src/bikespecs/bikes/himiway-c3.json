@@ -1,0 +1,59 @@
+{"bike": "Himiway|C3", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2199, "url": "https://himiwaybike.com/products/c3cargo-ebike", "quote": "Regular price ⟶ $2,199.00"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/himiway-c3-review/", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://upway.co/blogs/news/himiway-c3-cargo-ebike-review", "quote": ""}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://himiwaybike.com/products/c3cargo-ebike", "quote": "Throttle ⟶ Thumb throttle", "basis": "has a throttle but the page states no class or top speed"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/himiway-c3-review/", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://upway.co/blogs/news/himiway-c3-cargo-ebike-review", "quote": ""}
+  ],
+  "spd": [
+   {"kind": "maker", "value": null, "url": "https://himiwaybike.com/products/c3cargo-ebike", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/himiway-c3-review/", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://upway.co/blogs/news/himiway-c3-cargo-ebike-review", "quote": ""}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 86, "url": "https://himiwaybike.com/products/c3cargo-ebike", "quote": "Motor Power ⟶ 86Nm | 86Nm ⟶ Max Motor Torque", "basis": "the paragraph above it names the 'Himiway C5' (copy error on the C3 page)"},
+   {"kind": "review", "value": 86, "url": "https://electricbikereport.com/himiway-c3-review/", "quote": "The combination of a 750W brushless, geared hub motor that produces 86Nm of torque being powered by a 960Wh battery means that the Himiway C3 won’t struggle to get two riders up to cruising speed."},
+   {"kind": "review", "value": 86, "url": "https://upway.co/blogs/news/himiway-c3-cargo-ebike-review", "quote": "Motor\t750W rear hub ⟶ Torque\t86Nm"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 960, "url": "https://himiwaybike.com/products/c3cargo-ebike", "quote": "Motor ⟶ 960 Wh"},
+   {"kind": "review", "value": 960, "url": "https://electricbikereport.com/himiway-c3-review/", "quote": "The combination of a 750W brushless, geared hub motor that produces 86Nm of torque being powered by a 960Wh battery means that the Himiway C3 won’t struggle to get two riders up to cruising speed."},
+   {"kind": "review", "value": 960, "url": "https://upway.co/blogs/news/himiway-c3-cargo-ebike-review", "quote": "Torque\t86Nm ⟶ Battery\t960Wh Samsung/LG"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "60–80", "url": "https://himiwaybike.com/products/c3cargo-ebike", "quote": "Range ⟶ 60-80 miles"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/himiway-c3-review/", "quote": ""},
+   {"kind": "review", "value": "80", "url": "https://upway.co/blogs/news/himiway-c3-cargo-ebike-review", "quote": "Battery\t960Wh Samsung/LG ⟶ Claimed range\tUp to 80 miles"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 80, "url": "https://himiwaybike.com/products/c3cargo-ebike", "quote": "Weight ⟶ 80 lb. (with battery)"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/himiway-c3-review/", "quote": ""},
+   {"kind": "review", "value": 80, "url": "https://upway.co/blogs/news/himiway-c3-cargo-ebike-review", "quote": "The C3 uses a 750W rear-hub motor rated at 86Nm of torque. Those numbers matter more once you add weight to the rear rack, since the bike weighs 80 pounds. Getting an empty bike rolling is easy. Starting on a hill with groceries or a passenger behind you asks considerably more from the motor."}
+  ],
+  "load": [
+   {"kind": "maker", "value": 440, "url": "https://himiwaybike.com/products/c3cargo-ebike", "quote": "Max. payload capacity ⟶ 440 lb. (with battery)"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/himiway-c3-review/", "quote": ""},
+   {"kind": "review", "value": 440, "url": "https://upway.co/blogs/news/himiway-c3-cargo-ebike-review", "quote": "Maximum payload\t440 lb. ⟶ Maximum rider weight\t265 lb."}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub", "url": "https://himiwaybike.com/products/c3cargo-ebike", "quote": "Rim: J57SA 20*12G*36H A/V | Spoke: 12G 127mm/128mm | Hub: 48v 750w Himiway Hub Motor ⟶ Tires"},
+   {"kind": "review", "value": "750W geared hub", "url": "https://electricbikereport.com/himiway-c3-review/", "quote": "The combination of a 750W brushless, geared hub motor that produces 86Nm of torque being powered by a 960Wh battery means that the Himiway C3 won’t struggle to get two riders up to cruising speed."},
+   {"kind": "review", "value": "750W rear hub", "url": "https://upway.co/blogs/news/himiway-c3-cargo-ebike-review", "quote": "Motor\t750W rear hub ⟶ Torque\t86Nm"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'2\"-6'3\"", "url": "https://himiwaybike.com/products/c3cargo-ebike", "quote": "Rider height ⟶ 5'2\" ~ 6'3\""},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/himiway-c3-review/", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://upway.co/blogs/news/himiway-c3-cargo-ebike-review", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://himiwaybike.com/products/c3cargo-ebike", "quote": "Specification | Frame | 6061 Aluminum frame", "basis": "no folding frame mentioned"},
+   {"kind": "review", "value": "No", "url": "https://upway.co/blogs/news/himiway-c3-cargo-ebike-review", "quote": "Maximum rider weight\t265 lb. ⟶ Frame\tStep-through", "basis": "step-through frame, not folding"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Given src was the e-cargo collection page; used the C3 product page https://himiwaybike.com/products/c3cargo-ebike (on sale $1,499, regular $2,199). No source opened states top speed or class (maker page lists a thumb throttle only), so spd/cls are null. Maker's torque paragraph says 'Himiway C5's 750W motor ... 86Nm' (copy error), but EBR Report and Upway also give 86Nm for the C3. Maker says payload 440 lb; Upway adds max rider weight 265 lb. Dealer EZE Ryders copies the maker text but labels 440 lb as 'Max. system weight'. Electrek search returned nothing."}

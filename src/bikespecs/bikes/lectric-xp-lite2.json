@@ -1,0 +1,47 @@
+{"bike": "Lectric|XP Lite2", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 888, "url": "https://lectricebikes.com/products/xp-lite-arctic-white", "quote": "$749 ⟶ $888", "basis": "crossed-out price $888; $749 is current sale price. Same page also says 'Previously listed at $799, now marked down to $749!'"},
+   {"kind": "review", "value": 947, "url": "https://electricbikereview.com/lectric-ebikes/lectric-xp-lite-2-0-review/", "quote": "Price ⟶ MSRP: $947"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://lectricebikes.com/products/xp-lite-arctic-white", "quote": "Five levels of pedal-assist and a twist throttle deliver the speed and power to own the road as a Class 1 or 2 eBike.** ⟶ Twist-Grip Throttle", "basis": "Class 1 or 2 with throttle and 20 mph -> 2"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereview.com/lectric-ebikes/lectric-xp-lite-2-0-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ 2"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://lectricebikes.com/products/xp-lite-arctic-white", "quote": "TOP SPEED ⟶ 20 mph"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereview.com/lectric-ebikes/lectric-xp-lite-2-0-review/", "quote": "TOP SPEED: ⟶ 20 mph either with pedal assistance or throttle mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 28, "url": "https://lectricebikes.com/products/xp-lite-arctic-white", "quote": "A 300W rear hub-motor (819W Peak) with 28Nm of torque delivers power and speed quicker than ever before. Stealth M24 technology is 400% quieter‡, delivering a hushed motor experience without sacrificing power. ⟶ Motor Controller"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/lectric-ebikes/lectric-xp-lite-2-0-review/", "quote": "MOTOR TORQUE: ⟶ 28 Newton meters"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 375, "url": "https://lectricebikes.com/products/xp-lite-arctic-white", "quote": "48V Lithium-Ion battery certified to UL 2271 with Standard or Long-Range options (375Wh or 672Wh) to power your ride for up to 45 or 80 miles respectively*. The Lectric XP Lite is also certified to UL 2849. ⟶ Hydraulic Brakes", "basis": "standard battery"},
+   {"kind": "review", "value": 375, "url": "https://electricbikereview.com/lectric-ebikes/lectric-xp-lite-2-0-review/", "quote": "BATTERY WATT HOURS: ⟶ 375 wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "45", "url": "https://lectricebikes.com/products/xp-lite-arctic-white", "quote": "RANGE ⟶ up to 45 miles"},
+   {"kind": "review", "value": "45", "url": "https://electricbikereview.com/lectric-ebikes/lectric-xp-lite-2-0-review/", "quote": "Range ⟶ Estimated Range: 45 mi.", "basis": "estimate; real-world test 37.2 mi PAS 1, 19.6 mi PAS 5"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 48, "url": "https://lectricebikes.com/products/xp-lite-arctic-white", "quote": "Total bike weight is 41lbs with the 7lb battery removed making this is one of the most portable eBikes on the market. ⟶ Crankset", "basis": "41 lb without battery + 7 lb battery"},
+   {"kind": "review", "value": 49, "url": "https://electricbikereview.com/lectric-ebikes/lectric-xp-lite-2-0-review/", "quote": "TOTAL WEIGHT: ⟶ 49 lbs (22.23 kg)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 275, "url": "https://lectricebikes.com/products/xp-lite-arctic-white", "quote": "PAYLOAD CAPACITY ⟶ 275 lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "300W rear hub (819W peak)", "url": "https://lectricebikes.com/products/xp-lite-arctic-white", "quote": "A 300W rear hub-motor (819W Peak) with 28Nm of torque delivers power and speed quicker than ever before. Stealth M24 technology is 400% quieter‡, delivering a hushed motor experience without sacrificing power. ⟶ Motor Controller"},
+   {"kind": "review", "value": "300W geared hub (819W peak)", "url": "https://electricbikereview.com/lectric-ebikes/lectric-xp-lite-2-0-review/", "quote": "The 300W (819W peak, 28Nm of torque) brushless geared hub motor has been updated; it’s now quieter and provides a surprising amount of power, giving the XP Lite 2.0 more pep than expected."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'8\"-6'2\"", "url": "https://lectricebikes.com/products/xp-lite-arctic-white", "quote": "Rider Height ⟶ 4’8” - 6’2”"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "Yes", "url": "https://lectricebikes.com/products/xp-lite-arctic-white", "quote": "FOLDABLE ⟶ Yes"},
+   {"kind": "review", "value": "Yes", "url": "https://electricbikereview.com/lectric-ebikes/lectric-xp-lite-2-0-review/", "quote": "Folding ⟶ STEM:"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker shows $749 sale with $888 crossed out, but same page says 'Previously listed at $799' — regular price inconsistent. EBR MSRP $947 differs from maker."}

@@ -1,0 +1,47 @@
+{"bike": "Lectric|XP4 500", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1325, "url": "https://lectricebikes.com/products/xp-black", "quote": "$999 ⟶ $1,325", "basis": "crossed-out regular price $1,325; $999 is the current sale price"},
+   {"kind": "review", "value": 999, "url": "https://electricbikereview.com/lectric-ebikes/xp4-review/", "quote": "Price ⟶ MSRP: $999"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://lectricebikes.com/products/xp-black", "quote": "Five riding modes deliver the speed and power to own the road as a Class 1, 2, or 3 eBike.* New simplified labels, including Eco, Tour, Sport, Sport+, & Turbo, allow riders to choose their riding experience. ⟶ Thumb Throttle", "basis": "maker says Class 1/2/3 with throttle; top speed listed as 28 mph -> 3"},
+   {"kind": "review", "value": 3, "url": "https://electricbikereview.com/lectric-ebikes/xp4-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 2 | Class 3 | California Class 3", "basis": "lists Class 2 and 3; top speed 28 mph -> 3"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://lectricebikes.com/products/xp-black", "quote": "TOP SPEED ⟶ 28 mph"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/lectric-ebikes/xp4-review/", "quote": "TOP SPEED: ⟶ 28 MPH mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 55, "url": "https://lectricebikes.com/products/xp-black", "quote": "A 500W rear hub motor (1092W peak) with 55Nm of torque supplies power and speed quicker than ever before. Stealth M24 technology delivers a quieter motor experience without sacrificing power. ⟶ Battery"},
+   {"kind": "review", "value": 55, "url": "https://electricbikereview.com/lectric-ebikes/xp4-review/", "quote": "MOTOR TORQUE: ⟶ 55Nm Newton meters"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 500, "url": "https://lectricebikes.com/products/xp-black", "quote": "1092W of peak power combined with our Stealth M24 technology delivers a quiet motor that's built for the long haul with a 48V, 10.4Ah (500Wh) lithium-ion battery certified to UL 2271. The XP4 is also certified to UL 2849. ⟶ Fun That’s Easy to See"},
+   {"kind": "review", "value": 500, "url": "https://electricbikereview.com/lectric-ebikes/xp4-review/", "quote": "BATTERY WATT HOURS: ⟶ 500Wh wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "50", "url": "https://lectricebikes.com/products/xp-black", "quote": "RANGE ⟶ up to 50 miles"},
+   {"kind": "review", "value": "50", "url": "https://electricbikereview.com/lectric-ebikes/xp4-review/", "quote": "The 48V, 10.4Ah (499Wh) battery, UL 2271-certified, powers up to 50 miles (I hit 44 miles—see Range section). The $200 17.5Ah (840Wh) Long-Range battery claims 85 miles, ideal for big rides. My test bike’s optional 5A charger filled the 10.4Ah battery in 2.5 hours.", "basis": "same page also says 'Estimated Range (from Lectric): 55 Miles'; reviewer's test 44 miles"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 69, "url": "https://lectricebikes.com/products/xp-black", "quote": "Total bike weight is 62lbs without the battery installed. The XP4 battery weighs 7lbs. ⟶ Easy Charging", "basis": "62 lb without battery + 7 lb battery"},
+   {"kind": "review", "value": 68.1, "url": "https://electricbikereview.com/lectric-ebikes/xp4-review/", "quote": "TOTAL WEIGHT: ⟶ 61 lbs w/Out Battery lbs | BATTERY WEIGHT: ⟶ 7.1 lbs lbs", "basis": "61 lb without battery + 7.1 lb battery"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 330, "url": "https://lectricebikes.com/products/xp-black", "quote": "PAYLOAD CAPACITY ⟶ 330 lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W rear hub (1092W peak)", "url": "https://lectricebikes.com/products/xp-black", "quote": "A 500W rear hub motor (1092W peak) with 55Nm of torque supplies power and speed quicker than ever before. Stealth M24 technology delivers a quieter motor experience without sacrificing power. ⟶ Battery"},
+   {"kind": "review", "value": "500W rear hub (1092W peak)", "url": "https://electricbikereview.com/lectric-ebikes/xp4-review/", "quote": "MOTOR NOMINAL OUTPUT: ⟶ 500W watts | MOTOR PEAK OUTPUT: ⟶ 1092W watts"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'10\"-6'3\"", "url": "https://lectricebikes.com/products/xp-black", "quote": "Rider Height ⟶ 4’10” - 6’3”"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "Yes", "url": "https://lectricebikes.com/products/xp-black", "quote": "FOLDABLE ⟶ Yes"},
+   {"kind": "review", "value": "Yes", "url": "https://electricbikereview.com/lectric-ebikes/xp4-review/", "quote": "Folding aluminum ⟶ BEST PRICE AT LECTRIC"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page shows $999 sale price with $1,325 crossed out (Black Friday). Maker says Class 1, 2, or 3 and lists 28 mph top speed, so recorded as class 3. EBR review page shows 'Folding aluminum' frame material."}

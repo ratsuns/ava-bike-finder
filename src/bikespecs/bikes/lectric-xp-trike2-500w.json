@@ -1,0 +1,48 @@
+{"bike": "Lectric|XP Trike2 (500W)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1978, "url": "https://lectricebikes.com/products/xp-trike-grey", "quote": "$1,499 ⟶ $1,978", "basis": "crossed-out price $1,978; $1,499 is current sale price"},
+   {"kind": "review", "value": 1499, "url": "https://electricbikereview.com/lectric-ebikes/xp-trike2-review/", "quote": "Price ⟶ MSRP: $1,499"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://lectricebikes.com/products/xp-trike-grey", "quote": "Five riding modes deliver the speed and power to own the road as a Class 1 or 2 eBike.* New simplified labels, including Eco, Tour, Sport, Sport+, & Turbo, allow riders to choose their riding experience. ⟶ Beginner Preset", "basis": "Class 1 or 2 with twist throttle -> 2"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereview.com/lectric-ebikes/xp-trike2-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 2"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 14, "url": "https://lectricebikes.com/products/xp-trike-grey", "quote": "TOP SPEED ⟶ 14 mph"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/lectric-ebikes/xp-trike2-review/", "quote": "TOP SPEED: ⟶ 28 MPH mph", "basis": "conflicts with the review's own 'Class 2' listing; likely an error"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 65, "url": "https://lectricebikes.com/products/xp-trike-grey", "quote": "A 500W rear hub motor (1092W peak) with 65 Nm of torque supplies power and speed quicker than ever before. Stealth M24 technology ensures a quieter motor experience without sacrificing power. ⟶ Battery"},
+   {"kind": "review", "value": 65, "url": "https://electricbikereview.com/lectric-ebikes/xp-trike2-review/", "quote": "MOTOR TORQUE: ⟶ 65Nm Newton meters"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 624, "url": "https://lectricebikes.com/products/xp-trike-grey", "quote": "A removable 48V, 13Ah (624 Wh) lithium-ion battery certified to UL 2271 makes for a clean design while powering your ride for up to 50 miles on a single charge.** The XP Trike2 is also certified to UL 2849.† ⟶ Keyless Riding"},
+   {"kind": "review", "value": 624, "url": "https://electricbikereview.com/lectric-ebikes/xp-trike2-review/", "quote": "BATTERY WATT HOURS: ⟶ 624Wh wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "50", "url": "https://lectricebikes.com/products/xp-trike-grey", "quote": "RANGE ⟶ up to 50 miles"},
+   {"kind": "review", "value": "31–51", "url": "https://electricbikereview.com/lectric-ebikes/xp-trike2-review/", "quote": "Real World Range Test Results: ⟶ MIN Test: 51 miles | MIN Test: 51 miles ⟶ MAX Test: 31 miles", "basis": "reviewer's tests: 51 mi (min assist), 31 mi (max assist); Lectric estimate 'Up to 50 miles'"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 86, "url": "https://lectricebikes.com/products/xp-trike-grey", "quote": "Total bike weight is 79 lbs. without the battery installed. The XP Trike2 standard battery weighs 7lbs. ⟶ Easy Charging", "basis": "79 lb without battery + 7 lb battery"},
+   {"kind": "review", "value": 87.5, "url": "https://electricbikereview.com/lectric-ebikes/xp-trike2-review/", "quote": "TOTAL WEIGHT: ⟶ 79 lbs lbs | BATTERY WEIGHT: ⟶ 8.5 lbs lbs", "basis": "79 lb (maker says without battery) + 8.5 lb battery; review also says 'At just over 90 lbs'"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 415, "url": "https://lectricebikes.com/products/xp-trike-grey", "quote": "PAYLOAD CAPACITY ⟶ 415 lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W rear hub (1092W peak)", "url": "https://lectricebikes.com/products/xp-trike-grey", "quote": "A 500W rear hub motor (1092W peak) with 65 Nm of torque supplies power and speed quicker than ever before. Stealth M24 technology ensures a quieter motor experience without sacrificing power. ⟶ Battery"},
+   {"kind": "review", "value": "500W rear hub (1024W peak)", "url": "https://electricbikereview.com/lectric-ebikes/xp-trike2-review/", "quote": "MOTOR NOMINAL OUTPUT: ⟶ 500W watts | MOTOR PEAK OUTPUT: ⟶ 1024W watts"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'10\"-6'2\"", "url": "https://lectricebikes.com/products/xp-trike-grey", "quote": "Rider Height ⟶ 4’10” - 6’2”"},
+   {"kind": "review", "value": "4'10\"-6'2\"", "url": "https://electricbikereview.com/lectric-ebikes/xp-trike2-review/", "quote": "The XP Trike 2 comes in one frame size that fits riders from 4’10” to 6’2″, available in six color options: Tempest Grey, Glacier Blue, Stratus White, Dusk Blue, Phoenix Red, and Lavender Haze. Pretty solid range whether you want to blend in or stand out."}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "Yes", "url": "https://lectricebikes.com/products/xp-trike-grey", "quote": "FOLDABLE ⟶ Yes"},
+   {"kind": "review", "value": "Yes", "url": "https://electricbikereview.com/lectric-ebikes/xp-trike2-review/", "quote": "Alloy Folding Trike Frame ⟶ BEST PRICE AT EBR"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Electric trike. Maker shows $1,499 sale with $1,978 crossed out. Maker lists top speed 14 mph (Class 1 or 2); EBR lists 28 mph, which contradicts its own Class 2 listing. EBR peak 1024W vs maker 1092W."}

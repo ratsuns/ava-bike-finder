@@ -27,7 +27,9 @@ CARDS = os.path.join(SRC, 'verify', 'cards.json')
 def key(card): return f"{card['brand']}|{card['model']}"
 
 
-def slug(k): return re.sub(r'[^a-z0-9]+', '-', k.lower()).strip('-')
+def slug(k):
+    """the file name for a bike: "Velotric|Fold 1 Plus" -> velotric-fold-1-plus; "+" is "plus" so "C380" and "C380+" differ"""
+    return re.sub(r'[^a-z0-9]+', '-', k.lower().replace('+', ' plus ').replace('!', '')).strip('-')
 
 
 def path(k): return os.path.join(DIR, slug(k) + '.json')
@@ -45,6 +47,13 @@ def save(data):
 
 def load_all():
     return {d['bike']: d for d in (json.load(open(p)) for p in sorted(glob.glob(os.path.join(DIR, '*.json'))))}
+
+
+def rename_all():
+    """move every file to the name its bike should have (after a change to slug())"""
+    for p in glob.glob(os.path.join(DIR, '*.json')):
+        want = path(json.load(open(p))['bike'])
+        if p != want and not os.path.exists(want): os.rename(p, want)
 
 
 def cards():

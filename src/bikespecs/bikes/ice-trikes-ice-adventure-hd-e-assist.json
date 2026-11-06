@@ -1,0 +1,48 @@
+{"bike": "Ice Trikes|ICE Adventure HD (E-Assist)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 7902, "url": "https://icetrikes.co/buy/price-lists/ice-trikes-2026-full-price-list-usd/viewdocument/157", "quote": "ADVENTURE HD 26 E-ASSIST  Example entry-  level specification  RIGID REAR FRAME, ELECTRIC SYSTEM WITH EP6 CARGO, ONE 630WH BATTERY  DERAILLEUR GEARING, 8 SPEED REAR WHEEL WITH SHIMANO 11-32 CASSETTE,  BAR END SHIFTERS, DISC BRAKES, ERGO-FLOW SEAT, SCHWALBE ROAD  CRUISER TYRE & OTR PACK  $7,902", "basis": "maker's 2026 USD price list, example entry-level 26\" E-Assist build; 20\" E-Assist entry example is $8,909"},
+   {"kind": "retailer", "value": 9599, "url": "https://hostelshoppe.com/products/ice-adventure-hd-26-shimano-steps-ep801-kiwi-green-recumbent-trike", "quote": "Regular price ⟶ $9,599.00 USD", "basis": "one specific HD 26 EP801 build (sold out)"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://icetrikes.co/products/adventure-hd", "quote": "Choose between Boost, Trail, Eco and intelligent Walk modes. Supports assist level up to 25 km/h or 20mph depending on regional regulations.", "basis": "pedal assist modes only, no throttle mentioned, 20 mph in the US, so Class 1"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://icetrikes.co/products/adventure-hd", "quote": "Supports assist level up to 25 km/h or 20mph depending on regional regulations."},
+   {"kind": "retailer", "value": null, "url": "https://hostelshoppe.com/products/ice-adventure-hd-26-shimano-steps-ep801-kiwi-green-recumbent-trike", "quote": ""}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://icetrikes.co/products/adventure-hd", "quote": "Featuring a powerful 250w electric motor, custom-designed ICE specific forged motor housing, 85Nm torque, 630Wh battery."},
+   {"kind": "retailer", "value": null, "url": "https://hostelshoppe.com/products/ice-adventure-hd-26-shimano-steps-ep801-kiwi-green-recumbent-trike", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 630, "url": "https://icetrikes.co/products/adventure-hd", "quote": "Featuring a powerful 250w electric motor, custom-designed ICE specific forged motor housing, 85Nm torque, 630Wh battery."},
+   {"kind": "retailer", "value": null, "url": "https://hostelshoppe.com/products/ice-adventure-hd-26-shimano-steps-ep801-kiwi-green-recumbent-trike", "quote": ""}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://icetrikes.co/products/shimano-steps-e-assist", "quote": "Range depends on riding conditions, temperature, tires, riding style, power assist mode, rider weight and many other factors. See Shimano's published figures for examples of estimated cycling range."},
+   {"kind": "retailer", "value": null, "url": "https://hostelshoppe.com/products/ice-adventure-hd-26-shimano-steps-ep801-kiwi-green-recumbent-trike", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 36.7, "url": "https://icetrikes.co/products/adventure-hd", "quote": "Overall weight (from) | 36.7lbs (16.7kg)", "basis": "without battery (lightest non-assist build; e-assist page says motor 2.6kg (EP801) / 2.9kg (EP6) and 'The 630Wh battery is 3.2kg.')"},
+   {"kind": "retailer", "value": null, "url": "https://hostelshoppe.com/products/ice-adventure-hd-26-shimano-steps-ep801-kiwi-green-recumbent-trike", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": 330, "url": "https://icetrikes.co/products/adventure-hd", "quote": "Rider weight limit | 330lbs (150kg)", "basis": "rider weight limit"},
+   {"kind": "retailer", "value": null, "url": "https://hostelshoppe.com/products/ice-adventure-hd-26-shimano-steps-ep801-kiwi-green-recumbent-trike", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "250W Shimano EP801 / EP6", "url": "https://icetrikes.co/products/adventure-hd", "quote": "The ICE Adventure HD is available with or without the EP801 or EP6 Shimano E-Bike motor systems. All the power you need at just the right time. Responsive, quiet, lightweight and controllable. Providing a seamless and easy ride from a standing start even on steep inclines. Featuring a powerful 250w electric motor, custom-designed ICE specific forged motor housing, 85Nm torque, 630Wh battery."},
+   {"kind": "retailer", "value": "Shimano EP8 or EP6", "url": "https://hostelshoppe.com/products/ice-adventure-hd-26-shimano-steps-ep801-kiwi-green-recumbent-trike", "quote": "Available with powerful Shimano EP8 or EP6 motor systems, experience the fully automatic stepless gearing solution that lets you simply pedal and go. Enjoy the relaxed pace of recumbent riding on the beautifully designed ICE Adventure."}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://icetrikes.co/products/adventure-hd", "quote": "Rider size (X-seam) | 37\" - 52\" (940mm - 1321mm)", "basis": "maker sizes by X-seam (leg length), not rider height"},
+   {"kind": "retailer", "value": null, "url": "https://hostelshoppe.com/products/ice-adventure-hd-26-shimano-steps-ep801-kiwi-green-recumbent-trike", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "Yes", "url": "https://icetrikes.co/products/adventure-hd", "quote": "Simply remove the seat, fold the handlebars flat, and undo the quick release lever to fold the frame. As the frame folds, the rear wheel pivots to fit flat between the front wheels. The C.F.T fold allows the trike to be folded in under 30 seconds and works with ICE accessories. You can even fold the trike with our Shimano STEPS motor system fitted."},
+   {"kind": "retailer", "value": null, "url": "https://hostelshoppe.com/products/ice-adventure-hd-26-shimano-steps-ep801-kiwi-green-recumbent-trike", "quote": ""}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Recumbent trike, built to order. Maker product page headline 'PRICES FROM £3,050 | $4,500 | €3,300' is the non-assist trike; e-assist price from the maker's 2026 USD price list PDF (read in-browser via pdf.js; quote is its extracted text with double spaces). Maker gives no range figure and sizes by X-seam (37\"-52\"), not height. Weight 36.7 lb is the lightest non-assist build. Independent source is thin: Hostel Shoppe (dealer) page for one sold-out HD 26 EP801 build gives price and motor family only. Laid Back Cycles has no HD page; Bike World Iowa's HD E-Assist page lists an older E6100 build."}

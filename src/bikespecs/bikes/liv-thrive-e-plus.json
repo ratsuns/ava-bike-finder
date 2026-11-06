@@ -1,0 +1,47 @@
+{"bike": "Liv|Thrive E+", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 4300, "url": "https://www.liv-cycling.com/us/thrive-eplus-ex-pro-2021", "quote": "$4,300 * ⟶ CHOOSE YOUR SIZE"},
+   {"kind": "retailer", "value": 4100, "url": "https://www.bikes4sale.com/details/liv/thrive-e-plus-ex-pro/", "quote": "Liv Thrive E Plus EX Pro Price ⟶ $ 4100 [Alabama, United States]", "basis": "aggregator 'showroom price'; model year not stated"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://www.liv-cycling.com/us/thrive-eplus-ex-pro-2021", "quote": "Giant SyncDrive Pro, 80Nm, 5-mode plus automatic, 360% tunable support, powered by YAMAHA. Pedal assist to 28 MPH. ⟶ Controller", "basis": "no class line on page; pedal assist to 28 mph -> Class 3"},
+   {"kind": "retailer", "value": 3, "url": "https://www.bikes4sale.com/details/liv/thrive-e-plus-ex-pro/", "quote": "Giant SyncDrive Pro, 80Nm, 5-mode plus automatic, 360% tunable support, powered by YAMAHA. Pedal assist to 28 MPH. ⟶ Display", "basis": "28 mph pedal assist -> Class 3"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.liv-cycling.com/us/thrive-eplus-ex-pro-2021", "quote": "Giant SyncDrive Pro, 80Nm, 5-mode plus automatic, 360% tunable support, powered by YAMAHA. Pedal assist to 28 MPH. ⟶ Controller"},
+   {"kind": "retailer", "value": 28, "url": "https://www.bikes4sale.com/details/liv/thrive-e-plus-ex-pro/", "quote": "Giant SyncDrive Pro, 80Nm, 5-mode plus automatic, 360% tunable support, powered by YAMAHA. Pedal assist to 28 MPH. ⟶ Display"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 80, "url": "https://www.liv-cycling.com/us/thrive-eplus-ex-pro-2021", "quote": "Reliably delivers smooth pedaling power to naturally extend the rider's ability. SyncDrive Pro delivers up to 80Nm of torque and Smart Assist Technology with 6-sensor measurements for a smooth ride across varying terrain ⟶ 6"},
+   {"kind": "retailer", "value": 80, "url": "https://www.bikes4sale.com/details/liv/thrive-e-plus-ex-pro/", "quote": "Giant SyncDrive Pro, 80Nm, 5-mode plus automatic, 360% tunable support, powered by YAMAHA. Pedal assist to 28 MPH. ⟶ Display"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 500, "url": "https://www.liv-cycling.com/us/thrive-eplus-ex-pro-2021", "quote": "Giant EnergyPak Smart Compact 500Wh, 36V, 13.8Ah rechargeable lithium-ion, Giant EnergyPak Plus range extender compatible ⟶ Sizes"},
+   {"kind": "retailer", "value": 500, "url": "https://www.bikes4sale.com/details/liv/thrive-e-plus-ex-pro/", "quote": "Battery\tGiant EnergyPak Smart Compact 500Wh, 36V, 13.8Ah rechargeable lithium-ion, Giant EnergyPak Plus range extender compatible ⟶ Controller\tGiant RideControl Ergo 2"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "25–90", "url": "https://www.liv-cycling.com/us/thrive-eplus-ex-pro-2021", "quote": "Range ⟶ Extreme: 25 miles | Extreme: 25 miles ⟶ Good: 50 miles | Good: 50 miles ⟶ Ideal: 90 miles", "basis": "Extreme 25 / Good 50 / Ideal 90 miles (EnergyPak 500 / SyncDrive Pro)"},
+   {"kind": "retailer", "value": null, "url": "https://www.bikes4sale.com/details/liv/thrive-e-plus-ex-pro/", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://www.liv-cycling.com/us/thrive-eplus-ex-pro-2021", "quote": "The most accurate way to determine any bike’s weight is to have your local dealer weigh it for you."},
+   {"kind": "retailer", "value": null, "url": "https://www.bikes4sale.com/details/liv/thrive-e-plus-ex-pro/", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.liv-cycling.com/us/thrive-eplus-ex-pro-2021", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://www.bikes4sale.com/details/liv/thrive-e-plus-ex-pro/", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Giant SyncDrive Pro (powered by YAMAHA)", "url": "https://www.liv-cycling.com/us/thrive-eplus-ex-pro-2021", "quote": "Giant SyncDrive Pro, 80Nm, 5-mode plus automatic, 360% tunable support, powered by YAMAHA. Pedal assist to 28 MPH. ⟶ Controller", "basis": "no rated watts published"},
+   {"kind": "retailer", "value": "Giant SyncDrive Pro (powered by YAMAHA)", "url": "https://www.bikes4sale.com/details/liv/thrive-e-plus-ex-pro/", "quote": "Giant SyncDrive Pro, 80Nm, 5-mode plus automatic, 360% tunable support, powered by YAMAHA. Pedal assist to 28 MPH. ⟶ Display"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://www.liv-cycling.com/us/thrive-eplus-ex-pro-2021", "quote": "Sizes | XS, S, M, L", "basis": "sizes and geometry only; no rider height range"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.liv-cycling.com/us/thrive-eplus-ex-pro-2021", "quote": "Frame ⟶ ALUXX SL-Grade Aluminum", "basis": "standard aluminum frame; no folding"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Model name is generic 'Thrive E+'; src and specs are the 2021 Thrive E+ EX Pro (only Thrive E+ page found). Thrive E+ is not in Liv US's current e-bike lineup (bikes/e-bikes lists Intrigue, Avail, Embolden, Tempt E+ only), but the 2021 page doesn't say discontinued, so no status recorded. EBR and EBReport searches had no matching review; 99spokes blocked by Cloudflare bot check; Yahoo/Bicycling review URL 404. Only independent source is Bikes4Sale aggregator, which copies maker spec text and lists $4100 (no year)."}

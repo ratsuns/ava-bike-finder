@@ -1,0 +1,48 @@
+{"bike": "LarryvsHarry|EbullittX", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": null, "url": "https://larryvsharry.com/products/ebullitt-x-ep801", "quote": "FROM € 7,360", "basis": "maker shows EUR only, no USD price"},
+   {"kind": "retailer", "value": null, "url": "https://shop.roulezjeunesse.com/collections/velos-electriques/products/larry-vs-harry-ebullitt-x-ep801", "quote": "Larry vs Harry eBullitt X EP801 ⟶ 7360 €", "basis": "French retailer, EUR only"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://larryvsharry.com/products/ebullitt-x-ep801", "quote": "MAXIMUM ASSISTED SPEED | 25 km/h", "basis": "Shimano EP801 pedal assist, no throttle listed; EU-spec 25 km/h (US bikes would be 20 mph), so Class 1"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 15.5, "url": "https://larryvsharry.com/products/ebullitt-x-ep801", "quote": "MAXIMUM ASSISTED SPEED | 25 km/h", "basis": "25 km/h EU spec converted; no US (20 mph) figure published"},
+   {"kind": "retailer", "value": null, "url": "https://shop.roulezjeunesse.com/collections/velos-electriques/products/larry-vs-harry-ebullitt-x-ep801", "quote": ""}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://larryvsharry.com/products/ebullitt-x-ep801", "quote": "TORQUE | 85 Nm"},
+   {"kind": "retailer", "value": 85, "url": "https://shop.roulezjeunesse.com/collections/velos-electriques/products/larry-vs-harry-ebullitt-x-ep801", "quote": "Puissance : 250 W ⟶ Couple : 85 Nm"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 504, "url": "https://larryvsharry.com/products/ebullitt-x-ep801", "quote": "BATTERY | SHIMANO BT-EN605 (504Wh) or BT-EN606 (630Wh)", "basis": "smaller of two offered batteries; 630Wh option"},
+   {"kind": "retailer", "value": 504, "url": "https://shop.roulezjeunesse.com/collections/velos-electriques/products/larry-vs-harry-ebullitt-x-ep801", "quote": "Batterie ⟶ Capacité : 504 Wh", "basis": "spec table; same page's prose says 'La batterie de 630 Wh'"}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://larryvsharry.com/products/ebullitt-x-ep801", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://shop.roulezjeunesse.com/collections/velos-electriques/products/larry-vs-harry-ebullitt-x-ep801", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 68.3, "url": "https://larryvsharry.com/products/ebullitt-x-ep801", "quote": "COMPLETE BIKE WEIGHT | 31 kg", "basis": "31 kg converted"},
+   {"kind": "retailer", "value": 59.5, "url": "https://shop.roulezjeunesse.com/collections/velos-electriques/products/larry-vs-harry-ebullitt-x-ep801", "quote": "Poids à vide : 27.0 kg ⟶ Charge max totale : 180.0 kg", "basis": "27.0 kg converted"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 449.7, "url": "https://larryvsharry.com/products/ebullitt-x-ep801", "quote": "MAXIMUM SYSTEM LOAD | 204 kg | Includes: Bike + Rider + Equipment + Cargo", "basis": "total"},
+   {"kind": "retailer", "value": 396.8, "url": "https://shop.roulezjeunesse.com/collections/velos-electriques/products/larry-vs-harry-ebullitt-x-ep801", "quote": "Charge max totale : 180.0 kg ⟶ Nombre enfants max sur porte-bagage arrière : 0", "basis": "total; 180 kg converted"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Shimano STePS EP801", "url": "https://larryvsharry.com/products/ebullitt-x-ep801", "quote": "DRIVE UNIT | SHIMANO STePS EP801"},
+   {"kind": "retailer", "value": "250W Shimano Steps EP801", "url": "https://shop.roulezjeunesse.com/collections/velos-electriques/products/larry-vs-harry-ebullitt-x-ep801", "quote": "Modèle : Steps EP801 ⟶ Position : Pédalier | Puissance : 250 W ⟶ Couple : 85 Nm"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://larryvsharry.com/products/ebullitt-x-ep801", "quote": "STEMLIFTER | SATORI Easy-Up w/ 100mm of adjustment", "basis": "no rider height range published"},
+   {"kind": "retailer", "value": "5'3\"-6'3\"", "url": "https://shop.roulezjeunesse.com/collections/velos-electriques/products/larry-vs-harry-ebullitt-x-ep801", "quote": "Taille cycliste minimum : 160 cm ⟶ Taille cycliste maximum : 190 cm", "basis": "160-190 cm converted"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://larryvsharry.com/products/ebullitt-x-ep801", "quote": "FRAME | T6 heat-treated, 7005 aluminium, designed for Shimano STePS motor", "basis": "front-loading cargo bike, no folding frame"},
+   {"kind": "retailer", "value": "No", "url": "https://shop.roulezjeunesse.com/collections/velos-electriques/products/larry-vs-harry-ebullitt-x-ep801", "quote": "ÉLECTRIQUE CARGO BIPORTEUR FAMILLE ASSISTANCE PUISSANTE GRANDE TAILLE CONNECTÉ PETITE TAILLE CHARGE LOURDE", "basis": "front-loading (biporteur) cargo bike, no folding frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "eBullitt X = long-wheelbase eBullitt (maker page 'eBullitt X EP801'). Maker site (Danish) shows EUR and EU-spec 25 km/h only; no USD price or 20 mph figure. No US dealer listing found for the X with EP801 (Splendid Cycles lists only an EP600 Bullitt-X, 'Starting at $8000', sold out). Independent source is French retailer Roulez Jeunesse (EUR, French text), which disagrees with the maker on weight (27.0 vs 31 kg) and max total load (180 vs 204 kg), and contradicts itself on battery (504 Wh in table vs 630 Wh in prose). Maker spec quotes join consecutive spec-table lines with ' | '."}

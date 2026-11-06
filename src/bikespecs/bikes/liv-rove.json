@@ -1,0 +1,48 @@
+{"bike": "Liv|Rove", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2750, "url": "https://www.liv-cycling.com/us/rove-eplus-2021", "quote": "$2,750 * ⟶ CHOOSE YOUR SIZE"},
+   {"kind": "review", "value": 2750, "url": "https://electricbikereview.com/liv/2022-rove-e-plus/", "quote": "PRICE: ⟶ $2750"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://www.liv-cycling.com/us/rove-eplus-2021", "quote": "Giant SyncDrive Core, 50Nm, 5-mode plus automatic, 360% tunable support, powered by YAMAHA. Pedal assist to 20 mph. ⟶ Controller", "basis": "no class line on maker page; pedal assist only (no throttle) to 20 mph -> Class 1"},
+   {"kind": "review", "value": 1, "url": "https://electricbikereview.com/liv/2022-rove-e-plus/", "quote": "ELECTRIC BIKE CLASS: ⟶ Pedal Assist (Class 1)"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.liv-cycling.com/us/rove-eplus-2021", "quote": "Giant SyncDrive Core, 50Nm, 5-mode plus automatic, 360% tunable support, powered by YAMAHA. Pedal assist to 20 mph. ⟶ Controller"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereview.com/liv/2022-rove-e-plus/", "quote": "TOP SPEED: ⟶ 20 mph (32 kph)"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 50, "url": "https://www.liv-cycling.com/us/rove-eplus-2021", "quote": "Giant SyncDrive Core, 50Nm, 5-mode plus automatic, 360% tunable support, powered by YAMAHA. Pedal assist to 20 mph. ⟶ Controller"},
+   {"kind": "review", "value": 50, "url": "https://electricbikereview.com/liv/2022-rove-e-plus/", "quote": "MOTOR TORQUE: ⟶ 50 Newton meters"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 400, "url": "https://www.liv-cycling.com/us/rove-eplus-2021", "quote": "Battery ⟶ EnergyPak 400Wh, 36V, 11.3Ah rechargeable lithium-ion"},
+   {"kind": "review", "value": 406.8, "url": "https://electricbikereview.com/liv/2022-rove-e-plus/", "quote": "BATTERY WATT HOURS: ⟶ 406.8 wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "34–93", "url": "https://www.liv-cycling.com/us/rove-eplus-2021", "quote": "Range ⟶ Extreme: 34 miles | Extreme: 34 miles ⟶ Good: 65 miles | Good: 65 miles ⟶ Ideal: 93 miles", "basis": "Extreme 34 / Good 65 / Ideal 93 miles (EnergyPak 400 / SyncDrive Core)"},
+   {"kind": "review", "value": "25–55", "url": "https://electricbikereview.com/liv/2022-rove-e-plus/", "quote": "ESTIMATED MIN RANGE: ⟶ 25 miles (40 km) | ESTIMATED MAX RANGE: ⟶ 55 miles (89 km)"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://www.liv-cycling.com/us/rove-eplus-2021", "quote": "Actual weight may vary due to manufacturing tolerances, color variations, frame size and variability in production components. ⟶ REVIEWS"},
+   {"kind": "review", "value": 50, "url": "https://electricbikereview.com/liv/2022-rove-e-plus/", "quote": "TOTAL WEIGHT: ⟶ 50 lbs (22.68 kg)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.liv-cycling.com/us/rove-eplus-2021", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/liv/2022-rove-e-plus/", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Giant SyncDrive Core (powered by YAMAHA)", "url": "https://www.liv-cycling.com/us/rove-eplus-2021", "quote": "Giant SyncDrive Core, 50Nm, 5-mode plus automatic, 360% tunable support, powered by YAMAHA. Pedal assist to 20 mph. ⟶ Controller", "basis": "maker publishes no rated watts"},
+   {"kind": "review", "value": "250W mid-drive (Giant SyncDrive Core)", "url": "https://electricbikereview.com/liv/2022-rove-e-plus/", "quote": "MOTOR NOMINAL OUTPUT: ⟶ 250 watts | MOTOR BRAND: ⟶ Giant SyncDrive Core, Powered by Yamaha | MOTOR TYPE: ⟶ Mid-Mounted Geared Motor"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://www.liv-cycling.com/us/rove-eplus-2021", "quote": "", "basis": "geometry only; no rider height range"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/liv/2022-rove-e-plus/", "quote": "XS Frame: 14.75\" Seat Tube, 20.75\" Reach, 24.5\" Stand Over Height, 29\" Minimum Saddle Height, 27\" Width, 42.5\" Wheelbase, 72\" Length ⟶ FRAME TYPES:", "basis": "frame measurements only"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.liv-cycling.com/us/rove-eplus-2021", "quote": "Frame ⟶ ALUXX SL-Grade Aluminum", "basis": "standard step-through frame; no folding"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Given src was the 2021 Rove E+ showcase page (no specs); used the spec page https://www.liv-cycling.com/us/rove-eplus-2021 on the same site. Rove E+ is not in Liv US's current e-bike lineup but the page doesn't say discontinued. EBR review is the 2022 Rove E+ (same price $2750, same SyncDrive Core 50Nm and EnergyPak 400 36V 11.3Ah) -- treated as same generation. Maker showcase text also mentions '160 km range'."}

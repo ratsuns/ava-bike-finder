@@ -1,0 +1,49 @@
+{"bike": "Marin|Sausalito E1", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 3499, "url": "https://marinbikes.com/products/2025-1-sausalito-e1", "quote": "$3,499.00 *"},
+   {"kind": "review", "value": 3499, "url": "https://99spokes.com/bikes/marin/2025/sausalito-e1", "quote": "Manufacturer Price ⟶ $3,499"},
+   {"kind": "retailer", "value": 3499, "url": "https://revolutionbikeshop.com/2026-marin-sausalito-e1-maroon-int/", "quote": "$3,499.00 ⟶ (No reviews yet)  Write a Review", "basis": "dealer lists it as 2026 Sausalito E1 (Int)"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://marinbikes.com/products/2025-1-sausalito-e1", "quote": "Bosch Active Plus, 250W, 50Nm, Class 1 (North America - 20mph/32Kph, EU - 25Kph) (Canada Class 1 32km/h)", "basis": "maker states Class 1"},
+   {"kind": "review", "value": 1, "url": "https://99spokes.com/bikes/marin/2025/sausalito-e1", "quote": "Bosch Active Plus, 250W, 50Nm, Class 1 (North America - 20mph/32Kph, EU - 25Kph) ⟶ Battery"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://marinbikes.com/products/2025-1-sausalito-e1", "quote": "Bosch Active Plus, 250W, 50Nm, Class 1 (North America - 20mph/32Kph, EU - 25Kph) (Canada Class 1 32km/h)"},
+   {"kind": "review", "value": 20, "url": "https://99spokes.com/bikes/marin/2025/sausalito-e1", "quote": "Bosch Active Plus, 250W, 50Nm, Class 1 (North America - 20mph/32Kph, EU - 25Kph) ⟶ Battery"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 50, "url": "https://marinbikes.com/products/2025-1-sausalito-e1", "quote": "Bosch Active Plus, 250W, 50Nm, Class 1 (North America - 20mph/32Kph, EU - 25Kph) (Canada Class 1 32km/h)"},
+   {"kind": "review", "value": 50, "url": "https://99spokes.com/bikes/marin/2025/sausalito-e1", "quote": "MotorBosch 250W 50Nm mid-drive ⟶ BatteryBosch 545Wh"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 545, "url": "https://marinbikes.com/products/2025-1-sausalito-e1", "quote": "Bosch Power Pack 545, 545Wh"},
+   {"kind": "review", "value": 545, "url": "https://99spokes.com/bikes/marin/2025/sausalito-e1", "quote": "Battery ⟶ Bosch Power Pack 545, 545Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "25–93", "url": "https://marinbikes.com/products/2025-1-sausalito-e1", "quote": "25-93 miles/40-150km"},
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/marin/2025/sausalito-e1", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://marinbikes.com/products/2025-1-sausalito-e1", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/marin/2025/sausalito-e1", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://marinbikes.com/products/2025-1-sausalito-e1", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/marin/2025/sausalito-e1", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "250W Bosch Active Plus mid-drive", "url": "https://marinbikes.com/products/2025-1-sausalito-e1", "quote": "Bosch Active Plus, 250W, 50Nm, Class 1 (North America - 20mph/32Kph, EU - 25Kph) (Canada Class 1 32km/h)"},
+   {"kind": "review", "value": "250W Bosch mid-drive", "url": "https://99spokes.com/bikes/marin/2025/sausalito-e1", "quote": "MotorBosch 250W 50Nm mid-drive ⟶ BatteryBosch 545Wh"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://marinbikes.com/products/2025-1-sausalito-e1", "quote": "", "basis": "only an interactive height slider; no published range"},
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/marin/2025/sausalito-e1", "quote": "", "basis": "99 Spokes size ranges are its own fit estimates"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://marinbikes.com/products/2025-1-sausalito-e1", "quote": "Series 3 Butted and Formed 6061 Aluminum, 650B Wheel, Forged Motor Mount, Hydroformed Downtube Battery Mount, Integrated Wiring, Internal Housing, Kickstand, Rack, and Fender Mounts", "basis": "standard frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page is the 2025.1 Sausalito E1 (Bosch Active+ 'INT' SKU, priced in USD on the US site). No weight, load or rider-height range published. Only one independent source (99 Spokes); a web search turned up only Marin regional pages and 99 Spokes."}

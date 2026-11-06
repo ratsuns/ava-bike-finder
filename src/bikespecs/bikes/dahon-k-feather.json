@@ -1,0 +1,49 @@
+{"bike": "Dahon|K-Feather", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1299, "url": "https://usa.dahon.com/collections/electric-bikes/products/dahon-k-feather", "quote": "$1,299.00 ⟶ 9 reviews", "basis": "no crossed-out price shown"},
+   {"kind": "retailer", "value": 1299, "url": "https://cambriabike.com/products/dahon-k-feather-electric-slate", "quote": "Regular price ⟶ $1,299.00"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://usa.dahon.com/collections/electric-bikes/products/dahon-k-feather", "quote": "Dahon 24V/250W (max 16 mph) ⟶ Built-in 24V 5AH battery Samsung Cell", "basis": "no class or throttle info; pedal assist to 16 mph"},
+   {"kind": "retailer", "value": null, "url": "https://cambriabike.com/products/dahon-k-feather-electric-slate", "quote": ""}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 16, "url": "https://usa.dahon.com/collections/electric-bikes/products/dahon-k-feather", "quote": "Dahon 24V/250W (max 16 mph) ⟶ Built-in 24V 5AH battery Samsung Cell"},
+   {"kind": "retailer", "value": 16, "url": "https://cambriabike.com/products/dahon-k-feather-electric-slate", "quote": "E-System:Dahon 24V/250W (max 16 mph) ⟶ Built-in 24V 5AH battery Samsung Cell"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 32, "url": "https://usa.dahon.com/collections/electric-bikes/products/dahon-k-feather", "quote": "Paired with a highly sensitive torque sensor to deliver a maximum output torque of 32 N·m within just 0.01 seconds. ⟶ Smart Power Adjustment"},
+   {"kind": "retailer", "value": 32, "url": "https://cambriabike.com/products/dahon-k-feather-electric-slate", "quote": "Equipped with a lightweight 32N·m 250W hub motor, it delivers smooth torque and excellent climbing performance, making it ideal for various terrains while providing maximum portability. ⟶ STRONGER. SAFER."}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 120, "url": "https://usa.dahon.com/collections/electric-bikes/products/dahon-k-feather", "quote": "Dahon 24V/250W (max 16 mph) ⟶ Built-in 24V 5AH battery Samsung Cell", "basis": "24V x 5Ah = 120Wh; no Wh stated"},
+   {"kind": "retailer", "value": 120, "url": "https://cambriabike.com/products/dahon-k-feather-electric-slate", "quote": "Stealthy In-tube Battery with intelligent BMS ⟶ 120Wh IPX5 Waterproof"}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://usa.dahon.com/collections/electric-bikes/products/dahon-k-feather", "quote": ""},
+   {"kind": "retailer", "value": "25", "url": "https://cambriabike.com/products/dahon-k-feather-electric-slate", "quote": "Features a Safety Certified Battery EN15194 Standard. What looks and sounds just like an ordinary bike, hides a compact Samsung lithium battery hidden within the main beam. Thanks to this, you can enjoy constant e-assistance for a range of up to 40km. ⟶ Ultra Lightweight Hub Motor - 24V 250W", "basis": "40 km converted to miles"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 26.4, "url": "https://usa.dahon.com/collections/electric-bikes/products/dahon-k-feather", "quote": "Weight: ⟶ Starts at 26.4 lbs", "basis": "'starts at'; battery is built into the frame"},
+   {"kind": "retailer", "value": 26.4, "url": "https://cambriabike.com/products/dahon-k-feather-electric-slate", "quote": "Built-in 24V 5AH battery Samsung Cell ⟶ Weight:26.4 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 231, "url": "https://usa.dahon.com/collections/electric-bikes/products/dahon-k-feather", "quote": "Max Load: ⟶ 231 lbs"},
+   {"kind": "retailer", "value": 231, "url": "https://cambriabike.com/products/dahon-k-feather-electric-slate", "quote": "Weight:26.4 lbs ⟶ Max Load:231 lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "250W rear hub", "url": "https://usa.dahon.com/collections/electric-bikes/products/dahon-k-feather", "quote": "Dahon 24V/250W (max 16 mph) ⟶ Built-in 24V 5AH battery Samsung Cell", "basis": "page also says 'Rear Hub Motor'"},
+   {"kind": "retailer", "value": "250W rear hub", "url": "https://cambriabike.com/products/dahon-k-feather-electric-slate", "quote": "Rear Hub:Dahon 24V/250W ⟶ Tires:DAHON 16\"*1.5\""}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'7\"-6'0\"", "url": "https://usa.dahon.com/collections/electric-bikes/products/dahon-k-feather", "quote": "Rider Height Range: ⟶ 4'7″ - 6'0″"},
+   {"kind": "retailer", "value": "4'7\"-6'0\"", "url": "https://cambriabike.com/products/dahon-k-feather-electric-slate", "quote": "Max Load:231 lbs ⟶ Rider Height Range:4'7″ - 6'0″"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "Yes", "url": "https://usa.dahon.com/collections/electric-bikes/products/dahon-k-feather", "quote": "Folded Size: ⟶ 28.7x16x24.8in"},
+   {"kind": "retailer", "value": "Yes", "url": "https://cambriabike.com/products/dahon-k-feather-electric-slate", "quote": "Folded Size:28.7x16x24.8in ⟶ Sizing & Geometry:"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page contradicts itself on rider height: spec list says 4'7\"-6'0\", a size widget says 'Rider Height ⟶ 4.76~6.23' (likely decimal feet); used the spec list. Maker page gives no range; Cambria Bike (dealer) says up to 40 km. No class or throttle info anywhere; class left null (16 mph pedal assist), same as Dahon K-One. EBR search had no match. No WebSearch used."}

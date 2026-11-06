@@ -1,0 +1,48 @@
+{"bike": "Himiway|D5 (Zebra)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2299, "url": "https://himiwaybike.com/products/premium-all-terrain-electric-bike", "quote": "Regular price ⟶ $2,299.00", "basis": "regular price; on sale for $1,499"},
+   {"kind": "review", "value": 1699, "url": "https://electricbikereport.com/himiway-d5-zebra-review/", "quote": "Its significant 400-pound weight capacity is impressive, and the option to choose between a high-step and step-through frame adds to its versatility. For those wanting a bit more tech, there’s also a torque sensor model priced at $1,699 (which is the bike we tested).", "basis": "price at time of review (torque-sensor model)"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://himiwaybike.com/products/premium-all-terrain-electric-bike", "quote": "Throttle ⟶ Thumb throttle", "basis": "throttle, but no class stated"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/himiway-d5-zebra-review/", "quote": "The Himiway D5 Zebra delivered a solid performance in our Electric Bike Report Speed Test, equipped with a torque sensor and a 750W rear hub motor. Since the D5 Zebra can be switched between class 2 and class 3 speeds, it was tested in both settings to fully evaluate its capabilities.", "basis": "switchable Class 2/3 with throttle; EBR's class box lists Class 1, 2 and 3. Recorded 2 assuming it ships at 20 mph (maker says '20+ Mph')"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://himiwaybike.com/products/premium-all-terrain-electric-bike", "quote": "Motor ⟶ 20+ Mph", "basis": "maker says \"20+ Mph\" top speed"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/himiway-d5-zebra-review/", "quote": "CLASS 2 (THROTTLE TO 20 MPH) ⟶ CLASS 3 (PEDAL ASSIST TO 28 MPH)", "basis": "switchable to Class 3 / 28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 86, "url": "https://himiwaybike.com/products/premium-all-terrain-electric-bike", "quote": "Motor Power ⟶ 86Nm"},
+   {"kind": "review", "value": 86, "url": "https://electricbikereport.com/himiway-d5-zebra-review/", "quote": "The Himiway D5 Zebra, armed with a 750W rear hub motor and fairly significant torque output of 86 Nm, entered our ‘Hell Hole’ hill test with the expectation of solid climbing ability."}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 960, "url": "https://himiwaybike.com/products/premium-all-terrain-electric-bike", "quote": "960 Wh ⟶ Samsung/LG Battery"},
+   {"kind": "review", "value": 960, "url": "https://electricbikereport.com/himiway-d5-zebra-review/", "quote": "Battery: 960 Wh, 48V Samsung Cells ⟶ Display: Full-Color LCD Display"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "60–80", "url": "https://himiwaybike.com/products/premium-all-terrain-electric-bike", "quote": "Range ⟶ 60-80 miles"},
+   {"kind": "review", "value": "54–70", "url": "https://electricbikereport.com/himiway-d5-zebra-review/", "quote": "Kicking things off with the minimal pedal assist (PAS 1), the D5 Zebra gave us an impressive 69.96 miles on a single charge. This test included a climb of 1,253 feet in elevation and lasted 5 hours and 34 minutes, all while maintaining an average speed of 12.57 mph. | Shifting to maximum pedal assist (PAS 5), the D5 Zebra covered 54.24 miles at a higher average speed of 18.1 mph spanning 3 hours and climbing an elevation of 1,046 feet.", "basis": "tested: 54.24 mi (PAS 5) to 69.96 mi (PAS 1)"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 79, "url": "https://himiwaybike.com/products/premium-all-terrain-electric-bike", "quote": "Weight ⟶ 79 lb. (with battery)"},
+   {"kind": "review", "value": 76.8, "url": "https://electricbikereport.com/himiway-d5-zebra-review/", "quote": "Tested Weight: 76.8 lbs ⟶ Rider height range: 5′3″ ~ 6′5″", "basis": "measured by reviewer (claimed 79 lb)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 400, "url": "https://himiwaybike.com/products/premium-all-terrain-electric-bike", "quote": "Max. payload capacity ⟶ 400 lb."},
+   {"kind": "review", "value": 400, "url": "https://electricbikereport.com/himiway-d5-zebra-review/", "quote": "Total payload capacity: 400 lb. ⟶ COMPONENTS & ACCESSORIES"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W hub", "url": "https://himiwaybike.com/products/premium-all-terrain-electric-bike", "quote": "Hub: 48v 750w Himiway hub motor ⟶ Tires"},
+   {"kind": "review", "value": "750W rear hub", "url": "https://electricbikereport.com/himiway-d5-zebra-review/", "quote": "Powering this beast is a hefty 48V, 960Wh battery paired with a 750W rear hub motor, delivering a solid 85 Newton Meters (Nm) of torque. I could feel the power right away as the large Kenda 26×4” tires effortlessly rolled over everything in their path."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'3\"-6'5\"", "url": "https://himiwaybike.com/products/premium-all-terrain-electric-bike", "quote": "Rider height ⟶ 5′3″ ~ 6′5″"},
+   {"kind": "review", "value": "5'3\"-6'5\"", "url": "https://electricbikereport.com/himiway-d5-zebra-review/", "quote": "Rider height range: 5′3″ ~ 6′5″ ⟶ Total payload capacity: 400 lb."}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://himiwaybike.com/products/premium-all-terrain-electric-bike", "quote": "Frame ⟶ 6061 Aluminum frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker regular price $2,299, on sale $1,499 (EBR's review quoted $1,699 for the torque-sensor model at the time). Maker gives top speed only as '20+ Mph' and no class; Electric Bike Report says it switches between Class 2 and 3 speeds, so cls 2 / 20 mph assumes 20 mph out of the box (adjustable to 28 mph). Torque: maker and EBR hill test say 86 Nm; EBR's intro says 85 Nm. Maker spec standover line lists both ST and SO frames on this page. electricbikereview.com search returned no results for Himiway."}

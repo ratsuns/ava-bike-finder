@@ -1,0 +1,44 @@
+{"bike": "Momentum|Trancend E+", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2340, "url": "https://www.momentum-biking.com/us/transend-eplus-2021", "quote": "$2,340 * ⟶ COLOR - Blue"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://www.momentum-biking.com/us/transend-eplus-2021", "quote": "Choose from Eco, Eco+, Normal, Sport, Sport+ and Auto Assist modes for max assist speed up to 28 mph ⟶ PLUSH SADDLE", "basis": "no class line on page; 28 mph assist -> Class 3"},
+   {"kind": "review", "value": 3, "url": "https://upway.co/blogs/news/momentum-transcend-ebike-review", "quote": "The Momentum Transcend E+ looks like a cruiser, but it is packed with more power than any cruiser out there. This Class 3 electric bike has an efficient motor, integrated battery, and smart features that help you through each ride."}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.momentum-biking.com/us/transend-eplus-2021", "quote": "Choose from Eco, Eco+, Normal, Sport, Sport+ and Auto Assist modes for max assist speed up to 28 mph ⟶ PLUSH SADDLE"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://www.momentum-biking.com/us/transend-eplus-2021", "quote": "Motor ⟶ Giant SyncDrive Life", "basis": "no torque figure on this page"},
+   {"kind": "review", "value": 60, "url": "https://upway.co/blogs/news/momentum-transcend-ebike-review", "quote": "Motor: Giant SyncDrive Life (powered by Yamaha) mid-drive unit ⟶ Motor Torque: 60 Nm"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 500, "url": "https://www.momentum-biking.com/us/transend-eplus-2021", "quote": "Battery ⟶ Giant EnergyPak 500Wh"},
+   {"kind": "review", "value": null, "url": "https://upway.co/blogs/news/momentum-transcend-ebike-review", "quote": "Battery: Giant EnergyPak Smart 375 Wh or 500 Wh lithium-ion options", "basis": "covers several model years; not specific"}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://www.momentum-biking.com/us/transend-eplus-2021", "quote": "", "basis": "no range figure on page"},
+   {"kind": "review", "value": "65", "url": "https://upway.co/blogs/news/momentum-transcend-ebike-review", "quote": "Optional Range Extender: Not natively optimized for secondary auxiliary range extender battery packs ⟶ Estimated Range: Up to 105 km / 65 miles on a single charge (Eco mode)", "basis": "general article covering 375/500Wh versions; battery not specified"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://www.momentum-biking.com/us/transend-eplus-2021", "quote": "", "basis": "spec table Weight row has no number"},
+   {"kind": "review", "value": null, "url": "https://upway.co/blogs/news/momentum-transcend-ebike-review", "quote": "Drivetrain: Shimano Nexus 7-speed internal gear hub with Revoshift twist shifter ⟶ Weight: 24.0 kg to 25.8 kg (depending on frame style and battery configuration)", "basis": "range across versions (about 53-57 lb); not specific to this model"}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.momentum-biking.com/us/transend-eplus-2021", "quote": "", "basis": "not given on this page"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "250W mid-drive (SyncDrive Life)", "url": "https://www.momentum-biking.com/us/transend-eplus-2021", "quote": "INTEGRATED BATTERY ⟶ The in-tube EnergyPak500 battery design with 250W mid-frame motor"},
+   {"kind": "review", "value": "250W mid-drive (SyncDrive Life, Yamaha)", "url": "https://upway.co/blogs/news/momentum-transcend-ebike-review", "quote": "Maximum Assistance: 20 mph / 32 km/h (US Class 1) or 28 mph / 45 km/h (US Class 3 / GTD models) or 15.5 mph / 25 km/h (UK/EU limits) ⟶ Peak Power: 250 W nominal"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'3\"-6'4\"", "url": "https://www.momentum-biking.com/us/transend-eplus-2021", "quote": "S\t5’3” to 5’8”\t28.3\" | M\t5’7” to 5’11”\t29.9\" | L\t5’10” to 6’4”\t31.9\"", "basis": "S/M/L combined"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.momentum-biking.com/us/transend-eplus-2021", "quote": "Transend E+ Bike (2021) | Electric & Commuter Bicycle | Momentum Bikes US | Momentum Bikes US", "basis": "page title; standard commuter frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Model name is spelled 'Transend E+' by Momentum. src link (transend-eplus-2022) redirects to the 2021 page https://www.momentum-biking.com/us/transend-eplus-2021 (still has Add to Cart at $2,340). A separate 'Transend E+ GTS 28MPH' 2022 page exists ($3,250, 60Nm, 500Wh, 51 lb 3oz size S, 344 lb total) — a different model, not used. Maker 2021 page gives no torque, weight, range or load. Only independent source is Upway's general article covering several versions (Class 1 and 3, 375/500Wh), so its wh/wt are recorded as null. Bike World Iowa dealer page is an older 375Wh/20mph Transend E+ — different generation, not used. ElectricBikeReview has no review."}

@@ -1,0 +1,42 @@
+{"bike": "Himiway|D5 2.0", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2199, "url": "https://himiwaybike.com/products/himiway-d5", "quote": "Regular price ⟶ $2,199.00", "basis": "regular price; on sale for $1,999"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://himiwaybike.com/products/himiway-d5", "quote": "Class ⟶ 1/2/3", "basis": "Class 1/2/3 bike with a thumb throttle and 20 mph default -> 2"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://himiwaybike.com/products/himiway-d5", "quote": "Max speed (default) ⟶ 20 MPH", "basis": "adjustable to 28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 90, "url": "https://himiwaybike.com/products/himiway-d5", "quote": "Motor ⟶ 48V, 750W, 90Nm"},
+   {"kind": "review", "value": 90, "url": "https://upway.co/blogs/news/himiway-d5-ebike-review", "quote": "D5/Zebra\t750W rear hub\t960Wh\tFront\tStep-over or step-through ⟶ D5 2.0\t750W rear hub, 90 Nm\t720Wh\t100mm front, 130mm rear\tStep-over"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 720, "url": "https://himiwaybike.com/products/himiway-d5", "quote": "Battery ⟶ 48V, 15Ah , IPX6", "basis": "48V x 15Ah"},
+   {"kind": "review", "value": 720, "url": "https://upway.co/blogs/news/himiway-d5-ebike-review", "quote": "Battery capacity is another reason to know exactly which D5 you’re looking at. The D5 Zebra uses a 960Wh Samsung/LG battery, with Himiway advertising up to 80 miles of range under favorable conditions. Here’s where newer doesn’t necessarily mean bigger. The D5 2.0 uses a 48V 15Ah Samsung/LG battery, or 720Wh. That’s considerably less capacity than the Zebra’s 960Wh pack."}
+  ],
+  "range": [
+   {"kind": "maker", "value": "70", "url": "https://himiwaybike.com/products/himiway-d5", "quote": "Pedal assist range ⟶ 70 Miles"},
+   {"kind": "review", "value": "70", "url": "https://upway.co/blogs/news/himiway-d5-ebike-review", "quote": "Himiway advertises up to 70 miles of pedal-assist range for the D5 2.0, but I wouldn’t treat that number, or the Zebra’s 80-mile figure, as a promise (just top range). Rider and cargo weight, climbing, wind,", "basis": "repeats Himiway's claim"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 92, "url": "https://himiwaybike.com/products/himiway-d5", "quote": "Bike weight ⟶ 92lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 400, "url": "https://himiwaybike.com/products/himiway-d5", "quote": "Bike load capacity ⟶ 400lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub (1300W peak)", "url": "https://himiwaybike.com/products/himiway-d5", "quote": "750w / 1300w | Peak Motor | 90Nm | Max Torque | Rear Hub"},
+   {"kind": "review", "value": "750W rear hub", "url": "https://upway.co/blogs/news/himiway-d5-ebike-review", "quote": "D5/Zebra\t750W rear hub\t960Wh\tFront\tStep-over or step-through ⟶ D5 2.0\t750W rear hub, 90 Nm\t720Wh\t100mm front, 130mm rear\tStep-over"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'5\"-6'5\"", "url": "https://himiwaybike.com/products/himiway-d5", "quote": "Size: Regular / 5'5\" - 6'5\" ⟶ Size guide"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://himiwaybike.com/products/himiway-d5", "quote": "Frame ⟶ Aluminum Alloy, Rear Wheel 130mm Travel"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker regular price $2,199, on sale $1,999 (15Ah battery option). Maker page also links the D5 2.0 ST (5'1\"-6'5\") and D5 2.0 20\" (4'11\"-6'3\") variants; values here are the 26\" step-over D5 2.0. Customer-review bullets on the page mentioning 440-lb payload / ~80 lbs refer to the 20\" version and were ignored. The motor quote is five consecutive page lines joined with ' | '. Upway article is a family overview (D5/Zebra vs D5 2.0 vs D5 Pro), not a hands-on test. Electric Bike Report has no D5 2.0 review."}

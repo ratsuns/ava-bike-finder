@@ -1,0 +1,179 @@
+{
+ "bike": "Macfox|X2",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://macfoxbike.com/blogs/news/macfox-x2-vs-x2-pro",
+    "quote": "Model status\tNo longer sold new\tAvailable today ⟶ Frame material\t6061 aluminum\tHigh-strength carbon steel",
+    "basis": "no longer sold; no X2 price published"
+   },
+   {
+    "kind": "retailer",
+    "value": 1799,
+    "url": "https://www.wellbots.com/products/macfox-x2-electric-mountain-bike",
+    "quote": "Sale price ⟶ $1,799.00",
+    "basis": "labelled 'Sale price'; no regular price shown"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": 2,
+    "url": "https://macfoxbike.com/blogs/news/macfox-x2-vs-x2-pro",
+    "quote": "Motor, speed, and class\t750W rated / 1000W peak; 20 mph; street-legal Class 2\t750W rated / 1000W peak; 20 mph; street-legal Class 2"
+   },
+   {
+    "kind": "retailer",
+    "value": 2,
+    "url": "https://www.wellbots.com/products/macfox-x2-electric-mountain-bike",
+    "quote": "750W Motor (1000W Peak Power) – Torque-packed performance with 65Nm output and a street-legal top speed of 20 mph | Adjustable Thumb Throttle – Removable and position-adjustable for left or right-hand use",
+    "basis": "throttle + 20 mph -> Class 2"
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": 20,
+    "url": "https://macfoxbike.com/blogs/news/macfox-x2-vs-x2-pro",
+    "quote": "Motor, speed, and class\t750W rated / 1000W peak; 20 mph; street-legal Class 2\t750W rated / 1000W peak; 20 mph; street-legal Class 2"
+   },
+   {
+    "kind": "retailer",
+    "value": 20,
+    "url": "https://www.wellbots.com/products/macfox-x2-electric-mountain-bike",
+    "quote": "Top Speed: 20 mph ⟶ Range: 40–80 miles"
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://macfoxbike.com/blogs/news/macfox-x2-vs-x2-pro",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": 65,
+    "url": "https://www.wellbots.com/products/macfox-x2-electric-mountain-bike",
+    "quote": "Motor: 750W (1000W peak) ⟶ Torque: 65 Nm"
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": 960,
+    "url": "https://macfoxbike.com/blogs/news/macfox-x2-vs-x2-pro",
+    "quote": "Battery and published range\t48V 20Ah; up to 40 miles single / 80 miles dual\t48V 20Ah; up to 40 miles single / 80 miles dual",
+    "basis": "48V x 20Ah"
+   },
+   {
+    "kind": "retailer",
+    "value": 960,
+    "url": "https://www.wellbots.com/products/macfox-x2-electric-mountain-bike",
+    "quote": "Battery: 960Wh (48V 20Ah) ⟶ Charge Time: 6–7 hours"
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": "40",
+    "url": "https://macfoxbike.com/blogs/news/macfox-x2-vs-x2-pro",
+    "quote": "Battery and published range\t48V 20Ah; up to 40 miles single / 80 miles dual\t48V 20Ah; up to 40 miles single / 80 miles dual",
+    "basis": "single battery; 80 with dual"
+   },
+   {
+    "kind": "retailer",
+    "value": "40",
+    "url": "https://www.wellbots.com/products/macfox-x2-electric-mountain-bike",
+    "quote": "Extended Range Capability – Up to 40 miles on a single battery, or up to 80 miles with a dual-battery setup (lab tested)"
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://macfoxbike.com/blogs/news/macfox-x2-vs-x2-pro",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": 72,
+    "url": "https://www.wellbots.com/products/macfox-x2-electric-mountain-bike",
+    "quote": "Vehicle Weight: 72 lbs ⟶ Rider Weight Limit: 220 lbs"
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": 220,
+    "url": "https://macfoxbike.com/blogs/news/macfox-x2-vs-x2-pro",
+    "quote": "Payload rating\t220 lb\t330 lb ⟶ Suspension\tFront and rear suspension\tFront and rear suspension",
+    "basis": "previous X2 column (220 lb); X2 Pro is 330 lb"
+   },
+   {
+    "kind": "retailer",
+    "value": 220,
+    "url": "https://www.wellbots.com/products/macfox-x2-electric-mountain-bike",
+    "quote": "Vehicle Weight: 72 lbs ⟶ Rider Weight Limit: 220 lbs",
+    "basis": "rider weight limit"
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "750W (1,000W peak)",
+    "url": "https://macfoxbike.com/blogs/news/macfox-x2-vs-x2-pro",
+    "quote": "Motor, speed, and class\t750W rated / 1000W peak; 20 mph; street-legal Class 2\t750W rated / 1000W peak; 20 mph; street-legal Class 2"
+   },
+   {
+    "kind": "retailer",
+    "value": "750W (1,000W peak)",
+    "url": "https://www.wellbots.com/products/macfox-x2-electric-mountain-bike",
+    "quote": "Motor: 750W (1000W peak) ⟶ Torque: 65 Nm"
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": "5'3\" and up",
+    "url": "https://macfoxbike.com/blogs/news/macfox-x2-vs-x2-pro",
+    "quote": "Frame material\t6061 aluminum\tHigh-strength carbon steel ⟶ Recommended rider height\t5'3\" and up\t5'3\" and up"
+   },
+   {
+    "kind": "retailer",
+    "value": "5'3\" and up",
+    "url": "https://www.wellbots.com/products/macfox-x2-electric-mountain-bike",
+    "quote": "Rider Weight Limit: 220 lbs ⟶ Recommended Rider Height: 5’3” and up"
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://macfoxbike.com/blogs/news/macfox-x2-vs-x2-pro",
+    "quote": "Frame material\t6061 aluminum\tHigh-strength carbon steel ⟶ Recommended rider height\t5'3\" and up\t5'3\" and up",
+    "basis": "full-suspension moped-style frame; no folding mentioned"
+   },
+   {
+    "kind": "retailer",
+    "value": "No",
+    "url": "https://www.wellbots.com/products/macfox-x2-electric-mountain-bike",
+    "quote": "Frame: 6061 aluminum alloy ⟶ Suspension: Front + rear"
+   }
+  ]
+ },
+ "status": {
+  "sources": [
+   {
+    "kind": "maker",
+    "value": "discontinued",
+    "url": "https://macfoxbike.com/blogs/news/macfox-x2-vs-x2-pro",
+    "quote": "Macfox no longer sells the previous X2. The Macfox X2 Pro eBike is the model available today. If you already own an X2 that fits, works properly, and handles your usual routes, there is no reason to replace it just because a Pro version exists."
+   }
+  ]
+ },
+ "notes": "Given src https://macfoxbike.com/products/macfox-x2 now sells the X2 Pro (different, upgraded model: steel frame, 330 lb limit, $2,199) -- not used for X2 specs. Original X2 specs taken from maker's 'X2 vs X2 Pro' blog (previous-X2 column) and Wellbots retailer listing of the original X2 (6061 aluminum, 220 lb). Contradiction: other maker blogs (x2-ebike-faq, X2 comprehensive guide) say 'The original Macfox X2 was sold in an earlier configuration rated up to 28 mph', while the X2-vs-X2-Pro table says 20 mph Class 2 for both. No maker X2 price; Wellbots $1,799 is labelled sale price. Weight 72 lbs only from Wellbots (same as X2 Pro's listed weight). City Grounds X2 page 404."
+}

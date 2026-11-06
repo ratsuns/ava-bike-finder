@@ -1,0 +1,49 @@
+{"bike": "Pedego|Ridge Rider", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2195, "url": "https://pedegoelectricbikes.com/products/ridge-rider-2", "quote": "$2,195.00 ⟶ CHOOSE OPTIONS"},
+   {"kind": "review", "value": 2195, "url": "https://electricbikereview.com/pedego/ridge-rider-2-review/", "quote": "Price ⟶ MSRP: $2,195.00"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://pedegoelectricbikes.com/products/ridge-rider-2", "quote": "Speed: Class 1 & Class 2; ⟶ Class 3 Ready", "basis": "ships at 20 mph with a throttle (\"Pedego Twist Throttle\"); Class 3 is a dealer upgrade (\"Class 3 Upgrade Offered at Participating Locations\")"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereview.com/pedego/ridge-rider-2-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 1 / Class 2 (Class 3 via authorized dealer)"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://pedegoelectricbikes.com/products/ridge-rider-2", "quote": "SPEED ⟶ Class 1 - 20mph Pedal Assist", "basis": "Class 3 upgrade at participating dealers"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereview.com/pedego/ridge-rider-2-review/", "quote": "TOP SPEED: ⟶ 20 mph (Class 2) / 28 mph (Class 3 via dealer) mph", "basis": "adjustable to 28 mph (Class 3 via dealer)"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 90, "url": "https://pedegoelectricbikes.com/products/ridge-rider-2", "quote": "MOTOR ⟶ 48V, 750W, 90Nm Torque"},
+   {"kind": "review", "value": 90, "url": "https://electricbikereview.com/pedego/ridge-rider-2-review/", "quote": "MOTOR TORQUE: ⟶ 90 Nm Newton meters"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 835, "url": "https://pedegoelectricbikes.com/products/ridge-rider-2", "quote": "48V17.4Ah 835Wh, UL2271 Certified Pack, UL2580 Certified Cells, LG 21700, Removable Battery ⟶ CHARGER"},
+   {"kind": "review", "value": 835, "url": "https://electricbikereview.com/pedego/ridge-rider-2-review/", "quote": "BATTERY WATT HOURS: ⟶ 835 Wh wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "90", "url": "https://pedegoelectricbikes.com/products/ridge-rider-2", "quote": "Range Up to ⟶ 90 Miles"},
+   {"kind": "review", "value": "38.8–90", "url": "https://electricbikereview.com/pedego/ridge-rider-2-review/", "quote": "Up to 90 miles (manufacturer estimate, 165 lb rider, flat ground, minimum assist) miles ⟶ ESTIMATED MAX RANGE: | ESTIMATED MAX RANGE: ⟶ 38.8 miles (max assist, tested) miles", "basis": "38.8 mi tested at max assist; 90 mi is the maker's min-assist estimate"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 71.1, "url": "https://pedegoelectricbikes.com/products/ridge-rider-2", "quote": "62.4 lb / 28.3 kg w/o Battery | 71.1 lb / 32.25 kg w/ Battery ⟶ BATTERY"},
+   {"kind": "review", "value": 73.7, "url": "https://electricbikereview.com/pedego/ridge-rider-2-review/", "quote": "73.7 lb measured (with tire slime); ~65 lb without battery. Advertised: 62.4 lb frame + 8.7 lb battery lbs ⟶ BATTERY WEIGHT:", "basis": "measured, with tire slime"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 400, "url": "https://pedegoelectricbikes.com/products/ridge-rider-2", "quote": "WEIGHT LIMIT ⟶ Payload Up to | Payload Up to ⟶ 400 Lb"},
+   {"kind": "review", "value": 330, "url": "https://electricbikereview.com/pedego/ridge-rider-2-review/", "quote": "Load Capacity: 330 lb ⟶ Reader Interactions", "basis": "may be review-template data; differs from maker's 400 lb"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W", "url": "https://pedegoelectricbikes.com/products/ridge-rider-2", "quote": "MOTOR ⟶ 48V, 750W, 90Nm Torque"},
+   {"kind": "review", "value": "750W rear hub (1,200W peak)", "url": "https://electricbikereview.com/pedego/ridge-rider-2-review/", "quote": "The 750W rear hub motor (90 Nm of torque, peaking at 1,200 watts) is one of the quietest hub motors I have tested, and it climbs well enough to land in the top quartile of our Black Hill results."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'4\"-6'1\"", "url": "https://pedegoelectricbikes.com/products/ridge-rider-2", "quote": "RIDER HEIGHT ⟶ 5'4\" - 6'1\""},
+   {"kind": "review", "value": "5'1\"-6'3\"", "url": "https://electricbikereview.com/pedego/ridge-rider-2-review/", "quote": "One note: Pedego list the height range as 5’1″ to 6’3″ range, and I think the top end of that is a little wishful. At 5’11, I can pedal fine but still don’t have full leg extension – riders at 6’1″ and up are going to want a longer post.", "basis": "reviewer says top end is wishful"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://pedegoelectricbikes.com/products/ridge-rider-2", "quote": "BEST IN CLASS FEATURES ⟶ Step Thru Frame", "basis": "no folding frame mentioned; step-thru frame"},
+   {"kind": "review", "value": "No", "url": "https://electricbikereview.com/pedego/ridge-rider-2-review/", "quote": "The stem adjusts 0 to 80 degrees on a quick release, so you can set your reach and bar height with no tools and no shopping for a new stem.", "basis": "adjustable stem only; frame doesn't fold"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "The maker page at the given src (ridge-rider-2) is titled 'Ridge Rider' but is the current Ridge Rider 2 (Pedego's menu also lists a separate 'Ridge Rider: 2025'). EBR's review is of the Ridge Rider 2 and matches the maker's specs. Rider height differs: maker page says 5'4\"-6'1\", EBR quotes Pedego as 5'1\"-6'3\". EBR's 'Load Capacity: 330 lb' looks like it may be template data; maker says 400 lb payload."}

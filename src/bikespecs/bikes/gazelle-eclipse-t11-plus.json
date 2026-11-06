@@ -1,0 +1,49 @@
+{"bike": "Gazelle|Eclipse T11+", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 5899, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-eclipse-t11plus", "quote": "$5,899$5,499 | Shop stock: First, configure your bike", "basis": "regular $5,899 shown crossed out next to sale price $5,499"},
+   {"kind": "retailer", "value": 5899, "url": "https://flyridesusa.com/products/gazelle-eclipse-t11-high-step", "quote": "Regular price ⟶ $5,899.00"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-eclipse-t11plus", "quote": "Ebike Max Speed | 28 mph", "basis": "no class stated on the product spec; 28 mph Bosch Performance Line Speed means Class 3"},
+   {"kind": "retailer", "value": null, "url": "https://flyridesusa.com/products/gazelle-eclipse-t11-high-step", "quote": ""}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-eclipse-t11plus", "quote": "Ebike Max Speed | 28 mph"},
+   {"kind": "retailer", "value": null, "url": "https://flyridesusa.com/products/gazelle-eclipse-t11-high-step", "quote": ""}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-eclipse-t11plus", "quote": "Engine Max Torque (Nm) | 85"},
+   {"kind": "retailer", "value": 85, "url": "https://flyridesusa.com/products/gazelle-eclipse-t11-high-step", "quote": "Motor\tBosch Performance Line Speed Smart System (85 Nm), 36V"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 750, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-eclipse-t11plus", "quote": "750 Wh: up to 100 mi"},
+   {"kind": "retailer", "value": 750, "url": "https://flyridesusa.com/products/gazelle-eclipse-t11-high-step", "quote": "Battery\tIntegrated into frame 750Wh ⟶ Display\tBosch Kiox 300"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "50–100", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-eclipse-t11plus", "quote": "Eco\t100 mi | Tour\t70 mi | Auto\t60 mi | Turbo\t50 mi", "basis": "four consecutive lines of the maker's 'Battery and Range' spec (\" | \" = line break)"},
+   {"kind": "retailer", "value": null, "url": "https://flyridesusa.com/products/gazelle-eclipse-t11-high-step", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 59, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-eclipse-t11plus", "quote": "Weight (lbs) | 59 lbs excl. battery", "basis": "without battery"},
+   {"kind": "retailer", "value": null, "url": "https://flyridesusa.com/products/gazelle-eclipse-t11-high-step", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-eclipse-t11plus", "quote": "", "basis": "no max load / permissible weight on the page"},
+   {"kind": "retailer", "value": null, "url": "https://flyridesusa.com/products/gazelle-eclipse-t11-high-step", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Performance Line Speed (mid-drive)", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-eclipse-t11plus", "quote": "Motor | Performance Line Speed | Ebike Engine Position | Mid | Ebike System Brand | Bosch Smart System", "basis": "consecutive spec lines; no rated watts published"},
+   {"kind": "retailer", "value": "Bosch Performance Line Speed Smart System", "url": "https://flyridesusa.com/products/gazelle-eclipse-t11-high-step", "quote": "Motor\tBosch Performance Line Speed Smart System (85 Nm), 36V"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'10\"-6'3\"", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-eclipse-t11plus", "quote": "Frame size | 45 | 4'10\" - 5'6\" | 50 | 5'6\" - 5'10\" | 55 | 5'10\" - 6'3\"", "basis": "consecutive lines of the frame-size selector, S 45 to L 55"},
+   {"kind": "retailer", "value": null, "url": "https://flyridesusa.com/products/gazelle-eclipse-t11-high-step", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-eclipse-t11plus", "quote": "Frame hape | Low-Step, High-Step", "basis": "fixed low-step / high-step frame; nothing about folding"},
+   {"kind": "retailer", "value": null, "url": "https://flyridesusa.com/products/gazelle-eclipse-t11-high-step", "quote": ""}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page shows a sale ($5,499) with $5,899 crossed out. Fly Rides page is the High Step, Model Year 2025. No Eclipse review found on electricbikereview.com. Multi-line quotes joined with ' | ' as page line breaks."}

@@ -1,0 +1,47 @@
+{"bike": "Lectric|XPress2 (Commuter / Cruiser)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1858, "url": "https://lectricebikes.com/products/xpress-750-high-step-black-ebike", "quote": "$1,399 ⟶ $1,858", "basis": "crossed-out price $1,858; $1,399 is current sale price (same on Cruiser page)"},
+   {"kind": "review", "value": 1399, "url": "https://electricbikereview.com/lectric-ebikes/lectric-xpress2-review/", "quote": "Price ⟶ MSRP: $$1,399"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://lectricebikes.com/products/xpress-750-high-step-black-ebike", "quote": "Five riding modes deliver the speed and power to own the road as a Class 1, 2, or 3 eBike.* New simplified labels, including Eco, Tour, Sport, Sport+, & Turbo, allow riders to choose their riding experience. ⟶ Thumb Throttle", "basis": "Class 1/2/3 with throttle; maker lists top speed 28 mph -> 3"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereview.com/lectric-ebikes/lectric-xpress2-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 1, Class 2 (default), Class 3, and California Class 3", "basis": "review says Class 2 is the default setting"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://lectricebikes.com/products/xpress-750-high-step-black-ebike", "quote": "TOP SPEED ⟶ 28 mph"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/lectric-ebikes/lectric-xpress2-review/", "quote": "TOP SPEED: ⟶ 28 mph (Configurable to Class 3) mph", "basis": "28 mph when configured to Class 3"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://lectricebikes.com/products/xpress-750-high-step-black-ebike", "quote": "A 750W rear hub motor (1310W peak) with 85Nm of torque supplies power and speed quicker than ever before. Stealth M24 technology delivers a quieter motor experience without sacrificing power. ⟶ Motor Controller"},
+   {"kind": "review", "value": 85, "url": "https://electricbikereview.com/lectric-ebikes/lectric-xpress2-review/", "quote": "MOTOR TORQUE: ⟶ 85Nm Newton meters"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 672, "url": "https://lectricebikes.com/products/xpress-750-high-step-black-ebike", "quote": "A removable 48V, 14Ah (672Wh) lithium-ion battery certified to UL 2271, integrated on the down tube of the frame, makes for a clean and easily-accessible design while powering your ride for up to 60 miles on a single charge.*** The XPress2 is also certified to UL 2849.† ⟶ Keyless Riding"},
+   {"kind": "review", "value": 672, "url": "https://electricbikereview.com/lectric-ebikes/lectric-xpress2-review/", "quote": "BATTERY WATT HOURS: ⟶ 672Wh wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "60", "url": "https://lectricebikes.com/products/xpress-750-high-step-black-ebike", "quote": "RANGE ⟶ up to 60 miles"},
+   {"kind": "review", "value": "60", "url": "https://electricbikereview.com/lectric-ebikes/lectric-xpress2-review/", "quote": "Range ⟶ Estimated Range (from Lectric): Up to 60 Miles", "basis": "maker estimate; tested 33 miles (Turbo) / 54 miles (Tour)"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 66, "url": "https://lectricebikes.com/products/xpress-750-high-step-black-ebike", "quote": "Total bike weight is 60lbs with the 6lb battery removed. ⟶ Green Packaging", "basis": "60 lb without battery + 6 lb battery; same text on Cruiser page"},
+   {"kind": "review", "value": 72, "url": "https://electricbikereview.com/lectric-ebikes/lectric-xpress2-review/", "quote": "TOTAL WEIGHT: ⟶ Approximately 72 lbs with battery lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 330, "url": "https://lectricebikes.com/products/xpress-750-high-step-black-ebike", "quote": "PAYLOAD CAPACITY ⟶ 330 lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub (1310W peak)", "url": "https://lectricebikes.com/products/xpress-750-high-step-black-ebike", "quote": "A 750W rear hub motor (1310W peak) with 85Nm of torque supplies power and speed quicker than ever before. Stealth M24 technology delivers a quieter motor experience without sacrificing power. ⟶ Motor Controller"},
+   {"kind": "review", "value": "750W rear hub (1,310W peak)", "url": "https://electricbikereview.com/lectric-ebikes/lectric-xpress2-review/", "quote": "The XPress 2 has a 750W nominal rear hub motor that peaks at 1,310W with 85Nm of torque. Those numbers put the motor right where I think it needs to be for a Class 3 commuter e-bike, as you need a powerful motor when commuting at higher speeds."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'4\"-6'4\"", "url": "https://lectricebikes.com/products/xpress-750-high-step-black-ebike", "quote": "Rider Height ⟶ 5’4” - 6’4”", "basis": "High-Step Commuter"},
+   {"kind": "maker", "value": "5'2\"-6'3\"", "url": "https://lectricebikes.com/products/xpress-750-step-thru-white-ebike", "quote": "Rider Height ⟶ 5’2” - 6’3”", "basis": "Step-Thru Cruiser"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://lectricebikes.com/products/xpress-750-high-step-black-ebike", "quote": "The XPress2 High-Step Commuter features sporty Hybrid Sprint™ handlebars with a fixed stem, creating a more athletic, active riding position for confident handling and responsive control. Designed for riders who prefer a performance-inspired feel, the setup delivers a sleek, streamlined look while maintaining the durability and low-maintenance simplicity of a classic commuter bike. ⟶ Thru Axle", "basis": "non-folding commuter frame with fixed stem; no frame folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Given src was the XPress2 collection page; used the Commuter (High-Step) product page as maker source, with Cruiser (Step-Thru) page checked for height and weight (same specs except rider height). Maker shows $1,399 sale, $1,858 crossed out. Class conflict: maker lists 28 mph top speed (Class 1/2/3), EBR says Class 2 is the default setting. Weight conflict: maker 60+6 = 66 lb, EBR ~72 lb with battery (battery 7.6 lb)."}

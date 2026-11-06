@@ -1,0 +1,49 @@
+{"bike": "Izip|Simi", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "review", "value": 1599, "url": "https://electricbikereport.com/izip-simi-electric-bike-review-part-1-pictures-specs/", "quote": "Price: $1,599 USD with free shipping and IZIP offers monthly payments."},
+   {"kind": "review", "value": 1599, "url": "https://electricbikereview.com/izip/e3-simi/", "quote": "PRICE: ⟶ $1599"}
+  ],
+  "cls": [
+   {"kind": "review", "value": 1, "url": "https://electricbikereport.com/izip-simi-electric-bike-review-part-1-pictures-specs/", "quote": "The IZIP Simi is a Class 1 electric bike which is pedal assist up to 20 mph."},
+   {"kind": "review", "value": 1, "url": "https://electricbikereview.com/izip/e3-simi/", "quote": "ELECTRIC BIKE CLASS: ⟶ Pedal Assist (Class 1)"}
+  ],
+  "spd": [
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/izip-simi-electric-bike-review-part-1-pictures-specs/", "quote": "Speed: Pedal assist up to 20 mph makes this a Class 1 eBike"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereview.com/izip/e3-simi/", "quote": "TOP SPEED: ⟶ 20 mph (32 kph)"}
+  ],
+  "tq": [
+   {"kind": "review", "value": 60, "url": "https://electricbikereport.com/izip-simi-electric-bike-review-part-1-pictures-specs/", "quote": "Motor: SR Suntour Performance geared rear hub motor with 400 watts peak power and 60Nm peak torque ⟶ Battery: 36V 11.6Ah (418 Wh) lithium battery. The battery weighs 5.7 pounds."},
+   {"kind": "review", "value": 60, "url": "https://electricbikereview.com/izip/e3-simi/", "quote": "MOTOR TORQUE: ⟶ 60 Newton meters"}
+  ],
+  "wh": [
+   {"kind": "review", "value": 418, "url": "https://electricbikereport.com/izip-simi-electric-bike-review-part-1-pictures-specs/", "quote": "Battery: 36V 11.6Ah (418 Wh) lithium battery. The battery weighs 5.7 pounds."},
+   {"kind": "review", "value": 417.6, "url": "https://electricbikereview.com/izip/e3-simi/", "quote": "BATTERY WATT HOURS: ⟶ 417.6 wh"}
+  ],
+  "range": [
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/izip-simi-electric-bike-review-part-1-pictures-specs/", "quote": "Part 2 of the IZIP Simi review will give you info on the ride characteristics, results from the range test, pros, cons, and overall thoughts on this eBike.", "basis": "range is in Part 2, not on this page"},
+   {"kind": "review", "value": "15–50", "url": "https://electricbikereview.com/izip/e3-simi/", "quote": "ESTIMATED MIN RANGE: ⟶ 15 miles (24 km) | ESTIMATED MAX RANGE: ⟶ 50 miles (80 km)"}
+  ],
+  "wt": [
+   {"kind": "review", "value": 54.1, "url": "https://electricbikereport.com/izip-simi-electric-bike-review-part-1-pictures-specs/", "quote": "Weight: Bike without the battery = 48.4 pounds. Battery = 5.7 pounds. Total bike = 54.1 pounds. ⟶ Price: $1,599 USD with free shipping and IZIP offers monthly payments."},
+   {"kind": "review", "value": 52.3, "url": "https://electricbikereview.com/izip/e3-simi/", "quote": "TOTAL WEIGHT: ⟶ 52.3 lbs (23.72 kg)"}
+  ],
+  "load": [
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/izip-simi-electric-bike-review-part-1-pictures-specs/", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/izip/e3-simi/", "quote": "Steel Full Length Fenders, Alloy Bolt-On Rear Rack with Bungee Loops (25kg 55lb Weight Capacity), Adjustable Length Rear-Mount Kickstand (40mm Mounting Size), Flick Bell, Fuxon Integrated Rear Light (1 LED), Fuxon Integrated Headlight ⟶ OTHER:", "basis": "rear rack capacity only, not bike max load"}
+  ],
+  "motor": [
+   {"kind": "review", "value": "400W peak rear hub (SR Suntour Performance)", "url": "https://electricbikereport.com/izip-simi-electric-bike-review-part-1-pictures-specs/", "quote": "Motor: SR Suntour Performance geared rear hub motor with 400 watts peak power and 60Nm peak torque ⟶ Battery: 36V 11.6Ah (418 Wh) lithium battery. The battery weighs 5.7 pounds."},
+   {"kind": "review", "value": "250W rear hub (400W peak)", "url": "https://electricbikereview.com/izip/e3-simi/", "quote": "MOTOR NOMINAL OUTPUT: ⟶ 250 watts | MOTOR PEAK OUTPUT: ⟶ 400 watts"}
+  ],
+  "height": [
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/izip-simi-electric-bike-review-part-1-pictures-specs/", "quote": "Sizes: One step-thru or step-over frame size."},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/izip/e3-simi/", "quote": "Small: 16\" Seat Tube, 24\" Reach, 22\" Stand Over Height, 28\" Minimum Saddle Height, 25.2\" Width, 73\" Length ⟶ FRAME TYPES:"}
+  ],
+  "fold": [
+   {"kind": "review", "value": "No", "url": "https://electricbikereport.com/izip-simi-electric-bike-review-part-1-pictures-specs/", "quote": "Sizes: One step-thru or step-over frame size.", "basis": "standard step-thru/step-over cruiser frame"},
+   {"kind": "review", "value": "No", "url": "https://electricbikereview.com/izip/e3-simi/", "quote": "All new for 2019, the IZIP E3 Simi is an affordable and lightweight cruiser with comfortable riding position and an SR Suntour rear hub motor, two frame styles and two color options, and an entry level price point", "basis": "cruiser, no folding frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "No maker source: izipelectric.com now redirects to diamondback.com/collections/izip, which lists only Tristar, Zest and Zest Step Thru; a Diamondback site search returns 'Search: 0 results found for  simi'. The Simi (aka IZIP E3 Simi) is a 2019 model and appears no longer sold, but the maker doesn't say 'discontinued', so status is left empty. Both sources are 2019 reviews (Electric Bike Report part 1; ElectricBikeReview 'MODEL YEAR: ⟶ 2019'). They differ slightly on weight (54.1 vs 52.3 lb) and Wh (418 vs 417.6). EBR's drivetrain line ('7Speed 1x11 Shimano RD-RX817 GRX Di2') looks like a copy error. Price is the 2019 MSRP."}

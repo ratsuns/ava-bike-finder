@@ -1,0 +1,53 @@
+{"bike": "Momentum|Vida E+ EX", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1985, "url": "https://www.momentum-biking.com/us/vida-eplus-ex-2027", "quote": "$1,985 * ⟶ 0% APRor as low as $97/mo with Affirm. See if you qualify"},
+   {"kind": "review", "value": 1985, "url": "https://electricbikereview.com/momentum/vida-e-plus-ex-review/", "quote": "PRICE: ⟶ $1985"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://www.momentum-biking.com/us/vida-eplus-ex-2027", "quote": "SyncDrive Move S motor with 60Nm torque is designed to make every ride effortless. In pedal‑assist mode, it provides smooth and consistent support, allowing you to reach speeds of up to 28mph (45kph) with ease. ⟶ UNRIVALLED SAFETY", "basis": "28 mph pedal assist -> Class 3 (spec table 'Classification' lists only the ASTM/EN test standard)"},
+   {"kind": "review", "value": 3, "url": "https://electricbikereport.com/momentum-vida-e-plus-ex-review/", "quote": "As a Class 3 e-bike, the Vida E+ EX offers pedal assist up to a speedy 28 mph right out of the box. Many similar models are limited to 20 mph by default."},
+   {"kind": "review", "value": 3, "url": "https://electricbikereview.com/momentum/vida-e-plus-ex-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 2 / Class 3 (adjustable via RideControl app)"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.momentum-biking.com/us/vida-eplus-ex-2027", "quote": "SyncDrive Move S motor with 60Nm torque is designed to make every ride effortless. In pedal‑assist mode, it provides smooth and consistent support, allowing you to reach speeds of up to 28mph (45kph) with ease. ⟶ UNRIVALLED SAFETY"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/momentum/vida-e-plus-ex-review/", "quote": "TOP SPEED: ⟶ 28 mph pedal assist; 20 mph throttle mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 60, "url": "https://www.momentum-biking.com/us/vida-eplus-ex-2027", "quote": "Motor ⟶ SyncDrive Move S, rear hub, 60Nm, 48V, 500W"},
+   {"kind": "review", "value": 60, "url": "https://electricbikereview.com/momentum/vida-e-plus-ex-review/", "quote": "MOTOR TORQUE: ⟶ 60Nm Newton meters"},
+   {"kind": "review", "value": 60, "url": "https://electricbikereport.com/momentum-vida-e-plus-ex-review/", "quote": "Motor: SyncDrive Move S, 60Nm, 48V, 500W Rear Hub Motor ⟶ Headlight: Integrated LED"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 688, "url": "https://www.momentum-biking.com/us/vida-eplus-ex-2027", "quote": "Battery ⟶ Energy 700, 46.8Vdc 14.7Ah", "basis": "46.8 V x 14.7 Ah = 687.96 Wh"},
+   {"kind": "review", "value": 700, "url": "https://electricbikereview.com/momentum/vida-e-plus-ex-review/", "quote": "BATTERY WATT HOURS: ⟶ 700Wh wh"},
+   {"kind": "review", "value": 688, "url": "https://electricbikereport.com/momentum-vida-e-plus-ex-review/", "quote": "At 700 Wh (technically 688 Wh), the Vida’s battery capacity is nearly identical to the category average of 709 Wh, so battery size alone does not explain the difference."}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://www.momentum-biking.com/us/vida-eplus-ex-2027", "quote": "", "basis": "maker page gives no range figure"},
+   {"kind": "review", "value": "40–55", "url": "https://electricbikereport.com/momentum-vida-e-plus-ex-review/", "quote": "Claimed Range: 40-55 miles (Pedal assist), 31-43 miles (throttle assist) ⟶ Throttle: Optional Half-Twist"},
+   {"kind": "review", "value": "34–58.5", "url": "https://electricbikereview.com/momentum/vida-e-plus-ex-review/", "quote": "ESTIMATED MIN RANGE: ⟶ 58.5 miles miles", "basis": "tested; max-assist figure '34 miles'"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://www.momentum-biking.com/us/vida-eplus-ex-2027", "quote": "", "basis": "spec table 'Weight' row has only a disclaimer, no number"},
+   {"kind": "review", "value": 66, "url": "https://electricbikereview.com/momentum/vida-e-plus-ex-review/", "quote": "TOTAL WEIGHT: ⟶ 66 lb advertised / 67.6 lb measured (with tire slime) lbs"},
+   {"kind": "review", "value": 66, "url": "https://electricbikereport.com/momentum-vida-e-plus-ex-review/", "quote": "WEIGHT & DIMENSIONS ⟶ Claimed weight: 66 lbs", "basis": "tested 67.8 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 300, "url": "https://www.momentum-biking.com/us/vida-eplus-ex-2027", "quote": "Combined Maximum Load Limit ⟶ 300 lbs (includes bike, rider, cargo, and accessories)", "basis": "total"},
+   {"kind": "review", "value": 300, "url": "https://electricbikereport.com/momentum-vida-e-plus-ex-review/", "quote": "Rider height range: 5′ 1″ – 5’9″ (S), 5’8″-6’3″ (L) ⟶ Total payload capacity: 300 lbs (includes bike, rider, cargo, and accessories)", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W rear hub (SyncDrive Move S)", "url": "https://www.momentum-biking.com/us/vida-eplus-ex-2027", "quote": "Motor ⟶ SyncDrive Move S, rear hub, 60Nm, 48V, 500W"},
+   {"kind": "review", "value": "500W rear hub (750W peak)", "url": "https://electricbikereport.com/momentum-vida-e-plus-ex-review/", "quote": "A 500W SyncDrive motor produces up to 750W of peak power and 60 Nm of torque. ⟶ The bike’s saddle is mounted to a dropper seatpost with 140mm of travel."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'3\"", "url": "https://www.momentum-biking.com/us/vida-eplus-ex-2027", "quote": "S\t5’1” to 5’9”\t16.5\" | L\t5’8” to 6’3”\t16.5\"", "basis": "S 5'1\"-5'9\", L 5'8\"-6'3\""},
+   {"kind": "review", "value": "5'1\"-6'3\"", "url": "https://electricbikereview.com/momentum/vida-e-plus-ex-review/", "quote": "Small (5'1\"-5'9\"), Large (5'8\"-6'3\") ⟶ FRAME TYPES:"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.momentum-biking.com/us/vida-eplus-ex-2027", "quote": "Vida E+ EX | Step-Through E-Bike | Momentum Bikes US | Momentum Bikes US", "basis": "page title; step-through frame, no folding"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "src link redirected to https://www.momentum-biking.com/us/vida-eplus-ex-2027. Maker spec 'Classification' row only lists the test standard ('ASTM/EN Class 1 EN17406 / ISO4210-2C'), not an e-bike class; class from 28 mph PAS. Maker lists no weight number and no range. Throttle is optional (sold separately). Maker battery 46.8V x 14.7Ah = 688 Wh (marketed as 'Energy 700')."}

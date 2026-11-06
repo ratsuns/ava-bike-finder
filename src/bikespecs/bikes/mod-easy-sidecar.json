@@ -1,0 +1,53 @@
+{"bike": "MOD|Easy SideCar", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 3899, "url": "https://mod-bikes.com/products/mod-easy-electric-cruiser-bike-and-sidecar", "quote": "Regular price ⟶ $3,899", "basis": "crossed-out compare price; on sale for $3,499"},
+   {"kind": "review", "value": 4190, "url": "https://www.digitaltrends.com/outdoors/mod-easy-sidecar-3-e-bike-review/", "quote": "MSRP $4,190.00 ⟶ Score Details"},
+   {"kind": "review", "value": 3499, "url": "https://www.bikeride.com/mod-easy-sidecar-3/", "quote": "$3,499.00 ⟶ MOD BIKES", "basis": "current sale price"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://mod-bikes.com/products/mod-easy-electric-cruiser-bike-and-sidecar", "quote": "28 MPH ⟶ Top Speed", "basis": "maker states no class on the page; 28 mph top speed -> Class 3"},
+   {"kind": "review", "value": 3, "url": "https://www.bikeride.com/mod-easy-sidecar-3/", "quote": "CLASS ⟶ Class 2, Class 3", "basis": "lists Class 2 and 3; 28 mph -> 3"},
+   {"kind": "review", "value": 3, "url": "https://www.digitaltrends.com/outdoors/mod-easy-sidecar-3-e-bike-review/", "quote": "The MOD Easy 3 is a cruiser-style, Class 1, 2, or 3 configurable e-bike with a 750-watt geared-hub rear motor and 1,050 watts peak power. It has a 48-volt, 15Ah Samsung lithium-ion battery with up to 720 watt-hours of power.", "basis": "configurable Class 1/2/3"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://mod-bikes.com/products/mod-easy-electric-cruiser-bike-and-sidecar", "quote": "Speed - up to 28MPH ⟶ Range - up to 50 miles"},
+   {"kind": "review", "value": 28, "url": "https://www.bikeride.com/mod-easy-sidecar-3/", "quote": "TOP SPEED ⟶ 28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 69, "url": "https://mod-bikes.com/products/mod-easy-electric-cruiser-bike-and-sidecar", "quote": "Max Torque - up to 69 Nm ⟶ Battery - 48V 15A"},
+   {"kind": "review", "value": 69, "url": "https://www.bikeride.com/mod-easy-sidecar-3/", "quote": "TORQUE ⟶ 69 Nm"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 720, "url": "https://mod-bikes.com/products/mod-easy-electric-cruiser-bike-and-sidecar", "quote": "Battery - 48V 15A", "basis": "48 V x 15 Ah (page writes 15A)"},
+   {"kind": "review", "value": 720, "url": "https://www.digitaltrends.com/outdoors/mod-easy-sidecar-3-e-bike-review/", "quote": "The MOD Easy 3 is a cruiser-style, Class 1, 2, or 3 configurable e-bike with a 750-watt geared-hub rear motor and 1,050 watts peak power. It has a 48-volt, 15Ah Samsung lithium-ion battery with up to 720 watt-hours of power."},
+   {"kind": "review", "value": 720, "url": "https://www.bikeride.com/mod-easy-sidecar-3/", "quote": "VOLTS AND AMP HOURS ⟶ 48V 15Ah", "basis": "48 V x 15 Ah"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "50", "url": "https://mod-bikes.com/products/mod-easy-electric-cruiser-bike-and-sidecar", "quote": "Range - up to 50 miles ⟶ Max Torque - up to 69 Nm", "basis": "single battery; 100 miles with optional second battery (\"50/100 Miles ⟶ Max Range\")"},
+   {"kind": "review", "value": "45", "url": "https://www.bikeride.com/mod-easy-sidecar-3/", "quote": "MAXIMUM RANGE ⟶ 45 Miles"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://mod-bikes.com/products/mod-easy-electric-cruiser-bike-and-sidecar", "quote": "BIKE SIZE AND WEIGHT ⟶ SIDECAR DIMENSIONS", "basis": "weight shown only in an image, not in page text"},
+   {"kind": "review", "value": 121, "url": "https://www.bikeride.com/mod-easy-sidecar-3/", "quote": "WEIGHT ⟶ 121 lb", "basis": "appears to be bike + sidecar"},
+   {"kind": "review", "value": 77, "url": "https://www.digitaltrends.com/outdoors/mod-easy-sidecar-3-e-bike-review/", "quote": "The MOD Easy 3 weighs 77 pounds and has a 300-pound payload capacity, including rider and cargo. The e-bike is rated appropriate for riders from 5 feet, 2 inches to 6 feet, 7 inches tall. ⟶ MOD Easy Sidecar 3: double the fun", "basis": "bike only, without sidecar; same review says the sidecar weighs 42 pounds (77 + 42 = 119 lb)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 400, "url": "https://mod-bikes.com/products/mod-easy-electric-cruiser-bike-and-sidecar", "quote": "400 lbs ⟶ Payload Capacity", "basis": "bike + sidecar; sidecar alone 150 lbs"},
+   {"kind": "review", "value": 450, "url": "https://www.digitaltrends.com/outdoors/mod-easy-sidecar-3-e-bike-review/", "quote": "You’ll supersize the fun when you attach the Easy 3 sidecar. The sidecar weighs 42 pounds and adds another 150 pounds of payload capacity, raising the combined e-bike and sidecar capacity to 450 pounds. Assembling the sidecar and attaching the connection plate to the side of the e-bike wasn’t difficult, but it took the better part of an hour, although I’m admittedly both clumsy and overly cautious.", "basis": "300 lb bike + 150 lb sidecar, incl. rider"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear geared hub", "url": "https://mod-bikes.com/products/mod-easy-electric-cruiser-bike-and-sidecar", "quote": "750w ⟶ Hub Motor"},
+   {"kind": "review", "value": "750W rear geared hub (1,050W peak)", "url": "https://www.digitaltrends.com/outdoors/mod-easy-sidecar-3-e-bike-review/", "quote": "The MOD Easy 3 is a cruiser-style, Class 1, 2, or 3 configurable e-bike with a 750-watt geared-hub rear motor and 1,050 watts peak power. It has a 48-volt, 15Ah Samsung lithium-ion battery with up to 720 watt-hours of power."},
+   {"kind": "review", "value": "750W hub", "url": "https://www.bikeride.com/mod-easy-sidecar-3/", "quote": "WATTS ⟶ 750 W"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'3\"-6'9\"", "url": "https://mod-bikes.com/products/mod-easy-electric-cruiser-bike-and-sidecar", "quote": "6'9\" | Max Height | 5'3\" | Min Height"},
+   {"kind": "review", "value": "5'2\"-6'7\"", "url": "https://www.digitaltrends.com/outdoors/mod-easy-sidecar-3-e-bike-review/", "quote": "The MOD Easy 3 weighs 77 pounds and has a 300-pound payload capacity, including rider and cargo. The e-bike is rated appropriate for riders from 5 feet, 2 inches to 6 feet, 7 inches tall. ⟶ MOD Easy Sidecar 3: double the fun"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://mod-bikes.com/products/mod-easy-electric-cruiser-bike-and-sidecar", "quote": "Inspired by the 1940s Harley Davidson, it features a classic motorcycle frame, beach bar handlebar, and wide 3” tires.", "basis": "rigid motorcycle-style frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page is the current 'Easy SideCar 3'. Maker regular price $3,899 (on sale $3,499). Maker gives no class line; 28 mph -> Class 3. Maker battery written '48V 15A' (Ah). Maker bike weight is only in an image; Digital Trends gives 77 lb bike + 42 lb sidecar (=119 lb), BikeRide 121 lb. ElectricBikeReview had no result; ElectricBikeReport only has a 2024 MOD Easy (non-sidecar) review, not used."}

@@ -1,0 +1,43 @@
+{"bike": "Lectric|XP Trike2 750 (Long-Range)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2254, "url": "https://lectricebikes.com/products/xp-trike-navy-long-range", "quote": "$1,699 ⟶ $2,254", "basis": "crossed-out price $2,254; $1,699 is current sale price. Same page also says 'Previously listed at $1799, now marked down to $1699!'"},
+   {"kind": "review", "value": 1799, "url": "https://electricbikereport.com/the-weekly-recharge-episode-46/", "quote": "Just weeks after releasing the updated 500W version of its incredibly popular XP Trike, Lectric’s top-tier 750W model is now for sale. The XP Trike2 750, which retails for $1,799, features a more powerful motor, a larger battery, and the widest selection of color options we’ve seen on a model from this company to date."}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://lectricebikes.com/products/xp-trike-navy-long-range", "quote": "Five riding modes deliver the speed and power to own the road as a Class 1 or 2 eBike.* New simplified labels, including Eco, Tour, Sport, Sport+, & Turbo, allow riders to choose their riding experience. ⟶ Beginner Preset", "basis": "Class 1 or 2 with twist throttle -> 2"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 17, "url": "https://lectricebikes.com/products/xp-trike-navy-long-range", "quote": "TOP SPEED ⟶ 17 mph"},
+   {"kind": "review", "value": 17, "url": "https://electricbikereport.com/the-weekly-recharge-episode-46/", "quote": "The XP Trike2 750, however, includes a suite of other upgrades, such as a torque sensor offering responsive pedal assist, an 840 Wh battery with an advertised range of up to 70 miles, and up to 85 Nm of torque with 1,310W of peak power for tackling hills and reaching speeds of up to 17 mph."}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://lectricebikes.com/products/xp-trike-navy-long-range", "quote": "A 750W rear hub motor (1310W peak) with 85 Nm of torque supplies power and speed quicker than ever before. Stealth M24 technology ensures a quieter motor experience without sacrificing power. ⟶ Battery"},
+   {"kind": "review", "value": 85, "url": "https://electricbikereport.com/the-weekly-recharge-episode-46/", "quote": "The XP Trike2 750, however, includes a suite of other upgrades, such as a torque sensor offering responsive pedal assist, an 840 Wh battery with an advertised range of up to 70 miles, and up to 85 Nm of torque with 1,310W of peak power for tackling hills and reaching speeds of up to 17 mph."}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 840, "url": "https://lectricebikes.com/products/xp-trike-navy-long-range", "quote": "A removable 48V, 17.5Ah (840 Wh) lithium-ion battery certified to UL 2271 makes for a clean design while powering your ride for up to 70 miles on a single charge.** The XP Trike2 750 is also certified to UL 2849.† ⟶ Keyless Riding"},
+   {"kind": "review", "value": 840, "url": "https://electricbikereport.com/the-weekly-recharge-episode-46/", "quote": "The XP Trike2 750, however, includes a suite of other upgrades, such as a torque sensor offering responsive pedal assist, an 840 Wh battery with an advertised range of up to 70 miles, and up to 85 Nm of torque with 1,310W of peak power for tackling hills and reaching speeds of up to 17 mph."}
+  ],
+  "range": [
+   {"kind": "maker", "value": "70", "url": "https://lectricebikes.com/products/xp-trike-navy-long-range", "quote": "RANGE ⟶ up to 70 miles"},
+   {"kind": "review", "value": "70", "url": "https://electricbikereport.com/the-weekly-recharge-episode-46/", "quote": "The XP Trike2 750, however, includes a suite of other upgrades, such as a torque sensor offering responsive pedal assist, an 840 Wh battery with an advertised range of up to 70 miles, and up to 85 Nm of torque with 1,310W of peak power for tackling hills and reaching speeds of up to 17 mph.", "basis": "advertised range"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 88, "url": "https://lectricebikes.com/products/xp-trike-navy-long-range", "quote": "Total bike weight is 79 lbs. without the battery installed. The XP Trike2 750 long-range battery weighs 9lbs.", "basis": "79 lb without battery + 9 lb battery"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 415, "url": "https://lectricebikes.com/products/xp-trike-navy-long-range", "quote": "PAYLOAD CAPACITY ⟶ 415 lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub (1310W peak)", "url": "https://lectricebikes.com/products/xp-trike-navy-long-range", "quote": "A 750W rear hub motor (1310W peak) with 85 Nm of torque supplies power and speed quicker than ever before. Stealth M24 technology ensures a quieter motor experience without sacrificing power. ⟶ Battery"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'10\"-6'2\"", "url": "https://lectricebikes.com/products/xp-trike-navy-long-range", "quote": "Rider Height ⟶ 4’10” - 6’2”"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "Yes", "url": "https://lectricebikes.com/products/xp-trike-navy-long-range", "quote": "FOLDABLE ⟶ Yes"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Electric trike. Maker shows $1,699 sale with $2,254 crossed out, but same page says 'Previously listed at $1799'; Electric Bike Report launch news says it retails for $1,799. EBR (electricbikereview) XP Trike2 review covers the 500W version only, so the independent source is Electric Bike Report's launch news article (not a hands-on review)."}

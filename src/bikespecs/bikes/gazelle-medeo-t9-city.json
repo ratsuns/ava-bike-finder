@@ -1,0 +1,49 @@
+{"bike": "Gazelle|Medeo T9 City", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2599, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-medeo-t9-city", "quote": "$2,599$1,999 ⟶ Shop stock: First, configure your bike", "basis": "regular $2,599 shown crossed out next to sale price $1,999"},
+   {"kind": "retailer", "value": 2599, "url": "https://flyridesusa.com/products/gazelle-medeo-t9-city-low-step", "quote": "Regular price ⟶ $2,599.00"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-medeo-t9-city", "quote": "Ebike Max Speed ⟶ 20 mph", "basis": "no class stated on the product spec ('Class 1 eBikes' is only a site menu link); 20 mph Bosch Active Line pedal-assist mid-drive with no throttle listed, so Class 1"},
+   {"kind": "retailer", "value": null, "url": "https://flyridesusa.com/products/gazelle-medeo-t9-city-low-step", "quote": ""}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-medeo-t9-city", "quote": "Ebike Max Speed ⟶ 20 mph"},
+   {"kind": "retailer", "value": null, "url": "https://flyridesusa.com/products/gazelle-medeo-t9-city-low-step", "quote": ""}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 40, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-medeo-t9-city", "quote": "Engine Max Torque (Nm) ⟶ 40"},
+   {"kind": "retailer", "value": 40, "url": "https://flyridesusa.com/products/gazelle-medeo-t9-city-low-step", "quote": "Motor\tBosch Smart System Active Line (40Nm), 36V"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 400, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-medeo-t9-city", "quote": "Battery ⟶ 400 Wh: up to 75 mi"},
+   {"kind": "retailer", "value": 400, "url": "https://flyridesusa.com/products/gazelle-medeo-t9-city-low-step", "quote": "Battery\t400Wh ⟶ Display\tBosch Purion LCD"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "30–75", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-medeo-t9-city", "quote": "Eco\t75 mi | Tour\t45 mi | Auto\t35 mi | Turbo\t30 mi", "basis": "four consecutive lines of the maker's 'Battery and Range' spec (\" | \" = line break); highlight line also says \"400 Wh: up to 75 mi\""},
+   {"kind": "retailer", "value": null, "url": "https://flyridesusa.com/products/gazelle-medeo-t9-city-low-step", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 50.5, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-medeo-t9-city", "quote": "50.5 lbs excl. battery ⟶ Color", "basis": "without battery"},
+   {"kind": "retailer", "value": null, "url": "https://flyridesusa.com/products/gazelle-medeo-t9-city-low-step", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-medeo-t9-city", "quote": "", "basis": "no max load / permissible weight on the page"},
+   {"kind": "retailer", "value": null, "url": "https://flyridesusa.com/products/gazelle-medeo-t9-city-low-step", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Active Line (mid-drive)", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-medeo-t9-city", "quote": "Motor | Active Line | Ebike Engine Position | Mid | Ebike System Brand | Bosch Smart System", "basis": "consecutive spec lines (\" | \" = line break); no rated watts published"},
+   {"kind": "retailer", "value": "Bosch Smart System Active Line", "url": "https://flyridesusa.com/products/gazelle-medeo-t9-city-low-step", "quote": "Motor\tBosch Smart System Active Line (40Nm), 36V"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'9\"-6'3\"", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-medeo-t9-city", "quote": "Frame size | 40 | 4'9\" - 5'3\" | 45 | 4'10\" - 5'6\" | 50 | 5'6\" - 5'10\" | 55 | 5'10\" - 6'3\"", "basis": "consecutive lines of the frame-size selector (\" | \" = line break), XS 40 to L 55"},
+   {"kind": "retailer", "value": null, "url": "https://flyridesusa.com/products/gazelle-medeo-t9-city-low-step", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-medeo-t9-city", "quote": "Frame hape | Low-Step", "basis": "fixed low-step aluminum frame; nothing about folding"},
+   {"kind": "retailer", "value": null, "url": "https://flyridesusa.com/products/gazelle-medeo-t9-city-low-step", "quote": ""}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page shows a sale ($1,999) with $2,599 crossed out. Electricbikereview only has an older 'Medeo T9 City HMB' review (older generation), not used. Fly Rides page is the Low Step, Model Year 2025. Multi-line quotes joined with ' | ' or ' | ' as page line breaks."}

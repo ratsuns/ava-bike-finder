@@ -1,0 +1,54 @@
+{"bike": "Mokwheel|Basalt", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1799.99, "url": "https://www.mokwheel.com/products/basalt", "quote": "$1,699.99 ⟶ $1,799.99", "basis": "$1,799.99 is the struck-through regular price; $1,699.99 is the sale price"},
+   {"kind": "review", "value": 1899, "url": "https://electricbikereview.com/mokwheel/basalt-2-review-hs/", "quote": "PRICE: ⟶ $1,899"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.mokwheel.com/products/basalt", "quote": "Classification ⟶ Class 2/3", "basis": "has throttle, ships at 20 mph default ('Max Speed (Default) ⟶ 20 mph'), adjustable to 28 mph -> Class 2"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereview.com/mokwheel/basalt-2-review-hs/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 2 and Class 3"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/mokwheel-basalt-2-review/", "quote": "E-BIKE CLASS: ⟶ CLASS 2 (THROTTLE TO 20 MPH)"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.mokwheel.com/products/basalt", "quote": "Max Speed (Default) ⟶ 20 mph", "basis": "adjustable to 28 mph ('Max Speed Adjustable Range ⟶ 15 mph-28 mph (Custom Mode)')"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/mokwheel/basalt-2-review-hs/", "quote": "TOP SPEED: ⟶ 28 MPH mph", "basis": "max setting"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereport.com/mokwheel-basalt-2-review/", "quote": "CLASS 2 (THROTTLE TO 20 MPH) ⟶ CLASS 3 (PEDAL ASSIST TO 28 MPH)", "basis": "max setting"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 90, "url": "https://www.mokwheel.com/products/basalt", "quote": "Torque ⟶ 90Nm+"},
+   {"kind": "review", "value": 90, "url": "https://electricbikereview.com/mokwheel/basalt-2-review-hs/", "quote": "MOTOR TORQUE: ⟶ 90Nm Newton meters"},
+   {"kind": "review", "value": 90, "url": "https://electricbikereport.com/mokwheel-basalt-2-review/", "quote": "Motor: 750W (1100W peak) rear hub motor, 90Nm torque ⟶ Headlight: Included"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 940, "url": "https://www.mokwheel.com/products/basalt", "quote": "Capacity ⟶ 940Wh"},
+   {"kind": "review", "value": 941, "url": "https://electricbikereview.com/mokwheel/basalt-2-review-hs/", "quote": "BATTERY WATT HOURS: ⟶ 941Wh wh"},
+   {"kind": "review", "value": 940, "url": "https://electricbikereport.com/mokwheel-basalt-2-review/", "quote": "Battery: 48V 19.6A (940 Wh) UL safety certification ⟶ Charger: 48V 3A"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "60–80", "url": "https://www.mokwheel.com/products/basalt", "quote": "Range ⟶ 60~80miles"},
+   {"kind": "review", "value": "60–80", "url": "https://electricbikereview.com/mokwheel/basalt-2-review-hs/", "quote": "Range ⟶ Estimated Range (from Mokwheel): 60 to 80 miles"},
+   {"kind": "review", "value": "37–63", "url": "https://electricbikereport.com/mokwheel-basalt-2-review/", "quote": "Tested range: 37-63 miles ⟶ Throttle:Yes, thumb lever", "basis": "tested; same page claims 60-80"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 80, "url": "https://www.mokwheel.com/products/basalt", "quote": "Weight ⟶ 80 lbs"},
+   {"kind": "review", "value": 80, "url": "https://electricbikereview.com/mokwheel/basalt-2-review-hs/", "quote": "TOTAL WEIGHT: ⟶ 80 lbs lbs"},
+   {"kind": "review", "value": 82, "url": "https://electricbikereport.com/mokwheel-basalt-2-review/", "quote": "Claimed weight: 68 lbs ⟶ Tested Weight: 82 lbs with battery"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 450, "url": "https://www.mokwheel.com/products/basalt", "quote": "Payload Capacity ⟶ 450 lbs"},
+   {"kind": "review", "value": 400, "url": "https://electricbikereport.com/mokwheel-basalt-2-review/", "quote": "Total payload capacity: ST – 350 lbs; Highstep – 400 lbs ⟶ COMPONENTS & ACCESSORIES", "basis": "highstep"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub (1,100W peak)", "url": "https://www.mokwheel.com/products/basalt", "quote": "The 750W motor (up to 1100W peak) helps you pull away from stops and get up hills without much effort. Steady help that's easy to handle. ⟶ Peak Power"},
+   {"kind": "review", "value": "750W rear hub (1,100W peak)", "url": "https://electricbikereport.com/mokwheel-basalt-2-review/", "quote": "Motor: 750W (1100W peak) rear hub motor, 90Nm torque ⟶ Headlight: Included"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'7\"-6'7\"", "url": "https://www.mokwheel.com/products/basalt", "quote": "5'7\" | 6'7\" | 2'7\" | 3'2\"", "basis": "size table: rider height 5'7\"-6'7\", inseam 2'7\"-3'2\""},
+   {"kind": "review", "value": "5'7\"-6'9\"", "url": "https://electricbikereport.com/mokwheel-basalt-2-review/", "quote": "Tested Weight: 82 lbs with battery ⟶ Rider height range: ST – 5’2″~6’4″; Highstep 5’7″ – 6’9″", "basis": "highstep"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.mokwheel.com/products/basalt", "quote": "The classic fat tire e-bike — dependable, go-anywhere, and built to last. ⟶ 1594 reviews", "basis": "standard high-step frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page is the current Basalt (2.0 specs: 750W/1100W, 90Nm+, torque sensor, 940Wh). Maker visible price $1,699.99 sale vs $1,799.99 struck-through; hidden Shopify markup also has a $3,599.99 compare-at price that isn't shown. Maker drivetrain lists 7-speed while ElectricBikeReport says high-step gets 8-speed. Maker height 5'7\"-6'7\" vs reviews up to 6'9\". Maker payload 450 lbs vs ElectricBikeReport 400 lbs. Both reviews are of Basalt 2.0 high-step."}

@@ -1,0 +1,45 @@
+{"bike": "Himiway|D5 ST (Zebra ST)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2299, "url": "https://himiwaybike.com/products/premium-all-terrain-electric-bike-st", "quote": "Regular price ⟶ $2,299.00", "basis": "regular price; on sale for $1,499"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://himiwaybike.com/products/premium-all-terrain-electric-bike-st", "quote": "Throttle ⟶ Thumb throttle", "basis": "throttle, but no class stated"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/himiway-d5-zebra-review/", "quote": "The Himiway D5 Zebra delivered a solid performance in our Electric Bike Report Speed Test, equipped with a torque sensor and a 750W rear hub motor. Since the D5 Zebra can be switched between class 2 and class 3 speeds, it was tested in both settings to fully evaluate its capabilities.", "basis": "review of the D5 Zebra (offered in high-step and step-through); switchable Class 2/3 with throttle; 2 assumes 20 mph out of the box"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": null, "url": "https://himiwaybike.com/products/premium-all-terrain-electric-bike-st", "quote": ""},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/himiway-d5-zebra-review/", "quote": "CLASS 2 (THROTTLE TO 20 MPH) ⟶ CLASS 3 (PEDAL ASSIST TO 28 MPH)", "basis": "D5 Zebra review; switchable to Class 3 / 28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 86, "url": "https://himiwaybike.com/products/premium-all-terrain-electric-bike-st", "quote": "Motor Power ⟶ 86Nm"},
+   {"kind": "review", "value": 86, "url": "https://electricbikereport.com/himiway-d5-zebra-review/", "quote": "The Himiway D5 Zebra, armed with a 750W rear hub motor and fairly significant torque output of 86 Nm, entered our ‘Hell Hole’ hill test with the expectation of solid climbing ability."}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 960, "url": "https://himiwaybike.com/products/premium-all-terrain-electric-bike-st", "quote": "960 Wh ⟶ Battery Capacity"},
+   {"kind": "review", "value": 960, "url": "https://electricbikereport.com/himiway-d5-zebra-review/", "quote": "Battery: 960 Wh, 48V Samsung Cells ⟶ Display: Full-Color LCD Display"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "60–80", "url": "https://himiwaybike.com/products/premium-all-terrain-electric-bike-st", "quote": "Range ⟶ 60-80 miles"},
+   {"kind": "review", "value": "60–80", "url": "https://electricbikereport.com/himiway-d5-zebra-review/", "quote": "Claimed Range: 60-80 miles ⟶ Throttle:Push Throttle"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 79, "url": "https://himiwaybike.com/products/premium-all-terrain-electric-bike-st", "quote": "Weight ⟶ 79 lb. (with battery)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 400, "url": "https://himiwaybike.com/products/premium-all-terrain-electric-bike-st", "quote": "Max. payload capacity ⟶ 400 lb."},
+   {"kind": "review", "value": 400, "url": "https://electricbikereport.com/himiway-d5-zebra-review/", "quote": "Total payload capacity: 400 lb. ⟶ COMPONENTS & ACCESSORIES"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W hub", "url": "https://himiwaybike.com/products/premium-all-terrain-electric-bike-st", "quote": "Motor ⟶ 750W Hub motor"},
+   {"kind": "review", "value": "750W rear hub", "url": "https://electricbikereport.com/himiway-d5-zebra-review/", "quote": "Powering this beast is a hefty 48V, 960Wh battery paired with a 750W rear hub motor, delivering a solid 85 Newton Meters (Nm) of torque. I could feel the power right away as the large Kenda 26×4” tires effortlessly rolled over everything in their path."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'5\"", "url": "https://himiwaybike.com/products/premium-all-terrain-electric-bike-st", "quote": "Rider height ⟶ 5'1\" ~ 6'5\""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://himiwaybike.com/products/premium-all-terrain-electric-bike-st", "quote": "Frame ⟶ 6061 Aluminum frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker regular price $2,299, on sale $1,499. Maker ST page gives no class or top speed. Independent source is Electric Bike Report's D5 Zebra review, which says the bike is offered in high-step and step-through frames (tested bike appears to be the high-step); used only for drive-system specs shared by both frames, not weight/height. ST page lists a Shimano Altus M2000 9-speed (high-step page says M310 7-speed). No separate ST review found."}

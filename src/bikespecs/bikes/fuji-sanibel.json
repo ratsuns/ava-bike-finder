@@ -1,0 +1,48 @@
+{"bike": "Fuji|Sanibel", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "review", "value": 1699, "url": "https://99spokes.com/bikes/fuji/2019/sanibel-ls", "quote": "Manufacturer Price | $1,699", "basis": "99 Spokes spec aggregator, 2019 Sanibel LS"},
+   {"kind": "review", "value": 1699, "url": "https://bikes.fan/fuji-sanibel-ls-2019/", "quote": "Estimate price | ⟶ 1,699$", "basis": "Bikes.Fan aggregator, 2019 Sanibel LS"}
+  ],
+  "cls": [
+   {"kind": "review", "value": 1, "url": "https://99spokes.com/bikes/fuji/2019/sanibel-ls", "quote": "Motor | Bafang H400B rear hub motor, 250W rated power, 20mph maximum assist", "basis": "no class stated; 20 mph assist and no throttle in the parts list (display 'w/ walk assist' only), so Class 1"},
+   {"kind": "review", "value": null, "url": "https://bikes.fan/fuji-sanibel-ls-2019/", "quote": ""}
+  ],
+  "spd": [
+   {"kind": "review", "value": 20, "url": "https://99spokes.com/bikes/fuji/2019/sanibel-ls", "quote": "Motor | Bafang H400B rear hub motor, 250W rated power, 20mph maximum assist"},
+   {"kind": "review", "value": 20, "url": "https://bikes.fan/fuji-sanibel-ls-2019/", "quote": "Motor ⟶ Bafang H400B rear hub motor, 250W rated power, 20mph maximum assist"}
+  ],
+  "tq": [
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/fuji/2019/sanibel-ls", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://bikes.fan/fuji-sanibel-ls-2019/", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "review", "value": 417, "url": "https://99spokes.com/bikes/fuji/2019/sanibel-ls", "quote": "Battery | Fuji Power Pack 417Wh w/ 2A charger"},
+   {"kind": "review", "value": 417, "url": "https://bikes.fan/fuji-sanibel-ls-2019/", "quote": "BATTERY ⟶ Fuji Power Pack 417Wh w/ 2A charger"}
+  ],
+  "range": [
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/fuji/2019/sanibel-ls", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://bikes.fan/fuji-sanibel-ls-2019/", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "review", "value": 49.8, "url": "https://99spokes.com/bikes/fuji/2019/sanibel-ls", "quote": "Manufacturer Price | $1,699 | Weight49.8 lbs", "basis": "does not say with/without battery"},
+   {"kind": "review", "value": 49.8, "url": "https://bikes.fan/fuji-sanibel-ls-2019/", "quote": "With a weight of 22.59 kg (49.8 lbs), Fuji e-bike is a bit lighter than average."}
+  ],
+  "load": [
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/fuji/2019/sanibel-ls", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://bikes.fan/fuji-sanibel-ls-2019/", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "review", "value": "250W Bafang H400B rear hub", "url": "https://99spokes.com/bikes/fuji/2019/sanibel-ls", "quote": "Motor | Bafang H400B rear hub motor, 250W rated power, 20mph maximum assist"},
+   {"kind": "review", "value": "250W Bafang H400B rear hub", "url": "https://bikes.fan/fuji-sanibel-ls-2019/", "quote": "Motor ⟶ Bafang H400B rear hub motor, 250W rated power, 20mph maximum assist"}
+  ],
+  "height": [
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/fuji/2019/sanibel-ls", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://bikes.fan/fuji-sanibel-ls-2019/", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "review", "value": "No", "url": "https://99spokes.com/bikes/fuji/2019/sanibel-ls", "quote": "Frame | Fuji Sanibel Cruiser 6061-T6 aluminum OS w/Touch-Down Geometry, down tube battery mount, direct connect rack mounts, fender mounts", "basis": "fixed aluminum cruiser frame; nothing about folding"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "MAKER PAGE NOT REACHED: the browser refused every fujibikes.com URL ('navigation ... was denied or failed'). src link is the 2019 Sanibel LS. No dealer or review page found (electricbikereview / electricbikereport have none). Both sources are spec aggregators; Bikes.Fan appears to copy 99 Spokes' data, so they are not truly independent. Class 1 inferred (20 mph, no throttle listed). No range, load, torque or rider heights found. Likely a discontinued 2019 model, but nothing confirms it. 1 WebSearch used."}

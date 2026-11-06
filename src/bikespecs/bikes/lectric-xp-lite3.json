@@ -1,0 +1,48 @@
+{"bike": "Lectric|XP Lite3", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 799, "url": "https://lectricebikes.com/products/xp-lite-white-ebike", "quote": "$799 ⟶ 0% APRor as low as $50/mo with Affirm", "basis": "standard-battery chain-drive model; no crossed-out price shown"},
+   {"kind": "review", "value": 799, "url": "https://electricbikereview.com/lectric-ebikes/xp-lite-3-review/", "quote": "Price ⟶ MSRP: $$799 base; $999 as tested; $1,099 Gates belt drive"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://lectricebikes.com/products/xp-lite-white-ebike", "quote": "Five riding modes deliver the speed and power to own the road as a Class 1 or Class 2 eBike.** New simplified labels, including Eco, Tour, Sport, Sport+, & Turbo, allow riders to choose their riding experience. ⟶ Twist-Grip Throttle", "basis": "Class 1 or 2 with throttle and 20 mph -> 2"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereview.com/lectric-ebikes/xp-lite-3-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 1 / Class 2", "basis": "throttle and 20 mph -> 2"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://lectricebikes.com/products/xp-lite-white-ebike", "quote": "TOP SPEED ⟶ 20 mph"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereview.com/lectric-ebikes/xp-lite-3-review/", "quote": "TOP SPEED: ⟶ 20 mph mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 28, "url": "https://lectricebikes.com/products/xp-lite-white-ebike", "quote": "A 300W rear hub motor (819W peak) with 28Nm of torque supplies power and speed quicker than ever before. Stealth M24 technology delivers a quieter motor experience without sacrificing power."},
+   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/lectric-ebikes/xp-lite-3-review/", "quote": "MOTOR TORQUE: ⟶ 28Nm Newton meters"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 374, "url": "https://lectricebikes.com/products/xp-lite-white-ebike", "quote": "An integrated & removable 48V, 7.8Ah (374Wh) lithium-ion battery certified to UL 2271 makes for a clean design while powering your ride for up to 45 miles on a single charge.* The XP Lite3 is also certified to UL 2849.† Quickly access and remove the battery by folding the center frame latch."},
+   {"kind": "review", "value": 374, "url": "https://electricbikereview.com/lectric-ebikes/xp-lite-3-review/", "quote": "BATTERY WATT HOURS: ⟶ 672Wh (long-range); 374Wh (standard) wh", "basis": "standard battery"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "45", "url": "https://lectricebikes.com/products/xp-lite-white-ebike", "quote": "RANGE ⟶ up to 45 miles"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 49, "url": "https://lectricebikes.com/products/xp-lite-white-ebike", "quote": "Total bike weight is 41lbs without the battery installed. The XP Lite3's battery weighs 8lbs.", "basis": "41 lb without battery + 8 lb battery; page also says 'Weighing just 49 lbs.'"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/lectric-ebikes/xp-lite-3-review/", "quote": "53.02 lbs (bike w/ long-range battery, fenders, light, and suspension seat post) lbs ⟶ BATTERY WEIGHT:", "basis": "measured with long-range battery and accessories, not the standard config"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 275, "url": "https://lectricebikes.com/products/xp-lite-white-ebike", "quote": "PAYLOAD CAPACITY ⟶ 275 lbs"},
+   {"kind": "review", "value": 275, "url": "https://electricbikereview.com/lectric-ebikes/xp-lite-3-review/", "quote": "Load Capacity: 275 lbs; Folded (L x W x H): 36\" x 16\" x 27\"; Unfolded (L x W x H): 64\" x 25\" x 41.5\" ⟶ Reader Interactions"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "300W rear hub (819W peak)", "url": "https://lectricebikes.com/products/xp-lite-white-ebike", "quote": "A 300W rear hub motor (819W peak) with 28Nm of torque supplies power and speed quicker than ever before. Stealth M24 technology delivers a quieter motor experience without sacrificing power."},
+   {"kind": "review", "value": "300W rear hub (819W peak)", "url": "https://electricbikereview.com/lectric-ebikes/xp-lite-3-review/", "quote": "Lectric spec’d the XP Lite 3 with their Stealth M24 rear hub motor: 300W nominal, 819W peak, and 28Nm of torque. Going into this review, I was a little nervous about its hill-climbing ability given the modest 28Nm rating."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'8\"-6'2\"", "url": "https://lectricebikes.com/products/xp-lite-white-ebike", "quote": "Rider Height ⟶ 4’8” - 6’2”"},
+   {"kind": "review", "value": "4'8\"-6'2\"", "url": "https://electricbikereview.com/lectric-ebikes/xp-lite-3-review/", "quote": "Good height range and fit adjustability. With 11 inches of adjustment at the seat post and 3 inches at the quill stem, the bike does a good job fitting the claimed 4'8\" to 6'2\" height range."}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "Yes", "url": "https://lectricebikes.com/products/xp-lite-white-ebike", "quote": "FOLDABLE ⟶ Yes"},
+   {"kind": "review", "value": "Yes", "url": "https://electricbikereview.com/lectric-ebikes/xp-lite-3-review/", "quote": "Folding, reinforced center latch ⟶ BEST PRICE AT LECTRIC"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Given src link was the Long-Range 'Special Launch Offer' page ($999, $1,256 crossed out, 672Wh, up to 80 miles). Switched maker source to the standard-battery XP Lite3 page (https://lectricebikes.com/products/xp-lite-white-ebike, $799, 374Wh, 45 miles) found via the maker's XP Lite3 collection. Both pages say the battery weighs 8 lbs. EBR tested the long-range config, so its weight isn't used."}

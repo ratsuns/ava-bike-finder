@@ -1,0 +1,41 @@
+{
+ "bike": "Pedego|Avenue Pro",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2495, "url": "https://pedegoelectricbikes.com/products/avenue-pro", "quote": "$2,495.00 ⟶ CHOOSE OPTIONS"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://pedegoelectricbikes.com/products/avenue-pro", "quote": "Top Speed | CLASS 1 & CLASS 2; | CLASS 3 READY", "basis": "Class 1 & 2 (Class 3 ready via dealer); has 'Pedego Twist Throttle' and 20 mph -> Class 2"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://pedegoelectricbikes.com/products/avenue-pro", "quote": "SPEED | Class 1 - 20mph Pedal Assist", "basis": "Class 3 ready ('C3 Upgrade Offered at Participating Locations')"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://pedegoelectricbikes.com/products/avenue-pro", "quote": "MOTOR | 48V, 750W, 85Nm Torque"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 672, "url": "https://pedegoelectricbikes.com/products/avenue-pro", "quote": "48V 14Ah 672Wh, UL2271 Certified Pack, UL2580 Certified Cells, Removable Battery"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "56", "url": "https://pedegoelectricbikes.com/products/avenue-pro", "quote": "Range Up to | 56 Miles", "basis": "'up to'"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 56.5, "url": "https://pedegoelectricbikes.com/products/avenue-pro", "quote": "WEIGHT | BIKE | 47lb / 21.3kgs | BATTERY | 9.5lbs / 4.3 kg", "basis": "bike 47 lb + battery 9.5 lb listed separately (page doesn't say whether 47 lb excludes the battery; the Avenue Core page lists its bike weight 'w/o Battery' in the same layout)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 250, "url": "https://pedegoelectricbikes.com/products/avenue-pro", "quote": "Payload Up to | 250 Lb"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W", "url": "https://pedegoelectricbikes.com/products/avenue-pro", "quote": "MOTOR | 48V, 750W, 85Nm Torque"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'4\"-6'1\"", "url": "https://pedegoelectricbikes.com/products/avenue-pro", "quote": "RIDER HEIGHT | 5'4\" - 6'1\""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://pedegoelectricbikes.com/products/avenue-pro", "quote": "MATERIAL | 6061 Aluminum Alloy | TYPE | Commuter", "basis": "fixed commuter frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page only: no independent page for the Avenue Pro on EBR, EBReport or Electrek, and the one WebSearch returned only older-Avenue pages. Upway's general Avenue article lists 'Gen 2 / Pro' at 60 Nm / 500W, contradicting the maker's 750W 85Nm, so it was not used. Weight is a sum of separately listed bike and battery weights (see basis)."
+}

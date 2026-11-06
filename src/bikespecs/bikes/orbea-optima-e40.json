@@ -1,0 +1,46 @@
+{"bike": "Orbea|Optima E40", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "review", "value": 3199, "url": "https://99spokes.com/bikes/orbea/2023/optima-e40-20mph", "quote": "Manufacturer Price ⟶ $3,199", "basis": "2023 Optima E40 20mph manufacturer price as listed by 99 Spokes; no maker page found"},
+   {"kind": "retailer", "value": 3358.95, "url": "https://contenderbicycles.com/products/orbea-optima-e40-20mph-2022", "quote": "Regular price ⟶ $3,358.95", "basis": "2022 model regular price; on sale for $2,519.21"}
+  ],
+  "cls": [
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/orbea/2023/optima-e40-20mph", "quote": "", "basis": "no class stated; 20 mph assist and no throttle listed suggests Class 1"},
+   {"kind": "retailer", "value": null, "url": "https://contenderbicycles.com/products/orbea-optima-e40-20mph-2022", "quote": "MAHLE Hub-Drive Motor, 20 MPH Assist ⟶ 248Wh MAHLE Battery with 3 Assist Levels", "basis": "states 20 MPH assist but no class"}
+  ],
+  "spd": [
+   {"kind": "review", "value": 20, "url": "https://99spokes.com/bikes/orbea/2023/optima-e40-20mph", "quote": "Motor ⟶ Mahle motor hub X35 Plus 20mph"},
+   {"kind": "retailer", "value": 20, "url": "https://contenderbicycles.com/products/orbea-optima-e40-20mph-2022", "quote": "MAHLE Hub-Drive Motor, 20 MPH Assist ⟶ 248Wh MAHLE Battery with 3 Assist Levels"}
+  ],
+  "tq": [
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/orbea/2023/optima-e40-20mph", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://contenderbicycles.com/products/orbea-optima-e40-20mph-2022", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "review", "value": 248, "url": "https://99spokes.com/bikes/orbea/2023/optima-e40-20mph", "quote": "Battery ⟶ Mahle 36V/6.9A 248Wh ANT+"},
+   {"kind": "retailer", "value": 248, "url": "https://contenderbicycles.com/products/orbea-optima-e40-20mph-2022", "quote": "BATTERY\tMahle 36V/6.9A 248Wh ANT+ ⟶ REMOTE\tMahle iWoc TRIO"}
+  ],
+  "range": [
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/orbea/2023/optima-e40-20mph", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://contenderbicycles.com/products/orbea-optima-e40-20mph-2022", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/orbea/2023/optima-e40-20mph", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://contenderbicycles.com/products/orbea-optima-e40-20mph-2022", "quote": ""}
+  ],
+  "load": [
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/orbea/2023/optima-e40-20mph", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "review", "value": "Mahle X35 Plus rear hub", "url": "https://99spokes.com/bikes/orbea/2023/optima-e40-20mph", "quote": "Motor ⟶ Mahle motor hub X35 Plus 20mph", "basis": "no rated watts given"},
+   {"kind": "retailer", "value": "Mahle X35 Plus hub", "url": "https://contenderbicycles.com/products/orbea-optima-e40-20mph-2022", "quote": "MOTOR\tMahle motor hub X35 Plus 20mph ⟶ BATTERY\tMahle 36V/6.9A 248Wh ANT+"}
+  ],
+  "height": [
+   {"kind": "review", "value": "4'11\"-6'7\"", "url": "https://99spokes.com/bikes/orbea/2023/optima-e40-20mph", "quote": "4'11\" – 5'6\" | MD | 5'4\" – 6'0\" | LG | 5'10\" – 6'7\"", "basis": "SM, MD, LG rider fit"}
+  ],
+  "fold": [
+   {"kind": "review", "value": "No", "url": "https://99spokes.com/bikes/orbea/2023/optima-e40-20mph", "quote": "A 700c aluminum frame commuter e-bike with upper mid-range components and shimano hydraulic disc brakes. ⟶ Compare the full range", "basis": "700c commuter, no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "No maker page: the Optima is not in Orbea's current US lineup and Orbea's site search for 'optima' returns only spare parts (likely discontinued in the US, but no Orbea page says so). Sources: 99 Spokes spec page (2023 Optima E40 20mph) and Contender Bicycles (2022 Optima E40 20mph, same Mahle X35 Plus / 248Wh spec). Neither gives torque, range, weight or max load. Class not stated anywhere (20 mph, no throttle listed)."}

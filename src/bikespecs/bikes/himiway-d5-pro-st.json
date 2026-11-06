@@ -1,0 +1,48 @@
+{"bike": "Himiway|D5 Pro ST", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2599, "url": "https://himiwaybike.com/products/all-terrain-electric-bike-d5prost", "quote": "Regular price ⟶ $2,599.00", "basis": "regular price; on sale for $1,999"},
+   {"kind": "retailer", "value": 2599, "url": "https://renewableoutdoors.com/products/himiway-d5-pro-st-step-thru-all-terrain-electric-fat-bike", "quote": "Original price ⟶ $2,599.00", "basis": "dealer's original price; current $1,999"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://himiwaybike.com/products/all-terrain-electric-bike-d5prost", "quote": "Thumb Throttle ⟶ Hydraulic Brakes", "basis": "throttle, but no class stated"},
+   {"kind": "review", "value": 3, "url": "https://www.webbikeworld.com/2024-himiway-d5-pro-mid-drive-review/", "quote": "eBike Class:\tClass 3", "basis": "review of the high-step D5 Pro (same drive system)"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://himiwaybike.com/products/all-terrain-electric-bike-d5prost", "quote": "Mid-Drive Motor ⟶ 20+ Mph", "basis": "maker says \"20+ Mph\" top speed"},
+   {"kind": "review", "value": 28, "url": "https://www.webbikeworld.com/2024-himiway-d5-pro-mid-drive-review/", "quote": "Top speed:\t20 mph / 32 kph on throttle alone, 28 mph / 45 kph with pedal assist ⟶ eBike Class:\tClass 3", "basis": "review of the high-step D5 Pro; pedal assist 28 mph, throttle 20 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 130, "url": "https://himiwaybike.com/products/all-terrain-electric-bike-d5prost", "quote": "Mid-Drive Motor ⟶ 130 Nm"},
+   {"kind": "retailer", "value": 130, "url": "https://renewableoutdoors.com/products/himiway-d5-pro-st-step-thru-all-terrain-electric-fat-bike", "quote": "The 500W mid-drive motor delivers up to 1,300W of peak power and 130Nm of torque for powerful, natural-feeling acceleration and confident climbs on steep inclines and loose terrain ⟶ Real-Time Torque Sensor"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 960, "url": "https://himiwaybike.com/products/all-terrain-electric-bike-d5prost", "quote": "960 Wh ⟶ Samsung/LG Battery"},
+   {"kind": "retailer", "value": 960, "url": "https://renewableoutdoors.com/products/himiway-d5-pro-st-step-thru-all-terrain-electric-fat-bike", "quote": "Battery\tSamsung/LG 48V 20Ah ⟶ Motor\t500W Mid-Drive", "basis": "48V x 20Ah"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "60–80", "url": "https://himiwaybike.com/products/all-terrain-electric-bike-d5prost", "quote": "Range ⟶ 60-80 miles"},
+   {"kind": "retailer", "value": null, "url": "https://renewableoutdoors.com/products/himiway-d5-pro-st-step-thru-all-terrain-electric-fat-bike", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 79, "url": "https://himiwaybike.com/products/all-terrain-electric-bike-d5prost", "quote": "Weight ⟶ 79 lb. (with battery)"},
+   {"kind": "retailer", "value": null, "url": "https://renewableoutdoors.com/products/himiway-d5-pro-st-step-thru-all-terrain-electric-fat-bike", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": 400, "url": "https://himiwaybike.com/products/all-terrain-electric-bike-d5prost", "quote": "Max. payload capacity ⟶ 400 lb."},
+   {"kind": "retailer", "value": null, "url": "https://renewableoutdoors.com/products/himiway-d5-pro-st-step-thru-all-terrain-electric-fat-bike", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W mid-drive", "url": "https://himiwaybike.com/products/all-terrain-electric-bike-d5prost", "quote": "Motor ⟶ 500W mid-drive motor"},
+   {"kind": "retailer", "value": "500W mid-drive (1,300W peak)", "url": "https://renewableoutdoors.com/products/himiway-d5-pro-st-step-thru-all-terrain-electric-fat-bike", "quote": "The 500W mid-drive motor delivers up to 1,300W of peak power and 130Nm of torque for powerful, natural-feeling acceleration and confident climbs on steep inclines and loose terrain ⟶ Real-Time Torque Sensor"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'3\"-6'5\"", "url": "https://himiwaybike.com/products/all-terrain-electric-bike-d5prost", "quote": "Rider height ⟶ 5′3″ ~ 6′5″"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://himiwaybike.com/products/all-terrain-electric-bike-d5prost", "quote": "Frame ⟶ 6061 Aluminum frame"},
+   {"kind": "retailer", "value": "No", "url": "https://renewableoutdoors.com/products/himiway-d5-pro-st-step-thru-all-terrain-electric-fat-bike", "quote": "Himiway D5 Pro ST All-Terrain Electric Fat Bike Specifications | Frame\t6061 Aluminum"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker regular price $2,599, on sale $1,999. Maker gives top speed only as '20+ Mph', no class. Class/speed come from webBikeWorld's review of the high-step D5 Pro (same motor/battery), not the ST itself. Renewable Outdoors (authorized Himiway dealer) gives 1,300W peak. Maker ST page lists rider height 5'3\"~6'5\" (same as high-step), unlike the D5 ST (5'1\")."}

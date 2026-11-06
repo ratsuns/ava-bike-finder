@@ -1,0 +1,48 @@
+{"bike": "Letrigo|Minivan", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2999, "url": "https://letrigo.com/products/minivan", "quote": "$2,999.00 USD ⟶ (17)", "basis": "base price without second battery; no crossed-out price shown"},
+   {"kind": "retailer", "value": 2999, "url": "https://www.citygrounds.com/products/letrigo-minivan-electric-bike", "quote": "$2,999.00 ⟶ ADD TO CART"},
+   {"kind": "review", "value": 2999, "url": "https://www.bikeride.com/letrigo-minivan/", "quote": "$2,999.00 ⟶ Letrigo"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://letrigo.com/products/minivan", "quote": "Speed ⟶ Class 2:20mph", "basis": "throttle on demand, 20 mph Class 2; max speed adjustable up to 27 mph"},
+   {"kind": "review", "value": 2, "url": "https://www.bikeride.com/letrigo-minivan/", "quote": "CLASS ⟶ Class 2, Class 3", "basis": "lists Class 2 and 3; maker ships Class 2 at 20 mph"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://letrigo.com/products/minivan", "quote": "Class 2:20mph ⟶ Max speed up to 27mph", "basis": "default Class 2 20 mph; adjustable to 27 mph"},
+   {"kind": "review", "value": 28, "url": "https://www.bikeride.com/letrigo-minivan/", "quote": "TOP SPEED ⟶ 28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 130, "url": "https://letrigo.com/products/minivan", "quote": "130 Nm of torque ⟶ Battery"},
+   {"kind": "review", "value": 130, "url": "https://www.bikeride.com/letrigo-minivan/", "quote": "TORQUE ⟶ 130 Nm"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 672, "url": "https://letrigo.com/products/minivan", "quote": "Battery ⟶ Default built-in 48V/14AH battery", "basis": "48 V x 14 Ah"},
+   {"kind": "review", "value": 672, "url": "https://www.bikeride.com/letrigo-minivan/", "quote": "VOLTS AND AMP HOURS | 48V 14Ah", "basis": "48 V x 14 Ah"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "45", "url": "https://letrigo.com/products/minivan", "quote": "Choose the perfect battery for your family's adventures! Go light with 45 miles on the default built-in battery, certified to UL 2271 by SGS, step up to 80 miles with an extra 14AH battery, or push farther with 120 miles(193 km) on an extra 25AH battery. We've got the right setup to meet all your family biking needs. ⟶ Less Worry,"},
+   {"kind": "review", "value": "45", "url": "https://www.bikeride.com/letrigo-minivan/", "quote": "MAXIMUM RANGE ⟶ 45, 80, 120 Miles", "basis": "45 with the single built-in battery"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 71, "url": "https://letrigo.com/products/minivan", "quote": "Net Weight ⟶ 71lbs", "basis": "'Net Weight'; page doesn't say whether battery is included"},
+   {"kind": "review", "value": 71, "url": "https://www.bikeride.com/letrigo-minivan/", "quote": "WEIGHT ⟶ 71 lb"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 450, "url": "https://letrigo.com/products/minivan", "quote": "Load Capacity ⟶ Total Load Capacity: 450lbs", "basis": "labeled 'Total Load Capacity'; doesn't say whether bike weight is included"},
+   {"kind": "review", "value": 450, "url": "https://www.bikeride.com/letrigo-minivan/", "quote": "The Minivan has an above-average 450lb payload capacity, with the rear rack rated to carry 140lb."}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W Ananda Cargoline mid-drive (750W peak)", "url": "https://letrigo.com/products/minivan", "quote": "Ananda Cargoline torque sensing mid motor ⟶ 500W rated power, peak 750w"},
+   {"kind": "review", "value": "500W mid-drive", "url": "https://www.bikeride.com/letrigo-minivan/", "quote": "WATTS ⟶ 500 W"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://letrigo.com/products/minivan", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://letrigo.com/products/minivan", "quote": "Frame ⟶ 6061 aluminum, heavy duty design", "basis": "longtail cargo frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Not on electricbikereview or electricbikereport; used one WebSearch. Independent sources: BikeRide (review aggregator page) and City Grounds (dealer; price only). Camping World page loaded but showed no specs. Maker says Class 2 at 20 mph with max speed up to 27 mph; BikeRide says 28 mph. Maker gives no rider height range; weight is 'Net Weight' with battery inclusion unstated; load is 'Total Load Capacity' (unclear if bike included)."}

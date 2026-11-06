@@ -1,0 +1,45 @@
+{"bike": "Lectric|Lectric ONE", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2199, "url": "https://lectricebikes.com/blogs/blog/introducing-the-lectric-one", "quote": "Lectric eBikes is proud to present this new line that brings outstanding performance and world class componentry at an incredible price. Starting at $2,199, It's crafted for excellence, and engineered for daily mobility. Backed by a full one year warranty and exemplary customer service, the Lectric ONE ships free to your doorstep.", "basis": "launch blog post 'Starting at' price; no live product page"},
+   {"kind": "review", "value": 1999, "url": "https://electricbikereview.com/lectric-ebikes/lectric-one-review/", "quote": "Price ⟶ MSRP: $1999"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://lectricebikes.com/blogs/blog/introducing-the-lectric-one", "quote": ""},
+   {"kind": "review", "value": 3, "url": "https://electricbikereview.com/lectric-ebikes/lectric-one-review/", "quote": "This is a Class 3 e-bike with a maximum assist speed of 28 mph. Thanks to the Gates belt Lectric ONE owners will never need to lubricate the chain. They will never discover black smudges on their pants and they will never experience a missed shift.", "basis": "review also lists Class 1/2/3 selectable"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": null, "url": "https://lectricebikes.com/blogs/blog/introducing-the-lectric-one", "quote": ""},
+   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/lectric-ebikes/lectric-one-review/", "quote": "TOP SPEED: ⟶ 28 mph (45 kph)"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://lectricebikes.com/blogs/blog/introducing-the-lectric-one", "quote": "Powering this ride is a Stealth M24, 750W motor sporting 85Nm of torque and 1350W of peak power. A 14Ah battery ensures over 70 miles of range. Complete with PWR Technology, you can control the speed at which power is delivered, get up to full speed in 6 seconds, or opt for an exhilarating 1-second burst."},
+   {"kind": "review", "value": 85, "url": "https://electricbikereview.com/lectric-ebikes/lectric-one-review/", "quote": "MOTOR TORQUE: ⟶ 85 Newton meters"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": null, "url": "https://lectricebikes.com/blogs/blog/introducing-the-lectric-one", "quote": "Powering this ride is a Stealth M24, 750W motor sporting 85Nm of torque and 1350W of peak power. A 14Ah battery ensures over 70 miles of range. Complete with PWR Technology, you can control the speed at which power is delivered, get up to full speed in 6 seconds, or opt for an exhilarating 1-second burst.", "basis": "gives 14Ah but no voltage or Wh"},
+   {"kind": "review", "value": 499, "url": "https://electricbikereview.com/lectric-ebikes/lectric-one-review/", "quote": "BATTERY WATT HOURS: ⟶ 499 wh", "basis": "standard battery; 672Wh optional"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "70", "url": "https://lectricebikes.com/blogs/blog/introducing-the-lectric-one", "quote": "Powering this ride is a Stealth M24, 750W motor sporting 85Nm of torque and 1350W of peak power. A 14Ah battery ensures over 70 miles of range. Complete with PWR Technology, you can control the speed at which power is delivered, get up to full speed in 6 seconds, or opt for an exhilarating 1-second burst.", "basis": "'over 70 miles' with the 14Ah battery"},
+   {"kind": "review", "value": "45", "url": "https://electricbikereview.com/lectric-ebikes/lectric-one-review/", "quote": "Estimated Range (from Lectric): up to 45 mi. (499Wh), 60 mi. (672Wh) ⟶ Power (Motor & Battery)", "basis": "499Wh standard battery"}
+  ],
+  "wt": [
+   {"kind": "review", "value": 63, "url": "https://electricbikereview.com/lectric-ebikes/lectric-one-review/", "quote": "The Pinion gearbox is incredibly smooth and shifts very quickly. At 63 lbs. with battery, it’s surprisingly light and the handling is nimble."}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://lectricebikes.com/blogs/blog/introducing-the-lectric-one", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W (1350W peak)", "url": "https://lectricebikes.com/blogs/blog/introducing-the-lectric-one", "quote": "Powering this ride is a Stealth M24, 750W motor sporting 85Nm of torque and 1350W of peak power. A 14Ah battery ensures over 70 miles of range. Complete with PWR Technology, you can control the speed at which power is delivered, get up to full speed in 6 seconds, or opt for an exhilarating 1-second burst."},
+   {"kind": "review", "value": "750W rear geared hub (1310W peak)", "url": "https://electricbikereview.com/lectric-ebikes/lectric-one-review/", "quote": "MOTOR NOMINAL OUTPUT: ⟶ 750 watts | MOTOR PEAK OUTPUT: ⟶ 1310 watts", "basis": "motor type listed as 'Rear-Mounted Geared Hub'"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://lectricebikes.com/blogs/blog/introducing-the-lectric-one", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "review", "value": "No", "url": "https://electricbikereview.com/lectric-ebikes/lectric-one-review/", "quote": "With a quick-release seatpost and folding handlebar mast, the ONE can be made surprisingly compact for storage or transportation ⟶ Areas for Improvement", "basis": "only the handlebar mast folds"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Given src is Lectric's launch blog post, not a product page. The maker product URL (https://lectricebikes.com/products/lectric-one-ebike, linked from the blog) now redirects to the general eBikes collection, and the maker's site search finds no Lectric ONE product — likely discontinued, but the maker doesn't say so explicitly, so status is left empty. Blog and EBR conflict: blog says from $2,199, 14Ah battery, over 70 miles, 1350W peak; EBR says $1,999 MSRP, 499Wh standard (672Wh optional), 45 mi, 1310W peak. No maker class, speed, weight, payload or rider height available."}

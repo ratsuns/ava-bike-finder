@@ -1,0 +1,53 @@
+{"bike": "Marin|Larkspur E", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 3699, "url": "https://marinbikes.com/products/2025-larkspur-e-int", "quote": "$3,699.00 *"},
+   {"kind": "review", "value": 3699, "url": "https://99spokes.com/bikes/marin/2025/larkspur-e", "quote": "Manufacturer Price ⟶ $3,699"},
+   {"kind": "review", "value": 2999, "url": "https://bikerumor.com/marins-new-larkspur-e-bike-commuter/", "quote": "Retail: $2,999 ⟶ CrMo step-thru “mixte” frame & CrMo fork", "basis": "launch price in an Oct 2024 news article; Marin now lists $3,699"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://marinbikes.com/products/2025-larkspur-e-int", "quote": "Bosch Active Plus, 250W, 50Nm, Class 1 (North America - 20mph/32Kph, EU - 25Kph)", "basis": "maker states Class 1"},
+   {"kind": "review", "value": 1, "url": "https://bikerumor.com/marins-new-larkspur-e-bike-commuter/", "quote": "Class 1 (North America/NZ); 20MPH top assisted speed, 25 km/h in other global markets ⟶ Bosch Power Pack 545 downtube battery, 545Wh, removable with key"},
+   {"kind": "review", "value": 1, "url": "https://99spokes.com/bikes/marin/2025/larkspur-e", "quote": "Bosch Active Plus, 250W, 50Nm, Class 1 (North America - 20mph/32Kph, EU - 25Kph) ⟶ Battery"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://marinbikes.com/products/2025-larkspur-e-int", "quote": "The top assisted speed is 20MPH in the US and New Zealand and 25 km/h in other global markets, and the different modes are selected via the controller with a clean integrated display next to the left grip."},
+   {"kind": "review", "value": 20, "url": "https://bikerumor.com/marins-new-larkspur-e-bike-commuter/", "quote": "Class 1 (North America/NZ); 20MPH top assisted speed, 25 km/h in other global markets ⟶ Bosch Power Pack 545 downtube battery, 545Wh, removable with key"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 50, "url": "https://marinbikes.com/products/2025-larkspur-e-int", "quote": "Bosch Active Plus, 250W, 50Nm, Class 1 (North America - 20mph/32Kph, EU - 25Kph)"},
+   {"kind": "review", "value": 50, "url": "https://bikerumor.com/marins-new-larkspur-e-bike-commuter/", "quote": "Bosch Active Line Plus smart system drive unit w/ 50Nm torque"},
+   {"kind": "review", "value": 50, "url": "https://99spokes.com/bikes/marin/2025/larkspur-e", "quote": "MotorBosch 250W 50Nm mid-drive ⟶ BatteryBosch 545Wh"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 545, "url": "https://marinbikes.com/products/2025-larkspur-e-int", "quote": "Bosch Power Pack 545, 545Wh"},
+   {"kind": "review", "value": 545, "url": "https://bikerumor.com/marins-new-larkspur-e-bike-commuter/", "quote": "Bosch Power Pack 545 downtube battery, 545Wh, removable with key ⟶ Shimano CUES 1x 10-speed drivetrain"},
+   {"kind": "review", "value": 545, "url": "https://99spokes.com/bikes/marin/2025/larkspur-e", "quote": "Battery ⟶ Bosch Power Pack 545, 545Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "25–93", "url": "https://marinbikes.com/products/2025-larkspur-e-int", "quote": "25-93 miles/40-150km"},
+   {"kind": "review", "value": "25–93", "url": "https://bikerumor.com/marins-new-larkspur-e-bike-commuter/", "quote": "The Larkspur E’s Bosch Active Line Plus drive unit gives a claimed range of 25-93 miles. This range depends on rider weight, the level of assistance used, and the terrain that is being ridden."}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://marinbikes.com/products/2025-larkspur-e-int", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://bikerumor.com/marins-new-larkspur-e-bike-commuter/", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://marinbikes.com/products/2025-larkspur-e-int", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://bikerumor.com/marins-new-larkspur-e-bike-commuter/", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "250W Bosch Active Plus mid-drive", "url": "https://marinbikes.com/products/2025-larkspur-e-int", "quote": "Bosch Active Plus, 250W, 50Nm, Class 1 (North America - 20mph/32Kph, EU - 25Kph)"},
+   {"kind": "review", "value": "Bosch Active Line Plus", "url": "https://bikerumor.com/marins-new-larkspur-e-bike-commuter/", "quote": "Bosch Active Line Plus smart system drive unit w/ 50Nm torque"},
+   {"kind": "review", "value": "250W Bosch mid-drive", "url": "https://99spokes.com/bikes/marin/2025/larkspur-e", "quote": "MotorBosch 250W 50Nm mid-drive ⟶ BatteryBosch 545Wh"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://marinbikes.com/products/2025-larkspur-e-int", "quote": "", "basis": "only an interactive height slider; no published range"},
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/marin/2025/larkspur-e", "quote": "", "basis": "99 Spokes size ranges are marked Estimated"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://marinbikes.com/products/2025-larkspur-e-int", "quote": "Series 2 Butted CrMo, 27.5” Wheels, Mixte Low-Step, Integrated Headset, Disc Brake, Kickstand Mount, Fender and Rack Mounts", "basis": "standard mixte frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page is the 2025 Larkspur E (INT) SKU on the US site, priced $3,699. Bikerumor's Oct 2024 launch article says $2,999, so the price has gone up since launch. No weight, load or rider-height range published."}
