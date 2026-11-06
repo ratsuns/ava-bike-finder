@@ -1,0 +1,49 @@
+{"bike": "Troxus|Trax Sport", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1699, "url": "https://www.troxusmobility.com/products/trax-sport-e-bike", "quote": "Sale price | $1,299.00 USD | Regular price | $1,699"},
+   {"kind": "retailer", "value": 1599, "url": "https://www.sportsbasement.com/products/trax-sport-350-10?variant=41141136949320", "quote": "$1,599.00 ⟶ Zero interestor as low as $100/mo with Affirm. See if you qualify"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.troxusmobility.com/products/trax-sport-e-bike", "quote": "25 mph | Max Speed | Up to 45 Miles | Per Charge | Class 2 eBike | As Sold", "basis": "maker labels it Class 2 as sold, but also lists 25 mph pedal assist out of the box (above the 20 mph Class 2 limit)"},
+   {"kind": "retailer", "value": 2, "url": "https://www.sportsbasement.com/products/trax-sport-350-10?variant=41141136949320", "quote": "TOP SPEED: CLASS 2: TOP SPEED 25 MPH", "basis": "retailer copies the same Class 2 / 25 mph contradiction"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 25, "url": "https://www.troxusmobility.com/products/trax-sport-e-bike", "quote": "25 mph ⟶ Max Speed"},
+   {"kind": "maker", "value": 25, "url": "https://www.troxusmobility.com/products/trax-sport-e-bike", "quote": "Max Speed\tMax Speed Up To 20 MPH on Throttle / Up To 25 MPH on Pedal Assist"},
+   {"kind": "retailer", "value": 25, "url": "https://www.sportsbasement.com/products/trax-sport-350-10?variant=41141136949320", "quote": "Max Speed\tMax Speed Up To 20 MPH on Throttle / Up To 25 MPH on Pedal Assist"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 50, "url": "https://www.troxusmobility.com/products/trax-sport-e-bike", "quote": "Motor\tJiabo® Hub-Drive Motor 36V/500W+ Peak Power, 50Nm Peak Torque"},
+   {"kind": "retailer", "value": 50, "url": "https://www.sportsbasement.com/products/trax-sport-350-10?variant=41141136949320", "quote": "BATTERY: LITHIUM ION, 36V/10AH ⟶ MAX TORQUE: 50NM"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 360, "url": "https://www.troxusmobility.com/products/trax-sport-e-bike", "quote": "Battery\tUL-2271 Certified / Internal / Removable / Lithium Ion, 36V/10Ah (360Wh) with Samsung® Cells, w/ Optional 252Wh Range Extender Battery (36V/7A)"},
+   {"kind": "retailer", "value": 360, "url": "https://www.sportsbasement.com/products/trax-sport-350-10?variant=41141136949320", "quote": "Battery\tUL-2271 Certified / Internal / Removable / Lithium Ion, 36V/10Ah (360Wh) with Samsung® Cells, w/ Optional 252Wh Range Extender Battery (36V/7A)"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "45", "url": "https://www.troxusmobility.com/products/trax-sport-e-bike", "quote": "Range\tUp To 45 Miles Per Charge/ Up to 65 Miles w/ Range Extender"},
+   {"kind": "retailer", "value": "45", "url": "https://www.sportsbasement.com/products/trax-sport-350-10?variant=41141136949320", "quote": "MOTOR: JIABO® HUB-DRIVE ⟶ RANGE: UP TO 45 MILES"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 47, "url": "https://www.troxusmobility.com/products/trax-sport-e-bike", "quote": "Net Weight\t47 lbs"},
+   {"kind": "retailer", "value": 47, "url": "https://www.sportsbasement.com/products/trax-sport-350-10?variant=41141136949320", "quote": "Weight Limit\tMaximum Load: 300 lbs. / Rider: 245 Lbs. / Rear Rack: 55 lbs. ⟶ Net Weight\t47 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 300, "url": "https://www.troxusmobility.com/products/trax-sport-e-bike", "quote": "Weight Limit\tMaximum Load: 300 lbs. / Rider: 245 Lbs. / Rear Rack: 55 lbs."},
+   {"kind": "retailer", "value": 300, "url": "https://www.sportsbasement.com/products/trax-sport-350-10?variant=41141136949320", "quote": "Range\tUp To 45 Miles Per Charge/ Up to 65 Miles w/ Range Extender (Sold Separately) ⟶ Weight Limit\tMaximum Load: 300 lbs. / Rider: 245 Lbs. / Rear Rack: 55 lbs."}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "350W rear hub (500W peak)", "url": "https://www.troxusmobility.com/products/trax-sport-e-bike", "quote": "Motor\tJiabo® Hub-Drive Motor 36V/500W+ Peak Power, 50Nm Peak Torque | Rear Hub\tJiabo® 36V 350W+/ 25 MPH. 50Nm"},
+   {"kind": "retailer", "value": "350W rear hub (500W peak)", "url": "https://www.sportsbasement.com/products/trax-sport-350-10?variant=41141136949320", "quote": "Rear Hub\tJiabo® 36V 350W+/ 25 MPH. 50Nm ⟶ Rims\tAlloy Double Wall, 27.5\"x2.0\" w/ Eyelets"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'0\"-6'4\"", "url": "https://www.troxusmobility.com/products/trax-sport-e-bike", "quote": "Frame Size\tSmall: 5'0\" - 5'5\" (153 - 166cms)\tMedium: 5'5\" - 5'10\" (166 - 178cms)\tLarge: 5'9\" - 6'4\" (176 - 193cms) ⟶ Wheel Size\t27.5\"x1.75\"\t27.5\"x1.75\"\t27.5\"x1.75\""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.troxusmobility.com/products/trax-sport-e-bike", "quote": "Frame\t6061-T6 Aluminum Frame, Lightweight, Mid-Step & Step-Over"},
+   {"kind": "retailer", "value": "No", "url": "https://www.sportsbasement.com/products/trax-sport-350-10?variant=41141136949320", "quote": "Frame\t6061-T6 Aluminum Frame, Lightweight ⟶ Fork\tRigid Aluminum, 700c, Tapered 1.5\", Internal Front Brake Routing"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "CONTRADICTION: maker says 'Class 2 eBike As Sold' but lists 25 mph max speed / pedal assist up to 25 mph out of the box (throttle 20 mph). By speed it would be Class 3; recorded the maker's stated class 2 — needs a decision. Motor line says 500W+ peak; rear hub line says 350W+, recorded as 350W rated (500W peak). Retailer Sports Basement (Step Over) shows $1,599 with no crossed-out price; maker regular $1,699 (sale $1,299). Used one WebSearch to find the retailer."}

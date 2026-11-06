@@ -1,0 +1,59 @@
+{"bike": "Velotric|Summit 1", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1999, "url": "https://www.velotricbike.com/products/velotric-summit-1", "quote": "$1,399.00 ⟶ $1,999.00", "basis": "$1,999.00 is the crossed-out regular price; $1,399.00 is the Black Friday sale price (\"Save $600.00\")"},
+   {"kind": "review", "value": 1999, "url": "https://electricbikereview.com/velotric/summit-1-review/", "quote": "PRICE: ⟶ $1999"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/velotric-summit-1-review/", "quote": ""}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.velotricbike.com/products/velotric-summit-1", "quote": "Class ⟶ 1/2/3", "basis": "multi-class; out of box is \"Default Speed ⟶ 20 MPH\" with a throttle (\"Throttle Range ⟶ 60 Miles\"), i.e. Class 2"},
+   {"kind": "review", "value": 3, "url": "https://electricbikereview.com/velotric/summit-1-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 3", "basis": "max adjustable setting"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/velotric-summit-1-review/", "quote": "CLASS 3 (PEDAL ASSIST TO 28 MPH) ⟶ NOTE: TESTED BIKE EXCEEDS STATED CLASS RATINGS", "basis": "lists Class 1, 2 and 3; doesn't say which it ships in"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.velotricbike.com/products/velotric-summit-1", "quote": "Default Speed ⟶ 20 MPH", "basis": "default; adjustable to 28 mph (\"Max Speed Adjustable Range ⟶ 12~28 MPH\")"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/velotric/summit-1-review/", "quote": "TOP SPEED: ⟶ 28 MPH mph", "basis": "max adjustable, not default; review cons say PAS speed tested to 31.5 mph"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereport.com/velotric-summit-1-review/", "quote": "CLASS 3 (PEDAL ASSIST TO 28 MPH) ⟶ NOTE: TESTED BIKE EXCEEDS STATED CLASS RATINGS", "basis": "max class rating; also lists Class 1/2 to 20 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 90, "url": "https://www.velotricbike.com/products/velotric-summit-1", "quote": "Motor ⟶ 48V, 750W, 90Nm"},
+   {"kind": "review", "value": 90, "url": "https://electricbikereview.com/velotric/summit-1-review/", "quote": "MOTOR TORQUE: ⟶ 90 Newton meters"},
+   {"kind": "review", "value": 90, "url": "https://electricbikereport.com/velotric-summit-1-review/", "quote": "The Velotric Summit 1 has 90 Nm of torque from its 750W rear hub motor. 90 Newton Meters of torque is on the higher end of what we see and we were pumped to test it out and see how it performed on our Hell Hole Hill Test (as outlined in the graphic above)."}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 705.6, "url": "https://www.velotricbike.com/products/velotric-summit-1", "quote": "Battery ⟶ 48V, 705.6Wh, IPX7, Certificated by UL 2271"},
+   {"kind": "review", "value": 705.6, "url": "https://electricbikereview.com/velotric/summit-1-review/", "quote": "BATTERY WATT HOURS: ⟶ 705.6 wh"},
+   {"kind": "review", "value": 705, "url": "https://electricbikereport.com/velotric-summit-1-review/", "quote": "Battery:48V 705Wh ⟶ Display: 2.8” Color Display"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "70", "url": "https://www.velotricbike.com/products/velotric-summit-1", "quote": "Pedal Assist Range ⟶ 70 Miles", "basis": "maker footnote: \"*A 187-lb rider using PAS 1 in Eco mode on flat roads.\""},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/velotric/summit-1-review/", "quote": "Range ⟶ Estimated Range (from Velotric):", "basis": "estimate field blank; tested MIN PAS 73 miles, MAX PAS 36 miles"},
+   {"kind": "review", "value": "70", "url": "https://electricbikereport.com/velotric-summit-1-review/", "quote": "Claimed Range:Up to 70 Miles ⟶ Throttle:Thumb Throttle"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 62, "url": "https://www.velotricbike.com/products/velotric-summit-1", "quote": "Bike Weight ⟶ 62lbs", "basis": "maker doesn't say whether battery is included"},
+   {"kind": "review", "value": 62, "url": "https://electricbikereview.com/velotric/summit-1-review/", "quote": "TOTAL WEIGHT: ⟶ 62 lbs (28.12 kg)", "basis": "total weight; battery listed separately as 9.5 lbs; text says \"64 pounds ready to roll\""},
+   {"kind": "review", "value": 62, "url": "https://electricbikereport.com/velotric-summit-1-review/", "quote": "Claimed weight: 62lbs ⟶ Tested Weight: 64.8 lbs", "basis": "claimed; tested 64.8 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 440, "url": "https://www.velotricbike.com/products/velotric-summit-1", "quote": "Max Bike Load Capacity ⟶ 440lbs"},
+   {"kind": "review", "value": 440, "url": "https://electricbikereview.com/velotric/summit-1-review/", "quote": "Beefy 440lb payload capacity makes it solid for bigger riders or rigged up touring rides."},
+   {"kind": "review", "value": 440, "url": "https://electricbikereport.com/velotric-summit-1-review/", "quote": "Total payload capacity:440 lbs ⟶ COMPONENTS & ACCESSORIES"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub", "url": "https://www.velotricbike.com/products/velotric-summit-1", "quote": "Motor ⟶ 48V, 750W, 90Nm", "basis": "maker gives no peak; rear hub per reviews"},
+   {"kind": "review", "value": "750W rear hub (1,300W peak)", "url": "https://electricbikereview.com/velotric/summit-1-review/", "quote": "Punchy 750W rear hub motor (peaks at 1300W) with 90Nm of torque has plenty of grunt for steep climbs"},
+   {"kind": "review", "value": "750W rear hub (1,300W peak)", "url": "https://electricbikereport.com/velotric-summit-1-review/", "quote": "Motor: 750W rear hub with 1300W Peaking with a Torque Sensor ⟶ Headlight:Yes, 130 LUX"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'6\"", "url": "https://www.velotricbike.com/products/velotric-summit-1", "quote": "User Height Range ⟶ Regular: 5'1\" ~ 5'10\"/Large: 5'8\" ~ 6'6\"", "basis": "across both sizes"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/velotric/summit-1-review/", "quote": ""},
+   {"kind": "review", "value": "5'1\"-6'6\"", "url": "https://electricbikereport.com/velotric-summit-1-review/", "quote": "Tested Weight: 64.8 lbs ⟶ Rider height range: Regular: 5’ 1” to 5’ 10” Large: 5’ 8” to 6’ 6”", "basis": "across both sizes"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.velotricbike.com/products/velotric-summit-1", "quote": "Height\t5'1'' ~ 5'10''\tSeat Tube Length\t410mm\tHead Tube Length\t130mm ⟶ Stack\t644mm\tReach\t388mm\tStand-Over Height\t710mm", "basis": "rigid hardtail MTB frame in two sizes; no folding mentioned"},
+   {"kind": "review", "value": "No", "url": "https://electricbikereview.com/velotric/summit-1-review/", "quote": "We put it through its paces—hauling loads, testing its range, and seeing how it handles a mix of terrain—and found a bike that’s more than the sum of its parts. Stick around, and we’ll dig into what makes this hybrid hardtail stand out, where it shines, and where it might fall short. ⟶ See Latest Price", "basis": "hardtail, non-folding"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page is on Black Friday sale ($1,399); crossed-out regular $1,999 recorded. Maker: default 20 mph with throttle, adjustable 12-28 mph, 'Class 1/2/3' -> Class 2; EBR lists Class 3 (max). Both reviews say the tested bike exceeded 28 mph (31+ mph). Maker gives no peak watts; both reviews say 1300W peak. Maker page also compares to Summit 2 (750W 100Nm, 57 lbs); Summit 1 values used."}

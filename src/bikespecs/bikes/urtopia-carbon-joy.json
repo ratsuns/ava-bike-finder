@@ -1,0 +1,47 @@
+{"bike": "Urtopia|Carbon Joy", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2399, "url": "https://newurtopia.com/products/urtopia-joy-carbon-fat-tire-ebike", "quote": "$1,899.00 ⟶ $2,399.00", "basis": "crossed-out regular price; Black Friday sale price $1,899"}
+  ],
+  "cls": [
+   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/urtopia-carbon-joy-review/", "quote": "As a Class 2 e-bike, the Carbon Joy has a maximum speed of 20 mph for both its throttle and pedal assist system. Users looking to ride faster can adjust the bike to a Class 3 with faster pedal-assisted speeds; the bike’s marketing materials state a limit of 25 mph, but our testing showed the bike could reach 26-27 mph when unlocked.", "basis": "ships Class 2 (20 mph throttle + PAS); can be set to Class 3"},
+   {"kind": "maker", "value": null, "url": "https://newurtopia.com/products/urtopia-joy-carbon-fat-tire-ebike", "quote": "Top Speed ⟶ 25 mph", "basis": "maker states no class; lists 25 mph top speed and throttle up to 20 mph"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 25, "url": "https://newurtopia.com/products/urtopia-joy-carbon-fat-tire-ebike", "quote": "Top Speed ⟶ 25 mph", "basis": "maximum (unlocked) speed; default setting not stated by maker"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/urtopia-carbon-joy-review/", "quote": "As a Class 2 e-bike, the Carbon Joy has a maximum speed of 20 mph for both its throttle and pedal assist system. Users looking to ride faster can adjust the bike to a Class 3 with faster pedal-assisted speeds; the bike’s marketing materials state a limit of 25 mph, but our testing showed the bike could reach 26-27 mph when unlocked.", "basis": "adjustable to 25 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 50, "url": "https://newurtopia.com/products/urtopia-joy-carbon-fat-tire-ebike", "quote": "Motor ⟶ 500W rated · 50 Nm"},
+   {"kind": "review", "value": 33, "url": "https://electricbikereport.com/urtopia-carbon-joy-review/", "quote": "Motor: 36V, 500W (sustained), 750W (peak), rear hub, 33 Nm ⟶ Headlight: External light, 30 Lux"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 529.2, "url": "https://newurtopia.com/products/urtopia-joy-carbon-fat-tire-ebike", "quote": "Enjoy up to 65 miles per charge with the 529.2Wh Samsung Li-ion battery, UL-2271 certified for safety and reliability. The removable design allows for easy charging anywhere—at home, the office, or on the go. ⟶ Motor & Shimano 8-Speed Drivetrain"},
+   {"kind": "review", "value": 529, "url": "https://electricbikereport.com/urtopia-carbon-joy-review/", "quote": "Battery: 36V, 14.7 Ah (529 Wh), Samsung Li-Ion ⟶ Display: VeloFox Color Display"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "65", "url": "https://newurtopia.com/products/urtopia-joy-carbon-fat-tire-ebike", "quote": "All-day Range ⟶ Up to 65 miles", "basis": "up to"},
+   {"kind": "review", "value": "70", "url": "https://electricbikereport.com/urtopia-carbon-joy-review/", "quote": "Claimed Range: Up to 70 Miles ⟶ Throttle:Right hand thumb throttle", "basis": "claimed, up to"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 56, "url": "https://newurtopia.com/products/urtopia-joy-carbon-fat-tire-ebike", "quote": "Weight ⟶ 56 lbs Bike Weight", "basis": "Joy (carbon frame, 50 mm suspension) column of maker comparison table; Joy Ultra is 50 lbs"},
+   {"kind": "review", "value": 59, "url": "https://electricbikereport.com/urtopia-carbon-joy-review/", "quote": "Claimed weight: 50 lbs w/o accessories ⟶ Tested Weight: 59 lbs", "basis": "tested weight (claimed 50 lbs without accessories)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 330, "url": "https://newurtopia.com/products/urtopia-joy-carbon-fat-tire-ebike", "quote": "Payload capacity ⟶ 330 lbs"},
+   {"kind": "review", "value": 330, "url": "https://electricbikereport.com/urtopia-carbon-joy-review/", "quote": "Rider height range: 4’11” to 6’3” ⟶ Total payload capacity: 330 lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W rear hub (750W peak)", "url": "https://newurtopia.com/products/urtopia-joy-carbon-fat-tire-ebike", "quote": "The 500W motor (peak 750W) delivers strong, responsive acceleration, making climbs and heavy loads effortless. Paired with a Shimano 8-speed drivetrain, it provides the right gear for every ride—whether you’re gliding on flat roads, powering up hills, or navigating winding paths. ⟶ Front Suspension & Lights", "basis": "hub location from EBR"},
+   {"kind": "review", "value": "500W rear hub (750W peak)", "url": "https://electricbikereport.com/urtopia-carbon-joy-review/", "quote": "Motor: 36V, 500W (sustained), 750W (peak), rear hub, 33 Nm ⟶ Headlight: External light, 30 Lux"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'11\"-6'3\"", "url": "https://newurtopia.com/products/urtopia-joy-carbon-fat-tire-ebike", "quote": "Rider height ⟶ 4’11”–6’3”"},
+   {"kind": "review", "value": "4'11\"-6'3\"", "url": "https://electricbikereport.com/urtopia-carbon-joy-review/", "quote": "Tested Weight: 59 lbs ⟶ Rider height range: 4’11” to 6’3”"}
+  ],
+  "fold": [
+   {"kind": "review", "value": "No", "url": "https://electricbikereport.com/urtopia-carbon-joy-review/", "quote": "Fork:50mm travel suspension fork with preload adjustment ⟶ Frame: Carbon fiber", "basis": "one-piece carbon step-through frame; no folding"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page contradicts itself on rider height: size selector says 'Size- Fit for 5’1’’~6’1’’' while the comparison table and size guide say 4’11”–6’3” (EBR agrees with 4’11”–6’3”). Maker torque 50 Nm vs EBR 33 Nm; maker range 65 mi vs EBR claimed 70 mi; EBR may have tested an earlier spec. Maker comparison table also lists the Joy at $1,899 (current sale price); crossed-out regular is $2,399. Maker gives no class; EBR says it ships Class 2 and can be set to Class 3 (25 mph claimed)."}

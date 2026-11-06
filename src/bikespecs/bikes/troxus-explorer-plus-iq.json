@@ -1,0 +1,38 @@
+{"bike": "Troxus|Explorer Plus iQ", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2099, "url": "https://www.troxusmobility.com/products/explorer-plus-iq", "quote": "Regular price ⟶ $2,099.00 USD"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://www.troxusmobility.com/products/explorer-plus-iq", "quote": "Class 1/2/3 eBike ⟶ As Sold", "basis": "maker says Class 1/2/3 as sold; out-of-the-box speed setting not stated (max 28 mph pedal assist, 20 mph throttle)"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.troxusmobility.com/products/explorer-plus-iq", "quote": "Max Speed\tUp To 20 MPH on Throttle / Up To 28 MPH on Pedal Assist ⟶ Range\tUp To 90 Miles Per Charge", "basis": "maximum pedal-assist speed; default setting not stated"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 86, "url": "https://www.troxusmobility.com/products/explorer-plus-iq", "quote": "Motor\tBafang® 48V/750W Hub-Drive Motor, 86Nm Max. Torque"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 960, "url": "https://www.troxusmobility.com/products/explorer-plus-iq", "quote": "Battery\tUL-2271 Certified / Internal / Removable / Lithium Ion, 48V/20Ah (960Wh) with Samsung® Cells"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "90", "url": "https://www.troxusmobility.com/products/explorer-plus-iq", "quote": "Range\tUp To 90 Miles Per Charge ⟶ Weight Limit\tMaximum Load: 400 lbs; Maximum Rear Rack Capacity: 100 lbs", "basis": "up to"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 83.8, "url": "https://www.troxusmobility.com/products/explorer-plus-iq", "quote": "Weight Limit\tMaximum Load: 400 lbs; Maximum Rear Rack Capacity: 100 lbs ⟶ Net Weight\t83.8 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 400, "url": "https://www.troxusmobility.com/products/explorer-plus-iq", "quote": "Range\tUp To 90 Miles Per Charge ⟶ Weight Limit\tMaximum Load: 400 lbs; Maximum Rear Rack Capacity: 100 lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub", "url": "https://www.troxusmobility.com/products/explorer-plus-iq", "quote": "Rear Hub\tBafang® 48V 750W/ 28 MPH. 86Nm ⟶ Rims\tAlloy Single Wall Front / Double Wall Rear, 36H, 26\"x4.0\", w/ Eyelets"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://www.troxusmobility.com/products/explorer-plus-iq", "quote": "Frame Size\tSmall / 16.5\"\tMedium / 18.0\"\tLarge / 20\" ⟶ Wheel Size\t26x4.0\"\t26x4.0\"\t26x4.0\"", "basis": "three frame sizes; no rider height range in page text"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.troxusmobility.com/products/explorer-plus-iq", "quote": "Frame\t6061-T6 Aluminum Step-Thru Frame ⟶ Fork\tFront Suspension Fork, 90mm Travel", "basis": "non-folding frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker only: no independent page for the Explorer Plus iQ found (EBR only reviewed the older Explorer; one WebSearch gave a BRAIN Ride iQ article that covers the Trax LT iQ, not this bike). cls left null: maker says 'Class 1/2/3' without the out-of-the-box speed. Spec table is the Step-Thru frame view with S/M/L sizes; the 83.8 lb weight may be for one size/frame."}

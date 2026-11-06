@@ -1,0 +1,47 @@
+{"bike": "Top End|All E-handcycle models", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "retailer", "value": 12699, "url": "https://www.amplife.co/products/top-end-e-force-3-handcycle", "quote": "$ 12,699.00 ⟶ Save $190.00 when you pay with ACH. Contact us below", "basis": "E-Force 3 base model"},
+   {"kind": "retailer", "value": 12699, "url": "https://firstclassmobility.com/products/top-end-e-force-3-handcycle", "quote": "Current price ⟶ $12,699.00"}
+  ],
+  "cls": [
+   {"kind": "retailer", "value": null, "url": "https://www.amplife.co/products/top-end-e-force-3-handcycle", "quote": "Top Speed: 20 mph / 32.19 kph", "basis": "no class stated; handcycle, no throttle mentioned"},
+   {"kind": "retailer", "value": null, "url": "https://firstclassmobility.com/products/top-end-e-force-3-handcycle", "quote": "Top Speed\tUp to 20 mph ⟶ Battery Range\tApprox. 30 miles (flat terrain, moderate pace)"}
+  ],
+  "spd": [
+   {"kind": "retailer", "value": 20, "url": "https://www.amplife.co/products/top-end-e-force-3-handcycle", "quote": "Top Speed: 20 mph / 32.19 kph"},
+   {"kind": "retailer", "value": 20, "url": "https://firstclassmobility.com/products/top-end-e-force-3-handcycle", "quote": "Top Speed\tUp to 20 mph ⟶ Battery Range\tApprox. 30 miles (flat terrain, moderate pace)"}
+  ],
+  "tq": [
+   {"kind": "retailer", "value": null, "url": "https://www.amplife.co/products/top-end-e-force-3-handcycle", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://firstclassmobility.com/products/top-end-e-force-3-handcycle", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "retailer", "value": null, "url": "https://www.amplife.co/products/top-end-e-force-3-handcycle", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://firstclassmobility.com/products/top-end-e-force-3-handcycle", "quote": ""}
+  ],
+  "range": [
+   {"kind": "retailer", "value": "30", "url": "https://www.amplife.co/products/top-end-e-force-3-handcycle", "quote": "Battery Life: ~ 30 mi / 48.28 cm on flat terrain and moderate pace."},
+   {"kind": "retailer", "value": "30", "url": "https://firstclassmobility.com/products/top-end-e-force-3-handcycle", "quote": "Top Speed\tUp to 20 mph ⟶ Battery Range\tApprox. 30 miles (flat terrain, moderate pace)"}
+  ],
+  "wt": [
+   {"kind": "retailer", "value": 60, "url": "https://www.amplife.co/products/top-end-e-force-3-handcycle", "quote": "Weight: 60 lbs / 27.21 kgs"},
+   {"kind": "retailer", "value": 60, "url": "https://firstclassmobility.com/products/top-end-e-force-3-handcycle", "quote": "Weight\t60 lbs (27.21 kg) ⟶ Top Speed\tUp to 20 mph"}
+  ],
+  "load": [
+   {"kind": "retailer", "value": null, "url": "https://www.amplife.co/products/top-end-e-force-3-handcycle", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://firstclassmobility.com/products/top-end-e-force-3-handcycle", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "retailer", "value": null, "url": "https://www.amplife.co/products/top-end-e-force-3-handcycle", "quote": "The E-Force is equipped with the TE65247 Power Assist Drivetrain, featuring a single chainring, shift assist, and disc brakes for optimal performance.", "basis": "no wattage given"},
+   {"kind": "retailer", "value": "250W Shimano power assist (500W peak)", "url": "https://firstclassmobility.com/products/top-end-e-force-3-handcycle", "quote": "Delivers up to 250 watts of continuous power (500W peak), making hills easier and longer rides more achievable. ⟶ Lightweight Performance Frame", "basis": "page heading above it: 'Shimano Power Assist System'"}
+  ],
+  "height": [
+   {"kind": "retailer", "value": null, "url": "https://www.amplife.co/products/top-end-e-force-3-handcycle", "quote": "", "basis": "custom-fit handcycle; no rider height range"}
+  ],
+  "fold": [
+   {"kind": "retailer", "value": null, "url": "https://www.amplife.co/products/top-end-e-force-3-handcycle", "quote": "Ability to travel: Medium to hard – requires a larger vehicle or bike rack. Contact us with the form below to learn more", "basis": "folding not mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "The only Top End e-handcycle found is the E-Force 3 (Amplife's Top End handcycle collection lists Excelerator, Lil' Excelerator, E-Force 3, Force 3, Force G, Force RX; only E-Force 3 is powered). No Top End maker site found: the src (amplife.co) is a store, though its page speaks in Top End's voice ('Why choose Top End Sports?', 'Our custom-built products'), so it may be the brand's own channel; recorded as retailer. Second source First Class Mobility (dealer, from one WebSearch). No class, torque, Wh, load, rider height or folding published. Amplife range quote says '48.28 cm' (typo for km). Price is base model; options add cost."}

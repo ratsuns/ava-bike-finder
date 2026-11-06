@@ -1,0 +1,59 @@
+{"bike": "Velotric|Summit 2", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2099, "url": "https://www.velotricbike.com/products/velotric-summit-2-hybrid-ebike", "quote": "$1,999.00 ⟶ $2,099.00", "basis": "$2,099.00 is the crossed-out regular price; $1,999.00 is the Black Friday sale price (\"Save $100.00\")"},
+   {"kind": "review", "value": 2099, "url": "https://electricbikereview.com/velotric/summit-2-review/", "quote": "PRICE: ⟶ $2,099"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/velotric-summit-2-review/", "quote": ""}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.velotricbike.com/products/velotric-summit-2-hybrid-ebike", "quote": "Ebike Class ⟶ 1/2/3", "basis": "multi-class; out of box is \"Max Speed (Default） ⟶ 20MPH\" with a throttle (\"Throttle Range ⟶ 70 Miles\"), i.e. Class 2"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/velotric/summit-2-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 1, 2 and 3 (and Custom Tuning)", "basis": "multi-class; doesn't say which it ships in"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/velotric-summit-2-review/", "quote": "CLASS 3 (PEDAL ASSIST TO 28 MPH) ⟶ SPONSOR", "basis": "lists Class 1, 2 and 3; doesn't say which it ships in"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.velotricbike.com/products/velotric-summit-2-hybrid-ebike", "quote": "Max Speed (Default） ⟶ 20MPH", "basis": "default; adjustable to 28 mph (\"Max Speed Adjustable Range ⟶ 12~28MPH\")"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/velotric/summit-2-review/", "quote": "TOP SPEED: ⟶ 28 MPH mph", "basis": "max adjustable, not default"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereport.com/velotric-summit-2-review/", "quote": "CLASS 3 (PEDAL ASSIST TO 28 MPH) ⟶ SPONSOR", "basis": "max class rating; also lists Class 1/2 to 20 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 100, "url": "https://www.velotricbike.com/products/velotric-summit-2-hybrid-ebike", "quote": "Motor ⟶ 48V, 750W (1300W Peak Power), 100Nm"},
+   {"kind": "review", "value": 100, "url": "https://electricbikereview.com/velotric/summit-2-review/", "quote": "MOTOR TORQUE: ⟶ 100Nm Newton meters"},
+   {"kind": "review", "value": 100, "url": "https://electricbikereport.com/velotric-summit-2-review/", "quote": "Motor: 48v 750W, Peak 1300W, 100Nm torque ⟶ Headlight: 500Lumen (130Lux ) High-brightness headlight"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 801.6, "url": "https://www.velotricbike.com/products/velotric-summit-2-hybrid-ebike", "quote": "Battery ⟶ 48V, 16.7Ah (801.6Wh), IPX7, Certificated by UL2271"},
+   {"kind": "review", "value": 801.6, "url": "https://electricbikereview.com/velotric/summit-2-review/", "quote": "BATTERY WATT HOURS: ⟶ 801.6Wh wh"},
+   {"kind": "review", "value": 802, "url": "https://electricbikereport.com/velotric-summit-2-review/", "quote": "The Summit 2’s down tube integrated battery is large, with 802Wh of capacity. That’s a great pairing with a 750W motor that can peak at nearly double that figure.", "basis": "same review's spec box says \"Battery: 48V, 720Wh\" (contradicts itself)"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "95", "url": "https://www.velotricbike.com/products/velotric-summit-2-hybrid-ebike", "quote": "Pedal Assist Range ⟶ 95 Miles", "basis": "maker footnote: \"*A 187-lb rider using Eco mode on flat roads.\""},
+   {"kind": "review", "value": "95", "url": "https://electricbikereview.com/velotric/summit-2-review/", "quote": "Estimated Range (from Velotric): ⟶ Pedal Assist Range: 95 miles", "basis": "maker claim; tested Eco 81 miles, Boost 36 miles"},
+   {"kind": "review", "value": "95", "url": "https://electricbikereport.com/velotric-summit-2-review/", "quote": "Claimed Range: 95 miles ⟶ Throttle:Thumb throttle", "basis": "maker claim; tested 78.1 (min) / 35.1 (max) miles"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 57, "url": "https://www.velotricbike.com/products/velotric-summit-2-hybrid-ebike", "quote": "Bike Weight ⟶ 57 lbs", "basis": "maker footnote: \"*Weight does not include fenders, kickstands, or pedals.\" Battery not mentioned either way"},
+   {"kind": "review", "value": 63.3, "url": "https://electricbikereview.com/velotric/summit-2-review/", "quote": "<ul> <li>Advertised: 57lbs</li> <li>Tested w/ Battery: 63.3lbs</li> <li>Tested w/out Battery: 53.1 lbs</li> </ul> lbs ⟶ BATTERY WEIGHT:", "basis": "tested with battery (advertised 57 lbs)"},
+   {"kind": "review", "value": 63.3, "url": "https://electricbikereport.com/velotric-summit-2-review/", "quote": "Tested Weight: 63.3 lb (with fenders, kickstand, pedals) ⟶ Rider height range: 5’2” – 6’5”", "basis": "tested; claimed 57 lbs excl. fenders, kickstand, pedals"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 440, "url": "https://www.velotricbike.com/products/velotric-summit-2-hybrid-ebike", "quote": "Max Bike Load Capacity ⟶ 440 lbs"},
+   {"kind": "review", "value": 440, "url": "https://electricbikereview.com/velotric/summit-2-review/", "quote": "The maximum payload for the Summit 2 is a hefty 440 lbs and, in terms of included accessories, it ships with full-coverage fenders, a 500-lumen (130 Lux) headlight, turn signals, and a brake light. ⟶ See Latest Price"},
+   {"kind": "review", "value": 440, "url": "https://electricbikereport.com/velotric-summit-2-review/", "quote": "Total payload capacity: 440 lbs ⟶ COMPONENTS & ACCESSORIES"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W inner rotor motor (1,300W peak)", "url": "https://www.velotricbike.com/products/velotric-summit-2-hybrid-ebike", "quote": "Summit 2 delivers strong, reliable power for steep climbs and heavy loads. Its 750W inner-rotor motor peaks at 1300W with 100Nm of torque, responding instantly and pulling through tough terrain. ⟶ 750 W"},
+   {"kind": "review", "value": "750W rear hub (1,300W peak)", "url": "https://electricbikereview.com/velotric/summit-2-review/", "quote": "MOTOR PEAK OUTPUT: ⟶ 1300W watts", "basis": "\"MOTOR TYPE: ⟶ Rear hub\" and \"MOTOR NOMINAL OUTPUT: ⟶ 750W watts\" on same page"},
+   {"kind": "review", "value": "750W (1,300W peak)", "url": "https://electricbikereport.com/velotric-summit-2-review/", "quote": "Motor: 48v 750W, Peak 1300W, 100Nm torque ⟶ Headlight: 500Lumen (130Lux ) High-brightness headlight"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'2\"-6'5\"", "url": "https://www.velotricbike.com/products/velotric-summit-2-hybrid-ebike", "quote": "User Height Range | R：5'2''~5'10'' | L：5'7''~6'5''", "basis": "across both sizes (R and L)"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/velotric/summit-2-review/", "quote": ""},
+   {"kind": "review", "value": "5'2\"-6'5\"", "url": "https://electricbikereport.com/velotric-summit-2-review/", "quote": "Rider height range: 5’2” – 6’5” ⟶ Total payload capacity: 440 lbs"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.velotricbike.com/products/velotric-summit-2-hybrid-ebike", "quote": "IPX7 Battery, IPX6 Frame ⟶ Hybrid Ebike for Mixed-terrain Riding", "basis": "rigid hybrid/hardtail frame in two sizes; no folding mentioned"},
+   {"kind": "review", "value": "No", "url": "https://electricbikereview.com/velotric/summit-2-review/", "quote": "As a ‘do-it-all’ SUV e-bike, the Summit 2 is back in its second iteration. While the Summit 1 had a very strong start and positive reaction from owners, the spec-for-dollar improvements of the Summit 2 let it punch well above its weight class.", "basis": "non-folding SUV/hardtail frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page is on Black Friday sale ($1,999); crossed-out regular $2,099 recorded. Maker: default 20 mph with throttle, adjustable 12-28 mph, 'Ebike Class 1/2/3' -> Class 2; maker also mentions a Custom Mode with Class 3 throttle speeds (not in California). Maker weight 57 lbs excludes fenders, kickstand and pedals (battery not stated); both reviews measured 63.3 lbs with battery and accessories. EBReport spec box says 720Wh/UL 2580 but its text says 802Wh; maker says 801.6Wh. Maker calls the motor an 'inner rotor motor'; EBR calls it a rear hub."}

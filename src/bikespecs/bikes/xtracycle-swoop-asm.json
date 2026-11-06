@@ -1,0 +1,52 @@
+{"bike": "Xtracycle|Swoop ASM", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 4999, "url": "https://xtracycle.com/products/swoop-asm-family-cargo", "quote": "Pacific Blue - $4,999.00 ⟶ Tiburon (white/gray) - $4,999.00"},
+   {"kind": "review", "value": null, "url": "https://electrek.co/2026/02/24/xtracycle-swoop-asm-launched-as-cargo-e-bike-that-fits-the-entire-family/", "quote": "Priced at $4,499 – with a $500 launch discount – the Swoop ASM is positioned as a premium but value-packed family hauler", "basis": "$4,499 was a launch-discount price ($500 off), consistent with $4,999 regular"},
+   {"kind": "review", "value": null, "url": "https://rascalrides.com/xtracycle-swoop-longtail-cargo-e-bike-review/", "quote": "Price: $4,499 ⟶ Buy at Xtracycle.com", "basis": "launch-discount price at time of review"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://xtracycle.com/products/swoop-asm-family-cargo", "quote": "E-assist class\tClass 3 ⟶ Max e-assist speed\t28 mph", "basis": "ships Class 3; maker also says it 'can ship as a Class 1 upon request'"},
+   {"kind": "review", "value": 3, "url": "https://rascalrides.com/xtracycle-swoop-longtail-cargo-e-bike-review/", "quote": "Class 3 speed (up to 28 mph) ⟶ Automatic AND manual shifting options"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://xtracycle.com/products/swoop-asm-family-cargo", "quote": "Max e-assist speed\t28 mph"},
+   {"kind": "review", "value": 28, "url": "https://electrek.co/2026/02/24/xtracycle-swoop-asm-launched-as-cargo-e-bike-that-fits-the-entire-family/", "quote": "meaning it can offer pedal-assist up to 28 mph (45 km/h) where legally permitted."},
+   {"kind": "review", "value": 28, "url": "https://rascalrides.com/xtracycle-swoop-longtail-cargo-e-bike-review/", "quote": "Class 3 speed (up to 28 mph) ⟶ Automatic AND manual shifting options"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://xtracycle.com/products/swoop-asm-family-cargo", "quote": "E-assist\tShimano STEPS EP6 Cargo\tUL 2849 certified", "basis": "no torque figure published"},
+   {"kind": "review", "value": null, "url": "https://rascalrides.com/xtracycle-swoop-longtail-cargo-e-bike-review/", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 630, "url": "https://xtracycle.com/products/swoop-asm-family-cargo", "quote": "Battery\tShimano STEPS BT-EN606-A\t630Wh (frame, external), up to 60mi per charge (depending on riding conditions), UL 2271 certified ⟶ E-assist class\tClass 3"},
+   {"kind": "review", "value": 630, "url": "https://electrek.co/2026/02/24/xtracycle-swoop-asm-launched-as-cargo-e-bike-that-fits-the-entire-family/", "quote": "The 630Wh Shimano battery is rated for up to 60 miles (96 km) of range"},
+   {"kind": "review", "value": 630, "url": "https://rascalrides.com/xtracycle-swoop-longtail-cargo-e-bike-review/", "quote": "Speaking of the battery, it’s a 630 Wh unit which has quite a bit more life than the 500 Wh battery on most bikes we’ve tested."}
+  ],
+  "range": [
+   {"kind": "maker", "value": "60", "url": "https://xtracycle.com/products/swoop-asm-family-cargo", "quote": "Battery\tShimano STEPS BT-EN606-A\t630Wh (frame, external), up to 60mi per charge (depending on riding conditions), UL 2271 certified ⟶ E-assist class\tClass 3", "basis": "up to"},
+   {"kind": "review", "value": "50", "url": "https://rascalrides.com/xtracycle-swoop-longtail-cargo-e-bike-review/", "quote": "Although this will be dependent on power level, terrain, and rider and cargo weight, we seemed to get about 50 miles of range.", "basis": "reviewer's tested range"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 68.4, "url": "https://xtracycle.com/products/swoop-asm-family-cargo", "quote": "Bike weight\t\t68.4lbs/31.0kg (without incl. accessories and battery) ⟶ Frame\t4130 Chromoly steel", "basis": "without battery"},
+   {"kind": "review", "value": null, "url": "https://rascalrides.com/xtracycle-swoop-longtail-cargo-e-bike-review/", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://xtracycle.com/products/swoop-asm-family-cargo", "quote": "", "basis": "no max load published on product page"},
+   {"kind": "review", "value": null, "url": "https://electrek.co/2026/02/24/xtracycle-swoop-asm-launched-as-cargo-e-bike-that-fits-the-entire-family/", "quote": "It’s rated to carry one to three kids", "basis": "no weight figure"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Shimano STEPS EP6 Cargo", "url": "https://xtracycle.com/products/swoop-asm-family-cargo", "quote": "E-assist\tShimano STEPS EP6 Cargo\tUL 2849 certified", "basis": "mid-drive; no watts published"},
+   {"kind": "review", "value": "Shimano STEPS mid-drive (EP6)", "url": "https://rascalrides.com/xtracycle-swoop-longtail-cargo-e-bike-review/", "quote": "Top-tier, brand-name components throughout, including Shimano STEPS mid-drive motor and Tektro 4-piston hydraulic disc brakes ⟶ Rear deck is spacious and comfortable, fits up to 3 kids"}
+  ],
+  "height": [
+   {"kind": "review", "value": "4'10\"-6'5\"", "url": "https://electrek.co/2026/02/24/xtracycle-swoop-asm-launched-as-cargo-e-bike-that-fits-the-entire-family/", "quote": "It’s rated to carry one to three kids and fits riders from 4’10” to 6’5”, making it one of the more inclusive family cargo bikes on the market."},
+   {"kind": "review", "value": "4'10\"-6'5\"", "url": "https://rascalrides.com/xtracycle-swoop-longtail-cargo-e-bike-review/", "quote": "Comfortably fits a wide range of adult riders (4’10” to 6’5″), dropper post for easy height swapping between riders ⟶ Class 3 speed (up to 28 mph)"},
+   {"kind": "maker", "value": null, "url": "https://xtracycle.com/products/swoop-asm-family-cargo", "quote": "", "basis": "not on product page"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://xtracycle.com/products/swoop-asm-family-cargo", "quote": "Bike weight\t\t68.4lbs/31.0kg (without incl. accessories and battery) ⟶ Frame\t4130 Chromoly steel", "basis": "longtail steel frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker regular price $4,999; Electrek launch article and Rascal Rides show $4,499 launch-discount price ($500 off). Electrek review (Oct 2026) also says $4,495. Maker lists weight without battery and accessories; no payload, torque or rider-height on maker page. Electrek launch article says it can ship in Class 1 setup on request. Used one WebSearch (found Rascal Rides)."}

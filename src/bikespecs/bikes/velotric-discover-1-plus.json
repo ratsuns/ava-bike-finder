@@ -1,0 +1,59 @@
+{"bike": "Velotric|Discover 1 Plus", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1699, "url": "https://www.velotricbike.com/products/velotric-discover-1", "quote": "$1,699.00", "basis": "only price shown, no crossed-out price; page says the bike is no longer available"},
+   {"kind": "review", "value": 1199, "url": "https://electricbikereview.com/velotric/discover-1-plus-review/", "quote": "PRICE: ⟶ $1199", "basis": "price at time of review (review also says \"At $1,199, the Discover 1 Plus packs in commuter-friendly features\")"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/velotric-discover-1-plus-review/", "quote": ""}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://www.velotricbike.com/products/velotric-discover-1", "quote": "We made the max speed adjustable range of the bike 12-28mph, so you can switch freely between Class 1 and 3. ⟶ Brighter Front Light", "basis": "multi-class; maker states no default/out-of-box speed; has a throttle (\"Throttle Range ⟶ 58 miles\")"},
+   {"kind": "review", "value": 3, "url": "https://electricbikereview.com/velotric/discover-1-plus-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 3 (Can be changed to Class 1, 2 or 3)"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/velotric-discover-1-plus-review/", "quote": "Users can switch between Class 1, 2, and 3 modes as needed to meet their local laws.", "basis": "lists Class 1, 2 and 3; doesn't say which ships; cons note says \"With the bike’s maximum speed set to 28 mph, the throttle exceeds legal limits.\""}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.velotricbike.com/products/velotric-discover-1", "quote": "● Top speed 28 mph. ⟶ ● 5-level pedal assist, Walk mode, USB charging.", "basis": "listed top speed; default not stated; adjustable range 12-28 mph"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/velotric/discover-1-plus-review/", "quote": "TOP SPEED: ⟶ 28 MPH mph"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereport.com/velotric-discover-1-plus-review/", "quote": "CLASS 3 (PEDAL ASSIST TO 28 MPH) ⟶ NOTE: THE TESTED BIKE EXCEEDS THE STATED CLASS RATINGS", "basis": "max adjustable; also lists Class 1/2 at 20 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 65, "url": "https://www.velotricbike.com/products/velotric-discover-1", "quote": "Motor ⟶ 48V, 500W (900W Peak), 65Nm"},
+   {"kind": "review", "value": 65, "url": "https://electricbikereview.com/velotric/discover-1-plus-review/", "quote": "MOTOR TORQUE: ⟶ 65 Newton meters"},
+   {"kind": "review", "value": 65, "url": "https://electricbikereport.com/velotric-discover-1-plus-review/", "quote": "Motor: 48V, 500W (900W Peak), 65Nm ⟶ Headlight:High output integrated LED, 60LUX, adjustable angle"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 691.2, "url": "https://www.velotricbike.com/products/velotric-discover-1", "quote": "Battery ⟶ 48V, 691.2Wh, IPX7, Certificated by UL 2271"},
+   {"kind": "review", "value": 691, "url": "https://electricbikereview.com/velotric/discover-1-plus-review/", "quote": "BATTERY WATT HOURS: ⟶ 691 wh"},
+   {"kind": "review", "value": 691.2, "url": "https://electricbikereport.com/velotric-discover-1-plus-review/", "quote": "Battery:48V, 691.2Wh, IPX7, Certificated by UL 2271"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "65", "url": "https://www.velotricbike.com/products/velotric-discover-1", "quote": "Pedal Assist Range ⟶ 65 miles"},
+   {"kind": "review", "value": "65", "url": "https://electricbikereview.com/velotric/discover-1-plus-review/", "quote": "Range ⟶ Estimated Range (from Velotric): Up to 65 Miles", "basis": "maker claim; tested 69 miles PAS 1, 33 miles PAS 5"},
+   {"kind": "review", "value": "65", "url": "https://electricbikereport.com/velotric-discover-1-plus-review/", "quote": "Claimed Range: 65 Miles (PAS), 58 Miles (Throttle) ⟶ Throttle:Thumb-control, removable"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 60, "url": "https://www.velotricbike.com/products/velotric-discover-1", "quote": "Bike Weight ⟶ 60 lbs", "basis": "maker doesn't say whether battery is included"},
+   {"kind": "review", "value": 60, "url": "https://electricbikereview.com/velotric/discover-1-plus-review/", "quote": "TOTAL WEIGHT: ⟶ 60 lbs (27.22 kg)", "basis": "total weight; battery listed separately as 8.8 lbs"},
+   {"kind": "review", "value": 60, "url": "https://electricbikereport.com/velotric-discover-1-plus-review/", "quote": "Claimed weight: 60 lbs ⟶ Tested Weight: 61 lbs", "basis": "claimed; tested 61 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 440, "url": "https://www.velotricbike.com/products/velotric-discover-1", "quote": "Max Bike Load ⟶ 440 lbs"},
+   {"kind": "review", "value": 440, "url": "https://electricbikereview.com/velotric/discover-1-plus-review/", "quote": "With a hefty 440 lb max payload, it’s great for carrying extra gear or heavier riders."},
+   {"kind": "review", "value": 440, "url": "https://electricbikereport.com/velotric-discover-1-plus-review/", "quote": "Total payload capacity: 440 lbs ⟶ COMPONENTS & ACCESSORIES"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W rear hub (900W peak)", "url": "https://www.velotricbike.com/products/velotric-discover-1", "quote": "Motor ⟶ 48V, 500W (900W Peak), 65Nm", "basis": "rear hub per both reviews"},
+   {"kind": "review", "value": "500W rear hub (900W peak)", "url": "https://electricbikereview.com/velotric/discover-1-plus-review/", "quote": "The 500W rear hub motor peaks at 900W, offering smooth acceleration and a solid 65 Nm of torque to handle city streets and light hills with ease. Combined with a 7-speed Shimano Tourney drivetrain, it offers enough versatility for most urban routes."},
+   {"kind": "review", "value": "500W rear hub", "url": "https://electricbikereport.com/velotric-discover-1-plus-review/", "quote": "The Discover features a proprietary 500W rear hub motor with a cadence sensor."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'4\"", "url": "https://www.velotricbike.com/products/velotric-discover-1", "quote": "User Height Range ⟶ 5'1\" ~ 6'4\""},
+   {"kind": "review", "value": "5'1\"-6'4\"", "url": "https://electricbikereview.com/velotric/discover-1-plus-review/", "quote": "The Discover 1 Plus comes in a single frame size designed to fit riders from 5’1″ to 6’4″, which is a broad range for a one-size bike. I’m 5’11 and found the frame to fit me just fine and the ."},
+   {"kind": "review", "value": "5'1\"-6'4\"", "url": "https://electricbikereport.com/velotric-discover-1-plus-review/", "quote": "Rider height range: 5’1” – 6’4” ⟶ Total payload capacity: 440 lbs"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.velotricbike.com/products/velotric-discover-1", "quote": "Frame with Fully-integrated Battery Design.", "basis": "rigid step-thru commuter frame; no folding mentioned"},
+   {"kind": "review", "value": "No", "url": "https://electricbikereport.com/velotric-discover-1-plus-review/", "quote": "The bike is offered in a single step-thru frame sized for a wide range of riders between 5’1” and 6’4”. At 5’11”, I found the bike extremely comfortable and well-sized, but I also felt it important to verify the extremes.", "basis": "non-folding step-thru frame"}
+  ]
+ },
+ "status": {"sources": [{"kind": "maker", "value": "discontinued", "url": "https://www.velotricbike.com/products/velotric-discover-1", "quote": "Velotric Discover 1 Plus is no longer available. But don't worry, we've got something even better for you!"}]},
+ "notes": "Maker page says the bike is no longer available; it shows $1,699.00 with no crossed-out price (EBR review listed $1199). Maker gives no default/out-of-box speed, only 'Top speed 28 mph' and an adjustable 12-28 mph range ('switch freely between Class 1 and 3'); EBR lists it as Class 3 (changeable to 1/2/3) and EBReport says max speed set to 28 mph, so it likely ships at 28 mph (Class 3), but the maker doesn't say. Maker footnote says the range is for 'A 187-lb rider using PAS 1'; EBR says 176-lb rider."}

@@ -1,0 +1,47 @@
+{"bike": "Trek|Verve+ 3 Lowstep", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2999.99, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/verve/f/F436/verve%252b-3-lowstep/40667/", "quote": "Verve+ 3 Lowstep | $2,999.99 | Model 5292189"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/verve/f/F436/verve%252b-3-lowstep/40667/", "quote": "E-bike Classification | Class 1 | Max assist speed | 20 mph"},
+   {"kind": "review", "value": 1, "url": "https://eridehero.com/products/trek-verve-3-lowstep-2026/", "quote": "E-Bike Class\tClass 1"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/verve/f/F436/verve%252b-3-lowstep/40667/", "quote": "Max assist speed | 20 mph"},
+   {"kind": "review", "value": 20, "url": "https://eridehero.com/products/trek-verve-3-lowstep-2026/", "quote": "Top Assist Speed\t20 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 75, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/verve/f/F436/verve%252b-3-lowstep/40667/", "quote": "Motor | Bosch Performance Line, 250W, 75Nm"},
+   {"kind": "review", "value": 75, "url": "https://eridehero.com/products/trek-verve-3-lowstep-2026/", "quote": "Torque\t75 Nm"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 545, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/verve/f/F436/verve%252b-3-lowstep/40667/", "quote": "Battery | Bosch PowerPack 545Wh, smart system"},
+   {"kind": "review", "value": 545, "url": "https://eridehero.com/products/trek-verve-3-lowstep-2026/", "quote": "Battery Capacity | 545 Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "68", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/verve/f/F436/verve%252b-3-lowstep/40667/", "quote": "Range Up to 68 mi"},
+   {"kind": "review", "value": "75", "url": "https://eridehero.com/products/trek-verve-3-lowstep-2026/", "quote": "Max Range\t75 mi"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 58.63, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/verve/f/F436/verve%252b-3-lowstep/40667/", "quote": "Weight | M - 26.59 kg / 58.63 lbs", "basis": "size M"},
+   {"kind": "review", "value": null, "url": "https://eridehero.com/products/trek-verve-3-lowstep-2026/", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": 300, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/verve/f/F436/verve%252b-3-lowstep/40667/", "quote": "This bike has a maximum total weight limit (combined weight of bicycle, rider, and cargo) of 300 pounds (136 kg).", "basis": "total"},
+   {"kind": "review", "value": 300, "url": "https://eridehero.com/products/trek-verve-3-lowstep-2026/", "quote": "Weight Limit\t300 lbs", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "250W Bosch Performance Line", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/verve/f/F436/verve%252b-3-lowstep/40667/", "quote": "Motor | Bosch Performance Line, 250W, 75Nm"},
+   {"kind": "review", "value": "250W mid-drive", "url": "https://eridehero.com/products/trek-verve-3-lowstep-2026/", "quote": "Class 1 E-Bike, 250W 75Nm mid mid-drive, 545Wh (36V × 15.1Ah) battery"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'10\"-6'1\"", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/verve/f/F436/verve%252b-3-lowstep/40667/", "quote": "XS | 147 - 155 cm | 4'10\" - 5'1\" | 69 - 73 cm | 27\" - 29\" | S | 155 - 165 cm | 5'1\" - 5'5\" | 72 - 78 cm | 28\" - 31\" | M | 165 - 175 cm | 5'5\" - 5'9\" | 77 - 83 cm | 30\" - 33\" | L | 175 - 186 cm | 5'9\" - 6'1\""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/verve/f/F436/verve%252b-3-lowstep/40667/", "quote": "Premium Alpha Platinum Aluminum frame, top-load PowerPack, integrated cockpit routing, 135X5mm QR", "basis": "rigid non-folding lowstep frame"},
+   {"kind": "review", "value": "No", "url": "https://eridehero.com/products/trek-verve-3-lowstep-2026/", "quote": "Frame Style\tStep-Through", "basis": "step-through frame, not folding"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Given src link (/us/en_US/ prefix) returns a Trek server error; same product loads via the path without the locale prefix. ERideHero lists Max Range 75 mi vs Trek 'Up to 68 mi', and shows a $3,999.99 store price (not recorded; Trek lists $2,999.99 with no sale). ERideHero lists sizes S, M, L while Trek's sizing table includes XS. electricbikereview Verve+ 3 review is an older generation, not used. Trek weight is pre-production, size M."}

@@ -1,0 +1,55 @@
+{"bike": "Troxus|Trax Whim iQ", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1599, "url": "https://www.troxusmobility.com/products/trax-whim-iq", "quote": "Regular price | $1,599.00 USD | Size"},
+   {"kind": "review", "value": 1599, "url": "https://electricbikereview.com/troxus/trax-whim-iq-review/", "quote": "Price ⟶ MSRP: $1,599"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.troxusmobility.com/products/trax-whim-iq", "quote": "Class 1/2/3 eBike ⟶ As Sold", "basis": "Class 1/2/3 with throttle; EBR says it ships as Class 2"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereview.com/troxus/trax-whim-iq-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 1 / 2 / 3 (ships as Class 2)"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/troxus-trax-whim-iq-review/", "quote": "CLASS 2, THROTTLE TO 20 MPH ⟶ CLASS 3, PEDAL ASSIST TO 28 MPH", "basis": "lists all three classes; doesn't say which it ships in"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.troxusmobility.com/products/trax-whim-iq", "quote": "Max Speed\tMax Speed Up To 20 MPH on Throttle / Up To 28 MPH on Pedal Assist", "basis": "adjustable to 28 mph"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereview.com/troxus/trax-whim-iq-review/", "quote": "TOP SPEED: ⟶ 20 mph on throttle, 28 mph on pedal assist mph", "basis": "adjustable to 28 mph (ships as Class 2)"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/troxus-trax-whim-iq-review/", "quote": "From there, I engaged the PAS system. At class 2 speeds using the cadence sensor, PAS 1 settled in at 9.4 mph, PAS 2 at 12.4, PAS 3 at 15.9, PAS 4 at 17.5, and PAS maxed out at 20.3 mph.", "basis": "adjustable to 28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 50, "url": "https://www.troxusmobility.com/products/trax-whim-iq", "quote": "Motor\tShengYi 48V/500W Hub-Drive Motor, 50Nm Max. Torque"},
+   {"kind": "review", "value": 50, "url": "https://electricbikereview.com/troxus/trax-whim-iq-review/", "quote": "MOTOR TORQUE: ⟶ 50Nm max Newton meters"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 672, "url": "https://www.troxusmobility.com/products/trax-whim-iq", "quote": "Battery\tUL-2271 Certified / Internal / Removable / Lithium Ion, 48V/14Ah (672Wh) with Samsung® Cells"},
+   {"kind": "review", "value": 672, "url": "https://electricbikereview.com/troxus/trax-whim-iq-review/", "quote": "BATTERY WATT HOURS: ⟶ 672Wh wh"},
+   {"kind": "review", "value": 672, "url": "https://electricbikereport.com/troxus-trax-whim-iq-review/", "quote": "Battery: 48V 14Ah (672Wh) Battery with Samsung Cells ⟶ Charger: 54.6 V 2A Charger"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "70", "url": "https://www.troxusmobility.com/products/trax-whim-iq", "quote": "Range\tUp To 70 Miles Per Charge"},
+   {"kind": "review", "value": "39–87", "url": "https://electricbikereview.com/troxus/trax-whim-iq-review/", "quote": "Our range test came in above what Troxus claims. We recorded 86.6 miles on minimum assist and 39.1 miles on max assist from a 672Wh battery, against a brand claim of \"up to 70 miles.\"", "basis": "tested"},
+   {"kind": "review", "value": "70", "url": "https://electricbikereport.com/troxus-trax-whim-iq-review/", "quote": "Claimed Range: 70 miles ⟶ Throttle: Thumb"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 57, "url": "https://www.troxusmobility.com/products/trax-whim-iq", "quote": "Net Weight\t57lbs"},
+   {"kind": "review", "value": 58, "url": "https://electricbikereview.com/troxus/trax-whim-iq-review/", "quote": "TOTAL WEIGHT: ⟶ 58 lbs (measured) lbs", "basis": "measured"},
+   {"kind": "review", "value": 58.02, "url": "https://electricbikereport.com/troxus-trax-whim-iq-review/", "quote": "Claimed weight: N/A ⟶ Tested Weight: 58.02 lbs", "basis": "measured"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 300, "url": "https://www.troxusmobility.com/products/trax-whim-iq", "quote": "Weight Limit\tMaximum Load: 300 lbs. / Rider: 265Lbs."},
+   {"kind": "review", "value": 300, "url": "https://electricbikereview.com/troxus/trax-whim-iq-review/", "quote": "Load Capacity: 300 lbs total / 265 lbs rider ⟶ Reader Interactions"},
+   {"kind": "review", "value": 300, "url": "https://electricbikereport.com/troxus-trax-whim-iq-review/", "quote": "Rider height range: 5’5″ – 6’3″ ⟶ Total payload capacity: 300 lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W rear hub", "url": "https://www.troxusmobility.com/products/trax-whim-iq", "quote": "Rear Hub\tShengYi 48V/500W/ 28MPH. 50Nm"},
+   {"kind": "review", "value": "500W rear hub", "url": "https://electricbikereview.com/troxus/trax-whim-iq-review/", "quote": "MOTOR TYPE: ⟶ 48V 500W rear hub"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://www.troxusmobility.com/products/trax-whim-iq", "quote": ""},
+   {"kind": "review", "value": "5'5\"-6'3\"", "url": "https://electricbikereport.com/troxus-trax-whim-iq-review/", "quote": "Tested Weight: 58.02 lbs ⟶ Rider height range: 5’5″ – 6’3″"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.troxusmobility.com/products/trax-whim-iq", "quote": "Frame\t6061-T6 Aluminum Step-Thru, Pedal Forward Frame"},
+   {"kind": "review", "value": "No", "url": "https://electricbikereview.com/troxus/trax-whim-iq-review/", "quote": "Frame: 6061-T6 hydroformed aluminum in a step-thru, pedal-forward layout. It feels stiffer than most step-thru frames, and the finish quality is above the price point."}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker hero shows '28 mph Max Speed' and 'Class 1/2/3 eBike As Sold'; EBR says it ships as Class 2 (20 mph), class switchable in app to 28 mph. Recorded cls 2, spd 20 adjustable to 28. Maker gives no rider height range; EBReport gives 5'5\"-6'3\". Maker weight 57 lb; reviews measured ~58 lb."}

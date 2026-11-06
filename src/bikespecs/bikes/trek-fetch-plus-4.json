@@ -1,0 +1,42 @@
+{"bike": "Trek|Fetch+ 4", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 8499.99, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fetch/fetch-4/p/37114/", "quote": "$4,999.93 ⟶ $8,499.99", "basis": "sale price $4,999.93; regular (crossed-out, 'Original price') $8,499.99"},
+   {"kind": "review", "value": 8999, "url": "https://electrek.co/2023/02/17/trek-fetch-plus-2-electric-bike-cargo/", "quote": "If you thought the Fetch Plus 2 was pricey, wait until you check out the $8,999 Fetch Plus 4.", "basis": "2023 launch price"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fetch/fetch-4/p/37114/", "quote": "E-bike Classification ⟶ Class 1"},
+   {"kind": "review", "value": 1, "url": "https://electrek.co/2023/02/17/trek-fetch-plus-2-electric-bike-cargo/", "quote": "The motors are usually limited to 20 mph (32 km/h) in the US, and the throttle-less design keeps them squarely in the Class 1 e-bike designation.", "basis": "article covers both Fetch+ 2 and Fetch+ 4"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fetch/fetch-4/p/37114/", "quote": "Max assist speed ⟶ 20 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fetch/fetch-4/p/37114/", "quote": "Motor ⟶ Bosch Performance Line Cargo, smart system, magnesium motor body, 85 Nm"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 750, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fetch/fetch-4/p/37114/", "quote": "Battery ⟶ Bosch PowerTube 750Wh, smart system"},
+   {"kind": "review", "value": 750, "url": "https://electrek.co/2023/02/17/trek-fetch-plus-2-electric-bike-cargo/", "quote": "The bike uses a similar drivetrain but swaps in a 750 Wh battery. That higher capacity battery is better suited to the heavier Fetch Plus 4, especially considering the obvious kid-carrying front bucket will likely be occupied much of the time."}
+  ],
+  "range": [
+   {"kind": "maker", "value": "86", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fetch/fetch-4/p/37114/", "quote": "Torque 85Nm ⟶ Range Up to 86 mi", "basis": "up to"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 165.35, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fetch/fetch-4/p/37114/", "quote": "Weight ⟶ 75.00 kg / 165.35 lbs", "basis": "as listed; looks implausibly high for this bike, see notes"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 551, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fetch/fetch-4/p/37114/", "quote": "This bike has a maximum total weight limit (combined weight of bicycle, rider, and cargo) of 551 pounds (250 kg).", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Performance Line Cargo, 250W", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fetch/fetch-4/p/37114/", "quote": "E-bike Classification Class 1 ⟶ Motor Bosch Performance Line Cargo, 250W"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fetch/fetch-4/p/37114/", "quote": "", "basis": "no rider height range given"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fetch/fetch-4/p/37114/", "quote": "High-performance hydroformed alloy, low-step, Removable Integrated Battery, internal cable routing, Motor Armor, post-mount disc, 148x12 thru axle ⟶ Fork"},
+   {"kind": "review", "value": "No", "url": "https://electrek.co/2023/02/17/trek-fetch-plus-2-electric-bike-cargo/", "quote": "The two e-bikes carry distinct designs, with the Trek Fetch Plus 2 rolling out as a longtail cargo bike and the Trek Fetch Plus 4 taking on less common front loader cargo bike layout."}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "src link redirects to Trek's Fetch+ family page with Fetch+ 4 selected (model 5289858). Maker sale $4,999.93, crossed-out 'Original price' $8,499.99 (recorded); Electrek's 2023 launch price was $8,999. Maker weight '75.00 kg / 165.35 lbs' looks implausibly high for a front-loader e-cargo bike (possibly includes packaging/box or is a data error); no other source gives a weight. Load is maker's max total weight (bike+rider+cargo). Only independent source is Electrek's two-bike launch article; no Fetch+ 4 review found on EBR/EBReport."}

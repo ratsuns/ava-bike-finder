@@ -1,0 +1,40 @@
+{"bike": "Troxus|Trax Plus LR iQ", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 3199, "url": "https://www.troxusmobility.com/products/trax-plus-lr-iq", "quote": "Regular price | $3,199.00 USD | Size"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://www.troxusmobility.com/products/trax-plus-lr-iq", "quote": "28 mph | Max Speed | Up to 120 Miles | Per Charge | Class 1/2/3 eBike | As Sold", "basis": "Class 1/2/3; maker shows 28 mph max speed as sold, so Class 3 (uncertain, see notes)"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.troxusmobility.com/products/trax-plus-lr-iq", "quote": "28 mph ⟶ Max Speed"},
+   {"kind": "maker", "value": 28, "url": "https://www.troxusmobility.com/products/trax-plus-lr-iq", "quote": "Max Speed\tUp To 20 MPH on Throttle / Up To 28 MPH on Pedal Assist"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 86, "url": "https://www.troxusmobility.com/products/trax-plus-lr-iq", "quote": "Motor\tBafang® 48V/750W Hub-Drive Motor, 86Nm Max. Torque"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 1440, "url": "https://www.troxusmobility.com/products/trax-plus-lr-iq", "quote": "Battery\tUL-2271 Certified / Internal / Removable / Lithium Ion, 48V/30Ah (1,440Wh) with Samsung® Secondary battery incorporated into the rear rack system 48V/14Ah (672Wh)", "basis": "primary battery; the 672Wh rack battery is sold separately"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "120", "url": "https://www.troxusmobility.com/products/trax-plus-lr-iq", "quote": "Range\tUp To 120 Miles Per Charge"},
+   {"kind": "maker", "value": "120", "url": "https://www.troxusmobility.com/products/trax-plus-lr-iq", "quote": "This long range e-bike features a dual-battery system combining a 1440Wh primary battery and a 672Wh rear-mounted extension pack, delivering up to 120 miles of real-world riding range. Ride iQ continuously monitors energy usage, helping riders plan long-distance trips with confidence and precision. ⟶ High Torque Power for Long Distance Riding", "basis": "maker ties 120 miles to the dual-battery setup here"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 80.5, "url": "https://www.troxusmobility.com/products/trax-plus-lr-iq", "quote": "Net Weight\t80.5 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 350, "url": "https://www.troxusmobility.com/products/trax-plus-lr-iq", "quote": "Weight Limit\tMaximum Load: 350 lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub", "url": "https://www.troxusmobility.com/products/trax-plus-lr-iq", "quote": "Rear Hub\tBafang® 48V 750W/ 28 MPH. 86Nm"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://www.troxusmobility.com/products/trax-plus-lr-iq", "quote": "Frame Size\tMedium / 17\"\tLarge / 20\""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.troxusmobility.com/products/trax-plus-lr-iq", "quote": "Frame\tAluminum Frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "MAKER ONLY: no independent source found (EBR, EBReport, N+1, Best Buy, Sports Basement had none; one WebSearch returned only unrelated Chevy Trax results). Maker says '*Additional battery sold separately.' — standard battery is 1,440Wh; the 120-mile figure is tied to the dual-battery setup in the feature text but listed as 'per charge' in the spec table. Class uncertain: 'Class 1/2/3 eBike As Sold' with 28 mph (recorded 3); the Whim iQ uses the same wording and ships as Class 2 per EBR. No rider height range from maker."}

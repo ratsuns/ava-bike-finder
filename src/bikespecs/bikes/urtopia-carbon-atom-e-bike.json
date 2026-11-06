@@ -1,0 +1,49 @@
+{"bike": "Urtopia|Carbon Atom E-Bike", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2499, "url": "https://newurtopia.com/products/urtopia-carbon-atom-ebike", "quote": "$2,299.00 | $2,499.00 | -$200.00", "basis": "crossed-out regular price; $2,299 is the Black Friday sale price"},
+   {"kind": "review", "value": 2499, "url": "https://electricbikereview.com/urtopia/carbon-atom-review/", "quote": "PRICE: ⟶ $2,499"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://newurtopia.com/products/urtopia-carbon-atom-ebike", "quote": "Top Speed | 28mph | Total Payload Limit | 330 lbs", "basis": "maker lists 'Class 2 or 3' and a single top speed of 28mph with no lower default stated; throttle limited to 20mph. Recorded as Class 3 (28 mph assisted)"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/urtopia/carbon-atom-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 1 / Class 2 / Class 3 (selectable)", "basis": "selectable; no shipped default stated"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://newurtopia.com/products/urtopia-carbon-atom-ebike", "quote": "Top Speed | 28mph"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/urtopia/carbon-atom-review/", "quote": "TOP SPEED: ⟶ 28 mph pedal assist / 20 mph throttle mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 90, "url": "https://newurtopia.com/products/urtopia-carbon-atom-ebike", "quote": "Motor Max. Torque | 90Nm"},
+   {"kind": "review", "value": 90, "url": "https://electricbikereview.com/urtopia/carbon-atom-review/", "quote": "MOTOR TORQUE: ⟶ 90Nm Newton meters"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 835, "url": "https://newurtopia.com/products/urtopia-carbon-atom-ebike", "quote": "Battery | 48V 17.4Ah (835Wh) LG Li-ion, High-Performance Cell, Removable, UL 2271 Certified"},
+   {"kind": "review", "value": 802, "url": "https://electricbikereview.com/urtopia/carbon-atom-review/", "quote": "BATTERY WATT HOURS: ⟶ 802Wh wh", "basis": "pre-launch review unit"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "93", "url": "https://newurtopia.com/products/urtopia-carbon-atom-ebike", "quote": "Pedal Assist Range | Up to 93 miles"},
+   {"kind": "review", "value": "45–90", "url": "https://electricbikereview.com/urtopia/carbon-atom-review/", "quote": "ESTIMATED MIN RANGE: ⟶ ~90 miles (manufacturer estimate) miles | ESTIMATED MAX RANGE: ⟶ 45 miles (max power, capped at 20 mph) miles", "basis": "45 mi tested at max assist; ~90 mi manufacturer estimate"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 61.7, "url": "https://newurtopia.com/products/urtopia-carbon-atom-ebike", "quote": "Bike Weight | 61.7 lbs (28kg) | Net Weight | 58 lbs (26.5kg) w/ battery | 50 lbs (22.7kg) w/o battery", "basis": "61.7 lbs as shipped with battery and accessories; net 58 lbs with battery"},
+   {"kind": "review", "value": 64, "url": "https://electricbikereview.com/urtopia/carbon-atom-review/", "quote": "TOTAL WEIGHT: ⟶ ~64 lbs measured with fenders & sealant (Urtopia advertises 58 lbs, measured without fenders or kickstand) lbs", "basis": "measured with fenders and tire sealant"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 330, "url": "https://newurtopia.com/products/urtopia-carbon-atom-ebike", "quote": "Total Payload Limit | 330 lbs"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/urtopia/carbon-atom-review/", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub (1,250W peak)", "url": "https://newurtopia.com/products/urtopia-carbon-atom-ebike", "quote": "Motor Power | Rated Power 750W (Peak Power 1250W) rear hub"},
+   {"kind": "review", "value": "750W rear hub (~1,250W peak)", "url": "https://electricbikereview.com/urtopia/carbon-atom-review/", "quote": "MOTOR NOMINAL OUTPUT: ⟶ 750W watts | MOTOR PEAK OUTPUT: ⟶ ~1,250W (unconfirmed, display reading) watts"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'3\"-5'11\"", "url": "https://newurtopia.com/products/urtopia-carbon-atom-ebike", "quote": "Rider Height | Regular: 5'3\" - 5'11\""},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/urtopia/carbon-atom-review/", "quote": "GEOMETRY MEASUREMENTS: ⟶ One size (reach 355mm)"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://newurtopia.com/products/urtopia-carbon-atom-ebike", "quote": "Folding | No"},
+   {"kind": "review", "value": "No", "url": "https://electricbikereview.com/urtopia/carbon-atom-review/", "quote": "FRAME TYPES: ⟶ Step-through"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Class is ambiguous: maker says 'Class 2 or 3' with a 28mph top speed and no stated lower default; EBR says Class 1/2/3 selectable. Recorded Class 3 from the 28mph listed speed — worth a human check. EBR reviewed a pre-launch unit (802Wh) vs maker's current 835Wh. Maker quotes joined with ' | ' are consecutive lines from the Specs tab (opened by clicking)."}

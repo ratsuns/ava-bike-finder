@@ -1,0 +1,45 @@
+{"bike": "Sunseeker|E-Delta B1 SX Electric Delta", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 3999.99, "url": "https://sunseeker.bike/products/e-delta-b1-sx-electric-delta-23585", "quote": "Regular price ⟶ $3,999.99"},
+   {"kind": "retailer", "value": 3999.99, "url": "https://www.marbleheadcycle.com/products/sun-seeker-e-delta-b1-sx-electric-delta-unisex-24-41-x-seam-matt-blue-20-black-74-7-speed-disc-brake?id=3c60e998cf5fab67622ed2b639adada99b9602fe0330677ea66c585cc5bea236", "quote": "$3,999.99"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://sunseeker.bike/products/e-delta-b1-sx-electric-delta-23585", "quote": "Class 2 with five levels of pedal assist, walk mode and thumb throttle control ⟶ Bottom bracket with integrated torque and cadence sensor", "basis": "maker states Class 2 (has thumb throttle); assist limited to 15 mph"},
+   {"kind": "retailer", "value": 2, "url": "https://www.marbleheadcycle.com/products/sun-seeker-e-delta-b1-sx-electric-delta-unisex-24-41-x-seam-matt-blue-20-black-74-7-speed-disc-brake?id=3c60e998cf5fab67622ed2b639adada99b9602fe0330677ea66c585cc5bea236", "quote": "Class 2 with five levels of pedal assist walk mode and thumb throttle control."}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 15, "url": "https://sunseeker.bike/products/e-delta-b1-sx-electric-delta-23585", "quote": "15 mph maximum motor-assisted speed (Class 2)"},
+   {"kind": "retailer", "value": 15, "url": "https://www.marbleheadcycle.com/products/sun-seeker-e-delta-b1-sx-electric-delta-unisex-24-41-x-seam-matt-blue-20-black-74-7-speed-disc-brake?id=3c60e998cf5fab67622ed2b639adada99b9602fe0330677ea66c585cc5bea236", "quote": "15 mph / 48 volt / 350 watt pedal-assist motor."}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 60, "url": "https://sunseeker.bike/products/e-delta-b1-sx-electric-delta-23585", "quote": "Bafang B1 48V / 350W mid-mount rear hub motor – 55-60 N·m max torque", "basis": "maker gives a 55-60 Nm range; recorded the top value"},
+   {"kind": "retailer", "value": null, "url": "https://www.marbleheadcycle.com/products/sun-seeker-e-delta-b1-sx-electric-delta-unisex-24-41-x-seam-matt-blue-20-black-74-7-speed-disc-brake?id=3c60e998cf5fab67622ed2b639adada99b9602fe0330677ea66c585cc5bea236", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 504, "url": "https://sunseeker.bike/products/e-delta-b1-sx-electric-delta-23585", "quote": "Bafang B1 48V / 10.5Ah (504 watt hours) li-ion battery"},
+   {"kind": "retailer", "value": 504, "url": "https://www.marbleheadcycle.com/products/sun-seeker-e-delta-b1-sx-electric-delta-unisex-24-41-x-seam-matt-blue-20-black-74-7-speed-disc-brake?id=3c60e998cf5fab67622ed2b639adada99b9602fe0330677ea66c585cc5bea236", "quote": "48V / 10.5Ah / 504watt lithium-ion frame-mount battery"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "45–50", "url": "https://sunseeker.bike/products/e-delta-b1-sx-electric-delta-23585", "quote": "Range: Eco PAS, mostly pedaling 45–50 mi / Throttle-only, 25–30 mi", "basis": "Eco PAS, mostly pedaling"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 79.5, "url": "https://sunseeker.bike/products/e-delta-b1-sx-electric-delta-23585", "quote": "Bottom Bracket Height: 16\" (42cm) ⟶ Weight: 79.5 lbs", "basis": "battery inclusion not stated"},
+   {"kind": "retailer", "value": 79.5, "url": "https://www.marbleheadcycle.com/products/sun-seeker-e-delta-b1-sx-electric-delta-unisex-24-41-x-seam-matt-blue-20-black-74-7-speed-disc-brake?id=3c60e998cf5fab67622ed2b639adada99b9602fe0330677ea66c585cc5bea236", "quote": "Weight: 79.5 lbs. Weight Limit: 300 lbs."}
+  ],
+  "load": [
+   {"kind": "maker", "value": 300, "url": "https://sunseeker.bike/products/e-delta-b1-sx-electric-delta-23585", "quote": "Weight: 79.5 lbs ⟶ Weight Limit: 300 lbs", "basis": "weight limit; not stated whether rider-only or total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "350W Bafang B1", "url": "https://sunseeker.bike/products/e-delta-b1-sx-electric-delta-23585", "quote": "Bafang B1 48V / 350W mid-mount rear hub motor – 55-60 N·m max torque", "basis": "maker calls it a 'mid-mount rear hub motor' (wording is ambiguous)"},
+   {"kind": "retailer", "value": "350W", "url": "https://www.marbleheadcycle.com/products/sun-seeker-e-delta-b1-sx-electric-delta-unisex-24-41-x-seam-matt-blue-20-black-74-7-speed-disc-brake?id=3c60e998cf5fab67622ed2b639adada99b9602fe0330677ea66c585cc5bea236", "quote": "15 mph / 48 volt / 350 watt pedal-assist motor."}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://sunseeker.bike/products/e-delta-b1-sx-electric-delta-23585", "quote": "Weight Limit: 300 lbs ⟶ X-Seam: 28 - 41\" (71-104cm)", "basis": "maker gives X-seam (leg reach), not rider height"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://sunseeker.bike/products/e-delta-b1-sx-electric-delta-23585", "quote": "High-Tensile Steel, TIG-Welded", "basis": "welded steel delta-trike frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Recumbent delta trike from Sun Bicycles (sunseeker.bike), no src link given. Maker page contradicts itself on X-seam: size selector says '24-41\" X-Seam' but specs say 'X-Seam: 28 - 41\"'. Class 2 per maker even though assist tops out at 15 mph. Only independent source found is Marblehead Cycle (dealer, copies maker text); EBR/Hostel Shoppe/Erik's/Ken's only list the older E-Delta, not the B1 SX. Marblehead quotes are substrings of one long description line. One WebSearch used."}

@@ -1,0 +1,38 @@
+{"bike": "Troxus|T-XC", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 3299, "url": "https://www.troxusmobility.com/products/t-xc-e-bike", "quote": "Regular price ⟶ $3,299", "basis": "crossed-out regular price; sale price $1,999"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://www.troxusmobility.com/products/t-xc-e-bike", "quote": "Class 1 eBike ⟶ As Sold", "basis": "ships Class 1; optional thumb throttle makes it Class 2"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.troxusmobility.com/products/t-xc-e-bike", "quote": "Max Speed\tUp To 20 MPH ⟶ Range\tUp To 60 Miles Per Charge"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 130, "url": "https://www.troxusmobility.com/products/t-xc-e-bike", "quote": "Motor\tBafang® 48V/500W Mid-Motor, 130Nm Max. Torque"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 720, "url": "https://www.troxusmobility.com/products/t-xc-e-bike", "quote": "Battery\tUL-2271 Certified / Internal / Removable / Lithium Ion, 48V/15Ah (720Wh) with Samsung® Cells ⟶ Display\tBafang® Color Display, Bluetooth, w/ Multi-Function Remote"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "60", "url": "https://www.troxusmobility.com/products/t-xc-e-bike", "quote": "Max Speed\tUp To 20 MPH ⟶ Range\tUp To 60 Miles Per Charge", "basis": "up to"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 60.5, "url": "https://www.troxusmobility.com/products/t-xc-e-bike", "quote": "Weight Limit\tMaximum Load: 300 lbs ⟶ Net Weight\t60.5 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 300, "url": "https://www.troxusmobility.com/products/t-xc-e-bike", "quote": "Range\tUp To 60 Miles Per Charge ⟶ Weight Limit\tMaximum Load: 300 lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W mid-drive", "url": "https://www.troxusmobility.com/products/t-xc-e-bike", "quote": "Motor\tBafang® 48V/500W Mid-Motor, 130Nm Max. Torque"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://www.troxusmobility.com/products/t-xc-e-bike", "quote": "Frame Size\tSmall / 15\"\tMedium / 17\"\tLarge / 19\" ⟶ Wheel Size\t29\"x2.4\"\t29\"x2.4\"\t29\"x2.4\"", "basis": "three frame sizes; no rider height range in page text"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.troxusmobility.com/products/t-xc-e-bike", "quote": "Frame\tAluminum Frame ⟶ Fork\tSuntour® XCM 34 Suspension Fork, 120mm Travel, 15mm Thru-Axle", "basis": "hardtail mountain frame, non-folding"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker only: no independent page found (EBR/electricbikereview search had no T-XC; one WebSearch returned nothing relevant). Maker page says 'Only 10 Left' with sale $1,999 vs regular $3,299 (clearance, not marked discontinued). Feature text says 'SR® XCM-34' fork; spec table says 'Suntour® XCM 34'. Throttle is optional (Class 2 with it)."}

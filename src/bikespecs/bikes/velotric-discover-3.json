@@ -1,0 +1,49 @@
+{"bike": "Velotric|Discover 3", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1999, "url": "https://www.velotricbike.com/products/velotric-discover-3-commuter-ebike", "quote": "$1,899.00 ⟶ $1,999.00", "basis": "crossed-out regular price; $1,899 is the Black Friday sale price"},
+   {"kind": "review", "value": 1999, "url": "https://electricbikereview.com/velotric/discover-3-review/", "quote": "PRICE: ⟶ $1,999"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.velotricbike.com/products/velotric-discover-3-commuter-ebike", "quote": "Max Speed (Default） ⟶ 20MPH | 12~28MPH ⟶ Ebike Class | Ebike Class ⟶ 1/2/3 | 80 Miles ⟶ Throttle Range", "basis": "ships at 20 mph with a throttle = Class 2; switchable 1/2/3"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/velotric/discover-3-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 1, 2, 3, and Custom Mode", "basis": "selectable; no shipped default stated"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.velotricbike.com/products/velotric-discover-3-commuter-ebike", "quote": "Max Speed (Default） ⟶ 20MPH | Max Speed Adjustable Range ⟶ 12~28MPH", "basis": "adjustable to 28 mph"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/velotric/discover-3-review/", "quote": "TOP SPEED: ⟶ 28MPH mph", "basis": "max setting"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 75, "url": "https://www.velotricbike.com/products/velotric-discover-3-commuter-ebike", "quote": "Motor ⟶ 48V, 750W, 1100W(Peak Power), 75Nm"},
+   {"kind": "review", "value": 75, "url": "https://electricbikereview.com/velotric/discover-3-review/", "quote": "MOTOR TORQUE: ⟶ 75Nm Newton meters"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 730, "url": "https://www.velotricbike.com/products/velotric-discover-3-commuter-ebike", "quote": "Battery ⟶ 48V, 15.2Ah(730Wh), IPX7, Certificated by UL 2271"},
+   {"kind": "review", "value": 730, "url": "https://electricbikereview.com/velotric/discover-3-review/", "quote": "BATTERY WATT HOURS: ⟶ 730Wh wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "80", "url": "https://www.velotricbike.com/products/velotric-discover-3-commuter-ebike", "quote": "Pedal Assist Range ⟶ 80 Miles"},
+   {"kind": "review", "value": "80", "url": "https://electricbikereview.com/velotric/discover-3-review/", "quote": "Estimated Range (from Velotric): | Up to 80 miles range"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 61, "url": "https://www.velotricbike.com/products/velotric-discover-3-commuter-ebike", "quote": "Bike Weight ⟶ 61 lbs"},
+   {"kind": "review", "value": 61, "url": "https://electricbikereview.com/velotric/discover-3-review/", "quote": "TOTAL WEIGHT: ⟶ 61lbs lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 440, "url": "https://www.velotricbike.com/products/velotric-discover-3-commuter-ebike", "quote": "Max Bike Load Capacity ⟶ 440 lbs"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/velotric/discover-3-review/", "quote": "Included - MIK w/ 66lbs Capacity", "basis": "only rear rack capacity given"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub (1,100W peak)", "url": "https://www.velotricbike.com/products/velotric-discover-3-commuter-ebike", "quote": "Motor ⟶ 48V, 750W, 1100W(Peak Power), 75Nm"},
+   {"kind": "review", "value": "750W rear hub (1,100W peak)", "url": "https://electricbikereview.com/velotric/discover-3-review/", "quote": "MOTOR TYPE: ⟶ Rear Hub | MOTOR NOMINAL OUTPUT: ⟶ 750W watts | MOTOR PEAK OUTPUT: ⟶ 1,100W watts"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'2\"-6'7\"", "url": "https://www.velotricbike.com/products/velotric-discover-3-commuter-ebike", "quote": "User Height Range ⟶ R：5'2''~5'11'' L：5'9''~6'7'' | R：5'2''~5'11'' L：5'9''~6'7'' ⟶ （With Suspension Seatpost） | R：4'11''~5'9'' L：5'6''~6'4'' ⟶ （Without Suspension Seatpost）", "basis": "with the included suspension seatpost, across R/L sizes; 4'11\"-6'4\" without it"},
+   {"kind": "review", "value": "5'2\"-6'7\"", "url": "https://electricbikereview.com/velotric/discover-3-review/", "quote": "GEOMETRY MEASUREMENTS: ⟶ <ul> <li>Regular：5'2''~5'11'', Large：5'9''~6'7''（With Suspension Seatpost）</li> <li>Regular：4'11''~5'9'', Large：5'6''~6'4''（Without Suspension Seatpost）</li> </ul>", "basis": "with suspension seatpost; 4'11\"-6'4\" without"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": null, "url": "https://www.velotricbike.com/products/velotric-discover-3-commuter-ebike", "quote": ""},
+   {"kind": "review", "value": "No", "url": "https://electricbikereview.com/velotric/discover-3-review/", "quote": "FRAME TYPES: ⟶ Aluminum Alloy Step-Through"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Rider height depends on seatpost: suspension seatpost (included in box) gives 5'2\"-6'7\"; without it 4'11\"-6'4\". Maker page has no folding line (non-folding commuter). Maker's Custom Mode allows throttle up to 28 mph via app, not default."}

@@ -1,0 +1,47 @@
+{"bike": "Zooz|Ultra Flex G2 Low Bar", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 3195, "url": "https://zoozbikes.com/products/ultra-flex-g2-low-bar", "quote": "Regular price ⟶ $3,195.00", "basis": "no sale price shown"},
+   {"kind": "review", "value": 2995, "url": "https://freshlycharged.com/products/504/zooz-ultra-flex", "quote": "Price: $2,995 ⟶ Weight: 85 lbs", "basis": "generic 2025 Ultra Flex listing, may predate current price"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://zoozbikes.com/products/ultra-flex-g2-low-bar", "quote": "LEGAL | Class 2. Legal in ALL 50 States"},
+   {"kind": "review", "value": 2, "url": "https://freshlycharged.com/products/504/zooz-ultra-flex", "quote": "Class 2 ⟶ Heavy Adults"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://zoozbikes.com/products/ultra-flex-g2-low-bar", "quote": "SPEED | 20MPH. Be Safe"},
+   {"kind": "maker", "value": 20, "url": "https://zoozbikes.com/products/ultra-flex-g2-low-bar", "quote": "All ZOOZ Bikes ship limited to 20 MPH. Actual speed depends on terrain, rider weight, and riding style. Smooth roads and bike paths reach top speeds easier than rough or hilly terrain."}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://zoozbikes.com/products/ultra-flex-g2-low-bar", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://freshlycharged.com/products/504/zooz-ultra-flex", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 1300, "url": "https://zoozbikes.com/products/ultra-flex-g2-low-bar", "quote": "BATTERY | 52v 25Ah", "basis": "52 V x 25 Ah"},
+   {"kind": "review", "value": 1300, "url": "https://freshlycharged.com/products/504/zooz-ultra-flex", "quote": "Weight Limit: 350 lbs ⟶ Battery Capacity: 1300 Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://zoozbikes.com/products/ultra-flex-g2-low-bar", "quote": "RANGE | *Throttle Only* 25-40 Miles", "basis": "throttle-only range; no pedal-assist range published"},
+   {"kind": "review", "value": null, "url": "https://freshlycharged.com/products/504/zooz-ultra-flex", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 85, "url": "https://zoozbikes.com/products/ultra-flex-g2-low-bar", "quote": "WEIGHT | Only 85 lbs"},
+   {"kind": "review", "value": 85, "url": "https://freshlycharged.com/products/504/zooz-ultra-flex", "quote": "Price: $2,995 ⟶ Weight: 85 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 350, "url": "https://zoozbikes.com/products/ultra-flex-g2-low-bar", "quote": "BIKE LOAD CAPACITY | 350lbs"},
+   {"kind": "review", "value": 350, "url": "https://freshlycharged.com/products/504/zooz-ultra-flex", "quote": "Weight: 85 lbs ⟶ Weight Limit: 350 lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W Thrillmatic", "url": "https://zoozbikes.com/products/ultra-flex-g2-low-bar", "quote": "MOTOR | 750w THRILLMATIC"},
+   {"kind": "review", "value": "750W Zooz Thrillmatic", "url": "https://freshlycharged.com/products/504/zooz-ultra-flex", "quote": "Motor Watts: 750 W ⟶ Motor Details: Zooz Thrillmatic, metal reinforced planetary gears"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://zoozbikes.com/products/ultra-flex-g2-low-bar", "quote": "Yes, primarily. Its 33.5\" seat height is way up there for little guys but we see little guys shredding this thing all the time too. If you're over 5'10\" and even like to pedal sometimes while sitting down, this bike is great. The full suspension really does smooth out rides which makes commutes really nice too.", "basis": "no rider height range; suggests over 5'10\", seat height 33.5\""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://zoozbikes.com/products/ultra-flex-g2-low-bar", "quote": "FRAME SET | 4130 Chromoly Steel", "basis": "rigid full-suspension frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker specs are in a 'BIKE SPECIFICATIONS' section; the ' | ' separators are literal in the page text. Maker publishes only a throttle-only range (25-40 miles), so range is left null. No torque or rider height range published (FAQ says best for riders over 5'10\", 33.5\" seat height). Motor position (hub vs mid) not stated; no peak watts published. Independent source is Freshly Charged's 2025 'Ultra Flex' listing (does not say Low Bar/G2, but matches the current 750W Thrillmatic / 52V 25Ah / 85 lb spec); its $2,995 price differs from the maker's $3,195. EBR, Electrek had no Ultra Flex page."}

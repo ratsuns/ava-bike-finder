@@ -1,0 +1,46 @@
+{"bike": "Trek|Fetch+ 2", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 5999.99, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fetch/fetch-2/p/37640/", "quote": "$2,999.93 ⟶ $5,999.99", "basis": "sale price $2,999.93; regular (crossed-out, 'Original price') $5,999.99"},
+   {"kind": "review", "value": 5999, "url": "https://electrek.co/2023/02/17/trek-fetch-plus-2-electric-bike-cargo/", "quote": "The Fetch Plus 2 will go on sale in April of this year with an MSRP of US $5,999."}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fetch/fetch-2/p/37640/", "quote": "E-bike Classification ⟶ Class 1"},
+   {"kind": "review", "value": 1, "url": "https://electrek.co/2023/02/17/trek-fetch-plus-2-electric-bike-cargo/", "quote": "The motors are usually limited to 20 mph (32 km/h) in the US, and the throttle-less design keeps them squarely in the Class 1 e-bike designation."}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fetch/fetch-2/p/37640/", "quote": "Max assist speed ⟶ 20 mph"},
+   {"kind": "review", "value": 20, "url": "https://electrek.co/2023/02/17/trek-fetch-plus-2-electric-bike-cargo/", "quote": "The motors are usually limited to 20 mph (32 km/h) in the US, and the throttle-less design keeps them squarely in the Class 1 e-bike designation."}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fetch/fetch-2/p/37640/", "quote": "Motor ⟶ Bosch Performance Line Cargo, smart system, magnesium motor body, 85 Nm"},
+   {"kind": "review", "value": 80, "url": "https://electrek.co/2023/02/17/trek-fetch-plus-2-electric-bike-cargo/", "quote": "The Trek Fetch Plus 2 will use Bosch’s BES3 smart system with the company’s cargo-specific mid-drive motor lineup. Those motors are rated for a continuous 250W of power, though their 80 Nm torque rating betrays the true higher power of the drive system."}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 500, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fetch/fetch-2/p/37640/", "quote": "Battery ⟶ Bosch PowerTube 500Wh, smart system"},
+   {"kind": "review", "value": 500, "url": "https://electrek.co/2023/02/17/trek-fetch-plus-2-electric-bike-cargo/", "quote": "The Fetch Plus 2 includes Bosch’s 500Wh battery that mounts in the downtube and is removable for charging. That battery is a bit below average capacity for e-bikes in the US, but should still offer plenty of range thanks to the efficient pedal-assist setup of the Bosch drive system. An optional range extender battery will be available for those that want to carry more than 500Wh of battery with them."}
+  ],
+  "range": [
+   {"kind": "maker", "value": "55", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fetch/fetch-2/p/37640/", "quote": "Torque 85Nm ⟶ Range Up to 55 mi", "basis": "up to"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 68.35, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fetch/fetch-2/p/37640/", "quote": "Weight ⟶ 31.00 kg / 68.35 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 441, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fetch/fetch-2/p/37640/", "quote": "This bike has a maximum total weight limit (combined weight of bicycle, rider, and cargo) of 441 pounds (200 kg).", "basis": "total"},
+   {"kind": "review", "value": 440, "url": "https://electrek.co/2023/02/17/trek-fetch-plus-2-electric-bike-cargo/", "quote": "The bike is rated for a combined operator-and-passenger payload capacity of 200 kg (440 lb). That puts it in competition with other heavy-hauling electric cargo bikes like the Tern GSD, though it carries a higher entry price."}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Performance Line Cargo, 250W", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fetch/fetch-2/p/37640/", "quote": "E-bike Classification Class 1 ⟶ Motor Bosch Performance Line Cargo, 250W"},
+   {"kind": "review", "value": "Bosch cargo mid-drive, 250W", "url": "https://electrek.co/2023/02/17/trek-fetch-plus-2-electric-bike-cargo/", "quote": "The Trek Fetch Plus 2 will use Bosch’s BES3 smart system with the company’s cargo-specific mid-drive motor lineup. Those motors are rated for a continuous 250W of power, though their 80 Nm torque rating betrays the true higher power of the drive system."}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fetch/fetch-2/p/37640/", "quote": "Size: One size fits most", "basis": "no rider height range given"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fetch/fetch-2/p/37640/", "quote": "High-performance hydroformed alloy, low-step, Removable Integrated Battery, internal cable routing, Motor Armor, integrated long rear rack ⟶ Fork"},
+   {"kind": "review", "value": "No", "url": "https://electrek.co/2023/02/17/trek-fetch-plus-2-electric-bike-cargo/", "quote": "The two e-bikes carry distinct designs, with the Trek Fetch Plus 2 rolling out as a longtail cargo bike and the Trek Fetch Plus 4 taking on less common front loader cargo bike layout."}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "src link redirects to Trek's Fetch+ family page with Fetch+ 2 selected (model 5289855). Maker shows sale $2,999.93 with crossed-out 'Original price' $5,999.99 (recorded). Torque conflict: Trek says 85 Nm, Electrek's 2023 launch article says 80 Nm. Load is maker's max total weight (bike+rider+cargo). Only one independent source (Electrek launch article); EBR/EBReport have no Fetch+ review. No rider height published ('One size fits most')."}

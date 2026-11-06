@@ -1,0 +1,52 @@
+{"bike": "Urtopia|Carbon Fusion GT", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2799, "url": "https://newurtopia.com/products/urtopia-carbon-fusion-gt", "quote": "$2,499.00 | $2,799.00 | -$300.00", "basis": "crossed-out regular price; $2,499 is the Black Friday sale price"},
+   {"kind": "retailer", "value": 3999, "url": "https://562ebikes.com/products/urtopia-carbon-fusion-gt", "quote": "Regular price ⟶ $3,999.00", "basis": "dealer's listed regular price; dealer sale price $2,799"},
+   {"kind": "review", "value": 3999.99, "url": "https://9to5toys.com/2025/02/09/tested-urtopias-tech-forward-carbon-fusion-gt-complete-with-dual-motors-dual-batteries-gps-tracking-and-chat-gpt/", "quote": "The new Carbon Fusion GT eBike comes in Blazing Black, Vital Orange, or Elegant Grey (seen below) and carries a $3,999.99 MSRP. However, Urtopia often offers sales and discounts, so be sure to keep an eye on this bike’s pricing.", "basis": "launch MSRP (Feb 2025)"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://newurtopia.com/products/urtopia-carbon-fusion-gt", "quote": "Throttle | Yes (up to 20mph) | Class | Class 2 by default | Class 3 upon unlock", "basis": "ships Class 2 (20 mph with throttle); unlockable to Class 3"},
+   {"kind": "retailer", "value": 2, "url": "https://562ebikes.com/products/urtopia-carbon-fusion-gt", "quote": "Trottle: Yes (up to 20mph) ⟶ Charger: 3.5H fast charger, 36V 4Amp", "basis": "throttle to 20 mph and 20 mph default speed = Class 2"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://newurtopia.com/products/urtopia-carbon-fusion-gt", "quote": "Top Speed | 20mph by default | 28mph upon unlock", "basis": "adjustable to 28 mph"},
+   {"kind": "retailer", "value": 20, "url": "https://562ebikes.com/products/urtopia-carbon-fusion-gt", "quote": "Top Speed: 20mph by default ⟶ Total Weight Limit: 330 lbs."}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 36, "url": "https://newurtopia.com/products/urtopia-carbon-fusion-gt", "quote": "Motor Max. Torque | 36Nm front & 36Nm rear", "basis": "per motor; two motors, 36Nm each"},
+   {"kind": "retailer", "value": 36, "url": "https://562ebikes.com/products/urtopia-carbon-fusion-gt", "quote": "Motor: 1500W peak power (36V 350W 36Nm front hub motor, 36V 350W 36Nm rear drive hub motor) ⟶ Battery: 36V 14.7Ah (529.2 Wh), Samsung Li-ion, removable battery, IPX6", "basis": "per motor"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 529.2, "url": "https://newurtopia.com/products/urtopia-carbon-fusion-gt", "quote": "Battery | 36V 14.7Ah (529.2Wh) Samsung/LG Li-ion, Removable, UL 2271 Certified", "basis": "standard battery; optional 352.8Wh external battery"},
+   {"kind": "retailer", "value": 529.2, "url": "https://562ebikes.com/products/urtopia-carbon-fusion-gt", "quote": "Battery: 36V 14.7Ah (529.2 Wh), Samsung Li-ion, removable battery, IPX6 ⟶ Pedal Assist: 4 levels"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "68", "url": "https://newurtopia.com/products/urtopia-carbon-fusion-gt", "quote": "Pedal Assist Range | Up to 68 miles | Up to 116 miles with extender battery"},
+   {"kind": "retailer", "value": "70", "url": "https://562ebikes.com/products/urtopia-carbon-fusion-gt", "quote": "Range: Up to 70 miles Extended to 120miles (Dual battery) ⟶ Top Speed: 20mph by default"},
+   {"kind": "review", "value": "70", "url": "https://9to5toys.com/2025/02/09/tested-urtopias-tech-forward-carbon-fusion-gt-complete-with-dual-motors-dual-batteries-gps-tracking-and-chat-gpt/", "quote": "The bike offers 70-mile standalone range and up to 120 miles with the Samsung Li-ion removable battery pack (sold separately). ⟶ GPS tracking for anti-theft"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 58, "url": "https://newurtopia.com/products/urtopia-carbon-fusion-gt", "quote": "Bike Weight | 58 lbs (26.3kg) | Net Weight | 55.1lbs（25kg）w/ battery | 48.1lbs（21.8kg）w/o battery", "basis": "58 lbs as shipped with battery and accessories; net 55.1 lbs with battery"},
+   {"kind": "retailer", "value": 55, "url": "https://562ebikes.com/products/urtopia-carbon-fusion-gt", "quote": "Model: Carbon Fusion Lightweight E-SUV ⟶ Net Weight: 55 lbs", "basis": "net weight"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 330, "url": "https://newurtopia.com/products/urtopia-carbon-fusion-gt", "quote": "Total Payload Limit | 330 lbs"},
+   {"kind": "retailer", "value": 330, "url": "https://562ebikes.com/products/urtopia-carbon-fusion-gt", "quote": "Top Speed: 20mph by default ⟶ Total Weight Limit: 330 lbs.", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Dual 350W hub motors (front + rear)", "url": "https://newurtopia.com/products/urtopia-carbon-fusion-gt", "quote": "Motor Power | Rated Power 350W front hub; | Rated Power 350W rear hub"},
+   {"kind": "retailer", "value": "Dual 350W hub motors (front + rear), 1500W peak", "url": "https://562ebikes.com/products/urtopia-carbon-fusion-gt", "quote": "Motor: 1500W peak power (36V 350W 36Nm front hub motor, 36V 350W 36Nm rear drive hub motor) ⟶ Battery: 36V 14.7Ah (529.2 Wh), Samsung Li-ion, removable battery, IPX6"},
+   {"kind": "review", "value": "Dual 350W hub motors", "url": "https://9to5toys.com/2025/02/09/tested-urtopias-tech-forward-carbon-fusion-gt-complete-with-dual-motors-dual-batteries-gps-tracking-and-chat-gpt/", "quote": "AWD dual motor system (2x 350W hub motors) ⟶ 1,500-watt max throttle power (Bike can throttle up to 20 mph)"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'3\"-6'3\"", "url": "https://newurtopia.com/products/urtopia-carbon-fusion-gt", "quote": "Rider Height | Regular: 5'3\" - 6'3\""},
+   {"kind": "retailer", "value": "5'3\"-6'3\"", "url": "https://562ebikes.com/products/urtopia-carbon-fusion-gt", "quote": "Rider Height: 5’3’’ - 6’3’’ ⟶ Brakes: TEKTRO hydraulic disc brakes with power cut-off sensor"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://newurtopia.com/products/urtopia-carbon-fusion-gt", "quote": "Folding | No"},
+   {"kind": "retailer", "value": null, "url": "https://562ebikes.com/products/urtopia-carbon-fusion-gt", "quote": ""}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Dual-motor bike: torque is 36Nm per motor (front and rear); recorded per-motor value. Launch MSRP was $3,999.99 (9to5toys, dealer 562 Ebikes still lists $3,999 regular); maker's current crossed-out price is $2,799. No EBR/EBReport/Electrek review found; used one WebSearch to find 9to5toys and the 562 Ebikes dealer page. Maker quotes joined with ' | ' are consecutive lines from the Specs tab (opened by clicking)."}

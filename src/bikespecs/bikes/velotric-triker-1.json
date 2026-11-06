@@ -1,0 +1,60 @@
+{"bike": "Velotric|Triker 1", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2499, "url": "https://www.velotricbike.com/products/velotric-triker", "quote": "$2,499.00 ⟶ Sold out", "basis": "only price shown, no crossed-out price; listed as sold out"},
+   {"kind": "review", "value": 2399, "url": "https://electricbikereview.com/velotric/triker-review/", "quote": "PRICE: ⟶ $2,399", "basis": "price at time of review (2025)"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/velotric-triker-review/", "quote": ""}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.velotricbike.com/products/velotric-triker", "quote": "Class ⟶ 1/2", "basis": "ships at \"Max Speed (Default) ⟶ 12 MPH\" with a thumb throttle (\"Throttle Range ⟶ 50 Miles\"), adjustable to 20 mph, i.e. Class 2"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereview.com/velotric/triker-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 1/2", "basis": "Class 1/2 with throttle -> Class 2"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/velotric-triker-review/", "quote": "CLASS 2 (THROTTLE TO 20 MPH) ⟶ SPONSOR", "basis": "lists Class 1 and 2; has thumb throttle"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 12, "url": "https://www.velotricbike.com/products/velotric-triker", "quote": "Max Speed (Default) ⟶ 12 MPH", "basis": "default (Standard Mode); adjustable to 20 mph (\"Max Speed Adjustable Range ⟶ 8~20 MPH\"); Beginner Mode limits to 8 mph"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/velotric/triker-review/", "quote": "TOP SPEED: ⟶ 28 MPH mph", "basis": "appears to be an error: same page says \"Beginner Mode (up to 8 MPH) and Standard Mode (12-20 MPH)\" and \"Reaches a top speed of 20 mph\""},
+   {"kind": "review", "value": 12, "url": "https://electricbikereport.com/velotric-triker-review/", "quote": "Once unlocked to its Standard Mode, the Triker has five pedal assist levels and a 12 mph maximum speed, though it can be set up to 20 mph.", "basis": "default; adjustable to 20 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 90, "url": "https://www.velotricbike.com/products/velotric-triker", "quote": "Motor Hub ⟶ 48V, 750W,1300W Peak, 90Nm"},
+   {"kind": "review", "value": 90, "url": "https://electricbikereview.com/velotric/triker-review/", "quote": "MOTOR TORQUE: ⟶ 90Nm Newton meters"},
+   {"kind": "review", "value": 90, "url": "https://electricbikereport.com/velotric-triker-review/", "quote": "Motor: 48V, 750W,1300W Peak, 90Nm"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 804, "url": "https://www.velotricbike.com/products/velotric-triker", "quote": "Battery ⟶ 48V, 16.75 Ah, IPX7, Certificated by UL 2271", "basis": "maker gives only V and Ah: 48V x 16.75Ah = 804 Wh"},
+   {"kind": "review", "value": 804, "url": "https://electricbikereview.com/velotric/triker-review/", "quote": "BATTERY WATT HOURS: ⟶ 804Wh wh"},
+   {"kind": "review", "value": 804, "url": "https://electricbikereport.com/velotric-triker-review/", "quote": "Battery: 48V, 804 Wh (16.75 Ah), IPX7, Certificated by UL 2271 ⟶ Display: 3.5″ Full color, High brightness, Bluetooth, Adjustable angle", "basis": "same review's text also says \"840-Wh battery\" (typo)"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "60", "url": "https://www.velotricbike.com/products/velotric-triker", "quote": "Pedal Assist Range ⟶ 60 Miles", "basis": "maker footnote: rider weight of 198 lb, PAS 1, flat terrain"},
+   {"kind": "review", "value": "60", "url": "https://electricbikereview.com/velotric/triker-review/", "quote": "Range ⟶ Estimated Range (from Velotric): 60 miles", "basis": "maker claim; tested max PAS 41 miles"},
+   {"kind": "review", "value": "60", "url": "https://electricbikereport.com/velotric-triker-review/", "quote": "Claimed Range: 60 Miles (Pedal Assist) / 50 Miles (Throttle) ⟶ Throttle:Trigger-control, removable"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 85.8, "url": "https://www.velotricbike.com/products/velotric-triker", "quote": "Bike Weight ⟶ 85.8lbs", "basis": "maker doesn't say whether battery is included"},
+   {"kind": "review", "value": 85.8, "url": "https://electricbikereview.com/velotric/triker-review/", "quote": "TOTAL WEIGHT: ⟶ 85.8 lbs lbs", "basis": "total weight; battery listed separately as 10.8 lbs"},
+   {"kind": "review", "value": 98.1, "url": "https://electricbikereport.com/velotric-triker-review/", "quote": "Tested Weight: 98.1 lbs (including 10.8 lb battery) ⟶ Rider height range: 4’10”-6’5”", "basis": "tested with battery; claimed 85.8 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 500, "url": "https://www.velotricbike.com/products/velotric-triker", "quote": "Max Bike Load ⟶ 500lbs（including rear basket load)", "basis": "maker calls it \"max total payload\""},
+   {"kind": "review", "value": 500, "url": "https://electricbikereview.com/velotric/triker-review/", "quote": "Supports a 500-pound payload with extra bottle cage mounts and a front rack mounting point for carrying more gear. ⟶ Comes with vibrant new car-inspired paint jobs for a fresh look."},
+   {"kind": "review", "value": 500, "url": "https://electricbikereport.com/velotric-triker-review/", "quote": "Total payload capacity: 500 lbs ⟶ COMPONENTS & ACCESSORIES"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub (1,300W peak)", "url": "https://www.velotricbike.com/products/velotric-triker", "quote": "Motor Hub ⟶ 48V, 750W,1300W Peak, 90Nm", "basis": "EBR calls it \"Rear Axle Mounted\""},
+   {"kind": "review", "value": "750W rear (1,300W peak)", "url": "https://electricbikereview.com/velotric/triker-review/", "quote": "MOTOR PEAK OUTPUT: ⟶ 1,300W watts", "basis": "\"MOTOR NOMINAL OUTPUT: ⟶ 750W watts\" and \"MOTOR TYPE: ⟶ Rear Axle Mounted\" on same page"},
+   {"kind": "review", "value": "750W (1,300W peak)", "url": "https://electricbikereport.com/velotric-triker-review/", "quote": "Motor: 48V, 750W,1300W Peak, 90Nm"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'10\"-6'5\"", "url": "https://www.velotricbike.com/products/velotric-triker", "quote": "User Height Range ⟶ 4'10''-6'5''"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/velotric/triker-review/", "quote": ""},
+   {"kind": "review", "value": "4'10\"-6'5\"", "url": "https://electricbikereport.com/velotric-triker-review/", "quote": "Rider height range: 4’10”-6’5” ⟶ Total payload capacity: 500 lbs"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "Yes", "url": "https://www.velotricbike.com/products/velotric-triker", "quote": "Unlike bulky 3-wheel electric bikes, Triker folds down small for SUVs and apartment-living. Ideal for daily use or weekend adventures. ⟶ Effortless Power, Your Way"},
+   {"kind": "review", "value": "Yes", "url": "https://electricbikereview.com/velotric/triker-review/", "quote": "Let’s circle back to that folding feature I touched on earlier, because it deserves some honest talk. The Triker does fold, allowing you to bring the front half back toward the rear, which reduces the wheelbase by about 15 inches. That’s not nothing, and it can be the difference between fitting it into that last spot in your SUV or not."},
+   {"kind": "review", "value": "Yes", "url": "https://electricbikereport.com/velotric-triker-review/", "quote": "A central hinge in the frame allows the Triker to fold when it’s not being ridden ⟶ The saddle and its adjustable backrest felt cushy and comfortable."}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker calls it 'Velotric Triker' (no '1'); src link was correct. Page shows $2,499.00 with no crossed-out price and 'Sold out' (not stated as discontinued). It's an electric trike. Maker default speed 12 mph (Standard Mode), adjustable 8-20 mph, Beginner Mode 8 mph; 'Class 1/2' with throttle -> Class 2. EBR's 'TOP SPEED: 28 MPH' contradicts its own text (20 mph max). Maker gives battery only as 48V 16.75Ah (=804 Wh); both reviews say 804 Wh. Frame folds via a central hinge (both reviews)."}

@@ -1,0 +1,49 @@
+{"bike": "Velotric|T1", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2199, "url": "https://www.velotricbike.com/products/velotric-t1-ebike", "quote": "$2,199.00 ⟶ Buy Now", "basis": "no crossed-out price shown"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/velotric-t1-high-step-review/", "quote": ""}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://www.velotricbike.com/products/velotric-t1-ebike", "quote": "Max Speed ⟶ 20 MPH, Class 1", "basis": "ships Class 1 (20 mph, no throttle); unlockable to 25 mph"},
+   {"kind": "review", "value": 1, "url": "https://electricbikereport.com/velotric-t1-high-step-review/", "quote": "CLASS 1 E-BIKE: ⟶ PEDAL ASSIST UP TO 20 MPH"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.velotricbike.com/products/velotric-t1-ebike", "quote": "Max Speed ⟶ 20 MPH, Class 1 | Default Speed (Unlock) ⟶ 25 MPH", "basis": "adjustable to 25 mph"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/velotric-t1-high-step-review/", "quote": "CLASS 1 E-BIKE: ⟶ PEDAL ASSIST UP TO 20 MPH", "basis": "adjustable to 25 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 45, "url": "https://www.velotricbike.com/products/velotric-t1-ebike", "quote": "Motor Hub ⟶ 350W, Peak 600W, 45Nm"},
+   {"kind": "review", "value": 45, "url": "https://electricbikereport.com/velotric-t1-high-step-review/", "quote": "Motor: 350W, Peak 600W, 45Nm Velopower E35 ⟶ Controller: 16.6 amp"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 352.8, "url": "https://www.velotricbike.com/products/velotric-t1-ebike", "quote": "Battery ⟶ 36V, 9.8Ah, 352.8Wh"},
+   {"kind": "review", "value": 352.8, "url": "https://electricbikereport.com/velotric-t1-high-step-review/", "quote": "Battery: 36V, 9.8Ah, 352.8Wh, Samsung 21700 cells ⟶ Charger: 36V, 2.0A, Operates on 100V-240V AC, 50-60Hz"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "70", "url": "https://www.velotricbike.com/products/velotric-t1-ebike", "quote": "Max Range ⟶ Up to 70 miles"},
+   {"kind": "review", "value": "52", "url": "https://electricbikereport.com/velotric-t1-high-step-review/", "quote": "Range: Up to 52 miles (claimed) ⟶ Throttle:Not Included", "basis": "claimed range at time of review; tested 30.8 mi at max power"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 36, "url": "https://www.velotricbike.com/products/velotric-t1-ebike", "quote": "Bike Weight ⟶ 36lbs"},
+   {"kind": "review", "value": 37, "url": "https://electricbikereport.com/velotric-t1-high-step-review/", "quote": "Claimed weight: 36lbs. (37 lbs actual) ⟶ Rider height range: 5’-1” to 6’-0”", "basis": "measured"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 330, "url": "https://www.velotricbike.com/products/velotric-t1-ebike", "quote": "Max Bike Load ⟶ 330lbs"},
+   {"kind": "review", "value": 330, "url": "https://electricbikereport.com/velotric-t1-high-step-review/", "quote": "Maximum load on the optional rear rack: 39 lbs ⟶ Total payload capacity: 330 lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "350W rear hub (600W peak)", "url": "https://www.velotricbike.com/products/velotric-t1-ebike", "quote": "Motor Hub ⟶ 350W, Peak 600W, 45Nm"},
+   {"kind": "review", "value": "350W geared hub (600W peak)", "url": "https://electricbikereport.com/velotric-t1-high-step-review/", "quote": "Motor: 350W, Peak 600W, 45Nm Velopower E35 ⟶ Controller: 16.6 amp"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'6\"-6'5\"", "url": "https://www.velotricbike.com/products/velotric-t1-ebike", "quote": "Height\t5'6'' ~ 6'0''\tSeat Tube Length\t480mm\tHead Tube Length\t115mm | Height\t5'10'' ~ 6'5''\tSeat Tube Length\t525mm\tHead Tube Length\t135mm", "basis": "across M (5'6\"-6'0\") and L (5'10\"-6'5\") sizes"},
+   {"kind": "review", "value": "5'1\"-6'0\"", "url": "https://electricbikereport.com/velotric-t1-high-step-review/", "quote": "Claimed weight: 36lbs. (37 lbs actual) ⟶ Rider height range: 5’-1” to 6’-0”"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": null, "url": "https://www.velotricbike.com/products/velotric-t1-ebike", "quote": ""},
+   {"kind": "review", "value": "No", "url": "https://electricbikereport.com/velotric-t1-high-step-review/", "quote": "Frame: 6061 Triple-Butted Aluminum Alloy Frame, Integrated Cable Routing, Internal Battery, Flat Mount Disc, Rack and Fenders Compatible ⟶ Drivetrain: 8-Speed Mixed Shimano/Prowheel w/ 42T Chainring and 11-32T Cassette"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Independent source is Electric Bike Report's T1 High Step review (same T1 model; EBR only has the different T1 ST Plus). Its claimed range (52 mi) and rider height (5'1\"-6'0\") differ from the maker's current 70 mi and M/L sizes 5'6\"-6'5\". Maker labels the unlocked 25 mph oddly as 'Default Speed (Unlock)'; 20 mph Class 1 is the shipped setting. No price on the review page. Maker page has no folding line."}

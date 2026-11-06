@@ -1,0 +1,47 @@
+{"bike": "Troxus|Trax Plus 500/15", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2199, "url": "https://www.troxusmobility.com/products/trax-plus-commuter-e-bike-500w-15ah-plus", "quote": "Sale price | $1,599.00 USD | Regular price | $2,199"},
+   {"kind": "retailer", "value": 1899, "url": "https://www.sportsbasement.com/products/trax-plus-step-thru-500-15?variant=40571629895752", "quote": "$1,899.00 ⟶ Zero interestor as low as $119/mo with Affirm. See if you qualify"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://www.troxusmobility.com/products/trax-plus-commuter-e-bike-500w-15ah-plus", "quote": "Class 3 eBike ⟶ As Sold"},
+   {"kind": "retailer", "value": 3, "url": "https://www.sportsbasement.com/products/trax-plus-step-thru-500-15?variant=40571629895752", "quote": "TOP SPEED: CLASS 3: TOP SPEED 28 MPH"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.troxusmobility.com/products/trax-plus-commuter-e-bike-500w-15ah-plus", "quote": "Max Speed\tUp To 20 MPH on Throttle / Up To 28 MPH on Pedal Assist"},
+   {"kind": "retailer", "value": 28, "url": "https://www.sportsbasement.com/products/trax-plus-step-thru-500-15?variant=40571629895752", "quote": "TOP SPEED: CLASS 3: TOP SPEED 28 MPH"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 65, "url": "https://www.troxusmobility.com/products/trax-plus-commuter-e-bike-500w-15ah-plus", "quote": "Motor\tAnanda® 48V/500W Hub-Drive Motor, 65Nm Max. Torque"},
+   {"kind": "retailer", "value": 65, "url": "https://www.sportsbasement.com/products/trax-plus-step-thru-500-15?variant=40571629895752", "quote": "BATTERY: LITHIUM ION, 48V/15AH ⟶ MAX TORQUE: 65NM"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 720, "url": "https://www.troxusmobility.com/products/trax-plus-commuter-e-bike-500w-15ah-plus", "quote": "Battery\tUL-2271 Certified / Internal / Removable / Lithium Ion, 48V/15Ah (720Wh) with Samsung® Cells"},
+   {"kind": "retailer", "value": 720, "url": "https://www.sportsbasement.com/products/trax-plus-step-thru-500-15?variant=40571629895752", "quote": "Battery\tUL-2271 Certified / Internal / Removable / Lithium Ion, 48V/15Ah (720Wh) with Samsung® Cells"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "70", "url": "https://www.troxusmobility.com/products/trax-plus-commuter-e-bike-500w-15ah-plus", "quote": "Range\tUp To 70 Miles Per Charge"},
+   {"kind": "retailer", "value": "70", "url": "https://www.sportsbasement.com/products/trax-plus-step-thru-500-15?variant=40571629895752", "quote": "MOTOR: ANANDA 48V/500W HUB-DRIVE ⟶ RANGE: UP TO 70 MILES"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 68.5, "url": "https://www.troxusmobility.com/products/trax-plus-commuter-e-bike-500w-15ah-plus", "quote": "Net Weight\t68.5 lbs"},
+   {"kind": "retailer", "value": 68.5, "url": "https://www.sportsbasement.com/products/trax-plus-step-thru-500-15?variant=40571629895752", "quote": "Weight Limit\tMaximum Load: 383 lbs ⟶ Net Weight\t68.5 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 383, "url": "https://www.troxusmobility.com/products/trax-plus-commuter-e-bike-500w-15ah-plus", "quote": "Weight Limit\tMaximum Load: 383 lbs"},
+   {"kind": "retailer", "value": 383, "url": "https://www.sportsbasement.com/products/trax-plus-step-thru-500-15?variant=40571629895752", "quote": "Range\tUp To 70 Miles Per Charge ⟶ Weight Limit\tMaximum Load: 383 lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W rear hub", "url": "https://www.troxusmobility.com/products/trax-plus-commuter-e-bike-500w-15ah-plus", "quote": "Rear Hub\t48V 500W/ 28 MPH. 65Nm"},
+   {"kind": "retailer", "value": "500W rear hub", "url": "https://www.sportsbasement.com/products/trax-plus-step-thru-500-15?variant=40571629895752", "quote": "Rear Hub\t48V 500W/ 28 MPH. 65Nm ⟶ Rims\tAlloy Single Wall Front / Double Wall Rear, 36H, 27.5\"x2.2\", w/ Eyelets"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://www.troxusmobility.com/products/trax-plus-commuter-e-bike-500w-15ah-plus", "quote": "Frame Size\tSmall / 15\"\tMedium / 17\"\tLarge / 20\""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.troxusmobility.com/products/trax-plus-commuter-e-bike-500w-15ah-plus", "quote": "Frame\tHydroformed Aluminum Frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page shows 'Only 5 Left' with sale $1,599; regular $2,199. Sports Basement (Step-Thru 500/15) lists $1,899 with no crossed-out price. Maker gives frame sizes but no rider height range. No review found on EBR/EBReport for this exact model; used one WebSearch to find the retailer."}

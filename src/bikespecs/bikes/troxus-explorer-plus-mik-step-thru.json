@@ -1,0 +1,46 @@
+{"bike": "Troxus|Explorer Plus MIK (Step-Thru)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2299, "url": "https://www.troxusmobility.com/products/explorer-plus-step-thru-e-bike-mik-version", "quote": "Regular price ⟶ $2,299", "basis": "crossed-out regular price; sale price $1,499"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://www.troxusmobility.com/products/explorer-plus-step-thru-e-bike-mik-version", "quote": "Class 3 eBike ⟶ As Sold", "basis": "maker says Class 3 as sold; 28 mph pedal assist"},
+   {"kind": "retailer", "value": 2, "url": "https://www.sportsbasement.com/products/explorer-plus-step-thru", "quote": "TOP SPEED: CLASS 2: UP TO 28MPH WITH PEDAL ASSIST, UP TO 20MPH WITH THROTTLE ASSIST", "basis": "non-MIK Explorer Plus Step-Thru listing; text says Class 2 yet 28 mph pedal assist"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.troxusmobility.com/products/explorer-plus-step-thru-e-bike-mik-version", "quote": "Max Speed\tUp To 20 MPH on Throttle / Up To 28 MPH on Pedal Assist ⟶ Range\tUp To 90 Miles Per Charge"},
+   {"kind": "retailer", "value": 28, "url": "https://www.sportsbasement.com/products/explorer-plus-step-thru", "quote": "Max Speed\tUp To 20 MPH on Throttle / 28 MPH on Pedal Assist ⟶ Range\tUp To 90 Miles Per Charge", "basis": "non-MIK Explorer Plus Step-Thru listing"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 86, "url": "https://www.troxusmobility.com/products/explorer-plus-step-thru-e-bike-mik-version", "quote": "Motor\tBafang® 48V/750W Hub-Drive Motor, 86Nm Max. Torque"},
+   {"kind": "retailer", "value": 86, "url": "https://www.sportsbasement.com/products/explorer-plus-step-thru", "quote": "BATTERY: 48V/20AH (960WH) ⟶ MAX TORQUE: 86 NM", "basis": "non-MIK Explorer Plus Step-Thru listing"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 960, "url": "https://www.troxusmobility.com/products/explorer-plus-step-thru-e-bike-mik-version", "quote": "Battery\tUL-2271 Certified / Internal / Removable / Lithium Ion, 48V/20Ah (960Wh) with Samsung® Cells"},
+   {"kind": "retailer", "value": 960, "url": "https://www.sportsbasement.com/products/explorer-plus-step-thru", "quote": "BATTERY: 48V/20AH (960WH) ⟶ MAX TORQUE: 86 NM", "basis": "non-MIK Explorer Plus Step-Thru listing"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "90", "url": "https://www.troxusmobility.com/products/explorer-plus-step-thru-e-bike-mik-version", "quote": "Range\tUp To 90 Miles Per Charge ⟶ Weight Limit\tMaximum Load: 400 lbs; Maximum Rear Rack Capacity: 100 lbs", "basis": "up to"},
+   {"kind": "retailer", "value": "90", "url": "https://www.sportsbasement.com/products/explorer-plus-step-thru", "quote": "MOTOR: BAFANG® 48V/750W ⟶ RANGE: UP TO 90 MILES", "basis": "up to; non-MIK Explorer Plus Step-Thru listing"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 83.8, "url": "https://www.troxusmobility.com/products/explorer-plus-step-thru-e-bike-mik-version", "quote": "Weight Limit\tMaximum Load: 400 lbs; Maximum Rear Rack Capacity: 100 lbs ⟶ Net Weight\t83.8 lbs"},
+   {"kind": "retailer", "value": 83.8, "url": "https://www.sportsbasement.com/products/explorer-plus-step-thru", "quote": "Weight Limit\tMaximum Load: 400 lbs ⟶ Net Weight\t83.8 lbs", "basis": "non-MIK Explorer Plus Step-Thru listing"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 400, "url": "https://www.troxusmobility.com/products/explorer-plus-step-thru-e-bike-mik-version", "quote": "Range\tUp To 90 Miles Per Charge ⟶ Weight Limit\tMaximum Load: 400 lbs; Maximum Rear Rack Capacity: 100 lbs"},
+   {"kind": "retailer", "value": 400, "url": "https://www.sportsbasement.com/products/explorer-plus-step-thru", "quote": "Range\tUp To 90 Miles Per Charge ⟶ Weight Limit\tMaximum Load: 400 lbs", "basis": "non-MIK Explorer Plus Step-Thru listing"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub", "url": "https://www.troxusmobility.com/products/explorer-plus-step-thru-e-bike-mik-version", "quote": "Rear Hub\tBafang® 48V 750W/ 28 MPH. 86Nm ⟶ Rims\tAlloy Single Wall Front / Double Wall Rear, 36H, 26\"x4.0\", w/ Eyelets"},
+   {"kind": "retailer", "value": "750W rear hub", "url": "https://www.sportsbasement.com/products/explorer-plus-step-thru", "quote": "Rear Hub\tBafang® 48V 750W/ 28 MPH. 86Nm ⟶ Rims\tAlloy Single Wall Front / Double Wall Rear, 36H, 26\"x4.0\", w/ Eyelets", "basis": "non-MIK Explorer Plus Step-Thru listing"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://www.troxusmobility.com/products/explorer-plus-step-thru-e-bike-mik-version", "quote": "Frame Size\tSmall / 16.5\"\tMedium / 18.0\" ⟶ Wheel Size\t26x4.0\"\t26x4.0\"", "basis": "two frame sizes; no rider height range given (maker size chart page also has none)"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.troxusmobility.com/products/explorer-plus-step-thru-e-bike-mik-version", "quote": "Frame\t6061-T6 Aluminum Step-Thru Frame ⟶ Fork\tFront Suspension Fork, 90mm Travel", "basis": "non-folding frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Independent source is Sports Basement's 'Explorer Plus Step-Thru' listing, which is the non-MIK version (rack 'Semi-Integrated Alloy Rear Model' instead of MIK rack); electrical specs, weight and load match the MIK page exactly, but drop it if only exact-variant pages count. No dedicated MIK review found (one WebSearch used). Class conflict: maker says 'Class 3 eBike As Sold'; Sports Basement says 'CLASS 2' while listing 28 mph pedal assist. Maker sale price $1,499; regular $2,299. Sports Basement price $2,499 is for the non-MIK version. Maker size chart page (troxusmobility.com/pages/size-chart-explorer-plus-step-thru) has geometry only, no rider heights."}

@@ -1,0 +1,59 @@
+{"bike": "Velotric|Nomad 1 Plus", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1899, "url": "https://www.velotricbike.com/products/velotric-nomad-1", "quote": "$1,899.00", "basis": "only price shown for this bike, no crossed-out price; page says the bike is no longer available"},
+   {"kind": "review", "value": 1799, "url": "https://electricbikereview.com/velotric/nomad-1-plus-review/", "quote": "PRICE: ⟶ $1799", "basis": "price at time of review; review pros also say \"At $1,399\""},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/velotric-nomad-1-review/", "quote": ""}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.velotricbike.com/products/velotric-nomad-1", "quote": "·  48V 14.4Ah, 750W Class 2 with Throttle Assist. ⟶ ·  5-level pedal assist, Walk mode, USB charging.", "basis": "maker also says \"Its max speed adjustable range is now 12-28mph, so you can switch from Class 1 to 3 easily!\"; ships at 20 mph with throttle per EBReport"},
+   {"kind": "review", "value": 3, "url": "https://electricbikereview.com/velotric/nomad-1-plus-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 3", "basis": "max adjustable setting"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/velotric-nomad-1-review/", "quote": "The Nomad 1 Plus ships with a 20 mph speed limit on its throttle and PAS, but its speeds can range from 12 mph to 28 mph when adjusted through the display menu. ⟶ The proprietary 750W rear hub motor packs 75Nm of torque and peaks at 1200W.", "basis": "ships at 20 mph with throttle = Class 2; lists Class 1, 2 and 3"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.velotricbike.com/products/velotric-nomad-1", "quote": "Its max speed adjustable range is now 12-28mph, so you can switch from Class 1 to 3 easily! ⟶ Velotric in Life: Why Thousands Love Their Ebikes", "basis": "max adjustable; maker states no default speed but calls it Class 2"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/velotric/nomad-1-plus-review/", "quote": "TOP SPEED: ⟶ 28 MPH mph", "basis": "max adjustable, not default"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/velotric-nomad-1-review/", "quote": "The Nomad 1 Plus ships with a 20 mph speed limit on its throttle and PAS, but its speeds can range from 12 mph to 28 mph when adjusted through the display menu. ⟶ The proprietary 750W rear hub motor packs 75Nm of torque and peaks at 1200W.", "basis": "default; adjustable to 28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 75, "url": "https://www.velotricbike.com/products/velotric-nomad-1", "quote": "Motor Hub ⟶ 48V, 750W, max torque 75Nm"},
+   {"kind": "review", "value": 75, "url": "https://electricbikereview.com/velotric/nomad-1-plus-review/", "quote": "MOTOR TORQUE: ⟶ 75 Newton meters"},
+   {"kind": "review", "value": 75, "url": "https://electricbikereport.com/velotric-nomad-1-review/", "quote": "Motor: 48V, 750W, max torque 75Nm ⟶ Headlight:High output integrated LED, 60LUX, adjustable angle"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 691, "url": "https://www.velotricbike.com/products/velotric-nomad-1", "quote": "Battery ⟶ 48V, 691Wh, UL 2271 Recognized"},
+   {"kind": "review", "value": 691, "url": "https://electricbikereview.com/velotric/nomad-1-plus-review/", "quote": "BATTERY WATT HOURS: ⟶ 691 wh"},
+   {"kind": "review", "value": 691, "url": "https://electricbikereport.com/velotric-nomad-1-review/", "quote": "Battery:48V, 691Wh, UL 2271 Recognized"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "55", "url": "https://www.velotricbike.com/products/velotric-nomad-1", "quote": "Pedal Assist Range ⟶ 55 miles"},
+   {"kind": "review", "value": "55", "url": "https://electricbikereview.com/velotric/nomad-1-plus-review/", "quote": "Range ⟶ Estimated Range (from Velotric): 55 miles", "basis": "maker claim; tested PAS 1: 52 miles, PAS 5: 26 miles"},
+   {"kind": "review", "value": "55", "url": "https://electricbikereport.com/velotric-nomad-1-review/", "quote": "Claimed Range: 55 Miles (Pedal Assist), 52 Miles (Throttle) ⟶ Throttle:Thumb-control, removable"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 71, "url": "https://www.velotricbike.com/products/velotric-nomad-1", "quote": "Bike Weight ⟶ High-step 71lbs / Step-thru 70lbs", "basis": "high-step 71 lbs; step-thru 70 lbs; maker doesn't say whether battery is included"},
+   {"kind": "review", "value": 71, "url": "https://electricbikereview.com/velotric/nomad-1-plus-review/", "quote": "TOTAL WEIGHT: ⟶ 71 lbs (32.21 kg)", "basis": "total weight; cons say \"At 74 lbs, the bike is heavy\""},
+   {"kind": "review", "value": 71, "url": "https://electricbikereport.com/velotric-nomad-1-review/", "quote": "Claimed weight: 71 lbs ⟶ Tested Weight: 85 lbs", "basis": "claimed; tested 85 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 440, "url": "https://www.velotricbike.com/products/velotric-nomad-1", "quote": "Max Bike Load ⟶ 440lbs"},
+   {"kind": "review", "value": 440, "url": "https://electricbikereview.com/velotric/nomad-1-plus-review/", "quote": "Sturdy frame with a load capacity of 440 lbs, making it suitable for heavier riders or carrying extra gear."},
+   {"kind": "review", "value": 440, "url": "https://electricbikereport.com/velotric-nomad-1-review/", "quote": "Total payload capacity: 440 lbs ⟶ COMPONENTS & ACCESSORIES"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub", "url": "https://www.velotricbike.com/products/velotric-nomad-1", "quote": "Motor Hub ⟶ 48V, 750W, max torque 75Nm", "basis": "maker gives no peak; rear hub per reviews"},
+   {"kind": "review", "value": "750W rear hub", "url": "https://electricbikereview.com/velotric/nomad-1-plus-review/", "quote": "The Velotric Nomad 1 Plus comes equipped with a 48V, 750W rear hub motor that delivers a maximum of 75 Nm of torque. That’s a solid amount of power for a fat tire e-bike, and paired with the cadence sensor, it offers smooth, gradual acceleration."},
+   {"kind": "review", "value": "750W rear hub (1,200W peak)", "url": "https://electricbikereport.com/velotric-nomad-1-review/", "quote": "The proprietary 750W rear hub motor packs 75Nm of torque and peaks at 1200W."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'9\"", "url": "https://www.velotricbike.com/products/velotric-nomad-1", "quote": "User Height Range ⟶ Step-Thru: 5'1'' - 6'4'' / High-Step: 5'6'' - 6'9''\"", "basis": "across both frames: step-thru 5'1\"-6'4\", high-step 5'6\"-6'9\""},
+   {"kind": "review", "value": "5'1\"-6'9\"", "url": "https://electricbikereview.com/velotric/nomad-1-plus-review/", "quote": "Step-Thru: 5'1'' - 6'4'' High-Step: 5'6'' - 6'9''\" ⟶ FRAME TYPES:"},
+   {"kind": "review", "value": "5'1\"-6'9\"", "url": "https://electricbikereport.com/velotric-nomad-1-review/", "quote": "With two frame styles (high-step and step-thru) and an adjustable stem, the Nomad fits a broad range of riders from 5’1” to 6’9”!"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.velotricbike.com/products/velotric-nomad-1", "quote": "·  Frame with Fully-integrated Battery Design. ⟶ ·  Hydraulic Disc Brakes. Shimano 8-speed.", "basis": "rigid fat-tire frame (high-step / step-thru); no folding mentioned"},
+   {"kind": "review", "value": "No", "url": "https://electricbikereport.com/velotric-nomad-1-review/", "quote": "With two frame styles (high-step and step-thru) and an adjustable stem, the Nomad fits a broad range of riders from 5’1” to 6’9”!", "basis": "non-folding frames"}
+  ]
+ },
+ "status": {"sources": [{"kind": "maker", "value": "discontinued", "url": "https://www.velotricbike.com/products/velotric-nomad-1", "quote": "Velotric Nomad 1 Plus is no longer available. But don't worry, we've got something even better for you!"}]},
+ "notes": "Maker page says the bike is no longer available and shows $1,899.00 with no crossed-out price for it. Maker calls it '750W Class 2 with Throttle Assist' and gives an adjustable 12-28 mph range; EBReport confirms it ships at 20 mph (Class 2). EBR lists Class 3 / 28 mph (max). Maker gives no peak watts; EBReport says 1200W peak. Maker weight: high-step 71 / step-thru 70 lbs (recorded 71). Maker height range combines step-thru 5'1\"-6'4\" and high-step 5'6\"-6'9\"; EBReport spec box says 5'1\"-6'4\" (step-thru) but text says 5'1\" to 6'9\"."}

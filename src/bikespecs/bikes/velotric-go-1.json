@@ -1,0 +1,49 @@
+{"bike": "Velotric|Go 1", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1699, "url": "https://www.velotricbike.com/products/velotric-go-1-e-bike", "quote": "$1,699.00", "basis": "only price shown, no crossed-out price; page says the bike is no longer available"},
+   {"kind": "review", "value": 1699, "url": "https://electrek.co/2023/09/27/velotric-go-electric-utility-bike-review/", "quote": "Price: US $1,699"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.velotricbike.com/products/velotric-go-1-e-bike", "quote": "Default Speed ⟶ 20 MPH, Class 2", "basis": "ships Class 2; unlockable to 25 mph (\"Max Speed (Unlock) ⟶ 25 MPH\")"},
+   {"kind": "review", "value": 2, "url": "https://electrek.co/2023/09/27/velotric-go-electric-utility-bike-review/", "quote": "The 20 mph (32 km/h) speed limit keeps the bike in Class 2 designation, though you do have the option of unlocking 25 mph (40 km/h) speeds if you find that 20 isn’t quite fast enough for you."}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.velotricbike.com/products/velotric-go-1-e-bike", "quote": "Top Speed: 25MPH (unlocked) | 20 MPH (default) ⟶ Max Range: 55 Miles", "basis": "default; adjustable to 25 mph"},
+   {"kind": "review", "value": 20, "url": "https://electrek.co/2023/09/27/velotric-go-electric-utility-bike-review/", "quote": "Top speed: 20 mph (32 km/h) or 25 mph (40 km/h) when unlocked ⟶ Range: Up to 55 miles (88 km)", "basis": "default; adjustable to 25 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 65, "url": "https://www.velotricbike.com/products/velotric-go-1-e-bike", "quote": "Motor Hub ⟶ 500W (Peak 900W), 65Nm"},
+   {"kind": "review", "value": null, "url": "https://electrek.co/2023/09/27/velotric-go-electric-utility-bike-review/", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 691.2, "url": "https://www.velotricbike.com/products/velotric-go-1-e-bike", "quote": "Battery ⟶ 48V, 14.4Ah, 691.2Wh"},
+   {"kind": "review", "value": 692, "url": "https://electrek.co/2023/09/27/velotric-go-electric-utility-bike-review/", "quote": "Battery: 48V 14.4Ah (692 Wh) ⟶ Weight: 65 lb (29.5 kg)"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "55", "url": "https://www.velotricbike.com/products/velotric-go-1-e-bike", "quote": "Pedal Assist Range ⟶ Up to 55 miles"},
+   {"kind": "review", "value": "55", "url": "https://electrek.co/2023/09/27/velotric-go-electric-utility-bike-review/", "quote": "Range: Up to 55 miles (88 km) ⟶ Battery: 48V 14.4Ah (692 Wh)"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 65, "url": "https://www.velotricbike.com/products/velotric-go-1-e-bike", "quote": "Bike Weight ⟶ 65lbs (29.4kg)", "basis": "maker doesn't say whether battery is included"},
+   {"kind": "review", "value": 65, "url": "https://electrek.co/2023/09/27/velotric-go-electric-utility-bike-review/", "quote": "Weight: 65 lb (29.5 kg) ⟶ Payload capacity: 440 lb (200 kg)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 440, "url": "https://www.velotricbike.com/products/velotric-go-1-e-bike", "quote": "Max Bike Load ⟶ 440lbs", "basis": "page summary calls it \"Total Payload Capacity: 440 LBS\"; rear rack 120 lbs"},
+   {"kind": "review", "value": 440, "url": "https://electrek.co/2023/09/27/velotric-go-electric-utility-bike-review/", "quote": "Payload capacity: 440 lb (200 kg) ⟶ Tires: 26 x 2.4″ (front) and 20 x 3.0″ (rear)"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W rear hub (900W peak)", "url": "https://www.velotricbike.com/products/velotric-go-1-e-bike", "quote": "Motor Hub ⟶ 500W (Peak 900W), 65Nm", "basis": "rear hub per Electrek"},
+   {"kind": "review", "value": "500W rear geared hub (900W peak)", "url": "https://electrek.co/2023/09/27/velotric-go-electric-utility-bike-review/", "quote": "Motor: 500W (900W peak) rear-geared hub motor ⟶ Top speed: 20 mph (32 km/h) or 25 mph (40 km/h) when unlocked"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'0\"-6'6\"", "url": "https://www.velotricbike.com/products/velotric-go-1-e-bike", "quote": "Rear Cargo Capacity: 120 LBS ⟶ Fits Riders: 5’0” - 6’6”"},
+   {"kind": "review", "value": null, "url": "https://electrek.co/2023/09/27/velotric-go-electric-utility-bike-review/", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.velotricbike.com/products/velotric-go-1-e-bike", "quote": "Frame: 6061 Aluminum, integrated wiring, removable battery ⟶ Sensor: Speed", "basis": "rigid compact utility frame; no folding mentioned"},
+   {"kind": "review", "value": "No", "url": "https://electrek.co/2023/09/27/velotric-go-electric-utility-bike-review/", "quote": "But as it stands, the bike feels like a solid entry as-is. I can always wish for more, but at a certain point you just have to appreciate a nice design for what it is. They give us a lot, with a great frame, passenger capabilities, location tracking, 4-piston brakes, Class 3 capabilities, and more.", "basis": "non-folding utility frame"}
+  ]
+ },
+ "status": {"sources": [{"kind": "maker", "value": "discontinued", "url": "https://www.velotricbike.com/products/velotric-go-1-e-bike", "quote": "Velotric Go 1 is no longer available. But don't worry, we've got smething even better for you!"}]},
+ "notes": "Maker page says the bike is no longer available; shows $1,699.00 with no crossed-out price. Not on electricbikereview or electricbikereport; used one WebSearch to find the Electrek review (2023). Ships Class 2 at 20 mph, unlockable to 25 mph."}

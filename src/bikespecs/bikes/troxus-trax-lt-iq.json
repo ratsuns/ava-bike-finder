@@ -1,0 +1,46 @@
+{"bike": "Troxus|Trax LT iQ", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1799, "url": "https://www.troxusmobility.com/products/trax-lt-iq", "quote": "Regular price | $1,799.00 USD | Size"},
+   {"kind": "review", "value": 1799, "url": "https://bicycleretailer.com/new-products/2026/07/22/new-troxus-e-bike-models-feature-ride-iq", "quote": "The $1,799 MSRP Trax LT iQ builds on Troxus' Trax LT platform."}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.troxusmobility.com/products/trax-lt-iq", "quote": "Class 1/2/3 eBike ⟶ As Sold", "basis": "Class 1/2/3; ships at 20 mph with throttle = Class 2"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.troxusmobility.com/products/trax-lt-iq", "quote": "20 mph ⟶ Max Speed", "basis": "adjustable to 28 mph"},
+   {"kind": "maker", "value": 20, "url": "https://www.troxusmobility.com/products/trax-lt-iq", "quote": "Max Speed\tMax Speed Up To 20 MPH on Throttle / Up To 28 MPH on Pedal Assist", "basis": "adjustable to 28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 50, "url": "https://www.troxusmobility.com/products/trax-lt-iq", "quote": "Motor\tJiabo® 48V 500w+ Peak Power Hub-Drive Motor, 50Nm. Peak Torque"},
+   {"kind": "review", "value": 50, "url": "https://bicycleretailer.com/new-products/2026/07/22/new-troxus-e-bike-models-feature-ride-iq", "quote": "The bike has a Jiabo 500W Hub-Drive motor providing a maximum of 50Nm Torque."}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 480, "url": "https://www.troxusmobility.com/products/trax-lt-iq", "quote": "Battery\tUL-2271 Certified / Internal / Removable / Lithium Ion, 48V/10Ah (480Wh) with Samsung® Cells"},
+   {"kind": "review", "value": 480, "url": "https://bicycleretailer.com/new-products/2026/07/22/new-troxus-e-bike-models-feature-ride-iq", "quote": "It comes with a 48V / 10Ah (480Wh) battery with Samsung Cells (w/ Optional 240Wh Piggy-Back Battery)."}
+  ],
+  "range": [
+   {"kind": "maker", "value": "55", "url": "https://www.troxusmobility.com/products/trax-lt-iq", "quote": "Range\tUp To 55 Miles Per Charge/ Up to 80+ Miles w/Extra Battery"},
+   {"kind": "review", "value": null, "url": "https://bicycleretailer.com/new-products/2026/07/22/new-troxus-e-bike-models-feature-ride-iq", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 57, "url": "https://www.troxusmobility.com/products/trax-lt-iq", "quote": "Net Weight\t57 lbs"},
+   {"kind": "review", "value": null, "url": "https://bicycleretailer.com/new-products/2026/07/22/new-troxus-e-bike-models-feature-ride-iq", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": 285, "url": "https://www.troxusmobility.com/products/trax-lt-iq", "quote": "Weight Limit\tMaximum Load: 285 lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W rear hub", "url": "https://www.troxusmobility.com/products/trax-lt-iq", "quote": "Rear Hub\tJiabo® 48V 500W/ 20 MPH, 50Nm. Peak Torque"},
+   {"kind": "review", "value": "500W hub", "url": "https://bicycleretailer.com/new-products/2026/07/22/new-troxus-e-bike-models-feature-ride-iq", "quote": "The bike has a Jiabo 500W Hub-Drive motor providing a maximum of 50Nm Torque."}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://www.troxusmobility.com/products/trax-lt-iq", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.troxusmobility.com/products/trax-lt-iq", "quote": "Frame\tHydroformed Aluminum Step-Thru Lightweight Frame"},
+   {"kind": "review", "value": "No", "url": "https://bicycleretailer.com/new-products/2026/07/22/new-troxus-e-bike-models-feature-ride-iq", "quote": "It has 30 Lux Front Light and Rear Light, a hydroformed aluminum frame, Zoom 65mm suspension fork, Tektro hydraulic brakes, Shimano Altus 8-speed drivetain and Kenda Kwick Seven 27.5x2.2-inch tires."}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page says 'Class 1/2/3 eBike As Sold' with 20 mph max speed; spec table says pedal assist up to 28 mph, so cls 2, spd 20 adjustable to 28. Maker gives no rider height range. Only independent source found is a Bicycle Retailer news item (via one WebSearch); EBR/EBReport/N+1/Best Buy had no LT iQ, Northbound Outfitters dealer page was behind a Cloudflare bot check."}

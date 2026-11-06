@@ -1,0 +1,52 @@
+{"bike": "Yuba|Fast Rack", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 3999, "url": "https://yubabikes.com/product/fastrack/", "quote": "Original price was: $3,999.00.", "basis": "crossed-out regular price; on sale for $3,199.99"},
+   {"kind": "retailer", "value": 3999.99, "url": "https://mikesbikes.com/products/yuba-fastrack-2025", "quote": "Regular price ⟶ $3,999.99"},
+   {"kind": "review", "value": 3999, "url": "https://gearjunkie.com/biking/yuba-fastrack-cargo-ebike-review", "quote": "The Yuba FastRack has an MSRP of $3,999; (photo/Toby Hill)"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://yubabikes.com/product/fastrack/", "quote": "", "basis": "class not stated on product page"},
+   {"kind": "review", "value": 1, "url": "https://gearjunkie.com/biking/yuba-fastrack-cargo-ebike-review", "quote": "The Yuba FastRack is a Class 1 e-bike, with pedal assist only (no throttle) topping out at 20 mph."}
+  ],
+  "spd": [
+   {"kind": "retailer", "value": 20, "url": "https://mikesbikes.com/products/yuba-fastrack-2025", "quote": "Max Assisted Speed ⟶ 20 MPH"},
+   {"kind": "review", "value": 20, "url": "https://gearjunkie.com/biking/yuba-fastrack-cargo-ebike-review", "quote": "The Yuba FastRack is a Class 1 e-bike, with pedal assist only (no throttle) topping out at 20 mph."},
+   {"kind": "maker", "value": null, "url": "https://yubabikes.com/product/fastrack/", "quote": ""}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://yubabikes.com/product/fastrack/", "quote": "Motor ⟶ Shimano Steps E7000 - 500Wh Battery", "basis": "no torque figure"},
+   {"kind": "review", "value": 60, "url": "https://gearjunkie.com/biking/yuba-fastrack-cargo-ebike-review", "quote": "The E7000 produces 60 Nm of peak torque and has three pedal-assist modes (Eco, Trail, and Boost)."}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 500, "url": "https://yubabikes.com/product/fastrack/", "quote": "Motor ⟶ Shimano Steps E7000 - 500Wh Battery"},
+   {"kind": "retailer", "value": 500, "url": "https://mikesbikes.com/products/yuba-fastrack-2025", "quote": "Battery\t500Wh Battery ⟶ Display/Controller"},
+   {"kind": "review", "value": 500, "url": "https://gearjunkie.com/biking/yuba-fastrack-cargo-ebike-review", "quote": "It uses a torque-sensing 250W Shimano STEPS E7000 mid-drive motor powered by a 500Wh external battery."}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://yubabikes.com/product/fastrack/", "quote": "", "basis": "no range on product page"},
+   {"kind": "review", "value": "45", "url": "https://gearjunkie.com/biking/yuba-fastrack-cargo-ebike-review", "quote": "And the 500Wh battery gave me 45 miles of range over 1,400 feet of total elevation gain.", "basis": "reviewer's tested range, mostly Eco and Boost"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 76, "url": "https://yubabikes.com/product/fastrack/", "quote": "Bike Weight ⟶ 76 lbs", "basis": "battery inclusion not stated"},
+   {"kind": "review", "value": 76, "url": "https://gearjunkie.com/biking/yuba-fastrack-cargo-ebike-review", "quote": "With the bare-bones FastRack already tipping the scales at 76 pounds"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 440, "url": "https://yubabikes.com/product/fastrack/", "quote": "Maximum load ⟶ 440 lbs"},
+   {"kind": "retailer", "value": 440, "url": "https://mikesbikes.com/products/yuba-fastrack-2025", "quote": "Carry up to 440 lbs: Carry everything you love: whether it’s passengers, groceries, a musical instrument, a pet, a surfboard, the possibilities are endless with our wide range of Add-Ons. Let your imagination run free!"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Shimano Steps E7000", "url": "https://yubabikes.com/product/fastrack/", "quote": "Motor ⟶ Shimano Steps E7000 - 500Wh Battery"},
+   {"kind": "review", "value": "250W Shimano STEPS E7000 mid-drive", "url": "https://gearjunkie.com/biking/yuba-fastrack-cargo-ebike-review", "quote": "It uses a torque-sensing 250W Shimano STEPS E7000 mid-drive motor powered by a 500Wh external battery."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'9\"-6'2\"", "url": "https://yubabikes.com/product/fastrack/", "quote": "Rider Height ⟶ 4 ft. 9 in - 6 ft. 2 in"},
+   {"kind": "retailer", "value": "4'9\"-6'2\"", "url": "https://mikesbikes.com/products/yuba-fastrack-2025", "quote": "Rider Height: 4 ft. 9 in - 6 ft. 2 in ⟶ SPECS:"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://yubabikes.com/product/fastrack/", "quote": "The bike that has it all: fold, position, ride!", "basis": "'fold' refers to the Dual Rack System's rack positions; frame does not fold (stores vertically)"},
+   {"kind": "review", "value": "No", "url": "https://gearjunkie.com/biking/yuba-fastrack-cargo-ebike-review", "quote": "The 20-inch-wheeled Yuba FastRack is built on a low-slung aluminum frame (23-inch step-over height)."}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker spells it 'FastRack'. Maker page on sale ($3,199.99; regular $3,999.00); Mike's Bikes regular $3,999.99, sale $2,999.95. Maker page states no class/speed/torque; Class 1, 20 mph and 60 Nm come from GearJunkie and Mike's Bikes. Maker's 'fold' wording is about the rack, not the frame. Used one WebSearch."}

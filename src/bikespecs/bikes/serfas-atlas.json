@@ -1,0 +1,5 @@
+{"bike": "Serfas|Atlas", "checked": "2026-11-06",
+ "fields": {"price": [], "cls": [], "spd": [], "tq": [], "wh": [], "range": [],
+            "wt": [], "load": [], "motor": [], "height": [], "fold": []},
+ "status": {"sources": []},
+ "notes": "NO SOURCES FOUND - all fields empty. The given maker link (serfas.com/shop/products/e-bike/cargo/atlas-750w) returns 404; serfas.com/products/atlas-750w and other handle guesses are 404; the old serfas.com/?p=73154 link now lands on the generic home page. Serfas's 'CARGO E-Bikes' collection now lists only the 'ATLAS Passenger Kit' accessory ($200), not the bike; the home page still has a '2024 ATLAS CARGO AVAILABLE NOW' banner. No pages found on 99 Spokes, Mike's Bikes, Electric Bike Report or via 1 WebSearch. The Wayback Machine (web.archive.org) isn't approved for the browser pane, so the archived maker page wasn't read. Worth asking Chris whether to approve web.archive.org or drop/replace this bike."}
