@@ -1,0 +1,48 @@
+{"bike": "Cannondale|Tesoro X 1", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 4600, "url": "https://www.cannondale.com/en-us/bikes/electric/e-touring/tesoro-neo-x/tesoro-neo-x-1", "quote": "$2,999$4,600 ⟶ You Save $1,601", "basis": "regular price $4,600; $2,999 is a sale price"},
+   {"kind": "retailer", "value": 4600, "url": "https://mikesbikes.com/products/cannondale-tesoro-x-1", "quote": "Regular price ⟶ $4,600.00", "basis": "regular price; on sale for $2,998.95"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://www.cannondale.com/en-us/bikes/electric/e-touring/tesoro-neo-x/tesoro-neo-x-1", "quote": "This e-bike drive system provides pedal assist up to a maximum speed of 28 mph. Above that, it’s all you. ⟶ Range up to 109 miles", "basis": "no class line; 28 mph pedal assist = Class 3"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.cannondale.com/en-us/bikes/electric/e-touring/tesoro-neo-x/tesoro-neo-x-1", "quote": "Bosch Performance Line Speed, 250W (28 mph) ⟶ Battery"},
+   {"kind": "retailer", "value": 28, "url": "https://mikesbikes.com/products/cannondale-tesoro-x-1", "quote": "Max Assisted Speed ⟶ 28 mph"},
+   {"kind": "retailer", "value": 28, "url": "https://www.n1bikes.com/products/tesoro-x-1?id=642575e4acc42afe185cb09ee17cb6528bc28d11a28a2bbe250764564512b402&variant=C66172U10XL", "quote": "Motor Assist Speed\t28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://www.cannondale.com/en-us/bikes/electric/e-touring/tesoro-neo-x/tesoro-neo-x-1", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/cannondale-tesoro-x-1", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 750, "url": "https://www.cannondale.com/en-us/bikes/electric/e-touring/tesoro-neo-x/tesoro-neo-x-1", "quote": "Battery ⟶ Bosch PowerTube, 750Wh"},
+   {"kind": "retailer", "value": 750, "url": "https://mikesbikes.com/products/cannondale-tesoro-x-1", "quote": "Motor\tBosch Performance Line Speed, 250W (28 mph) ⟶ Battery\tBosch PowerTube, 750Wh"},
+   {"kind": "retailer", "value": 750, "url": "https://www.n1bikes.com/products/tesoro-x-1?id=642575e4acc42afe185cb09ee17cb6528bc28d11a28a2bbe250764564512b402&variant=C66172U10XL", "quote": "Battery Capacity\t750Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "109", "url": "https://www.cannondale.com/en-us/bikes/electric/e-touring/tesoro-neo-x/tesoro-neo-x-1", "quote": "With up to 109 miles of range on a single charge, you’ve got the power to go anywhere and do anything. Have fun. Ride longer. ⟶ Free Yourself", "basis": "same page's highlights say 'Range: up to 105mi (170km)'"},
+   {"kind": "retailer", "value": "109", "url": "https://mikesbikes.com/products/cannondale-tesoro-x-1", "quote": "This e-bike is powered by Bosch’s new Smart System, featuring a huge 750Wh battery, Performance Line CX motor, LED remote and Kiox 300 display. Effortless acceleration, compelling versatility, and a range of up to 109 miles on a single charge."},
+   {"kind": "retailer", "value": "109", "url": "https://www.n1bikes.com/products/tesoro-x-1?id=642575e4acc42afe185cb09ee17cb6528bc28d11a28a2bbe250764564512b402&variant=C66172U10XL", "quote": "Range\tUp to 109 miles"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://www.cannondale.com/en-us/bikes/electric/e-touring/tesoro-neo-x/tesoro-neo-x-1", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/cannondale-tesoro-x-1", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.cannondale.com/en-us/bikes/electric/e-touring/tesoro-neo-x/tesoro-neo-x-1", "quote": "Integrated headtube running light, Tubus rear rack (25kg, Racktime SnapIt 1.0 compatible), Curana Apollo fenders, Axa Blueline 30 headlight / Blueline taillight, kickstand", "basis": "only the rear rack rating (25 kg) is given, not a bike max load"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Performance Line Speed, 250W", "url": "https://www.cannondale.com/en-us/bikes/electric/e-touring/tesoro-neo-x/tesoro-neo-x-1", "quote": "Bosch Performance Line Speed, 250W (28 mph) ⟶ Battery"},
+   {"kind": "retailer", "value": "Bosch Performance Line Speed, 250W", "url": "https://mikesbikes.com/products/cannondale-tesoro-x-1", "quote": "Motor\tBosch Performance Line Speed, 250W (28 mph) ⟶ Battery\tBosch PowerTube, 750Wh"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'4\"-6'8\"", "url": "https://www.cannondale.com/en-us/bikes/electric/e-touring/tesoro-neo-x/tesoro-neo-x-1", "quote": "Height - 5'4\" - 5'8\" | Height - 5'7\" - 6'0\" | Height - 6'0\" - 6'3\" | Height - 6'4\" - 6'8\"", "basis": "four size selectors (SM, MD, LG, XL) shown one at a time on the page; joined"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.cannondale.com/en-us/bikes/electric/e-touring/tesoro-neo-x/tesoro-neo-x-1", "quote": "Tesoro X, SmartForm C1 Alloy, removable downtube battery, fully internal cable routing, 135x9mm, belt-compatible dropout, flatmount disc, headtube waterbottle mounts, integrated daytime running light, HDT child seat/cargo mount compatible ⟶ Fork"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker regular $4,600, on sale $2,999 (N+1 Bikes shows only $2,999). Maker page contradicts itself on range (105 mi in highlights, 109 mi in feature text) and motor (spec 'Performance Line Speed, 250W', feature text 'Performance Line CX'). No torque, weight or max load anywhere. Independents are two dealers (Mike's Bikes, N+1 Bikes); no review found. No WebSearch used."}

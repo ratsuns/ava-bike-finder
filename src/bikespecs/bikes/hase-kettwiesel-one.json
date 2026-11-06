@@ -1,0 +1,45 @@
+{"bike": "Hase|Kettwiesel ONE", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": "from 8.600,– ⟶ Euros including VAT, excluding delivery", "basis": "EUR only, no USD price published"},
+   {"kind": "retailer", "value": 10210, "url": "https://newwheel.net/products/hase-kettwiesel-one-electric-trike", "quote": "Sale price ⟶ $10,210.00", "basis": "dealer price for its 'Kettwiesel One' option, which it lists with a Shimano E6100 60Nm drive (older spec than the maker's current EP6)"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://newwheel.net/products/hase-kettwiesel-one-electric-trike", "quote": ""}
+  ],
+  "spd": [
+   {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": ""},
+   {"kind": "review", "value": 15.5, "url": "https://newatlas.com/urban-transport/hase-bikes-kettwiesel-one", "quote": "The standard version ships with a Shimano Steps 6100 mid-drive motor, 504-Wh battery and Nexus 8-speed hub for assisted riding up to 25 km/h (15.5 mph), but there is a Plus version that promises more power under foot. The e-trike rolls on three 20-inch wheels, each wearing Schwalbe Marathon Plus tires, and stopping power is served up by a mechanical brake system to the front and hydraulic disc brakes out back.", "basis": "EU 25 km/h pedelec limit; launch-version article"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": "– Shimano EP6 Cargo, 85 Nm, 630 Wh, Shimano Inter-5E DI2 ⟶ ONE PLUS / ONE UP PLUS"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 630, "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": "– Shimano EP6 Cargo, 85 Nm, 630 Wh, Shimano Inter-5E DI2 ⟶ ONE PLUS / ONE UP PLUS"}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": ""},
+   {"kind": "retailer", "value": "50", "url": "https://newwheel.net/products/hase-kettwiesel-one-electric-trike", "quote": "Choose from a powerful and reliable Shimano mid-drive motor with either 60nm or 85nm of torque to get you up the steepest hills. Looking to take longer adventures, upgrade to a high capacity Shimano 630wh battery for up to 50 miles of range on a charge. ⟶ READY FOR A FRIEND", "basis": "\"up to\", with the 630wh battery"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 77, "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": "Weight ⟶ from 35 kg (77 lb)", "basis": "\"from\" (lightest configuration)"},
+   {"kind": "review", "value": 77, "url": "https://newatlas.com/urban-transport/hase-bikes-kettwiesel-one", "quote": "If storage space at home is in short supply, the front end of the latest Kettwiesel can be raised up to park on its rear wheels, and when compacted to 135 x 56 x 88 cm (53 x 26 x 34 in) – with the front wheel removed – it could even fit into the back of a hatchback car for between-ride transport. You might need some help getting it in and out though, as its weight is reported to be 35 kg (77 lb)."}
+  ],
+  "load": [
+   {"kind": "maker", "value": 309, "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": "140 kg (309 lb) ⟶ max. load, with adjustable suspension"},
+   {"kind": "review", "value": 309, "url": "https://newatlas.com/urban-transport/hase-bikes-kettwiesel-one", "quote": "Height, width and angle of the handlebar grips can also be changed. A 5-mm hex key is supplied with the trike for tweaking the suspension, grip position and boom length, and can be secured to the frame for tweaks while out and about. The new chassis is cushioned by adjustable MacPherson suspension, which offers 70 mm of travel and can handle loads of up to 140 kg (309 lb)."}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Shimano EP6 Cargo", "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": "– Shimano EP6 Cargo, 85 Nm, 630 Wh, Shimano Inter-5E DI2 ⟶ ONE PLUS / ONE UP PLUS"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "3'7\"-6'7\"", "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": "Height of rider ⟶ 1.10-2.00 m (3’7”-6’7”)"},
+   {"kind": "review", "value": "3'7\"-6'7\"", "url": "https://newatlas.com/urban-transport/hase-bikes-kettwiesel-one", "quote": "The trike's aluminum frame features a telescoping front boom that allows it to accommodate a wide range of riders – from youngsters of 1.10 m (3.6 ft) in height to seasoned giants standing 2 m (6.56 ft) tall. The seat tilt angle can be adjusted to suit individual needs, and even the seat itself can be swapped out in two steps."}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "Yes", "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": "It can be parked upright to save space or folded up for transport in a vehicle. ⟶ Re-imagined - down to the finest details"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Hase is German; maker page gives EUR price only and no US class/speed/range. The maker page covers ONE (Shimano EP6 Cargo, 85 Nm, 630 Wh) and ONE PLUS (Bosch CX) together; values here are for the ONE line. newwheel.net (US dealer) and New Atlas both describe an older spec of the ONE (Shimano E6100 60Nm, 504/640 Wh), so their motor/torque/battery figures were not recorded; New Atlas speed is the EU 25 km/h limit. Load 140 kg: maker doesn't say whether it's rider-only or total. Weight is 'from'. Trike (3 wheels), recumbent."}

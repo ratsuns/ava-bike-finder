@@ -1,0 +1,49 @@
+{"bike": "Bunch|The Original 4+", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 6499, "url": "https://bunchbike.com/products/the-original-4-upgraded-electric-cargo-bike-for-families", "quote": "Regular price ⟶ $6,499", "basis": "regular price for the default color (Sedona Woodgrain); on sale for $5,499. Other colors have higher regular prices ($6,599-$6,799; Custom Design $7,299)"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/bunch-bikes-the-original-review/", "quote": "", "basis": "review is of the earlier (2024) Original"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://bunchbike.com/products/the-original-4-upgraded-electric-cargo-bike-for-families", "quote": "Maximum Speed: 20mph", "basis": "maker gives no class; throttle ('Throttle: Wuxing 108XL side-pull thumb throttle') and 20 mph = Class 2"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/bunch-bikes-the-original-review/", "quote": "BIKE CLASS: CLASS 2 ⟶ CLASS 2: THROTTLE ASSIST, UP TO 20 MPH", "basis": "earlier (2024) Original; same 20 mph throttle setup"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://bunchbike.com/products/the-original-4-upgraded-electric-cargo-bike-for-families", "quote": "Maximum Speed: 20mph"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/bunch-bikes-the-original-review/", "quote": "BIKE CLASS: CLASS 2 ⟶ CLASS 2: THROTTLE ASSIST, UP TO 20 MPH", "basis": "earlier (2024) Original"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 45, "url": "https://bunchbike.com/products/the-original-4-upgraded-electric-cargo-bike-for-families", "quote": "Motor: UL Certified 500W brushless, DAPU M155 Geared Hub Motor, 45 Nm of torque"},
+   {"kind": "review", "value": 45, "url": "https://electricbikereport.com/bunch-bikes-the-original-review/", "quote": "Motor: 500W brushless, DAPU geared hub motor, 45Nm of torque ⟶ Headlight: Spanninga Axendo 60", "basis": "earlier (2024) Original; same DAPU 500W/45Nm motor"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 614, "url": "https://bunchbike.com/products/the-original-4-upgraded-electric-cargo-bike-for-families", "quote": "NEW Battery: UL Certified 48v 12.8Ah Li-ion - 614 Wh, LG Cells"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/bunch-bikes-the-original-review/", "quote": "Battery: 48V, 13.6Ah Li-ion 653 Wh), Samsung 35E cells ⟶ Display: Large LCD display with adjustment", "basis": "earlier (2024) battery; the 4+ has a new battery, so not counted"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "20–30", "url": "https://bunchbike.com/products/the-original-4-upgraded-electric-cargo-bike-for-families", "quote": "Range Per Charge: 20-30 miles depending on load and terrain"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/bunch-bikes-the-original-review/", "quote": "Range: 20-35 miles ⟶ Throttle: Wuxing 108XL side-pull thumb throttle", "basis": "earlier (2024) battery; not counted"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 168, "url": "https://bunchbike.com/products/the-original-4-upgraded-electric-cargo-bike-for-families", "quote": "Bike Weight: 168 lbs.", "basis": "battery not stated"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/bunch-bikes-the-original-review/", "quote": "Claimed weight: 152 lbs ⟶ Real weight: 152 lbs", "basis": "earlier (2024) Original; 4+ is heavier, not counted"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 600, "url": "https://bunchbike.com/products/the-original-4-upgraded-electric-cargo-bike-for-families", "quote": "Max Total Loading Capacity of Bike: 600 lbs.", "basis": "maker also lists 'Max Recommended Rider Weight: 250lbs.' and 'Max Loading Capacity of Cargo Area: 400 lbs.'"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/bunch-bikes-the-original-review/", "quote": "Maximum rider weight: 350 lbs ⟶ Maximum load on rear rack: 55 lbs", "basis": "earlier (2024) Original; not counted"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W DAPU M155 geared hub", "url": "https://bunchbike.com/products/the-original-4-upgraded-electric-cargo-bike-for-families", "quote": "Motor: UL Certified 500W brushless, DAPU M155 Geared Hub Motor, 45 Nm of torque"},
+   {"kind": "review", "value": "500W DAPU geared hub", "url": "https://electricbikereport.com/bunch-bikes-the-original-review/", "quote": "Motor: 500W brushless, DAPU geared hub motor, 45Nm of torque ⟶ Headlight: Spanninga Axendo 60", "basis": "earlier (2024) Original"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'2\"-6'6\"", "url": "https://bunchbike.com/products/the-original-4-upgraded-electric-cargo-bike-for-families", "quote": "Recommended Rider Height: | 5'2\" - 6'6\" - On standard equipment | 4'11\" - 5'1\" - Let us know so we can customize the seat", "basis": "standard equipment; 4'11\"-5'1\" with a customized seat"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/bunch-bikes-the-original-review/", "quote": "The Bunch Original is no standard e-bike, and because of its unique geometry it’s able to fit a large range of rider heights onto the frame. If you’re between 5-foot-2-inches” and 6-foot-5-inches then you should fit The Original comfortably.", "basis": "earlier version; 4+ has a lower rear rack for 'wider range of rider heights', not counted"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://bunchbike.com/products/the-original-4-upgraded-electric-cargo-bike-for-families", "quote": "Frame: Steel - Black CNC painted, ED rust-proof internal coating"},
+   {"kind": "review", "value": "No", "url": "https://electricbikereport.com/bunch-bikes-the-original-review/", "quote": "Fenders: Included, black steel front and rear, full coverage ⟶ Frame: Steel, black CNC painted, rust-proof frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Three-wheel front-load cargo trike. Maker specs are in collapsed accordions (Technical Specifications, Measurements & Weights) that had to be opened. Regular price depends on color ($6,499-$6,799); all on sale at $5,499 (Black Friday). Only independent source found (Electric Bike Report, 2024 'The Original') predates the 4+ upgrade (new 614 Wh battery, torque sensor, UL certification, heavier at 168 lbs), so only unchanged specs (motor, 20 mph Class 2) are counted from it. A dealer page (Bikes Not Bombs) from the 1 WebSearch redirected to its homepage."}
