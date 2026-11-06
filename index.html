@@ -1383,7 +1383,7 @@ document.querySelectorAll('[data-open]').forEach(btn=>btn.onclick=()=>showDlg($(
 const BIKE=$('bike');let BIKE_I=null,BIKE_AC=null;/* the modal's colour is its own: picking one there never changes the card */
 /* video reviews: the 3 most-watched recent reviews per bike (found with YouTube's official search when the site is built).
    They live in their own small file, fetched once the page is idle, so they never slow the first view */
-const VURL='videos-04b96508.json';let VIDS=null,VIDP=null;
+const VURL='videos-41d9b558.json';let VIDS=null,VIDP=null;
 const loadVids=()=>VIDP||(VIDP=fetch(VURL,{priority:'low'}).then(r=>r.ok?r.json():Promise.reject()).then(j=>VIDS=j).catch(()=>{VIDP=null;return null}));
 /* fetched as soon as the page has loaded, at low priority so it never competes with the photos; ready before anyone opens a bike */
 if(document.readyState==='complete')loadVids();else addEventListener('load',()=>loadVids(),{once:true});

@@ -2,7 +2,8 @@
 
 Input:  verify/yt_candidates.json  {videoId: {t: title, c: channel, d: published, vw: views, du: ISO duration,
                                                em: embeddable 0/1, pv: privacy, lv: live status, la: language}}
-Output: verify/videos.json          {"Brand|Model": [{id, t, c, d, vw, du}, ...up to 3]}
+Output: verify/video_suggestions.json  {"Brand|Model": [{id, t, c, d, vw, du}, ...up to 3]}  (suggestions to review;
+        the site reads src/videos.csv, and the build checks every video there with yt_check.py)
 
 Rules (what the user asked for): most-viewed reviews from the last 2 years first, older ones fill open spots; the title must name the brand and the model,
 the 3 most viewed win. Only videos YouTube allows on other sites (embeddable), public, not live, and at least
@@ -87,6 +88,12 @@ def distinctive(c):
     if len(first) < 3: return False
     return (len(c) >= 3 and len(first) >= 4) or (first.isalpha() and not common(first))
 
+def phrase_of(k, bps):
+    """the text a family name must appear as: a short or everyday one-word name only counts right after the brand"""
+    p = ' '.join(k)
+    if len(k) == 1 and (k[0] in GENERIC or (len(k[0]) <= 3 and not any(ch.isdigit() for ch in k[0]))): return bps[0] + ' ' + p
+    return p
+
 def seconds(iso):
     m = re.fullmatch(r'P(?:(\d+)D)?T?(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?', iso or '')
     if not m: return 0
@@ -106,7 +113,6 @@ def main(site):
     # not reviews: sale listings, setup guides, parts and repairs; plus videos a reviewer judged wrong (verify/yt_reject.json)
     JUNK = re.compile(r'refurb|gebruikte|te koop|for sale|demo bikes|assembl|tutorial|quick start|how to (enable|install|assemble)|recall|battery w|tire blowout|install|accessor|spare part|how to |replacement|fitting|stroller|giveaway|sizing', re.I)
     NOFAM = set(json.load(open('verify/yt_nofamily.json'))) if os.path.exists('verify/yt_nofamily.json') else set()
-    MANUAL = json.load(open('verify/yt_manual.json')) if os.path.exists('verify/yt_manual.json') else {}
     rej = json.load(open('verify/yt_reject.json')) if os.path.exists('verify/yt_reject.json') else {}   # {"Brand|Model": [ids]}
     FOREIGN = re.compile(r'\b(de|het|een|voor|van|fiets|und|der|die|das|mit|für|ist|zum|rower|na|miasta|otro|mundo|elcykel|erfahrung|vergleich|prueba|bicicleta|vélo|elektrische)\b|[^\x00-\u024f\u2000-\u2bff\U0001F000-\U0001FAFF\s]', re.I)
     ok = {i: v for i, v in ok.items() if not JUNK.search(v['t'])
@@ -187,8 +193,7 @@ def main(site):
                     if i not in l3[mo]: l3[mo].append(i)
         levels = [l1, l2, l3]
         for mo in mos:
-            # videos Chris chose (verify/yt_manual.json) come first, in his order
-            ids = [i for i in MANUAL.get(br + '|' + mo, []) if i in cand][:3]
+            ids = []
             for lv in levels:
                 # the last 2 years first (most viewed), then older reviews fill any open spots: older bikes only have older reviews
                 for i in sorted(lv.get(mo, []), key=lambda i: (ok[i]['d'] < since, -ok[i]['vw'])):
@@ -198,7 +203,7 @@ def main(site):
             ids = ids[:3]
             out[br + '|' + mo] = [{'id': i, 't': html.unescape(cand[i]['t']), 'c': cand[i]['c'], 'd': cand[i]['d'][:10], 'vw': cand[i]['vw'],
                                    'du': seconds(cand[i]['du'])} for i in ids]
-    json.dump(out, open('verify/videos.json', 'w'), indent=1, ensure_ascii=False)
+    json.dump(out, open('verify/video_suggestions.json', 'w'), indent=1, ensure_ascii=False)   # suggestions only: the site reads videos.csv
     json.dump(pool, open('verify/yt_pool.json', 'w'), indent=1, ensure_ascii=False)
     n = collections.Counter(len(v) for v in out.values())
     print('models', len(out), '| with 3:', n[3], '2:', n[2], '1:', n[1], 'none:', n[0])
