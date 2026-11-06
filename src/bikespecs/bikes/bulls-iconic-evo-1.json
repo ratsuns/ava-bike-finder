@@ -1,0 +1,49 @@
+{"bike": "Bulls|Iconic Evo 1", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 4499, "url": "https://bullsbikesusa.com/products/iconic-evo-1-750-diamond", "quote": "$2,599.00 ⟶ $4,499.00", "basis": "crossed-out regular price; $2,599 is a sale price ('Save $1,900')"},
+   {"kind": "review", "value": 4899, "url": "https://electricbikereview.com/bulls/2023-iconic-evo-1-750-wave/", "quote": "PRICE: | $4899", "basis": "2023 review-time price, Wave frame"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://bullsbikesusa.com/products/iconic-evo-1-750-diamond", "quote": "Class-1 eBike: Pedal-assist up to 20 mph—legal and perfect for most city and trail systems."},
+   {"kind": "review", "value": 1, "url": "https://electricbikereview.com/bulls/2023-iconic-evo-1-750-wave/", "quote": "ELECTRIC BIKE CLASS: | Pedal Assist (Class 1)"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://bullsbikesusa.com/products/iconic-evo-1-750-diamond", "quote": "Class-1 eBike: Pedal-assist up to 20 mph—legal and perfect for most city and trail systems."},
+   {"kind": "review", "value": 20, "url": "https://electricbikereview.com/bulls/2023-iconic-evo-1-750-wave/", "quote": "TOP SPEED: | 20 mph (32 kph)"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://bullsbikesusa.com/products/iconic-evo-1-750-diamond", "quote": "Motor: Bosch Performance Line CX motor with up to 85 Nm of torque. Delivers powerful acceleration and smooth handling on streets, hills, or trails."},
+   {"kind": "review", "value": 85, "url": "https://electricbikereview.com/bulls/2023-iconic-evo-1-750-wave/", "quote": "MOTOR TORQUE: | 85 Newton meters"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 750, "url": "https://bullsbikesusa.com/products/iconic-evo-1-750-diamond", "quote": "Battery: Bosch PowerTube 750 Wh Smart System ⟶ Charger: Bosch Smart System 4A"},
+   {"kind": "review", "value": 750, "url": "https://electricbikereview.com/bulls/2023-iconic-evo-1-750-wave/", "quote": "BATTERY WATT HOURS: | 750 wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://bullsbikesusa.com/products/iconic-evo-1-750-diamond", "quote": ""},
+   {"kind": "review", "value": "40–120", "url": "https://electricbikereview.com/bulls/2023-iconic-evo-1-750-wave/", "quote": "ESTIMATED MIN RANGE: | 40 miles (64 km) | ESTIMATED MAX RANGE: | 120 miles (193 km)"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 58.9, "url": "https://bullsbikesusa.com/products/iconic-evo-1-750-diamond", "quote": "Weight: 58.9 lbs. ⟶ * Specifications subject to change without notice", "basis": "battery not stated"},
+   {"kind": "review", "value": 64.4, "url": "https://electricbikereview.com/bulls/2023-iconic-evo-1-750-wave/", "quote": "TOP SPEED: | 20 mph (32 kph) | Bicycle Details | TOTAL WEIGHT: | 64.4 lbs (29.21 kg)", "basis": "Wave (step-through) frame"}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://bullsbikesusa.com/products/iconic-evo-1-750-diamond", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/bulls/2023-iconic-evo-1-750-wave/", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch CX Smart System", "url": "https://bullsbikesusa.com/products/iconic-evo-1-750-diamond", "quote": "DriveUnit: Bosch CX Smart System | Battery: Bosch PowerTube 750 Wh Smart System | Charger: Bosch Smart System 4A"},
+   {"kind": "review", "value": "250W Bosch Performance Line CX (The Smart System)", "url": "https://electricbikereview.com/bulls/2023-iconic-evo-1-750-wave/", "quote": "MOTOR BRAND: | Bosch Performance Line CX (The Smart System) | MOTOR TYPE: | Mid-Mounted Geared Motor | Learn more about Ebike motors | MOTOR NOMINAL OUTPUT: | 250 watts"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://bullsbikesusa.com/products/iconic-evo-1-750-diamond", "quote": "Frame: 6061 aluminum with internal cable routing. Lightweight, durable, and available in multiple sizes (41/44/48/54 cm). ⟶ Drivetrain and Brakes", "basis": "frame sizes only, no rider heights"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/bulls/2023-iconic-evo-1-750-wave/", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://bullsbikesusa.com/products/iconic-evo-1-750-diamond", "quote": "Frame: 6061 aluminum with internal cable routing. Lightweight, durable, and available in multiple sizes (41/44/48/54 cm). ⟶ Drivetrain and Brakes"},
+   {"kind": "review", "value": "No", "url": "https://electricbikereview.com/bulls/2023-iconic-evo-1-750-wave/", "quote": "FRAME MATERIAL: | 6061 Aluminium Alloy"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page is the 'Iconic EVO 1 750 Diamond' (high-step). EBR reviewed the 2023 'Iconic EVO 1 750 Wave' (step-through version, same Bosch CX Smart System / PowerTube 750 spec), so its price and weight are for the Wave frame. Maker weight 58.9 lbs vs EBR 64.4 lbs. On sale at maker ($2,599, regular $4,499). No load or rider height published."}

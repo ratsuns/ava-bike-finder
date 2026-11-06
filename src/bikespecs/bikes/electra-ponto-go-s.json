@@ -1,0 +1,50 @@
+{"bike": "Electra|Ponto Go! S", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2699.99, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/comfort-ebikes/ponto-go/f/EF275/ponto-go%2521-s/41206/", "quote": "$1,999.93 ⟶ $2,699.99", "basis": "$2,699.99 is the crossed-out original price; $1,999.93 is a sale price"},
+   {"kind": "retailer", "value": 2699, "url": "https://99spokes.com/bikes/electra/2026/ponto-go-s", "quote": "Manufacturer Price ⟶ $1,999$2,699"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/comfort-ebikes/ponto-go/f/EF275/ponto-go%2521-s/41206/", "quote": "E-bike Classification ⟶ Class 2/3 hybrid | Max assist speed ⟶ 28 mph", "basis": "maker says Class 2/3 hybrid with 28 mph max assist; overview also says 'This class 3 e-bike is prohibited from sale in California under CA SB 1271' -> 3"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/comfort-ebikes/ponto-go/f/EF275/ponto-go%2521-s/41206/", "quote": "Max assist speed ⟶ 28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 60, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/comfort-ebikes/ponto-go/f/EF275/ponto-go%2521-s/41206/", "quote": "Motor ⟶ BEP hub drive motor, 60Nm, 36h"},
+   {"kind": "review", "value": 60, "url": "https://freshlycharged.com/products/351/electra-trekbikes-electra-ponto-go-s", "quote": "Motor Torque: 60 Nm"},
+   {"kind": "retailer", "value": 60, "url": "https://99spokes.com/bikes/electra/2026/ponto-go-s", "quote": "BEP hub drive motor, 60Nm, 36h"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 625, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/comfort-ebikes/ponto-go/f/EF275/ponto-go%2521-s/41206/", "quote": "Battery ⟶ 625Wh removable, lockable battery"},
+   {"kind": "review", "value": 625, "url": "https://freshlycharged.com/products/351/electra-trekbikes-electra-ponto-go-s", "quote": "Battery Capacity: 625 Wh"},
+   {"kind": "retailer", "value": 625, "url": "https://99spokes.com/bikes/electra/2026/ponto-go-s", "quote": "625Wh removable, lockable battery"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "60", "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/comfort-ebikes/ponto-go/f/EF275/ponto-go%2521-s/41206/", "quote": "Range Up to 60 mi", "basis": "up to"},
+   {"kind": "review", "value": null, "url": "https://freshlycharged.com/products/351/electra-trekbikes-electra-ponto-go-s", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://99spokes.com/bikes/electra/2026/ponto-go-s", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 80.01, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/comfort-ebikes/ponto-go/f/EF275/ponto-go%2521-s/41206/", "quote": "Weight ⟶ 36.29 kg / 80.01 lbs"},
+   {"kind": "review", "value": 80, "url": "https://freshlycharged.com/products/351/electra-trekbikes-electra-ponto-go-s", "quote": "Weight: 80 lbs"},
+   {"kind": "retailer", "value": 80, "url": "https://99spokes.com/bikes/electra/2026/ponto-go-s", "quote": "Weight80.0 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 440, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/comfort-ebikes/ponto-go/f/EF275/ponto-go%2521-s/41206/", "quote": "This bike has a maximum total weight limit (combined weight of bicycle, rider, and cargo) of 440 pounds (199 kg).", "basis": "total"},
+   {"kind": "review", "value": 440, "url": "https://freshlycharged.com/products/351/electra-trekbikes-electra-ponto-go-s", "quote": "Weight Limit: 440 lbs", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub (BEP)", "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/comfort-ebikes/ponto-go/f/EF275/ponto-go%2521-s/41206/", "quote": "Motor 750W ⟶ Torque 60Nm | Motor ⟶ BEP hub drive motor, 60Nm, 36h"},
+   {"kind": "review", "value": "750W hub (BEP)", "url": "https://freshlycharged.com/products/351/electra-trekbikes-electra-ponto-go-s", "quote": "Motor Watts: 750 W ⟶ Motor Torque: 60 Nm"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'11\"-6'10\"", "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/comfort-ebikes/ponto-go/f/EF275/ponto-go%2521-s/41206/", "quote": "4'11\" - 6'10\" ⟶ Geometry", "basis": "Sizing tab: Size / Rider Height / One size fits most"},
+   {"kind": "retailer", "value": "4'11\"-6'10\"", "url": "https://99spokes.com/bikes/electra/2026/ponto-go-s", "quote": "4'11\" – 6'10\" ⟶ Rider Fit Notes"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/comfort-ebikes/ponto-go/f/EF275/ponto-go%2521-s/41206/", "quote": "Frame | 6061-T6 aluminum", "basis": "rigid aluminum moped-style frame; no folding mentioned anywhere on page"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Src link redirected to the Ponto Go! family page with Ponto Go! S selected (model 5295443). Specs only appear after clicking the Specs tab. The base Ponto Go! on the same page is listed as Class 2; the S is Class 2/3 hybrid, 28 mph. On sale at $1,999.93 (regular $2,699.99). REI page blocked (403). Electric Bike Report review is of the original Ponto Go! (26 mph, 360 lb payload) - not this model, so not used. Freshly Charged gives sale price $1,999 only, not used for price."}

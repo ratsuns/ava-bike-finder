@@ -1,0 +1,46 @@
+{"bike": "Emojo|Bull Urban Cruiser", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2798, "url": "https://emojobike.com/products/bull-urban-cruiser", "quote": "Regular price ⟶ $2,798.00", "basis": "sale price $2,598.00 not used"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://emojobike.com/products/bull-urban-cruiser", "quote": "Top Speed ⟶ 20 MPH", "basis": "maker states no class; has a thumb throttle ('Thumb Throttle' feature) and 20 mph -> 2"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://emojobike.com/products/bull-urban-cruiser", "quote": "Top Speed ⟶ 20 MPH"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://emojobike.com/products/bull-urban-cruiser", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://www.bikeberry.com/products/emojo-500w-bull-urban-cruiser-step-thru-electric-bike-trike", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 672, "url": "https://emojobike.com/products/bull-urban-cruiser", "quote": "Battery ⟶ 672Wh (Lithium-ion)"},
+   {"kind": "retailer", "value": 672, "url": "https://www.bikeberry.com/products/emojo-500w-bull-urban-cruiser-step-thru-electric-bike-trike", "quote": "Battery: 48V / 14Ah Lithium-Ion (Brand: XNW, with quality insurance)", "basis": "48 V x 14 Ah = 672 Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "65", "url": "https://emojobike.com/products/bull-urban-cruiser", "quote": "Range ⟶ 45 Miles 65 Miles with Pedal Assist", "basis": "FAQ: 'up to 45 miles on throttle and up to 65 miles with pedal assist'; 100 mi needs optional second battery"},
+   {"kind": "retailer", "value": "45–65", "url": "https://www.bikeberry.com/products/emojo-500w-bull-urban-cruiser-step-thru-electric-bike-trike", "quote": "Range: 45–65 Miles with Pedal Assist"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 80, "url": "https://emojobike.com/products/bull-urban-cruiser", "quote": "Weight ⟶ 80 lbs (with battery)"},
+   {"kind": "retailer", "value": 80, "url": "https://www.bikeberry.com/products/emojo-500w-bull-urban-cruiser-step-thru-electric-bike-trike", "quote": "Weight: 80 lbs (with battery)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 330, "url": "https://emojobike.com/products/bull-urban-cruiser", "quote": "Load ⟶ 330 lbs"},
+   {"kind": "retailer", "value": 330, "url": "https://www.bikeberry.com/products/emojo-500w-bull-urban-cruiser-step-thru-electric-bike-trike", "quote": "Load Capacity: 330 lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W hub (Bafang)", "url": "https://emojobike.com/products/bull-urban-cruiser", "quote": "Motor ⟶ 500W Brushless Motor | Brand | Bafang", "basis": "spec table: Power 500W, Type DC Brushless, Brand Bafang"},
+   {"kind": "retailer", "value": "500W (Bafang)", "url": "https://www.bikeberry.com/products/emojo-500w-bull-urban-cruiser-step-thru-electric-bike-trike", "quote": "Motor: 500W DC Brushless (Brand: Bafang)"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'10\"-6'4\"", "url": "https://emojobike.com/products/bull-urban-cruiser", "quote": "Rider's Height ⟶ 4'10\"-6'4\" (Best for 4'10\"-5'10\")"},
+   {"kind": "retailer", "value": "4'10\"-6'4\"", "url": "https://www.bikeberry.com/products/emojo-500w-bull-urban-cruiser-step-thru-electric-bike-trike", "quote": "Rider’s Height Range: 4’10” – 6’4” (Best for 4’10” – 5’10”)"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://emojobike.com/products/bull-urban-cruiser", "quote": "Frame | Aluminum 6061", "basis": "rigid step-through trike frame; no folding mentioned"},
+   {"kind": "retailer", "value": "No", "url": "https://www.bikeberry.com/products/emojo-500w-bull-urban-cruiser-step-thru-electric-bike-trike", "quote": "Frame: Aluminum 6061"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Electric trike with rear passenger bench. Maker headline 'Up to 100 Miles' needs optional second battery; used 65 mi pedal assist. Maker gives no class (throttle + 20 mph -> 2). BikeBerry page did not show a readable regular price. No EBR/EBReport/Electrek/Best Buy page for this model."}

@@ -1,0 +1,49 @@
+{"bike": "Dahon|K-One", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1699, "url": "https://usa.dahon.com/products/k-one-ebike-hub-drive", "quote": "$1,699.00 $1,099.00 ⟶ A compact electric folding bike, perfect for commuting and travel.", "basis": "regular price; $1,099 is a Black Friday sale"},
+   {"kind": "retailer", "value": null, "url": "https://cambriabike.com/products/dahon-k-one-electric-black", "quote": "SOLD OUT"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://usa.dahon.com/products/k-one-ebike-hub-drive", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://cambriabike.com/products/dahon-k-one-electric-black", "quote": ""}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 15.5, "url": "https://usa.dahon.com/products/k-one-ebike-hub-drive", "quote": "Powered by a hub drive motor, it delivers smooth acceleration up to 15.5 mph. And the DAHON's DELTECH cable system enhances frame stiffness, perfect for commutes and adventures. ⟶ Compact"},
+   {"kind": "retailer", "value": 15.5, "url": "https://cambriabike.com/products/dahon-k-one-electric-black", "quote": "Powered by a hub drive motor, it delivers smooth acceleration up to 15.5 mph."}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://usa.dahon.com/products/k-one-ebike-hub-drive", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://cambriabike.com/products/dahon-k-one-electric-black", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 313, "url": "https://usa.dahon.com/products/k-one-ebike-hub-drive", "quote": "Dahon 36V/250W Rear-Motor ⟶ 36V 8.7 AH seat tube Battery Samsung Cell", "basis": "36V x 8.7Ah = 313.2Wh; no Wh stated"},
+   {"kind": "retailer", "value": 313, "url": "https://cambriabike.com/products/dahon-k-one-electric-black", "quote": "E-System:Dahon 36V/250W Rear-Motor ⟶ 36V 8.7 AH seat tube Battery Samsung Cell", "basis": "36V x 8.7Ah = 313.2Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "62", "url": "https://usa.dahon.com/products/k-one-ebike-hub-drive", "quote": "Seat Post Battery ⟶ Up to 100km range", "basis": "100 km converted to miles"},
+   {"kind": "retailer", "value": "62", "url": "https://cambriabike.com/products/dahon-k-one-electric-black", "quote": "Seat Post BatteryUp to 100km range ⟶ Folding DesignFit in any space", "basis": "100 km converted to miles"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 41.8, "url": "https://usa.dahon.com/products/k-one-ebike-hub-drive", "quote": "Weight: ⟶ 41.8 lbs"},
+   {"kind": "retailer", "value": 41.8, "url": "https://cambriabike.com/products/dahon-k-one-electric-black", "quote": "36V 8.7 AH seat tube Battery Samsung Cell ⟶ Weight:41.8 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 231, "url": "https://usa.dahon.com/products/k-one-ebike-hub-drive", "quote": "Max Load: ⟶ 231 lbs"},
+   {"kind": "retailer", "value": 231, "url": "https://cambriabike.com/products/dahon-k-one-electric-black", "quote": "Weight:41.8 lbs ⟶ Max Load:231 lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "250W rear hub", "url": "https://usa.dahon.com/products/k-one-ebike-hub-drive", "quote": "Dahon 36V/250W Rear-Motor ⟶ 36V 8.7 AH seat tube Battery Samsung Cell"},
+   {"kind": "retailer", "value": "250W rear hub", "url": "https://cambriabike.com/products/dahon-k-one-electric-black", "quote": "Rear Hub:Dahon 95RS 36V/250W ⟶ Tires:DAHON 20\"*1.75\""}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'7\"-6'2\"", "url": "https://usa.dahon.com/products/k-one-ebike-hub-drive", "quote": "Rider Height Range: ⟶ 4'7″ - 6'2″"},
+   {"kind": "retailer", "value": "4'7\"-6'2\"", "url": "https://cambriabike.com/products/dahon-k-one-electric-black", "quote": "Max Load:231 lbs ⟶ Rider Height Range:4'7″ - 6'2″"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "Yes", "url": "https://usa.dahon.com/products/k-one-ebike-hub-drive", "quote": "Folded Size: ⟶ 32.7x15x25.6in"},
+   {"kind": "retailer", "value": "Yes", "url": "https://cambriabike.com/products/dahon-k-one-electric-black", "quote": "Folded Size:32.7x15x25.6in ⟶ Sizing & Geometry:"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "No class or throttle info on either page; class left null (15.5 mph pedal assist). Range '100km' comes from a feature banner, not the spec table. Cambria Bike (dealer) shows no price, SOLD OUT. Best Buy listing from search was a 404; Marblehead Cycle dealer page redirected to an empty search. Bikeberry lists a 9.5Ah variant, not used. One WebSearch used."}

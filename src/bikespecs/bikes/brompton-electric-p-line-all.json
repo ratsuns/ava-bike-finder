@@ -1,0 +1,49 @@
+{"bike": "Brompton|Electric P Line (All)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 5700, "url": "https://us.brompton.com/p/1811/electric-p-line-with-superroll-e-motiq-system-4-speed-us", "quote": "$5,700.00", "basis": "4-speed SuperRoll+ version (the src link); no crossed-out price shown"},
+   {"kind": "review", "value": 5500, "url": "https://www.cyclingweekly.com/reviews/folding-bikes/brompton-electric-p-line-review-a-lightweight-premium-offering-with-a-fantastic-motor", "quote": "The new Brompton Electric P Line with the e-Motiq system costs £3,879 in the UK ($5,500 in the US) before any add-ons, but this is a premium bike.", "basis": "US price at time of review (March 2026); maker now lists $5,700"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://us.brompton.com/p/1811/electric-p-line-with-superroll-e-motiq-system-4-speed-us", "quote": "", "basis": "maker page gives no class or top speed"},
+   {"kind": "review", "value": null, "url": "https://www.cyclingweekly.com/reviews/folding-bikes/brompton-electric-p-line-review-a-lightweight-premium-offering-with-a-fantastic-motor", "quote": "", "basis": "UK review; no US class"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": null, "url": "https://us.brompton.com/p/1811/electric-p-line-with-superroll-e-motiq-system-4-speed-us", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://www.cyclingweekly.com/reviews/folding-bikes/brompton-electric-p-line-review-a-lightweight-premium-offering-with-a-fantastic-motor", "quote": ""}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://us.brompton.com/p/1811/electric-p-line-with-superroll-e-motiq-system-4-speed-us", "quote": "Rear Wheel | Double-wall rim, 20 spokes laced to a Brompton front hub", "basis": "P Line spec list gives no motor torque (rear-wheel line repeats the front-wheel text)"},
+   {"kind": "review", "value": null, "url": "https://www.cyclingweekly.com/reviews/folding-bikes/brompton-electric-p-line-review-a-lightweight-premium-offering-with-a-fantastic-motor", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 345, "url": "https://us.brompton.com/p/1811/electric-p-line-with-superroll-e-motiq-system-4-speed-us", "quote": "Battery | 345Wh Greenway​ - Up to 56 mile range​ with 5-hour full charge​"},
+   {"kind": "review", "value": null, "url": "https://www.cyclingweekly.com/reviews/folding-bikes/brompton-electric-p-line-review-a-lightweight-premium-offering-with-a-fantastic-motor", "quote": ""}
+  ],
+  "range": [
+   {"kind": "maker", "value": "56", "url": "https://us.brompton.com/p/1811/electric-p-line-with-superroll-e-motiq-system-4-speed-us", "quote": "Battery | 345Wh Greenway​ - Up to 56 mile range​ with 5-hour full charge​"},
+   {"kind": "review", "value": null, "url": "https://www.cyclingweekly.com/reviews/folding-bikes/brompton-electric-p-line-review-a-lightweight-premium-offering-with-a-fantastic-motor", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 35.05, "url": "https://us.brompton.com/electric-p-line", "quote": "Weight without battery | From 28.6 lb | Weight | From 35.05 lb", "basis": "maker lists 'Weight without battery' separately, so 35.05 lb is with battery; 'From' = lightest version"},
+   {"kind": "review", "value": 35.3, "url": "https://www.cyclingweekly.com/reviews/folding-bikes/brompton-electric-p-line-review-a-lightweight-premium-offering-with-a-fantastic-motor", "quote": "The Electric P Line is the lightest electric Brompton ever, weighing in at about 16kg with the battery clipped on, and can really boost the distance or terrain you are able to cycle.", "basis": "16 kg = 35.3 lb"}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://us.brompton.com/p/1811/electric-p-line-with-superroll-e-motiq-system-4-speed-us", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://www.cyclingweekly.com/reviews/folding-bikes/brompton-electric-p-line-review-a-lightweight-premium-offering-with-a-fantastic-motor", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "e-Motiq system", "url": "https://us.brompton.com/p/1811/electric-p-line-with-superroll-e-motiq-system-4-speed-us", "quote": "Even lighter, even smoother. The iconic design engineered with a titanium rear frame and best-in-class components. Powered by the all-new e-Motiq system.", "basis": "no rated watts on the P Line page"},
+   {"kind": "review", "value": "e-Motiq rear hub", "url": "https://www.cyclingweekly.com/reviews/folding-bikes/brompton-electric-p-line-review-a-lightweight-premium-offering-with-a-fantastic-motor", "quote": "Obviously, it looks a bit different with a motor attached to the rear hub, some ungainly power cables and a battery pack on the front, but it is unmistakably a Brompton."}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://us.brompton.com/p/1811/electric-p-line-with-superroll-e-motiq-system-4-speed-us", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://www.cyclingweekly.com/reviews/folding-bikes/brompton-electric-p-line-review-a-lightweight-premium-offering-with-a-fantastic-motor", "quote": "Size: N/A"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "Yes", "url": "https://us.brompton.com/p/1811/electric-p-line-with-superroll-e-motiq-system-4-speed-us", "quote": "Folded Size | 25.4\" x 23.6\" x 12.6\""},
+   {"kind": "review", "value": "Yes", "url": "https://www.cyclingweekly.com/reviews/folding-bikes/brompton-electric-p-line-review-a-lightweight-premium-offering-with-a-fantastic-motor", "quote": "It folds up so it can be put anywhere, but as I discovered in a tiny pub, it isn’t quite as small as you think it is."}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker P Line spec list has no motor watts/torque (its 'Rear Wheel' line repeats the front-wheel text, apparently an error); the C Line page lists 'Brompton Rear Motor 24Nm of Torque and 250W'. Maker gives no top speed, class, max load or rider height. Independent source is a UK review (Cycling Weekly, March 2026, e-Motiq version), so no US speed/class. Price is for the 4-speed SuperRoll+ (src link); other P Line variants may differ. EBR/EBReport/Electrek had no e-Motiq P Line review. Used 1 WebSearch."}

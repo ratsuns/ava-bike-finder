@@ -1,0 +1,49 @@
+{"bike": "Aima|Santa Monica", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1999, "url": "https://www.aimatech.us/products/santa-monica-electric-bike", "quote": "Regular price | $1,999", "basis": "page shows sale price $1,899 with regular price $1,999"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/aima-santa-monica-review/", "quote": ""}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.aimatech.us/products/santa-monica-electric-bike", "quote": "The Santa Monica is delivered as a Class 2 eBike with a top assisted speed of 20 MPH."},
+   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/aima-santa-monica-review/", "quote": "In the bike’s default Class 2 settings, my speeds were as follows: ⟶ No Assist: 9.4 mph", "basis": "dealer can unlock Class 3"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.aimatech.us/products/santa-monica-electric-bike", "quote": "Speed | 20 MPH"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/aima-santa-monica-review/", "quote": "Riders wanting to access the bike’s higher Class 3 speeds (or go back to Class 2 mode later) must go through dealers for alterations. ⟶ ELECTRICAL SPECS & FEATURES", "basis": "ships Class 2 (20 mph); dealer-adjustable to 28 mph Class 3"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://www.aimatech.us/products/santa-monica-electric-bike", "quote": ""},
+   {"kind": "review", "value": 70, "url": "https://electricbikereport.com/aima-santa-monica-review/", "quote": "Motor: 750W, 48V Brushless Rear Hub Motor (1260W Peak), 70 Nm Torque ⟶ Headlight: Integrated LED"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 720, "url": "https://www.aimatech.us/products/santa-monica-electric-bike", "quote": "Battery | 48V 15Ah", "basis": "48V x 15Ah"},
+   {"kind": "review", "value": 720, "url": "https://electricbikereport.com/aima-santa-monica-review/", "quote": "Battery: Removable Internal Lithium-ion 48V, 15Ah (720Wh) with LG M50LT 21700 cells ⟶ Charger: 48V 3 Amp Fast Charger, about 5 Hours to a Full Charge"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "60", "url": "https://www.aimatech.us/products/santa-monica-electric-bike", "quote": "Range | Up To 60 Miles*"},
+   {"kind": "review", "value": "30–60", "url": "https://electricbikereport.com/aima-santa-monica-review/", "quote": "Claimed Range: 30 to 60 Miles ⟶ Throttle:Throttle on Demand"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 62, "url": "https://www.aimatech.us/products/santa-monica-electric-bike", "quote": "Weight | 62 lbs 28.1 kg"},
+   {"kind": "review", "value": 64, "url": "https://electricbikereport.com/aima-santa-monica-review/", "quote": "WEIGHT & DIMENSIONS ⟶ Claimed weight: 64 lbs. (Battery included)", "basis": "claimed; tested 70.2 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 400, "url": "https://www.aimatech.us/products/santa-monica-electric-bike", "quote": "Payload Capacity | 400 lbs 181 kg"},
+   {"kind": "review", "value": 400, "url": "https://electricbikereport.com/aima-santa-monica-review/", "quote": "Total payload capacity: 400 lbs. ⟶ COMPONENTS & ACCESSORIES"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub (Bafang)", "url": "https://www.aimatech.us/products/santa-monica-electric-bike", "quote": "Motor | Rear Hub Motor, BAFANG, 750W"},
+   {"kind": "review", "value": "750W rear hub (1,260W peak)", "url": "https://electricbikereport.com/aima-santa-monica-review/", "quote": "Motor: 750W, 48V Brushless Rear Hub Motor (1260W Peak), 70 Nm Torque ⟶ Headlight: Integrated LED"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'3\"", "url": "https://www.aimatech.us/products/santa-monica-electric-bike", "quote": "Regular: 5'1\"-6'2\" | Large: 5'5\"-6'3\"", "basis": "two sizes combined"},
+   {"kind": "review", "value": "5'1\"-6'3\"", "url": "https://electricbikereport.com/aima-santa-monica-review/", "quote": "Rider height range: 5’1”-5’10” (Regular), 5’6”-6’3” (Large) ⟶ Total payload capacity: 400 lbs.", "basis": "two sizes combined"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.aimatech.us/products/santa-monica-electric-bike", "quote": "Frame | 6061 Single-Butted Aluminum Alloy Frame"},
+   {"kind": "review", "value": "No", "url": "https://electricbikereport.com/aima-santa-monica-review/", "quote": "Frame: 6061 Single-Butted Aluminum Alloy Frame with Internal Battery ⟶ Drivetrain: Shimano 8 Speed, 52T Chainring, 11-34T Cassette"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "src link redirects to /products/santa-monica-electric-bike (same model). Maker spec values read from spec tabs; quotes join consecutive page lines with ' | '. Weight differs: maker 62 lbs vs EBR claimed 64 lbs (tested 70.2). Size heights differ slightly between maker (Regular 5'1\"-6'2\", Large 5'5\"-6'3\") and EBR (5'1\"-5'10\", 5'6\"-6'3\"). Only one independent source found (EBR); EBR (electricbikereview) search returned nothing."}

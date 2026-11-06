@@ -1,0 +1,38 @@
+{"bike": "Benno|eJoy 10D Performance", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": null, "url": "https://bennobikes.com/e-bikes/ejoy/", "quote": "10D Performance Sport: $3,749 USD | 5i Performance: $3,749 USD | MSRP", "basis": "maker's MSRP block lists only 10D Performance Sport and 5i Performance; no US price for 10D Performance"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://bennobikes.com/e-bikes/ejoy/", "quote": "Speed: USA/CAN 20mph, EU 25km/h", "basis": "maker states no class; Performance is USA 20mph, no throttle -> Class 1"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://bennobikes.com/e-bikes/ejoy/", "quote": "Assisted Speed\tUSA/CAN 20mph, EU 25km/h\tUSA 28mph, NZ 45km/h\tUSA/CAN 20mph, EU 25km/h", "basis": "EJOY 10D – PERFORMANCE is the 3rd column"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 65, "url": "https://bennobikes.com/e-bikes/ejoy/", "quote": "Motor\tBosch Performance 250W, 65Nm, GEN 3\tBosch Performance Sport 250W, 65Nm, GEN 3\tBosch Performance 250W, 65Nm, GEN 3"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 400, "url": "https://bennobikes.com/e-bikes/ejoy/", "quote": "Battery: 400Wh/500Wh", "basis": "maker offers 400Wh or 500Wh; configurator's 10D Performance 400Wh variants are 'mph', 500Wh are 'kmh', so US version is 400Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "25–75", "url": "https://bennobikes.com/e-bikes/ejoy/", "quote": "Range 400Wh Battery: 25-75mi (40-120km)"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://bennobikes.com/e-bikes/ejoy/", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": 400, "url": "https://bennobikes.com/e-bikes/ejoy/", "quote": "MAX GROSS WEIGHT 400LB/180KG (RIDER+CARGO+BIKE)", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Performance 250W (GEN 3)", "url": "https://bennobikes.com/e-bikes/ejoy/", "quote": "Motor\tBosch Performance 250W, 65Nm, GEN 3\tBosch Performance Sport 250W, 65Nm, GEN 3\tBosch Performance 250W, 65Nm, GEN 3"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'0\"-6'0\"", "url": "https://bennobikes.com/e-bikes/ejoy/", "quote": "Frame Size\tOne Size – Fits Riders from 5’0” to 6’0”"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://bennobikes.com/e-bikes/ejoy/", "quote": "Frame\t6061 Aluminum Alloy with Front Tray Mounts"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "MAKER ONLY - no independent source found. Maker page lists 10D Performance in specs (3rd column of FULL SPECIFICATIONS) but gives no US price (MSRP block only has 10D Performance Sport and 5i Performance); it may not be sold in the US. EBR has no eJoy review. WebSearch for 'eJoy 10D Evo 1 Performance Class 1' only returned the older eJoy 10D Class 1 with Bosch Active Line Plus (different generation/motor), so not used. Maker publishes no bike weight."}

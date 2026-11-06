@@ -1,0 +1,48 @@
+{"bike": "Benno|RemiDemi 9D EVO 2 Performance", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 3499, "url": "https://bennobikes.com/e-bikes/remidemi/", "quote": "Performance: $3,499 USD"},
+   {"kind": "retailer", "value": 3499, "url": "https://bouldernordic.com/products/benno-remidemi-9d-evo-2-performance-class-1-ebike-400wh-easy-on-turmeric-ylw", "quote": "$3,499.00"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://bennobikes.com/e-bikes/remidemi/", "quote": "Speed: USA/CAN 20mph, EU 25km/h", "basis": "maker states no class; Performance is USA 20mph, no throttle -> Class 1"},
+   {"kind": "retailer", "value": 1, "url": "https://bouldernordic.com/products/benno-remidemi-9d-evo-2-performance-class-1-ebike-400wh-easy-on-turmeric-ylw", "quote": "Ebike Class\tClass 1"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://bennobikes.com/e-bikes/remidemi/", "quote": "Speed: USA/CAN 20mph, EU 25km/h"},
+   {"kind": "retailer", "value": 20, "url": "https://bouldernordic.com/products/benno-remidemi-9d-evo-2-performance-class-1-ebike-400wh-easy-on-turmeric-ylw", "quote": "Assist Speed (Mph)\t20"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 65, "url": "https://bennobikes.com/e-bikes/remidemi/", "quote": "Motor\tBosch Performance Sport 250W, 65Nm, GEN 3\tBosch Performance 250W, 65Nm, GEN 3"},
+   {"kind": "retailer", "value": 65, "url": "https://bouldernordic.com/products/benno-remidemi-9d-evo-2-performance-class-1-ebike-400wh-easy-on-turmeric-ylw", "quote": "Motor Torque (Nm)\t65"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 400, "url": "https://bennobikes.com/e-bikes/remidemi/", "quote": "Battery: 400Wh/500Wh", "basis": "maker offers 400Wh or 500Wh; 400Wh taken as standard (smaller option; US dealer listing is 400Wh)"},
+   {"kind": "retailer", "value": 400, "url": "https://bouldernordic.com/products/benno-remidemi-9d-evo-2-performance-class-1-ebike-400wh-easy-on-turmeric-ylw", "quote": "Battery Power (Wh)\t400"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "25–75", "url": "https://bennobikes.com/e-bikes/remidemi/", "quote": "Range 400Wh Battery: 25-75mi (40-120km)"},
+   {"kind": "retailer", "value": "25–75", "url": "https://bouldernordic.com/products/benno-remidemi-9d-evo-2-performance-class-1-ebike-400wh-easy-on-turmeric-ylw", "quote": "Range Estimate (Mi)\t25-75"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://bennobikes.com/e-bikes/remidemi/", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://bouldernordic.com/products/benno-remidemi-9d-evo-2-performance-class-1-ebike-400wh-easy-on-turmeric-ylw", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://bennobikes.com/e-bikes/remidemi/", "quote": "", "basis": "SIZING & CAPACITY tab gives 'MAX GROSS WEIGHT 400LB/180KG (RIDER+CARGO+BIKE)' only under headings REMIDEMI EVO 3 and REMIDEMI EVO 4; nothing labelled EVO 2"},
+   {"kind": "retailer", "value": 400, "url": "https://bouldernordic.com/products/benno-remidemi-9d-evo-2-performance-class-1-ebike-400wh-easy-on-turmeric-ylw", "quote": "Gross Payload (Lbs)\t400", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Performance 250W (GEN 3)", "url": "https://bennobikes.com/e-bikes/remidemi/", "quote": "Motor\tBosch Performance Sport 250W, 65Nm, GEN 3\tBosch Performance 250W, 65Nm, GEN 3"},
+   {"kind": "retailer", "value": "Bosch Performance 250W (GEN 3)", "url": "https://bouldernordic.com/products/benno-remidemi-9d-evo-2-performance-class-1-ebike-400wh-easy-on-turmeric-ylw", "quote": "Bosch Performance 250W 65Nm GEN 3 20MPH"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'1\"", "url": "https://bennobikes.com/e-bikes/remidemi/", "quote": "Frame Size\tOne Size – Fits Riders from 5’1” to 6’1”"},
+   {"kind": "retailer", "value": "5'1\"-6'1\"", "url": "https://bouldernordic.com/products/benno-remidemi-9d-evo-2-performance-class-1-ebike-400wh-easy-on-turmeric-ylw", "quote": "One Frame Size (Fits Riders From 5'1\" to 6'1\")"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://bennobikes.com/e-bikes/remidemi/", "quote": "Frame\t6061 Aluminum Alloy with Front Tray Mounts"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker specs from the RemiDemi page's 'REMIDEMI EVO 2' drive-system tab (PERFORMANCE block) and 'REMIDEMI EVO 2 – FULL SPECIFICATIONS' (Performance = 2nd column). Maker configurator offers EVO2 Performance with 400Wh or 500Wh; recorded 400Wh as standard. Maker publishes no bike weight, and its max gross weight (400lb) is labelled only for EVO 3/EVO 4. EBR only has an older 'RemiDemi 9D' review (earlier generation), not used."}

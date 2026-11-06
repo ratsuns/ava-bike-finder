@@ -1,0 +1,50 @@
+{"bike": "Blix|Vika X", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1799, "url": "https://blixbike.com/products/vika-x-folding-ebike", "quote": "Vika X Folding eBike | $1,799.00 | Product information"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/blix-vika-x-review/", "quote": ""}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://blixbike.com/products/vika-x-folding-ebike", "quote": "The Vika X is a class 2 ebike that can be changed to a class 3 ebike with the Blix app, increasing the pedal assist top speed from 20 mph to 28 mph."},
+   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/blix-vika-x-review/", "quote": "The Vika X ships as a Class 2 e-bike set to 20 mph, but it can be unlocked to a Class 3 with pedal assist up to 28 mph through the Blix Connect app."}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://blixbike.com/products/vika-x-folding-ebike", "quote": "The Vika X is a class 2 ebike that can be changed to a class 3 ebike with the Blix app, increasing the pedal assist top speed from 20 mph to 28 mph.", "basis": "adjustable to 28 mph"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/blix-vika-x-review/", "quote": "The Vika X ships as a Class 2 e-bike set to 20 mph, but it can be unlocked to a Class 3 with pedal assist up to 28 mph through the Blix Connect app.", "basis": "adjustable to 28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 55, "url": "https://blixbike.com/products/vika-x-folding-ebike", "quote": "Motor | Rear Hub, Geared, 500W, 55Nm Torque"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/blix-vika-x-review/", "quote": "Motor: Rear Hub, Geared, 500W ⟶ Headlight:Integrated, Low-beam 70 lux, High-beam 120 lux"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 614.4, "url": "https://blixbike.com/products/vika-x-folding-ebike", "quote": "Battery | 614.4Wh (48V)"},
+   {"kind": "review", "value": 614.4, "url": "https://electricbikereport.com/blix-vika-x-review/", "quote": "Battery:614.4Wh (48V) ⟶ Display: TFT, Color"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "70", "url": "https://blixbike.com/products/vika-x-folding-ebike", "quote": "Range | Up to 70 miles"},
+   {"kind": "review", "value": "70", "url": "https://electricbikereport.com/blix-vika-x-review/", "quote": "Pedal Assist: 3 Levels + Auto Function, Torque sensor ⟶ Claimed Range: Up to 70 miles"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 61, "url": "https://blixbike.com/products/vika-x-folding-ebike", "quote": "The Vika X weighs 61 lbs with the battery installed, and 56 lbs without the battery."},
+   {"kind": "maker", "value": 55, "url": "https://blixbike.com/products/vika-x-folding-ebike", "quote": "Weight | 55 lbs", "basis": "spec table; contradicts the FAQ on the same page, battery not stated"},
+   {"kind": "review", "value": 56, "url": "https://electricbikereport.com/blix-vika-x-review/", "quote": "Claimed weight: 61 lbs. ⟶ Tested Weight: 56 lbs.", "basis": "tested weight (claimed 61 lbs)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 312, "url": "https://blixbike.com/products/vika-x-folding-ebike", "quote": "Payload | 312 lbs, 270 lbs max rider weight"},
+   {"kind": "review", "value": 312, "url": "https://electricbikereport.com/blix-vika-x-review/", "quote": "Total payload capacity: 312 lbs. ⟶ COMPONENTS & ACCESSORIES"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W rear hub, geared", "url": "https://blixbike.com/products/vika-x-folding-ebike", "quote": "Motor | Rear Hub, Geared, 500W, 55Nm Torque"},
+   {"kind": "review", "value": "500W rear hub, geared", "url": "https://electricbikereport.com/blix-vika-x-review/", "quote": "Motor: Rear Hub, Geared, 500W ⟶ Headlight:Integrated, Low-beam 70 lux, High-beam 120 lux"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'10\"-6'2\"", "url": "https://blixbike.com/products/vika-x-folding-ebike", "quote": "Recommended Rider Height | 4'10\" - 6'2\""},
+   {"kind": "review", "value": "4'10\"-6'2\"", "url": "https://electricbikereport.com/blix-vika-x-review/", "quote": "Rider height range: 4’10” – 6’2” ⟶ Total payload capacity: 312 lbs."}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "Yes", "url": "https://blixbike.com/products/vika-x-folding-ebike", "quote": "Frame | Aluminum Alloy, Folding"},
+   {"kind": "review", "value": "Yes", "url": "https://electricbikereport.com/blix-vika-x-review/", "quote": "Frame: Aluminum Alloy, Folding ⟶ Drivetrain:8-speed Microshift, 52T chainring, 13-32T cassette"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page contradicts itself on weight: spec table '55 lbs', FAQ '61 lbs with the battery installed, and 56 lbs without'. 61 lb (with battery) is the maker's explicit with-battery figure; EBReport claims 61, tested 56. Maker price $1,799 is not on sale (compare-at equals price). Rear rack 60 lbs."}

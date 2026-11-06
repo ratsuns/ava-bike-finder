@@ -1,0 +1,49 @@
+{"bike": "Gazelle|Arroyo C8 Elite", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 3499, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-arroyo-c8-elite", "quote": "$3,499 | Shop stock: First, configure your bike", "basis": "no crossed-out price shown"},
+   {"kind": "retailer", "value": 3498.99, "url": "https://mikesbikes.com/products/gazelle-arroyo-c8-elite-2026", "quote": "Regular price | $3,498.99"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-arroyo-c8-elite", "quote": "Ebike Max Speed | 20 mph", "basis": "no class stated; 20 mph pedal assist with no throttle listed (Bosch Smart System) means Class 1"},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/gazelle-arroyo-c8-elite-2026", "quote": ""}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-arroyo-c8-elite", "quote": "Ebike Max Speed | 20 mph"},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/gazelle-arroyo-c8-elite-2026", "quote": "Max Assisted Speed\tN/A"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 50, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-arroyo-c8-elite", "quote": "Engine Max Torque (Nm) | 50"},
+   {"kind": "retailer", "value": 50, "url": "https://mikesbikes.com/products/gazelle-arroyo-c8-elite-2026", "quote": "Bosch Smart System Active Line Plus, 50 Nm."}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 540, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-arroyo-c8-elite", "quote": "540 Wh: up to 85 mi | Included"},
+   {"kind": "retailer", "value": 540, "url": "https://mikesbikes.com/products/gazelle-arroyo-c8-elite-2026", "quote": "540 Wh, integrated in the frame."}
+  ],
+  "range": [
+   {"kind": "maker", "value": "35–85", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-arroyo-c8-elite", "quote": "Eco\t85 mi\t85 mi | Tour\t50 mi\t50 mi | Auto\t40 mi\t40 mi | Turbo\t35 mi\t35 mi", "basis": "Turbo to Eco assist modes, 540 Wh battery"},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/gazelle-arroyo-c8-elite-2026", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 60.2, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-arroyo-c8-elite", "quote": "Weight (lbs) | 60.2 lbs excl. battery", "basis": "without battery"},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/gazelle-arroyo-c8-elite-2026", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-arroyo-c8-elite", "quote": ""},
+   {"kind": "retailer", "value": 331, "url": "https://mikesbikes.com/products/gazelle-arroyo-c8-elite-2026", "quote": "Maximum weight: 150 kg.", "basis": "unclear: 'Maximum weight' not stated as payload or total; 150 kg = 331 lb"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Active Line Plus mid-drive", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-arroyo-c8-elite", "quote": "Motor | Active Line Plus | Ebike Engine Position | Mid", "basis": "no rated watts published"},
+   {"kind": "retailer", "value": "Bosch Smart System Active Line Plus", "url": "https://mikesbikes.com/products/gazelle-arroyo-c8-elite-2026", "quote": "Bosch Smart System Active Line Plus, 50 Nm."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'10\"-6'4\"", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-arroyo-c8-elite", "quote": "46 | 4'10\" - 5'6\" | 53 | 5'6\" - 5'10\" | 57 | 5'10\" - 6'4\"", "basis": "frame sizes 46/53/57"},
+   {"kind": "retailer", "value": "4'10\"-6'4\"", "url": "https://mikesbikes.com/products/gazelle-arroyo-c8-elite-2026", "quote": "SM (4'10\" - 5'6\") | MD (5'6\" - 5'10\") | LG (5'10\" - 6'4\")"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-arroyo-c8-elite", "quote": "Frame hape | Low-Step", "basis": "rigid low-step frame; no folding mentioned"},
+   {"kind": "retailer", "value": "No", "url": "https://mikesbikes.com/products/gazelle-arroyo-c8-elite-2026", "quote": "Iconic Dutch Design: An approachable low-step frame with a comfortable, upright riding position."}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Class not stated by either source; set to 1 from 20 mph and no throttle. Maker gives weight without battery only and no max load. Mike's Bikes extras line says 'Maximum weight: 150 kg.' (= 331 lb) without saying whether it is payload or total; basis marked unclear (retailer, not maker). Mike's lists Max Assisted Speed as N/A. electricbikereview/electricbikereport had no review; REI returned 'Access denied'."}

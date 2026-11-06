@@ -1,0 +1,47 @@
+{"bike": "Cannondale|Adventure Neo", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": null, "url": "https://www.cannondale.com/en/bikes/electric/e-urban/adventure-neo/adventure-neo-4", "quote": "Check Local Bike Shops", "basis": "international (/en/) page shows no price; the US (/en-us/) page says not available in region"},
+   {"kind": "retailer", "value": 2875, "url": "https://www.n1bikes.com/products/adventure-neo-4?id=556780e96fed43b57cfb9a317234002641eeffe4b5e9a5786ceea654d1c05225&variant=C68401U20LG", "quote": "$2,875.00"},
+   {"kind": "retailer", "value": 2875, "url": "https://mikesbikes.com/products/cannondale-adventure-neo-4", "quote": "Regular price ⟶ $2,875.00", "basis": "regular price; on sale for $1,999.95"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://www.cannondale.com/en/bikes/electric/e-urban/adventure-neo/adventure-neo-4", "quote": "This drive system provides pedal assist up to a maximum speed of 20 mph. Above that, it’s all you. ⟶ Features", "basis": "no class line; no throttle listed, pedal assist to 20 mph = Class 1"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.cannondale.com/en/bikes/electric/e-urban/adventure-neo/adventure-neo-4", "quote": "This drive system provides pedal assist up to a maximum speed of 20 mph. Above that, it’s all you. ⟶ Features"},
+   {"kind": "retailer", "value": 20, "url": "https://www.n1bikes.com/products/adventure-neo-4?id=556780e96fed43b57cfb9a317234002641eeffe4b5e9a5786ceea654d1c05225&variant=C68401U20LG", "quote": "Max Assist Speed\t20 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 40, "url": "https://www.cannondale.com/en/bikes/electric/e-urban/adventure-neo/adventure-neo-4", "quote": "The light and smooth-riding Bosch Active Line motor offers 40 Nm of torque and a boost of up to 250% of your output, for an easy, natural ride feeling. ⟶ Get on and go"},
+   {"kind": "retailer", "value": 40, "url": "https://www.n1bikes.com/products/adventure-neo-4?id=556780e96fed43b57cfb9a317234002641eeffe4b5e9a5786ceea654d1c05225&variant=C68401U20LG", "quote": "Motor Torque\t40 Nm"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 400, "url": "https://www.cannondale.com/en/bikes/electric/e-urban/adventure-neo/adventure-neo-4", "quote": "Battery ⟶ Bosch PowerTube, 400Wh"},
+   {"kind": "retailer", "value": 400, "url": "https://www.n1bikes.com/products/adventure-neo-4?id=556780e96fed43b57cfb9a317234002641eeffe4b5e9a5786ceea654d1c05225&variant=C68401U20LG", "quote": "Battery\tBosch PowerTube, 400Wh"},
+   {"kind": "retailer", "value": 400, "url": "https://mikesbikes.com/products/cannondale-adventure-neo-4", "quote": "Motor\tBosch Active Line ⟶ Battery\tBosch PowerTube 400Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "65", "url": "https://www.cannondale.com/en/bikes/electric/e-urban/adventure-neo/adventure-neo-4", "quote": "With up to 65 miles of range on a single charge, you’ve got the power to go anywhere and do anything. Ride longer. Ride happier. Easy peasey. ⟶ 20 mph Assist"},
+   {"kind": "retailer", "value": "65", "url": "https://www.n1bikes.com/products/adventure-neo-4?id=556780e96fed43b57cfb9a317234002641eeffe4b5e9a5786ceea654d1c05225&variant=C68401U20LG", "quote": "Battery Range\tUp to 65 miles"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://www.cannondale.com/en/bikes/electric/e-urban/adventure-neo/adventure-neo-4", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://www.n1bikes.com/products/adventure-neo-4?id=556780e96fed43b57cfb9a317234002641eeffe4b5e9a5786ceea654d1c05225&variant=C68401U20LG", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.cannondale.com/en/bikes/electric/e-urban/adventure-neo/adventure-neo-4", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Active Line 250W", "url": "https://www.cannondale.com/en/bikes/electric/e-urban/adventure-neo/adventure-neo-4", "quote": "Bosch Active Line 250W drive-unit / 400Wh battery / Range: up to 65 mi ⟶ 01 Overview 02 Features 03 Specs"},
+   {"kind": "retailer", "value": "Bosch Active Line 250W", "url": "https://www.n1bikes.com/products/adventure-neo-4?id=556780e96fed43b57cfb9a317234002641eeffe4b5e9a5786ceea654d1c05225&variant=C68401U20LG", "quote": "Drive Unit\tBosch Active Line | Motor Power\t250W"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'11\"-6'6\"", "url": "https://www.cannondale.com/en/bikes/electric/e-urban/adventure-neo/adventure-neo-4", "quote": "Height - 4'11\" - 5'7\" | Height - 5'7\" - 6'6\"", "basis": "two size selectors (SM, LG) shown one at a time on the page; joined"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.cannondale.com/en/bikes/electric/e-urban/adventure-neo/adventure-neo-4", "quote": "SmartForm C3 Alloy step-thru frame, removable downtube battery, fully internal cable routing, post mount disc, dual water bottle headtube mount ⟶ Fork"}
+  ]
+ },
+ "status": {"sources": [{"kind": "maker", "value": "not available in US region", "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/adventure-neo/adventure-neo-4", "quote": "This product is not currently available in your region."}]},
+ "notes": "Bike recorded as the Adventure Neo 4 (model C68401U), the model the src link points to. Cannondale's US site no longer lists it (US Adventure Neo page links only to Adventure Neo Allroad); used the international /en/ page, which has no price, weight or load. Price comes from two US dealers (N+1 Bikes, Mike's Bikes), both $2,875 regular. Mike's Bikes lists Shimano Altus shifting in highlights vs microSHIFT on maker/N+1 (likely older spec text). Class 1 decided from no throttle + 20 mph. EBR/Electrek searches skipped for this one; REI blocked. One WebSearch used."}

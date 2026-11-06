@@ -1,0 +1,49 @@
+{"bike": "Bulls|Evo 2 Speed", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 4399, "url": "https://bullsbikesusa.com/products/iconic-evo-2-speed", "quote": "$2,599.00 ⟶ $4,399.00", "basis": "crossed-out regular price; $2,599 is a sale price ('Save $1,800')"},
+   {"kind": "review", "value": 5199, "url": "https://electricbikereview.com/bulls/2023-iconic-evo-2-speed/", "quote": "PRICE: ⟶ $5199", "basis": "2023 review-time price"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://bullsbikesusa.com/products/iconic-evo-2-speed", "quote": "Class-3 eBike: Pedal-assist up to 28 mph, perfect for fast commutes and longer excursions."},
+   {"kind": "review", "value": 3, "url": "https://electricbikereview.com/bulls/2023-iconic-evo-2-speed/", "quote": "The motor offers high 85 Newton meter peak torque output for excellent starts and climbing ability. Even so, it is Class 3 rated for 28mph top assisted speeds. This is one of the top motors in the Second Generation Bosch lineup.", "basis": "EBR's spec field says 'Pedal Assist (Class 1)', contradicting its own text and 28 mph top speed"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://bullsbikesusa.com/products/iconic-evo-2-speed", "quote": "Class-3 eBike: Pedal-assist up to 28 mph, perfect for fast commutes and longer excursions."},
+   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/bulls/2023-iconic-evo-2-speed/", "quote": "28 mph (45 kph) ⟶ Bicycle Details"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://bullsbikesusa.com/products/iconic-evo-2-speed", "quote": "Motor: Bosch Gen4 Performance Speed motor with 85 Nm of torque. Delivers powerful acceleration and smooth assistance, ideal for fast-paced urban rides and extended treks."},
+   {"kind": "review", "value": 85, "url": "https://electricbikereview.com/bulls/2023-iconic-evo-2-speed/", "quote": "MOTOR TORQUE: ⟶ 85 Newton meters"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 625, "url": "https://bullsbikesusa.com/products/iconic-evo-2-speed", "quote": "Battery: Bosch PowerTube 625 Wh, fully integrated into the frame. Offers long-range performance with a full charge time of around 4.9 hours. ⟶ Suspension and Frame"},
+   {"kind": "review", "value": 626.4, "url": "https://electricbikereview.com/bulls/2023-iconic-evo-2-speed/", "quote": "BATTERY WATT HOURS: ⟶ 626.4 wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://bullsbikesusa.com/products/iconic-evo-2-speed", "quote": ""},
+   {"kind": "review", "value": "40–100", "url": "https://electricbikereview.com/bulls/2023-iconic-evo-2-speed/", "quote": "ESTIMATED MIN RANGE: | 40 miles (64 km) | ESTIMATED MAX RANGE: | 100 miles (161 km)"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 58.9, "url": "https://bullsbikesusa.com/products/iconic-evo-2-speed", "quote": "Weight: 58.9 lbs. ⟶ * Specifications subject to change without notice", "basis": "battery not stated"},
+   {"kind": "review", "value": 59.7, "url": "https://electricbikereview.com/bulls/2023-iconic-evo-2-speed/", "quote": "TOTAL WEIGHT: ⟶ 59.7 lbs (27.08 kg)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://bullsbikesusa.com/products/iconic-evo-2-speed", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/bulls/2023-iconic-evo-2-speed/", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Gen4 Performance Speed", "url": "https://bullsbikesusa.com/products/iconic-evo-2-speed", "quote": "Motor: Bosch Gen4 Performance Speed motor with 85 Nm of torque. Delivers powerful acceleration and smooth assistance, ideal for fast-paced urban rides and extended treks."},
+   {"kind": "review", "value": "Gen 4 Bosch Performance Line Speed", "url": "https://electricbikereview.com/bulls/2023-iconic-evo-2-speed/", "quote": "MOTOR BRAND: ⟶ Gen 4 Bosch Performance Line Speed", "basis": "EBR also lists 'MOTOR NOMINAL OUTPUT: ⟶ 250 watts'"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://bullsbikesusa.com/products/iconic-evo-2-speed", "quote": "Frame Size\t\t41(CM)\t44(CM)\t48(CM)\t54(CM)", "basis": "frame sizes only, no rider heights"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/bulls/2023-iconic-evo-2-speed/", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://bullsbikesusa.com/products/iconic-evo-2-speed", "quote": "Frame: Lightweight aluminum 6061 with internal cable routing. Available in multiple sizes for a perfect fit. ⟶ Drivetrain and Brakes"},
+   {"kind": "review", "value": "No", "url": "https://electricbikereview.com/bulls/2023-iconic-evo-2-speed/", "quote": "A high speed hardtail commuter electric bike with bright integrated lights, sturdy aluminum alloy rack and fenders, large hydraulic disc brakes (203mm front, 180mm rear), and four frame sizes to choose from."}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker name is 'Iconic EVO 2 Speed'. On sale at maker ($2,599, regular $4,399). EBR review is of the 2023 model (same Gen4 Bosch Performance Line Speed / PowerTube 625 / Deore 10-speed spec); EBR's class field wrongly says 'Pedal Assist (Class 1)' while its text and 28 mph top speed say Class 3. No load or rider height published."}

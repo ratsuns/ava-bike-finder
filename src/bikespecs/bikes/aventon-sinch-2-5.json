@@ -1,0 +1,49 @@
+{"bike": "Aventon|Sinch 2.5", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1799, "url": "https://www.aventon.com/products/sinch-2-5-ebike", "quote": "$1799Starting at $88/mo or 0% APR with Affirm. See if you qualify"},
+   {"kind": "review", "value": 1799, "url": "https://electricbikereview.com/aventon/sinch-2-5-review/", "quote": "Price ⟶ MSRP: $1,799"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.aventon.com/products/sinch-2-5-ebike", "quote": "EBIKE CLASS ⟶ Class 2 Ebike"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereview.com/aventon/sinch-2-5-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 2"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.aventon.com/products/sinch-2-5-ebike", "quote": "TOP SPEED | 20MPH | (Adjustable to 25MPH)", "basis": "default; adjustable to 25 mph"},
+   {"kind": "review", "value": 25, "url": "https://electricbikereview.com/aventon/sinch-2-5-review/", "quote": "TOP SPEED: ⟶ 25 Mph mph", "basis": "max adjustable setting"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 60, "url": "https://www.aventon.com/products/sinch-2-5-ebike", "quote": "MOTOR TORQUE ⟶ 60Nm"},
+   {"kind": "review", "value": 60, "url": "https://electricbikereview.com/aventon/sinch-2-5-review/", "quote": "MOTOR TORQUE: ⟶ 60 Nm Newton meters"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 636.4, "url": "https://www.aventon.com/products/sinch-2-5-ebike", "quote": "Removable Internal Lithium-ion Battery, 48.8V, 14Ah (636.4Wh)"},
+   {"kind": "review", "value": 636.4, "url": "https://electricbikereview.com/aventon/sinch-2-5-review/", "quote": "BATTERY WATT HOURS: ⟶ 636.4Wh wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "55", "url": "https://www.aventon.com/products/sinch-2-5-ebike", "quote": "RANGE ⟶ Up to 55 Miles**"},
+   {"kind": "review", "value": "38–56", "url": "https://electricbikereview.com/aventon/sinch-2-5-review/", "quote": "Real World Range Test Results: | MIN PAS: 56 miles | MAX PAS: 38 miles", "basis": "reviewer's real-world test"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 68, "url": "https://www.aventon.com/products/sinch-2-5-ebike", "quote": "WEIGHT ⟶ 68 lbs"},
+   {"kind": "review", "value": 72.5, "url": "https://electricbikereview.com/aventon/sinch-2-5-review/", "quote": "TOTAL WEIGHT: ⟶ 72.5 lbs lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 300, "url": "https://www.aventon.com/products/sinch-2-5-ebike", "quote": "PAYLOAD CAPACITY ⟶ 300 lbs"},
+   {"kind": "maker", "value": 300, "url": "https://www.aventon.com/products/sinch-2-5-ebike", "quote": "TOTAL WEIGHT LIMIT ⟶ 300 lbs", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W rear hub (1,056W peak)", "url": "https://www.aventon.com/products/sinch-2-5-ebike", "quote": "Motor: 48v, 500w sustained, 1056w peak brushless hub motor"},
+   {"kind": "review", "value": "500W rear hub (1,056W peak)", "url": "https://electricbikereview.com/aventon/sinch-2-5-review/", "quote": "MOTOR NOMINAL OUTPUT: | 500W watts | MOTOR PEAK OUTPUT: | 1056W watts"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'11\"-6'2\"", "url": "https://www.aventon.com/products/sinch-2-5-ebike", "quote": "RIDER HEIGHT ⟶ 4'11\" - 6'2\""},
+   {"kind": "review", "value": "4'11\"-6'2\"", "url": "https://electricbikereview.com/aventon/sinch-2-5-review/", "quote": "Despite a claimed fit range of 4’11” to 6’2”, I suspect riders over 6 feet won’t find full pedal extension, leaving taller folks shortchanged on comfort."}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "Yes", "url": "https://www.aventon.com/products/sinch-2-5-ebike", "quote": "6061 Single-Butted Folding Aluminum Alloy with Internal Battery"},
+   {"kind": "review", "value": "Yes", "url": "https://electricbikereview.com/aventon/sinch-2-5-review/", "quote": "space-saving step-through folding frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page lists both 'PAYLOAD CAPACITY 300 lbs' and 'TOTAL WEIGHT LIMIT 300 lbs' (contradictory basis). EBR top speed 25 mph is the adjustable max; maker default 20 mph. EBR weight 72.5 lb vs maker 68 lb. EBR review quote for range/weight lines spans consecutive lines joined with ' | '. No crossed-out price on maker page."}

@@ -1,0 +1,60 @@
+{"bike": "Gazelle|Medeo T9", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2899, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-medeo-t9", "quote": "$2,899$2,499 ⟶ Shop stock: First, configure your bike", "basis": "regular $2,899 shown crossed out next to sale price $2,499"},
+   {"kind": "retailer", "value": 2899, "url": "https://flyridesusa.com/products/gazelle-medeo-t9", "quote": "$2,899.00", "basis": "line directly under the label \"Regular price\"; Fly Rides page is the High Step, Model Year 2025"},
+   {"kind": "retailer", "value": 2899, "url": "https://www.angrycatfishbicycle.com/product/gazelle-bikes-medeo-t9-smart-system-low-step-939852-1.htm", "quote": "$2,899.00 ⟶ No SALES TAX If Shipped Outside of Minnesota", "basis": "page shows \"$2,499.00\", then \"Sale Price\", then \"$2,899.00\"; read as $2,499 sale / $2,899 regular. Low Step version"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-medeo-t9", "quote": "", "basis": "no class on the product spec; 'Class 1 eBikes' appears only as a site menu link"},
+   {"kind": "retailer", "value": null, "url": "https://flyridesusa.com/products/gazelle-medeo-t9", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://www.angrycatfishbicycle.com/product/gazelle-bikes-medeo-t9-smart-system-low-step-939852-1.htm", "quote": ""}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-medeo-t9", "quote": "20 mph", "basis": "line directly under the label \"Ebike Max Speed\""},
+   {"kind": "retailer", "value": null, "url": "https://flyridesusa.com/products/gazelle-medeo-t9", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://www.angrycatfishbicycle.com/product/gazelle-bikes-medeo-t9-smart-system-low-step-939852-1.htm", "quote": ""}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 50, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-medeo-t9", "quote": "Engine Max Torque (Nm) ⟶ 50"},
+   {"kind": "retailer", "value": 50, "url": "https://flyridesusa.com/products/gazelle-medeo-t9", "quote": "Motor\tBosch Smart System Active Line Plus (50Nm), 36V"},
+   {"kind": "retailer", "value": 50, "url": "https://www.angrycatfishbicycle.com/product/gazelle-bikes-medeo-t9-smart-system-low-step-939852-1.htm", "quote": "Motor\tBosch Smart System Active Line Plus, 50 Nm"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 545, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-medeo-t9", "quote": "545 Wh: up to 95 mi ⟶ Included"},
+   {"kind": "retailer", "value": 545, "url": "https://flyridesusa.com/products/gazelle-medeo-t9", "quote": "Battery\t545Wh on frame ⟶ Display\tBosch Purion 200"},
+   {"kind": "retailer", "value": 545, "url": "https://www.angrycatfishbicycle.com/product/gazelle-bikes-medeo-t9-smart-system-low-step-939852-1.htm", "quote": "Battery\t545 Wh ⟶ Controller/Display\tBosch Purion 200"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "40–95", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-medeo-t9", "quote": "Eco\t95 mi | Tour\t60 mi | Auto\t45 mi | Turbo\t40 mi", "basis": "four consecutive lines of the maker's 'Battery and Range' spec (\" | \" = line break); highlight line also says \"545 Wh: up to 95 mi\""},
+   {"kind": "retailer", "value": null, "url": "https://flyridesusa.com/products/gazelle-medeo-t9", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://www.angrycatfishbicycle.com/product/gazelle-bikes-medeo-t9-smart-system-low-step-939852-1.htm", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 50.9, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-medeo-t9", "quote": "50.9 lbs excl. battery ⟶ Color", "basis": "without battery"},
+   {"kind": "retailer", "value": null, "url": "https://flyridesusa.com/products/gazelle-medeo-t9", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://www.angrycatfishbicycle.com/product/gazelle-bikes-medeo-t9-smart-system-low-step-939852-1.htm", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-medeo-t9", "quote": "", "basis": "no max load / permissible weight on the page"},
+   {"kind": "retailer", "value": null, "url": "https://flyridesusa.com/products/gazelle-medeo-t9", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://www.angrycatfishbicycle.com/product/gazelle-bikes-medeo-t9-smart-system-low-step-939852-1.htm", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Active Line Plus mid-drive (50 Nm)", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-medeo-t9", "quote": "Motor ⟶ Active Line Plus", "basis": "no rated watts published; spec also says \"Ebike Engine Position | Mid\" and \"Ebike System Brand | Bosch Smart System\""},
+   {"kind": "retailer", "value": "Bosch Smart System Active Line Plus (50 Nm)", "url": "https://flyridesusa.com/products/gazelle-medeo-t9", "quote": "Motor\tBosch Smart System Active Line Plus (50Nm), 36V", "basis": "no rated watts given"},
+   {"kind": "retailer", "value": "Bosch Smart System Active Line Plus (50 Nm)", "url": "https://www.angrycatfishbicycle.com/product/gazelle-bikes-medeo-t9-smart-system-low-step-939852-1.htm", "quote": "Motor\tBosch Smart System Active Line Plus, 50 Nm", "basis": "no rated watts given"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'9\"-6'3\"", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-medeo-t9", "quote": "40 | 4'9\" - 5'3\" | 45 | 4'10\" - 5'6\" | 50 | 5'6\" - 5'10\" | 55 | 5'10\" - 6'3\"", "basis": "frame-size selector, consecutive lines (\" | \" = line break); range across sizes XS 40 to L 55"},
+   {"kind": "retailer", "value": null, "url": "https://flyridesusa.com/products/gazelle-medeo-t9", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://www.angrycatfishbicycle.com/product/gazelle-bikes-medeo-t9-smart-system-low-step-939852-1.htm", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-medeo-t9", "quote": "Stable lightweight aluminum sloping frame with 70, 5° headset angle and 73° seat tube angle for a sporty posture and precise handling. Cables beautifully integrated into the frame. ⟶ Frame Material", "basis": "rigid sloping frame; no folding mentioned anywhere on the page"},
+   {"kind": "retailer", "value": null, "url": "https://flyridesusa.com/products/gazelle-medeo-t9", "quote": ""},
+   {"kind": "retailer", "value": "No", "url": "https://www.angrycatfishbicycle.com/product/gazelle-bikes-medeo-t9-smart-system-low-step-939852-1.htm", "quote": "Frame\tStable lightweight aluminium sloping frame with 70,5° headset angle and 73° saddle tube angle for a sporty posture and precise handling. Cables beautifully integrated into the frame. ⟶ Fork\tSR Suntour MOBIE A32 DS, Telescope, spiral spring", "basis": "rigid sloping frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Current maker page is the Bosch Smart System version (545Wh on-tube battery, Purion 200). Maker page on sale ($2,499); regular $2,899 recorded. Maker gives no e-bike class, no max load, no rated motor watts, and weight only 'excl. battery' (battery weight not given). Range is per assist mode (Eco 95 / Tour 60 / Auto 45 / Turbo 40 mi). Rider height and per-mode range values are not returned by the standard script (no regex match), so quotes join consecutive page lines with ' | '. electricbikereview.com has only a 2019 Medeo T9 review (396Wh rack battery, older Bosch system) and a 'Medeo T9 City HMB' review — older generation/different model, not used. electricbikereport.com has only a 2024 'Medeo T9 City' review — different model, not used. REI search returned 'Access to this page has been denied' (HTTP 403, bot check). Best Buy search had no Medeo listing. Used two US dealer pages found via web search instead: Fly Rides USA (High Step, MY 2025) and Angry Catfish (Low Step, Smart System); they confirm price/torque/battery only."}

@@ -1,0 +1,48 @@
+{"bike": "Benno|eJoy 5i Performance", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 3749, "url": "https://bennobikes.com/e-bikes/ejoy/", "quote": "5i Performance: $3,749 USD"},
+   {"kind": "retailer", "value": 3750, "url": "https://northwestbicycle.com/products/benno-ejoy-5i-evo-1-performance-class-1-ebike", "quote": "Sale price | $3,750.00", "basis": "Shopify 'Sale price' label but no lower price shown"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://bennobikes.com/e-bikes/ejoy/", "quote": "Speed: USA/CAN 20mph, EU 25km/h", "basis": "maker states no class; Performance is USA 20mph, no throttle -> Class 1"},
+   {"kind": "retailer", "value": 1, "url": "https://northwestbicycle.com/products/benno-ejoy-5i-evo-1-performance-class-1-ebike", "quote": "Ebike Class\t1"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://bennobikes.com/e-bikes/ejoy/", "quote": "Speed: USA/CAN 20mph, EU 25km/h"},
+   {"kind": "retailer", "value": 20, "url": "https://northwestbicycle.com/products/benno-ejoy-5i-evo-1-performance-class-1-ebike", "quote": "Assist Speed (Mph)\t20"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 65, "url": "https://bennobikes.com/e-bikes/ejoy/", "quote": "Power/Torque: 250W/65Nm"},
+   {"kind": "retailer", "value": 65, "url": "https://northwestbicycle.com/products/benno-ejoy-5i-evo-1-performance-class-1-ebike", "quote": "Motor Torque (Nm)\t65"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 400, "url": "https://bennobikes.com/e-bikes/ejoy/", "quote": "Battery: 400Wh/500Wh", "basis": "maker offers 400Wh or 500Wh; 400Wh taken as standard (smaller option; US dealer listing is 400Wh)"},
+   {"kind": "retailer", "value": 400, "url": "https://northwestbicycle.com/products/benno-ejoy-5i-evo-1-performance-class-1-ebike", "quote": "Battery Power (Wh)\t400"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "25–75", "url": "https://bennobikes.com/e-bikes/ejoy/", "quote": "Range 400Wh Battery: 25-75mi (40-120km)"},
+   {"kind": "retailer", "value": "25–75", "url": "https://northwestbicycle.com/products/benno-ejoy-5i-evo-1-performance-class-1-ebike", "quote": "Range Estimate (Mi)\t25-75"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://bennobikes.com/e-bikes/ejoy/", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://northwestbicycle.com/products/benno-ejoy-5i-evo-1-performance-class-1-ebike", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": 400, "url": "https://bennobikes.com/e-bikes/ejoy/", "quote": "MAX GROSS WEIGHT 400LB/180KG (RIDER+CARGO+BIKE)", "basis": "total"},
+   {"kind": "retailer", "value": 400, "url": "https://northwestbicycle.com/products/benno-ejoy-5i-evo-1-performance-class-1-ebike", "quote": "Gross Payload (Lbs)\t400", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Performance 250W (GEN 3)", "url": "https://bennobikes.com/e-bikes/ejoy/", "quote": "Motor\tBosch Performance 250W, 65Nm, GEN 3\tBosch Performance Sport 250W, 65Nm, GEN 3\tBosch Performance 250W, 65Nm, GEN 3"},
+   {"kind": "retailer", "value": "Bosch Performance 250W (GEN 3)", "url": "https://northwestbicycle.com/products/benno-ejoy-5i-evo-1-performance-class-1-ebike", "quote": "Bosch Performance 250W 65Nm GEN 3 20Mph"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'0\"-6'0\"", "url": "https://bennobikes.com/e-bikes/ejoy/", "quote": "Frame Size\tOne Size – Fits Riders from 5’0” to 6’0”"},
+   {"kind": "retailer", "value": null, "url": "https://northwestbicycle.com/products/benno-ejoy-5i-evo-1-performance-class-1-ebike", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://bennobikes.com/e-bikes/ejoy/", "quote": "Frame\t6061 Aluminum Alloy with Front Tray Mounts"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker specs from the eJoy page's FULL SPECIFICATIONS (5i Performance = 1st column), MOTOR SPECS (PERFORMANCE block) and SIZING & CAPACITY tabs. Maker configurator offers 5i Performance with 400Wh or 500Wh (both mph); recorded 400Wh as standard. Maker publishes no bike weight. Maker MSRP $3,749 vs retailer $3,750. Retailer is Northwest Bicycle ('eJoy 5i Evo 1'), sold out."}

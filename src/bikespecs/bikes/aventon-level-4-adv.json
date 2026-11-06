@@ -1,0 +1,49 @@
+{"bike": "Aventon|Level 4 ADV", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2799, "url": "https://www.aventon.com/products/level-4-adv-ebike", "quote": "$2,699.00 | $2,799.00", "basis": "regular $2,799; sale $2,699 ($100 off)"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/aventon-level-4-adv-review/", "quote": ""}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://www.aventon.com/products/level-4-adv-ebike", "quote": "Ebike Class | Class 1 (Convertible to Class 2 and/or Class 3)"},
+   {"kind": "review", "value": 1, "url": "https://electricbikereport.com/aventon-level-4-adv-review/", "quote": "As a side note, I should mention that we performed our testing using the bike’s default programming and Class 1 speed settings. Riders who increase power via the RideTune feature and/or who travel at speeds above 20 mph should expect less range."}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.aventon.com/products/level-4-adv-ebike", "quote": "Level 4 ADV comes out of the box as a Class 1 eBike, meaning no throttle and a max pedal assist speed of 20mph. However, the Level 4 ADV is throttle-compatible and able to be unlocked to a pedal assist speed of 28mph.", "basis": "adjustable to 28 mph"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/aventon-level-4-adv-review/", "quote": "This linear pattern translated to higher speeds with nearly the same level of effort, giving me more return for the effort I applied. The bike pedaled to 20 mph easily in the Class 1 test and averaged just below 28 mph in the Class 3 test.", "basis": "adjustable to 28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 100, "url": "https://www.aventon.com/products/level-4-adv-ebike", "quote": "Motor Torque | 100Nm"},
+   {"kind": "review", "value": 100, "url": "https://electricbikereport.com/aventon-level-4-adv-review/", "quote": "Motor: Aventon Ultro S (100Nm, 750W Peak) ⟶ Headlight: Integrated LED"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 800, "url": "https://www.aventon.com/products/level-4-adv-ebike", "quote": "Battery | Removable Lithium-Ion. 36V, 20Ah, 800Wh, Samsung 21700 58E cells"},
+   {"kind": "review", "value": 800, "url": "https://electricbikereport.com/aventon-level-4-adv-review/", "quote": "Battery: Removable Internal Lithium-ion. 36.4V, 22Ah, 800Wh, Samsung 21700 58E cells 42V/4A ⟶ Charger: 42V/4A"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "110", "url": "https://www.aventon.com/products/level-4-adv-ebike", "quote": "Range | Up to 110 Miles"},
+   {"kind": "review", "value": "110", "url": "https://electricbikereport.com/aventon-level-4-adv-review/", "quote": "Claimed Range: Up to 110 Miles ⟶ Throttle: Compatible, Not included"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 61, "url": "https://www.aventon.com/products/level-4-adv-ebike", "quote": "Weight | 61lbs"},
+   {"kind": "review", "value": 61, "url": "https://electricbikereport.com/aventon-level-4-adv-review/", "quote": "WEIGHT & DIMENSIONS ⟶ Claimed weight: 61 lbs", "basis": "claimed; tested 64.1 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 300, "url": "https://www.aventon.com/products/level-4-adv-ebike", "quote": "Total Weight Limit | 300 lbs", "basis": "total"},
+   {"kind": "review", "value": 300, "url": "https://electricbikereport.com/aventon-level-4-adv-review/", "quote": "Total payload capacity: 300 lbs. ⟶ COMPONENTS & ACCESSORIES"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Ultro S mid-drive (750W peak)", "url": "https://www.aventon.com/products/level-4-adv-ebike", "quote": "Motor | Aventon Ultro S Mid-drive Motor, 100Nm Motor Torque, 750W Peak Power", "basis": "no rated (sustained) watts published"},
+   {"kind": "review", "value": "Ultro S mid-drive (750W peak)", "url": "https://electricbikereport.com/aventon-level-4-adv-review/", "quote": "Motor: Aventon Ultro S (100Nm, 750W Peak) ⟶ Headlight: Integrated LED"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'3\"-6'7\"", "url": "https://www.aventon.com/products/level-4-adv-ebike", "quote": "Rider Height | Medium - 5'3\"-5'10\". || Large - 5'10\"-6'4\". || Extra Large - 6'4\"-6'7\"", "basis": "Step Over frame, three sizes combined"},
+   {"kind": "review", "value": "5'3\"-6'3\"", "url": "https://electricbikereport.com/aventon-level-4-adv-review/", "quote": "Rider height range: 5’3” – 6’3” ⟶ Total payload capacity: 300 lbs."}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.aventon.com/products/level-4-adv-ebike", "quote": "Frame Style | Step-Over"},
+   {"kind": "review", "value": "No", "url": "https://electricbikereport.com/aventon-level-4-adv-review/", "quote": "Frame: 6061 Aluminum ⟶ Drivetrain: Shimano CUES 10-spd, 48T chainring, 11-39T"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker values from the top banner, Specifications section and FAQ (default variant Step Over, Medium); ' | ' joins consecutive page lines. Default variant (Camouflage/Medium) shows 'NOTIFY ME WHEN BACK IN STOCK' (out of stock, not marked discontinued). Battery spec differs slightly: maker '36V, 20Ah, 800Wh' vs EBR '36.4V, 22Ah, 800Wh' (same Wh). Maker now lists an XL size (6'4\"-6'7\"); EBR lists 5'3\"-6'3\". Page also sells a Step Through frame. Only one independent source (EBR)."}

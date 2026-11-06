@@ -1,0 +1,48 @@
+{"bike": "Benno|RemiDemi XL EVO 1 Performance Sport", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 4599, "url": "https://bennobikes.com/e-bikes/remidemi-xl/", "quote": "Performance Sport: $4,599 USD"},
+   {"kind": "retailer", "value": 4600, "url": "https://bouldernordic.com/products/benno-remidemi-xl-9d-evo-1-performance-line-sport-class-3-ebike-545wh-easy-on-arctic-gray", "quote": "$4,600.00"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://bennobikes.com/e-bikes/remidemi-xl/", "quote": "Speed: USA 28mph, NZ 45km/h", "basis": "maker states no class; Performance Sport is USA 28mph, no throttle -> Class 3"},
+   {"kind": "retailer", "value": 3, "url": "https://bouldernordic.com/products/benno-remidemi-xl-9d-evo-1-performance-line-sport-class-3-ebike-545wh-easy-on-arctic-gray", "quote": "Ebike Class\t3"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://bennobikes.com/e-bikes/remidemi-xl/", "quote": "Speed: USA 28mph, NZ 45km/h"},
+   {"kind": "retailer", "value": 28, "url": "https://bouldernordic.com/products/benno-remidemi-xl-9d-evo-1-performance-line-sport-class-3-ebike-545wh-easy-on-arctic-gray", "quote": "Assist Speed (Mph)\t28"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 75, "url": "https://bennobikes.com/e-bikes/remidemi-xl/", "quote": "Power/Torque: 250W/75Nm"},
+   {"kind": "retailer", "value": 75, "url": "https://bouldernordic.com/products/benno-remidemi-xl-9d-evo-1-performance-line-sport-class-3-ebike-545wh-easy-on-arctic-gray", "quote": "Motor Torque (Nm)\t75"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 545, "url": "https://bennobikes.com/e-bikes/remidemi-xl/", "quote": "Battery\tBosch Powerpack 545Wh Lithium-Ion\tBosch Powerpack 400Wh/545Wh Lithium-Ion", "basis": "Performance Sport is the 1st column (545Wh only)"},
+   {"kind": "retailer", "value": 545, "url": "https://bouldernordic.com/products/benno-remidemi-xl-9d-evo-1-performance-line-sport-class-3-ebike-545wh-easy-on-arctic-gray", "quote": "Bosch Powerpack 545Wh Lithium-Ion Battery. 4a Charger"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "30–83", "url": "https://bennobikes.com/e-bikes/remidemi-xl/", "quote": "Range Single Battery 545Wh: 30-83mi (50-135km)"},
+   {"kind": "retailer", "value": "30–83", "url": "https://bouldernordic.com/products/benno-remidemi-xl-9d-evo-1-performance-line-sport-class-3-ebike-545wh-easy-on-arctic-gray", "quote": "Range Estimate (Mi)\t30-83"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://bennobikes.com/e-bikes/remidemi-xl/", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://bouldernordic.com/products/benno-remidemi-xl-9d-evo-1-performance-line-sport-class-3-ebike-545wh-easy-on-arctic-gray", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": 420, "url": "https://bennobikes.com/e-bikes/remidemi-xl/", "quote": "MAX GROSS WEIGHT 420LB/190KG (RIDER+CARGO+BIKE)", "basis": "total"},
+   {"kind": "retailer", "value": 420, "url": "https://bouldernordic.com/products/benno-remidemi-xl-9d-evo-1-performance-line-sport-class-3-ebike-545wh-easy-on-arctic-gray", "quote": "Gross Payload (Lbs)\t420", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Performance Sport Smart System 250W", "url": "https://bennobikes.com/e-bikes/remidemi-xl/", "quote": "Motor\tBosch Performance Sport Smart System 250W, 75Nm, GEN 3\tBosch Performance Smart System 250W, 75Nm, GEN 3"},
+   {"kind": "retailer", "value": "Bosch Performance Sport 250W (GEN 3)", "url": "https://bouldernordic.com/products/benno-remidemi-xl-9d-evo-1-performance-line-sport-class-3-ebike-545wh-easy-on-arctic-gray", "quote": "Bosch Performance Sport 250W 75Nm GEN 3 28MPH"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'1\"", "url": "https://bennobikes.com/e-bikes/remidemi-xl/", "quote": "Frame Size\tOne Size – Fits Riders from 5’1” to 6’1”"},
+   {"kind": "maker", "value": "5'1\"-6'2\"", "url": "https://bennobikes.com/e-bikes/remidemi-xl/", "quote": "FITS WIDE RANGE OF RIDERS 5’1”/155CM – 6’2”/188CM", "basis": "SIZING & CAPACITY tab; contradicts the full-spec table"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://bennobikes.com/e-bikes/remidemi-xl/", "quote": "Frame\t6061 Aluminum Alloy with Front Tray Mounts"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page contradicts itself: (1) rider height 5'1\"-6'1\" in full specs vs 5'1\"-6'2\" in SIZING & CAPACITY; (2) SIZING says 'MAX GROSS WEIGHT 420LB/190KG' but the next sentence says 'rider+cargo+bike ≤ 400lb/180kg'; (3) drive-system block says 'SMART SYSTEM GEN4' while full-spec table says 'GEN 3'. Retailer (Boulder Nordic) bullet and title say 545Wh but its spec table says 'Battery Power (Wh)\t575' (likely typo); retailer price $4,600 vs maker $4,599. EVO 2 is listed as 'Currently unavailable in the United States'; EVO 1 is the US model. Maker publishes no bike weight."}

@@ -1,0 +1,50 @@
+{"bike": "Brompton|Electric C Line (All)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 4700, "url": "https://us.brompton.com/p/1810/electric-c-line-with-superroll-e-motiq-system-4-speed-us", "quote": "Electric C Line with SuperRoll+ - e-Motiq system - 4-speed ⟶ $4,700.00", "basis": "4-speed SuperRoll+ version (the src link)"},
+   {"kind": "retailer", "value": null, "url": "https://cambriabike.com/products/brompton-electric-c-line-4-speed-palm-green", "quote": "Earn 4700 points worth $94.00 on this item / Join Now", "basis": "sold out; no price shown"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://us.brompton.com/p/1810/electric-c-line-with-superroll-e-motiq-system-4-speed-us", "quote": "", "basis": "maker page gives no class or top speed"},
+   {"kind": "retailer", "value": null, "url": "https://cambriabike.com/products/brompton-electric-c-line-4-speed-palm-green", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/brompton-electric-c-line-review/", "quote": "E-BIKE CLASS: ⟶ CLASS 1 (PEDAL ASSIST TO 15.5 MPH)", "basis": "review is of the previous generation (300Wh, front hub), not the e-Motiq model; not counted"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": null, "url": "https://us.brompton.com/p/1810/electric-c-line-with-superroll-e-motiq-system-4-speed-us", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/brompton-electric-c-line-review/", "quote": "Pedal Assist: 3 Levels, up to 15.5 mph (25 kmp/h) ⟶ Claimed Range: 20-45 miles", "basis": "previous generation; not counted"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 24, "url": "https://us.brompton.com/p/1810/electric-c-line-with-superroll-e-motiq-system-4-speed-us", "quote": "Rear Wheel | Brompton Rear Motor 24Nm of Torque and 250W of Motor Power"},
+   {"kind": "retailer", "value": 24, "url": "https://cambriabike.com/products/brompton-electric-c-line-4-speed-palm-green", "quote": "Rear Wheel: Brompton Rear Motor with 24Nm Torque and 250W Power ⟶ Front Wheel: Double-wall rim, 20 spokes laced to a Brompton front hub"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 345, "url": "https://us.brompton.com/p/1810/electric-c-line-with-superroll-e-motiq-system-4-speed-us", "quote": "Battery ⟶ 345Wh Greenway​ - Up to 56 mile range​ with 5-hour full charge​"},
+   {"kind": "retailer", "value": 345, "url": "https://cambriabike.com/products/brompton-electric-c-line-4-speed-palm-green", "quote": "Battery: 345Wh Greenway – Up to 56 miles range with 5-hour full charge ⟶ Pedals: Brompton Folding left hand and non-folding right-hand pedals"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "56", "url": "https://us.brompton.com/p/1810/electric-c-line-with-superroll-e-motiq-system-4-speed-us", "quote": "Battery ⟶ 345Wh Greenway​ - Up to 56 mile range​ with 5-hour full charge​"},
+   {"kind": "retailer", "value": "56", "url": "https://cambriabike.com/products/brompton-electric-c-line-4-speed-palm-green", "quote": "Battery: 345Wh Greenway – Up to 56 miles range with 5-hour full charge ⟶ Pedals: Brompton Folding left hand and non-folding right-hand pedals"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 39.5, "url": "https://us.brompton.com/electric-c-line", "quote": "Weight without battery | From 31.4 lb | Weight | From 39.5 lb", "basis": "maker lists 'Weight without battery' From 31.4 lb and 'Weight' From 39.5 lb, so 39.5 is with battery; 'From' = lightest version"},
+   {"kind": "retailer", "value": 39.5, "url": "https://cambriabike.com/products/brompton-electric-c-line-4-speed-palm-green", "quote": "Weight: From 39.5 lb ⟶ Speed: 4-speed"}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://us.brompton.com/p/1810/electric-c-line-with-superroll-e-motiq-system-4-speed-us", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/brompton-electric-c-line-review/", "quote": "Total payload capacity: 242.5 lbs ⟶ COMPONENTS & ACCESSORIES", "basis": "previous generation; not counted"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "250W Brompton Rear Motor", "url": "https://us.brompton.com/p/1810/electric-c-line-with-superroll-e-motiq-system-4-speed-us", "quote": "Rear Wheel | Brompton Rear Motor 24Nm of Torque and 250W of Motor Power"},
+   {"kind": "retailer", "value": "250W Brompton Rear Motor", "url": "https://cambriabike.com/products/brompton-electric-c-line-4-speed-palm-green", "quote": "Rear Wheel: Brompton Rear Motor with 24Nm Torque and 250W Power ⟶ Front Wheel: Double-wall rim, 20 spokes laced to a Brompton front hub"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://us.brompton.com/p/1810/electric-c-line-with-superroll-e-motiq-system-4-speed-us", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/brompton-electric-c-line-review/", "quote": "Rider height range: 4’7” to 6’8” ⟶ Total payload capacity: 242.5 lbs", "basis": "previous generation; not counted"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "Yes", "url": "https://us.brompton.com/p/1810/electric-c-line-with-superroll-e-motiq-system-4-speed-us", "quote": "Folded Size ⟶ 23\" x 22.2\" x 10.6\""},
+   {"kind": "retailer", "value": "Yes", "url": "https://cambriabike.com/products/brompton-electric-c-line-4-speed-palm-green", "quote": "Electric C Line with SuperRoll+ - e-Motiq system - 4-speed"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Current model is the e-Motiq (Mark 2) version: 345Wh, rear motor. Cambria Bike's dealer page copies Brompton's text (not truly independent) and is sold out. The only independent review (Electric Bike Report) is of the previous generation (300Wh, front hub, Class 1 15.5 mph, 4'7\"-6'8\", 242.5 lbs payload), so recorded as null/not counted. No source found for the e-Motiq US top speed/class. Price is for the 4-speed SuperRoll+ (src link); other C Line variants may differ. Used 1 WebSearch."}

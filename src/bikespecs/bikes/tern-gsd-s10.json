@@ -1,0 +1,49 @@
+{"bike": "Tern|GSD S10", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 7999, "url": "https://www.ternbicycles.com/us/bikes/473/gsd-s10", "quote": "$7,999 ⟶ WHY GSD GEN 3 SPECS ACCESSORIES SUPPORT FIND A DEALER BUY"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/tern-gsd-review/", "quote": ""}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://www.ternbicycles.com/us/bikes/473/gsd-s10", "quote": "", "basis": "maker page gives no class; only \"max speed 20 mph (US)\""},
+   {"kind": "review", "value": 1, "url": "https://electricbikereport.com/tern-gsd-review/", "quote": "The Tern GSD is a straightforward Class 1 e-bike with pedal assist up to 20 mph. You can fine-tune its behavior through the Bosch app, but we ran our test using the factory default settings to get a baseline feel for its performance:"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.ternbicycles.com/us/bikes/473/gsd-s10", "quote": "Bosch Cargo Line, 400% Assist, 85 Nm Torque, max speed 20 mph (US)"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/tern-gsd-review/", "quote": "Motor: Bosch Cargo Line, 400% Assist, 85 Nm Torque, max speed 25 kph (EU); max speed 20 mph (US) ⟶ Headlight: Ignis Headlight, Hi/Lo beams, 700 lumens"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://www.ternbicycles.com/us/bikes/473/gsd-s10", "quote": "Bosch Cargo Line, 400% Assist, 85 Nm Torque, max speed 20 mph (US)"},
+   {"kind": "review", "value": 85, "url": "https://electricbikereport.com/tern-gsd-review/", "quote": "Motor: Bosch Cargo Line, 400% Assist, 85 Nm Torque, max speed 25 kph (EU); max speed 20 mph (US) ⟶ Headlight: Ignis Headlight, Hi/Lo beams, 700 lumens"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 545, "url": "https://www.ternbicycles.com/us/bikes/473/gsd-s10", "quote": "Bosch 545 PowerPack, Fast Swap, Dual Battery bays, optional 2 x 800 Wh max capacity ⟶ DISPLAY:"},
+   {"kind": "review", "value": 545, "url": "https://electricbikereport.com/tern-gsd-review/", "quote": "Battery: Bosch 545 PowerPack, Fast Swap, Dual Battery bays, optional 2 x 800 Wh max capacity ⟶ Charger: 220V, 4A (EU); 100-240V, 4A (US)"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "28–61", "url": "https://www.ternbicycles.com/us/bikes/473/gsd-s10", "quote": "545 Wh: 45-98 km (28-61 mi); 1090 Wh: 90-196 km (56-122 mi) ⟶ CHARGER:"},
+   {"kind": "review", "value": "28–61", "url": "https://electricbikereport.com/tern-gsd-review/", "quote": "Claimed Range: 545 Wh: 45-98 km (28-61 mi); 1090 Wh: 90-196 km (56-122 mi) ⟶ Throttle:No"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 82.3, "url": "https://www.ternbicycles.com/us/bikes/473/gsd-s10", "quote": "37.32 kg (82.3 lb) ⟶ GEAR INCHES:", "basis": "listed under \"WEIGHT:\"; page note says weight \"may not include racks and fenders\"; battery not mentioned either way"},
+   {"kind": "review", "value": 82.3, "url": "https://electricbikereport.com/tern-gsd-review/", "quote": "Claimed weight: 82.3 lb", "basis": "claimed; \"Tested Weight: 104 lb (With racks, bags, hndlebar attachments)\""}
+  ],
+  "load": [
+   {"kind": "maker", "value": 463, "url": "https://www.ternbicycles.com/us/bikes/473/gsd-s10", "quote": "Best-in-class hauling capacity, rated to a maximum gross vehicle weight of 210 kg (463 lb) with a rear rack load capacity of 100 kg (220 lb)", "basis": "total"},
+   {"kind": "review", "value": 463, "url": "https://electricbikereport.com/tern-gsd-review/", "quote": "Huge payload capacity: With up to 463 lbs of total carrying capacity and a 220-lb rear rack rating, this bike means business. It’s as practical as it is powerful.", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Cargo Line (85 Nm)", "url": "https://www.ternbicycles.com/us/bikes/473/gsd-s10", "quote": "Bosch Cargo Line, 400% Assist, 85 Nm Torque, max speed 20 mph (US)", "basis": "no rated watts published"},
+   {"kind": "review", "value": "Bosch Cargo Line mid-drive (85 Nm)", "url": "https://electricbikereport.com/tern-gsd-review/", "quote": "I’ve said it before and I’ll say it again: few bike styles benefit more from a motor than a cargo bike, and the GSD proves that point perfectly. With Bosch’s 85Nm Cargo Line motor on board, this thing makes hill climbing feel surprisingly manageable, even when loaded down.", "basis": "no rated watts given; review calls it one of \"Bosch’s mid-drive systems\""}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'11\"-6'7\"", "url": "https://www.ternbicycles.com/us/bikes/473/gsd-s10", "quote": "Easy-sharing cockpit adjusts without tools to fit riders 150 - 200 cm (4'11\" - 6'7\") tall and weighing up to 130 kg (287 lb)"},
+   {"kind": "review", "value": "4'11\"-6'7\"", "url": "https://electricbikereport.com/tern-gsd-review/", "quote": "Rider height range: 4’11” – 6’7”"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.ternbicycles.com/us/bikes/473/gsd-s10", "quote": "FOLDING SIZE: ⟶ 185 × 46 × 88 cm (72.8 × 18.1 × 34.6 in)", "basis": "judgment: maker lists a folding size/time, but folded length is 185 cm (full bike length) — only the handlebar folds, frame does not"},
+   {"kind": "review", "value": "No", "url": "https://electricbikereport.com/tern-gsd-review/", "quote": "Always ones for portability, the folding handlebar helps load up the bike inside SUVs.", "basis": "folding handlebar only; not a folding frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Page is GSD Gen 3; EBReport review says 'Now in its third generation', so same generation. Maker page gives no e-bike class (EBReport: Class 1, no throttle). Maker spec table lists 'MAX LOAD WEIGHT: 210 kg (463 lb)' identical to 'MAX GROSS VEHICLE WEIGHT', so 463 lb is a total (bike+rider+cargo) -> basis total; max rider weight is 130 kg (286.6 lb). Maker contradicts itself on rider height: highlights say 150-200 cm (4'11\"-6'7\"), spec table says 'SUGGESTED RIDER HEIGHT: 153 - 200 cm (60.2 - 78.7 in)'. No rated motor watts on maker or review page. Fold recorded 'No' as a judgment call (handlebar-only fold) — reviewer may want to confirm. Only one independent source: electricbikereview.com search returned no results for 'Tern GSD S10'; REI search lists only the GSD P10 Gen 3, not the S10."}

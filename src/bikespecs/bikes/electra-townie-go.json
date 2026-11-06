@@ -1,0 +1,45 @@
+{"bike": "Electra|Townie Go!", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1799.99, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go/p/84176/", "quote": "$1,799.99 ⟶ Model 5353864"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go/p/84176/", "quote": "E-bike Classification ⟶ Class 2"},
+   {"kind": "review", "value": 2, "url": "https://www.electricbikejournal.com/electra-townie-go-review/", "quote": "Meet the new Electra Townie Go — a Class 2 electric bike with pedal assist up to 20 mph, a thumb throttle for effortless cruising, and updated safety features."}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go/p/84176/", "quote": "Max assist speed ⟶ 20 mph"},
+   {"kind": "review", "value": 20, "url": "https://www.electricbikejournal.com/electra-townie-go-review/", "quote": "Meet the new Electra Townie Go — a Class 2 electric bike with pedal assist up to 20 mph, a thumb throttle for effortless cruising, and updated safety features."}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 60, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go/p/84176/", "quote": "Motor 500W ⟶ Torque 60Nm"},
+   {"kind": "review", "value": 60, "url": "https://www.electricbikejournal.com/electra-townie-go-review/", "quote": "500w – 60Nm ⟶ 520Wh"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 520, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go/p/84176/", "quote": "Battery ⟶ Hyena 520Wh"},
+   {"kind": "review", "value": 520, "url": "https://www.electricbikejournal.com/electra-townie-go-review/", "quote": "The integrated 520Wh battery sits inside the downtube, keeping weight low and retaining the classic Townie silhouette."}
+  ],
+  "range": [
+   {"kind": "maker", "value": "50", "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go/p/84176/", "quote": "Torque 60Nm ⟶ Range Up to 50 mi"},
+   {"kind": "review", "value": "50", "url": "https://www.electricbikejournal.com/electra-townie-go-review/", "quote": "Electra estimates up to 50 miles of range, depending on assist mode, terrain, and riding style."}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 52.1, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go/p/84176/", "quote": "Weight ⟶ ML - 23.63 kg / 52.1 lbs", "basis": "size ML"},
+   {"kind": "review", "value": null, "url": "https://www.electricbikejournal.com/electra-townie-go-review/", "quote": "Weight: 57lbs ⟶ Website: electra.trekbikes.com", "basis": "reviewed bike has fenders and rack (EQ spec); not this variant"}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go/p/84176/", "quote": "This bike has a maximum total weight limit (combined weight of bicycle, rider, and cargo) of 80 pounds (36 kg).", "basis": "total; figure is impossible (bike alone is 52.1 lb) so not recorded"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W Hyena Lite rear hub", "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go/p/84176/", "quote": "Motor ⟶ Hyena Lite hub motor, 500W, 48V"},
+   {"kind": "review", "value": "500W Hyena rear hub", "url": "https://www.electricbikejournal.com/electra-townie-go-review/", "quote": "Power comes from a 500-watt Hyena rear hub motor, delivering 60 Nm of torque with a responsive torque sensor for natural-feeling assist."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'11\"-6'4\"", "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go/p/84176/", "quote": "Size\tRider Height\tInseam ⟶ S-M | 4'11\" - 5'8\" ⟶ 78 - 82 cm | 5'5\" - 6'4\" ⟶ 85 - 92 cm", "basis": "S-M 4'11\"-5'8\", M-L 5'5\"-6'4\""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go/p/84176/", "quote": ""}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker link redirects to .../townie-go/f/EF210-3/townie-go%2521/84176/ (same product, model 5353864, Matte Black/Rain). The family's model chooser also lists a second 'Townie Go!' at $2,099.99 (Shark Grey colors, Class 2) and EQ at $1,999.99 — recorded the $1,799.99 model this link selects. Maker weight-limit line says 80 lb total, which is clearly a page error; load left null. Electric Bike Journal review covers the fendered/rack version at $1,999 (likely the EQ); used only for drive-system specs, and it says the bike can be set as Class 1 or 2. EBR/Electrek only have older-generation Townie Go! reviews; REI blocked (bot check). One WebSearch used."}

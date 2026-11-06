@@ -1,0 +1,41 @@
+{"bike": "Eunorau|E-FAT-STEP", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": null, "url": "https://eunorau-ebike.com/en-canada/products/e-fat-step", "quote": "", "basis": "product page no longer exists; redirects to https://eunorau-ebike.com/collections/foldable-electric-bikes"},
+   {"kind": "retailer", "value": 1699, "url": "https://www.upzy.com/products/btn-eunorau-e-fat-step-500w-48v-folding-step-through-7-speed-fat-tire-electric-bike", "quote": "Original Price ⟶ $ 1,699.00", "basis": "retailer's original price; current price $1,389.00"},
+   {"kind": "review", "value": 1399, "url": "https://ridereview.com/products/eunorau-e-fat-step", "quote": "Price ⟶ $1,399.00"}
+  ],
+  "cls": [
+   {"kind": "retailer", "value": 2, "url": "https://www.upzy.com/products/btn-eunorau-e-fat-step-500w-48v-folding-step-through-7-speed-fat-tire-electric-bike", "quote": "There is a right-side Class 2 thumb throttle, which allows you to ride without pedaling."}
+  ],
+  "spd": [
+   {"kind": "retailer", "value": 15.5, "url": "https://www.upzy.com/products/btn-eunorau-e-fat-step-500w-48v-folding-step-through-7-speed-fat-tire-electric-bike", "quote": "MAX SPEED: 15.5 mph*", "basis": "asterisked; page says to email them with questions on max speed"},
+   {"kind": "review", "value": 25, "url": "https://ridereview.com/products/eunorau-e-fat-step", "quote": "Top Speed (mph) ⟶ 25 mph"}
+  ],
+  "tq": [
+   {"kind": "retailer", "value": null, "url": "https://www.upzy.com/products/btn-eunorau-e-fat-step-500w-48v-folding-step-through-7-speed-fat-tire-electric-bike", "quote": "MOTOR: 48V/500W brushless DC hub motor HIGH TORQUE installed in rear wheel"}
+  ],
+  "wh": [
+   {"kind": "retailer", "value": 600, "url": "https://www.upzy.com/products/btn-eunorau-e-fat-step-500w-48v-folding-step-through-7-speed-fat-tire-electric-bike", "quote": "BATTERY CAPACITY: 48V/12.5Ah", "basis": "48 V x 12.5 Ah = 600 Wh"}
+  ],
+  "range": [
+   {"kind": "review", "value": "50", "url": "https://ridereview.com/products/eunorau-e-fat-step", "quote": "Max Range (mi) ⟶ 50 mi", "basis": "max range; mode not stated"}
+  ],
+  "wt": [
+   {"kind": "review", "value": 64, "url": "https://ridereview.com/products/eunorau-e-fat-step", "quote": "Weight (lbs) ⟶ 64 lbs", "basis": "battery inclusion not stated"}
+  ],
+  "load": [
+   {"kind": "review", "value": 330, "url": "https://ridereview.com/products/eunorau-e-fat-step", "quote": "The E-FAT-STEP eBike has a payload capacity of 330 lbs."}
+  ],
+  "motor": [
+   {"kind": "retailer", "value": "500W rear hub", "url": "https://www.upzy.com/products/btn-eunorau-e-fat-step-500w-48v-folding-step-through-7-speed-fat-tire-electric-bike", "quote": "MOTOR: 48V/500W brushless DC hub motor HIGH TORQUE installed in rear wheel"},
+   {"kind": "review", "value": "500W hub", "url": "https://ridereview.com/products/eunorau-e-fat-step", "quote": "The E-FAT-STEP eBike comes with a 500W hub motor."}
+  ],
+  "height": [],
+  "fold": [
+   {"kind": "retailer", "value": "Yes", "url": "https://www.upzy.com/products/btn-eunorau-e-fat-step-500w-48v-folding-step-through-7-speed-fat-tire-electric-bike", "quote": "The BTN Eunorau E-FAT-STEP 500W 48V Step-Through Fat Tire Folding Electric Bike comes with an array of advanced features, and perfect for rides around town, moderate trail riding, and even snow and sand."},
+   {"kind": "review", "value": "Yes", "url": "https://ridereview.com/products/eunorau-e-fat-step", "quote": "Yes, the E-FAT-STEP eBike features a foldable frame for easy storage."}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "NO MAKER PAGE: both the given src (en-canada) and the US /products/e-fat-step redirect to Eunorau's foldable collection, which lists only META20 1.0 (and mentions E-FAT-MN) as the current folding lineup; Eunorau's own site search returns no E-FAT-STEP and ca.eunorau-ebike.com/products/e-fat-step redirects to the home page. Likely discontinued, but the maker doesn't say so, so no status entry. Sources disagree on top speed (Upzy 15.5 mph* vs RideReview 25 mph) and price (Upzy $1,699 original vs RideReview $1,399). RideReview is an aggregator page. BikeBerry product page is 404; Electric Ride Co and Really Good Ebikes product links redirect to other pages. No rider height found."}

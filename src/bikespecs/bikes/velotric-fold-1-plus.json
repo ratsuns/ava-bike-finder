@@ -1,0 +1,60 @@
+{"bike": "Velotric|Fold 1 Plus", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1499, "url": "https://www.velotricbike.com/products/velotric-fold-1-plus", "quote": "$1,499.00", "basis": "regular price shown crossed out next to Black Friday sale price $1,199.00 (\"Save $300.00\")"},
+   {"kind": "review", "value": 1499, "url": "https://electricbikereview.com/velotric/fold-1-plus-review/", "quote": "MSRP: $1,499 ⟶ Manufacturer"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/velotric-fold-1-plus-review/", "quote": ""}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.velotricbike.com/products/velotric-fold-1-plus", "quote": "Class ⟶ 1/2/3", "basis": "multi-class; out of box is \"Max Speed (Default) ⟶ 20 MPH\" with a throttle (\"Throttle Range ⟶ 45 Miles\"), i.e. Class 2"},
+   {"kind": "review", "value": 3, "url": "https://electricbikereview.com/velotric/fold-1-plus-review/", "quote": "Class 3 ⟶ Learn more about Ebike classes"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/velotric-fold-1-plus-review/", "quote": "CLASS 2 (THROTTLE TO 20 MPH)", "basis": "lists Class 1, 2 and 3; also says \"The Fold 1 Plus has a maximum speed of 20 mph out of the box\""}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.velotricbike.com/products/velotric-fold-1-plus", "quote": "20 MPH", "basis": "line directly under the label \"Max Speed (Default)\"; default; adjustable to 28 mph (\"Max Speed Adjustable Range ⟶ 12~28 MPH\")"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/velotric/fold-1-plus-review/", "quote": "28 MPH mph", "basis": "under label \"TOP SPEED:\"; max adjustable, not default"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/velotric-fold-1-plus-review/", "quote": "The Fold 1 Plus has a maximum speed of 20 mph out of the box, but its throttle and pedal-assisted speeds can be set anywhere between 12 and 28 mph.", "basis": "default; adjustable to 28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 75, "url": "https://www.velotricbike.com/products/velotric-fold-1-plus", "quote": "48V, 750W, 75Nm"},
+   {"kind": "review", "value": 75, "url": "https://electricbikereview.com/velotric/fold-1-plus-review/", "quote": "75Nm Newton meters"},
+   {"kind": "review", "value": 75, "url": "https://electricbikereport.com/velotric-fold-1-plus-review/", "quote": "Motor: 48V, 750W, 75Nm"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 608, "url": "https://www.velotricbike.com/products/velotric-fold-1-plus", "quote": "Battery ⟶ Removable 48V, 13Ah, 608Wh, IPX7, Certificated by UL 2271"},
+   {"kind": "review", "value": 624, "url": "https://electricbikereview.com/velotric/fold-1-plus-review/", "quote": "624Wh wh ⟶ DISPLAY TYPE:"},
+   {"kind": "review", "value": 624, "url": "https://electricbikereport.com/velotric-fold-1-plus-review/", "quote": "Battery:Removable 48V, 13Ah (624 Wh), IPX7, Certificated by UL 2271"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "68", "url": "https://www.velotricbike.com/products/velotric-fold-1-plus", "quote": "You can ride up to 68 miles on pedal assist, thanks to the efficient 608Wh battery. ⟶ Is it comfortable for daily commuting?"},
+   {"kind": "review", "value": "68", "url": "https://electricbikereview.com/velotric/fold-1-plus-review/", "quote": "Estimated Range (from Velotric): 68 miles"},
+   {"kind": "review", "value": "68", "url": "https://electricbikereport.com/velotric-fold-1-plus-review/", "quote": "Claimed Range:45 Miles (Throttle) 68 Miles (Pedal Assist) ⟶ Throttle:Trigger-control, removable"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 63, "url": "https://www.velotricbike.com/products/velotric-fold-1-plus", "quote": "Bike Weight ⟶ 63lbs", "basis": "maker footnote: \"*The bike weight does not include fenders, kickstands, and pedals.\" Battery not mentioned either way"},
+   {"kind": "review", "value": 63, "url": "https://electricbikereview.com/velotric/fold-1-plus-review/", "quote": "63 lbs lbs", "basis": "under label \"TOTAL WEIGHT:\"; claimed; review also says \"At 67.4 lbs, this bike is heavy\" (tested)"},
+   {"kind": "review", "value": 63, "url": "https://electricbikereport.com/velotric-fold-1-plus-review/", "quote": "Claimed weight: 63lbs", "basis": "claimed; \"Tested Weight: 67.4 lbs\""}
+  ],
+  "load": [
+   {"kind": "maker", "value": 450, "url": "https://www.velotricbike.com/products/velotric-fold-1-plus", "quote": "Max Bike Load ⟶ 450lbs"},
+   {"kind": "review", "value": 450, "url": "https://electricbikereview.com/velotric/fold-1-plus-review/", "quote": "Big Payload: 450lb Payload with 120lb rear rack limit is another industry leader in folding e-bikes."},
+   {"kind": "review", "value": 450, "url": "https://electricbikereport.com/velotric-fold-1-plus-review/", "quote": "Total payload capacity: 450lbs ⟶ COMPONENTS & ACCESSORIES"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W hub (1,100W peak)", "url": "https://www.velotricbike.com/products/velotric-fold-1-plus", "quote": "48V, 750W, 75Nm", "basis": "peak from \"750W/1100W | Peak Motor\" on same page"},
+   {"kind": "review", "value": "750W rear hub", "url": "https://electricbikereview.com/velotric/fold-1-plus-review/", "quote": "The most powerful folding ebike out of Velotrics lineup with 750W rear motor and 75 nm of torque, plus 450 lb payload, 120 lb rear rack weigh and range at an estimated 68 miles"},
+   {"kind": "review", "value": "750W hub", "url": "https://electricbikereport.com/velotric-fold-1-plus-review/", "quote": "The bike features a powerful 750W hub motor with both torque and cadence sensors."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'9\"-6'5\"", "url": "https://www.velotricbike.com/products/velotric-fold-1-plus", "quote": "User Height Range ⟶ 4'9'' ~ 6'5''"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/velotric/fold-1-plus-review/", "quote": ""},
+   {"kind": "review", "value": "4'9\"-6'5\"", "url": "https://electricbikereport.com/velotric-fold-1-plus-review/", "quote": "Rider height range: 4’9” ~ 6’5”"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "Yes", "url": "https://www.velotricbike.com/products/velotric-fold-1-plus", "quote": "3-Step Folding Design ⟶ Fits in SUVs, RVs, and tight storage."},
+   {"kind": "review", "value": "Yes", "url": "https://electricbikereview.com/velotric/fold-1-plus-review/", "quote": "Folding Aluminum Alloy"},
+   {"kind": "review", "value": "Yes", "url": "https://electricbikereport.com/velotric-fold-1-plus-review/", "quote": "Like most folding e-bikes, it has a hinged frame with a locking release mechanism."}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page is on Black Friday sale ($1,199); regular $1,499 recorded. Maker says 608Wh but 48V x 13Ah = 624Wh, which both reviews use. Maker class is 'Class ⟶ 1/2/3' (value on line after the label, so the standard script doesn't join it; found with a context lookup); default 20 mph + throttle = Class 2; electricbikereview lists it as Class 3 (max adjustable). Maker weight footnote excludes fenders/kickstand/pedals and doesn't say whether the battery is included; electricbikereview lists 'TOTAL WEIGHT: 63 lbs' with 'BATTERY WEIGHT: 10 lbs', implying 63 includes battery; both reviews measured 67.4 lb. Maker FAQ calls the 450 lb figure 'total load' but reviews call it payload; recorded without basis. Peak motor (1100W) value came from a context lookup ('750W/1100W' line preceding 'Peak Motor') not returned by the standard script."}

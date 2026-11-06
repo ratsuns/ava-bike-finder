@@ -1,0 +1,51 @@
+{"bike": "Aventon|Pace 4 Step-Through", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1799, "url": "https://www.aventon.com/products/pace-4-step-through-ebike", "quote": "$1,599.00 | $1,799.00", "basis": "regular $1,799; sale $1,599"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/aventon-pace-4-review/", "quote": ""}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.aventon.com/products/pace-4-step-through-ebike", "quote": "Ebike Class | Class 2 (Can be converted to Class 3 if local laws and regulations allow)"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/aventon-pace-4-review/", "quote": "We found the 8-speed Shimano Altus drivetrain to be effective at both Class 2 and Class 3 speeds. ⟶ Aventon Pace 4 Review: Range Test", "basis": "convertible Class 2/3"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.aventon.com/products/pace-4-step-through-ebike", "quote": "Speed | Max: 28 MPH", "basis": "maximum after Class 3 conversion; ships Class 2 (20 mph)"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/aventon-pace-4-review/", "quote": "When testing the Pace’s throttle, it started gradually and then built steadily in speed until reaching the maximum of 20 mph. It felt controlled without being sluggish, which fits the theme and general feel of the bike.", "basis": "throttle max; pedal assist can reach Class 3 speeds"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 60, "url": "https://www.aventon.com/products/pace-4-step-through-ebike", "quote": "Motor Torque | 60Nm"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/aventon-pace-4-review/", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 733, "url": "https://www.aventon.com/products/pace-4-step-through-ebike", "quote": "Battery | Removable Internal Lithium-ion. 36V, 20Ah, 733Wh, LG 21700 cells"},
+   {"kind": "review", "value": 733, "url": "https://electricbikereport.com/aventon-pace-4-review/", "quote": "Battery: Removable Internal Lithium-ion. 36V, 20Ah, 733Wh, LG 21700 cells ⟶ Display: BC147"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "70", "url": "https://www.aventon.com/products/pace-4-step-through-ebike", "quote": "Range | Up to 70 Miles"},
+   {"kind": "review", "value": "70", "url": "https://electricbikereport.com/aventon-pace-4-review/", "quote": "Claimed Range: Up to 70 Miles ⟶ Throttle:Aventon LH Handlebar Mounted"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 58.2, "url": "https://www.aventon.com/products/pace-4-step-through-ebike", "quote": "Weight | 58.2 lbs"},
+   {"kind": "review", "value": 53, "url": "https://electricbikereport.com/aventon-pace-4-review/", "quote": "WEIGHT & DIMENSIONS ⟶ Claimed weight: 53 lbs", "basis": "claimed; tested 61.5 lbs with 8.5 lb battery"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 300, "url": "https://www.aventon.com/products/pace-4-step-through-ebike", "quote": "Payload Capacity | 300 lbs"},
+   {"kind": "review", "value": 300, "url": "https://electricbikereport.com/aventon-pace-4-review/", "quote": "Total payload capacity: 300 lbs ⟶ COMPONENTS & ACCESSORIES"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W rear hub (864W peak in Boost)", "url": "https://www.aventon.com/products/pace-4-step-through-ebike", "quote": "Motor Power | 500W | 864W Peak in Boost*"},
+   {"kind": "review", "value": "500W (864W peak)", "url": "https://electricbikereport.com/aventon-pace-4-review/", "quote": "Motor: 36V, 500W (Peak 864W) ⟶ Headlight: Integrated LED"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'11\"-6'1\"", "url": "https://www.aventon.com/products/pace-4-step-through-ebike", "quote": "Rider Height | R: 4'11\" -5'7\" | L: 5'7\" - 6'1\"", "basis": "two sizes combined"},
+   {"kind": "review", "value": "4'11\"-6'1\"", "url": "https://electricbikereport.com/aventon-pace-4-review/", "quote": "Rider height range: 4’11”-5’7” (S/M), 5’7”-6’1” (L/XL) ⟶ Total payload capacity: 300 lbs", "basis": "two sizes combined"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.aventon.com/products/pace-4-step-through-ebike", "quote": "Frame | 6061 Aluminum, Gravity Cast Front Triangle"},
+   {"kind": "review", "value": "No", "url": "https://electricbikereport.com/aventon-pace-4-review/", "quote": "Its step-thru frame and sub-17” standover height make for easy mounting and dismounting without the need to lift a leg over the saddle."}
+  ]
+ },
+ "status": {"sources": [
+   {"kind": "maker", "value": "discontinued", "url": "https://www.aventon.com/products/pace-4-step-through-ebike", "quote": "Out of stock | DISCONTINUED"}
+ ]},
+ "notes": "Maker page shows the buy button as DISCONTINUED (default variant Blue Steel, 'Out of stock'), though price $1,599 sale / $1,799 regular is still shown. Maker spec values read from the Specifications section; ' | ' joins consecutive page lines. Maker spec table says 'Total Weight Limit 300 lbs'; the page banner says 'Payload Capacity 300 lbs' (used). Weight differs: maker 58.2 lbs vs EBR claimed 53 lbs (tested 61.5 lbs with battery). EBR review is of the step-thru Pace 4 (L/XL tested)."}

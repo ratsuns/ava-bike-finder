@@ -1,0 +1,46 @@
+{"bike": "Electra|Townie Go! S", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1799.99, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go-s/p/84175/", "quote": "Townie Go! S | $1,799.99 | Model 5353860"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go-s/p/84175/", "quote": "E-bike Classification ⟶ Class 2/3 hybrid", "basis": "Class 2/3 hybrid with 28 mph max assist -> 3"},
+   {"kind": "review", "value": 3, "url": "https://electricbikereview.com/electra/townie-go-s-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 3"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go-s/p/84175/", "quote": "Max assist speed ⟶ 28 mph"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/electra/townie-go-s-review/", "quote": "TOP SPEED: ⟶ 28 MPH mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 60, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go-s/p/84175/", "quote": "Motor 500W ⟶ Torque 60Nm"},
+   {"kind": "review", "value": 60, "url": "https://electricbikereview.com/electra/townie-go-s-review/", "quote": "MOTOR TORQUE: ⟶ 60 Nm Newton meters"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 520, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go-s/p/84175/", "quote": "Battery ⟶ Hyena 520Wh"},
+   {"kind": "review", "value": 520, "url": "https://electricbikereview.com/electra/townie-go-s-review/", "quote": "BATTERY WATT HOURS: ⟶ 520Wh wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "50", "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go-s/p/84175/", "quote": "Torque 60Nm ⟶ Range Up to 50 mi"},
+   {"kind": "review", "value": "38–54", "url": "https://electricbikereview.com/electra/townie-go-s-review/", "quote": "Real World Range Test Results: ⟶ MIN Range Test: 54 miles | MIN Range Test: 54 miles ⟶ MAX Range Test: 38 miles", "basis": "EBR real-world tests (54 mi eco, 38 mi high assist)"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 52.1, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go-s/p/84175/", "quote": "Weight ⟶ ML - 23.63 kg / 52.1 lbs", "basis": "size ML"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/electra/townie-go-s-review/", "quote": "TOTAL WEIGHT: ⟶ 57.7 lbs lbs", "basis": "reviewed bike has fenders and rack ($1,999, EQ spec); not this variant"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 300, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go-s/p/84175/", "quote": "This bike has a maximum total weight limit (combined weight of bicycle, rider, and cargo) of 300 pounds (136 kg).", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W Hyena Lite rear hub", "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go-s/p/84175/", "quote": "Motor ⟶ Hyena Lite hub motor, 500W, 48V"},
+   {"kind": "review", "value": "500W rear hub", "url": "https://electricbikereview.com/electra/townie-go-s-review/", "quote": "MOTOR NOMINAL OUTPUT: ⟶ 500W watts"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'11\"-6'4\"", "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go-s/p/84175/", "quote": "Size\tRider Height\tInseam ⟶ S-M | 4'11\" - 5'8\" ⟶ 78 - 82 cm | 5'5\" - 6'4\" ⟶ 85 - 92 cm", "basis": "S-M 4'11\"-5'8\", M-L 5'5\"-6'4\""},
+   {"kind": "review", "value": "4'11\"-6'4\"", "url": "https://electricbikereview.com/electra/townie-go-s-review/", "quote": "<ul> <li>SM: 4'11\" - 5'8\"</li> <li>ML: 5'5\" - 6'4\"</li> </ul> ⟶ FRAME TYPES:"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go-s/p/84175/", "quote": ""}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker link redirects to .../townie-go/f/EF210-3/townie-go%2521-s/84175/ (model 5353860, $1,799.99). The model chooser also lists a 'Townie Go! S' at $2,099.99 (Shark Grey colors) and S EQ at $1,999.99. Class: maker says 'Class 2/3 hybrid' (throttle + 28 mph assist) -> recorded 3. EBR review is the 2025 Townie Go! S at $1,999 with included fenders and rack (likely the S EQ spec); used for drive-system specs only, not weight/price. REI blocked (bot check)."}

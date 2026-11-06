@@ -1,0 +1,45 @@
+{"bike": "Cannondale|Tesoro Carbon 2", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 5499, "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/tesoro-neo-carbon/tesoro-neo-carbon-2-c66114u", "quote": "$3,999$5,499 ⟶ You Save $1,500", "basis": "regular price $5,499; $3,999 is a sale price"},
+   {"kind": "retailer", "value": null, "url": "https://www.n1bikes.com/products/tesoro-carbon-2?id=660fdaa5b6b255c6e33db4fbe529a4de2ba93d572b9586a4930f5d8feb72ad54&variant=C66114U10XL", "quote": "$3,999.00", "basis": "dealer shows only the current sale price, matching the maker's sale price"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/tesoro-neo-carbon/tesoro-neo-carbon-2-c66114u", "quote": "Light, silent, Bosch SX Sprint 28-mph drive system, with a 400Wh battery ⟶ SRAM Apex/NX Eagle 12-speed shifting", "basis": "no class line; 28 mph assist = Class 3"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/tesoro-neo-carbon/tesoro-neo-carbon-2-c66114u", "quote": "Bosch Performance Line Sprint, 28mph ⟶ Battery"},
+   {"kind": "retailer", "value": 28, "url": "https://www.n1bikes.com/products/tesoro-carbon-2?id=660fdaa5b6b255c6e33db4fbe529a4de2ba93d572b9586a4930f5d8feb72ad54&variant=C66114U10XL", "quote": "Drive Unit\tBosch Performance Line Sprint, 28mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/tesoro-neo-carbon/tesoro-neo-carbon-2-c66114u", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://www.n1bikes.com/products/tesoro-carbon-2?id=660fdaa5b6b255c6e33db4fbe529a4de2ba93d572b9586a4930f5d8feb72ad54&variant=C66114U10XL", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 400, "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/tesoro-neo-carbon/tesoro-neo-carbon-2-c66114u", "quote": "Battery ⟶ Bosch Compact Powertube 400Wh"},
+   {"kind": "retailer", "value": 400, "url": "https://www.n1bikes.com/products/tesoro-carbon-2?id=660fdaa5b6b255c6e33db4fbe529a4de2ba93d572b9586a4930f5d8feb72ad54&variant=C66114U10XL", "quote": "Battery\tBosch Compact Powertube 400Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/tesoro-neo-carbon/tesoro-neo-carbon-2-c66114u", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://www.n1bikes.com/products/tesoro-carbon-2?id=660fdaa5b6b255c6e33db4fbe529a4de2ba93d572b9586a4930f5d8feb72ad54&variant=C66114U10XL", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/tesoro-neo-carbon/tesoro-neo-carbon-2-c66114u", "quote": ""},
+   {"kind": "retailer", "value": 35.3, "url": "https://www.n1bikes.com/products/tesoro-carbon-2?id=660fdaa5b6b255c6e33db4fbe529a4de2ba93d572b9586a4930f5d8feb72ad54&variant=C66114U10XL", "quote": "Weight\t16kg", "basis": "16 kg converted to lb; size and battery inclusion not stated"}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/tesoro-neo-carbon/tesoro-neo-carbon-2-c66114u", "quote": "Included front and rear fenders keep off the grime, even in poor weather, and the pannier mounts out back mean you can add up to 8 kg / 17.5 lbs per side of cargo-carrying capacity whenever you need. ⟶ Lighten Up", "basis": "only pannier capacity per side is given, not a bike max load"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Performance Line Sprint", "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/tesoro-neo-carbon/tesoro-neo-carbon-2-c66114u", "quote": "Bosch Performance Line Sprint, 28mph ⟶ Battery"},
+   {"kind": "retailer", "value": "Bosch Performance Line Sprint", "url": "https://www.n1bikes.com/products/tesoro-carbon-2?id=660fdaa5b6b255c6e33db4fbe529a4de2ba93d572b9586a4930f5d8feb72ad54&variant=C66114U10XL", "quote": "Drive Unit\tBosch Performance Line Sprint, 28mph"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'2\"-6'9\"", "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/tesoro-neo-carbon/tesoro-neo-carbon-2-c66114u", "quote": "Height - 5'2\" - 5'7\" | Height - 5'5\" - 5'9\" | Height - 5'9\" - 6'1\" | Height - 6'1\" - 6'3\" | Height - 6'3\" - 6'9\"", "basis": "five size selectors (XS, SM, MD, LG, XL) shown one at a time on the page; joined"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/tesoro-neo-carbon/tesoro-neo-carbon-2-c66114u", "quote": "Tesoro Carbon, internal downtube battery, integrated cable routing, 148mm dropout spacing, 12mm thru-axle, SAVE, flat mount disc, removable kickstand mount (40mm Pletscher-style) ⟶ Fork"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker regular price $5,499, on sale $3,999. Maker page gives no torque, range, weight or max load; highlights say 'Bosch SX Sprint', specs say 'Bosch Performance Line Sprint'. Weight (16 kg) only from N+1 Bikes dealer, same figure as on its Carbon 1 page, basis unknown. No independent review found. Only 2 sources. No WebSearch used."}

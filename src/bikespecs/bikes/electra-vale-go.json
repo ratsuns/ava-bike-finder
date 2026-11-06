@@ -1,0 +1,48 @@
+{"bike": "Electra|Vale Go!", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": null, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/vale-go/vale-go-9d-eq/a/34871/", "quote": "", "basis": "archived page shows no price"},
+   {"kind": "review", "value": 4199, "url": "https://electricbikereview.com/electra/vale-go-9d-eq/", "quote": "PRICE: ⟶ $4199", "basis": "EBR listing for model years 2020-2022; looks doubtful (see notes)"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/vale-go/vale-go-9d-eq/a/34871/", "quote": "E-bike Classification ⟶ Class 1"},
+   {"kind": "review", "value": 1, "url": "https://electricbikereview.com/electra/vale-go-9d-eq/", "quote": "ELECTRIC BIKE CLASS: ⟶ Pedal Assist (Class 1)"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/vale-go/vale-go-9d-eq/a/34871/", "quote": "Max assist speed ⟶ 20 mph"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereview.com/electra/vale-go-9d-eq/", "quote": "TOP SPEED: ⟶ 20 mph (32 kph)"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 50, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/vale-go/vale-go-9d-eq/a/34871/", "quote": "Motor ⟶ Bosch Active Plus, 250W, 50 Nm"},
+   {"kind": "review", "value": 50, "url": "https://electricbikereview.com/electra/vale-go-9d-eq/", "quote": "MOTOR TORQUE: ⟶ 50 Newton meters"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 500, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/vale-go/vale-go-9d-eq/a/34871/", "quote": "Battery ⟶ Bosch PowerTube 500Wh"},
+   {"kind": "review", "value": 482.4, "url": "https://electricbikereview.com/electra/vale-go-9d-eq/", "quote": "BATTERY WATT HOURS: ⟶ 482.4 wh", "basis": "EBR's own figure (36 volts x 13.4 ah) for the same Bosch PowerTube 500"}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/vale-go/vale-go-9d-eq/a/34871/", "quote": ""},
+   {"kind": "review", "value": "45–105", "url": "https://electricbikereview.com/electra/vale-go-9d-eq/", "quote": "ESTIMATED MIN RANGE: ⟶ 45 miles (72 km) | ESTIMATED MAX RANGE: ⟶ 105 miles (169 km)"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 53.91, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/vale-go/vale-go-9d-eq/a/34871/", "quote": "Weight ⟶ M - 24.45 kg / 53.91 lbs"},
+   {"kind": "review", "value": 53.7, "url": "https://electricbikereview.com/electra/vale-go-9d-eq/", "quote": "TOTAL WEIGHT: ⟶ 53.7 lbs (24.36 kg)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 300, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/vale-go/vale-go-9d-eq/a/34871/", "quote": "This bike has a maximum total weight limit (combined weight of bicycle, rider, and cargo) of 300 pounds (136 kg).", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "250W Bosch Active Plus mid-drive", "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/vale-go/vale-go-9d-eq/a/34871/", "quote": "Motor ⟶ Bosch Active Plus, 250W, 50 Nm"},
+   {"kind": "review", "value": "250W Bosch Active Line Plus mid-drive", "url": "https://electricbikereview.com/electra/vale-go-9d-eq/", "quote": "MOTOR BRAND: ⟶ Bosch Active Line Plus (MY20) | MOTOR TYPE: ⟶ Mid-Mounted Geared Motor | MOTOR NOMINAL OUTPUT: ⟶ 250 watts"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'4\"-6'3\"", "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/vale-go/vale-go-9d-eq/a/34871/", "quote": "Size\tRider Height | M | 163 - 191 cm | 5'4\" - 6'3\"", "basis": "Sizing tab; one size (M)"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/vale-go/vale-go-9d-eq/a/34871/", "quote": "Frame | 6061-T6 aluminum w/ patented Flat Foot Technology®", "basis": "rigid aluminum frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": [
+  {"kind": "maker", "value": "discontinued", "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/vale-go/vale-go-9d-eq/a/34871/", "quote": "ARCHIVED | 2022-2024", "basis": "page also says 'Sorry, we do not have a replacement available for this item'; all colors unavailable; Trek's Vale Go! category page returns 404"}
+ ]},
+ "notes": "Maker page is Trek's archive (2022-2024 Vale Go! 9D EQ, model 5257455) with no price. Trek's Vale Go! category URL is 404, so no current model. EBR review covers model years 2020-2022 and lists $4199, which looks doubtful (its spec block also lists a Shimano GRX Di2 derailleur, unlike Trek's Alivio 9-speed) - treat EBR price as unreliable. EBR's 482.4 Wh is its own calc for the PowerTube 500 (maker says 500Wh). 99 Spokes showed a bot check; skipped."}

@@ -1,0 +1,49 @@
+{"bike": "Gazelle|Ultimate T11+", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 4499, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-t11plus", "quote": "$4,499 ⟶ Shop stock: First, configure your bike", "basis": "no crossed-out price shown"},
+   {"kind": "retailer", "value": 4498.99, "url": "https://mikesbikes.com/products/gazelle-ultimate-t11-2026", "quote": "Regular price ⟶ $4,498.99"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-t11plus", "quote": "Ebike Max Speed ⟶ 28 mph", "basis": "no class stated on the spec; 28 mph means Class 3"},
+   {"kind": "retailer", "value": 3, "url": "https://mikesbikes.com/products/gazelle-ultimate-t11-2026", "quote": "Class 3, 28 mph ⟶ 720Wh battery, 50 miles range", "basis": "from a generic Ultimate-family FEATURES list on the page (see notes)"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-t11plus", "quote": "Ebike Max Speed ⟶ 28 mph"},
+   {"kind": "retailer", "value": 28, "url": "https://mikesbikes.com/products/gazelle-ultimate-t11-2026", "quote": "Max Assisted Speed\t28 mph ⟶ Charger\tN/A"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-t11plus", "quote": "Engine Max Torque (Nm) ⟶ 85"},
+   {"kind": "retailer", "value": 85, "url": "https://mikesbikes.com/products/gazelle-ultimate-t11-2026", "quote": "Motor\tBosch Performance Line Sport mid-drive motor (up to 85 Nm, 600W) ⟶ Battery\tBosch Powertube 540 Wh (integrated, removable)", "basis": "spec table; the page's generic FEATURES list says 90 Nm"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 540, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-t11plus", "quote": "Battery and Range ⟶ 540 Wh"},
+   {"kind": "retailer", "value": 540, "url": "https://mikesbikes.com/products/gazelle-ultimate-t11-2026", "quote": "Battery\tBosch Powertube 540 Wh (integrated, removable) ⟶ Display/Controller\tBosch Purion 200 display", "basis": "spec table; the page's generic FEATURES list says 720Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "25–65", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-t11plus", "quote": "Eco\t65 mi | Tour\t40 mi | Auto\t30 mi | Turbo\t25 mi", "basis": "Turbo to Eco assist modes, 540 Wh battery"},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/gazelle-ultimate-t11-2026", "quote": "", "basis": "only range is in the generic FEATURES list tied to a 720Wh battery (\"720Wh battery, 50 miles range\"), not this bike's 540 Wh battery"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 59.5, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-t11plus", "quote": "Weight (lbs) ⟶ 59.5 lbs excl. battery", "basis": "without battery"},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/gazelle-ultimate-t11-2026", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-t11plus", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/gazelle-ultimate-t11-2026", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Performance Line Sport mid-drive", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-t11plus", "quote": "Motor | Performance Line Sport | Ebike Engine Position | Mid", "basis": "consecutive page lines; no rated watts published"},
+   {"kind": "retailer", "value": "Bosch Performance Line Sport mid-drive (600W)", "url": "https://mikesbikes.com/products/gazelle-ultimate-t11-2026", "quote": "Motor\tBosch Performance Line Sport mid-drive motor (up to 85 Nm, 600W) ⟶ Battery\tBosch Powertube 540 Wh (integrated, removable)"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'10\"-6'4\"", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-t11plus", "quote": "46 | 4'10\" - 5'6\" | 53 | 5'6\" - 5'10\" | 57 | 5'10\" - 6'4\"", "basis": "frame sizes 46/53/57"},
+   {"kind": "retailer", "value": "4'10\"-6'4\"", "url": "https://mikesbikes.com/products/gazelle-ultimate-t11-2026", "quote": "SM (4'10\" - 5'6\") | MD (5'6\" - 5'10\") | LG (5'10\" - 6'4\")"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-t11plus", "quote": "Frame hape | Low-Step", "basis": "rigid low-step frame; no folding mentioned"},
+   {"kind": "retailer", "value": "No", "url": "https://mikesbikes.com/products/gazelle-ultimate-t11-2026", "quote": "Frame\tGazelle Ultimate T11+ Low-Step"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page lists the motor only as 'Performance Line Sport' (Bosch Smart System). Mike's Bikes page contradicts itself: its spec table matches the maker (85 Nm, 540 Wh), but a generic Ultimate-family FEATURES list above it says '90 Nm', '720Wh battery, 50 miles range' and 'Stepless Enviolo gearing' (this bike is an 11-speed derailleur), so only the spec table was used except the class line. Maker gives weight without battery only. No max load published. electricbikereview/electricbikereport have no review of this model; REI returned 'Access denied'."}

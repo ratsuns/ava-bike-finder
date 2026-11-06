@@ -1,0 +1,49 @@
+{"bike": "Giant|Explore E+", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": null, "url": "https://www.giant-bicycles.com/global/explore-e-range", "quote": "", "basis": "global series page has no price; Giant US site lists no Explore E+ (UK page https://www.giant-bicycles.com/gb/bikes-explore-eplus prices in GBP only, e.g. 'Explore E+ 2 | £3,499')"},
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/giant/2023/explore-eplus-2-gts", "quote": "Manufacturer Price ⟶ €2,999($3,353)", "basis": "euro price with a USD conversion, region International; not a US price"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://www.giant-bicycles.com/global/explore-e-range", "quote": "", "basis": "no class or US speed; not sold in the US"},
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/giant/2023/explore-eplus-2-gts", "quote": ""}
+  ],
+  "spd": [
+   {"kind": "maker", "value": null, "url": "https://www.giant-bicycles.com/global/explore-e-range", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/giant/2023/explore-eplus-2-gts", "quote": ""}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 75, "url": "https://www.giant-bicycles.com/global/explore-e-range", "quote": "The Explore E+ models utilize the newly developed SyncDrive Sport2 motor with 75 Nm of torgue and maximum support of 400%. These models come with a 625 Wh EnergyPak battery but can easily be upgraded to the EnergyPak 800.", "basis": "Explore E+ (non-Pro) models"},
+   {"kind": "review", "value": 75, "url": "https://99spokes.com/bikes/giant/2023/explore-eplus-2-gts", "quote": "Motor ⟶ SyncDrive Sport 2, 75Nm, powered by Yamaha", "basis": "2023 Explore E+ 2 GTS"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 625, "url": "https://www.giant-bicycles.com/global/explore-e-range", "quote": "The Explore E+ models utilize the newly developed SyncDrive Sport2 motor with 75 Nm of torgue and maximum support of 400%. These models come with a 625 Wh EnergyPak battery but can easily be upgraded to the EnergyPak 800."},
+   {"kind": "review", "value": 625, "url": "https://99spokes.com/bikes/giant/2023/explore-eplus-2-gts", "quote": "MotorYamaha 250W 75Nm mid-drive ⟶ Battery625Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://www.giant-bicycles.com/global/explore-e-range", "quote": "", "basis": "range ('beyond 200 km') is given only for the Explore E+ Pro with EnergyPak 800"},
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/giant/2023/explore-eplus-2-gts", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://www.giant-bicycles.com/global/explore-e-range", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/giant/2023/explore-eplus-2-gts", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": 344, "url": "https://www.giant-bicycles.com/global/explore-e-range", "quote": "156KG TOTAL WEIGHT CAPACITY ⟶ A maximum total weight of 156 kg enables a high payload.", "basis": "total"},
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/giant/2023/explore-eplus-2-gts", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "SyncDrive Sport2", "url": "https://www.giant-bicycles.com/global/explore-e-range", "quote": "The Explore E+ models utilize the newly developed SyncDrive Sport2 motor with 75 Nm of torgue and maximum support of 400%. These models come with a 625 Wh EnergyPak battery but can easily be upgraded to the EnergyPak 800.", "basis": "no rated watts published"},
+   {"kind": "review", "value": "250W mid-drive (Yamaha)", "url": "https://99spokes.com/bikes/giant/2023/explore-eplus-2-gts", "quote": "MotorYamaha 250W 75Nm mid-drive ⟶ Battery625Wh"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://www.giant-bicycles.com/global/explore-e-range", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/giant/2023/explore-eplus-2-gts", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.giant-bicycles.com/global/explore-e-range", "quote": "Innovative touches abound on the Explore E+, including integrated cable routing.", "basis": "rigid frame touring bike; no folding mentioned"},
+   {"kind": "review", "value": "No", "url": "https://99spokes.com/bikes/giant/2023/explore-eplus-2-gts", "quote": "ALUXX aluminum, Overdrive 1.8\" - 1.5\" head tube, integrated battery, integrated KSA40 kickstand mount ⟶ Color: Gunmetal Black"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "NOT SOLD IN THE US as far as Giant's site shows: the given src is Giant's global series page (no prices, no per-model specs); Giant US e-bike listing shows no Explore E+ (only an old 'Explore E+ 3 (2018)' page at /us/explore-eplus-3-2018, $2,400, SyncDrive Sport 80Nm, EnergyPak400 - a different generation, not used). The global page describes the Sport2/625 Wh generation; Giant UK's 2026 lineup (Explore E+ 0-4, £2,499-£4,999) differs again (0 & 1 have SyncDrive Pro 2 85Nm/800Wh, 2 & 3 625Wh, 4 500Wh). So price, class and speed are null. 99 Spokes page is a 2023 Explore E+ 2 GTS, region International. The word 'torgue' in the maker quote is Giant's own typo, copied exactly. Consider whether this bike belongs on a US list at all."}

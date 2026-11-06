@@ -1,0 +1,45 @@
+{"bike": "Cannondale|Mavaro Neo 3", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 3999, "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-3-low-stepthru", "quote": "$2,999$3,999 ⟶ You Save $1,000", "basis": "regular price $3,999; $2,999 is a sale price"},
+   {"kind": "retailer", "value": 3999, "url": "https://mikesbikes.com/products/cannondale-mavaro-3-low-stepthru", "quote": "Regular price ⟶ $3,998.99", "basis": "regular $3,998.99; on sale for $2,998.95"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-3-low-stepthru", "quote": "This e-bike drive system provides pedal assist up to a maximum speed of 20mph. Above that, it’s all you. ⟶ Range", "basis": "no class line; pedal assist to 20 mph with no throttle listed = Class 1"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-3-low-stepthru", "quote": "Bosch Active Line Plus, Smart System, 20mph ⟶ Battery"},
+   {"kind": "retailer", "value": 20, "url": "https://mikesbikes.com/products/cannondale-mavaro-3-low-stepthru", "quote": "Max Assisted Speed ⟶ 20 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 50, "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-3-low-stepthru", "quote": "Bosch’s Active Line Plus drive unit delivers silent, natural-feeling power. With up to 50Nm of torque, it can boost your power by up to 340%. Effortless acceleration and compelling versatility. ⟶ Convenient Charging"},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/cannondale-mavaro-3-low-stepthru", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 500, "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-3-low-stepthru", "quote": "Battery ⟶ Bosch PowerTube, 500Wh"},
+   {"kind": "retailer", "value": 500, "url": "https://mikesbikes.com/products/cannondale-mavaro-3-low-stepthru", "quote": "Battery\tBosch PowerTube, 500Wh ⟶ Display/Controller"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "70", "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-3-low-stepthru", "quote": "Up to 70 miles of assisted range mean you can go to – and come back from – just about anywhere. ⟶ Premium Electric Experience"},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/cannondale-mavaro-3-low-stepthru", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-3-low-stepthru", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/cannondale-mavaro-3-low-stepthru", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-3-low-stepthru", "quote": "Axa Compactline 35E front light, Axa Blueline rear light, Tubus rear rack (25kg, Racktime SnapIt 1.0 compatible), full-coverage fenders", "basis": "only the rear rack rating (25 kg) is given, not a bike max load"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Active Line Plus", "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-3-low-stepthru", "quote": "Bosch Active Line Plus, Smart System, 20mph ⟶ Battery"},
+   {"kind": "retailer", "value": "Bosch Active Line Plus", "url": "https://mikesbikes.com/products/cannondale-mavaro-3-low-stepthru", "quote": "Motor\tBosch Active Line Plus, Smart System, 20mph ⟶ Battery\tBosch PowerTube, 500Wh"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'11\"-6'7\"", "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-3-low-stepthru", "quote": "Height - 4'11\" - 5'7\" | Height - 5'5\" - 6'1\" | Height - 5'11\" - 6'7\"", "basis": "three size selectors (SM, MD, LG) shown one at a time on the page; joined"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-3-low-stepthru", "quote": "SmartForm C2 Alloy, low step-thru, removable 500Wh downtube battery, integrated headtube reflector, tapered headtube, internal cable routing, 135mm QR hub spacing, IS disc mount, motor protection ⟶ Fork"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page is the Mavaro 3 Low StepThru (C68353U), on sale $2,999 from regular $3,999. Maker gives no weight or max load. Class 1 decided from 20 mph + no throttle. No independent review of this US model found (EBR only has the older Mavaro Performance; REI blocked). Only 2 sources (maker + Mike's Bikes dealer); N+1 Bikes also lists it at $2,999 (sale). No WebSearch used."}

@@ -1,0 +1,44 @@
+{"bike": "Hase|Gravit", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/gravit-city-e", "quote": "from 5.999,– | including VAT, excluding delivery", "basis": "EUR only, no USD price published"},
+   {"kind": "review", "value": null, "url": "https://newatlas.com/bicycles/hase-bikes-gravit-city-e", "quote": "The Gravit City E is available now in high-gloss white, and starts at €5,990 (about US$6,600) in its base configuration.", "basis": "EUR price with a currency conversion, not a USD list price"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/gravit-city-e", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://newatlas.com/bicycles/hase-bikes-gravit-city-e", "quote": ""}
+  ],
+  "spd": [
+   {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/gravit-city-e", "quote": ""},
+   {"kind": "review", "value": 15.5, "url": "https://newatlas.com/bicycles/hase-bikes-gravit-city-e", "quote": "Though the City E sports a Shimano Deore 11-speed gearset, riders will doubtless appreciate pedal-assist up to 15.5 mph (25 km/h) from the Shimano Steps E6100 mid-drive motor and 504-Wh downtube-mounted battery combination (per-charge range hasn't been given for this model).", "basis": "EU 25 km/h pedelec limit; launch-version review"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://www.hasebikes.com/en/gravit-city-e", "quote": "Electric motor ⟶ Shimano EP6 Cargo, 85 Nm"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 630, "url": "https://www.hasebikes.com/en/gravit-city-e", "quote": "Battery ⟶ 630 Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/gravit-city-e", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://newatlas.com/bicycles/hase-bikes-gravit-city-e", "quote": "(per-charge range hasn't been given for this model)"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 64, "url": "https://www.hasebikes.com/en/gravit-city-e", "quote": "Weight ⟶ 29 kg (64 lb)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 441, "url": "https://www.hasebikes.com/en/gravit-city-e", "quote": "Maximum load ⟶ 200 kg (441 lb)", "basis": "total"},
+   {"kind": "review", "value": 440, "url": "https://newatlas.com/bicycles/hase-bikes-gravit-city-e", "quote": "The Gravit City E cargo ebike has a rated load capacity of 440 lb, including the riderHase Bikes ⟶ VIEW 4 IMAGES", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Shimano EP6 Cargo", "url": "https://www.hasebikes.com/en/gravit-city-e", "quote": "Electric motor ⟶ Shimano EP6 Cargo, 85 Nm"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'11\"-6'7\"", "url": "https://www.hasebikes.com/en/gravit-city-e", "quote": "Height of rider ⟶ 150-200 cm (4’11”-6’7”)"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.hasebikes.com/en/gravit-city-e", "quote": "Frame | Aluminum, telescoping"},
+   {"kind": "review", "value": "No", "url": "https://newatlas.com/bicycles/hase-bikes-gravit-city-e", "quote": "To stow away between rides or transport on a car rack, the Cargo Board can be removed, the flat handlebar folded down and the frame shortened to 70 inches (178 cm)."}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Hase is a German maker; the src page is the EU/English site and gives only a EUR price (from 5.999). No US class, top speed or range published by the maker. New Atlas covers the launch version (Shimano E6100, 504 Wh), so it is used only for specs that don't depend on the drive system (load total, telescoping frame) plus its 25 km/h EU speed; its older motor/battery figures were not recorded. Frame telescopes (shortens), it doesn't fold. The maker's 'Maximum load 200 kg' is a total incl. rider per New Atlas. No EBR/EBR-report/REI/Best Buy/Electrek coverage found; newwheel.net doesn't list the Gravit."}

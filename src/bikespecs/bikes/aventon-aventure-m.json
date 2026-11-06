@@ -1,0 +1,49 @@
+{"bike": "Aventon|Aventure M", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2899, "url": "https://www.aventon.com/products/aventure-m-ebike", "quote": "$2,699.00 | $2,899.00", "basis": "regular $2,899; sale $2,699 ($200 off)"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/aventon-aventure-m-review/", "quote": ""}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://www.aventon.com/products/aventure-m-ebike", "quote": "Ebike Class | Class 1 (Aftermarket Throttle Available for Class 2 Conversion. Can also be converted to Class 3)"},
+   {"kind": "review", "value": 1, "url": "https://electricbikereport.com/aventon-aventure-m-review/", "quote": "E-BIKE CLASS: ⟶ CLASS 1 (PEDAL ASSIST TO 20 MPH)", "basis": "review badge lists Class 1 and Class 3; no throttle included"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.aventon.com/products/aventure-m-ebike", "quote": "Top Speed | Max 28 MPH", "basis": "maximum after Class 3 conversion; ships Class 1 (20 mph)"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/aventon-aventure-m-review/", "quote": "CLASS 1 (PEDAL ASSIST TO 20 MPH) ⟶ CLASS 3 (PEDAL ASSIST TO 28 MPH)", "basis": "Class 1 setting; adjustable to 28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 100, "url": "https://www.aventon.com/products/aventure-m-ebike", "quote": "Motor Torque | 100Nm"},
+   {"kind": "review", "value": 100, "url": "https://electricbikereport.com/aventon-aventure-m-review/", "quote": "Motor: Aventon A100 Mid Drive Motor. 250W (750W peak), 100Nm torque ⟶ Headlight: Included"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 733, "url": "https://www.aventon.com/products/aventure-m-ebike", "quote": "Battery | Removable Internal Lithium-ion. 36V, 20Ah, 733Wh, LG 21700 cells"},
+   {"kind": "review", "value": 733, "url": "https://electricbikereport.com/aventon-aventure-m-review/", "quote": "Battery: Removable Lithium-ion 36V, 20Ah, 733Wh, LG 21700 Cells ⟶ Display: BC280, color display"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "85", "url": "https://www.aventon.com/products/aventure-m-ebike", "quote": "Range | Up to 85 Miles"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/aventon-aventure-m-review/", "quote": "Claimed Range: ⟶ Throttle:Aftermarket Throttle Available for Purchase"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 73, "url": "https://www.aventon.com/products/aventure-m-ebike", "quote": "Weight | 73 lbs"},
+   {"kind": "review", "value": 73, "url": "https://electricbikereport.com/aventon-aventure-m-review/", "quote": "WEIGHT & DIMENSIONS ⟶ Claimed weight: 73 lbs", "basis": "claimed; tested 74.6 lbs with battery"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 400, "url": "https://www.aventon.com/products/aventure-m-ebike", "quote": "Total Weight Limit | 400 lbs", "basis": "total"},
+   {"kind": "review", "value": 400, "url": "https://electricbikereport.com/aventon-aventure-m-review/", "quote": "Total payload capacity: 400 lbs. ⟶ COMPONENTS & ACCESSORIES"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "250W mid-drive (750W peak)", "url": "https://www.aventon.com/products/aventure-m-ebike", "quote": "Motor | Aventon a100 mid-drive. 36v, 250W (sustained), 750W (peak), 100NM torque. IP67 rating"},
+   {"kind": "review", "value": "250W mid-drive (750W peak)", "url": "https://electricbikereport.com/aventon-aventure-m-review/", "quote": "Motor: Aventon A100 Mid Drive Motor. 250W (750W peak), 100Nm torque ⟶ Headlight: Included"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'3\"-6'4\"", "url": "https://www.aventon.com/products/aventure-m-ebike", "quote": "Rider Height | R: 5'3\" -5'10\" | L: 5'10\" - 6'4\"", "basis": "two sizes combined"},
+   {"kind": "review", "value": "5'3\"-6'4\"", "url": "https://electricbikereport.com/aventon-aventure-m-review/", "quote": "Rider height range: M – 5’3”-5’10” L – 5’10-6’4” ⟶ Total payload capacity: 400 lbs.", "basis": "two sizes combined"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.aventon.com/products/aventure-m-ebike", "quote": "Frame | 6061 Aluminum"},
+   {"kind": "review", "value": "No", "url": "https://electricbikereport.com/aventon-aventure-m-review/", "quote": "Frame: 6061 Aluminum Alloy Front Triangle ⟶ Drivetrain:Shimano Cues 10-Speed 11-39T, E-Shifter W/Auto shift"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker values from the top banner and Specifications section; ' | ' joins consecutive page lines. Ships Class 1 (no throttle; aftermarket throttle sold separately for Class 2; convertible to Class 3, banner 'Max 28 MPH'). EBR's claimed-range field is blank. Only one independent source (EBR)."}

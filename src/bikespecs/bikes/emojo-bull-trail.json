@@ -1,0 +1,46 @@
+{"bike": "Emojo|Bull Trail", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2499, "url": "https://emojobike.com/products/bull-trail", "quote": "Regular price ⟶ $2,499.00", "basis": "single battery; sale price $2,299.00 not used; dual battery +$599"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://emojobike.com/products/bull-trail", "quote": "The Bull Trail reaches up to 20 MPH, and the thumb throttle plus Shimano 7-speed gears let you dial in exactly how much effort you want to put in.", "basis": "maker states no class; thumb throttle and 20 mph -> 2"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://emojobike.com/products/bull-trail", "quote": "Maximum Speed ⟶ 20MPH"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://emojobike.com/products/bull-trail", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://www.bikeberry.com/products/emojo-750w-bull-trail-fat-tire-electric-bike-trike", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 672, "url": "https://emojobike.com/products/bull-trail", "quote": "Battery ⟶ 672Wh (Lithium-ion)"},
+   {"kind": "retailer", "value": 672, "url": "https://www.bikeberry.com/products/emojo-750w-bull-trail-fat-tire-electric-bike-trike", "quote": "Battery: 48V / 14Ah Lithium-Ion (Brand: XNW, with quality insurance)", "basis": "48 V x 14 Ah = 672 Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "65", "url": "https://emojobike.com/products/bull-trail", "quote": "Range ⟶ 65 Miles with Pedal Assist"},
+   {"kind": "retailer", "value": "65", "url": "https://www.bikeberry.com/products/emojo-750w-bull-trail-fat-tire-electric-bike-trike", "quote": "Range: 65 Miles with Pedal Assist"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 90, "url": "https://emojobike.com/products/bull-trail", "quote": "Weight ⟶ 90 lbs (with battery)", "basis": "spec table; the same page's FAQ says 'The trike itself weighs 106 lbs with the battery'"},
+   {"kind": "retailer", "value": 90, "url": "https://www.bikeberry.com/products/emojo-750w-bull-trail-fat-tire-electric-bike-trike", "quote": "Weight: 90 lbs (with battery)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 330, "url": "https://emojobike.com/products/bull-trail", "quote": "Load ⟶ 330 lbs", "basis": "FAQ: 'carries up to 330 lbs of rider and cargo'"},
+   {"kind": "retailer", "value": 300, "url": "https://www.bikeberry.com/products/emojo-750w-bull-trail-fat-tire-electric-bike-trike", "quote": "Load Capacity: 300 lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub", "url": "https://emojobike.com/products/bull-trail", "quote": "Motor ⟶ 750W Rear Motor Drive"},
+   {"kind": "retailer", "value": "750W (Emojo)", "url": "https://www.bikeberry.com/products/emojo-750w-bull-trail-fat-tire-electric-bike-trike", "quote": "Motor: 750W DC Brushless (Brand: Emojo)"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'10\"-6'4\"", "url": "https://emojobike.com/products/bull-trail", "quote": "Rider's Height ⟶ 4'10\"-6'4\" (Best for 4'10\"-5'10\")"},
+   {"kind": "retailer", "value": "4'10\"-6'4\"", "url": "https://www.bikeberry.com/products/emojo-750w-bull-trail-fat-tire-electric-bike-trike", "quote": "Rider’s Height Range: 4’10” – 6’4” (Best for 4’10” – 5’10”)"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://emojobike.com/products/bull-trail", "quote": "Frame | Aluminum Alloy", "basis": "rigid step-through fat-tire trike; no folding mentioned"},
+   {"kind": "retailer", "value": "No", "url": "https://www.bikeberry.com/products/emojo-750w-bull-trail-fat-tire-electric-bike-trike", "quote": "Frame: Aluminum Alloy"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Fat-tire electric trike. Maker page contradicts itself on weight: spec table 90 lbs (with battery) vs FAQ 106 lbs with battery. Load: maker 330 lb (rider+cargo) vs BikeBerry 300 lb. Maker gives no class (throttle + 20 mph -> 2). BikeBerry showed no readable price. Riding5 product page from search was 404. No EBR/EBReport/Electrek page."}

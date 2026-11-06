@@ -1,0 +1,49 @@
+{"bike": "Giant|Stormguard E+", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 7200, "url": "https://www.giant-bicycles.com/us/stormguard-eplus-1-2024", "quote": "2024 | $7,200 * | CHOOSE YOUR SIZE", "basis": "Stormguard E+ 1 (2024), US site; no crossed-out price shown"},
+   {"kind": "retailer", "value": null, "url": "https://www.momentbikes.com/product/giant-stormguard-e-1-706010-1.htm", "quote": "", "basis": "no price shown"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://www.giant-bicycles.com/us/stormguard-eplus-1-2024", "quote": "Giant SyncDrive Pro2 85Nm, PedalPlus 6-Sensor technology, Class 1, Max Assist Speed: 20MPH"},
+   {"kind": "retailer", "value": null, "url": "https://www.momentbikes.com/product/giant-stormguard-e-1-706010-1.htm", "quote": ""}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.giant-bicycles.com/us/stormguard-eplus-1-2024", "quote": "Giant SyncDrive Pro2 85Nm, PedalPlus 6-Sensor technology, Class 1, Max Assist Speed: 20MPH"},
+   {"kind": "retailer", "value": null, "url": "https://www.momentbikes.com/product/giant-stormguard-e-1-706010-1.htm", "quote": ""}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://www.giant-bicycles.com/us/stormguard-eplus-1-2024", "quote": "Giant SyncDrive Pro2 85Nm, PedalPlus 6-Sensor technology, Class 1, Max Assist Speed: 20MPH"},
+   {"kind": "retailer", "value": 85, "url": "https://www.momentbikes.com/product/giant-stormguard-e-1-706010-1.htm", "quote": "Motor\tGiant SyncDrive Pro2 85Nm, PedalPlus 6-Sensor technology"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 800, "url": "https://www.giant-bicycles.com/us/stormguard-eplus-1-2024", "quote": "Giant EnergyPak 800Wh, 22700 Lithium cell technology, Aluminium casing with highest safety standard (EN50604), CO2 Neutral production Giant EnergyPak Plus 250 range extender compatible"},
+   {"kind": "retailer", "value": 800, "url": "https://www.momentbikes.com/product/giant-stormguard-e-1-706010-1.htm", "quote": "Battery\tGiant EnergyPak 800Wh, 22700 Lithium cell technology, Aluminium casing with highest safety standard (EN50604), CO2 Neutral production Giant EnergyPak Plus 250 range extender compatible"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "43–155", "url": "https://www.giant-bicycles.com/us/stormguard-eplus-1-2024", "quote": "Extreme: 43 miles | Good: 86 miles | Ideal: 155 miles", "basis": "Giant's extreme/good/ideal conditions, EnergyPak 800 / SyncDrive Pro 2; 'Good' is 86"},
+   {"kind": "retailer", "value": null, "url": "https://www.momentbikes.com/product/giant-stormguard-e-1-706010-1.htm", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 66.75, "url": "https://www.giant-bicycles.com/us/stormguard-eplus-1-2024", "quote": "Weight ⟶ 30.2kg (66lbs 12oz) - Size (M)", "basis": "size M; with battery not stated explicitly"},
+   {"kind": "retailer", "value": null, "url": "https://www.momentbikes.com/product/giant-stormguard-e-1-706010-1.htm", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.giant-bicycles.com/us/stormguard-eplus-1-2024", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://www.momentbikes.com/product/giant-stormguard-e-1-706010-1.htm", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Giant SyncDrive Pro2", "url": "https://www.giant-bicycles.com/us/stormguard-eplus-1-2024", "quote": "Giant SyncDrive Pro2 85Nm, PedalPlus 6-Sensor technology, Class 1, Max Assist Speed: 20MPH", "basis": "no rated watts published"},
+   {"kind": "retailer", "value": "Giant SyncDrive Pro2", "url": "https://www.momentbikes.com/product/giant-stormguard-e-1-706010-1.htm", "quote": "Motor\tGiant SyncDrive Pro2 85Nm, PedalPlus 6-Sensor technology"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'4\"-6'7\"", "url": "https://www.giant-bicycles.com/us/stormguard-eplus-1-2024", "quote": "S | 5’4”  5’9” | M | 5’7”  6’0” | L | 5’9”  6’4” | XL | 6’0”  6’7”", "basis": "sizing guide, sizes S-XL"},
+   {"kind": "retailer", "value": null, "url": "https://www.momentbikes.com/product/giant-stormguard-e-1-706010-1.htm", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.giant-bicycles.com/us/stormguard-eplus-1-2024", "quote": "ALUXX SL aluminum, 100mm Stable Link Suspension System, Overdrive 3, 1.8\" - 1.5\" head tube, w/ Integrated KSA18 kickstand mount, Giant EnergyPak Plus range extender compatible", "basis": "rigid full-suspension frame; no folding mentioned"},
+   {"kind": "retailer", "value": "No", "url": "https://www.momentbikes.com/product/giant-stormguard-e-1-706010-1.htm", "quote": "Frame\tALUXX SL aluminum, 100mm Stable Link Suspension System, Overdrive 3, 1.8\" - 1.5\" head tube, w/ Integrated KSA18 kickstand mount, Giant EnergyPak Plus range extender compatible ⟶ Tires\tMaxxis Rekon 27.5x2.6\", 60TPI Foldable TLR EXO"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Given src link was Giant's Italian site (/it/stormguard-eplus-1-2024); used the US page for the same model, Stormguard E+ 1 (2024). /us/stormguard-eplus returns 404 and Giant's site search returned nothing, so no other US Stormguard E+ trim was checked. Maker's range is a conditions bar (extreme 43 / good 86 / ideal 155 mi), not per assist mode. No max load on page. Moment Bicycles (San Diego dealer) page shows no price, speed or weight. electricbikereview search found nothing; electricbikereport only had a news item."}

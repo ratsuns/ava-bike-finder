@@ -1,0 +1,49 @@
+{"bike": "Aventon|Abound SR", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1899, "url": "https://www.aventon.com/products/abound-sr-ebike", "quote": "$1,799.00 | $1,899.00", "basis": "regular $1,899; sale $1,799 ($100 off)"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/aventon-abound-sr-review/", "quote": ""}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.aventon.com/products/abound-sr-ebike", "quote": "Ebike Class | Class 2 Ebike"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/aventon-abound-sr-review/", "quote": "The Abound SR ships as a Class 2 e-bike, so its throttle and PAS are limited to 20 mph. Once paired with the Aventon app, users have the option to increase the bike’s maximum PAS speed to 25 mph. I tested the SR with both maximum speeds; see the graph of my data above."}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.aventon.com/products/abound-sr-ebike", "quote": "Top Speed | 20MPH | (Adjustable to 25MPH)", "basis": "adjustable to 25 mph"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/aventon-abound-sr-review/", "quote": "The Abound SR ships as a Class 2 e-bike, so its throttle and PAS are limited to 20 mph. Once paired with the Aventon app, users have the option to increase the bike’s maximum PAS speed to 25 mph. I tested the SR with both maximum speeds; see the graph of my data above.", "basis": "adjustable to 25 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 80, "url": "https://www.aventon.com/products/abound-sr-ebike", "quote": "Motor Torque | 80Nm"},
+   {"kind": "review", "value": 80, "url": "https://electricbikereport.com/aventon-abound-sr-review/", "quote": "Its 80 Newton meters of torque is slightly below the category average of 84 Nm. With a 25A controller, we would expect that its motor peaks at 900 watts, which is relatively conservative for a 750W rear hub."}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 733, "url": "https://www.aventon.com/products/abound-sr-ebike", "quote": "Battery | Aventon 36V, 20Ah, 733Wh, LG 21700 cells"},
+   {"kind": "review", "value": 708, "url": "https://electricbikereport.com/aventon-abound-sr-review/", "quote": "Battery:Aventon 36V, 20Ah, 708Wh, LG 21700 cells ⟶ Display: Aventon BC147"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "60", "url": "https://www.aventon.com/products/abound-sr-ebike", "quote": "Range | Up to 60 miles"},
+   {"kind": "review", "value": "60", "url": "https://electricbikereport.com/aventon-abound-sr-review/", "quote": "Claimed Range: Up to 60 Miles ⟶ Throttle:Aventon LH Handlebar Mounted"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 80, "url": "https://www.aventon.com/products/abound-sr-ebike", "quote": "Weight | 80 lbs"},
+   {"kind": "review", "value": 80, "url": "https://electricbikereport.com/aventon-abound-sr-review/", "quote": "WEIGHT & DIMENSIONS ⟶ Claimed weight: 80 lbs", "basis": "claimed; tested 80.2 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 440, "url": "https://www.aventon.com/products/abound-sr-ebike", "quote": "Payload Capacity | 440 lbs"},
+   {"kind": "review", "value": 440, "url": "https://electricbikereport.com/aventon-abound-sr-review/", "quote": "Total payload capacity: 440 lbs (143 lbs on rear cargo rack) ⟶ COMPONENTS & ACCESSORIES"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub (1,188W peak; 1,440W in Boost)", "url": "https://www.aventon.com/products/abound-sr-ebike", "quote": "Motor | Shengyi 36V 750w Hub Drive with 6 speed sensors (1188W peak)", "basis": "banner also says '750W | 1440W Peak in Boost*'"},
+   {"kind": "review", "value": "750W rear hub", "url": "https://electricbikereport.com/aventon-abound-sr-review/", "quote": "Its 80 Newton meters of torque is slightly below the category average of 84 Nm. With a 25A controller, we would expect that its motor peaks at 900 watts, which is relatively conservative for a 750W rear hub."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'11\"-6'3\"", "url": "https://www.aventon.com/products/abound-sr-ebike", "quote": "Rider Height | 4'11\" - 6'3\""},
+   {"kind": "review", "value": "4'11\"-6'3\"", "url": "https://electricbikereport.com/aventon-abound-sr-review/", "quote": "Rider height range: 4’11” – 6’3″ ⟶ Total payload capacity: 440 lbs (143 lbs on rear cargo rack)"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.aventon.com/products/abound-sr-ebike", "quote": "Folding | No"},
+   {"kind": "review", "value": "No", "url": "https://electricbikereport.com/aventon-abound-sr-review/", "quote": "Frame: 6061 Aluminum Alloy with Internal Battery. One piece – Diecast aluminum front triangle ⟶ Drivetrain:8-Speed Shimano Altus, 52T chainring, 12-32T cassette"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker values from the top banner and Specifications section; ' | ' joins consecutive page lines. Maker spec table also says 'Total Weight Limit | 440 lbs' (same figure as banner 'Payload Capacity'). Battery Wh differs: maker 733Wh vs EBR 708Wh (EBR text also says 720-Wh). Motor peak: maker spec 1188W, banner 1440W in Boost; EBR estimated ~900W. Only one independent source (EBR)."}
