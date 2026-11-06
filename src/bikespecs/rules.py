@@ -50,18 +50,35 @@ def watts(v):
     return float(m.group(1).replace(',', '')) if m else None
 
 
-MOTOR_WORDS = {'motor', 'mid', 'drive', 'hub', 'rear', 'front', 'brushless', 'geared', 'peak', 'rated', 'nominal', 'with', 'and', 'the'}
+MOTOR_WORDS = {'motor', 'mid', 'drive', 'hub', 'rear', 'front', 'brushless', 'geared', 'peak', 'rated', 'nominal', 'with', 'and', 'the', 'nm', 'system', 'smart',
+               'bosch', 'shimano', 'steps', 'yamaha', 'brose', 'mahle', 'bafang', 'giant', 'specialized'}   # brand words: a page often leaves them out
 
 
 def motor_name(v):
     """a motor's name words: "Bosch Active Line Plus mid-drive (50 Nm)" -> {bosch, active, line, plus}"""
-    return {w for w in re.findall(r'[a-z]{3,}', str(v or '').lower()) if w not in MOTOR_WORDS}
+    return {w for w in re.findall(r'[a-z0-9+]{2,}', str(v or '').lower()) if w not in MOTOR_WORDS and not w.isdigit()}   # keeps "ep600", "x35+"
 
 
 def heights(v):
-    """rider heights in inches: 5'0"-6'3" -> [60, 75]"""
-    t = str(v or '').replace('’', "'").replace('′', "'").replace('”', '"').replace('″', '"')
-    return [int(f) * 12 + int(i or 0) for f, i in re.findall(r"(\d)\s*'\s*(\d{1,2})?", t)]
+    """rider heights in inches: 5'0"-6'3" -> [60, 75]; also "5 ft. 1 in", "5 feet, 1 inch", "150cm-190cm", "1,55 et 1,95 m" """
+    t = str(v or '').replace('’', "'").replace('′', "'").replace('”', '"').replace('″', '"').replace("'-", "'")   # 5’-3”
+    t = re.sub(r'(\d)\s*(?:ft\.?|feet|foot)\s*,?\s*(?:(\d{1,2})\s*(?:in\.?|inch(?:es)?)\b)?', lambda m: f"{m.group(1)}'{m.group(2) or 0}", t, flags=re.I)
+    out = [int(f) * 12 + int(i or 0) for f, i in re.findall(r"(\d)\s*'\s*(\d{1,2})?", t)]
+    if not out or re.search(r'\d\s*c?m\b', t, re.I):     # no feet given: the heights are metric (some size tables give no unit)
+        out += [round(float(n) / 2.54) for n in re.findall(r'(?<![\d.,])((?:1[3-9]|2[01])\d(?:\.\d)?)(?![\d,]|\.\d)', t)]   # 150 cm, 142.0
+        out += [round(float(a + '.' + b) * 100 / 2.54) for a, b in re.findall(r'(?<![\d.,])([12])[.,](\d{2})(?!\d)', t)]  # 1,55 m
+    return out
+
+
+def class_of(quote):
+    """the classes a source's words name: "Class 2", "Class ⟶ 1/2/3", "Class II", "Class 2 | 3" -> {'1','2','3'}"""
+    q = re.sub(r'(?i)class\s+(iii|ii|i)\b', lambda m: 'Class ' + str(len(m.group(1))), quote or '')
+    return {c for g in re.findall(r'class\W{0,6}([1-3](?:\s*(?:,\s*or|,\s*and|/|,|\||or|and|-)\s*[1-3])*)', q, re.I) for c in re.findall(r'[1-3]', g)}
+
+
+def mph(quote):
+    """top speeds in mph a source states: "20 mph", "28MPH", "up to 20mph" """
+    return [float(n) for n in re.findall(r'(\d{2}(?:\.\d)?)\s*(?:-\s*)?mph', quote or '', re.I)]
 
 
 def close(a, b, field):
@@ -76,9 +93,11 @@ def supports(field, value, quote):
     q = quote or ''
     ns = numbers(q)
     if field == 'fold': return bool(q.strip())
-    if field == 'cls':
-        m = re.findall(r'class\W{0,6}([1-3](?:\s*(?:/|,|or|and|-)\s*[1-3])*)', q, re.I)     # "Class 2", "Class ⟶ 1/2/3"
-        return any(str(int(num(value))) in re.findall(r'[1-3]', g) for g in m)
+    if field == 'cls':      # the class it names, or (no class named) the class its out-of-the-box speed means: 20 mph -> 1 or 2, 28 -> 3
+        c = str(int(num(value)))
+        if c in class_of(q): return True
+        sp = mph(q)
+        return bool(sp) and ((c in '12' and 20 in sp) or (c == '3' and 28 in sp))
     if field == 'range':
         want = range_numbers(value)
         have = ns + [n * KM for n in ns]
@@ -89,9 +108,10 @@ def supports(field, value, quote):
         return bool(motor_name(value)) and motor_name(value) <= motor_name(q)
     if field == 'height':
         want, have = heights(value), heights(q)
-        return bool(want) and set(want) <= set(have)
+        return bool(want) and all(any(abs(w - h) <= 1 for h in have) for w in want)    # within an inch (cm rounding)
     v = num(value)
     if v is None: return False
+    if field == 'price': ns += [float(n.replace('.', '')) for n in re.findall(r'\$\s?(\d{1,3}(?:\.\d{3})+)(?![\d.])', q)]   # "US $6.999"
     if any(close(v, n, field) for n in ns): return True
     if field == 'spd' and any(close(v, n * KM, field) for n in ns): return True
     if field in ('wt', 'load') and any(close(v, n * KG, field) for n in ns): return True
@@ -118,7 +138,8 @@ def decide(field, sources):
     """what the site shows for one spec, from its sources:
     {'state', 'value', 'show', 'why'}  states: confirmed, confirmed_independent, conflict, maker_only, unconfirmed,
     not_published"""
-    srcs = [s for s in sources or [] if s.get('kind') in KINDS]
+    srcs = [s if supports(field, s.get('value'), s.get('quote')) else dict(s, value=None)    # a source counts only for
+            for s in sources or [] if s.get('kind') in KINDS]                               # what its own words back
     maker = [s for s in srcs if s['kind'] == 'maker']
     mdom = {domain(s.get('url')) for s in maker}
     others = [s for s in srcs if s['kind'] != 'maker' and domain(s.get('url')) not in mdom]
