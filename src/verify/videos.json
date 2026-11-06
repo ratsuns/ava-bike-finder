@@ -339,54 +339,54 @@
  ],
  "Benno|Boost EVO 5 Performance Sport": [
   {
-   "id": "mGbtzIAk4FA",
-   "t": "The Benno Boost Speed in 60 seconds!",
-   "c": "Electric Bike Team",
-   "d": "2024-05-29",
-   "vw": 1682,
-   "du": 61
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   },
   {
-   "id": "UDvkj1If3gQ",
-   "t": "Benno Boost | eBike Overview",
-   "c": "Propel Tech",
-   "d": "2023-03-20",
-   "vw": 9875,
-   "du": 97
+   "id": "po7V_RAHBOQ",
+   "t": "E-Cargo Bike Showdown - Benno RemiDemi XL vs Tern GSD. Which is right for you?",
+   "c": "Oregon E-Bikes",
+   "d": "2025-02-15",
+   "vw": 2440,
+   "du": 389
   },
   {
-   "id": "DrFlvDCv3bw",
-   "t": "❗ 🎥This Cargo E-Bike Surprised Me — Real Rider Review of the Benno Boost💪",
-   "c": "Braking Sync",
-   "d": "2025-09-26",
-   "vw": 978,
-   "du": 327
+   "id": "7ZN2g3O_GaE",
+   "t": "Great Utility ! 2024 Benno 46er City Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-13",
+   "vw": 959,
+   "du": 108
   }
  ],
  "Benno|Boost EVO 5 Performance Speed": [
   {
-   "id": "mGbtzIAk4FA",
-   "t": "The Benno Boost Speed in 60 seconds!",
-   "c": "Electric Bike Team",
-   "d": "2024-05-29",
-   "vw": 1682,
-   "du": 61
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   },
   {
-   "id": "UDvkj1If3gQ",
-   "t": "Benno Boost | eBike Overview",
-   "c": "Propel Tech",
-   "d": "2023-03-20",
-   "vw": 9875,
-   "du": 97
+   "id": "po7V_RAHBOQ",
+   "t": "E-Cargo Bike Showdown - Benno RemiDemi XL vs Tern GSD. Which is right for you?",
+   "c": "Oregon E-Bikes",
+   "d": "2025-02-15",
+   "vw": 2440,
+   "du": 389
   },
   {
-   "id": "DrFlvDCv3bw",
-   "t": "❗ 🎥This Cargo E-Bike Surprised Me — Real Rider Review of the Benno Boost💪",
-   "c": "Braking Sync",
-   "d": "2025-09-26",
-   "vw": 978,
-   "du": 327
+   "id": "7ZN2g3O_GaE",
+   "t": "Great Utility ! 2024 Benno 46er City Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-13",
+   "vw": 959,
+   "du": 108
   }
  ],
  "Benno|46er Performance Speed": [
@@ -405,6 +405,14 @@
    "d": "2025-02-13",
    "vw": 959,
    "du": 108
+  },
+  {
+   "id": "nxm8jcystEU",
+   "t": "Amazing Utility ! 2024 Benno Remi Demi City Bike",
+   "c": "BicycleTube",
+   "d": "2025-05-12",
+   "vw": 217,
+   "du": 92
   }
  ],
  "Benno|46er Performance CX": [
@@ -423,36 +431,92 @@
    "d": "2025-02-13",
    "vw": 959,
    "du": 108
+  },
+  {
+   "id": "nxm8jcystEU",
+   "t": "Amazing Utility ! 2024 Benno Remi Demi City Bike",
+   "c": "BicycleTube",
+   "d": "2025-05-12",
+   "vw": 217,
+   "du": 92
   }
  ],
  "Benno|eJoy 5i Performance": [
   {
-   "id": "rnwbuOO-qPg",
-   "t": "Benno eJoy | eBike Overview",
-   "c": "Propel Tech",
-   "d": "2023-06-15",
-   "vw": 2468,
-   "du": 82
+   "id": "nxm8jcystEU",
+   "t": "Amazing Utility ! 2024 Benno Remi Demi City Bike",
+   "c": "BicycleTube",
+   "d": "2025-05-12",
+   "vw": 217,
+   "du": 92
+  },
+  {
+   "id": "v4nat2kTUSo",
+   "t": "Benno RemiDemi Review - $3.4k",
+   "c": "ElectricBikeReview.com",
+   "d": "2020-08-07",
+   "vw": 43592,
+   "du": 2300
+  },
+  {
+   "id": "YGBZK_6ftXw",
+   "t": "Benno RemiDemi 9D Electric Bike Review",
+   "c": "Propel",
+   "d": "2020-01-23",
+   "vw": 30892,
+   "du": 621
   }
  ],
  "Benno|eJoy 10D Performance": [
   {
-   "id": "rnwbuOO-qPg",
-   "t": "Benno eJoy | eBike Overview",
-   "c": "Propel Tech",
-   "d": "2023-06-15",
-   "vw": 2468,
-   "du": 82
+   "id": "nxm8jcystEU",
+   "t": "Amazing Utility ! 2024 Benno Remi Demi City Bike",
+   "c": "BicycleTube",
+   "d": "2025-05-12",
+   "vw": 217,
+   "du": 92
+  },
+  {
+   "id": "v4nat2kTUSo",
+   "t": "Benno RemiDemi Review - $3.4k",
+   "c": "ElectricBikeReview.com",
+   "d": "2020-08-07",
+   "vw": 43592,
+   "du": 2300
+  },
+  {
+   "id": "YGBZK_6ftXw",
+   "t": "Benno RemiDemi 9D Electric Bike Review",
+   "c": "Propel",
+   "d": "2020-01-23",
+   "vw": 30892,
+   "du": 621
   }
  ],
  "Benno|eJoy 10D Performance Sport": [
   {
-   "id": "rnwbuOO-qPg",
-   "t": "Benno eJoy | eBike Overview",
-   "c": "Propel Tech",
-   "d": "2023-06-15",
-   "vw": 2468,
-   "du": 82
+   "id": "nxm8jcystEU",
+   "t": "Amazing Utility ! 2024 Benno Remi Demi City Bike",
+   "c": "BicycleTube",
+   "d": "2025-05-12",
+   "vw": 217,
+   "du": 92
+  },
+  {
+   "id": "v4nat2kTUSo",
+   "t": "Benno RemiDemi Review - $3.4k",
+   "c": "ElectricBikeReview.com",
+   "d": "2020-08-07",
+   "vw": 43592,
+   "du": 2300
+  },
+  {
+   "id": "YGBZK_6ftXw",
+   "t": "Benno RemiDemi 9D Electric Bike Review",
+   "c": "Propel",
+   "d": "2020-01-23",
+   "vw": 30892,
+   "du": 621
   }
  ],
  "Benno|RemiDemi 9D EVO 2 Performance": [
@@ -639,20 +703,28 @@
  ],
  "BMC|AMP 257 AL Speed One": [
   {
-   "id": "dZSC2Nci1ao",
-   "t": "BMC 257 AMP AL One | Urban Performance Line CX E-Bike 2024!",
-   "c": "Critical Tech",
-   "d": "2024-01-02",
-   "vw": 13710,
-   "du": 174
+   "id": "X_aJroiOsx8",
+   "t": "Bulls Iconic Electric Bike Lineup | Electric Commuter Bike Overview",
+   "c": "Electric Bike Report",
+   "d": "2021-10-28",
+   "vw": 9687,
+   "du": 449
   },
   {
-   "id": "E47MSYRs3_g",
-   "t": "Is the BMC Alpenchallenge AMP e-Bike for you?",
-   "c": "Dialed Cycling",
-   "d": "2020-09-30",
-   "vw": 15111,
-   "du": 958
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
  "Brompton|Electric C Line (All)": [
@@ -683,20 +755,28 @@
  ],
  "Brompton|Electric P Line (All)": [
   {
-   "id": "zsJ5a1nERUM",
-   "t": "New Brompton Electric Review: What’s Changed—and Is It Better?",
-   "c": "Ride & Shine Bicycling",
-   "d": "2026-10-10",
-   "vw": 23416,
-   "du": 532
+   "id": "bh0MVDXN9Aw",
+   "t": "Electric P Line: Lightweight Electric Performance",
+   "c": "Brompton Bicycle",
+   "d": "2022-07-12",
+   "vw": 69491,
+   "du": 43
   },
   {
-   "id": "_4wMHWH3qts",
-   "t": "How much better is the all-new Brompton Electric?",
+   "id": "Hsw2UlAhocI",
+   "t": "Brompton Electric P Line unboxing and weighing",
+   "c": "brilliantbikes",
+   "d": "2022-08-11",
+   "vw": 39528,
+   "du": 657
+  },
+  {
+   "id": "2YNOTp0NoPo",
+   "t": "Brompton Electric P Line. Lightweight. Electric made easy.",
    "c": "Brompton Bicycle",
-   "d": "2025-11-17",
-   "vw": 32696,
-   "du": 265
+   "d": "2023-02-09",
+   "vw": 266699,
+   "du": 24
   }
  ],
  "Bulls|Evo 2 Speed": [
@@ -715,6 +795,14 @@
    "d": "2023-09-07",
    "vw": 3366,
    "du": 121
+  },
+  {
+   "id": "KuhEkUVCiQI",
+   "t": "BULLS ICONIC EVO TR 1 Review - $5.1k",
+   "c": "ElectricBikeReview.com",
+   "d": "2019-01-06",
+   "vw": 17854,
+   "du": 1587
   }
  ],
  "Bulls|Evo TR 1": [
@@ -725,6 +813,22 @@
    "d": "2019-01-06",
    "vw": 17854,
    "du": 1587
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "aS1oR2KE5Po",
+   "t": "Introducing the BULLS Iconic EVO 2 Speed",
+   "c": "BULLS Bikes USA",
+   "d": "2023-09-07",
+   "vw": 3366,
+   "du": 121
   }
  ],
  "Bulls|Iconic Evo 1": [
@@ -743,6 +847,14 @@
    "d": "2024-11-04",
    "vw": 1027,
    "du": 74
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
  "Bulls|Iconic Evo TR": [
@@ -773,28 +885,28 @@
  ],
  "Bunch|The Original 4+": [
   {
-   "id": "nf3lvRTlmmU",
-   "t": "Love my Bunch Bike! Make family memories in a cargo Bike. Seats 4 kids and your dog! Save $ on gas.",
-   "c": "NotJust AnotherJessica",
-   "d": "2020-04-20",
-   "vw": 1946,
-   "du": 628
+   "id": "po7V_RAHBOQ",
+   "t": "E-Cargo Bike Showdown - Benno RemiDemi XL vs Tern GSD. Which is right for you?",
+   "c": "Oregon E-Bikes",
+   "d": "2025-02-15",
+   "vw": 2440,
+   "du": 389
   },
   {
-   "id": "Hps6K4Au350",
-   "t": "Bunch Bikes The Original | Electric Cargo Bike Review (2021)",
-   "c": "Electric Bike Report",
-   "d": "2021-07-01",
-   "vw": 11893,
-   "du": 1254
+   "id": "nxm8jcystEU",
+   "t": "Amazing Utility ! 2024 Benno Remi Demi City Bike",
+   "c": "BicycleTube",
+   "d": "2025-05-12",
+   "vw": 217,
+   "du": 92
   },
   {
-   "id": "TCNJD6MJp9Q",
-   "t": "BUNCHES of Fun! Bunch Bikes FULL Review The Original",
-   "c": "Ebike Escape",
-   "d": "2021-05-14",
-   "vw": 4893,
-   "du": 1367
+   "id": "v4nat2kTUSo",
+   "t": "Benno RemiDemi Review - $3.4k",
+   "c": "ElectricBikeReview.com",
+   "d": "2020-08-07",
+   "vw": 43592,
+   "du": 2300
   }
  ],
  "Cannondale|Adventure Neo Allroad": [
@@ -825,6 +937,14 @@
  ],
  "Cannondale|Adventure Neo Allroad EQ": [
   {
+   "id": "c1GOvrWfoGQ",
+   "t": "Go Electric, Go Anywhere: All-New Adventure Neo Allroad | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2023-04-25",
+   "vw": 24465,
+   "du": 204
+  },
+  {
    "id": "VqEWqtY-heM",
    "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
    "c": "Cannondale Bicycles",
@@ -839,18 +959,18 @@
    "d": "2025-11-07",
    "vw": 772,
    "du": 897
-  },
-  {
-   "id": "HAsA3dQ_ubc",
-   "t": "Cannondale Adventure Neo Allroad Review: Bike Shop Brand at an Affordable Price!?",
-   "c": "Ebike Escape",
-   "d": "2023-09-18",
-   "vw": 26424,
-   "du": 1248
   }
  ],
  "Cannondale|Adventure Neo Allroad Speed": [
   {
+   "id": "c1GOvrWfoGQ",
+   "t": "Go Electric, Go Anywhere: All-New Adventure Neo Allroad | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2023-04-25",
+   "vw": 24465,
+   "du": 204
+  },
+  {
    "id": "VqEWqtY-heM",
    "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
    "c": "Cannondale Bicycles",
@@ -865,14 +985,6 @@
    "d": "2025-11-07",
    "vw": 772,
    "du": 897
-  },
-  {
-   "id": "HAsA3dQ_ubc",
-   "t": "Cannondale Adventure Neo Allroad Review: Bike Shop Brand at an Affordable Price!?",
-   "c": "Ebike Escape",
-   "d": "2023-09-18",
-   "vw": 26424,
-   "du": 1248
   }
  ],
  "Cannondale|Adventure Neo": [
@@ -893,12 +1005,12 @@
    "du": 897
   },
   {
-   "id": "HAsA3dQ_ubc",
-   "t": "Cannondale Adventure Neo Allroad Review: Bike Shop Brand at an Affordable Price!?",
-   "c": "Ebike Escape",
-   "d": "2023-09-18",
-   "vw": 26424,
-   "du": 1248
+   "id": "c1GOvrWfoGQ",
+   "t": "Go Electric, Go Anywhere: All-New Adventure Neo Allroad | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2023-04-25",
+   "vw": 24465,
+   "du": 204
   }
  ],
  "Cannondale|Cargowagen Neo": [
@@ -1007,54 +1119,54 @@
  ],
  "Cannondale|Tesoro Carbon 1": [
   {
-   "id": "S70b0jeJAVs",
-   "t": "Cannondale Tesoro Carbon 2: 35 lbs & 28 MPH.",
-   "c": "Ebikesarehere",
-   "d": "2025-12-12",
-   "vw": 3786,
-   "du": 52
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   },
   {
-   "id": "9H5gusNoiHs",
-   "t": "Cannondale all new tesoro neo carbon | high performance commuter e bike",
-   "c": "Adityas 92",
-   "d": "2023-11-30",
-   "vw": 5891,
-   "du": 182
+   "id": "aS1oR2KE5Po",
+   "t": "Introducing the BULLS Iconic EVO 2 Speed",
+   "c": "BULLS Bikes USA",
+   "d": "2023-09-07",
+   "vw": 3366,
+   "du": 121
   },
   {
-   "id": "ud6EluyOtBc",
-   "t": "⚡Cannondale Tesoro Carbon 3 im Test – Das leichte und dynamische E-Bike für den Alltag!",
-   "c": "meinAndersBike",
-   "d": "2026-06-17",
-   "vw": 1374,
-   "du": 679
+   "id": "X_aJroiOsx8",
+   "t": "Bulls Iconic Electric Bike Lineup | Electric Commuter Bike Overview",
+   "c": "Electric Bike Report",
+   "d": "2021-10-28",
+   "vw": 9687,
+   "du": 449
   }
  ],
  "Cannondale|Tesoro Carbon 2": [
   {
-   "id": "S70b0jeJAVs",
-   "t": "Cannondale Tesoro Carbon 2: 35 lbs & 28 MPH.",
-   "c": "Ebikesarehere",
-   "d": "2025-12-12",
-   "vw": 3786,
-   "du": 52
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   },
   {
-   "id": "9H5gusNoiHs",
-   "t": "Cannondale all new tesoro neo carbon | high performance commuter e bike",
-   "c": "Adityas 92",
-   "d": "2023-11-30",
-   "vw": 5891,
-   "du": 182
+   "id": "aS1oR2KE5Po",
+   "t": "Introducing the BULLS Iconic EVO 2 Speed",
+   "c": "BULLS Bikes USA",
+   "d": "2023-09-07",
+   "vw": 3366,
+   "du": 121
   },
   {
-   "id": "ud6EluyOtBc",
-   "t": "⚡Cannondale Tesoro Carbon 3 im Test – Das leichte und dynamische E-Bike für den Alltag!",
-   "c": "meinAndersBike",
-   "d": "2026-06-17",
-   "vw": 1374,
-   "du": 679
+   "id": "X_aJroiOsx8",
+   "t": "Bulls Iconic Electric Bike Lineup | Electric Commuter Bike Overview",
+   "c": "Electric Bike Report",
+   "d": "2021-10-28",
+   "vw": 9687,
+   "du": 449
   }
  ],
  "Cannondale|Tesoro X 1": [
@@ -1085,28 +1197,28 @@
  ],
  "Cannondale|Tesoro X 2": [
   {
-   "id": "KO7tksFEFP4",
-   "t": "Long Distance Cycling on an eBike (Cannondale Neo Tesoro X1)",
-   "c": "Cycle Big",
-   "d": "2025-09-26",
-   "vw": 755,
-   "du": 180
+   "id": "Y24ee3PvwHU",
+   "t": "CANNONDALE TESORO NEO X2 E-BIKE REVIEW | ANY GOOD AS E-TREKKINGBIKE?",
+   "c": "Outdoorguru",
+   "d": "2020-07-05",
+   "vw": 74704,
+   "du": 1781
   },
   {
-   "id": "9gCdk7S4awM",
-   "t": "Cannondale Tesoro Neo X1 Ebike (2021)",
-   "c": "Tom M",
-   "d": "2021-08-05",
-   "vw": 15789,
-   "du": 403
+   "id": "NaJuVqSjRm0",
+   "t": "One Ride Away | Escape to Raus | Cannondale Tesoro",
+   "c": "Cannondale Bicycles",
+   "d": "2026-07-21",
+   "vw": 77909,
+   "du": 93
   },
   {
-   "id": "tDTnZbXI9v0",
-   "t": "CANNONDALE TESORO NEO X1  ( 2022 ) E-Bike WALK-AROUND",
-   "c": "R- Bikes",
-   "d": "2022-10-11",
-   "vw": 7292,
-   "du": 195
+   "id": "7BcIowKKw1o",
+   "t": "Never Shift Again With Cannondale Tesoro Automatiq",
+   "c": "Cannondale Bicycles",
+   "d": "2025-10-22",
+   "vw": 3127,
+   "du": 87
   }
  ],
  "Dahon|K-Feather": [
@@ -1203,24 +1315,40 @@
    "d": "2025-12-07",
    "vw": 11272,
    "du": 1175
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
  "Ebike2U|EB030": [
   {
-   "id": "kd4hRHcNtOE",
-   "t": "Evercross EK30 eBike - Honest Review",
-   "c": "B Rich Solution",
-   "d": "2024-05-18",
-   "vw": 5166,
-   "du": 252
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   },
   {
-   "id": "7qkDccefe2U",
-   "t": "This new Ebike is Fantastic! ENGWE Engine Pro  3 0 Boost has a lot of great things going for it!",
-   "c": "BACONBUTTTIES EBIKE Review HUB",
-   "d": "2025-10-03",
-   "vw": 13053,
-   "du": 1990
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
   }
  ],
  "Electra|Townie Go! 7D EQ": [
@@ -1231,6 +1359,22 @@
    "d": "2025-09-02",
    "vw": 3810,
    "du": 92
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
  "Electra|Townie Go!": [
@@ -1275,6 +1419,14 @@
    "d": "2025-07-25",
    "vw": 21335,
    "du": 2126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
  "Electra|Townie Go! EQ": [
@@ -1285,24 +1437,48 @@
    "d": "2020-12-21",
    "vw": 6062,
    "du": 62
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
  "Electra|Townie Go! S EQ": [
   {
-   "id": "L5cCwLHAEzw",
-   "t": "Trek’s First Throttle Cruiser? Electra Townie Go! S Review | Best $2,000 Cruiser E-Bike of 2025?",
-   "c": "Electric Bike Report",
-   "d": "2025-07-31",
-   "vw": 35449,
-   "du": 2355
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   },
   {
-   "id": "Wm2pmqYCLTM",
-   "t": "Smart Tech in a Beach Cruiser? Electra Townie Go! S Review",
-   "c": "ElectricBikeReview.com",
-   "d": "2025-07-25",
-   "vw": 21335,
-   "du": 2126
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
   }
  ],
  "Electra|Cruiser Go!": [
@@ -1313,6 +1489,22 @@
    "d": "2022-09-03",
    "vw": 20264,
    "du": 1123
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
  "Electra|Loft Go!": [
@@ -1369,28 +1561,28 @@
  ],
  "Electra|Ponto Go! S": [
   {
-   "id": "YcwaCrot_kY",
-   "t": "2024 Electra Ponto Go! ebike Review Walkaround and Test Ride Trek",
-   "c": "Cali's World",
-   "d": "2023-08-10",
-   "vw": 15301,
-   "du": 257
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   },
   {
-   "id": "-PJzqhJyvQY",
-   "t": "Electra Ponto Go! Review: 3000+ KM Tested - My Honest Thoughts (Bike Industry Insider!)",
-   "c": "I Am Mild Jam",
-   "d": "2025-10-01",
-   "vw": 7111,
-   "du": 521
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   },
   {
-   "id": "WE2h_AWZ01c",
-   "t": "Electra  Ponto Go",
-   "c": "The Bicycle Rider",
-   "d": "2023-12-25",
-   "vw": 8227,
-   "du": 437
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
   }
  ],
  "Electra|Vale Go!": [
@@ -1409,6 +1601,14 @@
    "d": "2020-03-23",
    "vw": 21743,
    "du": 1816
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
  "Emojo|Bull": [
@@ -1439,38 +1639,54 @@
  ],
  "Emojo|Bull Urban Cruiser": [
   {
-   "id": "IL_DO6Ght04",
-   "t": "EMOJO Bull Trail Urban Cruiser Review – The Ultimate Family E-Trike?",
-   "c": "The Oh Family",
-   "d": "2026-09-19",
-   "vw": 7952,
-   "du": 883
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   },
   {
-   "id": "gl4_Fs5dKvo",
-   "t": "EMOJO Caddy Trike Review - $2.8k",
-   "c": "ElectricBikeReview.com",
-   "d": "2019-07-26",
-   "vw": 114568,
-   "du": 2016
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
   }
  ],
  "Emojo|Bull Trail": [
   {
-   "id": "IL_DO6Ght04",
-   "t": "EMOJO Bull Trail Urban Cruiser Review – The Ultimate Family E-Trike?",
-   "c": "The Oh Family",
-   "d": "2026-09-19",
-   "vw": 7952,
-   "du": 883
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   },
   {
-   "id": "gl4_Fs5dKvo",
-   "t": "EMOJO Caddy Trike Review - $2.8k",
-   "c": "ElectricBikeReview.com",
-   "d": "2019-07-26",
-   "vw": 114568,
-   "du": 2016
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
   }
  ],
  "Emojo|Bull Trail Urban Cruiser": [
@@ -1483,12 +1699,20 @@
    "du": 883
   },
   {
-   "id": "gl4_Fs5dKvo",
-   "t": "EMOJO Caddy Trike Review - $2.8k",
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
    "c": "ElectricBikeReview.com",
-   "d": "2019-07-26",
-   "vw": 114568,
-   "du": 2016
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
  "Emojo|Caddy Pro": [
@@ -1519,20 +1743,28 @@
  ],
  "Emojo|Caddy Pro Urban Cruiser": [
   {
-   "id": "IL_DO6Ght04",
-   "t": "EMOJO Bull Trail Urban Cruiser Review – The Ultimate Family E-Trike?",
-   "c": "The Oh Family",
-   "d": "2026-09-19",
-   "vw": 7952,
-   "du": 883
-  },
-  {
    "id": "gl4_Fs5dKvo",
    "t": "EMOJO Caddy Trike Review - $2.8k",
    "c": "ElectricBikeReview.com",
    "d": "2019-07-26",
    "vw": 114568,
    "du": 2016
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
  "Emojo|Bison Pro": [
@@ -1563,20 +1795,28 @@
  ],
  "Emojo|Bison Pro Urban Cruiser": [
   {
-   "id": "IL_DO6Ght04",
-   "t": "EMOJO Bull Trail Urban Cruiser Review – The Ultimate Family E-Trike?",
-   "c": "The Oh Family",
-   "d": "2026-09-19",
-   "vw": 7952,
-   "du": 883
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   },
   {
-   "id": "gl4_Fs5dKvo",
-   "t": "EMOJO Caddy Trike Review - $2.8k",
-   "c": "ElectricBikeReview.com",
-   "d": "2019-07-26",
-   "vw": 114568,
-   "du": 2016
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
   }
  ],
  "Eunorau|E-FAT-STEP": [
@@ -1587,6 +1827,22 @@
    "d": "2023-07-12",
    "vw": 225,
    "du": 115
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
  "Eunorau|E-FAT-MN": [
@@ -1605,6 +1861,14 @@
    "d": "2019-11-29",
    "vw": 1505,
    "du": 1468
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
  "Fuji|Boulevard EVO": [
@@ -1615,12 +1879,128 @@
    "d": "2025-10-15",
    "vw": 119,
    "du": 545
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
- "Fuji|Conductor": [],
- "Fuji|E-Traverse 1.1+ (and ST)": [],
- "Fuji|E-Crosstown": [],
- "Fuji|Sanibel": [],
+ "Fuji|Conductor": [
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
+ "Fuji|E-Traverse 1.1+ (and ST)": [
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
+ "Fuji|E-Crosstown": [
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
+ "Fuji|Sanibel": [
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
  "Gazelle|Medeo T9": [
   {
    "id": "jw4Zw6y7wgY",
@@ -1687,7 +2067,7 @@
    "t": "NEW Gazelle Eclipse eBike Review",
    "c": "Propel",
    "d": "2024-05-11",
-   "vw": 76565,
+   "vw": 76569,
    "du": 859
   },
   {
@@ -1705,7 +2085,7 @@
    "t": "Gazelle Eclipse C380+ Review: How 130 Years of Dutch Engineering Built the Ultimate E-Bike",
    "c": "Stotts Bicycles",
    "d": "2025-02-14",
-   "vw": 12857,
+   "vw": 12859,
    "du": 630
   },
   {
@@ -1713,7 +2093,7 @@
    "t": "Gazelle Eclipse C380+ After One Year | Changing What's Possible",
    "c": "Gary Fujioka Sr.",
    "d": "2025-06-03",
-   "vw": 6440,
+   "vw": 6441,
    "du": 344
   },
   {
@@ -1757,7 +2137,7 @@
    "t": "Ultimate Comfort Meets Performance | The New Gazelle Ultimate eBikes Explained (T10 vs C5 vs C380)",
    "c": "Royal Dutch Gazelle North America",
    "d": "2026-09-24",
-   "vw": 1525,
+   "vw": 1530,
    "du": 156
   },
   {
@@ -1887,7 +2267,7 @@
    "t": "Gazelle Arroyo C5 HMB Elite Review: The Ultimate Commuter E-Bike! 🚲",
    "c": "EMOTO Supply Co.",
    "d": "2025-03-18",
-   "vw": 6595,
+   "vw": 6597,
    "du": 581
   },
   {
@@ -1961,14 +2341,6 @@
  ],
  "Gazelle|Avignon C380": [
   {
-   "id": "HLi7WF0c1l4",
-   "t": "Avignon C380 | Gazelle's Most Premium Comfort eBike",
-   "c": "Propel",
-   "d": "2023-09-30",
-   "vw": 50479,
-   "du": 1022
-  },
-  {
    "id": "aaw16O2RmRI",
    "t": "Gazelle Avignon C380 HMB Review Short",
    "c": "ElectricBikeReview.com",
@@ -1983,6 +2355,14 @@
    "d": "2023-04-17",
    "vw": 18883,
    "du": 62
+  },
+  {
+   "id": "j9lb8KVNGDM",
+   "t": "Gazelle Avignon | Comfortable e-bike | Royal Dutch Gazelle",
+   "c": "Royal Dutch Gazelle",
+   "d": "2025-05-23",
+   "vw": 7398,
+   "du": 154
   }
  ],
  "Gazelle|EasyFlow C7": [
@@ -2011,7 +2391,32 @@
    "du": 474
   }
  ],
- "Giant|Stormguard E+": [],
+ "Giant|Stormguard E+": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
  "Giant|Roam E+": [
   {
    "id": "KBLmmigwV8A",
@@ -2020,6 +2425,22 @@
    "d": "2022-06-08",
    "vw": 61329,
    "du": 911
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
  "Giant|Explore E+": [
@@ -2048,7 +2469,32 @@
    "du": 1066
   }
  ],
- "Golden Cycles|Panthro": [],
+ "Golden Cycles|Panthro": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
  "Hase|Kettwiesel ONE (Shimano EP6 Cargo)": [
   {
    "id": "-smw4Am8H-Y",
@@ -2075,7 +2521,32 @@
    "du": 796
   }
  ],
- "Hase|Gravit": [],
+ "Hase|Gravit": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
  "Hase|Kettwiesel ONE": [
   {
    "id": "-smw4Am8H-Y",
@@ -2150,7 +2621,7 @@
    "t": "Hase Pino Cargo Tandem Bike: Unmatched Versatility",
    "c": "Hostel Shoppe",
    "d": "2026-03-27",
-   "vw": 2409,
+   "vw": 2410,
    "du": 419
   }
  ],
@@ -2176,7 +2647,7 @@
    "t": "Hase Pino Cargo Tandem Bike: Unmatched Versatility",
    "c": "Hostel Shoppe",
    "d": "2026-03-27",
-   "vw": 2409,
+   "vw": 2410,
    "du": 419
   }
  ],
@@ -2258,9 +2729,84 @@
    "du": 1847
   }
  ],
- "Himiway|D5 ST (Zebra ST)": [],
- "Himiway|D5 Pro": [],
- "Himiway|D5 Pro ST": [],
+ "Himiway|D5 ST (Zebra ST)": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
+ "Himiway|D5 Pro": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
+ "Himiway|D5 Pro ST": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
  "Himiway|D5 2.0": [
   {
    "id": "24z5t0h533E",
@@ -2293,7 +2839,7 @@
    "t": "Himiway D5 2.0 ST Review | Full Suspension Fat Tire eBike Test - Best of 2026 to date",
    "c": "E-MTB Review, Emtbr, Electric Mountain Bike Review",
    "d": "2026-04-08",
-   "vw": 2259,
+   "vw": 2260,
    "du": 1221
   },
   {
@@ -2301,8 +2847,16 @@
    "t": "CRAZY Range! The Himiway D5 ST 2.0 Goes WAY Farther Than It Should",
    "c": "Auto Auction Rebuilds",
    "d": "2026-07-14",
-   "vw": 7824,
+   "vw": 7826,
    "du": 1167
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
  "Himiway|D5 2.0 20\"": [
@@ -2339,6 +2893,22 @@
    "d": "2024-08-19",
    "vw": 2394,
    "du": 1576
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
  "Ice Trikes|ICE Adventure (E-Assist)": [
@@ -2393,7 +2963,32 @@
    "du": 186
   }
  ],
- "Ice Trikes|ICE Sprint X (Shimano e-assist)": [],
+ "Ice Trikes|ICE Sprint X (Shimano e-assist)": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
  "Ice Trikes|ICE Sprint X Tour (Shimano e-assist)": [
   {
    "id": "NuNxhwjnuLg",
@@ -2462,6 +3057,14 @@
    "d": "2019-02-04",
    "vw": 4491,
    "du": 1134
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
  "LarryvsHarry|eBullitt EP600": [
@@ -2480,6 +3083,14 @@
    "d": "2024-04-17",
    "vw": 3202,
    "du": 83
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
  "LarryvsHarry|eBullitt EP801": [
@@ -2498,9 +3109,42 @@
    "d": "2024-04-17",
    "vw": 3202,
    "du": 83
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
- "LarryvsHarry|EbullittX": [],
+ "LarryvsHarry|EbullittX": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
  "Lectric|XP4 500": [
   {
    "id": "wE6k4RCAijY",
@@ -2533,7 +3177,7 @@
    "t": "I Tested America's Best Selling Ebike - Lectric XP4 750 Review",
    "c": "TailHappyTV",
    "d": "2025-11-13",
-   "vw": 254765,
+   "vw": 254842,
    "du": 1605
   },
   {
@@ -2549,7 +3193,7 @@
    "t": "I Rode the LECTRIC XP4 750W on a THROTTLE ONLY Test - Here's How it Did",
    "c": "Tom's Gadget Garage",
    "d": "2025-06-19",
-   "vw": 103613,
+   "vw": 103633,
    "du": 1110
   }
  ],
@@ -2749,7 +3393,7 @@
    "t": "Lectric XP Trike2 750 Review: The Best E-Trike I've Tested",
    "c": "BikeRide",
    "d": "2026-07-29",
-   "vw": 11319,
+   "vw": 11331,
    "du": 513
   },
   {
@@ -2803,6 +3447,14 @@
    "d": "2025-06-11",
    "vw": 355,
    "du": 1885
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
  "Letrigo|Minivan SE": [
@@ -2865,6 +3517,22 @@
    "d": "2026-10-18",
    "vw": 20452,
    "du": 973
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
  "Liv|Thrive E+": [
@@ -2875,6 +3543,22 @@
    "d": "2020-06-12",
    "vw": 3082,
    "du": 64
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
  "Liv|Rove": [
@@ -2885,6 +3569,22 @@
    "d": "2022-06-21",
    "vw": 35390,
    "du": 1200
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
  "Macfox|X1s (All variants)": [
@@ -2913,7 +3613,32 @@
    "du": 991
   }
  ],
- "Macfox|X19": [],
+ "Macfox|X19": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
  "Macfox|M20X": [
   {
    "id": "uJ-EjRcW0S0",
@@ -2972,7 +3697,7 @@
    "t": "MACFOX M16: FULL REVIEW / Electric Reviews",
    "c": "Electric Reviews",
    "d": "2026-01-04",
-   "vw": 44011,
+   "vw": 44020,
    "du": 121
   },
   {
@@ -2982,6 +3707,14 @@
    "d": "2026-03-31",
    "vw": 1180,
    "du": 778
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
  "Macfox|X7": [
@@ -3044,6 +3777,22 @@
    "d": "2023-04-03",
    "vw": 8719,
    "du": 78
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
  "Marin|Sausalito E1": [
@@ -3054,16 +3803,48 @@
    "d": "2026-06-14",
    "vw": 489,
    "du": 569
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
  "Marin|Sausalito E2": [
   {
-   "id": "PC5fH4JN6HE",
-   "t": "The Ultimate Grocery E Bike - Sausalito E2 First Look and Ride",
-   "c": "Marin Bikes",
-   "d": "2021-02-18",
-   "vw": 10870,
-   "du": 399
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
   }
  ],
  "Marin|Larkspur E": [
@@ -3072,12 +3853,78 @@
    "t": "Marin Larkspur E: The Fun Focused E-Hybrid",
    "c": "99 Spokes",
    "d": "2025-01-17",
-   "vw": 3307,
+   "vw": 3308,
    "du": 616
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
- "Mobility Access|Orion Twin (E-assist)": [],
- "Mobility Access|Duet (E-assist)": [],
+ "Mobility Access|Orion Twin (E-assist)": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
+ "Mobility Access|Duet (E-assist)": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
  "MOD|MOD Black 3": [
   {
    "id": "PN_f0vVOjw0",
@@ -3094,9 +3941,42 @@
    "d": "2019-10-10",
    "vw": 6986,
    "du": 2204
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
- "MOD|CarGo 3": [],
+ "MOD|CarGo 3": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
  "MOD|City+ Step-Thru 3": [
   {
    "id": "Aig_5bHu8FA",
@@ -3341,23 +4221,48 @@
    "du": 473
   },
   {
-   "id": "nCDyUJj6SN0",
-   "t": "Lafree E+ E-Bike (review) but there's a problem..",
-   "c": "Trail Tested ",
-   "d": "2024-10-09",
-   "vw": 4095,
-   "du": 525
-  },
-  {
    "id": "0KgbplxQYoM",
    "t": "Momentum LaFree E+ presented by Crank Works Bicycles",
    "c": "Crank Works Bikes",
    "d": "2023-03-10",
    "vw": 2971,
    "du": 76
+  },
+  {
+   "id": "qmweR-FBA0Q",
+   "t": "Momentum Lafree E Bike Reveiw",
+   "c": "Gary’s E-Bike Adventures",
+   "d": "2023-09-15",
+   "vw": 2759,
+   "du": 803
   }
  ],
- "Momentum|Trancend E+": [],
+ "Momentum|Trancend E+": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
  "Momentum|Cito E+": [
   {
    "id": "ofeeUlFnqZc",
@@ -3392,6 +4297,22 @@
    "d": "2021-09-16",
    "vw": 27649,
    "du": 1655
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
  "Navee|KG05": [
@@ -3420,8 +4341,58 @@
    "du": 1464
   }
  ],
- "Omnium|Cargo V3": [],
- "Omnium|Min-Max V3": [],
+ "Omnium|Cargo V3": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
+ "Omnium|Min-Max V3": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
  "Orbea|Diem 20 mph": [
   {
    "id": "UaxnErt4Zwg",
@@ -3480,7 +4451,7 @@
    "t": "Orbea Kemen Tour #ebike #electricbikereview",
    "c": "Electric Bike Journal",
    "d": "2025-04-20",
-   "vw": 6168,
+   "vw": 6167,
    "du": 1135
   },
   {
@@ -3516,6 +4487,14 @@
    "d": "2022-10-03",
    "vw": 17660,
    "du": 852
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
  "Orbea|Vibe": [
@@ -3544,7 +4523,32 @@
    "du": 1011
   }
  ],
- "Orbea|Optima E40": [],
+ "Orbea|Optima E40": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
  "Orbea|Muga 20 mph": [
   {
    "id": "83yXrvevysE",
@@ -3561,6 +4565,14 @@
    "d": "2026-05-08",
    "vw": 3669,
    "du": 539
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
  "Orbea|Muga 28 mph": [
@@ -3579,6 +4591,14 @@
    "d": "2026-05-08",
    "vw": 3669,
    "du": 539
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
  "Orbea|Carpe 20 mph": [
@@ -3693,6 +4713,22 @@
    "d": "2024-05-31",
    "vw": 4535,
    "du": 531
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
  "Pedego|Avenue": [
@@ -3721,8 +4757,58 @@
    "du": 1073
   }
  ],
- "Pedego|Avenue Core": [],
- "Pedego|Avenue Pro": [],
+ "Pedego|Avenue Core": [
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "nxm8jcystEU",
+   "t": "Amazing Utility ! 2024 Benno Remi Demi City Bike",
+   "c": "BicycleTube",
+   "d": "2025-05-12",
+   "vw": 217,
+   "du": 92
+  }
+ ],
+ "Pedego|Avenue Pro": [
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "nxm8jcystEU",
+   "t": "Amazing Utility ! 2024 Benno Remi Demi City Bike",
+   "c": "BicycleTube",
+   "d": "2025-05-12",
+   "vw": 217,
+   "du": 92
+  }
+ ],
  "Pedego|Interceptor": [
   {
    "id": "pHp64UOUzg8",
@@ -3833,7 +4919,7 @@
    "t": "Taking my PEDEGO ELEMENT for its first test drive #bike #ebike #rider #bicycle #cycle #emountainbike",
    "c": "Joel Fountain I Warrior Forge ",
    "d": "2026-06-18",
-   "vw": 1267,
+   "vw": 1272,
    "du": 110
   },
   {
@@ -3859,7 +4945,7 @@
    "t": "Taking my PEDEGO ELEMENT for its first test drive #bike #ebike #rider #bicycle #cycle #emountainbike",
    "c": "Joel Fountain I Warrior Forge ",
    "d": "2026-06-18",
-   "vw": 1267,
+   "vw": 1272,
    "du": 110
   },
   {
@@ -3885,7 +4971,7 @@
    "t": "Taking my PEDEGO ELEMENT for its first test drive #bike #ebike #rider #bicycle #cycle #emountainbike",
    "c": "Joel Fountain I Warrior Forge ",
    "d": "2026-06-18",
-   "vw": 1267,
+   "vw": 1272,
    "du": 110
   },
   {
@@ -3921,6 +5007,14 @@
    "d": "2023-05-03",
    "vw": 906,
    "du": 61
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
  "Pedego|Ridge Rider": [
@@ -3975,7 +5069,32 @@
    "du": 356
   }
  ],
- "Priority|E-Classic": [],
+ "Priority|E-Classic": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
  "Qualisports|Dolphin": [
   {
    "id": "e_gnM64l0Iw",
@@ -4036,16 +5155,48 @@
    "d": "2025-06-06",
    "vw": 236,
    "du": 431
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
  "Radio Flyer|Flyer Via Pro": [
   {
-   "id": "TYSjJnS1OiU",
-   "t": "Flyer Via Pro Review | A Two-Wheeled Wagon For Carrying Kids & Cargo",
-   "c": "Electric Bike Report",
-   "d": "2024-05-22",
-   "vw": 6114,
-   "du": 1592
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
   }
  ],
  "Retrospec|Beaumont Rev 2 City": [
@@ -4152,7 +5303,32 @@
    "du": 139
   }
  ],
- "Retrospec|Boca Rev 2 Electric Tricycle": [],
+ "Retrospec|Boca Rev 2 Electric Tricycle": [
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "nxm8jcystEU",
+   "t": "Amazing Utility ! 2024 Benno Remi Demi City Bike",
+   "c": "BicycleTube",
+   "d": "2025-05-12",
+   "vw": 217,
+   "du": 92
+  }
+ ],
  "Retrospec|Chatham Rev+ 2 (and Step Through)": [
   {
    "id": "A8lI-igam6s",
@@ -4179,7 +5355,32 @@
    "du": 1164
   }
  ],
- "Retrospec|Chatham Rev 3 (and Step Through)": [],
+ "Retrospec|Chatham Rev 3 (and Step Through)": [
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "nxm8jcystEU",
+   "t": "Amazing Utility ! 2024 Benno Remi Demi City Bike",
+   "c": "BicycleTube",
+   "d": "2025-05-12",
+   "vw": 217,
+   "du": 92
+  }
+ ],
  "Retrospec|Joe Rev BMX Electric Bike (Rev 1)": [
   {
    "id": "2wPANRwzCPs",
@@ -4188,6 +5389,22 @@
    "d": "2024-11-20",
    "vw": 15740,
    "du": 893
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
  "Retrospec|Joe Rev 2 BMX Electric Bike": [
@@ -4196,13 +5413,104 @@
    "t": "This Electric BMX Will Make You feel Like a Kid Again! Retrospec Joe Rev 2",
    "c": "Chris Crossed",
    "d": "2026-06-24",
-   "vw": 4308,
+   "vw": 4310,
    "du": 1142
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
- "Retrospec|Abbot Rev 2 (and Step Through)": [],
- "Retrospec|Napa Rev": [],
- "Retrospec|Koa Rev 3 (and Step Through)": [],
+ "Retrospec|Abbot Rev 2 (and Step Through)": [
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "nxm8jcystEU",
+   "t": "Amazing Utility ! 2024 Benno Remi Demi City Bike",
+   "c": "BicycleTube",
+   "d": "2025-05-12",
+   "vw": 217,
+   "du": 92
+  }
+ ],
+ "Retrospec|Napa Rev": [
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "nxm8jcystEU",
+   "t": "Amazing Utility ! 2024 Benno Remi Demi City Bike",
+   "c": "BicycleTube",
+   "d": "2025-05-12",
+   "vw": 217,
+   "du": 92
+  }
+ ],
+ "Retrospec|Koa Rev 3 (and Step Through)": [
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "nxm8jcystEU",
+   "t": "Amazing Utility ! 2024 Benno Remi Demi City Bike",
+   "c": "BicycleTube",
+   "d": "2025-05-12",
+   "vw": 217,
+   "du": 92
+  }
+ ],
  "Retrospec|Koa Rev+ 2 (and Step Through)": [
   {
    "id": "CmowWKpkoWM",
@@ -4211,6 +5519,22 @@
    "d": "2025-04-26",
    "vw": 11451,
    "du": 1222
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
  "Retrospec|Roo Rev Cargo Electric Bike": [
@@ -4261,19 +5585,11 @@
    "t": "Can One E-Bike Really Carry 4 Kids? | Retrospec Rev Roo XL Review",
    "c": "Austin Rides",
    "d": "2026-09-23",
-   "vw": 440,
+   "vw": 442,
    "du": 431
   }
  ],
  "Revi Bikes|Runabout.2": [
-  {
-   "id": "TT6k7jO0eew",
-   "t": "One Compact Cargo to Rule Them All! | Revibikes Runabout.2 Review",
-   "c": "Brent McCluskey Unboxings",
-   "d": "2023-10-01",
-   "vw": 1835,
-   "du": 276
-  },
   {
    "id": "aHt3s5q5QGM",
    "t": "Revi Bikes Runabout Review - $1.5k",
@@ -4289,6 +5605,14 @@
    "d": "2020-04-27",
    "vw": 327,
    "du": 61
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
  "Riese and Muller|Load4 75 vario": [
@@ -4299,9 +5623,50 @@
    "d": "2024-07-09",
    "vw": 11909,
    "du": 2227
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
- "Riese and Muller|Load4 60 vario": [],
+ "Riese and Muller|Load4 60 vario": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
  "Salsa|Confluence Flat Bar Altus": [
   {
    "id": "QEx5L0z2148",
@@ -4316,7 +5681,7 @@
    "t": "Salsa Cycles Confluence & More: 2023 Sea Otter",
    "c": "Gravel Cyclist",
    "d": "2023-05-11",
-   "vw": 7235,
+   "vw": 7236,
    "du": 192
   },
   {
@@ -4342,7 +5707,7 @@
    "t": "Salsa Cycles Confluence & More: 2023 Sea Otter",
    "c": "Gravel Cyclist",
    "d": "2023-05-11",
-   "vw": 7235,
+   "vw": 7236,
    "du": 192
   },
   {
@@ -4368,7 +5733,7 @@
    "t": "Salsa Cycles Confluence & More: 2023 Sea Otter",
    "c": "Gravel Cyclist",
    "d": "2023-05-11",
-   "vw": 7235,
+   "vw": 7236,
    "du": 192
   },
   {
@@ -4394,7 +5759,7 @@
    "t": "Salsa Cycles Confluence & More: 2023 Sea Otter",
    "c": "Gravel Cyclist",
    "d": "2023-05-11",
-   "vw": 7235,
+   "vw": 7236,
    "du": 192
   },
   {
@@ -4420,7 +5785,7 @@
    "t": "Salsa Cycles Confluence & More: 2023 Sea Otter",
    "c": "Gravel Cyclist",
    "d": "2023-05-11",
-   "vw": 7235,
+   "vw": 7236,
    "du": 192
   },
   {
@@ -4446,7 +5811,7 @@
    "t": "Salsa Cycles Confluence & More: 2023 Sea Otter",
    "c": "Gravel Cyclist",
    "d": "2023-05-11",
-   "vw": 7235,
+   "vw": 7236,
    "du": 192
   },
   {
@@ -4472,7 +5837,7 @@
    "t": "Salsa Cycles Confluence & More: 2023 Sea Otter",
    "c": "Gravel Cyclist",
    "d": "2023-05-11",
-   "vw": 7235,
+   "vw": 7236,
    "du": 192
   },
   {
@@ -4532,7 +5897,7 @@
    "t": "Santa Cruz Skitch - the rundown on the features and tech",
    "c": "Santa Cruz Bicycles",
    "d": "2023-08-22",
-   "vw": 58658,
+   "vw": 58663,
    "du": 329
   }
  ],
@@ -4558,7 +5923,7 @@
    "t": "Santa Cruz Skitch - the rundown on the features and tech",
    "c": "Santa Cruz Bicycles",
    "d": "2023-08-22",
-   "vw": 58658,
+   "vw": 58663,
    "du": 329
   }
  ],
@@ -4584,7 +5949,7 @@
    "t": "Santa Cruz Skitch - the rundown on the features and tech",
    "c": "Santa Cruz Bicycles",
    "d": "2023-08-22",
-   "vw": 58658,
+   "vw": 58663,
    "du": 329
   }
  ],
@@ -4610,7 +5975,7 @@
    "t": "Santa Cruz Skitch - the rundown on the features and tech",
    "c": "Santa Cruz Bicycles",
    "d": "2023-08-22",
-   "vw": 58658,
+   "vw": 58663,
    "du": 329
   }
  ],
@@ -4630,6 +5995,14 @@
    "d": "2024-01-05",
    "vw": 2077,
    "du": 67
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
  "Scott|Sub Cross eRIDE 30 Men Bike (290645)": [
@@ -4638,11 +6011,52 @@
    "t": "Scott Sub Cross eRide 30 review",
    "c": "Martin B",
    "d": "2025-10-24",
-   "vw": 2262,
+   "vw": 2263,
    "du": 386
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
- "Scott|Silence eRIDE 20 Men Speed Bike (286720)": [],
+ "Scott|Silence eRIDE 20 Men Speed Bike (286720)": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
  "Segway|Xafari": [
   {
    "id": "V_p1YeoN8rw",
@@ -4737,6 +6151,14 @@
    "d": "2023-09-09",
    "vw": 1420,
    "du": 1753
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
  "Senada|Gladiator": [
@@ -4755,6 +6177,14 @@
    "d": "2024-04-14",
    "vw": 942,
    "du": 1579
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
  "Senada|Austin V2": [
@@ -4765,12 +6195,128 @@
    "d": "2025-07-16",
    "vw": 86,
    "du": 566
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
- "Senada|Moto Cargo": [],
- "Serfas|Atlas": [],
- "Serfas|Quest": [],
- "Serfas|E Dash Mini": [],
+ "Senada|Moto Cargo": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
+ "Serfas|Atlas": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
+ "Serfas|Quest": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
+ "Serfas|E Dash Mini": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
  "Serfas|eDART 750W": [
   {
    "id": "uvWzROQkAjc",
@@ -4779,29 +6325,178 @@
    "d": "2024-10-14",
    "vw": 1103,
    "du": 168
-  }
- ],
- "Serfas|eDART 500W": [],
- "Serfas|eDART 350W": [],
- "Serfas|DASH 500W Belt Drive": [],
- "Serfas|DASH Mid-Drive 500W Belt Drive": [],
- "Sixthreezero|EVRYjourney Electric Tricycle Rickshaw 750W": [],
- "Sixthreezero|EVRYjourney 250W (Men's)": [
-  {
-   "id": "5ltWkqt0yUQ",
-   "t": "The EVRYjourney 250W Electric Bicycle - Review & Demo | Featured Pedaler @crazyblondelifeblog",
-   "c": "sixthreezero ETrikes, EBikes & Bicycles",
-   "d": "2021-10-06",
-   "vw": 5140,
-   "du": 284
   },
   {
-   "id": "1eSHckqiHS4",
-   "t": "The NEW Internal Battery Electric Bike | EVRYjourney 250W E-Bike",
-   "c": "sixthreezero ETrikes, EBikes & Bicycles",
-   "d": "2021-10-07",
-   "vw": 1572,
-   "du": 922
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  }
+ ],
+ "Serfas|eDART 500W": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
+ "Serfas|eDART 350W": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
+ "Serfas|DASH 500W Belt Drive": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
+ "Serfas|DASH Mid-Drive 500W Belt Drive": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
+ "Sixthreezero|EVRYjourney Electric Tricycle Rickshaw 750W": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
+ "Sixthreezero|EVRYjourney 250W (Men's)": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
   }
  ],
  "Sixthreezero|EVRYjourney NEW 500W (Men's Sport Hybrid)": [
@@ -4814,20 +6509,20 @@
    "du": 1366
   },
   {
-   "id": "EhdRslunHAM",
-   "t": "EVRYjourney 500W EBike | Everything You Need to Know Before Buying THE MOST UNIVERSAL Electric Bike!",
+   "id": "-KtlI2lLDdY",
+   "t": "Sixthreezero EVRYjourney Electric Bike — Real World Ride Test with Victor",
    "c": "sixthreezero ETrikes, EBikes & Bicycles",
-   "d": "2024-08-14",
-   "vw": 427,
-   "du": 3477
+   "d": "2026-06-18",
+   "vw": 209,
+   "du": 728
   },
   {
-   "id": "rUDWNomx_iA",
-   "t": "Pushing the Limits: Exploring Speeds on the Evryjourney 500W Electric Bike",
+   "id": "x58jKU0RZQc",
+   "t": "The EVRYjourney Electric Bike by Sixthreezero | Find Your Second Wind",
    "c": "sixthreezero ETrikes, EBikes & Bicycles",
-   "d": "2024-08-08",
-   "vw": 310,
-   "du": 60
+   "d": "2021-02-16",
+   "vw": 18047,
+   "du": 101
   }
  ],
  "Sixthreezero|EVRYjourney NEW 500W (Women's Touring Hybrid)": [
@@ -4840,20 +6535,20 @@
    "du": 1366
   },
   {
-   "id": "EhdRslunHAM",
-   "t": "EVRYjourney 500W EBike | Everything You Need to Know Before Buying THE MOST UNIVERSAL Electric Bike!",
+   "id": "-KtlI2lLDdY",
+   "t": "Sixthreezero EVRYjourney Electric Bike — Real World Ride Test with Victor",
    "c": "sixthreezero ETrikes, EBikes & Bicycles",
-   "d": "2024-08-14",
-   "vw": 427,
-   "du": 3477
+   "d": "2026-06-18",
+   "vw": 209,
+   "du": 728
   },
   {
-   "id": "rUDWNomx_iA",
-   "t": "Pushing the Limits: Exploring Speeds on the Evryjourney 500W Electric Bike",
+   "id": "x58jKU0RZQc",
+   "t": "The EVRYjourney Electric Bike by Sixthreezero | Find Your Second Wind",
    "c": "sixthreezero ETrikes, EBikes & Bicycles",
-   "d": "2024-08-08",
-   "vw": 310,
-   "du": 60
+   "d": "2021-02-16",
+   "vw": 18047,
+   "du": 101
   }
  ],
  "Specialized|Turbo Tero (HT)": [
@@ -4914,7 +6609,7 @@
    "t": "1 Year and 3,000 Miles With The Specialized Globe Haul LT",
    "c": "Financial Panther",
    "d": "2025-03-30",
-   "vw": 4539,
+   "vw": 4540,
    "du": 1233
   },
   {
@@ -4968,11 +6663,102 @@
    "d": "2019-06-04",
    "vw": 54586,
    "du": 1903
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
   }
  ],
- "Specialized|Turbo Como 4.0 IGH": [],
- "Specialized|Turbo Como 5.0 IGH": [],
- "Specialized|Turbo Vado 3 Evo": [],
+ "Specialized|Turbo Como 4.0 IGH": [
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  },
+  {
+   "id": "aS1oR2KE5Po",
+   "t": "Introducing the BULLS Iconic EVO 2 Speed",
+   "c": "BULLS Bikes USA",
+   "d": "2023-09-07",
+   "vw": 3366,
+   "du": 121
+  }
+ ],
+ "Specialized|Turbo Como 5.0 IGH": [
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  },
+  {
+   "id": "aS1oR2KE5Po",
+   "t": "Introducing the BULLS Iconic EVO 2 Speed",
+   "c": "BULLS Bikes USA",
+   "d": "2023-09-07",
+   "vw": 3366,
+   "du": 121
+  }
+ ],
+ "Specialized|Turbo Vado 3 Evo": [
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  },
+  {
+   "id": "aS1oR2KE5Po",
+   "t": "Introducing the BULLS Iconic EVO 2 Speed",
+   "c": "BULLS Bikes USA",
+   "d": "2023-09-07",
+   "vw": 3366,
+   "du": 121
+  }
+ ],
  "Specialized|Turbo Vado 3 X": [
   {
    "id": "c8FaFWoYGEU",
@@ -4999,10 +6785,110 @@
    "du": 373
   }
  ],
- "Specialized|Turbo Vado 2 (4.0)": [],
- "Specialized|Turbo Vado 2 (5.0 IGH)": [],
- "Sunseeker|E-Delta B1 SX Electric Delta": [],
- "Sunseeker|E-Eco Tad B1 SX Electric Tadpole": [],
+ "Specialized|Turbo Vado 2 (4.0)": [
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  },
+  {
+   "id": "aS1oR2KE5Po",
+   "t": "Introducing the BULLS Iconic EVO 2 Speed",
+   "c": "BULLS Bikes USA",
+   "d": "2023-09-07",
+   "vw": 3366,
+   "du": 121
+  }
+ ],
+ "Specialized|Turbo Vado 2 (5.0 IGH)": [
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  },
+  {
+   "id": "aS1oR2KE5Po",
+   "t": "Introducing the BULLS Iconic EVO 2 Speed",
+   "c": "BULLS Bikes USA",
+   "d": "2023-09-07",
+   "vw": 3366,
+   "du": 121
+  }
+ ],
+ "Sunseeker|E-Delta B1 SX Electric Delta": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
+ "Sunseeker|E-Eco Tad B1 SX Electric Tadpole": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
  "Surly|Skid Loader": [
   {
    "id": "HhffSseP9JU",
@@ -5087,7 +6973,7 @@
    "t": "Has The Best Got Better? | Tern GSD Electric Cargo Bike",
    "c": "Global Cycling Network",
    "d": "2025-03-26",
-   "vw": 123803,
+   "vw": 123815,
    "du": 978
   },
   {
@@ -5113,7 +6999,7 @@
    "t": "Has The Best Got Better? | Tern GSD Electric Cargo Bike",
    "c": "Global Cycling Network",
    "d": "2025-03-26",
-   "vw": 123803,
+   "vw": 123815,
    "du": 978
   },
   {
@@ -5155,7 +7041,7 @@
    "t": "Has The Best Got Better? | Tern GSD Electric Cargo Bike",
    "c": "Global Cycling Network",
    "d": "2025-03-26",
-   "vw": 123803,
+   "vw": 123815,
    "du": 978
   }
  ],
@@ -5207,11 +7093,36 @@
    "t": "No Trucks Given! Tern Orox (and HSD) MTB Cargo Bike 6 month test.",
    "c": "GuyKesTV",
    "d": "2026-02-19",
-   "vw": 3845,
+   "vw": 3848,
    "du": 870
   }
  ],
- "Tern|Quick Haul D8": [],
+ "Tern|Quick Haul D8": [
+  {
+   "id": "po7V_RAHBOQ",
+   "t": "E-Cargo Bike Showdown - Benno RemiDemi XL vs Tern GSD. Which is right for you?",
+   "c": "Oregon E-Bikes",
+   "d": "2025-02-15",
+   "vw": 2440,
+   "du": 389
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "nxm8jcystEU",
+   "t": "Amazing Utility ! 2024 Benno Remi Demi City Bike",
+   "c": "BicycleTube",
+   "d": "2025-05-12",
+   "vw": 217,
+   "du": 92
+  }
+ ],
  "Tern|Quick Haul P9 Sport": [
   {
    "id": "MYudC3r5CrA",
@@ -5220,6 +7131,22 @@
    "d": "2023-02-22",
    "vw": 20385,
    "du": 995
+  },
+  {
+   "id": "po7V_RAHBOQ",
+   "t": "E-Cargo Bike Showdown - Benno RemiDemi XL vs Tern GSD. Which is right for you?",
+   "c": "Oregon E-Bikes",
+   "d": "2025-02-15",
+   "vw": 2440,
+   "du": 389
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
  "Tern|Quick Haul Long D9": [
@@ -5230,6 +7157,22 @@
    "d": "2024-07-27",
    "vw": 10343,
    "du": 1378
+  },
+  {
+   "id": "po7V_RAHBOQ",
+   "t": "E-Cargo Bike Showdown - Benno RemiDemi XL vs Tern GSD. Which is right for you?",
+   "c": "Oregon E-Bikes",
+   "d": "2025-02-15",
+   "vw": 2440,
+   "du": 389
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
  "Tern|HSD P5i (Gen 3)": [
@@ -5246,7 +7189,7 @@
    "t": "5 Things You Need to Know About the New Tern HSD Gen 3",
    "c": "Arleigh | Bike Shop Girl",
    "d": "2026-07-16",
-   "vw": 5992,
+   "vw": 5994,
    "du": 933
   },
   {
@@ -5254,7 +7197,7 @@
    "t": "No Trucks Given! Tern Orox (and HSD) MTB Cargo Bike 6 month test.",
    "c": "GuyKesTV",
    "d": "2026-02-19",
-   "vw": 3845,
+   "vw": 3848,
    "du": 870
   }
  ],
@@ -5264,7 +7207,7 @@
    "t": "5 Things You Need to Know About the New Tern HSD Gen 3",
    "c": "Arleigh | Bike Shop Girl",
    "d": "2026-07-16",
-   "vw": 5992,
+   "vw": 5994,
    "du": 933
   },
   {
@@ -5272,7 +7215,7 @@
    "t": "No Trucks Given! Tern Orox (and HSD) MTB Cargo Bike 6 month test.",
    "c": "GuyKesTV",
    "d": "2026-02-19",
-   "vw": 3845,
+   "vw": 3848,
    "du": 870
   },
   {
@@ -5280,7 +7223,7 @@
    "t": "Tern HSD Gen 3 E-Bike Review: 3 Things Tern Got Right and 3 It Got Wrong",
    "c": "Arleigh | Bike Shop Girl",
    "d": "2026-09-27",
-   "vw": 3445,
+   "vw": 3448,
    "du": 419
   }
  ],
@@ -5298,7 +7241,7 @@
    "t": "5 Things You Need to Know About the New Tern HSD Gen 3",
    "c": "Arleigh | Bike Shop Girl",
    "d": "2026-07-16",
-   "vw": 5992,
+   "vw": 5994,
    "du": 933
   },
   {
@@ -5306,7 +7249,7 @@
    "t": "No Trucks Given! Tern Orox (and HSD) MTB Cargo Bike 6 month test.",
    "c": "GuyKesTV",
    "d": "2026-02-19",
-   "vw": 3845,
+   "vw": 3848,
    "du": 870
   }
  ],
@@ -5324,7 +7267,7 @@
    "t": "5 Things You Need to Know About the New Tern HSD Gen 3",
    "c": "Arleigh | Bike Shop Girl",
    "d": "2026-07-16",
-   "vw": 5992,
+   "vw": 5994,
    "du": 933
   },
   {
@@ -5332,7 +7275,7 @@
    "t": "Tern HSD Gen 3 E-Bike Review: 3 Things Tern Got Right and 3 It Got Wrong",
    "c": "Arleigh | Bike Shop Girl",
    "d": "2026-09-27",
-   "vw": 3445,
+   "vw": 3448,
    "du": 419
   }
  ],
@@ -5454,7 +7397,7 @@
    "t": "REVIEWED: The new Tern Vektron P5I | Fully Charged",
    "c": "Fully Charged Electric Bikes",
    "d": "2025-12-14",
-   "vw": 13439,
+   "vw": 13440,
    "du": 218
   },
   {
@@ -5492,14 +7435,39 @@
    "du": 135
   }
  ],
- "Top End|All E-handcycle models": [],
+ "Top End|All E-handcycle models": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
  "Trek|Dual Sport+": [
   {
    "id": "kZphtfT5W54",
    "t": "Trek Dual Sport+ 2 - Your lightweight, go anywhere e-bike",
    "c": "Trek Bicycle",
    "d": "2024-09-17",
-   "vw": 71284,
+   "vw": 71288,
    "du": 270
   },
   {
@@ -5535,6 +7503,14 @@
    "d": "2023-03-09",
    "vw": 23088,
    "du": 84
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
  "Trek|Fetch+ 4": [
@@ -5543,8 +7519,24 @@
    "t": "Meet Trek Fetch+ 4 and Replace your Car",
    "c": "Trek Bicycle",
    "d": "2023-08-14",
-   "vw": 25008,
+   "vw": 25009,
    "du": 79
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
   }
  ],
  "Trek|FX+ 1": [
@@ -5625,7 +7617,32 @@
    "du": 615
   }
  ],
- "Trek|FX+ 2S": [],
+ "Trek|FX+ 2S": [
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  },
+  {
+   "id": "aS1oR2KE5Po",
+   "t": "Introducing the BULLS Iconic EVO 2 Speed",
+   "c": "BULLS Bikes USA",
+   "d": "2023-09-07",
+   "vw": 3366,
+   "du": 121
+  }
+ ],
  "Trek|FX+ 7S": [
   {
    "id": "Vg7YGLugRUg",
@@ -5668,6 +7685,14 @@
    "d": "2018-01-25",
    "vw": 84288,
    "du": 1557
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
  "Trek|Verve+ 3 Lowstep": [
@@ -5686,6 +7711,14 @@
    "d": "2018-01-25",
    "vw": 84288,
    "du": 1557
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
  "Trek|Verve+ 4S Lowstep": [
@@ -5740,18 +7773,85 @@
    "du": 133
   }
  ],
- "Trek|Charter+ 5S Lowstep": [],
- "Trek|Charter+ 4S": [],
- "Trek|Charter+ 4S Lowstep": [],
- "Trek|Borrego+": [
+ "Trek|Charter+ 5S Lowstep": [
   {
-   "id": "NzpX9-nHtPs",
-   "t": "Borrego+ Fat Tire Electric Bike | From City Paths to Rugged Trails",
-   "c": "Trek Bicycle",
-   "d": "2026-07-16",
-   "vw": 17203,
-   "du": 202
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  },
+  {
+   "id": "aS1oR2KE5Po",
+   "t": "Introducing the BULLS Iconic EVO 2 Speed",
+   "c": "BULLS Bikes USA",
+   "d": "2023-09-07",
+   "vw": 3366,
+   "du": 121
+  }
+ ],
+ "Trek|Charter+ 4S": [
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  },
+  {
+   "id": "aS1oR2KE5Po",
+   "t": "Introducing the BULLS Iconic EVO 2 Speed",
+   "c": "BULLS Bikes USA",
+   "d": "2023-09-07",
+   "vw": 3366,
+   "du": 121
+  }
+ ],
+ "Trek|Charter+ 4S Lowstep": [
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  },
+  {
+   "id": "aS1oR2KE5Po",
+   "t": "Introducing the BULLS Iconic EVO 2 Speed",
+   "c": "BULLS Bikes USA",
+   "d": "2023-09-07",
+   "vw": 3366,
+   "du": 121
+  }
+ ],
+ "Trek|Borrego+": [
   {
    "id": "sQD-2yaCfXQ",
    "t": "Trek Borrego+ Revealed: The Ultimate Fat-Tire Throttle E-Bike Adventure Machine!",
@@ -5765,8 +7865,16 @@
    "t": "Trek Borrego Review - Trek's 1st Fat Tire Ebike",
    "c": "Top5ebikes",
    "d": "2026-09-03",
-   "vw": 3418,
+   "vw": 3425,
    "du": 888
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
  "Trek|Borrego+ S": [
@@ -5775,7 +7883,7 @@
    "t": "Trek Borrego+ S E-Bike Review: 34-Mile Test Ride (Is It Worth It?)",
    "c": "averagejoevideo",
    "d": "2026-10-03",
-   "vw": 2127,
+   "vw": 2134,
    "du": 584
   },
   {
@@ -5783,8 +7891,16 @@
    "t": "Trek Borrego Review - Trek's 1st Fat Tire Ebike",
    "c": "Top5ebikes",
    "d": "2026-09-03",
-   "vw": 3418,
+   "vw": 3425,
    "du": 888
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
  "Troxus|Trax LT": [
@@ -5881,9 +7997,42 @@
    "d": "2026-08-24",
    "vw": 936,
    "du": 2630
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
- "Troxus|Trax Plus 500/15": [],
+ "Troxus|Trax Plus 500/15": [
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "nxm8jcystEU",
+   "t": "Amazing Utility ! 2024 Benno Remi Demi City Bike",
+   "c": "BicycleTube",
+   "d": "2025-05-12",
+   "vw": 217,
+   "du": 92
+  }
+ ],
  "Troxus|Trax Plus iQ": [
   {
    "id": "7Yi8qwdvJLc",
@@ -5918,6 +8067,22 @@
    "d": "2024-09-20",
    "vw": 17372,
    "du": 415
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
  "Troxus|Trax Plus LR iQ": [
@@ -5928,6 +8093,22 @@
    "d": "2026-08-29",
    "vw": 3475,
    "du": 1196
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
  "Troxus|Trax SUV": [
@@ -5946,6 +8127,14 @@
    "d": "2025-09-20",
    "vw": 3395,
    "du": 799
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
  "Troxus|Trax Mid-Drive": [
@@ -5964,6 +8153,14 @@
    "d": "2024-08-01",
    "vw": 192,
    "du": 60
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
  "Troxus|Lynx Plus": [
@@ -6010,12 +8207,12 @@
    "du": 1599
   },
   {
-   "id": "HKXwnuCpJJ4",
-   "t": "Lynx Plus iQ | The Smart Compact Utility E-Bike Built for Everyday Adventures",
-   "c": "Troxus Mobility",
-   "d": "2026-07-30",
-   "vw": 123,
-   "du": 62
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
  "Troxus|Lynx Cargo": [
@@ -6034,6 +8231,14 @@
    "d": "2024-05-03",
    "vw": 5261,
    "du": 241
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
  "Troxus|Lynx Folding": [
@@ -6052,6 +8257,14 @@
    "d": "2026-04-10",
    "vw": 948,
    "du": 720
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
  "Troxus|Explorer Plus iQ": [
@@ -6068,16 +8281,16 @@
    "t": "Troxus Explorer Plus iQ Review... A Super Rugged Fat Tire Ebike!",
    "c": "Russ Is Right",
    "d": "2026-07-31",
-   "vw": 1561,
+   "vw": 1563,
    "du": 1406
   },
   {
-   "id": "kMDog2xlkxc",
-   "t": "Explorer Plus iQ | The Smart Fat Tire E-Bike Built for All-Terrain Adventures",
-   "c": "Troxus Mobility",
-   "d": "2026-07-30",
-   "vw": 120,
-   "du": 103
+   "id": "rm2R510uIhI",
+   "t": "TROXUS Explorer Plus Step Thru E-Bike",
+   "c": "E - BIKE Explorations  ",
+   "d": "2024-12-23",
+   "vw": 57321,
+   "du": 276
   }
  ],
  "Troxus|Explorer Plus MIK (Step-Thru)": [
@@ -6094,7 +8307,7 @@
    "t": "More Power than Advertised! Troxus Explorer Plus",
    "c": "Scott Hardesty ",
    "d": "2025-08-26",
-   "vw": 5923,
+   "vw": 5922,
    "du": 2293
   },
   {
@@ -6102,7 +8315,7 @@
    "t": "TROXUS EXPLORER! The E-Bike that started it all",
    "c": "E-Biking New England with Rob",
    "d": "2026-03-02",
-   "vw": 451,
+   "vw": 452,
    "du": 1612
   }
  ],
@@ -6114,6 +8327,22 @@
    "d": "2025-01-20",
    "vw": 4197,
    "du": 1156
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
  "Urban Arrow|Family": [
@@ -6176,6 +8405,22 @@
    "d": "2019-04-17",
    "vw": 8533,
    "du": 374
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
  "Urban Arrow|Breeze": [
@@ -6252,7 +8497,7 @@
    "t": "Urtopia Joy Ultra Review: The Carbon Approach to Utility Ebikes",
    "c": "Ebike Escape",
    "d": "2026-03-01",
-   "vw": 6452,
+   "vw": 6456,
    "du": 1120
   }
  ],
@@ -6290,6 +8535,22 @@
    "d": "2025-01-25",
    "vw": 40288,
    "du": 2007
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
  "Urtopia|Carbon Classic": [
@@ -6350,7 +8611,7 @@
    "t": "Urtopia Carbon Atom Review: The Most Premium E-Bike I’ve Ridden?",
    "c": "The Oh Family",
    "d": "2026-09-09",
-   "vw": 47869,
+   "vw": 47871,
    "du": 749
   },
   {
@@ -6358,7 +8619,7 @@
    "t": "Urtopia Carbon Atom is a NEW \"Lightweight\" Carbon Fiber Ebike",
    "c": "TailHappyTV",
    "d": "2026-06-25",
-   "vw": 12289,
+   "vw": 12292,
    "du": 1581
   },
   {
@@ -6708,7 +8969,32 @@
    "du": 654
   }
  ],
- "Velotric|Fold 1 Lite": [],
+ "Velotric|Fold 1 Lite": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
  "Velotric|Packer 1": [
   {
    "id": "41Wz3exxUmw",
@@ -6749,7 +9035,7 @@
    "t": "The Cadillac Escalade of E-trikes: Velotric Triker",
    "c": "Scott Hardesty ",
    "d": "2025-09-20",
-   "vw": 29265,
+   "vw": 29273,
    "du": 3134
   },
   {
@@ -6757,7 +9043,7 @@
    "t": "The Fastest Electric Trike I’ve Ever Tested: Velotric Triker Review",
    "c": "ElectricBikeReview.com",
    "d": "2025-09-27",
-   "vw": 24988,
+   "vw": 24987,
    "du": 2633
   }
  ],
@@ -6855,6 +9141,14 @@
    "d": "2026-07-31",
    "vw": 5323,
    "du": 722
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
  "X-Lab|SP5+": [
@@ -6865,6 +9159,22 @@
    "d": "2026-07-01",
    "vw": 34585,
    "du": 1153
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
   }
  ],
  "Xtracycle|Swoop ASM": [
@@ -6959,7 +9269,7 @@
    "t": "BEST Budget Electric Cargo Bike of 2025! Xtracycle Hopper E-Bike Review",
    "c": "Bike Zone",
    "d": "2025-01-16",
-   "vw": 1013,
+   "vw": 1014,
    "du": 405
   },
   {
@@ -6997,7 +9307,32 @@
    "du": 424
   }
  ],
- "Yuba|mini Boda Boda": [],
+ "Yuba|mini Boda Boda": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
  "Yuba|Spicy Curry (New)": [
   {
    "id": "cVAgbN5M7zg",
@@ -7024,8 +9359,58 @@
    "du": 373
   }
  ],
- "Yuba|Spicy Curry+": [],
- "Yuba|Spicy Curry V3": [],
+ "Yuba|Spicy Curry+": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
+ "Yuba|Spicy Curry V3": [
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
+  },
+  {
+   "id": "0XGWpHrYrgk",
+   "t": "BULLS ICONIC EVO 2 Speed Review - $5.2k",
+   "c": "ElectricBikeReview.com",
+   "d": "2023-03-15",
+   "vw": 8310,
+   "du": 1239
+  },
+  {
+   "id": "VqEWqtY-heM",
+   "t": "An Electric Bike for Everyone, the Cannondale Adventure Neo | Cannondale Essentials",
+   "c": "Cannondale Bicycles",
+   "d": "2022-07-07",
+   "vw": 6790,
+   "du": 191
+  }
+ ],
  "Yuba|Fast Rack": [
   {
    "id": "G1bOF8VXuMs",
@@ -7042,6 +9427,14 @@
    "d": "2025-12-04",
    "vw": 231,
    "du": 283
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ],
  "Yuba|Kombi E5": [
@@ -7086,6 +9479,14 @@
    "d": "2023-11-04",
    "vw": 9361,
    "du": 505
+  },
+  {
+   "id": "sTJTpU1KtBo",
+   "t": "2024 Benno 46er Adventure Bike",
+   "c": "BicycleTube",
+   "d": "2025-02-28",
+   "vw": 1160,
+   "du": 126
   }
  ]
 }
