@@ -1,8 +1,4 @@
 import os
-def _vdur(iso):
-    import re
-    m=re.fullmatch(r'P(?:(\d+)D)?T?(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?',iso or '')
-    return sum(int(x or 0)*k for x,k in zip(m.groups(),(86400,3600,60,1))) if m else 0
 import json,glob,os
 SHOPS_PREVIEW=False  # True makes shops.html a preview: noindex and left out of sitemap.xml
 B=json.load(open('bikes.json')); R=json.load(open('res_all.json')); IM=json.load(open('imgs_v3.json')); MODES=json.load(open('img_modes_v3.json')); S=json.load(open('shops.json'))
@@ -203,35 +199,10 @@ if SITE:
     DJ='window.AVA_B='+json.dumps(out,separators=(',',':'))+';window.AVA_S='+json.dumps(S,separators=(',',':'))+';'
     DN='data-'+hashlib.md5(DJ.encode()).hexdigest()[:8]+'.js'
     open(os.path.join(SITE,DN),'w').write(DJ)
-    # video reviews (from src/videos.csv, checked above): kept in their own small file
-    # that the page loads after it's up, so they never slow the first view. Each: [video id, title, channel, views, date, seconds]
-    for f in os.listdir(SITE):
-        if f.startswith('videos-') and f.endswith('.json'): os.remove(os.path.join(SITE,f))
-    # video reviews: src/videos.csv is the one list (Brand, Model, Video 1-3 as YouTube links); YouTube's data for each
-    # video is in verify/video_meta.json. yt_check.py checks every video against its bike and the build stops on any problem.
-    import csv as _csv, re as _re
-    from yt_check import check as _vcheck
-    _meta=json.load(open('verify/video_meta.json'))
-    _vj={}
-    for _r in _csv.DictReader(open('videos.csv',encoding='utf-8-sig')):
-        _ids=[]
-        for _c in ('Video 1','Video 2','Video 3'):
-            _v=(_r.get(_c) or '').strip()
-            if not _v: continue
-            _m=_re.search(r'(?:embed/|v=|youtu\.be/|shorts/)([\w-]{11})(?![\w-])',_v)
-            if not _m: raise SystemExit(f"videos.csv: not a YouTube video link for {_r['Brand']} {_r['Model']}: {_v}")
-            _ids.append(_m.group(1))
-        _vj[_r['Brand']+'|'+_r['Model']]=[{'id':i,'t':_meta[i]['t'] if i in _meta else '','c':_meta.get(i,{}).get('c',''),'vw':_meta.get(i,{}).get('vw',0),
-            'd':_meta.get(i,{}).get('d','')[:10],'du':_vdur(_meta.get(i,{}).get('du'))} for i in _ids]
-    _bk={(o['brand'],o['model']) for o in out}
-    _missing=sorted(f'{b} {m}' for b,m in _bk if f'{b}|{m}' not in _vj)
-    if _missing: raise SystemExit('videos.csv has no row for: '+', '.join(_missing))
-    _probs=_vcheck(_vj,sorted(_bk),_meta)
-    if _probs: raise SystemExit('Video check failed, nothing was built:\n'+'\n'.join(' | '.join(p) for p in _probs))
-    VJ=json.dumps({k:[[x['id'],__import__('html').unescape(x['t']),x['c'],x['vw'],x['d'],x['du']] for x in v] for k,v in _vj.items() if v},separators=(',',':'),ensure_ascii=False)
-    assert 'AIza' not in VJ  # never publish an API key
-    VN='videos-'+hashlib.md5(VJ.encode()).hexdigest()[:8]+'.json'
-    open(os.path.join(SITE,VN),'w').write(VJ)
+    # video reviews: src/videos.csv is the one list; videos/publish.py checks every video against its bike (the build stops
+    # on any problem) and writes them to their own small file that the page loads after it's up
+    from videos.publish import write as _write_videos
+    VN=_write_videos(SITE,sorted({(o['brand'],o['model']) for o in out}))
     PAGE=open('site_tpl.html').read().replace('__HERO_MP4__',HM).replace('__HERO_JPG__',HJ).replace('__VIDS__',VN)
     PAGE=PAGE.replace('<script>\nconst B=__BIKES__;\nconst S=__SHOPS__;',f'<script src="{DN}"></script>\n<script>\nconst B=window.AVA_B;\nconst S=window.AVA_S;',1)
     assert '__BIKES__' not in PAGE

@@ -1,0 +1,48 @@
+name: Video reviews
+# Keeps the video reviews right without anyone checking them by hand:
+#  - when src/videos.csv changes, once a week, or when run from the Actions tab
+#  - gets YouTube's current data for every video (needs the YT_API_KEY secret; skipped without it)
+#  - takes out videos YouTube no longer shows, runs the accuracy check, and publishes the site's video file
+# A video that doesn't match its bike stops the run and nothing is published (GitHub emails the repo owner).
+on:
+  push:
+    branches: [main]
+    paths: ['src/videos.csv']
+  schedule:
+    - cron: '17 9 * * 1'     # Mondays 2:17am Pacific
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+concurrency: videos
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install wordfreq==3.1.1
+      - name: Get YouTube's current data
+        if: ${{ env.YT_API_KEY != '' }}
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+        working-directory: src
+        run: python -m videos.refresh
+      - name: Check and publish
+        working-directory: src
+        run: python -m videos.publish .. --drop-unavailable
+      - name: Save the result
+        run: |
+          if grep -rqE '(^|[^A-Za-z0-9+/])AIza[0-9A-Za-z_-]{35}' --include='*.json' --include='*.csv' --include='*.html' --include='*.js' .; then
+            echo 'A Google API key is in a file. Not saving.'; exit 1; fi
+          git add -A src/videos.csv src/verify/video_meta.json index.html 'videos-*.json'
+          if git diff --cached --quiet; then echo 'Nothing changed.'; exit 0; fi
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+            commit -m 'Video reviews: refreshed from YouTube and checked'
+          git push
+          curl -s -X POST -H "Authorization: Bearer ${{ github.token }}" -H 'Accept: application/vnd.github+json' \
+            https://api.github.com/repos/${{ github.repository }}/pages/builds || true
+    env:
+      YT_API_KEY: ${{ secrets.YT_API_KEY }}
