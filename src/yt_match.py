@@ -4,7 +4,7 @@ Input:  verify/yt_candidates.json  {videoId: {t: title, c: channel, d: published
                                                em: embeddable 0/1, pv: privacy, lv: live status, la: language}}
 Output: verify/videos.json          {"Brand|Model": [{id, t, c, d, vw, du}, ...up to 3]}
 
-Rules (what the user asked for): reviews from the last 2 years, the title must name the brand and the model,
+Rules (what the user asked for): most-viewed reviews from the last 2 years first, older ones fill open spots; the title must name the brand and the model,
 the 3 most viewed win. Only videos YouTube allows on other sites (embeddable), public, not live, and at least
 a minute long (no Shorts). A video goes to the most specific model it names (a "FX+ 2S" video is not a "FX+ 2" video).
 When no video names a model's full name, the model's family name is tried (a "Level 4" video for "Level 4 REC").
@@ -84,7 +84,7 @@ def main(site):
     cand = json.load(open('verify/yt_candidates.json'))
     since = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=730)).strftime('%Y-%m-%dT%H:%M:%SZ')
     ok = {i: v for i, v in cand.items() if v.get('em') == 1 and v.get('pv') == 'public' and v.get('lv') in (None, 'none')
-          and seconds(v.get('du')) >= 60 and v.get('d', '') >= since}
+          and seconds(v.get('du')) >= 60}
     for v in ok.values(): v['t'] = html.unescape(v['t'])
     # not reviews: sale listings, setup guides, parts and repairs; plus videos a reviewer judged wrong (verify/yt_reject.json)
     JUNK = re.compile(r'refurb|gebruikte|te koop|for sale|demo bikes|assembl|unbox ?& ?assemble|tutorial|quick start|how to (enable|install|assemble)|recall|battery w|tire blowout|install|accessor|spare part', re.I)
@@ -136,7 +136,8 @@ def main(site):
         for mo in mos:
             ids = []
             for lv in levels:
-                for i in sorted(lv.get(mo, []), key=lambda i: -ok[i]['vw']):
+                # the last 2 years first (most viewed), then older reviews fill any open spots: older bikes only have older reviews
+                for i in sorted(lv.get(mo, []), key=lambda i: (ok[i]['d'] < since, -ok[i]['vw'])):
                     if i not in ids and i not in rej.get(br + '|' + mo, ()): ids.append(i)
                 if len(ids) >= 3: break
             pool[br + '|' + mo] = [[i, ok[i]['t'], ok[i]['vw']] for i in ids]
