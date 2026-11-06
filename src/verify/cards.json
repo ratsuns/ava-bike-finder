@@ -6948,42 +6948,6 @@
 }
 ],
 "img": null
-},
-{
-"cls": 2,
-"spd": 20,
-"tq": null,
-"wh": null,
-"range": "30-50+",
-"wt": 73.5,
-"load": 400,
-"height": "S 4'10\"-5'10\", M 5'3\"-6'3\", L 5'10\"-6'10\"",
-"fold": null,
-"motor": "750W rear hub",
-"price": 1699,
-"brand": "Radio Flyer",
-"model": "Flyer Via Pro",
-"src": "https://www.radioflyer.com/products/flyer-via-pro",
-"pnote": null,
-"st": null,
-"cv": [
-{
-"n": "Black",
-"hex": "#1A1A1A",
-"img": "2e71ef277d5dcf"
-},
-{
-"n": "Forest Green",
-"hex": "#2F4F3A",
-"img": "8ab22599213675"
-},
-{
-"n": "Space Gray Blue",
-"hex": "#5A6878",
-"img": "baff7b96c66f6c"
-}
-],
-"img": "2e71ef277d5dcf"
 }
 ],
 "131": [

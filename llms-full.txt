@@ -1,6 +1,6 @@
 # Ava Bike Finder
 
-> Every e-bike on Ava Community Energy's e-bike rebate list (366 bikes), with each bike's price, the price after the rebate, specs and the shops that sell it. Made by Chris Beltran in Oakland, CA. Not affiliated with Ava Community Energy. Updated November 3, 2026.
+> Every e-bike on Ava Community Energy's e-bike rebate list (365 bikes), with each bike's price, the price after the rebate, specs and the shops that sell it. Made by Chris Beltran in Oakland, CA. Not affiliated with Ava Community Energy. Updated November 5, 2026.
 
 ## The rebate (source: https://avaenergy.org/bike-electric/, checked October 29, 2026)
 
@@ -20,7 +20,7 @@
 - [Full bike and shop list](llms-full.txt): every bike with price, price after rebate, class, specs and shops, plus every shop's address, phone, hours and website.
 - [Website](https://ratsuns.github.io/ava-bike-finder/): search and filter the list.
 
-## All 366 e-bikes
+## All 365 e-bikes
 
 | Bike | Type | Class | Price | After rebate | Motor | Battery | Range | Weight | Status | Shops |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -223,7 +223,6 @@
 | Qualisports Dolphin | Standard | 2 | $1,499.0 | $1,099.0 | 500W geared hub (750W peak), 48V | 504 Wh | 45–70 mi | 51.5 lb | Available | Electric Bike Center |
 | Radio Flyer Flyer Loop | Cargo | 2 | $1,999 | $1,099 | 750W rear hub |  | 30–50 mi | 77 lb | Available | Electric Bike Center |
 | Radio Flyer Flyer Via | Cargo | 2 | $1,599 | $699 | 500W rear hub |  | 30–50 mi | 69 lb | Available | Electric Bike Center |
-| Radio Flyer Flyer Via Pro | Cargo | 2 | $1,699 | $799 | 750W rear hub |  | 30–50 mi | 73.5 lb | Available | Electric Bike Center |
 | Radio Flyer Flyer Via Pro | Cargo | 2 | $1,699 | $799 | 750W rear hub | 687 Wh | 30–50 mi | 73 lb | Available | Electric Bike Center |
 | Retrospec Abbot Rev 2 (and Step Through) | Standard | 2 | $1,599.99 | $1,199.99 | 500W rear hub (48V) | 500 Wh | 75 mi | 71 lb | Available | Robby's Bicycles, Dublin Cyclery |
 | Retrospec Beaumont Rev 2 City | Standard | 2 | $999.99 | $599.99 | 350W planetary geared rear hub (36V) | 360 Wh | 42 mi | 57.5 lb | Available | Robby's Bicycles, Dublin Cyclery |

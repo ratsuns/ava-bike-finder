@@ -159,6 +159,15 @@ if CARDS:
             elif n['cv'] is not o['cv'] and any(x['img'] for x in n['cv']): n['img']=next(x['img'] for x in n['cv'] if x['img'])
             new.append(n)
     out=new
+# one card per bike: the same brand + model twice (a list row split into models that also have their own row) is merged,
+# keeping the first card and adding the other's shops, and the build says so
+_seen={}
+for _o in list(out):
+    _k=(_o['brand'],_o['model'])
+    if _k in _seen:
+        _t=_seen[_k];_t['shops']=list(dict.fromkeys(_t['shops']+_o['shops']));out.remove(_o)
+        print('merged duplicate bike:',*_k)
+    else: _seen[_k]=_o
 import shutil
 # shop logos (verify/shoplogos/<slug>.webp), matched by the shop's name
 LOGO={'Alameda Bicycle':'alameda-bicycle','Blue Heron Bikes':'blue-heron-bikes','Cycle City':'cycle-city','Dublin Cyclery':'dublin-cyclery','Ebikes2U':'ebikes2u','Electric Bike Center':'electric-bike-center','Laurel Cyclery':'laurel-cyclery','Stay True Cycles':'stay-true-cycles','The Bicycle Garage':'the-bicycle-garage','The New Wheel':'the-new-wheel','Tip Top Bike Shop':'tip-top-bike-shop',"Robby's Bicycles":'robby-s-bicycles','Uptown BART Bike Station':'bikehub','Cyclepath':'cyclepath','Rhythm Bikes':'rhythm-bikes','Niles Bicycles':'niles-bicycles','Adaptive Cycles':'adaptive-cycles','Adaptive Cycles (Berkeley)':'adaptive-cycles'}
