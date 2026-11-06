@@ -1,28 +1,28 @@
 {
  "Aima|Big Sur Sport": [
   {
-   "id": "arjerGpvLO4",
-   "t": "Top Ebike Expert Reveals BEST Features of the Aima Big Sur",
-   "c": "eBike Reviews & Adventures",
-   "d": "2025-10-25",
-   "vw": 60925,
-   "du": 619
-  },
-  {
-   "id": "0WvK-x3-OLU",
-   "t": "The Best Fat Tire Ebike You've Never Heard Of: AIMA Big Sur Ebike Review",
-   "c": "Freshly Charged",
-   "d": "2025-05-21",
-   "vw": 17300,
-   "du": 915
-  },
-  {
    "id": "_rG9bythbQA",
    "t": "2026 AIMA Canada E-Bike Presentation - Big Sur Sport G2",
    "c": "AIMA E-Bikes Canada",
    "d": "2026-02-23",
    "vw": 9919,
    "du": 78
+  },
+  {
+   "id": "TonSG8MM4AQ",
+   "t": "AIMA Big Sur Sport 2.0 Review | Fun Size & Spunky",
+   "c": "Electric Bike Report",
+   "d": "2026-02-14",
+   "vw": 5394,
+   "du": 2710
+  },
+  {
+   "id": "nPeJTVIO5Vc",
+   "t": "Aima Big Sur Sport Ebike Review! Is it worth it?",
+   "c": "Daily Spokes ",
+   "d": "2025-04-03",
+   "vw": 4327,
+   "du": 443
   }
  ],
  "Aima|Santa Monica": [
@@ -243,20 +243,20 @@
    "du": 961
   },
   {
-   "id": "A4jRWt4FTUE",
-   "t": "Two new Aventures! Which do you choose? Aventure 3 or Aventure M  @AventonBikesVideos  #aventon",
-   "c": "Electric Bike Journal",
-   "d": "2025-07-09",
-   "vw": 46458,
-   "du": 1287
-  },
-  {
    "id": "7rKGslAv_FY",
    "t": "I Tried The New Aventon Aventure M Bike And WOW!",
    "c": "Scott Hardesty ",
    "d": "2025-07-25",
    "vw": 40478,
    "du": 3312
+  },
+  {
+   "id": "JjX-ScD5wNY",
+   "t": "100 Nm of Torque AND a Mid-Drive? Aventon Aventure M Review",
+   "c": "ElectricBikeReview.com",
+   "d": "2025-07-09",
+   "vw": 23588,
+   "du": 2910
   }
  ],
  "Aventon|Level 4 REC": [
@@ -339,58 +339,8 @@
  ],
  "Benno|Boost EVO 5 Performance Sport": [],
  "Benno|Boost EVO 5 Performance Speed": [],
- "Benno|46er Performance Speed": [
-  {
-   "id": "AWpL6BjjrMI",
-   "t": "Longtail? Was'n das? So findest du das Beste für dich. Benno Bikes Boost und 46er im Vergleich",
-   "c": "RADgeber Sebastian Risse",
-   "d": "2025-03-14",
-   "vw": 1401,
-   "du": 1082
-  },
-  {
-   "id": "sTJTpU1KtBo",
-   "t": "2024 Benno 46er Adventure Bike",
-   "c": "BicycleTube",
-   "d": "2025-02-28",
-   "vw": 1160,
-   "du": 126
-  },
-  {
-   "id": "7ZN2g3O_GaE",
-   "t": "Great Utility ! 2024 Benno 46er City Bike",
-   "c": "BicycleTube",
-   "d": "2025-02-13",
-   "vw": 959,
-   "du": 108
-  }
- ],
- "Benno|46er Performance CX": [
-  {
-   "id": "AWpL6BjjrMI",
-   "t": "Longtail? Was'n das? So findest du das Beste für dich. Benno Bikes Boost und 46er im Vergleich",
-   "c": "RADgeber Sebastian Risse",
-   "d": "2025-03-14",
-   "vw": 1401,
-   "du": 1082
-  },
-  {
-   "id": "sTJTpU1KtBo",
-   "t": "2024 Benno 46er Adventure Bike",
-   "c": "BicycleTube",
-   "d": "2025-02-28",
-   "vw": 1160,
-   "du": 126
-  },
-  {
-   "id": "7ZN2g3O_GaE",
-   "t": "Great Utility ! 2024 Benno 46er City Bike",
-   "c": "BicycleTube",
-   "d": "2025-02-13",
-   "vw": 959,
-   "du": 108
-  }
- ],
+ "Benno|46er Performance Speed": [],
+ "Benno|46er Performance CX": [],
  "Benno|eJoy 5i Performance": [],
  "Benno|eJoy 10D Performance": [],
  "Benno|eJoy 10D Performance Sport": [],
@@ -400,14 +350,6 @@
  "Benno|RemiDemi XL EVO 1 Performance Sport": [],
  "Benno|RemiDemi XL EVO 1 Performance": [],
  "Blix|Sol X": [
-  {
-   "id": "VFiyXATIOzs",
-   "t": "The BLIX SOL X…750 Watts of Power...Artificial Intelligence…Auto Power and Shifting On Sale $1,699!",
-   "c": "IMBruceECLECTIC",
-   "d": "2025-10-31",
-   "vw": 127272,
-   "du": 2759
-  },
   {
    "id": "h3HRU5FDXDI",
    "t": "Blix Sol X Review: The Ultimate Electric Bike For Commuters And Adventure Seekers!",
@@ -423,6 +365,14 @@
    "d": "2025-11-07",
    "vw": 31252,
    "du": 1199
+  },
+  {
+   "id": "bp7OnkaThPg",
+   "t": "Best Women’s E-Bike 2025? 🚲 First Look at the Blix Sol X With Automatic Shifting Gearbox",
+   "c": "KhanFlicks",
+   "d": "2025-12-02",
+   "vw": 26806,
+   "du": 466
   }
  ],
  "Blix|Vika X": [
@@ -454,69 +404,35 @@
  "BMC|AMP 257 AL Speed One": [],
  "Brompton|Electric C Line (All)": [
   {
-   "id": "Qw4b4QnTl4I",
-   "t": "Brompton C Line Is About to Change - Here’s What’s Coming",
-   "c": "Velocity Printworks",
-   "d": "2025-10-17",
-   "vw": 42085,
-   "du": 725
-  },
-  {
-   "id": "H8styhlPK7Y",
-   "t": "Which Brompton is right for you? | C Line, P Line, T Line, G Line and Electric",
-   "c": "Brompton Bicycle",
-   "d": "2026-09-15",
-   "vw": 40299,
-   "du": 285
-  },
-  {
    "id": "Fg14aSmTO-g",
    "t": "Brompton Electric C Line Review: The Best Folding, Lightweight, Compact Ebike Today",
    "c": "Ebike Escape",
    "d": "2024-12-01",
    "vw": 34795,
    "du": 1247
-  }
- ],
- "Brompton|Electric P Line (All)": [
-  {
-   "id": "vQnJOBG5WOw",
-   "t": "Brompton P Line - updated for 2026",
-   "c": "brilliantbikes",
-   "d": "2026-05-14",
-   "vw": 64341,
-   "du": 719
   },
   {
-   "id": "H8styhlPK7Y",
-   "t": "Which Brompton is right for you? | C Line, P Line, T Line, G Line and Electric",
-   "c": "Brompton Bicycle",
-   "d": "2026-09-15",
-   "vw": 40299,
-   "du": 285
+   "id": "shl9zQnAYIk",
+   "t": "Brompton Electric C-Line 12-Speed Review | Cool & Compact",
+   "c": "Electric Bike Report",
+   "d": "2025-01-17",
+   "vw": 22951,
+   "du": 1686
+  },
+  {
+   "id": "zyDjlxmy6nk",
+   "t": "First impressions Brompton C-Line Electric e-motiq",
+   "c": "Chris the Curious Dad",
+   "d": "2026-06-26",
+   "vw": 2669,
+   "du": 66
   }
  ],
+ "Brompton|Electric P Line (All)": [],
  "Bulls|Evo 2 Speed": [],
  "Bulls|Evo TR 1": [],
  "Bulls|Iconic Evo 1": [],
- "Bulls|Iconic Evo TR": [
-  {
-   "id": "YVyQl7XkoO0",
-   "t": "New Bulls Crosslight S and Iconic S E-Bikes #ebikes #bulls #cycling",
-   "c": "ElectricBikeReview.com",
-   "d": "2025-04-17",
-   "vw": 4138,
-   "du": 67
-  },
-  {
-   "id": "tTE-opYd1v8",
-   "t": "Riding the Bulls Iconic TR 2 to the shop as part of my regular commute. #bicycle #ebike #ride",
-   "c": "MikeBikes403",
-   "d": "2025-09-11",
-   "vw": 120,
-   "du": 61
-  }
- ],
+ "Bulls|Iconic Evo TR": [],
  "Bunch|The Original 4+": [],
  "Cannondale|Adventure Neo Allroad": [
   {
@@ -534,42 +450,9 @@
    "d": "2024-12-30",
    "vw": 918,
    "du": 222
-  },
-  {
-   "id": "DKSpW0q6QWY",
-   "t": "We Did A 7 HOUR Adventure Ride To Test This Bike ( 2026 Cannondale Topstone)",
-   "c": "Mike's Bikes",
-   "d": "2025-04-30",
-   "vw": 51042,
-   "du": 987
   }
  ],
- "Cannondale|Adventure Neo Allroad EQ": [
-  {
-   "id": "DKSpW0q6QWY",
-   "t": "We Did A 7 HOUR Adventure Ride To Test This Bike ( 2026 Cannondale Topstone)",
-   "c": "Mike's Bikes",
-   "d": "2025-04-30",
-   "vw": 51042,
-   "du": 987
-  },
-  {
-   "id": "8L25otNagSo",
-   "t": "E-Bike Spotlight: Cannondale Adventure Neo Allroad Serires",
-   "c": "Oregon E-Bikes",
-   "d": "2025-03-09",
-   "vw": 2918,
-   "du": 69
-  },
-  {
-   "id": "kJf5FXi1sLs",
-   "t": "cannondale allroad adventure speed demo bikes for sale",
-   "c": "Covered Bridge Electric Bikes ",
-   "d": "2025-02-01",
-   "vw": 1224,
-   "du": 160
-  }
- ],
+ "Cannondale|Adventure Neo Allroad EQ": [],
  "Cannondale|Adventure Neo Allroad Speed": [
   {
    "id": "EF4eLv2DSy8",
@@ -578,76 +461,10 @@
    "d": "2025-05-10",
    "vw": 461,
    "du": 722
-  },
-  {
-   "id": "DKSpW0q6QWY",
-   "t": "We Did A 7 HOUR Adventure Ride To Test This Bike ( 2026 Cannondale Topstone)",
-   "c": "Mike's Bikes",
-   "d": "2025-04-30",
-   "vw": 51042,
-   "du": 987
-  },
-  {
-   "id": "8L25otNagSo",
-   "t": "E-Bike Spotlight: Cannondale Adventure Neo Allroad Serires",
-   "c": "Oregon E-Bikes",
-   "d": "2025-03-09",
-   "vw": 2918,
-   "du": 69
   }
  ],
- "Cannondale|Adventure Neo": [
-  {
-   "id": "mqOQzzS5FPs",
-   "t": "Cannondale Adventure NEO 2 EQ E-Bike Refurbished gebruikte fiets | H&B Exclusive R15046",
-   "c": "H&B Exclusive",
-   "d": "2024-12-13",
-   "vw": 616,
-   "du": 99
-  },
-  {
-   "id": "zEEa1_iw-oA",
-   "t": "Cannondale Adventure Neo 3 1 EQ Elcykel",
-   "c": "Dania Bikes Produkter",
-   "d": "2025-04-03",
-   "vw": 457,
-   "du": 94
-  },
-  {
-   "id": "DKSpW0q6QWY",
-   "t": "We Did A 7 HOUR Adventure Ride To Test This Bike ( 2026 Cannondale Topstone)",
-   "c": "Mike's Bikes",
-   "d": "2025-04-30",
-   "vw": 51042,
-   "du": 987
-  }
- ],
- "Cannondale|Cargowagen Neo": [
-  {
-   "id": "-no9Q8kwFvE",
-   "t": "Rad der Woche - Cannondale Cargowagen Neo 2",
-   "c": "Zweirad Stadler",
-   "d": "2026-07-16",
-   "vw": 858,
-   "du": 130
-  },
-  {
-   "id": "lMGPq1yQXKw",
-   "t": "Cannondale Wonderwagen & Cargowagen",
-   "c": "C2K Cycling 2000",
-   "d": "2025-11-30",
-   "vw": 3881,
-   "du": 320
-  },
-  {
-   "id": "Av-e4D6PcxQ",
-   "t": "E-Cargo Spotlight: Cannondale Cargowagen",
-   "c": "Oregon E-Bikes",
-   "d": "2025-03-09",
-   "vw": 2684,
-   "du": 127
-  }
- ],
+ "Cannondale|Adventure Neo": [],
+ "Cannondale|Cargowagen Neo": [],
  "Cannondale|Mavaro Neo 1": [],
  "Cannondale|Mavaro Neo 2": [],
  "Cannondale|Mavaro Neo 3": [],
@@ -764,20 +581,12 @@
    "du": 134
   },
   {
-   "id": "GMfWvFAUXqU",
-   "t": "Finally a thumb throttle |  Electra Townie Go! #ebike",
-   "c": "Electric Bike Journal",
-   "d": "2025-08-31",
-   "vw": 13070,
-   "du": 1094
-  },
-  {
-   "id": "3mhaSKV_zWo",
-   "t": "Aventon Aventure 3 vs Velotric Nomad 2! We Look At The New Trek FX+ 1 & Electra Townie Go, TWR Ep 32",
-   "c": "Electric Bike Report",
-   "d": "2025-05-25",
-   "vw": 10543,
-   "du": 3537
+   "id": "Cnu0VJxTIwQ",
+   "t": "Aventon Adventure 3 VS Electra Townie Go",
+   "c": "The Bike Chick",
+   "d": "2026-01-08",
+   "vw": 3052,
+   "du": 846
   }
  ],
  "Electra|Townie Go! S": [
@@ -796,14 +605,6 @@
    "d": "2025-07-25",
    "vw": 21329,
    "du": 2126
-  },
-  {
-   "id": "eUEInI2b1v0",
-   "t": "Best Bike Shop in St George Utah - Electra Townie Go! S",
-   "c": "bicyclesunlimitedstg",
-   "d": "2025-06-25",
-   "vw": 3646,
-   "du": 78
   }
  ],
  "Electra|Townie Go! EQ": [],
@@ -818,14 +619,6 @@
    "d": "2025-10-01",
    "vw": 7111,
    "du": 521
-  },
-  {
-   "id": "pwkfhufw1UM",
-   "t": "Electra Ponto go E-bike and Thank you to 600+ subs! #whatyatotin #edc #trek #ytshorts #shorts",
-   "c": "Swamp Fox knives",
-   "d": "2025-07-18",
-   "vw": 6502,
-   "du": 130
   },
   {
    "id": "kKg2Um3AOFk",
@@ -862,14 +655,6 @@
  ],
  "Emojo|Caddy Pro": [
   {
-   "id": "sY4NbbJEP_s",
-   "t": "Meet Ben – Building Our First Emojo Caddy Pro Trike!",
-   "c": "Jesse's e-Rides",
-   "d": "2025-04-06",
-   "vw": 1125,
-   "du": 67
-  },
-  {
    "id": "wAmBx9ifwOM",
    "t": "Emojo Caddy Pro Electric Tricycle Review - Best Electric Trike 2026? Fat Tire Folding E Trike",
    "c": "Tech Now",
@@ -884,34 +669,17 @@
    "d": "2026-06-08",
    "vw": 153,
    "du": 226
-  }
- ],
- "Emojo|Caddy Pro Urban Cruiser": [
-  {
-   "id": "sY4NbbJEP_s",
-   "t": "Meet Ben – Building Our First Emojo Caddy Pro Trike!",
-   "c": "Jesse's e-Rides",
-   "d": "2025-04-06",
-   "vw": 1125,
-   "du": 67
   },
   {
-   "id": "wAmBx9ifwOM",
-   "t": "Emojo Caddy Pro Electric Tricycle Review - Best Electric Trike 2026? Fat Tire Folding E Trike",
-   "c": "Tech Now",
-   "d": "2026-04-19",
-   "vw": 701,
-   "du": 94
-  },
-  {
-   "id": "O7wrjbcCD60",
-   "t": "Emojo Caddy Pro Electric Tricycle 2026 Review | Powerful 3-Wheel Electric Cargo Trike",
-   "c": "Drive & Decide",
-   "d": "2026-06-08",
-   "vw": 153,
-   "du": 226
+   "id": "9Qdbv3JI_Mg",
+   "t": "EMOJO Caddy Pro 500 W Electric Tricycle Review – Fat Wheel Heavy-Duty Cargo Trike",
+   "c": "Buy Easy",
+   "d": "2025-07-24",
+   "vw": 105,
+   "du": 141
   }
  ],
+ "Emojo|Caddy Pro Urban Cruiser": [],
  "Emojo|Bison Pro": [],
  "Emojo|Bison Pro Urban Cruiser": [],
  "Eunorau|E-FAT-STEP": [],
@@ -924,38 +692,13 @@
    "d": "2025-10-15",
    "vw": 119,
    "du": 545
-  },
-  {
-   "id": "NtpXnrU7GXY",
-   "t": "1985 Fuji Boulevard ATB basket Cruiser #cheapbikebuildoff2025",
-   "c": "Hobo Hub Works ",
-   "d": "2025-02-15",
-   "vw": 540,
-   "du": 178
   }
  ],
  "Fuji|Conductor": [],
  "Fuji|E-Traverse 1.1+ (and ST)": [],
  "Fuji|E-Crosstown": [],
  "Fuji|Sanibel": [],
- "Gazelle|Medeo T9": [
-  {
-   "id": "45DfBQsXBoQ",
-   "t": "Introducing The New Gazelle Medeo T10 HMB - Is It Better?",
-   "c": "SCOOTERETTI",
-   "d": "2025-08-01",
-   "vw": 3560,
-   "du": 515
-  },
-  {
-   "id": "Ph6Kg5mTPBM",
-   "t": "Commute Like a Pro with the Gazelle Medeo T9 City E-Bike",
-   "c": "Electron Surfer",
-   "d": "2025-05-27",
-   "vw": 3405,
-   "du": 1349
-  }
- ],
+ "Gazelle|Medeo T9": [],
  "Gazelle|Medeo T9 City": [
   {
    "id": "Ph6Kg5mTPBM",
@@ -964,14 +707,6 @@
    "d": "2025-05-27",
    "vw": 3405,
    "du": 1349
-  },
-  {
-   "id": "45DfBQsXBoQ",
-   "t": "Introducing The New Gazelle Medeo T10 HMB - Is It Better?",
-   "c": "SCOOTERETTI",
-   "d": "2025-08-01",
-   "vw": 3560,
-   "du": 515
   }
  ],
  "Gazelle|Eclipse T11+": [],
@@ -995,56 +730,15 @@
  ],
  "Gazelle|Ultimate T10": [
   {
-   "id": "6IpZZttM630",
-   "t": "Asking AI:  The Gazelle Ultimate T10+ at $2,999 -vs- the Aventon Level 3 at $1,899",
-   "c": "Gary Fujioka Sr.",
-   "d": "2025-10-26",
-   "vw": 285,
-   "du": 359
-  },
-  {
    "id": "tAphYOUH1b0",
    "t": "Gazelle Ultimate T10 – Premium Bosch Electric Commuter E‑Bike for City & Touring",
    "c": "Electro Hub",
    "d": "2025-12-05",
    "vw": 42,
    "du": 90
-  },
-  {
-   "id": "fJo2p6U5tNI",
-   "t": "Gazelle's NIEUWE Ultimate! De C380! Met #PX #BOSCH middenmotor! #gazelle #bicycle #ebike #Cadzand",
-   "c": "Neptunus Tweewielers",
-   "d": "2025-10-11",
-   "vw": 30366,
-   "du": 60
   }
  ],
- "Gazelle|Ultimate C5": [
-  {
-   "id": "W7FMVURyWkk",
-   "t": "Gazelle Ultimate C5+ review – Is deze e-bike het geld waard?",
-   "c": "Neptunus Tweewielers",
-   "d": "2026-03-06",
-   "vw": 20112,
-   "du": 178
-  },
-  {
-   "id": "fJo2p6U5tNI",
-   "t": "Gazelle's NIEUWE Ultimate! De C380! Met #PX #BOSCH middenmotor! #gazelle #bicycle #ebike #Cadzand",
-   "c": "Neptunus Tweewielers",
-   "d": "2025-10-11",
-   "vw": 30366,
-   "du": 60
-  },
-  {
-   "id": "R9meou0ssqg",
-   "t": "Deze Gazelle Ultimate C380 won een design award… maar is hij echt zo goed?",
-   "c": "Neptunus Tweewielers",
-   "d": "2026-02-28",
-   "vw": 27162,
-   "du": 200
-  }
- ],
+ "Gazelle|Ultimate C5": [],
  "Gazelle|Ultimate C8": [
   {
    "id": "p1VCeF52ITA",
@@ -1053,22 +747,6 @@
    "d": "2025-02-23",
    "vw": 6980,
    "du": 736
-  },
-  {
-   "id": "fJo2p6U5tNI",
-   "t": "Gazelle's NIEUWE Ultimate! De C380! Met #PX #BOSCH middenmotor! #gazelle #bicycle #ebike #Cadzand",
-   "c": "Neptunus Tweewielers",
-   "d": "2025-10-11",
-   "vw": 30366,
-   "du": 60
-  },
-  {
-   "id": "R9meou0ssqg",
-   "t": "Deze Gazelle Ultimate C380 won een design award… maar is hij echt zo goed?",
-   "c": "Neptunus Tweewielers",
-   "d": "2026-02-28",
-   "vw": 27162,
-   "du": 200
   }
  ],
  "Gazelle|Ultimate C380": [
@@ -1087,14 +765,6 @@
    "d": "2024-11-12",
    "vw": 24866,
    "du": 373
-  },
-  {
-   "id": "fJo2p6U5tNI",
-   "t": "Gazelle's NIEUWE Ultimate! De C380! Met #PX #BOSCH middenmotor! #gazelle #bicycle #ebike #Cadzand",
-   "c": "Neptunus Tweewielers",
-   "d": "2025-10-11",
-   "vw": 30366,
-   "du": 60
   }
  ],
  "Gazelle|Ultimate T11+": [],
@@ -1116,50 +786,8 @@
    "du": 923
   }
  ],
- "Gazelle|Arroyo C5 Elite": [
-  {
-   "id": "1MSKarzxPmw",
-   "t": "Gazelle Arroyo C5 HMB Elite Review: The Ultimate Commuter E-Bike! 🚲",
-   "c": "EMOTO Supply Co.",
-   "d": "2025-03-18",
-   "vw": 6595,
-   "du": 581
-  },
-  {
-   "id": "U8XYHMpirNo",
-   "t": "Gazelle Arroyo C5 [New]",
-   "c": "Royal Dutch Gazelle North America",
-   "d": "2025-09-16",
-   "vw": 4224,
-   "du": 189
-  },
-  {
-   "id": "pw_NNETVSWM",
-   "t": "Meet the NEW Gazelle Arroyo C5 & C380 Elite. Best Electric Bike for Comfort?",
-   "c": "SCOOTERETTI",
-   "d": "2025-12-03",
-   "vw": 3441,
-   "du": 272
-  }
- ],
- "Gazelle|Arroyo C8 Elite": [
-  {
-   "id": "uYJ4CtJIIRU",
-   "t": "Urtopia Carbon 1 Pro vs Gazelle Arroyo C7 HMB",
-   "c": "Gary Fujioka Sr.",
-   "d": "2025-10-27",
-   "vw": 226,
-   "du": 352
-  },
-  {
-   "id": "w0vKlqbxauY",
-   "t": "Gazelle Arroyo Feature and Gazelle Spring Sale!!",
-   "c": "Fresh Bikes",
-   "d": "2025-04-14",
-   "vw": 217,
-   "du": 233
-  }
- ],
+ "Gazelle|Arroyo C5 Elite": [],
+ "Gazelle|Arroyo C8 Elite": [],
  "Gazelle|Arroyo C380 Elite": [
   {
    "id": "jzKRHTO0Dxw",
@@ -1186,32 +814,7 @@
    "du": 82
   }
  ],
- "Gazelle|Avignon C380": [
-  {
-   "id": "BZUbnwS86BA",
-   "t": "Gazelle Avignon C380 HMB E-Bike Refurbished gebruikte fiets | H&B Exclusive  R20234",
-   "c": "H&B Exclusive",
-   "d": "2025-11-07",
-   "vw": 302,
-   "du": 71
-  },
-  {
-   "id": "o0Pksf5pDFs",
-   "t": "Gazelle Avignon | comfortabele e-bike | Koninklijke Gazelle",
-   "c": "KoninklijkeGazelle",
-   "d": "2025-05-23",
-   "vw": 9934,
-   "du": 158
-  },
-  {
-   "id": "j9lb8KVNGDM",
-   "t": "Gazelle Avignon | Comfortable e-bike | Royal Dutch Gazelle",
-   "c": "Royal Dutch Gazelle",
-   "d": "2025-05-23",
-   "vw": 7395,
-   "du": 154
-  }
- ],
+ "Gazelle|Avignon C380": [],
  "Gazelle|EasyFlow C7": [
   {
    "id": "Fo2sRkwPeWE",
@@ -1256,27 +859,11 @@
    "d": "2025-10-31",
    "vw": 13953,
    "du": 741
-  },
-  {
-   "id": "J6LUJC_q0bQ",
-   "t": "Giant Explore E+4  in the New Forest.",
-   "c": "Bri's Country Hiking and Biking",
-   "d": "2026-04-27",
-   "vw": 1126,
-   "du": 74
   }
  ],
  "Golden Cycles|Panthro": [],
  "Hase|Kettwiesel ONE (Shimano EP6 Cargo)": [
   {
-   "id": "Ykl_O7tUjCk",
-   "t": "Hase Kettwiesel One topseller 2026 te koop bij fietsoplossing",
-   "c": "Fietsoplossing",
-   "d": "2025-11-14",
-   "vw": 75211,
-   "du": 469
-  },
-  {
    "id": "4MdvS0yBa6c",
    "t": "E-Bike 2027 Trike: Hase Kettwiesel ONE: Das High-End E-Trike Liegerad vollgefedert",
    "c": "GERMAN TELEVISION ",
@@ -1291,19 +878,19 @@
    "d": "2025-08-05",
    "vw": 8904,
    "du": 3915
+  },
+  {
+   "id": "9uCtWWbpQYo",
+   "t": "Spezi 2025-Hase Bikes' Kettwiesel One",
+   "c": "Laidback Bike Report",
+   "d": "2025-05-31",
+   "vw": 4946,
+   "du": 336
   }
  ],
  "Hase|Gravit": [],
  "Hase|Kettwiesel ONE": [
   {
-   "id": "Ykl_O7tUjCk",
-   "t": "Hase Kettwiesel One topseller 2026 te koop bij fietsoplossing",
-   "c": "Fietsoplossing",
-   "d": "2025-11-14",
-   "vw": 75211,
-   "du": 469
-  },
-  {
    "id": "4MdvS0yBa6c",
    "t": "E-Bike 2027 Trike: Hase Kettwiesel ONE: Das High-End E-Trike Liegerad vollgefedert",
    "c": "GERMAN TELEVISION ",
@@ -1318,6 +905,14 @@
    "d": "2025-08-05",
    "vw": 8904,
    "du": 3915
+  },
+  {
+   "id": "9uCtWWbpQYo",
+   "t": "Spezi 2025-Hase Bikes' Kettwiesel One",
+   "c": "Laidback Bike Report",
+   "d": "2025-05-31",
+   "vw": 4946,
+   "du": 336
   }
  ],
  "Hase|Kettwiesel ONE PLUS": [
@@ -1346,58 +941,8 @@
    "du": 436
   }
  ],
- "Hase|Pino E (Tandem)": [
-  {
-   "id": "Zo6xcHdq2Bo",
-   "t": "Hase Pino eBike Review: Tandem, Cargo, Kid Taxi",
-   "c": "Citrus Cycles Ltd.",
-   "d": "2025-07-18",
-   "vw": 2916,
-   "du": 711
-  },
-  {
-   "id": "DlF_zT-LGQ8",
-   "t": "What An Amazing Tandem/Cargo Bike! A Hase Pino Review ",
-   "c": "Nomad Cycles",
-   "d": "2025-11-07",
-   "vw": 2484,
-   "du": 272
-  },
-  {
-   "id": "CwvNsGstWog",
-   "t": "Hase Pino Cargo Tandem Bike: Unmatched Versatility",
-   "c": "Hostel Shoppe",
-   "d": "2026-03-27",
-   "vw": 2409,
-   "du": 419
-  }
- ],
- "Hase|Pino E Cargo": [
-  {
-   "id": "Zo6xcHdq2Bo",
-   "t": "Hase Pino eBike Review: Tandem, Cargo, Kid Taxi",
-   "c": "Citrus Cycles Ltd.",
-   "d": "2025-07-18",
-   "vw": 2916,
-   "du": 711
-  },
-  {
-   "id": "DlF_zT-LGQ8",
-   "t": "What An Amazing Tandem/Cargo Bike! A Hase Pino Review ",
-   "c": "Nomad Cycles",
-   "d": "2025-11-07",
-   "vw": 2484,
-   "du": 272
-  },
-  {
-   "id": "CwvNsGstWog",
-   "t": "Hase Pino Cargo Tandem Bike: Unmatched Versatility",
-   "c": "Hostel Shoppe",
-   "d": "2026-03-27",
-   "vw": 2409,
-   "du": 419
-  }
- ],
+ "Hase|Pino E (Tandem)": [],
+ "Hase|Pino E Cargo": [],
  "Himiway|A7 Commuter eBike (step-through)": [
   {
    "id": "3LGZR1CPEpU",
@@ -1444,14 +989,6 @@
  ],
  "Himiway|D5 (Zebra)": [
   {
-   "id": "KXGx83fLL3g",
-   "t": "I Tried the Himiway D5 20 Inch… Is It Better Than My Current E-Bike?",
-   "c": "Our RV Sunsets",
-   "d": "2026-09-14",
-   "vw": 1380,
-   "du": 633
-  },
-  {
    "id": "w8Dd4dYQADI",
    "t": "Chris Tested the Himiway D5 Against His 2000W E-Bikes — Here’s the Truth",
    "c": "Himiway Bikes",
@@ -1468,16 +1005,7 @@
    "du": 608
   }
  ],
- "Himiway|D5 ST (Zebra ST)": [
-  {
-   "id": "9kd58Ja9C-E",
-   "t": "CRAZY Range! The Himiway D5 ST 2.0 Goes WAY Farther Than It Should",
-   "c": "Auto Auction Rebuilds",
-   "d": "2026-07-14",
-   "vw": 7824,
-   "du": 1167
-  }
- ],
+ "Himiway|D5 ST (Zebra ST)": [],
  "Himiway|D5 Pro": [],
  "Himiway|D5 Pro ST": [],
  "Himiway|D5 2.0": [
@@ -1518,14 +1046,6 @@
  ],
  "Himiway|D5 2.0 20\"": [
   {
-   "id": "IsqiQUzR094",
-   "t": "HIMIWAY D5 2.0 20\" ebike. Easy to Maneuver. Ready to Power.",
-   "c": "Himiway Bikes",
-   "d": "2026-02-10",
-   "vw": 2986779,
-   "du": 85
-  },
-  {
    "id": "qPmPoFKi_Ms",
    "t": "The Most Comfortable 20\" E-Bike? Himiway D5 2.0  20\"",
    "c": "Scott Hardesty ",
@@ -1540,6 +1060,14 @@
    "d": "2026-03-04",
    "vw": 12147,
    "du": 467
+  },
+  {
+   "id": "KJUiNLfd-f4",
+   "t": "So You Think You Want an E-Bike? Watch This 1st - Himiway D5 2.0 20 | RV Travel",
+   "c": "Roaming With Rosie",
+   "d": "2026-09-12",
+   "vw": 6787,
+   "du": 1196
   }
  ],
  "Himiway|C3": [],
@@ -1595,32 +1123,7 @@
    "du": 186
   }
  ],
- "Ice Trikes|ICE Sprint X (Shimano e-assist)": [
-  {
-   "id": "i0EM2dWEXbM",
-   "t": "ICE made a NEW Trike! The Sprint X Pixel",
-   "c": "Laid Back Cycles",
-   "d": "2025-09-07",
-   "vw": 3196,
-   "du": 302
-  },
-  {
-   "id": "NuNxhwjnuLg",
-   "t": "ICE Adventure vs Sprint X Tour Recumbent Trikes - So Similar but SO DIFFERENT!",
-   "c": "Utah Trikes",
-   "d": "2025-08-15",
-   "vw": 6771,
-   "du": 2809
-  },
-  {
-   "id": "DcSLSDETHKM",
-   "t": "Which Trike Suspension is BEST? Catrike Dumont vs ICE Sprint X Tour",
-   "c": "Utah Trikes",
-   "d": "2025-08-29",
-   "vw": 6214,
-   "du": 1901
-  }
- ],
+ "Ice Trikes|ICE Sprint X (Shimano e-assist)": [],
  "Ice Trikes|ICE Sprint X Tour (Shimano e-assist)": [
   {
    "id": "NuNxhwjnuLg",
@@ -1732,14 +1235,6 @@
  ],
  "Lectric|XP Lite2": [
   {
-   "id": "3Atgq8Xu2YA",
-   "t": "Upgrade Your Ride: Best Accessories for the Lectric XP Lite 2.0",
-   "c": "Ebike Escape",
-   "d": "2025-01-14",
-   "vw": 19293,
-   "du": 1014
-  },
-  {
    "id": "DA9694rxnks",
    "t": "Lectric XP Lite 2.0 eBike Review",
    "c": "The Thoughtful Woodworker",
@@ -1754,6 +1249,14 @@
    "d": "2025-05-02",
    "vw": 11059,
    "du": 399
+  },
+  {
+   "id": "AzcoYhOwGvg",
+   "t": "Lectric XP Lite 2 Review- The small and mighty folding ebike",
+   "c": "Top5ebikes",
+   "d": "2026-10-09",
+   "vw": 450,
+   "du": 802
   }
  ],
  "Lectric|XP Lite3": [
@@ -1946,14 +1449,6 @@
    "d": "2025-06-11",
    "vw": 355,
    "du": 1885
-  },
-  {
-   "id": "rxBLAGwnk0w",
-   "t": "Letrigo Minivan Assembly Tutorial | Complete Setup Guide",
-   "c": "Letrigo",
-   "d": "2025-05-23",
-   "vw": 150,
-   "du": 253
   }
  ],
  "Letrigo|Minivan SE": [
@@ -2030,33 +1525,25 @@
    "du": 631
   },
   {
-   "id": "oRE2H5ne5o8",
-   "t": "UNBOXING MY NEW E-BIKE!!😈 (FULLY CUSTOMIZED MACFOX X1S)",
-   "c": "Thiccscat",
-   "d": "2025-07-05",
-   "vw": 25597,
-   "du": 433
-  },
-  {
    "id": "1eavKBNWCQ0",
    "t": "Macfox X1S Review - Is This Cheap Motorcycle-Style E-Bike Worth it?  | BikeRide.com",
    "c": "BikeRide",
    "d": "2025-09-10",
    "vw": 15090,
    "du": 1223
+  },
+  {
+   "id": "HCIExNvozyE",
+   "t": "Is The Macfox X1S The Best Budget E-bike?!",
+   "c": "TuttioGNG",
+   "d": "2026-02-11",
+   "vw": 13943,
+   "du": 991
   }
  ],
  "Macfox|X19": [],
  "Macfox|M20X": [],
  "Macfox|X2": [
-  {
-   "id": "5Po2VI0eq4I",
-   "t": "Macfox X2 Pro 2026: My Honest Review (Expensive)",
-   "c": "MrCentralDriver",
-   "d": "2026-08-08",
-   "vw": 7146,
-   "du": 1802
-  },
   {
    "id": "KqfnS14lwfo",
    "t": "Macfox X2 In-Depth Fat Tire eBike Review",
@@ -2064,14 +1551,6 @@
    "d": "2025-12-07",
    "vw": 3313,
    "du": 1056
-  },
-  {
-   "id": "oZujoIORaQE",
-   "t": "The Macfox X2 Pro Is INSANE...",
-   "c": "MirrStuntz",
-   "d": "2026-10-16",
-   "vw": 1655,
-   "du": 502
   }
  ],
  "Macfox|M16": [
@@ -2164,16 +1643,7 @@
    "du": 569
   }
  ],
- "Marin|Sausalito E2": [
-  {
-   "id": "JvI_9OKW9Kk",
-   "t": "Marin Sausalito E1 - 10000km later",
-   "c": "Slow Lane",
-   "d": "2026-06-14",
-   "vw": 489,
-   "du": 569
-  }
- ],
+ "Marin|Sausalito E2": [],
  "Marin|Larkspur E": [
   {
    "id": "hWSBYLZXLTA",
@@ -2448,50 +1918,9 @@
    "d": "2025-04-20",
    "vw": 6167,
    "du": 1135
-  },
-  {
-   "id": "xKS1u7EWHrM",
-   "t": "NEW 2025 Orbea Kemen - light and powerfull urban ebike review",
-   "c": "Velo Magazine Europe",
-   "d": "2024-12-12",
-   "vw": 9297,
-   "du": 629
-  },
-  {
-   "id": "TGx6_LmncOY",
-   "t": "❗ 🎥This Orbea Kemen Mid 40 Review Might Surprise You👀",
-   "c": "Braking Sync",
-   "d": "2025-10-01",
-   "vw": 812,
-   "du": 261
   }
  ],
- "Orbea|Kemen Adv": [
-  {
-   "id": "xKS1u7EWHrM",
-   "t": "NEW 2025 Orbea Kemen - light and powerfull urban ebike review",
-   "c": "Velo Magazine Europe",
-   "d": "2024-12-12",
-   "vw": 9297,
-   "du": 629
-  },
-  {
-   "id": "VYZq5GJwjwk",
-   "t": "Orbea Kemen Tour #ebike #electricbikereview",
-   "c": "Electric Bike Journal",
-   "d": "2025-04-20",
-   "vw": 6167,
-   "du": 1135
-  },
-  {
-   "id": "TGx6_LmncOY",
-   "t": "❗ 🎥This Orbea Kemen Mid 40 Review Might Surprise You👀",
-   "c": "Braking Sync",
-   "d": "2025-10-01",
-   "vw": 812,
-   "du": 261
-  }
- ],
+ "Orbea|Kemen Adv": [],
  "Orbea|Vibe": [
   {
    "id": "DdFFjlPtmXw",
@@ -2505,14 +1934,6 @@
  "Orbea|Optima E40": [],
  "Orbea|Muga 20 mph": [
   {
-   "id": "XaeeSIcW3D4",
-   "t": "ORBEA MUGA - Quick Start Guide",
-   "c": "Orbea Tech",
-   "d": "2026-02-05",
-   "vw": 6060,
-   "du": 444
-  },
-  {
    "id": "FctzHUQWq_s",
    "t": "Orbea Muga 20 Review | Dual Suspension Bosch SUV eBike for Touring & Commuting",
    "c": "Electric Bikes Brisbane",
@@ -2522,14 +1943,6 @@
   }
  ],
  "Orbea|Muga 28 mph": [
-  {
-   "id": "XaeeSIcW3D4",
-   "t": "ORBEA MUGA - Quick Start Guide",
-   "c": "Orbea Tech",
-   "d": "2026-02-05",
-   "vw": 6060,
-   "du": 444
-  },
   {
    "id": "FctzHUQWq_s",
    "t": "Orbea Muga 20 Review | Dual Suspension Bosch SUV eBike for Touring & Commuting",
@@ -2610,84 +2023,9 @@
  "Pedego|Interceptor Platinum Edition": [],
  "Pedego|Boomerang Core": [],
  "Pedego|Boomerang Pro": [],
- "Pedego|Element Core": [
-  {
-   "id": "lYmMVqWvscg",
-   "t": "Taking my PEDEGO ELEMENT for its first test drive #bike #ebike #rider #bicycle #cycle #emountainbike",
-   "c": "Joel Fountain I Warrior Forge ",
-   "d": "2026-06-18",
-   "vw": 1267,
-   "du": 110
-  },
-  {
-   "id": "5N2QjNnpl94",
-   "t": "Pedego Element 20x4 E-Bike Tire Blowout? Watch Us Install a CST Premium Torrance!",
-   "c": "Joe’s mobile bicycle repair and rental",
-   "d": "2025-05-31",
-   "vw": 250,
-   "du": 783
-  },
-  {
-   "id": "ToeZLPuGzN4",
-   "t": "48V 14Ah Ebike Battery w Charger for Pedego Element Electric Bicycle Bottom Pull Review",
-   "c": "Product Review",
-   "d": "2025-06-17",
-   "vw": 100,
-   "du": 112
-  }
- ],
- "Pedego|Element Pro": [
-  {
-   "id": "lYmMVqWvscg",
-   "t": "Taking my PEDEGO ELEMENT for its first test drive #bike #ebike #rider #bicycle #cycle #emountainbike",
-   "c": "Joel Fountain I Warrior Forge ",
-   "d": "2026-06-18",
-   "vw": 1267,
-   "du": 110
-  },
-  {
-   "id": "5N2QjNnpl94",
-   "t": "Pedego Element 20x4 E-Bike Tire Blowout? Watch Us Install a CST Premium Torrance!",
-   "c": "Joe’s mobile bicycle repair and rental",
-   "d": "2025-05-31",
-   "vw": 250,
-   "du": 783
-  },
-  {
-   "id": "ToeZLPuGzN4",
-   "t": "48V 14Ah Ebike Battery w Charger for Pedego Element Electric Bicycle Bottom Pull Review",
-   "c": "Product Review",
-   "d": "2025-06-17",
-   "vw": 100,
-   "du": 112
-  }
- ],
- "Pedego|Element Platinum Edition": [
-  {
-   "id": "lYmMVqWvscg",
-   "t": "Taking my PEDEGO ELEMENT for its first test drive #bike #ebike #rider #bicycle #cycle #emountainbike",
-   "c": "Joel Fountain I Warrior Forge ",
-   "d": "2026-06-18",
-   "vw": 1267,
-   "du": 110
-  },
-  {
-   "id": "5N2QjNnpl94",
-   "t": "Pedego Element 20x4 E-Bike Tire Blowout? Watch Us Install a CST Premium Torrance!",
-   "c": "Joe’s mobile bicycle repair and rental",
-   "d": "2025-05-31",
-   "vw": 250,
-   "du": 783
-  },
-  {
-   "id": "ToeZLPuGzN4",
-   "t": "48V 14Ah Ebike Battery w Charger for Pedego Element Electric Bicycle Bottom Pull Review",
-   "c": "Product Review",
-   "d": "2025-06-17",
-   "vw": 100,
-   "du": 112
-  }
- ],
+ "Pedego|Element Core": [],
+ "Pedego|Element Pro": [],
+ "Pedego|Element Platinum Edition": [],
  "Pedego|Element 2": [],
  "Pedego|Ridge Rider": [
   {
@@ -2715,14 +2053,6 @@
    "d": "2025-04-15",
    "vw": 9105,
    "du": 1194
-  },
-  {
-   "id": "h14T1KOn7Fs",
-   "t": "How to Assemble Your Priority E-coast",
-   "c": "Priority Bicycles",
-   "d": "2025-06-10",
-   "vw": 2684,
-   "du": 840
   }
  ],
  "Priority|E-Classic": [],
@@ -2770,94 +2100,11 @@
    "d": "2025-06-06",
    "vw": 236,
    "du": 431
-  },
-  {
-   "id": "TTP3n6e8f70",
-   "t": "🚲 We Fit 2 Kids on This! | Radio Flyer Flyer Loop Review",
-   "c": "The Oh Family",
-   "d": "2026-06-03",
-   "vw": 26228,
-   "du": 894
-  },
-  {
-   "id": "dfBkDJzDDF8",
-   "t": "Radio Flyer Loop Review - Best Family Cargo E-Bike?",
-   "c": "Bike Zone",
-   "d": "2026-06-11",
-   "vw": 20970,
-   "du": 531
   }
  ],
- "Radio Flyer|Flyer Via Pro": [
-  {
-   "id": "TTP3n6e8f70",
-   "t": "🚲 We Fit 2 Kids on This! | Radio Flyer Flyer Loop Review",
-   "c": "The Oh Family",
-   "d": "2026-06-03",
-   "vw": 26228,
-   "du": 894
-  },
-  {
-   "id": "dfBkDJzDDF8",
-   "t": "Radio Flyer Loop Review - Best Family Cargo E-Bike?",
-   "c": "Bike Zone",
-   "d": "2026-06-11",
-   "vw": 20970,
-   "du": 531
-  },
-  {
-   "id": "RxfmaQAExvM",
-   "t": "Most Compact Family Cargo Ebike Tested! Radio Flyer Loop Review",
-   "c": "eBike Inspection",
-   "d": "2026-06-13",
-   "vw": 15964,
-   "du": 462
-  }
- ],
- "Retrospec|Beaumont Rev 2 City": [
-  {
-   "id": "wkCFF2zIE7s",
-   "t": "Retrospec Beaumont Rev 2 Review: Affordable Cruiser!",
-   "c": "ElectricBikeReview.com",
-   "d": "2025-01-23",
-   "vw": 4312,
-   "du": 1416
-  },
-  {
-   "id": "a1xjf2DYTsI",
-   "t": "Is This the Most Stylish E-Bike for the Price? | Retrospec Beaumont Rev 2 (Sponsored)",
-   "c": "Electrek.co",
-   "d": "2025-07-26",
-   "vw": 3608,
-   "du": 270
-  }
- ],
- "Retrospec|Judd Rev Folding": [
-  {
-   "id": "JYITiCXwOSQ",
-   "t": "Retrospec Judd Folding Bike Review",
-   "c": "hoohoohoblin",
-   "d": "2026-07-02",
-   "vw": 1599,
-   "du": 596
-  },
-  {
-   "id": "-PGDJ4aCY7c",
-   "t": "Retrospec Judd Rev 2 Folding E-bike Review",
-   "c": "hoohoohoblin",
-   "d": "2026-07-04",
-   "vw": 746,
-   "du": 654
-  },
-  {
-   "id": "fO1DCB8kmdY",
-   "t": "Retrospec Folding Bike & E-Bike Judd Model",
-   "c": "hoohoohoblin",
-   "d": "2026-07-07",
-   "vw": 558,
-   "du": 1295
-  }
- ],
+ "Radio Flyer|Flyer Via Pro": [],
+ "Retrospec|Beaumont Rev 2 City": [],
+ "Retrospec|Judd Rev Folding": [],
  "Retrospec|Valen Rev+": [
   {
    "id": "5nlmmzu8gXg",
@@ -2868,20 +2115,20 @@
    "du": 1228
   },
   {
-   "id": "VNdoAtI8q10",
-   "t": "E-Bike unbox&assemble Retrospec Valen Rev+ electric bike #EvergreenColorado #ebike #Retrospec #Valen",
-   "c": "Replays Sports Exchange",
-   "d": "2025-11-07",
-   "vw": 2033,
-   "du": 177
-  },
-  {
    "id": "P8ukm0U1IsM",
    "t": "Retrospec Valen Rev+ Review: Is This the Ultimate Stylish Moped Style Ebike?",
    "c": "Ebike Escape",
    "d": "2026-05-26",
    "vw": 1713,
    "du": 938
+  },
+  {
+   "id": "TYLAauYU1_o",
+   "t": "80 lb and Two Range Figures — Retrospec Valen Rev+ Review",
+   "c": "Electric Bikes",
+   "d": "2026-11-04",
+   "vw": 42,
+   "du": 177
   }
  ],
  "Retrospec|Valen Rev 3": [
@@ -2938,26 +2185,8 @@
   }
  ],
  "Retrospec|Chatham Rev 3 (and Step Through)": [],
- "Retrospec|Joe Rev BMX Electric Bike (Rev 1)": [
-  {
-   "id": "2wPANRwzCPs",
-   "t": "FINALLY! An affordable BMX E-Bike | Retrospec Joe Rev Review",
-   "c": "Ride Review",
-   "d": "2024-11-20",
-   "vw": 15740,
-   "du": 893
-  }
- ],
- "Retrospec|Joe Rev 2 BMX Electric Bike": [
-  {
-   "id": "YXKKIDdCCXg",
-   "t": "This Electric BMX Will Make You feel Like a Kid Again! Retrospec Joe Rev 2",
-   "c": "Chris Crossed",
-   "d": "2026-06-24",
-   "vw": 4308,
-   "du": 1142
-  }
- ],
+ "Retrospec|Joe Rev BMX Electric Bike (Rev 1)": [],
+ "Retrospec|Joe Rev 2 BMX Electric Bike": [],
  "Retrospec|Abbot Rev 2 (and Step Through)": [],
  "Retrospec|Napa Rev": [],
  "Retrospec|Koa Rev 3 (and Step Through)": [],
@@ -2969,68 +2198,10 @@
    "d": "2025-04-26",
    "vw": 11451,
    "du": 1222
-  },
-  {
-   "id": "9DfBEzhb0sI",
-   "t": "Retrospec Koa Rev+2 E-Bike unbox & assemble  electric bike #EvergreenColorado #ebike #Retrospec",
-   "c": "Replays Sports Exchange",
-   "d": "2025-11-22",
-   "vw": 1669,
-   "du": 181
   }
  ],
- "Retrospec|Roo Rev Cargo Electric Bike": [
-  {
-   "id": "OEJgO9Uskms",
-   "t": "Retrospec Roo Rev Review | A Ready-To-Roll, Reliable Ride",
-   "c": "Electric Bike Report",
-   "d": "2025-09-15",
-   "vw": 2089,
-   "du": 1333
-  },
-  {
-   "id": "JFHMfIr4rks",
-   "t": "Retrospec Roo Rev Review — Budget Cargo E-Bike Done Right?",
-   "c": "ElectricBikeReview.com",
-   "d": "2025-10-30",
-   "vw": 1752,
-   "du": 1784
-  },
-  {
-   "id": "DWMVDVLXdSs",
-   "t": "A Great Step-Thru Ebike ✅ Retrospec Roo Rev",
-   "c": "Chris Crossed",
-   "d": "2025-12-05",
-   "vw": 745,
-   "du": 1113
-  }
- ],
- "Retrospec|Roo Rev XL Cargo Electric Bike": [
-  {
-   "id": "OEJgO9Uskms",
-   "t": "Retrospec Roo Rev Review | A Ready-To-Roll, Reliable Ride",
-   "c": "Electric Bike Report",
-   "d": "2025-09-15",
-   "vw": 2089,
-   "du": 1333
-  },
-  {
-   "id": "JFHMfIr4rks",
-   "t": "Retrospec Roo Rev Review — Budget Cargo E-Bike Done Right?",
-   "c": "ElectricBikeReview.com",
-   "d": "2025-10-30",
-   "vw": 1752,
-   "du": 1784
-  },
-  {
-   "id": "oqJhv4uq0_k",
-   "t": "Retrospec Roo Rev XL Review | This Wallaby Wants to Work",
-   "c": "Electric Bike Report",
-   "d": "2025-09-23",
-   "vw": 1172,
-   "du": 1571
-  }
- ],
+ "Retrospec|Roo Rev Cargo Electric Bike": [],
+ "Retrospec|Roo Rev XL Cargo Electric Bike": [],
  "Revi Bikes|Runabout.2": [],
  "Riese and Muller|Load4 75 vario": [],
  "Riese and Muller|Load4 60 vario": [],
@@ -3042,14 +2213,6 @@
  "Salsa|Confluence CUES 10": [],
  "Salsa|Confluence CUES 11": [],
  "Salsa|Tributary": [
-  {
-   "id": "_3uSVlzXDEQ",
-   "t": "New 2025 Salsa Tributary & BMC Recall",
-   "c": "Spinistry",
-   "d": "2025-03-01",
-   "vw": 1442,
-   "du": 487
-  },
   {
    "id": "5ffGn49NlJQ",
    "t": "Salsa Tributary GRX-600 E-Bike: Unveiled",
@@ -3065,48 +2228,20 @@
    "d": "2026-09-29",
    "vw": 762,
    "du": 470
-  }
- ],
- "Santa Cruz|Skitch CC Apex Flat Bar": [
+  },
   {
-   "id": "CD_jRA8RzXg",
-   "t": "Santa Cruz Skitch: The Lightweight E-Gravel That Changes Everything",
-   "c": "MtbManiaIT",
-   "d": "2026-02-11",
-   "vw": 1953,
-   "du": 103
+   "id": "03TcXRDIGW4",
+   "t": "Can the Salsa Tributary Handle Real MTB Trails? Roots, Rocks, and a Rough Lesson",
+   "c": "Spinistry",
+   "d": "2026-03-27",
+   "vw": 674,
+   "du": 1031
   }
  ],
- "Santa Cruz|Skitch CC Apex": [
-  {
-   "id": "CD_jRA8RzXg",
-   "t": "Santa Cruz Skitch: The Lightweight E-Gravel That Changes Everything",
-   "c": "MtbManiaIT",
-   "d": "2026-02-11",
-   "vw": 1953,
-   "du": 103
-  }
- ],
- "Santa Cruz|Skitch CC GX AXS": [
-  {
-   "id": "CD_jRA8RzXg",
-   "t": "Santa Cruz Skitch: The Lightweight E-Gravel That Changes Everything",
-   "c": "MtbManiaIT",
-   "d": "2026-02-11",
-   "vw": 1953,
-   "du": 103
-  }
- ],
- "Santa Cruz|Skitch CC GX AXS Flat Bar": [
-  {
-   "id": "CD_jRA8RzXg",
-   "t": "Santa Cruz Skitch: The Lightweight E-Gravel That Changes Everything",
-   "c": "MtbManiaIT",
-   "d": "2026-02-11",
-   "vw": 1953,
-   "du": 103
-  }
- ],
+ "Santa Cruz|Skitch CC Apex Flat Bar": [],
+ "Santa Cruz|Skitch CC Apex": [],
+ "Santa Cruz|Skitch CC GX AXS": [],
+ "Santa Cruz|Skitch CC GX AXS Flat Bar": [],
  "Scott|Sub Active eRIDE 20 Men Bike (290667)": [],
  "Scott|Sub Cross eRIDE 30 Men Bike (290645)": [
   {
@@ -3199,100 +2334,21 @@
  ],
  "Senada|Osprey V2": [],
  "Senada|Gladiator": [],
- "Senada|Austin V2": [
-  {
-   "id": "UAqrUj7UEcc",
-   "t": "Senada Austin eBike After 1200 Miles: Honest Review, Live Demo & Time Lapse Ride",
-   "c": "Greentext Vault",
-   "d": "2025-07-16",
-   "vw": 86,
-   "du": 566
-  }
- ],
+ "Senada|Austin V2": [],
  "Senada|Moto Cargo": [],
  "Serfas|Atlas": [],
  "Serfas|Quest": [],
- "Serfas|E Dash Mini": [
-  {
-   "id": "CcVyweonFhU",
-   "t": "Biking the Virgin River Trail on our Ebikes (Serfas E-Dash Mini's) St George UT",
-   "c": "Hooked Up and Lovin It",
-   "d": "2025-05-06",
-   "vw": 140,
-   "du": 126
-  }
- ],
+ "Serfas|E Dash Mini": [],
  "Serfas|eDART 750W": [],
  "Serfas|eDART 500W": [],
  "Serfas|eDART 350W": [],
  "Serfas|DASH 500W Belt Drive": [],
  "Serfas|DASH Mid-Drive 500W Belt Drive": [],
- "Sixthreezero|EVRYjourney Electric Tricycle Rickshaw 750W": [
-  {
-   "id": "-KtlI2lLDdY",
-   "t": "Sixthreezero EVRYjourney Electric Bike — Real World Ride Test with Victor",
-   "c": "sixthreezero ETrikes, EBikes & Bicycles",
-   "d": "2026-06-18",
-   "vw": 209,
-   "du": 728
-  }
- ],
- "Sixthreezero|EVRYjourney 250W (Men's)": [
-  {
-   "id": "-KtlI2lLDdY",
-   "t": "Sixthreezero EVRYjourney Electric Bike — Real World Ride Test with Victor",
-   "c": "sixthreezero ETrikes, EBikes & Bicycles",
-   "d": "2026-06-18",
-   "vw": 209,
-   "du": 728
-  }
- ],
- "Sixthreezero|EVRYjourney NEW 500W (Men's Sport Hybrid)": [
-  {
-   "id": "-KtlI2lLDdY",
-   "t": "Sixthreezero EVRYjourney Electric Bike — Real World Ride Test with Victor",
-   "c": "sixthreezero ETrikes, EBikes & Bicycles",
-   "d": "2026-06-18",
-   "vw": 209,
-   "du": 728
-  }
- ],
- "Sixthreezero|EVRYjourney NEW 500W (Women's Touring Hybrid)": [
-  {
-   "id": "-KtlI2lLDdY",
-   "t": "Sixthreezero EVRYjourney Electric Bike — Real World Ride Test with Victor",
-   "c": "sixthreezero ETrikes, EBikes & Bicycles",
-   "d": "2026-06-18",
-   "vw": 209,
-   "du": 728
-  }
- ],
- "Specialized|Turbo Tero (HT)": [
-  {
-   "id": "qVwjXwkRoWU",
-   "t": "Velotric Summit 1 Vs Specialized Turbo Tero X 5.0 Comparison",
-   "c": "Electric Bike Report",
-   "d": "2024-12-16",
-   "vw": 14255,
-   "du": 1627
-  },
-  {
-   "id": "tw1fE4bD29s",
-   "t": "The Dualsport of E-Bikes, Specialized Turbo Tero X Review!",
-   "c": "Electron Surfer",
-   "d": "2025-11-06",
-   "vw": 10553,
-   "du": 761
-  },
-  {
-   "id": "1VwOaNKFE7s",
-   "t": "Specialized Turbo Levo gen 4 Vs. Amflow PL Carbon with DJI motor",
-   "c": "Mountain Bike Rider",
-   "d": "2025-04-11",
-   "vw": 170778,
-   "du": 1138
-  }
- ],
+ "Sixthreezero|EVRYjourney Electric Tricycle Rickshaw 750W": [],
+ "Sixthreezero|EVRYjourney 250W (Men's)": [],
+ "Sixthreezero|EVRYjourney NEW 500W (Men's Sport Hybrid)": [],
+ "Sixthreezero|EVRYjourney NEW 500W (Women's Touring Hybrid)": [],
+ "Specialized|Turbo Tero (HT)": [],
  "Specialized|Globe Haul ST": [
   {
    "id": "27gN02FLY0s",
@@ -3301,14 +2357,6 @@
    "d": "2026-07-30",
    "vw": 1314,
    "du": 395
-  },
-  {
-   "id": "YKy2kQdJfHQ",
-   "t": "1 Year and 3,000 Miles With The Specialized Globe Haul LT",
-   "c": "Financial Panther",
-   "d": "2025-03-30",
-   "vw": 4539,
-   "du": 1233
   }
  ],
  "Specialized|Globe Haul LT": [
@@ -3319,34 +2367,9 @@
    "d": "2025-03-30",
    "vw": 4539,
    "du": 1233
-  },
-  {
-   "id": "27gN02FLY0s",
-   "t": "Specialized Globe Haul ST Review: Is It the Best Cargo e-Bike?",
-   "c": "Upway US",
-   "d": "2026-07-30",
-   "vw": 1314,
-   "du": 395
   }
  ],
- "Specialized|Turbo Como 3.0": [
-  {
-   "id": "FmNoeNrBy4g",
-   "t": "Specialized Turbo Como 3.0 IGH 1+Year Review",
-   "c": "Natalie Stenger",
-   "d": "2025-01-15",
-   "vw": 8377,
-   "du": 205
-  },
-  {
-   "id": "c_LNF5UjAuY",
-   "t": "Review: 3 years of problems? Specialized turbo como 3.0 igh ",
-   "c": "Stuart Hansen",
-   "d": "2026-07-10",
-   "vw": 2530,
-   "du": 979
-  }
- ],
+ "Specialized|Turbo Como 3.0": [],
  "Specialized|Turbo Como 4.0": [
   {
    "id": "J1FIl2-2dz0",
@@ -3355,14 +2378,6 @@
    "d": "2024-11-26",
    "vw": 1090,
    "du": 85
-  },
-  {
-   "id": "hHvaHhPMlJ0",
-   "t": "Rower Specialized Turbo Como 4.0 Gloss Tangerine / Sunset Yellow 2027",
-   "c": "Sklep Rowerowy BikePark24.pl",
-   "d": "2026-05-12",
-   "vw": 641,
-   "du": 102
   }
  ],
  "Specialized|Turbo Como 4.0 IGH": [
@@ -3373,22 +2388,6 @@
    "d": "2025-12-02",
    "vw": 923,
    "du": 85
-  },
-  {
-   "id": "UnwqgTdFEFc",
-   "t": "Specialized Turbo Como 4.0 IGH E-Bike Refurbished gebruikte fiets | H&B Exclusive R16308",
-   "c": "H&B Exclusive",
-   "d": "2025-07-11",
-   "vw": 744,
-   "du": 64
-  },
-  {
-   "id": "N7dfb-ByUq4",
-   "t": "Specialized Turbo Como 4.0 IGH E-Bike Refurbished gebruikte fiets | H&B Exclusive R19025",
-   "c": "H&B Exclusive",
-   "d": "2025-06-28",
-   "vw": 503,
-   "du": 75
   }
  ],
  "Specialized|Turbo Como 5.0 IGH": [
@@ -3399,50 +2398,9 @@
    "d": "2026-05-22",
    "vw": 1519,
    "du": 98
-  },
-  {
-   "id": "cqISjWw43Q4",
-   "t": "Specialized Turbo Como 5.0 IGH E-Bike Refurbished gebruikte fiets | H&B Exclusive R19029",
-   "c": "H&B Exclusive",
-   "d": "2025-06-30",
-   "vw": 724,
-   "du": 76
-  },
-  {
-   "id": "xnb6PpxaJJI",
-   "t": "Specialized Turbo Como 5.0 E-Bike Refurbished gebruikte fiets | H&B Exclusive R19297",
-   "c": "H&B Exclusive",
-   "d": "2025-11-07",
-   "vw": 185,
-   "du": 67
   }
  ],
- "Specialized|Turbo Vado 3 Evo": [
-  {
-   "id": "c8FaFWoYGEU",
-   "t": "This E-Bike Is Built for Commuting AND Adventure | Specialized Turbo Vado 3x 5.0 Review",
-   "c": "Electric Bike Report",
-   "d": "2026-08-12",
-   "vw": 23267,
-   "du": 2411
-  },
-  {
-   "id": "ZpogB60sPsA",
-   "t": "Specialized Turbo Vado 3X: Maximaler Komfort am E-Bike?",
-   "c": "BIKE Magazin",
-   "d": "2026-07-17",
-   "vw": 5078,
-   "du": 245
-  },
-  {
-   "id": "4NgU_Vo4w24",
-   "t": "DJI Amflow TL Carbon vs Specialized Turbo Vado 3X - !!!!!",
-   "c": "Ride Revolt",
-   "d": "2026-10-02",
-   "vw": 4148,
-   "du": 373
-  }
- ],
+ "Specialized|Turbo Vado 3 Evo": [],
  "Specialized|Turbo Vado 3 X": [
   {
    "id": "c8FaFWoYGEU",
@@ -3515,14 +2473,6 @@
    "d": "2026-07-02",
    "vw": 2499,
    "du": 554
-  },
-  {
-   "id": "XalndlFisSA",
-   "t": "The 1000w Surly Big Dummy Kid Hauler ",
-   "c": "Nomad Cycles",
-   "d": "2026-02-13",
-   "vw": 1114,
-   "du": 218
   }
  ],
  "Tern|GSD S10": [
@@ -3551,58 +2501,8 @@
    "du": 164
   }
  ],
- "Tern|GSD P00": [
-  {
-   "id": "yB-jFF2bG1U",
-   "t": "Tern GSD P00 (Gen 3) Custom Build: Enviolo Automatiq Breakdown & Impressions",
-   "c": "NYC on Two Wheels",
-   "d": "2026-06-13",
-   "vw": 827,
-   "du": 682
-  },
-  {
-   "id": "4Wcald0hwGg",
-   "t": "Has The Best Got Better? | Tern GSD Electric Cargo Bike",
-   "c": "Global Cycling Network",
-   "d": "2025-03-26",
-   "vw": 123803,
-   "du": 978
-  },
-  {
-   "id": "L2RURW470ME",
-   "t": "THE BIKE THAT CHANGED FAMILY TRANSPORT: The Story of the Tern GSD | Fully Charged",
-   "c": "Fully Charged Electric Bikes",
-   "d": "2026-07-05",
-   "vw": 65325,
-   "du": 794
-  }
- ],
- "Tern|GSD P10": [
-  {
-   "id": "4Wcald0hwGg",
-   "t": "Has The Best Got Better? | Tern GSD Electric Cargo Bike",
-   "c": "Global Cycling Network",
-   "d": "2025-03-26",
-   "vw": 123803,
-   "du": 978
-  },
-  {
-   "id": "L2RURW470ME",
-   "t": "THE BIKE THAT CHANGED FAMILY TRANSPORT: The Story of the Tern GSD | Fully Charged",
-   "c": "Fully Charged Electric Bikes",
-   "d": "2026-07-05",
-   "vw": 65325,
-   "du": 794
-  },
-  {
-   "id": "ob2P9mUlyig",
-   "t": "Explore Los Angeles on an E-Cargo Bike: Finding the Tern GSD Battery Range Limits",
-   "c": "Car-Free Chronicles",
-   "d": "2025-11-19",
-   "vw": 26562,
-   "du": 617
-  }
- ],
+ "Tern|GSD P00": [],
+ "Tern|GSD P10": [],
  "Tern|GSD R14": [
   {
    "id": "WnVxzQ9b8NU",
@@ -3611,22 +2511,6 @@
    "d": "2025-10-27",
    "vw": 15337,
    "du": 588
-  },
-  {
-   "id": "UUy51mvQ54A",
-   "t": "How To Enable Auto Shift on Tern GSD R14 Cargo E-Bike",
-   "c": "Tern Bicycles",
-   "d": "2026-05-06",
-   "vw": 1305,
-   "du": 162
-  },
-  {
-   "id": "4Wcald0hwGg",
-   "t": "Has The Best Got Better? | Tern GSD Electric Cargo Bike",
-   "c": "Global Cycling Network",
-   "d": "2025-03-26",
-   "vw": 123803,
-   "du": 978
   }
  ],
  "Tern|Orox S12 (27.5\")": [
@@ -3645,14 +2529,6 @@
    "d": "2025-12-27",
    "vw": 839,
    "du": 169
-  },
-  {
-   "id": "G6XhNBeKEws",
-   "t": "No Trucks Given! Tern Orox (and HSD) MTB Cargo Bike 6 month test.",
-   "c": "GuyKesTV",
-   "d": "2026-02-19",
-   "vw": 3845,
-   "du": 870
   }
  ],
  "Tern|Orox R14 (27.5\")": [
@@ -3671,94 +2547,11 @@
    "d": "2025-10-25",
    "vw": 342,
    "du": 505
-  },
-  {
-   "id": "rKmGjh1nUXM",
-   "t": "Tern Orox S12 – Can a Cargo E-Bike Handle Off-Road Riding?",
-   "c": "Australian Mountain Bike Magazine",
-   "d": "2025-03-06",
-   "vw": 12500,
-   "du": 1082
   }
  ],
- "Tern|Quick Haul D8": [
-  {
-   "id": "kluEdRDZwo0",
-   "t": "The NEW Tern Quick Haul Long vs GSD - Review, Comparison & Feature Overview",
-   "c": "Urbane Cyclist",
-   "d": "2024-11-12",
-   "vw": 10737,
-   "du": 1512
-  },
-  {
-   "id": "OlHlsH7NFjw",
-   "t": "How much Tern GSD is in the Quick Haul Long?",
-   "c": "The Cargobike Channel - Radelbande in English",
-   "d": "2025-02-23",
-   "vw": 4493,
-   "du": 1692
-  },
-  {
-   "id": "RtpkJxtUJWM",
-   "t": "Yuba fastrack review, fastrack vs tern quick haul ",
-   "c": "K H",
-   "d": "2025-12-04",
-   "vw": 231,
-   "du": 283
-  }
- ],
- "Tern|Quick Haul P9 Sport": [
-  {
-   "id": "kluEdRDZwo0",
-   "t": "The NEW Tern Quick Haul Long vs GSD - Review, Comparison & Feature Overview",
-   "c": "Urbane Cyclist",
-   "d": "2024-11-12",
-   "vw": 10737,
-   "du": 1512
-  },
-  {
-   "id": "OlHlsH7NFjw",
-   "t": "How much Tern GSD is in the Quick Haul Long?",
-   "c": "The Cargobike Channel - Radelbande in English",
-   "d": "2025-02-23",
-   "vw": 4493,
-   "du": 1692
-  },
-  {
-   "id": "RtpkJxtUJWM",
-   "t": "Yuba fastrack review, fastrack vs tern quick haul ",
-   "c": "K H",
-   "d": "2025-12-04",
-   "vw": 231,
-   "du": 283
-  }
- ],
- "Tern|Quick Haul Long D9": [
-  {
-   "id": "kluEdRDZwo0",
-   "t": "The NEW Tern Quick Haul Long vs GSD - Review, Comparison & Feature Overview",
-   "c": "Urbane Cyclist",
-   "d": "2024-11-12",
-   "vw": 10737,
-   "du": 1512
-  },
-  {
-   "id": "OlHlsH7NFjw",
-   "t": "How much Tern GSD is in the Quick Haul Long?",
-   "c": "The Cargobike Channel - Radelbande in English",
-   "d": "2025-02-23",
-   "vw": 4493,
-   "du": 1692
-  },
-  {
-   "id": "RtpkJxtUJWM",
-   "t": "Yuba fastrack review, fastrack vs tern quick haul ",
-   "c": "K H",
-   "d": "2025-12-04",
-   "vw": 231,
-   "du": 283
-  }
- ],
+ "Tern|Quick Haul D8": [],
+ "Tern|Quick Haul P9 Sport": [],
+ "Tern|Quick Haul Long D9": [],
  "Tern|HSD P5i (Gen 3)": [
   {
    "id": "ZJA73jhCPbU",
@@ -3767,50 +2560,9 @@
    "d": "2025-09-10",
    "vw": 3646,
    "du": 1605
-  },
-  {
-   "id": "Lfpj5kUncsw",
-   "t": "5 Things You Need to Know About the New Tern HSD Gen 3",
-   "c": "Arleigh | Bike Shop Girl",
-   "d": "2026-07-16",
-   "vw": 5992,
-   "du": 933
-  },
-  {
-   "id": "E-mfLNBsaPk",
-   "t": "The New Tern HSD S9i Is Here | Fully Charged",
-   "c": "Fully Charged Electric Bikes",
-   "d": "2026-07-15",
-   "vw": 4809,
-   "du": 95
   }
  ],
- "Tern|HSD P00 (Gen 3)": [
-  {
-   "id": "Lfpj5kUncsw",
-   "t": "5 Things You Need to Know About the New Tern HSD Gen 3",
-   "c": "Arleigh | Bike Shop Girl",
-   "d": "2026-07-16",
-   "vw": 5992,
-   "du": 933
-  },
-  {
-   "id": "E-mfLNBsaPk",
-   "t": "The New Tern HSD S9i Is Here | Fully Charged",
-   "c": "Fully Charged Electric Bikes",
-   "d": "2026-07-15",
-   "vw": 4809,
-   "du": 95
-  },
-  {
-   "id": "ZYqp4KYsW68",
-   "t": "This E-Bike Was Built to Replace Short Car Trips | Tern HSD P10e Review",
-   "c": "Electric Bike Report",
-   "d": "2026-08-11",
-   "vw": 4705,
-   "du": 2344
-  }
- ],
+ "Tern|HSD P00 (Gen 3)": [],
  "Tern|HSD P10e Sport (Gen 3)": [
   {
    "id": "ZYqp4KYsW68",
@@ -3819,22 +2571,6 @@
    "d": "2026-08-11",
    "vw": 4705,
    "du": 2344
-  },
-  {
-   "id": "Lfpj5kUncsw",
-   "t": "5 Things You Need to Know About the New Tern HSD Gen 3",
-   "c": "Arleigh | Bike Shop Girl",
-   "d": "2026-07-16",
-   "vw": 5992,
-   "du": 933
-  },
-  {
-   "id": "E-mfLNBsaPk",
-   "t": "The New Tern HSD S9i Is Here | Fully Charged",
-   "c": "Fully Charged Electric Bikes",
-   "d": "2026-07-15",
-   "vw": 4809,
-   "du": 95
   }
  ],
  "Tern|HSD S9i Sport (Gen 3)": [
@@ -3845,22 +2581,6 @@
    "d": "2026-07-15",
    "vw": 4809,
    "du": 95
-  },
-  {
-   "id": "Lfpj5kUncsw",
-   "t": "5 Things You Need to Know About the New Tern HSD Gen 3",
-   "c": "Arleigh | Bike Shop Girl",
-   "d": "2026-07-16",
-   "vw": 5992,
-   "du": 933
-  },
-  {
-   "id": "ZYqp4KYsW68",
-   "t": "This E-Bike Was Built to Replace Short Car Trips | Tern HSD P10e Review",
-   "c": "Electric Bike Report",
-   "d": "2026-08-11",
-   "vw": 4705,
-   "du": 2344
   }
  ],
  "Tern|NBD P8i": [],
@@ -3881,42 +2601,9 @@
    "d": "2025-02-23",
    "vw": 4493,
    "du": 1692
-  },
-  {
-   "id": "RtpkJxtUJWM",
-   "t": "Yuba fastrack review, fastrack vs tern quick haul ",
-   "c": "K H",
-   "d": "2025-12-04",
-   "vw": 231,
-   "du": 283
   }
  ],
- "Tern|Vektron P10": [
-  {
-   "id": "nEk6YCYDipw",
-   "t": "Tern Vektron P5i Review | Premium, Purpose-Driven & Portable",
-   "c": "Electric Bike Report",
-   "d": "2026-02-20",
-   "vw": 13508,
-   "du": 1729
-  },
-  {
-   "id": "iZeKYXaftJM",
-   "t": "REVIEWED: The new Tern Vektron P5I | Fully Charged",
-   "c": "Fully Charged Electric Bikes",
-   "d": "2025-12-14",
-   "vw": 13439,
-   "du": 218
-  },
-  {
-   "id": "rLAqrNmCeXA",
-   "t": "Tern Vektron Gen 4 with Bosch Smart System: Owner Briefing",
-   "c": "Tern Bicycles",
-   "d": "2025-10-17",
-   "vw": 8082,
-   "du": 620
-  }
- ],
+ "Tern|Vektron P10": [],
  "Tern|Vektron P5i": [
   {
    "id": "nEk6YCYDipw",
@@ -3933,42 +2620,9 @@
    "d": "2025-12-14",
    "vw": 13439,
    "du": 218
-  },
-  {
-   "id": "rLAqrNmCeXA",
-   "t": "Tern Vektron Gen 4 with Bosch Smart System: Owner Briefing",
-   "c": "Tern Bicycles",
-   "d": "2025-10-17",
-   "vw": 8082,
-   "du": 620
   }
  ],
- "Tern|Vektron Q9": [
-  {
-   "id": "nEk6YCYDipw",
-   "t": "Tern Vektron P5i Review | Premium, Purpose-Driven & Portable",
-   "c": "Electric Bike Report",
-   "d": "2026-02-20",
-   "vw": 13508,
-   "du": 1729
-  },
-  {
-   "id": "iZeKYXaftJM",
-   "t": "REVIEWED: The new Tern Vektron P5I | Fully Charged",
-   "c": "Fully Charged Electric Bikes",
-   "d": "2025-12-14",
-   "vw": 13439,
-   "du": 218
-  },
-  {
-   "id": "rLAqrNmCeXA",
-   "t": "Tern Vektron Gen 4 with Bosch Smart System: Owner Briefing",
-   "c": "Tern Bicycles",
-   "d": "2025-10-17",
-   "vw": 8082,
-   "du": 620
-  }
- ],
+ "Tern|Vektron Q9": [],
  "Top End|All E-handcycle models": [],
  "Trek|Dual Sport+": [],
  "Trek|Fetch+ 2": [],
@@ -4025,16 +2679,7 @@
    "du": 782
   }
  ],
- "Trek|FX+ 2": [
-  {
-   "id": "LvbAUtNp4a0",
-   "t": "How to Set Up Trek FX+ 2 Suspension & Tire Pressure",
-   "c": "Trek Bicycle",
-   "d": "2026-08-31",
-   "vw": 5148,
-   "du": 178
-  }
- ],
+ "Trek|FX+ 2": [],
  "Trek|FX+ 2S": [],
  "Trek|FX+ 7S": [
   {
@@ -4062,16 +2707,7 @@
    "du": 524
   }
  ],
- "Trek|Verve+ 2 Lowstep": [
-  {
-   "id": "GLc3M2nr9Gs",
-   "t": "Trek Verve+ 2 hybrid commuter e-bike #trek #ebike #hybrid #bikes #bikelife #bikelover",
-   "c": "Bike Mart",
-   "d": "2025-11-10",
-   "vw": 4320,
-   "du": 81
-  }
- ],
+ "Trek|Verve+ 2 Lowstep": [],
  "Trek|Verve+ 3 Lowstep": [],
  "Trek|Verve+ 4S Lowstep": [],
  "Trek|Allant+": [
@@ -4161,14 +2797,6 @@
  ],
  "Troxus|Trax Sport": [
   {
-   "id": "v3Tt1bk1qic",
-   "t": "TROXUS Trax Plus Smart E-Bike - Geofencing, Location Tracking, Remote Activation/Deactivation",
-   "c": "911Reviews - Shopping, Gadgets & Tech",
-   "d": "2026-06-14",
-   "vw": 101064,
-   "du": 820
-  },
-  {
    "id": "j32SYyV0nio",
    "t": "Discover How Much FUN the Troxus Trax Sport E-Bike Is: The Perfect Christmas GIFT!",
    "c": "The Appalachian Channel with John Ward",
@@ -4177,12 +2805,12 @@
    "du": 875
   },
   {
-   "id": "ubfHrUvPkNQ",
-   "t": "Troxus Trax Plus – Looks Like a City Bike, Rides Like an eBeast",
-   "c": "Ride Electric Reviews",
-   "d": "2025-07-22",
-   "vw": 3680,
-   "du": 1761
+   "id": "6tdLxMP6iuA",
+   "t": "Troxus Trax Sport Review - Comfortable Commuter E-Bike Tested",
+   "c": "Jon Conti",
+   "d": "2025-10-31",
+   "vw": 1931,
+   "du": 66
   }
  ],
  "Troxus|Trax Whim iQ": [
@@ -4201,14 +2829,6 @@
    "d": "2026-08-24",
    "vw": 936,
    "du": 2630
-  },
-  {
-   "id": "GBRCr0EFx00",
-   "t": "New Troxus Trax Whim Breaks Everything We Knew",
-   "c": "NRG SPORTS",
-   "d": "2026-07-14",
-   "vw": 84,
-   "du": 494
   }
  ],
  "Troxus|Trax Plus 500/15": [],
@@ -4239,32 +2859,7 @@
   }
  ],
  "Troxus|Trax Plus 750/30": [],
- "Troxus|Trax Plus LR iQ": [
-  {
-   "id": "v3Tt1bk1qic",
-   "t": "TROXUS Trax Plus Smart E-Bike - Geofencing, Location Tracking, Remote Activation/Deactivation",
-   "c": "911Reviews - Shopping, Gadgets & Tech",
-   "d": "2026-06-14",
-   "vw": 101064,
-   "du": 820
-  },
-  {
-   "id": "7Yi8qwdvJLc",
-   "t": "The Smartest Budget E-Bike? | Troxus Trax Plus iQ Review",
-   "c": "The Frickin' Shredder",
-   "d": "2026-06-08",
-   "vw": 5208,
-   "du": 684
-  },
-  {
-   "id": "ubfHrUvPkNQ",
-   "t": "Troxus Trax Plus – Looks Like a City Bike, Rides Like an eBeast",
-   "c": "Ride Electric Reviews",
-   "d": "2025-07-22",
-   "vw": 3680,
-   "du": 1761
-  }
- ],
+ "Troxus|Trax Plus LR iQ": [],
  "Troxus|Trax SUV": [
   {
    "id": "GWsWs_8i8f8",
@@ -4273,14 +2868,6 @@
    "d": "2025-10-17",
    "vw": 130410,
    "du": 1034
-  },
-  {
-   "id": "aQM6-vfhp4E",
-   "t": "TROXUS Trax SUV 15/750 E-Bike - premium dual-suspension commuter built for comfort & control ",
-   "c": "911Reviews - Shopping, Gadgets & Tech",
-   "d": "2025-11-15",
-   "vw": 70601,
-   "du": 398
   },
   {
    "id": "b3MaG5qJQeY",
@@ -4308,14 +2895,6 @@
    "d": "2025-08-12",
    "vw": 3106,
    "du": 860
-  },
-  {
-   "id": "DK5cCiiQB0M",
-   "t": "🦾 Troxus LynxPlus w/ Ride IQ Technology (proximity unlock)",
-   "c": "Chris Crossed",
-   "d": "2026-08-26",
-   "vw": 1320,
-   "du": 1592
   }
  ],
  "Troxus|Lynx Plus iQ": [
@@ -4334,68 +2913,10 @@
    "d": "2026-08-27",
    "vw": 1677,
    "du": 1599
-  },
-  {
-   "id": "36F0o_JR7Oc",
-   "t": "Troxus Lynx T-Rike iQ Review: Power, Stability & Smart Security!",
-   "c": "911Reviews - Shopping, Gadgets & Tech",
-   "d": "2026-09-03",
-   "vw": 210842,
-   "du": 771
   }
  ],
- "Troxus|Lynx Cargo": [
-  {
-   "id": "WsiBM6ujwzw",
-   "t": "Troxus Lynx Cargo E-bike",
-   "c": "Kiwieride",
-   "d": "2026-05-25",
-   "vw": 32,
-   "du": 72
-  },
-  {
-   "id": "36F0o_JR7Oc",
-   "t": "Troxus Lynx T-Rike iQ Review: Power, Stability & Smart Security!",
-   "c": "911Reviews - Shopping, Gadgets & Tech",
-   "d": "2026-09-03",
-   "vw": 210842,
-   "du": 771
-  },
-  {
-   "id": "kB3BSb1ekZo",
-   "t": "An Ebike That’s Safe For Two Riders - Troxus Lynx 2-Up Review",
-   "c": "TailHappyTV",
-   "d": "2025-09-03",
-   "vw": 10111,
-   "du": 1604
-  }
- ],
- "Troxus|Lynx Folding": [
-  {
-   "id": "XArVxwUUmfc",
-   "t": "Small, mighty, and ready for anything — meet the Troxus Lynx Folding E-Bike! 💥",
-   "c": "Middletown Cycling / Middle Of Town Cycling",
-   "d": "2025-11-14",
-   "vw": 97,
-   "du": 250
-  },
-  {
-   "id": "36F0o_JR7Oc",
-   "t": "Troxus Lynx T-Rike iQ Review: Power, Stability & Smart Security!",
-   "c": "911Reviews - Shopping, Gadgets & Tech",
-   "d": "2026-09-03",
-   "vw": 210842,
-   "du": 771
-  },
-  {
-   "id": "kB3BSb1ekZo",
-   "t": "An Ebike That’s Safe For Two Riders - Troxus Lynx 2-Up Review",
-   "c": "TailHappyTV",
-   "d": "2025-09-03",
-   "vw": 10111,
-   "du": 1604
-  }
- ],
+ "Troxus|Lynx Cargo": [],
+ "Troxus|Lynx Folding": [],
  "Troxus|Explorer Plus iQ": [
   {
    "id": "nlBZtX-QEPA",
@@ -4412,42 +2933,9 @@
    "d": "2026-07-31",
    "vw": 1561,
    "du": 1406
-  },
-  {
-   "id": "rm2R510uIhI",
-   "t": "TROXUS Explorer Plus Step Thru E-Bike",
-   "c": "E - BIKE Explorations  ",
-   "d": "2024-12-23",
-   "vw": 57321,
-   "du": 276
   }
  ],
- "Troxus|Explorer Plus MIK (Step-Thru)": [
-  {
-   "id": "rm2R510uIhI",
-   "t": "TROXUS Explorer Plus Step Thru E-Bike",
-   "c": "E - BIKE Explorations  ",
-   "d": "2024-12-23",
-   "vw": 57321,
-   "du": 276
-  },
-  {
-   "id": "nlBZtX-QEPA",
-   "t": "The Smartest Fat-Tire E-Bike I've Tested — Troxus Explorer Plus iQ",
-   "c": "MAXAPACITY",
-   "d": "2026-08-08",
-   "vw": 15124,
-   "du": 1139
-  },
-  {
-   "id": "fQ94QU_JvlU",
-   "t": "More Power than Advertised! Troxus Explorer Plus",
-   "c": "Scott Hardesty ",
-   "d": "2025-08-26",
-   "vw": 5919,
-   "du": 2293
-  }
- ],
+ "Troxus|Explorer Plus MIK (Step-Thru)": [],
  "Troxus|T-XC": [
   {
    "id": "3CuH9HK17Lo",
@@ -4456,14 +2944,6 @@
    "d": "2025-01-20",
    "vw": 4197,
    "du": 1156
-  },
-  {
-   "id": "5naPfSRz_4c",
-   "t": "E-Bike unbox Troxus T-XC electric bike #EvergreenColorado #ebikes #ebike #Retrospec #electricbike",
-   "c": "Replays Sports Exchange",
-   "d": "2025-10-12",
-   "vw": 2016,
-   "du": 60
   }
  ],
  "Urban Arrow|Family": [
@@ -4474,14 +2954,6 @@
    "d": "2025-06-09",
    "vw": 648,
    "du": 1076
-  },
-  {
-   "id": "QVrFMkc3Xrc",
-   "t": "Inside Bosch’s Family E-Bike System: The Urban Arrow Family Next",
-   "c": "CES",
-   "d": "2026-01-08",
-   "vw": 528,
-   "du": 149
   },
   {
    "id": "FBFbAYK6GY4",
@@ -4561,14 +3033,6 @@
    "d": "2026-09-18",
    "vw": 1342,
    "du": 988
-  },
-  {
-   "id": "YaaFhKve7Sw",
-   "t": "Urtopia Carbon Atom Review: The Most Premium E-Bike I’ve Ridden?",
-   "c": "The Oh Family",
-   "d": "2026-09-09",
-   "vw": 47869,
-   "du": 749
   }
  ],
  "Urtopia|Carbon Joy Ultra": [
@@ -4587,14 +3051,6 @@
    "d": "2025-12-24",
    "vw": 3375,
    "du": 481
-  },
-  {
-   "id": "YaaFhKve7Sw",
-   "t": "Urtopia Carbon Atom Review: The Most Premium E-Bike I’ve Ridden?",
-   "c": "The Oh Family",
-   "d": "2026-09-09",
-   "vw": 47869,
-   "du": 749
   }
  ],
  "Urtopia|Carbon 1 ST": [
@@ -4631,22 +3087,6 @@
    "d": "2025-01-25",
    "vw": 40285,
    "du": 2007
-  },
-  {
-   "id": "YaaFhKve7Sw",
-   "t": "Urtopia Carbon Atom Review: The Most Premium E-Bike I’ve Ridden?",
-   "c": "The Oh Family",
-   "d": "2026-09-09",
-   "vw": 47869,
-   "du": 749
-  },
-  {
-   "id": "yf09-_NP3FI",
-   "t": "Urtopia Carbon Fold 2 Review: Compact Design Meets Torque Sensor",
-   "c": "RunPlayBack",
-   "d": "2026-05-08",
-   "vw": 31604,
-   "du": 790
   }
  ],
  "Urtopia|Carbon Classic": [
@@ -4832,24 +3272,7 @@
    "du": 487
   }
  ],
- "Velotric|T1": [
-  {
-   "id": "A_P6OrznAPI",
-   "t": "Velotric T1 ST Plus Review: Getting Fit Was Never This Fun",
-   "c": "ElectricBikeReview.com",
-   "d": "2024-11-27",
-   "vw": 12130,
-   "du": 1635
-  },
-  {
-   "id": "BNwC_MecmCc",
-   "t": "Velotric T1ST Plus Fitness E-Bike Review | BikeRide.com",
-   "c": "BikeRide",
-   "d": "2024-11-21",
-   "vw": 7816,
-   "du": 1427
-  }
- ],
+ "Velotric|T1": [],
  "Velotric|Discover 1 Plus": [
   {
    "id": "2gUOkKaSsC8",
@@ -4886,14 +3309,6 @@
    "d": "2025-01-09",
    "vw": 7682,
    "du": 1669
-  },
-  {
-   "id": "BcMUycQSZ5k",
-   "t": "Velotric | Fold 1 | Installing 20x3 AllScape Tires & Front Basket at the e-Bike Shop!",
-   "c": "ElectricAllWheel",
-   "d": "2024-12-22",
-   "vw": 5709,
-   "du": 2208
   }
  ],
  "Velotric|Fold 1 Plus": [
@@ -5072,14 +3487,6 @@
    "d": "2026-07-31",
    "vw": 5314,
    "du": 722
-  },
-  {
-   "id": "2mkpn7hoAqk",
-   "t": "$1,999 for THIS E-Bike? 👀 | XLAB ST5+ Explained #Shorts",
-   "c": "Middletown Cycling / Middle Of Town Cycling",
-   "d": "2026-07-20",
-   "vw": 729,
-   "du": 82
   }
  ],
  "X-Lab|SP5+": [
@@ -5090,22 +3497,6 @@
    "d": "2026-07-01",
    "vw": 34571,
    "du": 1153
-  },
-  {
-   "id": "uitHR2zrASI",
-   "t": "This bike is very impressive!! X-LAB sp5+ #trending #cycling #xlab #xds #bikeproducts #bikeshop",
-   "c": "Crank Works Bikes",
-   "d": "2026-06-05",
-   "vw": 4898,
-   "du": 78
-  },
-  {
-   "id": "Mijpiie04aQ",
-   "t": "XLAB SP5+ Large E Bike With Throttle!",
-   "c": "Scott Davis",
-   "d": "2026-08-29",
-   "vw": 796,
-   "du": 66
   }
  ],
  "Xtracycle|Swoop ASM": [
@@ -5166,49 +3557,16 @@
    "du": 1795
   },
   {
-   "id": "3a9gpJcg2I0",
-   "t": "Yuba Spicy Curry V4 Review: The Ultimate Electric Cargo Bike for Families & Heavy Loads!",
-   "c": "EcoMove Bristol",
-   "d": "2025-05-07",
-   "vw": 3436,
-   "du": 914
-  },
-  {
-   "id": "UPQ2BJwQt2o",
-   "t": "Yuba Kombi vs Spicy Curry",
-   "c": "Ciclolutions",
-   "d": "2025-04-16",
-   "vw": 1483,
-   "du": 107
+   "id": "T7U0ybypXXY",
+   "t": "Yuba Spicy Curry 2026 - First impressions going from a RM Load 75",
+   "c": "Norwegian Cargobike Dad",
+   "d": "2026-08-03",
+   "vw": 437,
+   "du": 387
   }
  ],
  "Yuba|Spicy Curry+": [],
- "Yuba|Spicy Curry V3": [
-  {
-   "id": "cVAgbN5M7zg",
-   "t": "Why does Yuba do it like that? Spicy Curry and new Boda Boda Review",
-   "c": "The Cargobike Channel - Radelbande in English",
-   "d": "2025-04-27",
-   "vw": 3653,
-   "du": 1795
-  },
-  {
-   "id": "3a9gpJcg2I0",
-   "t": "Yuba Spicy Curry V4 Review: The Ultimate Electric Cargo Bike for Families & Heavy Loads!",
-   "c": "EcoMove Bristol",
-   "d": "2025-05-07",
-   "vw": 3436,
-   "du": 914
-  },
-  {
-   "id": "UPQ2BJwQt2o",
-   "t": "Yuba Kombi vs Spicy Curry",
-   "c": "Ciclolutions",
-   "d": "2025-04-16",
-   "vw": 1483,
-   "du": 107
-  }
- ],
+ "Yuba|Spicy Curry V3": [],
  "Yuba|Fast Rack": [
   {
    "id": "G1bOF8VXuMs",
@@ -5243,48 +3601,7 @@
    "d": "2025-01-20",
    "vw": 3723,
    "du": 354
-  },
-  {
-   "id": "mXJbZK8DaPo",
-   "t": "Yuba Mundo vs Kombi",
-   "c": "Ciclolutions",
-   "d": "2025-03-27",
-   "vw": 2666,
-   "du": 144
-  },
-  {
-   "id": "QAppcF_9Mrw",
-   "t": "Yuba Kombi Cargo Bike Build - Full Review",
-   "c": "Unpackbar",
-   "d": "2026-02-01",
-   "vw": 2282,
-   "du": 931
   }
  ],
- "Zooz|Ultra Flex G2 Low Bar": [
-  {
-   "id": "zWMNb7TIGMY",
-   "t": "A Mod You Need For Your Zooz Ultra Urban!",
-   "c": "Offline Red",
-   "d": "2026-03-21",
-   "vw": 48057,
-   "du": 807
-  },
-  {
-   "id": "P58FhQXy-Ds",
-   "t": "Zooz Ultra Ripster Overview & First Impressions | eBike POV [4K]",
-   "c": "Eyebahn Rides",
-   "d": "2024-12-13",
-   "vw": 10681,
-   "du": 1381
-  },
-  {
-   "id": "CzmWkAvTvuY",
-   "t": "The NEW Zooz Ultra Ripster - (Review)",
-   "c": "BOJ-E-BIKES",
-   "d": "2024-11-10",
-   "vw": 6845,
-   "du": 2004
-  }
- ]
+ "Zooz|Ultra Flex G2 Low Bar": []
 }

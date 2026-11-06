@@ -9,7 +9,7 @@ the 3 most viewed win. Only videos YouTube allows on other sites (embeddable), p
 a minute long (no Shorts). A video goes to the most specific model it names (a "FX+ 2S" video is not a "FX+ 2" video).
 When no video names a model's full name, the model's family name is tried (a "Level 4" video for "Level 4 REC").
 """
-import json, re, glob, datetime, collections, sys, html
+import json, re, glob, datetime, collections, sys, html, os
 
 def norm(s):
     s = s.lower().replace('&', ' and ').replace('+', ' plus ').replace("'", '').replace('’', '')
@@ -85,10 +85,14 @@ def main(site):
     ok = {i: v for i, v in cand.items() if v.get('em') == 1 and v.get('pv') == 'public' and v.get('lv') in (None, 'none')
           and seconds(v.get('du')) >= 60 and v.get('d', '') >= since}
     for v in ok.values(): v['t'] = html.unescape(v['t'])
+    # not reviews: sale listings, setup guides, parts and repairs; plus videos a reviewer judged wrong (verify/yt_reject.json)
+    JUNK = re.compile(r'refurb|gebruikte|te koop|for sale|demo bikes|assembl|unbox ?& ?assemble|tutorial|quick start|how to (enable|install|assemble)|recall|battery w|tire blowout|install|accessor|spare part', re.I)
+    rej = json.load(open('verify/yt_reject.json')) if os.path.exists('verify/yt_reject.json') else {}   # {"Brand|Model": [ids]}
+    ok = {i: v for i, v in ok.items() if not JUNK.search(v['t'])}
     titles = {i: norm(v['t']) for i, v in ok.items()}
     by_brand = collections.defaultdict(list)
     for (br, mo) in models: by_brand[br].append(mo)
-    out = {}
+    out = {}; pool = {}
     for br, mos in by_brand.items():
         bps = BRAND_NAMES.get(br, [norm(br)])
         vids = [i for i, tt in titles.items() if any(has(tt, bp) for bp in bps)]
@@ -110,18 +114,20 @@ def main(site):
                     for n, mo in set(hits):
                         if n == best: got[mo].append(i)
             return got
-        levels = [pick({mo: [c] for mo, c in cores.items()}),
-                  pick({mo: [f for f in fams[mo] if ' '.join(f) not in full] for mo in mos})]
+        # exact model name only: a family fallback put sister models' reviews on the wrong bike (Vektron P5i on Vektron Q9)
+        levels = [pick({mo: [c] for mo, c in cores.items()})]
         for mo in mos:
             ids = []
             for lv in levels:
                 for i in sorted(lv.get(mo, []), key=lambda i: -ok[i]['vw']):
-                    if i not in ids: ids.append(i)
+                    if i not in ids and i not in rej.get(br + '|' + mo, ()): ids.append(i)
                 if len(ids) >= 3: break
+            pool[br + '|' + mo] = [[i, ok[i]['t'], ok[i]['vw']] for i in ids]
             ids = ids[:3]
             out[br + '|' + mo] = [{'id': i, 't': ok[i]['t'], 'c': ok[i]['c'], 'd': ok[i]['d'][:10], 'vw': ok[i]['vw'],
                                    'du': seconds(ok[i]['du'])} for i in ids]
     json.dump(out, open('verify/videos.json', 'w'), indent=1, ensure_ascii=False)
+    json.dump(pool, open('verify/yt_pool.json', 'w'), indent=1, ensure_ascii=False)
     n = collections.Counter(len(v) for v in out.values())
     print('models', len(out), '| with 3:', n[3], '2:', n[2], '1:', n[1], 'none:', n[0])
     return out

@@ -1383,13 +1383,15 @@ document.querySelectorAll('[data-open]').forEach(btn=>btn.onclick=()=>showDlg($(
 const BIKE=$('bike');let BIKE_I=null,BIKE_AC=null;/* the modal's colour is its own: picking one there never changes the card */
 /* video reviews: the 3 most-watched recent reviews per bike (found with YouTube's official search when the site is built).
    They live in their own small file, fetched once the page is idle, so they never slow the first view */
-const VURL='videos-55a4dc80.json';let VIDS=null,VIDP=null;
-const loadVids=()=>VIDP||(VIDP=fetch(VURL).then(r=>r.ok?r.json():Promise.reject()).then(j=>VIDS=j).catch(()=>{VIDP=null;return null}));
-(window.requestIdleCallback||(f=>setTimeout(f,1500)))(()=>loadVids());
+const VURL='videos-c0728965.json';let VIDS=null,VIDP=null;
+const loadVids=()=>VIDP||(VIDP=fetch(VURL,{priority:'low'}).then(r=>r.ok?r.json():Promise.reject()).then(j=>VIDS=j).catch(()=>{VIDP=null;return null}));
+/* fetched as soon as the page has loaded, at low priority so it never competes with the photos; ready before anyone opens a bike */
+if(document.readyState==='complete')loadVids();else addEventListener('load',()=>loadVids(),{once:true});
 const nViews=n=>n>=1e6?(n/1e6).toFixed(n<1e7?1:0).replace(/\.0$/,'')+'M':n>=1e3?(n/1e3).toFixed(n<1e4?1:0).replace(/\.0$/,'')+'K':String(n);
-const vAge=d=>{const m=Math.max(0,Math.round((Date.now()-Date.parse(d))/2629800000));return m<1?'this month':m<12?m+(m===1?' month':' months')+' ago':(m=Math.round(m/12))+(m===1?' year':' years')+' ago'};
+const vAge=d=>{const m=Math.max(0,Math.round((Date.now()-Date.parse(d))/2629800000)),y=Math.round(m/12);return m<1?'this month':m<12?m+(m===1?' month':' months')+' ago':y+(y===1?' year':' years')+' ago'};
 const vDur=s=>{const h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=String(s%60).padStart(2,'0');return h?h+':'+String(m).padStart(2,'0')+':'+x:m+':'+x};
-function vidsHTML(b){const list=VIDS?VIDS[b.brand+'|'+b.model]||[]:null;
+function vidsHTML(b){try{return vidsHTML_(b)}catch(e){return ''}}
+function vidsHTML_(b){const list=VIDS?VIDS[b.brand+'|'+b.model]||[]:null;
  const more=`<a class="vmore" href="https://www.youtube.com/results?search_query=${encodeURIComponent(b.name+' review')}" target="_blank" rel="noopener">View more video reviews on YouTube${EXT}</a>`;
  if(list===null)return `<h3>Video reviews</h3>${more}`;
  if(!list.length)return `<h3>Video reviews</h3><p class="vnone">No recent reviews we could match to this exact bike yet.</p>${more}`;
@@ -1419,7 +1421,7 @@ VP.addEventListener('close',vpStop);
 const EXT='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>';
 /* the details are built as soon as a finger or mouse goes down on a card, so by the time the tap lands the window only has to slide in */
 let BIKE_PRE=null;
-function buildBike(i){const pre=i+'|'+F.city+'|'+F.q+'|'+(ME?NEAR_MI:'');if(BIKE_PRE===pre)return;BIKE_PRE=pre;
+function buildBike(i){const pre=i+'|'+F.city+'|'+F.q+'|'+(ME?NEAR_MI:'');if(BIKE_PRE===pre)return;BIKE_PRE=null;
  const b=B[i],pk=PICKS[b.brand+'|'+b.model];
  const has=v=>v!=null&&v!=='';
  const uniq=[...new Map((b.shops||[]).map(x=>S[x]).filter(Boolean).map(s=>[s.name,s])).values()];
@@ -1458,6 +1460,7 @@ function buildBike(i){const pre=i+'|'+F.city+'|'+F.q+'|'+(ME?NEAR_MI:'');if(BIKE
  </div>
 </div>`;
  $('bike-img').decode().catch(()=>{});
+ BIKE_PRE=pre;/* marked built only once every part is in place */
  if(!VIDS)loadVids().then(fillVids);
 }
 /* the details open on exactly the photo the card shows: the color picked on the card if there is one, otherwise the display photo with no dot selected.
@@ -1468,6 +1471,9 @@ let BIKE_OPENING=0;
 function openBike(i,opener){if(BIKE.open)return;const tok=++BIKE_OPENING;buildBike(i);DT.reset();BIKE_I=i;BIKE_AC=activeColor(B[i]);syncBike();
  const im=$('bike-img'),show=()=>{if(tok!==BIKE_OPENING||BIKE.open)return;showDlg(BIKE,opener);$('bike-body').scrollTop=0;fitBml()};
  Promise.race([im.decode().catch(()=>{}),new Promise(r=>setTimeout(r,150))]).then(show)}
+/* desktop: a mouse resting on a card for 65ms (the usual hover-intent delay) prepares its window, so the click opens it with everything ready */
+{let ht=0;$('g').addEventListener('pointerover',e=>{if(e.pointerType!=='mouse'||BIKE.open)return;const c=e.target.closest('.c[data-b]');clearTimeout(ht);if(c)ht=setTimeout(()=>{if(!BIKE.open)buildBike(+c.dataset.b)},65)},{passive:true});
+ $('g').addEventListener('pointerout',e=>{if(!e.relatedTarget||!e.target.closest('.c[data-b]')?.contains(e.relatedTarget))clearTimeout(ht)},{passive:true})}
 $('g').addEventListener('pointerdown',e=>{if(BIKE.open||e.button)return;const c=e.target.closest('.c[data-b]');if(c&&!e.target.closest('a,.sws')&&!(e.target.closest('[data-tip]')&&e.pointerType!=='mouse'))buildBike(+c.dataset.b)},{passive:true});
 function syncBike(){
  if(BIKE_I==null||!BIKE.contains($('bike-img')))return;const b=B[BIKE_I],ac=BIKE_AC,img=$('bike-img'),cap=$('bike-cap');
