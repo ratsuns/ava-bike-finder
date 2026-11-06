@@ -8,6 +8,20 @@
     "value": null,
     "url": "https://macfoxbike.com/blogs/news/meet-best-commuter-ebike-macfox-m20x",
     "quote": ""
+   },
+   {
+    "kind": "maker",
+    "value": 1199,
+    "url": "https://macfoxbike.com/blogs/news/budget-commuter-ebikes",
+    "quote": "The Macfox M20X is a compact, easy-handling commuter specifically built for city use. At just over $1,199, it undercuts many commuter e-bikes in price while still offering strong specs. Like the X1S, the M20X uses a 500W (750W peak) brushless motor with 65 Nm torque. It accelerates briskly for quick merges and keeps a steady pace even uphill.",
+    "basis": "maker blog, 'just over $1,199'; section headed 'Macfox M20X: Compact City Rider(No longer available)'; not clearly the regular price"
+   },
+   {
+    "kind": "maker",
+    "value": 999,
+    "url": "https://macfoxbike.com/blogs/news/comprehensive-guide-lithium-batteries-for-electric-bikes",
+    "quote": "Macfox M20X | From $999.00 | Buy it Now",
+    "basis": "old product card embedded in a maker blog post; 'From' price, may have been a sale price"
    }
   ],
   "cls": [
@@ -33,6 +47,12 @@
     "value": null,
     "url": "https://macfoxbike.com/blogs/news/meet-best-commuter-ebike-macfox-m20x",
     "quote": ""
+   },
+   {
+    "kind": "maker",
+    "value": 65,
+    "url": "https://macfoxbike.com/blogs/news/budget-commuter-ebikes",
+    "quote": "The Macfox M20X is a compact, easy-handling commuter specifically built for city use. At just over $1,199, it undercuts many commuter e-bikes in price while still offering strong specs. Like the X1S, the M20X uses a 500W (750W peak) brushless motor with 65 Nm torque. It accelerates briskly for quick merges and keeps a steady pace even uphill."
    }
   ],
   "wh": [
@@ -105,5 +125,5 @@
    }
   ]
  },
- "notes": "Discontinued: maker blog (the given src) is a 'historical model / used-bike guide'; no product page exists (/products/macfox-m20x 404). Maker blog also says the M20X was the predecessor to the X1S. Only source is the maker blog: EBR, EBReport and Electrek have no M20X page and the one WebSearch returned nothing relevant. No price, torque or rider height published. Wh computed 48V x 10.4Ah = 499.2."
+ "notes": "Discontinued: maker blog (the given src) is a 'historical model / used-bike guide'; no product page exists (/products/macfox-m20x 404). Maker blog also says the M20X was the predecessor to the X1S. Only source is the maker blog: EBR, EBReport and Electrek have no M20X page and the one WebSearch returned nothing relevant. No price, torque or rider height published. Wh computed 48V x 10.4Ah = 499.2. Recheck: scanned the maker's blog articles that mention M20X: 'budget-commuter-ebikes' gives 65 Nm and 'just over $1,199'; older posts carry an M20X product card 'From $999.00' (also 65 lbs, 325 lb limit). No page states $1,399."
 }

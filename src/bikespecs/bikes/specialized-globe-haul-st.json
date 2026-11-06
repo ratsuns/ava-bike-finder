@@ -1,47 +1,182 @@
-{"bike": "Specialized|Globe Haul ST", "checked": "2026-11-06",
+{
+ "bike": "Specialized|Globe Haul ST",
+ "checked": "2026-11-06",
  "fields": {
   "price": [
-   {"kind": "maker", "value": 2699.99, "url": "https://www.specialized.com/us/en/haul-st/p/277759", "quote": "$2,699.99 ⟶ 0% APRor as low as $94/mo with Affirm. See if you qualify"}
+   {
+    "kind": "maker",
+    "value": 2699.99,
+    "url": "https://www.specialized.com/us/en/haul-st/p/277759",
+    "quote": "$2,699.99 ⟶ 0% APRor as low as $94/mo with Affirm. See if you qualify"
+   }
   ],
   "cls": [
-   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/haul-st/p/277759", "quote": ""},
-   {"kind": "review", "value": 3, "url": "https://electricbikereport.com/specialized-globe-haul-st-review/", "quote": "CLASS 3 E-BIKE: ⟶ PAS TO 28 MPH (OPTIONAL THROTTLE FOR CLASS 2, 20 MPH)", "basis": "ships with pedal assist to 28 mph; throttle is optional (not included)"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.specialized.com/us/en/haul-st/p/277759",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": 3,
+    "url": "https://electricbikereport.com/specialized-globe-haul-st-review/",
+    "quote": "CLASS 3 E-BIKE: ⟶ PAS TO 28 MPH (OPTIONAL THROTTLE FOR CLASS 2, 20 MPH)",
+    "basis": "ships with pedal assist to 28 mph; throttle is optional (not included)"
+   },
+   {
+    "kind": "review",
+    "value": 3,
+    "url": "https://electrek.co/2023/03/09/specialized-globe-haul-st-utility-electric-bike/",
+    "quote": "Oh yeah, and the Class 3 top speed of 28 mph (45 km/h)."
+   },
+   {
+    "kind": "maker",
+    "value": 3,
+    "url": "https://www.specialized.com/us/en/globe-throttle/p/220823",
+    "quote": "This plug-in throttle mounts next to your HMI on your Globe bike and allows you to motor up to 20mph without needing to pedal. Need to go faster? Pedal assist will still be there to give you a boost to 28mph after the throttle reaches its limit. The throttle’s extra burst of torque makes entering and exiting traffic safer and faster but still allows you to use pedal assist to increase efficiency and range.",
+    "basis": "maker's Globe Throttle accessory page ('Designed for frictionless compatibility with the Globe Haul ST and Haul LT.'): pedal assist to 28 mph, throttle sold separately, so ships Class 3"
+   }
   ],
   "spd": [
-   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/haul-st/p/277759", "quote": ""},
-   {"kind": "review", "value": 28, "url": "https://electricbikereport.com/specialized-globe-haul-st-review/", "quote": "CLASS 3 E-BIKE: ⟶ PAS TO 28 MPH (OPTIONAL THROTTLE FOR CLASS 2, 20 MPH)"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.specialized.com/us/en/haul-st/p/277759",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": 28,
+    "url": "https://electricbikereport.com/specialized-globe-haul-st-review/",
+    "quote": "CLASS 3 E-BIKE: ⟶ PAS TO 28 MPH (OPTIONAL THROTTLE FOR CLASS 2, 20 MPH)"
+   },
+   {
+    "kind": "review",
+    "value": 28,
+    "url": "https://electrek.co/2023/03/09/specialized-globe-haul-st-utility-electric-bike/",
+    "quote": "Specialized launches its most affordable electric bike yet, the 28 mph Globe Haul ST utility bike"
+   },
+   {
+    "kind": "maker",
+    "value": 28,
+    "url": "https://www.specialized.com/us/en/globe-throttle/p/220823",
+    "quote": "This plug-in throttle mounts next to your HMI on your Globe bike and allows you to motor up to 20mph without needing to pedal. Need to go faster? Pedal assist will still be there to give you a boost to 28mph after the throttle reaches its limit. The throttle’s extra burst of torque makes entering and exiting traffic safer and faster but still allows you to use pedal assist to increase efficiency and range.",
+    "basis": "Globe Throttle accessory page, made for Haul ST and Haul LT; CA riders need a Class 2 firmware update to use the throttle"
+   }
   ],
   "tq": [
-   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/haul-st/p/277759", "quote": ""},
-   {"kind": "review", "value": null, "url": "https://electricbikereport.com/specialized-globe-haul-st-review/", "quote": ""}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.specialized.com/us/en/haul-st/p/277759",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://electricbikereport.com/specialized-globe-haul-st-review/",
+    "quote": ""
+   }
   ],
   "wh": [
-   {"kind": "maker", "value": 772, "url": "https://www.specialized.com/us/en/haul-st/p/277759", "quote": "Battery ⟶ Globe external battery, 772Wh, IPX7"},
-   {"kind": "review", "value": 772, "url": "https://electricbikereport.com/specialized-globe-haul-st-review/", "quote": "Battery : Globe external battery, 772Wh, IPX7 ⟶ Display: Globe handlebar remote HMI"}
+   {
+    "kind": "maker",
+    "value": 772,
+    "url": "https://www.specialized.com/us/en/haul-st/p/277759",
+    "quote": "Battery ⟶ Globe external battery, 772Wh, IPX7"
+   },
+   {
+    "kind": "review",
+    "value": 772,
+    "url": "https://electricbikereport.com/specialized-globe-haul-st-review/",
+    "quote": "Battery : Globe external battery, 772Wh, IPX7 ⟶ Display: Globe handlebar remote HMI"
+   }
   ],
   "range": [
-   {"kind": "maker", "value": "60", "url": "https://www.specialized.com/us/en/haul-st/p/277759", "quote": "The 772wh battery provides up to 60 miles of range at the lower levels of pedal assist."},
-   {"kind": "review", "value": "60", "url": "https://electricbikereport.com/specialized-globe-haul-st-review/", "quote": "Range: Claimed 60, (EBR testing 38 – 54) ⟶ Throttle:(Not included) Thumb Lever"}
+   {
+    "kind": "maker",
+    "value": "60",
+    "url": "https://www.specialized.com/us/en/haul-st/p/277759",
+    "quote": "The 772wh battery provides up to 60 miles of range at the lower levels of pedal assist."
+   },
+   {
+    "kind": "review",
+    "value": "60",
+    "url": "https://electricbikereport.com/specialized-globe-haul-st-review/",
+    "quote": "Range: Claimed 60, (EBR testing 38 – 54) ⟶ Throttle:(Not included) Thumb Lever"
+   }
   ],
   "wt": [
-   {"kind": "maker", "value": 77, "url": "https://www.specialized.com/us/en/haul-st/p/277759", "quote": "Weight ⟶ 35.0kg (77 lb, 2.6 oz)", "basis": "maker does not say whether battery is included"},
-   {"kind": "review", "value": null, "url": "https://electricbikereport.com/specialized-globe-haul-st-review/", "quote": "Claimed weight: N/A ⟶ Maximum weight: 419 lbs (with rider included)"}
+   {
+    "kind": "maker",
+    "value": 77,
+    "url": "https://www.specialized.com/us/en/haul-st/p/277759",
+    "quote": "Weight ⟶ 35.0kg (77 lb, 2.6 oz)",
+    "basis": "maker does not say whether battery is included"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://electricbikereport.com/specialized-globe-haul-st-review/",
+    "quote": "Claimed weight: N/A ⟶ Maximum weight: 419 lbs (with rider included)"
+   }
   ],
   "load": [
-   {"kind": "maker", "value": 419, "url": "https://www.specialized.com/us/en/haul-st/p/277759", "quote": "419 lbs carrying capacity, rider included.", "basis": "total (rider + cargo)"},
-   {"kind": "review", "value": 419, "url": "https://electricbikereport.com/specialized-globe-haul-st-review/", "quote": "Maximum weight: 419 lbs (with rider included) ⟶ Maximum load on the rear rack: 132 lbs"}
+   {
+    "kind": "maker",
+    "value": 419,
+    "url": "https://www.specialized.com/us/en/haul-st/p/277759",
+    "quote": "419 lbs carrying capacity, rider included.",
+    "basis": "total (rider + cargo)"
+   },
+   {
+    "kind": "review",
+    "value": 419,
+    "url": "https://electricbikereport.com/specialized-globe-haul-st-review/",
+    "quote": "Maximum weight: 419 lbs (with rider included) ⟶ Maximum load on the rear rack: 132 lbs"
+   }
   ],
   "motor": [
-   {"kind": "maker", "value": "700W rear hub", "url": "https://www.specialized.com/us/en/haul-st/p/277759", "quote": "700w rear hub motor delivers enough power to get you and all your gear up steep hills and all the way across town at top speed. The 772wh battery provides up to 60 miles of range at the lower levels of pedal assist. ⟶ 419 lbs carrying capacity, rider included."},
-   {"kind": "review", "value": "700W rear hub", "url": "https://electricbikereport.com/specialized-globe-haul-st-review/", "quote": "As a Class 3 utility e-bike powered by a lively 700W hub motor (more on that later), the Globe Haul ST is built for versatility. Whether you’re commuting to work, running errands at Costco, or simply riding for fun, this bike adapts seamlessly to your needs, making every ride is enjoyable."}
+   {
+    "kind": "maker",
+    "value": "700W rear hub",
+    "url": "https://www.specialized.com/us/en/haul-st/p/277759",
+    "quote": "700w rear hub motor delivers enough power to get you and all your gear up steep hills and all the way across town at top speed. The 772wh battery provides up to 60 miles of range at the lower levels of pedal assist. ⟶ 419 lbs carrying capacity, rider included."
+   },
+   {
+    "kind": "review",
+    "value": "700W rear hub",
+    "url": "https://electricbikereport.com/specialized-globe-haul-st-review/",
+    "quote": "As a Class 3 utility e-bike powered by a lively 700W hub motor (more on that later), the Globe Haul ST is built for versatility. Whether you’re commuting to work, running errands at Costco, or simply riding for fun, this bike adapts seamlessly to your needs, making every ride is enjoyable."
+   }
   ],
   "height": [
-   {"kind": "maker", "value": "4'5\"-6'4\"", "url": "https://www.specialized.com/us/en/haul-st/p/277759", "quote": "Unique, single-size frame fits riders from around 4’5” all the way up to 6'4\". The telescoping seatpost has over 13 inches of adjustability, and the quill stem can extend almost six inches. It provides a comfortable ride to almost everyone measured in our Retül database."},
-   {"kind": "review", "value": "4'5\"-6'4\"", "url": "https://electricbikereport.com/specialized-globe-haul-st-review/", "quote": "It’s a highly adaptable ride. Rider’s 4’5” – 6’4” can ride it thanks to adjustable comfort features and thoughtful design."}
+   {
+    "kind": "maker",
+    "value": "4'5\"-6'4\"",
+    "url": "https://www.specialized.com/us/en/haul-st/p/277759",
+    "quote": "Unique, single-size frame fits riders from around 4’5” all the way up to 6'4\". The telescoping seatpost has over 13 inches of adjustability, and the quill stem can extend almost six inches. It provides a comfortable ride to almost everyone measured in our Retül database."
+   },
+   {
+    "kind": "review",
+    "value": "4'5\"-6'4\"",
+    "url": "https://electricbikereport.com/specialized-globe-haul-st-review/",
+    "quote": "It’s a highly adaptable ride. Rider’s 4’5” – 6’4” can ride it thanks to adjustable comfort features and thoughtful design."
+   }
   ],
   "fold": [
-   {"kind": "maker", "value": "No", "url": "https://www.specialized.com/us/en/haul-st/p/277759", "quote": "Haul ST Premium Aluminum, Post mount disc brake, fender/rack mounts", "basis": "fixed single-size aluminum frame; no folding mentioned"}
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://www.specialized.com/us/en/haul-st/p/277759",
+    "quote": "Haul ST Premium Aluminum, Post mount disc brake, fender/rack mounts",
+    "basis": "fixed single-size aluminum frame; no folding mentioned"
+   }
   ]
  },
- "status": {"sources": []},
- "notes": "Maker page gives no class/speed/torque; class 3 / 28 mph from EBR review (throttle is a separate accessory). Maker weight 77 lb basis unclear: a reply in the EBR comments says 'The bike without the battery is 77 lbs, and about 86 with the battery installed.' Electricbikereview.com search found nothing; Mike's Bikes search returned 0 results."}
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker page gives no class/speed/torque; class 3 / 28 mph from EBR review (throttle is a separate accessory). Maker weight 77 lb basis unclear: a reply in the EBR comments says 'The bike without the battery is 77 lbs, and about 86 with the battery installed.' Electricbikereview.com search found nothing; Mike's Bikes search returned 0 results. recheck: maker Haul ST page full text (no class/speed in the specs; only user reviews mention 28 mph), maker Globe Throttle accessory page (PAS to 28 mph on Globe bikes), Electrek 2023 launch article (Class 3, 28 mph). Globe owner's manual PDF on media.specialized.com could not be opened (domain not allowed in the browser)."
+}

@@ -1,38 +1,155 @@
-{"bike": "Serfas|Quest", "checked": "2026-11-06",
+{
+ "bike": "Serfas|Quest",
+ "checked": "2026-11-06",
  "fields": {
   "price": [
-   {"kind": "retailer", "value": null, "url": "https://www.cycleworldmiami.com/product/serfas-quest-750ws-947076-1.htm", "quote": ""}
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.cycleworldmiami.com/product/serfas-quest-750ws-947076-1.htm",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.globalbikes.info/product/serfas-quest-750ws-947076-1.htm",
+    "quote": "",
+    "basis": "no price shown"
+   }
   ],
   "cls": [
-   {"kind": "retailer", "value": 3, "url": "https://www.cycleworldmiami.com/product/serfas-quest-750ws-947076-1.htm", "quote": "- Max Speed: 28 mph (Pedal Assist) ⟶ - Thumb Throttle: Up to 20 mph", "basis": "no class stated; ships at 28 mph pedal assist with 20 mph throttle, so Class 3"}
+   {
+    "kind": "retailer",
+    "value": 3,
+    "url": "https://www.cycleworldmiami.com/product/serfas-quest-750ws-947076-1.htm",
+    "quote": "- Max Speed: 28 mph (Pedal Assist) ⟶ - Thumb Throttle: Up to 20 mph",
+    "basis": "no class stated; ships at 28 mph pedal assist with 20 mph throttle, so Class 3"
+   },
+   {
+    "kind": "retailer",
+    "value": 3,
+    "url": "https://www.globalbikes.info/product/serfas-quest-750ws-947076-1.htm",
+    "quote": "- Max Speed: 28 mph (Pedal Assist) ⟶ - Thumb Throttle: Up to 20 mph",
+    "basis": "no class stated; 28 mph pedal assist with 20 mph throttle = Class 3 by our rule"
+   }
   ],
   "spd": [
-   {"kind": "retailer", "value": 28, "url": "https://www.cycleworldmiami.com/product/serfas-quest-750ws-947076-1.htm", "quote": "- Max Speed: 28 mph (Pedal Assist) ⟶ - Thumb Throttle: Up to 20 mph"}
+   {
+    "kind": "retailer",
+    "value": 28,
+    "url": "https://www.cycleworldmiami.com/product/serfas-quest-750ws-947076-1.htm",
+    "quote": "- Max Speed: 28 mph (Pedal Assist) ⟶ - Thumb Throttle: Up to 20 mph"
+   },
+   {
+    "kind": "retailer",
+    "value": 28,
+    "url": "https://www.globalbikes.info/product/serfas-quest-750ws-947076-1.htm",
+    "quote": "- Max Speed: 28 mph (Pedal Assist) ⟶ - Thumb Throttle: Up to 20 mph"
+   }
   ],
   "tq": [
-   {"kind": "retailer", "value": null, "url": "https://www.cycleworldmiami.com/product/serfas-quest-750ws-947076-1.htm", "quote": ""}
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.cycleworldmiami.com/product/serfas-quest-750ws-947076-1.htm",
+    "quote": ""
+   }
   ],
   "wh": [
-   {"kind": "retailer", "value": 720, "url": "https://www.cycleworldmiami.com/product/serfas-quest-750ws-947076-1.htm", "quote": "- Battery: LG5000mah, 48V 15ah", "basis": "48V x 15Ah"}
+   {
+    "kind": "retailer",
+    "value": 720,
+    "url": "https://www.cycleworldmiami.com/product/serfas-quest-750ws-947076-1.htm",
+    "quote": "- Battery: LG5000mah, 48V 15ah",
+    "basis": "48V x 15Ah"
+   },
+   {
+    "kind": "retailer",
+    "value": 720,
+    "url": "https://www.globalbikes.info/product/serfas-quest-750ws-947076-1.htm",
+    "quote": "- Motor: Bafang RMG062 , 48V 750W ⟶ - Battery: LG5000mah, 48V 15ah",
+    "basis": "48V x 15Ah"
+   }
   ],
   "range": [
-   {"kind": "retailer", "value": "35–40", "url": "https://www.cycleworldmiami.com/product/serfas-quest-750ws-947076-1.htm", "quote": "- Range: 35-40 Miles"}
+   {
+    "kind": "retailer",
+    "value": "35–40",
+    "url": "https://www.cycleworldmiami.com/product/serfas-quest-750ws-947076-1.htm",
+    "quote": "- Range: 35-40 Miles"
+   },
+   {
+    "kind": "retailer",
+    "value": "35–40",
+    "url": "https://www.globalbikes.info/product/serfas-quest-750ws-947076-1.htm",
+    "quote": "- Range: 35-40 Miles ⟶ - Max Speed: 28 mph (Pedal Assist)"
+   }
   ],
   "wt": [
-   {"kind": "retailer", "value": null, "url": "https://www.cycleworldmiami.com/product/serfas-quest-750ws-947076-1.htm", "quote": ""}
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.cycleworldmiami.com/product/serfas-quest-750ws-947076-1.htm",
+    "quote": ""
+   }
   ],
   "load": [
-   {"kind": "retailer", "value": 330, "url": "https://www.cycleworldmiami.com/product/serfas-quest-750ws-947076-1.htm", "quote": "The new Serfas QUEST has a 750W rear hub motor that provides a max speed of 28mph. The frame design includes an extended wheelbase and integrated rear cargo rack with a total max load capacity of 330lbs.", "basis": "total"}
+   {
+    "kind": "retailer",
+    "value": 330,
+    "url": "https://www.cycleworldmiami.com/product/serfas-quest-750ws-947076-1.htm",
+    "quote": "The new Serfas QUEST has a 750W rear hub motor that provides a max speed of 28mph. The frame design includes an extended wheelbase and integrated rear cargo rack with a total max load capacity of 330lbs.",
+    "basis": "total"
+   },
+   {
+    "kind": "retailer",
+    "value": 330,
+    "url": "https://www.globalbikes.info/product/serfas-quest-750ws-947076-1.htm",
+    "quote": "- Load Capacity: 330 LBS ⟶ Reviews",
+    "basis": "description calls it 'total max load capacity of 330lbs'"
+   }
   ],
   "motor": [
-   {"kind": "retailer", "value": "750W Bafang RMG062 rear hub", "url": "https://www.cycleworldmiami.com/product/serfas-quest-750ws-947076-1.htm", "quote": "The new Serfas QUEST has a 750W rear hub motor that provides a max speed of 28mph. The frame design includes an extended wheelbase and integrated rear cargo rack with a total max load capacity of 330lbs."}
+   {
+    "kind": "retailer",
+    "value": "750W Bafang RMG062 rear hub",
+    "url": "https://www.cycleworldmiami.com/product/serfas-quest-750ws-947076-1.htm",
+    "quote": "The new Serfas QUEST has a 750W rear hub motor that provides a max speed of 28mph. The frame design includes an extended wheelbase and integrated rear cargo rack with a total max load capacity of 330lbs."
+   },
+   {
+    "kind": "retailer",
+    "value": "750W Bafang RMG062 rear hub",
+    "url": "https://www.globalbikes.info/product/serfas-quest-750ws-947076-1.htm",
+    "quote": "The new Serfas QUEST has a 750W rear hub motor that provides a max speed of 28mph. The frame design includes an extended wheelbase and integrated rear cargo rack with a total max load capacity of 330lbs."
+   }
   ],
   "height": [
-   {"kind": "retailer", "value": null, "url": "https://www.cycleworldmiami.com/product/serfas-quest-750ws-947076-1.htm", "quote": ""}
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.cycleworldmiami.com/product/serfas-quest-750ws-947076-1.htm",
+    "quote": ""
+   }
   ],
   "fold": [
-   {"kind": "retailer", "value": "No", "url": "https://www.cycleworldmiami.com/product/serfas-quest-750ws-947076-1.htm", "quote": "The new Serfas QUEST has a 750W rear hub motor that provides a max speed of 28mph. The frame design includes an extended wheelbase and integrated rear cargo rack with a total max load capacity of 330lbs.", "basis": "long-wheelbase cargo frame; no folding mentioned"}
+   {
+    "kind": "retailer",
+    "value": "No",
+    "url": "https://www.cycleworldmiami.com/product/serfas-quest-750ws-947076-1.htm",
+    "quote": "The new Serfas QUEST has a 750W rear hub motor that provides a max speed of 28mph. The frame design includes an extended wheelbase and integrated rear cargo rack with a total max load capacity of 330lbs.",
+    "basis": "long-wheelbase cargo frame; no folding mentioned"
+   },
+   {
+    "kind": "retailer",
+    "value": "No",
+    "url": "https://www.globalbikes.info/product/serfas-quest-750ws-947076-1.htm",
+    "quote": "The new Serfas QUEST has a 750W rear hub motor that provides a max speed of 28mph. The frame design includes an extended wheelbase and integrated rear cargo rack with a total max load capacity of 330lbs.",
+    "basis": "long-wheelbase cargo frame; no folding mentioned"
+   }
   ]
  },
- "status": {"sources": []},
- "notes": "NO MAKER SOURCE: the given src https://serfas.com/products/quest-750w redirects to the serfas.com homepage, and the maker's old link (serfas.com/?p=73146) does too. The maker's Cargo collection now lists only the 'QUEST Passanger Kit' accessory, not the bike, and the store catalog has no Quest bike product — likely pulled from sale, but the maker doesn't say 'discontinued', so status is left empty. Only source is dealer Cycle World Miami ('Quest 750Ws'), which shows no price or weight. Motor model from same page: '- Motor: Bafang RMG062 , 48V 750W'. Load 330 lb is stated as 'total max load capacity'. Several spam/scraper sites in search results were ignored."}
+ "status": {
+  "sources": []
+ },
+ "notes": "NO MAKER SOURCE: the given src https://serfas.com/products/quest-750w redirects to the serfas.com homepage, and the maker's old link (serfas.com/?p=73146) does too. The maker's Cargo collection now lists only the 'QUEST Passanger Kit' accessory, not the bike, and the store catalog has no Quest bike product — likely pulled from sale, but the maker doesn't say 'discontinued', so status is left empty. Only source is dealer Cycle World Miami ('Quest 750Ws'), which shows no price or weight. Motor model from same page: '- Motor: Bafang RMG062 , 48V 750W'. Load 330 lb is stated as 'total max load capacity'. Several spam/scraper sites in search results were ignored. recheck: Global Bikes (AZ dealer) Quest page has the same dealer-catalog text as Cycle World Miami (28 mph PAS / 20 mph throttle, 48V 15Ah, 35-40 mi, 330 lb, Bafang RMG062 750W), no price. Maker old link serfas.com/?p=73146 still lands on the home page; Trailhead Cycling doesn't carry it; 1 WebSearch."
+}

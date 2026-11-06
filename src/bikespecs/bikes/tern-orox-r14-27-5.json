@@ -2,11 +2,13 @@
  "fields": {
   "price": [
    {"kind": "maker", "value": null, "url": "https://www.ternbicycles.com/us/bikes/471/orox-r14-275", "quote": "$6,999 (SALE PRICE) ⟶ WHY OROX SPECS ACCESSORIES SUPPORT FIND A DEALER BUY", "basis": "maker shows only a sale price, no regular price"},
-   {"kind": "retailer", "value": 8999, "url": "https://www.seattleelectricbike.net/products/tern-orox-r14", "quote": "Regular price ⟶ $8,999.00", "basis": "regular price; dealer sale price $6,999.00"}
+   {"kind": "retailer", "value": 8999, "url": "https://www.seattleelectricbike.net/products/tern-orox-r14", "quote": "Regular price ⟶ $8,999.00", "basis": "regular price; dealer sale price $6,999.00"},
+   {"kind": "maker", "value": 8249, "url": "https://store.ternbicycles.com/products/orox-r14", "quote": "$6,999.00 ⟶ $8,249.00", "basis": "Tern's own US online store; $8,249.00 is the compare-at (crossed-out) regular price, $6,999.00 is the sale price; 27.5\" Johnny Watts tires"}
   ],
   "cls": [
    {"kind": "maker", "value": null, "url": "https://www.ternbicycles.com/us/bikes/471/orox-r14-275", "quote": "", "basis": "maker page gives no class; only \"max speed 20 mph (US)\""},
-   {"kind": "retailer", "value": null, "url": "https://www.seattleelectricbike.net/products/tern-orox-r14", "quote": "", "basis": "no class given"}
+   {"kind": "retailer", "value": null, "url": "https://www.seattleelectricbike.net/products/tern-orox-r14", "quote": "", "basis": "no class given"},
+   {"kind": "review", "value": 1, "url": "https://www.bikeride.com/tern-orox/", "quote": "CLASS ⟶ Class 1", "basis": "BikeRide Orox family page covering both builds (R14 and S12, 27.5\" tires); also lists TOP SPEED 20 mph"}
   ],
   "spd": [
    {"kind": "maker", "value": 20, "url": "https://www.ternbicycles.com/us/bikes/471/orox-r14-275", "quote": "MOTOR: ⟶ Bosch Performance CX, max speed 20 mph (US)"},
@@ -46,4 +48,5 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Maker page shows only '$6,999 (SALE PRICE)'; regular $8,999 from Seattle Electric Bike (US dealer; its page lists 27.5\" x 4\" Johnny Watts tires, so it's the 27.5\" version). Weight disagrees: maker 'M: 37.7 kg (83.1 lb)' vs dealer 'Medium, 74.5lb' (same figure dealer shows for the S12). Amego's 'Orox R14 800 Wh' page was not used: it lists 29\" x 2.6\" tires (likely the 29\" variant) and 76.9 lb. No e-bike class given (20 mph, no throttle). Maker highlights say GVW '210 kg (462 lb)', spec table '210 kg (463 lb)'."}
+ "notes": "Maker page shows only '$6,999 (SALE PRICE)'; regular $8,999 from Seattle Electric Bike (US dealer; its page lists 27.5\" x 4\" Johnny Watts tires, so it's the 27.5\" version). Weight disagrees: maker 'M: 37.7 kg (83.1 lb)' vs dealer 'Medium, 74.5lb' (same figure dealer shows for the S12). Amego's 'Orox R14 800 Wh' page was not used: it lists 29\" x 2.6\" tires (likely the 29\" variant) and 76.9 lb. No e-bike class given (20 mph, no throttle). Maker highlights say GVW '210 kg (462 lb)', spec table '210 kg (463 lb)'. | recheck: Tern US store regular price $8,249 (sale $6,999), differs from Seattle Electric Bike's $8,999; BikeRide Orox page states Class 1."
+}

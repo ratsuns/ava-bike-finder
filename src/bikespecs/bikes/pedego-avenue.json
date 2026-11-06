@@ -1,6 +1,4 @@
-{
- "bike": "Pedego|Avenue",
- "checked": "2026-11-06",
+{"bike": "Pedego|Avenue", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1999, "url": "https://pedegoelectricbikes.com/products/avenue", "quote": "$1,999.00 ⟶ CHOOSE OPTIONS"},
@@ -8,7 +6,8 @@
   ],
   "cls": [
    {"kind": "maker", "value": null, "url": "https://pedegoelectricbikes.com/products/avenue", "quote": "SPEED ⟶ 20 MPH", "basis": "maker states 20 mph but no class or throttle on this page"},
-   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/pedego-avenue-review/", "quote": "BIKE CLASS: ⟶ CLASS 2: PAS/THROTTLE ASSIST, UP TO 20 MPH"}
+   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/pedego-avenue-review/", "quote": "BIKE CLASS: ⟶ CLASS 2: PAS/THROTTLE ASSIST, UP TO 20 MPH"},
+   {"kind": "review", "value": 2, "url": "https://upway.co/blogs/news/pedego-avenue-ebike-review", "quote": "Maximum Assistance: Class 2 throttle and pedal-assist up to 20 mph / 32 km/h (Gen 1 default) or dual Class 2 unlockable to Class 3 pedal-assist up to 28 mph / 45 km/h via authorized dealer app programming (Gen 2)", "basis": "Gen 1 (45Nm, 48V 10.4Ah/14Ah, matching Pedego's Avenue page) is Class 2"}
   ],
   "spd": [
    {"kind": "maker", "value": 20, "url": "https://pedegoelectricbikes.com/products/avenue", "quote": "SPEED ⟶ 20 MPH"},
@@ -46,5 +45,4 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Maker page displays $1,999 but its Shopify product data says 115000 (=$1,150) for spoke wheels / 135000 for mag wheels; most variants unavailable and the 14Ah battery option is SOLD OUT. Maker page doesn't state class or throttle; EBReport says Class 2 with twist throttle. Maker weight is frame-without-battery plus battery listed separately (summed). Payload is 400 lb with mag wheels per EBReport."
-}
+ "notes": "Maker page displays $1,999 but its Shopify product data says 115000 (=$1,150) for spoke wheels / 135000 for mag wheels; most variants unavailable and the 14Ah battery option is SOLD OUT. Maker page doesn't state class or throttle; EBReport says Class 2 with twist throttle. Maker weight is frame-without-battery plus battery listed separately (summed). Payload is 400 lb with mag wheels per EBReport. Recheck: looked at Pedego Avenue page full text incl. hidden spec tabs (20 MPH, no class or throttle line), one web search, Upway Avenue review (Gen 1 = Class 2 throttle, 20 mph)."}

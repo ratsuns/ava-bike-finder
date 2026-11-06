@@ -26,7 +26,8 @@
   ],
   "wt": [
    {"kind": "maker", "value": null, "url": "https://surlybikes.com/products/big-easy", "quote": "", "basis": "maker page (Build Kit/Geometry) lists no bike weight"},
-   {"kind": "review", "value": 74, "url": "https://bikepacking.com/news/2024-surly-big-easy/", "quote": "The 2024 Surly Big Easy comes in three sizes (small, medium, and large), weighs in at 74 pounds (size medium), and is only offered as a complete build for $5,499 USD. Head over to SurlyBikes.com or stop by your local Surly dealer to learn more. ⟶ FURTHER READING", "basis": "size medium; battery not mentioned either way"}
+   {"kind": "review", "value": 74, "url": "https://bikepacking.com/news/2024-surly-big-easy/", "quote": "The 2024 Surly Big Easy comes in three sizes (small, medium, and large), weighs in at 74 pounds (size medium), and is only offered as a complete build for $5,499 USD. Head over to SurlyBikes.com or stop by your local Surly dealer to learn more. ⟶ FURTHER READING", "basis": "size medium; battery not mentioned either way"},
+   {"kind": "review", "value": 74, "url": "https://99spokes.com/bikes/surly/2024/big-easy", "quote": "Weight74.0 lbs ⟶ FrameSteel", "basis": "99 Spokes spec page for the 2024 Big Easy (Bosch Performance Line Cargo, 725Wh); does not say whether battery is included"}
   ],
   "load": [
    {"kind": "maker", "value": 400, "url": "https://surlybikes.com/products/big-easy", "quote": "Gross Payload ⟶ 400lb max total rider + cargo", "basis": "rider plus cargo (not including bike)"},
@@ -46,4 +47,5 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Maker page has no bike weight; 74 lb comes only from bikepacking.com (2024 model, same 725Wh/Performance Line Cargo build). EBR's Big Easy review is the 2019 model (Performance Line CX, PowerPack 500, $5000) — older generation, not used. EBReport only has old news posts. Independent source found via one WebSearch. Maker rider-height converted from cm (140-194 cm). Maker site banner says online ordering is down."}
+ "notes": "Maker page has no bike weight; 74 lb comes only from bikepacking.com (2024 model, same 725Wh/Performance Line Cargo build). EBR's Big Easy review is the 2019 model (Performance Line CX, PowerPack 500, $5000) — older generation, not used. EBReport only has old news posts. Independent source found via one WebSearch. Maker rider-height converted from cm (140-194 cm). Maker site banner says online ordering is down. | recheck: Surly page has no bike weight in its specs (only Shopify shipping weight in page data, not used); EBR and Electrek only cover the 2019 Big Easy (EBR: 68.5 lbs, older Bosch CX/500 model, not used); 99 Spokes 2024 page: 74.0 lbs."
+}

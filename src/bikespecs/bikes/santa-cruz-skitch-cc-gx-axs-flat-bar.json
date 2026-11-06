@@ -1,47 +1,179 @@
-{"bike": "Santa Cruz|Skitch CC GX AXS Flat Bar", "checked": "2026-11-06",
+{
+ "bike": "Santa Cruz|Skitch CC GX AXS Flat Bar",
+ "checked": "2026-11-06",
  "fields": {
   "price": [
-   {"kind": "maker", "value": 8149, "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-gx-axs-flat-bar-2026-1-1", "quote": "$8,149.00 USD ⟶ Carbon CC Frame"},
-   {"kind": "retailer", "value": 8149, "url": "https://mikesbikes.com/products/santa-cruz-skitch-gx-axs-flat-bar-480-wh", "quote": "Regular price ⟶ $8,149.00", "basis": "regular price; on sale for $6,949 at Mike's"}
+   {
+    "kind": "maker",
+    "value": 8149,
+    "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-gx-axs-flat-bar-2026-1-1",
+    "quote": "$8,149.00 USD ⟶ Carbon CC Frame"
+   },
+   {
+    "kind": "retailer",
+    "value": 8149,
+    "url": "https://mikesbikes.com/products/santa-cruz-skitch-gx-axs-flat-bar-480-wh",
+    "quote": "Regular price ⟶ $8,149.00",
+    "basis": "regular price; on sale for $6,949 at Mike's"
+   }
   ],
   "cls": [
-   {"kind": "maker", "value": 3, "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-gx-axs-flat-bar-2026-1-1", "quote": "In the US, the Skitch is considered a Class 3 ebike with a 28mph max speed.", "basis": "maker FAQ: Class 3, 28 mph, no throttle"},
-   {"kind": "retailer", "value": 3, "url": "https://mikesbikes.com/products/santa-cruz-skitch-gx-axs-flat-bar-480-wh", "quote": "Max Assisted Speed ⟶ 28 mph", "basis": "28 mph assisted = Class 3"}
+   {
+    "kind": "maker",
+    "value": 3,
+    "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-gx-axs-flat-bar-2026-1-1",
+    "quote": "In the US, the Skitch is considered a Class 3 ebike with a 28mph max speed.",
+    "basis": "maker FAQ: Class 3, 28 mph, no throttle"
+   },
+   {
+    "kind": "retailer",
+    "value": 3,
+    "url": "https://mikesbikes.com/products/santa-cruz-skitch-gx-axs-flat-bar-480-wh",
+    "quote": "Max Assisted Speed ⟶ 28 mph",
+    "basis": "28 mph assisted = Class 3"
+   }
   ],
   "spd": [
-   {"kind": "maker", "value": 28, "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-gx-axs-flat-bar-2026-1-1", "quote": "In the US, the Skitch is considered a Class 3 ebike with a 28mph max speed."},
-   {"kind": "retailer", "value": 28, "url": "https://mikesbikes.com/products/santa-cruz-skitch-gx-axs-flat-bar-480-wh", "quote": "Max Assisted Speed ⟶ 28 mph"}
+   {
+    "kind": "maker",
+    "value": 28,
+    "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-gx-axs-flat-bar-2026-1-1",
+    "quote": "In the US, the Skitch is considered a Class 3 ebike with a 28mph max speed."
+   },
+   {
+    "kind": "retailer",
+    "value": 28,
+    "url": "https://mikesbikes.com/products/santa-cruz-skitch-gx-axs-flat-bar-480-wh",
+    "quote": "Max Assisted Speed ⟶ 28 mph"
+   }
   ],
   "tq": [
-   {"kind": "maker", "value": null, "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-gx-axs-flat-bar-2026-1-1", "quote": ""},
-   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/santa-cruz-skitch-gx-axs-flat-bar-480-wh", "quote": ""}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-gx-axs-flat-bar-2026-1-1",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://mikesbikes.com/products/santa-cruz-skitch-gx-axs-flat-bar-480-wh",
+    "quote": ""
+   },
+   {
+    "kind": "maker",
+    "value": 60,
+    "url": "https://www.santacruzbicycles.com/cdn/shop/files/Fazua_Ride_60_User_Manual_English.pdf?v=3798883192847462864",
+    "quote": "s upport torque, max.   →   60   n m",
+    "basis": "Fazua Ride 60 drive-unit manual linked from the maker's Skitch page (data sheet, text as extracted from the PDF)"
+   },
+   {
+    "kind": "review",
+    "value": 60,
+    "url": "https://upway.co/blogs/news/santa-cruz-skitch-review",
+    "quote": "Maximum Torque\t60Nm ⟶ Battery\tFazua 480Wh integrated battery",
+    "basis": "Upway review of the Skitch Carbon CC (480Wh), not build-specific"
+   }
   ],
   "wh": [
-   {"kind": "maker", "value": 480, "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-gx-axs-flat-bar-2026-1-1", "quote": "Battery ⟶ Fazua 480Wh Integrated Battery", "basis": "spec table; the page's generic features list says \"430 Wh Battery\""},
-   {"kind": "retailer", "value": 480, "url": "https://mikesbikes.com/products/santa-cruz-skitch-gx-axs-flat-bar-480-wh", "quote": "Battery\tFazua 480Wh Integrated Battery"}
+   {
+    "kind": "maker",
+    "value": 480,
+    "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-gx-axs-flat-bar-2026-1-1",
+    "quote": "Battery ⟶ Fazua 480Wh Integrated Battery",
+    "basis": "spec table; the page's generic features list says \"430 Wh Battery\""
+   },
+   {
+    "kind": "retailer",
+    "value": 480,
+    "url": "https://mikesbikes.com/products/santa-cruz-skitch-gx-axs-flat-bar-480-wh",
+    "quote": "Battery\tFazua 480Wh Integrated Battery"
+   }
   ],
   "range": [
-   {"kind": "maker", "value": null, "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-gx-axs-flat-bar-2026-1-1", "quote": ""},
-   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/santa-cruz-skitch-gx-axs-flat-bar-480-wh", "quote": ""}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-gx-axs-flat-bar-2026-1-1",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://mikesbikes.com/products/santa-cruz-skitch-gx-axs-flat-bar-480-wh",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": "75",
+    "url": "https://upway.co/blogs/news/santa-cruz-skitch-review",
+    "quote": "Claimed Range\tUp to 75 miles (120km) under ideal riding conditions ⟶ Maximum Assisted Speed\t20mph (US) / 25km/h (UK & EU)",
+    "basis": "Upway's statement of the maker's claim; reviewer thinks 30-50 mi is realistic. Not build-specific"
+   }
   ],
   "wt": [
-   {"kind": "maker", "value": 33.41, "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-gx-axs-flat-bar-2026-1-1", "quote": "Weight ⟶ 33.41lbs / 15.15kg"},
-   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/santa-cruz-skitch-gx-axs-flat-bar-480-wh", "quote": ""}
+   {
+    "kind": "maker",
+    "value": 33.41,
+    "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-gx-axs-flat-bar-2026-1-1",
+    "quote": "Weight ⟶ 33.41lbs / 15.15kg"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://mikesbikes.com/products/santa-cruz-skitch-gx-axs-flat-bar-480-wh",
+    "quote": ""
+   }
   ],
   "load": [
-   {"kind": "maker", "value": null, "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-gx-axs-flat-bar-2026-1-1", "quote": ""},
-   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/santa-cruz-skitch-gx-axs-flat-bar-480-wh", "quote": ""}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-gx-axs-flat-bar-2026-1-1",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://mikesbikes.com/products/santa-cruz-skitch-gx-axs-flat-bar-480-wh",
+    "quote": ""
+   }
   ],
   "motor": [
-   {"kind": "maker", "value": "Fazua Ride 60", "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-gx-axs-flat-bar-2026-1-1", "quote": "Drive Unit ⟶ Fazua Ride 60"},
-   {"kind": "retailer", "value": "Fazua Ride 60", "url": "https://mikesbikes.com/products/santa-cruz-skitch-gx-axs-flat-bar-480-wh", "quote": "Motor\tFazua Ride 60 ⟶ Battery\tFazua 480Wh Integrated Battery"}
+   {
+    "kind": "maker",
+    "value": "Fazua Ride 60",
+    "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-gx-axs-flat-bar-2026-1-1",
+    "quote": "Drive Unit ⟶ Fazua Ride 60"
+   },
+   {
+    "kind": "retailer",
+    "value": "Fazua Ride 60",
+    "url": "https://mikesbikes.com/products/santa-cruz-skitch-gx-axs-flat-bar-480-wh",
+    "quote": "Motor\tFazua Ride 60 ⟶ Battery\tFazua 480Wh Integrated Battery"
+   }
   ],
   "height": [
-   {"kind": "maker", "value": "5'1\"-6'3\"", "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-gx-axs-flat-bar-2026-1-1", "quote": "S (5'1\" - 5'6\" / 154 - 167cm) | XL (5'10\" - 6'3\" / 177 - 190cm)", "basis": "smallest (S) to largest (XL) size selector labels"}
+   {
+    "kind": "maker",
+    "value": "5'1\"-6'3\"",
+    "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-gx-axs-flat-bar-2026-1-1",
+    "quote": "S (5'1\" - 5'6\" / 154 - 167cm) | XL (5'10\" - 6'3\" / 177 - 190cm)",
+    "basis": "smallest (S) to largest (XL) size selector labels"
+   }
   ],
   "fold": [
-   {"kind": "maker", "value": "No", "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-gx-axs-flat-bar-2026-1-1", "quote": "Carbon CC Frame", "basis": "rigid carbon frame; no folding mentioned"}
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://www.santacruzbicycles.com/collections/skitch/products/skitch-gx-axs-flat-bar-2026-1-1",
+    "quote": "Carbon CC Frame",
+    "basis": "rigid carbon frame; no folding mentioned"
+   }
   ]
  },
- "status": {"sources": []},
- "notes": "Maker page's features block says '430 Wh Battery' but the spec table says 'Fazua 480Wh Integrated Battery'; Mike's Bikes lists this $8,149 build as the 480 Wh version (a 430 Wh version is $8,049), so 480 recorded. Class/speed quote comes from the maker FAQ (accordion text), which also says 'There is no throttle. The Skitch is pedal assist only.' No torque, range or payload published. No EBR/Electrek review found."}
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker page's features block says '430 Wh Battery' but the spec table says 'Fazua 480Wh Integrated Battery'; Mike's Bikes lists this $8,149 build as the 480 Wh version (a 430 Wh version is $8,049), so 480 recorded. Class/speed quote comes from the maker FAQ (accordion text), which also says 'There is no throttle. The Skitch is pedal assist only.' No torque, range or payload published. No EBR/Electrek review found. recheck: maker page full text incl. FAQ (no range/torque stated; FAQ says US Class 3, 28 mph), Fazua Ride 60 manual PDF on maker site (60 Nm max), Upway Skitch review (60Nm, 480Wh, claimed up to 75 mi; its comparison table says 430Wh, so it is not fully consistent), Electric Bike Report first look (60Nm, '60 mi. or more' range, but for the original 430Wh Skitch, so not used for range), Contender Bicycles pages 404, 1 WebSearch shared across the four Skitch builds."
+}

@@ -2,7 +2,8 @@
  "fields": {
   "price": [
    {"kind": "maker", "value": null, "url": "https://www.ternbicycles.com/us/bikes/471/nbd-s5i", "quote": "$3,899 (SALE PRICE)", "basis": "maker shows only a sale price; no regular price on the page"},
-   {"kind": "retailer", "value": null, "url": "https://www.amegoev.com/products/tern-nbd-s5i", "quote": "Regular price ⟶ $6,999.00 CAD", "basis": "Canadian dealer, CAD only"}
+   {"kind": "retailer", "value": null, "url": "https://www.amegoev.com/products/tern-nbd-s5i", "quote": "Regular price ⟶ $6,999.00 CAD", "basis": "Canadian dealer, CAD only"},
+   {"kind": "retailer", "value": 4499, "url": "https://www.seattleelectricbike.net/products/tern-nbd-s8i", "quote": "Regular price ⟶ $4,499.00", "basis": "US dealer Seattle Electric Bike, page titled 'Tern NBD S5i' (URL handle says s8i); regular price, sale price $3,899.00"}
   ],
   "cls": [
    {"kind": "maker", "value": 1, "url": "https://www.ternbicycles.com/us/bikes/471/nbd-s5i", "quote": "Bosch Performance, 300% Assist, 65 Nm Torque, max speed 25 kph (EU); max speed 20 mph (US) ⟶ BATTERY:", "basis": "20 mph pedal assist, no throttle listed = Class 1 (class not stated on page)"}
@@ -45,4 +46,5 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Maker page shows only '$3,899 (SALE PRICE)' with no regular price, so price left null; Amego (Canadian dealer) gives CAD prices only. Class not stated by maker: 20 mph, no throttle -> Class 1. Max load is the max gross vehicle weight (total); max rider 264.6 lb; rack 60 lb. Maker lists 'FOLDING SIZE' (stem folds) but the frame does not fold. Amego's text mentions an 'Enviolo hub' in one blurb but its spec list says Shimano Nexus 5-speed (not a spec we record)."}
+ "notes": "Maker page shows only '$3,899 (SALE PRICE)' with no regular price, so price left null; Amego (Canadian dealer) gives CAD prices only. Class not stated by maker: 20 mph, no throttle -> Class 1. Max load is the max gross vehicle weight (total); max rider 264.6 lb; rack 60 lb. Maker lists 'FOLDING SIZE' (stem folds) but the frame does not fold. Amego's text mentions an 'Enviolo hub' in one blurb but its spec list says Shimano Nexus 5-speed (not a spec we record). | recheck: Seattle Electric Bike (US dealer, page 'Tern NBD S5i') lists regular $4,499 (sale $3,899) - the site's 3899 matches the sale price; NBD is not in Tern's US online store."
+}

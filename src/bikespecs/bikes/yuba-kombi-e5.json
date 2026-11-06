@@ -1,53 +1,199 @@
-{"bike": "Yuba|Kombi E5", "checked": "2026-11-06",
+{
+ "bike": "Yuba|Kombi E5",
+ "checked": "2026-11-06",
  "fields": {
   "price": [
-   {"kind": "maker", "value": 2999.99, "url": "https://yubabikes.com/product/kombi-e5/", "quote": "Original price was: $2,999.99. ⟶ $2,399.99", "basis": "crossed-out price; $2,399.99 is the current sale price"},
-   {"kind": "retailer", "value": 3299.99, "url": "https://mikesbikes.com/products/yuba-kombi-e5", "quote": "Regular price ⟶ $3,299.99", "basis": "dealer regular price; sale price $2,499.95"},
-   {"kind": "review", "value": 2999, "url": "https://99spokes.com/bikes/yuba/2024/kombi-e5", "quote": "Manufacturer Price ⟶ $2,999"}
+   {
+    "kind": "maker",
+    "value": 2999.99,
+    "url": "https://yubabikes.com/product/kombi-e5/",
+    "quote": "Original price was: $2,999.99. ⟶ $2,399.99",
+    "basis": "crossed-out price; $2,399.99 is the current sale price"
+   },
+   {
+    "kind": "retailer",
+    "value": 3299.99,
+    "url": "https://mikesbikes.com/products/yuba-kombi-e5",
+    "quote": "Regular price ⟶ $3,299.99",
+    "basis": "dealer regular price; sale price $2,499.95"
+   },
+   {
+    "kind": "review",
+    "value": 2999,
+    "url": "https://99spokes.com/bikes/yuba/2024/kombi-e5",
+    "quote": "Manufacturer Price ⟶ $2,999"
+   }
   ],
   "cls": [
-   {"kind": "maker", "value": null, "url": "https://yubabikes.com/product/kombi-e5/", "quote": ""},
-   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/yuba-kombi-e5", "quote": "Max Assisted Speed ⟶ 20 mph", "basis": "no class stated; 20 mph assist, no throttle mentioned anywhere (would be Class 1)"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://yubabikes.com/product/kombi-e5/",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://mikesbikes.com/products/yuba-kombi-e5",
+    "quote": "Max Assisted Speed ⟶ 20 mph",
+    "basis": "no class stated; 20 mph assist, no throttle mentioned anywhere (would be Class 1)"
+   }
   ],
   "spd": [
-   {"kind": "maker", "value": null, "url": "https://yubabikes.com/product/kombi-e5/", "quote": ""},
-   {"kind": "retailer", "value": 20, "url": "https://mikesbikes.com/products/yuba-kombi-e5", "quote": "Max Assisted Speed ⟶ 20 mph"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://yubabikes.com/product/kombi-e5/",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": 20,
+    "url": "https://mikesbikes.com/products/yuba-kombi-e5",
+    "quote": "Max Assisted Speed ⟶ 20 mph"
+   },
+   {
+    "kind": "review",
+    "value": 20,
+    "url": "https://bikerumor.com/yuba-powers-up-kombi-e5-compact-cargo-bike-for-entry-level-hauling-by-bike/",
+    "quote": "Built around the Shimano STEPS E5000 mid-drive motor and a 418Wh battery on the downtube, the bike will provide assist up to 20mph."
+   }
   ],
   "tq": [
-   {"kind": "maker", "value": 40, "url": "https://yubabikes.com/product/kombi-e5/", "quote": "The Kombi E5 is powered by a Shimano E5000 engine delivering 40Nm of torque and a 418Wh battery. The Kombi E6 is powered by a Shimano E6100 engine delivering 60Nm of torque and a 504Wh battery. ⟶ How many children can I transport on the Kombi?"},
-   {"kind": "review", "value": 40, "url": "https://99spokes.com/bikes/yuba/2024/kombi-e5", "quote": "MotorShimano 250W 40Nm mid-drive ⟶ BatteryShimano 418Wh"}
+   {
+    "kind": "maker",
+    "value": 40,
+    "url": "https://yubabikes.com/product/kombi-e5/",
+    "quote": "The Kombi E5 is powered by a Shimano E5000 engine delivering 40Nm of torque and a 418Wh battery. The Kombi E6 is powered by a Shimano E6100 engine delivering 60Nm of torque and a 504Wh battery. ⟶ How many children can I transport on the Kombi?"
+   },
+   {
+    "kind": "review",
+    "value": 40,
+    "url": "https://99spokes.com/bikes/yuba/2024/kombi-e5",
+    "quote": "MotorShimano 250W 40Nm mid-drive ⟶ BatteryShimano 418Wh"
+   }
   ],
   "wh": [
-   {"kind": "maker", "value": 418, "url": "https://yubabikes.com/product/kombi-e5/", "quote": "Motor ⟶ Shimano Steps E5000 - 418Wh Battery"},
-   {"kind": "retailer", "value": 418, "url": "https://mikesbikes.com/products/yuba-kombi-e5", "quote": "Battery\t418Wh Battery ⟶ Display/Controller"},
-   {"kind": "review", "value": 418, "url": "https://99spokes.com/bikes/yuba/2024/kombi-e5", "quote": "BatteryShimano 418Wh ⟶ BrakesShimano Hydraulic Disc"}
+   {
+    "kind": "maker",
+    "value": 418,
+    "url": "https://yubabikes.com/product/kombi-e5/",
+    "quote": "Motor ⟶ Shimano Steps E5000 - 418Wh Battery"
+   },
+   {
+    "kind": "retailer",
+    "value": 418,
+    "url": "https://mikesbikes.com/products/yuba-kombi-e5",
+    "quote": "Battery\t418Wh Battery ⟶ Display/Controller"
+   },
+   {
+    "kind": "review",
+    "value": 418,
+    "url": "https://99spokes.com/bikes/yuba/2024/kombi-e5",
+    "quote": "BatteryShimano 418Wh ⟶ BrakesShimano Hydraulic Disc"
+   }
   ],
   "range": [
-   {"kind": "maker", "value": null, "url": "https://yubabikes.com/product/kombi-e5/", "quote": ""},
-   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/yuba-kombi-e5", "quote": ""},
-   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/yuba/2024/kombi-e5", "quote": ""}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://yubabikes.com/product/kombi-e5/",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://mikesbikes.com/products/yuba-kombi-e5",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://99spokes.com/bikes/yuba/2024/kombi-e5",
+    "quote": ""
+   }
   ],
   "wt": [
-   {"kind": "maker", "value": 65, "url": "https://yubabikes.com/product/kombi-e5/", "quote": "Bike Weight ⟶ 65 lbs"},
-   {"kind": "maker", "value": 65, "url": "https://yubabikes.com/wp-content/uploads/2024/11/Kombi_E5_TechSpecs.pdf", "quote": "Bike Weight | 65 lbs (29.5 kg)"},
-   {"kind": "review", "value": 65, "url": "https://99spokes.com/bikes/yuba/2024/kombi-e5", "quote": "Weight65.0 lbs ⟶ FrameSteel"}
+   {
+    "kind": "maker",
+    "value": 65,
+    "url": "https://yubabikes.com/product/kombi-e5/",
+    "quote": "Bike Weight ⟶ 65 lbs"
+   },
+   {
+    "kind": "maker",
+    "value": 65,
+    "url": "https://yubabikes.com/wp-content/uploads/2024/11/Kombi_E5_TechSpecs.pdf",
+    "quote": "Bike Weight | 65 lbs (29.5 kg)"
+   },
+   {
+    "kind": "review",
+    "value": 65,
+    "url": "https://99spokes.com/bikes/yuba/2024/kombi-e5",
+    "quote": "Weight65.0 lbs ⟶ FrameSteel"
+   }
   ],
   "load": [
-   {"kind": "maker", "value": 440, "url": "https://yubabikes.com/product/kombi-e5/", "quote": "Maximum load ⟶ 440 lbs"},
-   {"kind": "maker", "value": 505, "url": "https://yubabikes.com/wp-content/uploads/2024/11/Kombi_E5_TechSpecs.pdf", "quote": "Max G.V.W.R. | 505 lbs (229 kg)", "basis": "total"},
-   {"kind": "retailer", "value": 440, "url": "https://mikesbikes.com/products/yuba-kombi-e5", "quote": "The Kombi E5 can handle up to 440lbs of cargo — personalize your ride with a great range of add-ons for hauling the kids, or gear, or for the daily ride to work – then surprise everyone by parking it vertically to save space! ⟶ FEATURES:"}
+   {
+    "kind": "maker",
+    "value": 440,
+    "url": "https://yubabikes.com/product/kombi-e5/",
+    "quote": "Maximum load ⟶ 440 lbs"
+   },
+   {
+    "kind": "maker",
+    "value": 505,
+    "url": "https://yubabikes.com/wp-content/uploads/2024/11/Kombi_E5_TechSpecs.pdf",
+    "quote": "Max G.V.W.R. | 505 lbs (229 kg)",
+    "basis": "total"
+   },
+   {
+    "kind": "retailer",
+    "value": 440,
+    "url": "https://mikesbikes.com/products/yuba-kombi-e5",
+    "quote": "The Kombi E5 can handle up to 440lbs of cargo — personalize your ride with a great range of add-ons for hauling the kids, or gear, or for the daily ride to work – then surprise everyone by parking it vertically to save space! ⟶ FEATURES:"
+   }
   ],
   "motor": [
-   {"kind": "maker", "value": "250W Shimano Steps E5000 mid-drive", "url": "https://yubabikes.com/wp-content/uploads/2024/11/Kombi_E5_TechSpecs.pdf", "quote": "Motor System | Shimano Steps E5000 250W, 36V 418Wh Battery"},
-   {"kind": "maker", "value": "Shimano Steps E5000", "url": "https://yubabikes.com/product/kombi-e5/", "quote": "Motor ⟶ Shimano Steps E5000 - 418Wh Battery"},
-   {"kind": "review", "value": "250W Shimano mid-drive", "url": "https://99spokes.com/bikes/yuba/2024/kombi-e5", "quote": "MotorShimano 250W 40Nm mid-drive ⟶ BatteryShimano 418Wh"}
+   {
+    "kind": "maker",
+    "value": "250W Shimano Steps E5000 mid-drive",
+    "url": "https://yubabikes.com/wp-content/uploads/2024/11/Kombi_E5_TechSpecs.pdf",
+    "quote": "Motor System | Shimano Steps E5000 250W, 36V 418Wh Battery"
+   },
+   {
+    "kind": "maker",
+    "value": "Shimano Steps E5000",
+    "url": "https://yubabikes.com/product/kombi-e5/",
+    "quote": "Motor ⟶ Shimano Steps E5000 - 418Wh Battery"
+   },
+   {
+    "kind": "review",
+    "value": "250W Shimano mid-drive",
+    "url": "https://99spokes.com/bikes/yuba/2024/kombi-e5",
+    "quote": "MotorShimano 250W 40Nm mid-drive ⟶ BatteryShimano 418Wh"
+   }
   ],
   "height": [
-   {"kind": "maker", "value": "5'0\"-6'6\"", "url": "https://yubabikes.com/product/kombi-e5/", "quote": "Rider Height ⟶ 5 ft. – 6 ft. 6 in"}
+   {
+    "kind": "maker",
+    "value": "5'0\"-6'6\"",
+    "url": "https://yubabikes.com/product/kombi-e5/",
+    "quote": "Rider Height ⟶ 5 ft. – 6 ft. 6 in"
+   }
   ],
   "fold": [
-   {"kind": "maker", "value": "No", "url": "https://yubabikes.com/product/kombi-e5/", "quote": "Steel Frame with easy Step-Over", "basis": "rigid longtail frame; no folding mentioned"}
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://yubabikes.com/product/kombi-e5/",
+    "quote": "Steel Frame with easy Step-Over",
+    "basis": "rigid longtail frame; no folding mentioned"
+   }
   ]
  },
- "status": {"sources": []},
- "notes": "Maker page has no speed, class or range. Class not stated anywhere; Mike's Bikes says 20 mph max assist and no throttle is mentioned (Shimano E5000 pedal-assist), which would make it Class 1 but no source quotes a class. Maker spec PDF (linked from the product page as 'Full technical specifications') was read by extracting its text in the browser; PDF quotes join the label and value cells with ' | '. Load: product page says 440 lbs max load, PDF gives Max G.V.W.R. 505 lbs (total). Price: maker crossed-out $2,999.99 (sale $2,399.99); Mike's Bikes lists a higher regular price $3,299.99. Mike's site search returned 0 results but the product page exists. Perennial Cycle dealer page showed a bot check (skipped). EBR, Electric Bike Report and N+1 had no Kombi E5 page. 99 Spokes used as the spec-aggregator review source."}
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker page has no speed, class or range. Class not stated anywhere; Mike's Bikes says 20 mph max assist and no throttle is mentioned (Shimano E5000 pedal-assist), which would make it Class 1 but no source quotes a class. Maker spec PDF (linked from the product page as 'Full technical specifications') was read by extracting its text in the browser; PDF quotes join the label and value cells with ' | '. Load: product page says 440 lbs max load, PDF gives Max G.V.W.R. 505 lbs (total). Price: maker crossed-out $2,999.99 (sale $2,399.99); Mike's Bikes lists a higher regular price $3,299.99. Mike's site search returned 0 results but the product page exists. Perennial Cycle dealer page showed a bot check (skipped). EBR, Electric Bike Report and N+1 had no Kombi E5 page. 99 Spokes used as the spec-aggregator review source. Recheck: maker tech-spec PDF (read with pdf.js) has no class/speed; Electrek 2021 launch article and GearJunkie product page have no class/speed; Bikerumor launch article says assist up to 20mph (no class number). One WebSearch used."
+}

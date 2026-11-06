@@ -37,7 +37,8 @@
   ],
   "height": [
    {"kind": "maker", "value": "5'3\"-6'3\"", "url": "https://retrospec.com/products/judd-rev-folding-electric-bike", "quote": "20\"5'3-6'329.5\"", "basis": "sizing table: SIZE 20\", HEIGHT RANGE 5'3-6'3, STANDOVER 29.5\""},
-   {"kind": "review", "value": null, "url": "https://electroheads.com/blogs/e-bike-reviews/retrospec-judd-rev-review-a-lightweight-folding-ebike-for-city-life", "quote": "Not specified (but compact frame suits a wide range of riders) ⟶ Max Rider Weight"}
+   {"kind": "review", "value": null, "url": "https://electroheads.com/blogs/e-bike-reviews/retrospec-judd-rev-review-a-lightweight-folding-ebike-for-city-life", "quote": "Not specified (but compact frame suits a wide range of riders) ⟶ Max Rider Weight"},
+   {"kind": "maker", "value": "5'3\"-6'3\"", "url": "https://retrospec.com/products/judd-rev-folding-electric-bike", "quote": "Top Tube SizeHeight RangeStandover Height 20\" 5'3-6'3 29.5\"", "basis": "hidden Sizing tab text (read via textContent); this URL now shows the 'Judd Rev 2', so it may be the newer generation"}
   ],
   "fold": [
    {"kind": "maker", "value": "Yes", "url": "https://retrospec.com/products/judd-rev-folding-electric-bike", "quote": "Fold up this ebike and put it in your trunk, bring it on your boat, or carry it into your walk-up apartment. Its lightweight aluminum folding frame & components make it the perfect bring-anywhere companion. ⟶ High-Visibility LED Display"},
@@ -45,4 +46,4 @@
   ]
  },
  "status": {"sources": []},
- "notes": "The given src now shows 'Judd Rev 2 Folding Electric Bike' (same handle); all three colors are 'Sold Out' on the maker page (not stated as discontinued). Electroheads (UK, Apr 2025) reviews the 'Judd Rev' with matching 350W/360Wh specs but says ~38 mi range and 41 lb vs maker's 42 mi and 42 lb. No EBR/Best Buy listing; Ace Hardware blocked by bot check. Used 1 WebSearch."}
+ "notes": "The given src now shows 'Judd Rev 2 Folding Electric Bike' (same handle); all three colors are 'Sold Out' on the maker page (not stated as discontinued). Electroheads (UK, Apr 2025) reviews the 'Judd Rev' with matching 350W/360Wh specs but says ~38 mi range and 41 lb vs maker's 42 mi and 42 lb. No EBR/Best Buy listing; Ace Hardware blocked by bot check. Used 1 WebSearch. Recheck: the maker URL now shows 'Judd Rev 2 Folding Electric Bike'; its hidden Sizing tab gives Height Range 5'3-6'3 for the 20\" frame. The Judd Rev 2 2026 manual PDF gives no rider height. Retrospec's help-center weight table lists 'Judd Rev' at 42 lbs."}

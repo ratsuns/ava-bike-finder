@@ -3,7 +3,8 @@
   "price": [
    {"kind": "maker", "value": null, "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-long-d9", "quote": "$3,499 (SALE PRICE) ⟶ WHY QUICK HAUL LONG SPECS ACCESSORIES SUPPORT FIND A DEALER BUY", "basis": "maker shows only a sale price, no regular price"},
    {"kind": "retailer", "value": 3999, "url": "https://www.seattleelectricbike.net/products/tern-quick-haul-long-d9", "quote": "Regular price ⟶ $3,999.00", "basis": "regular price; dealer sale price $3,499.00"},
-   {"kind": "review", "value": null, "url": "https://electricbikereport.com/tern-quick-haul-long-review/", "quote": "", "basis": "review gives no price"}
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/tern-quick-haul-long-review/", "quote": "", "basis": "review gives no price"},
+   {"kind": "maker", "value": 3999, "url": "https://store.ternbicycles.com/products/quick-haul-long-d9", "quote": "$3,499.00 ⟶ $3,999.00", "basis": "Tern's own US online store; $3,999.00 is the compare-at (crossed-out) regular price, $3,499.00 is the sale price"}
   ],
   "cls": [
    {"kind": "maker", "value": null, "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-long-d9", "quote": "", "basis": "maker page gives no class; only \"max speed 20 mph (US)\""},
@@ -48,4 +49,5 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Maker page shows only '$3,499 (SALE PRICE)'; regular $3,999 from Seattle Electric Bike (US dealer). EBReport review of this exact model gives Class 1 and a 250W rating. Rider height: maker highlights 5'1\"-6'3\" (spec table 155-190 cm / 61-74.8 in); EBReport and Seattle dealer give 5'1\"-6'1\" / 61-72.8 in. Load: maker GVW 190 kg (419 lb) total; EBReport 'Total payload capacity' 354 lb is rider+cargo. Max rider 120 kg."}
+ "notes": "Maker page shows only '$3,499 (SALE PRICE)'; regular $3,999 from Seattle Electric Bike (US dealer). EBReport review of this exact model gives Class 1 and a 250W rating. Rider height: maker highlights 5'1\"-6'3\" (spec table 155-190 cm / 61-74.8 in); EBReport and Seattle dealer give 5'1\"-6'1\" / 61-72.8 in. Load: maker GVW 190 kg (419 lb) total; EBReport 'Total payload capacity' 354 lb is rider+cargo. Max rider 120 kg. | recheck: Tern US store regular price $3,999 (sale $3,499) - the site's 3499 is the sale price. No new class source found beyond EBReport."
+}

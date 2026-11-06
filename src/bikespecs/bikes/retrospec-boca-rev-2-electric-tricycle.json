@@ -24,7 +24,8 @@
   ],
   "wt": [
    {"kind": "maker", "value": null, "url": "https://retrospec.com/products/boca-rev-electric-tricycle", "quote": "", "basis": "weight not listed on the Rev 2 page"},
-   {"kind": "review", "value": 85, "url": "https://electricbikereport.com/retrospec-boca-rev-tricycle-review/", "quote": "WEIGHT & DIMENSIONS ⟶ Tested Weight: 85 lbs", "basis": "tested weight of the first-gen Boca Rev; Rev 2 weight unconfirmed"}
+   {"kind": "review", "value": 85, "url": "https://electricbikereport.com/retrospec-boca-rev-tricycle-review/", "quote": "WEIGHT & DIMENSIONS ⟶ Tested Weight: 85 lbs", "basis": "tested weight of the first-gen Boca Rev; Rev 2 weight unconfirmed"},
+   {"kind": "maker", "value": 91, "url": "https://help.retrospec.com/en-US/how-heavy-are-your-ebikes-629616", "quote": "Boca Rev ⟶ 91 lbs", "basis": "Retrospec help-center weight table; listed as 'Boca Rev' with no generation number; differs from the site's 109"}
   ],
   "load": [
    {"kind": "maker", "value": 500, "url": "https://retrospec.com/products/boca-rev-electric-tricycle", "quote": "Recommended Weight Limit ⟶ 350lbs/Rider 500 lbs total", "basis": "500 lb total payload (rider + cargo), max 350 lb rider"},
@@ -44,4 +45,4 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Only independent reviews found are of the first-gen Boca Rev (EBReport and EBR); used EBReport for specs that match the Rev 2 page (class, 14 mph, 500W, 500Wh, 500 lb payload, height, folding frame). Range changed (first-gen claim 49 mi vs Rev 2 75 mi) so the review's range isn't used. EBR's first-gen review lists 28 MPH top speed, contradicting EBReport and the maker's 14 mph, so EBR was not used. Rev 2 maker page doesn't list a weight; 85 lb is the first-gen tested weight. Fold: maker gives folded dimensions (38.5\" vs 63.5\" long), EBReport confirms the first-gen frame folds."}
+ "notes": "Only independent reviews found are of the first-gen Boca Rev (EBReport and EBR); used EBReport for specs that match the Rev 2 page (class, 14 mph, 500W, 500Wh, 500 lb payload, height, folding frame). Range changed (first-gen claim 49 mi vs Rev 2 75 mi) so the review's range isn't used. EBR's first-gen review lists 28 MPH top speed, contradicting EBReport and the maker's 14 mph, so EBR was not used. Rev 2 maker page doesn't list a weight; 85 lb is the first-gen tested weight. Fold: maker gives folded dimensions (38.5\" vs 63.5\" long), EBReport confirms the first-gen frame folds. Recheck: read the V5 Boca Rev 2 manual PDF linked from the product page (spec table has no weight), one web search, Retrospec's help-center weight table ('Boca Rev' 91 lbs, generation not given)."}

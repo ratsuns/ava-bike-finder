@@ -35,7 +35,8 @@
    {"kind": "review", "value": "Bosch cargo mid-drive, 250W", "url": "https://electrek.co/2023/02/17/trek-fetch-plus-2-electric-bike-cargo/", "quote": "The Trek Fetch Plus 2 will use Bosch’s BES3 smart system with the company’s cargo-specific mid-drive motor lineup. Those motors are rated for a continuous 250W of power, though their 80 Nm torque rating betrays the true higher power of the drive system."}
   ],
   "height": [
-   {"kind": "maker", "value": null, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fetch/fetch-2/p/37640/", "quote": "Size: One size fits most", "basis": "no rider height range given"}
+   {"kind": "maker", "value": null, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fetch/fetch-2/p/37640/", "quote": "Size: One size fits most", "basis": "no rider height range given"},
+   {"kind": "maker", "value": "5'3\"-6'3\"", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fetch/fetch-2/p/37640/", "quote": "Size\tRider Height | One size fits most\t160 - 190 cm 5'3\" - 6'3\"", "basis": "maker's collapsed Sizing table (read via textContent); one size"}
   ],
   "fold": [
    {"kind": "maker", "value": "No", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fetch/fetch-2/p/37640/", "quote": "High-performance hydroformed alloy, low-step, Removable Integrated Battery, internal cable routing, Motor Armor, integrated long rear rack ⟶ Fork"},
@@ -43,4 +44,5 @@
   ]
  },
  "status": {"sources": []},
- "notes": "src link redirects to Trek's Fetch+ family page with Fetch+ 2 selected (model 5289855). Maker shows sale $2,999.93 with crossed-out 'Original price' $5,999.99 (recorded). Torque conflict: Trek says 85 Nm, Electrek's 2023 launch article says 80 Nm. Load is maker's max total weight (bike+rider+cargo). Only one independent source (Electrek launch article); EBR/EBReport have no Fetch+ review. No rider height published ('One size fits most')."}
+ "notes": "src link redirects to Trek's Fetch+ family page with Fetch+ 2 selected (model 5289855). Maker shows sale $2,999.93 with crossed-out 'Original price' $5,999.99 (recorded). Torque conflict: Trek says 85 Nm, Electrek's 2023 launch article says 80 Nm. Load is maker's max total weight (bike+rider+cargo). Only one independent source (Electrek launch article); EBR/EBReport have no Fetch+ review. No rider height published ('One size fits most'). | recheck: maker page's collapsed Sizing table gives Rider Height 160-190 cm / 5'3\"-6'3\" (one size)."
+}

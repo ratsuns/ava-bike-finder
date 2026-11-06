@@ -1,48 +1,175 @@
-{"bike": "LarryvsHarry|eBullitt EP801", "checked": "2026-11-06",
+{
+ "bike": "LarryvsHarry|eBullitt EP801",
+ "checked": "2026-11-06",
  "fields": {
   "price": [
-   {"kind": "maker", "value": null, "url": "https://larryvsharry.com/products/ebullitt-ep801", "quote": "FROM € 6,760", "basis": "maker shows EUR only, no USD price"},
-   {"kind": "retailer", "value": 8500, "url": "https://splendid-cycles.squarespace.com/ebullitt-from-larry-vs-harry", "quote": "Shimano XT drivetrain paired with the new Shimano STEPS EP801 E-Cargo system gives plenty of power (85Nm) along with other ride enhancing features. With 630 WH Battery - Starting at $8500 ⟶ E-Bullitt-X (long) CUES 11sp Di2 STEPS EP600 ** SOLD OUT**", "basis": "US dealer (Splendid Cycles, Portland) starting price, XT Di2 build"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://larryvsharry.com/products/ebullitt-ep801",
+    "quote": "FROM € 6,760",
+    "basis": "maker shows EUR only, no USD price"
+   },
+   {
+    "kind": "retailer",
+    "value": 8500,
+    "url": "https://splendid-cycles.squarespace.com/ebullitt-from-larry-vs-harry",
+    "quote": "Shimano XT drivetrain paired with the new Shimano STEPS EP801 E-Cargo system gives plenty of power (85Nm) along with other ride enhancing features. With 630 WH Battery - Starting at $8500 ⟶ E-Bullitt-X (long) CUES 11sp Di2 STEPS EP600 ** SOLD OUT**",
+    "basis": "US dealer (Splendid Cycles, Portland) starting price, XT Di2 build"
+   }
   ],
   "cls": [
-   {"kind": "maker", "value": 1, "url": "https://larryvsharry.com/products/ebullitt-ep801", "quote": "MAXIMUM ASSISTED SPEED | 25 km/h", "basis": "Shimano EP801 pedal assist, no throttle listed; EU-spec 25 km/h (US bikes would be 20 mph), so Class 1"}
+   {
+    "kind": "maker",
+    "value": 1,
+    "url": "https://larryvsharry.com/products/ebullitt-ep801",
+    "quote": "MAXIMUM ASSISTED SPEED | 25 km/h",
+    "basis": "Shimano EP801 pedal assist, no throttle listed; EU-spec 25 km/h (US bikes would be 20 mph), so Class 1"
+   },
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://larryvsharry.com/pages/faq",
+    "quote": "Your eBullitt is programmed according to the legislation for the region that you live in. For example, the assist limit is 25 km/h in Europe and 32 km/h in the US.",
+    "basis": "suggests 1 but the quote has no class word or mph figure, so value left null for the checker. maker FAQ (hidden accordion 'Can I tune/modify/hack/tamper my eBullitt?', read via textContent): US bikes assist to 32 km/h (20 mph); no throttle listed, so Class 1. Quote has no 'class' word or mph figure."
+   }
   ],
   "spd": [
-   {"kind": "maker", "value": 15.5, "url": "https://larryvsharry.com/products/ebullitt-ep801", "quote": "MAXIMUM ASSISTED SPEED | 25 km/h", "basis": "25 km/h EU spec converted; no US (20 mph) figure published"},
-   {"kind": "retailer", "value": null, "url": "https://splendid-cycles.squarespace.com/ebullitt-from-larry-vs-harry", "quote": ""}
+   {
+    "kind": "maker",
+    "value": 15.5,
+    "url": "https://larryvsharry.com/products/ebullitt-ep801",
+    "quote": "MAXIMUM ASSISTED SPEED | 25 km/h",
+    "basis": "25 km/h EU spec converted; no US (20 mph) figure published"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://splendid-cycles.squarespace.com/ebullitt-from-larry-vs-harry",
+    "quote": ""
+   }
   ],
   "tq": [
-   {"kind": "maker", "value": 85, "url": "https://larryvsharry.com/products/ebullitt-ep801", "quote": "TORQUE | 85 Nm"},
-   {"kind": "retailer", "value": 85, "url": "https://splendid-cycles.squarespace.com/ebullitt-from-larry-vs-harry", "quote": "Shimano XT drivetrain paired with the new Shimano STEPS EP801 E-Cargo system gives plenty of power (85Nm) along with other ride enhancing features. With 630 WH Battery - Starting at $8500 ⟶ E-Bullitt-X (long) CUES 11sp Di2 STEPS EP600 ** SOLD OUT**"}
+   {
+    "kind": "maker",
+    "value": 85,
+    "url": "https://larryvsharry.com/products/ebullitt-ep801",
+    "quote": "TORQUE | 85 Nm"
+   },
+   {
+    "kind": "retailer",
+    "value": 85,
+    "url": "https://splendid-cycles.squarespace.com/ebullitt-from-larry-vs-harry",
+    "quote": "Shimano XT drivetrain paired with the new Shimano STEPS EP801 E-Cargo system gives plenty of power (85Nm) along with other ride enhancing features. With 630 WH Battery - Starting at $8500 ⟶ E-Bullitt-X (long) CUES 11sp Di2 STEPS EP600 ** SOLD OUT**"
+   }
   ],
   "wh": [
-   {"kind": "maker", "value": 504, "url": "https://larryvsharry.com/products/ebullitt-ep801", "quote": "BATTERY | SHIMANO BT-EN605 (504Wh) or BT-EN606 (630Wh)", "basis": "smaller of two offered batteries; 630Wh option"},
-   {"kind": "retailer", "value": 630, "url": "https://splendid-cycles.squarespace.com/ebullitt-from-larry-vs-harry", "quote": "Shimano XT drivetrain paired with the new Shimano STEPS EP801 E-Cargo system gives plenty of power (85Nm) along with other ride enhancing features. With 630 WH Battery - Starting at $8500 ⟶ E-Bullitt-X (long) CUES 11sp Di2 STEPS EP600 ** SOLD OUT**"}
+   {
+    "kind": "maker",
+    "value": 504,
+    "url": "https://larryvsharry.com/products/ebullitt-ep801",
+    "quote": "BATTERY | SHIMANO BT-EN605 (504Wh) or BT-EN606 (630Wh)",
+    "basis": "smaller of two offered batteries; 630Wh option"
+   },
+   {
+    "kind": "retailer",
+    "value": 630,
+    "url": "https://splendid-cycles.squarespace.com/ebullitt-from-larry-vs-harry",
+    "quote": "Shimano XT drivetrain paired with the new Shimano STEPS EP801 E-Cargo system gives plenty of power (85Nm) along with other ride enhancing features. With 630 WH Battery - Starting at $8500 ⟶ E-Bullitt-X (long) CUES 11sp Di2 STEPS EP600 ** SOLD OUT**"
+   }
   ],
   "range": [
-   {"kind": "maker", "value": null, "url": "https://larryvsharry.com/products/ebullitt-ep801", "quote": ""},
-   {"kind": "retailer", "value": null, "url": "https://splendid-cycles.squarespace.com/ebullitt-from-larry-vs-harry", "quote": ""}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://larryvsharry.com/products/ebullitt-ep801",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://splendid-cycles.squarespace.com/ebullitt-from-larry-vs-harry",
+    "quote": ""
+   }
   ],
   "wt": [
-   {"kind": "maker", "value": 60.6, "url": "https://larryvsharry.com/products/ebullitt-ep801", "quote": "COMPLETE BIKE WEIGHT | 27.5 kg", "basis": "27.5 kg converted"},
-   {"kind": "retailer", "value": null, "url": "https://splendid-cycles.squarespace.com/ebullitt-from-larry-vs-harry", "quote": ""}
+   {
+    "kind": "maker",
+    "value": 60.6,
+    "url": "https://larryvsharry.com/products/ebullitt-ep801",
+    "quote": "COMPLETE BIKE WEIGHT | 27.5 kg",
+    "basis": "27.5 kg converted"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://splendid-cycles.squarespace.com/ebullitt-from-larry-vs-harry",
+    "quote": ""
+   }
   ],
   "load": [
-   {"kind": "maker", "value": 449.7, "url": "https://larryvsharry.com/products/ebullitt-ep801", "quote": "MAXIMUM SYSTEM LOAD | 204 kg | Includes: Bike + Rider + Equipment + Cargo", "basis": "total"},
-   {"kind": "retailer", "value": null, "url": "https://splendid-cycles.squarespace.com/ebullitt-from-larry-vs-harry", "quote": ""}
+   {
+    "kind": "maker",
+    "value": 449.7,
+    "url": "https://larryvsharry.com/products/ebullitt-ep801",
+    "quote": "MAXIMUM SYSTEM LOAD | 204 kg | Includes: Bike + Rider + Equipment + Cargo",
+    "basis": "total"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://splendid-cycles.squarespace.com/ebullitt-from-larry-vs-harry",
+    "quote": ""
+   }
   ],
   "motor": [
-   {"kind": "maker", "value": "Shimano STePS EP801", "url": "https://larryvsharry.com/products/ebullitt-ep801", "quote": "DRIVE UNIT | SHIMANO STePS EP801"},
-   {"kind": "retailer", "value": "Shimano STEPS EP801", "url": "https://splendid-cycles.squarespace.com/ebullitt-from-larry-vs-harry", "quote": "E-Bulllit XT Di2 STEPS EP801"}
+   {
+    "kind": "maker",
+    "value": "Shimano STePS EP801",
+    "url": "https://larryvsharry.com/products/ebullitt-ep801",
+    "quote": "DRIVE UNIT | SHIMANO STePS EP801"
+   },
+   {
+    "kind": "retailer",
+    "value": "Shimano STEPS EP801",
+    "url": "https://splendid-cycles.squarespace.com/ebullitt-from-larry-vs-harry",
+    "quote": "E-Bulllit XT Di2 STEPS EP801"
+   }
   ],
   "height": [
-   {"kind": "maker", "value": null, "url": "https://larryvsharry.com/products/ebullitt-ep801", "quote": "STEMLIFTER | SATORI Easy-Up w/ 100mm of adjustment", "basis": "no rider height range published"},
-   {"kind": "retailer", "value": null, "url": "https://splendid-cycles.squarespace.com/ebullitt-from-larry-vs-harry", "quote": ""}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://larryvsharry.com/products/ebullitt-ep801",
+    "quote": "STEMLIFTER | SATORI Easy-Up w/ 100mm of adjustment",
+    "basis": "no rider height range published"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://splendid-cycles.squarespace.com/ebullitt-from-larry-vs-harry",
+    "quote": ""
+   }
   ],
   "fold": [
-   {"kind": "maker", "value": "No", "url": "https://larryvsharry.com/products/ebullitt-ep801", "quote": "FRAME | T6 heat-treated, 7005 aluminium, designed for Shimano STePS motor", "basis": "front-loading cargo bike, no folding frame"},
-   {"kind": "retailer", "value": "No", "url": "https://splendid-cycles.squarespace.com/ebullitt-from-larry-vs-harry", "quote": "TUTORIAL: HOW TO RIDE A FRONT-LOADING CARGO BIKE ⟶ TEST RIDES & DEMOS", "basis": "front-loading cargo bike"}
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://larryvsharry.com/products/ebullitt-ep801",
+    "quote": "FRAME | T6 heat-treated, 7005 aluminium, designed for Shimano STePS motor",
+    "basis": "front-loading cargo bike, no folding frame"
+   },
+   {
+    "kind": "retailer",
+    "value": "No",
+    "url": "https://splendid-cycles.squarespace.com/ebullitt-from-larry-vs-harry",
+    "quote": "TUTORIAL: HOW TO RIDE A FRONT-LOADING CARGO BIKE ⟶ TEST RIDES & DEMOS",
+    "basis": "front-loading cargo bike"
+   }
   ]
  },
- "status": {"sources": []},
- "notes": "Maker site (Danish) shows EUR prices and EU-spec 25 km/h only; no USD price or 20 mph figure. USD price from US dealer Splendid Cycles. Maker spec quotes join consecutive spec-table lines with ' | '. No range or rider height published."}
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker site (Danish) shows EUR prices and EU-spec 25 km/h only; no USD price or 20 mph figure. USD price from US dealer Splendid Cycles. Maker spec quotes join consecutive spec-table lines with ' | '. No range or rider height published. Recheck: read maker FAQ (US assist limit 32 km/h = 20 mph); Splendid Cycles (US dealer) page lists models/prices but no class; one WebSearch; skipped whatsmybike.pages.dev (auto-generated, says Class 1 but contradicts itself on throttle)."
+}

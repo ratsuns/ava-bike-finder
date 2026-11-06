@@ -1,45 +1,255 @@
-{"bike": "Radio Flyer|Flyer Via", "checked": "2026-11-06",
+{
+ "bike": "Radio Flyer|Flyer Via",
+ "checked": "2026-11-06",
  "fields": {
   "price": [
-   {"kind": "retailer", "value": 1899, "url": "https://ebikesupershop.com/products/ebike-radio-flyer-via-black-in-a-box", "quote": "$1,899.00 ⟶ Order Now", "basis": "dealer price, no crossed-out price shown"},
-   {"kind": "review", "value": 2399, "url": "https://the-gadgeteer.com/2024/06/17/flyer-via-cargo-ebike-review-a-great-family-ebike-for-kid-hauling-grocery-getting-and-general-utility-use/", "quote": "Price: $2399 ⟶ Where to buy: flyer.radioflyer.com", "basis": "June 2024 price"}
+   {
+    "kind": "retailer",
+    "value": 1899,
+    "url": "https://ebikesupershop.com/products/ebike-radio-flyer-via-black-in-a-box",
+    "quote": "$1,899.00 ⟶ Order Now",
+    "basis": "dealer price, no crossed-out price shown"
+   },
+   {
+    "kind": "review",
+    "value": 2399,
+    "url": "https://the-gadgeteer.com/2024/06/17/flyer-via-cargo-ebike-review-a-great-family-ebike-for-kid-hauling-grocery-getting-and-general-utility-use/",
+    "quote": "Price: $2399 ⟶ Where to buy: flyer.radioflyer.com",
+    "basis": "June 2024 price"
+   },
+   {
+    "kind": "review",
+    "value": 2199,
+    "url": "https://www.cyclingweekly.com/news/more-than-just-little-red-wagons-radio-flyer-introduces-new-line-of-family-friendly-e-bikes",
+    "quote": "The Flyer Via is available for purchase online starting at $2,199 and is recommended for riders 16 years and older.",
+    "basis": "2024 launch price; differs from the $1,599 the site shows"
+   },
+   {
+    "kind": "review",
+    "value": 2199,
+    "url": "https://top5ebikes.com/review-radio-flyer-via/",
+    "quote": "Price: $2199",
+    "basis": "2024 first-impressions review; launch price"
+   },
+   {
+    "kind": "review",
+    "value": 2199,
+    "url": "https://ridereview.com/products/radio-flyer-via",
+    "quote": "Price ⟶ $2,199.00",
+    "basis": "price shown in review's spec table; no crossed-out price"
+   }
   ],
   "cls": [
-   {"kind": "retailer", "value": 2, "url": "https://ebikesupershop.com/products/ebike-radio-flyer-via-black-in-a-box", "quote": "Top Speed\tUp to 20 mph (pedal assist & throttle) ⟶ Motor\t500W rear hub motor (500W Brushless Hub Motor, 53 N•m)", "basis": "20 mph with throttle"},
-   {"kind": "review", "value": 2, "url": "https://the-gadgeteer.com/2024/06/17/flyer-via-cargo-ebike-review-a-great-family-ebike-for-kid-hauling-grocery-getting-and-general-utility-use/", "quote": "The Flyer Via is a Class 2 eBike with an extended length, smaller rear wheel and kid carrier that will get you where you need to go with pedal assist or throttle at up to 20 miles per hour via its 500W motor. It has built-in brake sensors to cut off the motor and a clear display for updated info and even turn signals. ⟶ What’s included?"}
+   {
+    "kind": "retailer",
+    "value": 2,
+    "url": "https://ebikesupershop.com/products/ebike-radio-flyer-via-black-in-a-box",
+    "quote": "Top Speed\tUp to 20 mph (pedal assist & throttle) ⟶ Motor\t500W rear hub motor (500W Brushless Hub Motor, 53 N•m)",
+    "basis": "20 mph with throttle"
+   },
+   {
+    "kind": "review",
+    "value": 2,
+    "url": "https://the-gadgeteer.com/2024/06/17/flyer-via-cargo-ebike-review-a-great-family-ebike-for-kid-hauling-grocery-getting-and-general-utility-use/",
+    "quote": "The Flyer Via is a Class 2 eBike with an extended length, smaller rear wheel and kid carrier that will get you where you need to go with pedal assist or throttle at up to 20 miles per hour via its 500W motor. It has built-in brake sensors to cut off the motor and a clear display for updated info and even turn signals. ⟶ What’s included?"
+   },
+   {
+    "kind": "review",
+    "value": 2,
+    "url": "https://ridereview.com/products/radio-flyer-via",
+    "quote": "Class ⟶ Class 2"
+   }
   ],
   "spd": [
-   {"kind": "retailer", "value": 20, "url": "https://ebikesupershop.com/products/ebike-radio-flyer-via-black-in-a-box", "quote": "Top Speed\tUp to 20 mph (pedal assist & throttle) ⟶ Motor\t500W rear hub motor (500W Brushless Hub Motor, 53 N•m)"},
-   {"kind": "review", "value": 20, "url": "https://the-gadgeteer.com/2024/06/17/flyer-via-cargo-ebike-review-a-great-family-ebike-for-kid-hauling-grocery-getting-and-general-utility-use/", "quote": "The Flyer Via is a Class 2 eBike with an extended length, smaller rear wheel and kid carrier that will get you where you need to go with pedal assist or throttle at up to 20 miles per hour via its 500W motor. It has built-in brake sensors to cut off the motor and a clear display for updated info and even turn signals. ⟶ What’s included?"}
+   {
+    "kind": "retailer",
+    "value": 20,
+    "url": "https://ebikesupershop.com/products/ebike-radio-flyer-via-black-in-a-box",
+    "quote": "Top Speed\tUp to 20 mph (pedal assist & throttle) ⟶ Motor\t500W rear hub motor (500W Brushless Hub Motor, 53 N•m)"
+   },
+   {
+    "kind": "review",
+    "value": 20,
+    "url": "https://the-gadgeteer.com/2024/06/17/flyer-via-cargo-ebike-review-a-great-family-ebike-for-kid-hauling-grocery-getting-and-general-utility-use/",
+    "quote": "The Flyer Via is a Class 2 eBike with an extended length, smaller rear wheel and kid carrier that will get you where you need to go with pedal assist or throttle at up to 20 miles per hour via its 500W motor. It has built-in brake sensors to cut off the motor and a clear display for updated info and even turn signals. ⟶ What’s included?"
+   },
+   {
+    "kind": "review",
+    "value": 20,
+    "url": "https://ridereview.com/products/radio-flyer-via",
+    "quote": "Top Speed (mph) ⟶ 20 mph"
+   }
   ],
   "tq": [
-   {"kind": "retailer", "value": 53, "url": "https://ebikesupershop.com/products/ebike-radio-flyer-via-black-in-a-box", "quote": "Motor\t500W rear hub motor (500W Brushless Hub Motor, 53 N•m) ⟶ Pedal Assist Sensor (PAS)\tFlight Speed® Torque Sensor"},
-   {"kind": "review", "value": null, "url": "https://the-gadgeteer.com/2024/06/17/flyer-via-cargo-ebike-review-a-great-family-ebike-for-kid-hauling-grocery-getting-and-general-utility-use/", "quote": "", "basis": "torque not stated"}
+   {
+    "kind": "retailer",
+    "value": 53,
+    "url": "https://ebikesupershop.com/products/ebike-radio-flyer-via-black-in-a-box",
+    "quote": "Motor\t500W rear hub motor (500W Brushless Hub Motor, 53 N•m) ⟶ Pedal Assist Sensor (PAS)\tFlight Speed® Torque Sensor"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://the-gadgeteer.com/2024/06/17/flyer-via-cargo-ebike-review-a-great-family-ebike-for-kid-hauling-grocery-getting-and-general-utility-use/",
+    "quote": "",
+    "basis": "torque not stated"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://ridereview.com/products/radio-flyer-via",
+    "quote": "",
+    "basis": "torque not stated"
+   }
   ],
   "wh": [
-   {"kind": "retailer", "value": 687, "url": "https://ebikesupershop.com/products/ebike-radio-flyer-via-black-in-a-box", "quote": "Battery Pack\t48V 15Ah (687Wh) UL Tested Lithium-Ion Samsung 50E 21700 Cells ⟶ Payload Capacity (Rider + Cargo + Accessories)\t400 lbs"}
+   {
+    "kind": "retailer",
+    "value": 687,
+    "url": "https://ebikesupershop.com/products/ebike-radio-flyer-via-black-in-a-box",
+    "quote": "Battery Pack\t48V 15Ah (687Wh) UL Tested Lithium-Ion Samsung 50E 21700 Cells ⟶ Payload Capacity (Rider + Cargo + Accessories)\t400 lbs"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://ridereview.com/products/radio-flyer-via",
+    "quote": "",
+    "basis": "battery Wh/V/Ah not stated"
+   }
   ],
   "range": [
-   {"kind": "retailer", "value": "30–50", "url": "https://ebikesupershop.com/products/ebike-radio-flyer-via-black-in-a-box", "quote": "Battery Range\t30 – 50+ miles ⟶ Top Speed\tUp to 20 mph (pedal assist & throttle)"}
+   {
+    "kind": "retailer",
+    "value": "30–50",
+    "url": "https://ebikesupershop.com/products/ebike-radio-flyer-via-black-in-a-box",
+    "quote": "Battery Range\t30 – 50+ miles ⟶ Top Speed\tUp to 20 mph (pedal assist & throttle)"
+   },
+   {
+    "kind": "review",
+    "value": "30-50+",
+    "url": "https://top5ebikes.com/review-radio-flyer-via/",
+    "quote": "Range: 30-50+ miles"
+   },
+   {
+    "kind": "review",
+    "value": "up to 50",
+    "url": "https://www.cyclingweekly.com/news/more-than-just-little-red-wagons-radio-flyer-introduces-new-line-of-family-friendly-e-bikes",
+    "quote": "The resulting line of family cargo e-bikes include must-have features such as an integrated rear rack with cargo or child-carrying capacity for up to two kids, integrated lights and a 500-watt motor powered by a UL Certified lithium-ion battery with a range of up to 50 miles. The bike sports Shimano's 7-speed Tourney drivetrain, disc brakes and an integrated LED display on the handlebars."
+   },
+   {
+    "kind": "review",
+    "value": "50",
+    "url": "https://ridereview.com/products/radio-flyer-via",
+    "quote": "Max Range (mi) ⟶ 50 mi",
+    "basis": "max range; assist mode not specified"
+   }
   ],
   "wt": [
-   {"kind": "retailer", "value": 68.5, "url": "https://ebikesupershop.com/products/ebike-radio-flyer-via-black-in-a-box", "quote": "Bike Weight\t68 lbs (Small) / 68.5 lbs (Medium) / 69 lbs (Large) ⟶ Bike Length\t75\" (Small) / 75\" (Medium) / 77\" (Large)", "basis": "Medium; 68-69 lb across sizes; same page also says 'Without AC814 Kid & Cargo Hoop: 69 lbs (Small) / 70 lbs (Medium) / 70 lbs (Large)'"},
-   {"kind": "review", "value": 68.5, "url": "https://the-gadgeteer.com/2024/06/17/flyer-via-cargo-ebike-review-a-great-family-ebike-for-kid-hauling-grocery-getting-and-general-utility-use/", "quote": "Dimensions: 68 lbs, 75″ long (small) | 68.5 lbs, 75″ long (medium) | 69 lbs, 77″ long (large) ⟶ Maximum load: 400 lbs", "basis": "Medium"}
+   {
+    "kind": "retailer",
+    "value": 68.5,
+    "url": "https://ebikesupershop.com/products/ebike-radio-flyer-via-black-in-a-box",
+    "quote": "Bike Weight\t68 lbs (Small) / 68.5 lbs (Medium) / 69 lbs (Large) ⟶ Bike Length\t75\" (Small) / 75\" (Medium) / 77\" (Large)",
+    "basis": "Medium; 68-69 lb across sizes; same page also says 'Without AC814 Kid & Cargo Hoop: 69 lbs (Small) / 70 lbs (Medium) / 70 lbs (Large)'"
+   },
+   {
+    "kind": "review",
+    "value": 68.5,
+    "url": "https://the-gadgeteer.com/2024/06/17/flyer-via-cargo-ebike-review-a-great-family-ebike-for-kid-hauling-grocery-getting-and-general-utility-use/",
+    "quote": "Dimensions: 68 lbs, 75″ long (small) | 68.5 lbs, 75″ long (medium) | 69 lbs, 77″ long (large) ⟶ Maximum load: 400 lbs",
+    "basis": "Medium"
+   },
+   {
+    "kind": "review",
+    "value": 73,
+    "url": "https://ridereview.com/products/radio-flyer-via",
+    "quote": "Weight (lbs) ⟶ 73 lbs",
+    "basis": "spec table; review text elsewhere says 'The weight of 72lb (33kg)'"
+   }
   ],
   "load": [
-   {"kind": "retailer", "value": 400, "url": "https://ebikesupershop.com/products/ebike-radio-flyer-via-black-in-a-box", "quote": "Battery Pack\t48V 15Ah (687Wh) UL Tested Lithium-Ion Samsung 50E 21700 Cells ⟶ Payload Capacity (Rider + Cargo + Accessories)\t400 lbs"},
-   {"kind": "review", "value": 400, "url": "https://the-gadgeteer.com/2024/06/17/flyer-via-cargo-ebike-review-a-great-family-ebike-for-kid-hauling-grocery-getting-and-general-utility-use/", "quote": "Maximum load: 400 lbs ⟶ Brakes: Tektro hydraulic brakes w/ 180mm rotors"}
+   {
+    "kind": "retailer",
+    "value": 400,
+    "url": "https://ebikesupershop.com/products/ebike-radio-flyer-via-black-in-a-box",
+    "quote": "Battery Pack\t48V 15Ah (687Wh) UL Tested Lithium-Ion Samsung 50E 21700 Cells ⟶ Payload Capacity (Rider + Cargo + Accessories)\t400 lbs"
+   },
+   {
+    "kind": "review",
+    "value": 400,
+    "url": "https://the-gadgeteer.com/2024/06/17/flyer-via-cargo-ebike-review-a-great-family-ebike-for-kid-hauling-grocery-getting-and-general-utility-use/",
+    "quote": "Maximum load: 400 lbs ⟶ Brakes: Tektro hydraulic brakes w/ 180mm rotors"
+   },
+   {
+    "kind": "review",
+    "value": 400,
+    "url": "https://ridereview.com/products/radio-flyer-via",
+    "quote": "Total payload capacity of 400lbs (181kg) ⟶ Bright integrated lighting with brake activation and turn signals"
+   }
   ],
   "motor": [
-   {"kind": "retailer", "value": "500W rear hub", "url": "https://ebikesupershop.com/products/ebike-radio-flyer-via-black-in-a-box", "quote": "Motor\t500W rear hub motor (500W Brushless Hub Motor, 53 N•m) ⟶ Pedal Assist Sensor (PAS)\tFlight Speed® Torque Sensor"},
-   {"kind": "review", "value": "500W rear hub", "url": "https://the-gadgeteer.com/2024/06/17/flyer-via-cargo-ebike-review-a-great-family-ebike-for-kid-hauling-grocery-getting-and-general-utility-use/", "quote": "Motor: 500w rear hub motor ⟶ Tires: Kenda 24 x 2.4″ Front | Kenda 20 x 2.4″ Rear"}
+   {
+    "kind": "retailer",
+    "value": "500W rear hub",
+    "url": "https://ebikesupershop.com/products/ebike-radio-flyer-via-black-in-a-box",
+    "quote": "Motor\t500W rear hub motor (500W Brushless Hub Motor, 53 N•m) ⟶ Pedal Assist Sensor (PAS)\tFlight Speed® Torque Sensor"
+   },
+   {
+    "kind": "review",
+    "value": "500W rear hub",
+    "url": "https://the-gadgeteer.com/2024/06/17/flyer-via-cargo-ebike-review-a-great-family-ebike-for-kid-hauling-grocery-getting-and-general-utility-use/",
+    "quote": "Motor: 500w rear hub motor ⟶ Tires: Kenda 24 x 2.4″ Front | Kenda 20 x 2.4″ Rear"
+   },
+   {
+    "kind": "review",
+    "value": "500W hub",
+    "url": "https://ridereview.com/products/radio-flyer-via",
+    "quote": "Watts ⟶ 500",
+    "basis": "spec table also lists 'Drive Type ⟶ Hub-Drive'"
+   }
   ],
   "height": [
-   {"kind": "retailer", "value": "4'10\"-6'10\"", "url": "https://ebikesupershop.com/products/ebike-radio-flyer-via-black-in-a-box", "quote": "Rider Height Range\tSmall: 4’10” – 5’10” / Medium: 5’3” – 6’3” / Large: 5’10” – 6’10” ⟶ Bike Inseam Range\tSmall: 26\" - 32\" / Medium: 28\"-34\" / Large: 30-38\"", "basis": "across 3 frame sizes"}
+   {
+    "kind": "retailer",
+    "value": "4'10\"-6'10\"",
+    "url": "https://ebikesupershop.com/products/ebike-radio-flyer-via-black-in-a-box",
+    "quote": "Rider Height Range\tSmall: 4’10” – 5’10” / Medium: 5’3” – 6’3” / Large: 5’10” – 6’10” ⟶ Bike Inseam Range\tSmall: 26\" - 32\" / Medium: 28\"-34\" / Large: 30-38\"",
+    "basis": "across 3 frame sizes"
+   },
+   {
+    "kind": "maker",
+    "value": "S 4'10\"-5'10\", M 5'3\"-6'3\", L 5'10\"-6'10\"",
+    "url": "https://images.radioflyer.com/media/flyer/specs/884.pdf",
+    "quote": "Recommended Minimum Rider Height 4' 10\" 5'3\" 5'10\" | Recommended Maximum Rider Height 5'10\" 6'3\" 6'10\"",
+    "basis": "Radio Flyer 'FLYER VIA™' spec sheet PDF; columns are the three frame sizes"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://ridereview.com/products/radio-flyer-via",
+    "quote": "Available in three frame sizes, should fit any size of rider ⟶ Reasons Not to Buy the Via",
+    "basis": "no rider height range given"
+   }
   ],
   "fold": [
-   {"kind": "retailer", "value": "No", "url": "https://ebikesupershop.com/products/ebike-radio-flyer-via-black-in-a-box", "quote": "Three frame sizes for a personalized fit: Small, Medium, and Large with distinct rider-height and inseam ranges. ⟶ Specifications", "basis": "non-folding cargo frame; no fold mentioned"}
+   {
+    "kind": "retailer",
+    "value": "No",
+    "url": "https://ebikesupershop.com/products/ebike-radio-flyer-via-black-in-a-box",
+    "quote": "Three frame sizes for a personalized fit: Small, Medium, and Large with distinct rider-height and inseam ranges. ⟶ Specifications",
+    "basis": "non-folding cargo frame; no fold mentioned"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://ridereview.com/products/radio-flyer-via",
+    "quote": "",
+    "basis": "folding not mentioned"
+   }
   ]
  },
- "status": {"sources": []},
- "notes": "NO MAKER SOURCE: radioflyer.com/products/flyer-via returns 404 and the Flyer Via is not in Radio Flyer's product catalog or eBike landing page (only Flyer Loop and Flyer Via Pro). Likely discontinued, but no maker page says so. Used dealer eBike Super Shop (authorized Flyer dealer page) and The Gadgeteer's June 2024 review. Gadgeteer lists '+/-' as 'Class 1, 20mph limitation' in its cons but calls it Class 2 in the body. Used 1 WebSearch."}
+ "status": {
+  "sources": []
+ },
+ "notes": "NO MAKER SOURCE: radioflyer.com/products/flyer-via returns 404 and the Flyer Via is not in Radio Flyer's product catalog or eBike landing page (only Flyer Loop and Flyer Via Pro). Likely discontinued, but no maker page says so. Used dealer eBike Super Shop (authorized Flyer dealer page) and The Gadgeteer's June 2024 review. Gadgeteer lists '+/-' as 'Class 1, 20mph limitation' in its cons but calls it Class 2 in the body. Used 1 WebSearch. Recheck: radioflyer.com/products/flyer-via is now a 404 and the maker's search shows only the Via Pro (likely discontinued, not stated). Found Radio Flyer's own FLYER VIA spec sheet PDF (images.radioflyer.com/media/flyer/specs/884.pdf, by trying neighbouring spec-sheet numbers to the Via Pro's 886; SKU 884 matches the old product page) with rider heights; it gives no price or range. One web search; Cycling Weekly launch story and Top5ebikes review both give the $2,199 launch price (site shows $1,599, likely a later markdown) and 30-50+ / up to 50 miles range. Source given by Chris: ridereview.com/products/radio-flyer-via (review site, 'Radio Flyer Via eBike Review', release year 2024). Stock: not a seller, no stock/for-sale status shown; it only links 'Buy at Radio Flyer' (affiliate link to flyer.radioflyer.com/products/flyer-via, not opened). Review mentions the Via Pro upgrade ('a more powerful 750-watt motor'); recorded specs are the base Via's table."
+}

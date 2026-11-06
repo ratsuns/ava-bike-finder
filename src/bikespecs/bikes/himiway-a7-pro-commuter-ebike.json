@@ -5,7 +5,8 @@
   ],
   "cls": [
    {"kind": "maker", "value": null, "url": "https://himiwaybike.com/products/himiway-a7pro-commuter-ebike", "quote": "Thumb Throttle ⟶ Technical Specifications", "basis": "maker page has a throttle but states no class or speed"},
-   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/himiway-a7-pro-review/", "quote": "E-BIKE CLASS: ⟶ CLASS 2 (THROTTLE TO 20 MPH)", "basis": "ships Class 2; unlockable to Class 3 (28 mph) with a passcode from Himiway"}
+   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/himiway-a7-pro-review/", "quote": "E-BIKE CLASS: ⟶ CLASS 2 (THROTTLE TO 20 MPH)", "basis": "ships Class 2; unlockable to Class 3 (28 mph) with a passcode from Himiway"},
+   {"kind": "maker", "value": 2, "url": "https://himiwaybike.com/blogs/after-purchase/unlock-the-limit-of-the-speed", "quote": "Discover that Himiway e-bikes have the capability to operate as technically Class 3 e-bikes. While both of these bikes are shipped as Class 2 ebikes, users have the option to unlock the speed limiter, increasing the max speed to 25mph", "basis": "Himiway's 'Unlock the Limit of the Speed' page: ships as Class 2, unlockable; its per-model unlock list includes 'A7 Pro: watch video'"}
   ],
   "spd": [
    {"kind": "maker", "value": null, "url": "https://himiwaybike.com/products/himiway-a7pro-commuter-ebike", "quote": ""},
@@ -46,4 +47,4 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Maker regular price $2,899, currently on sale at $1,999. Maker page gives no class or top speed; Electric Bike Report says it ships Class 2 (20 mph) and can be unlocked to Class 3 / 28 mph with a passcode from Himiway. Torque conflict: maker and Upway say 130 Nm, Electric Bike Report's spec list says 100 Nm. Range: maker 35~50 mi, EBR lists claimed 30-50 mi (and its marketing banner says 50 Miles). Upway values are from the right-hand (A7 Pro) column of its comparison table."}
+ "notes": "Maker regular price $2,899, currently on sale at $1,999. Maker page gives no class or top speed; Electric Bike Report says it ships Class 2 (20 mph) and can be unlocked to Class 3 / 28 mph with a passcode from Himiway. Torque conflict: maker and Upway say 130 Nm, Electric Bike Report's spec list says 100 Nm. Range: maker 35~50 mi, EBR lists claimed 30-50 mi (and its marketing banner says 50 Miles). Upway values are from the right-hand (A7 Pro) column of its comparison table. | recheck: Himiway's own 'Unlock the Limit of the Speed' page says its e-bikes ship as Class 2 (unlockable to 25 mph) and lists this model's unlock video; 1 WebSearch used for the Himiway set. Upway has no A7 Pro listing."}

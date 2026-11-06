@@ -6,7 +6,8 @@
   ],
   "cls": [
    {"kind": "maker", "value": 2, "url": "https://retrospec.com/products/roo-rev-xl-cargo-electric-bike", "quote": "Pedal Assist  1-4 PAS Eco/Tour/Sport/Turbo; Throttle and walk-mode", "basis": "maker states no class; ships at 20 mph top assisted speed with a throttle = Class 2"},
-   {"kind": "review", "value": 3, "url": "https://electricbikereview.com/retrospec/roo-rev-xl-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 3", "basis": "review lists 28 mph; likely the setting after changing speed controls in the advanced menu"}
+   {"kind": "review", "value": 3, "url": "https://electricbikereview.com/retrospec/roo-rev-xl-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 3", "basis": "review lists 28 mph; likely the setting after changing speed controls in the advanced menu"},
+   {"kind": "maker", "value": 2, "url": "https://help.retrospec.com/en-US/what-does-%22class-2%22-mean-629518", "quote": "All of our e-bikes are \"Class 2\" which means they have pedal assist and/or throttle with assistance of 20mph max. Top speed is dependent on the bike model.", "basis": "Retrospec help-center article covering all its e-bikes (updated 2 days ago), not model-specific"}
   ],
   "spd": [
    {"kind": "maker", "value": 20, "url": "https://retrospec.com/products/roo-rev-xl-cargo-electric-bike", "quote": "20 mph Top Assisted Speed"},
@@ -45,4 +46,4 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Maker says 20 mph top assisted speed (Class 2 by throttle); ElectricBikeReview lists Class 3 / 28 mph, likely after changing speed controls. Maker spec table has mislabeled rows ('36V/350W range', '10.4Ah battery (350W)') although the bike is 48V/700Wh/750W."}
+ "notes": "Maker says 20 mph top assisted speed (Class 2 by throttle); ElectricBikeReview lists Class 3 / 28 mph, likely after changing speed controls. Maker spec table has mislabeled rows ('36V/350W range', '10.4Ah battery (350W)') although the bike is 48V/700Wh/750W. Recheck: read the Roo/Roo XL owner's manual PDF (20 mph; no class) and Retrospec's 'What does Class 2 mean?' help article."}

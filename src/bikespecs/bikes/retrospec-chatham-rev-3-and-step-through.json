@@ -6,7 +6,8 @@
   ],
   "cls": [
    {"kind": "maker", "value": 2, "url": "https://retrospec.com/products/chatham-rev-electric-beach-cruiser-bike", "quote": "Pedal Assist ⟶ 5 levels with Anytime Throttle and Walk Mode", "basis": "maker states no class; 20 mph top assisted speed with a throttle = Class 2"},
-   {"kind": "review", "value": 2, "url": "https://www.ebikereviewlab.com/electric-cruiser-bikes/chatham-rev-3-review", "quote": "TOP SPEED ⟶ 20 mph (Class 2 e-bike)"}
+   {"kind": "review", "value": 2, "url": "https://www.ebikereviewlab.com/electric-cruiser-bikes/chatham-rev-3-review", "quote": "TOP SPEED ⟶ 20 mph (Class 2 e-bike)"},
+   {"kind": "maker", "value": 2, "url": "https://help.retrospec.com/en-US/what-does-%22class-2%22-mean-629518", "quote": "All of our e-bikes are \"Class 2\" which means they have pedal assist and/or throttle with assistance of 20mph max. Top speed is dependent on the bike model.", "basis": "Retrospec help-center article covering all its e-bikes (updated 2 days ago), not model-specific"}
   ],
   "spd": [
    {"kind": "maker", "value": 20, "url": "https://retrospec.com/products/chatham-rev-electric-beach-cruiser-bike", "quote": "20 mph Top Assisted Speed"},
@@ -47,4 +48,4 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Combined height range across both frames is 5'0\"-6'4\". Step-through is a separate maker page with the same specs. No class stated by maker; Class 2 inferred from 20 mph + throttle. Independent source is ebikereviewlab.com (found by WebSearch; no EBR/ElectricBikeReview review of Rev 3). Scheels lists it at $999.99 but its spec tab could not be read."}
+ "notes": "Combined height range across both frames is 5'0\"-6'4\". Step-through is a separate maker page with the same specs. No class stated by maker; Class 2 inferred from 20 mph + throttle. Independent source is ebikereviewlab.com (found by WebSearch; no EBR/ElectricBikeReview review of Rev 3). Scheels lists it at $999.99 but its spec tab could not be read. Recheck: looked at the product page (20 mph, Anytime Throttle) and the Chatham Rev 3 2026 manual PDF it links (20 mph, 50Nm; no class), and Retrospec's help-center 'What does Class 2 mean?' article (all its e-bikes are Class 2)."}

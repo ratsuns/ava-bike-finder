@@ -1,43 +1,178 @@
-{"bike": "Urban Arrow|Breeze", "checked": "2026-11-06",
+{
+ "bike": "Urban Arrow|Breeze",
+ "checked": "2026-11-06",
  "fields": {
   "price": [
-   {"kind": "maker", "value": 6999, "url": "https://www.urbanarrow.com/en-na/configurator?model=breeze&options=&step=1", "quote": "US $6.999", "basis": "maker configurator with Breeze selected; page writes the price with a period as thousands separator"},
-   {"kind": "retailer", "value": 6998.99, "url": "https://mikesbikes.com/products/urban-arrow-breeze", "quote": "Regular price ⟶ $6,998.99"}
+   {
+    "kind": "maker",
+    "value": 6999,
+    "url": "https://www.urbanarrow.com/en-na/configurator?model=breeze&options=&step=1",
+    "quote": "US $6.999",
+    "basis": "maker configurator with Breeze selected; page writes the price with a period as thousands separator"
+   },
+   {
+    "kind": "retailer",
+    "value": 6998.99,
+    "url": "https://mikesbikes.com/products/urban-arrow-breeze",
+    "quote": "Regular price ⟶ $6,998.99"
+   }
   ],
   "cls": [
-   {"kind": "maker", "value": null, "url": "https://www.urbanarrow.com/en-na/breeze", "quote": "", "basis": "no class or top speed stated"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.urbanarrow.com/en-na/breeze",
+    "quote": "",
+    "basis": "no class or top speed stated"
+   },
+   {
+    "kind": "maker",
+    "value": 1,
+    "url": "https://resource.pon.bike/by/asset/1214af7f-dd96-4e87-86d8-0babc4bff592/UA_Breeze_US_CAN_Manual.pdf",
+    "quote": "CLASS 1 | 250W // 20 MPH",
+    "basis": "US/CAN owner manual, label with user information (p.10)"
+   }
   ],
   "spd": [
-   {"kind": "maker", "value": null, "url": "https://www.urbanarrow.com/en-na/breeze", "quote": "", "basis": "no top speed stated"},
-   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/urban-arrow-breeze", "quote": "Max Assisted Speed\tN/A"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.urbanarrow.com/en-na/breeze",
+    "quote": "",
+    "basis": "no top speed stated"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://mikesbikes.com/products/urban-arrow-breeze",
+    "quote": "Max Assisted Speed\tN/A"
+   },
+   {
+    "kind": "maker",
+    "value": 20,
+    "url": "https://resource.pon.bike/by/asset/1214af7f-dd96-4e87-86d8-0babc4bff592/UA_Breeze_US_CAN_Manual.pdf",
+    "quote": "6. Maximum pedal assistance: 20 mph",
+    "basis": "US/CAN owner manual (p.10)"
+   }
   ],
   "tq": [
-   {"kind": "retailer", "value": 85, "url": "https://mikesbikes.com/products/urban-arrow-breeze", "quote": "Motor\tBosch Cargo Line BDU38 BES3 - 85 Nm"}
+   {
+    "kind": "retailer",
+    "value": 85,
+    "url": "https://mikesbikes.com/products/urban-arrow-breeze",
+    "quote": "Motor\tBosch Cargo Line BDU38 BES3 - 85 Nm"
+   },
+   {
+    "kind": "maker",
+    "value": 85,
+    "url": "https://www.urbanarrow.com/en-na/configurator?model=breeze&options=green,boschpowerpack540wh&step=2",
+    "quote": "Bosch Cargo Line (85Nm)",
+    "basis": "maker configurator, Breeze options step"
+   }
   ],
   "wh": [
-   {"kind": "retailer", "value": 545, "url": "https://mikesbikes.com/products/urban-arrow-breeze", "quote": "Battery\tBosch Powerpack 545Wh"}
+   {
+    "kind": "retailer",
+    "value": 545,
+    "url": "https://mikesbikes.com/products/urban-arrow-breeze",
+    "quote": "Battery\tBosch Powerpack 545Wh"
+   },
+   {
+    "kind": "maker",
+    "value": 540,
+    "url": "https://www.urbanarrow.com/en-na/configurator?model=breeze&options=green,boschpowerpack540wh&step=2",
+    "quote": "Battery | Bosch PowerPack 540Wh",
+    "basis": "maker configurator battery option"
+   },
+   {
+    "kind": "maker",
+    "value": 545,
+    "url": "https://resource.pon.bike/by/asset/1214af7f-dd96-4e87-86d8-0babc4bff592/UA_Breeze_US_CAN_Manual.pdf",
+    "quote": "Breeze and | battery of 545 Wh",
+    "basis": "weight-calculation example in US/CAN manual (p.17); same manual p.10 mentions Bosch PowerPack 400 for the bike weight"
+   }
   ],
   "range": [
-   {"kind": "maker", "value": null, "url": "https://www.urbanarrow.com/en-na/breeze", "quote": "", "basis": "no range stated"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.urbanarrow.com/en-na/breeze",
+    "quote": "",
+    "basis": "no range stated"
+   },
+   {
+    "kind": "maker",
+    "value": "25–53",
+    "url": "https://www.urbanarrow.com/en-na/configurator?model=breeze&options=green,boschpowerpack540wh&step=2",
+    "quote": "Bosch PowerPack 540Wh | 25-53 miles",
+    "basis": "maker configurator battery option"
+   }
   ],
   "wt": [
-   {"kind": "maker", "value": 77.2, "url": "https://www.urbanarrow.com/en-na/breeze", "quote": "The Urban Arrow Breeze weighs 77.2 lbs (35 kg). ⟶ What colors is the Breeze available in?"}
+   {
+    "kind": "maker",
+    "value": 77.2,
+    "url": "https://www.urbanarrow.com/en-na/breeze",
+    "quote": "The Urban Arrow Breeze weighs 77.2 lbs (35 kg). ⟶ What colors is the Breeze available in?"
+   }
   ],
   "load": [
-   {"kind": "maker", "value": 264.6, "url": "https://www.urbanarrow.com/en-na/breeze", "quote": "What is the rider weight limit on a Breeze? ⟶ Maximum rider weight is 264.6 lbs (120 kg).", "basis": "max rider weight only; maker also gives rear load 176.4 lb and front load 22.1 lb, no total"},
-   {"kind": "maker", "value": 176.4, "url": "https://www.urbanarrow.com/en-na/breeze", "quote": "The maximum rear load is 176.4 lbs (80 kg). The maximum front load is 22.1 lbs (15 kg). ⟶ What is the rider weight limit on a Breeze?", "basis": "rear rack load (front 22.1 lb)"},
-   {"kind": "review", "value": 440, "url": "https://www.autoevolution.com/news/urban-arrow-breaks-tradition-with-new-breeze-long-tail-cargo-e-bike-for-green-american-families-273301.html", "quote": "Well, they need to be to handle a load of up to 440 lbs (200 kg) and carry a couple of kids, an adult, and groceries too. It’s also here that we’ll mix and match the cargo options I mentioned earlier.", "basis": "news article, likely total"}
+   {
+    "kind": "maker",
+    "value": 264.6,
+    "url": "https://www.urbanarrow.com/en-na/breeze",
+    "quote": "What is the rider weight limit on a Breeze? ⟶ Maximum rider weight is 264.6 lbs (120 kg).",
+    "basis": "max rider weight only; maker also gives rear load 176.4 lb and front load 22.1 lb, no total"
+   },
+   {
+    "kind": "maker",
+    "value": 176.4,
+    "url": "https://www.urbanarrow.com/en-na/breeze",
+    "quote": "The maximum rear load is 176.4 lbs (80 kg). The maximum front load is 22.1 lbs (15 kg). ⟶ What is the rider weight limit on a Breeze?",
+    "basis": "rear rack load (front 22.1 lb)"
+   },
+   {
+    "kind": "review",
+    "value": 440,
+    "url": "https://www.autoevolution.com/news/urban-arrow-breaks-tradition-with-new-breeze-long-tail-cargo-e-bike-for-green-american-families-273301.html",
+    "quote": "Well, they need to be to handle a load of up to 440 lbs (200 kg) and carry a couple of kids, an adult, and groceries too. It’s also here that we’ll mix and match the cargo options I mentioned earlier.",
+    "basis": "news article, likely total"
+   }
   ],
   "motor": [
-   {"kind": "maker", "value": "Bosch Cargo Line", "url": "https://www.urbanarrow.com/en-na/breeze", "quote": "We believe a premium ride starts with premium choices. That is why the Breeze is built using only the highest-quality components, ensuring a safe, reliable, and exceptionally smooth ride, every single time. With the powerful Bosch Cargo Line motor, an Enviolo hub for stepless shifting, and a front suspension fork, every single journey is a pleasure."},
-   {"kind": "retailer", "value": "Bosch Cargo Line", "url": "https://mikesbikes.com/products/urban-arrow-breeze", "quote": "Motor\tBosch Cargo Line BDU38 BES3 - 85 Nm"}
+   {
+    "kind": "maker",
+    "value": "Bosch Cargo Line",
+    "url": "https://www.urbanarrow.com/en-na/breeze",
+    "quote": "We believe a premium ride starts with premium choices. That is why the Breeze is built using only the highest-quality components, ensuring a safe, reliable, and exceptionally smooth ride, every single time. With the powerful Bosch Cargo Line motor, an Enviolo hub for stepless shifting, and a front suspension fork, every single journey is a pleasure."
+   },
+   {
+    "kind": "retailer",
+    "value": "Bosch Cargo Line",
+    "url": "https://mikesbikes.com/products/urban-arrow-breeze",
+    "quote": "Motor\tBosch Cargo Line BDU38 BES3 - 85 Nm"
+   }
   ],
   "height": [
-   {"kind": "maker", "value": "5'1\"-6'4\"", "url": "https://www.urbanarrow.com/en-na/breeze", "quote": "The Breeze frame is designed to be a one size fits all. The recommended rider height is 5'1\" to 6'4\". ⟶ Which child seats is Breeze compatible with?"}
+   {
+    "kind": "maker",
+    "value": "5'1\"-6'4\"",
+    "url": "https://www.urbanarrow.com/en-na/breeze",
+    "quote": "The Breeze frame is designed to be a one size fits all. The recommended rider height is 5'1\" to 6'4\". ⟶ Which child seats is Breeze compatible with?"
+   }
   ],
   "fold": [
-   {"kind": "maker", "value": "No", "url": "https://www.urbanarrow.com/en-na/breeze", "quote": "The Breeze frame is designed to be a one size fits all. The recommended rider height is 5'1\" to 6'4\". ⟶ Which child seats is Breeze compatible with?", "basis": "longtail cargo frame; no folding mentioned"}
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://www.urbanarrow.com/en-na/breeze",
+    "quote": "The Breeze frame is designed to be a one size fits all. The recommended rider height is 5'1\" to 6'4\". ⟶ Which child seats is Breeze compatible with?",
+    "basis": "longtail cargo frame; no folding mentioned"
+   }
   ]
  },
- "status": {"sources": []},
- "notes": "Maker NA Breeze page has no spec table: no Wh, torque, top speed, class or range; motor/battery from Mike's Bikes (85 Nm / 545Wh), which lists 'Max Assisted Speed N/A'. Maker gives rider limit 264.6 lb, rear 176.4 lb, front 22.1 lb but no total; autoevolution news says 'load of up to 440 lbs (200 kg)'. Price from maker configurator ('US $6.999'); autoevolution also says ~$7,000. One WebSearch used."}
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker NA Breeze page has no spec table: no Wh, torque, top speed, class or range; motor/battery from Mike's Bikes (85 Nm / 545Wh), which lists 'Max Assisted Speed N/A'. Maker gives rider limit 264.6 lb, rear 176.4 lb, front 22.1 lb but no total; autoevolution news says 'load of up to 440 lbs (200 kg)'. Price from maker configurator ('US $6.999'); autoevolution also says ~$7,000. One WebSearch used. Recheck: read maker US/CAN Breeze manual PDF (Class 1, 20 mph, 545 Wh in a weight example) and maker configurator (Cargo Line 85Nm, PowerPack 540Wh, 25-53 miles). Configurator briefly showed 'Bosch Cargo Line (100Nm)' before loading the Breeze options; not recorded."
+}

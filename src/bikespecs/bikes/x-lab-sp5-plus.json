@@ -1,49 +1,179 @@
-{"bike": "X-Lab|SP5+", "checked": "2026-11-06",
+{
+ "bike": "X-Lab|SP5+",
+ "checked": "2026-11-06",
  "fields": {
   "price": [
-   {"kind": "maker", "value": 1899, "url": "https://xds.co/products/sp5-plus", "quote": "$1,899 Nimbus - ⟶ Choose Size"},
-   {"kind": "review", "value": 1899, "url": "https://bikerumor.com/x-lab-sp5-ebike-review-a-mid-drive-light-weight-ebike-under-2k/", "quote": "The SP5+, on the other hand, weighs in at just 37.56lbs. And it’s only $1,899. With a mid-drive motor. And lights. And Shimano Cues parts. Huh."}
+   {
+    "kind": "maker",
+    "value": 1899,
+    "url": "https://xds.co/products/sp5-plus",
+    "quote": "$1,899 Nimbus - ⟶ Choose Size"
+   },
+   {
+    "kind": "review",
+    "value": 1899,
+    "url": "https://bikerumor.com/x-lab-sp5-ebike-review-a-mid-drive-light-weight-ebike-under-2k/",
+    "quote": "The SP5+, on the other hand, weighs in at just 37.56lbs. And it’s only $1,899. With a mid-drive motor. And lights. And Shimano Cues parts. Huh."
+   }
   ],
   "cls": [
-   {"kind": "maker", "value": 2, "url": "https://xds.co/products/sp5-plus", "quote": "Pedal-assist and Throttle, Class 2 20mph (Unlock to Class 3 via the X-Lab Bikes Mobile App) ⟶ RANGE", "basis": "ships Class 2 at 20 mph with throttle; unlockable to Class 3"},
-   {"kind": "review", "value": 2, "url": "https://bikerumor.com/x-lab-sp5-ebike-review-a-mid-drive-light-weight-ebike-under-2k/", "quote": "The bike is a Class 2 ebike, meaning it provides assistance when pedaling, and has a throttle available that can be used without pedaling."}
+   {
+    "kind": "maker",
+    "value": 2,
+    "url": "https://xds.co/products/sp5-plus",
+    "quote": "Pedal-assist and Throttle, Class 2 20mph (Unlock to Class 3 via the X-Lab Bikes Mobile App) ⟶ RANGE",
+    "basis": "ships Class 2 at 20 mph with throttle; unlockable to Class 3"
+   },
+   {
+    "kind": "review",
+    "value": 2,
+    "url": "https://bikerumor.com/x-lab-sp5-ebike-review-a-mid-drive-light-weight-ebike-under-2k/",
+    "quote": "The bike is a Class 2 ebike, meaning it provides assistance when pedaling, and has a throttle available that can be used without pedaling."
+   }
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://xds.co/products/sp5-plus", "quote": "Pedal-assist and Throttle, Class 2 20mph (Unlock to Class 3 via the X-Lab Bikes Mobile App) ⟶ RANGE", "basis": "adjustable to Class 3 (28 mph) via app; 28 not stated on page"},
-   {"kind": "review", "value": 20, "url": "https://bikerumor.com/x-lab-sp5-ebike-review-a-mid-drive-light-weight-ebike-under-2k/", "quote": "Both modes of assist cut out at 20mph, but we’re told the bikes will be able to be adjusted to a class 3 through the X-Lab Bikes app, which will be live soon."}
+   {
+    "kind": "maker",
+    "value": 20,
+    "url": "https://xds.co/products/sp5-plus",
+    "quote": "Pedal-assist and Throttle, Class 2 20mph (Unlock to Class 3 via the X-Lab Bikes Mobile App) ⟶ RANGE",
+    "basis": "adjustable to Class 3 (28 mph) via app; 28 not stated on page"
+   },
+   {
+    "kind": "review",
+    "value": 20,
+    "url": "https://bikerumor.com/x-lab-sp5-ebike-review-a-mid-drive-light-weight-ebike-under-2k/",
+    "quote": "Both modes of assist cut out at 20mph, but we’re told the bikes will be able to be adjusted to a class 3 through the X-Lab Bikes app, which will be live soon."
+   }
   ],
   "tq": [
-   {"kind": "maker", "value": 85, "url": "https://xds.co/products/sp5-plus", "quote": "XDS Mid-drive X800 Motor, 250 Watt Continuous Rated Power, 400 Watt Peak Power, 85Nm Peak Torque, Dual-sided Torque Sensor ⟶ BATTERY"},
-   {"kind": "review", "value": 85, "url": "https://bikerumor.com/x-lab-sp5-ebike-review-a-mid-drive-light-weight-ebike-under-2k/", "quote": "with 250-watt maximum continuous rated power, and 400 watt peak power, and 85Nm of torque."}
+   {
+    "kind": "maker",
+    "value": 85,
+    "url": "https://xds.co/products/sp5-plus",
+    "quote": "XDS Mid-drive X800 Motor, 250 Watt Continuous Rated Power, 400 Watt Peak Power, 85Nm Peak Torque, Dual-sided Torque Sensor ⟶ BATTERY"
+   },
+   {
+    "kind": "review",
+    "value": 85,
+    "url": "https://bikerumor.com/x-lab-sp5-ebike-review-a-mid-drive-light-weight-ebike-under-2k/",
+    "quote": "with 250-watt maximum continuous rated power, and 400 watt peak power, and 85Nm of torque."
+   }
   ],
   "wh": [
-   {"kind": "maker", "value": 339, "url": "https://xds.co/products/sp5-plus", "quote": "XDS Rechargeable Li-ion Battery, 339Wh, LG Battery Cells, 3A Charger (0-100% 3hr 15min) ⟶ LIGHTS"},
-   {"kind": "review", "value": 339, "url": "https://bikerumor.com/x-lab-sp5-ebike-review-a-mid-drive-light-weight-ebike-under-2k/", "quote": "incorporates a 339Wh rechargeable lithium-ion battery."}
+   {
+    "kind": "maker",
+    "value": 339,
+    "url": "https://xds.co/products/sp5-plus",
+    "quote": "XDS Rechargeable Li-ion Battery, 339Wh, LG Battery Cells, 3A Charger (0-100% 3hr 15min) ⟶ LIGHTS"
+   },
+   {
+    "kind": "review",
+    "value": 339,
+    "url": "https://bikerumor.com/x-lab-sp5-ebike-review-a-mid-drive-light-weight-ebike-under-2k/",
+    "quote": "incorporates a 339Wh rechargeable lithium-ion battery."
+   }
   ],
   "range": [
-   {"kind": "maker", "value": "43", "url": "https://xds.co/products/sp5-plus", "quote": "RANGE ⟶ Ride up to 43 miles on a Single Charge", "basis": "up to"},
-   {"kind": "review", "value": "30–40", "url": "https://bikerumor.com/x-lab-sp5-ebike-review-a-mid-drive-light-weight-ebike-under-2k/", "quote": "From my experience, I can expect around 30-40 miles of range riding in the two highest assist settings", "basis": "reviewer estimate, two highest assist settings"}
+   {
+    "kind": "maker",
+    "value": "43",
+    "url": "https://xds.co/products/sp5-plus",
+    "quote": "RANGE ⟶ Ride up to 43 miles on a Single Charge",
+    "basis": "up to"
+   },
+   {
+    "kind": "review",
+    "value": "30–40",
+    "url": "https://bikerumor.com/x-lab-sp5-ebike-review-a-mid-drive-light-weight-ebike-under-2k/",
+    "quote": "From my experience, I can expect around 30-40 miles of range riding in the two highest assist settings",
+    "basis": "reviewer estimate, two highest assist settings"
+   }
   ],
   "wt": [
-   {"kind": "maker", "value": 37.01, "url": "https://xds.co/products/sp5-plus", "quote": "WEIGHT ⟶ 16.79 kg / 37.01 lbs (Size L)", "basis": "size L"},
-   {"kind": "review", "value": 37.56, "url": "https://bikerumor.com/x-lab-sp5-ebike-review-a-mid-drive-light-weight-ebike-under-2k/", "quote": "The SP5+, on the other hand, weighs in at just 37.56lbs.", "basis": "reviewer's preproduction sample, size M"}
+   {
+    "kind": "maker",
+    "value": 37.01,
+    "url": "https://xds.co/products/sp5-plus",
+    "quote": "WEIGHT ⟶ 16.79 kg / 37.01 lbs (Size L)",
+    "basis": "size L"
+   },
+   {
+    "kind": "review",
+    "value": 37.56,
+    "url": "https://bikerumor.com/x-lab-sp5-ebike-review-a-mid-drive-light-weight-ebike-under-2k/",
+    "quote": "The SP5+, on the other hand, weighs in at just 37.56lbs.",
+    "basis": "reviewer's preproduction sample, size M"
+   }
   ],
   "load": [
-   {"kind": "maker", "value": 265, "url": "https://xds.co/products/sp5-plus", "quote": "LOAD CAPACITY ⟶ Max Load 265 lbs (120 kg)"},
-   {"kind": "review", "value": null, "url": "https://bikerumor.com/x-lab-sp5-ebike-review-a-mid-drive-light-weight-ebike-under-2k/", "quote": ""}
+   {
+    "kind": "maker",
+    "value": 265,
+    "url": "https://xds.co/products/sp5-plus",
+    "quote": "LOAD CAPACITY ⟶ Max Load 265 lbs (120 kg)"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://bikerumor.com/x-lab-sp5-ebike-review-a-mid-drive-light-weight-ebike-under-2k/",
+    "quote": ""
+   }
   ],
   "motor": [
-   {"kind": "maker", "value": "250W mid-drive (400W peak)", "url": "https://xds.co/products/sp5-plus", "quote": "XDS Mid-drive X800 Motor, 250 Watt Continuous Rated Power, 400 Watt Peak Power, 85Nm Peak Torque, Dual-sided Torque Sensor ⟶ BATTERY"},
-   {"kind": "review", "value": "250W mid-drive (400W peak)", "url": "https://bikerumor.com/x-lab-sp5-ebike-review-a-mid-drive-light-weight-ebike-under-2k/", "quote": "The frame houses a Branta-branded XDS Mid-Drive X800 motor with 250-watt maximum continuous rated power, and 400 watt peak power, and 85Nm of torque."}
+   {
+    "kind": "maker",
+    "value": "250W mid-drive (400W peak)",
+    "url": "https://xds.co/products/sp5-plus",
+    "quote": "XDS Mid-drive X800 Motor, 250 Watt Continuous Rated Power, 400 Watt Peak Power, 85Nm Peak Torque, Dual-sided Torque Sensor ⟶ BATTERY"
+   },
+   {
+    "kind": "review",
+    "value": "250W mid-drive (400W peak)",
+    "url": "https://bikerumor.com/x-lab-sp5-ebike-review-a-mid-drive-light-weight-ebike-under-2k/",
+    "quote": "The frame houses a Branta-branded XDS Mid-Drive X800 motor with 250-watt maximum continuous rated power, and 400 watt peak power, and 85Nm of torque."
+   }
   ],
   "height": [
-   {"kind": "maker", "value": null, "url": "https://xds.co/products/sp5-plus", "quote": "SIZE OPTIONS | S / M / L", "basis": "sizes listed, no rider height range"},
-   {"kind": "review", "value": null, "url": "https://bikerumor.com/x-lab-sp5-ebike-review-a-mid-drive-light-weight-ebike-under-2k/", "quote": "Unlike a lot of one-size-fits-most affordable ebikes, the SP5+ is offered in three sizes."}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://xds.co/products/sp5-plus",
+    "quote": "SIZE OPTIONS | S / M / L",
+    "basis": "sizes listed, no rider height range"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://bikerumor.com/x-lab-sp5-ebike-review-a-mid-drive-light-weight-ebike-under-2k/",
+    "quote": "Unlike a lot of one-size-fits-most affordable ebikes, the SP5+ is offered in three sizes."
+   },
+   {
+    "kind": "maker",
+    "value": "4'11\"-6'3\" (S-L)",
+    "url": "https://xds.co/products/sp5-plus",
+    "quote": "Size Chart | SP5+ | Frame Size | Rider Height | S | 150 cm – 163 cm | 4' 11\" - 5' 4\" | M | 163 cm – 173 cm | 5' 4\" - 5' 8\" | L | 173 cm – 190 cm | 5' 8\" - 6' 3\"",
+    "basis": "maker size chart (hidden modal on product page): S 4'11\"-5'4\", M 5'4\"-5'8\", L 5'8\"-6'3\""
+   }
   ],
   "fold": [
-   {"kind": "maker", "value": "No", "url": "https://xds.co/products/sp5-plus", "quote": "A sleeker alloy frame and a complete build under 37 lbs makes the SP5+ feel quick, agile, and more like a fitness bike, just with an extra reassuring push whenever you want it. ⟶ Mid-Drive Integration the Branta Way", "basis": "rigid fitness frame; no folding mentioned"},
-   {"kind": "review", "value": "No", "url": "https://bikerumor.com/x-lab-sp5-ebike-review-a-mid-drive-light-weight-ebike-under-2k/", "quote": "The SP5+ is considered a fitness-focused electric bike with an aluminum frame, carbon fork, one-piece aluminum stem/bar, and aluminum wheels."}
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://xds.co/products/sp5-plus",
+    "quote": "A sleeker alloy frame and a complete build under 37 lbs makes the SP5+ feel quick, agile, and more like a fitness bike, just with an extra reassuring push whenever you want it. ⟶ Mid-Drive Integration the Branta Way",
+    "basis": "rigid fitness frame; no folding mentioned"
+   },
+   {
+    "kind": "review",
+    "value": "No",
+    "url": "https://bikerumor.com/x-lab-sp5-ebike-review-a-mid-drive-light-weight-ebike-under-2k/",
+    "quote": "The SP5+ is considered a fitness-focused electric bike with an aluminum frame, carbon fork, one-piece aluminum stem/bar, and aluminum wheels."
+   }
   ]
  },
- "status": {"sources": []},
- "notes": "Bikerumor review (Apr 2026) was a preproduction sample; its 37.56 lb weight differs slightly from maker's 37.01 lb (size L). Review quotes are exact sub-sentences of long paragraphs. No rider height range published."}
+ "status": {
+  "sources": []
+ },
+ "notes": "Bikerumor review (Apr 2026) was a preproduction sample; its 37.56 lb weight differs slightly from maker's 37.01 lb (size L). Review quotes are exact sub-sentences of long paragraphs. No rider height range published. Recheck: maker product page has a hidden Size Chart modal with rider heights per frame size (read via text nodes)."
+}

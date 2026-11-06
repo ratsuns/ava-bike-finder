@@ -24,6 +24,13 @@
     "url": "https://www.orbea.com/en-us/carpe-10-20mph",
     "quote": "",
     "basis": "maker page states no class; model name says 20mph (no throttle listed, so Class 1)"
+   },
+   {
+    "kind": "maker",
+    "value": 1,
+    "url": "https://www.orbea.com/en-us/catalog/bikes-urban_active-carpe",
+    "quote": "Carpe 10 20mph $4,630 Carpe 20 20mph $3,638 Carpe 25 20mph $3,307 Carpe 10 28mph $4,630",
+    "basis": "maker's US Carpe catalog names the build '20mph' (its assist limit) next to separate '28mph' builds; no throttle listed, so Class 1. No page states 'Class 1' for the Carpe 20mph."
    }
   ],
   "spd": [
@@ -170,5 +177,5 @@
  "status": {
   "sources": []
  },
- "notes": "Uses the Carpe 10 20mph build (src link). Orbea's US configurator gives no class, speed spec, range, weight or max load. eBikes International's Carpe 10 test report (not speed-specific) confirms 85Nm and 420Wh; its 'SRP is $5,899' is likely a non-US price, so not used. 99 Spokes lists the same price and specs as Orbea. Space-saving stem and folding pedals, but the frame does not fold."
+ "notes": "Uses the Carpe 10 20mph build (src link). Orbea's US configurator gives no class, speed spec, range, weight or max load. eBikes International's Carpe 10 test report (not speed-specific) confirms 85Nm and 420Wh; its 'SRP is $5,899' is likely a non-US price, so not used. 99 Spokes lists the same price and specs as Orbea. Space-saving stem and folding pedals, but the frame does not fold. Recheck: maker product and catalog pages (incl. hidden text) give no class word, only the '20mph' build name; Around the Cycle (US dealer) lists only Carpe 28mph builds (Class 3)."
 }

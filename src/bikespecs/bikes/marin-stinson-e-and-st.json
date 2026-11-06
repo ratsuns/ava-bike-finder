@@ -1,54 +1,210 @@
-{"bike": "Marin|Stinson E (and ST)", "checked": "2026-11-06",
+{
+ "bike": "Marin|Stinson E (and ST)",
+ "checked": "2026-11-06",
  "fields": {
   "price": [
-   {"kind": "maker", "value": 1799, "url": "https://marinbikes.com/products/2026-stinson-e", "quote": "$1,799.00 * ⟶ Envrionmental Recycling Fee applies ($15.00) Learn more"},
-   {"kind": "maker", "value": 1799, "url": "https://marinbikes.com/collections/stinson-e", "quote": "STINSON ELECTRIC ST WITH THROTTLE | $1,799.00 USD", "basis": "ST (step-thru) version, same price"},
-   {"kind": "review", "value": 1799, "url": "https://99spokes.com/bikes/marin/2026/stinson-electric-with-throttle", "quote": "Manufacturer Price ⟶ $1,799"},
-   {"kind": "retailer", "value": null, "url": "https://revolutionbikeshop.com/2026-marin-stinson-e-st-na-red/", "quote": "$1,899.00 ⟶ (No reviews yet)  Write a Review", "basis": "dealer lists the ST at $1,899, above Marin's $1,799 MSRP; not recorded as a value"}
+   {
+    "kind": "maker",
+    "value": 1799,
+    "url": "https://marinbikes.com/products/2026-stinson-e",
+    "quote": "$1,799.00 * ⟶ Envrionmental Recycling Fee applies ($15.00) Learn more"
+   },
+   {
+    "kind": "maker",
+    "value": 1799,
+    "url": "https://marinbikes.com/collections/stinson-e",
+    "quote": "STINSON ELECTRIC ST WITH THROTTLE | $1,799.00 USD",
+    "basis": "ST (step-thru) version, same price"
+   },
+   {
+    "kind": "review",
+    "value": 1799,
+    "url": "https://99spokes.com/bikes/marin/2026/stinson-electric-with-throttle",
+    "quote": "Manufacturer Price ⟶ $1,799"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://revolutionbikeshop.com/2026-marin-stinson-e-st-na-red/",
+    "quote": "$1,899.00 ⟶ (No reviews yet)  Write a Review",
+    "basis": "dealer lists the ST at $1,899, above Marin's $1,799 MSRP; not recorded as a value"
+   }
   ],
   "cls": [
-   {"kind": "maker", "value": null, "url": "https://marinbikes.com/products/2026-stinson-e", "quote": "", "basis": "page lists a thumb throttle but no class or top speed"},
-   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/marin/2026/stinson-electric-with-throttle", "quote": ""}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://marinbikes.com/products/2026-stinson-e",
+    "quote": "",
+    "basis": "page lists a thumb throttle but no class or top speed"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://99spokes.com/bikes/marin/2026/stinson-electric-with-throttle",
+    "quote": ""
+   }
   ],
   "spd": [
-   {"kind": "maker", "value": null, "url": "https://marinbikes.com/products/2026-stinson-e", "quote": ""},
-   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/marin/2026/stinson-electric-with-throttle", "quote": "", "basis": "the '28 mph' line on this page belongs to a similar-bikes comparison widget, not this bike"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://marinbikes.com/products/2026-stinson-e",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://99spokes.com/bikes/marin/2026/stinson-electric-with-throttle",
+    "quote": "",
+    "basis": "the '28 mph' line on this page belongs to a similar-bikes comparison widget, not this bike"
+   },
+   {
+    "kind": "retailer",
+    "value": 20,
+    "url": "https://www.metrocycleto.com/products/marin-stinson-e-electric-bike",
+    "quote": "The Bafang rear hub motor provides 40Nm of torque in a compact and tidy package, and delivers top assisted speeds of 20mph, 32km/h (North America), and 25km/h for the rest of the world.",
+    "basis": "MetroCycle (Toronto dealer) page for the Marin Stinson E; it doesn't mention a throttle, so likely the earlier pre-throttle Stinson E (same Bafang 40Nm rear hub); model year not stated. Read via textContent."
+   }
   ],
   "tq": [
-   {"kind": "maker", "value": 40, "url": "https://marinbikes.com/products/2026-stinson-e", "quote": "Bafang 250 Watt Hub Motor, 40Nm, 36H ⟶ HUB FRONT"},
-   {"kind": "review", "value": 40, "url": "https://99spokes.com/bikes/marin/2026/stinson-electric-with-throttle", "quote": "MotorBafang 250W 40Nm hub-drive ⟶ BatteryBafang 340Wh"},
-   {"kind": "retailer", "value": 40, "url": "https://revolutionbikeshop.com/2026-marin-stinson-e-st-na-red/", "quote": "Hub, Rear\tBafang 250 Watt Hub Motor, 40Nm, 36H ⟶ Hub, Front\tForged Aluminum Alloy, 32H"}
+   {
+    "kind": "maker",
+    "value": 40,
+    "url": "https://marinbikes.com/products/2026-stinson-e",
+    "quote": "Bafang 250 Watt Hub Motor, 40Nm, 36H ⟶ HUB FRONT"
+   },
+   {
+    "kind": "review",
+    "value": 40,
+    "url": "https://99spokes.com/bikes/marin/2026/stinson-electric-with-throttle",
+    "quote": "MotorBafang 250W 40Nm hub-drive ⟶ BatteryBafang 340Wh"
+   },
+   {
+    "kind": "retailer",
+    "value": 40,
+    "url": "https://revolutionbikeshop.com/2026-marin-stinson-e-st-na-red/",
+    "quote": "Hub, Rear\tBafang 250 Watt Hub Motor, 40Nm, 36H ⟶ Hub, Front\tForged Aluminum Alloy, 32H"
+   }
   ],
   "wh": [
-   {"kind": "maker", "value": 340, "url": "https://marinbikes.com/products/2026-stinson-e", "quote": "BATTERY ⟶ Bafang 340Wh, 36V, In-tube"},
-   {"kind": "review", "value": 340, "url": "https://99spokes.com/bikes/marin/2026/stinson-electric-with-throttle", "quote": "Battery ⟶ Bafang 340Wh, 36V, In-tube"},
-   {"kind": "retailer", "value": 340, "url": "https://revolutionbikeshop.com/2026-marin-stinson-e-st-na-red/", "quote": "Battery\tBafang 340Wh, 36V, In-tube"}
+   {
+    "kind": "maker",
+    "value": 340,
+    "url": "https://marinbikes.com/products/2026-stinson-e",
+    "quote": "BATTERY ⟶ Bafang 340Wh, 36V, In-tube"
+   },
+   {
+    "kind": "review",
+    "value": 340,
+    "url": "https://99spokes.com/bikes/marin/2026/stinson-electric-with-throttle",
+    "quote": "Battery ⟶ Bafang 340Wh, 36V, In-tube"
+   },
+   {
+    "kind": "retailer",
+    "value": 340,
+    "url": "https://revolutionbikeshop.com/2026-marin-stinson-e-st-na-red/",
+    "quote": "Battery\tBafang 340Wh, 36V, In-tube"
+   }
   ],
   "range": [
-   {"kind": "maker", "value": "15–62", "url": "https://marinbikes.com/products/2026-stinson-e", "quote": "RANGE ⟶ 15-62 miles/25-100km"},
-   {"kind": "maker", "value": "15–62", "url": "https://marinbikes.com/products/2026-stinson-e-st", "quote": "RANGE | 15-62 miles/25-100km", "basis": "ST version"},
-   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/marin/2026/stinson-electric-with-throttle", "quote": ""}
+   {
+    "kind": "maker",
+    "value": "15–62",
+    "url": "https://marinbikes.com/products/2026-stinson-e",
+    "quote": "RANGE ⟶ 15-62 miles/25-100km"
+   },
+   {
+    "kind": "maker",
+    "value": "15–62",
+    "url": "https://marinbikes.com/products/2026-stinson-e-st",
+    "quote": "RANGE | 15-62 miles/25-100km",
+    "basis": "ST version"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://99spokes.com/bikes/marin/2026/stinson-electric-with-throttle",
+    "quote": ""
+   }
   ],
   "wt": [
-   {"kind": "maker", "value": null, "url": "https://marinbikes.com/products/2026-stinson-e", "quote": ""},
-   {"kind": "retailer", "value": null, "url": "https://revolutionbikeshop.com/2026-marin-stinson-e-st-na-red/", "quote": "Weight: 60.00 LBS ⟶ Width: 58.00 (in)", "basis": "shop's shipping weight listed with box dimensions, not the bike's weight; not recorded"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://marinbikes.com/products/2026-stinson-e",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://revolutionbikeshop.com/2026-marin-stinson-e-st-na-red/",
+    "quote": "Weight: 60.00 LBS ⟶ Width: 58.00 (in)",
+    "basis": "shop's shipping weight listed with box dimensions, not the bike's weight; not recorded"
+   }
   ],
   "load": [
-   {"kind": "maker", "value": null, "url": "https://marinbikes.com/products/2026-stinson-e", "quote": ""},
-   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/marin/2026/stinson-electric-with-throttle", "quote": ""}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://marinbikes.com/products/2026-stinson-e",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://99spokes.com/bikes/marin/2026/stinson-electric-with-throttle",
+    "quote": ""
+   }
   ],
   "motor": [
-   {"kind": "maker", "value": "250W rear hub", "url": "https://marinbikes.com/products/2026-stinson-e", "quote": "Bafang 250 Watt Hub Motor, 40Nm, 36H ⟶ HUB FRONT"},
-   {"kind": "review", "value": "250W rear hub", "url": "https://99spokes.com/bikes/marin/2026/stinson-electric-with-throttle", "quote": "MotorBafang 250W 40Nm hub-drive ⟶ BatteryBafang 340Wh"},
-   {"kind": "retailer", "value": "250W rear hub", "url": "https://revolutionbikeshop.com/2026-marin-stinson-e-st-na-red/", "quote": "Hub, Rear\tBafang 250 Watt Hub Motor, 40Nm, 36H ⟶ Hub, Front\tForged Aluminum Alloy, 32H"}
+   {
+    "kind": "maker",
+    "value": "250W rear hub",
+    "url": "https://marinbikes.com/products/2026-stinson-e",
+    "quote": "Bafang 250 Watt Hub Motor, 40Nm, 36H ⟶ HUB FRONT"
+   },
+   {
+    "kind": "review",
+    "value": "250W rear hub",
+    "url": "https://99spokes.com/bikes/marin/2026/stinson-electric-with-throttle",
+    "quote": "MotorBafang 250W 40Nm hub-drive ⟶ BatteryBafang 340Wh"
+   },
+   {
+    "kind": "retailer",
+    "value": "250W rear hub",
+    "url": "https://revolutionbikeshop.com/2026-marin-stinson-e-st-na-red/",
+    "quote": "Hub, Rear\tBafang 250 Watt Hub Motor, 40Nm, 36H ⟶ Hub, Front\tForged Aluminum Alloy, 32H"
+   }
   ],
   "height": [
-   {"kind": "maker", "value": null, "url": "https://marinbikes.com/products/2026-stinson-e", "quote": "", "basis": "only an interactive height slider (5'0\" to 5'11\"), no published rider-height range"},
-   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/marin/2026/stinson-electric-with-throttle", "quote": "", "basis": "sizes shown are marked Estimated"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://marinbikes.com/products/2026-stinson-e",
+    "quote": "",
+    "basis": "only an interactive height slider (5'0\" to 5'11\"), no published rider-height range"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://99spokes.com/bikes/marin/2026/stinson-electric-with-throttle",
+    "quote": "",
+    "basis": "sizes shown are marked Estimated"
+   }
   ],
   "fold": [
-   {"kind": "maker", "value": "No", "url": "https://marinbikes.com/products/2026-stinson-e", "quote": "Series 1 Comfort, E-Bike Specific, 6061 Aluminum, 27.5” Wheels, Disc Specific, Comfort Control Geometry, Kickstand Mount, Fender and Rack Mounts", "basis": "standard aluminum frame; no folding mentioned"}
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://marinbikes.com/products/2026-stinson-e",
+    "quote": "Series 1 Comfort, E-Bike Specific, 6061 Aluminum, 27.5” Wheels, Disc Specific, Comfort Control Geometry, Kickstand Mount, Fender and Rack Mounts",
+    "basis": "standard aluminum frame; no folding mentioned"
+   }
   ]
  },
- "status": {"sources": []},
- "notes": "Marin's page (both Stinson E and Stinson E ST) gives no class, top speed, bike weight, max load or rider-height range. ST page: https://marinbikes.com/products/2026-stinson-e-st (same motor, battery, range, price). EBR search found nothing. Revolution Bike Shop's 60 lb weight is a shipping weight."}
+ "status": {
+  "sources": []
+ },
+ "notes": "Marin's page (both Stinson E and Stinson E ST) gives no class, top speed, bike weight, max load or rider-height range. ST page: https://marinbikes.com/products/2026-stinson-e-st (same motor, battery, range, price). EBR search found nothing. Revolution Bike Shop's 60 lb weight is a shipping weight. Recheck: maker 2026 page and Stinson E collection (incl. hidden spec JSON) give no class or speed; Mike's Bikes has no Stinson; one WebSearch; MetroCycle (Toronto dealer) Stinson E page says 20 mph assist in North America but appears to be the earlier no-throttle version, so not used for class. Sprockets Cycles page 404."
+}

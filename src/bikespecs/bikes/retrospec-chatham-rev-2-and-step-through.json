@@ -14,7 +14,8 @@
   ],
   "tq": [
    {"kind": "maker", "value": null, "url": "https://retrospec.com/products/chatham-rev-plus-electric-beach-cruiser-bike", "quote": ""},
-   {"kind": "review", "value": 65, "url": "https://electricbikereport.com/retrospec-chatham-rev-plus-2-review/", "quote": "Motor: 48V/500W geared, 770W Peak, 65 Nm Torque"}
+   {"kind": "review", "value": 65, "url": "https://electricbikereport.com/retrospec-chatham-rev-plus-2-review/", "quote": "Motor: 48V/500W geared, 770W Peak, 65 Nm Torque"},
+   {"kind": "review", "value": 65, "url": "https://electricbikereview.com/retrospec/chatham-revplus2-st-review/", "quote": "MOTOR TORQUE: ⟶ 65Nm Newton meters", "basis": "review of the Rev+ 2 Step Through"}
   ],
   "wh": [
    {"kind": "maker", "value": 500, "url": "https://retrospec.com/products/chatham-rev-plus-electric-beach-cruiser-bike", "quote": "48V/500Wh LG Li-Ion Battery"},
@@ -26,7 +27,9 @@
   ],
   "wt": [
    {"kind": "maker", "value": null, "url": "https://retrospec.com/products/chatham-rev-plus-electric-beach-cruiser-bike", "quote": ""},
-   {"kind": "review", "value": 62.8, "url": "https://electricbikereport.com/retrospec-chatham-rev-plus-2-review/", "quote": "Tested Weight: 62.8 lbs", "basis": "measured by reviewer"}
+   {"kind": "review", "value": 62.8, "url": "https://electricbikereport.com/retrospec-chatham-rev-plus-2-review/", "quote": "Tested Weight: 62.8 lbs", "basis": "measured by reviewer"},
+   {"kind": "maker", "value": 59, "url": "https://help.retrospec.com/en-US/how-heavy-are-your-ebikes-629616", "quote": "Chatham Rev+ ⟶ 59 lbs", "basis": "Retrospec help-center weight table; listed as 'Chatham Rev+' with no generation number (Step Through 58 lbs); differs from the site's 64"},
+   {"kind": "review", "value": 62.8, "url": "https://electricbikereview.com/retrospec/chatham-revplus2-st-review/", "quote": "Our Test Bike Weight - Complete: 62.8lbs", "basis": "measured, Step Through, with battery; the review says advertised weight is not listed"}
   ],
   "load": [
    {"kind": "maker", "value": 350, "url": "https://retrospec.com/products/chatham-rev-plus-electric-beach-cruiser-bike", "quote": "Recommended Weight Limit ⟶ 350lbs"},
@@ -46,4 +49,4 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Maker page shows no bike weight (only an invisible product tag 'Weight - 59lbs', not quotable); review's 62.8 lbs is measured. Maker range claim is now 75 miles; EBR review quotes an earlier 52+ mile claim. Step-through is a separate maker page (same specs, 16\" frame, 5'2\"-6'1\")."}
+ "notes": "Maker page shows no bike weight (only an invisible product tag 'Weight - 59lbs', not quotable); review's 62.8 lbs is measured. Maker range claim is now 75 miles; EBR review quotes an earlier 52+ mile claim. Step-through is a separate maker page (same specs, 16\" frame, 5'2\"-6'1\"). Recheck: looked at the Rev+ 2 product page full text (no torque or visible weight; only a hidden 'Weight - 59lbs' tag; no manual linked), Retrospec's help-center weight table ('Chatham Rev+' 59 lbs), one web search, Electric Bike Review's Rev+ 2 ST review (65Nm, 62.8lbs tested)."}

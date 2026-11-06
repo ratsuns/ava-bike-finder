@@ -2,7 +2,8 @@
  "fields": {
   "price": [
    {"kind": "maker", "value": null, "url": "https://www.ternbicycles.com/us/bikes/471/nbd-p8i", "quote": "$2,999 (SALE PRICE)", "basis": "maker shows only a sale price; no regular price on the page"},
-   {"kind": "retailer", "value": null, "url": "https://www.amegoev.com/products/tern-nbd-p8i", "quote": "Regular price ⟶ $5,599.00 CAD", "basis": "Canadian dealer, CAD only"}
+   {"kind": "retailer", "value": null, "url": "https://www.amegoev.com/products/tern-nbd-p8i", "quote": "Regular price ⟶ $5,599.00 CAD", "basis": "Canadian dealer, CAD only"},
+   {"kind": "retailer", "value": 3599, "url": "https://www.seattleelectricbike.net/products/tern-nbd-p8i", "quote": "Regular price ⟶ $3,599.00", "basis": "US dealer Seattle Electric Bike; regular price, sale price $2,999.00"}
   ],
   "cls": [
    {"kind": "maker", "value": 1, "url": "https://www.ternbicycles.com/us/bikes/471/nbd-p8i", "quote": "Class 1, Bosch Active Line Plus, 270% Assist, 50 Nm Torque, max speed 25 kph (EU); max speed 20 mph (US) ⟶ BATTERY:"}
@@ -45,4 +46,5 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Maker page shows only '$2,999 (SALE PRICE)' with no regular price, so price left null; Amego (Canadian dealer, from one WebSearch) gives CAD prices only. Max load is the max gross vehicle weight (total); max rider 264.6 lb; rack 60 lb. Maker lists 'FOLDING SIZE' (stem folds) but the frame does not fold. No US review found (EBR and EBReport have no NBD review; a US dealer page from the search returned 410 Gone)."}
+ "notes": "Maker page shows only '$2,999 (SALE PRICE)' with no regular price, so price left null; Amego (Canadian dealer, from one WebSearch) gives CAD prices only. Max load is the max gross vehicle weight (total); max rider 264.6 lb; rack 60 lb. Maker lists 'FOLDING SIZE' (stem folds) but the frame does not fold. No US review found (EBR and EBReport have no NBD review; a US dealer page from the search returned 410 Gone). | recheck: Seattle Electric Bike (US dealer) lists regular $3,599 (sale $2,999) - the site's 2999 matches the sale price; NBD is not in Tern's US online store."
+}

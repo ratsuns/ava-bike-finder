@@ -1,48 +1,179 @@
-{"bike": "Specialized|Turbo Como 3.0", "checked": "2026-11-06",
+{
+ "bike": "Specialized|Turbo Como 3.0",
+ "checked": "2026-11-06",
  "fields": {
   "price": [
-   {"kind": "maker", "value": 3249.99, "url": "https://www.specialized.com/us/en/turbo-como-30/p/199028", "quote": "$3,249.99 ⟶ 4.9"},
-   {"kind": "retailer", "value": 3249.99, "url": "https://www.n1bikes.com/products/turbo-como-30?id=50b72d5ad8529ca0ab09cc89a9d223cda651460e591f41424ae1f0f241023e3a&variant=90422-7104", "quote": "$3,249.99 ⟶ Earn 32,499 points on this item"}
+   {
+    "kind": "maker",
+    "value": 3249.99,
+    "url": "https://www.specialized.com/us/en/turbo-como-30/p/199028",
+    "quote": "$3,249.99 ⟶ 4.9"
+   },
+   {
+    "kind": "retailer",
+    "value": 3249.99,
+    "url": "https://www.n1bikes.com/products/turbo-como-30?id=50b72d5ad8529ca0ab09cc89a9d223cda651460e591f41424ae1f0f241023e3a&variant=90422-7104",
+    "quote": "$3,249.99 ⟶ Earn 32,499 points on this item"
+   }
   ],
   "cls": [
-   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-como-30/p/199028", "quote": "The speed limit at which the motor will stop supporting may vary significantly by region and is based on local requirements. It may also affect range: a higher speed limit may result in less range."},
-   {"kind": "retailer", "value": 1, "url": "https://www.performancebike.com/specialized-turbo-como-3.0-ebike-cast-black-silver-reflective-m-80422-7003/p1802667", "quote": "Turbo Full Power 2.0E motor combined with 530Wh battery sustains rider amplification up to 20MPH for up to 5 hours in eco mode", "basis": "20 mph pedal assist, no throttle listed by maker or retailer -> class 1"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.specialized.com/us/en/turbo-como-30/p/199028",
+    "quote": "The speed limit at which the motor will stop supporting may vary significantly by region and is based on local requirements. It may also affect range: a higher speed limit may result in less range."
+   },
+   {
+    "kind": "retailer",
+    "value": 1,
+    "url": "https://www.performancebike.com/specialized-turbo-como-3.0-ebike-cast-black-silver-reflective-m-80422-7003/p1802667",
+    "quote": "Turbo Full Power 2.0E motor combined with 530Wh battery sustains rider amplification up to 20MPH for up to 5 hours in eco mode",
+    "basis": "20 mph pedal assist, no throttle listed by maker or retailer -> class 1"
+   },
+   {
+    "kind": "maker",
+    "value": 1,
+    "url": "https://www.specialized.com/us/en/turbo-como-30/p/199028",
+    "quote": "Turbo Full Power 2.0E motor and 530Wh battery offer an unparalleled riding experience, providing a smooth, seamless, and shockingly quiet amplification of your efforts, up to 20 mph. The integrated controller responds to your pedal inputs resulting in intuitive amplification of your efforts with an incredibly natural feel.",
+    "basis": "pedal assist to 20 mph, no throttle = Class 1; from the page's collapsed feature text (read via textContent)"
+   }
   ],
   "spd": [
-   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-como-30/p/199028", "quote": ""},
-   {"kind": "retailer", "value": 20, "url": "https://www.performancebike.com/specialized-turbo-como-3.0-ebike-cast-black-silver-reflective-m-80422-7003/p1802667", "quote": "Turbo Full Power 2.0E motor combined with 530Wh battery sustains rider amplification up to 20MPH for up to 5 hours in eco mode"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.specialized.com/us/en/turbo-como-30/p/199028",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": 20,
+    "url": "https://www.performancebike.com/specialized-turbo-como-3.0-ebike-cast-black-silver-reflective-m-80422-7003/p1802667",
+    "quote": "Turbo Full Power 2.0E motor combined with 530Wh battery sustains rider amplification up to 20MPH for up to 5 hours in eco mode"
+   },
+   {
+    "kind": "maker",
+    "value": 20,
+    "url": "https://www.specialized.com/us/en/turbo-como-30/p/199028",
+    "quote": "Turbo Full Power 2.0E motor and 530Wh battery offer an unparalleled riding experience, providing a smooth, seamless, and shockingly quiet amplification of your efforts, up to 20 mph. The integrated controller responds to your pedal inputs resulting in intuitive amplification of your efforts with an incredibly natural feel.",
+    "basis": "collapsed feature text on the maker page"
+   }
   ],
   "tq": [
-   {"kind": "maker", "value": 50, "url": "https://www.specialized.com/us/en/turbo-como-30/p/199028", "quote": "Motor ⟶ Specialized 2.0E, 50Nm torque, custom tuned motor, 250W nominal"},
-   {"kind": "retailer", "value": 50, "url": "https://www.n1bikes.com/products/turbo-como-30?id=50b72d5ad8529ca0ab09cc89a9d223cda651460e591f41424ae1f0f241023e3a&variant=90422-7104", "quote": "Motor\tSpecialized 2.0E, 50Nm torque, custom tuned motor, 250W nominal ⟶ Battery\tSpecialized U2-530, alloy casing, state of charge display, 530Wh"},
-   {"kind": "retailer", "value": 50, "url": "https://www.performancebike.com/specialized-turbo-como-3.0-ebike-cast-black-silver-reflective-m-80422-7003/p1802667", "quote": "Motor: Specialized 2.0E custom tuned motor (50Nm torque) (250W nominal) ⟶ UI/Remote: MasterMind TCD, w/ handlebar remote"}
+   {
+    "kind": "maker",
+    "value": 50,
+    "url": "https://www.specialized.com/us/en/turbo-como-30/p/199028",
+    "quote": "Motor ⟶ Specialized 2.0E, 50Nm torque, custom tuned motor, 250W nominal"
+   },
+   {
+    "kind": "retailer",
+    "value": 50,
+    "url": "https://www.n1bikes.com/products/turbo-como-30?id=50b72d5ad8529ca0ab09cc89a9d223cda651460e591f41424ae1f0f241023e3a&variant=90422-7104",
+    "quote": "Motor\tSpecialized 2.0E, 50Nm torque, custom tuned motor, 250W nominal ⟶ Battery\tSpecialized U2-530, alloy casing, state of charge display, 530Wh"
+   },
+   {
+    "kind": "retailer",
+    "value": 50,
+    "url": "https://www.performancebike.com/specialized-turbo-como-3.0-ebike-cast-black-silver-reflective-m-80422-7003/p1802667",
+    "quote": "Motor: Specialized 2.0E custom tuned motor (50Nm torque) (250W nominal) ⟶ UI/Remote: MasterMind TCD, w/ handlebar remote"
+   }
   ],
   "wh": [
-   {"kind": "maker", "value": 530, "url": "https://www.specialized.com/us/en/turbo-como-30/p/199028", "quote": "Battery ⟶ Specialized U2-530, alloy casing, state of charge display, 530Wh"},
-   {"kind": "retailer", "value": 530, "url": "https://www.n1bikes.com/products/turbo-como-30?id=50b72d5ad8529ca0ab09cc89a9d223cda651460e591f41424ae1f0f241023e3a&variant=90422-7104", "quote": "Battery\tSpecialized U2-530, alloy casing, state of charge display, 530Wh"},
-   {"kind": "retailer", "value": 530, "url": "https://www.performancebike.com/specialized-turbo-como-3.0-ebike-cast-black-silver-reflective-m-80422-7003/p1802667", "quote": "Battery: Specialized U2-530 (Alloy casing) (530Wh) ⟶ Handlebar: Specialized Como Bar/Stem Combo"}
+   {
+    "kind": "maker",
+    "value": 530,
+    "url": "https://www.specialized.com/us/en/turbo-como-30/p/199028",
+    "quote": "Battery ⟶ Specialized U2-530, alloy casing, state of charge display, 530Wh"
+   },
+   {
+    "kind": "retailer",
+    "value": 530,
+    "url": "https://www.n1bikes.com/products/turbo-como-30?id=50b72d5ad8529ca0ab09cc89a9d223cda651460e591f41424ae1f0f241023e3a&variant=90422-7104",
+    "quote": "Battery\tSpecialized U2-530, alloy casing, state of charge display, 530Wh"
+   },
+   {
+    "kind": "retailer",
+    "value": 530,
+    "url": "https://www.performancebike.com/specialized-turbo-como-3.0-ebike-cast-black-silver-reflective-m-80422-7003/p1802667",
+    "quote": "Battery: Specialized U2-530 (Alloy casing) (530Wh) ⟶ Handlebar: Specialized Como Bar/Stem Combo"
+   }
   ],
   "range": [
-   {"kind": "maker", "value": "68", "url": "https://www.specialized.com/us/en/turbo-como-30/p/199028", "quote": "Long-Range - With true ride-anywhere range, go up to 68 miles (110 km) or 5 hours of range (eco mode). ⟶ Technical Specifications", "basis": "eco mode"}
+   {
+    "kind": "maker",
+    "value": "68",
+    "url": "https://www.specialized.com/us/en/turbo-como-30/p/199028",
+    "quote": "Long-Range - With true ride-anywhere range, go up to 68 miles (110 km) or 5 hours of range (eco mode). ⟶ Technical Specifications",
+    "basis": "eco mode"
+   }
   ],
   "wt": [
-   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-como-30/p/199028", "quote": "Weight ⟶ Weight Size", "basis": "weight field is blank on maker page"},
-   {"kind": "retailer", "value": 58, "url": "https://www.n1bikes.com/products/turbo-como-30?id=50b72d5ad8529ca0ab09cc89a9d223cda651460e591f41424ae1f0f241023e3a&variant=90422-7104", "quote": "Weight\t26.4kg (58 lb, 3.2 oz) ⟶ Weight Size\tMD", "basis": "size MD; battery inclusion not stated"},
-   {"kind": "retailer", "value": null, "url": "https://www.performancebike.com/specialized-turbo-como-3.0-ebike-cast-black-silver-reflective-m-80422-7003/p1802667", "quote": "Weight: - ⟶ Assembly Note:"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.specialized.com/us/en/turbo-como-30/p/199028",
+    "quote": "Weight ⟶ Weight Size",
+    "basis": "weight field is blank on maker page"
+   },
+   {
+    "kind": "retailer",
+    "value": 58,
+    "url": "https://www.n1bikes.com/products/turbo-como-30?id=50b72d5ad8529ca0ab09cc89a9d223cda651460e591f41424ae1f0f241023e3a&variant=90422-7104",
+    "quote": "Weight\t26.4kg (58 lb, 3.2 oz) ⟶ Weight Size\tMD",
+    "basis": "size MD; battery inclusion not stated"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.performancebike.com/specialized-turbo-como-3.0-ebike-cast-black-silver-reflective-m-80422-7003/p1802667",
+    "quote": "Weight: - ⟶ Assembly Note:"
+   }
   ],
   "load": [
-   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-como-30/p/199028", "quote": "Specialized rack, MIK HD interface, built-in pannier mounts, 27kg max load ⟶ Bike Lock", "basis": "only the rear rack limit (27 kg) is published, not a bike max load"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.specialized.com/us/en/turbo-como-30/p/199028",
+    "quote": "Specialized rack, MIK HD interface, built-in pannier mounts, 27kg max load ⟶ Bike Lock",
+    "basis": "only the rear rack limit (27 kg) is published, not a bike max load"
+   }
   ],
   "motor": [
-   {"kind": "maker", "value": "250W mid-drive (Specialized 2.0E)", "url": "https://www.specialized.com/us/en/turbo-como-30/p/199028", "quote": "Motor ⟶ Specialized 2.0E, 50Nm torque, custom tuned motor, 250W nominal"},
-   {"kind": "retailer", "value": "250W mid-drive (Specialized 2.0E)", "url": "https://www.performancebike.com/specialized-turbo-como-3.0-ebike-cast-black-silver-reflective-m-80422-7003/p1802667", "quote": "Motor: Specialized 2.0E custom tuned motor (50Nm torque) (250W nominal) ⟶ UI/Remote: MasterMind TCD, w/ handlebar remote"}
+   {
+    "kind": "maker",
+    "value": "250W mid-drive (Specialized 2.0E)",
+    "url": "https://www.specialized.com/us/en/turbo-como-30/p/199028",
+    "quote": "Motor ⟶ Specialized 2.0E, 50Nm torque, custom tuned motor, 250W nominal"
+   },
+   {
+    "kind": "retailer",
+    "value": "250W mid-drive (Specialized 2.0E)",
+    "url": "https://www.performancebike.com/specialized-turbo-como-3.0-ebike-cast-black-silver-reflective-m-80422-7003/p1802667",
+    "quote": "Motor: Specialized 2.0E custom tuned motor (50Nm torque) (250W nominal) ⟶ UI/Remote: MasterMind TCD, w/ handlebar remote"
+   }
   ],
   "height": [
-   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-como-30/p/199028", "quote": "", "basis": "sizes S/M/L; size guide did not show rider heights"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.specialized.com/us/en/turbo-como-30/p/199028",
+    "quote": "",
+    "basis": "sizes S/M/L; size guide did not show rider heights"
+   }
   ],
   "fold": [
-   {"kind": "maker", "value": "No", "url": "https://www.specialized.com/us/en/turbo-como-30/p/199028", "quote": "E5 Aluminum, bottom bracket motor mount, fully integrated & lockable downtube battery, internal cable routing, lock and front rack mount ⟶ Seat Binder", "basis": "fixed aluminum frame; no folding mentioned"}
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://www.specialized.com/us/en/turbo-como-30/p/199028",
+    "quote": "E5 Aluminum, bottom bracket motor mount, fully integrated & lockable downtube battery, internal cable routing, lock and front rack mount ⟶ Seat Binder",
+    "basis": "fixed aluminum frame; no folding mentioned"
+   }
   ]
  },
- "status": {"sources": []},
- "notes": "Maker page is labeled '2022 Turbo Como 3.0' and lists no speed/class and a blank weight. Speed 20 mph from Performance Bicycle (same 2.0E/530Wh/Alivio spec; its $2,499.99 price not used). EBR review (electricbikereview.com/specialized/turbo-como-3-0/) is the 2020 Brose 460Wh generation and EBReport's review is the 3.0 IGH, so neither was used. Adventure Cycling road test is also the older 1.2E/460Wh model, not used."}
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker page is labeled '2022 Turbo Como 3.0' and lists no speed/class and a blank weight. Speed 20 mph from Performance Bicycle (same 2.0E/530Wh/Alivio spec; its $2,499.99 price not used). EBR review (electricbikereview.com/specialized/turbo-como-3-0/) is the 2020 Brose 460Wh generation and EBReport's review is the 3.0 IGH, so neither was used. Adventure Cycling road test is also the older 1.2E/460Wh model, not used. recheck: maker page collapsed feature text (textContent) says the 2.0E/530Wh system assists 'up to 20 mph'."
+}

@@ -1,49 +1,180 @@
-{"bike": "Velotric|Breeze 1", "checked": "2026-11-06",
+{
+ "bike": "Velotric|Breeze 1",
+ "checked": "2026-11-06",
  "fields": {
   "price": [
-   {"kind": "maker", "value": 1799, "url": "https://www.velotricbike.com/products/velotric-breeze-1", "quote": "$1,799.00 ⟶ Buy Now", "basis": "no crossed-out price shown; Black Friday offer is free accessories, not a price cut"},
-   {"kind": "review", "value": 1799, "url": "https://electricbikereview.com/velotric/breeze-1-review/", "quote": "PRICE: ⟶ $1,799"}
+   {
+    "kind": "maker",
+    "value": 1799,
+    "url": "https://www.velotricbike.com/products/velotric-breeze-1",
+    "quote": "$1,799.00 ⟶ Buy Now",
+    "basis": "no crossed-out price shown; Black Friday offer is free accessories, not a price cut"
+   },
+   {
+    "kind": "review",
+    "value": 1799,
+    "url": "https://electricbikereview.com/velotric/breeze-1-review/",
+    "quote": "PRICE: ⟶ $1,799"
+   }
   ],
   "cls": [
-   {"kind": "maker", "value": 2, "url": "https://www.velotricbike.com/products/velotric-breeze-1", "quote": "Class 2 default: 20 mph (throttle + pedal assist). Adjustable to Class 1 (pedal-only) or Class 3 (28 mph)* where legal. ⟶ How much weight can Breeze 1 hold?", "basis": "ships Class 2; spec table lists 'Class ⟶ 1/2/3'"},
-   {"kind": "review", "value": 3, "url": "https://electricbikereview.com/velotric/breeze-1-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 3", "basis": "reviewer lists the max (28 mph) setting"}
+   {
+    "kind": "maker",
+    "value": 2,
+    "url": "https://www.velotricbike.com/products/velotric-breeze-1",
+    "quote": "Class 2 default: 20 mph (throttle + pedal assist). Adjustable to Class 1 (pedal-only) or Class 3 (28 mph)* where legal. ⟶ How much weight can Breeze 1 hold?",
+    "basis": "ships Class 2; spec table lists 'Class ⟶ 1/2/3'"
+   },
+   {
+    "kind": "review",
+    "value": 3,
+    "url": "https://electricbikereview.com/velotric/breeze-1-review/",
+    "quote": "ELECTRIC BIKE CLASS: ⟶ Class 3",
+    "basis": "reviewer lists the max (28 mph) setting"
+   }
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://www.velotricbike.com/products/velotric-breeze-1", "quote": "Max Speed (Default) ⟶ 20 MPH | Max Speed Adjustable Range ⟶ 12~28 MPH", "basis": "adjustable to 28 mph"},
-   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/velotric/breeze-1-review/", "quote": "TOP SPEED: ⟶ 28 MPH mph", "basis": "unlocked top speed"}
+   {
+    "kind": "maker",
+    "value": 20,
+    "url": "https://www.velotricbike.com/products/velotric-breeze-1",
+    "quote": "Max Speed (Default) ⟶ 20 MPH | Max Speed Adjustable Range ⟶ 12~28 MPH",
+    "basis": "adjustable to 28 mph"
+   },
+   {
+    "kind": "review",
+    "value": 28,
+    "url": "https://electricbikereview.com/velotric/breeze-1-review/",
+    "quote": "TOP SPEED: ⟶ 28 MPH mph",
+    "basis": "unlocked top speed"
+   }
   ],
   "tq": [
-   {"kind": "maker", "value": 65, "url": "https://www.velotricbike.com/products/velotric-breeze-1", "quote": "Motor Hub ⟶ 750W, 65Nm"},
-   {"kind": "review", "value": 65, "url": "https://electricbikereview.com/velotric/breeze-1-review/", "quote": "MOTOR TORQUE: ⟶ 65Nm Newton meters"}
+   {
+    "kind": "maker",
+    "value": 65,
+    "url": "https://www.velotricbike.com/products/velotric-breeze-1",
+    "quote": "Motor Hub ⟶ 750W, 65Nm"
+   },
+   {
+    "kind": "review",
+    "value": 65,
+    "url": "https://electricbikereview.com/velotric/breeze-1-review/",
+    "quote": "MOTOR TORQUE: ⟶ 65Nm Newton meters"
+   }
   ],
   "wh": [
-   {"kind": "maker", "value": 627, "url": "https://www.velotricbike.com/products/velotric-breeze-1", "quote": "Battery ⟶ Removable 48V, 13.4Ah (627Wh), IPX7, Certificated by UL 2271"},
-   {"kind": "review", "value": 627, "url": "https://electricbikereview.com/velotric/breeze-1-review/", "quote": "BATTERY WATT HOURS: ⟶ 627Wh wh"}
+   {
+    "kind": "maker",
+    "value": 627,
+    "url": "https://www.velotricbike.com/products/velotric-breeze-1",
+    "quote": "Battery ⟶ Removable 48V, 13.4Ah (627Wh), IPX7, Certificated by UL 2271"
+   },
+   {
+    "kind": "review",
+    "value": 627,
+    "url": "https://electricbikereview.com/velotric/breeze-1-review/",
+    "quote": "BATTERY WATT HOURS: ⟶ 627Wh wh"
+   }
   ],
   "range": [
-   {"kind": "maker", "value": "70", "url": "https://www.velotricbike.com/products/velotric-breeze-1", "quote": "Pedal Assist Range ⟶ 70 Miles"},
-   {"kind": "review", "value": "70", "url": "https://electricbikereview.com/velotric/breeze-1-review/", "quote": "Estimated Range (from Ride1Up): 70 miles", "basis": "page typo says Ride1Up; it is the maker's estimate"}
+   {
+    "kind": "maker",
+    "value": "70",
+    "url": "https://www.velotricbike.com/products/velotric-breeze-1",
+    "quote": "Pedal Assist Range ⟶ 70 Miles"
+   },
+   {
+    "kind": "review",
+    "value": "70",
+    "url": "https://electricbikereview.com/velotric/breeze-1-review/",
+    "quote": "Estimated Range (from Ride1Up): 70 miles",
+    "basis": "page typo says Ride1Up; it is the maker's estimate"
+   }
   ],
   "wt": [
-   {"kind": "maker", "value": 48, "url": "https://www.velotricbike.com/products/velotric-breeze-1", "quote": "Bike Weight ⟶ 48 lbs | Bike Weight (Without Battery) ⟶ 40.8 lbs"},
-   {"kind": "review", "value": 50.1, "url": "https://electricbikereview.com/velotric/breeze-1-review/", "quote": "You’ve got two frame sizes: Regular (4’11” to 5’8”) and Large (5’6” to 6’4”), with a step-thru design that’s easy to hop on. Total weight’s 50.1 pounds with the 7.9-pound battery, dropping to 42.2 without it—still nimble for a 330-pound load capacity.", "basis": "measured"}
+   {
+    "kind": "maker",
+    "value": 48,
+    "url": "https://www.velotricbike.com/products/velotric-breeze-1",
+    "quote": "Bike Weight ⟶ 48 lbs | Bike Weight (Without Battery) ⟶ 40.8 lbs"
+   },
+   {
+    "kind": "review",
+    "value": 50.1,
+    "url": "https://electricbikereview.com/velotric/breeze-1-review/",
+    "quote": "You’ve got two frame sizes: Regular (4’11” to 5’8”) and Large (5’6” to 6’4”), with a step-thru design that’s easy to hop on. Total weight’s 50.1 pounds with the 7.9-pound battery, dropping to 42.2 without it—still nimble for a 330-pound load capacity.",
+    "basis": "measured"
+   }
   ],
   "load": [
-   {"kind": "maker", "value": 330, "url": "https://www.velotricbike.com/products/velotric-breeze-1", "quote": "Max Bike Load ⟶ 330 lbs"},
-   {"kind": "review", "value": 330, "url": "https://electricbikereview.com/velotric/breeze-1-review/", "quote": "You’ve got two frame sizes: Regular (4’11” to 5’8”) and Large (5’6” to 6’4”), with a step-thru design that’s easy to hop on. Total weight’s 50.1 pounds with the 7.9-pound battery, dropping to 42.2 without it—still nimble for a 330-pound load capacity."}
+   {
+    "kind": "maker",
+    "value": 330,
+    "url": "https://www.velotricbike.com/products/velotric-breeze-1",
+    "quote": "Max Bike Load ⟶ 330 lbs"
+   },
+   {
+    "kind": "review",
+    "value": 330,
+    "url": "https://electricbikereview.com/velotric/breeze-1-review/",
+    "quote": "You’ve got two frame sizes: Regular (4’11” to 5’8”) and Large (5’6” to 6’4”), with a step-thru design that’s easy to hop on. Total weight’s 50.1 pounds with the 7.9-pound battery, dropping to 42.2 without it—still nimble for a 330-pound load capacity."
+   }
   ],
   "motor": [
-   {"kind": "maker", "value": "750W rear hub (900W peak)", "url": "https://www.velotricbike.com/products/velotric-breeze-1", "quote": "Motor ⟶ 750W（900W Peak）/65Nm | Motor Hub ⟶ 750W, 65Nm"},
-   {"kind": "review", "value": "750W rear hub", "url": "https://electricbikereview.com/velotric/breeze-1-review/", "quote": "MOTOR TYPE: ⟶ Rear Hub | MOTOR NOMINAL OUTPUT: ⟶ 750W watts"}
+   {
+    "kind": "maker",
+    "value": "750W rear hub (900W peak)",
+    "url": "https://www.velotricbike.com/products/velotric-breeze-1",
+    "quote": "Motor ⟶ 750W（900W Peak）/65Nm | Motor Hub ⟶ 750W, 65Nm"
+   },
+   {
+    "kind": "review",
+    "value": "750W rear hub",
+    "url": "https://electricbikereview.com/velotric/breeze-1-review/",
+    "quote": "MOTOR TYPE: ⟶ Rear Hub | MOTOR NOMINAL OUTPUT: ⟶ 750W watts"
+   }
   ],
   "height": [
-   {"kind": "maker", "value": "4'11\"-6'4\"", "url": "https://www.velotricbike.com/products/velotric-breeze-1", "quote": "User Height Range ⟶ Regular: 4'11'' - 5'8'' | Large: 5'6'' - 6'4''", "basis": "across Regular and Large sizes"},
-   {"kind": "review", "value": "4'11\"-6'4\"", "url": "https://electricbikereview.com/velotric/breeze-1-review/", "quote": "GEOMETRY MEASUREMENTS: ⟶ <ul> <li>Regular : 4’ 11” to 5’ 8”</li> <li>Large: 5’ 6” to 6’ 4”</li> </ul>", "basis": "across Regular and Large sizes"}
+   {
+    "kind": "maker",
+    "value": "4'11\"-6'4\"",
+    "url": "https://www.velotricbike.com/products/velotric-breeze-1",
+    "quote": "User Height Range ⟶ Regular: 4'11'' - 5'8'' | Large: 5'6'' - 6'4''",
+    "basis": "across Regular and Large sizes"
+   },
+   {
+    "kind": "review",
+    "value": "4'11\"-6'4\"",
+    "url": "https://electricbikereview.com/velotric/breeze-1-review/",
+    "quote": "GEOMETRY MEASUREMENTS: ⟶ <ul> <li>Regular : 4’ 11” to 5’ 8”</li> <li>Large: 5’ 6” to 6’ 4”</li> </ul>",
+    "basis": "across Regular and Large sizes"
+   }
   ],
   "fold": [
-   {"kind": "maker", "value": null, "url": "https://www.velotricbike.com/products/velotric-breeze-1", "quote": ""},
-   {"kind": "review", "value": "No", "url": "https://electricbikereview.com/velotric/breeze-1-review/", "quote": "FRAME TYPES: ⟶ Aluminum Alloy"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.velotricbike.com/products/velotric-breeze-1",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": "No",
+    "url": "https://electricbikereview.com/velotric/breeze-1-review/",
+    "quote": "FRAME TYPES: ⟶ Aluminum Alloy"
+   },
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://www.velotricbike.com/collections/electric-bikes",
+    "quote": "Velotric Breeze 1 Cruiser Ebike | \"Best Overall City Cruiser Ebike\" - Electric Bike Report | 166 reviews | Commuter/Cruiser | Bike Type",
+    "basis": "maker All Ebikes collection card gives Bike Type; maker uses 'Folding' only for Fold 1 / Fold 1 Plus"
+   }
   ]
  },
- "status": {"sources": []},
- "notes": "Maker battery says 13.4Ah (627Wh); EBR says 13.6Ah (627Wh). Maker FAQ says range 'Up to 50–60 miles' while spec table says 70 miles PAS; recorded spec-table 70. Fold: non-folding step-thru cruiser; maker page has no folding line. Maker quotes joined with ' | ' are separate script lines from the spec table."}
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker battery says 13.4Ah (627Wh); EBR says 13.6Ah (627Wh). Maker FAQ says range 'Up to 50–60 miles' while spec table says 70 miles PAS; recorded spec-table 70. Fold: non-folding step-thru cruiser; maker page has no folding line. Maker quotes joined with ' | ' are separate script lines from the spec table. Recheck: maker All Ebikes collection lists Bike Type 'Commuter/Cruiser' (Folding is used only for Fold 1 / Fold 1 Plus); maker compare page Type row: 'Cruiser, Commuter, Lightweight'."
+}

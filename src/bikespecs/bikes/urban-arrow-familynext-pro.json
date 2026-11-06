@@ -1,46 +1,168 @@
-{"bike": "Urban Arrow|FamilyNext Pro", "checked": "2026-11-06",
+{
+ "bike": "Urban Arrow|FamilyNext Pro",
+ "checked": "2026-11-06",
  "fields": {
   "price": [
-   {"kind": "maker", "value": 8999, "url": "https://www.urbanarrow.com/en-na/familynext", "quote": "MSRP: $8,999 USD | $12,499 CAD ⟶ Design your Urban Arrow"},
-   {"kind": "retailer", "value": 8999, "url": "https://www.angrycatfishbicycle.com/product/urban-arrow-familynext-pro-1245499-1.htm", "quote": "$8,999.00 ⟶ No SALES TAX If Shipped Outside of Minnesota"},
-   {"kind": "retailer", "value": 8999, "url": "https://clevercycles.com/products/urban-arrow-familynext-pro-bosch-cargo-line-smart", "quote": "Regular price ⟶ $8,999.00"}
+   {
+    "kind": "maker",
+    "value": 8999,
+    "url": "https://www.urbanarrow.com/en-na/familynext",
+    "quote": "MSRP: $8,999 USD | $12,499 CAD ⟶ Design your Urban Arrow"
+   },
+   {
+    "kind": "retailer",
+    "value": 8999,
+    "url": "https://www.angrycatfishbicycle.com/product/urban-arrow-familynext-pro-1245499-1.htm",
+    "quote": "$8,999.00 ⟶ No SALES TAX If Shipped Outside of Minnesota"
+   },
+   {
+    "kind": "retailer",
+    "value": 8999,
+    "url": "https://clevercycles.com/products/urban-arrow-familynext-pro-bosch-cargo-line-smart",
+    "quote": "Regular price ⟶ $8,999.00"
+   }
   ],
   "cls": [
-   {"kind": "maker", "value": null, "url": "https://www.urbanarrow.com/en-na/familynext", "quote": "", "basis": "no class or top speed stated"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.urbanarrow.com/en-na/familynext",
+    "quote": "",
+    "basis": "no class or top speed stated"
+   },
+   {
+    "kind": "maker",
+    "value": 1,
+    "url": "https://urbanarrow.com/manual-familynext-na?locale=en-GB",
+    "quote": "The bike contains an electrical drive unit that assists you up to a speed of 25 km/h (EU) or 20 mph (US-CAN-NZ) when riding. As soon as you push on the pedals the assistance is switched on and it switches off as soon as you stop pedalling",
+    "basis": "derived: maker's NA Family/FamilyNext manual gives pedal assist only (no throttle) to 20 mph; no class number stated"
+   }
   ],
   "spd": [
-   {"kind": "maker", "value": null, "url": "https://www.urbanarrow.com/en-na/familynext", "quote": "", "basis": "no top speed stated"},
-   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/urban-arrow-familynext-pro-100nm", "quote": "Max Assisted Speed\tN/A"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.urbanarrow.com/en-na/familynext",
+    "quote": "",
+    "basis": "no top speed stated"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://mikesbikes.com/products/urban-arrow-familynext-pro-100nm",
+    "quote": "Max Assisted Speed\tN/A"
+   },
+   {
+    "kind": "maker",
+    "value": 20,
+    "url": "https://urbanarrow.com/manual-familynext-na?locale=en-GB",
+    "quote": "The bike contains an electrical drive unit that assists you up to a speed of 25 km/h (EU) or 20 mph (US-CAN-NZ) when riding.",
+    "basis": "maker NA Family/FamilyNext digital manual"
+   }
   ],
   "tq": [
-   {"kind": "maker", "value": 85, "url": "https://www.urbanarrow.com/en-na/familynext", "quote": "Motor: 85Nm (black) | 100Nm (Green) ⟶ Battery: 545Wh", "basis": "85Nm on black; green version 100Nm"},
-   {"kind": "retailer", "value": 85, "url": "https://www.angrycatfishbicycle.com/product/urban-arrow-familynext-pro-1245499-1.htm", "quote": "Motor\tBosch Cargo Line Gen 4 BES3, 250W - max 85 Nm ⟶ Battery\tBosch Powerpack 545Wh"},
-   {"kind": "retailer", "value": 85, "url": "https://clevercycles.com/products/urban-arrow-familynext-pro-bosch-cargo-line-smart", "quote": "Bosch Cargo Line Motor (85Nm): Haul up to 550 lbs with smooth, powerful assist—even on hills or into the wind."}
+   {
+    "kind": "maker",
+    "value": 85,
+    "url": "https://www.urbanarrow.com/en-na/familynext",
+    "quote": "Motor: 85Nm (black) | 100Nm (Green) ⟶ Battery: 545Wh",
+    "basis": "85Nm on black; green version 100Nm"
+   },
+   {
+    "kind": "retailer",
+    "value": 85,
+    "url": "https://www.angrycatfishbicycle.com/product/urban-arrow-familynext-pro-1245499-1.htm",
+    "quote": "Motor\tBosch Cargo Line Gen 4 BES3, 250W - max 85 Nm ⟶ Battery\tBosch Powerpack 545Wh"
+   },
+   {
+    "kind": "retailer",
+    "value": 85,
+    "url": "https://clevercycles.com/products/urban-arrow-familynext-pro-bosch-cargo-line-smart",
+    "quote": "Bosch Cargo Line Motor (85Nm): Haul up to 550 lbs with smooth, powerful assist—even on hills or into the wind."
+   }
   ],
   "wh": [
-   {"kind": "maker", "value": 545, "url": "https://www.urbanarrow.com/en-na/familynext", "quote": "Battery: 545Wh ⟶ Color Options: Green | Black"},
-   {"kind": "retailer", "value": 545, "url": "https://www.angrycatfishbicycle.com/product/urban-arrow-familynext-pro-1245499-1.htm", "quote": "Battery\tBosch Powerpack 545Wh ⟶ Controller/Display\tBosch LED Remote + KIOX 300"}
+   {
+    "kind": "maker",
+    "value": 545,
+    "url": "https://www.urbanarrow.com/en-na/familynext",
+    "quote": "Battery: 545Wh ⟶ Color Options: Green | Black"
+   },
+   {
+    "kind": "retailer",
+    "value": 545,
+    "url": "https://www.angrycatfishbicycle.com/product/urban-arrow-familynext-pro-1245499-1.htm",
+    "quote": "Battery\tBosch Powerpack 545Wh ⟶ Controller/Display\tBosch LED Remote + KIOX 300"
+   }
   ],
   "range": [
-   {"kind": "maker", "value": null, "url": "https://www.urbanarrow.com/en-na/familynext", "quote": "", "basis": "no range stated"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.urbanarrow.com/en-na/familynext",
+    "quote": "",
+    "basis": "no range stated"
+   }
   ],
   "wt": [
-   {"kind": "maker", "value": null, "url": "https://www.urbanarrow.com/en-na/familynext", "quote": "", "basis": "no bike weight stated"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.urbanarrow.com/en-na/familynext",
+    "quote": "",
+    "basis": "no bike weight stated"
+   }
   ],
   "load": [
-   {"kind": "retailer", "value": 550, "url": "https://www.angrycatfishbicycle.com/product/urban-arrow-familynext-pro-1245499-1.htm", "quote": "Max total weight: 550 lbs (bike + rider + load)/ 250kg ⟶ Max front load: 275 lbs/125 kg", "basis": "total"},
-   {"kind": "retailer", "value": 550, "url": "https://clevercycles.com/products/urban-arrow-familynext-pro-bosch-cargo-line-smart", "quote": "Load & Weight Limits\tBike + cargo up to 550 lb total; 275 lb front box\tBike + cargo up to 550 lb total; 275 lb front box\tBike + cargo up to 550 lb total; 275 lb front box", "basis": "total"}
+   {
+    "kind": "retailer",
+    "value": 550,
+    "url": "https://www.angrycatfishbicycle.com/product/urban-arrow-familynext-pro-1245499-1.htm",
+    "quote": "Max total weight: 550 lbs (bike + rider + load)/ 250kg ⟶ Max front load: 275 lbs/125 kg",
+    "basis": "total"
+   },
+   {
+    "kind": "retailer",
+    "value": 550,
+    "url": "https://clevercycles.com/products/urban-arrow-familynext-pro-bosch-cargo-line-smart",
+    "quote": "Load & Weight Limits\tBike + cargo up to 550 lb total; 275 lb front box\tBike + cargo up to 550 lb total; 275 lb front box\tBike + cargo up to 550 lb total; 275 lb front box",
+    "basis": "total"
+   }
   ],
   "motor": [
-   {"kind": "retailer", "value": "Bosch Cargo Line Gen 4, 250W", "url": "https://www.angrycatfishbicycle.com/product/urban-arrow-familynext-pro-1245499-1.htm", "quote": "Motor\tBosch Cargo Line Gen 4 BES3, 250W - max 85 Nm ⟶ Battery\tBosch Powerpack 545Wh"},
-   {"kind": "retailer", "value": "Bosch Cargo Line", "url": "https://clevercycles.com/products/urban-arrow-familynext-pro-bosch-cargo-line-smart", "quote": "Bosch Cargo Line Motor (85Nm): Haul up to 550 lbs with smooth, powerful assist—even on hills or into the wind."}
+   {
+    "kind": "retailer",
+    "value": "Bosch Cargo Line Gen 4, 250W",
+    "url": "https://www.angrycatfishbicycle.com/product/urban-arrow-familynext-pro-1245499-1.htm",
+    "quote": "Motor\tBosch Cargo Line Gen 4 BES3, 250W - max 85 Nm ⟶ Battery\tBosch Powerpack 545Wh"
+   },
+   {
+    "kind": "retailer",
+    "value": "Bosch Cargo Line",
+    "url": "https://clevercycles.com/products/urban-arrow-familynext-pro-bosch-cargo-line-smart",
+    "quote": "Bosch Cargo Line Motor (85Nm): Haul up to 550 lbs with smooth, powerful assist—even on hills or into the wind."
+   }
   ],
   "height": [
-   {"kind": "maker", "value": "5'1\"-6'6\"", "url": "https://www.urbanarrow.com/en-na/familynext", "quote": "The Urban Arrow FamilyNext Pro is designed with a one-size-fits-most frame that accommodates riders approximately 5'1\" to 6'6\"."}
+   {
+    "kind": "maker",
+    "value": "5'1\"-6'6\"",
+    "url": "https://www.urbanarrow.com/en-na/familynext",
+    "quote": "The Urban Arrow FamilyNext Pro is designed with a one-size-fits-most frame that accommodates riders approximately 5'1\" to 6'6\"."
+   }
   ],
   "fold": [
-   {"kind": "maker", "value": "No", "url": "https://www.urbanarrow.com/en-na/familynext", "quote": "The Urban Arrow FamilyNext Pro is designed with a one-size-fits-most frame that accommodates riders approximately 5'1\" to 6'6\".", "basis": "front-box cargo bike; no folding frame mentioned"}
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://www.urbanarrow.com/en-na/familynext",
+    "quote": "The Urban Arrow FamilyNext Pro is designed with a one-size-fits-most frame that accommodates riders approximately 5'1\" to 6'6\".",
+    "basis": "front-box cargo bike; no folding frame mentioned"
+   }
   ]
  },
- "status": {"sources": []},
- "notes": "Maker page gives only key details (motor torque, 545Wh, MSRP $8,999, height). No source states top speed, class, range or bike weight (Mike's Bikes lists 'Max Assisted Speed N/A'). Torque: maker says 85Nm black / 100Nm green; Mike's 'FamilyNext Pro (100Nm)' green listing ($8,998.99) has 100Nm in its features but '250W - max 85 Nm' in its spec table, so not used for torque. Maker configurator also shows 'US $8.999' for FamilyNext Pro. Load is a total (bike + rider + load)."}
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker page gives only key details (motor torque, 545Wh, MSRP $8,999, height). No source states top speed, class, range or bike weight (Mike's Bikes lists 'Max Assisted Speed N/A'). Torque: maker says 85Nm black / 100Nm green; Mike's 'FamilyNext Pro (100Nm)' green listing ($8,998.99) has 100Nm in its features but '250W - max 85 Nm' in its spec table, so not used for torque. Maker configurator also shows 'US $8.999' for FamilyNext Pro. Load is a total (bike + rider + load). Recheck: read maker NA Family/FamilyNext digital manual (assist to 20 mph US, pedal only; no class number). FamilyNext spec-sheet download on /en-na/documents returns 'Asset not found'."
+}

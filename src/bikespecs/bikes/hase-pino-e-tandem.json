@@ -2,7 +2,9 @@
  "fields": {
   "price": [
    {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/pino-e", "quote": "from 9.990,– ⟶ Euros including VAT, excluding delivery", "basis": "EUR only, no USD price published"},
-   {"kind": "retailer", "value": 10990, "url": "https://newwheel.net/products/hase-pino-electric-tandem", "quote": "Sale price ⟶ $10,990.00", "basis": "dealer price for its 'Pino Steps' base option, described with a Shimano E6100 60Nm drive (older spec than the maker's current EP6)"}
+   {"kind": "retailer", "value": 10990, "url": "https://newwheel.net/products/hase-pino-electric-tandem", "quote": "Sale price ⟶ $10,990.00", "basis": "dealer price for its 'Pino Steps' base option, described with a Shimano E6100 60Nm drive (older spec than the maker's current EP6)"},
+   {"kind": "retailer", "value": 12540, "url": "https://www.rad-innovations.com/hase-bikes-pino.html", "quote": "Pino E | $12,540* | In stock | *Pino E battery & charger separate", "basis": "US Hase dealer base price, battery & charger extra"},
+   {"kind": "retailer", "value": 13899, "url": "https://hostelshoppe.com/products/hase-pino-ep6-cargo-grey-beige-tandem-recumbent-bike", "quote": "Regular price ⟶ $13,899.00 USD", "basis": "Hostel Shoppe 'Hase Pino EP6 Cargo' tandem (Shimano EP6 Cargo 85 Nm, 630 Wh, which is the maker's Pino E drive); listing name could also be read as the Pino E Cargo"}
   ],
   "cls": [
    {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/pino-e", "quote": ""},
@@ -39,4 +41,4 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Hase is German; maker page gives EUR price only and no US class/speed/range. Tandem (recumbent front seat + upright rear). newwheel.net (US dealer) describes the base Pino with an older Shimano E6100 60Nm drive and 504/640 Wh options, so only its price and range claim were recorded (flagged). Maximum load 225 kg is for a tandem; maker doesn't say if it's total or riders+cargo. Frame telescopes, doesn't fold. One WebSearch used; the dealer pages it found (johnpreston) returned 404."}
+ "notes": "Hase is German; maker page gives EUR price only and no US class/speed/range. Tandem (recumbent front seat + upright rear). newwheel.net (US dealer) describes the base Pino with an older Shimano E6100 60Nm drive and 504/640 Wh options, so only its price and range claim were recorded (flagged). Maximum load 225 kg is for a tandem; maker doesn't say if it's total or riders+cargo. Frame telescopes, doesn't fold. One WebSearch used; the dealer pages it found (johnpreston) returned 404. | recheck: RAD Innovations lists 'Pino E' at $12,540 (battery/charger extra) - matches the site; Hostel Shoppe 'Pino EP6 Cargo' at $13,899. looked for a US class / mph on hasebikes.com (incl. hidden text), RAD Innovations, Hostel Shoppe, Laid Back Cycles, Utah Trikes (404) and 1 WebSearch: no page states a class or a US top speed."}

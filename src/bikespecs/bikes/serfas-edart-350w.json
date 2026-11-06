@@ -1,46 +1,157 @@
-{"bike": "Serfas|eDART 350W", "checked": "2026-11-06",
+{
+ "bike": "Serfas|eDART 350W",
+ "checked": "2026-11-06",
  "fields": {
   "price": [
-   {"kind": "maker", "value": 1399.99, "url": "https://serfas.com/products/serfas-2023-edart-350w-e-bike", "quote": "$1,399.99"},
-   {"kind": "retailer", "value": null, "url": "https://www.cycleworldmiami.com/product/serfas-edart-350w-step-thru-e-bike-846576-1.htm", "quote": ""}
+   {
+    "kind": "maker",
+    "value": 1399.99,
+    "url": "https://serfas.com/products/serfas-2023-edart-350w-e-bike",
+    "quote": "$1,399.99"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.cycleworldmiami.com/product/serfas-edart-350w-step-thru-e-bike-846576-1.htm",
+    "quote": ""
+   }
   ],
   "cls": [
-   {"kind": "maker", "value": 2, "url": "https://serfas.com/products/serfas-2023-edart-350w-e-bike", "quote": "Speed: Class 2, 20mph, Thumb Throttle", "basis": "maker states Class 2; 20 mph with throttle"},
-   {"kind": "retailer", "value": 2, "url": "https://www.cycleworldmiami.com/product/serfas-edart-350w-step-thru-e-bike-846576-1.htm", "quote": "- Throttle 20mph (Class 2)"}
+   {
+    "kind": "maker",
+    "value": 2,
+    "url": "https://serfas.com/products/serfas-2023-edart-350w-e-bike",
+    "quote": "Speed: Class 2, 20mph, Thumb Throttle",
+    "basis": "maker states Class 2; 20 mph with throttle"
+   },
+   {
+    "kind": "retailer",
+    "value": 2,
+    "url": "https://www.cycleworldmiami.com/product/serfas-edart-350w-step-thru-e-bike-846576-1.htm",
+    "quote": "- Throttle 20mph (Class 2)"
+   }
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://serfas.com/products/serfas-2023-edart-350w-e-bike", "quote": "Speed: Class 2, 20mph, Thumb Throttle"},
-   {"kind": "retailer", "value": 20, "url": "https://www.cycleworldmiami.com/product/serfas-edart-350w-step-thru-e-bike-846576-1.htm", "quote": "- Pedal Assist 20mph ⟶ - Throttle 20mph (Class 2)"}
+   {
+    "kind": "maker",
+    "value": 20,
+    "url": "https://serfas.com/products/serfas-2023-edart-350w-e-bike",
+    "quote": "Speed: Class 2, 20mph, Thumb Throttle"
+   },
+   {
+    "kind": "retailer",
+    "value": 20,
+    "url": "https://www.cycleworldmiami.com/product/serfas-edart-350w-step-thru-e-bike-846576-1.htm",
+    "quote": "- Pedal Assist 20mph ⟶ - Throttle 20mph (Class 2)"
+   }
   ],
   "tq": [
-   {"kind": "maker", "value": null, "url": "https://serfas.com/products/serfas-2023-edart-350w-e-bike", "quote": ""},
-   {"kind": "retailer", "value": null, "url": "https://www.cycleworldmiami.com/product/serfas-edart-350w-step-thru-e-bike-846576-1.htm", "quote": ""}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://serfas.com/products/serfas-2023-edart-350w-e-bike",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.cycleworldmiami.com/product/serfas-edart-350w-step-thru-e-bike-846576-1.htm",
+    "quote": ""
+   }
   ],
   "wh": [
-   {"kind": "maker", "value": 468, "url": "https://serfas.com/products/serfas-2023-edart-350w-e-bike", "quote": "Battery: Lithium-ion 36V, 13Ah, UL2271 Certified", "basis": "36V x 13Ah"},
-   {"kind": "retailer", "value": 475.2, "url": "https://www.cycleworldmiami.com/product/serfas-edart-350w-step-thru-e-bike-846576-1.htm", "quote": "Battery\tLithium-ion 36V, 13.2Ah, UL2271 Certified", "basis": "36V x 13.2Ah"}
+   {
+    "kind": "maker",
+    "value": 468,
+    "url": "https://serfas.com/products/serfas-2023-edart-350w-e-bike",
+    "quote": "Battery: Lithium-ion 36V, 13Ah, UL2271 Certified",
+    "basis": "36V x 13Ah"
+   },
+   {
+    "kind": "retailer",
+    "value": 475.2,
+    "url": "https://www.cycleworldmiami.com/product/serfas-edart-350w-step-thru-e-bike-846576-1.htm",
+    "quote": "Battery\tLithium-ion 36V, 13.2Ah, UL2271 Certified",
+    "basis": "36V x 13.2Ah"
+   }
   ],
   "range": [
-   {"kind": "maker", "value": "30", "url": "https://serfas.com/products/serfas-2023-edart-350w-e-bike", "quote": "Range: 30 Miles +/-"},
-   {"kind": "retailer", "value": "30–60", "url": "https://www.cycleworldmiami.com/product/serfas-edart-350w-step-thru-e-bike-846576-1.htm", "quote": "- Range: 30-60 Miles"}
+   {
+    "kind": "maker",
+    "value": "30",
+    "url": "https://serfas.com/products/serfas-2023-edart-350w-e-bike",
+    "quote": "Range: 30 Miles +/-"
+   },
+   {
+    "kind": "retailer",
+    "value": "30–60",
+    "url": "https://www.cycleworldmiami.com/product/serfas-edart-350w-step-thru-e-bike-846576-1.htm",
+    "quote": "- Range: 30-60 Miles"
+   }
   ],
   "wt": [
-   {"kind": "maker", "value": null, "url": "https://serfas.com/products/serfas-2023-edart-350w-e-bike", "quote": ""},
-   {"kind": "retailer", "value": null, "url": "https://www.cycleworldmiami.com/product/serfas-edart-350w-step-thru-e-bike-846576-1.htm", "quote": ""}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://serfas.com/products/serfas-2023-edart-350w-e-bike",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.cycleworldmiami.com/product/serfas-edart-350w-step-thru-e-bike-846576-1.htm",
+    "quote": ""
+   }
   ],
   "load": [
-   {"kind": "maker", "value": 300, "url": "https://serfas.com/products/serfas-2023-edart-350w-e-bike", "quote": "Capacity: Up to 300lbs Cargo/Rider total", "basis": "total"}
+   {
+    "kind": "maker",
+    "value": 300,
+    "url": "https://serfas.com/products/serfas-2023-edart-350w-e-bike",
+    "quote": "Capacity: Up to 300lbs Cargo/Rider total",
+    "basis": "total"
+   }
   ],
   "motor": [
-   {"kind": "maker", "value": "350W Sutto", "url": "https://serfas.com/products/serfas-2023-edart-350w-e-bike", "quote": "Motor: Sutto 350W 36V Brushless Motor"},
-   {"kind": "retailer", "value": "350W (500W peak)", "url": "https://www.cycleworldmiami.com/product/serfas-edart-350w-step-thru-e-bike-846576-1.htm", "quote": "- Power: 350W Constant 500W Peak"}
+   {
+    "kind": "maker",
+    "value": "350W Sutto",
+    "url": "https://serfas.com/products/serfas-2023-edart-350w-e-bike",
+    "quote": "Motor: Sutto 350W 36V Brushless Motor"
+   },
+   {
+    "kind": "retailer",
+    "value": "350W (500W peak)",
+    "url": "https://www.cycleworldmiami.com/product/serfas-edart-350w-step-thru-e-bike-846576-1.htm",
+    "quote": "- Power: 350W Constant 500W Peak"
+   }
   ],
   "height": [
-   {"kind": "maker", "value": null, "url": "https://serfas.com/products/serfas-2023-edart-350w-e-bike", "quote": "Frame: 6061 Aluminum Alloy, 18\" - One Size Fits Most"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://serfas.com/products/serfas-2023-edart-350w-e-bike",
+    "quote": "Frame: 6061 Aluminum Alloy, 18\" - One Size Fits Most"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.globalbikes.info/product/serfas-edart-350w-step-thru-e-bike-846576-1.htm",
+    "quote": "- Frame Size: 18\", One Size Fits Most ⟶ Specs",
+    "basis": "frame size only, no rider height range"
+   }
   ],
   "fold": [
-   {"kind": "maker", "value": "No", "url": "https://serfas.com/products/serfas-2023-edart-350w-e-bike", "quote": "Frame: 6061 Aluminum Alloy, 18\" - One Size Fits Most"}
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://serfas.com/products/serfas-2023-edart-350w-e-bike",
+    "quote": "Frame: 6061 Aluminum Alloy, 18\" - One Size Fits Most"
+   }
   ]
  },
- "status": {"sources": []},
- "notes": "Battery differs: maker 36V 13Ah (468Wh) vs dealer Cycle World Miami 36V 13.2Ah (475.2Wh). Maker price shown under Shopify's 'Sale price' label with no crossed-out price; maker page says 'Only 1 product left'. Dealer range 30-60 probably includes an add-on battery. No weight found. Mack Cycle dealer link redirected to its homepage. No EBR/EBReport/Electrek/Best Buy/Mike's coverage."}
+ "status": {
+  "sources": []
+ },
+ "notes": "Battery differs: maker 36V 13Ah (468Wh) vs dealer Cycle World Miami 36V 13.2Ah (475.2Wh). Maker price shown under Shopify's 'Sale price' label with no crossed-out price; maker page says 'Only 1 product left'. Dealer range 30-60 probably includes an add-on battery. No weight found. Mack Cycle dealer link redirected to its homepage. No EBR/EBReport/Electrek/Best Buy/Mike's coverage. recheck: maker page full text and Global Bikes (AZ dealer) page give only '18\" - One Size Fits Most', no rider height range."
+}

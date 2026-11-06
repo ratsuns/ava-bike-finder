@@ -1,45 +1,161 @@
-{"bike": "Orbea|Diem 20 mph", "checked": "2026-11-06",
+{
+ "bike": "Orbea|Diem 20 mph",
+ "checked": "2026-11-06",
  "fields": {
   "price": [
-   {"kind": "maker", "value": 6173, "url": "https://www.orbea.com/en-us/diem-10-20mph", "quote": "$6,173 ⟶ View summary", "basis": "Diem 10 20mph standard configuration; no crossed-out price shown"}
+   {
+    "kind": "maker",
+    "value": 6173,
+    "url": "https://www.orbea.com/en-us/diem-10-20mph",
+    "quote": "$6,173 ⟶ View summary",
+    "basis": "Diem 10 20mph standard configuration; no crossed-out price shown"
+   }
   ],
   "cls": [
-   {"kind": "maker", "value": null, "url": "https://www.orbea.com/en-us/diem-10-20mph", "quote": "", "basis": "maker page states no class"},
-   {"kind": "review", "value": 1, "url": "https://electricbikereport.com/orbea-diem-review/", "quote": "Orbea’s six configurations of the Diem include both Class 1 (20 mph max assist) and Class 3 (28 mph max assist) versions based on either Shimano’s EP6 or EP8 motors and with several different drivetrain options, including one version with an Enviolo internally geared hub combined with a Gates belt.", "basis": "2024 family spec review; the 20 mph versions are Class 1"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.orbea.com/en-us/diem-10-20mph",
+    "quote": "",
+    "basis": "maker page states no class"
+   },
+   {
+    "kind": "review",
+    "value": 1,
+    "url": "https://electricbikereport.com/orbea-diem-review/",
+    "quote": "Orbea’s six configurations of the Diem include both Class 1 (20 mph max assist) and Class 3 (28 mph max assist) versions based on either Shimano’s EP6 or EP8 motors and with several different drivetrain options, including one version with an Enviolo internally geared hub combined with a Gates belt.",
+    "basis": "2024 family spec review; the 20 mph versions are Class 1"
+   },
+   {
+    "kind": "retailer",
+    "value": 1,
+    "url": "https://aroundthecycle.com/products/new-2027-orbea-diem-10-20mph-electric-hybrid-bike",
+    "quote": "How fast is the Orbea Diem 10? This is the Class 1 version with pedal assist up to 20 mph (a Class 3 / 28 mph version is also offered).",
+    "basis": "Around the Cycle (US dealer) page for the 2027 Diem 10 20mph"
+   }
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://www.orbea.com/en-us/diem-10-20mph", "quote": "Diem 10 20mph ⟶ Change model", "basis": "from the model name; no separate speed spec on page"},
-   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/orbea-diem-review/", "quote": "Orbea’s six configurations of the Diem include both Class 1 (20 mph max assist) and Class 3 (28 mph max assist) versions based on either Shimano’s EP6 or EP8 motors and with several different drivetrain options, including one version with an Enviolo internally geared hub combined with a Gates belt."}
+   {
+    "kind": "maker",
+    "value": 20,
+    "url": "https://www.orbea.com/en-us/diem-10-20mph",
+    "quote": "Diem 10 20mph ⟶ Change model",
+    "basis": "from the model name; no separate speed spec on page"
+   },
+   {
+    "kind": "review",
+    "value": 20,
+    "url": "https://electricbikereport.com/orbea-diem-review/",
+    "quote": "Orbea’s six configurations of the Diem include both Class 1 (20 mph max assist) and Class 3 (28 mph max assist) versions based on either Shimano’s EP6 or EP8 motors and with several different drivetrain options, including one version with an Enviolo internally geared hub combined with a Gates belt."
+   }
   ],
   "tq": [
-   {"kind": "maker", "value": null, "url": "https://www.orbea.com/en-us/diem-10-20mph", "quote": ""},
-   {"kind": "retailer", "value": null, "url": "https://www.n1bikes.com/products/orbea-diem-10-20mph?id=d4e37f1a4ad530d9f60f89c7fff76332ac8240527ef7d923f5a4ed04e416de35&variant=U67609WR", "quote": ""}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.orbea.com/en-us/diem-10-20mph",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.n1bikes.com/products/orbea-diem-10-20mph?id=d4e37f1a4ad530d9f60f89c7fff76332ac8240527ef7d923f5a4ed04e416de35&variant=U67609WR",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": 85,
+    "url": "https://aroundthecycle.com/products/new-2027-orbea-diem-10-20mph-electric-hybrid-bike",
+    "quote": "Motor: Shimano EP600 (up to 85Nm)",
+    "basis": "matches the maker's 'Ebike Motor Shimano EP600' for this build"
+   }
   ],
   "wh": [
-   {"kind": "maker", "value": 630, "url": "https://www.orbea.com/en-us/diem-10-20mph", "quote": "Battery ⟶ Orbea 630 Wh Battery"},
-   {"kind": "retailer", "value": 630, "url": "https://www.n1bikes.com/products/orbea-diem-10-20mph?id=d4e37f1a4ad530d9f60f89c7fff76332ac8240527ef7d923f5a4ed04e416de35&variant=U67609WR", "quote": "Battery\tOrbea 630 Wh Battery ⟶ Display\tShimano EN600"}
+   {
+    "kind": "maker",
+    "value": 630,
+    "url": "https://www.orbea.com/en-us/diem-10-20mph",
+    "quote": "Battery ⟶ Orbea 630 Wh Battery"
+   },
+   {
+    "kind": "retailer",
+    "value": 630,
+    "url": "https://www.n1bikes.com/products/orbea-diem-10-20mph?id=d4e37f1a4ad530d9f60f89c7fff76332ac8240527ef7d923f5a4ed04e416de35&variant=U67609WR",
+    "quote": "Battery\tOrbea 630 Wh Battery ⟶ Display\tShimano EN600"
+   }
   ],
   "range": [
-   {"kind": "maker", "value": null, "url": "https://www.orbea.com/en-us/diem-10-20mph", "quote": ""},
-   {"kind": "retailer", "value": null, "url": "https://www.n1bikes.com/products/orbea-diem-10-20mph?id=d4e37f1a4ad530d9f60f89c7fff76332ac8240527ef7d923f5a4ed04e416de35&variant=U67609WR", "quote": ""}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.orbea.com/en-us/diem-10-20mph",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.n1bikes.com/products/orbea-diem-10-20mph?id=d4e37f1a4ad530d9f60f89c7fff76332ac8240527ef7d923f5a4ed04e416de35&variant=U67609WR",
+    "quote": ""
+   }
   ],
   "wt": [
-   {"kind": "maker", "value": null, "url": "https://www.orbea.com/en-us/diem-10-20mph", "quote": ""},
-   {"kind": "retailer", "value": null, "url": "https://www.n1bikes.com/products/orbea-diem-10-20mph?id=d4e37f1a4ad530d9f60f89c7fff76332ac8240527ef7d923f5a4ed04e416de35&variant=U67609WR", "quote": ""}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.orbea.com/en-us/diem-10-20mph",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.n1bikes.com/products/orbea-diem-10-20mph?id=d4e37f1a4ad530d9f60f89c7fff76332ac8240527ef7d923f5a4ed04e416de35&variant=U67609WR",
+    "quote": ""
+   }
   ],
   "load": [
-   {"kind": "maker", "value": null, "url": "https://www.orbea.com/en-us/diem-10-20mph", "quote": "", "basis": "only rack limits given (front Max. 10Kg, rear Max. 20Kg), no bike max load"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.orbea.com/en-us/diem-10-20mph",
+    "quote": "",
+    "basis": "only rack limits given (front Max. 10Kg, rear Max. 20Kg), no bike max load"
+   }
   ],
   "motor": [
-   {"kind": "maker", "value": "Shimano EP600", "url": "https://www.orbea.com/en-us/diem-10-20mph", "quote": "Motor ⟶ Shimano EP600"},
-   {"kind": "retailer", "value": "Shimano EP600", "url": "https://www.n1bikes.com/products/orbea-diem-10-20mph?id=d4e37f1a4ad530d9f60f89c7fff76332ac8240527ef7d923f5a4ed04e416de35&variant=U67609WR", "quote": "Motor\tShimano EP600 ⟶ Battery\tOrbea 630 Wh Battery"}
+   {
+    "kind": "maker",
+    "value": "Shimano EP600",
+    "url": "https://www.orbea.com/en-us/diem-10-20mph",
+    "quote": "Motor ⟶ Shimano EP600"
+   },
+   {
+    "kind": "retailer",
+    "value": "Shimano EP600",
+    "url": "https://www.n1bikes.com/products/orbea-diem-10-20mph?id=d4e37f1a4ad530d9f60f89c7fff76332ac8240527ef7d923f5a4ed04e416de35&variant=U67609WR",
+    "quote": "Motor\tShimano EP600 ⟶ Battery\tOrbea 630 Wh Battery"
+   }
   ],
   "height": [
-   {"kind": "maker", "value": "5'0\"-6'8\"", "url": "https://www.orbea.com/en-us/diem-10-20mph", "quote": "S | 153-172 cm | M | 164-183 cm | L | 176-195 cm | XL | 187-204 cm", "basis": "size guide by height (View size guide), 153-204 cm converted to ft/in"}
+   {
+    "kind": "maker",
+    "value": "5'0\"-6'8\"",
+    "url": "https://www.orbea.com/en-us/diem-10-20mph",
+    "quote": "S | 153-172 cm | M | 164-183 cm | L | 176-195 cm | XL | 187-204 cm",
+    "basis": "size guide by height (View size guide), 153-204 cm converted to ft/in"
+   }
   ],
   "fold": [
-   {"kind": "maker", "value": "No", "url": "https://www.orbea.com/en-us/diem-10-20mph", "quote": "Frame ⟶ Orbea Diem 2025, Diamond glide, Hydroformed Alloy 6061, High Polished, OLD 135x9 / OLD 142x12, Orbea cockpit and equipment ecosystem, w/ Custom Kickstand, Trailer compatible.", "basis": "rigid diamond-style frame; no folding mentioned"}
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://www.orbea.com/en-us/diem-10-20mph",
+    "quote": "Frame ⟶ Orbea Diem 2025, Diamond glide, Hydroformed Alloy 6061, High Polished, OLD 135x9 / OLD 142x12, Orbea cockpit and equipment ecosystem, w/ Custom Kickstand, Trailer compatible.",
+    "basis": "rigid diamond-style frame; no folding mentioned"
+   }
   ]
  },
- "status": {"sources": []},
- "notes": "Uses the Diem 10 20mph build (src link). Orbea's US configurator gives price, battery, motor and size guide only: no speed, torque, range, weight or max load. N+1 Bikes (authorized dealer) lists the same build (Model Year 2027) at $6,088.95 with the same spec list. EBR's 2024 spec review covers the older EP6/EP8 generation, so it is used only for class/speed. Contender Bicycles' 'Diem 10 20MPH' page shows the older Shimano EP801 version (not used). Boulder Nordic would not load; no Diem on EBR (electricbikereview), Electrek or Mike's Bikes."}
+ "status": {
+  "sources": []
+ },
+ "notes": "Uses the Diem 10 20mph build (src link). Orbea's US configurator gives price, battery, motor and size guide only: no speed, torque, range, weight or max load. N+1 Bikes (authorized dealer) lists the same build (Model Year 2027) at $6,088.95 with the same spec list. EBR's 2024 spec review covers the older EP6/EP8 generation, so it is used only for class/speed. Contender Bicycles' 'Diem 10 20MPH' page shows the older Shimano EP801 version (not used). Boulder Nordic would not load; no Diem on EBR (electricbikereview), Electrek or Mike's Bikes. Recheck: maker page (incl. hidden text) names the Shimano EP600 but no Nm; one WebSearch found Around the Cycle (US dealer) 2027 Diem 10 20mph page: Class 1 / 20 mph, EP600 up to 85Nm."
+}

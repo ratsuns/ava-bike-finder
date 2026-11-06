@@ -2,7 +2,8 @@
  "fields": {
   "price": [
    {"kind": "maker", "value": null, "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-long-d9", "quote": "$3,499 (SALE PRICE)", "basis": "maker shows only a sale price; no regular price on the page"},
-   {"kind": "review", "value": null, "url": "https://electricbikereport.com/tern-quick-haul-long-review/", "quote": ""}
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/tern-quick-haul-long-review/", "quote": ""},
+   {"kind": "maker", "value": 3999, "url": "https://store.ternbicycles.com/products/quick-haul-long-d9", "quote": "$3,499.00 ⟶ $3,999.00", "basis": "Tern's own US online store; $3,999.00 is the compare-at (crossed-out) regular price, $3,499.00 is the sale price"}
   ],
   "cls": [
    {"kind": "maker", "value": 1, "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-long-d9", "quote": "Bosch Cargo Line, 400% Assist, 85 Nm Torque, max speed 25 kph (EU); max speed 20 mph (US) ⟶ BATTERY:", "basis": "20 mph pedal assist, no throttle = Class 1 (class not stated on maker page)"},
@@ -46,4 +47,5 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Model given as 'Quick Haul Long'; the src link and our data are the Quick Haul Long D9 (the only US Quick Haul Long model on the maker page). Maker page shows only '$3,499 (SALE PRICE)' with no regular price, so price left null; EBReport review shows no price. Height conflict: maker 5'1\"-6'3\" vs EBReport 5'1\"-6'1\". Load: maker 419 lb max gross vehicle weight (total), rack 198 lb, max rider 265 lb; EBReport lists 354 lb total payload. Class not stated on maker page; EBReport says Class 1."}
+ "notes": "Model given as 'Quick Haul Long'; the src link and our data are the Quick Haul Long D9 (the only US Quick Haul Long model on the maker page). Maker page shows only '$3,499 (SALE PRICE)' with no regular price, so price left null; EBReport review shows no price. Height conflict: maker 5'1\"-6'3\" vs EBReport 5'1\"-6'1\". Load: maker 419 lb max gross vehicle weight (total), rack 198 lb, max rider 265 lb; EBReport lists 354 lb total payload. Class not stated on maker page; EBReport says Class 1. | recheck: Tern US store (Quick Haul Long D9) regular price $3,999 (sale $3,499) - the site's 3499 is the sale price."
+}

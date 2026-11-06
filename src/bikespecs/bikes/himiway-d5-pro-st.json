@@ -6,7 +6,8 @@
   ],
   "cls": [
    {"kind": "maker", "value": null, "url": "https://himiwaybike.com/products/all-terrain-electric-bike-d5prost", "quote": "Thumb Throttle ⟶ Hydraulic Brakes", "basis": "throttle, but no class stated"},
-   {"kind": "review", "value": 3, "url": "https://www.webbikeworld.com/2024-himiway-d5-pro-mid-drive-review/", "quote": "eBike Class:\tClass 3", "basis": "review of the high-step D5 Pro (same drive system)"}
+   {"kind": "review", "value": 3, "url": "https://www.webbikeworld.com/2024-himiway-d5-pro-mid-drive-review/", "quote": "eBike Class:\tClass 3", "basis": "review of the high-step D5 Pro (same drive system)"},
+   {"kind": "maker", "value": 2, "url": "https://himiwaybike.com/blogs/after-purchase/unlock-the-limit-of-the-speed", "quote": "Discover that Himiway e-bikes have the capability to operate as technically Class 3 e-bikes. While both of these bikes are shipped as Class 2 ebikes, users have the option to unlock the speed limiter, increasing the max speed to 25mph", "basis": "Himiway's 'Unlock the Limit of the Speed' page: ships as Class 2, unlockable; its per-model unlock list includes 'D5 Pro: watch video'"}
   ],
   "spd": [
    {"kind": "maker", "value": 20, "url": "https://himiwaybike.com/products/all-terrain-electric-bike-d5prost", "quote": "Mid-Drive Motor ⟶ 20+ Mph", "basis": "maker says \"20+ Mph\" top speed"},
@@ -45,4 +46,4 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Maker regular price $2,599, on sale $1,999. Maker gives top speed only as '20+ Mph', no class. Class/speed come from webBikeWorld's review of the high-step D5 Pro (same motor/battery), not the ST itself. Renewable Outdoors (authorized Himiway dealer) gives 1,300W peak. Maker ST page lists rider height 5'3\"~6'5\" (same as high-step), unlike the D5 ST (5'1\")."}
+ "notes": "Maker regular price $2,599, on sale $1,999. Maker gives top speed only as '20+ Mph', no class. Class/speed come from webBikeWorld's review of the high-step D5 Pro (same motor/battery), not the ST itself. Renewable Outdoors (authorized Himiway dealer) gives 1,300W peak. Maker ST page lists rider height 5'3\"~6'5\" (same as high-step), unlike the D5 ST (5'1\"). | recheck: Himiway's own 'Unlock the Limit of the Speed' page says its e-bikes ship as Class 2 (unlockable to 25 mph) and lists this model's unlock video; 1 WebSearch used for the Himiway set. The page names 'D5 Pro' only (no separate ST entry); contradicts webBikeWorld's Class 3."}

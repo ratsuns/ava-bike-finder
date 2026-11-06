@@ -139,6 +139,13 @@
     "url": "https://marinbikes.com/products/2026-fairfax-e",
     "quote": "Unsure about your size? Check with your local Marin dealer for personalized advice.",
     "basis": "only an interactive height-slider size finder; no published rider height range"
+   },
+   {
+    "kind": "maker",
+    "value": "5'1\"–6'3\"",
+    "url": "https://marinbikes.com/products/2026-fairfax-e",
+    "quote": "Your Height 5'1\" / 155 cm slide the scale to your height measurement You ride a XS/S Fairfax Electric with Throttle | Your Height 6'3\" / 191 cm slide the scale to your height measurement You ride a XL Fairfax Electric with Throttle",
+    "basis": "maker's 'Find Your Fit' height slider (range input 59-75 in): read at two slider positions. Geometry table lists sizes S, M, L, XL; slider gives XS/S at 5'1\", S from 5'2\", XL up to 6'3\" (the slider's maximum), XS below 5'1\" (no XS frame listed)."
    }
   ],
   "fold": [
@@ -154,5 +161,5 @@
  "status": {
   "sources": []
  },
- "notes": "Maker page title 'Fairfax Electric with Throttle'; product JSON titled '2026 Fairfax E (INT)'. Class/speed line is in the page description (in page source/textContent, collapsed in the visible view). ST version (https://marinbikes.com/products/2026-fairfax-e-st, 'Fairfax Electric ST with Throttle', $1,799): spec table says 'Bafang 360Wh' and motor 'Bafang 250 Watt Hub Motor, 36H' (no Nm), Series 1 step-thru frame -- but ST page text says 340Wh / 62 miles, so ST page contradicts itself. Dealer Revolution Bike Shop lists '2026 Marin Fairfax E NA' at $1,899 vs maker $1,799. No weight or max load published by Marin. EBR/REI have no Fairfax E. 99spokes not tried (bot check earlier)."
+ "notes": "Maker page title 'Fairfax Electric with Throttle'; product JSON titled '2026 Fairfax E (INT)'. Class/speed line is in the page description (in page source/textContent, collapsed in the visible view). ST version (https://marinbikes.com/products/2026-fairfax-e-st, 'Fairfax Electric ST with Throttle', $1,799): spec table says 'Bafang 360Wh' and motor 'Bafang 250 Watt Hub Motor, 36H' (no Nm), Series 1 step-thru frame -- but ST page text says 340Wh / 62 miles, so ST page contradicts itself. Dealer Revolution Bike Shop lists '2026 Marin Fairfax E NA' at $1,899 vs maker $1,799. No weight or max load published by Marin. EBR/REI have no Fairfax E. 99spokes not tried (bot check earlier). Recheck: moved the maker's 'Find Your Fit' height slider through its whole range (4'11\"-6'3\"): XS/S at 5'1\", S 5'2\"-5'4\", M 5'6\"-5'7\", L 5'9\"-5'10\", XL 6'0\"-6'3\"; geometry lists S-XL."
 }

@@ -6,7 +6,8 @@
   ],
   "cls": [
    {"kind": "maker", "value": 2, "url": "https://retrospec.com/products/joe-rev-bmx-electric-bike", "quote": "Pedal Assist  5 Levels with Throttle and Walk-Mode", "basis": "maker states no class; 20 mph top assisted speed with a throttle = Class 2"},
-   {"kind": "retailer", "value": 2, "url": "https://sandiego.ebikesupershop.com/products/ebike-retrospec-joe-rev-2-bmx-matte-black-in-a-box", "quote": "Charger\t48V/2A ⟶ Pedal Assist\t5 Levels with Throttle and Walk-Mode", "basis": "20 mph with throttle = Class 2"}
+   {"kind": "retailer", "value": 2, "url": "https://sandiego.ebikesupershop.com/products/ebike-retrospec-joe-rev-2-bmx-matte-black-in-a-box", "quote": "Charger\t48V/2A ⟶ Pedal Assist\t5 Levels with Throttle and Walk-Mode", "basis": "20 mph with throttle = Class 2"},
+   {"kind": "maker", "value": 2, "url": "https://help.retrospec.com/en-US/what-does-%22class-2%22-mean-629518", "quote": "All of our e-bikes are \"Class 2\" which means they have pedal assist and/or throttle with assistance of 20mph max. Top speed is dependent on the bike model.", "basis": "Retrospec help-center article covering all its e-bikes (updated 2 days ago), not model-specific"}
   ],
   "spd": [
    {"kind": "maker", "value": 20, "url": "https://retrospec.com/products/joe-rev-bmx-electric-bike", "quote": "20mph Top Assisted Speed"},
@@ -26,7 +27,8 @@
   ],
   "wt": [
    {"kind": "maker", "value": null, "url": "https://retrospec.com/products/joe-rev-bmx-electric-bike", "quote": ""},
-   {"kind": "retailer", "value": null, "url": "https://sandiego.ebikesupershop.com/products/ebike-retrospec-joe-rev-2-bmx-matte-black-in-a-box", "quote": ""}
+   {"kind": "retailer", "value": null, "url": "https://sandiego.ebikesupershop.com/products/ebike-retrospec-joe-rev-2-bmx-matte-black-in-a-box", "quote": ""},
+   {"kind": "maker", "value": 56, "url": "https://help.retrospec.com/en-US/how-heavy-are-your-ebikes-629616", "quote": "Joe Rev ⟶ 56 lbs", "basis": "Retrospec help-center weight table; listed only as 'Joe Rev' (no generation), so it may be the Rev 1; differs from the site's 71"}
   ],
   "load": [
    {"kind": "maker", "value": 350, "url": "https://retrospec.com/products/joe-rev-bmx-electric-bike", "quote": "Recommended Weight Limit  350lbs"},
@@ -45,4 +47,4 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Maker page contradicts itself on range: headline and spec table say up to 60 miles, battery feature blurb says up to 75 miles. No source gives weight, torque or rider height. Public Lands dealer page blocked (403). Dealer page found via the WebSearch done for Joe Rev (Rev 1)."}
+ "notes": "Maker page contradicts itself on range: headline and spec table say up to 60 miles, battery feature blurb says up to 75 miles. No source gives weight, torque or rider height. Public Lands dealer page blocked (403). Dealer page found via the WebSearch done for Joe Rev (Rev 1). Recheck: read the Joe Rev 2 manual PDF linked from the product page (20 mph, 85Nm; no class or weight; the page has only a hidden 'Weight - 60lbs' tag), Retrospec's help-center weight table ('Joe Rev' 56 lbs, generation not given) and its 'What does Class 2 mean?' article."}

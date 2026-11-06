@@ -2,7 +2,8 @@
  "fields": {
   "price": [
    {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": "from 8.600,– ⟶ Euros including VAT, excluding delivery", "basis": "EUR only, no USD price published"},
-   {"kind": "retailer", "value": 10210, "url": "https://newwheel.net/products/hase-kettwiesel-one-electric-trike", "quote": "Sale price ⟶ $10,210.00", "basis": "dealer price for its 'Kettwiesel One' option, which it lists with a Shimano E6100 60Nm drive (older spec than the maker's current EP6)"}
+   {"kind": "retailer", "value": 10210, "url": "https://newwheel.net/products/hase-kettwiesel-one-electric-trike", "quote": "Sale price ⟶ $10,210.00", "basis": "dealer price for its 'Kettwiesel One' option, which it lists with a Shimano E6100 60Nm drive (older spec than the maker's current EP6)"},
+   {"kind": "retailer", "value": 9290, "url": "https://www.rad-innovations.com/hase-bikes-kettwiesel-one.html", "quote": "Kettwiesel ONE | $9,290* | back in stock soon", "basis": "US Hase dealer base price; page footnote '*Battery & charger sold separately'; build: Shimano EP6 Cargo 85 Nm / 630 Wh (some base configs E6100 60 Nm / 504 Wh)"}
   ],
   "cls": [
    {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": ""},
@@ -42,4 +43,4 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Hase is German; maker page gives EUR price only and no US class/speed/range. The maker page covers ONE (Shimano EP6 Cargo, 85 Nm, 630 Wh) and ONE PLUS (Bosch CX) together; values here are for the ONE line. newwheel.net (US dealer) and New Atlas both describe an older spec of the ONE (Shimano E6100 60Nm, 504/640 Wh), so their motor/torque/battery figures were not recorded; New Atlas speed is the EU 25 km/h limit. Load 140 kg: maker doesn't say whether it's rider-only or total. Weight is 'from'. Trike (3 wheels), recumbent."}
+ "notes": "Hase is German; maker page gives EUR price only and no US class/speed/range. The maker page covers ONE (Shimano EP6 Cargo, 85 Nm, 630 Wh) and ONE PLUS (Bosch CX) together; values here are for the ONE line. newwheel.net (US dealer) and New Atlas both describe an older spec of the ONE (Shimano E6100 60Nm, 504/640 Wh), so their motor/torque/battery figures were not recorded; New Atlas speed is the EU 25 km/h limit. Load 140 kg: maker doesn't say whether it's rider-only or total. Weight is 'from'. Trike (3 wheels), recumbent. | recheck: RAD Innovations (US dealer) base price $9,290 for Kettwiesel ONE, battery & charger extra, not 9570. looked for a US class / mph on hasebikes.com (incl. hidden text), RAD Innovations, Hostel Shoppe, Laid Back Cycles, Utah Trikes (404) and 1 WebSearch: no page states a class or a US top speed."}

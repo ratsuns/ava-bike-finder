@@ -3,11 +3,13 @@
   "price": [
    {"kind": "maker", "value": null, "url": "https://www.ternbicycles.com/us/bikes/473/gsd-p10", "quote": "$4,999 (SALE PRICE) ⟶ WHY GSD GEN 3 SPECS ACCESSORIES SUPPORT FIND A DEALER BUY", "basis": "maker shows only a sale price, no regular price"},
    {"kind": "retailer", "value": 5799, "url": "https://www.seattleelectricbike.net/products/tern-gsd-p10-gen-3", "quote": "Regular price ⟶ $5,799.00", "basis": "regular price; dealer sale price $4,999.00"},
-   {"kind": "review", "value": null, "url": "https://electrek.co/2025/03/25/tern-launches-an-all-new-gsd-electric-cargo-bike-redefining-high-end-compact-cargo-e-bikes/", "quote": "The new GSD lineup comprises multiple variants, including the premium R14 model equipped with a Rohloff Speedhub and Gates belt drive, and more affordable options like the P10 featuring Shimano components. Pricing starts at $4,999 (€5,399/£4,700), with availability beginning May 2025 in Europe and North America.", "basis": "not recorded: March 2025 launch 'starts at' price for the lineup, not a current regular price for this model"}
+   {"kind": "review", "value": null, "url": "https://electrek.co/2025/03/25/tern-launches-an-all-new-gsd-electric-cargo-bike-redefining-high-end-compact-cargo-e-bikes/", "quote": "The new GSD lineup comprises multiple variants, including the premium R14 model equipped with a Rohloff Speedhub and Gates belt drive, and more affordable options like the P10 featuring Shimano components. Pricing starts at $4,999 (€5,399/£4,700), with availability beginning May 2025 in Europe and North America.", "basis": "not recorded: March 2025 launch 'starts at' price for the lineup, not a current regular price for this model"},
+   {"kind": "maker", "value": 5799, "url": "https://store.ternbicycles.com/products/gsd-p10-gen-3-electric-cargo-bike", "quote": "$4,999.00 ⟶ $5,799.00", "basis": "Tern's own US online store; $5,799.00 is the compare-at (crossed-out) regular price, $4,999.00 is the sale price"}
   ],
   "cls": [
    {"kind": "maker", "value": null, "url": "https://www.ternbicycles.com/us/bikes/473/gsd-p10", "quote": "", "basis": "maker page gives no class; only \"max speed 20 mph (US)\""},
-   {"kind": "retailer", "value": null, "url": "https://www.amegoev.com/products/tern-gsd-p10gen-3-500-wh", "quote": "", "basis": "no class given"}
+   {"kind": "retailer", "value": null, "url": "https://www.amegoev.com/products/tern-gsd-p10gen-3-500-wh", "quote": "", "basis": "no class given"},
+   {"kind": "review", "value": 1, "url": "https://www.bikeride.com/tern-gsd-gen-3/", "quote": "CLASS ⟶ Class 1", "basis": "BikeRide spec box for the GSD Gen 3 family (all Gen 3 trims); also lists TOP SPEED 20 mph"}
   ],
   "spd": [
    {"kind": "maker", "value": 20, "url": "https://www.ternbicycles.com/us/bikes/473/gsd-p10", "quote": "Bosch Cargo Line, 400% Assist, 85 Nm Torque, max speed 25 kph (EU); max speed 20 mph (US) ⟶ BATTERY:"},
@@ -48,4 +50,5 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Maker page shows only '$4,999 (SALE PRICE)'; regular $5,799 from Seattle Electric Bike (US dealer). Electrek's March 2025 launch article says lineup 'Pricing starts at $4,999' (the P10 is the entry model) — so the maker's current 'sale' price equals the launch price; regular price appears to have risen since. Amego is Canadian (CAD), used for specs only. Dealers found via one WebSearch. Maker gives no e-bike class (20 mph, no throttle listed). Max load 463 lb is gross vehicle weight -> total; max rider 130 kg."}
+ "notes": "Maker page shows only '$4,999 (SALE PRICE)'; regular $5,799 from Seattle Electric Bike (US dealer). Electrek's March 2025 launch article says lineup 'Pricing starts at $4,999' (the P10 is the entry model) — so the maker's current 'sale' price equals the launch price; regular price appears to have risen since. Amego is Canadian (CAD), used for specs only. Dealers found via one WebSearch. Maker gives no e-bike class (20 mph, no throttle listed). Max load 463 lb is gross vehicle weight -> total; max rider 130 kg. | recheck: Tern US store shows regular $5,799.00 (sale $4,999.00) - the site's figure is the sale price; BikeRide GSD Gen 3 page states Class 1. Tern's own pages and buyer's guide state no class."
+}

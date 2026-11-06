@@ -14,7 +14,8 @@
   ],
   "tq": [
    {"kind": "maker", "value": null, "url": "https://retrospec.com/products/valen-rev-3-fat-tire-electric-bike", "quote": "", "basis": "torque not published"},
-   {"kind": "review", "value": 85, "url": "https://electricbikereview.com/retrospec/valen-rev-3-review/", "quote": "MOTOR TORQUE: ⟶ 85Nm Newton meters"}
+   {"kind": "review", "value": 85, "url": "https://electricbikereview.com/retrospec/valen-rev-3-review/", "quote": "MOTOR TORQUE: ⟶ 85Nm Newton meters"},
+   {"kind": "maker", "value": 85, "url": "https://cdn.accentuate.io/8432205398188/1765913054544/Valen-Rev-3-Owners-Manual.pdf", "quote": "Rated Torque 85Nm", "basis": "Valen Rev 3 owner's manual PDF linked from the product page, Main Technical Specifications table"}
   ],
   "wh": [
    {"kind": "maker", "value": 500, "url": "https://retrospec.com/products/valen-rev-3-fat-tire-electric-bike", "quote": "750W Planetary Geared Hub Motor ⟶ 48V/500Wh LG Li-ion Battery"},
@@ -43,4 +44,4 @@
   ]
  },
  "status": {"sources": []},
- "notes": "EBR's 'advertised' figures differ from the maker page: EBR says advertised 78 lb and up to 75 mi; maker says 67 lb (battery included) and up to 60 mi. EBR's tested weight 66 lb w/ battery is close to the maker's 67 lb."}
+ "notes": "EBR's 'advertised' figures differ from the maker page: EBR says advertised 78 lb and up to 75 mi; maker says 67 lb (battery included) and up to 60 mi. EBR's tested weight 66 lb w/ battery is close to the maker's 67 lb. Recheck: read the Valen Rev 3 owner's manual PDF linked from the product page (Rated Torque 85Nm; its spec table also lists 47.9V 9.6Ah 459.8Wh)."}

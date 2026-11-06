@@ -30,7 +30,8 @@
   ],
   "load": [
    {"kind": "maker", "value": null, "url": "https://www.giant-bicycles.com/us/stormguard-eplus-1-2024", "quote": ""},
-   {"kind": "retailer", "value": null, "url": "https://www.momentbikes.com/product/giant-stormguard-e-1-706010-1.htm", "quote": ""}
+   {"kind": "retailer", "value": null, "url": "https://www.momentbikes.com/product/giant-stormguard-e-1-706010-1.htm", "quote": ""},
+   {"kind": "review", "value": 267, "url": "https://ebike-mtb.com/en/giant-stormguard-e-1-suv_trekking_e-bike_review/", "quote": "Max. payload (rider/equipment) 121 kg ⟶ Trailer approval no", "basis": "121 kg = 267 lb; same table: 'Perm. total weight 156 kg' (344 lb total). European Stormguard E+ 1 (2024) test bike, SyncDrive Pro2 / 1,050 Wh, Enviolo; the US trim may differ"}
   ],
   "motor": [
    {"kind": "maker", "value": "Giant SyncDrive Pro2", "url": "https://www.giant-bicycles.com/us/stormguard-eplus-1-2024", "quote": "Giant SyncDrive Pro2 85Nm, PedalPlus 6-Sensor technology, Class 1, Max Assist Speed: 20MPH", "basis": "no rated watts published"},
@@ -46,4 +47,4 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Given src link was Giant's Italian site (/it/stormguard-eplus-1-2024); used the US page for the same model, Stormguard E+ 1 (2024). /us/stormguard-eplus returns 404 and Giant's site search returned nothing, so no other US Stormguard E+ trim was checked. Maker's range is a conditions bar (extreme 43 / good 86 / ideal 155 mi), not per assist mode. No max load on page. Moment Bicycles (San Diego dealer) page shows no price, speed or weight. electricbikereview search found nothing; electricbikereport only had a news item."}
+ "notes": "Given src link was Giant's Italian site (/it/stormguard-eplus-1-2024); used the US page for the same model, Stormguard E+ 1 (2024). /us/stormguard-eplus returns 404 and Giant's site search returned nothing, so no other US Stormguard E+ trim was checked. Maker's range is a conditions bar (extreme 43 / good 86 / ideal 155 mi), not per assist mode. No max load on page. Moment Bicycles (San Diego dealer) page shows no price, speed or weight. electricbikereview search found nothing; electricbikereport only had a news item. | recheck: Giant US page (incl. hidden text) has no max load; Giant global Stormguard page 404; 1 WebSearch; E-MOUNTAINBIKE review of the EU Stormguard E+ 1 (2024) gives 121 kg payload / 156 kg total, i.e. 267 lb, not 277."}

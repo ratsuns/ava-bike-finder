@@ -1,46 +1,166 @@
-{"bike": "Orbea|Diem 28 mph", "checked": "2026-11-06",
+{
+ "bike": "Orbea|Diem 28 mph",
+ "checked": "2026-11-06",
  "fields": {
   "price": [
-   {"kind": "maker", "value": 6173, "url": "https://www.orbea.com/en-us/diem-10-28mph", "quote": "$6,173 ⟶ View summary", "basis": "Diem 10 28mph standard configuration; no crossed-out price shown"},
-   {"kind": "retailer", "value": 6173, "url": "https://www.n1bikes.com/products/orbea-diem-10-28mph?id=f61c3652e1f21e81dfb302cc264d679e470b1fe2c2d6e1474b8575035eb64f7f&variant=U72009WR", "quote": "$6,173.00 ⟶ Earn 61,730 points on this item"}
+   {
+    "kind": "maker",
+    "value": 6173,
+    "url": "https://www.orbea.com/en-us/diem-10-28mph",
+    "quote": "$6,173 ⟶ View summary",
+    "basis": "Diem 10 28mph standard configuration; no crossed-out price shown"
+   },
+   {
+    "kind": "retailer",
+    "value": 6173,
+    "url": "https://www.n1bikes.com/products/orbea-diem-10-28mph?id=f61c3652e1f21e81dfb302cc264d679e470b1fe2c2d6e1474b8575035eb64f7f&variant=U72009WR",
+    "quote": "$6,173.00 ⟶ Earn 61,730 points on this item"
+   }
   ],
   "cls": [
-   {"kind": "maker", "value": null, "url": "https://www.orbea.com/en-us/diem-10-28mph", "quote": "", "basis": "maker page states no class"},
-   {"kind": "review", "value": 3, "url": "https://electricbikereport.com/orbea-diem-review/", "quote": "Orbea’s six configurations of the Diem include both Class 1 (20 mph max assist) and Class 3 (28 mph max assist) versions based on either Shimano’s EP6 or EP8 motors and with several different drivetrain options, including one version with an Enviolo internally geared hub combined with a Gates belt.", "basis": "2024 family spec review; the 28 mph versions are Class 3"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.orbea.com/en-us/diem-10-28mph",
+    "quote": "",
+    "basis": "maker page states no class"
+   },
+   {
+    "kind": "review",
+    "value": 3,
+    "url": "https://electricbikereport.com/orbea-diem-review/",
+    "quote": "Orbea’s six configurations of the Diem include both Class 1 (20 mph max assist) and Class 3 (28 mph max assist) versions based on either Shimano’s EP6 or EP8 motors and with several different drivetrain options, including one version with an Enviolo internally geared hub combined with a Gates belt.",
+    "basis": "2024 family spec review; the 28 mph versions are Class 3"
+   },
+   {
+    "kind": "retailer",
+    "value": 3,
+    "url": "https://aroundthecycle.com/products/new-2027-orbea-diem-10-28mph-electric-hybrid-bike",
+    "quote": "How fast is the Orbea Diem 10? It's a Class 3 e-bike with pedal assist up to 28 mph.",
+    "basis": "Around the Cycle (US dealer) page for the 2027 Diem 10 28mph"
+   }
   ],
   "spd": [
-   {"kind": "maker", "value": 28, "url": "https://www.orbea.com/en-us/diem-10-28mph", "quote": "Diem 10 28mph ⟶ Change model", "basis": "from the model name; no separate speed spec on page"},
-   {"kind": "review", "value": 28, "url": "https://electricbikereport.com/orbea-diem-review/", "quote": "Orbea’s six configurations of the Diem include both Class 1 (20 mph max assist) and Class 3 (28 mph max assist) versions based on either Shimano’s EP6 or EP8 motors and with several different drivetrain options, including one version with an Enviolo internally geared hub combined with a Gates belt."}
+   {
+    "kind": "maker",
+    "value": 28,
+    "url": "https://www.orbea.com/en-us/diem-10-28mph",
+    "quote": "Diem 10 28mph ⟶ Change model",
+    "basis": "from the model name; no separate speed spec on page"
+   },
+   {
+    "kind": "review",
+    "value": 28,
+    "url": "https://electricbikereport.com/orbea-diem-review/",
+    "quote": "Orbea’s six configurations of the Diem include both Class 1 (20 mph max assist) and Class 3 (28 mph max assist) versions based on either Shimano’s EP6 or EP8 motors and with several different drivetrain options, including one version with an Enviolo internally geared hub combined with a Gates belt."
+   }
   ],
   "tq": [
-   {"kind": "maker", "value": null, "url": "https://www.orbea.com/en-us/diem-10-28mph", "quote": ""},
-   {"kind": "retailer", "value": null, "url": "https://www.n1bikes.com/products/orbea-diem-10-28mph?id=f61c3652e1f21e81dfb302cc264d679e470b1fe2c2d6e1474b8575035eb64f7f&variant=U72009WR", "quote": ""}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.orbea.com/en-us/diem-10-28mph",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.n1bikes.com/products/orbea-diem-10-28mph?id=f61c3652e1f21e81dfb302cc264d679e470b1fe2c2d6e1474b8575035eb64f7f&variant=U72009WR",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": 85,
+    "url": "https://aroundthecycle.com/products/new-2027-orbea-diem-10-28mph-electric-hybrid-bike",
+    "quote": "Motor: Shimano EP600 (up to 85Nm)"
+   }
   ],
   "wh": [
-   {"kind": "maker", "value": 630, "url": "https://www.orbea.com/en-us/diem-10-28mph", "quote": "Battery ⟶ Orbea 630 Wh Battery"},
-   {"kind": "retailer", "value": 630, "url": "https://www.n1bikes.com/products/orbea-diem-10-28mph?id=f61c3652e1f21e81dfb302cc264d679e470b1fe2c2d6e1474b8575035eb64f7f&variant=U72009WR", "quote": "Battery\tOrbea 630 Wh Battery"}
+   {
+    "kind": "maker",
+    "value": 630,
+    "url": "https://www.orbea.com/en-us/diem-10-28mph",
+    "quote": "Battery ⟶ Orbea 630 Wh Battery"
+   },
+   {
+    "kind": "retailer",
+    "value": 630,
+    "url": "https://www.n1bikes.com/products/orbea-diem-10-28mph?id=f61c3652e1f21e81dfb302cc264d679e470b1fe2c2d6e1474b8575035eb64f7f&variant=U72009WR",
+    "quote": "Battery\tOrbea 630 Wh Battery"
+   }
   ],
   "range": [
-   {"kind": "maker", "value": null, "url": "https://www.orbea.com/en-us/diem-10-28mph", "quote": ""},
-   {"kind": "retailer", "value": null, "url": "https://www.n1bikes.com/products/orbea-diem-10-28mph?id=f61c3652e1f21e81dfb302cc264d679e470b1fe2c2d6e1474b8575035eb64f7f&variant=U72009WR", "quote": ""}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.orbea.com/en-us/diem-10-28mph",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.n1bikes.com/products/orbea-diem-10-28mph?id=f61c3652e1f21e81dfb302cc264d679e470b1fe2c2d6e1474b8575035eb64f7f&variant=U72009WR",
+    "quote": ""
+   }
   ],
   "wt": [
-   {"kind": "maker", "value": null, "url": "https://www.orbea.com/en-us/diem-10-28mph", "quote": ""},
-   {"kind": "retailer", "value": null, "url": "https://www.n1bikes.com/products/orbea-diem-10-28mph?id=f61c3652e1f21e81dfb302cc264d679e470b1fe2c2d6e1474b8575035eb64f7f&variant=U72009WR", "quote": ""}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.orbea.com/en-us/diem-10-28mph",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.n1bikes.com/products/orbea-diem-10-28mph?id=f61c3652e1f21e81dfb302cc264d679e470b1fe2c2d6e1474b8575035eb64f7f&variant=U72009WR",
+    "quote": ""
+   }
   ],
   "load": [
-   {"kind": "maker", "value": null, "url": "https://www.orbea.com/en-us/diem-10-28mph", "quote": "", "basis": "only rack limits given (front Max. 10Kg, rear Max. 20Kg), no bike max load"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.orbea.com/en-us/diem-10-28mph",
+    "quote": "",
+    "basis": "only rack limits given (front Max. 10Kg, rear Max. 20Kg), no bike max load"
+   }
   ],
   "motor": [
-   {"kind": "maker", "value": "Shimano EP600", "url": "https://www.orbea.com/en-us/diem-10-28mph", "quote": "Motor ⟶ Shimano EP600"},
-   {"kind": "retailer", "value": "Shimano EP600", "url": "https://www.n1bikes.com/products/orbea-diem-10-28mph?id=f61c3652e1f21e81dfb302cc264d679e470b1fe2c2d6e1474b8575035eb64f7f&variant=U72009WR", "quote": "Motor\tShimano EP600"}
+   {
+    "kind": "maker",
+    "value": "Shimano EP600",
+    "url": "https://www.orbea.com/en-us/diem-10-28mph",
+    "quote": "Motor ⟶ Shimano EP600"
+   },
+   {
+    "kind": "retailer",
+    "value": "Shimano EP600",
+    "url": "https://www.n1bikes.com/products/orbea-diem-10-28mph?id=f61c3652e1f21e81dfb302cc264d679e470b1fe2c2d6e1474b8575035eb64f7f&variant=U72009WR",
+    "quote": "Motor\tShimano EP600"
+   }
   ],
   "height": [
-   {"kind": "maker", "value": "5'0\"-6'8\"", "url": "https://www.orbea.com/en-us/diem-10-28mph", "quote": "S | 153-172 cm | M | 164-183 cm | L | 176-195 cm | XL | 187-204 cm", "basis": "size guide by height (View size guide), 153-204 cm converted to ft/in"}
+   {
+    "kind": "maker",
+    "value": "5'0\"-6'8\"",
+    "url": "https://www.orbea.com/en-us/diem-10-28mph",
+    "quote": "S | 153-172 cm | M | 164-183 cm | L | 176-195 cm | XL | 187-204 cm",
+    "basis": "size guide by height (View size guide), 153-204 cm converted to ft/in"
+   }
   ],
   "fold": [
-   {"kind": "maker", "value": "No", "url": "https://www.orbea.com/en-us/diem-10-28mph", "quote": "Frame ⟶ Orbea Diem 2025, Diamond glide, Hydroformed Alloy 6061, High Polished, OLD 135x9 / OLD 142x12, Orbea cockpit and equipment ecosystem, w/ Custom Kickstand, Trailer compatible.", "basis": "rigid diamond-style frame; no folding mentioned"}
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://www.orbea.com/en-us/diem-10-28mph",
+    "quote": "Frame ⟶ Orbea Diem 2025, Diamond glide, Hydroformed Alloy 6061, High Polished, OLD 135x9 / OLD 142x12, Orbea cockpit and equipment ecosystem, w/ Custom Kickstand, Trailer compatible.",
+    "basis": "rigid diamond-style frame; no folding mentioned"
+   }
   ]
  },
- "status": {"sources": []},
- "notes": "Uses the Diem 10 28mph build (src link). Orbea's US configurator gives price, battery, motor and size guide only: no speed, torque, range, weight or max load. N+1 Bikes (authorized dealer, Model Year 2027) matches price and spec list. EBR's 2024 spec review covers the older EP6/EP8 generation, so it is used only for class/speed. No Diem on electricbikereview.com, Electrek or Mike's Bikes; Boulder Nordic would not load."}
+ "status": {
+  "sources": []
+ },
+ "notes": "Uses the Diem 10 28mph build (src link). Orbea's US configurator gives price, battery, motor and size guide only: no speed, torque, range, weight or max load. N+1 Bikes (authorized dealer, Model Year 2027) matches price and spec list. EBR's 2024 spec review covers the older EP6/EP8 generation, so it is used only for class/speed. No Diem on electricbikereview.com, Electrek or Mike's Bikes; Boulder Nordic would not load. Recheck: maker page names the Shimano EP600 but no Nm or weight; Around the Cycle (US dealer) 2027 Diem 10 28mph page: Class 3 / 28 mph, EP600 up to 85Nm; no weight found anywhere (N+1 Bikes page text has none)."
+}

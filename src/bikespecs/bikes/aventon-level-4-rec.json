@@ -1,49 +1,187 @@
-{"bike": "Aventon|Level 4 REC", "checked": "2026-11-06",
+{
+ "bike": "Aventon|Level 4 REC",
+ "checked": "2026-11-06",
  "fields": {
   "price": [
-   {"kind": "maker", "value": 1999, "url": "https://www.aventon.com/products/level-4-rec-ebike", "quote": "$1,799.00 | $1,999.00", "basis": "regular $1,999; sale $1,799 ($200 off)"},
-   {"kind": "review", "value": null, "url": "https://electricbikereport.com/aventon-level-4-rec-review/", "quote": ""}
+   {
+    "kind": "maker",
+    "value": 1999,
+    "url": "https://www.aventon.com/products/level-4-rec-ebike",
+    "quote": "$1,799.00 | $1,999.00",
+    "basis": "regular $1,999; sale $1,799 ($200 off)"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://electricbikereport.com/aventon-level-4-rec-review/",
+    "quote": ""
+   }
   ],
   "cls": [
-   {"kind": "maker", "value": 2, "url": "https://www.aventon.com/products/level-4-rec-ebike", "quote": "Ebike Class | Class 2 (Convertible to Class 3)"},
-   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/aventon-level-4-rec-review/", "quote": "In addition to my pedal tests, I also tried out the Level 4 REC’s throttle to gauge its acceleration force. The bike started off strong and steady—without feeling too punchy—then picked up speed quickly before reaching 20 mph.", "basis": "throttle to 20 mph; convertible to Class 3"}
+   {
+    "kind": "maker",
+    "value": 2,
+    "url": "https://www.aventon.com/products/level-4-rec-ebike",
+    "quote": "Ebike Class | Class 2 (Convertible to Class 3)"
+   },
+   {
+    "kind": "review",
+    "value": 2,
+    "url": "https://electricbikereport.com/aventon-level-4-rec-review/",
+    "quote": "In addition to my pedal tests, I also tried out the Level 4 REC’s throttle to gauge its acceleration force. The bike started off strong and steady—without feeling too punchy—then picked up speed quickly before reaching 20 mph.",
+    "basis": "throttle to 20 mph; convertible to Class 3"
+   }
   ],
   "spd": [
-   {"kind": "maker", "value": 28, "url": "https://www.aventon.com/products/level-4-rec-ebike", "quote": "Top Speed | Max 28 MPH", "basis": "maximum after Class 3 conversion; ships Class 2 (20 mph)"},
-   {"kind": "review", "value": 28, "url": "https://electricbikereport.com/aventon-level-4-rec-review/", "quote": "It’s remarkably peppy, responsive, and powerful, thanks to its 750W rear-hub motor. It can easily handle hills and reach its top speed of 28 mph.", "basis": "Class 3 setting"}
+   {
+    "kind": "maker",
+    "value": 28,
+    "url": "https://www.aventon.com/products/level-4-rec-ebike",
+    "quote": "Top Speed | Max 28 MPH",
+    "basis": "maximum after Class 3 conversion; ships Class 2 (20 mph)"
+   },
+   {
+    "kind": "review",
+    "value": 28,
+    "url": "https://electricbikereport.com/aventon-level-4-rec-review/",
+    "quote": "It’s remarkably peppy, responsive, and powerful, thanks to its 750W rear-hub motor. It can easily handle hills and reach its top speed of 28 mph.",
+    "basis": "Class 3 setting"
+   }
   ],
   "tq": [
-   {"kind": "maker", "value": 80, "url": "https://www.aventon.com/products/level-4-rec-ebike", "quote": "Motor Torque | 80Nm"},
-   {"kind": "review", "value": 80, "url": "https://electricbikereport.com/aventon-level-4-rec-review/", "quote": "Motor: 36V, 750W Motor (1188W Peak / 80 NM Torque) ⟶ Headlight: Integrated LED"}
+   {
+    "kind": "maker",
+    "value": 80,
+    "url": "https://www.aventon.com/products/level-4-rec-ebike",
+    "quote": "Motor Torque | 80Nm"
+   },
+   {
+    "kind": "review",
+    "value": 80,
+    "url": "https://electricbikereport.com/aventon-level-4-rec-review/",
+    "quote": "Motor: 36V, 750W Motor (1188W Peak / 80 NM Torque) ⟶ Headlight: Integrated LED"
+   }
   ],
   "wh": [
-   {"kind": "maker", "value": 733, "url": "https://www.aventon.com/products/level-4-rec-ebike", "quote": "Battery | Removable Internal Lithium-ion. 36V, 20Ah, 733Wh, LG 21700 cells"},
-   {"kind": "review", "value": 733, "url": "https://electricbikereport.com/aventon-level-4-rec-review/", "quote": "Battery: Removable Lithium-Ion. 36V, 20Ah, 733Wh, LG 21700 Cells ⟶ Charger: 42V/4A"}
+   {
+    "kind": "maker",
+    "value": 733,
+    "url": "https://www.aventon.com/products/level-4-rec-ebike",
+    "quote": "Battery | Removable Internal Lithium-ion. 36V, 20Ah, 733Wh, LG 21700 cells"
+   },
+   {
+    "kind": "review",
+    "value": 733,
+    "url": "https://electricbikereport.com/aventon-level-4-rec-review/",
+    "quote": "Battery: Removable Lithium-Ion. 36V, 20Ah, 733Wh, LG 21700 Cells ⟶ Charger: 42V/4A"
+   }
   ],
   "range": [
-   {"kind": "maker", "value": "75", "url": "https://www.aventon.com/products/level-4-rec-ebike", "quote": "Range | Up to 75 Miles"},
-   {"kind": "review", "value": "75", "url": "https://electricbikereport.com/aventon-level-4-rec-review/", "quote": "Claimed Range: Up to 75 Miles ⟶ Throttle:Included"}
+   {
+    "kind": "maker",
+    "value": "75",
+    "url": "https://www.aventon.com/products/level-4-rec-ebike",
+    "quote": "Range | Up to 75 Miles"
+   },
+   {
+    "kind": "review",
+    "value": "75",
+    "url": "https://electricbikereport.com/aventon-level-4-rec-review/",
+    "quote": "Claimed Range: Up to 75 Miles ⟶ Throttle:Included"
+   }
   ],
   "wt": [
-   {"kind": "maker", "value": 68.5, "url": "https://www.aventon.com/products/level-4-rec-ebike", "quote": "Weight | 68.5lbs"},
-   {"kind": "review", "value": 68.5, "url": "https://electricbikereport.com/aventon-level-4-rec-review/", "quote": "WEIGHT & DIMENSIONS ⟶ Claimed weight: 68.5 lbs", "basis": "claimed; tested 70.7 lbs"}
+   {
+    "kind": "maker",
+    "value": 68.5,
+    "url": "https://www.aventon.com/products/level-4-rec-ebike",
+    "quote": "Weight | 68.5lbs"
+   },
+   {
+    "kind": "review",
+    "value": 68.5,
+    "url": "https://electricbikereport.com/aventon-level-4-rec-review/",
+    "quote": "WEIGHT & DIMENSIONS ⟶ Claimed weight: 68.5 lbs",
+    "basis": "claimed; tested 70.7 lbs"
+   }
   ],
   "load": [
-   {"kind": "maker", "value": 300, "url": "https://www.aventon.com/products/level-4-rec-ebike", "quote": "Total Weight Limit | 300 lbs", "basis": "total"},
-   {"kind": "review", "value": 300, "url": "https://electricbikereport.com/aventon-level-4-rec-review/", "quote": "Total payload capacity: 300 lbs. ⟶ COMPONENTS & ACCESSORIES"}
+   {
+    "kind": "maker",
+    "value": 300,
+    "url": "https://www.aventon.com/products/level-4-rec-ebike",
+    "quote": "Total Weight Limit | 300 lbs",
+    "basis": "total"
+   },
+   {
+    "kind": "review",
+    "value": 300,
+    "url": "https://electricbikereport.com/aventon-level-4-rec-review/",
+    "quote": "Total payload capacity: 300 lbs. ⟶ COMPONENTS & ACCESSORIES"
+   }
   ],
   "motor": [
-   {"kind": "maker", "value": "750W rear hub (1,188W peak; 1,440W in Boost)", "url": "https://www.aventon.com/products/level-4-rec-ebike", "quote": "Motor | Hub Motor, 80Nm (96Nm in Boost Mode), 1188W Peak (1440W in Boost Mode)", "basis": "spec also: 'Motor Power | 750W (1188W Peak)' and rear wheel '750W Nutted Axle Hub Motor'"},
-   {"kind": "review", "value": "750W rear hub (1,188W peak)", "url": "https://electricbikereport.com/aventon-level-4-rec-review/", "quote": "Motor: 36V, 750W Motor (1188W Peak / 80 NM Torque) ⟶ Headlight: Integrated LED"}
+   {
+    "kind": "maker",
+    "value": "750W rear hub (1,188W peak; 1,440W in Boost)",
+    "url": "https://www.aventon.com/products/level-4-rec-ebike",
+    "quote": "Motor | Hub Motor, 80Nm (96Nm in Boost Mode), 1188W Peak (1440W in Boost Mode)",
+    "basis": "spec also: 'Motor Power | 750W (1188W Peak)' and rear wheel '750W Nutted Axle Hub Motor'"
+   },
+   {
+    "kind": "review",
+    "value": "750W rear hub (1,188W peak)",
+    "url": "https://electricbikereport.com/aventon-level-4-rec-review/",
+    "quote": "Motor: 36V, 750W Motor (1188W Peak / 80 NM Torque) ⟶ Headlight: Integrated LED"
+   },
+   {
+    "kind": "maker",
+    "value": "750W rear hub",
+    "url": "https://www.aventon.com/products/level-4-rec-ebike",
+    "quote": "Rear Wheel | 27.5\" Double Wall Aluminum, 750W Nutted Axle Hub Motor",
+    "basis": "from the Wheelset spec rows (hidden tab text); page tags also list 'Rear Hub'"
+   },
+   {
+    "kind": "review",
+    "value": "750W rear hub (1,188W peak)",
+    "url": "https://electricbikereview.com/aventon/level-4-rec-review/",
+    "quote": "The 750W rear hub model we are reviewing here is called the Level 4 REC",
+    "basis": "spec table: 'MOTOR TYPE: ⟶ Rear Hub', 'MOTOR NOMINAL OUTPUT: ⟶ 750W watts', 'MOTOR PEAK OUTPUT: ⟶ 1188W (1,425W in ‘Boost’) watts'"
+   }
   ],
   "height": [
-   {"kind": "maker", "value": "5'3\"-6'4\"", "url": "https://www.aventon.com/products/level-4-rec-ebike", "quote": "Rider Height | S/M - 5'3\"-5'10\". || Large - 5'10\"-6'4\"", "basis": "Step Over frame (default variant), two sizes combined"},
-   {"kind": "review", "value": "4'11\"-6'4\"", "url": "https://electricbikereport.com/aventon-level-4-rec-review/", "quote": "Rider height range: 4’11” – 6’4” ⟶ Total payload capacity: 300 lbs.", "basis": "both frames: step-thru 4’11”-6’1”, high-step 5’3”-6’4”"}
+   {
+    "kind": "maker",
+    "value": "5'3\"-6'4\"",
+    "url": "https://www.aventon.com/products/level-4-rec-ebike",
+    "quote": "Rider Height | S/M - 5'3\"-5'10\". || Large - 5'10\"-6'4\"",
+    "basis": "Step Over frame (default variant), two sizes combined"
+   },
+   {
+    "kind": "review",
+    "value": "4'11\"-6'4\"",
+    "url": "https://electricbikereport.com/aventon-level-4-rec-review/",
+    "quote": "Rider height range: 4’11” – 6’4” ⟶ Total payload capacity: 300 lbs.",
+    "basis": "both frames: step-thru 4’11”-6’1”, high-step 5’3”-6’4”"
+   }
   ],
   "fold": [
-   {"kind": "maker", "value": "No", "url": "https://www.aventon.com/products/level-4-rec-ebike", "quote": "Frame | 6061 Aluminum"},
-   {"kind": "review", "value": "No", "url": "https://electricbikereport.com/aventon-level-4-rec-review/", "quote": "Frame: 6061 Aluminum, Gravity Cast Front Triangle ⟶ Drivetrain: 8-Speed Shimano Altus, 48T Chainring, 12-32T Cassette"}
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://www.aventon.com/products/level-4-rec-ebike",
+    "quote": "Frame | 6061 Aluminum"
+   },
+   {
+    "kind": "review",
+    "value": "No",
+    "url": "https://electricbikereport.com/aventon-level-4-rec-review/",
+    "quote": "Frame: 6061 Aluminum, Gravity Cast Front Triangle ⟶ Drivetrain: 8-Speed Shimano Altus, 48T Chainring, 12-32T Cassette"
+   }
   ]
  },
- "status": {"sources": []},
- "notes": "Maker values from the top banner and Specifications section (default variant: REC trim, Step Over, S/M); ' | ' joins consecutive page lines. Page also sells a Step Through frame; EBR says ST fits 4'11\"-6'1\", so overall range is 4'11\"-6'4\". Ships Class 2 (20 mph), convertible to Class 3 (28 mph). Only one independent source (EBR)."}
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker values from the top banner and Specifications section (default variant: REC trim, Step Over, S/M); ' | ' joins consecutive page lines. Page also sells a Step Through frame; EBR says ST fits 4'11\"-6'1\", so overall range is 4'11\"-6'4\". Ships Class 2 (20 mph), convertible to Class 3 (28 mph). Only one independent source (EBR). recheck (motor): maker Wheelset rows state '750W Nutted Axle Hub Motor' on the rear wheel; added electricbikereview.com review (rear hub, 750W nominal; EBR says 1,425W Boost peak vs maker 1440W)."
+}

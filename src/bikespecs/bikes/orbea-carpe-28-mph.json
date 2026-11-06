@@ -24,6 +24,13 @@
     "url": "https://www.orbea.com/en-us/carpe-10-28mph",
     "quote": "",
     "basis": "maker page states no class; model name says 28mph (Class 3)"
+   },
+   {
+    "kind": "retailer",
+    "value": 3,
+    "url": "https://aroundthecycle.com/products/new-2027-orbea-carpe-10-28mph-electric-hybrid-bike",
+    "quote": "How fast is the Orbea Carpe 10? It's a Class 3 e-bike with pedal assist up to 28 mph.",
+    "basis": "Around the Cycle (US dealer) page for the 2027 Carpe 10 28mph"
    }
   ],
   "spd": [
@@ -170,5 +177,5 @@
  "status": {
   "sources": []
  },
- "notes": "Uses the Carpe 10 28mph build (src link). Orbea's US configurator gives no class, speed spec, range, weight or max load. eBikes International's Carpe 10 test report (not speed-specific) confirms 85Nm and 420Wh; its 'SRP is $5,899' is likely a non-US price, so not used. 99 Spokes lists the same price and specs as Orbea. Space-saving stem and folding pedals, but the frame does not fold."
+ "notes": "Uses the Carpe 10 28mph build (src link). Orbea's US configurator gives no class, speed spec, range, weight or max load. eBikes International's Carpe 10 test report (not speed-specific) confirms 85Nm and 420Wh; its 'SRP is $5,899' is likely a non-US price, so not used. 99 Spokes lists the same price and specs as Orbea. Space-saving stem and folding pedals, but the frame does not fold. Recheck: Around the Cycle (US dealer) 2027 Carpe 10 28mph page: 'Class 3 / 28mph pedal-assist e-bike', EP600 up to 85Nm."
 }

@@ -2,7 +2,8 @@
  "fields": {
   "price": [
    {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/gravit-city-e", "quote": "from 5.999,– | including VAT, excluding delivery", "basis": "EUR only, no USD price published"},
-   {"kind": "review", "value": null, "url": "https://newatlas.com/bicycles/hase-bikes-gravit-city-e", "quote": "The Gravit City E is available now in high-gloss white, and starts at €5,990 (about US$6,600) in its base configuration.", "basis": "EUR price with a currency conversion, not a USD list price"}
+   {"kind": "review", "value": null, "url": "https://newatlas.com/bicycles/hase-bikes-gravit-city-e", "quote": "The Gravit City E is available now in high-gloss white, and starts at €5,990 (about US$6,600) in its base configuration.", "basis": "EUR price with a currency conversion, not a USD list price"},
+   {"kind": "retailer", "value": 7210, "url": "https://www.rad-innovations.com/gravit-city-e.html", "quote": "Base Price: $7,210 - Battery & charger sold separately ⟶ Gravit City E - urban cargo bike", "basis": "US Hase dealer (RAD Innovations) base price; battery & charger extra; same page: Shimano EP6 Cargo, 85 Nm, 630 Wh"}
   ],
   "cls": [
    {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/gravit-city-e", "quote": ""},
@@ -41,4 +42,4 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Hase is a German maker; the src page is the EU/English site and gives only a EUR price (from 5.999). No US class, top speed or range published by the maker. New Atlas covers the launch version (Shimano E6100, 504 Wh), so it is used only for specs that don't depend on the drive system (load total, telescoping frame) plus its 25 km/h EU speed; its older motor/battery figures were not recorded. Frame telescopes (shortens), it doesn't fold. The maker's 'Maximum load 200 kg' is a total incl. rider per New Atlas. No EBR/EBR-report/REI/Best Buy/Electrek coverage found; newwheel.net doesn't list the Gravit."}
+ "notes": "Hase is a German maker; the src page is the EU/English site and gives only a EUR price (from 5.999). No US class, top speed or range published by the maker. New Atlas covers the launch version (Shimano E6100, 504 Wh), so it is used only for specs that don't depend on the drive system (load total, telescoping frame) plus its 25 km/h EU speed; its older motor/battery figures were not recorded. Frame telescopes (shortens), it doesn't fold. The maker's 'Maximum load 200 kg' is a total incl. rider per New Atlas. No EBR/EBR-report/REI/Best Buy/Electrek coverage found; newwheel.net doesn't list the Gravit. | recheck: RAD Innovations (US dealer) lists Gravit City E base price $7,210 without battery & charger. looked for a US class / mph on hasebikes.com (incl. hidden text), RAD Innovations, Hostel Shoppe, Laid Back Cycles, Utah Trikes (404) and 1 WebSearch: no page states a class or a US top speed."}

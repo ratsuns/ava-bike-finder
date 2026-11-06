@@ -1,6 +1,4 @@
-{
- "bike": "Pedego|Boomerang Core",
- "checked": "2026-11-06",
+{"bike": "Pedego|Boomerang Core", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1995, "url": "https://pedegoelectricbikes.com/products/boomerang-core", "quote": "$1,995.00 ⟶ CHOOSE OPTIONS"}
@@ -9,7 +7,8 @@
    {"kind": "maker", "value": 2, "url": "https://pedegoelectricbikes.com/products/boomerang-core", "quote": "SPEED | Class 1 & Class 2", "basis": "Class 1 & 2 with 'Pedego Twist Throttle' -> Class 2 (assumes 20 mph, which Class 1/2 implies)"}
   ],
   "spd": [
-   {"kind": "maker", "value": null, "url": "https://pedegoelectricbikes.com/products/boomerang-core", "quote": "SPEED | Class 1 & Class 2", "basis": "no mph given"}
+   {"kind": "maker", "value": null, "url": "https://pedegoelectricbikes.com/products/boomerang-core", "quote": "SPEED | Class 1 & Class 2", "basis": "no mph given"},
+   {"kind": "maker", "value": 20, "url": "https://pedegoelectricbikes.com/cdn/shop/files/FS26_-_Boomerang_Core_Fact_Sheet.pdf", "quote": "Class 1: 20MPH, Class 2: 20MPH", "basis": "Pedego FS26 Boomerang Core fact sheet (PDF), Top Speed row"}
   ],
   "tq": [
    {"kind": "maker", "value": null, "url": "https://pedegoelectricbikes.com/products/boomerang-core", "quote": "MOTOR | 500W Rear Hub Motor", "basis": "no torque given"}
@@ -37,5 +36,4 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Maker page only. EBR/EBReport Boomerang reviews are older generations (2015-2021); the one WebSearch found no independent page for the Core. Maker page gives no mph or torque; its FS26 fact-sheet PDF couldn't be read in the browser."
-}
+ "notes": "Maker page only. EBR/EBReport Boomerang reviews are older generations (2015-2021); the one WebSearch found no independent page for the Core. Maker page gives no mph or torque; its FS26 fact-sheet PDF couldn't be read in the browser. Recheck: looked at Pedego product page full text incl. spec tabs (Top Speed shown only as 'Class 1 & Class 2'), EBR and EBR-eport searches (only old Boomerang), one web search, Pedego FS26 Boomerang Core fact sheet PDF (Top Speed Class 1: 20MPH, Class 2: 20MPH). The fact sheet's spec table says 500W Rear Hub Motor but its feature text says '749 watt motor' and range 'up to 60 miles' (product page: 46)."}

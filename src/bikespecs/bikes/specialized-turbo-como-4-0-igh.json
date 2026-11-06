@@ -6,11 +6,14 @@
   ],
   "cls": [
    {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-como-40-igh/p/206177", "quote": "The speed limit at which the motor will stop supporting may vary significantly by region and is based on local requirements. It may also affect range: a higher speed limit may result in less range."},
-   {"kind": "review", "value": 3, "url": "https://eridehero.com/products/specialized-turbo-como-4-0-igh-2026/", "quote": "E-Bike Class\tClass 3"}
+   {"kind": "review", "value": 3, "url": "https://eridehero.com/products/specialized-turbo-como-4-0-igh-2026/", "quote": "E-Bike Class\tClass 3"},
+   {"kind": "retailer", "value": 3, "url": "https://cripplecreekbc.com/collections/specialized-como-3/products/specialized-turbo-como-4-0-igh-bike", "quote": "With a Class 3 top speed of 28 mph, turbo-charged pedal assist, and features like an 80mm front fork, Spring suspension seatpost, and Pathfinder tires, you'll experience a smooth ride and maximum comfort no matter how far you go.", "basis": "authorized dealer (Cripple Creek Backcountry); current gen (80mm fork, spring seatpost)"}
   ],
   "spd": [
    {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-como-40-igh/p/206177", "quote": ""},
-   {"kind": "review", "value": 28, "url": "https://eridehero.com/products/specialized-turbo-como-4-0-igh-2026/", "quote": "Top Assist Speed\t28 mph"}
+   {"kind": "review", "value": 28, "url": "https://eridehero.com/products/specialized-turbo-como-4-0-igh-2026/", "quote": "Top Assist Speed\t28 mph"},
+   {"kind": "maker", "value": 28, "url": "https://www.specialized.com/us/en/turbo-como-40-igh/p/206177", "quote": "Turbo Full Power 2.0 motor and 710Wh battery offer an unparalleled riding experience, providing a smooth, seamless, and shockingly quiet amplification of your efforts, up to 28 mph."},
+   {"kind": "retailer", "value": 28, "url": "https://cripplecreekbc.com/collections/specialized-como-3/products/specialized-turbo-como-4-0-igh-bike", "quote": "With a Class 3 top speed of 28 mph, turbo-charged pedal assist, and features like an 80mm front fork, Spring suspension seatpost, and Pathfinder tires, you'll experience a smooth ride and maximum comfort no matter how far you go."}
   ],
   "tq": [
    {"kind": "maker", "value": 70, "url": "https://www.specialized.com/us/en/turbo-como-40-igh/p/206177", "quote": "Motor ⟶ Specialized 2.0, 70Nm torque, custom tuned motor, 250W nominal"},
@@ -46,4 +49,5 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Maker page gives no class/speed. ERideHero labels its page '2026' and lists $4,599.99 and 62 lb vs maker $4,249.99 / 64 lb 4.2 oz; motor, battery, enviolo/Gates drivetrain and 75 mi range match, so used for class 3 / 28 mph only as a cross-check. N1 shows crossed-out $4,250.00."}
+ "notes": "Maker page gives no class/speed. ERideHero labels its page '2026' and lists $4,599.99 and 62 lb vs maker $4,249.99 / 64 lb 4.2 oz; motor, battery, enviolo/Gates drivetrain and 75 mi range match, so used for class 3 / 28 mph only as a cross-check. N1 shows crossed-out $4,250.00. | recheck: maker description says up to 28 mph (a buyer review on the maker page quotes Specialized support: IGH set to 28 mph but cruises ~20-22 mph due to hub drag); Cripple Creek Backcountry dealer page states Class 3, 28 mph."
+}

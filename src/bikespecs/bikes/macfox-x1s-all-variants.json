@@ -1,48 +1,169 @@
-{"bike": "Macfox|X1s (All variants)", "checked": "2026-11-06",
+{
+ "bike": "Macfox|X1s (All variants)",
+ "checked": "2026-11-06",
  "fields": {
   "price": [
-   {"kind": "maker", "value": 1399, "url": "https://macfoxbike.com/products/macfox-x1", "quote": "A classic moped-style commuter built for everyday rides and neighborhood cruising. ⟶ $1,399.00 USD", "basis": "single battery; dual battery $1,698"},
-   {"kind": "review", "value": 1399, "url": "https://electrek.co/2026/09/04/macfox-x1s-e-bike-review-more-mini-moto-than-bicycle-yet-still-street-legal/", "quote": "At $1,399, the Macfox X1S is built around a 500W rear hub motor rated for 750W of peak power."}
+   {
+    "kind": "maker",
+    "value": 1399,
+    "url": "https://macfoxbike.com/products/macfox-x1",
+    "quote": "A classic moped-style commuter built for everyday rides and neighborhood cruising. ⟶ $1,399.00 USD",
+    "basis": "single battery; dual battery $1,698"
+   },
+   {
+    "kind": "review",
+    "value": 1399,
+    "url": "https://electrek.co/2026/09/04/macfox-x1s-e-bike-review-more-mini-moto-than-bicycle-yet-still-street-legal/",
+    "quote": "At $1,399, the Macfox X1S is built around a 500W rear hub motor rated for 750W of peak power."
+   }
   ],
   "cls": [
-   {"kind": "maker", "value": 2, "url": "https://macfoxbike.com/products/macfox-x1", "quote": "Yes, in most US states. The X1S is a Class 2 ebike with a 20 mph top assisted speed on both pedal assist and throttle, and it is UL 2849 certified. Local rules on rider age, helmets and throttle use vary, so check your state and city before riding. ⟶ How far can the Macfox X1S go on one charge?"},
-   {"kind": "review", "value": 2, "url": "https://electrek.co/2026/09/04/macfox-x1s-e-bike-review-more-mini-moto-than-bicycle-yet-still-street-legal/", "quote": "First, as I mentioned, it’s a true Class 2 e-bike with a 20 mph (32 km/h) top speed."}
+   {
+    "kind": "maker",
+    "value": 2,
+    "url": "https://macfoxbike.com/products/macfox-x1",
+    "quote": "Yes, in most US states. The X1S is a Class 2 ebike with a 20 mph top assisted speed on both pedal assist and throttle, and it is UL 2849 certified. Local rules on rider age, helmets and throttle use vary, so check your state and city before riding. ⟶ How far can the Macfox X1S go on one charge?"
+   },
+   {
+    "kind": "review",
+    "value": 2,
+    "url": "https://electrek.co/2026/09/04/macfox-x1s-e-bike-review-more-mini-moto-than-bicycle-yet-still-street-legal/",
+    "quote": "First, as I mentioned, it’s a true Class 2 e-bike with a 20 mph (32 km/h) top speed."
+   }
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://macfoxbike.com/products/macfox-x1", "quote": "Top Speed ⟶ 20mph"},
-   {"kind": "review", "value": 20, "url": "https://electrek.co/2026/09/04/macfox-x1s-e-bike-review-more-mini-moto-than-bicycle-yet-still-street-legal/", "quote": "First, as I mentioned, it’s a true Class 2 e-bike with a 20 mph (32 km/h) top speed."}
+   {
+    "kind": "maker",
+    "value": 20,
+    "url": "https://macfoxbike.com/products/macfox-x1",
+    "quote": "Top Speed ⟶ 20mph"
+   },
+   {
+    "kind": "review",
+    "value": 20,
+    "url": "https://electrek.co/2026/09/04/macfox-x1s-e-bike-review-more-mini-moto-than-bicycle-yet-still-street-legal/",
+    "quote": "First, as I mentioned, it’s a true Class 2 e-bike with a 20 mph (32 km/h) top speed."
+   }
   ],
   "tq": [
-   {"kind": "maker", "value": null, "url": "https://macfoxbike.com/products/macfox-x1", "quote": ""},
-   {"kind": "review", "value": null, "url": "https://electrek.co/2026/09/04/macfox-x1s-e-bike-review-more-mini-moto-than-bicycle-yet-still-street-legal/", "quote": ""}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://macfoxbike.com/products/macfox-x1",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://electrek.co/2026/09/04/macfox-x1s-e-bike-review-more-mini-moto-than-bicycle-yet-still-street-legal/",
+    "quote": ""
+   },
+   {
+    "kind": "maker",
+    "value": 65,
+    "url": "https://macfoxbike.com/blogs/news/budget-commuter-ebikes",
+    "quote": "The Macfox X1S is a sporty yet practical budget commuter. It packs a 500W motor (750W peak) with 65 Nm torque for quick acceleration and a top speed of 25 mph. This powerful hub motor makes it easy to conquer hills or sprint through city streets. Despite the sporty vibe, the X1S is built for everyday commuting: it has a solid steel frame, front suspension for a smoother ride, and reliable front/rear disc brakes for safety.",
+    "basis": "maker blog post, not the product page"
+   }
   ],
   "wh": [
-   {"kind": "maker", "value": 500, "url": "https://macfoxbike.com/products/macfox-x1", "quote": "Battery ⟶ 500Wh (48V 10.4Ah)"},
-   {"kind": "review", "value": 500, "url": "https://electrek.co/2026/09/04/macfox-x1s-e-bike-review-more-mini-moto-than-bicycle-yet-still-street-legal/", "quote": "The Macfox X1S gets a 500Wh (48V 10.4Ah) removable battery, 20 x 4-inch fat tires, front suspension, hydraulic disc brakes, and a long bench-style saddle."}
+   {
+    "kind": "maker",
+    "value": 500,
+    "url": "https://macfoxbike.com/products/macfox-x1",
+    "quote": "Battery ⟶ 500Wh (48V 10.4Ah)"
+   },
+   {
+    "kind": "review",
+    "value": 500,
+    "url": "https://electrek.co/2026/09/04/macfox-x1s-e-bike-review-more-mini-moto-than-bicycle-yet-still-street-legal/",
+    "quote": "The Macfox X1S gets a 500Wh (48V 10.4Ah) removable battery, 20 x 4-inch fat tires, front suspension, hydraulic disc brakes, and a long bench-style saddle."
+   }
   ],
   "range": [
-   {"kind": "maker", "value": "28", "url": "https://macfoxbike.com/products/macfox-x1", "quote": "Range(Single Battery) ⟶ Up to 28 miles", "basis": "single battery; dual battery up to 56 miles"},
-   {"kind": "review", "value": "28", "url": "https://electrek.co/2026/09/04/macfox-x1s-e-bike-review-more-mini-moto-than-bicycle-yet-still-street-legal/", "quote": "Macfox rates the single-battery model for up to 28 miles (45 km) of range, though there’s a dual battery version that gets twice the range."}
+   {
+    "kind": "maker",
+    "value": "28",
+    "url": "https://macfoxbike.com/products/macfox-x1",
+    "quote": "Range(Single Battery) ⟶ Up to 28 miles",
+    "basis": "single battery; dual battery up to 56 miles"
+   },
+   {
+    "kind": "review",
+    "value": "28",
+    "url": "https://electrek.co/2026/09/04/macfox-x1s-e-bike-review-more-mini-moto-than-bicycle-yet-still-street-legal/",
+    "quote": "Macfox rates the single-battery model for up to 28 miles (45 km) of range, though there’s a dual battery version that gets twice the range."
+   }
   ],
   "wt": [
-   {"kind": "maker", "value": 65, "url": "https://macfoxbike.com/products/macfox-x1", "quote": "Vehicle Weight ⟶ 65 lbs"},
-   {"kind": "review", "value": null, "url": "https://electrek.co/2026/09/04/macfox-x1s-e-bike-review-more-mini-moto-than-bicycle-yet-still-street-legal/", "quote": ""}
+   {
+    "kind": "maker",
+    "value": 65,
+    "url": "https://macfoxbike.com/products/macfox-x1",
+    "quote": "Vehicle Weight ⟶ 65 lbs"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://electrek.co/2026/09/04/macfox-x1s-e-bike-review-more-mini-moto-than-bicycle-yet-still-street-legal/",
+    "quote": ""
+   }
   ],
   "load": [
-   {"kind": "maker", "value": 220, "url": "https://macfoxbike.com/products/macfox-x1", "quote": "Rider Weight Limit ⟶ 220 lbs", "basis": "rider weight limit"},
-   {"kind": "review", "value": null, "url": "https://electrek.co/2026/09/04/macfox-x1s-e-bike-review-more-mini-moto-than-bicycle-yet-still-street-legal/", "quote": ""}
+   {
+    "kind": "maker",
+    "value": 220,
+    "url": "https://macfoxbike.com/products/macfox-x1",
+    "quote": "Rider Weight Limit ⟶ 220 lbs",
+    "basis": "rider weight limit"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://electrek.co/2026/09/04/macfox-x1s-e-bike-review-more-mini-moto-than-bicycle-yet-still-street-legal/",
+    "quote": ""
+   }
   ],
   "motor": [
-   {"kind": "maker", "value": "500W hub (750W peak)", "url": "https://macfoxbike.com/products/macfox-x1", "quote": "This Class 2 e-bike features a 500W motor with a peak output of 750W, offering an ideal balance of power and road-legal performance. With a top speed of 20 mph, it delivers smooth, easy handling while prioritizing rider safety—making it a great choice for teens and everyday rides. | Its hub motor supports riders up to 220 lbs, and it stays Class 2 at 20 mph."},
-   {"kind": "review", "value": "500W rear hub (750W peak)", "url": "https://electrek.co/2026/09/04/macfox-x1s-e-bike-review-more-mini-moto-than-bicycle-yet-still-street-legal/", "quote": "At $1,399, the Macfox X1S is built around a 500W rear hub motor rated for 750W of peak power."}
+   {
+    "kind": "maker",
+    "value": "500W hub (750W peak)",
+    "url": "https://macfoxbike.com/products/macfox-x1",
+    "quote": "This Class 2 e-bike features a 500W motor with a peak output of 750W, offering an ideal balance of power and road-legal performance. With a top speed of 20 mph, it delivers smooth, easy handling while prioritizing rider safety—making it a great choice for teens and everyday rides. | Its hub motor supports riders up to 220 lbs, and it stays Class 2 at 20 mph."
+   },
+   {
+    "kind": "review",
+    "value": "500W rear hub (750W peak)",
+    "url": "https://electrek.co/2026/09/04/macfox-x1s-e-bike-review-more-mini-moto-than-bicycle-yet-still-street-legal/",
+    "quote": "At $1,399, the Macfox X1S is built around a 500W rear hub motor rated for 750W of peak power."
+   }
   ],
   "height": [
-   {"kind": "maker", "value": "5'3\" and up", "url": "https://macfoxbike.com/products/macfox-x1", "quote": "Recommended Rider Height ⟶ 5'3'' and up"},
-   {"kind": "review", "value": null, "url": "https://electrek.co/2026/09/04/macfox-x1s-e-bike-review-more-mini-moto-than-bicycle-yet-still-street-legal/", "quote": ""}
+   {
+    "kind": "maker",
+    "value": "5'3\" and up",
+    "url": "https://macfoxbike.com/products/macfox-x1",
+    "quote": "Recommended Rider Height ⟶ 5'3'' and up"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://electrek.co/2026/09/04/macfox-x1s-e-bike-review-more-mini-moto-than-bicycle-yet-still-street-legal/",
+    "quote": ""
+   }
   ],
   "fold": [
-   {"kind": "maker", "value": "No", "url": "https://macfoxbike.com/products/macfox-x1", "quote": "Frame ⟶ High-Strength Carbon Steel", "basis": "moped-style frame; only the rear foot pegs fold ('Foldable Rear Foot Pegs')"}
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://macfoxbike.com/products/macfox-x1",
+    "quote": "Frame ⟶ High-Strength Carbon Steel",
+    "basis": "moped-style frame; only the rear foot pegs fold ('Foldable Rear Foot Pegs')"
+   }
   ]
  },
- "status": {"sources": []},
- "notes": "Maker Shopify data: compare_at = price ($1,399 single / $1,698 dual), so regular; page shows a $100 OFF BF100 code (not recorded). 'All variants': colors Black / Nebula Purple, single or dual battery; page also mentions an 'X1S x Bs.zay' edition in its compare table with same specs. Rider height has no upper bound ('5'3\" and up'). Torque not published. EBR has no Macfox reviews."}
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker Shopify data: compare_at = price ($1,399 single / $1,698 dual), so regular; page shows a $100 OFF BF100 code (not recorded). 'All variants': colors Black / Nebula Purple, single or dual battery; page also mentions an 'X1S x Bs.zay' edition in its compare table with same specs. Rider height has no upper bound ('5'3\" and up'). Torque not published. EBR has no Macfox reviews. Recheck: maker blog 'budget-commuter-ebikes' gives X1S 65 Nm (product page gives no torque)."
+}

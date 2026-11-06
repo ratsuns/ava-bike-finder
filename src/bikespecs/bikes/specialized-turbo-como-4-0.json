@@ -10,7 +10,10 @@
   ],
   "spd": [
    {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-como-40/p/4248975", "quote": ""},
-   {"kind": "review", "value": 28, "url": "https://eridehero.com/products/specialized-turbo-como-4-0-2026/", "quote": "Top Assist Speed\t28 mph ⟶ Throttle"}
+   {"kind": "review", "value": 28, "url": "https://eridehero.com/products/specialized-turbo-como-4-0-2026/", "quote": "Top Assist Speed\t28 mph ⟶ Throttle"},
+   {"kind": "maker", "value": 28, "url": "https://www.specialized.com/us/en/turbo-como-40/p/4248975", "quote": "Turbo Full Power 2.0 motor and 710Wh battery offer an unparalleled riding experience, providing a smooth, seamless, and shockingly quiet amplification of your efforts, up to 28 mph."},
+   {"kind": "retailer", "value": 28, "url": "https://steedcycles.com/products/specialized-turbo-como-4-0", "quote": "Turbo Full Power 2.0 motor and 710Wh battery offer an unparalleled riding experience, providing a smooth, seamless, and shockingly quiet amplification of your efforts, up to 28 mph.", "basis": "dealer copy of maker text"},
+   {"kind": "retailer", "value": 28, "url": "https://www.outdoorsports.com/products/specialized-como_4-0_ul-bikes-2026", "quote": "The powerful Turbo Full Power 2.0 motor and 710 Wh battery quietly boost your pedaling up to 28 mph, with a range of up to 90 miles."}
   ],
   "tq": [
    {"kind": "maker", "value": 70, "url": "https://www.specialized.com/us/en/turbo-como-40/p/4248975", "quote": "Motor ⟶ Specialized 2.0, 70Nm torque, custom tuned motor, 250W nominal"},
@@ -45,4 +48,5 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Current CUES 9-speed version. Maker page gives no class/speed; class 3 / 28 mph from ERideHero spec page (also says no throttle). EBR review at electricbikereview.com/specialized/turbo-como-4-0/ is the 2020 Brose model, not used. Mike's Bikes had 0 results; boulder-nordic.com blocked."}
+ "notes": "Current CUES 9-speed version. Maker page gives no class/speed; class 3 / 28 mph from ERideHero spec page (also says no throttle). EBR review at electricbikereview.com/specialized/turbo-como-4-0/ is the 2020 Brose model, not used. Mike's Bikes had 0 results; boulder-nordic.com blocked. | recheck: maker page description (textContent) says assist up to 28 mph; no page states a class (checked maker, 99spokes 2026, Steed Cycles, OutdoorSports, Mike's Bikes 0 results)."
+}

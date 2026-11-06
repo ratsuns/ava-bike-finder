@@ -6,7 +6,8 @@
   ],
   "cls": [
    {"kind": "maker", "value": 2, "url": "https://retrospec.com/products/koa-rev-plus-step-through", "quote": "This ebike’s torque sensor offers smooth, intuitive pedal assistance, and you can unlock your adventure’s full potential with a Class 3 option.", "basis": "maker says 'Class 2/3' with a Class 3 option to unlock; recorded Class 2 as shipped"},
-   {"kind": "review", "value": 2, "url": "https://www.bikeride.com/retrospec-koa-rev-plus-2/", "quote": "CLASS ⟶ Class 2, Class 3", "basis": "Class 2 with Class 3 available"}
+   {"kind": "review", "value": 2, "url": "https://www.bikeride.com/retrospec-koa-rev-plus-2/", "quote": "CLASS ⟶ Class 2, Class 3", "basis": "Class 2 with Class 3 available"},
+   {"kind": "maker", "value": 2, "url": "https://help.retrospec.com/en-US/what-does-%22class-2%22-mean-629518", "quote": "All of our e-bikes are \"Class 2\" which means they have pedal assist and/or throttle with assistance of 20mph max. Top speed is dependent on the bike model.", "basis": "Retrospec help-center article covering all its e-bikes (updated 2 days ago), not model-specific"}
   ],
   "spd": [
    {"kind": "maker", "value": null, "url": "https://retrospec.com/products/koa-rev-plus-2-26-fat-tire-electric-bike", "quote": "Class 2/3 Ebike", "basis": "no mph figure on maker page"},
@@ -26,7 +27,8 @@
   ],
   "wt": [
    {"kind": "maker", "value": null, "url": "https://retrospec.com/products/koa-rev-plus-2-26-fat-tire-electric-bike", "quote": ""},
-   {"kind": "review", "value": 74, "url": "https://www.bikeride.com/retrospec-koa-rev-plus-2/", "quote": "WEIGHT ⟶ 74 lb"}
+   {"kind": "review", "value": 74, "url": "https://www.bikeride.com/retrospec-koa-rev-plus-2/", "quote": "WEIGHT ⟶ 74 lb"},
+   {"kind": "maker", "value": 74, "url": "https://help.retrospec.com/en-US/how-heavy-are-your-ebikes-629616", "quote": "Koa Rev+ 2 ⟶ 74 lbs", "basis": "Retrospec help-center weight table ('How heavy are your ebikes?'); Step Through also 74 lbs; does not say whether the battery is included"}
   ],
   "load": [
    {"kind": "maker", "value": 350, "url": "https://retrospec.com/products/koa-rev-plus-2-26-fat-tire-electric-bike", "quote": "Recommended Weight Limit  350lbs"},
@@ -45,4 +47,4 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Given src link /products/koa-rev-plus redirects to /products/koa-rev-plus-2-26-fat-tire-electric-bike. Step-through is /products/koa-rev-plus-step-through (page title says 'Koa Rev+', description says 'Koa Rev+ 2'; same 720Wh/750W specs, 16.5\" frame). Maker gives no mph, weight (only invisible tag 'Weight - 74lbs') or rider height. EBR and ElectricBikeReview only reviewed the non-plus Koa Rev 2 (500W/500Wh), so not used. Independent source bikeride.com came from the Koa Rev 3 WebSearch."}
+ "notes": "Given src link /products/koa-rev-plus redirects to /products/koa-rev-plus-2-26-fat-tire-electric-bike. Step-through is /products/koa-rev-plus-step-through (page title says 'Koa Rev+', description says 'Koa Rev+ 2'; same 720Wh/750W specs, 16.5\" frame). Maker gives no mph, weight (only invisible tag 'Weight - 74lbs') or rider height. EBR and ElectricBikeReview only reviewed the non-plus Koa Rev 2 (500W/500Wh), so not used. Independent source bikeride.com came from the Koa Rev 3 WebSearch. Recheck: read Retrospec's help-center weight table ('Koa Rev+ 2' 74 lbs, Step Through 74 lbs) and its 'What does Class 2 mean?' article."}

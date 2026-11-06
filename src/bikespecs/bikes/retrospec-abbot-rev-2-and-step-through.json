@@ -26,7 +26,8 @@
   ],
   "wt": [
    {"kind": "maker", "value": null, "url": "https://retrospec.com/products/abbot-rev-commuter-electric-bike", "quote": ""},
-   {"kind": "review", "value": null, "url": "https://www.bikes4sale.com/details/retrospec/abbot/abbot-rev-2", "quote": ""}
+   {"kind": "review", "value": null, "url": "https://www.bikes4sale.com/details/retrospec/abbot/abbot-rev-2", "quote": ""},
+   {"kind": "maker", "value": 71, "url": "https://help.retrospec.com/en-US/how-heavy-are-your-ebikes-629616", "quote": "Abbot Rev ⟶ 71 lbs", "basis": "Retrospec help-center weight table; listed as 'Abbot Rev' with no generation number (Step Through also 71 lbs); does not say whether the battery is included"}
   ],
   "load": [
    {"kind": "maker", "value": 350, "url": "https://retrospec.com/products/abbot-rev-commuter-electric-bike", "quote": "Recommended Weight Limit  350lbs", "basis": "rear rack max load 59 lbs"},
@@ -45,4 +46,4 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Maker labels it 'Class 2/3' but only gives 20 mph top assisted speed; recorded Class 2 as shipped. No source shows a bike weight (maker page has only an invisible product tag 'Weight - 58lbs'). No EBR/ElectricBikeReview/dealer page found; independent source is bikes4sale.com (spec database, found by WebSearch). Public Lands dealer pages block automated reading."}
+ "notes": "Maker labels it 'Class 2/3' but only gives 20 mph top assisted speed; recorded Class 2 as shipped. No source shows a bike weight (maker page has only an invisible product tag 'Weight - 58lbs'). No EBR/ElectricBikeReview/dealer page found; independent source is bikes4sale.com (spec database, found by WebSearch). Public Lands dealer pages block automated reading. Recheck: read the Abbot Rev 2 manual PDF linked from the product page (spec table has no weight), and Retrospec's help-center weight table ('Abbot Rev' 71 lbs)."}

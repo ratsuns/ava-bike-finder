@@ -1,47 +1,167 @@
-{"bike": "Dahon|Unio E-20", "checked": "2026-11-06",
+{
+ "bike": "Dahon|Unio E-20",
+ "checked": "2026-11-06",
  "fields": {
   "price": [
-   {"kind": "maker", "value": 2699, "url": "https://usa.dahon.com/products/unio-e20-mid-motor", "quote": "$2,699.00 $1,899.00", "basis": "regular price; $1,899 is a Black Friday sale"},
-   {"kind": "review", "value": 2699, "url": "https://newatlas.com/bicycles/dahon-2024-unio-e20-folding-ebike", "quote": "The 2024 Unio E20 will be available in black or red. Pricing hasn't been revealed at this time, though the current model costs US$2,699."}
+   {
+    "kind": "maker",
+    "value": 2699,
+    "url": "https://usa.dahon.com/products/unio-e20-mid-motor",
+    "quote": "$2,699.00 $1,899.00",
+    "basis": "regular price; $1,899 is a Black Friday sale"
+   },
+   {
+    "kind": "review",
+    "value": 2699,
+    "url": "https://newatlas.com/bicycles/dahon-2024-unio-e20-folding-ebike",
+    "quote": "The 2024 Unio E20 will be available in black or red. Pricing hasn't been revealed at this time, though the current model costs US$2,699."
+   }
   ],
   "cls": [
-   {"kind": "maker", "value": null, "url": "https://usa.dahon.com/products/unio-e20-mid-motor", "quote": ""},
-   {"kind": "review", "value": null, "url": "https://newatlas.com/bicycles/dahon-2024-unio-e20-folding-ebike", "quote": ""}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://usa.dahon.com/products/unio-e20-mid-motor",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://newatlas.com/bicycles/dahon-2024-unio-e20-folding-ebike",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": 1,
+    "url": "https://www.bikeride.com/dahon-unio-e20/",
+    "quote": "CLASS ⟶ Class 1"
+   }
   ],
   "spd": [
-   {"kind": "maker", "value": null, "url": "https://usa.dahon.com/products/unio-e20-mid-motor", "quote": ""},
-   {"kind": "review", "value": 20, "url": "https://newatlas.com/bicycles/dahon-2024-unio-e20-folding-ebike", "quote": "A proprietary 200-W mid-drive motor offers five pedal-assist levels up to 32 km/h (20 mph) via a central-axis torque sensor"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://usa.dahon.com/products/unio-e20-mid-motor",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": 20,
+    "url": "https://newatlas.com/bicycles/dahon-2024-unio-e20-folding-ebike",
+    "quote": "A proprietary 200-W mid-drive motor offers five pedal-assist levels up to 32 km/h (20 mph) via a central-axis torque sensor"
+   },
+   {
+    "kind": "review",
+    "value": 20,
+    "url": "https://www.bikeride.com/dahon-unio-e20/",
+    "quote": "TOP SPEED ⟶ 20 mph"
+   }
   ],
   "tq": [
-   {"kind": "maker", "value": 60, "url": "https://usa.dahon.com/products/unio-e20-mid-motor", "quote": "60N·m 200W"},
-   {"kind": "review", "value": null, "url": "https://newatlas.com/bicycles/dahon-2024-unio-e20-folding-ebike", "quote": ""}
+   {
+    "kind": "maker",
+    "value": 60,
+    "url": "https://usa.dahon.com/products/unio-e20-mid-motor",
+    "quote": "60N·m 200W"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://newatlas.com/bicycles/dahon-2024-unio-e20-folding-ebike",
+    "quote": ""
+   }
   ],
   "wh": [
-   {"kind": "maker", "value": 345, "url": "https://usa.dahon.com/products/unio-e20-mid-motor", "quote": "100km Range + IPX6 Waterproof ⟶ 345WH 36V 9.5AH"},
-   {"kind": "review", "value": 342, "url": "https://newatlas.com/bicycles/dahon-2024-unio-e20-folding-ebike", "quote": "The 36-V/9.5-Ah (342-Wh) seat-tube battery is made up of Samsung Li-ion cells"}
+   {
+    "kind": "maker",
+    "value": 345,
+    "url": "https://usa.dahon.com/products/unio-e20-mid-motor",
+    "quote": "100km Range + IPX6 Waterproof ⟶ 345WH 36V 9.5AH"
+   },
+   {
+    "kind": "review",
+    "value": 342,
+    "url": "https://newatlas.com/bicycles/dahon-2024-unio-e20-folding-ebike",
+    "quote": "The 36-V/9.5-Ah (342-Wh) seat-tube battery is made up of Samsung Li-ion cells"
+   }
   ],
   "range": [
-   {"kind": "maker", "value": "62", "url": "https://usa.dahon.com/products/unio-e20-mid-motor", "quote": "36V9.5AH Seatpost Battery, Up to 100km Pedal Assist Range", "basis": "100 km converted to miles"},
-   {"kind": "review", "value": "62", "url": "https://newatlas.com/bicycles/dahon-2024-unio-e20-folding-ebike", "quote": "is reckoned good for up to 100 km (62 miles) of per-charge riding at the lowest assist level."}
+   {
+    "kind": "maker",
+    "value": "62",
+    "url": "https://usa.dahon.com/products/unio-e20-mid-motor",
+    "quote": "36V9.5AH Seatpost Battery, Up to 100km Pedal Assist Range",
+    "basis": "100 km converted to miles"
+   },
+   {
+    "kind": "review",
+    "value": "62",
+    "url": "https://newatlas.com/bicycles/dahon-2024-unio-e20-folding-ebike",
+    "quote": "is reckoned good for up to 100 km (62 miles) of per-charge riding at the lowest assist level."
+   }
   ],
   "wt": [
-   {"kind": "maker", "value": 41.2, "url": "https://usa.dahon.com/products/unio-e20-mid-motor", "quote": "Weight ⟶ 18.7 kg (41.2 lbs)"},
-   {"kind": "review", "value": 41, "url": "https://newatlas.com/bicycles/dahon-2024-unio-e20-folding-ebike", "quote": "it weighs in at 18.7 kg (41 lb)"}
+   {
+    "kind": "maker",
+    "value": 41.2,
+    "url": "https://usa.dahon.com/products/unio-e20-mid-motor",
+    "quote": "Weight ⟶ 18.7 kg (41.2 lbs)"
+   },
+   {
+    "kind": "review",
+    "value": 41,
+    "url": "https://newatlas.com/bicycles/dahon-2024-unio-e20-folding-ebike",
+    "quote": "it weighs in at 18.7 kg (41 lb)"
+   }
   ],
   "load": [
-   {"kind": "maker", "value": 231, "url": "https://usa.dahon.com/products/unio-e20-mid-motor", "quote": "Rider Max Weight ⟶ 105kg (231 lbs)", "basis": "rider max weight"}
+   {
+    "kind": "maker",
+    "value": 231,
+    "url": "https://usa.dahon.com/products/unio-e20-mid-motor",
+    "quote": "Rider Max Weight ⟶ 105kg (231 lbs)",
+    "basis": "rider max weight"
+   }
   ],
   "motor": [
-   {"kind": "maker", "value": "200W mid-drive", "url": "https://usa.dahon.com/products/unio-e20-mid-motor", "quote": "Dahon 36V/200W Mid-Motor 36V 9.5AH seat tube Battery Samsung Cell ⟶ Drivetrain"},
-   {"kind": "review", "value": "200W mid-drive", "url": "https://newatlas.com/bicycles/dahon-2024-unio-e20-folding-ebike", "quote": "A proprietary 200-W mid-drive motor offers five pedal-assist levels"}
+   {
+    "kind": "maker",
+    "value": "200W mid-drive",
+    "url": "https://usa.dahon.com/products/unio-e20-mid-motor",
+    "quote": "Dahon 36V/200W Mid-Motor 36V 9.5AH seat tube Battery Samsung Cell ⟶ Drivetrain"
+   },
+   {
+    "kind": "review",
+    "value": "200W mid-drive",
+    "url": "https://newatlas.com/bicycles/dahon-2024-unio-e20-folding-ebike",
+    "quote": "A proprietary 200-W mid-drive motor offers five pedal-assist levels"
+   }
   ],
   "height": [
-   {"kind": "maker", "value": "4'7\"-6'2\"", "url": "https://usa.dahon.com/products/unio-e20-mid-motor", "quote": "Rider Height Range ⟶ 145-190 cm (4'7″ - 6'2″)"}
+   {
+    "kind": "maker",
+    "value": "4'7\"-6'2\"",
+    "url": "https://usa.dahon.com/products/unio-e20-mid-motor",
+    "quote": "Rider Height Range ⟶ 145-190 cm (4'7″ - 6'2″)"
+   }
   ],
   "fold": [
-   {"kind": "maker", "value": "Yes", "url": "https://usa.dahon.com/products/unio-e20-mid-motor", "quote": "Folded Size ⟶ 71×42×81 cm (32.6x14.5x27 in)"},
-   {"kind": "review", "value": "Yes", "url": "https://newatlas.com/bicycles/dahon-2024-unio-e20-folding-ebike", "quote": "The upcoming model is built around an aluminum alloy frame with a ViseGrip hinge that allows it to fold down"}
+   {
+    "kind": "maker",
+    "value": "Yes",
+    "url": "https://usa.dahon.com/products/unio-e20-mid-motor",
+    "quote": "Folded Size ⟶ 71×42×81 cm (32.6x14.5x27 in)"
+   },
+   {
+    "kind": "review",
+    "value": "Yes",
+    "url": "https://newatlas.com/bicycles/dahon-2024-unio-e20-folding-ebike",
+    "quote": "The upcoming model is built around an aluminum alloy frame with a ViseGrip hinge that allows it to fold down"
+   }
   ]
  },
- "status": {"sources": []},
- "notes": "Maker page gives no top speed, class or throttle info; class left null (New Atlas says pedal assist to 20 mph and mentions no throttle, which would suggest Class 1, but nothing states it). Maker page also shows a second, odd rider-height line 'Rider Height ⟶ 4.76~6.23' and 'Max Load ⟶ 231.49' lb. Maker says 345Wh, New Atlas 342Wh (36V x 9.5Ah = 342). New Atlas article is a 2024-model preview. EBR and Electrek searches had no Unio E20 page; one WebSearch used."}
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker page gives no top speed, class or throttle info; class left null (New Atlas says pedal assist to 20 mph and mentions no throttle, which would suggest Class 1, but nothing states it). Maker page also shows a second, odd rider-height line 'Rider Height ⟶ 4.76~6.23' and 'Max Load ⟶ 231.49' lb. Maker says 345Wh, New Atlas 342Wh (36V x 9.5Ah = 342). New Atlas article is a 2024-model preview. EBR and Electrek searches had no Unio E20 page; one WebSearch used. recheck (cls, spd): maker page full text has no speed/class/throttle. BikeRide (bikeride.com) spec block: Class 1, top speed 20 mph (matches New Atlas's 20 mph; the site shows 15.5). Bikeberry listing 404; Upzy page lists no speed. Used the bike's one WebSearch."
+}

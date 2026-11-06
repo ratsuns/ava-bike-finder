@@ -1,6 +1,4 @@
-{
- "bike": "Pedego|Cargo",
- "checked": "2026-11-06",
+{"bike": "Pedego|Cargo", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 3895, "url": "https://pedegoelectricbikes.com/products/cargo", "quote": "$3,895.00 ⟶ CHOOSE OPTIONS"},
@@ -26,7 +24,9 @@
    {"kind": "review", "value": 460.8, "url": "https://upway.co/blogs/news/pedego-cargo-ebike-review", "quote": "Battery\t48V, 9.6Ah standard or 14Ah upgrade, optional 20Ah range extender", "basis": "48V x 9.6Ah standard"}
   ],
   "range": [
-   {"kind": "maker", "value": null, "url": "https://pedegoelectricbikes.com/products/cargo", "quote": "Range Up to | 132 miles with | OPT. RANGE EXTENDER BATTERY*", "basis": "132 miles is with the optional range extender, not the standard battery"}
+   {"kind": "maker", "value": null, "url": "https://pedegoelectricbikes.com/products/cargo", "quote": "Range Up to | 132 miles with | OPT. RANGE EXTENDER BATTERY*", "basis": "132 miles is with the optional range extender, not the standard battery"},
+   {"kind": "review", "value": "28–56", "url": "https://www.digitaltrends.com/outdoors/pedego-cargo-ebike-review/", "quote": "The Cargo is available with either a 9.6Ah or 14Ah 48V battery. The test bike had a 14Ah battery supplying 672 watt-hours of power, which Pedego estimates is good for 28 to 56 miles per charge. Range varies tremendously with e-bikes, depending on rider and cargo or passenger weight, speed, incline, road surface, and more. This variance is especially wide with cargo bikes.", "basis": "Pedego's estimate for the 14Ah (672Wh) battery, which is the upgrade; the standard is 9.6Ah"},
+   {"kind": "review", "value": "28–56", "url": "https://upway.co/blogs/news/pedego-cargo-ebike-review", "quote": "You get two battery options with the Pedego Cargo. The standard 9.6Ah battery keeps the price down, but the 14Ah upgrade has 672Wh and gets you 28 to 56 miles per charge. You can also add an optional 20Ah range extender for a claimed 132 miles. That is enough to replace a car for daily errands. Both batteries sit inside the frame and can be removed for indoor charging. It’s also reassuring to know that the system is SGS certified to the UL 2849 standard.", "basis": "14Ah upgrade battery; 132 miles needs the optional range extender"}
   ],
   "wt": [
    {"kind": "maker", "value": null, "url": "https://pedegoelectricbikes.com/products/cargo", "quote": ""},
@@ -48,5 +48,4 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Maker page shows $3,895 but its Shopify product data says 304600 (=$3,046) and both color variants unavailable; 48V 14Ah battery option marked SOLD OUT. Battery size varies by source: maker default option 48V 10Ah, reviews say 9.6Ah (460Wh) standard / 14Ah (672Wh) upgrade; maker spec table lists 48V14Ah. Maker rider-height field is blank; no maker weight, speed or torque. Upway's 106 lb is 'bare' (taken as without battery). EBR had no Cargo review. One WebSearch used (found Upway)."
-}
+ "notes": "Maker page shows $3,895 but its Shopify product data says 304600 (=$3,046) and both color variants unavailable; 48V 14Ah battery option marked SOLD OUT. Battery size varies by source: maker default option 48V 10Ah, reviews say 9.6Ah (460Wh) standard / 14Ah (672Wh) upgrade; maker spec table lists 48V14Ah. Maker rider-height field is blank; no maker weight, speed or torque. Upway's 106 lb is 'bare' (taken as without battery). EBR had no Cargo review. One WebSearch used (found Upway). Recheck: looked at Pedego Cargo page full text (only 132 miles with range extender), Pedego FS24 Cargo fact sheet PDF (no range), EBR search (no Cargo), one web search, Digital Trends and Upway reviews (28 to 56 miles on the 14Ah upgrade battery). No range found for the standard 9.6Ah battery."}

@@ -35,4 +35,5 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Maker only: no independent page for the Explorer Plus iQ found (EBR only reviewed the older Explorer; one WebSearch gave a BRAIN Ride iQ article that covers the Trax LT iQ, not this bike). cls left null: maker says 'Class 1/2/3' without the out-of-the-box speed. Spec table is the Step-Thru frame view with S/M/L sizes; the 83.8 lb weight may be for one size/frame."}
+ "notes": "Maker only: no independent page for the Explorer Plus iQ found (EBR only reviewed the older Explorer; one WebSearch gave a BRAIN Ride iQ article that covers the Trax LT iQ, not this bike). cls left null: maker says 'Class 1/2/3' without the out-of-the-box speed. Spec table is the Step-Thru frame view with S/M/L sizes; the 83.8 lb weight may be for one size/frame. | recheck: maker page textContent still only says Class 1/2/3 eBike As Sold and 28 mph Max Speed (no default setting); maker FAQ URL 404; EBR has no Explorer review; one WebSearch found only non-iQ Explorer Plus pages. Nothing new recorded."
+}

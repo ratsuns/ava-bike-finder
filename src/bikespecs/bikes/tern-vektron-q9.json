@@ -2,7 +2,8 @@
  "fields": {
   "price": [
    {"kind": "maker", "value": null, "url": "https://www.ternbicycles.com/us/bikes/473/vektron-q9", "quote": "$2,999 (SALE PRICE)", "basis": "maker shows only a sale price; no regular price on the page"},
-   {"kind": "retailer", "value": null, "url": "https://scooteretti.com/collections/tern-electric-bicycles/products/tern-vektron-q9", "quote": "Sale price ⟶ $4,649.00 CAD", "basis": "Canadian dealer, CAD sale price only"}
+   {"kind": "retailer", "value": null, "url": "https://scooteretti.com/collections/tern-electric-bicycles/products/tern-vektron-q9", "quote": "Sale price ⟶ $4,649.00 CAD", "basis": "Canadian dealer, CAD sale price only"},
+   {"kind": "maker", "value": 3249, "url": "https://store.ternbicycles.com/products/vektron-q9", "quote": "$2,999.00 ⟶ $3,249.00", "basis": "Tern's own US online store, Vektron Q9 (Gen 3); $3,249.00 is the compare-at (crossed-out) regular price, $2,999.00 is the sale price"}
   ],
   "cls": [
    {"kind": "maker", "value": 1, "url": "https://www.ternbicycles.com/us/bikes/473/vektron-q9", "quote": "Class 1, Bosch Active Line Plus, 270% Assist, 50 Nm Torque, max speed 25 kph (EU); max speed 20 mph (US) ⟶ BATTERY:"},
@@ -41,4 +42,5 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Maker page is Vektron Gen 3 Q9 (Bosch Active Line Plus, 50 Nm). The only EBR review is the 2019 Q9 (Active Line, 40 Nm, $3199), so it is used only for class, speed and folding, which didn't change. Scooteretti (Canadian dealer, from one WebSearch) gives torque and a 106 km range figure; CAD prices only. Maker shows only '$2,999 (SALE PRICE)' with no regular price, so price left null. Gen 4 Vektron (P10/P5i) is now the current line; maker didn't say Q9 is discontinued. Max load is max gross vehicle weight (total); max rider 231.5 lb."}
+ "notes": "Maker page is Vektron Gen 3 Q9 (Bosch Active Line Plus, 50 Nm). The only EBR review is the 2019 Q9 (Active Line, 40 Nm, $3199), so it is used only for class, speed and folding, which didn't change. Scooteretti (Canadian dealer, from one WebSearch) gives torque and a 106 km range figure; CAD prices only. Maker shows only '$2,999 (SALE PRICE)' with no regular price, so price left null. Gen 4 Vektron (P10/P5i) is now the current line; maker didn't say Q9 is discontinued. Max load is max gross vehicle weight (total); max rider 231.5 lb. | recheck: Tern US store regular price $3,249 (sale $2,999) - the site's 2999 is the sale price."
+}

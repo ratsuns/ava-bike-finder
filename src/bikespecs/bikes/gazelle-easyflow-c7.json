@@ -22,7 +22,8 @@
   ],
   "range": [
    {"kind": "maker", "value": null, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-easyflow-c7", "quote": "", "basis": "Battery and Range section lists no miles for this Shimano bike"},
-   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/gazelle-easyflow-c7", "quote": ""}
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/gazelle-easyflow-c7", "quote": ""},
+   {"kind": "retailer", "value": "25-50", "url": "https://www.amegoev.com/products/gazelle-easyflow-c7", "quote": "Range: 40-80 kms/25-50 miles", "basis": "Amego (Canadian Gazelle dealer); same spec list: Shimano 504Wh 36V14A, Speed: 32kmh/20mph"}
   ],
   "wt": [
    {"kind": "maker", "value": 54.5, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-easyflow-c7", "quote": "Weight (lbs) | 54.5 lbs excl. battery", "basis": "without battery"},
@@ -46,4 +47,4 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Neither source gives a range or max load. Class not stated; set to 1 from 20 mph and no throttle. Maker gives weight without battery only (battery is on the frame, 'Ontube'). Small 20-inch-wheel (55-406) step-through, one size. electricbikereview/electricbikereport had no review; REI returned 'Access denied'."}
+ "notes": "Neither source gives a range or max load. Class not stated; set to 1 from 20 mph and no throttle. Maker gives weight without battery only (battery is on the frame, 'Ontube'). Small 20-inch-wheel (55-406) step-through, one size. electricbikereview/electricbikereport had no review; REI returned 'Access denied'. | recheck: maker page (incl. hidden spec data) gives no range; EBR and N+1 have no EasyFlow; 1 WebSearch; Amego dealer says 25-50 mi; Electric Bike Journal review only reports ~20 mi tested; Upway's Easyflow review quotes 'up to 90 miles' but for a 540 Wh / 15 mph (European) spec, so not recorded. No source for 'up to 80'."}

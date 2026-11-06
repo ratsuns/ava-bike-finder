@@ -6,7 +6,8 @@
   ],
   "cls": [
    {"kind": "review", "value": 1, "url": "https://99spokes.com/bikes/fuji/2019/sanibel-ls", "quote": "Motor | Bafang H400B rear hub motor, 250W rated power, 20mph maximum assist", "basis": "no class stated; 20 mph assist and no throttle in the parts list (display 'w/ walk assist' only), so Class 1"},
-   {"kind": "review", "value": null, "url": "https://bikes.fan/fuji-sanibel-ls-2019/", "quote": ""}
+   {"kind": "review", "value": null, "url": "https://bikes.fan/fuji-sanibel-ls-2019/", "quote": ""},
+   {"kind": "review", "value": 1, "url": "https://99spokes.com/bikes/fuji/2025/sanibel", "quote": "Motor ⟶ Bafang H400B rear hub motor, 250W rated power, 20mph maximum assist", "basis": "class not stated; inferred Class 1 from 20 mph max assist with no throttle listed (display: 5 mode LED display w/ walk assist); 2025 Sanibel, same H400B motor as the 2019"}
   ],
   "spd": [
    {"kind": "review", "value": 20, "url": "https://99spokes.com/bikes/fuji/2019/sanibel-ls", "quote": "Motor | Bafang H400B rear hub motor, 250W rated power, 20mph maximum assist"},
@@ -41,8 +42,9 @@
    {"kind": "review", "value": null, "url": "https://bikes.fan/fuji-sanibel-ls-2019/", "quote": ""}
   ],
   "fold": [
-   {"kind": "review", "value": "No", "url": "https://99spokes.com/bikes/fuji/2019/sanibel-ls", "quote": "Frame | Fuji Sanibel Cruiser 6061-T6 aluminum OS w/Touch-Down Geometry, down tube battery mount, direct connect rack mounts, fender mounts", "basis": "fixed aluminum cruiser frame; nothing about folding"}
+   {"kind": "review", "value": "No", "url": "https://99spokes.com/bikes/fuji/2019/sanibel-ls", "quote": "Frame | Fuji Sanibel Cruiser 6061-T6 aluminum OS w/Touch-Down Geometry, down tube battery mount, direct connect rack mounts, fender mounts", "basis": "fixed aluminum cruiser frame; nothing about folding"},
+   {"kind": "review", "value": "No", "url": "https://99spokes.com/bikes/fuji/2025/sanibel", "quote": "A 26″ aluminum frame cruiser e-bike with modest components and tektro hydraulic disc brakes.", "basis": "fixed aluminum cruiser frame; nothing about folding; 2025 model"}
   ]
  },
  "status": {"sources": []},
- "notes": "MAKER PAGE NOT REACHED: the browser refused every fujibikes.com URL ('navigation ... was denied or failed'). src link is the 2019 Sanibel LS. No dealer or review page found (electricbikereview / electricbikereport have none). Both sources are spec aggregators; Bikes.Fan appears to copy 99 Spokes' data, so they are not truly independent. Class 1 inferred (20 mph, no throttle listed). No range, load, torque or rider heights found. Likely a discontinued 2019 model, but nothing confirms it. 1 WebSearch used."}
+ "notes": "MAKER PAGE NOT REACHED: the browser refused every fujibikes.com URL ('navigation ... was denied or failed'). src link is the 2019 Sanibel LS. No dealer or review page found (electricbikereview / electricbikereport have none). Both sources are spec aggregators; Bikes.Fan appears to copy 99 Spokes' data, so they are not truly independent. Class 1 inferred (20 mph, no throttle listed). No range, load, torque or rider heights found. Likely a discontinued 2019 model, but nothing confirms it. 1 WebSearch used. | recheck: read 99 Spokes 2025 Sanibel (20 mph assist, no throttle, no torque); Upway search has no Sanibel; fujibikes.com still blocked. No source for 45 Nm."}

@@ -14,7 +14,8 @@
   ],
   "tq": [
    {"kind": "maker", "value": null, "url": "https://www.radioflyer.com/products/flyer-loop", "quote": "", "basis": "torque not published"},
-   {"kind": "review", "value": null, "url": "https://electrek.co/2026/04/07/radio-flyer-launches-new-compact-cargo-e-bike-designed-to-make-family-riding-easier/", "quote": "", "basis": "torque not stated"}
+   {"kind": "review", "value": null, "url": "https://electrek.co/2026/04/07/radio-flyer-launches-new-compact-cargo-e-bike-designed-to-make-family-riding-easier/", "quote": "", "basis": "torque not stated"},
+   {"kind": "maker", "value": 87, "url": "https://images.radioflyer.com/media/flyer/specs/883_1.pdf", "quote": "Motor System FlightSpeed® 750W Hub Motor, 87Nm Peak Torque", "basis": "Radio Flyer Flyer Loop spec sheet PDF linked from the product page; peak torque"}
   ],
   "wh": [
    {"kind": "maker", "value": null, "url": "https://www.radioflyer.com/products/flyer-loop", "quote": "", "basis": "battery capacity not on the page (only in a spec-sheet PDF that couldn't be read)"},
@@ -44,4 +45,4 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Used www.radioflyer.com/products/flyer-loop (same product as the checkout. link). Price conflict: Electrek's April 2026 launch article says MSRP $2,999; maker page now shows $1,999 with no crossed-out price. Maker page has no battery Wh or torque; its spec sheet is a PDF the browser script couldn't read. Only Electrek found as independent source (EBR has no Radio Flyer reviews)."}
+ "notes": "Used www.radioflyer.com/products/flyer-loop (same product as the checkout. link). Price conflict: Electrek's April 2026 launch article says MSRP $2,999; maker page now shows $1,999 with no crossed-out price. Maker page has no battery Wh or torque; its spec sheet is a PDF the browser script couldn't read. Only Electrek found as independent source (EBR has no Radio Flyer reviews). Recheck: read the Flyer Loop spec sheet PDF linked from radioflyer.com (87Nm peak torque, 687Wh, 77lbs, 440lbs payload incl. rider, rider height 4' 11\" to 6'3\")."}

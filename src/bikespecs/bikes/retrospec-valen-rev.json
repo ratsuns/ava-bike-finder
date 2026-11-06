@@ -1,47 +1,188 @@
-{"bike": "Retrospec|Valen Rev+", "checked": "2026-11-06",
+{
+ "bike": "Retrospec|Valen Rev+",
+ "checked": "2026-11-06",
  "fields": {
   "price": [
-   {"kind": "maker", "value": 1899.99, "url": "https://retrospec.com/products/valen-rev-20-electric-fat-tire-bike", "quote": "Sale Price - $1,299.99 ⟶ $1,899.99 | Original Price: $1,899.99", "basis": "crossed-out original price; on sale for $1,299.99"},
-   {"kind": "review", "value": 1799, "url": "https://electricbikereview.com/retrospec/valen-rev-plus-review/", "quote": "PRICE: ⟶ $1,799"}
+   {
+    "kind": "maker",
+    "value": 1899.99,
+    "url": "https://retrospec.com/products/valen-rev-20-electric-fat-tire-bike",
+    "quote": "Sale Price - $1,299.99 ⟶ $1,899.99 | Original Price: $1,899.99",
+    "basis": "crossed-out original price; on sale for $1,299.99"
+   },
+   {
+    "kind": "review",
+    "value": 1799,
+    "url": "https://electricbikereview.com/retrospec/valen-rev-plus-review/",
+    "quote": "PRICE: ⟶ $1,799"
+   }
   ],
   "cls": [
-   {"kind": "maker", "value": null, "url": "https://retrospec.com/products/valen-rev-20-electric-fat-tire-bike", "quote": "Pedal Assist | 6 Levels, Throttle and walk-mode", "basis": "class and top speed not stated; only a press quote mentions '20-mile-per-hour top speed'"},
-   {"kind": "review", "value": 3, "url": "https://electricbikereview.com/retrospec/valen-rev-plus-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 3", "basis": "EBR: 'With a Class 3 top speed of 28mph'"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://retrospec.com/products/valen-rev-20-electric-fat-tire-bike",
+    "quote": "Pedal Assist | 6 Levels, Throttle and walk-mode",
+    "basis": "class and top speed not stated; only a press quote mentions '20-mile-per-hour top speed'"
+   },
+   {
+    "kind": "review",
+    "value": 3,
+    "url": "https://electricbikereview.com/retrospec/valen-rev-plus-review/",
+    "quote": "ELECTRIC BIKE CLASS: ⟶ Class 3",
+    "basis": "EBR: 'With a Class 3 top speed of 28mph'"
+   },
+   {
+    "kind": "review",
+    "value": 3,
+    "url": "https://electricbikereport.com/retrospec-valen-rev-plus-review/",
+    "quote": "CLASS 2 (THROTTLE TO 20 MPH) ⟶ CLASS 3 (PEDAL ASSIST UP TO 28 MPH)",
+    "basis": "multi-class: throttle to 20 mph, pedal assist to 28 mph out of the box, so Class 3 by our rule"
+   },
+   {
+    "kind": "review",
+    "value": 3,
+    "url": "https://electrek.co/2025/04/19/retrospec-valen-rev-fat-tire-e-bike-with-the-spirit-of-an-all-terrain-scrambler/",
+    "quote": "The third component is the 750w rear hub motor, which gives the bike a 28 mph assisted top speed.",
+    "basis": "28 mph assisted top speed implies Class 3; no class stated"
+   }
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://retrospec.com/products/valen-rev-20-electric-fat-tire-bike", "quote": "“A 20-mile-per-hour top speed paired with a 55-mile range make it idyllic for getting around town.”", "basis": "press quote shown on the maker page, not a maker spec"},
-   {"kind": "review", "value": 28, "url": "https://electricbikereview.com/retrospec/valen-rev-plus-review/", "quote": "The display keeps things straightforward with speed, assist level (1-6), battery status, and current power output. With a Class 3 top speed of 28mph, you’ve got enough zip to keep up with traffic when needed."}
+   {
+    "kind": "maker",
+    "value": 20,
+    "url": "https://retrospec.com/products/valen-rev-20-electric-fat-tire-bike",
+    "quote": "“A 20-mile-per-hour top speed paired with a 55-mile range make it idyllic for getting around town.”",
+    "basis": "press quote shown on the maker page, not a maker spec"
+   },
+   {
+    "kind": "review",
+    "value": 28,
+    "url": "https://electricbikereview.com/retrospec/valen-rev-plus-review/",
+    "quote": "The display keeps things straightforward with speed, assist level (1-6), battery status, and current power output. With a Class 3 top speed of 28mph, you’ve got enough zip to keep up with traffic when needed."
+   }
   ],
   "tq": [
-   {"kind": "maker", "value": null, "url": "https://retrospec.com/products/valen-rev-20-electric-fat-tire-bike", "quote": "", "basis": "torque not published"},
-   {"kind": "review", "value": 65, "url": "https://electricbikereview.com/retrospec/valen-rev-plus-review/", "quote": "MOTOR TORQUE: ⟶ 65 Nm of Torque Newton meters"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://retrospec.com/products/valen-rev-20-electric-fat-tire-bike",
+    "quote": "",
+    "basis": "torque not published"
+   },
+   {
+    "kind": "review",
+    "value": 65,
+    "url": "https://electricbikereview.com/retrospec/valen-rev-plus-review/",
+    "quote": "MOTOR TORQUE: ⟶ 65 Nm of Torque Newton meters"
+   },
+   {
+    "kind": "review",
+    "value": 65,
+    "url": "https://electricbikereport.com/retrospec-valen-rev-plus-review/",
+    "quote": "So, what can we take from all this? Not only is the Valen Rev+ a fast e-bike, but its 65 Nm of torque and 850W of peaking wattage really shines in the hill climbing department, with the gusto to beat e-bikes spec’d much higher."
+   }
   ],
   "wh": [
-   {"kind": "maker", "value": 720, "url": "https://retrospec.com/products/valen-rev-20-electric-fat-tire-bike", "quote": "750W Planetary Geared Hub Motor ⟶ 48V/720Wh LG Li-ion Battery"},
-   {"kind": "review", "value": 720, "url": "https://electricbikereview.com/retrospec/valen-rev-plus-review/", "quote": "BATTERY WATT HOURS: ⟶ 720Wh wh"}
+   {
+    "kind": "maker",
+    "value": 720,
+    "url": "https://retrospec.com/products/valen-rev-20-electric-fat-tire-bike",
+    "quote": "750W Planetary Geared Hub Motor ⟶ 48V/720Wh LG Li-ion Battery"
+   },
+   {
+    "kind": "review",
+    "value": 720,
+    "url": "https://electricbikereview.com/retrospec/valen-rev-plus-review/",
+    "quote": "BATTERY WATT HOURS: ⟶ 720Wh wh"
+   }
   ],
   "range": [
-   {"kind": "maker", "value": "68", "url": "https://retrospec.com/products/valen-rev-20-electric-fat-tire-bike", "quote": "48V/750W range ⟶ Up to 68 miles"},
-   {"kind": "review", "value": "68", "url": "https://electricbikereview.com/retrospec/valen-rev-plus-review/", "quote": "Range ⟶ Estimated Range (from Retrospec): 68 miles", "basis": "maker estimate; EBR tested 35 mi throttle-only"}
+   {
+    "kind": "maker",
+    "value": "68",
+    "url": "https://retrospec.com/products/valen-rev-20-electric-fat-tire-bike",
+    "quote": "48V/750W range ⟶ Up to 68 miles"
+   },
+   {
+    "kind": "review",
+    "value": "68",
+    "url": "https://electricbikereview.com/retrospec/valen-rev-plus-review/",
+    "quote": "Range ⟶ Estimated Range (from Retrospec): 68 miles",
+    "basis": "maker estimate; EBR tested 35 mi throttle-only"
+   }
   ],
   "wt": [
-   {"kind": "maker", "value": 72, "url": "https://retrospec.com/products/valen-rev-20-electric-fat-tire-bike", "quote": "Item Weight ⟶ 72 lbs (battery included)"},
-   {"kind": "review", "value": 80.5, "url": "https://electricbikereview.com/retrospec/valen-rev-plus-review/", "quote": "Advertised: 72 lbs Tested: <ul> <li>80.5 lbs w/Battery</li> <li>72 lbs w/out Battery</li> </ul> lbs ⟶ BATTERY WEIGHT:", "basis": "tested with battery"}
+   {
+    "kind": "maker",
+    "value": 72,
+    "url": "https://retrospec.com/products/valen-rev-20-electric-fat-tire-bike",
+    "quote": "Item Weight ⟶ 72 lbs (battery included)"
+   },
+   {
+    "kind": "review",
+    "value": 80.5,
+    "url": "https://electricbikereview.com/retrospec/valen-rev-plus-review/",
+    "quote": "Advertised: 72 lbs Tested: <ul> <li>80.5 lbs w/Battery</li> <li>72 lbs w/out Battery</li> </ul> lbs ⟶ BATTERY WEIGHT:",
+    "basis": "tested with battery"
+   }
   ],
   "load": [
-   {"kind": "maker", "value": 350, "url": "https://retrospec.com/products/valen-rev-20-electric-fat-tire-bike", "quote": "Recommended Weight Limit ⟶ 350lbs", "basis": "page also says the saddle can 'accommodate riders up to 350 lbs'"}
+   {
+    "kind": "maker",
+    "value": 350,
+    "url": "https://retrospec.com/products/valen-rev-20-electric-fat-tire-bike",
+    "quote": "Recommended Weight Limit ⟶ 350lbs",
+    "basis": "page also says the saddle can 'accommodate riders up to 350 lbs'"
+   }
   ],
   "motor": [
-   {"kind": "maker", "value": "750W rear hub", "url": "https://retrospec.com/products/valen-rev-20-electric-fat-tire-bike", "quote": "Motor ⟶ 750W rear hub"},
-   {"kind": "review", "value": "750W rear hub", "url": "https://electricbikereview.com/retrospec/valen-rev-plus-review/", "quote": "MOTOR NOMINAL OUTPUT: ⟶ 750W watts"}
+   {
+    "kind": "maker",
+    "value": "750W rear hub",
+    "url": "https://retrospec.com/products/valen-rev-20-electric-fat-tire-bike",
+    "quote": "Motor ⟶ 750W rear hub"
+   },
+   {
+    "kind": "review",
+    "value": "750W rear hub",
+    "url": "https://electricbikereview.com/retrospec/valen-rev-plus-review/",
+    "quote": "MOTOR NOMINAL OUTPUT: ⟶ 750W watts"
+   }
   ],
   "height": [
-   {"kind": "maker", "value": null, "url": "https://retrospec.com/products/valen-rev-20-electric-fat-tire-bike", "quote": "20\"31.5\"", "basis": "sizing table gives size 20\" and standover 31.5\" but no height range"},
-   {"kind": "review", "value": "5'0\"-6'4\"", "url": "https://electricbikereview.com/retrospec/valen-rev-plus-review/", "quote": "The bike comes in one frame size that Retrospec claims fits riders from 5′ to 6’4″ – pretty ambitious range for a single-size frame. You get two color choices: Matte Black for the stealth look or Matte Olive Drab Green if you’re feeling tactical."}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://retrospec.com/products/valen-rev-20-electric-fat-tire-bike",
+    "quote": "20\"31.5\"",
+    "basis": "sizing table gives size 20\" and standover 31.5\" but no height range"
+   },
+   {
+    "kind": "review",
+    "value": "5'0\"-6'4\"",
+    "url": "https://electricbikereview.com/retrospec/valen-rev-plus-review/",
+    "quote": "The bike comes in one frame size that Retrospec claims fits riders from 5′ to 6’4″ – pretty ambitious range for a single-size frame. You get two color choices: Matte Black for the stealth look or Matte Olive Drab Green if you’re feeling tactical."
+   },
+   {
+    "kind": "review",
+    "value": "5'0\"-6'4\"",
+    "url": "https://electricbikereport.com/retrospec-valen-rev-plus-review/",
+    "quote": "Rider height range: 5′ – 6’4″ ⟶ Total payload capacity:350 lbs"
+   }
   ],
   "fold": [
-   {"kind": "maker", "value": "No", "url": "https://retrospec.com/products/valen-rev-20-electric-fat-tire-bike", "quote": "Valen 6061 hydroformed aluminum with, integrated downtube battery and replacable derailleur hanger. ⟶ Fork", "basis": "non-folding frame; no fold mentioned"}
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://retrospec.com/products/valen-rev-20-electric-fat-tire-bike",
+    "quote": "Valen 6061 hydroformed aluminum with, integrated downtube battery and replacable derailleur hanger. ⟶ Fork",
+    "basis": "non-folding frame; no fold mentioned"
+   }
   ]
  },
- "status": {"sources": []},
- "notes": "Maker page title is 'Valen Rev Fat Tire Electric Bike' (src handle valen-rev-20...); EBR reviews it as the Valen Rev Plus/Rev+ with matching 750W/720Wh/72 lb specs. Class unclear: maker states no class or top speed; EBR says Class 3, 28 mph; a press quote on the maker page says 20 mph. Price: maker regular $1,899.99 (on sale $1,299.99); EBR lists $1,799. Weight: maker 72 lb w/ battery, EBR measured 80.5 lb w/ battery. Grateful Dead edition variant is $1,999.99 and unavailable."}
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker page title is 'Valen Rev Fat Tire Electric Bike' (src handle valen-rev-20...); EBR reviews it as the Valen Rev Plus/Rev+ with matching 750W/720Wh/72 lb specs. Class unclear: maker states no class or top speed; EBR says Class 3, 28 mph; a press quote on the maker page says 20 mph. Price: maker regular $1,899.99 (on sale $1,299.99); EBR lists $1,799. Weight: maker 72 lb w/ battery, EBR measured 80.5 lb w/ battery. Grateful Dead edition variant is $1,999.99 and unavailable. recheck: read maker page full text (no class/torque/height range), Electric Bike Report Valen Rev+ review (Class 2 throttle 20 / Class 3 PAS 28, 65 Nm, 5'-6'4\"), Electrek Valen Rev+ article (28 mph assisted)."
+}

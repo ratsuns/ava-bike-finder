@@ -1,46 +1,158 @@
-{"bike": "Salsa|Confluence CUES 10", "checked": "2026-11-06",
+{
+ "bike": "Salsa|Confluence CUES 10",
+ "checked": "2026-11-06",
  "fields": {
   "price": [
-   {"kind": "maker", "value": 3499, "url": "https://www.salsacycles.com/products/confluence-cues-10", "quote": "Regular price | $3,499.00 USD"},
-   {"kind": "retailer", "value": 3498.99, "url": "https://mikesbikes.com/products/salsa-confluence-cues-10", "quote": "Regular price ⟶ $3,498.99"}
+   {
+    "kind": "maker",
+    "value": 3499,
+    "url": "https://www.salsacycles.com/products/confluence-cues-10",
+    "quote": "Regular price | $3,499.00 USD"
+   },
+   {
+    "kind": "retailer",
+    "value": 3498.99,
+    "url": "https://mikesbikes.com/products/salsa-confluence-cues-10",
+    "quote": "Regular price ⟶ $3,498.99"
+   }
   ],
   "cls": [
-   {"kind": "maker", "value": 1, "url": "https://www.salsacycles.com/products/confluence-cues-10", "quote": "Ebike Classification | Class 1 | Max Assist Speed | 20 mph / 32 km/h", "basis": "maker states Class 1; spec lists Throttle No"},
-   {"kind": "retailer", "value": 1, "url": "https://mikesbikes.com/products/salsa-confluence-cues-10", "quote": "Mahle X30 Class 1 (20mph/32kph assist) hub-drive system ⟶ 45Nm max torque"}
+   {
+    "kind": "maker",
+    "value": 1,
+    "url": "https://www.salsacycles.com/products/confluence-cues-10",
+    "quote": "Ebike Classification | Class 1 | Max Assist Speed | 20 mph / 32 km/h",
+    "basis": "maker states Class 1; spec lists Throttle No"
+   },
+   {
+    "kind": "retailer",
+    "value": 1,
+    "url": "https://mikesbikes.com/products/salsa-confluence-cues-10",
+    "quote": "Mahle X30 Class 1 (20mph/32kph assist) hub-drive system ⟶ 45Nm max torque"
+   }
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://www.salsacycles.com/products/confluence-cues-10", "quote": "Max Assist Speed | 20 mph / 32 km/h"},
-   {"kind": "retailer", "value": 20, "url": "https://mikesbikes.com/products/salsa-confluence-cues-10", "quote": "Max Assisted Speed\t20 mph ⟶ Charger"}
+   {
+    "kind": "maker",
+    "value": 20,
+    "url": "https://www.salsacycles.com/products/confluence-cues-10",
+    "quote": "Max Assist Speed | 20 mph / 32 km/h"
+   },
+   {
+    "kind": "retailer",
+    "value": 20,
+    "url": "https://mikesbikes.com/products/salsa-confluence-cues-10",
+    "quote": "Max Assisted Speed\t20 mph ⟶ Charger"
+   }
   ],
   "tq": [
-   {"kind": "maker", "value": 45, "url": "https://www.salsacycles.com/products/confluence-cues-10", "quote": "Motor Torque | 45Nm"},
-   {"kind": "retailer", "value": 45, "url": "https://mikesbikes.com/products/salsa-confluence-cues-10", "quote": "Motor ⟶ MAHLE X30 Hub-Drive, 45Nm"}
+   {
+    "kind": "maker",
+    "value": 45,
+    "url": "https://www.salsacycles.com/products/confluence-cues-10",
+    "quote": "Motor Torque | 45Nm"
+   },
+   {
+    "kind": "retailer",
+    "value": 45,
+    "url": "https://mikesbikes.com/products/salsa-confluence-cues-10",
+    "quote": "Motor ⟶ MAHLE X30 Hub-Drive, 45Nm"
+   }
   ],
   "wh": [
-   {"kind": "maker", "value": 237, "url": "https://www.salsacycles.com/products/confluence-cues-10", "quote": "Battery Capacity Watt Hours | 237Wh", "basis": "same page's feature list says '250Wh internal battery'"},
-   {"kind": "retailer", "value": 237, "url": "https://mikesbikes.com/products/salsa-confluence-cues-10", "quote": "Battery ⟶ MAHLE iX2, 237Wh Internal (36V Li-ion)"}
+   {
+    "kind": "maker",
+    "value": 237,
+    "url": "https://www.salsacycles.com/products/confluence-cues-10",
+    "quote": "Battery Capacity Watt Hours | 237Wh",
+    "basis": "same page's feature list says '250Wh internal battery'"
+   },
+   {
+    "kind": "retailer",
+    "value": 237,
+    "url": "https://mikesbikes.com/products/salsa-confluence-cues-10",
+    "quote": "Battery ⟶ MAHLE iX2, 237Wh Internal (36V Li-ion)"
+   }
   ],
   "range": [
-   {"kind": "maker", "value": null, "url": "https://www.salsacycles.com/products/confluence-cues-10", "quote": ""},
-   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/salsa-confluence-cues-10", "quote": ""}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.salsacycles.com/products/confluence-cues-10",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://mikesbikes.com/products/salsa-confluence-cues-10",
+    "quote": ""
+   },
+   {
+    "kind": "maker",
+    "value": "45",
+    "url": "https://www.salsacycles.com/products/confluence-cues-10",
+    "quote": "Ebike range depends on many factors, including rider and equipment weight, weather conditions, route choice, assist level and more. The MAHLE X30 system paired with MAHLE's 237Wh iX2 battery is designed to offer a range of up to 45 miles (72 kilometers) per charge under ideal conditions. MAHLE range-extender batteries (sold separately) greatly increase the ground you can cover with assist.",
+    "basis": "up to 45 miles under ideal conditions; from the page's collapsed FAQ 'What is the range?'"
+   }
   ],
   "wt": [
-   {"kind": "maker", "value": null, "url": "https://www.salsacycles.com/products/confluence-cues-10", "quote": ""},
-   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/salsa-confluence-cues-10", "quote": ""}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.salsacycles.com/products/confluence-cues-10",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://mikesbikes.com/products/salsa-confluence-cues-10",
+    "quote": ""
+   }
   ],
   "load": [
-   {"kind": "maker", "value": null, "url": "https://www.salsacycles.com/products/confluence-cues-10", "quote": ""}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.salsacycles.com/products/confluence-cues-10",
+    "quote": ""
+   }
   ],
   "motor": [
-   {"kind": "maker", "value": "250W MAHLE X30 hub-drive", "url": "https://www.salsacycles.com/products/confluence-cues-10", "quote": "Drive Unit | MAHLE X30 | Ebike Classification | Class 1 | Max Assist Speed | 20 mph / 32 km/h | Motor Torque | 45Nm | Max Motor Assist | 250W", "basis": "feature list: 'MAHLE X30 class 1 hub-drive system'"},
-   {"kind": "retailer", "value": "MAHLE X30 Hub-Drive", "url": "https://mikesbikes.com/products/salsa-confluence-cues-10", "quote": "Motor ⟶ MAHLE X30 Hub-Drive, 45Nm"}
+   {
+    "kind": "maker",
+    "value": "250W MAHLE X30 hub-drive",
+    "url": "https://www.salsacycles.com/products/confluence-cues-10",
+    "quote": "Drive Unit | MAHLE X30 | Ebike Classification | Class 1 | Max Assist Speed | 20 mph / 32 km/h | Motor Torque | 45Nm | Max Motor Assist | 250W",
+    "basis": "feature list: 'MAHLE X30 class 1 hub-drive system'"
+   },
+   {
+    "kind": "retailer",
+    "value": "MAHLE X30 Hub-Drive",
+    "url": "https://mikesbikes.com/products/salsa-confluence-cues-10",
+    "quote": "Motor ⟶ MAHLE X30 Hub-Drive, 45Nm"
+   }
   ],
   "height": [
-   {"kind": "maker", "value": "4'8\"-6'4\"", "url": "https://www.salsacycles.com/products/confluence-cues-10", "quote": "Recommended Rider Height 142.0 - 150.0 147.0 - 157.0 155.0 - 168.0 163.0 - 175.0 170.0 - 183.0 180.0 - 193.0", "basis": "geometry table, 49-60cm sizes, cm (Imperial view: 55.91 - 75.98 in)"}
+   {
+    "kind": "maker",
+    "value": "4'8\"-6'4\"",
+    "url": "https://www.salsacycles.com/products/confluence-cues-10",
+    "quote": "Recommended Rider Height 142.0 - 150.0 147.0 - 157.0 155.0 - 168.0 163.0 - 175.0 170.0 - 183.0 180.0 - 193.0",
+    "basis": "geometry table, 49-60cm sizes, cm (Imperial view: 55.91 - 75.98 in)"
+   }
   ],
   "fold": [
-   {"kind": "maker", "value": "No", "url": "https://www.salsacycles.com/products/confluence-cues-10", "quote": "Gravel Ebike – Salsa Confluence Drop Bar CUES 10 – Salsa Cycles", "basis": "page title; drop-bar gravel frame, no folding"}
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://www.salsacycles.com/products/confluence-cues-10",
+    "quote": "Gravel Ebike – Salsa Confluence Drop Bar CUES 10 – Salsa Cycles",
+    "basis": "page title; drop-bar gravel frame, no folding"
+   }
   ]
  },
- "status": {"sources": []},
- "notes": "Maker page titles it 'Confluence Drop Bar CUES 10'. Maker page contradicts itself on battery: spec 237Wh vs feature list '250Wh internal battery'. No range, weight or max load on maker or Mike's Bikes page. Maker shows 'SOLD OUT ONLINE' (not marked discontinued)."}
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker page titles it 'Confluence Drop Bar CUES 10'. Maker page contradicts itself on battery: spec 237Wh vs feature list '250Wh internal battery'. No range, weight or max load on maker or Mike's Bikes page. Maker shows 'SOLD OUT ONLINE' (not marked discontinued). recheck: maker page FAQ accordion ('What is the range?', read via textContent) states up to 45 miles."
+}

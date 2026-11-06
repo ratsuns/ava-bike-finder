@@ -13,11 +13,13 @@
   ],
   "tq": [
    {"kind": "maker", "value": null, "url": "https://www.radioflyer.com/products/flyer-via-pro", "quote": "", "basis": "torque not published"},
-   {"kind": "review", "value": 85, "url": "https://electricbikereport.com/flyer-via-pro-review/", "quote": "We attribute the Via Pro’s performance to two factors. First, its weight was, once again, an advantage. Second, the bike’s powerful motor was able to outpace many of its peers thanks to its peak of 1100 watts and 85 Newton meters of torque."}
+   {"kind": "review", "value": 85, "url": "https://electricbikereport.com/flyer-via-pro-review/", "quote": "We attribute the Via Pro’s performance to two factors. First, its weight was, once again, an advantage. Second, the bike’s powerful motor was able to outpace many of its peers thanks to its peak of 1100 watts and 85 Newton meters of torque."},
+   {"kind": "maker", "value": 85, "url": "https://images.radioflyer.com/media/flyer/specs/886.pdf", "quote": "Motor System 750W Brushless Hub Motor, 85 N•m", "basis": "Radio Flyer Flyer Via Pro spec sheet PDF linked from the product page"}
   ],
   "wh": [
    {"kind": "maker", "value": null, "url": "https://www.radioflyer.com/products/flyer-via-pro", "quote": "", "basis": "battery capacity not on the page"},
-   {"kind": "review", "value": 687, "url": "https://electricbikereport.com/flyer-via-pro-review/", "quote": "Battery : 48V 15Ah (687Wh) UL Tested Lithium-Ion Samsung 50E 21700 Cells ⟶ Display: Color LED"}
+   {"kind": "review", "value": 687, "url": "https://electricbikereport.com/flyer-via-pro-review/", "quote": "Battery : 48V 15Ah (687Wh) UL Tested Lithium-Ion Samsung 50E 21700 Cells ⟶ Display: Color LED"},
+   {"kind": "maker", "value": 687, "url": "https://images.radioflyer.com/media/flyer/specs/886.pdf", "quote": "Battery Pack 48V 15Ah (687Wh) UL Tested Lithium-Ion Samsung 50E 21700 Cells", "basis": "stated Wh; note 48V x 15Ah would be 720Wh"}
   ],
   "range": [
    {"kind": "maker", "value": "30–50", "url": "https://www.radioflyer.com/products/flyer-via-pro", "quote": "30 – 50+ Miles ⟶ Battery Range"},
@@ -44,4 +46,4 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Maker page has no battery Wh or torque; EBReport gives 687 Wh (48V 15Ah) and 85 Nm / 1,100W peak. Weight/load/height quotes on the maker page are consecutive spec lines joined with ' | '."}
+ "notes": "Maker page has no battery Wh or torque; EBReport gives 687 Wh (48V 15Ah) and 85 Nm / 1,100W peak. Weight/load/height quotes on the maker page are consecutive spec lines joined with ' | '. Recheck: read the Flyer Via Pro spec sheet PDF linked from radioflyer.com (85 N•m, 48V 15Ah (687Wh); 48 x 15 = 720, so the sheet's own numbers don't match each other)."}

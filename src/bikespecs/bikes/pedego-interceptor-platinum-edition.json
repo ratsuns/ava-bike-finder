@@ -11,7 +11,8 @@
    {"kind": "retailer", "value": 2, "url": "https://www.practicalcycle.com/product/pedego-interceptor-platinum-edition-classic-electric-bike/", "quote": "A twist and go throttle for full power on demand ⟶ An LCD display with a built in USB charger for your phone and other devices", "basis": "throttle -> Class 2"}
   ],
   "spd": [
-   {"kind": "maker", "value": null, "url": "https://pedegoelectricbikes.com/products/interceptor-platinum-edition", "quote": "SPEED | Class 1 & Class 2; | Class 3 Ready", "basis": "no mph given"}
+   {"kind": "maker", "value": null, "url": "https://pedegoelectricbikes.com/products/interceptor-platinum-edition", "quote": "SPEED | Class 1 & Class 2; | Class 3 Ready", "basis": "no mph given"},
+   {"kind": "maker", "value": 20, "url": "https://pedegoelectricbikes.com/cdn/shop/files/FS22_-_Platinum_Interceptor.pdf", "quote": "CLASS 2: 2O MPH MAX, WITH PEDAL ASSIST AND THROTTLE ASSIST | CLASS 3: 28 MPH MAX, WITH PEDAL ASSIST ONLY (SOFTWARE UPGRADE AVAILABLE", "basis": "Pedego FS22 Platinum Interceptor fact sheet (linked from the product page), Top Speed row; the PDF text reads '2O' (letter O, a typo for 20); adjustable to 28 mph via dealer software upgrade"}
   ],
   "tq": [
    {"kind": "maker", "value": 60, "url": "https://pedegoelectricbikes.com/products/interceptor-platinum-edition", "quote": "BLACK 52V BRUSHLESS GEARED REAR HUB MOTOR; 749 WATT NOMINAL POWER RATING; 60NM TORQUE; QUICK DISCONNECT CABLE WITH WATERPROOF CONNECTION."}
@@ -39,5 +40,5 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Maker page: $2,499 (Shopify data 175000/195000 = $1,750/$1,950); battery selector says 52V 10.5Ah/17.5Ah but the weight table lists 52V/10Ah and 52V/15Ah batteries. Maker gives no mph. Dealer Practical Cycle's pricing ($3,995 original / $2,995 now) doesn't match the maker and may be an older listing. EBR's Platinum Interceptor review is the 2017 48V/500W version, so not used. One WebSearch shared with the Interceptor search (found Practical Cycle)."
+ "notes": "Maker page: $2,499 (Shopify data 175000/195000 = $1,750/$1,950); battery selector says 52V 10.5Ah/17.5Ah but the weight table lists 52V/10Ah and 52V/15Ah batteries. Maker gives no mph. Dealer Practical Cycle's pricing ($3,995 original / $2,995 now) doesn't match the maker and may be an older listing. EBR's Platinum Interceptor review is the 2017 48V/500W version, so not used. One WebSearch shared with the Interceptor search (found Practical Cycle). Recheck: looked at the product page's hidden spec tab (Speed only 'Class 1 & Class 2; Class 3 Ready') and the FS22 Platinum Interceptor fact sheet PDF it links (Class 2: 20 mph max, typed '2O')."
 }

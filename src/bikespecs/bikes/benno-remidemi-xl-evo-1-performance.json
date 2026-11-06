@@ -1,49 +1,175 @@
-{"bike": "Benno|RemiDemi XL EVO 1 Performance", "checked": "2026-11-06",
+{
+ "bike": "Benno|RemiDemi XL EVO 1 Performance",
+ "checked": "2026-11-06",
  "fields": {
   "price": [
-   {"kind": "maker", "value": null, "url": "https://bennobikes.com/e-bikes/remidemi-xl/", "quote": "Performance Sport: $4,599 USDMSRP", "basis": "maker lists a price only for the Performance Sport (Class 3) version, not the Performance version"},
-   {"kind": "review", "value": 4199, "url": "https://www.electricbikejournal.com/benno-remidemi-xl/", "quote": "Price: $4199 ⟶ Colors: Chai Latte Gray, Turmeric Yellow, Anthracite Gray"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://bennobikes.com/e-bikes/remidemi-xl/",
+    "quote": "Performance Sport: $4,599 USDMSRP",
+    "basis": "maker lists a price only for the Performance Sport (Class 3) version, not the Performance version"
+   },
+   {
+    "kind": "review",
+    "value": 4199,
+    "url": "https://www.electricbikejournal.com/benno-remidemi-xl/",
+    "quote": "Price: $4199 ⟶ Colors: Chai Latte Gray, Turmeric Yellow, Anthracite Gray"
+   }
   ],
   "cls": [
-   {"kind": "maker", "value": null, "url": "https://bennobikes.com/e-bikes/remidemi-xl/", "quote": "Assisted Speed | USA 28mph, NZ 45km/h | USA/CAN 20mph, EU 25km/h", "basis": "maker gives no class for the Performance version; 20 mph, Bosch pedal assist, no throttle mentioned"},
-   {"kind": "review", "value": 1, "url": "https://www.electricbikejournal.com/benno-remidemi-xl/", "quote": "545Wh Battery ⟶ Class 1"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://bennobikes.com/e-bikes/remidemi-xl/",
+    "quote": "Assisted Speed | USA 28mph, NZ 45km/h | USA/CAN 20mph, EU 25km/h",
+    "basis": "maker gives no class for the Performance version; 20 mph, Bosch pedal assist, no throttle mentioned"
+   },
+   {
+    "kind": "review",
+    "value": 1,
+    "url": "https://www.electricbikejournal.com/benno-remidemi-xl/",
+    "quote": "545Wh Battery ⟶ Class 1"
+   },
+   {
+    "kind": "review",
+    "value": 1,
+    "url": "https://www.bikeride.com/benno-remidemi-xl/",
+    "quote": "Benno's RemiDemi XL is available as a Class 1 (20mph) build with a 400Wh or 545Wh battery, or a Class 3 (28mph) build with a 545Wh battery.",
+    "basis": "Class 1 = the 20 mph (Performance) build; page does not name EVO 1 vs EVO 2"
+   }
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://bennobikes.com/e-bikes/remidemi-xl/", "quote": "Speed: USA/CAN 20mph, CAN/NZ 32km/h, EU/AUS 25km/h"},
-   {"kind": "review", "value": 20, "url": "https://www.electricbikejournal.com/benno-remidemi-xl/", "quote": "Bosch Performance 250w; 65Nm; 20mph ⟶ 545Wh Battery"}
+   {
+    "kind": "maker",
+    "value": 20,
+    "url": "https://bennobikes.com/e-bikes/remidemi-xl/",
+    "quote": "Speed: USA/CAN 20mph, CAN/NZ 32km/h, EU/AUS 25km/h"
+   },
+   {
+    "kind": "review",
+    "value": 20,
+    "url": "https://www.electricbikejournal.com/benno-remidemi-xl/",
+    "quote": "Bosch Performance 250w; 65Nm; 20mph ⟶ 545Wh Battery"
+   }
   ],
   "tq": [
-   {"kind": "maker", "value": 75, "url": "https://bennobikes.com/e-bikes/remidemi-xl/", "quote": "Bosch Performance Smart System 250W, 75Nm, GEN 3"},
-   {"kind": "review", "value": 65, "url": "https://www.electricbikejournal.com/benno-remidemi-xl/", "quote": "Bosch Performance 250w; 65Nm; 20mph ⟶ 545Wh Battery"}
+   {
+    "kind": "maker",
+    "value": 75,
+    "url": "https://bennobikes.com/e-bikes/remidemi-xl/",
+    "quote": "Bosch Performance Smart System 250W, 75Nm, GEN 3"
+   },
+   {
+    "kind": "review",
+    "value": 65,
+    "url": "https://www.electricbikejournal.com/benno-remidemi-xl/",
+    "quote": "Bosch Performance 250w; 65Nm; 20mph ⟶ 545Wh Battery"
+   }
   ],
   "wh": [
-   {"kind": "maker", "value": 545, "url": "https://bennobikes.com/e-bikes/remidemi-xl/", "quote": "Bosch Powerpack 400Wh/545Wh Lithium-Ion", "basis": "configurator offers 400Wh or 545Wh for the Performance version; 545Wh recorded"},
-   {"kind": "review", "value": 545, "url": "https://www.electricbikejournal.com/benno-remidemi-xl/", "quote": "Expect a range of 25-75 miles on the RemiDemi XL with the Bosch Performance and a 545Wh battery."}
+   {
+    "kind": "maker",
+    "value": 545,
+    "url": "https://bennobikes.com/e-bikes/remidemi-xl/",
+    "quote": "Bosch Powerpack 400Wh/545Wh Lithium-Ion",
+    "basis": "configurator offers 400Wh or 545Wh for the Performance version; 545Wh recorded"
+   },
+   {
+    "kind": "review",
+    "value": 545,
+    "url": "https://www.electricbikejournal.com/benno-remidemi-xl/",
+    "quote": "Expect a range of 25-75 miles on the RemiDemi XL with the Bosch Performance and a 545Wh battery."
+   }
   ],
   "range": [
-   {"kind": "maker", "value": "30–87", "url": "https://bennobikes.com/e-bikes/remidemi-xl/", "quote": "Range Single Battery 545Wh: 30-87mi (50-140km)"},
-   {"kind": "review", "value": "25–75", "url": "https://www.electricbikejournal.com/benno-remidemi-xl/", "quote": "Expect a range of 25-75 miles on the RemiDemi XL with the Bosch Performance and a 545Wh battery."}
+   {
+    "kind": "maker",
+    "value": "30–87",
+    "url": "https://bennobikes.com/e-bikes/remidemi-xl/",
+    "quote": "Range Single Battery 545Wh: 30-87mi (50-140km)"
+   },
+   {
+    "kind": "review",
+    "value": "25–75",
+    "url": "https://www.electricbikejournal.com/benno-remidemi-xl/",
+    "quote": "Expect a range of 25-75 miles on the RemiDemi XL with the Bosch Performance and a 545Wh battery."
+   }
   ],
   "wt": [
-   {"kind": "maker", "value": null, "url": "https://bennobikes.com/e-bikes/remidemi-xl/", "quote": ""},
-   {"kind": "review", "value": 65, "url": "https://www.electricbikejournal.com/benno-remidemi-xl/", "quote": "Weight: 65lbs ⟶ Load Capacity: 355 lbs"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://bennobikes.com/e-bikes/remidemi-xl/",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": 65,
+    "url": "https://www.electricbikejournal.com/benno-remidemi-xl/",
+    "quote": "Weight: 65lbs ⟶ Load Capacity: 355 lbs"
+   }
   ],
   "load": [
-   {"kind": "maker", "value": 420, "url": "https://bennobikes.com/e-bikes/remidemi-xl/", "quote": "MAX GROSS WEIGHT 420LB/190KG (RIDER+CARGO+BIKE)", "basis": "total"},
-   {"kind": "review", "value": 355, "url": "https://www.electricbikejournal.com/benno-remidemi-xl/", "quote": "Weight: 65lbs ⟶ Load Capacity: 355 lbs"}
+   {
+    "kind": "maker",
+    "value": 420,
+    "url": "https://bennobikes.com/e-bikes/remidemi-xl/",
+    "quote": "MAX GROSS WEIGHT 420LB/190KG (RIDER+CARGO+BIKE)",
+    "basis": "total"
+   },
+   {
+    "kind": "review",
+    "value": 355,
+    "url": "https://www.electricbikejournal.com/benno-remidemi-xl/",
+    "quote": "Weight: 65lbs ⟶ Load Capacity: 355 lbs"
+   }
   ],
   "motor": [
-   {"kind": "maker", "value": "250W Bosch Performance Smart System", "url": "https://bennobikes.com/e-bikes/remidemi-xl/", "quote": "Bosch Performance Smart System 250W, 75Nm, GEN 3"},
-   {"kind": "review", "value": "250W Bosch Performance", "url": "https://www.electricbikejournal.com/benno-remidemi-xl/", "quote": "Bosch Performance 250w; 65Nm; 20mph ⟶ 545Wh Battery"}
+   {
+    "kind": "maker",
+    "value": "250W Bosch Performance Smart System",
+    "url": "https://bennobikes.com/e-bikes/remidemi-xl/",
+    "quote": "Bosch Performance Smart System 250W, 75Nm, GEN 3"
+   },
+   {
+    "kind": "review",
+    "value": "250W Bosch Performance",
+    "url": "https://www.electricbikejournal.com/benno-remidemi-xl/",
+    "quote": "Bosch Performance 250w; 65Nm; 20mph ⟶ 545Wh Battery"
+   }
   ],
   "height": [
-   {"kind": "maker", "value": "5'1\"-6'1\"", "url": "https://bennobikes.com/e-bikes/remidemi-xl/", "quote": "One Size – Fits Riders from 5’1” to 6’1”"},
-   {"kind": "review", "value": "5'1\"-6'2\"", "url": "https://www.electricbikejournal.com/benno-remidemi-xl/", "quote": "At about 19.5″ from the ground, the RemiDemi XL has a very low standover height and can accommodate riders between 5’1″ and 6’2″ comfortably. ⟶ Quick Specs"}
+   {
+    "kind": "maker",
+    "value": "5'1\"-6'1\"",
+    "url": "https://bennobikes.com/e-bikes/remidemi-xl/",
+    "quote": "One Size – Fits Riders from 5’1” to 6’1”"
+   },
+   {
+    "kind": "review",
+    "value": "5'1\"-6'2\"",
+    "url": "https://www.electricbikejournal.com/benno-remidemi-xl/",
+    "quote": "At about 19.5″ from the ground, the RemiDemi XL has a very low standover height and can accommodate riders between 5’1″ and 6’2″ comfortably. ⟶ Quick Specs"
+   }
   ],
   "fold": [
-   {"kind": "maker", "value": "No", "url": "https://bennobikes.com/e-bikes/remidemi-xl/", "quote": "Frame | 6061 Aluminum Alloy with Front Tray Mounts"},
-   {"kind": "review", "value": null, "url": "https://www.electricbikejournal.com/benno-remidemi-xl/", "quote": ""}
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://bennobikes.com/e-bikes/remidemi-xl/",
+    "quote": "Frame | 6061 Aluminum Alloy with Front Tray Mounts"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://www.electricbikejournal.com/benno-remidemi-xl/",
+    "quote": ""
+   }
   ]
  },
- "status": {"sources": []},
- "notes": "Maker page holds EVO 1 and EVO 2 configurators; EVO 1 specs are in hidden configurator/tab content (read via page text). Maker shows no price for the Performance (Class 1) version, only Performance Sport $4,599; price is from the Electric Bike Journal review. Maker contradicts itself on height: spec table says 5'1\"-6'1\", sizing section says 'FITS WIDE RANGE OF RIDERS 5’1”/155CM – 6’2”/188CM'. Maker spec table says GEN 3 motor, configurator says 'PERFORMANCE – SMART SYSTEM GEN4'. Review says 65Nm vs maker 75Nm. Maker gives only a gross weight (420 lb total); rack rated 'Max. Load 130lbs/60kg'. EBR only has the non-XL RemiDemi 9D; EBReport had no review. Used 1 WebSearch."}
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker page holds EVO 1 and EVO 2 configurators; EVO 1 specs are in hidden configurator/tab content (read via page text). Maker shows no price for the Performance (Class 1) version, only Performance Sport $4,599; price is from the Electric Bike Journal review. Maker contradicts itself on height: spec table says 5'1\"-6'1\", sizing section says 'FITS WIDE RANGE OF RIDERS 5’1”/155CM – 6’2”/188CM'. Maker spec table says GEN 3 motor, configurator says 'PERFORMANCE – SMART SYSTEM GEN4'. Review says 65Nm vs maker 75Nm. Maker gives only a gross weight (420 lb total); rack rated 'Max. Load 130lbs/60kg'. EBR only has the non-XL RemiDemi 9D; EBReport had no review. Used 1 WebSearch. recheck (cls): maker page full text has no class wording or throttle; Boulder Nordic only stocks the XL Performance Line Sport (Class 3); added BikeRide (bikeride.com) review summary stating the 20 mph build is Class 1 (it does not name the EVO generation). Bosch's US site lists an XL 9D Performance CX EVO 2 (other generation, not used). Used the bike's one WebSearch."
+}

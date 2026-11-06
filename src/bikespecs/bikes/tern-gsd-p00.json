@@ -3,11 +3,13 @@
   "price": [
    {"kind": "maker", "value": null, "url": "https://www.ternbicycles.com/us/bikes/473/gsd-p00", "quote": "$5,999 (SALE PRICE) ⟶ WHY GSD GEN 3 SPECS ACCESSORIES SUPPORT FIND A DEALER BUY", "basis": "maker shows only a sale price, no regular price"},
    {"kind": "retailer", "value": 6999, "url": "https://www.seattleelectricbike.net/products/tern-gsd-p00-gen-3", "quote": "Regular price ⟶ $6,999.00", "basis": "regular price; dealer sale price $5,999.00"},
-   {"kind": "retailer", "value": null, "url": "https://www.amegoev.com/products/tern-gsd-p00gen-3-500-wh", "quote": "Regular price ⟶ $10,849.00 CAD", "basis": "Canadian dealer, CAD only"}
+   {"kind": "retailer", "value": null, "url": "https://www.amegoev.com/products/tern-gsd-p00gen-3-500-wh", "quote": "Regular price ⟶ $10,849.00 CAD", "basis": "Canadian dealer, CAD only"},
+   {"kind": "maker", "value": 6999, "url": "https://store.ternbicycles.com/collections/bike/products/gsd-p00-gen-3-electric-cargo-bike", "quote": "$5,999.00 ⟶ $6,999.00", "basis": "Tern's own US online store; $6,999.00 is the compare-at (crossed-out) regular price, $5,999.00 is the sale price"}
   ],
   "cls": [
    {"kind": "maker", "value": null, "url": "https://www.ternbicycles.com/us/bikes/473/gsd-p00", "quote": "", "basis": "maker page gives no class; only \"max speed 20 mph (US)\""},
-   {"kind": "retailer", "value": null, "url": "https://www.amegoev.com/products/tern-gsd-p00gen-3-500-wh", "quote": "", "basis": "no class given"}
+   {"kind": "retailer", "value": null, "url": "https://www.amegoev.com/products/tern-gsd-p00gen-3-500-wh", "quote": "", "basis": "no class given"},
+   {"kind": "review", "value": 1, "url": "https://www.bikeride.com/tern-gsd-gen-3/", "quote": "CLASS ⟶ Class 1", "basis": "BikeRide spec box for the GSD Gen 3 family (all Gen 3 trims); also lists TOP SPEED 20 mph"}
   ],
   "spd": [
    {"kind": "maker", "value": 20, "url": "https://www.ternbicycles.com/us/bikes/473/gsd-p00", "quote": "MOTOR: ⟶ Bosch Cargo Line, 400% Assist, 85 Nm Torque, max speed 20 mph (US)"},
@@ -48,4 +50,5 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Maker page shows only '$5,999 (SALE PRICE)', no regular price; regular $6,999 from Seattle Electric Bike (US dealer). Amego is a Canadian dealer (CAD prices). Both dealers found via one WebSearch; EBR has only S00/S20 reviews, Mike's Bikes and N+1 don't carry Tern. Maker gives no e-bike class (20 mph, no throttle listed). Maker 'MAX LOAD WEIGHT' equals 'MAX GROSS VEHICLE WEIGHT' 210 kg (463 lb) -> total; max rider 130 kg. Maker spec table also says 'SUGGESTED RIDER HEIGHT: 150 - 200 cm (59.1 - 78.7 in)', consistent. US page lists Bosch 500 PowerPack (some non-US dealers list a 545Wh 2026 version)."}
+ "notes": "Maker page shows only '$5,999 (SALE PRICE)', no regular price; regular $6,999 from Seattle Electric Bike (US dealer). Amego is a Canadian dealer (CAD prices). Both dealers found via one WebSearch; EBR has only S00/S20 reviews, Mike's Bikes and N+1 don't carry Tern. Maker gives no e-bike class (20 mph, no throttle listed). Maker 'MAX LOAD WEIGHT' equals 'MAX GROSS VEHICLE WEIGHT' 210 kg (463 lb) -> total; max rider 130 kg. Maker spec table also says 'SUGGESTED RIDER HEIGHT: 150 - 200 cm (59.1 - 78.7 in)', consistent. US page lists Bosch 500 PowerPack (some non-US dealers list a 545Wh 2026 version). | recheck: Tern US store shows regular $6,999.00 (sale $5,999.00) - the site's figure is the sale price; BikeRide GSD Gen 3 page states Class 1. Tern's own pages and buyer's guide state no class."
+}

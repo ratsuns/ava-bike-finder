@@ -1,49 +1,181 @@
-{"bike": "Cannondale|Cargowagen Neo", "checked": "2026-11-06",
+{
+ "bike": "Cannondale|Cargowagen Neo",
+ "checked": "2026-11-06",
  "fields": {
   "price": [
-   {"kind": "maker", "value": 4300, "url": "https://www.cannondale.com/en-us/bikes/electric/e-cargo/cargowagen-neo/cargowagen-neo", "quote": "$4,300 ⟶ 0% APRor as low as $150/mo with Affirm. See if you qualify"},
-   {"kind": "retailer", "value": 4300, "url": "https://www.n1bikes.com/products/cargowagen-neo-sage-os?id=c6511bb0471eb5a2ff270786f4c23d3d863211f87fc084871e160eb53b0e6fa0&variant=C67153U10OS", "quote": "$4,300.00"}
+   {
+    "kind": "maker",
+    "value": 4300,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-cargo/cargowagen-neo/cargowagen-neo",
+    "quote": "$4,300 ⟶ 0% APRor as low as $150/mo with Affirm. See if you qualify"
+   },
+   {
+    "kind": "retailer",
+    "value": 4300,
+    "url": "https://www.n1bikes.com/products/cargowagen-neo-sage-os?id=c6511bb0471eb5a2ff270786f4c23d3d863211f87fc084871e160eb53b0e6fa0&variant=C67153U10OS",
+    "quote": "$4,300.00"
+   }
   ],
   "cls": [
-   {"kind": "maker", "value": 3, "url": "https://www.cannondale.com/en-us/bikes/electric/e-cargo/cargowagen-neo/cargowagen-neo", "quote": "Bosch Performance Speed motor has the power to move any load, all the way to 28 mph ⟶ 545Wh battery for plenty of range", "basis": "no class line on maker page; 28 mph = Class 3"},
-   {"kind": "review", "value": 3, "url": "https://electricbikereport.com/cannondale-cargowagen-neo-review/", "quote": "Cannondale chose the Bosch Performance Line Speed motor, which is a Class 3 motor that will allow riders to reach a pedal-assisted 28 mph."}
+   {
+    "kind": "maker",
+    "value": 3,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-cargo/cargowagen-neo/cargowagen-neo",
+    "quote": "Bosch Performance Speed motor has the power to move any load, all the way to 28 mph ⟶ 545Wh battery for plenty of range",
+    "basis": "no class line on maker page; 28 mph = Class 3"
+   },
+   {
+    "kind": "review",
+    "value": 3,
+    "url": "https://electricbikereport.com/cannondale-cargowagen-neo-review/",
+    "quote": "Cannondale chose the Bosch Performance Line Speed motor, which is a Class 3 motor that will allow riders to reach a pedal-assisted 28 mph."
+   }
   ],
   "spd": [
-   {"kind": "maker", "value": 28, "url": "https://www.cannondale.com/en-us/bikes/electric/e-cargo/cargowagen-neo/cargowagen-neo", "quote": "Bosch Performance Speed, 28 mph ⟶ Battery"},
-   {"kind": "retailer", "value": 28, "url": "https://www.n1bikes.com/products/cargowagen-neo-sage-os?id=c6511bb0471eb5a2ff270786f4c23d3d863211f87fc084871e160eb53b0e6fa0&variant=C67153U10OS", "quote": "Drive Unit\tBosch Performance Speed, 28 mph"},
-   {"kind": "review", "value": 28, "url": "https://electricbikereport.com/cannondale-cargowagen-neo-review/", "quote": "Cannondale chose the Bosch Performance Line Speed motor, which is a Class 3 motor that will allow riders to reach a pedal-assisted 28 mph."}
+   {
+    "kind": "maker",
+    "value": 28,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-cargo/cargowagen-neo/cargowagen-neo",
+    "quote": "Bosch Performance Speed, 28 mph ⟶ Battery"
+   },
+   {
+    "kind": "retailer",
+    "value": 28,
+    "url": "https://www.n1bikes.com/products/cargowagen-neo-sage-os?id=c6511bb0471eb5a2ff270786f4c23d3d863211f87fc084871e160eb53b0e6fa0&variant=C67153U10OS",
+    "quote": "Drive Unit\tBosch Performance Speed, 28 mph"
+   },
+   {
+    "kind": "review",
+    "value": 28,
+    "url": "https://electricbikereport.com/cannondale-cargowagen-neo-review/",
+    "quote": "Cannondale chose the Bosch Performance Line Speed motor, which is a Class 3 motor that will allow riders to reach a pedal-assisted 28 mph."
+   }
   ],
   "tq": [
-   {"kind": "maker", "value": null, "url": "https://www.cannondale.com/en-us/bikes/electric/e-cargo/cargowagen-neo/cargowagen-neo", "quote": ""},
-   {"kind": "review", "value": 85, "url": "https://electricbikereport.com/cannondale-cargowagen-neo-review/", "quote": "It produces a whopping 85Nm of torque, which is good in a hub motor, but in a mid-drive motor it is even more impressive."}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-cargo/cargowagen-neo/cargowagen-neo",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": 85,
+    "url": "https://electricbikereport.com/cannondale-cargowagen-neo-review/",
+    "quote": "It produces a whopping 85Nm of torque, which is good in a hub motor, but in a mid-drive motor it is even more impressive."
+   },
+   {
+    "kind": "review",
+    "value": 85,
+    "url": "https://www.bikeride.com/cannondale-cargowagen-neo/",
+    "quote": "TORQUE ⟶ 85 Nm"
+   },
+   {
+    "kind": "retailer",
+    "value": 63,
+    "url": "https://99spokes.com/bikes/cannondale/2023/cargowagen-neo",
+    "quote": "MotorBosch 600W 63Nm mid-drive",
+    "basis": "99 Spokes spec summary; the same page's review summary says 'Bosch Performance Line Speed motor with 85Nm of torque' (contradicts itself)"
+   }
   ],
   "wh": [
-   {"kind": "maker", "value": 545, "url": "https://www.cannondale.com/en-us/bikes/electric/e-cargo/cargowagen-neo/cargowagen-neo", "quote": "Battery ⟶ Bosch PowerPack, 545Wh"},
-   {"kind": "retailer", "value": 545, "url": "https://www.n1bikes.com/products/cargowagen-neo-sage-os?id=c6511bb0471eb5a2ff270786f4c23d3d863211f87fc084871e160eb53b0e6fa0&variant=C67153U10OS", "quote": "Battery\tBosch PowerPack, 545Wh"},
-   {"kind": "review", "value": 545, "url": "https://electricbikereport.com/cannondale-cargowagen-neo-review/", "quote": "It comes equipped with a 545Wh Bosch PowerPack battery, and can be equipped with a second battery for long-range use."}
+   {
+    "kind": "maker",
+    "value": 545,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-cargo/cargowagen-neo/cargowagen-neo",
+    "quote": "Battery ⟶ Bosch PowerPack, 545Wh"
+   },
+   {
+    "kind": "retailer",
+    "value": 545,
+    "url": "https://www.n1bikes.com/products/cargowagen-neo-sage-os?id=c6511bb0471eb5a2ff270786f4c23d3d863211f87fc084871e160eb53b0e6fa0&variant=C67153U10OS",
+    "quote": "Battery\tBosch PowerPack, 545Wh"
+   },
+   {
+    "kind": "review",
+    "value": 545,
+    "url": "https://electricbikereport.com/cannondale-cargowagen-neo-review/",
+    "quote": "It comes equipped with a 545Wh Bosch PowerPack battery, and can be equipped with a second battery for long-range use."
+   }
   ],
   "range": [
-   {"kind": "maker", "value": null, "url": "https://www.cannondale.com/en-us/bikes/electric/e-cargo/cargowagen-neo/cargowagen-neo", "quote": "545Wh battery for plenty of range", "basis": "no number given"},
-   {"kind": "review", "value": null, "url": "https://electricbikereport.com/cannondale-cargowagen-neo-review/", "quote": ""}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-cargo/cargowagen-neo/cargowagen-neo",
+    "quote": "545Wh battery for plenty of range",
+    "basis": "no number given"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://electricbikereport.com/cannondale-cargowagen-neo-review/",
+    "quote": ""
+   }
   ],
   "wt": [
-   {"kind": "maker", "value": null, "url": "https://www.cannondale.com/en-us/bikes/electric/e-cargo/cargowagen-neo/cargowagen-neo", "quote": ""},
-   {"kind": "review", "value": null, "url": "https://electricbikereport.com/cannondale-cargowagen-neo-review/", "quote": ""}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-cargo/cargowagen-neo/cargowagen-neo",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://electricbikereport.com/cannondale-cargowagen-neo-review/",
+    "quote": ""
+   }
   ],
   "load": [
-   {"kind": "maker", "value": 441, "url": "https://www.cannondale.com/en-us/bikes/electric/e-cargo/cargowagen-neo/cargowagen-neo", "quote": "A total capacity of 200kg lets you carry 2 kids and lots of stuff with ease", "basis": "total; 200 kg converted to lb (rear rack itself rated 80kg)"},
-   {"kind": "review", "value": 441, "url": "https://electricbikereport.com/cannondale-cargowagen-neo-review/", "quote": "As we noted earlier, the payload capacity for the Cargowagen Neo is 441 lbs. (200Kg).", "basis": "review calls it payload; maker calls the same 200 kg a total weight capacity"}
+   {
+    "kind": "maker",
+    "value": 441,
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-cargo/cargowagen-neo/cargowagen-neo",
+    "quote": "A total capacity of 200kg lets you carry 2 kids and lots of stuff with ease",
+    "basis": "total; 200 kg converted to lb (rear rack itself rated 80kg)"
+   },
+   {
+    "kind": "review",
+    "value": 441,
+    "url": "https://electricbikereport.com/cannondale-cargowagen-neo-review/",
+    "quote": "As we noted earlier, the payload capacity for the Cargowagen Neo is 441 lbs. (200Kg).",
+    "basis": "review calls it payload; maker calls the same 200 kg a total weight capacity"
+   }
   ],
   "motor": [
-   {"kind": "maker", "value": "Bosch Performance Speed", "url": "https://www.cannondale.com/en-us/bikes/electric/e-cargo/cargowagen-neo/cargowagen-neo", "quote": "Bosch Performance Speed, 28 mph ⟶ Battery"},
-   {"kind": "review", "value": "250W Bosch mid-drive", "url": "https://electricbikereport.com/cannondale-cargowagen-neo-review/", "quote": "The Cargowagen Neo is a long-tail cargo e-bike with small wheels (20-in.) and a 250W Bosch mid-drive motor. It comes equipped with a 545Wh Bosch PowerPack battery, and can be equipped with a second battery for long-range use."}
+   {
+    "kind": "maker",
+    "value": "Bosch Performance Speed",
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-cargo/cargowagen-neo/cargowagen-neo",
+    "quote": "Bosch Performance Speed, 28 mph ⟶ Battery"
+   },
+   {
+    "kind": "review",
+    "value": "250W Bosch mid-drive",
+    "url": "https://electricbikereport.com/cannondale-cargowagen-neo-review/",
+    "quote": "The Cargowagen Neo is a long-tail cargo e-bike with small wheels (20-in.) and a 250W Bosch mid-drive motor. It comes equipped with a 545Wh Bosch PowerPack battery, and can be equipped with a second battery for long-range use."
+   }
   ],
   "height": [
-   {"kind": "maker", "value": "4'11\"-6'3\"", "url": "https://www.cannondale.com/en-us/bikes/electric/e-cargo/cargowagen-neo/cargowagen-neo", "quote": "Height - 4'11\" - 6'3\" ⟶ Out of Stock Online"}
+   {
+    "kind": "maker",
+    "value": "4'11\"-6'3\"",
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-cargo/cargowagen-neo/cargowagen-neo",
+    "quote": "Height - 4'11\" - 6'3\" ⟶ Out of Stock Online"
+   }
   ],
   "fold": [
-   {"kind": "maker", "value": "No", "url": "https://www.cannondale.com/en-us/bikes/electric/e-cargo/cargowagen-neo/cargowagen-neo", "quote": "SmartForm C2 Alloy step-thru frame, integrated rear cargo rack (80kg), integrated headtube rack mounts, dual battery ready, internal cable routing, disc brake, tapered headtube, center console storage ⟶ Fork"}
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://www.cannondale.com/en-us/bikes/electric/e-cargo/cargowagen-neo/cargowagen-neo",
+    "quote": "SmartForm C2 Alloy step-thru frame, integrated rear cargo rack (80kg), integrated headtube rack mounts, dual battery ready, internal cable routing, disc brake, tapered headtube, center console storage ⟶ Fork"
+   }
   ]
  },
- "status": {"sources": []},
- "notes": "Maker gives no torque, weight or numeric range; one size (OS). 200 kg is a TOTAL weight capacity per maker ('200-kg total weight capacity'); EBReport calls the same figure payload. Review also names the motor as the Bosch Performance Line Speed. EBReport is a first-look, not a full test. EBR/Electrek searches had no match; REI blocked. One WebSearch used."}
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker gives no torque, weight or numeric range; one size (OS). 200 kg is a TOTAL weight capacity per maker ('200-kg total weight capacity'); EBReport calls the same figure payload. Review also names the motor as the Bosch Performance Line Speed. EBReport is a first-look, not a full test. EBR/Electrek searches had no match; REI blocked. One WebSearch used. recheck (tq): maker page full text has no torque; N+1 Bikes listing gone; Mike's Bikes doesn't stock it. BikeRide (bikeride.com) spec block says 85 Nm. 99 Spokes 2023 page contradicts itself: spec line 63Nm, review summary 85Nm. Used the bike's one WebSearch."
+}

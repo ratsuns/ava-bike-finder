@@ -1,48 +1,167 @@
-{"bike": "Yuba|Spicy Curry (New)", "checked": "2026-11-06",
+{
+ "bike": "Yuba|Spicy Curry (New)",
+ "checked": "2026-11-06",
  "fields": {
   "price": [
-   {"kind": "maker", "value": 5999.99, "url": "https://yubabikes.com/product/spicy-curry/", "quote": "Original price was: $5,999.99.", "basis": "crossed-out regular price; on sale for $4,799.99"},
-   {"kind": "review", "value": null, "url": "https://upway.co/blogs/news/yuba-spicy-curry-ebike-review", "quote": "", "basis": "no new-bike price stated for the current standard model"}
+   {
+    "kind": "maker",
+    "value": 5999.99,
+    "url": "https://yubabikes.com/product/spicy-curry/",
+    "quote": "Original price was: $5,999.99.",
+    "basis": "crossed-out regular price; on sale for $4,799.99"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://upway.co/blogs/news/yuba-spicy-curry-ebike-review",
+    "quote": "",
+    "basis": "no new-bike price stated for the current standard model"
+   }
   ],
   "cls": [
-   {"kind": "maker", "value": null, "url": "https://yubabikes.com/product/spicy-curry/", "quote": "", "basis": "class not stated on product page (full specs in PDF not readable as text)"},
-   {"kind": "review", "value": null, "url": "https://upway.co/blogs/news/yuba-spicy-curry-ebike-review", "quote": "No. Current Spicy Curry, Spicy Curry+, and Spicy Curry POW models use Bosch Cargo Line mid-drive systems with pedal assist, not a throttle. ⟶ How long is the Yuba Spicy Curry?", "basis": "pedal-assist only, no throttle; class/speed not stated"}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://yubabikes.com/product/spicy-curry/",
+    "quote": "",
+    "basis": "class not stated on product page (full specs in PDF not readable as text)"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://upway.co/blogs/news/yuba-spicy-curry-ebike-review",
+    "quote": "No. Current Spicy Curry, Spicy Curry+, and Spicy Curry POW models use Bosch Cargo Line mid-drive systems with pedal assist, not a throttle. ⟶ How long is the Yuba Spicy Curry?",
+    "basis": "pedal-assist only, no throttle; class/speed not stated"
+   }
   ],
   "spd": [
-   {"kind": "maker", "value": null, "url": "https://yubabikes.com/product/spicy-curry/", "quote": ""},
-   {"kind": "review", "value": null, "url": "https://upway.co/blogs/news/yuba-spicy-curry-ebike-review", "quote": ""}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://yubabikes.com/product/spicy-curry/",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://upway.co/blogs/news/yuba-spicy-curry-ebike-review",
+    "quote": ""
+   }
   ],
   "tq": [
-   {"kind": "maker", "value": 85, "url": "https://yubabikes.com/product/spicy-curry/", "quote": "Motor | Bosch Cargo Line (85Nm) - 500Wh integrated Battery"},
-   {"kind": "review", "value": 85, "url": "https://upway.co/blogs/news/yuba-spicy-curry-ebike-review", "quote": "The standard Spicy Curry covers the basics expected from this kind of cargo e-Bike: an 85 Nm Bosch Cargo Line motor, 500 Wh battery, Microshift 9-speed derailleur, Magura hydraulic disc brakes, and Schwalbe Pick-Up tires."}
+   {
+    "kind": "maker",
+    "value": 85,
+    "url": "https://yubabikes.com/product/spicy-curry/",
+    "quote": "Motor | Bosch Cargo Line (85Nm) - 500Wh integrated Battery"
+   },
+   {
+    "kind": "review",
+    "value": 85,
+    "url": "https://upway.co/blogs/news/yuba-spicy-curry-ebike-review",
+    "quote": "The standard Spicy Curry covers the basics expected from this kind of cargo e-Bike: an 85 Nm Bosch Cargo Line motor, 500 Wh battery, Microshift 9-speed derailleur, Magura hydraulic disc brakes, and Schwalbe Pick-Up tires."
+   }
   ],
   "wh": [
-   {"kind": "maker", "value": 500, "url": "https://yubabikes.com/product/spicy-curry/", "quote": "Motor | Bosch Cargo Line (85Nm) - 500Wh integrated Battery"},
-   {"kind": "review", "value": 500, "url": "https://upway.co/blogs/news/yuba-spicy-curry-ebike-review", "quote": "The standard Spicy Curry gets a 500 Wh integrated battery, while the Spicy Curry+ increases that to 625 Wh."}
+   {
+    "kind": "maker",
+    "value": 500,
+    "url": "https://yubabikes.com/product/spicy-curry/",
+    "quote": "Motor | Bosch Cargo Line (85Nm) - 500Wh integrated Battery"
+   },
+   {
+    "kind": "review",
+    "value": 500,
+    "url": "https://upway.co/blogs/news/yuba-spicy-curry-ebike-review",
+    "quote": "The standard Spicy Curry gets a 500 Wh integrated battery, while the Spicy Curry+ increases that to 625 Wh."
+   }
   ],
   "range": [
-   {"kind": "maker", "value": null, "url": "https://yubabikes.com/product/spicy-curry/", "quote": "", "basis": "no range on product page"},
-   {"kind": "review", "value": null, "url": "https://upway.co/blogs/news/yuba-spicy-curry-ebike-review", "quote": ""}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://yubabikes.com/product/spicy-curry/",
+    "quote": "",
+    "basis": "no range on product page"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://upway.co/blogs/news/yuba-spicy-curry-ebike-review",
+    "quote": ""
+   }
   ],
   "wt": [
-   {"kind": "maker", "value": 70, "url": "https://yubabikes.com/product/spicy-curry/", "quote": "Bike Weight | 70 lbs", "basis": "battery inclusion not stated"},
-   {"kind": "review", "value": 70, "url": "https://upway.co/blogs/news/yuba-spicy-curry-ebike-review", "quote": "The standard model weighs about 70 pounds before adding passenger rails, seats, bags, or anything you’re actually carrying"}
+   {
+    "kind": "maker",
+    "value": 70,
+    "url": "https://yubabikes.com/product/spicy-curry/",
+    "quote": "Bike Weight | 70 lbs",
+    "basis": "battery inclusion not stated"
+   },
+   {
+    "kind": "review",
+    "value": 70,
+    "url": "https://upway.co/blogs/news/yuba-spicy-curry-ebike-review",
+    "quote": "The standard model weighs about 70 pounds before adding passenger rails, seats, bags, or anything you’re actually carrying"
+   }
   ],
   "load": [
-   {"kind": "maker", "value": 440, "url": "https://yubabikes.com/product/spicy-curry/", "quote": "Maximum load | 440 lbs", "basis": "total (Upway says it includes bike, rider, passengers and cargo)"},
-   {"kind": "review", "value": 440, "url": "https://upway.co/blogs/news/yuba-spicy-curry-ebike-review", "quote": "Yuba lists a 440-pound maximum load for the current standard Spicy Curry, but that doesn’t mean you can put 440 pounds on the rear rack. That number includes the bike itself, rider, passengers, and cargo.", "basis": "total"}
+   {
+    "kind": "maker",
+    "value": 440,
+    "url": "https://yubabikes.com/product/spicy-curry/",
+    "quote": "Maximum load | 440 lbs",
+    "basis": "total (Upway says it includes bike, rider, passengers and cargo)"
+   },
+   {
+    "kind": "review",
+    "value": 440,
+    "url": "https://upway.co/blogs/news/yuba-spicy-curry-ebike-review",
+    "quote": "Yuba lists a 440-pound maximum load for the current standard Spicy Curry, but that doesn’t mean you can put 440 pounds on the rear rack. That number includes the bike itself, rider, passengers, and cargo.",
+    "basis": "total"
+   }
   ],
   "motor": [
-   {"kind": "maker", "value": "Bosch Cargo Line", "url": "https://yubabikes.com/product/spicy-curry/", "quote": "Motor | Bosch Cargo Line (85Nm) - 500Wh integrated Battery"},
-   {"kind": "review", "value": "Bosch Cargo Line", "url": "https://upway.co/blogs/news/yuba-spicy-curry-ebike-review", "quote": "Motor\tBosch Cargo Line\tBosch Cargo Line\tBosch Cargo Line ⟶ Torque\t85 Nm\t85 Nm\t85 Nm"}
+   {
+    "kind": "maker",
+    "value": "Bosch Cargo Line",
+    "url": "https://yubabikes.com/product/spicy-curry/",
+    "quote": "Motor | Bosch Cargo Line (85Nm) - 500Wh integrated Battery"
+   },
+   {
+    "kind": "review",
+    "value": "Bosch Cargo Line",
+    "url": "https://upway.co/blogs/news/yuba-spicy-curry-ebike-review",
+    "quote": "Motor\tBosch Cargo Line\tBosch Cargo Line\tBosch Cargo Line ⟶ Torque\t85 Nm\t85 Nm\t85 Nm"
+   }
   ],
   "height": [
-   {"kind": "maker", "value": "5'1\"-6'4\"", "url": "https://yubabikes.com/product/spicy-curry/", "quote": "Rider Height | 5 ft. 1 in - 6 ft. 4 in"},
-   {"kind": "review", "value": "5'1\"-6'4\"", "url": "https://upway.co/blogs/news/yuba-spicy-curry-ebike-review", "quote": "Yuba lists the one-size aluminum frame for riders from 5 feet, 1 inch to 6 feet, 4 inches."}
+   {
+    "kind": "maker",
+    "value": "5'1\"-6'4\"",
+    "url": "https://yubabikes.com/product/spicy-curry/",
+    "quote": "Rider Height | 5 ft. 1 in - 6 ft. 4 in"
+   },
+   {
+    "kind": "review",
+    "value": "5'1\"-6'4\"",
+    "url": "https://upway.co/blogs/news/yuba-spicy-curry-ebike-review",
+    "quote": "Yuba lists the one-size aluminum frame for riders from 5 feet, 1 inch to 6 feet, 4 inches."
+   }
   ],
   "fold": [
-   {"kind": "maker", "value": "No", "url": "https://yubabikes.com/product/spicy-curry/", "quote": "Frame | Aluminium Frame with easy Step-Over", "basis": "non-folding longtail frame"}
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://yubabikes.com/product/spicy-curry/",
+    "quote": "Frame | Aluminium Frame with easy Step-Over",
+    "basis": "non-folding longtail frame"
+   }
   ]
  },
- "status": {"sources": []},
- "notes": "Maker page on sale ($4,799.99; regular $5,999.99). No class/speed/range on maker product page; full specs only in PDF (https://yubabikes.com/wp-content/uploads/2024/11/Spicy-Curry_TechSpecs_2024.pdf). Upway blog confirms pedal-assist only (no throttle) and that the 440 lb max load is total (bike+rider+cargo). Maker quotes join label and value lines with ' | '. Used one WebSearch."}
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker page on sale ($4,799.99; regular $5,999.99). No class/speed/range on maker product page; full specs only in PDF (https://yubabikes.com/wp-content/uploads/2024/11/Spicy-Curry_TechSpecs_2024.pdf). Upway blog confirms pedal-assist only (no throttle) and that the 440 lb max load is total (bike+rider+cargo). Maker quotes join label and value lines with ' | '. Used one WebSearch. Recheck: maker tech-spec PDF (Spicy-Curry_TechSpecs_2024.pdf, read with pdf.js) has no class/speed; 99spokes 2024 page has none. OutdoorGearLab review (Dec 2022, Kiox display, likely the previous V3 generation) says 'This Class 1 e-bike doesn't have a throttle' and Turbo reaches 20 mph; not recorded here because it is an older generation."
+}

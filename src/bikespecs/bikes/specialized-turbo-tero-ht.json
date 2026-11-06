@@ -7,7 +7,8 @@
   ],
   "cls": [
    {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-tero-30/p/188110", "quote": "The speed limit at which the motor will stop supporting may vary significantly by region and is based on local requirements. It may also affect range: a higher speed limit may result in less range."},
-   {"kind": "review", "value": 3, "url": "https://www.electricbikejournal.com/specialized-turbo-tero-3-0-review/", "quote": "The Turbo Tero 3.0 is a Class 3 electric bike with the Specialied 2.0E 250w mid-drive with 50Nm of torque. With up to 5 hours of range using the removable 530Wh battery."}
+   {"kind": "review", "value": 3, "url": "https://www.electricbikejournal.com/specialized-turbo-tero-3-0-review/", "quote": "The Turbo Tero 3.0 is a Class 3 electric bike with the Specialied 2.0E 250w mid-drive with 50Nm of torque. With up to 5 hours of range using the removable 530Wh battery."},
+   {"kind": "review", "value": 1, "url": "https://forums.electricbikereview.com/threads/tero-update-to-class-3.51038/", "quote": "Just got an email from Specialized offering to permanently change my Tero from Class 1 (US 20 mph restriction) to Class 3 (28 mph) at no charge.", "basis": "owner forum post (EBR forums), not an official spec; same thread: 'the mechanic, told me it is sold as a class 1 still, but you have the option to have them update to class 3 in the dealer settings'. Weak source."}
   ],
   "spd": [
    {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-tero-30/p/188110", "quote": ""},
@@ -44,4 +45,5 @@
   ]
  },
  "status": {"sources": []},
- "notes": "src page is the '2022 Turbo Tero 3.0' (hardtail, 110mm SR Suntour XCM32 fork), still sold at $2,749.99 with no crossed-out price; EBReport's 2021 launch article says it started at $3,250 (Electric Bike Journal mentions both $2750 and $3250). Maker page gives no class or speed number (only a regional speed-limit disclaimer); Electric Bike Journal says Class 3 but quotes no mph, so spd left null. Maker publishes no weight on the page (EBJ: ~48 lb) and puts rider/load limits in a linked PDF ('2022 Rider/Bike Weight Limits'), not on the page. No rider height range on the page. EBR has reviews only of Tero X 6.0 and Tero 4.0 EQ, not the 3.0."}
+ "notes": "src page is the '2022 Turbo Tero 3.0' (hardtail, 110mm SR Suntour XCM32 fork), still sold at $2,749.99 with no crossed-out price; EBReport's 2021 launch article says it started at $3,250 (Electric Bike Journal mentions both $2750 and $3250). Maker page gives no class or speed number (only a regional speed-limit disclaimer); Electric Bike Journal says Class 3 but quotes no mph, so spd left null. Maker publishes no weight on the page (EBJ: ~48 lb) and puts rider/load limits in a linked PDF ('2022 Rider/Bike Weight Limits'), not on the page. No rider height range on the page. EBR has reviews only of Tero X 6.0 and Tero 4.0 EQ, not the 3.0. | recheck: maker Tero 3.0 page states no class or speed (only buyer reviews); EBR has only Tero X 6.0 / Tero 4.0 EQ reviews; electrek no results; Ascent Outdoors dealer page no class; EBR forum owners say Teros ship Class 1 (20 mph) and a free dealer update to Class 3 (28 mph) is offered."
+}

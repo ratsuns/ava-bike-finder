@@ -1,48 +1,171 @@
-{"bike": "Ice Trikes|ICE Sprint X Tour (Shimano e-assist)", "checked": "2026-11-06",
+{
+ "bike": "Ice Trikes|ICE Sprint X Tour (Shimano e-assist)",
+ "checked": "2026-11-06",
  "fields": {
   "price": [
-   {"kind": "maker", "value": 7904, "url": "https://icetrikes.co/buy/price-lists/ice-trikes-2026-full-price-list-usd/viewdocument/157", "quote": "SPRINT X TOUR E-ASSIST  Example entry-  level specification  RIGID REAR FRAME, ELECTRIC SYSTEM WITH EP6 CARGO, ONE 630WH BATTERY  DERAILLEUR GEARING, 8 SPEED REAR WHEEL WITH SHIMANO 11-32 CASSETTE,  BAR END SHIFTERS, DISC BRAKES, ERGO-FLOW SEAT, SCHWALBE ROAD  CRUISER TYRE & OTR PACK  $7,904", "basis": "maker's 2026 USD price list, example entry-level E-Assist build"},
-   {"kind": "retailer", "value": null, "url": "https://www.industrialbicycles.com/ice-sprint-x-tour-e-assist-full-suspension.aspx", "quote": "Motor Kit: ⟶ Motor Kit None", "basis": "listed $5,433.00 is the default build with no motor kit"}
+   {
+    "kind": "maker",
+    "value": 7904,
+    "url": "https://icetrikes.co/buy/price-lists/ice-trikes-2026-full-price-list-usd/viewdocument/157",
+    "quote": "SPRINT X TOUR E-ASSIST  Example entry-  level specification  RIGID REAR FRAME, ELECTRIC SYSTEM WITH EP6 CARGO, ONE 630WH BATTERY  DERAILLEUR GEARING, 8 SPEED REAR WHEEL WITH SHIMANO 11-32 CASSETTE,  BAR END SHIFTERS, DISC BRAKES, ERGO-FLOW SEAT, SCHWALBE ROAD  CRUISER TYRE & OTR PACK  $7,904",
+    "basis": "maker's 2026 USD price list, example entry-level E-Assist build"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.industrialbicycles.com/ice-sprint-x-tour-e-assist-full-suspension.aspx",
+    "quote": "Motor Kit: ⟶ Motor Kit None",
+    "basis": "listed $5,433.00 is the default build with no motor kit"
+   }
   ],
   "cls": [
-   {"kind": "maker", "value": 1, "url": "https://icetrikes.co/products/sprint-x-tour-recumbent-trike", "quote": "Choose between Boost, Trail, Eco and intelligent Walk modes. Supports assist level up to 25 km/h or 20mph depending on regional regulations.", "basis": "pedal assist modes only, no throttle mentioned, 20 mph in the US, so Class 1"}
+   {
+    "kind": "maker",
+    "value": 1,
+    "url": "https://icetrikes.co/products/sprint-x-tour-recumbent-trike",
+    "quote": "Choose between Boost, Trail, Eco and intelligent Walk modes. Supports assist level up to 25 km/h or 20mph depending on regional regulations.",
+    "basis": "pedal assist modes only, no throttle mentioned, 20 mph in the US, so Class 1"
+   }
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://icetrikes.co/products/sprint-x-tour-recumbent-trike", "quote": "Supports assist level up to 25 km/h or 20mph depending on regional regulations."},
-   {"kind": "retailer", "value": null, "url": "https://www.industrialbicycles.com/ice-sprint-x-tour-e-assist-full-suspension.aspx", "quote": ""}
+   {
+    "kind": "maker",
+    "value": 20,
+    "url": "https://icetrikes.co/products/sprint-x-tour-recumbent-trike",
+    "quote": "Supports assist level up to 25 km/h or 20mph depending on regional regulations."
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.industrialbicycles.com/ice-sprint-x-tour-e-assist-full-suspension.aspx",
+    "quote": ""
+   }
   ],
   "tq": [
-   {"kind": "maker", "value": 85, "url": "https://icetrikes.co/products/sprint-x-tour-recumbent-trike", "quote": "Featuring a powerful 250w electric motor, custom-designed ICE specific forged motor housing, 85Nm torque, 630Wh battery."},
-   {"kind": "retailer", "value": null, "url": "https://www.industrialbicycles.com/ice-sprint-x-tour-e-assist-full-suspension.aspx", "quote": ""}
+   {
+    "kind": "maker",
+    "value": 85,
+    "url": "https://icetrikes.co/products/sprint-x-tour-recumbent-trike",
+    "quote": "Featuring a powerful 250w electric motor, custom-designed ICE specific forged motor housing, 85Nm torque, 630Wh battery."
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.industrialbicycles.com/ice-sprint-x-tour-e-assist-full-suspension.aspx",
+    "quote": ""
+   }
   ],
   "wh": [
-   {"kind": "maker", "value": 630, "url": "https://icetrikes.co/products/sprint-x-tour-recumbent-trike", "quote": "Featuring a powerful 250w electric motor, custom-designed ICE specific forged motor housing, 85Nm torque, 630Wh battery."},
-   {"kind": "retailer", "value": null, "url": "https://www.industrialbicycles.com/ice-sprint-x-tour-e-assist-full-suspension.aspx", "quote": ""}
+   {
+    "kind": "maker",
+    "value": 630,
+    "url": "https://icetrikes.co/products/sprint-x-tour-recumbent-trike",
+    "quote": "Featuring a powerful 250w electric motor, custom-designed ICE specific forged motor housing, 85Nm torque, 630Wh battery."
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.industrialbicycles.com/ice-sprint-x-tour-e-assist-full-suspension.aspx",
+    "quote": ""
+   }
   ],
   "range": [
-   {"kind": "maker", "value": null, "url": "https://icetrikes.co/products/shimano-steps-e-assist", "quote": "Range depends on riding conditions, temperature, tires, riding style, power assist mode, rider weight and many other factors. See Shimano's published figures for examples of estimated cycling range."},
-   {"kind": "retailer", "value": null, "url": "https://www.industrialbicycles.com/ice-sprint-x-tour-e-assist-full-suspension.aspx", "quote": ""}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://icetrikes.co/products/shimano-steps-e-assist",
+    "quote": "Range depends on riding conditions, temperature, tires, riding style, power assist mode, rider weight and many other factors. See Shimano's published figures for examples of estimated cycling range."
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.industrialbicycles.com/ice-sprint-x-tour-e-assist-full-suspension.aspx",
+    "quote": ""
+   }
   ],
   "wt": [
-   {"kind": "maker", "value": 35.8, "url": "https://icetrikes.co/products/sprint-x-tour-recumbent-trike", "quote": "Overall weight from (rigid used for example) | 35.8lbs (16.2kg)", "basis": "without battery (lightest non-assist rigid build; e-assist page says motor 2.6kg (EP801) / 2.9kg (EP6) and 'The 630Wh battery is 3.2kg.')"},
-   {"kind": "retailer", "value": null, "url": "https://www.industrialbicycles.com/ice-sprint-x-tour-e-assist-full-suspension.aspx", "quote": ""}
+   {
+    "kind": "maker",
+    "value": 35.8,
+    "url": "https://icetrikes.co/products/sprint-x-tour-recumbent-trike",
+    "quote": "Overall weight from (rigid used for example) | 35.8lbs (16.2kg)",
+    "basis": "without battery (lightest non-assist rigid build; e-assist page says motor 2.6kg (EP801) / 2.9kg (EP6) and 'The 630Wh battery is 3.2kg.')"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.industrialbicycles.com/ice-sprint-x-tour-e-assist-full-suspension.aspx",
+    "quote": ""
+   }
   ],
   "load": [
-   {"kind": "maker", "value": 275, "url": "https://icetrikes.co/products/sprint-x-tour-recumbent-trike", "quote": "Rider weight limit (Ergo seat) | 275lbs (125kg)", "basis": "rider weight limit with Ergo seat (229 lb with Air-Pro seat)"},
-   {"kind": "retailer", "value": 275, "url": "https://www.industrialbicycles.com/ice-sprint-x-tour-e-assist-full-suspension.aspx", "quote": "Weight Capacity: Up to 275 lbs (125 kg) ⟶ Brakes: Choice of disc brakes or drum brakes"}
+   {
+    "kind": "maker",
+    "value": 275,
+    "url": "https://icetrikes.co/products/sprint-x-tour-recumbent-trike",
+    "quote": "Rider weight limit (Ergo seat) | 275lbs (125kg)",
+    "basis": "rider weight limit with Ergo seat (229 lb with Air-Pro seat)"
+   },
+   {
+    "kind": "retailer",
+    "value": 275,
+    "url": "https://www.industrialbicycles.com/ice-sprint-x-tour-e-assist-full-suspension.aspx",
+    "quote": "Weight Capacity: Up to 275 lbs (125 kg) ⟶ Brakes: Choice of disc brakes or drum brakes"
+   }
   ],
   "motor": [
-   {"kind": "maker", "value": "250W Shimano EP801 / EP6", "url": "https://icetrikes.co/products/sprint-x-tour-recumbent-trike", "quote": "The ICE Sprint X Tour is available with or without the EP801 or EP6 Shimano E-Bike motor systems. All the power you need at just the right time. Responsive, quiet, lightweight and controllable. Providing a seamless and easy ride from a standing start even on steep inclines. Featuring a powerful 250w electric motor, custom-designed ICE specific forged motor housing, 85Nm torque, 630Wh battery."},
-   {"kind": "retailer", "value": "250W Shimano STEPS", "url": "https://www.industrialbicycles.com/ice-sprint-x-tour-e-assist-full-suspension.aspx", "quote": "⚡ Shimano STEPS – 250W ⟶ ▶ Smooth pedal assist, perfect for effortless touring and commuting."}
+   {
+    "kind": "maker",
+    "value": "250W Shimano EP801 / EP6",
+    "url": "https://icetrikes.co/products/sprint-x-tour-recumbent-trike",
+    "quote": "The ICE Sprint X Tour is available with or without the EP801 or EP6 Shimano E-Bike motor systems. All the power you need at just the right time. Responsive, quiet, lightweight and controllable. Providing a seamless and easy ride from a standing start even on steep inclines. Featuring a powerful 250w electric motor, custom-designed ICE specific forged motor housing, 85Nm torque, 630Wh battery."
+   },
+   {
+    "kind": "retailer",
+    "value": "250W Shimano STEPS",
+    "url": "https://www.industrialbicycles.com/ice-sprint-x-tour-e-assist-full-suspension.aspx",
+    "quote": "⚡ Shimano STEPS – 250W ⟶ ▶ Smooth pedal assist, perfect for effortless touring and commuting."
+   }
   ],
   "height": [
-   {"kind": "maker", "value": null, "url": "https://icetrikes.co/products/sprint-x-tour-recumbent-trike", "quote": "Rider size (X-seam) | 35\" - 50\" (889mm - 1270mm)", "basis": "maker sizes by X-seam (leg length), not rider height"},
-   {"kind": "retailer", "value": null, "url": "https://www.industrialbicycles.com/ice-sprint-x-tour-e-assist-full-suspension.aspx", "quote": ""}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://icetrikes.co/products/sprint-x-tour-recumbent-trike",
+    "quote": "Rider size (X-seam) | 35\" - 50\" (889mm - 1270mm)",
+    "basis": "maker sizes by X-seam (leg length), not rider height"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.industrialbicycles.com/ice-sprint-x-tour-e-assist-full-suspension.aspx",
+    "quote": ""
+   },
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://icetrikes.co/tech/rider-sizing",
+    "quote": "NEW for 2026 - Sprint X Pixel has an X seam of 32\" - 41\" (812mm - 1041mm) and allows riders from around 4ft 6\" (137cm) to ride",
+    "basis": "maker rider-sizing page: Sprint X Pixel X-seam 32\"-41\", riders from about 4'6\"; maker fits by X-seam (leg length), gives no rider-height range"
+   }
   ],
   "fold": [
-   {"kind": "maker", "value": "Yes", "url": "https://icetrikes.co/products/sprint-x-tour-recumbent-trike", "quote": "Simply remove the seat, fold the handlebars flat, and undo the quick release lever to fold the frame. As the frame folds, the rear wheel pivots to fit flat between the front wheels. The C.F.T fold allows the trike to be folded in under 30 seconds and works with ICE accessories. You can even fold the trike with our Shimano STEPS motor system fitted."},
-   {"kind": "retailer", "value": "Yes", "url": "https://www.industrialbicycles.com/ice-sprint-x-tour-e-assist-full-suspension.aspx", "quote": "The ICE Sprint X Tour features a compact folding mechanism, making it easy to store or transport wherever your adventure takes you. ⟶ ✅ Touring-Friendly Design with a 20-Inch Rear Wheel"}
+   {
+    "kind": "maker",
+    "value": "Yes",
+    "url": "https://icetrikes.co/products/sprint-x-tour-recumbent-trike",
+    "quote": "Simply remove the seat, fold the handlebars flat, and undo the quick release lever to fold the frame. As the frame folds, the rear wheel pivots to fit flat between the front wheels. The C.F.T fold allows the trike to be folded in under 30 seconds and works with ICE accessories. You can even fold the trike with our Shimano STEPS motor system fitted."
+   },
+   {
+    "kind": "retailer",
+    "value": "Yes",
+    "url": "https://www.industrialbicycles.com/ice-sprint-x-tour-e-assist-full-suspension.aspx",
+    "quote": "The ICE Sprint X Tour features a compact folding mechanism, making it easy to store or transport wherever your adventure takes you. ⟶ ✅ Touring-Friendly Design with a 20-Inch Rear Wheel"
+   }
   ]
  },
- "status": {"sources": []},
- "notes": "Recumbent trike, built to order. Maker product page headline 'PRICES FROM: £3,100 | $4,500 | €3,350' is the non-assist trike; e-assist price from the maker's 2026 USD price list PDF (read in-browser via pdf.js; quote is extracted text with double spaces). Maker gives no range figure and sizes by X-seam (35\"-50\"; Sprint X Pixel 32\"-41\"), not height. Weight is the lightest non-assist build. Independent source Industrial Bicycles is a dealer that also offers third-party motor kits (EBO 350W, CYC 750W with throttle) besides the Shimano STEPS option; only its Shimano/frame lines were used. Laid Back Cycles' Sprint X Tour E-Assist page has no specs; Hostel Shoppe's Sprint X Tour EP801 listing redirects to a collection page."}
+ "status": {
+  "sources": []
+ },
+ "notes": "Recumbent trike, built to order. Maker product page headline 'PRICES FROM: £3,100 | $4,500 | €3,350' is the non-assist trike; e-assist price from the maker's 2026 USD price list PDF (read in-browser via pdf.js; quote is extracted text with double spaces). Maker gives no range figure and sizes by X-seam (35\"-50\"; Sprint X Pixel 32\"-41\"), not height. Weight is the lightest non-assist build. Independent source Industrial Bicycles is a dealer that also offers third-party motor kits (EBO 350W, CYC 750W with throttle) besides the Shimano STEPS option; only its Shimano/frame lines were used. Laid Back Cycles' Sprint X Tour E-Assist page has no specs; Hostel Shoppe's Sprint X Tour EP801 listing redirects to a collection page. Recheck: read maker rider-sizing page (fit is by X-seam leg length; Pixel X-seam 32\"-41\", riders from ~4'6\"); maker publishes no rider-height range."
+}

@@ -6,7 +6,8 @@
   ],
   "cls": [
    {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-vado-3-x-40/p/4293140", "quote": ""},
-   {"kind": "review", "value": 3, "url": "https://eridehero.com/products/specialized-turbo-vado-3-x-4-0-2026/", "quote": "E-Bike Class\tClass 3"}
+   {"kind": "review", "value": 3, "url": "https://eridehero.com/products/specialized-turbo-vado-3-x-4-0-2026/", "quote": "E-Bike Class\tClass 3"},
+   {"kind": "retailer", "value": 3, "url": "https://www.eriksbikeshop.com/products/specialized-turbo-vado-3-x-4-0-full-suspension-electric-bike-pr5a27784", "quote": "CLASS 3 ⟶ Pedal assist only, top speed of 28mph", "basis": "ERIK'S dealer page for Vado X 3 4.0; its EBIKE CLASSIFICATION block marks Class 3 with the selected checkmark (checked in the page HTML); the 28mph is the class definition, not a stated top speed"}
   ],
   "spd": [
    {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-vado-3-x-40/p/4293140", "quote": ""},
@@ -37,11 +38,13 @@
    {"kind": "review", "value": "250W mid-drive (810W peak)", "url": "https://eridehero.com/products/specialized-turbo-vado-3-x-4-0-2026/", "quote": "Nominal Power | 250 W | Peak Power | 810 W"}
   ],
   "height": [
-   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-vado-3-x-40/p/4293140", "quote": ""}
+   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-vado-3-x-40/p/4293140", "quote": ""},
+   {"kind": "retailer", "value": "5'1\"-6'4\"", "url": "https://steedcycles.com/products/specialized-turbo-vado-x-3-4-0", "quote": "S\t5'1\" - 5'5\"\t158 - 165cm | M\t5'5\" - 5'10\"\t165 - 178cm | L\t5'10\" - 6'1\"\t178 - 185cm | XL\t6'1\" - 6'4\"\t185 - 193cm", "basis": "Steed Cycles (Specialized dealer) size table for Turbo Vado X 3 4.0, S-XL"}
   ],
   "fold": [
    {"kind": "maker", "value": "No", "url": "https://www.specialized.com/us/en/turbo-vado-3-x-40/p/4293140", "quote": "Vado X frame, premium comfort with 120mm rear travel, side entry battery ⟶ Seat Binder", "basis": "full-suspension fixed frame; no folding mentioned"}
   ]
  },
  "status": {"sources": []},
- "notes": "Recorded base 4.0 trim (src link); 6.0 trim is $7,999.99. Maker gives no class/speed; class 3 / 28 mph / no throttle from ERideHero. Maker lists a 25 kg rear rack while Electrek says 27 kg."}
+ "notes": "Recorded base 4.0 trim (src link); 6.0 trim is $7,999.99. Maker gives no class/speed; class 3 / 28 mph / no throttle from ERideHero. Maker lists a 25 kg rear rack while Electrek says 27 kg. | recheck: ERIK'S dealer page marks Class 3 (no top-speed line for this model); Steed Cycles dealer size table S 5'1\"-5'5\" to XL 6'1\"-6'4\". No page found stating a top speed number for Vado 3 X."
+}

@@ -6,7 +6,8 @@
   ],
   "cls": [
    {"kind": "maker", "value": null, "url": "https://www.ternbicycles.com/us/bikes/473/gsd-r14", "quote": "", "basis": "maker page gives no class; only \"max speed 20 mph (US)\""},
-   {"kind": "retailer", "value": null, "url": "https://www.seattleelectricbike.net/products/tern-gsd-r14-gen3", "quote": "", "basis": "no class given"}
+   {"kind": "retailer", "value": null, "url": "https://www.seattleelectricbike.net/products/tern-gsd-r14-gen3", "quote": "", "basis": "no class given"},
+   {"kind": "review", "value": 1, "url": "https://www.bikeride.com/tern-gsd-gen-3/", "quote": "CLASS ⟶ Class 1", "basis": "BikeRide spec box for the GSD Gen 3 family (covers all Gen 3 trims); also lists TOP SPEED 20 mph"}
   ],
   "spd": [
    {"kind": "maker", "value": 20, "url": "https://www.ternbicycles.com/us/bikes/473/gsd-r14", "quote": "Bosch Cargo Line, 400% Assist, 85 Nm Torque; 250 W (nominal), max speed 20 mph (US) ⟶ BATTERY:"},
@@ -46,4 +47,5 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Gen 3 R14 (Bosch 800 PowerPack). Only one independent source: Seattle Electric Bike (US dealer, found via its own search) — it has few specs. Amego's 'GSD R14 Forge Grey' page is the Gen 2 model (Cargo Line System 2, 500Wh, 200 kg GVW) so it was not used; EBR has no R14 review. Maker contradicts itself on rider height: highlights say 4'11\"-6'7\", spec table says 'SUGGESTED RIDER HEIGHT: 153 - 200 cm (60.2 - 78.7 in)'. Maker gives no e-bike class (20 mph, no throttle). Max load 463 lb is gross vehicle weight -> total; max rider 130 kg."}
+ "notes": "Gen 3 R14 (Bosch 800 PowerPack). Only one independent source: Seattle Electric Bike (US dealer, found via its own search) — it has few specs. Amego's 'GSD R14 Forge Grey' page is the Gen 2 model (Cargo Line System 2, 500Wh, 200 kg GVW) so it was not used; EBR has no R14 review. Maker contradicts itself on rider height: highlights say 4'11\"-6'7\", spec table says 'SUGGESTED RIDER HEIGHT: 153 - 200 cm (60.2 - 78.7 in)'. Maker gives no e-bike class (20 mph, no throttle). Max load 463 lb is gross vehicle weight -> total; max rider 130 kg. | recheck: BikeRide GSD Gen 3 family page states Class 1; Tern's pages, Tern US store and buyer's guide state no class."
+}

@@ -1,48 +1,165 @@
-{"bike": "Emojo|Bison Pro Urban Cruiser", "checked": "2026-11-06",
+{
+ "bike": "Emojo|Bison Pro Urban Cruiser",
+ "checked": "2026-11-06",
  "fields": {
   "price": [
-   {"kind": "maker", "value": 3898, "url": "https://emojobike.com/products/bison-pro-urban-cruiser", "quote": "Regular price ⟶ $3,898.00", "basis": "sale price $3,598.00 not used"},
-   {"kind": "retailer", "value": null, "url": "https://www.bikeberry.com/products/emojo-750w-bison-pro-urban-cruiser-electric-bike", "quote": "Sale price | $3,598", "basis": "sale price only"}
+   {
+    "kind": "maker",
+    "value": 3898,
+    "url": "https://emojobike.com/products/bison-pro-urban-cruiser",
+    "quote": "Regular price ⟶ $3,898.00",
+    "basis": "sale price $3,598.00 not used"
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.bikeberry.com/products/emojo-750w-bison-pro-urban-cruiser-electric-bike",
+    "quote": "Sale price | $3,598",
+    "basis": "sale price only"
+   }
   ],
   "cls": [
-   {"kind": "maker", "value": 2, "url": "https://emojobike.com/products/bison-pro-urban-cruiser", "quote": "The Bison Pro Urban Cruiser offers a 55-mile range on throttle only, extending to 80 miles with pedal assist. Its powerful 48V battery and efficient 750W motor let you commute, run errands, or enjoy a leisurely ride without range anxiety.", "basis": "maker states no class; has throttle and 'Top Speed ⟶ 20 MPH' -> 2"},
-   {"kind": "retailer", "value": 2, "url": "https://www.bikeberry.com/products/emojo-750w-bison-pro-urban-cruiser-electric-bike", "quote": "Drive Mode: | Class II"}
+   {
+    "kind": "maker",
+    "value": 2,
+    "url": "https://emojobike.com/products/bison-pro-urban-cruiser",
+    "quote": "The Bison Pro Urban Cruiser offers a 55-mile range on throttle only, extending to 80 miles with pedal assist. Its powerful 48V battery and efficient 750W motor let you commute, run errands, or enjoy a leisurely ride without range anxiety.",
+    "basis": "maker states no class; has throttle and 'Top Speed ⟶ 20 MPH' -> 2"
+   },
+   {
+    "kind": "retailer",
+    "value": 2,
+    "url": "https://www.bikeberry.com/products/emojo-750w-bison-pro-urban-cruiser-electric-bike",
+    "quote": "Drive Mode: | Class II"
+   }
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://emojobike.com/products/bison-pro-urban-cruiser", "quote": "Top Speed ⟶ 20 MPH"}
+   {
+    "kind": "maker",
+    "value": 20,
+    "url": "https://emojobike.com/products/bison-pro-urban-cruiser",
+    "quote": "Top Speed ⟶ 20 MPH"
+   }
   ],
   "tq": [
-   {"kind": "maker", "value": null, "url": "https://emojobike.com/products/bison-pro-urban-cruiser", "quote": ""},
-   {"kind": "retailer", "value": null, "url": "https://www.bikeberry.com/products/emojo-750w-bison-pro-urban-cruiser-electric-bike", "quote": ""}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://emojobike.com/products/bison-pro-urban-cruiser",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://www.bikeberry.com/products/emojo-750w-bison-pro-urban-cruiser-electric-bike",
+    "quote": ""
+   }
   ],
   "wh": [
-   {"kind": "maker", "value": 1344, "url": "https://emojobike.com/products/bison-pro-urban-cruiser", "quote": "Battery ⟶ 1344 Wh (Lithium-ion)", "basis": "spec table: 48V / 28Ah"},
-   {"kind": "retailer", "value": 1344, "url": "https://www.bikeberry.com/products/emojo-750w-bison-pro-urban-cruiser-electric-bike", "quote": "Battery: 48V / 28Ah Lithium-Ion (XNW Brand)", "basis": "48 V x 28 Ah = 1344 Wh"}
+   {
+    "kind": "maker",
+    "value": 1344,
+    "url": "https://emojobike.com/products/bison-pro-urban-cruiser",
+    "quote": "Battery ⟶ 1344 Wh (Lithium-ion)",
+    "basis": "spec table: 48V / 28Ah"
+   },
+   {
+    "kind": "retailer",
+    "value": 1344,
+    "url": "https://www.bikeberry.com/products/emojo-750w-bison-pro-urban-cruiser-electric-bike",
+    "quote": "Battery: 48V / 28Ah Lithium-Ion (XNW Brand)",
+    "basis": "48 V x 28 Ah = 1344 Wh"
+   }
   ],
   "range": [
-   {"kind": "maker", "value": "80", "url": "https://emojobike.com/products/bison-pro-urban-cruiser", "quote": "55 Miles ⟶ 80 Miles with Pedal Assist"},
-   {"kind": "retailer", "value": "80", "url": "https://www.bikeberry.com/products/emojo-750w-bison-pro-urban-cruiser-electric-bike", "quote": "Max Range: 55 Miles (Throttle Only) / 80 Miles (with Pedal Assist)"}
+   {
+    "kind": "maker",
+    "value": "80",
+    "url": "https://emojobike.com/products/bison-pro-urban-cruiser",
+    "quote": "55 Miles ⟶ 80 Miles with Pedal Assist"
+   },
+   {
+    "kind": "retailer",
+    "value": "80",
+    "url": "https://www.bikeberry.com/products/emojo-750w-bison-pro-urban-cruiser-electric-bike",
+    "quote": "Max Range: 55 Miles (Throttle Only) / 80 Miles (with Pedal Assist)"
+   }
   ],
   "wt": [
-   {"kind": "maker", "value": 123, "url": "https://emojobike.com/products/bison-pro-urban-cruiser", "quote": "Weight ⟶ 123 lbs (with battery)"},
-   {"kind": "retailer", "value": 123, "url": "https://www.bikeberry.com/products/emojo-750w-bison-pro-urban-cruiser-electric-bike", "quote": "Weight (with battery): 123 lbs"}
+   {
+    "kind": "maker",
+    "value": 123,
+    "url": "https://emojobike.com/products/bison-pro-urban-cruiser",
+    "quote": "Weight ⟶ 123 lbs (with battery)"
+   },
+   {
+    "kind": "retailer",
+    "value": 123,
+    "url": "https://www.bikeberry.com/products/emojo-750w-bison-pro-urban-cruiser-electric-bike",
+    "quote": "Weight (with battery): 123 lbs"
+   }
   ],
   "load": [
-   {"kind": "maker", "value": 330, "url": "https://emojobike.com/products/bison-pro-urban-cruiser", "quote": "Load ⟶ 330 lbs"},
-   {"kind": "retailer", "value": 330, "url": "https://www.bikeberry.com/products/emojo-750w-bison-pro-urban-cruiser-electric-bike", "quote": "Total Load Capacity: 330 lbs", "basis": "retailer also lists 'Rear Seat Max Load: 100 lbs'"}
+   {
+    "kind": "maker",
+    "value": 330,
+    "url": "https://emojobike.com/products/bison-pro-urban-cruiser",
+    "quote": "Load ⟶ 330 lbs"
+   },
+   {
+    "kind": "retailer",
+    "value": 330,
+    "url": "https://www.bikeberry.com/products/emojo-750w-bison-pro-urban-cruiser-electric-bike",
+    "quote": "Total Load Capacity: 330 lbs",
+    "basis": "retailer also lists 'Rear Seat Max Load: 100 lbs'"
+   }
   ],
   "motor": [
-   {"kind": "maker", "value": "750W hub (Bafang)", "url": "https://emojobike.com/products/bison-pro-urban-cruiser", "quote": "Motor ⟶ 750W Brushless Motor | Brand | Bafang", "basis": "spec table: Power 750W, Type DC Brushless, Brand Bafang"},
-   {"kind": "retailer", "value": "750W front hub (Bafang)", "url": "https://www.bikeberry.com/products/emojo-750w-bison-pro-urban-cruiser-electric-bike", "quote": "Motor Size: | 750W Bafang DC Brushless | Battery: | 48V / 28Ah XNW Lithium-Ion | Drive Mode: | Class II | Frame Type: | Aluminum Alloy, Foldable Step-Thru | Wheel Size: | 24\" X 4\" F/ 20\" X 4\" R | Motor Position: | Front Hub"}
+   {
+    "kind": "maker",
+    "value": "750W hub (Bafang)",
+    "url": "https://emojobike.com/products/bison-pro-urban-cruiser",
+    "quote": "Motor ⟶ 750W Brushless Motor | Brand | Bafang",
+    "basis": "spec table: Power 750W, Type DC Brushless, Brand Bafang"
+   },
+   {
+    "kind": "retailer",
+    "value": "750W front hub (Bafang)",
+    "url": "https://www.bikeberry.com/products/emojo-750w-bison-pro-urban-cruiser-electric-bike",
+    "quote": "Motor Size: | 750W Bafang DC Brushless | Battery: | 48V / 28Ah XNW Lithium-Ion | Drive Mode: | Class II | Frame Type: | Aluminum Alloy, Foldable Step-Thru | Wheel Size: | 24\" X 4\" F/ 20\" X 4\" R | Motor Position: | Front Hub"
+   }
   ],
   "height": [
-   {"kind": "maker", "value": "4'10\"-6'10\"", "url": "https://emojobike.com/products/bison-pro-urban-cruiser", "quote": "Rider's Height ⟶ 4'10\"-6'10\" (Best for 5'4\"-6'10\")"},
-   {"kind": "retailer", "value": "4'10\"-6'10\"", "url": "https://www.bikeberry.com/products/emojo-750w-bison-pro-urban-cruiser-electric-bike", "quote": "Rider Height Range: 4'10\" – 6'10\""}
+   {
+    "kind": "maker",
+    "value": "4'10\"-6'10\"",
+    "url": "https://emojobike.com/products/bison-pro-urban-cruiser",
+    "quote": "Rider's Height ⟶ 4'10\"-6'10\" (Best for 5'4\"-6'10\")"
+   },
+   {
+    "kind": "retailer",
+    "value": "4'10\"-6'10\"",
+    "url": "https://www.bikeberry.com/products/emojo-750w-bison-pro-urban-cruiser-electric-bike",
+    "quote": "Rider Height Range: 4'10\" – 6'10\""
+   }
   ],
   "fold": [
-   {"kind": "maker", "value": "Yes", "url": "https://emojobike.com/products/bison-pro-urban-cruiser", "quote": "Our foldable step-through frame not only ensures effortless mounting but also folds neatly for space-saving storage and convenient transport."},
-   {"kind": "retailer", "value": "Yes", "url": "https://www.bikeberry.com/products/emojo-750w-bison-pro-urban-cruiser-electric-bike", "quote": "Frame: Aluminum Alloy, Foldable Step-Thru"}
+   {
+    "kind": "maker",
+    "value": "Yes",
+    "url": "https://emojobike.com/products/bison-pro-urban-cruiser",
+    "quote": "Our foldable step-through frame not only ensures effortless mounting but also folds neatly for space-saving storage and convenient transport."
+   },
+   {
+    "kind": "retailer",
+    "value": "Yes",
+    "url": "https://www.bikeberry.com/products/emojo-750w-bison-pro-urban-cruiser-electric-bike",
+    "quote": "Frame: Aluminum Alloy, Foldable Step-Thru"
+   }
   ]
  },
- "status": {"sources": []},
- "notes": "Folding fat-tire electric trike with rear passenger bench. Maker gives no class (throttle + 20 mph -> 2); BikeBerry says Class II. Maker spec table's transmission/speed row is blank on this page; top speed taken from the headline spec block."}
+ "status": {
+  "sources": []
+ },
+ "notes": "Folding fat-tire electric trike with rear passenger bench. Maker gives no class (throttle + 20 mph -> 2); BikeBerry says Class II. Maker spec table's transmission/speed row is blank on this page; top speed taken from the headline spec block. recheck (cls): maker page full text (incl. FAQ JSON) never states a class, only that it has throttle-only range; EBR search had no Emojo Bison; WebSearch results were the older Bison Pro / Bison Pro Cargo / Bison S (other models). Nothing new recorded; existing BikeBerry 'Class II' entry stands."
+}

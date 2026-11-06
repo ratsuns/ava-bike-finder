@@ -1,49 +1,168 @@
-{"bike": "Aima|Big Sur Sport", "checked": "2026-11-06",
+{
+ "bike": "Aima|Big Sur Sport",
+ "checked": "2026-11-06",
  "fields": {
   "price": [
-   {"kind": "maker", "value": 1999, "url": "https://www.aimatech.us/products/big-sur-sport-ebike", "quote": "Regular price | $1,999", "basis": "page shows sale price $1,699 with regular price $1,999 crossed out"},
-   {"kind": "retailer", "value": 1699, "url": "https://562ebikes.com/products/big-sur-sport", "quote": "Regular price ⟶ $1,699.00", "basis": "retailer's own price"}
+   {
+    "kind": "maker",
+    "value": 1999,
+    "url": "https://www.aimatech.us/products/big-sur-sport-ebike",
+    "quote": "Regular price | $1,999",
+    "basis": "page shows sale price $1,699 with regular price $1,999 crossed out"
+   },
+   {
+    "kind": "retailer",
+    "value": 1699,
+    "url": "https://562ebikes.com/products/big-sur-sport",
+    "quote": "Regular price ⟶ $1,699.00",
+    "basis": "retailer's own price"
+   }
   ],
   "cls": [
-   {"kind": "maker", "value": 2, "url": "https://www.aimatech.us/products/big-sur-sport-ebike", "quote": "The Big Sur Sport is delivered as a Class 2 eBike with a top assisted speed of 20 MPH."},
-   {"kind": "retailer", "value": null, "url": "https://562ebikes.com/products/big-sur-sport", "quote": "This product is sold in its factory default configuration. Legal classification and permitted use depend on active settings and applicable local laws. ⟶ 👉View Lite EV Class & Compliance Disclosure"}
+   {
+    "kind": "maker",
+    "value": 2,
+    "url": "https://www.aimatech.us/products/big-sur-sport-ebike",
+    "quote": "The Big Sur Sport is delivered as a Class 2 eBike with a top assisted speed of 20 MPH."
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://562ebikes.com/products/big-sur-sport",
+    "quote": "This product is sold in its factory default configuration. Legal classification and permitted use depend on active settings and applicable local laws. ⟶ 👉View Lite EV Class & Compliance Disclosure"
+   }
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://www.aimatech.us/products/big-sur-sport-ebike", "quote": "Speed | 20 MPH", "basis": "maker FAQ: may be configured for Class 3 pedal-assist by dealer"},
-   {"kind": "retailer", "value": 28, "url": "https://562ebikes.com/products/big-sur-sport", "quote": "SPEED: Up to 28 MPH Pedal Assist, 20 MPH Throttle Only"}
+   {
+    "kind": "maker",
+    "value": 20,
+    "url": "https://www.aimatech.us/products/big-sur-sport-ebike",
+    "quote": "Speed | 20 MPH",
+    "basis": "maker FAQ: may be configured for Class 3 pedal-assist by dealer"
+   },
+   {
+    "kind": "retailer",
+    "value": 28,
+    "url": "https://562ebikes.com/products/big-sur-sport",
+    "quote": "SPEED: Up to 28 MPH Pedal Assist, 20 MPH Throttle Only"
+   }
   ],
   "tq": [
-   {"kind": "maker", "value": null, "url": "https://www.aimatech.us/products/big-sur-sport-ebike", "quote": ""},
-   {"kind": "retailer", "value": null, "url": "https://562ebikes.com/products/big-sur-sport", "quote": ""}
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.aimatech.us/products/big-sur-sport-ebike",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://562ebikes.com/products/big-sur-sport",
+    "quote": ""
+   }
   ],
   "wh": [
-   {"kind": "maker", "value": 720, "url": "https://www.aimatech.us/products/big-sur-sport-ebike", "quote": "Battery | 48V 15Ah", "basis": "48V x 15Ah"},
-   {"kind": "retailer", "value": 720, "url": "https://562ebikes.com/products/big-sur-sport", "quote": "BATTERY: Removable Internal Lithium-ion 48V, 15Ah (720Wh) with LG M50LT 21700 cells ⟶ REAR RACK: MIK HD"}
+   {
+    "kind": "maker",
+    "value": 720,
+    "url": "https://www.aimatech.us/products/big-sur-sport-ebike",
+    "quote": "Battery | 48V 15Ah",
+    "basis": "48V x 15Ah"
+   },
+   {
+    "kind": "retailer",
+    "value": 720,
+    "url": "https://562ebikes.com/products/big-sur-sport",
+    "quote": "BATTERY: Removable Internal Lithium-ion 48V, 15Ah (720Wh) with LG M50LT 21700 cells ⟶ REAR RACK: MIK HD"
+   }
   ],
   "range": [
-   {"kind": "maker", "value": "60", "url": "https://www.aimatech.us/products/big-sur-sport-ebike", "quote": "Range | Up To 60 Miles*"},
-   {"kind": "retailer", "value": "30–60", "url": "https://562ebikes.com/products/big-sur-sport", "quote": "RANGE: 30 to 60 Miles ⟶ FRAME: 6061 Single-Butted Aluminum Alloy Frame with Internal Battery"}
+   {
+    "kind": "maker",
+    "value": "60",
+    "url": "https://www.aimatech.us/products/big-sur-sport-ebike",
+    "quote": "Range | Up To 60 Miles*"
+   },
+   {
+    "kind": "retailer",
+    "value": "30–60",
+    "url": "https://562ebikes.com/products/big-sur-sport",
+    "quote": "RANGE: 30 to 60 Miles ⟶ FRAME: 6061 Single-Butted Aluminum Alloy Frame with Internal Battery"
+   }
   ],
   "wt": [
-   {"kind": "maker", "value": 74, "url": "https://www.aimatech.us/products/big-sur-sport-ebike", "quote": "Weight | 74 lbs 33.6 kg"},
-   {"kind": "retailer", "value": 74, "url": "https://562ebikes.com/products/big-sur-sport", "quote": "WEIGHT: 74 lbs. (Battery included) ⟶ PEDALS: 9/16' Alloy Platform"}
+   {
+    "kind": "maker",
+    "value": 74,
+    "url": "https://www.aimatech.us/products/big-sur-sport-ebike",
+    "quote": "Weight | 74 lbs 33.6 kg"
+   },
+   {
+    "kind": "retailer",
+    "value": 74,
+    "url": "https://562ebikes.com/products/big-sur-sport",
+    "quote": "WEIGHT: 74 lbs. (Battery included) ⟶ PEDALS: 9/16' Alloy Platform"
+   }
   ],
   "load": [
-   {"kind": "maker", "value": 400, "url": "https://www.aimatech.us/products/big-sur-sport-ebike", "quote": "Payload Capacity | 400 lbs 181 kg"},
-   {"kind": "retailer", "value": 400, "url": "https://562ebikes.com/products/big-sur-sport", "quote": "WEIGHT LIMIT: 400 lbs. ⟶ KICKSTAND: Included, Aluminum Alloy Kickstand"}
+   {
+    "kind": "maker",
+    "value": 400,
+    "url": "https://www.aimatech.us/products/big-sur-sport-ebike",
+    "quote": "Payload Capacity | 400 lbs 181 kg"
+   },
+   {
+    "kind": "retailer",
+    "value": 400,
+    "url": "https://562ebikes.com/products/big-sur-sport",
+    "quote": "WEIGHT LIMIT: 400 lbs. ⟶ KICKSTAND: Included, Aluminum Alloy Kickstand"
+   }
   ],
   "motor": [
-   {"kind": "maker", "value": "750W rear hub (Bafang)", "url": "https://www.aimatech.us/products/big-sur-sport-ebike", "quote": "Motor | Rear Hub Motor, BAFANG, 750W"},
-   {"kind": "retailer", "value": "750W rear hub", "url": "https://562ebikes.com/products/big-sur-sport", "quote": "MOTOR: 750W, 48V Brushless Rear Hub Motor ⟶ THROTTLE: Throttle on Demand"}
+   {
+    "kind": "maker",
+    "value": "750W rear hub (Bafang)",
+    "url": "https://www.aimatech.us/products/big-sur-sport-ebike",
+    "quote": "Motor | Rear Hub Motor, BAFANG, 750W"
+   },
+   {
+    "kind": "retailer",
+    "value": "750W rear hub",
+    "url": "https://562ebikes.com/products/big-sur-sport",
+    "quote": "MOTOR: 750W, 48V Brushless Rear Hub Motor ⟶ THROTTLE: Throttle on Demand"
+   }
   ],
   "height": [
-   {"kind": "maker", "value": "5'0\"-6'3\"", "url": "https://www.aimatech.us/products/big-sur-sport-ebike", "quote": "Recommended Height | 5'0\" - 6'3\""},
-   {"kind": "retailer", "value": null, "url": "https://562ebikes.com/products/big-sur-sport", "quote": ""}
+   {
+    "kind": "maker",
+    "value": "5'0\"-6'3\"",
+    "url": "https://www.aimatech.us/products/big-sur-sport-ebike",
+    "quote": "Recommended Height | 5'0\" - 6'3\""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://562ebikes.com/products/big-sur-sport",
+    "quote": ""
+   }
   ],
   "fold": [
-   {"kind": "maker", "value": "No", "url": "https://www.aimatech.us/products/big-sur-sport-ebike", "quote": "Frame | 6061 Single-Butted Aluminum Alloy Frame"},
-   {"kind": "retailer", "value": "No", "url": "https://562ebikes.com/products/big-sur-sport", "quote": "FRAME: 6061 Single-Butted Aluminum Alloy Frame with Internal Battery ⟶ WEIGHT: 74 lbs. (Battery included)"}
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://www.aimatech.us/products/big-sur-sport-ebike",
+    "quote": "Frame | 6061 Single-Butted Aluminum Alloy Frame"
+   },
+   {
+    "kind": "retailer",
+    "value": "No",
+    "url": "https://562ebikes.com/products/big-sur-sport",
+    "quote": "FRAME: 6061 Single-Butted Aluminum Alloy Frame with Internal Battery ⟶ WEIGHT: 74 lbs. (Battery included)"
+   }
   ]
  },
- "status": {"sources": []},
- "notes": "The given src link (big-sur-sport-2-ebike) redirects to the Big Sur Sport 2.0 page (a newer generation: 48V 20Ah/960Wh, up to 80 mi, 77.2 lbs, $1,999). Used the maker's own page for the original Big Sur Sport (exact model name), which is still listed for sale. Maker spec values read from the spec tabs (hidden-tab text); quotes join consecutive page lines with ' | '. Maker says ships Class 2 / 20 mph, dealer-configurable to Class 3; retailer 562 Ebikes lists 'Up to 28 MPH Pedal Assist'. Catalog lists cls 3. EBR / Electric Bike Report only have the 2.0 review. If the catalog meant the 2.0, values must be redone from https://www.aimatech.us/products/big-sur-sport-2-0-ebike."}
+ "status": {
+  "sources": []
+ },
+ "notes": "The given src link (big-sur-sport-2-ebike) redirects to the Big Sur Sport 2.0 page (a newer generation: 48V 20Ah/960Wh, up to 80 mi, 77.2 lbs, $1,999). Used the maker's own page for the original Big Sur Sport (exact model name), which is still listed for sale. Maker spec values read from the spec tabs (hidden-tab text); quotes join consecutive page lines with ' | '. Maker says ships Class 2 / 20 mph, dealer-configurable to Class 3; retailer 562 Ebikes lists 'Up to 28 MPH Pedal Assist'. Catalog lists cls 3. EBR / Electric Bike Report only have the 2.0 review. If the catalog meant the 2.0, values must be redone from https://www.aimatech.us/products/big-sur-sport-2-0-ebike. recheck (tq): maker page full text (hidden tabs) gives no Nm for this model; an '85Nm' string exists only in embedded product JSON describing the 2.0's torque-and-cadence sensor. EBR search had no Aima match; web search hits (lowergear.com, freshlycharged) are the Big Sur Sport 2.0 (85Nm), not this model. Nothing recorded."
+}

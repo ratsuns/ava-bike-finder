@@ -8,12 +8,15 @@
   "cls": [
    {"kind": "maker", "value": null, "url": "https://himiwaybike.com/products/c3cargo-ebike", "quote": "Throttle ⟶ Thumb throttle", "basis": "has a throttle but the page states no class or top speed"},
    {"kind": "review", "value": null, "url": "https://electricbikereport.com/himiway-c3-review/", "quote": ""},
-   {"kind": "review", "value": null, "url": "https://upway.co/blogs/news/himiway-c3-cargo-ebike-review", "quote": ""}
+   {"kind": "review", "value": null, "url": "https://upway.co/blogs/news/himiway-c3-cargo-ebike-review", "quote": ""},
+   {"kind": "maker", "value": 2, "url": "https://himiwaybike.com/blogs/after-purchase/unlock-the-limit-of-the-speed", "quote": "Discover that Himiway e-bikes have the capability to operate as technically Class 3 e-bikes. While both of these bikes are shipped as Class 2 ebikes, users have the option to unlock the speed limiter, increasing the max speed to 25mph", "basis": "Himiway's 'Unlock the Limit of the Speed' page: ships as Class 2, unlockable; its per-model unlock list includes 'C5 Ultra, C3: watch video'"},
+   {"kind": "retailer", "value": 2, "url": "https://upway.co/products/himiway-c3-cargo-rk3jx5", "quote": "Max speed: 20 mph ⟶ e-Bike class: Class 2", "basis": "Upway certified-refurbished 2024 C3 Cargo listing; its torque/power lines (130 Nm, 500 W) differ from the maker's 86 Nm / 750 W"}
   ],
   "spd": [
    {"kind": "maker", "value": null, "url": "https://himiwaybike.com/products/c3cargo-ebike", "quote": ""},
    {"kind": "review", "value": null, "url": "https://electricbikereport.com/himiway-c3-review/", "quote": ""},
-   {"kind": "review", "value": null, "url": "https://upway.co/blogs/news/himiway-c3-cargo-ebike-review", "quote": ""}
+   {"kind": "review", "value": null, "url": "https://upway.co/blogs/news/himiway-c3-cargo-ebike-review", "quote": ""},
+   {"kind": "retailer", "value": 20, "url": "https://upway.co/products/himiway-c3-cargo-rk3jx5", "quote": "Max speed: 20 mph ⟶ e-Bike class: Class 2", "basis": "Upway refurbished 2024 C3 Cargo listing; maker says unlockable to 25 mph"}
   ],
   "tq": [
    {"kind": "maker", "value": 86, "url": "https://himiwaybike.com/products/c3cargo-ebike", "quote": "Motor Power ⟶ 86Nm | 86Nm ⟶ Max Motor Torque", "basis": "the paragraph above it names the 'Himiway C5' (copy error on the C3 page)"},
@@ -56,4 +59,4 @@
   ]
  },
  "status": {"sources": []},
- "notes": "Given src was the e-cargo collection page; used the C3 product page https://himiwaybike.com/products/c3cargo-ebike (on sale $1,499, regular $2,199). No source opened states top speed or class (maker page lists a thumb throttle only), so spd/cls are null. Maker's torque paragraph says 'Himiway C5's 750W motor ... 86Nm' (copy error), but EBR Report and Upway also give 86Nm for the C3. Maker says payload 440 lb; Upway adds max rider weight 265 lb. Dealer EZE Ryders copies the maker text but labels 440 lb as 'Max. system weight'. Electrek search returned nothing."}
+ "notes": "Given src was the e-cargo collection page; used the C3 product page https://himiwaybike.com/products/c3cargo-ebike (on sale $1,499, regular $2,199). No source opened states top speed or class (maker page lists a thumb throttle only), so spd/cls are null. Maker's torque paragraph says 'Himiway C5's 750W motor ... 86Nm' (copy error), but EBR Report and Upway also give 86Nm for the C3. Maker says payload 440 lb; Upway adds max rider weight 265 lb. Dealer EZE Ryders copies the maker text but labels 440 lb as 'Max. system weight'. Electrek search returned nothing. | recheck: Himiway's own 'Unlock the Limit of the Speed' page says its e-bikes ship as Class 2 (unlockable to 25 mph) and lists this model's unlock video; 1 WebSearch used for the Himiway set. Upway refurbished 2024 C3 Cargo listings say 20 mph / Class 2 (but give 130 Nm / 500 W, unlike the maker's 86 Nm / 750 W)."}

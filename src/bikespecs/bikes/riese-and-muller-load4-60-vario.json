@@ -1,45 +1,170 @@
-{"bike": "Riese and Muller|Load4 60 vario", "checked": "2026-11-06",
+{
+ "bike": "Riese and Muller|Load4 60 vario",
+ "checked": "2026-11-06",
  "fields": {
   "price": [
-   {"kind": "review", "value": 12309, "url": "https://99spokes.com/bikes/rieseandmuller/2025/load4-60-vario", "quote": "Manufacturer Price ⟶ $12,309", "basis": "99 Spokes listing of the 2025 model; region of this price not stated on the page"}
+   {
+    "kind": "review",
+    "value": 12309,
+    "url": "https://99spokes.com/bikes/rieseandmuller/2025/load4-60-vario",
+    "quote": "Manufacturer Price ⟶ $12,309",
+    "basis": "99 Spokes listing of the 2025 model; region of this price not stated on the page"
+   },
+   {
+    "kind": "retailer",
+    "value": 10539,
+    "url": "https://dev2.propelbikes.com/product/riese-muller-load4-60-vario/",
+    "quote": "Riese & Muller Load4 60 Vario ⟶ $10,539.00",
+    "basis": "US dealer Propel (page on its dev2 subdomain); base price before options"
+   },
+   {
+    "kind": "review",
+    "value": 10539,
+    "url": "https://99spokes.com/bikes/rieseandmuller/2023/load4-60-vario",
+    "quote": "Manufacturer Price | $10,539",
+    "basis": "2023 model year page (same site as the 2025 page already read)"
+   }
   ],
   "cls": [
-   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/rieseandmuller/2025/load4-60-vario", "quote": ""},
-   {"kind": "retailer", "value": null, "url": "https://shop.roulezjeunesse.com/collections/riese-muller-load-precedents/products/riese-muller-load4-60-vario", "quote": "", "basis": "EU retailer (250 W EU version); no US class given"}
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://99spokes.com/bikes/rieseandmuller/2025/load4-60-vario",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://shop.roulezjeunesse.com/collections/riese-muller-load-precedents/products/riese-muller-load4-60-vario",
+    "quote": "",
+    "basis": "EU retailer (250 W EU version); no US class given"
+   }
   ],
   "spd": [
-   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/rieseandmuller/2025/load4-60-vario", "quote": ""}
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://99spokes.com/bikes/rieseandmuller/2025/load4-60-vario",
+    "quote": ""
+   }
   ],
   "tq": [
-   {"kind": "retailer", "value": 85, "url": "https://shop.roulezjeunesse.com/collections/riese-muller-load-precedents/products/riese-muller-load4-60-vario", "quote": "Puissance : 250 W ⟶ Couple : 85 Nm"}
+   {
+    "kind": "retailer",
+    "value": 85,
+    "url": "https://shop.roulezjeunesse.com/collections/riese-muller-load-precedents/products/riese-muller-load4-60-vario",
+    "quote": "Puissance : 250 W ⟶ Couple : 85 Nm"
+   },
+   {
+    "kind": "retailer",
+    "value": 85,
+    "url": "https://dev2.propelbikes.com/product/riese-muller-load4-60-vario/",
+    "quote": "Whether you’re tackling a steep hill, or pedalling on the flat, 85 Nm of torque and a perfectly tuned transmission provide powerful yet natural support."
+   }
   ],
   "wh": [
-   {"kind": "review", "value": 725, "url": "https://99spokes.com/bikes/rieseandmuller/2025/load4-60-vario", "quote": "MotorBosch mid-drive ⟶ BatteryBosch 725Wh"},
-   {"kind": "retailer", "value": 725, "url": "https://shop.roulezjeunesse.com/collections/riese-muller-load-precedents/products/riese-muller-load4-60-vario", "quote": "Capacité : 725 Wh ⟶ Display", "basis": "page also says 'Batterie Bosch PowerPack 545 ou 725 Wh'"}
+   {
+    "kind": "review",
+    "value": 725,
+    "url": "https://99spokes.com/bikes/rieseandmuller/2025/load4-60-vario",
+    "quote": "MotorBosch mid-drive ⟶ BatteryBosch 725Wh"
+   },
+   {
+    "kind": "retailer",
+    "value": 725,
+    "url": "https://shop.roulezjeunesse.com/collections/riese-muller-load-precedents/products/riese-muller-load4-60-vario",
+    "quote": "Capacité : 725 Wh ⟶ Display",
+    "basis": "page also says 'Batterie Bosch PowerPack 545 ou 725 Wh'"
+   }
   ],
   "range": [
-   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/rieseandmuller/2025/load4-60-vario", "quote": ""},
-   {"kind": "retailer", "value": null, "url": "https://shop.roulezjeunesse.com/collections/riese-muller-load-precedents/products/riese-muller-load4-60-vario", "quote": ""}
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://99spokes.com/bikes/rieseandmuller/2025/load4-60-vario",
+    "quote": ""
+   },
+   {
+    "kind": "retailer",
+    "value": null,
+    "url": "https://shop.roulezjeunesse.com/collections/riese-muller-load-precedents/products/riese-muller-load4-60-vario",
+    "quote": ""
+   }
   ],
   "wt": [
-   {"kind": "review", "value": 80.5, "url": "https://99spokes.com/bikes/rieseandmuller/2025/load4-60-vario", "quote": "Weight80.5 lbs ⟶ FrameAluminum", "basis": "page doesn't say whether battery is included"},
-   {"kind": "retailer", "value": 80.5, "url": "https://shop.roulezjeunesse.com/collections/riese-muller-load-precedents/products/riese-muller-load4-60-vario", "quote": "Poids à vide : 36.5 kg ⟶ Charge max totale : 200.0 kg", "basis": "36.5 kg converted; 'poids à vide' (empty weight), battery inclusion not stated"}
+   {
+    "kind": "review",
+    "value": 80.5,
+    "url": "https://99spokes.com/bikes/rieseandmuller/2025/load4-60-vario",
+    "quote": "Weight80.5 lbs ⟶ FrameAluminum",
+    "basis": "page doesn't say whether battery is included"
+   },
+   {
+    "kind": "retailer",
+    "value": 80.5,
+    "url": "https://shop.roulezjeunesse.com/collections/riese-muller-load-precedents/products/riese-muller-load4-60-vario",
+    "quote": "Poids à vide : 36.5 kg ⟶ Charge max totale : 200.0 kg",
+    "basis": "36.5 kg converted; 'poids à vide' (empty weight), battery inclusion not stated"
+   },
+   {
+    "kind": "retailer",
+    "value": 82.9,
+    "url": "https://dev2.propelbikes.com/product/riese-muller-load4-60-vario/",
+    "quote": "Weight 37.6kg, 82.9lbs",
+    "basis": "battery inclusion not stated"
+   }
   ],
   "load": [
-   {"kind": "retailer", "value": 441, "url": "https://shop.roulezjeunesse.com/collections/riese-muller-load-precedents/products/riese-muller-load4-60-vario", "quote": "Poids à vide : 36.5 kg ⟶ Charge max totale : 200.0 kg", "basis": "total"}
+   {
+    "kind": "retailer",
+    "value": 441,
+    "url": "https://shop.roulezjeunesse.com/collections/riese-muller-load-precedents/products/riese-muller-load4-60-vario",
+    "quote": "Poids à vide : 36.5 kg ⟶ Charge max totale : 200.0 kg",
+    "basis": "total"
+   }
   ],
   "motor": [
-   {"kind": "review", "value": "Bosch Cargo Line (smart system)", "url": "https://99spokes.com/bikes/rieseandmuller/2025/load4-60-vario", "quote": "Motor ⟶ Bosch Cargo Line (smart system)"},
-   {"kind": "retailer", "value": "250W Bosch Cargo Line", "url": "https://shop.roulezjeunesse.com/collections/riese-muller-load-precedents/products/riese-muller-load4-60-vario", "quote": "Puissance : 250 W ⟶ Couple : 85 Nm", "basis": "EU rating; page also says 'Motorisation Bosch Cargo Line'"}
+   {
+    "kind": "review",
+    "value": "Bosch Cargo Line (smart system)",
+    "url": "https://99spokes.com/bikes/rieseandmuller/2025/load4-60-vario",
+    "quote": "Motor ⟶ Bosch Cargo Line (smart system)"
+   },
+   {
+    "kind": "retailer",
+    "value": "250W Bosch Cargo Line",
+    "url": "https://shop.roulezjeunesse.com/collections/riese-muller-load-precedents/products/riese-muller-load4-60-vario",
+    "quote": "Puissance : 250 W ⟶ Couple : 85 Nm",
+    "basis": "EU rating; page also says 'Motorisation Bosch Cargo Line'"
+   }
   ],
   "height": [
-   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/rieseandmuller/2025/load4-60-vario", "quote": ""}
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://99spokes.com/bikes/rieseandmuller/2025/load4-60-vario",
+    "quote": ""
+   }
   ],
   "fold": [
-   {"kind": "review", "value": "No", "url": "https://99spokes.com/bikes/rieseandmuller/2025/load4-60-vario", "quote": "A 26″ aluminum frame box e-bike with high-end components and tektro hydraulic disc brakes.", "basis": "front-loader cargo bike; no folding frame"}
+   {
+    "kind": "review",
+    "value": "No",
+    "url": "https://99spokes.com/bikes/rieseandmuller/2025/load4-60-vario",
+    "quote": "A 26″ aluminum frame box e-bike with high-end components and tektro hydraulic disc brakes.",
+    "basis": "front-loader cargo bike; no folding frame"
+   }
   ]
  },
- "status": {"sources": [
-  {"kind": "retailer", "value": "discontinued", "url": "https://shop.roulezjeunesse.com/collections/riese-muller-load-precedents/products/riese-muller-load4-60-vario", "quote": "Riese & Müller Load4 60 vario ⟶ Ce modèle n'est plus vendu neuf"}
- ]},
- "notes": "No maker source: the given pos.r-m.de en-us link and every r-m.de Load4 60 URL tried (en-us, en-en, de-de) return 404; the browser is redirected from en-us to en-en, and the international site lists only Load5 60/75. A French dealer says the Load4 60 is no longer sold new and was replaced by the Load5 60 (likely discontinued). Roulez Jeunesse is an EU dealer (250 W / EU speed), so cls and spd were not taken from it; US version class unconfirmed. 99 Spokes is a spec database, not a review. One WebSearch used. Retailer search on EBR and N+1 found nothing."}
+ "status": {
+  "sources": [
+   {
+    "kind": "retailer",
+    "value": "discontinued",
+    "url": "https://shop.roulezjeunesse.com/collections/riese-muller-load-precedents/products/riese-muller-load4-60-vario",
+    "quote": "Riese & Müller Load4 60 vario ⟶ Ce modèle n'est plus vendu neuf"
+   }
+  ]
+ },
+ "notes": "No maker source: the given pos.r-m.de en-us link and every r-m.de Load4 60 URL tried (en-us, en-en, de-de) return 404; the browser is redirected from en-us to en-en, and the international site lists only Load5 60/75. A French dealer says the Load4 60 is no longer sold new and was replaced by the Load5 60 (likely discontinued). Roulez Jeunesse is an EU dealer (250 W / EU speed), so cls and spd were not taken from it; US version class unconfirmed. 99 Spokes is a spec database, not a review. One WebSearch used. Retailer search on EBR and N+1 found nothing. recheck: looked at Propel Electric Bikes (US dealer, dev2 subdomain: $10,539, 85 Nm, 82.9 lb), 99 Spokes 2023 page ($10,539), EBR and N+1 searches (nothing), Fly Rides and Curbside Cycle (redirect to Load5 / 404), 1 WebSearch. No page found stating US class, top speed or a maker payload; load stays only the Roulez Jeunesse 200 kg total."
+}
