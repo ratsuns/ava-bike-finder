@@ -87,9 +87,11 @@ def main(site):
           and seconds(v.get('du')) >= 60}
     for v in ok.values(): v['t'] = html.unescape(v['t'])
     # not reviews: sale listings, setup guides, parts and repairs; plus videos a reviewer judged wrong (verify/yt_reject.json)
-    JUNK = re.compile(r'refurb|gebruikte|te koop|for sale|demo bikes|assembl|unbox ?& ?assemble|tutorial|quick start|how to (enable|install|assemble)|recall|battery w|tire blowout|install|accessor|spare part', re.I)
+    JUNK = re.compile(r'refurb|gebruikte|te koop|for sale|demo bikes|assembl|tutorial|quick start|how to (enable|install|assemble)|recall|battery w|tire blowout|install|accessor|spare part', re.I)
     rej = json.load(open('verify/yt_reject.json')) if os.path.exists('verify/yt_reject.json') else {}   # {"Brand|Model": [ids]}
-    ok = {i: v for i, v in ok.items() if not JUNK.search(v['t'])}
+    FOREIGN = re.compile(r'\b(de|het|een|voor|van|fiets|und|der|die|das|mit|für|ist|zum|rower|na|miasta|otro|mundo|elcykel|erfahrung|vergleich|prueba|bicicleta|vélo|elektrische)\b|[^\x00-\u024f\u2000-\u2bff\U0001F000-\U0001FAFF\s]', re.I)
+    ok = {i: v for i, v in ok.items() if not JUNK.search(v['t'])
+          and (not v.get('la') or v['la'].lower().startswith('en')) and not FOREIGN.search(v['t'])}
     titles = {i: norm(v['t']) for i, v in ok.items()}
     by_brand = collections.defaultdict(list)
     for (br, mo) in models: by_brand[br].append(mo)
@@ -132,7 +134,25 @@ def main(site):
                     for n, mo in set(hits):
                         if n == best: got[mo].append(i)
             return got
-        levels = [pick({mo: [c] for mo, c in cores.items()}), pick_any({mo: keys(mo) for mo in mos})]
+        l1, l2 = pick({mo: [c] for mo, c in cores.items()}), pick_any({mo: keys(mo) for mo in mos})
+        # 3rd step (Chris: "same model family is OK"): a general review of the family ("Tern GSD") may fill open spots,
+        # but never one that names a different model code ("GSD S10" on the GSD P10) or that matched another bike
+        taken = collections.defaultdict(set)
+        for lv in (l1, l2):
+            for mo, ids in lv.items():
+                for i in ids: taken[i].add(mo)
+        CODE = re.compile(r'\b[A-Za-z]{1,2}\d{1,4}[A-Za-z]{0,2}\b')
+        l3 = collections.defaultdict(list)
+        for mo in mos:
+            own = {c.lower() for c in CODE.findall(clean_model(mo))}
+            for f in fams[mo]:
+                if ' '.join(f) in full: continue
+                for i in vids:
+                    if taken[i] - {mo}: continue
+                    if not has(titles[i], phrase(f)): continue
+                    if {c.lower() for c in CODE.findall(ok[i]['t'])} - own: continue
+                    if i not in l3[mo]: l3[mo].append(i)
+        levels = [l1, l2, l3]
         for mo in mos:
             ids = []
             for lv in levels:
