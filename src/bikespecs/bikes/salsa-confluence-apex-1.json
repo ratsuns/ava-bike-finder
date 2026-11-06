@@ -1,0 +1,180 @@
+{
+ "bike": "Salsa|Confluence Apex 1",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {
+    "kind": "maker",
+    "value": 3199,
+    "url": "https://www.salsacycles.com/products/confluence-apex-1",
+    "quote": "Regular price | $3,199.00 USD | Sale price | $1,924.99 USD Sale",
+    "basis": "regular price; on sale for $1,924.99"
+   },
+   {
+    "kind": "review",
+    "value": 3199,
+    "url": "https://99spokes.com/bikes/salsa/2025/confluence-apex-1",
+    "quote": "Manufacturer Price | $3,199"
+   }
+  ],
+  "cls": [
+   {
+    "kind": "maker",
+    "value": 1,
+    "url": "https://www.salsacycles.com/products/confluence-apex-1",
+    "quote": "Ebike Classification | Class 1 | Max Assist Speed | 20 mph / 32 km/h",
+    "basis": "maker states Class 1; spec lists Throttle No"
+   },
+   {
+    "kind": "review",
+    "value": 1,
+    "url": "https://theradavist.com/salsa-cycles-ebike-confluence-gravel-bike",
+    "quote": "Salsa Cycles just announced its entrance into the world of eBikes with the first model in the brand’s “light electric” lineup being the Confluence gravel bike, a Class I flat or drop bar gravel bike with 250-watt hour powered by a Mahle x35+ system. Let’s check out this new lineup below…",
+    "basis": "launch article covering the whole Confluence line incl. Apex 1"
+   }
+  ],
+  "spd": [
+   {
+    "kind": "maker",
+    "value": 20,
+    "url": "https://www.salsacycles.com/products/confluence-apex-1",
+    "quote": "Max Assist Speed | 20 mph / 32 km/h"
+   },
+   {
+    "kind": "review",
+    "value": 20,
+    "url": "https://theradavist.com/salsa-cycles-ebike-confluence-gravel-bike",
+    "quote": "With an aluminum chassis, these bikes utilize the lightweight Mahle x35+ motor and feature a 250 watt hour batter for a top assisted speed of 20mph/32kph vis a vis a 40nm assist."
+   }
+  ],
+  "tq": [
+   {
+    "kind": "maker",
+    "value": 40,
+    "url": "https://www.salsacycles.com/products/confluence-apex-1",
+    "quote": "Motor Torque | 40Nm"
+   },
+   {
+    "kind": "review",
+    "value": 40,
+    "url": "https://theradavist.com/salsa-cycles-ebike-confluence-gravel-bike",
+    "quote": "With an aluminum chassis, these bikes utilize the lightweight Mahle x35+ motor and feature a 250 watt hour batter for a top assisted speed of 20mph/32kph vis a vis a 40nm assist."
+   },
+   {
+    "kind": "review",
+    "value": 40,
+    "url": "https://electricbikereport.com/salsa-cycles-introduces-new-e-bikes-morraine-tributary/",
+    "quote": "The Confluence features an aluminum frame and carbon fiber fork and uses a Mahle 250W, 40Nm hub motor. A 250Wh internal battery powers the hub, which Salsa estimates can offer riders up to 45 mi. of range per charge. The Confluence comes in four different builds—two with a flat bar and two with a drop bar—ranging from $2499 up to $3499.",
+    "basis": "2024 launch news article covering the whole X35+ Confluence line"
+   }
+  ],
+  "wh": [
+   {
+    "kind": "maker",
+    "value": 250,
+    "url": "https://www.salsacycles.com/products/confluence-apex-1",
+    "quote": "Battery Capacity Watt Hours | 250Wh"
+   },
+   {
+    "kind": "review",
+    "value": 250,
+    "url": "https://99spokes.com/bikes/salsa/2025/confluence-apex-1",
+    "quote": "Battery | 250Wh"
+   },
+   {
+    "kind": "review",
+    "value": 250,
+    "url": "https://theradavist.com/salsa-cycles-ebike-confluence-gravel-bike",
+    "quote": "With an aluminum chassis, these bikes utilize the lightweight Mahle x35+ motor and feature a 250 watt hour batter for a top assisted speed of 20mph/32kph vis a vis a 40nm assist."
+   }
+  ],
+  "range": [
+   {
+    "kind": "maker",
+    "value": "40",
+    "url": "https://www.salsacycles.com/products/confluence-apex-1",
+    "quote": "Range Estimate | 40 miles"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://99spokes.com/bikes/salsa/2025/confluence-apex-1",
+    "quote": ""
+   },
+   {
+    "kind": "review",
+    "value": "45",
+    "url": "https://electricbikereport.com/salsa-cycles-introduces-new-e-bikes-morraine-tributary/",
+    "quote": "The Confluence features an aluminum frame and carbon fiber fork and uses a Mahle 250W, 40Nm hub motor. A 250Wh internal battery powers the hub, which Salsa estimates can offer riders up to 45 mi. of range per charge. The Confluence comes in four different builds—two with a flat bar and two with a drop bar—ranging from $2499 up to $3499.",
+    "basis": "2024 launch news article covering the whole X35+ Confluence line; 'up to 45 mi.'"
+   }
+  ],
+  "wt": [
+   {
+    "kind": "maker",
+    "value": 33,
+    "url": "https://www.salsacycles.com/products/confluence-apex-1",
+    "quote": "Weight | Complete Bike | 33 lb (57cm frame)",
+    "basis": "57cm frame; complete bike"
+   },
+   {
+    "kind": "review",
+    "value": null,
+    "url": "https://99spokes.com/bikes/salsa/2025/confluence-apex-1",
+    "quote": ""
+   }
+  ],
+  "load": [
+   {
+    "kind": "maker",
+    "value": null,
+    "url": "https://www.salsacycles.com/products/confluence-apex-1",
+    "quote": ""
+   }
+  ],
+  "motor": [
+   {
+    "kind": "maker",
+    "value": "MAHLE X35+ hub-drive",
+    "url": "https://www.salsacycles.com/products/confluence-apex-1",
+    "quote": "MAHLE X35+ Class 1 hub-drive system",
+    "basis": "no rated watts published"
+   },
+   {
+    "kind": "review",
+    "value": "MAHLE X35+",
+    "url": "https://99spokes.com/bikes/salsa/2025/confluence-apex-1",
+    "quote": "Motor | MAHLE X35+"
+   },
+   {
+    "kind": "review",
+    "value": "250W Mahle hub",
+    "url": "https://electricbikereport.com/salsa-cycles-introduces-new-e-bikes-morraine-tributary/",
+    "quote": "The Confluence features an aluminum frame and carbon fiber fork and uses a Mahle 250W, 40Nm hub motor. A 250Wh internal battery powers the hub, which Salsa estimates can offer riders up to 45 mi. of range per charge. The Confluence comes in four different builds—two with a flat bar and two with a drop bar—ranging from $2499 up to $3499.",
+    "basis": "2024 launch news article covering the whole X35+ Confluence line"
+   }
+  ],
+  "height": [
+   {
+    "kind": "maker",
+    "value": "4'8\"-6'4\"",
+    "url": "https://www.salsacycles.com/products/confluence-apex-1",
+    "quote": "Recommended Rider Height 142.0 - 150.0 150.0 - 157.0 157.0 - 168.0 165.0 - 175.0 173.0 - 183.0 183.0 - 193.0",
+    "basis": "geometry table, 49-60cm sizes, cm (Imperial view: 55.91 - 75.98 in)"
+   }
+  ],
+  "fold": [
+   {
+    "kind": "maker",
+    "value": "No",
+    "url": "https://www.salsacycles.com/products/confluence-apex-1",
+    "quote": "Best Gravel Ebike – Salsa Confluence Apex 1 – Salsa Cycles",
+    "basis": "page title; drop-bar gravel frame, no folding"
+   }
+  ]
+ },
+ "status": {
+  "sources": []
+ },
+ "notes": "Maker page shows regular $3,199 with sale $1,924.99 and 'SOLD OUT ONLINE' (looks like clearance of the X35+ generation; not marked discontinued). The Radavist piece is the Feb 2024 launch article for the whole Confluence line (same X35+ system), not Apex-1-specific. 99 Spokes is a spec database. One WebSearch used. Electric Bike Report 2024 launch article (line-level) gives 250W motor and up to 45 mi range."
+}

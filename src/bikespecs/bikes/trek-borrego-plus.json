@@ -1,0 +1,49 @@
+{"bike": "Trek|Borrego+", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2499.99, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/borrego/f/F468/borrego%252b/77034/", "quote": "Starting at $2,499.99 ⟶ Learn more about Borrego+ bikes"},
+   {"kind": "review", "value": 2499.99, "url": "https://top5ebikes.com/review-trek-borrego/", "quote": "Price ⟶ $2,499.99"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/borrego/f/F468/borrego%252b/77034/", "quote": "E-bike Classification | Class 2 | Max assist speed | 20 mph"},
+   {"kind": "review", "value": 2, "url": "https://top5ebikes.com/review-trek-borrego/", "quote": "The standard Borrego+ is a Class 2 ebike with a throttle and pedal assistance up to 20 mph."}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/borrego/f/F468/borrego%252b/77034/", "quote": "Max assist speed | 20 mph"},
+   {"kind": "review", "value": 20, "url": "https://top5ebikes.com/review-trek-borrego/", "quote": "Top assisted speed ⟶ 20 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 90, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/borrego/f/F468/borrego%252b/77034/", "quote": "Torque 90Nm ⟶ Range 70 miles"},
+   {"kind": "review", "value": 90, "url": "https://top5ebikes.com/review-trek-borrego/", "quote": "Torque ⟶ 90Nm"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 720, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/borrego/f/F468/borrego%252b/77034/", "quote": "Battery 720Wh top-eject ⟶ See more"},
+   {"kind": "review", "value": 720, "url": "https://top5ebikes.com/review-trek-borrego/", "quote": "Battery ⟶ 720Wh, removable and lockable"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "70", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/borrego/f/F468/borrego%252b/77034/", "quote": "Range 70 miles ⟶ Battery 720Wh top-eject"},
+   {"kind": "review", "value": "70", "url": "https://top5ebikes.com/review-trek-borrego/", "quote": "Claimed range ⟶ Up to 70 miles on the current product listing"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 87, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/borrego/f/F468/borrego%252b/77034/", "quote": "Weight | 39.46 kg / 87 lbs"},
+   {"kind": "review", "value": 87, "url": "https://top5ebikes.com/review-trek-borrego/", "quote": "The Borrego+ weighs approximately 87 pounds with its battery installed. Removing the battery saves about eight pounds, but the bike is still too heavy for many standard bike racks and may be difficult for one person to lift. ⟶ What is the range of the Trek Borrego+?"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 440, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/borrego/f/F468/borrego%252b/77034/", "quote": "This bike has a maximum total weight limit (combined weight of bicycle, rider, and cargo) of 440 pounds (199 kg).", "basis": "total"},
+   {"kind": "review", "value": 440, "url": "https://top5ebikes.com/review-trek-borrego/", "quote": "Total weight limit ⟶ 440 pounds, including bike, rider, and cargo", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Hyena 750W hub drive", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/borrego/f/F468/borrego%252b/77034/", "quote": "E-bike Classification Class 2 ⟶ Motor Hyena hub drive, 750W"},
+   {"kind": "review", "value": "Hyena 750W rear hub", "url": "https://top5ebikes.com/review-trek-borrego/", "quote": "The Trek Borrego+ uses a Hyena rear-hub motor with up to 750W of output and 90Nm of torque. Those numbers matter on a bike this heavy, particularly when starting from a stop or carrying cargo."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'6\"", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/borrego/f/F468/borrego%252b/77034/", "quote": "5'1\" - 5'9\" | 73.66 - 83.82 cm | 29\" - 33\" | M-L | 167.64 - 198.12 cm | 5'6\" - 6'6\""},
+   {"kind": "review", "value": "5'1\"-6'6\"", "url": "https://top5ebikes.com/review-trek-borrego/", "quote": "Rider height range ⟶ Approximately 5 feet 1 inch to 6 feet 6 inches, depending on size"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/borrego/f/F468/borrego%252b/77034/", "quote": "Frame | Alloy Step thru"},
+   {"kind": "review", "value": "No", "url": "https://top5ebikes.com/review-trek-borrego/", "quote": "Its alloy step-through frame makes the bike easier to mount than its size might suggest."}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker specs are behind the Specs and Sizing tabs on Trek's page; weight and weight limit read from the spec table (dt/dd). Maker weight not labeled with/without battery; review says 87 lb with battery. Review notes Trek FAQ lists 65 miles max range vs 70 on product page. Electricbikereview, Mike's Bikes, electrek searches had no Borrego+ result; used one WebSearch to find the top5ebikes review."}

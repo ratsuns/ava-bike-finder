@@ -34,7 +34,7 @@
   ],
   "motor": [
    {"kind": "maker", "value": "500W rear hub", "url": "https://retrospec.com/products/chatham-rev-plus-electric-beach-cruiser-bike", "quote": "this comfort-first electric beach cruiser features a 500W rear hub motor"},
-   {"kind": "review", "value": "500W geared hub (770W peak)", "url": "https://electricbikereport.com/retrospec-chatham-rev-plus-2-review/", "quote": "Motor: 48V/500W geared, 770W Peak, 65 Nm Torque"}
+   {"kind": "review", "value": "500W geared (770W peak)", "url": "https://electricbikereport.com/retrospec-chatham-rev-plus-2-review/", "quote": "Motor: 48V/500W geared, 770W Peak, 65 Nm Torque"}
   ],
   "height": [
    {"kind": "maker", "value": "5'7\"-6'4\"", "url": "https://retrospec.com/products/chatham-rev-plus-electric-beach-cruiser-bike", "quote": "Frame: 18\" | 5'7\"-6'4\"", "basis": "step-over frame (size chart)"},

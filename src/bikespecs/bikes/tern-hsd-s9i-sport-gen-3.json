@@ -1,0 +1,40 @@
+{"bike": "Tern|HSD S9i Sport (Gen 3)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 7499, "url": "https://www.ternbicycles.com/us/bikes/473/hsd-s9i-sport", "quote": "$7,499"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://www.ternbicycles.com/us/bikes/473/hsd-s9i-sport", "quote": "Bosch Performance Sport motor delivers up to 90 Nm of torque and 600% pedal assist with Performance Upgrade 2.0, supporting a max speed of 28 mph (Class 3)", "basis": "28 mph pedal assist, no throttle"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.ternbicycles.com/us/bikes/473/hsd-s9i-sport", "quote": "Bosch Performance Sport (BDU34, 600% Assist, 90 Nm Torque, max speed 28 mph (US) ⟶ BATTERY:"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 90, "url": "https://www.ternbicycles.com/us/bikes/473/hsd-s9i-sport", "quote": "Bosch Performance Sport (BDU34, 600% Assist, 90 Nm Torque, max speed 28 mph (US) ⟶ BATTERY:"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 545, "url": "https://www.ternbicycles.com/us/bikes/473/hsd-s9i-sport", "quote": "RANGE: ⟶ 545 Wh: 56-103 km (35-64 mi)"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "35–64", "url": "https://www.ternbicycles.com/us/bikes/473/hsd-s9i-sport", "quote": "RANGE: ⟶ 545 Wh: 56-103 km (35-64 mi)"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 63.9, "url": "https://www.ternbicycles.com/us/bikes/473/hsd-s9i-sport", "quote": "WEIGHT: ⟶ 29 kg (63.9 lb)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 419, "url": "https://www.ternbicycles.com/us/bikes/473/hsd-s9i-sport", "quote": "Best-in-class hauling capacity, rated to a maximum gross vehicle weight of 419 lb (190 kg) with a rear rack load capacity of 176 lb (80 kg)", "basis": "total"},
+   {"kind": "review", "value": 419, "url": "https://electrek.co/2026/07/15/tern-redesigns-famous-hsd-cargo-e-bike-making-it-smarter-stronger-and-even-more-family-friendly/", "quote": "Maximum gross vehicle weight climbs to 419 lb (190 kg), while the Atlas H rear rack can now support an impressive 176 lb (80 kg), enough for an adult passenger, growing kids, or plenty of cargo.", "basis": "total; Gen 3 HSD lineup launch article, not model-specific"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Performance Sport", "url": "https://www.ternbicycles.com/us/bikes/473/hsd-s9i-sport", "quote": "Bosch Performance Sport (BDU34, 600% Assist, 90 Nm Torque, max speed 28 mph (US) ⟶ BATTERY:"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'0\"-6'9\"", "url": "https://www.ternbicycles.com/us/bikes/473/hsd-s9i-sport", "quote": "Easy-sharing cockpit adjusts without tools to fit riders 5'0\" - 6'9\" (153 - 205 cm) tall and weighing up to 287 lb (130 kg)"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.ternbicycles.com/us/bikes/473/hsd-s9i-sport", "quote": "Tern HSD, 6061-AL, patented design, EN17860 certified: 190 kg ⟶ FORK:", "basis": "rigid frame; the listed 'FOLDING SIZE' is with the stem folded"},
+   {"kind": "review", "value": "No", "url": "https://electrek.co/2026/07/15/tern-redesigns-famous-hsd-cargo-e-bike-making-it-smarter-stronger-and-even-more-family-friendly/", "quote": "The bike can be parked vertically to minimize storage space, rolled upright through hallways and elevators, or partially folded to fit two bikes into the back of a small SUV.", "basis": "'partially folded' = stem fold; Gen 3 HSD lineup article"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Only the maker page is model-specific. No independent model page found: EBR/EBReport have no S9i Sport Gen 3 review, n1bikes and mikesbikes don't carry Tern, boulder-nordic failed to load, one WebSearch returned only Tern pages. Electrek's Gen 3 HSD launch article is lineup-wide, used only for load and fold. Maker load: 419 lb max gross vehicle weight (total); rear rack 176 lb; max rider 287 lb. Maker lists 'FOLDING SIZE' (stem folds) but the frame is not a folding frame."}

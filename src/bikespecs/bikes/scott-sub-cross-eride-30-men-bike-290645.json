@@ -1,0 +1,40 @@
+{"bike": "Scott|Sub Cross eRIDE 30 Men Bike (290645)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "review", "value": 2699, "url": "https://99spokes.com/bikes/scott/2025/sub-cross-eride-30-men", "quote": "Manufacturer Price ⟶ $2,699"}
+  ],
+  "cls": [
+   {"kind": "review", "value": 1, "url": "https://99spokes.com/bikes/scott/2025/sub-cross-eride-30-men", "quote": "Motor ⟶ Bosch Active BES2; EU: 25kmh / US: 20mph", "basis": "20 mph pedal assist (Bosch mid-drive), no throttle listed = Class 1"}
+  ],
+  "spd": [
+   {"kind": "review", "value": 20, "url": "https://99spokes.com/bikes/scott/2025/sub-cross-eride-30-men", "quote": "Motor ⟶ Bosch Active BES2; EU: 25kmh / US: 20mph"}
+  ],
+  "tq": [
+   {"kind": "review", "value": 40, "url": "https://99spokes.com/bikes/scott/2025/sub-cross-eride-30-men", "quote": "MotorBosch 600W 40Nm mid-drive ⟶ Battery400Wh"}
+  ],
+  "wh": [
+   {"kind": "review", "value": 400, "url": "https://99spokes.com/bikes/scott/2025/sub-cross-eride-30-men", "quote": "Battery ⟶ 400Wh PowerTube Battery"},
+   {"kind": "retailer", "value": 400, "url": "https://www.cctbikerental.com/rentals/scott-sub-cross-eride-30-men/", "quote": "Frame: Sub eRIDE 6061 Alloy Motor: Bosch Active BES2 Battery: 400Wh PowerTube Rear Derailleur: Shimano Alivio RD M3100SGS, 9-Speed Crankset: Miranda 172.5mm Cassette: Shimano CS HG400, 11-36 Seat: Syncros Capilano"}
+  ],
+  "range": [
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/scott/2025/sub-cross-eride-30-men", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "review", "value": 52.2, "url": "https://99spokes.com/bikes/scott/2025/sub-cross-eride-30-men", "quote": "Weight52.2 lbs ⟶ FrameAluminum"}
+  ],
+  "load": [
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/scott/2025/sub-cross-eride-30-men", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "review", "value": "Bosch Active BES2", "url": "https://99spokes.com/bikes/scott/2025/sub-cross-eride-30-men", "quote": "Motor ⟶ Bosch Active BES2; EU: 25kmh / US: 20mph", "basis": "99 Spokes summary also says 'Bosch 600W 40Nm mid-drive'"},
+   {"kind": "retailer", "value": "Bosch Active BES2", "url": "https://www.cctbikerental.com/rentals/scott-sub-cross-eride-30-men/", "quote": "Frame: Sub eRIDE 6061 Alloy Motor: Bosch Active BES2 Battery: 400Wh PowerTube Rear Derailleur: Shimano Alivio RD M3100SGS, 9-Speed Crankset: Miranda 172.5mm Cassette: Shimano CS HG400, 11-36 Seat: Syncros Capilano"}
+  ],
+  "height": [
+   {"kind": "review", "value": "5'2\"-6'7\"", "url": "https://99spokes.com/bikes/scott/2025/sub-cross-eride-30-men", "quote": "5'2\" – 5'8\" ⟶ MD", "basis": "99 Spokes' own estimate: SM 5'2\"-5'8\" through XL 6'1\"-6'7\" ('6'1\" – 6'7\" ⟶ 🐐 Estimated')"}
+  ],
+  "fold": [
+   {"kind": "review", "value": "No", "url": "https://99spokes.com/bikes/scott/2025/sub-cross-eride-30-men", "quote": "A 29″ aluminum frame hybrid e-bike with mid-range components and shimano hydraulic disc brakes. ⟶ Manufacturer Price"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "NO MAKER SOURCE: the given Scott US link returns 404 'Product not found', as do the Scott CA, NZ, DK, IN pages and the US page with ?article=290645008. Scott's site doesn't say the bike is discontinued, it just no longer has the page. Specs are from 99 Spokes (2025 model year listing; can't confirm it is article 290645) and a European rental shop (CCT Bikerentals) — the rental page has no price. 99 Spokes heights are labeled 'Estimated'. Used 1 WebSearch."}

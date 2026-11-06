@@ -1,0 +1,49 @@
+{"bike": "Pedego|Latch 2", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1695, "url": "https://pedegoelectricbikes.com/products/latch-2", "quote": "$1,695.00 ⟶ Top Speed", "basis": "no crossed-out price shown"},
+   {"kind": "review", "value": 1695, "url": "https://electricbikereview.com/pedego/latch-2-review/", "quote": "Price ⟶ MSRP: $1,695.00"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://pedegoelectricbikes.com/products/latch-2", "quote": "Top Speed | CLASS 1 & CLASS 2; | CLASS 3 READY", "basis": "maker says Class 1 & 2, Class 3 ready (dealer upgrade); spec list also says 'Class 1 - 20mph Pedal Assist' but the bike has a twist throttle ('THROTTLE ⟶ Pedego Twist Throttle'), so throttle + 20 mph out of the box = Class 2"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereview.com/pedego/latch-2-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 1 / Class 2 as shipped; dealer-enabled Class 3", "basis": "ships with throttle at 20 mph"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://pedegoelectricbikes.com/products/latch-2", "quote": "SPEED ⟶ Class 1 - 20mph Pedal Assist", "basis": "adjustable to 28 mph (Class 3) by a dealer"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereview.com/pedego/latch-2-review/", "quote": "TOP SPEED: ⟶ Up to 28 mph in dealer-enabled Class 3 mph", "basis": "20 mph as shipped (Class 1 / Class 2); adjustable to 28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 90, "url": "https://pedegoelectricbikes.com/products/latch-2", "quote": "MOTOR ⟶ 48V, 750W, 90Nm Torque"},
+   {"kind": "review", "value": 90, "url": "https://electricbikereview.com/pedego/latch-2-review/", "quote": "MOTOR TORQUE: ⟶ 90 Nm Newton meters"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 835, "url": "https://pedegoelectricbikes.com/products/latch-2", "quote": "48V17.4Ah 835Wh, UL2271 Certified Pack, UL2580 Certified Cells, LG 21700, Removable Battery ⟶ CHARGER"},
+   {"kind": "review", "value": 835, "url": "https://electricbikereview.com/pedego/latch-2-review/", "quote": "BATTERY WATT HOURS: ⟶ 835 Wh wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "84", "url": "https://pedegoelectricbikes.com/products/latch-2", "quote": "Range Up to ⟶ 84 Miles", "basis": "'up to'"},
+   {"kind": "review", "value": "38.8", "url": "https://electricbikereview.com/pedego/latch-2-review/", "quote": "ESTIMATED MAX RANGE: ⟶ 38.8 miles (tested, max assist) miles", "basis": "tested at max assist; review lists 84 miles as the manufacturer estimate; min-assist test not yet complete"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 75, "url": "https://pedegoelectricbikes.com/products/latch-2", "quote": "66 lb / 30.2 kg w/o Battery | 75 lb / 34 kg w/ Battery ⟶ BATTERY"},
+   {"kind": "review", "value": 74, "url": "https://electricbikereview.com/pedego/latch-2-review/", "quote": "TOTAL WEIGHT: ⟶ 74 lbs (measured, w/ battery) lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 400, "url": "https://pedegoelectricbikes.com/products/latch-2", "quote": "PAYLOAD UP TO ⟶ 400 LB"},
+   {"kind": "review", "value": 400, "url": "https://electricbikereview.com/pedego/latch-2-review/", "quote": "Load capacity: 400 lb. ⟶ Reader Interactions"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub", "url": "https://pedegoelectricbikes.com/products/latch-2", "quote": "MOTOR ⟶ 48V, 750W, 90Nm Torque", "basis": "maker page doesn't say hub location; EBR says rear hub"},
+   {"kind": "review", "value": "750W rear hub (1,200W peak)", "url": "https://electricbikereview.com/pedego/latch-2-review/", "quote": "The Latch 2 has a 750W rear hub motor with 90 Nm of torque that peaks at 1,200 watts. That’s right in line with what I’d want to see on a folding mid-fat bike like this."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'4\"-6'1\"", "url": "https://pedegoelectricbikes.com/products/latch-2", "quote": "RIDER HEIGHT ⟶ 5'4\" - 6'1\""},
+   {"kind": "review", "value": "5'1\"-6'1\"", "url": "https://electricbikereview.com/pedego/latch-2-review/", "quote": "Rider height range 5'1\"–6'1\" ⟶ FRAME TYPES:"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "Yes", "url": "https://pedegoelectricbikes.com/products/latch-2", "quote": "BEST IN CLASS FEATURES ⟶ Step Thru Folding Frame"},
+   {"kind": "review", "value": "Yes", "url": "https://electricbikereview.com/pedego/latch-2-review/", "quote": "Folding, step-thru ⟶ FRAME COLORS:"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page contradicts itself on class: header says 'CLASS 1 & CLASS 2; CLASS 3 READY' while the spec list says 'Class 1 - 20mph Pedal Assist'; it has a twist throttle, so recorded as Class 2 (EBR: 'Class 1 / Class 2 as shipped; dealer-enabled Class 3'). Maker rider height 5'4\"-6'1\" vs EBR 5'1\"-6'1\". EBR review is model year 2026, same specs. A second 'Latch 2' card on the Latch page shows $2,195 / 90 miles (likely another variant), not used."}

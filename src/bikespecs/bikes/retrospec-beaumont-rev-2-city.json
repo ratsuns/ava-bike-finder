@@ -1,0 +1,47 @@
+{"bike": "Retrospec|Beaumont Rev 2 City", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 999.99, "url": "https://retrospec.com/products/beaumont-rev-electric-city-bike-step-through", "quote": "$999.99 ⟶ Regular price", "basis": "page is now the Beaumont Rev 3; no crossed-out price (compare_at_price null)"},
+   {"kind": "review", "value": 999, "url": "https://electricbikereview.com/retrospec/beaumont-rev-2-review/", "quote": "PRICE: ⟶ $999"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://retrospec.com/products/beaumont-rev-electric-city-bike-step-through", "quote": "20 mph Top Assisted Speed - Class 2 EBike ⟶ Up to 42-Mile Range"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereview.com/retrospec/beaumont-rev-2-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 2"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://retrospec.com/products/beaumont-rev-electric-city-bike-step-through", "quote": "20 mph Top Assisted Speed - Class 2 EBike ⟶ Up to 42-Mile Range"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereview.com/retrospec/beaumont-rev-2-review/", "quote": "20 MPH mph ⟶ Bicycle Details", "basis": "TOP SPEED field"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://retrospec.com/products/beaumont-rev-electric-city-bike-step-through", "quote": "", "basis": "torque not published"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/retrospec/beaumont-rev-2-review/", "quote": "", "basis": "torque not stated"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 360, "url": "https://retrospec.com/products/beaumont-rev-electric-city-bike-step-through", "quote": "350W Planetary Geared Hub Motor ⟶ 36V/360Wh Li-ion Battery"},
+   {"kind": "review", "value": 360, "url": "https://electricbikereview.com/retrospec/beaumont-rev-2-review/", "quote": "BATTERY WATT HOURS: ⟶ 360Wh wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "42", "url": "https://retrospec.com/products/beaumont-rev-electric-city-bike-step-through", "quote": "36V/350W range | Up to 42 Miles"},
+   {"kind": "review", "value": "16–41", "url": "https://electricbikereview.com/retrospec/beaumont-rev-2-review/", "quote": "Real World Range Test Results: ⟶ MIN PAS: 41 miles | MIN PAS: 41 miles ⟶ MAX PAS: 16 miles", "basis": "tested; EBR says Retrospec advertised up to 38 miles for the Rev 2"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 57.5, "url": "https://retrospec.com/products/beaumont-rev-electric-city-bike-step-through", "quote": "Item Weight | 57.5 lbs (battery included)"},
+   {"kind": "review", "value": 57.5, "url": "https://electricbikereview.com/retrospec/beaumont-rev-2-review/", "quote": "TOTAL WEIGHT: ⟶ 57.5 lbs lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 350, "url": "https://retrospec.com/products/beaumont-rev-electric-city-bike-step-through", "quote": "Recommended Weight Limit | 350lbs", "basis": "'Recommended Weight Limit'; not stated whether it includes the bike"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "350W rear hub", "url": "https://retrospec.com/products/beaumont-rev-electric-city-bike-step-through", "quote": "36V/350W Motor | 350W rear hub"},
+   {"kind": "review", "value": "350W rear hub", "url": "https://electricbikereview.com/retrospec/beaumont-rev-2-review/", "quote": "MOTOR NOMINAL OUTPUT: ⟶ 350W watts"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'0\"-5'10\"", "url": "https://retrospec.com/products/beaumont-rev-electric-city-bike-step-through", "quote": "42cm5' - 5'10\"19.35\"", "basis": "sizing table: size 42cm, height 5' - 5'10\", standover 19.35\""},
+   {"kind": "review", "value": "5'0\"-5'10\"", "url": "https://electricbikereview.com/retrospec/beaumont-rev-2-review/", "quote": "The Beaumont Rev 2 comes in one size, fitting riders between 5’0″ and 5’10”. That’s a pretty hard limit – if you’re outside this range, you’ll want to look elsewhere."}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://retrospec.com/products/beaumont-rev-electric-city-bike-step-through", "quote": "Material | Beaumont steel with seat tube mounted external battery", "basis": "standard step-through city frame; no fold mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "The given src (beaumont-rev-2-electric-city-bike-step-through) now redirects to 'Beaumont Rev 3 City Electric Bike - Step Through' (handle beaumont-rev-electric-city-bike-step-through). The Rev 3 page's specs (350W, 36V/360Wh, 57.5 lb, 5'-5'10\", Class 2, $999.99) match EBR's Rev 2 review, except range: maker now says up to 42 mi; EBR says Retrospec advertised up to 38 mi for the Rev 2. The Rev 2 itself appears to be replaced by the Rev 3. Maker spec-table quotes are label | value lines joined with ' | '."}

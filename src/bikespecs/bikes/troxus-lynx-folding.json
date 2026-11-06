@@ -1,0 +1,48 @@
+{"bike": "Troxus|Lynx Folding", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1699, "url": "https://www.troxusmobility.com/products/lynx-folding-e-bike", "quote": "Regular price ⟶ $1,699", "basis": "crossed-out regular price; sale price $1,199"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.troxusmobility.com/products/lynx-folding-e-bike", "quote": "Class 2 eBike ⟶ As Sold"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/troxus-lynx-folding-review/", "quote": "Most similar bikes we’ve tested could switch between Class 2 and 3 modes, but the Lynx Folding is limited to 20 mph. ⟶ ELECTRICAL SPECS & FEATURES"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.troxusmobility.com/products/lynx-folding-e-bike", "quote": "Max Speed\tUp To 20 MPH ⟶ Range\t10 Ah: Up To 45 Miles Per Charge"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/troxus-lynx-folding-review/", "quote": "Most similar bikes we’ve tested could switch between Class 2 and 3 modes, but the Lynx Folding is limited to 20 mph. ⟶ ELECTRICAL SPECS & FEATURES"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 65, "url": "https://www.troxusmobility.com/products/lynx-folding-e-bike", "quote": "Motor\tJiabo® 48V/500W Hub-Drive Motor, 65Nm Max. Torque"},
+   {"kind": "review", "value": 65, "url": "https://electricbikereport.com/troxus-lynx-folding-review/", "quote": "Motor: Jiabo® 48V/500W Hub-Drive Motor, 65Nm Max. Torque ⟶ Headlight:Integrated"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 480, "url": "https://www.troxusmobility.com/products/lynx-folding-e-bike", "quote": "Battery\tUL-2271 Certified / Internal / Removable / Lithium Ion, 48V / 10Ah 480Wh w/ Samsung Cells, + Option for 15Ah 720Wh model ⟶ Display\tColor Display, w/ Multi-Function Remote", "basis": "standard 10Ah battery; 720Wh optional"},
+   {"kind": "review", "value": 480, "url": "https://electricbikereport.com/troxus-lynx-folding-review/", "quote": "A removable UL 2271-certified 48V, 480 Wh battery resides in the down tube. ⟶ Troxus Lynx Folding Review: Range Test"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "45", "url": "https://www.troxusmobility.com/products/lynx-folding-e-bike", "quote": "Range\t10 Ah: Up To 45 Miles Per Charge ⟶ Weight Limit\tMaximum Load: 300 lbs", "basis": "up to, standard 10Ah battery"},
+   {"kind": "review", "value": "45", "url": "https://electricbikereport.com/troxus-lynx-folding-review/", "quote": "Claimed Range: Up To 45 Miles Per Charge ⟶ Throttle:Thumb Throttle on Handlebar", "basis": "claimed, up to"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 62, "url": "https://www.troxusmobility.com/products/lynx-folding-e-bike", "quote": "Weight Limit\tMaximum Load: 300 lbs ⟶ Net Weight\t62 lbs"},
+   {"kind": "review", "value": 59, "url": "https://electricbikereport.com/troxus-lynx-folding-review/", "quote": "Claimed weight: 62 lbs ⟶ Tested Weight: 59 lbs", "basis": "tested weight (claimed 62)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 300, "url": "https://www.troxusmobility.com/products/lynx-folding-e-bike", "quote": "Range\t10 Ah: Up To 45 Miles Per Charge ⟶ Weight Limit\tMaximum Load: 300 lbs"},
+   {"kind": "review", "value": 300, "url": "https://electricbikereport.com/troxus-lynx-folding-review/", "quote": "Rider height range: One Size Fits Most ⟶ Total payload capacity: 300 lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W rear hub", "url": "https://www.troxusmobility.com/products/lynx-folding-e-bike", "quote": "Rear Hub\tJiabo® 48V 500W/ 20 MPH. 65Nm ⟶ Rims\tAlloy Double Wall, 20\"x3.0\""},
+   {"kind": "review", "value": "500W hub", "url": "https://electricbikereport.com/troxus-lynx-folding-review/", "quote": "Motor: Jiabo® 48V/500W Hub-Drive Motor, 65Nm Max. Torque ⟶ Headlight:Integrated"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://www.troxusmobility.com/products/lynx-folding-e-bike", "quote": "Frame Size\tUniversal ⟶ Wheel Size\t20\"x3.0\""},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/troxus-lynx-folding-review/", "quote": "Tested Weight: 59 lbs ⟶ Rider height range: One Size Fits Most"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "Yes", "url": "https://www.troxusmobility.com/products/lynx-folding-e-bike", "quote": "Frame\t6061-T6 Aluminum Folding Step-Thru Frame ⟶ Fork\tFront Suspension Fork, 50mm Travel"},
+   {"kind": "review", "value": "Yes", "url": "https://electricbikereport.com/troxus-lynx-folding-review/", "quote": "Frame: 6061-T6 Aluminum Folding Step-Thru Frame ⟶ Drivetrain:Shimano® 8-Speed, 12-32T cassette, Prowheel 46T chainring"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page shows sale $1,199 with crossed-out regular $1,699. Optional 15Ah/720Wh battery exists; standard 480Wh recorded."}

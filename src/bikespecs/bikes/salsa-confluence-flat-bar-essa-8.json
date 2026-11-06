@@ -1,0 +1,47 @@
+{"bike": "Salsa|Confluence Flat Bar ESSA 8", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2999, "url": "https://www.salsacycles.com/products/confluence-flat-bar-essa-8", "quote": "Regular price ⟶ $2,999.00 USD"},
+   {"kind": "retailer", "value": 2998.99, "url": "https://mikesbikes.com/products/salsa-confluence-flat-bar-essa-8-2026", "quote": "Regular price ⟶ $2,998.99"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://www.salsacycles.com/products/confluence-flat-bar-essa-8", "quote": "Ebike Classification | Class 1 | Max Assist Speed | 20 mph / 32 km/h", "basis": "maker states Class 1; spec also lists Throttle No"},
+   {"kind": "retailer", "value": 1, "url": "https://mikesbikes.com/products/salsa-confluence-flat-bar-essa-8-2026", "quote": "Max Assisted Speed\t20mph (Class 1) ⟶ Charger"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.salsacycles.com/products/confluence-flat-bar-essa-8", "quote": "Max Assist Speed | 20 mph / 32 km/h"},
+   {"kind": "retailer", "value": 20, "url": "https://mikesbikes.com/products/salsa-confluence-flat-bar-essa-8-2026", "quote": "Max Assisted Speed\t20mph (Class 1) ⟶ Charger"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 45, "url": "https://www.salsacycles.com/products/confluence-flat-bar-essa-8", "quote": "Motor Torque | 45Nm"},
+   {"kind": "retailer", "value": 45, "url": "https://mikesbikes.com/products/salsa-confluence-flat-bar-essa-8-2026", "quote": "Motor ⟶ MAHLE X30, 45Nm torque"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 237, "url": "https://www.salsacycles.com/products/confluence-flat-bar-essa-8", "quote": "Battery Capacity Watt Hours | 237Wh", "basis": "same page's feature list says '250Wh internal battery'"},
+   {"kind": "retailer", "value": 237, "url": "https://mikesbikes.com/products/salsa-confluence-flat-bar-essa-8-2026", "quote": "Battery ⟶ MAHLE iX2, 237Wh (250Wh nominal), 36V, Internal"}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://www.salsacycles.com/products/confluence-flat-bar-essa-8", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/salsa-confluence-flat-bar-essa-8-2026", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://www.salsacycles.com/products/confluence-flat-bar-essa-8", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://mikesbikes.com/products/salsa-confluence-flat-bar-essa-8-2026", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.salsacycles.com/products/confluence-flat-bar-essa-8", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "250W MAHLE X30 hub-drive", "url": "https://www.salsacycles.com/products/confluence-flat-bar-essa-8", "quote": "Drive Unit | MAHLE X30 | Ebike Classification | Class 1 | Max Assist Speed | 20 mph / 32 km/h | Motor Torque | 45Nm | Max Motor Assist | 250W", "basis": "page's feature list: 'MAHLE X30 class 1 hub-drive system'"},
+   {"kind": "retailer", "value": "MAHLE X30 hub-drive", "url": "https://mikesbikes.com/products/salsa-confluence-flat-bar-essa-8-2026", "quote": "Mahle X30 Class 1 (20mph/32kph assist) hub-drive system ⟶ 45Nm max torque"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'8\"-6'4\"", "url": "https://www.salsacycles.com/products/confluence-flat-bar-essa-8", "quote": "Recommended Rider Height 142.0 - 152.0 150.0 - 163.0 160.0 - 173.0 170.0 - 183.0 180.0 - 193.0", "basis": "geometry table, XS-XL, cm (Imperial view: 55.91 - 75.98 in)"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.salsacycles.com/products/confluence-flat-bar-essa-8", "quote": "Best Gravel Ebike – Salsa Confluence Flat Bar ESSA 8 – Salsa Cycles", "basis": "page title; rigid aluminum gravel frame, no folding mentioned"},
+   {"kind": "retailer", "value": "No", "url": "https://mikesbikes.com/products/salsa-confluence-flat-bar-essa-8-2026", "quote": "Confluence Flat Bar ESSA 8 is our light gravel ebike that makes it easier to squeeze more adventures into each day.", "basis": "gravel bike; no folding frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page contradicts itself on battery: spec table 237Wh, feature list '250Wh internal battery' (Mike's: '237Wh (250Wh nominal)'). No range or weight on maker or Mike's page. Maker page shows 'SOLD OUT ONLINE' (not marked discontinued). 2 sources (maker + Mike's Bikes)."}

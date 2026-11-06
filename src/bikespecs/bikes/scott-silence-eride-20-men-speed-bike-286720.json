@@ -1,0 +1,46 @@
+{"bike": "Scott|Silence eRIDE 20 Men Speed Bike (286720)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "review", "value": 5599, "url": "https://99spokes.com/bikes/scott/2023/silence-eride-20-men-speed", "quote": "Manufacturer Price ⟶ $5,599"},
+   {"kind": "review", "value": null, "url": "https://www.bike-magazin.de/en/brands/scott/model/silence-eride-20-men-speed-655e4c0d26f547878a57acca/", "quote": "Model year: 2022 ⟶ Price: 5.499,00 €", "basis": "EUR price only, not USD"}
+  ],
+  "cls": [
+   {"kind": "review", "value": 3, "url": "https://99spokes.com/bikes/scott/2023/silence-eride-20-men-speed", "quote": "Motor ⟶ Bosch Performance Speed; EU: 45kmh / 28mph", "basis": "28 mph pedal assist (speed pedelec) = Class 3"},
+   {"kind": "review", "value": 3, "url": "https://www.bike-magazin.de/en/brands/scott/model/silence-eride-20-men-speed-655e4c0d26f547878a57acca/", "quote": "Motor manufacturer / model\tBosch Performance Speed, EU: 45 km/h / 28 mph ⟶ Display\tPurion Display", "basis": "28 mph pedal assist = Class 3"}
+  ],
+  "spd": [
+   {"kind": "review", "value": 28, "url": "https://99spokes.com/bikes/scott/2023/silence-eride-20-men-speed", "quote": "Motor ⟶ Bosch Performance Speed; EU: 45kmh / 28mph"},
+   {"kind": "review", "value": 28, "url": "https://www.bike-magazin.de/en/brands/scott/model/silence-eride-20-men-speed-655e4c0d26f547878a57acca/", "quote": "Motor manufacturer / model\tBosch Performance Speed, EU: 45 km/h / 28 mph ⟶ Display\tPurion Display"}
+  ],
+  "tq": [
+   {"kind": "review", "value": 63, "url": "https://99spokes.com/bikes/scott/2023/silence-eride-20-men-speed", "quote": "MotorBosch 600W 63Nm mid-drive ⟶ Battery625Wh"},
+   {"kind": "review", "value": null, "url": "https://www.bike-magazin.de/en/brands/scott/model/silence-eride-20-men-speed-655e4c0d26f547878a57acca/", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "review", "value": 625, "url": "https://99spokes.com/bikes/scott/2023/silence-eride-20-men-speed", "quote": "Battery ⟶ PowerTube 625Wh"},
+   {"kind": "review", "value": 625, "url": "https://www.bike-magazin.de/en/brands/scott/model/silence-eride-20-men-speed-655e4c0d26f547878a57acca/", "quote": "Battery capacity (Wh)\t625 ⟶ Charger\t4A Charger"}
+  ],
+  "range": [
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/scott/2023/silence-eride-20-men-speed", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://www.bike-magazin.de/en/brands/scott/model/silence-eride-20-men-speed-655e4c0d26f547878a57acca/", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "review", "value": 62.4, "url": "https://99spokes.com/bikes/scott/2023/silence-eride-20-men-speed", "quote": "Weight62.4 lbs ⟶ FrameAluminum"},
+   {"kind": "review", "value": 61.7, "url": "https://www.bike-magazin.de/en/brands/scott/model/silence-eride-20-men-speed-655e4c0d26f547878a57acca/", "quote": "Weight: 28 kg ⟶ Permissible total weight: 130 kg", "basis": "28 kg converted to lb"}
+  ],
+  "load": [
+   {"kind": "review", "value": 287, "url": "https://www.bike-magazin.de/en/brands/scott/model/silence-eride-20-men-speed-655e4c0d26f547878a57acca/", "quote": "Weight: 28 kg ⟶ Permissible total weight: 130 kg", "basis": "total (130 kg converted to lb); not from the maker"}
+  ],
+  "motor": [
+   {"kind": "review", "value": "Bosch Performance Speed", "url": "https://99spokes.com/bikes/scott/2023/silence-eride-20-men-speed", "quote": "Motor ⟶ Bosch Performance Speed; EU: 45kmh / 28mph", "basis": "99 Spokes summary also says 'Bosch 600W 63Nm mid-drive'"},
+   {"kind": "review", "value": "Bosch Performance Speed", "url": "https://www.bike-magazin.de/en/brands/scott/model/silence-eride-20-men-speed-655e4c0d26f547878a57acca/", "quote": "Motor manufacturer / model\tBosch Performance Speed, EU: 45 km/h / 28 mph ⟶ Display\tPurion Display"}
+  ],
+  "height": [
+   {"kind": "review", "value": "5'2\"-6'7\"", "url": "https://99spokes.com/bikes/scott/2023/silence-eride-20-men-speed", "quote": "Sizing | SM | 5'2\" – 5'8\" | MD | 5'6\" – 5'11\" | LG | 5'10\" – 6'3\" | XL | 6'1\" – 6'7\" | 🐐 Estimated", "basis": "99 Spokes' own estimate"}
+  ],
+  "fold": [
+   {"kind": "review", "value": "No", "url": "https://99spokes.com/bikes/scott/2023/silence-eride-20-men-speed", "quote": "A 700c aluminum frame commuter e-bike with upper mid-range components and tektro dorado hydraulic disc brakes. ⟶ Compare the full range"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "NO MAKER SOURCE: the given Scott US link returns 404 'Product not found' (also CA and IN pages); Scott doesn't say discontinued, the page is just gone. A dealer URL containing 286720 (revolutionbikeshop) is also 404; Incycle's page is SKU 280772 (an older article) so not used. Sources are 99 Spokes (2023 listing) and BIKE magazine's model database (2022 model, EU spec, EUR price) - can't confirm either is article 286720. 99 Spokes says 63Nm torque; no other source gives torque. Load/weight from BIKE are EU figures in kg. Used 1 WebSearch."}

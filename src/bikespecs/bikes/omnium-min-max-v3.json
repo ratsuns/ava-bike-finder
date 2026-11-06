@@ -1,0 +1,46 @@
+{"bike": "Omnium|Min-Max V3", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": null, "url": "https://omniumcargo.com/shop/product/e-mini-max-v3/", "quote": "5.900,00 € ⟶ Previous slide", "basis": "maker sells in EUR only (EUR 5,900); no USD price"},
+   {"kind": "retailer", "value": null, "url": "https://shop.roulezjeunesse.com/products/omnium-e-mini-max-v3", "quote": "E-Mini-Max V3 - €5.900 ⟶ Voir la gamme complète", "basis": "EUR, French retailer"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://omniumcargo.com/shop/product/e-mini-max-v3/", "quote": "", "basis": "no class or US speed stated; European shop"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": null, "url": "https://omniumcargo.com/shop/product/e-mini-max-v3/", "quote": "", "basis": "no assist speed stated"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://omniumcargo.com/shop/product/e-mini-max-v3/", "quote": "Motor | Shimano Steps EP801 CRG", "basis": "motor named, no Nm figure on maker page"},
+   {"kind": "retailer", "value": 85, "url": "https://shop.roulezjeunesse.com/products/omnium-e-mini-max-v3", "quote": "Puissance : 250 W ⟶ Couple : 85 Nm"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 504, "url": "https://omniumcargo.com/shop/product/e-mini-max-v3/", "quote": "Battery | Shimano STEPS Battery(504WH) BT-EN605", "basis": "spec table cells (label | value)"},
+   {"kind": "retailer", "value": 504, "url": "https://shop.roulezjeunesse.com/products/omnium-e-mini-max-v3", "quote": "Capacité : 504 Wh ⟶ Display"}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://omniumcargo.com/shop/product/e-mini-max-v3/", "quote": "", "basis": "no range on maker page"},
+   {"kind": "retailer", "value": "62", "url": "https://shop.roulezjeunesse.com/products/omnium-e-mini-max-v3", "quote": "Avec sa batterie de 504 Wh, ce vélo électrique offre une autonomie allant jusqu'à 100 km, idéale pour vos trajets quotidiens en ville. ⟶ Conduite intuitive", "basis": "up to 100 km = 62 miles"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 61.7, "url": "https://omniumcargo.com/shop/product/e-mini-max-v3/", "quote": "Complete Bike Weight (including Webbing) | 28kg +/-", "basis": "28 kg 'complete bike'; page doesn't say explicitly whether battery is included"},
+   {"kind": "retailer", "value": 61.7, "url": "https://shop.roulezjeunesse.com/products/omnium-e-mini-max-v3", "quote": "Poids à vide : 28.0 kg ⟶ Charge max totale : 150.0 kg", "basis": "28 kg"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 331, "url": "https://omniumcargo.com/shop/product/e-mini-max-v3/", "quote": "Recommended maximum loading weight including rider | 150kg", "basis": "150 kg rider + cargo (front rack max 50 kg)"},
+   {"kind": "retailer", "value": 331, "url": "https://shop.roulezjeunesse.com/products/omnium-e-mini-max-v3", "quote": "Poids à vide : 28.0 kg ⟶ Charge max totale : 150.0 kg", "basis": "150 kg"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Shimano Steps EP801 CRG", "url": "https://omniumcargo.com/shop/product/e-mini-max-v3/", "quote": "Motor | Shimano Steps EP801 CRG"},
+   {"kind": "retailer", "value": "250W Shimano EP801 mid-drive", "url": "https://shop.roulezjeunesse.com/products/omnium-e-mini-max-v3", "quote": "Puissance : 250 W ⟶ Couple : 85 Nm", "basis": "EU-rated 250 W"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://omniumcargo.com/shop/product/e-mini-max-v3/", "quote": "5 Sizes | XS, S, M, L, XL", "basis": "sizes listed but no rider heights"},
+   {"kind": "retailer", "value": "5'3\"-6'9\"", "url": "https://shop.roulezjeunesse.com/products/omnium-e-mini-max-v3", "quote": "Taille cycliste minimum : 160 cm ⟶ Taille cycliste maximum : 205 cm", "basis": "160-205 cm"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://omniumcargo.com/shop/product/e-mini-max-v3/", "quote": "Though the rack lacks the horns seen on the Cargo, it retains extender bar compatibility, and can still take some pretty impressive loads!", "basis": "rigid front-rack cargo frame; no folding"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "src link (omniumcargo.com/?p=1186) is the general Mini-Max info page covering the non-electric Mini-Max V3 and the E-Mini-Max V3; used the maker's E-Mini-Max V3 shop page https://omniumcargo.com/shop/product/e-mini-max-v3/ (a belt-drive variant page also exists). Model is spelled 'Mini-Max' by Omnium. Maker spec table sits in a hidden tab, so maker quotes are the table's cell texts joined with ' | '. Maker shop is EUR-only (EUR 5,900) and ships e-bikes outside Europe without a battery; no US price, class, speed, US dealer or US review found. Only independent source is a French retailer (Roulez Jeunesse)."}

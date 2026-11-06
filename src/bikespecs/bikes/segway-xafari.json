@@ -1,0 +1,48 @@
+{"bike": "Segway|Xafari", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2399.99, "url": "https://store.segway.com/segway-ebike-xafari", "quote": "Segway Xafari Fat Tire eBike$1,299.99$2,399.99MSRP", "basis": "MSRP (crossed-out); currently on sale for $1,299.99"},
+   {"kind": "review", "value": 2399, "url": "https://www.outdoorgearlab.com/reviews/biking/electric-bike/segway-xafari", "quote": "List Price: $2,399 ⟶ View at Segway"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.segway.com/ebike/products/xafari.html", "quote": "Max. Speed ⟶ Class 2: 20 mph | Class 2: 20 mph ⟶ Class 3: 28 mph*", "basis": "maker lists Class 2 (20 mph, has throttle) and Class 3 (28 mph); review confirms it ships as Class 2"},
+   {"kind": "review", "value": 2, "url": "https://www.outdoorgearlab.com/reviews/biking/electric-bike/segway-xafari", "quote": "The Xafari ships as a Class 2 bike, but Class 3 speeds (28 mph) can be unlocked via the Segway app—unless you are in California."}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.segway.com/ebike/products/xafari.html", "quote": "Class 2: 20 mph ⟶ Class 3: 28 mph*", "basis": "adjustable to 28 mph"},
+   {"kind": "review", "value": 20, "url": "https://www.outdoorgearlab.com/reviews/biking/electric-bike/segway-xafari", "quote": "The Xafari ships as a Class 2 bike, but Class 3 speeds (28 mph) can be unlocked via the Segway app—unless you are in California.", "basis": "adjustable to 28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 80, "url": "https://www.segway.com/ebike/products/xafari.html", "quote": "Max. Torque ⟶ 80Nm"},
+   {"kind": "review", "value": 80, "url": "https://electricbikereport.com/e-bike-news-ny-may-ban-uncertified-e-bike-batteries-segway-introduces-2-e-bikes-stromer-introduces-a-model-with-pinion-gearbox-and-more/", "quote": "It features a 750W brushless, geared hub motor producing 80Nm of torque."}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 936, "url": "https://www.segway.com/ebike/products/xafari.html", "quote": "Nominal Energy | 936Wh"},
+   {"kind": "review", "value": 936, "url": "https://www.outdoorgearlab.com/reviews/biking/electric-bike/segway-xafari", "quote": "The Xafari houses a massive 936Wh battery."}
+  ],
+  "range": [
+   {"kind": "maker", "value": "88", "url": "https://www.segway.com/ebike/products/xafari.html", "quote": "Max. Range ⟶ Up to 88 miles(142 km)", "basis": "tested at 12.5 mph, 20% pedal assist level, 165 lb load (maker footnote 5)"},
+   {"kind": "review", "value": null, "url": "https://www.outdoorgearlab.com/reviews/biking/electric-bike/segway-xafari", "quote": "", "basis": "OutdoorGearLab's 38.2-mile test was throttle-only, so not recorded"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 92.5, "url": "https://www.segway.com/ebike/products/xafari.html", "quote": "Net Weight ⟶ 92.5 lbs (42 kg)"},
+   {"kind": "review", "value": 94, "url": "https://www.outdoorgearlab.com/reviews/biking/electric-bike/segway-xafari", "quote": "Measured Weight\t94 lbs\t72 lbs\t70.3 lbs\t79 lbs\t66 lbs ⟶ Show Specification Details ▼", "basis": "measured; first column is the Xafari"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 352, "url": "https://www.segway.com/ebike/products/xafari.html", "quote": "Max. Payload ⟶ 352 lbs (160 kg)"},
+   {"kind": "review", "value": 352, "url": "https://www.outdoorgearlab.com/reviews/biking/electric-bike/segway-xafari", "quote": "The bike is rated for a total load of 352 pounds."}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W", "url": "https://www.segway.com/ebike/products/xafari.html", "quote": "Rated Power | 750W | Max. Torque | 80Nm"},
+   {"kind": "review", "value": "750W hub (1,300W peak measured)", "url": "https://www.outdoorgearlab.com/reviews/biking/electric-bike/segway-xafari", "quote": "The Xafari generates tremendous power with its 750W hub motor, with peak power measured at 1300 watts."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'2\"", "url": "https://www.segway.com/ebike/products/xafari.html", "quote": "Easily fits rider heights from 5'1\"-6'2\" with ⟶ adjustable seat, stem & display screen."}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.segway.com/ebike/products/xafari.html", "quote": "80 mm Wheel Travel, Zoom, Pre-load and Lockout Adjustable ⟶ Rear Suspension", "basis": "full-suspension step-through frame; no folding mentioned"},
+   {"kind": "review", "value": "No", "url": "https://www.outdoorgearlab.com/reviews/biking/electric-bike/segway-xafari", "quote": "On the plus side, the step-through design makes mounting easy, requiring only a 21.5-inch lift to clear the frame."}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Price is from the maker's own store (store.segway.com), linked from the product page's Buy button; the product page has no price. Maker 'Max. Payload 352 lbs' - OutdoorGearLab reads it as a total load. Motor: maker gives 'Rated Power 750W' but not 'rear hub' wording; the review says hub motor. Electric Bike Report item is an early launch news piece (it says 913Wh battery, vs 936Wh on maker page) - used only for torque. Used 1 WebSearch."}

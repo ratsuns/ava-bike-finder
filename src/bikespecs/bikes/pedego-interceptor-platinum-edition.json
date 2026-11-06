@@ -1,0 +1,43 @@
+{
+ "bike": "Pedego|Interceptor Platinum Edition",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2499, "url": "https://pedegoelectricbikes.com/products/interceptor-platinum-edition", "quote": "$2,499.00 ⟶ CHOOSE OPTIONS"},
+   {"kind": "retailer", "value": 3995, "url": "https://www.practicalcycle.com/product/pedego-interceptor-platinum-edition-classic-electric-bike/", "quote": "Original price was: $3,995.00. ⟶ $2,995.00", "basis": "dealer's crossed-out original price (current $2,995); likely an older listing, far above the maker's $2,499"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://pedegoelectricbikes.com/products/interceptor-platinum-edition", "quote": "SPEED | Class 1 & Class 2; | Class 3 Ready", "basis": "Class 1 & 2 (Class 3 ready); has a twist throttle per dealer -> Class 2"},
+   {"kind": "retailer", "value": 2, "url": "https://www.practicalcycle.com/product/pedego-interceptor-platinum-edition-classic-electric-bike/", "quote": "A twist and go throttle for full power on demand ⟶ An LCD display with a built in USB charger for your phone and other devices", "basis": "throttle -> Class 2"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": null, "url": "https://pedegoelectricbikes.com/products/interceptor-platinum-edition", "quote": "SPEED | Class 1 & Class 2; | Class 3 Ready", "basis": "no mph given"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 60, "url": "https://pedegoelectricbikes.com/products/interceptor-platinum-edition", "quote": "BLACK 52V BRUSHLESS GEARED REAR HUB MOTOR; 749 WATT NOMINAL POWER RATING; 60NM TORQUE; QUICK DISCONNECT CABLE WITH WATERPROOF CONNECTION."}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 546, "url": "https://pedegoelectricbikes.com/products/interceptor-platinum-edition", "quote": "Battery: Battery - 52V 10.5Ah UL2271 ⟶ BATTERY - 52V 10.5AH UL2271", "basis": "52V x 10.5Ah default battery (17.5Ah option)"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "75", "url": "https://pedegoelectricbikes.com/products/interceptor-platinum-edition", "quote": "RANGE | RANGE UP TO | 75 MILES", "basis": "'up to'; battery not specified (likely the 17.5Ah option)"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 62.2, "url": "https://pedegoelectricbikes.com/products/interceptor-platinum-edition", "quote": "BIKE (NO BATTERY) | STEP TRHU 26”: 52.8 LB; CLASSIC 26”: 53.4 LB; CLASSIC 29”: 58.4 LB. | BATTERY | 52V/15Ah: 9.2 LB; 52V/10Ah: 8.8 LB.", "basis": "Classic 26in 53.4 lb + 8.8 lb smaller battery; Step Thru 26in = 61.6"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 250, "url": "https://pedegoelectricbikes.com/products/interceptor-platinum-edition", "quote": "WEIGHT LIMIT | 250 LB"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "749W rear hub", "url": "https://pedegoelectricbikes.com/products/interceptor-platinum-edition", "quote": "BLACK 52V BRUSHLESS GEARED REAR HUB MOTOR; 749 WATT NOMINAL POWER RATING; 60NM TORQUE; QUICK DISCONNECT CABLE WITH WATERPROOF CONNECTION."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'11\"-6'0\"+", "url": "https://pedegoelectricbikes.com/products/interceptor-platinum-edition", "quote": "RIDER HEIGHT | 4'11\" to 6'0\"+"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://pedegoelectricbikes.com/products/interceptor-platinum-edition", "quote": "6061-T6 ALUMINUM ALLOY; INTEGRATED REINFORCED REAR RACK FOR BATTERY AND STORAGE; INTERNAL CABLE AND WIRE ROUTING.", "basis": "fixed cruiser frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page: $2,499 (Shopify data 175000/195000 = $1,750/$1,950); battery selector says 52V 10.5Ah/17.5Ah but the weight table lists 52V/10Ah and 52V/15Ah batteries. Maker gives no mph. Dealer Practical Cycle's pricing ($3,995 original / $2,995 now) doesn't match the maker and may be an older listing. EBR's Platinum Interceptor review is the 2017 48V/500W version, so not used. One WebSearch shared with the Interceptor search (found Practical Cycle)."
+}

@@ -1,0 +1,38 @@
+{"bike": "Senada|Osprey V2", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "retailer", "value": 1699, "url": "https://ebikes2u.com/product/senada-osprey-v2-900w-peak-e-cargo-ul-2849-certified-fremont/", "quote": "$1,699.00 ⟶ Original price was: $1,699.00.", "basis": "dealer's crossed-out regular price; on sale for $1,499"}
+  ],
+  "cls": [
+   {"kind": "retailer", "value": 3, "url": "https://ebikes2u.com/product/senada-osprey-v2-900w-peak-e-cargo-ul-2849-certified-fremont/", "quote": "Max Speed ⟶ 32km/h (Throttle Mode), 45km/h (Pedal Assist Mode)", "basis": "pedal assist to 45 km/h (28 mph) as listed = Class 3; throttle 32 km/h (20 mph). No class stated."}
+  ],
+  "spd": [
+   {"kind": "retailer", "value": 28, "url": "https://ebikes2u.com/product/senada-osprey-v2-900w-peak-e-cargo-ul-2849-certified-fremont/", "quote": "Max Speed ⟶ 32km/h (Throttle Mode), 45km/h (Pedal Assist Mode)", "basis": "45 km/h pedal assist converted to mph"}
+  ],
+  "tq": [
+   {"kind": "retailer", "value": null, "url": "https://ebikes2u.com/product/senada-osprey-v2-900w-peak-e-cargo-ul-2849-certified-fremont/", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "retailer", "value": 720, "url": "https://ebikes2u.com/product/senada-osprey-v2-900w-peak-e-cargo-ul-2849-certified-fremont/", "quote": "Rated Power | Peak 1000W | Rated Voltage | 48V | Battery Type | Lithium Battery | Rated Capacity | 15Ah", "basis": "48V x 15Ah"}
+  ],
+  "range": [
+   {"kind": "retailer", "value": "56", "url": "https://ebikes2u.com/product/senada-osprey-v2-900w-peak-e-cargo-ul-2849-certified-fremont/", "quote": "Pedal Assist Range ⟶ 90km", "basis": "90 km converted to miles"}
+  ],
+  "wt": [
+   {"kind": "retailer", "value": 65, "url": "https://ebikes2u.com/product/senada-osprey-v2-900w-peak-e-cargo-ul-2849-certified-fremont/", "quote": "Net Weight ⟶ 29.5kg", "basis": "29.5 kg converted to lb; battery (4 kg) assumed included in net weight"}
+  ],
+  "load": [
+   {"kind": "retailer", "value": null, "url": "https://ebikes2u.com/product/senada-osprey-v2-900w-peak-e-cargo-ul-2849-certified-fremont/", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "retailer", "value": "1000W peak", "url": "https://ebikes2u.com/product/senada-osprey-v2-900w-peak-e-cargo-ul-2849-certified-fremont/", "quote": "Rated Power | Peak 1000W", "basis": "page title says '900W (Peak)'; no rated watts given"}
+  ],
+  "height": [
+   {"kind": "retailer", "value": null, "url": "https://ebikes2u.com/product/senada-osprey-v2-900w-peak-e-cargo-ul-2849-certified-fremont/", "quote": "Saddle Height ⟶ 75cm-90cm", "basis": "only saddle height given, no rider height"}
+  ],
+  "fold": [
+   {"kind": "retailer", "value": "No", "url": "https://ebikes2u.com/product/senada-osprey-v2-900w-peak-e-cargo-ul-2849-certified-fremont/", "quote": "Comes included with rear metal rack and delivery bag. *Optional rear folding seat.", "basis": "cargo frame; only the optional rear seat folds"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "NO MAKER SOURCE: Senada's own site (senadabikes.com) shows 'This store is unavailable' (Shopify 404), including product links that redirect there; other guessed domains failed. Only source is the given dealer page (ebikes2u, Fremont). Dealer page contradicts itself on motor: title '900W (Peak)' vs spec 'Peak 1000W'; it says '49v 15AH battery' in features but 'Rated Voltage 48V' in specs (used 48V). 45 km/h pedal-assist top speed is unusual for a US bike. Same dealer has a second listing (Los Angeles store, https://ebikes2u.com/product/senada-osprey-v2-1000w-peak-e-cargo-ul-2849-certified/) with identical specs but 'Original price was: $1,899.00.' - so the regular price differs by store listing ($1,699 Fremont vs $1,899 LA). Used 1 WebSearch (no official page found)."}

@@ -1,0 +1,48 @@
+{"bike": "Trek|Borrego+ S", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2499.99, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/borrego/f/F468/borrego%252b-s/77036/", "quote": "$2,499.99 ⟶ Model 5347808"},
+   {"kind": "retailer", "value": 2499.99, "url": "https://www.cahabacycles.com/products/trek-borrego-s", "quote": "$2,499.99 ⟶ Question? Chat for more info/specials"},
+   {"kind": "review", "value": 2499.99, "url": "https://top5ebikes.com/review-trek-borrego/", "quote": "The Borrego+ S combines a throttle that operates up to 20 mph with pedal assistance up to 28 mph, giving it Class 2/3 functionality. Both models otherwise share the same core specifications and $2,499.99 price."}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/borrego/f/F468/borrego%252b-s/77036/", "quote": "E-bike Classification | Class 2 / 3 | Max assist speed | 28 mph", "basis": "ships with 28 mph pedal assist (throttle to 20 mph)"},
+   {"kind": "review", "value": 3, "url": "https://top5ebikes.com/review-trek-borrego/", "quote": "The Borrego+ S combines a throttle that operates up to 20 mph with pedal assistance up to 28 mph, giving it Class 2/3 functionality. Both models otherwise share the same core specifications and $2,499.99 price.", "basis": "28 mph pedal assist, throttle to 20 mph"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/borrego/f/F468/borrego%252b-s/77036/", "quote": "Max assist speed | 28 mph"},
+   {"kind": "review", "value": 28, "url": "https://top5ebikes.com/review-trek-borrego/", "quote": "The Borrego+ S combines a throttle that operates up to 20 mph with pedal assistance up to 28 mph, giving it Class 2/3 functionality. Both models otherwise share the same core specifications and $2,499.99 price."}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 90, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/borrego/f/F468/borrego%252b-s/77036/", "quote": "Motor | Hyena hub drive motor, 90Nm"},
+   {"kind": "retailer", "value": 90, "url": "https://www.cahabacycles.com/products/trek-borrego-s", "quote": "Motor\tHyena hub drive motor, 90Nm ⟶ Charger\t3A, 48V output, 100V-240V AC input"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 720, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/borrego/f/F468/borrego%252b-s/77036/", "quote": "Battery | 720Wh, user-removable, top eject"},
+   {"kind": "retailer", "value": 720, "url": "https://www.cahabacycles.com/products/trek-borrego-s", "quote": "Battery\t720Wh, user-removable, top eject ⟶ Motor\tHyena hub drive motor, 90Nm"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "70", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/borrego/f/F468/borrego%252b-s/77036/", "quote": "Range 70 miles ⟶ Battery 720Wh top-eject"},
+   {"kind": "retailer", "value": "70", "url": "https://www.cahabacycles.com/products/trek-borrego-s", "quote": "The high-capacity 720Wh battery has a range up to 70 miles. Plus, it's removable for easy charging and transporting. ⟶ ELOCK BIKE SECURITY"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 87, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/borrego/f/F468/borrego%252b-s/77036/", "quote": "Weight | 39.46 kg / 87 lbs"},
+   {"kind": "retailer", "value": null, "url": "https://www.cahabacycles.com/products/trek-borrego-s", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": 440, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/borrego/f/F468/borrego%252b-s/77036/", "quote": "This bike has a maximum total weight limit (combined weight of bicycle, rider, and cargo) of 440 pounds (199 kg).", "basis": "total"},
+   {"kind": "retailer", "value": null, "url": "https://www.cahabacycles.com/products/trek-borrego-s", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Hyena 750W hub drive", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/borrego/f/F468/borrego%252b-s/77036/", "quote": "E-bike Classification Class 2 / 3 ⟶ Motor Hyena hub drive, 750W"},
+   {"kind": "retailer", "value": "Hyena hub drive motor", "url": "https://www.cahabacycles.com/products/trek-borrego-s", "quote": "Motor\tHyena hub drive motor, 90Nm ⟶ Charger\t3A, 48V output, 100V-240V AC input"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'6\"", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/borrego/f/F468/borrego%252b-s/77036/", "quote": "5'1\" - 5'9\" | 73.66 - 83.82 cm | 29\" - 33\" | M-L | 167.64 - 198.12 cm | 5'6\" - 6'6\""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/borrego/f/F468/borrego%252b-s/77036/", "quote": "Frame | Alloy Step thru"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Trek lists 'Class 2 / 3' with 'Max assist speed 28 mph'; recorded class 3 because it ships with 28 mph pedal assist (throttle limited to 20 mph per top5ebikes). Review source is the top5ebikes Borrego+ review, which covers the S variant in a comparison section. Cahaba Cycles (dealer) spec table has no weight, weight limit, or speed lines. Maker weight not labeled with/without battery."}

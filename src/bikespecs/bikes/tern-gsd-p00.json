@@ -1,0 +1,51 @@
+{"bike": "Tern|GSD P00", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": null, "url": "https://www.ternbicycles.com/us/bikes/473/gsd-p00", "quote": "$5,999 (SALE PRICE) ⟶ WHY GSD GEN 3 SPECS ACCESSORIES SUPPORT FIND A DEALER BUY", "basis": "maker shows only a sale price, no regular price"},
+   {"kind": "retailer", "value": 6999, "url": "https://www.seattleelectricbike.net/products/tern-gsd-p00-gen-3", "quote": "Regular price ⟶ $6,999.00", "basis": "regular price; dealer sale price $5,999.00"},
+   {"kind": "retailer", "value": null, "url": "https://www.amegoev.com/products/tern-gsd-p00gen-3-500-wh", "quote": "Regular price ⟶ $10,849.00 CAD", "basis": "Canadian dealer, CAD only"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://www.ternbicycles.com/us/bikes/473/gsd-p00", "quote": "", "basis": "maker page gives no class; only \"max speed 20 mph (US)\""},
+   {"kind": "retailer", "value": null, "url": "https://www.amegoev.com/products/tern-gsd-p00gen-3-500-wh", "quote": "", "basis": "no class given"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.ternbicycles.com/us/bikes/473/gsd-p00", "quote": "MOTOR: ⟶ Bosch Cargo Line, 400% Assist, 85 Nm Torque, max speed 20 mph (US)"},
+   {"kind": "retailer", "value": 20, "url": "https://www.amegoev.com/products/tern-gsd-p00gen-3-500-wh", "quote": "Speed: 32kmh/20mph ⟶ Range: 40-102 kms/25-63 miles"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://www.ternbicycles.com/us/bikes/473/gsd-p00", "quote": "MOTOR: ⟶ Bosch Cargo Line, 400% Assist, 85 Nm Torque, max speed 20 mph (US)"},
+   {"kind": "retailer", "value": 85, "url": "https://www.amegoev.com/products/tern-gsd-p00gen-3-500-wh", "quote": "Motor: Bosch Cargo Line ⟶ Torque:85 Nm"},
+   {"kind": "retailer", "value": 85, "url": "https://www.seattleelectricbike.net/products/tern-gsd-p00-gen-3", "quote": "Powerful Bosch Cargo Line motor provides up to 85 Nm of torque and 400% support"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 500, "url": "https://www.ternbicycles.com/us/bikes/473/gsd-p00", "quote": "Bosch 500 PowerPack, Fast Swap, Dual Battery bays, optional 2 x 500 Wh max capacity ⟶ DISPLAY:"},
+   {"kind": "retailer", "value": 500, "url": "https://www.amegoev.com/products/tern-gsd-p00gen-3-500-wh", "quote": "BATTERY ⟶ Bosch PowerPack 500 Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "25–63", "url": "https://www.ternbicycles.com/us/bikes/473/gsd-p00", "quote": "RANGE: ⟶ 500 Wh: 40-102 km (25-63 mi); 1000 Wh: 82-207 km (51-129 mi)"},
+   {"kind": "retailer", "value": "25–63", "url": "https://www.amegoev.com/products/tern-gsd-p00gen-3-500-wh", "quote": "RANGE ⟶ 40-102 kms/25-63 miles"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 78.8, "url": "https://www.ternbicycles.com/us/bikes/473/gsd-p00", "quote": "WEIGHT: ⟶ 35.75 kg (78.8 lb)", "basis": "battery not mentioned either way"},
+   {"kind": "retailer", "value": 78.8, "url": "https://www.amegoev.com/products/tern-gsd-p00gen-3-500-wh", "quote": "BIKE WEIGHT ⟶ 78.8 lbs(35.75 kgs)", "basis": "dealer also lists \"Battery Weight: 6.2 lbs (2.8 kgs)\" separately; unclear whether 78.8 lb includes it"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 463, "url": "https://www.ternbicycles.com/us/bikes/473/gsd-p00", "quote": "MAX GROSS VEHICLE WEIGHT: ⟶ 210 kg (463 lb)", "basis": "total"},
+   {"kind": "retailer", "value": 463, "url": "https://www.amegoev.com/products/tern-gsd-p00gen-3-500-wh", "quote": "Best-in-class hauling capacity, rated to a maximum gross vehicle weight of 210 kgs (463 lbs) with a rear rack load capacity of 100 kgs (220 lbs). ⟶ Full-Coverage Wheel Guard", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Cargo Line (85 Nm)", "url": "https://www.ternbicycles.com/us/bikes/473/gsd-p00", "quote": "MOTOR: ⟶ Bosch Cargo Line, 400% Assist, 85 Nm Torque, max speed 20 mph (US)", "basis": "no rated watts published"},
+   {"kind": "retailer", "value": "Bosch Cargo Line (85 Nm)", "url": "https://www.amegoev.com/products/tern-gsd-p00gen-3-500-wh", "quote": "MOTOR POWER ⟶ Bosch Cargo Line, 85 Nm", "basis": "no rated watts"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'11\"-6'7\"", "url": "https://www.ternbicycles.com/us/bikes/473/gsd-p00", "quote": "Easy-sharing cockpit adjusts without tools to fit riders 150 - 200 cm (4'11\" - 6'7\") tall and weighing up to 130 kg (287 lb)"},
+   {"kind": "retailer", "value": "4'11\"-6'7\"", "url": "https://www.amegoev.com/products/tern-gsd-p00gen-3-500-wh", "quote": "Sizes: One size (4'11\" - 6'7\") ⟶ Brakes: Magura MT5, 4-piston hydraulic disc, 180mm rotors, Sport pads"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.ternbicycles.com/us/bikes/473/gsd-p00", "quote": "FOLDING SIZE: ⟶ 182 × 46 × 87 cm (71.7 × 18.1 × 34.3 in)", "basis": "judgment: folded length 182 cm is full bike length — only the handlebar folds, frame does not"},
+   {"kind": "retailer", "value": null, "url": "https://www.amegoev.com/products/tern-gsd-p00gen-3-500-wh", "quote": "", "basis": "not stated"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page shows only '$5,999 (SALE PRICE)', no regular price; regular $6,999 from Seattle Electric Bike (US dealer). Amego is a Canadian dealer (CAD prices). Both dealers found via one WebSearch; EBR has only S00/S20 reviews, Mike's Bikes and N+1 don't carry Tern. Maker gives no e-bike class (20 mph, no throttle listed). Maker 'MAX LOAD WEIGHT' equals 'MAX GROSS VEHICLE WEIGHT' 210 kg (463 lb) -> total; max rider 130 kg. Maker spec table also says 'SUGGESTED RIDER HEIGHT: 150 - 200 cm (59.1 - 78.7 in)', consistent. US page lists Bosch 500 PowerPack (some non-US dealers list a 545Wh 2026 version)."}

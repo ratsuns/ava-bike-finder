@@ -1,0 +1,43 @@
+{"bike": "Segway|Myon", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1999.99, "url": "https://store.segway.com/segway-ebike-myon", "quote": "Segway Myon Electric Bike$1,599.99$1,999.99MSRP", "basis": "MSRP (crossed-out); currently on sale for $1,599.99"},
+   {"kind": "review", "value": 1999, "url": "https://electrek.co/2026/01/07/segway-launches-techie-myon-and-muxi-e-bikes-plus-xaber-300-electric-dirt-bike/", "quote": "It’s a selectable Class 1, 2, or 3 e-bike and is available immediately, priced at $1,999."}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.segway.com/ebike/products/myon.html", "quote": "Max. Speed ⟶ Class 1: 20 mph | Class 1: 20 mph ⟶ Class 2: 20 mph | Class 2: 20 mph ⟶ Class 3: 28 mph*", "basis": "selectable Class 1/2/3 with a throttle mode at 20 mph = 2 per our rule; maker doesn't state the out-of-box setting"},
+   {"kind": "review", "value": 2, "url": "https://electrek.co/2026/01/07/segway-launches-techie-myon-and-muxi-e-bikes-plus-xaber-300-electric-dirt-bike/", "quote": "It’s a selectable Class 1, 2, or 3 e-bike and is available immediately, priced at $1,999.", "basis": "selectable Class 1/2/3"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.segway.com/ebike/products/myon.html", "quote": "Class 2: 20 mph ⟶ Class 3: 28 mph*", "basis": "adjustable to 28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://www.segway.com/ebike/products/myon.html", "quote": "Max. Torque ⟶ 85 Nm"},
+   {"kind": "review", "value": 85, "url": "https://electrek.co/2026/01/07/segway-launches-techie-myon-and-muxi-e-bikes-plus-xaber-300-electric-dirt-bike/", "quote": "Under the hood, Myon pairs a 500-watt motor with up to 85 Nm of peak torque and a claimed range of up to 80 miles."}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 722, "url": "https://www.segway.com/ebike/products/myon.html", "quote": "Nominal Energy ⟶ 722 Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "80", "url": "https://www.segway.com/ebike/products/myon.html", "quote": "Max. Range ⟶ Up to 80 miles"},
+   {"kind": "review", "value": "80", "url": "https://electrek.co/2026/01/07/segway-launches-techie-myon-and-muxi-e-bikes-plus-xaber-300-electric-dirt-bike/", "quote": "Under the hood, Myon pairs a 500-watt motor with up to 85 Nm of peak torque and a claimed range of up to 80 miles."}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 72.75, "url": "https://www.segway.com/ebike/products/myon.html", "quote": "Net Weight | 72.75 lbs (33 kg) | 71.6 lbs (32.5 kg)", "basis": "M/L size; XS/S is 71.6 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 300, "url": "https://www.segway.com/ebike/products/myon.html", "quote": "Max. Payload ⟶ Total 300 lbs (136 kg)", "basis": "total; maker also lists 'Max rider weight 264 lbs (120 kg)'"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W", "url": "https://www.segway.com/ebike/products/myon.html", "quote": "Rated Power ⟶ 500 W"},
+   {"kind": "review", "value": "500W", "url": "https://electrek.co/2026/01/07/segway-launches-techie-myon-and-muxi-e-bikes-plus-xaber-300-electric-dirt-bike/", "quote": "Under the hood, Myon pairs a 500-watt motor with up to 85 Nm of peak torque and a claimed range of up to 80 miles."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'3\"-6'2\"", "url": "https://store.segway.com/segway-ebike-myon", "quote": "Size: 5'3\"~ 6'2\"", "basis": "Regular size; the store's 'Small' option (sold as Myon S) says 'Size: 5'1\"~ 5'10\"'"}
+  ],
+  "fold": [
+   {"kind": "review", "value": "No", "url": "https://electrek.co/2026/01/07/segway-launches-techie-myon-and-muxi-e-bikes-plus-xaber-300-electric-dirt-bike/", "quote": "Myon also supports an optional removable toptube accessory that converts it from a step-through to a diamond frame, changing both aesthetics and stiffness while opening the door to additional accessories like frame bags."}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker price from Segway's own store (linked from the product page Buy button). Class: maker lists Class 1 / Class 2 / Class 3 / Hybrid modes ('Hybrid Mode: throttle to 20 mph & pedal assist to 28 mph*'); out-of-box mode not stated, recorded 2 per rule. The maker spec table covers both Myon (M/L) and Myon (XS/S); store sells the small as 'Myon S' (separate URL). Only one independent source (Electrek launch article) found; EBR has no Segway results."}

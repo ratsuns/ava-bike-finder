@@ -1,0 +1,48 @@
+{"bike": "Specialized|Turbo Como 4.0", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 4299.99, "url": "https://www.specialized.com/us/en/turbo-como-40/p/4248975", "quote": "$3,799.99 ⟶ $4,299.99", "basis": "$4,299.99 is the crossed-out regular price; $3,799.99 is a sale price"},
+   {"kind": "retailer", "value": 4299.99, "url": "https://www.n1bikes.com/products/turbo-como-40?id=a5060554db8d390a7e25cc2e24774d96bf08f95a80431f5b780fc278c32cc7d4&variant=90425-5104U", "quote": "$4,299.99 ⟶ Earn 42,999 points on this item"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-como-40/p/4248975", "quote": "The speed limit at which the motor will stop supporting may vary significantly by region and is based on local requirements. It may also affect range: a higher speed limit may result in less range."},
+   {"kind": "review", "value": 3, "url": "https://eridehero.com/products/specialized-turbo-como-4-0-2026/", "quote": "E-Bike Class\tClass 3 ⟶ Top Assist Speed\t28 mph"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-como-40/p/4248975", "quote": ""},
+   {"kind": "review", "value": 28, "url": "https://eridehero.com/products/specialized-turbo-como-4-0-2026/", "quote": "Top Assist Speed\t28 mph ⟶ Throttle"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 70, "url": "https://www.specialized.com/us/en/turbo-como-40/p/4248975", "quote": "Motor ⟶ Specialized 2.0, 70Nm torque, custom tuned motor, 250W nominal"},
+   {"kind": "retailer", "value": 70, "url": "https://www.n1bikes.com/products/turbo-como-40?id=a5060554db8d390a7e25cc2e24774d96bf08f95a80431f5b780fc278c32cc7d4&variant=90425-5104U", "quote": "Motor\tSpecialized 2.0, 70Nm torque, custom tuned motor, 250W nominal ⟶ Battery\tSpecialized U2-710, alloy casing, state of charge display, 710Wh"},
+   {"kind": "review", "value": 70, "url": "https://eridehero.com/products/specialized-turbo-como-4-0-2026/", "quote": "Torque\t70 Nm ⟶ Sensor Type\tBoth"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 710, "url": "https://www.specialized.com/us/en/turbo-como-40/p/4248975", "quote": "Battery ⟶ Specialized U2-710, integrated battery, state of charge display, 710Wh, UL"},
+   {"kind": "retailer", "value": 710, "url": "https://www.n1bikes.com/products/turbo-como-40?id=a5060554db8d390a7e25cc2e24774d96bf08f95a80431f5b780fc278c32cc7d4&variant=90425-5104U", "quote": "Battery\tSpecialized U2-710, alloy casing, state of charge display, 710Wh"},
+   {"kind": "review", "value": 710, "url": "https://eridehero.com/products/specialized-turbo-como-4-0-2026/", "quote": "Battery Capacity ⟶ 710 Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "90", "url": "https://www.specialized.com/us/en/turbo-como-40/p/4248975", "quote": "Long-Range - With true ride-anywhere range, go up to 90 miles (145 km) or 6.5 hours of range (eco mode). ⟶ Technical Specifications", "basis": "eco mode"},
+   {"kind": "review", "value": "90", "url": "https://eridehero.com/products/specialized-turbo-como-4-0-2026/", "quote": "Amp Hours\t14.2 Ah ⟶ Max Range\t90 mi"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 61.6, "url": "https://www.specialized.com/us/en/turbo-como-40/p/4248975", "quote": "Weight ⟶ 27.92 kg (61 lb, 8.8 oz)", "basis": "size MD; 61 lb 8.8 oz = 61.6 lb"},
+   {"kind": "review", "value": 61.6, "url": "https://eridehero.com/products/specialized-turbo-como-4-0-2026/", "quote": "Weight\t61.6 lbs ⟶ Suspension"}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-como-40/p/4248975", "quote": "Specialized rack, MIK HD interface, built-in pannier mounts, 27kg max load ⟶ Bike Lock", "basis": "only the rear rack limit (27 kg) is published"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "250W mid-drive (Specialized 2.0)", "url": "https://www.specialized.com/us/en/turbo-como-40/p/4248975", "quote": "Motor ⟶ Specialized 2.0, 70Nm torque, custom tuned motor, 250W nominal"},
+   {"kind": "review", "value": "250W mid-drive", "url": "https://eridehero.com/products/specialized-turbo-como-4-0-2026/", "quote": "Class 3 E-Bike, 61.6 lbs, 250W 70Nm mid mid-drive, 710Wh (50V × 14.2Ah) battery, Shimano BR-MT200 hydraulic disc, aluminum step-through frame, 80mm coil fork, 27.5\"×2.3\" Specialized Hemisphere Flat Protection Reflect hybrid tires, suspension seatpost ⟶ from"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/turbo-como-40/p/4248975", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.specialized.com/us/en/turbo-como-40/p/4248975", "quote": "E5 Aluminum, bottom bracket motor mount, fully integrated & lockable downtube battery, internal cable routing, lock and front rack mount ⟶ Seat Binder", "basis": "fixed aluminum frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Current CUES 9-speed version. Maker page gives no class/speed; class 3 / 28 mph from ERideHero spec page (also says no throttle). EBR review at electricbikereview.com/specialized/turbo-como-4-0/ is the 2020 Brose model, not used. Mike's Bikes had 0 results; boulder-nordic.com blocked."}

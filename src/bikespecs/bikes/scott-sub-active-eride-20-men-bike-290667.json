@@ -1,0 +1,48 @@
+{"bike": "Scott|Sub Active eRIDE 20 Men Bike (290667)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": null, "url": "https://www.scott-sports.com/ca/en/product/scott-sub-active-eride-20-men-bike", "quote": "", "basis": "Canadian maker page shows no price; US maker page returns 404"},
+   {"kind": "review", "value": 2699, "url": "https://99spokes.com/bikes/scott/2026/sub-active-eride-20-men", "quote": "Manufacturer Price ⟶ $2,699"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://www.scott-sports.com/ca/en/product/scott-sub-active-eride-20-men-bike", "quote": "Drive Unit ⟶ Bosch Active BES2, EU: 25kmh / US: 20mph", "basis": "20 mph pedal assist (Bosch mid-drive), no throttle listed = Class 1"},
+   {"kind": "review", "value": 1, "url": "https://99spokes.com/bikes/scott/2026/sub-active-eride-20-men", "quote": "Motor ⟶ Bosch Active BES2; EU: 25kmh / US: 20mph", "basis": "20 mph, no throttle listed = Class 1"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.scott-sports.com/ca/en/product/scott-sub-active-eride-20-men-bike", "quote": "Drive Unit ⟶ Bosch Active BES2, EU: 25kmh / US: 20mph"},
+   {"kind": "review", "value": 20, "url": "https://99spokes.com/bikes/scott/2026/sub-active-eride-20-men", "quote": "Motor ⟶ Bosch Active BES2; EU: 25kmh / US: 20mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://www.scott-sports.com/ca/en/product/scott-sub-active-eride-20-men-bike", "quote": ""},
+   {"kind": "review", "value": 40, "url": "https://99spokes.com/bikes/scott/2026/sub-active-eride-20-men", "quote": "MotorBosch 600W 40Nm mid-drive ⟶ Battery400Wh"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 400, "url": "https://www.scott-sports.com/ca/en/product/scott-sub-active-eride-20-men-bike", "quote": "Battery ⟶ PowerTube 400Wh"},
+   {"kind": "review", "value": 400, "url": "https://99spokes.com/bikes/scott/2026/sub-active-eride-20-men", "quote": "Battery ⟶ PowerTube 400Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://www.scott-sports.com/ca/en/product/scott-sub-active-eride-20-men-bike", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://99spokes.com/bikes/scott/2026/sub-active-eride-20-men", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 58.2, "url": "https://www.scott-sports.com/ca/en/product/scott-sub-active-eride-20-men-bike", "quote": "Approx weight in LBS ⟶ 58.2"},
+   {"kind": "review", "value": 58.2, "url": "https://99spokes.com/bikes/scott/2026/sub-active-eride-20-men", "quote": "$2,699 ⟶ Weight58.2 lbs"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 282, "url": "https://www.scott-sports.com/ca/en/product/scott-sub-active-eride-20-men-bike", "quote": "128kg, The overall weight includes the bike, the rider, the equipment, and possible additional luggage. ⟶ Geometry", "basis": "total (Max. System Weight 128 kg = 282 lb)"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Active BES2", "url": "https://www.scott-sports.com/ca/en/product/scott-sub-active-eride-20-men-bike", "quote": "Drive Unit ⟶ Bosch Active BES2, EU: 25kmh / US: 20mph"},
+   {"kind": "review", "value": "Bosch Active BES2", "url": "https://99spokes.com/bikes/scott/2026/sub-active-eride-20-men", "quote": "Motor ⟶ Bosch Active BES2; EU: 25kmh / US: 20mph", "basis": "99 Spokes summary also says 'Bosch 600W 40Nm mid-drive'"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://www.scott-sports.com/ca/en/product/scott-sub-active-eride-20-men-bike", "quote": "", "basis": "sizes S-XL shown; size chart is not readable text"},
+   {"kind": "review", "value": "5'2\"-6'7\"", "url": "https://99spokes.com/bikes/scott/2026/sub-active-eride-20-men", "quote": "Sizing | SM | 5'2\" – 5'8\" | MD | 5'6\" – 5'11\" | LG | 5'10\" – 6'3\" | XL | 6'1\" – 6'7\" | 🐐 Estimated", "basis": "99 Spokes' own estimate"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.scott-sports.com/ca/en/product/scott-sub-active-eride-20-men-bike", "quote": "Bosch Active, 400Wh battery ⟶ Front suspension: Suntour 63mm", "basis": "standard 700c commuter frame; no folding mentioned"},
+   {"kind": "review", "value": "No", "url": "https://99spokes.com/bikes/scott/2026/sub-active-eride-20-men", "quote": "A 700c aluminum frame commuter e-bike with mid-range components and shimano hydraulic disc brakes. ⟶ Manufacturer Price"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Given US maker link (scott-sports.com/us/en/...) returns 404 'Product not found' (also global/en); used the Scott Canada page for the same model (article 290667 shown), which has no price. US price taken from 99 Spokes 'Manufacturer Price'. Load is Scott's Max. System Weight (total) 128 kg converted to lb. 99 Spokes heights are labeled 'Estimated'. Used 1 WebSearch to locate pages."}

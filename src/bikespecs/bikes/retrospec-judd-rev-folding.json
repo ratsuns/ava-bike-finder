@@ -1,0 +1,48 @@
+{"bike": "Retrospec|Judd Rev Folding", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1099.99, "url": "https://retrospec.com/products/judd-rev-folding-electric-bike", "quote": "Judd Rev 2 Folding Electric Bike ⟶ $1,099.99", "basis": "no crossed-out price (compare_at_price null); all colors sold out"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://retrospec.com/products/judd-rev-folding-electric-bike", "quote": "20mph Top Assisted Speed - Class 2 EBike ⟶ Up to 42-Mile Range"},
+   {"kind": "review", "value": 2, "url": "https://electroheads.com/blogs/e-bike-reviews/retrospec-judd-rev-review-a-lightweight-folding-ebike-for-city-life", "quote": "With a 350W rear hub motor and 36V/360Wh battery, the Judd Rev delivers enough power to hit 20mph with ease. It features 5 levels of Pedal Assist and a throttle mode, making city riding effortless. However, the single-speed drivetrain limits versatility, particularly on steep inclines. While the 38-mile range is decent for daily commuting, heavy throttle use may reduce it. ⟶ Comfort and Practicality", "basis": "20 mph with throttle; class not named"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://retrospec.com/products/judd-rev-folding-electric-bike", "quote": "20mph Top Assisted Speed - Class 2 EBike ⟶ Up to 42-Mile Range"},
+   {"kind": "review", "value": 20, "url": "https://electroheads.com/blogs/e-bike-reviews/retrospec-judd-rev-review-a-lightweight-folding-ebike-for-city-life", "quote": "Up to 20mph (32km/h) ⟶ Display"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://retrospec.com/products/judd-rev-folding-electric-bike", "quote": "", "basis": "torque not published"},
+   {"kind": "review", "value": null, "url": "https://electroheads.com/blogs/e-bike-reviews/retrospec-judd-rev-review-a-lightweight-folding-ebike-for-city-life", "quote": "", "basis": "torque not stated"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 360, "url": "https://retrospec.com/products/judd-rev-folding-electric-bike", "quote": "Battery ⟶ 360Wh/36V 18650 cells; Charge on or off bike"},
+   {"kind": "review", "value": 360, "url": "https://electroheads.com/blogs/e-bike-reviews/retrospec-judd-rev-review-a-lightweight-folding-ebike-for-city-life", "quote": "Battery ⟶ 36V/360Wh removable lithium-ion"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "42", "url": "https://retrospec.com/products/judd-rev-folding-electric-bike", "quote": "Range ⟶ Up to 42 Miles"},
+   {"kind": "review", "value": "38", "url": "https://electroheads.com/blogs/e-bike-reviews/retrospec-judd-rev-review-a-lightweight-folding-ebike-for-city-life", "quote": "Range ⟶ Up to 38 miles (PAS mode)"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 42, "url": "https://retrospec.com/products/judd-rev-folding-electric-bike", "quote": "Item Weight ⟶ 42lbs", "basis": "page doesn't say whether battery included"},
+   {"kind": "review", "value": 41, "url": "https://electroheads.com/blogs/e-bike-reviews/retrospec-judd-rev-review-a-lightweight-folding-ebike-for-city-life", "quote": "Weight ⟶ 18.6kg (41 lbs)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 350, "url": "https://retrospec.com/products/judd-rev-folding-electric-bike", "quote": "Recommended Weight Limit ⟶ 350lbs", "basis": "'Recommended Weight Limit'; not stated whether it includes the bike"},
+   {"kind": "review", "value": 350, "url": "https://electroheads.com/blogs/e-bike-reviews/retrospec-judd-rev-review-a-lightweight-folding-ebike-for-city-life", "quote": "Max Rider Weight ⟶ 159kg (350 lbs)", "basis": "listed as max rider weight"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "350W rear hub", "url": "https://retrospec.com/products/judd-rev-folding-electric-bike", "quote": "Motor ⟶ 350W rear hub"},
+   {"kind": "review", "value": "350W rear hub", "url": "https://electroheads.com/blogs/e-bike-reviews/retrospec-judd-rev-review-a-lightweight-folding-ebike-for-city-life", "quote": "Motor ⟶ 350W rear hub motor"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'3\"-6'3\"", "url": "https://retrospec.com/products/judd-rev-folding-electric-bike", "quote": "20\"5'3-6'329.5\"", "basis": "sizing table: SIZE 20\", HEIGHT RANGE 5'3-6'3, STANDOVER 29.5\""},
+   {"kind": "review", "value": null, "url": "https://electroheads.com/blogs/e-bike-reviews/retrospec-judd-rev-review-a-lightweight-folding-ebike-for-city-life", "quote": "Not specified (but compact frame suits a wide range of riders) ⟶ Max Rider Weight"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "Yes", "url": "https://retrospec.com/products/judd-rev-folding-electric-bike", "quote": "Fold up this ebike and put it in your trunk, bring it on your boat, or carry it into your walk-up apartment. Its lightweight aluminum folding frame & components make it the perfect bring-anywhere companion. ⟶ High-Visibility LED Display"},
+   {"kind": "review", "value": "Yes", "url": "https://electroheads.com/blogs/e-bike-reviews/retrospec-judd-rev-review-a-lightweight-folding-ebike-for-city-life", "quote": "Folded Dimensions ⟶ 86cm x 50cm x 72cm (34” x 20” x 28”)"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "The given src now shows 'Judd Rev 2 Folding Electric Bike' (same handle); all three colors are 'Sold Out' on the maker page (not stated as discontinued). Electroheads (UK, Apr 2025) reviews the 'Judd Rev' with matching 350W/360Wh specs but says ~38 mi range and 41 lb vs maker's 42 mi and 42 lb. No EBR/Best Buy listing; Ace Hardware blocked by bot check. Used 1 WebSearch."}

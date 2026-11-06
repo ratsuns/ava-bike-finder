@@ -1,0 +1,47 @@
+{"bike": "Salsa|Tributary", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 5499, "url": "https://www.salsacycles.com/products/tributary-grx-600-us", "quote": "Regular price | $5,499.00 USD | Sale price | $4,099.99 USD Sale", "basis": "Tributary GRX 600 build; regular price, on sale for $4,099.99"},
+   {"kind": "review", "value": 5499, "url": "https://99spokes.com/bikes/salsa/2025/tributary-grx-600", "quote": "Manufacturer Price | $5,499"},
+   {"kind": "review", "value": 5499, "url": "https://electricbikereport.com/salsa-cycles-introduces-new-e-bikes-morraine-tributary/", "quote": "The Tributary comes in four different builds beginning at $5499.", "basis": "launch article; lowest of four builds"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://www.salsacycles.com/products/tributary-grx-600-us", "quote": "Ebike Classification | Class 3 | Max Assist Speed | 28 mph / 45 km/h", "basis": "maker states Class 3, 28 mph; Throttle No"},
+   {"kind": "review", "value": 3, "url": "https://electricbikereport.com/salsa-cycles-introduces-new-e-bikes-morraine-tributary/", "quote": "The aluminum frame is built with a Bosch Performance Line Speed mid-drive motor, producing 250W and 85Nm of torque to yield a Class 3 gravel e-bike with a maximum assist speed of 28 mph."}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.salsacycles.com/products/tributary-grx-600-us", "quote": "Max Assist Speed | 28 mph / 45 km/h"},
+   {"kind": "review", "value": 28, "url": "https://electricbikereport.com/salsa-cycles-introduces-new-e-bikes-morraine-tributary/", "quote": "The aluminum frame is built with a Bosch Performance Line Speed mid-drive motor, producing 250W and 85Nm of torque to yield a Class 3 gravel e-bike with a maximum assist speed of 28 mph."}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://www.salsacycles.com/products/tributary-grx-600-us", "quote": "Motor Torque | 85Nm"},
+   {"kind": "review", "value": 85, "url": "https://electricbikereport.com/salsa-cycles-introduces-new-e-bikes-morraine-tributary/", "quote": "The aluminum frame is built with a Bosch Performance Line Speed mid-drive motor, producing 250W and 85Nm of torque to yield a Class 3 gravel e-bike with a maximum assist speed of 28 mph."}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 625, "url": "https://www.salsacycles.com/products/tributary-grx-600-us", "quote": "Battery Capacity Watt Hours | 625Wh"},
+   {"kind": "review", "value": 625, "url": "https://electricbikereport.com/salsa-cycles-introduces-new-e-bikes-morraine-tributary/", "quote": "A 625Wh Bosch internal battery powers the system."},
+   {"kind": "review", "value": 625, "url": "https://99spokes.com/bikes/salsa/2025/tributary-grx-600", "quote": "Battery | 625Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "72", "url": "https://www.salsacycles.com/products/tributary-grx-600-us", "quote": "Range Estimate | 72 miles"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/salsa-cycles-introduces-new-e-bikes-morraine-tributary/", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 46, "url": "https://www.salsacycles.com/products/tributary-grx-600-us", "quote": "Weight | Complete Bike | 46 lb for Medium", "basis": "Medium frame; complete bike"}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://www.salsacycles.com/products/tributary-grx-600-us", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Performance Line Speed mid-drive", "url": "https://www.salsacycles.com/products/tributary-grx-600-us", "quote": "Bosch Performance Line Speed mid-drive system", "basis": "no rated watts on maker page"},
+   {"kind": "review", "value": "250W Bosch Performance Line Speed mid-drive", "url": "https://electricbikereport.com/salsa-cycles-introduces-new-e-bikes-morraine-tributary/", "quote": "The aluminum frame is built with a Bosch Performance Line Speed mid-drive motor, producing 250W and 85Nm of torque to yield a Class 3 gravel e-bike with a maximum assist speed of 28 mph."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'1\"+", "url": "https://www.salsacycles.com/products/tributary-grx-600-us", "quote": "Recommended Rider Height 155.0 - 163.0 163.0 - 170.0 170.0 - 178.0 178.0 - 185.0 185.0", "basis": "geometry table XS-XL, cm (Imperial view: 61.02 - 72.83 in); XL listed only as 185 cm (open-ended)"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.salsacycles.com/products/tributary-grx-600-us", "quote": "Electric Gravel Bikes – Salsa Tributary GRX 600 – Salsa Cycles", "basis": "page title; aluminum gravel frame, no folding"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Given src is the Tributary GRX 600 (US) build; specs recorded for that build. Maker regular $5,499, sale $4,099.99, 'SOLD OUT ONLINE' (not marked discontinued). 99 Spokes lists the motor as 'Bosch 600W 63Nm mid-drive', which contradicts the maker (85Nm, Performance Line Speed); not used for tq/motor. Electric Bike Report source is the 2024 launch news article. No WebSearch used."}

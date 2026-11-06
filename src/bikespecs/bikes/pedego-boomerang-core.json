@@ -1,0 +1,41 @@
+{
+ "bike": "Pedego|Boomerang Core",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1995, "url": "https://pedegoelectricbikes.com/products/boomerang-core", "quote": "$1,995.00 ⟶ CHOOSE OPTIONS"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://pedegoelectricbikes.com/products/boomerang-core", "quote": "SPEED | Class 1 & Class 2", "basis": "Class 1 & 2 with 'Pedego Twist Throttle' -> Class 2 (assumes 20 mph, which Class 1/2 implies)"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": null, "url": "https://pedegoelectricbikes.com/products/boomerang-core", "quote": "SPEED | Class 1 & Class 2", "basis": "no mph given"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://pedegoelectricbikes.com/products/boomerang-core", "quote": "MOTOR | 500W Rear Hub Motor", "basis": "no torque given"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 546, "url": "https://pedegoelectricbikes.com/products/boomerang-core", "quote": "PRIMARY BATTERY | 52V 10.5Ah UL2271 Certified Battery Pack", "basis": "52V x 10.5Ah"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "46", "url": "https://pedegoelectricbikes.com/products/boomerang-core", "quote": "Range Up to | 46 Miles", "basis": "'up to'"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 66.1, "url": "https://pedegoelectricbikes.com/products/boomerang-core", "quote": "BIKE | 24” 54.2lb / 24.6kg | 26” 56.4lb / 25.7kg (w/o Battery) | PRIMARY BATTERY | 10.5Ah: 9.7lb / 4.4kg", "basis": "26in (default) 56.4 lb without battery + 9.7 lb battery; 24in = 63.9"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 250, "url": "https://pedegoelectricbikes.com/products/boomerang-core", "quote": "WEIGHT LIMIT | 250lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W rear hub", "url": "https://pedegoelectricbikes.com/products/boomerang-core", "quote": "MOTOR | 500W Rear Hub Motor"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'10\"-6'3\"", "url": "https://pedegoelectricbikes.com/products/boomerang-core", "quote": "RIDER HEIGHT | 4'10\" to 6'3\""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://pedegoelectricbikes.com/products/boomerang-core", "quote": "MATERIAL | 6061-T6 Aluminum Alloy | TYPE | Low Step", "basis": "fixed low-step frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page only. EBR/EBReport Boomerang reviews are older generations (2015-2021); the one WebSearch found no independent page for the Core. Maker page gives no mph or torque; its FS26 fact-sheet PDF couldn't be read in the browser."
+}

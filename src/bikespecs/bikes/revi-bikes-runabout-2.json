@@ -1,0 +1,52 @@
+{"bike": "Revi Bikes|Runabout.2", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1799, "url": "https://www.revibikes.com/products/runabout2", "quote": "$1,799.00 ⟶ Certified in accordance with UL2849/UL2271", "basis": "no crossed-out price shown"},
+   {"kind": "retailer", "value": 1799, "url": "https://electricrideco.com/products/revi-runabout-2-electric-bike", "quote": "Regular price ⟶ $1,799.00", "basis": "dealer sale price $1,599"},
+   {"kind": "review", "value": 1799, "url": "https://www.bikeride.com/revibikes-runabout/", "quote": "$1,799.00 ⟶ REVIBIKES"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.revibikes.com/products/runabout2", "quote": "Default Class: Class 2Top Speed: 20- 25 MPH 28MPH(lock)", "basis": "text in the page's 'Speed & Range' tab; ships Class 2"},
+   {"kind": "retailer", "value": 2, "url": "https://electricrideco.com/products/revi-runabout-2-electric-bike", "quote": "Runabout.2 is rated as Class 2, but the power can be released when needed."}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.revibikes.com/products/runabout2", "quote": "Default Class: Class 2Top Speed: 20- 25 MPH 28MPH(lock)", "basis": "adjustable to 25 mph (28 mph locked); page headline also says 'Top Speed ⟶ 28MPH'"},
+   {"kind": "retailer", "value": 20, "url": "https://electricrideco.com/products/revi-runabout-2-electric-bike", "quote": "Normal Mode: PAS activated, Throttle activated, Max Speed 20 mph. ⟶ Sport Mode: PAS activated, Throttle deactivated, Max Speed 25 mph.", "basis": "adjustable to 25 mph (Sport Mode, throttle off)"},
+   {"kind": "review", "value": 25, "url": "https://www.bikeride.com/revibikes-runabout/", "quote": "TOP SPEED ⟶ 25 mph", "basis": "maximum (Sport Mode)"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 80, "url": "https://www.revibikes.com/products/runabout2", "quote": "The 750W powerful motor can reach a peak power of 1040W and torque of 80 Nm. The powerful motor allows you to run up to 25 mph, providing a smooth, effortless riding experience."},
+   {"kind": "review", "value": 80, "url": "https://www.bikeride.com/revibikes-runabout/", "quote": "TORQUE ⟶ 80 Nm"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 780, "url": "https://www.revibikes.com/products/runabout2", "quote": "Battery ⟶ 780Wh", "basis": "spec list also says 'Battery Capacity: 52V 15Ah'"},
+   {"kind": "retailer", "value": 780, "url": "https://electricrideco.com/products/revi-runabout-2-electric-bike", "quote": "Max Speed: up to 25 mph ⟶ Battery: 52V 15Ah Samsung", "basis": "52V x 15Ah = 780Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "55", "url": "https://www.revibikes.com/products/runabout2", "quote": "Max Range ⟶ 55 Miles", "basis": "Speed & Range tab: Pedal Assist Range: 55 Miles (throttle 40 miles)"},
+   {"kind": "retailer", "value": "55", "url": "https://electricrideco.com/products/revi-runabout-2-electric-bike", "quote": "Range: 55 Miles ⟶ Charging Time: 4-6 hours"},
+   {"kind": "review", "value": "55", "url": "https://www.bikeride.com/revibikes-runabout/", "quote": "MAXIMUM RANGE ⟶ 55 Miles"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 65, "url": "https://www.revibikes.com/products/runabout2", "quote": "Weight: 65 lbs with battery", "basis": "same page's 'Weight & Load' tab says 'Weight: 80 lbs with battery'"},
+   {"kind": "review", "value": 65, "url": "https://www.bikeride.com/revibikes-runabout/", "quote": "WEIGHT ⟶ 65 lb"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 350, "url": "https://www.revibikes.com/products/runabout2", "quote": "Max Load ⟶ 350 lbs", "basis": "rear rack 100 lbs max"},
+   {"kind": "retailer", "value": 350, "url": "https://electricrideco.com/products/revi-runabout-2-electric-bike", "quote": "Max Capacity: 350 lbs ⟶ 3.0\" Kenda Tires"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W (1,040W peak)", "url": "https://www.revibikes.com/products/runabout2", "quote": "The 750W powerful motor can reach a peak power of 1040W and torque of 80 Nm. The powerful motor allows you to run up to 25 mph, providing a smooth, effortless riding experience.", "basis": "page headline says 'Peak Motor ⟶ 1000W'"},
+   {"kind": "retailer", "value": "750W (1,040W peak)", "url": "https://electricrideco.com/products/revi-runabout-2-electric-bike", "quote": "Motor Power: 750W (1040W Peak) ⟶ Max Speed: up to 25 mph"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://www.revibikes.com/products/runabout2", "quote": ""},
+   {"kind": "retailer", "value": "4'11\"-6'2\"", "url": "https://electricrideco.com/products/revi-runabout-2-electric-bike", "quote": "Suitable Rider Height: 4'11\" - 6'2\" ⟶ Please Note: Dimensions are approximate"},
+   {"kind": "review", "value": "4'11\"-6'2\"", "url": "https://www.bikeride.com/revibikes-runabout/", "quote": "The Runabout.2 is rated for 4'11\" to 6'2\". A 6’5” rider says they find it comfortable."}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.revibikes.com/products/runabout2", "quote": "Frame Material: 6061 Aluminum Alloy", "basis": "step-thru mini-cargo frame with integrated rear rack; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page contradicts itself: weight 65 lbs (spec list) vs 80 lbs (Weight & Load tab); headline 'Top Speed 28MPH' and 'Peak Motor 1000W' vs body 25 mph and 1040W peak. Ships Class 2 at 20 mph; Sport Mode 25 mph (throttle off); 28 mph described as '(lock)'. ElectricBikeReview only has a review of the first-gen Runabout, not used. Motor placement not stated by maker or dealer."}

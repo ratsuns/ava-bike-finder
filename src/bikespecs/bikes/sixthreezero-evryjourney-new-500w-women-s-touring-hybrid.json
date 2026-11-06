@@ -1,0 +1,48 @@
+{"bike": "Sixthreezero|EVRYjourney NEW 500W (Women's Touring Hybrid)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1999.99, "url": "https://www.sixthreezero.com/products/womens-evry-new-touring-hybrid-ebike", "quote": "$1399.99 ⟶ $1999.99", "basis": "higher listed price beside the $1399.99 sale price"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/sixthreezero-evryjourney-500w-review/", "quote": ""}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.sixthreezero.com/products/womens-evry-new-touring-hybrid-ebike", "quote": "Top speed of 20mph for both full electric and with pedal assist", "basis": "maker states no class; 20 mph with thumb throttle = Class 2"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/sixthreezero-evryjourney-500w-review/", "quote": "CLASS 2 E-BIKE: ⟶ THROTTLE AND PEDAL ASSIST UP TO 20 MPH (CAN BE ADJUSTED TO CLASS 3)."}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.sixthreezero.com/products/womens-evry-new-touring-hybrid-ebike", "quote": "Top speed of 20mph for both full electric and with pedal assist"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/sixthreezero-evryjourney-500w-review/", "quote": "THROTTLE AND PEDAL ASSIST UP TO 20 MPH (CAN BE ADJUSTED TO CLASS 3).", "basis": "adjustable to Class 3 per review"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://www.sixthreezero.com/products/womens-evry-new-touring-hybrid-ebike", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/sixthreezero-evryjourney-500w-review/", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 500, "url": "https://www.sixthreezero.com/products/womens-evry-new-touring-hybrid-ebike", "quote": "500 Watt Hour Battery that will take you 20 miles using full electric and 20 - 40 miles on pedal assist mode"},
+   {"kind": "review", "value": 500, "url": "https://electricbikereport.com/sixthreezero-evryjourney-500w-review/", "quote": "Battery: 500wh (48V 10.4Ah Lithium-Ion Battery) ⟶ Display: Duo-Tone LCD"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "20–40", "url": "https://www.sixthreezero.com/products/womens-evry-new-touring-hybrid-ebike", "quote": "500 Watt Hour Battery that will take you 20 miles using full electric and 20 - 40 miles on pedal assist mode"},
+   {"kind": "review", "value": "22.9–50.5", "url": "https://electricbikereport.com/sixthreezero-evryjourney-500w-review/", "quote": "Range: Claimed: 20-40 miles and EBR Test Result was 22.9 – 50.5 miles. ⟶ Throttle: Left Side Thumb Throttle", "basis": "tested"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 64.8, "url": "https://www.sixthreezero.com/products/womens-evry-new-touring-hybrid-ebike", "quote": "Weight ⟶ 64.8 Lbs. Assembled With Battery"},
+   {"kind": "review", "value": 59.8, "url": "https://electricbikereport.com/sixthreezero-evryjourney-500w-review/", "quote": "Tested Weight: 59.8 lbs / 52.26 lbs without battery ⟶ Rider height range: 5’ to 6’ 4”", "basis": "measured"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 300, "url": "https://www.sixthreezero.com/products/womens-evry-new-touring-hybrid-ebike", "quote": "Weight Range ⟶ Up to 300lbs", "basis": "rider weight range in fit chart"},
+   {"kind": "review", "value": 300, "url": "https://electricbikereport.com/sixthreezero-evryjourney-500w-review/", "quote": "Maximum load on the rear rack: 55 lbs ⟶ Total payload capacity: 300 lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W rear hub", "url": "https://www.sixthreezero.com/products/womens-evry-new-touring-hybrid-ebike", "quote": "Motor ⟶ 500 Watt Rear Hub Motor"},
+   {"kind": "review", "value": "500W rear hub", "url": "https://electricbikereport.com/sixthreezero-evryjourney-500w-review/", "quote": "Motor: Rear Hub 500W ⟶ Headlight:No, but they sell them on their Accessories page."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'0\"-6'4\"", "url": "https://www.sixthreezero.com/products/womens-evry-new-touring-hybrid-ebike", "quote": "Height Range ⟶ 5' - 6'4\""},
+   {"kind": "review", "value": "5'0\"-6'4\"", "url": "https://electricbikereport.com/sixthreezero-evryjourney-500w-review/", "quote": "Rider height range: 5’ to 6’ 4” ⟶ Maximum load on the rear rack: 55 lbs"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.sixthreezero.com/products/womens-evry-new-touring-hybrid-ebike", "quote": "Electric Touring Cruiser Bike with 500 Watt Rear Hub Drive Motor with an ergonomically designed frame for maximum comfort and riding ease.", "basis": "'Folding' appears only as a shop-menu filter"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker shows $1399.99 next to $1999.99; recorded the higher one as regular. Maker states no class; 20 mph throttle -> Class 2 (EBReport agrees, notes it can be adjusted to Class 3). Weight: maker 64.8 lb with battery vs EBReport measured 59.8 lb. EBReport review (Mar 2024) is the female-focused EVRYjourney 500W with matching 48V 10.4Ah battery, 7-speed Tourney and 5'-6'4\" fit. Maker load is only the fit chart's 'Weight Range Up to 300lbs'."}

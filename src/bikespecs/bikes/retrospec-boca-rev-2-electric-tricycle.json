@@ -1,0 +1,47 @@
+{"bike": "Retrospec|Boca Rev 2 Electric Tricycle", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1699.99, "url": "https://retrospec.com/products/boca-rev-electric-tricycle", "quote": "$1,699.99 ⟶ Regular price", "basis": "no crossed-out price (compare_at_price null); listed as Pre Order"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://retrospec.com/products/boca-rev-electric-tricycle", "quote": "Class 2 EBike, 14mph Top Assisted Speed ⟶ Up to 75-Mile Range"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/retrospec-boca-rev-tricycle-review/", "quote": "Pedal Assist: Cadence sensor, 6 Levels, Throttle and optional walk-mode; Class 2 14MPH ⟶ Claimed Range: 49 miles", "basis": "first-gen Boca Rev review"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 14, "url": "https://retrospec.com/products/boca-rev-electric-tricycle", "quote": "Pedal Assist ⟶ 1-5 Levels, Throttle and optional walk-mode; Class 2 14MPH"},
+   {"kind": "review", "value": 14, "url": "https://electricbikereport.com/retrospec-boca-rev-tricycle-review/", "quote": "E-BIKE CLASS: ⟶ CLASS 1 (PEDAL ASSIST TO 14 MPH)", "basis": "first-gen Boca Rev review"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 65, "url": "https://retrospec.com/products/boca-rev-electric-tricycle", "quote": "Motor ⟶ 500W rear hub 65Nm torq"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 500, "url": "https://retrospec.com/products/boca-rev-electric-tricycle", "quote": "Battery ⟶ 500Wh/48VLG 21700 cells; Charge on or off bike, UART BMS"},
+   {"kind": "review", "value": 500, "url": "https://electricbikereport.com/retrospec-boca-rev-tricycle-review/", "quote": "The 500Wh battery matches the motors output for solid efficiency, and the seatpost mounting keeps the weight where you want it. ⟶ Retrospec Boca Rev Review: Speed Test", "basis": "first-gen Boca Rev review"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "75", "url": "https://retrospec.com/products/boca-rev-electric-tricycle", "quote": "Range ⟶ Up to 75 Miles"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/retrospec-boca-rev-tricycle-review/", "quote": "Claimed Range: 49 miles ⟶ Throttle:Included, thumb lever", "basis": "first-gen claim (49 mi) differs from Rev 2's 75 mi; not used"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://retrospec.com/products/boca-rev-electric-tricycle", "quote": "", "basis": "weight not listed on the Rev 2 page"},
+   {"kind": "review", "value": 85, "url": "https://electricbikereport.com/retrospec-boca-rev-tricycle-review/", "quote": "WEIGHT & DIMENSIONS ⟶ Tested Weight: 85 lbs", "basis": "tested weight of the first-gen Boca Rev; Rev 2 weight unconfirmed"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 500, "url": "https://retrospec.com/products/boca-rev-electric-tricycle", "quote": "Recommended Weight Limit ⟶ 350lbs/Rider 500 lbs total", "basis": "500 lb total payload (rider + cargo), max 350 lb rider"},
+   {"kind": "review", "value": 500, "url": "https://electricbikereport.com/retrospec-boca-rev-tricycle-review/", "quote": "Rider height range: 5’5” – 6’4” ⟶ Total payload capacity: 350 lbs rider / 500 total payload", "basis": "first-gen Boca Rev review"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W rear hub", "url": "https://retrospec.com/products/boca-rev-electric-tricycle", "quote": "Motor ⟶ 500W rear hub 65Nm torq"},
+   {"kind": "review", "value": "500W rear hub", "url": "https://electricbikereport.com/retrospec-boca-rev-tricycle-review/", "quote": "Motor: 500W rear hub, center-mounted between rear axle. ⟶ Headlight:Included", "basis": "first-gen Boca Rev review"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'5\"-6'4\"", "url": "https://retrospec.com/products/boca-rev-electric-tricycle", "quote": "18\"5'5” - 6’4”17.5\"", "basis": "sizing table: SIZE 18\", HEIGHT RANGE 5'5\" - 6'4\", STANDOVER 17.5\""},
+   {"kind": "review", "value": "5'5\"-6'4\"", "url": "https://electricbikereport.com/retrospec-boca-rev-tricycle-review/", "quote": "Tested Weight: 85 lbs ⟶ Rider height range: 5’5” – 6’4”", "basis": "first-gen Boca Rev review"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "Yes", "url": "https://retrospec.com/products/boca-rev-electric-tricycle", "quote": "Unfolded Dimensions ⟶ 63.5\"L x 30.5\"W x 43\"H | Folded Dimensions ⟶ 38.5\"L x 30.5\"W x 30\"H", "basis": "folded length 25\" shorter than unfolded implies the frame folds; maker text only names an 'Alloy folding stem'"},
+   {"kind": "review", "value": "Yes", "url": "https://electricbikereport.com/retrospec-boca-rev-tricycle-review/", "quote": "Our clamp on the frame was a little hard to undo, but we suspect it could loosen up if we tried it more. It’s a rigid ride though: you wouldn’t know the frame was foldable by the feel alone.", "basis": "first-gen Boca Rev review"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Only independent reviews found are of the first-gen Boca Rev (EBReport and EBR); used EBReport for specs that match the Rev 2 page (class, 14 mph, 500W, 500Wh, 500 lb payload, height, folding frame). Range changed (first-gen claim 49 mi vs Rev 2 75 mi) so the review's range isn't used. EBR's first-gen review lists 28 MPH top speed, contradicting EBReport and the maker's 14 mph, so EBR was not used. Rev 2 maker page doesn't list a weight; 85 lb is the first-gen tested weight. Fold: maker gives folded dimensions (38.5\" vs 63.5\" long), EBReport confirms the first-gen frame folds."}

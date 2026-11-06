@@ -1,0 +1,49 @@
+{
+ "bike": "Pedego|Element 2",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2195, "url": "https://pedegoelectricbikes.com/products/element-2", "quote": "$2,195.00 ⟶ CHOOSE OPTIONS"},
+   {"kind": "retailer", "value": 2195, "url": "https://www.practicalcycle.com/product/element-2-0/", "quote": "PRICE ⟶ $2,195.00"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://pedegoelectricbikes.com/products/element-2", "quote": "SPEED | Class 1 - 20mph Pedal Assist | Class 2 - 20mph Pedal Assist & Throttle | Class 3 Ready (Participating Locations) - 28mph Pedal Assist", "basis": "Class 1/2 with 'Pedego Twist Throttle' at 20 mph -> Class 2; Class 3 is a dealer upgrade"},
+   {"kind": "retailer", "value": 2, "url": "https://www.practicalcycle.com/product/element-2-0/", "quote": "Flexible Performance: Class 1 and Class 2 riding. Class 3 upgrade available through participating dealers. ⟶ 75mm suspension fork w/thru axle.", "basis": "throttle up to 20 mph -> Class 2"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://pedegoelectricbikes.com/products/element-2", "quote": "SPEED | Class 1 - 20mph Pedal Assist | Class 2 - 20mph Pedal Assist & Throttle | Class 3 Ready (Participating Locations) - 28mph Pedal Assist", "basis": "adjustable to 28 mph (Class 3 upgrade at participating dealers)"},
+   {"kind": "retailer", "value": 20, "url": "https://www.practicalcycle.com/product/element-2-0/", "quote": "PedalSense® with Cruise or Torque Assist and throttle power up to 20 mph."}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 90, "url": "https://pedegoelectricbikes.com/products/element-2", "quote": "MOTOR | 48V, 750W, 90Nm Torque"},
+   {"kind": "retailer", "value": 90, "url": "https://www.practicalcycle.com/product/element-2-0/", "quote": "A 750W motor with 90Nm of torque delivers responsive acceleration ⟶ and climbing power."}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 835, "url": "https://pedegoelectricbikes.com/products/element-2", "quote": "48V17.4Ah 835Wh, UL2271 Certified Pack, UL2580 Certified Cells, LG 21700, Removable Battery"},
+   {"kind": "retailer", "value": 835, "url": "https://www.practicalcycle.com/product/element-2-0/", "quote": "835Wh Battery: Long-range 48V 17.4Ah removable battery. Fully charges in approximately 6.5 hours."}
+  ],
+  "range": [
+   {"kind": "maker", "value": "81", "url": "https://pedegoelectricbikes.com/products/element-2", "quote": "Range Up to | 81 Miles", "basis": "'up to'"},
+   {"kind": "retailer", "value": "81", "url": "https://www.practicalcycle.com/product/element-2-0/", "quote": "Power & Range: 750W Motor. Powerful acceleration and 90Nm of climbing torque. Smooth, responsive power across changing terrain, up to 81 miles*.", "basis": "'up to'"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 77, "url": "https://pedegoelectricbikes.com/products/element-2", "quote": "BIKE | 68.3 lb / 30.98 kg w/o Battery | 77 lb / 34.93 kg w/ Battery"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 440, "url": "https://pedegoelectricbikes.com/products/element-2", "quote": "WEIGHT LIMIT | Payload Up to | 440 Lb"},
+   {"kind": "retailer", "value": 440, "url": "https://www.practicalcycle.com/product/element-2-0/", "quote": "A 440-pound total weight capacity and 100-pound- capacity MIK HD rack add serious utility. ⟶ BUILT AROUND A BETTER RIDING EXPERIENCE", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W", "url": "https://pedegoelectricbikes.com/products/element-2", "quote": "MOTOR | 48V, 750W, 90Nm Torque"},
+   {"kind": "retailer", "value": "750W", "url": "https://www.practicalcycle.com/product/element-2-0/", "quote": "A 750W motor with 90Nm of torque delivers responsive acceleration ⟶ and climbing power."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'1\"", "url": "https://pedegoelectricbikes.com/products/element-2", "quote": "RIDER HEIGHT | 5'1\" - 6'1\""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://pedegoelectricbikes.com/products/element-2", "quote": "MATERIAL | 6061 Aluminum Alloy | TYPE | 20\" Adventure Fat-Tire", "basis": "fixed 20in fat-tire step-thru frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker calls 440 lb 'Payload Up to'; dealer Practical Cycle calls the same 440 lb a 'total weight capacity' (bike + rider + cargo) -- conflict. Maker publishes weight with battery (77 lb) directly. EBR/EBReport/Electrek have no Element 2 review (only the 2020 original Element). One WebSearch used (found Practical Cycle)."
+}

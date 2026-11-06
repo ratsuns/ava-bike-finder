@@ -1,0 +1,47 @@
+{"bike": "Specialized|Globe Haul LT", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 3799.99, "url": "https://www.specialized.com/us/en/haul-lt/p/277758", "quote": "$3,799.99 ⟶ 0% APRor as low as $132/mo with Affirm. See if you qualify"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://www.specialized.com/us/en/haul-lt/p/277758", "quote": "700w rear hub motor delivers enough power to get you and all your gear up steep hills and all the way across town at up to 28 mph. The 772wh battery provides up to 60 miles of range.", "basis": "maker states 28 mph pedal assist (class not named); throttle optional"},
+   {"kind": "review", "value": 3, "url": "https://electricbikereport.com/specialized-globe-haul-lt-review/", "quote": "E-BIKE CLASS: ⟶ CLASS 3 (PEDAL ASSIST TO 28 MPH)"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.specialized.com/us/en/haul-lt/p/277758", "quote": "700w rear hub motor delivers enough power to get you and all your gear up steep hills and all the way across town at up to 28 mph. The 772wh battery provides up to 60 miles of range."},
+   {"kind": "review", "value": 28, "url": "https://electricbikereport.com/specialized-globe-haul-lt-review/", "quote": "CLASS 3 (PEDAL ASSIST TO 28 MPH) ⟶ SPONSOR"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://www.specialized.com/us/en/haul-lt/p/277758", "quote": ""},
+   {"kind": "review", "value": 90, "url": "https://electricbikereport.com/specialized-globe-haul-lt-review/", "quote": "The Haul’s strength is obvious when going by feel; the bike’s motor can produce an impressive 90 Newton meters (Nm) of torque, making the pedaling experience remarkably easy."}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 772, "url": "https://www.specialized.com/us/en/haul-lt/p/277758", "quote": "Battery ⟶ Globe external battery, 772Wh, UL 2271 certified, IPX7"},
+   {"kind": "review", "value": 772, "url": "https://electricbikereport.com/specialized-globe-haul-lt-review/", "quote": "Battery:48V Globe external battery, 772Wh, UL 2271 certified, IPX7 ⟶ Display: Ride Mode display"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "60", "url": "https://www.specialized.com/us/en/haul-lt/p/277758", "quote": "700w rear hub motor delivers enough power to get you and all your gear up steep hills and all the way across town at up to 28 mph. The 772wh battery provides up to 60 miles of range."},
+   {"kind": "review", "value": "60", "url": "https://electricbikereport.com/specialized-globe-haul-lt-review/", "quote": "Claimed Range: 60 mi ⟶ Throttle:Optional"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 88, "url": "https://www.specialized.com/us/en/haul-lt/p/277758", "quote": "Weight ⟶ 40 kg (88 lb, 3.0 oz)", "basis": "maker does not say whether battery is included"},
+   {"kind": "review", "value": 91.5, "url": "https://electricbikereport.com/specialized-globe-haul-lt-review/", "quote": "Claimed weight: 88 lbs. ⟶ Tested Weight: 91.5 lbs", "basis": "tested weight"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 441, "url": "https://www.specialized.com/us/en/haul-lt/p/277758", "quote": "The extra-wide center stand helps make loading and unloading your cargo, up to 441 lbs of it (rider included), safe and easy.", "basis": "total (rider + cargo)"},
+   {"kind": "review", "value": 441, "url": "https://electricbikereport.com/specialized-globe-haul-lt-review/", "quote": "Total payload capacity: 441 lbs, 176 lbs on rack ⟶ COMPONENTS & ACCESSORIES"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "700W rear hub", "url": "https://www.specialized.com/us/en/haul-lt/p/277758", "quote": "700w rear hub motor delivers enough power to get you and all your gear up steep hills and all the way across town at up to 28 mph. The 772wh battery provides up to 60 miles of range."},
+   {"kind": "review", "value": "700W rear hub", "url": "https://electricbikereport.com/specialized-globe-haul-lt-review/", "quote": "Specialized equipped the Globe Haul with a 700W hub motor with a torque sensor. ⟶ The LT’s extended cargo rack can carry up to 176 lbs."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'5\"-6'4\"", "url": "https://www.specialized.com/us/en/haul-lt/p/277758", "quote": "Unique, single-size frame fits riders from around 4’5” all the way up to 6’4”. The telescoping seatpost has over 13 inches of adjustability, and the quill stem can extend almost 6 inches. It provides a comfortable ride for almost everyone measured in our giant Retül database."},
+   {"kind": "review", "value": "4'5\"-6'4\"", "url": "https://electricbikereport.com/specialized-globe-haul-lt-review/", "quote": "Tested Weight: 91.5 lbs ⟶ Rider height range: 4’5” to 6’4”"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.specialized.com/us/en/haul-lt/p/277758", "quote": "Unique, single-size frame fits riders from around 4’5” all the way up to 6’4”.", "basis": "single-size fixed frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page doesn't name a class; it states 28 mph assist. Throttle is optional/accessory. Maker weight 88 lb (basis not stated); EBR tested 91.5 lb."}

@@ -1,0 +1,49 @@
+{"bike": "Retrospec|Napa Rev", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": null, "url": "https://retrospec.com/collections/warranty-parts-napa-rev", "quote": "Warranty Parts: Napa Rev", "basis": "maker no longer has a product page for the bike; only warranty parts are listed"},
+   {"kind": "review", "value": 1500, "url": "https://gearjunkie.com/biking/bestselling-retrospec-e-bikes", "quote": "Napa Rev Fitness Hybrid E-Bike: $1,500", "basis": "sponsored article"},
+   {"kind": "review", "value": 1500, "url": "https://ev.motorwatt.com/ev-database/database-electric-bicycles/napa-rev-fitness", "quote": "PRICE FROM ⟶ $ 1,500"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://retrospec.com/collections/warranty-parts-napa-rev", "quote": ""},
+   {"kind": "review", "value": 2, "url": "https://gearjunkie.com/biking/bestselling-retrospec-e-bikes", "quote": "Note: It ships as a Class 2 bike, with Class 3 speeds unlockable.", "basis": "ships Class 2; Class 3 (28 mph) unlockable"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": null, "url": "https://retrospec.com/collections/warranty-parts-napa-rev", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://gearjunkie.com/biking/bestselling-retrospec-e-bikes", "quote": "A peppy 500W motor with six levels of pedal assist lets this sleek, Class 3 e-bike reach up to 28 mph. | Note: It ships as a Class 2 bike, with Class 3 speeds unlockable.", "basis": "out-of-box speed not stated as a number (ships Class 2); adjustable to 28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://retrospec.com/collections/warranty-parts-napa-rev", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://gearjunkie.com/biking/bestselling-retrospec-e-bikes", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": null, "url": "https://retrospec.com/collections/warranty-parts-napa-rev", "quote": ""},
+   {"kind": "review", "value": 500, "url": "https://ev.motorwatt.com/ev-database/database-electric-bicycles/napa-rev-fitness", "quote": "Napa Rev Fitness Hybrid is a Retrospec hybrid bike with a 0.5 kWh battery capacity and 500 W of power. Its listed electric range is 52 mi, and its listed top speed is 28 mph.", "basis": "0.5 kWh = 500 Wh; low-confidence spec database"}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://retrospec.com/collections/warranty-parts-napa-rev", "quote": ""},
+   {"kind": "review", "value": "52", "url": "https://ev.motorwatt.com/ev-database/database-electric-bicycles/napa-rev-fitness", "quote": "RANGE ⟶ 52 mi", "basis": "low-confidence spec database"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://retrospec.com/collections/warranty-parts-napa-rev", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://gearjunkie.com/biking/bestselling-retrospec-e-bikes", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": null, "url": "https://retrospec.com/collections/warranty-parts-napa-rev", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://gearjunkie.com/biking/bestselling-retrospec-e-bikes", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": null, "url": "https://retrospec.com/collections/warranty-parts-napa-rev", "quote": ""},
+   {"kind": "review", "value": "500W", "url": "https://gearjunkie.com/biking/bestselling-retrospec-e-bikes", "quote": "A peppy 500W motor with six levels of pedal assist lets this sleek, Class 3 e-bike reach up to 28 mph."}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://retrospec.com/collections/warranty-parts-napa-rev", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://gearjunkie.com/biking/bestselling-retrospec-e-bikes", "quote": "The bike is available in a range of frame sizes to accommodate nearly any rider."}
+  ],
+  "fold": [
+   {"kind": "review", "value": "No", "url": "https://ev.motorwatt.com/ev-database/database-electric-bicycles/napa-rev-fitness", "quote": "Buyers can choose a step-over or step-through frame, matching access needs with personal preference.", "basis": "standard step-over/step-through hybrid frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "LIKELY DISCONTINUED: the maker's product pages (napa-rev-hybrid-fitness-electric-bike and its step-through) now redirect to the e-bikes collection; only a 'Warranty Parts: Napa Rev' collection remains (the given src link). The maker does not explicitly say 'discontinued', so status left empty. No maker specs available. Dealer pages found by WebSearch are gone (562ebikes, Playtri redirect to home; PIA 404); Ace Hardware shows a bot check; flexshopper has a bad TLS cert. Web archive not permitted in the browser. Remaining sources: a GearJunkie sponsored guide and the MOTORWATT EV database (2023 model, low confidence). Out-of-box speed not stated as a number (ships Class 2, Class 3 / 28 mph unlockable)."}

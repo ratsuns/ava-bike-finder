@@ -1,0 +1,38 @@
+{"bike": "Trek|FX+ 2S", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2299.99, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465T/fx+-2s/79839/5349657/", "quote": "FX+ 2S | $2,299.99 | Model 5349657"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465T/fx+-2s/79839/5349657/", "quote": "E-bike Classification | Class 2/3 | Max assist speed | 28 mph", "basis": "maker says Class 2/3; ships with 28 mph pedal assist plus throttle, so class 3 (maker overview also calls it 'This class 3 e-bike')"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465T/fx+-2s/79839/5349657/", "quote": "Max assist speed | 28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 60, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465T/fx+-2s/79839/5349657/", "quote": "Motor | Hub drive motor, 60 Nm, 500W, 36H, black"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 520, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465T/fx+-2s/79839/5349657/", "quote": "Battery | 520Wh integrated, removable"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "50", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465T/fx+-2s/79839/5349657/", "quote": "Range Up to 50mi"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 55.78, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465T/fx+-2s/79839/5349657/", "quote": "Weight | M - 25.30 kg / 55.78 lbs", "basis": "size M"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 300, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465T/fx+-2s/79839/5349657/", "quote": "This bike has a maximum total weight limit (combined weight of bicycle, rider, and cargo) of 300 pounds (136 kg).", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W hub drive", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465T/fx+-2s/79839/5349657/", "quote": "Motor | Hub drive motor, 60 Nm, 500W, 36H, black"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'6\"", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465T/fx+-2s/79839/5349657/", "quote": "S | 155 - 165 cm | 5'1\" - 5'5\" | 72 - 78 cm | 28\" - 31\" | M | 165 - 175 cm | 5'5\" - 5'9\" | 77 - 83 cm | 30\" - 33\" | L | 175 - 186 cm | 5'9\" - 6'1\" | 82 - 88 cm | 32\" - 35\" | XL | 186 - 197 cm | 6'1\" - 6'6\""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465T/fx+-2s/79839/5349657/", "quote": "Alpha Gold Aluminum, internal cable routing, internal battery, rack & fender mounts, flat mount disc brake, kickstand mount, 144.5mm OLD hub motor spacing", "basis": "rigid non-folding aluminum frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker source only; no independent page on this (2026 throttle) generation found (one WebSearch used; results were the older FX+ 2). Given src link was the FX+ 2S Midstep (p/79840) and its /us/en_US/ form returns a Trek server error; switched to the stepover FX+ 2S page (79839, model 5349657) on the same family page. Maker overview: 'With support up to 28mph' and 'This class 3 e-bike is prohibited from sale in California'. Trek weight is pre-production, size M."}

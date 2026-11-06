@@ -1,0 +1,48 @@
+{"bike": "Tern|NBD P8i", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": null, "url": "https://www.ternbicycles.com/us/bikes/471/nbd-p8i", "quote": "$2,999 (SALE PRICE)", "basis": "maker shows only a sale price; no regular price on the page"},
+   {"kind": "retailer", "value": null, "url": "https://www.amegoev.com/products/tern-nbd-p8i", "quote": "Regular price ⟶ $5,599.00 CAD", "basis": "Canadian dealer, CAD only"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 1, "url": "https://www.ternbicycles.com/us/bikes/471/nbd-p8i", "quote": "Class 1, Bosch Active Line Plus, 270% Assist, 50 Nm Torque, max speed 25 kph (EU); max speed 20 mph (US) ⟶ BATTERY:"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.ternbicycles.com/us/bikes/471/nbd-p8i", "quote": "Class 1, Bosch Active Line Plus, 270% Assist, 50 Nm Torque, max speed 25 kph (EU); max speed 20 mph (US) ⟶ BATTERY:"},
+   {"kind": "retailer", "value": 20, "url": "https://www.amegoev.com/products/tern-nbd-p8i", "quote": "Speed: 32kmh/20mph ⟶ Range: 54-108 kms/34-67 miles"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 50, "url": "https://www.ternbicycles.com/us/bikes/471/nbd-p8i", "quote": "Bosch Active Line Plus motor provides up to 50 Nm of torque and 270% support ⟶ Bosch PowerPack 400 powers long trips, commutes, and journeys"},
+   {"kind": "retailer", "value": 50, "url": "https://www.amegoev.com/products/tern-nbd-p8i", "quote": "Motor: Bosch Active Line Plus System 2 ⟶ Torque: 50 Nm"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 400, "url": "https://www.ternbicycles.com/us/bikes/471/nbd-p8i", "quote": "BATTERY: ⟶ Bosch PowerPack 400", "basis": "PowerPack 400 (400 Wh)"},
+   {"kind": "retailer", "value": 400, "url": "https://www.amegoev.com/products/tern-nbd-p8i", "quote": "BATTERY ⟶ Bosch PowerPack 400Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "34–67", "url": "https://www.ternbicycles.com/us/bikes/471/nbd-p8i", "quote": "RANGE: ⟶ 54 -108 km (34-67 mi)"},
+   {"kind": "retailer", "value": "34–67", "url": "https://www.amegoev.com/products/tern-nbd-p8i", "quote": "Range per charge: 54–108 km (34–67 miles) ⟶ Charge time: 50% in 2.8 hours; 100% in 6 hours"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 52.2, "url": "https://www.ternbicycles.com/us/bikes/471/nbd-p8i", "quote": "WEIGHT: ⟶ 23.7 kg (52.2 lb)"},
+   {"kind": "retailer", "value": 52.2, "url": "https://www.amegoev.com/products/tern-nbd-p8i", "quote": "Weight: 52.2 lbs (24 kgs) ⟶ Load: 308.6 lbs (140 kgs)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 308.6, "url": "https://www.ternbicycles.com/us/bikes/471/nbd-p8i", "quote": "MAX GROSS VEHICLE WEIGHT: ⟶ 140 kg (308.6 lb)", "basis": "total"},
+   {"kind": "retailer", "value": 308.6, "url": "https://www.amegoev.com/products/tern-nbd-p8i", "quote": "Weight: 52.2 lb (24 kg) ⟶ Load capacity: 308.6 lb (140 kg)", "basis": "total (same as maker's max gross vehicle weight)"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Active Line Plus", "url": "https://www.ternbicycles.com/us/bikes/471/nbd-p8i", "quote": "Class 1, Bosch Active Line Plus, 270% Assist, 50 Nm Torque, max speed 25 kph (EU); max speed 20 mph (US) ⟶ BATTERY:"},
+   {"kind": "retailer", "value": "Bosch Active Line Plus", "url": "https://www.amegoev.com/products/tern-nbd-p8i", "quote": "MOTOR POWER ⟶ Bosch Active Line Plus System 2, 50 Nm"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'10\"-6'3\"", "url": "https://www.ternbicycles.com/us/bikes/471/nbd-p8i", "quote": "Fits riders 147 - 190 cm (4'10\" - 6'3\")"},
+   {"kind": "retailer", "value": "4'10\"-6'3\"", "url": "https://www.amegoev.com/products/tern-nbd-p8i", "quote": "Sizes: One size (4'10\"-6'3\") ⟶ Brakes: Shimano, hydraulic disc"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.ternbicycles.com/us/bikes/471/nbd-p8i", "quote": "Tern NBD, 6061-AL, Patented design, EFBE Tri-Test approved: 140 kg ⟶ FORK:", "basis": "rigid low step-thru frame; the listed 'FOLDING SIZE' is with the stem folded"},
+   {"kind": "retailer", "value": "No", "url": "https://www.amegoev.com/products/tern-nbd-p8i", "quote": "Frame: Tern NBD, 6061-AL, low step-thru, EFBE Tri-Test approved (140 kg) ⟶ Tires: Schwalbe Big Apple 55-406 with puncture protection (Reflex)"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page shows only '$2,999 (SALE PRICE)' with no regular price, so price left null; Amego (Canadian dealer, from one WebSearch) gives CAD prices only. Max load is the max gross vehicle weight (total); max rider 264.6 lb; rack 60 lb. Maker lists 'FOLDING SIZE' (stem folds) but the frame does not fold. No US review found (EBR and EBReport have no NBD review; a US dealer page from the search returned 410 Gone)."}

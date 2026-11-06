@@ -1,0 +1,48 @@
+{"bike": "Sixthreezero|EVRYjourney Electric Tricycle Rickshaw 750W", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 4999.99, "url": "https://www.sixthreezero.com/products/sixthreezero-evryjourney-electric-750w-tricycle-rickshaw-with-passenger-seat-navy", "quote": "$3399.99 ⟶ $4999.99", "basis": "higher listed price beside the $3399.99 sale price"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/sixtreezero-rickshaw-electric-tricycle-review/", "quote": ""}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.sixthreezero.com/products/sixthreezero-evryjourney-electric-750w-tricycle-rickshaw-with-passenger-seat-navy", "quote": "20MPH ⟶ TOP SPEED & UP TO", "basis": "maker states no class; 20 mph top speed with thumb throttle = Class 2"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/sixtreezero-rickshaw-electric-tricycle-review/", "quote": "E-BIKE CLASS: ⟶ CLASS 2 (THROTTLE TO 20 MPH)"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.sixthreezero.com/products/sixthreezero-evryjourney-electric-750w-tricycle-rickshaw-with-passenger-seat-navy", "quote": "20MPH ⟶ TOP SPEED & UP TO"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/sixtreezero-rickshaw-electric-tricycle-review/", "quote": "CLASS 2 (THROTTLE TO 20 MPH)"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://www.sixthreezero.com/products/sixthreezero-evryjourney-electric-750w-tricycle-rickshaw-with-passenger-seat-navy", "quote": ""},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/sixtreezero-rickshaw-electric-tricycle-review/", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 1008, "url": "https://www.sixthreezero.com/products/sixthreezero-evryjourney-electric-750w-tricycle-rickshaw-with-passenger-seat-navy", "quote": "48V 21AH Samsung Cells / 1,008 Watt Hours"},
+   {"kind": "review", "value": 1008, "url": "https://electricbikereport.com/sixtreezero-rickshaw-electric-tricycle-review/", "quote": "Battery:48V, 21Ah, and 1008 Wh ⟶ Display: Duotone LCD"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "50", "url": "https://www.sixthreezero.com/products/sixthreezero-evryjourney-electric-750w-tricycle-rickshaw-with-passenger-seat-navy", "quote": "Up to 50 Miles ⟶ Riding Pace", "basis": "up to"},
+   {"kind": "review", "value": "11–49", "url": "https://electricbikereport.com/sixtreezero-rickshaw-electric-tricycle-review/", "quote": "IN the first test on PAS 1, we covered 48.67 miles spanning over 5 hours, and tackling 978 feet of elevation with an average speed of 9.01 mph. This means a long day of leisurely cruising is absolutely possible.", "basis": "tested: 48.67 mi on PAS 1, 11.43 mi on PAS 5; claimed 'Up to 50 miles'"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 158, "url": "https://www.sixthreezero.com/products/sixthreezero-evryjourney-electric-750w-tricycle-rickshaw-with-passenger-seat-navy", "quote": "Bike Weight ⟶ 158lbs"},
+   {"kind": "review", "value": 158, "url": "https://electricbikereport.com/sixtreezero-rickshaw-electric-tricycle-review/", "quote": "Claimed weight: 158 lbs ⟶ Rider height range: 4’11” – 6’4″"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 500, "url": "https://www.sixthreezero.com/products/sixthreezero-evryjourney-electric-750w-tricycle-rickshaw-with-passenger-seat-navy", "quote": "Weight Capacity ⟶ 500lbs"},
+   {"kind": "review", "value": 500, "url": "https://electricbikereport.com/sixtreezero-rickshaw-electric-tricycle-review/", "quote": "Total payload capacity:500 lbs ⟶ COMPONENTS & ACCESSORIES"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W Bafang front hub", "url": "https://www.sixthreezero.com/products/sixthreezero-evryjourney-electric-750w-tricycle-rickshaw-with-passenger-seat-navy", "quote": "Bafang 48V/750W Front Hub Motor"},
+   {"kind": "review", "value": "750W Bafang front hub", "url": "https://electricbikereport.com/sixtreezero-rickshaw-electric-tricycle-review/", "quote": "The Sixthreezero Rickshaw is powered by a 750W front-hub motor and activated by a cadence sensor. The 48V, 21 amp hour battery is made by Samsung and has 1,008 Watt hours of juice for your rides."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'11\"-6'4\"", "url": "https://www.sixthreezero.com/products/sixthreezero-evryjourney-electric-750w-tricycle-rickshaw-with-passenger-seat-navy", "quote": "Height Range ⟶ 4'11\" - 6'4\""},
+   {"kind": "review", "value": "4'11\"-6'4\"", "url": "https://electricbikereport.com/sixtreezero-rickshaw-electric-tricycle-review/", "quote": "Rider height range: 4’11” – 6’4″"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.sixthreezero.com/products/sixthreezero-evryjourney-electric-750w-tricycle-rickshaw-with-passenger-seat-navy", "quote": "Frame ⟶ 17\" Aluminum Frame", "basis": "'Folding' appears on the page only as a shop-menu filter, not for this trike"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Electric tricycle (rickshaw with passenger bench). Maker shows $3399.99 next to $4999.99; recorded the higher one as regular price (couldn't confirm strikethrough styling in the DOM). Maker never states a class; 20 mph top speed + thumb throttle -> Class 2, matching EBReport. Maker 'Weight Capacity 500lbs' (EBReport calls it total payload); also '300lb bench seat capacity'. EBReport tested an earlier build that it says lacked hydraulic brakes; maker page now lists hydraulic discs, other specs match. EBR (electricbikereview.com) search returned nothing."}

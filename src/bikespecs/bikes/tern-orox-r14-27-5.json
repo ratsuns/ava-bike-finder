@@ -1,0 +1,49 @@
+{"bike": "Tern|Orox R14 (27.5\")", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": null, "url": "https://www.ternbicycles.com/us/bikes/471/orox-r14-275", "quote": "$6,999 (SALE PRICE) ⟶ WHY OROX SPECS ACCESSORIES SUPPORT FIND A DEALER BUY", "basis": "maker shows only a sale price, no regular price"},
+   {"kind": "retailer", "value": 8999, "url": "https://www.seattleelectricbike.net/products/tern-orox-r14", "quote": "Regular price ⟶ $8,999.00", "basis": "regular price; dealer sale price $6,999.00"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://www.ternbicycles.com/us/bikes/471/orox-r14-275", "quote": "", "basis": "maker page gives no class; only \"max speed 20 mph (US)\""},
+   {"kind": "retailer", "value": null, "url": "https://www.seattleelectricbike.net/products/tern-orox-r14", "quote": "", "basis": "no class given"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.ternbicycles.com/us/bikes/471/orox-r14-275", "quote": "MOTOR: ⟶ Bosch Performance CX, max speed 20 mph (US)"},
+   {"kind": "retailer", "value": 20, "url": "https://www.seattleelectricbike.net/products/tern-orox-r14", "quote": "Motor\tBosch Performance CX, max speed 25 kph (EU); max speed 20 mph (US) ⟶ Battery\t800 Wh, Bosch Dual Battery pack ready"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://www.ternbicycles.com/us/bikes/471/orox-r14-275", "quote": "Hill-attacking Bosch Performance Line CX motor provides up to 85 Nm of torque and 340% support ⟶ Dual-battery system draws from up to two batteries for ultra-long range"},
+   {"kind": "retailer", "value": 85, "url": "https://www.seattleelectricbike.net/products/tern-orox-r14", "quote": "Hill-attacking Bosch Performance Line CX motor provides up to 85 Nm of torque and 340% support ⟶ Dual-battery system draws from up to two batteries for ultra-long range"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 800, "url": "https://www.ternbicycles.com/us/bikes/471/orox-r14-275", "quote": "BATTERY: ⟶ 800 Wh, Bosch Dual Battery pack ready"},
+   {"kind": "retailer", "value": 800, "url": "https://www.seattleelectricbike.net/products/tern-orox-r14", "quote": "Battery\t800 Wh, Bosch Dual Battery pack ready ⟶ Display\tBosch Kiox 300 w/ LED remote, electronic bike lock"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "58–100", "url": "https://www.ternbicycles.com/us/bikes/471/orox-r14-275", "quote": "RANGE: ⟶ 800 Wh: 93 - 161 km (58 -100 mi); 1600 Wh: 185 - 322 km (115 - 200 mi)"},
+   {"kind": "retailer", "value": null, "url": "https://www.seattleelectricbike.net/products/tern-orox-r14", "quote": "", "basis": "no range given"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 83.1, "url": "https://www.ternbicycles.com/us/bikes/471/orox-r14-275", "quote": "WEIGHT: ⟶ M: 37.7 kg (83.1 lb)", "basis": "size M; battery not mentioned either way"},
+   {"kind": "retailer", "value": 74.5, "url": "https://www.seattleelectricbike.net/products/tern-orox-r14", "quote": "WEIGHT::Medium, 74.5lb ⟶ GEAR INCHES::18\" - 96\"", "basis": "size Medium; disagrees with maker's 83.1 lb (dealer shows the same 74.5 lb on its Orox S12 page, possibly copied)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 463, "url": "https://www.ternbicycles.com/us/bikes/471/orox-r14-275", "quote": "MAX GROSS VEHICLE WEIGHT: ⟶ 210 kg (463 lb)", "basis": "total; off-road 180 kg (397 lb)"},
+   {"kind": "retailer", "value": 463, "url": "https://www.seattleelectricbike.net/products/tern-orox-r14", "quote": "SUGGESTED RIDER HEIGHT::M: 61 - 72.8 in ;L: 65 - 76.8 in ⟶ MAX GROSS VEHICLE WEIGHT::On road: 463lb.; Off road: 396.8lb.", "basis": "total; on road"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Performance CX", "url": "https://www.ternbicycles.com/us/bikes/471/orox-r14-275", "quote": "MOTOR: ⟶ Bosch Performance CX, max speed 20 mph (US)", "basis": "no rated watts published"},
+   {"kind": "retailer", "value": "Bosch Performance CX", "url": "https://www.seattleelectricbike.net/products/tern-orox-r14", "quote": "Motor\tBosch Performance CX, max speed 25 kph (EU); max speed 20 mph (US) ⟶ Battery\t800 Wh, Bosch Dual Battery pack ready", "basis": "no rated watts"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'5\"", "url": "https://www.ternbicycles.com/us/bikes/471/orox-r14-275", "quote": "Two frame sizes to fit riders 155 - 195 cm (5’1” - 6’5”) tall, weighing up to 130 kg (286 lb) ⟶ SPECIFICATIONS"},
+   {"kind": "retailer", "value": "5'1\"-6'5\"", "url": "https://www.seattleelectricbike.net/products/tern-orox-r14", "quote": "Two frame sizes to fit riders 155 - 195 cm (5’1” - 6’5”) tall, weighing up to 130 kg (286 lb) ⟶ Motor\tBosch Performance CX, max speed 25 kph (EU); max speed 20 mph (US)"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.ternbicycles.com/us/bikes/471/orox-r14-275", "quote": "Two frame sizes to fit riders 155 - 195 cm (5’1” - 6’5”) tall, weighing up to 130 kg (286 lb) ⟶ SPECIFICATIONS", "basis": "judgment: full-size longtail; no folding size/time listed on the page"},
+   {"kind": "retailer", "value": null, "url": "https://www.seattleelectricbike.net/products/tern-orox-r14", "quote": "", "basis": "not stated"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page shows only '$6,999 (SALE PRICE)'; regular $8,999 from Seattle Electric Bike (US dealer; its page lists 27.5\" x 4\" Johnny Watts tires, so it's the 27.5\" version). Weight disagrees: maker 'M: 37.7 kg (83.1 lb)' vs dealer 'Medium, 74.5lb' (same figure dealer shows for the S12). Amego's 'Orox R14 800 Wh' page was not used: it lists 29\" x 2.6\" tires (likely the 29\" variant) and 76.9 lb. No e-bike class given (20 mph, no throttle). Maker highlights say GVW '210 kg (462 lb)', spec table '210 kg (463 lb)'."}

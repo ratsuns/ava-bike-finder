@@ -1,0 +1,38 @@
+{"bike": "Serfas|E Dash Mini", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2799.99, "url": "https://serfas.com/products/dash-mini-500w-belt-drive", "quote": "$2,799.99"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://serfas.com/products/dash-mini-500w-belt-drive", "quote": "Max Speed: Up To Class 3, 28 mph. Can Modify Before Shipping To Meet State and Local Regulations", "basis": "ships at Class 3 / 28 mph unless modified before shipping on request"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://serfas.com/products/dash-mini-500w-belt-drive", "quote": "Max Speed: Up To Class 3, 28 mph. Can Modify Before Shipping To Meet State and Local Regulations"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://serfas.com/products/dash-mini-500w-belt-drive", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 672, "url": "https://serfas.com/products/dash-mini-500w-belt-drive", "quote": "Battery: BAFANG 500W - 48V - 14Ah Samsung Cells (UL-2771 Certified)", "basis": "48V x 14Ah"}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://serfas.com/products/dash-mini-500w-belt-drive", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://serfas.com/products/dash-mini-500w-belt-drive", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": 300, "url": "https://serfas.com/products/dash-mini-500w-belt-drive", "quote": "Capacity: Up To 300lbs Cargo/Rider Total", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W BAFANG hub drive with internal gears", "url": "https://serfas.com/products/dash-mini-500w-belt-drive", "quote": "Motor: 500W BAFANG Hub Drive W/ Internal Gears"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://serfas.com/products/dash-mini-500w-belt-drive", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://serfas.com/products/dash-mini-500w-belt-drive", "quote": "Tires: Serfas Voltage 20.0 x 4.0 EBike Certified W/ Flat Protection.", "basis": "page never mentions folding"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "src link is the current 'DASH Mini 500W Belt Drive' (Bafang hub, belt, 20x4.0 tires); used as given. Only the maker source found: dealer listings from the web search (Schellers, Conte's, Global Bikes) are the older chain-drive 'eDASH Mini 500W' (2022/2023 models), a different generation, so not used. Maker publishes no torque, range, weight or rider height. 'Up To Class 3, 28 mph', can be modified before shipping. Fold 'No' because the page never mentions folding (20in fat-tire frame) — worth a human check. Price under Shopify 'Sale price' label, no crossed-out price; 'Only 1 product left'."}

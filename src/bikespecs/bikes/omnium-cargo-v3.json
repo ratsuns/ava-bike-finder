@@ -1,0 +1,46 @@
+{"bike": "Omnium|Cargo V3", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": null, "url": "https://omniumcargo.com/shop/product/e-cargo-v3/", "quote": "5.900,00 €", "basis": "maker sells in EUR only (EUR 5,900 incl. VAT); no USD price"},
+   {"kind": "retailer", "value": null, "url": "https://shop.roulezjeunesse.com/products/omnium-e-cargo-v3", "quote": "E-Cargo V3 - €5.900", "basis": "EUR, French retailer"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://omniumcargo.com/shop/product/e-cargo-v3/", "quote": "", "basis": "no class or US speed stated; European shop"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": null, "url": "https://omniumcargo.com/shop/product/e-cargo-v3/", "quote": "", "basis": "no assist speed stated"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://omniumcargo.com/shop/product/e-cargo-v3/", "quote": "MOTOR\tShimano Steps EP801 CRG ⟶ BATTERY\tShimano STEPS Battery(504WH) BT-EN605", "basis": "motor named, no Nm figure on maker page"},
+   {"kind": "retailer", "value": 85, "url": "https://shop.roulezjeunesse.com/products/omnium-e-cargo-v3", "quote": "Puissance : 250 W ⟶ Couple : 85 Nm"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 504, "url": "https://omniumcargo.com/shop/product/e-cargo-v3/", "quote": "MOTOR\tShimano Steps EP801 CRG ⟶ BATTERY\tShimano STEPS Battery(504WH) BT-EN605"},
+   {"kind": "retailer", "value": 504, "url": "https://shop.roulezjeunesse.com/products/omnium-e-cargo-v3", "quote": "Batterie ⟶ Capacité : 504 Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": null, "url": "https://omniumcargo.com/shop/product/e-cargo-v3/", "quote": "", "basis": "no range on maker page"},
+   {"kind": "retailer", "value": "62", "url": "https://shop.roulezjeunesse.com/products/omnium-e-cargo-v3", "quote": "Équipé de pneus larges Schwalbe Big Ben Plus et d'une transmission Shimano Nexus 5 vitesses à commande électrique Di2, l'E-Cargo V3 s'adapte à tous les terrains urbains. Sa batterie Shimano STEPS de 504 Wh assure une autonomie jusqu'à 100 km.", "basis": "up to 100 km = 62 miles"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 61.7, "url": "https://omniumcargo.com/shop/product/e-cargo-v3/", "quote": "COMPLETE BIKE WEIGHT (INCLUDING WEBBING)\t28kg +/- ⟶ GEO", "basis": "28 kg 'complete bike'; page doesn't say explicitly whether battery is included"},
+   {"kind": "retailer", "value": 61.7, "url": "https://shop.roulezjeunesse.com/products/omnium-e-cargo-v3", "quote": "Poids à vide : 28.0 kg ⟶ Charge max totale : 175.0 kg", "basis": "28 kg"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 392, "url": "https://omniumcargo.com/shop/product/e-cargo-v3/", "quote": "MAXIMUM TOTAL LOADING WEIGHT INCL. RIDER\t178 kg", "basis": "178 kg rider + cargo (front rack max 75 kg)"},
+   {"kind": "retailer", "value": 386, "url": "https://shop.roulezjeunesse.com/products/omnium-e-cargo-v3", "quote": "Poids à vide : 28.0 kg ⟶ Charge max totale : 175.0 kg", "basis": "175 kg"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Shimano Steps EP801 CRG", "url": "https://omniumcargo.com/shop/product/e-cargo-v3/", "quote": "MOTOR\tShimano Steps EP801 CRG ⟶ BATTERY\tShimano STEPS Battery(504WH) BT-EN605"},
+   {"kind": "retailer", "value": "250W Shimano EP801 mid-drive", "url": "https://shop.roulezjeunesse.com/products/omnium-e-cargo-v3", "quote": "Puissance : 250 W ⟶ Couple : 85 Nm", "basis": "EU-rated 250 W"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://omniumcargo.com/shop/product/e-cargo-v3/", "quote": "5 SIZES\tXS, S, M, L, XL", "basis": "sizes listed but no rider heights in text"},
+   {"kind": "retailer", "value": "5'3\"-6'9\"", "url": "https://shop.roulezjeunesse.com/products/omnium-e-cargo-v3", "quote": "Taille cycliste minimum : 160 cm | Taille cycliste maximum : 205 cm", "basis": "160-205 cm"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://omniumcargo.com/shop/product/e-cargo-v3/", "quote": "The Cargo is an incredibly versatile, lightweight and fast cargo bike that can handle heavy loads and big objects with ease.", "basis": "rigid front-rack cargo frame; no folding"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "The bike is sold as the 'E-Cargo V3' (src link is the e-bike page). Omnium is a Danish brand; its shop prices only in EUR (EUR 5,900) and says 'E-bikes shipped outside of Europe will not include a battery due to air-shipping restrictions.' No US price, class or US speed found; no US dealer or US review found (WebSearch used). Only independent source is a French retailer (Roulez Jeunesse), in French/EUR. Maker load 178 kg vs retailer 175 kg. Retailer height quote joins two consecutive lines with ' | '."}

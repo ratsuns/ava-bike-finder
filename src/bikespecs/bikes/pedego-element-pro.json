@@ -1,0 +1,41 @@
+{
+ "bike": "Pedego|Element Pro",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2495, "url": "https://pedegoelectricbikes.com/products/element-pro", "quote": "$2,495.00 ⟶ CHOOSE OPTIONS"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://pedegoelectricbikes.com/products/element-pro", "quote": "TOP SPEED | Class 1: 20MPH, Class 2: 20MPH, Class 3 Ready: 28MPH", "basis": "Class 1 & 2, Class 3 ready via dealer; has 'Pedego Twist Throttle' and 20 mph -> Class 2"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://pedegoelectricbikes.com/products/element-pro", "quote": "TOP SPEED | Class 1: 20MPH, Class 2: 20MPH, Class 3 Ready: 28MPH", "basis": "adjustable to 28 mph (Class 3 upgrade at dealer)"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://pedegoelectricbikes.com/products/element-pro", "quote": "MOTOR | 749W Rear Hub Motor", "basis": "no torque given"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 672, "url": "https://pedegoelectricbikes.com/products/element-pro", "quote": "PRIMARY BATTERY | 48V 14Ah UL2271 Certified Battery Pack", "basis": "48V x 14Ah"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "56", "url": "https://pedegoelectricbikes.com/products/element-pro", "quote": "Range Up to | 56 Miles", "basis": "'up to'"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 63.59, "url": "https://pedegoelectricbikes.com/products/element-pro", "quote": "BIKE | 54lb / 24.5kg (w/o Battery) | PRIMARY BATTERY | 14Ah: 9.59lb / 4.35kg", "basis": "54 lb without battery + 9.59 lb battery"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 250, "url": "https://pedegoelectricbikes.com/products/element-pro", "quote": "WEIGHT LIMIT | 250lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "749W rear hub", "url": "https://pedegoelectricbikes.com/products/element-pro", "quote": "MOTOR | 749W Rear Hub Motor"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'11\"-6'1\"", "url": "https://pedegoelectricbikes.com/products/element-pro", "quote": "RIDER HEIGHT | 4'11\" to 6'1\""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://pedegoelectricbikes.com/products/element-pro", "quote": "MATERIAL | 6061-T6 Aluminum Alloy | TYPE | Fat Tire Adventure", "basis": "fixed 20in fat-tire step-thru frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page only. No independent page found for the new Element Pro (EBR/Electrek Element reviews are the original 2020-era Element). No torque given."
+}

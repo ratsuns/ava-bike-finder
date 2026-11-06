@@ -1,0 +1,38 @@
+{"bike": "Senada|Gladiator", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "retailer", "value": 1750, "url": "https://ebikes2u.com/product/gladiator-ul-2849-certified-750w-15ah-900w-peak-folding-e-bike-upgraded-48v-15ah-20%e2%80%b3-fat-tire-e-cargo-edition-fremont-2/", "quote": "$1,750.00 | Original price was: $1,750.00.", "basis": "dealer's crossed-out regular price; on sale for $1,499"}
+  ],
+  "cls": [
+   {"kind": "retailer", "value": null, "url": "https://ebikes2u.com/product/gladiator-ul-2849-certified-750w-15ah-900w-peak-folding-e-bike-upgraded-48v-15ah-20%e2%80%b3-fat-tire-e-cargo-edition-fremont-2/", "quote": "", "basis": "no class or top speed given"}
+  ],
+  "spd": [
+   {"kind": "retailer", "value": null, "url": "https://ebikes2u.com/product/gladiator-ul-2849-certified-750w-15ah-900w-peak-folding-e-bike-upgraded-48v-15ah-20%e2%80%b3-fat-tire-e-cargo-edition-fremont-2/", "quote": ""}
+  ],
+  "tq": [
+   {"kind": "retailer", "value": 75, "url": "https://ebikes2u.com/product/gladiator-ul-2849-certified-750w-15ah-900w-peak-folding-e-bike-upgraded-48v-15ah-20%e2%80%b3-fat-tire-e-cargo-edition-fremont-2/", "quote": "With 750W continuous power (900W Max Output) and 75Nm of torque at your disposal, the high-speed brushless geared hub motor can help you conquer the most rugged terrains easily."}
+  ],
+  "wh": [
+   {"kind": "retailer", "value": 720, "url": "https://ebikes2u.com/product/gladiator-ul-2849-certified-750w-15ah-900w-peak-folding-e-bike-upgraded-48v-15ah-20%e2%80%b3-fat-tire-e-cargo-edition-fremont-2/", "quote": "Battery\t48 volt 15 amp-hour li-ion battery", "basis": "48V x 15Ah"}
+  ],
+  "range": [
+   {"kind": "retailer", "value": "34–65", "url": "https://ebikes2u.com/product/gladiator-ul-2849-certified-750w-15ah-900w-peak-folding-e-bike-upgraded-48v-15ah-20%e2%80%b3-fat-tire-e-cargo-edition-fremont-2/", "quote": "Max Range\t55–105 km", "basis": "55–105 km converted to miles; page elsewhere says 'up to 65 miles range'; assist mode not stated"}
+  ],
+  "wt": [
+   {"kind": "retailer", "value": 67, "url": "https://ebikes2u.com/product/gladiator-ul-2849-certified-750w-15ah-900w-peak-folding-e-bike-upgraded-48v-15ah-20%e2%80%b3-fat-tire-e-cargo-edition-fremont-2/", "quote": "Bike Weight\t67 lbs (31 kg) with battery"}
+  ],
+  "load": [
+   {"kind": "retailer", "value": 350, "url": "https://ebikes2u.com/product/gladiator-ul-2849-certified-750w-15ah-900w-peak-folding-e-bike-upgraded-48v-15ah-20%e2%80%b3-fat-tire-e-cargo-edition-fremont-2/", "quote": "Max Load\t350 lbs (160 kg)", "basis": "page also says 'Payload Capacity | 350 lbs (160 kg) total' - unclear whether bike weight is included"}
+  ],
+  "motor": [
+   {"kind": "retailer", "value": "750W BAFANG geared hub (900W peak)", "url": "https://ebikes2u.com/product/gladiator-ul-2849-certified-750w-15ah-900w-peak-folding-e-bike-upgraded-48v-15ah-20%e2%80%b3-fat-tire-e-cargo-edition-fremont-2/", "quote": "Motor | 750W BAFANG brushless (high torque) | Battery & Range | 48V 15Ah lithium-ion → up to 65 miles", "basis": "'geared hub' and '900W Max Output' from the description paragraph on the same page"}
+  ],
+  "height": [
+   {"kind": "retailer", "value": "5'2\"-6'2\"", "url": "https://ebikes2u.com/product/gladiator-ul-2849-certified-750w-15ah-900w-peak-folding-e-bike-upgraded-48v-15ah-20%e2%80%b3-fat-tire-e-cargo-edition-fremont-2/", "quote": "Rider Height | Recommended 5’2″ – 6’2″"}
+  ],
+  "fold": [
+   {"kind": "retailer", "value": "Yes", "url": "https://ebikes2u.com/product/gladiator-ul-2849-certified-750w-15ah-900w-peak-folding-e-bike-upgraded-48v-15ah-20%e2%80%b3-fat-tire-e-cargo-edition-fremont-2/", "quote": "Quick-fold mechanism for compact storage in cars, apartments, or transit—strong yet portable at just 67 lbs with battery."}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "NO MAKER SOURCE: Senada's own site (senadabikes.com) shows 'This store is unavailable' (Shopify 404); affiliate links to Senada products redirect there too. Only source is the given dealer page (ebikes2u, Fremont), which calls it 'Senada Gladiator' in its spec table. No top speed or class given anywhere on the page. No independent review found (EBR has no Senada results). Used 1 WebSearch."}

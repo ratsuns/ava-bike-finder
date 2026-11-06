@@ -1,0 +1,41 @@
+{
+ "bike": "Pedego|Element Platinum Edition",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "retailer", "value": null, "url": "https://www.practicalcycle.com/product/pedego-element-platinum/", "quote": "PRICE ⟶ $2,495.00 $1,999.00", "basis": "this dealer URL for the Element Platinum now lists the 'Pedego Element Pro', so its price is the Element Pro's"}
+  ],
+  "cls": [
+   {"kind": "retailer", "value": null, "url": "https://www.practicalcycle.com/product/pedego-element-platinum/", "quote": ""}
+  ],
+  "spd": [
+   {"kind": "retailer", "value": null, "url": "https://www.practicalcycle.com/product/pedego-element-platinum/", "quote": ""}
+  ],
+  "tq": [
+   {"kind": "retailer", "value": null, "url": "https://www.practicalcycle.com/product/pedego-element-platinum/", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "retailer", "value": 728, "url": "https://www.practicalcycle.com/product/pedego-element-platinum/", "quote": "52V System, 749W Hub motor ⟶ 14AH Battery", "basis": "52V x 14Ah; from the page's Element Platinum description"}
+  ],
+  "range": [
+   {"kind": "retailer", "value": null, "url": "https://www.practicalcycle.com/product/pedego-element-platinum/", "quote": ""}
+  ],
+  "wt": [
+   {"kind": "retailer", "value": null, "url": "https://www.practicalcycle.com/product/pedego-element-platinum/", "quote": ""}
+  ],
+  "load": [
+   {"kind": "retailer", "value": null, "url": "https://www.practicalcycle.com/product/pedego-element-platinum/", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "retailer", "value": "749W hub", "url": "https://www.practicalcycle.com/product/pedego-element-platinum/", "quote": "52V System, 749W Hub motor ⟶ 14AH Battery"}
+  ],
+  "height": [
+   {"kind": "retailer", "value": null, "url": "https://www.practicalcycle.com/product/pedego-element-platinum/", "quote": ""}
+  ],
+  "fold": [
+   {"kind": "retailer", "value": null, "url": "https://www.practicalcycle.com/product/pedego-element-platinum/", "quote": ""}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "No maker page: pedegoelectricbikes.com/products/element-platinum-edition is a 404 and the maker's product search shows only Element Core, Element Pro and Element 2. Pedego Canada has only a March 2023 blog post (CAD 'Starting at $3,595.00', no specs). Dealer Practical Cycle's Element Platinum URL now shows 'Pedego Element Pro' (with an FS26-Element-Pro spec sheet) but still carries the Platinum blurb ('52V System, 749W Hub motor', '14AH Battery') -- looks like the Element Platinum was replaced by the Element Pro and is no longer sold, but the maker doesn't say so. EBR/Electrek have no Element Platinum review. One WebSearch used. Almost all fields null."
+}

@@ -1,0 +1,50 @@
+{"bike": "Troxus|Lynx Cargo", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2399, "url": "https://www.troxusmobility.com/products/lynx-cargo-e-bike", "quote": "Regular price ⟶ $2,399.00 USD"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.troxusmobility.com/products/lynx-cargo-e-bike", "quote": "Class 2 eBike ⟶ As Sold"},
+   {"kind": "retailer", "value": 1, "url": "https://www.sportsbasement.com/products/lynx-cargo-1", "quote": "TOP SPEED: CLASS 1: UP TO 20 MPH PEDAL ASSIST", "basis": "retailer says Class 1, but maker and Cycling Weekly describe a throttle"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.troxusmobility.com/products/lynx-cargo-e-bike", "quote": "Max Speed\tUp To 20 MPH ⟶ Range\tUp To 90 Miles Per Charge"},
+   {"kind": "review", "value": 20, "url": "https://www.cyclingweekly.com/reviews/e-bikes/troxus-lynx-cargo-e-bike-reviewed-a-robust-heavy-duty-cargo-hauler-for-a-reasonable-price", "quote": "The Lynx is equipped with five different levels of pedal assist up to 20 mph, along with a thumb throttle for a little extra oomph to get going. Paired with the 8-speed drivetrain, I never felt under-geared."},
+   {"kind": "retailer", "value": 20, "url": "https://www.sportsbasement.com/products/lynx-cargo-1", "quote": "TOP SPEED: CLASS 1: UP TO 20 MPH PEDAL ASSIST"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 86, "url": "https://www.troxusmobility.com/products/lynx-cargo-e-bike", "quote": "Motor\tBafang® 48V/750W Hub-Drive Motor, 86Nm Max. Torque"},
+   {"kind": "review", "value": 86, "url": "https://www.cyclingweekly.com/reviews/e-bikes/troxus-lynx-cargo-e-bike-reviewed-a-robust-heavy-duty-cargo-hauler-for-a-reasonable-price", "quote": "Max speed: 20lbs ⟶ Max torque: 86nm"},
+   {"kind": "retailer", "value": 86, "url": "https://www.sportsbasement.com/products/lynx-cargo-1", "quote": "BATTERY: 48V/20AH (960WH) ⟶ MAX TORQUE: 86 NM"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 960, "url": "https://www.troxusmobility.com/products/lynx-cargo-e-bike", "quote": "Battery\tUL-2271 Certified / Internal / Removable / Lithium Ion, 48V/20Ah (960Wh) with Samsung® Cells"},
+   {"kind": "review", "value": 960, "url": "https://www.cyclingweekly.com/reviews/e-bikes/troxus-lynx-cargo-e-bike-reviewed-a-robust-heavy-duty-cargo-hauler-for-a-reasonable-price", "quote": "Battery: 960Wh range / Samsung Cells 48v 20Ah ⟶ Battery is removable and lockable"},
+   {"kind": "retailer", "value": 960, "url": "https://www.sportsbasement.com/products/lynx-cargo-1", "quote": "BATTERY: 48V/20AH (960WH) ⟶ MAX TORQUE: 86 NM"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "90", "url": "https://www.troxusmobility.com/products/lynx-cargo-e-bike", "quote": "Range\tUp To 90 Miles Per Charge ⟶ Weight Limit\tMaximum Load: 500 lbs", "basis": "up to"},
+   {"kind": "retailer", "value": "90", "url": "https://www.sportsbasement.com/products/lynx-cargo-1", "quote": "MOTOR: BAFANG® 48V/750W ⟶ RANGE: UP TO 90 MILES", "basis": "up to"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 80.5, "url": "https://www.troxusmobility.com/products/lynx-cargo-e-bike", "quote": "Weight Limit\tMaximum Load: 500 lbs ⟶ Net Weight\t80.5 lbs"},
+   {"kind": "retailer", "value": 80.5, "url": "https://www.sportsbasement.com/products/lynx-cargo-1", "quote": "Net Weight\t80.5 lbs ⟶ Rack\tAlloy / Front & Integrated Rear Models"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 500, "url": "https://www.troxusmobility.com/products/lynx-cargo-e-bike", "quote": "Range\tUp To 90 Miles Per Charge ⟶ Weight Limit\tMaximum Load: 500 lbs"},
+   {"kind": "review", "value": 500, "url": "https://www.cyclingweekly.com/reviews/e-bikes/troxus-lynx-cargo-e-bike-reviewed-a-robust-heavy-duty-cargo-hauler-for-a-reasonable-price", "quote": "Carrying capacity: up to 500 lbs ⟶ Max speed: 20lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub", "url": "https://www.troxusmobility.com/products/lynx-cargo-e-bike", "quote": "Rear Hub\tBafang® 48V 750W/ 28 MPH. 86Nm ⟶ Rims\tAlloy Double Wall, 20\"x4.0\" w/ Eyelets"},
+   {"kind": "review", "value": "750W hub", "url": "https://www.cyclingweekly.com/reviews/e-bikes/troxus-lynx-cargo-e-bike-reviewed-a-robust-heavy-duty-cargo-hauler-for-a-reasonable-price", "quote": "Shimano 8-speed shifting 46T x 12-32T ⟶ Hub-based motor: Bafang 48V 750W"},
+   {"kind": "retailer", "value": "750W rear hub", "url": "https://www.sportsbasement.com/products/lynx-cargo-1", "quote": "Rear Hub\tBafang® 48V 750W/ 28 MPH. 86Nm ⟶ Rims\tAlloy Double Wall, 20\"x4.0\" w/ Eyelets"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://www.troxusmobility.com/products/lynx-cargo-e-bike", "quote": "Frame Size\tUniversal ⟶ Wheel Size\t20\"x4.0\""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.troxusmobility.com/products/lynx-cargo-e-bike", "quote": "Frame\t6061-T6 Aluminum Step-Thru Cargo Frame ⟶ Fork\tFront Suspension Fork, 80mm Travel", "basis": "non-folding step-thru cargo frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page shows 'SOLD OUT' for the selected color (not marked discontinued). Sports Basement lists it as 'CLASS 1' though maker says 'Class 2 eBike As Sold' and Cycling Weekly mentions a thumb throttle. Cycling Weekly's spec list has a typo 'Max speed: 20lbs'. Sports Basement shows $1,999 and Cycling Weekly a $2,299 deal; maker regular price $2,399 used."}

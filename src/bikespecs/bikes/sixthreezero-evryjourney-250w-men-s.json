@@ -1,0 +1,41 @@
+{"bike": "Sixthreezero|EVRYjourney 250W (Men's)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1649.99, "url": "https://www.sixthreezero.com/products/mens-evry-hybrid-ebike", "quote": "$999.99 ⟶ $1649.99", "basis": "higher listed price beside the $999.99 sale price"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.sixthreezero.com/products/mens-evry-hybrid-ebike", "quote": "Top speed of 20mph for both full electric and with pedal assist", "basis": "maker states no class; 20 mph in throttle (full electric) and pedal assist = Class 2"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.sixthreezero.com/products/mens-evry-hybrid-ebike", "quote": "Top speed of 20mph for both full electric and with pedal assist"},
+   {"kind": "retailer", "value": 28, "url": "https://sport.woot.com/offers/sixthreezero-evryjourney-men-250w-2", "quote": "Ebike has a 250-watt battery will take you 18 to 40 miles (at up to 14 mph) in full-electric mode and 20 to 60 miles (at up to 28 mph) in pedal-assist mode ⟶ Electric BIKE features smooth 7-speed Shimano Tourney rear derailleur", "basis": "conflicts with maker; likely copy error"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://www.sixthreezero.com/products/mens-evry-hybrid-ebike", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 250, "url": "https://www.sixthreezero.com/products/mens-evry-hybrid-ebike", "quote": "250 Watt Hour Battery that will take you 15 miles using full electric and 15-30 miles on pedal assist mode ⟶ CLEAR & UNCOMPLICATED", "basis": "maker states 250 Wh, but its spec table says '250 Watt, 36V, 10.4Ah Battery' (= 374.4 Wh)"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "15–30", "url": "https://www.sixthreezero.com/products/mens-evry-hybrid-ebike", "quote": "250 Watt Hour Battery that will take you approximately 15 miles using full electric and 15-30 miles on pedal assist mode (approximately 1.5 hours of riding time)"},
+   {"kind": "retailer", "value": "20–60", "url": "https://sport.woot.com/offers/sixthreezero-evryjourney-men-250w-2", "quote": "Ebike has a 250-watt battery will take you 18 to 40 miles (at up to 14 mph) in full-electric mode and 20 to 60 miles (at up to 28 mph) in pedal-assist mode ⟶ Electric BIKE features smooth 7-speed Shimano Tourney rear derailleur"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 62.4, "url": "https://www.sixthreezero.com/products/mens-evry-hybrid-ebike", "quote": "Weight ⟶ 62.4 Lbs Assembled"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 300, "url": "https://www.sixthreezero.com/products/mens-evry-hybrid-ebike", "quote": "300 Lb. Maximum Rider Weight (recommended) ⟶ RIDERS ALL OVER THE WORLD. FOLLOW THIS BIKE WHERE IT GOES @_SIXTHREEZERO_", "basis": "max rider weight"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "250W rear hub", "url": "https://www.sixthreezero.com/products/mens-evry-hybrid-ebike", "quote": "Motor ⟶ 250-Watt Rear Hub Motor"},
+   {"kind": "retailer", "value": "250W rear hub", "url": "https://sport.woot.com/offers/sixthreezero-evryjourney-men-250w-2", "quote": "250-Watt rear hub motor functions in pedal-assist or full-electric ebike mode"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'0\"-6'4\"", "url": "https://www.sixthreezero.com/products/mens-evry-hybrid-ebike", "quote": "Height Range ⟶ 5' - 6'4\"", "basis": "same page elsewhere says 'Fits riders from 5' o 6'2\" tall'"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.sixthreezero.com/products/mens-evry-hybrid-ebike", "quote": "Electric Touring Cruiser Bike with 250 Watt Rear Hub Drive Motor with an ergonomically designed frame for maximum comfort and riding ease.", "basis": "'Folding' appears only as a shop-menu filter"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page contradicts itself: '250 Watt Hour Battery' vs spec table '250 Watt, 36V, 10.4Ah Battery' (374.4 Wh); rider height '5' - 6'4\"' (fit table) vs 'Fits riders from 5' o 6'2\" tall'. Maker shows $999.99 next to $1649.99; recorded the higher one as regular. Only weak independent source: an expired Woot listing (Amazon-run), whose copy claims 28 mph pedal assist and 20-60 mi range, conflicting with the maker. EBReport's 'EVRY Journey' 250W review is the TRICYCLE, not this bike; BikeExchange's EVRYjourney review is the non-electric bike. No EBR coverage."}

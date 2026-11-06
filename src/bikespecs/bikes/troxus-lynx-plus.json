@@ -1,0 +1,47 @@
+{"bike": "Troxus|Lynx Plus", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2199, "url": "https://www.troxusmobility.com/products/lynx-plus-20-e-bike", "quote": "Regular price ⟶ $2,199.00 USD"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 3, "url": "https://www.troxusmobility.com/products/lynx-plus-20-e-bike", "quote": "Class 3 eBike ⟶ As Sold", "basis": "maker says Class 3 as sold; pedal assist to 28 mph"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereport.com/troxus-lynx-plus-review/", "quote": "The Lynx Plus ships as a Class 2 e-bike, but its speed can be set anywhere up to 28 mph.", "basis": "review says ships Class 2, settable to 28 mph"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 28, "url": "https://www.troxusmobility.com/products/lynx-plus-20-e-bike", "quote": "Max Speed\tUp To 20 MPH on Throttle / Up To 28 MPH on Pedal Assist"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/troxus-lynx-plus-review/", "quote": "The Lynx Plus ships as a Class 2 e-bike, but its speed can be set anywhere up to 28 mph.", "basis": "adjustable to 28 mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 86, "url": "https://www.troxusmobility.com/products/lynx-plus-20-e-bike", "quote": "Motor\tAnanda 48V/750W Hub-Drive Motor, 86Nm Max. Torque"},
+   {"kind": "review", "value": 86, "url": "https://electricbikereport.com/troxus-lynx-plus-review/", "quote": "Motor: Bafang® 48V/750W Hub-Drive Motor, 86Nm Max. Torque ⟶ Headlight:Integrated"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 960, "url": "https://www.troxusmobility.com/products/lynx-plus-20-e-bike", "quote": "UL-2849 certified with 960 Wh long range battery capacity for all day fun. ⟶ Control, Convenience, And Safety"},
+   {"kind": "review", "value": 960, "url": "https://electricbikereport.com/troxus-lynx-plus-review/", "quote": "Battery:UL-2771 Certified / Internal / Removable / Lithium Ion, 48V/20Ah (960Wh) with Samsung® Cells"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "90", "url": "https://www.troxusmobility.com/products/lynx-plus-20-e-bike", "quote": "Range\tUp To 90 Miles Per Charge", "basis": "up to"},
+   {"kind": "review", "value": "90", "url": "https://electricbikereport.com/troxus-lynx-plus-review/", "quote": "Claimed Range: Up to 90 miles ⟶ Throttle:Thumb Throttle on Handlebar", "basis": "claimed, up to"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 77.2, "url": "https://www.troxusmobility.com/products/lynx-plus-20-e-bike", "quote": "Net Weight\t77.2 lbs"},
+   {"kind": "review", "value": 79.5, "url": "https://electricbikereport.com/troxus-lynx-plus-review/", "quote": "Claimed weight: 77.2 lbs ⟶ Tested Weight: 79.5 lbs", "basis": "tested weight (claimed 77.2)"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 400, "url": "https://www.troxusmobility.com/products/lynx-plus-20-e-bike", "quote": "Weight Limit\tMaximum Load: 400 lbs; Maximum Rear Rack Capacity: 100 lbs"},
+   {"kind": "review", "value": 400, "url": "https://electricbikereport.com/troxus-lynx-plus-review/", "quote": "Rider height range: Not Specified ⟶ Total payload capacity: 400 lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W rear hub", "url": "https://www.troxusmobility.com/products/lynx-plus-20-e-bike", "quote": "Rear Hub\tBafang® 48V 750W/ 28 MPH. 86Nm"},
+   {"kind": "review", "value": "750W rear hub", "url": "https://electricbikereport.com/troxus-lynx-plus-review/", "quote": "Motor: Bafang® 48V/750W Hub-Drive Motor, 86Nm Max. Torque ⟶ Headlight:Integrated"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://www.troxusmobility.com/products/lynx-plus-20-e-bike", "quote": "Frame Size\tUniversal"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/troxus-lynx-plus-review/", "quote": "Tested Weight: 79.5 lbs ⟶ Rider height range: Not Specified"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.troxusmobility.com/products/lynx-plus-20-e-bike", "quote": "Frame\t6061-T6 Aluminum Step-Thru Frame", "basis": "non-folding step-thru frame"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Class conflict: maker page says 'Class 3 eBike As Sold' (28 mph pedal assist); EBR review says it ships as Class 2 and can be set up to 28 mph. Maker spec table names the motor 'Ananda 48V/750W' in E-Systems but 'Bafang 48V 750W' under Rear Hub and in the feature text; EBR says Bafang. Maker spec spec lines use a tab between label and value. Page shows a $200 rebate promo; regular price $2,199."}

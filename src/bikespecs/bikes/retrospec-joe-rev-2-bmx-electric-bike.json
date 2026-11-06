@@ -1,0 +1,48 @@
+{"bike": "Retrospec|Joe Rev 2 BMX Electric Bike", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1399.99, "url": "https://retrospec.com/products/joe-rev-bmx-electric-bike", "quote": "Add To Cart - $1,399.99", "basis": "no crossed-out price shown"},
+   {"kind": "retailer", "value": 1399, "url": "https://sandiego.ebikesupershop.com/products/ebike-retrospec-joe-rev-2-bmx-matte-black-in-a-box", "quote": "$1,399.00"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://retrospec.com/products/joe-rev-bmx-electric-bike", "quote": "Pedal Assist  5 Levels with Throttle and Walk-Mode", "basis": "maker states no class; 20 mph top assisted speed with a throttle = Class 2"},
+   {"kind": "retailer", "value": 2, "url": "https://sandiego.ebikesupershop.com/products/ebike-retrospec-joe-rev-2-bmx-matte-black-in-a-box", "quote": "Charger\t48V/2A ⟶ Pedal Assist\t5 Levels with Throttle and Walk-Mode", "basis": "20 mph with throttle = Class 2"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://retrospec.com/products/joe-rev-bmx-electric-bike", "quote": "20mph Top Assisted Speed"},
+   {"kind": "retailer", "value": 20, "url": "https://sandiego.ebikesupershop.com/products/ebike-retrospec-joe-rev-2-bmx-matte-black-in-a-box", "quote": "Feature\tDetails ⟶ Top Assisted Speed\t20mph"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://retrospec.com/products/joe-rev-bmx-electric-bike", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://sandiego.ebikesupershop.com/products/ebike-retrospec-joe-rev-2-bmx-matte-black-in-a-box", "quote": ""}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 500, "url": "https://retrospec.com/products/joe-rev-bmx-electric-bike", "quote": "48V/500Wh LG21700 Li-Ion Battery"},
+   {"kind": "retailer", "value": 500, "url": "https://sandiego.ebikesupershop.com/products/ebike-retrospec-joe-rev-2-bmx-matte-black-in-a-box", "quote": "Motor\t750W Rear Hub ⟶ Battery\t500Wh/48VLG 21700 Cells; Charge On or Off Bike, UART BMS"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "60", "url": "https://retrospec.com/products/joe-rev-bmx-electric-bike", "quote": "Up to 60-Mile Range", "basis": "same page's battery blurb says up to 75 miles; spec table and headline say 60"},
+   {"kind": "retailer", "value": "60", "url": "https://sandiego.ebikesupershop.com/products/ebike-retrospec-joe-rev-2-bmx-matte-black-in-a-box", "quote": "Top Assisted Speed\t20mph ⟶ Range\tUp to 60 Miles"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://retrospec.com/products/joe-rev-bmx-electric-bike", "quote": ""},
+   {"kind": "retailer", "value": null, "url": "https://sandiego.ebikesupershop.com/products/ebike-retrospec-joe-rev-2-bmx-matte-black-in-a-box", "quote": ""}
+  ],
+  "load": [
+   {"kind": "maker", "value": 350, "url": "https://retrospec.com/products/joe-rev-bmx-electric-bike", "quote": "Recommended Weight Limit  350lbs"},
+   {"kind": "retailer", "value": 350, "url": "https://sandiego.ebikesupershop.com/products/ebike-retrospec-joe-rev-2-bmx-matte-black-in-a-box", "quote": "Recommended weight limit: 350lbs. ⟶ Specifications"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "750W geared hub", "url": "https://retrospec.com/products/joe-rev-bmx-electric-bike", "quote": "750W Planetary Geared Hub Motor"},
+   {"kind": "retailer", "value": "750W rear hub", "url": "https://sandiego.ebikesupershop.com/products/ebike-retrospec-joe-rev-2-bmx-matte-black-in-a-box", "quote": "Fork\tRigid Steel ⟶ Motor\t750W Rear Hub"}
+  ],
+  "height": [
+   {"kind": "maker", "value": null, "url": "https://retrospec.com/products/joe-rev-bmx-electric-bike", "quote": "SizeHeight RangeStandover Height 27.5\" 31\"", "basis": "size chart lists only 31\" standover, no rider height range"},
+   {"kind": "retailer", "value": null, "url": "https://sandiego.ebikesupershop.com/products/ebike-retrospec-joe-rev-2-bmx-matte-black-in-a-box", "quote": "Size\t27.5\" ⟶ Standover Height\t31\""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://retrospec.com/products/joe-rev-bmx-electric-bike", "quote": "Frame  Joe 6061 Aluminum with Integrated Downtube Battery", "basis": "fixed BMX frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page contradicts itself on range: headline and spec table say up to 60 miles, battery feature blurb says up to 75 miles. No source gives weight, torque or rider height. Public Lands dealer page blocked (403). Dealer page found via the WebSearch done for Joe Rev (Rev 1)."}

@@ -1,0 +1,51 @@
+{"bike": "Tern|Quick Haul Long D9", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": null, "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-long-d9", "quote": "$3,499 (SALE PRICE) ⟶ WHY QUICK HAUL LONG SPECS ACCESSORIES SUPPORT FIND A DEALER BUY", "basis": "maker shows only a sale price, no regular price"},
+   {"kind": "retailer", "value": 3999, "url": "https://www.seattleelectricbike.net/products/tern-quick-haul-long-d9", "quote": "Regular price ⟶ $3,999.00", "basis": "regular price; dealer sale price $3,499.00"},
+   {"kind": "review", "value": null, "url": "https://electricbikereport.com/tern-quick-haul-long-review/", "quote": "", "basis": "review gives no price"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-long-d9", "quote": "", "basis": "maker page gives no class; only \"max speed 20 mph (US)\""},
+   {"kind": "review", "value": 1, "url": "https://electricbikereport.com/tern-quick-haul-long-review/", "quote": "E-BIKE CLASS: ⟶ CLASS 1 (PEDAL ASSIST TO 20 MPH)"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-long-d9", "quote": "Bosch Cargo Line, 400% Assist, 85 Nm Torque, max speed 25 kph (EU); max speed 20 mph (US) ⟶ BATTERY:"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/tern-quick-haul-long-review/", "quote": "As a Class 1 e-bike, the Quick Haul Long D9 offers pedal assist up to 20 mph. Its Bosch system includes 4 power levels that I evaluated in our Speed Test: Eco, Tour, Sport, and Turbo modes."}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 85, "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-long-d9", "quote": "Bosch Cargo Line, 400% Assist, 85 Nm Torque, max speed 25 kph (EU); max speed 20 mph (US) ⟶ BATTERY:"},
+   {"kind": "review", "value": 85, "url": "https://electricbikereport.com/tern-quick-haul-long-review/", "quote": "Motor: Bosch Cargo Line, 400% Assist, 85 Nm Torque, max speed 25 kph (EU); max speed 20 mph (US) ⟶ Headlight:90 lux, StVZO approved"},
+   {"kind": "retailer", "value": 85, "url": "https://www.seattleelectricbike.net/products/tern-quick-haul-long-d9", "quote": "Powerful Bosch Cargo Line motor provides up to 85 Nm of torque and up to 400% support"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 500, "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-long-d9", "quote": "RANGE: ⟶ 500 Wh: 42-85 km (26-53 mi)", "basis": "battery listed as 'Bosch PowerPack 500'"},
+   {"kind": "review", "value": 500, "url": "https://electricbikereport.com/tern-quick-haul-long-review/", "quote": "Battery:Bosch PowerPack 500 (36V, 500 Wh) ⟶ Display: Bosch Purion, 4 mode selectable, walk assist"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "26–53", "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-long-d9", "quote": "RANGE: ⟶ 500 Wh: 42-85 km (26-53 mi)"},
+   {"kind": "review", "value": "26–53", "url": "https://electricbikereport.com/tern-quick-haul-long-review/", "quote": "Claimed Range: 42-85 km (26-53 mi) ⟶ Throttle:None", "basis": "claimed"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 64.6, "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-long-d9", "quote": "WEIGHT: ⟶ 29.3 kg (64.6 lb)", "basis": "battery not mentioned either way"},
+   {"kind": "review", "value": 65.3, "url": "https://electricbikereport.com/tern-quick-haul-long-review/", "quote": "Claimed weight: 29.3 kg (64.6 lb) ⟶ Tested Weight: 29.6 kg (65.3 lb) with battery, 27 kg (59.5 lb) without", "basis": "tested weight with battery; claimed 64.6 lb"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 419, "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-long-d9", "quote": "Built tough for hauling, rated to a maximum gross vehicle weight of 190 kg (419 lb) with a rear rack load capacity of 90 kg (198 lb)", "basis": "total"},
+   {"kind": "review", "value": 354, "url": "https://electricbikereport.com/tern-quick-haul-long-review/", "quote": "Rider height range: 5’1”-6’1” ⟶ Total payload capacity: 160.7 kg (354 lbs)", "basis": "payload (rider + cargo); equals maker's 190 kg GVW minus bike weight"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Cargo Line (85 Nm)", "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-long-d9", "quote": "Bosch Cargo Line, 400% Assist, 85 Nm Torque, max speed 25 kph (EU); max speed 20 mph (US) ⟶ BATTERY:", "basis": "no rated watts published"},
+   {"kind": "review", "value": "250W Bosch Cargo Line mid-drive", "url": "https://electricbikereport.com/tern-quick-haul-long-review/", "quote": "The Quick Haul Long rides like an analog bike (but faster, easier, and more fun) thanks to its smooth, natural-feeling 250W Bosch Cargo Line mid-drive motor."}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'1\"-6'3\"", "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-long-d9", "quote": "Adjusts without tools to fit riders 155 - 190 cm (5'1\" - 6'3\"), weighing up to 120 kg (265 lb)"},
+   {"kind": "review", "value": "5'1\"-6'1\"", "url": "https://electricbikereport.com/tern-quick-haul-long-review/", "quote": "Tested Weight: 29.6 kg (65.3 lb) with battery, 27 kg (59.5 lb) without ⟶ Rider height range: 5’1”-6’1”"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-long-d9", "quote": "Robust, patented Atlas Kickstand keeps the bike steady for safe loading & unloading of cargo and passengers", "basis": "judgment: longtail cargo bike; no folding size/time listed"},
+   {"kind": "review", "value": "No", "url": "https://electricbikereport.com/tern-quick-haul-long-review/", "quote": "The bike had one of the best range test results we’ve seen from a cargo bike, thanks to its efficient motor and 500 Wh battery. ⟶ It can be easily stored by standing vertically on its rack and frame.", "basis": "judgment: stores vertically, not folding"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page shows only '$3,499 (SALE PRICE)'; regular $3,999 from Seattle Electric Bike (US dealer). EBReport review of this exact model gives Class 1 and a 250W rating. Rider height: maker highlights 5'1\"-6'3\" (spec table 155-190 cm / 61-74.8 in); EBReport and Seattle dealer give 5'1\"-6'1\" / 61-72.8 in. Load: maker GVW 190 kg (419 lb) total; EBReport 'Total payload capacity' 354 lb is rider+cargo. Max rider 120 kg."}

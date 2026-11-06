@@ -1,0 +1,49 @@
+{"bike": "Tern|Quick Haul D8", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 2999, "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-d8", "quote": "$2,999 ⟶ WHY QUICK HAUL SPECS ACCESSORIES SUPPORT FIND A DEALER BUY", "basis": "not marked as sale price"},
+   {"kind": "retailer", "value": null, "url": "https://www.amegoev.com/products/tern-quick-haul-d8", "quote": "Regular price ⟶ $4,649.00 CAD", "basis": "Canadian dealer, CAD only"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": null, "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-d8", "quote": "", "basis": "maker page gives no class; only \"max speed 20 mph (US)\""},
+   {"kind": "retailer", "value": null, "url": "https://www.amegoev.com/products/tern-quick-haul-d8", "quote": "", "basis": "no class given"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-d8", "quote": "Bosch Active Line Plus, 270% Assist, 50 Nm Torque, max speed 25 kph (EU); max speed 20 mph (US) ⟶ BATTERY:"},
+   {"kind": "retailer", "value": 20, "url": "https://www.amegoev.com/products/tern-quick-haul-d8", "quote": "Top speed: 32 km/h (20 mph) ⟶ Charger: Compact Charger 100–240V, 2A; 50% in ~2.8 hours; 100% in ~6 hours"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 50, "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-d8", "quote": "Bosch Active Line Plus, 270% Assist, 50 Nm Torque, max speed 25 kph (EU); max speed 20 mph (US) ⟶ BATTERY:"},
+   {"kind": "retailer", "value": 50, "url": "https://www.amegoev.com/products/tern-quick-haul-d8", "quote": "Motor: Bosch Active Line Plus, System 2 ⟶ Torque: 50 Nm"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 400, "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-d8", "quote": "RANGE: ⟶ 400 Wh: 54 - 105 km (33.6 - 65.2 mi)", "basis": "battery listed as 'Bosch PowerPack 400'"},
+   {"kind": "retailer", "value": 400, "url": "https://www.amegoev.com/products/tern-quick-haul-d8", "quote": "BATTERY ⟶ Bosch PowerPack 400Wh"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "33.6–65.2", "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-d8", "quote": "RANGE: ⟶ 400 Wh: 54 - 105 km (33.6 - 65.2 mi)"},
+   {"kind": "retailer", "value": "33.6–65.2", "url": "https://www.amegoev.com/products/tern-quick-haul-d8", "quote": "Range: 54–105 km (33.6–65.2 miles) per charge ⟶ Top speed: 32 km/h (20 mph)"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 50.3, "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-d8", "quote": "WEIGHT: ⟶ 22.8 kg (50.3 lb)", "basis": "battery not mentioned either way"},
+   {"kind": "retailer", "value": 50.3, "url": "https://www.amegoev.com/products/tern-quick-haul-d8", "quote": "BIKE WEIGHT ⟶ 50.3 lbs (23 kgs)", "basis": "dealer lists battery weight 5.5 lb separately; unclear whether included"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 330.7, "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-d8", "quote": "MAX GROSS VEHICLE WEIGHT: ⟶ 150 kg (330.7 lb)", "basis": "total"},
+   {"kind": "retailer", "value": 330, "url": "https://www.amegoev.com/products/tern-quick-haul-d8", "quote": "Frame: Tern Quick Haul, patented design, 6061 aluminum; EFBE Tri-Test approved up to 150 kg (330 lb) GVW ⟶ Motor: Bosch Active Line Plus, System 2; up to 50 Nm torque", "basis": "total"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "Bosch Active Line Plus (50 Nm)", "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-d8", "quote": "Bosch Active Line Plus, 270% Assist, 50 Nm Torque, max speed 25 kph (EU); max speed 20 mph (US) ⟶ BATTERY:", "basis": "no rated watts published"},
+   {"kind": "retailer", "value": "Bosch Active Line Plus (50 Nm)", "url": "https://www.amegoev.com/products/tern-quick-haul-d8", "quote": "MOTOR POWER ⟶ Bosch Active Line Plus, System 2, 50 Nm", "basis": "no rated watts"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'3\"-6'5\"", "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-d8", "quote": "Fits riders 160 - 195 cm (5’3” - 6’5”), and also riders 145 - 180 cm (4’9” - 5'11\") when equipped with a shorter, 350 mm seatpost", "basis": "stock seatpost; 4'9\"-5'11\" with optional shorter 350 mm seatpost"},
+   {"kind": "retailer", "value": "5'3\"-6'5\"", "url": "https://www.amegoev.com/products/tern-quick-haul-d8", "quote": "One-size-fits-most geometry (5'3\"–6'5\" / 1.60–1.96 m); shorter 350 mm seatpost option (4'9\"–5'11\") ⟶ Sturdy hydraulic disc brakes and robust frame for daily use"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-d8", "quote": "Atlas Q Rack, UpperDeck Mount System, Vertical Parking, 50 kg capacity", "basis": "judgment: compact cargo bike that parks vertically; no folding size/time listed"},
+   {"kind": "retailer", "value": "No", "url": "https://www.amegoev.com/products/tern-quick-haul-d8", "quote": "Atlas Q Rack with UpperDeck Mount System enables secure vertical parking (110 lb capacity) ⟶ Low step-through frame and balloon tires enhance accessibility and comfort", "basis": "judgment: vertical parking, not folding"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Only independent source with this exact model: Amego (Canadian dealer, CAD price, used for specs). EBR has only a 2023 Quick Haul P9 review; EBReport has no D8 review. Maker gives no e-bike class (20 mph, no throttle). Max load is gross vehicle weight 150 kg (330.7 lb) -> total; max rider 120 kg (264.6 lb). Amego's 'Load capacity: Rider up to 330.7 lb' wording is inconsistent with maker's 120 kg max rider."}

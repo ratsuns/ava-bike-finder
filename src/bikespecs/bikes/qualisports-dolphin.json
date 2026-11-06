@@ -1,0 +1,47 @@
+{"bike": "Qualisports|Dolphin", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1499, "url": "https://www.qualisports.us/products/electric-bike-dolphin", "quote": "$1,499.00 ⟶ Color: Navy Blue", "basis": "single-battery; dual-battery is $1,699; no crossed-out price"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/qualisports/2023-dolphin-plus/", "quote": "PRICE: ⟶ $1899", "basis": "2023 Dolphin Plus (dual battery) price, not the standard model"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://www.qualisports.us/products/electric-bike-dolphin", "quote": "TOP SPEED ⟶ 20 Mph | THROTTLE ⟶ Thumb Throttle", "basis": "20 mph with a throttle, no class stated"},
+   {"kind": "review", "value": 2, "url": "https://electricbikereview.com/qualisports/2023-dolphin-plus/", "quote": "ELECTRIC BIKE CLASS: ⟶ Throttle on Demand (Class 2)"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://www.qualisports.us/products/electric-bike-dolphin", "quote": "TOP SPEED ⟶ 20 Mph"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereview.com/qualisports/2023-dolphin-plus/", "quote": "TOP SPEED: ⟶ 20 mph (32 kph)"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": null, "url": "https://www.qualisports.us/products/electric-bike-dolphin", "quote": "", "basis": "torque not published"},
+   {"kind": "review", "value": 40, "url": "https://electricbikereview.com/qualisports/2023-dolphin-plus/", "quote": "MOTOR TORQUE: ⟶ 40 Newton meters", "basis": "2023 Dolphin Plus review"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 504, "url": "https://www.qualisports.us/products/electric-bike-dolphin", "quote": "BATTERY ⟶ 48V 10.5Ah / + 48V 7Ah (Plus Version)", "basis": "48V x 10.5Ah standard battery; Plus adds 48V 7Ah"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/qualisports/2023-dolphin-plus/", "quote": "BATTERY WATT HOURS: ⟶ 840 wh", "basis": "840 Wh is the dual-battery Plus total, not the standard battery"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "45–70", "url": "https://www.qualisports.us/products/electric-bike-dolphin", "quote": "RANGE ⟶ 45 - 70+ Miles", "basis": "page banner instead says 'MAX RANGE ⟶ 60/80 miles' (single/dual)"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/qualisports/2023-dolphin-plus/", "quote": "ESTIMATED MAX RANGE: ⟶ 85 miles (137 km)", "basis": "dual-battery Plus range, not standard battery"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 51.5, "url": "https://www.qualisports.us/products/electric-bike-dolphin", "quote": "Weight (w/ Battery) ⟶ 51.5 lbs (STD) / 55.8 lbs (Plus)", "basis": "spec table (Geometry & Dimensions accordion); page banner says 'WEIGHT ⟶ 45 lbs'"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/qualisports/2023-dolphin-plus/", "quote": "TOTAL WEIGHT: ⟶ 51 lbs (23.13 kg)", "basis": "dual-battery Plus weight"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 300, "url": "https://www.qualisports.us/products/electric-bike-dolphin", "quote": "Max Payload ⟶ 300 lbs"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W rear geared hub (750W peak)", "url": "https://www.qualisports.us/products/electric-bike-dolphin", "quote": "MOTOR ⟶ 500W (750W Peak) Rated Geared Hub Motor"},
+   {"kind": "review", "value": "500W rear geared hub", "url": "https://electricbikereview.com/qualisports/2023-dolphin-plus/", "quote": "MOTOR NOMINAL OUTPUT: ⟶ 500 watts"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'2\"-6'2\"", "url": "https://www.qualisports.us/products/electric-bike-dolphin", "quote": "Recommended Height ⟶ 5'2\" - 6'2\""}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "Yes", "url": "https://www.qualisports.us/products/electric-bike-dolphin", "quote": "Fold and go in seconds. The Dolphin’s quick-fold design makes it easy to store, carry, and transport wherever you need. Ideal for urban living, it fits seamlessly into your lifestyle—whether at home, in the office, or on the move. ⟶ 500W Motor"},
+   {"kind": "review", "value": "Yes", "url": "https://electricbikereview.com/qualisports/2023-dolphin-plus/", "quote": "Mid-Step, Folding ⟶ FRAME COLORS:"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page contradicts itself: banner says 45 lbs and 60/80 mi max range, spec table says 51.5 lb w/ battery (STD) and 45-70+ mi. Weight/payload/height came from the collapsed 'Geometry & Dimensions' table (label and value in separate cells). Only independent source is EBR's 2023 Dolphin Plus (dual-battery) review; its Wh/range/weight/price are for the Plus and recorded as null for our standard model. No torque from maker."}

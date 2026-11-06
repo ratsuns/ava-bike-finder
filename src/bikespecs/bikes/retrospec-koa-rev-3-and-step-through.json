@@ -1,0 +1,49 @@
+{"bike": "Retrospec|Koa Rev 3 (and Step Through)", "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1599.99, "url": "https://retrospec.com/products/koa-rev-26-fat-tire-electric-bike", "quote": "Add To Cart - $1,599.99", "basis": "no crossed-out price shown"},
+   {"kind": "review", "value": 1499.99, "url": "https://www.ebikereviewlab.com/electric-fat-bikes/retrospec-koa-rev-3-review", "quote": "MSRP: $1,499.99. For the spec sheet you're getting here (LG cells, Tektro hydraulics, a 500Wh battery, and an Ananda motor system), that's genuinely competitive.", "basis": "review's MSRP differs from maker's current $1,599.99"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://retrospec.com/products/koa-rev-26-fat-tire-electric-bike", "quote": "Pedal Assist  5 Levels, Throttle and Walk-Mode; Class 2"},
+   {"kind": "review", "value": 2, "url": "https://www.ebikereviewlab.com/electric-fat-bikes/retrospec-koa-rev-3-review", "quote": "TOP SPEED ⟶ 20 mph (Class 2)"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": 20, "url": "https://retrospec.com/products/koa-rev-26-fat-tire-electric-bike", "quote": "20mph Top Assisted Speed"},
+   {"kind": "review", "value": 20, "url": "https://www.ebikereviewlab.com/electric-fat-bikes/retrospec-koa-rev-3-review", "quote": "TOP SPEED ⟶ 20 mph (Class 2)"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 65, "url": "https://retrospec.com/products/koa-rev-26-fat-tire-electric-bike", "quote": "Motor  500W Peak 770W 65Nm Torque"},
+   {"kind": "review", "value": 65, "url": "https://www.ebikereviewlab.com/electric-fat-bikes/retrospec-koa-rev-3-review", "quote": "MOTOR ⟶ 500W Ananda rear hub motor, 770W peak, 65Nm torque"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 500, "url": "https://retrospec.com/products/koa-rev-26-fat-tire-electric-bike", "quote": "48V/500Wh LG Li-Ion Battery"},
+   {"kind": "review", "value": 500, "url": "https://www.ebikereviewlab.com/electric-fat-bikes/retrospec-koa-rev-3-review", "quote": "BATTERY ⟶ 48V / 500Wh, LG 21700 cells, integrated downtube"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "75", "url": "https://retrospec.com/products/koa-rev-26-fat-tire-electric-bike", "quote": "Up to 75-Mile Range"},
+   {"kind": "review", "value": "75", "url": "https://www.ebikereviewlab.com/electric-fat-bikes/retrospec-koa-rev-3-review", "quote": "CLAIMED RANGE ⟶ Up to 75 miles (varies by assist level and terrain)"},
+   {"kind": "review", "value": "75", "url": "https://www.activegearreview.com/cycling/electric-bikes/retrospec-koa-rev-3-fat-tire-electric-bike-review-the-all-around-ebike-that-just-wants-to-ride/", "quote": "Retrospec claims up to 75 miles of range per charge."}
+  ],
+  "wt": [
+   {"kind": "maker", "value": null, "url": "https://retrospec.com/products/koa-rev-26-fat-tire-electric-bike", "quote": ""},
+   {"kind": "review", "value": 64.5, "url": "https://www.ebikereviewlab.com/electric-fat-bikes/retrospec-koa-rev-3-review", "quote": "Lighter than most fat tire ebikes at 64.5 lbs, which actually matters when you're loading it solo onto a rack"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 350, "url": "https://retrospec.com/products/koa-rev-26-fat-tire-electric-bike", "quote": "Recommended Weight Limit  350lbs"},
+   {"kind": "review", "value": null, "url": "https://www.ebikereviewlab.com/electric-fat-bikes/retrospec-koa-rev-3-review", "quote": ""}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "500W (770W peak)", "url": "https://retrospec.com/products/koa-rev-26-fat-tire-electric-bike", "quote": "Motor  500W Peak 770W 65Nm Torque", "basis": "'500W Planetary Geared Hub Motor' also on page"},
+   {"kind": "review", "value": "500W rear hub (770W peak)", "url": "https://www.ebikereviewlab.com/electric-fat-bikes/retrospec-koa-rev-3-review", "quote": "MOTOR ⟶ 500W Ananda rear hub motor, 770W peak, 65Nm torque"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "5'6\"-6'4\"", "url": "https://retrospec.com/products/koa-rev-26-fat-tire-electric-bike", "quote": "18\" | 5'6\" to 6'4\"", "basis": "step-over frame (size chart)"},
+   {"kind": "maker", "value": "5'3\"-6'4\"", "url": "https://retrospec.com/products/koa-rev-3-fat-tire-electric-bike-step-through", "quote": "16\" | 5'3\" to 6'4\"", "basis": "step-through frame (size chart)"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://retrospec.com/products/koa-rev-26-fat-tire-electric-bike", "quote": "Sizes  18\" Frame", "basis": "fixed fat-tire frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Maker page shows no bike weight (only an invisible product tag 'Weight - 70.5lbs'); ebikereviewlab says 64.5 lbs. Review MSRP $1,499.99 vs maker's current $1,599.99. EBR's 'Koa Rev 2 ST' review is the older generation (500W, 55Nm, 52 mi, Class 2/3) so it was not used. Independent sources found via WebSearch."}

@@ -1,0 +1,47 @@
+{
+ "bike": "Pedego|Interceptor",
+ "checked": "2026-11-06",
+ "fields": {
+  "price": [
+   {"kind": "maker", "value": 1949, "url": "https://pedegoelectricbikes.com/products/interceptor", "quote": "$1,949.00 ⟶ CHOOSE OPTIONS"},
+   {"kind": "retailer", "value": 2995, "url": "https://www.practicalcycle.com/product/pedego-interceptor-iii-classic-electric-bike/", "quote": "Original price was: $2,995.00. ⟶ $1,949.00", "basis": "dealer's crossed-out original price; current price $1,949"}
+  ],
+  "cls": [
+   {"kind": "maker", "value": 2, "url": "https://pedegoelectricbikes.com/products/interceptor", "quote": "SPEED | Class 1 & Class 2; | Class 3 Ready", "basis": "Class 1 & 2 (Class 3 ready); has throttle per dealer/Upway, ships 20 mph -> Class 2"},
+   {"kind": "review", "value": 2, "url": "https://upway.co/blogs/news/pedego-interceptor-ebike-review", "quote": "Class\tClass 2, throttle plus pedal assist"}
+  ],
+  "spd": [
+   {"kind": "maker", "value": null, "url": "https://pedegoelectricbikes.com/products/interceptor", "quote": "SPEED | Class 1 & Class 2; | Class 3 Ready", "basis": "no mph given"}
+  ],
+  "tq": [
+   {"kind": "maker", "value": 60, "url": "https://pedegoelectricbikes.com/products/interceptor", "quote": "BLACK 52V BRUSHLESS GEARED REAR HUB MOTOR; 749 WATT NOMINAL POWER RATING; 60NM TORQUE; QUICK DISCONNECT CABLE WITH WATERPROOF CONNECTION."},
+   {"kind": "review", "value": 60, "url": "https://upway.co/blogs/news/pedego-interceptor-ebike-review", "quote": "Motor\t52V brushless geared rear hub, 749W nominal, 60Nm torque"}
+  ],
+  "wh": [
+   {"kind": "maker", "value": 546, "url": "https://pedegoelectricbikes.com/products/interceptor", "quote": "Battery: Battery - 52V 10.5Ah UL2271 ⟶ BATTERY - 52V 10.5AH UL2271", "basis": "52V x 10.5Ah default battery (17.5Ah option)"},
+   {"kind": "review", "value": 546, "url": "https://upway.co/blogs/news/pedego-interceptor-ebike-review", "quote": "Battery\t52V, 10.5Ah or 17.5Ah, lithium-ion 18650 cells", "basis": "52V x 10.5Ah standard"}
+  ],
+  "range": [
+   {"kind": "maker", "value": "75", "url": "https://pedegoelectricbikes.com/products/interceptor", "quote": "RANGE | RANGE UP TO | 75 MILES", "basis": "'up to'; battery not specified (likely the 17.5Ah option)"}
+  ],
+  "wt": [
+   {"kind": "maker", "value": 66.2, "url": "https://pedegoelectricbikes.com/products/interceptor", "quote": "BIKE (NO BATTERY) | STEP THRU 24”: 53.4 LB; STEP THRU 26”: 56 LB; CLASSIC 26”: 57.4 LB; CLASSIC 29”: 58.4 LB. | BATTERY | 52V/17.5Ah: 10 LB; 52V/10.5Ah: 8.8 LB.", "basis": "Classic 26in (default) 57.4 lb + 8.8 lb 10.5Ah battery; Step Thru 26in = 64.8"},
+   {"kind": "review", "value": 60, "url": "https://upway.co/blogs/news/pedego-interceptor-ebike-review", "quote": "Weight\tAround 60 lbs ⟶ Frame styles\tStep-thru (24in, 26in) or Classic step-over", "basis": "'around'"}
+  ],
+  "load": [
+   {"kind": "maker", "value": 250, "url": "https://pedegoelectricbikes.com/products/interceptor", "quote": "WEIGHT LIMIT | 250 LB"}
+  ],
+  "motor": [
+   {"kind": "maker", "value": "749W rear hub", "url": "https://pedegoelectricbikes.com/products/interceptor", "quote": "BLACK 52V BRUSHLESS GEARED REAR HUB MOTOR; 749 WATT NOMINAL POWER RATING; 60NM TORQUE; QUICK DISCONNECT CABLE WITH WATERPROOF CONNECTION."},
+   {"kind": "retailer", "value": "749W", "url": "https://www.practicalcycle.com/product/pedego-interceptor-iii-classic-electric-bike/", "quote": "749 watt motor ⟶ Premier quality hydraulic disc brakes"}
+  ],
+  "height": [
+   {"kind": "maker", "value": "4'11\"-6'0\"+", "url": "https://pedegoelectricbikes.com/products/interceptor", "quote": "RIDER HEIGHT | 4'11\" to 6'0\"+"}
+  ],
+  "fold": [
+   {"kind": "maker", "value": "No", "url": "https://pedegoelectricbikes.com/products/interceptor", "quote": "6061 T-6 AIRCRAFT QUALITY ALUMINUM; INTEGRATED REINFORCED REAR RACK FOR BATTERY AND STORAGE; INTERNAL CABLE AND WIRE ROUTING.", "basis": "fixed cruiser frame; no folding mentioned"}
+  ]
+ },
+ "status": {"sources": []},
+ "notes": "Price conflict: maker page shows $1,949 with no crossed-out price (its Shopify data says 120000/140000 = $1,200/$1,400), while dealer Practical Cycle shows original $2,995, now $1,949 -- maker's $1,949 may be a sale price. Maker gives no mph. EBR's Interceptor reviews are the 2014-era 48V/500W version (doesn't match), so not used. Weight = frame without battery + battery, listed separately by maker."
+}
