@@ -87,7 +87,8 @@ def main(site):
           and seconds(v.get('du')) >= 60}
     for v in ok.values(): v['t'] = html.unescape(v['t'])
     # not reviews: sale listings, setup guides, parts and repairs; plus videos a reviewer judged wrong (verify/yt_reject.json)
-    JUNK = re.compile(r'refurb|gebruikte|te koop|for sale|demo bikes|assembl|tutorial|quick start|how to (enable|install|assemble)|recall|battery w|tire blowout|install|accessor|spare part', re.I)
+    JUNK = re.compile(r'refurb|gebruikte|te koop|for sale|demo bikes|assembl|tutorial|quick start|how to (enable|install|assemble)|recall|battery w|tire blowout|install|accessor|spare part|how to |replacement|fitting|stroller|wagon|giveaway|sizing', re.I)
+    NOFAM = set(json.load(open('verify/yt_nofamily.json'))) if os.path.exists('verify/yt_nofamily.json') else set()
     rej = json.load(open('verify/yt_reject.json')) if os.path.exists('verify/yt_reject.json') else {}   # {"Brand|Model": [ids]}
     FOREIGN = re.compile(r'\b(de|het|een|voor|van|fiets|und|der|die|das|mit|für|ist|zum|rower|na|miasta|otro|mundo|elcykel|erfahrung|vergleich|prueba|bicicleta|vélo|elektrische)\b|[^\x00-\u024f\u2000-\u2bff\U0001F000-\U0001FAFF\s]', re.I)
     ok = {i: v for i, v in ok.items() if not JUNK.search(v['t'])
@@ -144,6 +145,7 @@ def main(site):
         CODE = re.compile(r'\b[A-Za-z]{1,2}\d{1,4}[A-Za-z]{0,2}\b')
         l3 = collections.defaultdict(list)
         for mo in mos:
+            if br + '|' + mo in NOFAM: continue   # family name too common a word for this bike ("Adventure", "Flyer")
             own = {c.lower() for c in CODE.findall(clean_model(mo))}
             for f in fams[mo]:
                 if ' '.join(f) in full: continue
