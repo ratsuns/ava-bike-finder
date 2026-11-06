@@ -1,12 +1,13 @@
 {"bike": "Lectric|Xpeak", "checked": "2026-11-06",
  "fields": {
   "price": [
-   {"kind": "maker", "value": 1933, "url": "https://lectricebikes.com/products/xpeak-high-step-ebike", "quote": "$1,399 ⟶ $1,933", "basis": "crossed-out price $1,933; $1,399 is current sale price. Same page also says 'Previously listed at $1499, now marked down to $1399!'"},
+   {"kind": "maker", "value": 1499, "url": "https://lectricebikes.com/products/xpeak-high-step-ebike", "quote": "Previously listed at $1499, now marked down to $1399!", "basis": "'Previously listed at' price is the regular price; $1,933 crossed-out and $1,399 sale price not used"},
    {"kind": "review", "value": 1499, "url": "https://electricbikereview.com/lectric-ebikes/xpeak-2-review/", "quote": "Price ⟶ MSRP: $1,499"}
   ],
   "cls": [
-   {"kind": "maker", "value": 3, "url": "https://lectricebikes.com/products/xpeak-high-step-ebike", "quote": "Five levels of pedal-assist and a throttle delivers the speed and power to own the road as a Class 1, 2, or 3 eBike.** ⟶ Thumb Throttle", "basis": "Class 1/2/3 with throttle; top speed listed as 28 mph -> 3"},
-   {"kind": "review", "value": 3, "url": "https://electricbikereview.com/lectric-ebikes/xpeak-2-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 3"}
+   {"kind": "maker", "value": 2, "url": "https://lectricebikes.com/products/xpeak-high-step-ebike", "quote": "Five levels of pedal-assist and a throttle delivers the speed and power to own the road as a Class 1, 2, or 3 eBike.** ⟶ Thumb Throttle", "basis": "maker says Class 1, 2, or 3 (selectable) with a throttle; ships as Class 2 (20 mph) per the maker FAQ; the listed 28 mph top speed is the unlocked Class 3 setting"},
+   {"kind": "maker", "value": 2, "url": "https://lectricebikes.com/pages/faq", "quote": "All Lectric eBikes ship as a class 2 electric bike, meaning it has a throttle capable of propelling the bike at speeds of up to 20mph. Pedal assist will also be limited to 12 or 20mph in this setting depending on the model.", "basis": "maker FAQ 'What is the classification of Lectric eBikes?'; the same answer says the XP, XPedition, XPeak, XPress, and XPress Lite can be unlocked to class 3 (28 mph)"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/lectric-ebikes/xpeak-2-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 3", "basis": "lists Class 3 (the unlocked setting); doesn't say which class it ships in"}
   ],
   "spd": [
    {"kind": "maker", "value": 28, "url": "https://lectricebikes.com/products/xpeak-high-step-ebike", "quote": "TOP SPEED ⟶ 28 mph"},

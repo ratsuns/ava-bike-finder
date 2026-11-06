@@ -6,7 +6,8 @@
   ],
   "cls": [
    {"kind": "maker", "value": null, "url": "https://lectricebikes.com/blogs/blog/introducing-the-lectric-one", "quote": ""},
-   {"kind": "review", "value": 3, "url": "https://electricbikereview.com/lectric-ebikes/lectric-one-review/", "quote": "This is a Class 3 e-bike with a maximum assist speed of 28 mph. Thanks to the Gates belt Lectric ONE owners will never need to lubricate the chain. They will never discover black smudges on their pants and they will never experience a missed shift.", "basis": "review also lists Class 1/2/3 selectable"}
+   {"kind": "maker", "value": 2, "url": "https://lectricebikes.com/pages/faq", "quote": "All Lectric eBikes ship as a class 2 electric bike, meaning it has a throttle capable of propelling the bike at speeds of up to 20mph. Pedal assist will also be limited to 12 or 20mph in this setting depending on the model.", "basis": "maker FAQ 'What is the classification of Lectric eBikes?' says all Lectric eBikes ship as class 2; the FAQ's model lists don't name the Lectric ONE (likely discontinued), so this is the maker's general statement; the launch blog confirms a thumb throttle"},
+   {"kind": "review", "value": null, "url": "https://electricbikereview.com/lectric-ebikes/lectric-one-review/", "quote": "This is a Class 3 e-bike with a maximum assist speed of 28 mph. Thanks to the Gates belt Lectric ONE owners will never need to lubricate the chain. They will never discover black smudges on their pants and they will never experience a missed shift.", "basis": "review says Class 1, 2 or 3 can be chosen on the display and calls it a Class 3 e-bike at 28 mph; doesn't say which class it ships in"}
   ],
   "spd": [
    {"kind": "maker", "value": null, "url": "https://lectricebikes.com/blogs/blog/introducing-the-lectric-one", "quote": ""},

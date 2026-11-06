@@ -1,7 +1,7 @@
 {"bike": "Lectric|XP Lite2", "checked": "2026-11-06",
  "fields": {
   "price": [
-   {"kind": "maker", "value": 888, "url": "https://lectricebikes.com/products/xp-lite-arctic-white", "quote": "$749 ⟶ $888", "basis": "crossed-out price $888; $749 is current sale price. Same page also says 'Previously listed at $799, now marked down to $749!'"},
+   {"kind": "maker", "value": 799, "url": "https://lectricebikes.com/products/xp-lite-arctic-white", "quote": "Previously listed at $799, now marked down to $749!", "basis": "'Previously listed at' price is the regular price; $888 crossed-out and $749 sale price not used"},
    {"kind": "review", "value": 947, "url": "https://electricbikereview.com/lectric-ebikes/lectric-xp-lite-2-0-review/", "quote": "Price ⟶ MSRP: $947"}
   ],
   "cls": [

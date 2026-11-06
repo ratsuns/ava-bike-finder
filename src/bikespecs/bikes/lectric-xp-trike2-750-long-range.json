@@ -1,11 +1,12 @@
 {"bike": "Lectric|XP Trike2 750 (Long-Range)", "checked": "2026-11-06",
  "fields": {
   "price": [
-   {"kind": "maker", "value": 2254, "url": "https://lectricebikes.com/products/xp-trike-navy-long-range", "quote": "$1,699 ⟶ $2,254", "basis": "crossed-out price $2,254; $1,699 is current sale price. Same page also says 'Previously listed at $1799, now marked down to $1699!'"},
+   {"kind": "maker", "value": 1799, "url": "https://lectricebikes.com/products/xp-trike-navy-long-range", "quote": "Previously listed at $1799, now marked down to $1699!", "basis": "'Previously listed at' price is the regular price; $2,254 crossed-out and $1,699 sale price not used"},
    {"kind": "review", "value": 1799, "url": "https://electricbikereport.com/the-weekly-recharge-episode-46/", "quote": "Just weeks after releasing the updated 500W version of its incredibly popular XP Trike, Lectric’s top-tier 750W model is now for sale. The XP Trike2 750, which retails for $1,799, features a more powerful motor, a larger battery, and the widest selection of color options we’ve seen on a model from this company to date."}
   ],
   "cls": [
-   {"kind": "maker", "value": 2, "url": "https://lectricebikes.com/products/xp-trike-navy-long-range", "quote": "Five riding modes deliver the speed and power to own the road as a Class 1 or 2 eBike.* New simplified labels, including Eco, Tour, Sport, Sport+, & Turbo, allow riders to choose their riding experience. ⟶ Beginner Preset", "basis": "Class 1 or 2 with twist throttle -> 2"}
+   {"kind": "maker", "value": 2, "url": "https://lectricebikes.com/products/xp-trike-navy-long-range", "quote": "Five riding modes deliver the speed and power to own the road as a Class 1 or 2 eBike.* New simplified labels, including Eco, Tour, Sport, Sport+, & Turbo, allow riders to choose their riding experience. ⟶ Beginner Preset", "basis": "Class 1 or 2 with twist throttle -> 2"},
+   {"kind": "retailer", "value": 2, "url": "https://www.bestbuy.com/product/lectric-ebikes-xp-trike2-750-foldable-long-range-ebike-max-70mi-17mph-cargo-package-support-seat-seat-post-headlight-mirrors-lock-dusk-blue/J3GWYSPJ22", "quote": "Electric Bike Classification ⟶ Class 2", "basis": "Best Buy bundle listing (bike + accessories), marked no longer available new; spec table 'Maximum Speed 17 miles per hour'"}
   ],
   "spd": [
    {"kind": "maker", "value": 17, "url": "https://lectricebikes.com/products/xp-trike-navy-long-range", "quote": "TOP SPEED ⟶ 17 mph"},

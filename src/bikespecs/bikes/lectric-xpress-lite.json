@@ -5,7 +5,8 @@
    {"kind": "review", "value": 1099, "url": "https://electricbikereview.com/lectric-ebikes/xpress-lite-review/", "quote": "Price ⟶ MSRP: $1,099"}
   ],
   "cls": [
-   {"kind": "maker", "value": 3, "url": "https://lectricebikes.com/products/xpress-lite-tan-ebike", "quote": "Five riding modes deliver the speed and power to own the road as a Class 1, 2, or 3 eBike.* New simplified labels, including Eco, Tour, Sport, Sport+, & Turbo, allow riders to choose their riding experience. ⟶ Thumb Throttle", "basis": "Class 1/2/3 with throttle; maker lists top speed 28 mph -> 3"},
+   {"kind": "maker", "value": 2, "url": "https://lectricebikes.com/products/xpress-lite-tan-ebike", "quote": "Five riding modes deliver the speed and power to own the road as a Class 1, 2, or 3 eBike.* New simplified labels, including Eco, Tour, Sport, Sport+, & Turbo, allow riders to choose their riding experience. ⟶ Thumb Throttle", "basis": "maker says Class 1, 2, or 3 (selectable) with a throttle; ships as Class 2 (20 mph) per the maker FAQ; the listed 28 mph top speed is the unlocked Class 3 setting"},
+   {"kind": "maker", "value": 2, "url": "https://lectricebikes.com/pages/faq", "quote": "All Lectric eBikes ship as a class 2 electric bike, meaning it has a throttle capable of propelling the bike at speeds of up to 20mph. Pedal assist will also be limited to 12 or 20mph in this setting depending on the model.", "basis": "maker FAQ 'What is the classification of Lectric eBikes?'; the same answer says the XP, XPedition, XPeak, XPress, and XPress Lite can be unlocked to class 3 (28 mph)"},
    {"kind": "review", "value": 2, "url": "https://electricbikereview.com/lectric-ebikes/xpress-lite-review/", "quote": "Class 1 / Class 2 / Class 3, ships as Class 2, California Class 3 mode available ⟶ Learn more about Ebike classes", "basis": "review says it ships as Class 2"}
   ],
   "spd": [
