@@ -9,9 +9,10 @@ the 3 most viewed win. Only videos YouTube allows on other sites (embeddable), p
 a minute long (no Shorts). A video goes to the most specific model it names (a "FX+ 2S" video is not a "FX+ 2" video).
 When no video names a model's full name, the model's family name is tried (a "Level 4" video for "Level 4 REC").
 """
-import json, re, glob, datetime, collections, sys, html, os
+import json, re, glob, datetime, collections, sys, html, os, unicodedata
 
 def norm(s):
+    s = unicodedata.normalize('NFKD', s).encode('ascii', 'ignore').decode()   # Müller -> Muller
     s = s.lower().replace('&', ' and ').replace('+', ' plus ').replace("'", '').replace('’', '')
     s = re.sub(r'[^a-z0-9]+', ' ', s)
     s = re.sub(r'(?<=[a-z])(?=[0-9])|(?<=[0-9])(?=[a-z])', ' ', s)   # xp4 -> xp 4, 9d -> 9 d
@@ -68,6 +69,8 @@ def families(model, brand_phrases):
         words = words[:-1]
         k = core(' '.join(words), brand_phrases)
         if k and (len(k) >= 2 or (len(k[0]) >= 3 and k[0] not in GENERIC)): out.append(k)
+    c = core(model, brand_phrases)
+    if len(c) > 1 and len(c[0]) >= 6 and c[0] not in GENERIC and [c[0]] not in out: out.append([c[0]])
     return out
 
 def seconds(iso):

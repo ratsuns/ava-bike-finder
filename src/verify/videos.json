@@ -378,11 +378,136 @@
  "Benno|eJoy 5i Performance": [],
  "Benno|eJoy 10D Performance": [],
  "Benno|eJoy 10D Performance Sport": [],
- "Benno|RemiDemi 9D EVO 2 Performance": [],
- "Benno|RemiDemi 9D EVO 2 Performance Sport": [],
- "Benno|RemiDemi 9D EVO 4 Performance (Smart System)": [],
- "Benno|RemiDemi XL EVO 1 Performance Sport": [],
- "Benno|RemiDemi XL EVO 1 Performance": [],
+ "Benno|RemiDemi 9D EVO 2 Performance": [
+  {
+   "id": "nxm8jcystEU",
+   "t": "Amazing Utility ! 2024 Benno Remi Demi City Bike",
+   "c": "BicycleTube",
+   "d": "2025-05-12",
+   "vw": 217,
+   "du": 92
+  },
+  {
+   "id": "v4nat2kTUSo",
+   "t": "Benno RemiDemi Review - $3.4k",
+   "c": "ElectricBikeReview.com",
+   "d": "2020-08-07",
+   "vw": 43592,
+   "du": 2300
+  },
+  {
+   "id": "YGBZK_6ftXw",
+   "t": "Benno RemiDemi 9D Electric Bike Review",
+   "c": "Propel",
+   "d": "2020-01-23",
+   "vw": 30892,
+   "du": 621
+  }
+ ],
+ "Benno|RemiDemi 9D EVO 2 Performance Sport": [
+  {
+   "id": "nxm8jcystEU",
+   "t": "Amazing Utility ! 2024 Benno Remi Demi City Bike",
+   "c": "BicycleTube",
+   "d": "2025-05-12",
+   "vw": 217,
+   "du": 92
+  },
+  {
+   "id": "v4nat2kTUSo",
+   "t": "Benno RemiDemi Review - $3.4k",
+   "c": "ElectricBikeReview.com",
+   "d": "2020-08-07",
+   "vw": 43592,
+   "du": 2300
+  },
+  {
+   "id": "YGBZK_6ftXw",
+   "t": "Benno RemiDemi 9D Electric Bike Review",
+   "c": "Propel",
+   "d": "2020-01-23",
+   "vw": 30892,
+   "du": 621
+  }
+ ],
+ "Benno|RemiDemi 9D EVO 4 Performance (Smart System)": [
+  {
+   "id": "nxm8jcystEU",
+   "t": "Amazing Utility ! 2024 Benno Remi Demi City Bike",
+   "c": "BicycleTube",
+   "d": "2025-05-12",
+   "vw": 217,
+   "du": 92
+  },
+  {
+   "id": "v4nat2kTUSo",
+   "t": "Benno RemiDemi Review - $3.4k",
+   "c": "ElectricBikeReview.com",
+   "d": "2020-08-07",
+   "vw": 43592,
+   "du": 2300
+  },
+  {
+   "id": "YGBZK_6ftXw",
+   "t": "Benno RemiDemi 9D Electric Bike Review",
+   "c": "Propel",
+   "d": "2020-01-23",
+   "vw": 30892,
+   "du": 621
+  }
+ ],
+ "Benno|RemiDemi XL EVO 1 Performance Sport": [
+  {
+   "id": "po7V_RAHBOQ",
+   "t": "E-Cargo Bike Showdown - Benno RemiDemi XL vs Tern GSD. Which is right for you?",
+   "c": "Oregon E-Bikes",
+   "d": "2025-02-15",
+   "vw": 2438,
+   "du": 389
+  },
+  {
+   "id": "nxm8jcystEU",
+   "t": "Amazing Utility ! 2024 Benno Remi Demi City Bike",
+   "c": "BicycleTube",
+   "d": "2025-05-12",
+   "vw": 217,
+   "du": 92
+  },
+  {
+   "id": "v4nat2kTUSo",
+   "t": "Benno RemiDemi Review - $3.4k",
+   "c": "ElectricBikeReview.com",
+   "d": "2020-08-07",
+   "vw": 43592,
+   "du": 2300
+  }
+ ],
+ "Benno|RemiDemi XL EVO 1 Performance": [
+  {
+   "id": "po7V_RAHBOQ",
+   "t": "E-Cargo Bike Showdown - Benno RemiDemi XL vs Tern GSD. Which is right for you?",
+   "c": "Oregon E-Bikes",
+   "d": "2025-02-15",
+   "vw": 2438,
+   "du": 389
+  },
+  {
+   "id": "nxm8jcystEU",
+   "t": "Amazing Utility ! 2024 Benno Remi Demi City Bike",
+   "c": "BicycleTube",
+   "d": "2025-05-12",
+   "vw": 217,
+   "du": 92
+  },
+  {
+   "id": "v4nat2kTUSo",
+   "t": "Benno RemiDemi Review - $3.4k",
+   "c": "ElectricBikeReview.com",
+   "d": "2020-08-07",
+   "vw": 43592,
+   "du": 2300
+  }
+ ],
  "Blix|Sol X": [
   {
    "id": "h3HRU5FDXDI",
@@ -491,7 +616,24 @@
    "du": 1587
   }
  ],
- "Bulls|Iconic Evo 1": [],
+ "Bulls|Iconic Evo 1": [
+  {
+   "id": "X_aJroiOsx8",
+   "t": "Bulls Iconic Electric Bike Lineup | Electric Commuter Bike Overview",
+   "c": "Electric Bike Report",
+   "d": "2021-10-28",
+   "vw": 9687,
+   "du": 449
+  },
+  {
+   "id": "S-0rIIquW6U",
+   "t": "Bulls Iconic 1 750 Diamond",
+   "c": "BULLS Bikes USA",
+   "d": "2024-11-04",
+   "vw": 1027,
+   "du": 74
+  }
+ ],
  "Bulls|Iconic Evo TR": [
   {
    "id": "KuhEkUVCiQI",
@@ -591,9 +733,84 @@
    "du": 320
   }
  ],
- "Cannondale|Mavaro Neo 1": [],
- "Cannondale|Mavaro Neo 2": [],
- "Cannondale|Mavaro Neo 3": [],
+ "Cannondale|Mavaro Neo 1": [
+  {
+   "id": "NxzParhpSE4",
+   "t": "HeadShok: A Better Urban Front Suspension | Tech Talks | Cannondale Mavaro",
+   "c": "Cannondale Bicycles",
+   "d": "2024-11-26",
+   "vw": 6609,
+   "du": 157
+  },
+  {
+   "id": "VnS9SKD5uhE",
+   "t": "A look at the Cannondale Mavaro eBike",
+   "c": "Gears Bike Shop TechZone",
+   "d": "2025-03-07",
+   "vw": 6436,
+   "du": 175
+  },
+  {
+   "id": "xCigzVNa6aI",
+   "t": "Canning Conveyor - All New Cannondale Mavaro Urban E Bike​​ Commercial",
+   "c": "Canning Conveyor",
+   "d": "2025-12-02",
+   "vw": 655,
+   "du": 77
+  }
+ ],
+ "Cannondale|Mavaro Neo 2": [
+  {
+   "id": "NxzParhpSE4",
+   "t": "HeadShok: A Better Urban Front Suspension | Tech Talks | Cannondale Mavaro",
+   "c": "Cannondale Bicycles",
+   "d": "2024-11-26",
+   "vw": 6609,
+   "du": 157
+  },
+  {
+   "id": "VnS9SKD5uhE",
+   "t": "A look at the Cannondale Mavaro eBike",
+   "c": "Gears Bike Shop TechZone",
+   "d": "2025-03-07",
+   "vw": 6436,
+   "du": 175
+  },
+  {
+   "id": "xCigzVNa6aI",
+   "t": "Canning Conveyor - All New Cannondale Mavaro Urban E Bike​​ Commercial",
+   "c": "Canning Conveyor",
+   "d": "2025-12-02",
+   "vw": 655,
+   "du": 77
+  }
+ ],
+ "Cannondale|Mavaro Neo 3": [
+  {
+   "id": "NxzParhpSE4",
+   "t": "HeadShok: A Better Urban Front Suspension | Tech Talks | Cannondale Mavaro",
+   "c": "Cannondale Bicycles",
+   "d": "2024-11-26",
+   "vw": 6609,
+   "du": 157
+  },
+  {
+   "id": "VnS9SKD5uhE",
+   "t": "A look at the Cannondale Mavaro eBike",
+   "c": "Gears Bike Shop TechZone",
+   "d": "2025-03-07",
+   "vw": 6436,
+   "du": 175
+  },
+  {
+   "id": "xCigzVNa6aI",
+   "t": "Canning Conveyor - All New Cannondale Mavaro Urban E Bike​​ Commercial",
+   "c": "Canning Conveyor",
+   "d": "2025-12-02",
+   "vw": 655,
+   "du": 77
+  }
+ ],
  "Cannondale|Tesoro Carbon 1": [],
  "Cannondale|Tesoro Carbon 2": [],
  "Cannondale|Tesoro X 1": [
@@ -630,6 +847,22 @@
    "d": "2020-07-05",
    "vw": 74704,
    "du": 1781
+  },
+  {
+   "id": "NaJuVqSjRm0",
+   "t": "One Ride Away | Escape to Raus | Cannondale Tesoro",
+   "c": "Cannondale Bicycles",
+   "d": "2026-07-21",
+   "vw": 77909,
+   "du": 93
+  },
+  {
+   "id": "7BcIowKKw1o",
+   "t": "Never Shift Again With Cannondale Tesoro Automatiq",
+   "c": "Cannondale Bicycles",
+   "d": "2025-10-22",
+   "vw": 3127,
+   "du": 87
   }
  ],
  "Dahon|K-Feather": [
@@ -1070,7 +1303,32 @@
    "du": 356
   }
  ],
- "Gazelle|Eclipse T11+": [],
+ "Gazelle|Eclipse T11+": [
+  {
+   "id": "nG-iKtLJg2M",
+   "t": "Gazelle Eclipse | Design, power and precision | Royal Dutch Gazelle",
+   "c": "Royal Dutch Gazelle",
+   "d": "2026-09-28",
+   "vw": 306,
+   "du": 130
+  },
+  {
+   "id": "iEaiTNvFWQs",
+   "t": "NEW Gazelle Eclipse eBike Review",
+   "c": "Propel",
+   "d": "2024-05-11",
+   "vw": 76565,
+   "du": 859
+  },
+  {
+   "id": "_m7BD0dHoTw",
+   "t": "Review: All New Gazelle Eclipse Electric Bike",
+   "c": "The New Wheel Electric Bikes",
+   "d": "2024-03-19",
+   "vw": 31640,
+   "du": 623
+  }
+ ],
  "Gazelle|Eclipse C380+": [
   {
    "id": "JHJBw4woj1Q",
@@ -1087,6 +1345,14 @@
    "d": "2025-06-03",
    "vw": 6440,
    "du": 344
+  },
+  {
+   "id": "nG-iKtLJg2M",
+   "t": "Gazelle Eclipse | Design, power and precision | Royal Dutch Gazelle",
+   "c": "Royal Dutch Gazelle",
+   "d": "2026-09-28",
+   "vw": 306,
+   "du": 130
   }
  ],
  "Gazelle|Ultimate T10": [
@@ -1193,7 +1459,32 @@
    "du": 3301
   }
  ],
- "Gazelle|Ultimate T11+": [],
+ "Gazelle|Ultimate T11+": [
+  {
+   "id": "GffuleXmjSo",
+   "t": "Gazelle Ultimate | Sporty design, comfortable ride | Royal Dutch Gazelle",
+   "c": "Royal Dutch Gazelle",
+   "d": "2026-03-04",
+   "vw": 663,
+   "du": 106
+  },
+  {
+   "id": "7oAwzsAfa0o",
+   "t": "The Ultimate Daily Rider: Gazelle Expands Its Most Successful Frame With 3  Class 1 Electric Wonders",
+   "c": "NH Auto",
+   "d": "2026-10-04",
+   "vw": 413,
+   "du": 494
+  },
+  {
+   "id": "ZH8Lm4JbgdM",
+   "t": "Gazelle Ultimate T11 eBike Quick Look Bosch Smart System eBike Sussex",
+   "c": "eBike Sussex Electric Bike Specialists",
+   "d": "2026-10-28",
+   "vw": 189,
+   "du": 274
+  }
+ ],
  "Gazelle|Ultimate C380+": [
   {
    "id": "3gEPc63bULw",
@@ -2461,9 +2752,50 @@
    "d": "2024-07-31",
    "vw": 12443,
    "du": 234
+  },
+  {
+   "id": "3kkRf5riBnc",
+   "t": "MOD BIKES Berlin Review - $2.6k",
+   "c": "ElectricBikeReview.com",
+   "d": "2019-08-09",
+   "vw": 5720,
+   "du": 2036
+  },
+  {
+   "id": "G2NlWi4xN6Q",
+   "t": "MOD Berlin Review | Electric Commuter Bike",
+   "c": "Electric Bike Report",
+   "d": "2022-01-19",
+   "vw": 3537,
+   "du": 1041
   }
  ],
- "MOD|Groove Step-Thru 3": [],
+ "MOD|Groove Step-Thru 3": [
+  {
+   "id": "fztmGpod5wg",
+   "t": "MOD Groove Rider: Elizabeth’s Austin Journey 🚲",
+   "c": "MOD BIKES",
+   "d": "2025-10-10",
+   "vw": 685,
+   "du": 87
+  },
+  {
+   "id": "rq4ZcbZVjyA",
+   "t": "Introducing the MOD Groove - your new favorite beach cruiser",
+   "c": "MOD BIKES",
+   "d": "2023-09-27",
+   "vw": 1090,
+   "du": 177
+  },
+  {
+   "id": "koLyIdJEkzI",
+   "t": "MOD Groove E-Cruiser Walkthrough with Lead Designer",
+   "c": "MOD BIKES",
+   "d": "2023-10-27",
+   "vw": 786,
+   "du": 711
+  }
+ ],
  "MOD|Easy 3": [
   {
    "id": "IrogvGmw6HA",
@@ -2636,6 +2968,14 @@
    "d": "2023-03-10",
    "vw": 2971,
    "du": 76
+  },
+  {
+   "id": "qmweR-FBA0Q",
+   "t": "Momentum Lafree E Bike Reveiw",
+   "c": "Gary’s E-Bike Adventures",
+   "d": "2023-09-15",
+   "vw": 2759,
+   "du": 803
   }
  ],
  "Momentum|Trancend E+": [],
@@ -3537,8 +3877,34 @@
    "du": 431
   }
  ],
- "Revi Bikes|Runabout.2": [],
- "Riese and Muller|Load4 75 vario": [],
+ "Revi Bikes|Runabout.2": [
+  {
+   "id": "aHt3s5q5QGM",
+   "t": "Revi Bikes Runabout Review - $1.5k",
+   "c": "ElectricBikeReview.com",
+   "d": "2019-06-24",
+   "vw": 11918,
+   "du": 1769
+  },
+  {
+   "id": "xRyk4DA5Ch4",
+   "t": "The Runabout by Revi Bikes (Civi Bikes) Electric Bicycle 500w E-Bike Easy Step Ebike - Downey CA",
+   "c": "562Ebikes Electric Bicycle",
+   "d": "2020-04-27",
+   "vw": 327,
+   "du": 61
+  }
+ ],
+ "Riese and Muller|Load4 75 vario": [
+  {
+   "id": "czW3qyKseH0",
+   "t": "Riese & Müller Load 75 Full Review - Everything you need to know about the Load4 75",
+   "c": "ebikeist",
+   "d": "2024-07-09",
+   "vw": 11909,
+   "du": 2227
+  }
+ ],
  "Riese and Muller|Load4 60 vario": [],
  "Salsa|Confluence Flat Bar Altus": [
   {
@@ -3566,12 +3932,162 @@
    "du": 154
   }
  ],
- "Salsa|Confluence Flat Bar CUES 11": [],
- "Salsa|Confluence Apex 1": [],
- "Salsa|Confluence GRX 600 2x": [],
- "Salsa|Confluence Flat Bar ESSA 8": [],
- "Salsa|Confluence CUES 10": [],
- "Salsa|Confluence CUES 11": [],
+ "Salsa|Confluence Flat Bar CUES 11": [
+  {
+   "id": "QEx5L0z2148",
+   "t": "NEW Gravel eBike from Salsa Cycles: Confluence first look",
+   "c": "Dirty Teeth MTB",
+   "d": "2024-02-29",
+   "vw": 15876,
+   "du": 485
+  },
+  {
+   "id": "prbYcJ-JrKk",
+   "t": "Salsa Cycles Confluence & More: 2023 Sea Otter",
+   "c": "Gravel Cyclist",
+   "d": "2023-05-11",
+   "vw": 7235,
+   "du": 192
+  },
+  {
+   "id": "Lvvoy1tlB9w",
+   "t": "Salsa Cycles - Confluence Electric Gravel Bike",
+   "c": "Sequim Bike Studio",
+   "d": "2024-03-02",
+   "vw": 4742,
+   "du": 154
+  }
+ ],
+ "Salsa|Confluence Apex 1": [
+  {
+   "id": "QEx5L0z2148",
+   "t": "NEW Gravel eBike from Salsa Cycles: Confluence first look",
+   "c": "Dirty Teeth MTB",
+   "d": "2024-02-29",
+   "vw": 15876,
+   "du": 485
+  },
+  {
+   "id": "prbYcJ-JrKk",
+   "t": "Salsa Cycles Confluence & More: 2023 Sea Otter",
+   "c": "Gravel Cyclist",
+   "d": "2023-05-11",
+   "vw": 7235,
+   "du": 192
+  },
+  {
+   "id": "Lvvoy1tlB9w",
+   "t": "Salsa Cycles - Confluence Electric Gravel Bike",
+   "c": "Sequim Bike Studio",
+   "d": "2024-03-02",
+   "vw": 4742,
+   "du": 154
+  }
+ ],
+ "Salsa|Confluence GRX 600 2x": [
+  {
+   "id": "QEx5L0z2148",
+   "t": "NEW Gravel eBike from Salsa Cycles: Confluence first look",
+   "c": "Dirty Teeth MTB",
+   "d": "2024-02-29",
+   "vw": 15876,
+   "du": 485
+  },
+  {
+   "id": "prbYcJ-JrKk",
+   "t": "Salsa Cycles Confluence & More: 2023 Sea Otter",
+   "c": "Gravel Cyclist",
+   "d": "2023-05-11",
+   "vw": 7235,
+   "du": 192
+  },
+  {
+   "id": "Lvvoy1tlB9w",
+   "t": "Salsa Cycles - Confluence Electric Gravel Bike",
+   "c": "Sequim Bike Studio",
+   "d": "2024-03-02",
+   "vw": 4742,
+   "du": 154
+  }
+ ],
+ "Salsa|Confluence Flat Bar ESSA 8": [
+  {
+   "id": "QEx5L0z2148",
+   "t": "NEW Gravel eBike from Salsa Cycles: Confluence first look",
+   "c": "Dirty Teeth MTB",
+   "d": "2024-02-29",
+   "vw": 15876,
+   "du": 485
+  },
+  {
+   "id": "prbYcJ-JrKk",
+   "t": "Salsa Cycles Confluence & More: 2023 Sea Otter",
+   "c": "Gravel Cyclist",
+   "d": "2023-05-11",
+   "vw": 7235,
+   "du": 192
+  },
+  {
+   "id": "Lvvoy1tlB9w",
+   "t": "Salsa Cycles - Confluence Electric Gravel Bike",
+   "c": "Sequim Bike Studio",
+   "d": "2024-03-02",
+   "vw": 4742,
+   "du": 154
+  }
+ ],
+ "Salsa|Confluence CUES 10": [
+  {
+   "id": "QEx5L0z2148",
+   "t": "NEW Gravel eBike from Salsa Cycles: Confluence first look",
+   "c": "Dirty Teeth MTB",
+   "d": "2024-02-29",
+   "vw": 15876,
+   "du": 485
+  },
+  {
+   "id": "prbYcJ-JrKk",
+   "t": "Salsa Cycles Confluence & More: 2023 Sea Otter",
+   "c": "Gravel Cyclist",
+   "d": "2023-05-11",
+   "vw": 7235,
+   "du": 192
+  },
+  {
+   "id": "Lvvoy1tlB9w",
+   "t": "Salsa Cycles - Confluence Electric Gravel Bike",
+   "c": "Sequim Bike Studio",
+   "d": "2024-03-02",
+   "vw": 4742,
+   "du": 154
+  }
+ ],
+ "Salsa|Confluence CUES 11": [
+  {
+   "id": "QEx5L0z2148",
+   "t": "NEW Gravel eBike from Salsa Cycles: Confluence first look",
+   "c": "Dirty Teeth MTB",
+   "d": "2024-02-29",
+   "vw": 15876,
+   "du": 485
+  },
+  {
+   "id": "prbYcJ-JrKk",
+   "t": "Salsa Cycles Confluence & More: 2023 Sea Otter",
+   "c": "Gravel Cyclist",
+   "d": "2023-05-11",
+   "vw": 7235,
+   "du": 192
+  },
+  {
+   "id": "Lvvoy1tlB9w",
+   "t": "Salsa Cycles - Confluence Electric Gravel Bike",
+   "c": "Sequim Bike Studio",
+   "d": "2024-03-02",
+   "vw": 4742,
+   "du": 154
+  }
+ ],
  "Salsa|Tributary": [
   {
    "id": "5ffGn49NlJQ",
@@ -4822,6 +5338,14 @@
    "d": "2026-09-08",
    "vw": 803,
    "du": 203
+  },
+  {
+   "id": "WH870GblXxI",
+   "t": "Trek Borrego Review - Trek's 1st Fat Tire Ebike",
+   "c": "Top5ebikes",
+   "d": "2026-09-03",
+   "vw": 3418,
+   "du": 888
   }
  ],
  "Trek|Borrego+ S": [
@@ -4832,6 +5356,14 @@
    "d": "2026-10-03",
    "vw": 2127,
    "du": 584
+  },
+  {
+   "id": "WH870GblXxI",
+   "t": "Trek Borrego Review - Trek's 1st Fat Tire Ebike",
+   "c": "Top5ebikes",
+   "d": "2026-09-03",
+   "vw": 3418,
+   "du": 888
   }
  ],
  "Troxus|Trax LT": [
@@ -5774,7 +6306,32 @@
    "du": 1338
   }
  ],
- "Velotric|Triker 1": [],
+ "Velotric|Triker 1": [
+  {
+   "id": "SMolR1AOuHI",
+   "t": "This Electric Trike Solves Problems You Didn’t Know You Had - Velotric Triker Review",
+   "c": "TailHappyTV",
+   "d": "2025-09-06",
+   "vw": 35330,
+   "du": 2338
+  },
+  {
+   "id": "dho_vSBrYxo",
+   "t": "The Cadillac Escalade of E-trikes: Velotric Triker",
+   "c": "Scott Hardesty ",
+   "d": "2025-09-20",
+   "vw": 29265,
+   "du": 3134
+  },
+  {
+   "id": "xjhCBsqfZDQ",
+   "t": "The Fastest Electric Trike I’ve Ever Tested: Velotric Triker Review",
+   "c": "ElectricBikeReview.com",
+   "d": "2025-09-27",
+   "vw": 24988,
+   "du": 2633
+  }
+ ],
  "Velotric|Discover M": [
   {
    "id": "CkdfWeM7kiM",
@@ -5995,20 +6552,20 @@
    "du": 1795
   },
   {
-   "id": "6MY3QYUxdJo",
-   "t": "Yuba Electric Boda Boda⎪Compact Cargo Bike",
-   "c": "Yuba Bikes",
-   "d": "2018-07-26",
-   "vw": 31305,
-   "du": 116
+   "id": "Yu3wtP-zsVI",
+   "t": "2019 Yuba Electric Supermarche, Electric Boda Boda, Spicy Curry Cargo Bikes | Electric Bike Report",
+   "c": "Electric Bike Report",
+   "d": "2018-09-25",
+   "vw": 6193,
+   "du": 424
   },
   {
-   "id": "RPR0cRrOXBw",
-   "t": "Yuba Boda Boda⎪The ultimate urban people mover",
-   "c": "Yuba Bikes",
-   "d": "2020-04-02",
-   "vw": 6229,
-   "du": 69
+   "id": "yBRefSVz8ps",
+   "t": "Review: Yuba Boda Boda  V3 Electric Assist Family Cargo Bike",
+   "c": "Caleb Clark",
+   "d": "2018-12-03",
+   "vw": 2940,
+   "du": 119
   }
  ],
  "Yuba|mini Boda Boda": [],
