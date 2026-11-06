@@ -7,7 +7,7 @@ Only bikes with a source file are touched.
 import json, re
 
 from . import evidence, policy
-from .rules import FIELDS, agree, decide, discontinued, supports
+from .rules import FIELDS, agree, decide, discontinued, num, supports
 
 CHANGES = evidence.CARDS.replace('cards.json', 'spec_changes.json')
 UNLOCK = re.compile(r'(?i)(?:adjustable|unlock\w*|set|configur\w*|raised?|up)\D{0,15}?(\d{2})\s*mph')
@@ -34,6 +34,8 @@ def shown(f, card, srcs):
     d = decide(f, srcs)
     if (k, f) in policy.KEEP_SITE: return now, 'kept: Chris chose the site number'
     if f == 'price' and k in policy.PRICE: return policy.PRICE[k], "Chris's price"
+    if f == 'price' and policy.PRICE_NEVER_UP and num(now) and num(d['value']) and num(d['value']) > num(now):
+        return now, "kept: the site's price is lower"
     if d['show']: return d['value'], d['state']
     if d['state'] == 'maker_only' and policy.SHOW_MAKER_ONLY: return d['value'], 'maker_only'
     if policy.KEEP_UNBACKED and now not in (None, ''): return now, 'unverified: no source states it'

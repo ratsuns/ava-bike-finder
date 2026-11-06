@@ -8,6 +8,8 @@
   6. Top speed: the highest assisted speed the bike can reach (a bike that ships at 20 mph and unlocks to 28 shows 28).
      Class stays the class it ships in.
   7. Price: the maker's regular price (Tern's own US store for Tern bikes that its main site shows only on sale).
+  7a. Price never goes up: when the site's price is lower than the price the sources give, the site's price stays
+      (Chris, Nov 6: "use the cheaper prices"; Lectric's crossed-out prices, for one, are higher than what people pay).
   8. ERideHero counts as an independent source (nothing to do: every other site already counts).
 """
 import json, os
@@ -17,6 +19,7 @@ from . import evidence
 SHOW_MAKER_ONLY = True
 KEEP_UNBACKED = True
 SPEED = 'highest'
+PRICE_NEVER_UP = True
 KEEP_SITE = {(b, f) for b, f, *_ in json.load(open(os.path.join(evidence.SRC, 'verify', 'spec_keep_site.json')))}
 PRICE = {'Lectric|XPedition 2.0': 1399}          # its crossed-out $1,804 is a Black Friday "was" price; $1,399 is the regular price
 REMOVE = {'Pedego|Element Platinum Edition',     # discontinued, and not on Chris's rebate list
