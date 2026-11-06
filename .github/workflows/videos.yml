@@ -1,13 +1,13 @@
 name: Video reviews
 # Keeps the video reviews right without anyone checking them by hand:
-#  - when src/videos.csv changes, once a week, or when run from the Actions tab
+#  - when src/videos.csv, the matching rules (src/videos/) or this file change, once a week, or when run from the Actions tab
 #  - gets YouTube's current data for every video (needs the YT_API_KEY secret; skipped without it)
 #  - takes out videos YouTube no longer shows, runs the accuracy check, and publishes the site's video file
 # A video that doesn't match its bike stops the run and nothing is published (GitHub emails the repo owner).
 on:
   push:
     branches: [main]
-    paths: ['src/videos.csv']
+    paths: ['src/videos.csv', 'src/videos/**', '.github/workflows/videos.yml']
   schedule:
     - cron: '17 9 * * 1'     # Mondays 2:17am Pacific
   workflow_dispatch:
