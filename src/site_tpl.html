@@ -429,6 +429,16 @@ input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;width:1
 .vpv .vfig{margin:0;width:min(1100px,100%,calc((100dvh - 190px) * 16 / 9));display:grid;gap:12px}
 .vbox{position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#000;box-shadow:0 24px 64px rgba(0,0,0,.45)}
 .vbox iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+/* phone turned sideways while a video plays: the video fills the screen on black, clear of the notch, with nothing of
+   ours on top; turning it upright again brings back the normal player. Android goes truly full screen when it allows (script) */
+@media (orientation:landscape) and (pointer:coarse) and (max-height:540px){
+ .zoomv.vpv{padding:0;gap:0;background:#000}
+ .vpv .vfig{width:100%;height:100%;gap:0}
+ .vpv .vbox{aspect-ratio:auto;height:100%;border-radius:0;box-shadow:none}
+ .vpv .vbox iframe{top:0;left:env(safe-area-inset-left,0px);width:calc(100% - env(safe-area-inset-left,0px) - env(safe-area-inset-right,0px));height:calc(100% - env(safe-area-inset-bottom,0px))}
+ .vpv .zcap,.vpv .zx{display:none}
+}
+.vbox:fullscreen{aspect-ratio:auto;border-radius:0;box-shadow:none;background:#000}
 .vpv .zcap{text-align:center;text-wrap:balance}
 .bmr{display:grid;gap:24px;min-width:0}
 .bmr h3{margin:0 0 10px;font-size:var(--t-body);font-weight:600;letter-spacing:-.01em}
@@ -876,7 +886,9 @@ html.dim :is(.hero,#bar,#status,#g).onscr{filter:blur(6px)}
 .zoomv:not([open]){display:none}
 .zfig{margin:0;width:min(1100px,100%);flex:1 1 auto;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;touch-action:pan-y pinch-zoom}
 .zfig img{display:block;max-width:100%;max-height:100%;min-height:0;object-fit:contain;border-radius:12px;background:#fff;box-shadow:0 24px 64px rgba(0,0,0,.45)}
-.zfig .zcap{font-size:var(--t-ui);color:rgba(255,255,255,.8)}
+.zfig .zcap,.vfig .zcap{font-size:var(--t-ui);color:rgba(255,255,255,.8)}
+/* the video title sits like the photo caption: same type, same gap, same width (the photo's sits between its two arrows) */
+.vfig .zcap{padding:0 56px}
 .zx{position:absolute;top:max(10px,env(safe-area-inset-top,0px));right:10px;width:44px;height:44px;display:grid;place-items:center;border:0;border-radius:999px;background:rgba(255,255,255,.12);color:#fff;cursor:pointer;transition:background-color .15s ease,transform .16s var(--ease-out)}
 .zx:active{transform:scale(.95)}
 @media (hover:hover) and (pointer:fine){.zx:hover{background:rgba(255,255,255,.2)}}
@@ -951,7 +963,7 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
 @media (hover:hover) and (pointer:fine){.zarr:hover{background:rgba(52,60,56,.6)}}
 /* light theme: the photo view sits on the light page color instead of near-black */
 :root[data-theme="light"] .zoomv{background:var(--bg);color:var(--fg)}
-:root[data-theme="light"] .zfig .zcap{color:var(--fg2)}
+:root[data-theme="light"] .zfig .zcap,:root[data-theme="light"] .vfig .zcap{color:var(--fg2)}
 :root[data-theme="light"] .zfig img{box-shadow:0 1px 2px rgba(18,22,20,.06),0 12px 32px rgba(18,22,20,.1);outline:1px solid var(--line);outline-offset:-1px}
 :root[data-theme="light"] .zx{background:rgba(18,22,20,.06);color:var(--fg)}
 :root[data-theme="light"] .zarr{background:rgba(255,255,255,.62);color:var(--fg);box-shadow:0 2px 10px rgba(18,22,20,.12),inset 0 0 0 1px rgba(18,22,20,.08)}
@@ -1409,7 +1421,13 @@ addEventListener('resize',()=>{if(BIKE.open)fitBml()},{passive:true});
  BIKE.addEventListener('close',stop)}
 /* clicking a review opens YouTube's player on a dark screen; closing it stops the video and returns to the bike */
 const VP=$('vplay'),VBOX=VP.querySelector('.vbox');
-const vpStop=()=>{VBOX.textContent=''};
+const vpStop=()=>{if(document.fullscreenElement===VBOX)document.exitFullscreen().catch(()=>{});VBOX.textContent=''};
+/* turning the phone sideways fills the screen (the CSS above does that everywhere); Android also allows real full screen
+   for a few seconds after a tap, so when the turn comes then, use it, and leave it when the phone is upright again */
+{const side=matchMedia('(orientation:landscape) and (pointer:coarse) and (max-height:540px)');
+ side.addEventListener('change',()=>{if(!VP.open)return;
+  if(side.matches){if(VBOX.requestFullscreen&&navigator.userActivation&&navigator.userActivation.isActive)VBOX.requestFullscreen({navigationUI:'hide'}).catch(()=>{})}
+  else if(document.fullscreenElement===VBOX)document.exitFullscreen().catch(()=>{})})}
 BIKE.addEventListener('click',e=>{const it=e.target.closest('.vit');if(!it)return;
  VBOX.innerHTML=`<iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(it.dataset.v)}?autoplay=1&rel=0&playsinline=1" title="${esc(it.dataset.t)}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>`;
  VP.querySelector('.zcap').textContent=it.dataset.t+' · '+it.dataset.c;showDlg(VP,it)});
