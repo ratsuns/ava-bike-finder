@@ -1,6 +1,6 @@
 # Ava Bike Finder
 
-> Every e-bike on Ava Community Energy's e-bike rebate list (365 bikes), with each bike's price, the price after the rebate, specs and the shops that sell it. Made by Chris Beltran in Oakland, CA. Not affiliated with Ava Community Energy. Updated November 5, 2026.
+> Every e-bike on Ava Community Energy's e-bike rebate list (365 bikes), with each bike's price, the price after the rebate, specs and the shops that sell it. Made by Chris Beltran in Oakland, CA. Not affiliated with Ava Community Energy. Updated November 6, 2026.
 
 ## The rebate (source: https://avaenergy.org/bike-electric/, checked October 29, 2026)
 
@@ -272,10 +272,10 @@
 | Serfas eDART 500W | Standard | 3 | $2,199.99 | $1,799.9899999999998 | 48V 500W hub | 672 Wh | 30 mi |  | Available | Blue Heron Bikes, Laurel Cyclery, Robby's Bicycles, Sports Basement Berkeley, Tip Top Bike Shop, Tracy Cyclery, Cyclepath |
 | Serfas eDART 750W | Standard | 3 | $2,549.99 | $2,149.99 | 48V 750W hub (1,000W peak) | 634 Wh | 30 mi | 75 lb | Available | Blue Heron Bikes, Laurel Cyclery, Robby's Bicycles, Sports Basement Berkeley, Tip Top Bike Shop, Tracy Cyclery, Cyclepath |
 | Serfas Quest | Cargo | 2 | $2,499.99 | $1,599.9899999999998 | Bafang RMG062 48V 750W rear hub | 720 Wh | 35–40 mi |  | Discontinued by maker | Blue Heron Bikes, Laurel Cyclery, Robby's Bicycles, Sports Basement Berkeley, Tip Top Bike Shop, Tracy Cyclery, Cyclepath |
-| Sixthreezero EVRYjourney 250W (Men's) | Adaptive | 2 | $1,649.99 | $749.99 | 250W rear hub | 374 Wh | 15 mi | 62.4 lb | Available | Pedego Electric Bikes Livermore |
+| Sixthreezero EVRYjourney 250W (Men's) | Adaptive | 2 | $1,649.99 | $749.99 | 250W rear hub | 374 Wh | 15–30 mi | 62.4 lb | Available | Pedego Electric Bikes Livermore |
 | Sixthreezero EVRYjourney Electric Tricycle Rickshaw 750W | Adaptive | 2 | $4,999.99 | $4,099.99 | Bafang 48V 750W front hub | 1008 Wh | 50 mi | 158 lb | Available | Pedego Electric Bikes Livermore |
-| Sixthreezero EVRYjourney NEW 500W (Men's Sport Hybrid) | Adaptive | 2 | $1,999.99 | $1,099.99 | 500W rear hub, 48V | 500 Wh | 20 mi | 62.4 lb | Available | Pedego Electric Bikes Livermore |
-| Sixthreezero EVRYjourney NEW 500W (Women's Touring Hybrid) | Adaptive | 2 | $1,999.99 | $1,099.99 | 500W rear hub, 48V | 500 Wh | 20 mi | 64.8 lb | Available | Pedego Electric Bikes Livermore |
+| Sixthreezero EVRYjourney NEW 500W (Men's Sport Hybrid) | Adaptive | 2 | $1,999.99 | $1,099.99 | 500W rear hub, 48V | 500 Wh | 20–40 mi | 62.4 lb | Available | Pedego Electric Bikes Livermore |
+| Sixthreezero EVRYjourney NEW 500W (Women's Touring Hybrid) | Adaptive | 2 | $1,999.99 | $1,099.99 | 500W rear hub, 48V | 500 Wh | 20–40 mi | 64.8 lb | Available | Pedego Electric Bikes Livermore |
 | Specialized Globe Haul LT | Cargo | 3 | $3,799.99 | $2,899.99 | Globe custom rear hub | 772 Wh |  | 88.2 lb | Available | Alameda Bicycle, Rhythm Bikes, Stay True Cycles, The Bicycle Garage, The New Wheel, Uptown BART Bike Station |
 | Specialized Globe Haul ST | Cargo | 3 | $2,699.99 | $1,799.9899999999998 | Globe custom rear hub | 772 Wh | 60 mi | 77.2 lb | Available | Alameda Bicycle, Rhythm Bikes, Stay True Cycles, The Bicycle Garage, The New Wheel, Uptown BART Bike Station |
 | Specialized Turbo Como 3.0 | Standard | 1 | $3,249.99 | $2,849.99 | Specialized 2.0E, 250W | 530 Wh |  |  | Available | Alameda Bicycle, Rhythm Bikes, Stay True Cycles, The Bicycle Garage, The New Wheel, Uptown BART Bike Station |
@@ -358,20 +358,20 @@
 | Urtopia Carbon Joy Ultra | Standard | 2 | $2,499 | $2,099 | 500W (750W peak), 60Nm | 529 Wh | 70 mi | 42 lb | Available | Pedego Electric Bikes Livermore, The Bicycle Garage |
 | Velotric Breeze 1 | Standard | 2 | $1,799 | $1,399 | 750W rear hub (900W peak) | 627 Wh | 55–70 mi | 48 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
 | Velotric Discover 1 Plus | Standard | 3 | $1,699 | $1,299 | 48V 500W hub (900W peak) | 691 Wh | 58–65 mi | 60 lb | Discontinued by maker | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
-| Velotric Discover 2 | Standard | 1 | $1,499.0 | $1,099.0 | 48V 750W rear hub (feature copy says 1,100W peak; spec table lists none) | 705.6 Wh | 60 mi | 63 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
-| Velotric Discover 3 | Standard | 1 | $1,999.0 | $1,599.0 | 750W rear hub (1,100W peak) | 730 Wh | 65 mi | 61 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
+| Velotric Discover 2 | Standard | 1 | $1,499.0 | $1,099.0 | 48V 750W rear hub (feature copy says 1,100W peak; spec table lists none) | 705.6 Wh | 75 mi | 63 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
+| Velotric Discover 3 | Standard | 1 | $1,999.0 | $1,599.0 | 750W rear hub (1,100W peak) | 730 Wh | 80 mi | 61 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
 | Velotric Discover M | Standard | 2 | $2,499 | $2,099 | VeloCore 48V 500W mid-drive (960W peak) | 802 Wh | 70–95 mi | 60 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
-| Velotric Fold 1 | Cargo | 1 | $1,299.0 | $399.0 | 48V 750W rear hub (1,050W peak) | 608 Wh | 45 mi | 63 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
+| Velotric Fold 1 | Cargo | 1 | $1,299.0 | $399.0 | 48V 750W rear hub (1,050W peak) | 608 Wh | 55 mi | 63 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
 | Velotric Fold 1 Lite | Standard | 2 | $1,099 | $699 | 48V 500W rear hub | 486 Wh | 40–48 mi | 61 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
-| Velotric Fold 1 Plus | Cargo | 1 | $1,499.0 | $599.0 | 750W rear hub (1,100W peak per feature copy) | 608 Wh | 45 mi | 63 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
+| Velotric Fold 1 Plus | Cargo | 1 | $1,499.0 | $599.0 | 750W rear hub (1,100W peak per feature copy) | 608 Wh | 68 mi | 63 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
 | Velotric Go 1 | Cargo | 2 | $1,699 | $799 | Velopower H50 500W hub (900W peak) | 691 Wh | 48–55 mi | 65 lb | Discontinued by maker | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
 | Velotric GoMad | Standard | 2 | $1,999 | $1,599 | 48V 750W hub (1,300W peak) | 802 Wh | 50–75 mi | 77 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
 | Velotric Nomad 1 Plus | Standard | 2 | $1,899 | $1,499 | 48V 750W rear hub | 691 Wh | 52–55 mi | 71 lb | Discontinued by maker | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
 | Velotric Nomad 2 | Standard | 2 | $1,999 | $1,599 | 48V 750W hub (1,300W peak) | 706 Wh | 45–65 mi | 75 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
 | Velotric Nomad 2X | Standard | 2 | $2,399 | $1,999 | 750W hub (1,400W peak), 105Nm; full air suspension | 801.6 Wh | 75 mi | 80 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
 | Velotric Packer 1 | Cargo | 2 | $2,199 | $1,299 | 750W rear hub | 691 Wh | 45–52 mi | 75 lb | Discontinued by maker | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
-| Velotric Summit 1 | Standard | 1 | $1,699.0 | $1,299.0 | 48V 750W rear hub (1,300W peak) | 705.6 Wh | 60 mi | 62 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
-| Velotric Summit 2 | Standard | 1 | $2,099.0 | $1,699.0 | 750W rear hub (1,300W peak) | 801.6 Wh | 70 mi | 57 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
+| Velotric Summit 1 | Standard | 1 | $1,699.0 | $1,299.0 | 48V 750W rear hub (1,300W peak) | 705.6 Wh | 70 mi | 62 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
+| Velotric Summit 2 | Standard | 1 | $2,099.0 | $1,699.0 | 750W rear hub (1,300W peak) | 801.6 Wh | 95 mi | 57 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
 | Velotric T1 | Standard | 1 | $2,199 | $1,799 | 350W rear hub (600W peak) | 352.8 Wh | 70 mi | 36 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
 | Velotric Tempo | Standard | 2 | $1,499 | $1,099 | 36V 350W rear hub (650W peak) | 374 Wh | 40–60 mi | 39 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
 | Velotric Triker 1 | Adaptive | 2 | $2,499 | $1,599 | 48V 750W hub (1,300W peak) | 804 Wh | 50–60 mi | 85.8 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |

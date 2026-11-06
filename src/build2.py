@@ -35,8 +35,13 @@ GP={}
 for f in sorted(glob.glob('specs/gapout*.json')):
     for r in json.load(open(f)): GP[r['index']]=r
 def rng(v):
+    """the range a card shows: the stock battery's, with pedal assist. When a maker lists throttle-only and pedal-assist
+    ranges ("45 (throttle) / 68 (PAS)"), the pedal-assist one is used, as every other bike's range is"""
     if v in (None,''): return None
     v=str(v).replace('miles','').replace('mi','').strip()
+    parts=[x for x in re.split(r'[;,/](?![^()]*\))',v) if x.strip()]   # split outside brackets only
+    if len(parts)>1 and any(re.search(r'(?i)throttle',x) for x in parts):
+        v=next((x for x in parts if not re.search(r'(?i)throttle',x)),parts[0])
     v=re.sub(r'\(.*?\)','',v); v=re.split(r'[;,/]',v)[0]
     v=re.sub(r'(?i)(up to|approx\.?|about|~|\+)','',v); v=re.sub(r'\s*-\s*','–',v).strip(' .')
     return v or None
