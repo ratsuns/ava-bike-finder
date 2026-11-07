@@ -6,7 +6,7 @@ name: Test and publish
 #  - if a test fails nothing is published, the site stays as it was, and GitHub emails the repo owner
 on:
   push:
-    branches: [main, ci-check]   # ci-check: trial run, tests only
+    branches: [main]
   workflow_run:            # the video job's own push can't start this one, so it starts when that job finishes
     workflows: [Video reviews]
     types: [completed]
