@@ -2,6 +2,9 @@
    the top nav's phone menu, the light / dark toggle and the visitor's saved location. Runs after the page's markup. */
 const $=id=>document.getElementById(id);
 const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
+/* the CSS breakpoints, so scripts use the same numbers (media queries can't read CSS variables, so the CSS writes them out too):
+   phones and small tablets (bike window as a bottom sheet, phone menu), and phones (search window as a bottom sheet) */
+const BP={mobile:'(max-width: 760px)',small:'(max-width: 600px)'};const MOBILE=matchMedia(BP.mobile);
 const THEME=__THEME__;
 /* keyboard users get focus handed back to what opened a window; touch and mouse users get no leftover outline */
 let KBD=false;addEventListener('keydown',e=>{if(e.key==='Tab'||e.key==='Escape'||e.key.startsWith('Arrow')||e.key==='Enter')KBD=true},true);addEventListener('pointerdown',()=>{KBD=false},true);
@@ -21,8 +24,8 @@ document.addEventListener('keydown',e=>{const d=DSTACK[DSTACK.length-1];if(!d)re
   const a=f[0],z=f[f.length-1],c=document.activeElement;
   if(!d.contains(c)){e.preventDefault();a.focus();return}
   if(e.shiftKey&&(c===a||c===d)){e.preventDefault();z.focus()}else if(!e.shiftKey&&c===z){e.preventDefault();a.focus()}}});
-/* fn runs once el's transitions have finished (the fallback covers a browser that never reports them) */
-function afterMotion(el,fn){let t=setTimeout(go,300);function go(){if(!t)return;clearTimeout(t);t=0;fn()}Promise.all(el.getAnimations().map(a=>a.finished)).then(go,go)}
+/* fn runs once el's transitions have finished (the fallback, longer than any of the pages' motions, covers a browser that never reports them) */
+function afterMotion(el,fn){let t=setTimeout(go,400);function go(){if(!t)return;clearTimeout(t);t=0;fn()}Promise.all(el.getAnimations().map(a=>a.finished)).then(go,go)}
 /* close() plays the exit animation first, then really closes */
 const NCLOSE=HTMLDialogElement.prototype.close;
 function animClose(){const d=this;if(!d.open||d.dataset.state==='closing')return;
@@ -50,7 +53,7 @@ NAVM.addEventListener('toggle',syncNav);NAVM.addEventListener('beforetoggle',()=
 NAVM.addEventListener('click',e=>{const a=e.target.closest('.nml a'),here=a&&a.getAttribute('aria-current')==='page';if(here)e.preventDefault();
  if((here||e.target.closest('.nml button')||(a&&(a.getAttribute('href')||'').startsWith('#')))&&NAVM.matches(':popover-open'))NAVM.hidePopover()});
 addEventListener('pagehide',()=>{if(NAVM.matches(':popover-open'))NAVM.hidePopover()});
-matchMedia('(min-width: 761px)').addEventListener('change',e=>{if(e.matches&&NAVM.matches(':popover-open'))NAVM.hidePopover()});
+MOBILE.addEventListener('change',e=>{if(!e.matches&&NAVM.matches(':popover-open'))NAVM.hidePopover()});
 
 /* mark a scrolling panel when there is more below or above, so it can fade that edge */
 (()=>{const els=[...document.querySelectorAll('.bmb,.dbody,.cbody')];

@@ -5,45 +5,46 @@
 /* Styles both pages use: tokens and themes, the top nav and phone menu, the E-bike guide and Rebate info panels, shop cards.
    build2.py puts this first in each page's <style>. */
 :root{
+ /* light-theme colours as r,g,b: the light tokens are made from them, and so is anything that sits on a light surface in both
+    themes (bike photos, the map) */
+ --c-fg:18,22,20; --c-fg2:77,86,81; --c-line:227,231,226; --c-accent:14,122,82; --c-accent-ink:11,95,64; --c-pick:183,121,31;
  --offveil:rgba(10,12,11,.14); --offc:#9a3412; --offbg:#fff7ed; --offbd:#fdba74;
  --sbh:rgba(0,0,0,.45); --sbh2:rgba(0,0,0,.6); --sbo:rgba(255,255,255,.3);
- --bg:#f6f7f5; --surface:#ffffff; --well:#f1f3f0; --fg:#121614; --fg2:#4d5651; --fg3:#646d68;
- --line:#e3e7e2; --line2:#c9d0ca; --accent:#0e7a52; --accent-fg:#ffffff; --accent-soft:#e3f2ea; --accent-ink:#0b5f40;
- --pick:#b7791f; --warn-ink:#8a5300;
- --shadow:0 1px 2px rgba(18,22,20,.04),0 4px 14px rgba(18,22,20,.05);
- --shadow-hi:0 2px 4px rgba(18,22,20,.05),0 12px 28px rgba(18,22,20,.09);
- --ease-out:cubic-bezier(.23,1,.32,1); --ease-in-out:cubic-bezier(.77,0,.175,1);
+ --bg:#f6f7f5; --surface:#ffffff; --well:#f1f3f0; --fg-rgb:var(--c-fg); --fg:rgb(var(--fg-rgb)); --fg2:rgb(var(--c-fg2)); --fg3:#646d68;
+ --line:rgb(var(--c-line)); --line2:#c9d0ca; --accent:rgb(var(--c-accent)); --accent-fg:#ffffff; --accent-soft:#e3f2ea; --accent-ink:rgb(var(--c-accent-ink));
+ --pick:rgb(var(--c-pick));
+ --shadow:0 1px 2px rgba(var(--c-fg),.04),0 4px 14px rgba(var(--c-fg),.05);
+ --shadow-hi:0 2px 4px rgba(var(--c-fg),.05),0 12px 28px rgba(var(--c-fg),.09);
+ --shadow-modal:0 24px 64px rgba(0,0,0,.24); --shadow-photo:0 24px 64px rgba(0,0,0,.45);
+ --ease-out:cubic-bezier(.23,1,.32,1); --ease-in-out:cubic-bezier(.77,0,.175,1); --ease-drawer:cubic-bezier(.32,.72,0,1);
+ --nav-h:64px;
+ /* what sits over what: the notch strip, floating search bar, top nav, dim layer, windows, photo and video viewer */
+ --z-notch:10; --z-fab:15; --z-nav:30; --z-scrim:40; --z-window:50; --z-photo:60;
  --t-micro:12px; --t-meta:13px; --t-ui:14px; --t-body:15px; --t-lede:17px; --t-title:17px; --t-price:28px; --t-h2:24px;
  --font:"Geist",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
  color-scheme:light;
 }
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
- --offveil:rgba(10,12,11,.42); --offc:#fdba74; --offbg:#431407; --offbd:#9a3412;
- --sbh:rgba(255,255,255,.5); --sbh2:rgba(255,255,255,.7); --sbo:rgba(0,0,0,.4);
- --bg:#0f1211; --surface:#171b19; --well:#1e2320; --fg:#eef1ee; --fg2:#b4bcb7; --fg3:#8d9691;
- --line:#262c29; --line2:#3a433e; --accent:#2fae7d; --accent-fg:#06140e; --accent-soft:#16302a; --accent-ink:#7fdcb4;
- --pick:#e0a84a; --warn-ink:#f0c46b;
- --shadow:0 1px 2px rgba(0,0,0,.3); --shadow-hi:0 8px 24px rgba(0,0,0,.4); color-scheme:dark}}
 :root[data-theme="dark"]{
  --offveil:rgba(10,12,11,.42); --offc:#fdba74; --offbg:#431407; --offbd:#9a3412;
  --sbh:rgba(255,255,255,.5); --sbh2:rgba(255,255,255,.7); --sbo:rgba(0,0,0,.4);
- --bg:#0f1211; --surface:#171b19; --well:#1e2320; --fg:#eef1ee; --fg2:#b4bcb7; --fg3:#8d9691;
+ --bg:#0f1211; --surface:#171b19; --well:#1e2320; --fg-rgb:238,241,238; --fg2:#b4bcb7; --fg3:#8d9691;
  --line:#262c29; --line2:#3a433e; --accent:#2fae7d; --accent-fg:#06140e; --accent-soft:#16302a; --accent-ink:#7fdcb4;
- --pick:#e0a84a; --warn-ink:#f0c46b;
+ --pick:#e0a84a;
  --shadow:0 1px 2px rgba(0,0,0,.3); --shadow-hi:0 8px 24px rgba(0,0,0,.4); color-scheme:dark}
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;text-size-adjust:100%;accent-color:var(--accent);scrollbar-color:var(--line2) transparent}
+/* no browser tap highlight anywhere (it is inherited): it paints over everything, even an opening sheet, and reads as a flash.
+   Pressed states are drawn by the components themselves */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;accent-color:var(--accent);scrollbar-color:var(--line2) transparent;scrollbar-gutter:stable;scroll-behavior:smooth;-webkit-tap-highlight-color:transparent}
+html.locked{overflow:hidden}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:var(--t-body);line-height:1.5;-webkit-font-smoothing:antialiased}
-body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:var(--z-notch);background:var(--bg)}
 ::selection{background:var(--accent-soft);color:var(--fg)}
 a{color:var(--accent-ink);text-underline-offset:3px;text-decoration-thickness:1px}
-html,a,button,[data-b]{-webkit-tap-highlight-color:transparent}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
 .wrap{max-width:1200px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
 .rb{display:inline-flex;align-items:center;gap:6px;height:22px;padding:0 8px;border-radius:4px;font-size:var(--t-micro);font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap;line-height:1;background:var(--accent-soft);color:var(--accent-ink);border:1px solid color-mix(in oklab,var(--accent) 30%,transparent)}
 .shop{min-width:0;overflow-wrap:anywhere;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px 16px 12px;font-size:var(--t-ui);display:grid;gap:2px;align-content:start}
-.shead{display:flex;align-items:center;gap:8px;min-width:0;margin-bottom:4px}
-.shead b{min-width:0}
 .slogo{flex:none;width:36px;height:36px;margin-bottom:8px;border-radius:50%;overflow:hidden;background:#fff;box-shadow:0 0 0 1px var(--line);display:grid;place-items:center}
 .slogo img{width:100%;height:100%;object-fit:cover;display:block}
 a.slogo{text-decoration:none;transition:box-shadow .15s ease}
@@ -56,18 +57,18 @@ a.slogo{text-decoration:none;transition:box-shadow .15s ease}
 .shop .city{color:var(--accent-ink);font-weight:600;font-size:var(--t-micro)}
 .shop b{font-size:var(--t-body);font-weight:600}
 .shop .m{color:var(--fg2)}
-html{scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-.drawer{position:fixed;inset:0 0 0 auto;margin:0;height:100dvh;max-height:100dvh;width:min(560px,100vw);max-width:100vw;padding:0;border:0;border-left:1px solid var(--line);background:var(--surface);color:var(--fg);box-shadow:-12px 0 40px rgba(0,0,0,.14);display:flex;flex-direction:column;overflow:hidden;transform:translateX(100%);transition:transform .32s cubic-bezier(.32,.72,0,1),overlay .32s allow-discrete,display .32s allow-discrete}
+.drawer{position:fixed;inset:0 0 0 auto;margin:0;height:100dvh;max-height:100dvh;width:min(560px,100vw);max-width:100vw;padding:0;border:0;border-left:1px solid var(--line);background:var(--surface);color:var(--fg);box-shadow:-12px 0 40px rgba(0,0,0,.14);display:flex;flex-direction:column;overflow:hidden}
 .drawer:not([open]){display:none}
-.drawer[open]{transform:none}
-.drawer:not([open]){transition-duration:.2s}
-@starting-style{.drawer[open]{transform:translateX(100%)}}
 .dhead{display:flex;gap:16px;align-items:flex-start;justify-content:space-between;padding:max(22px,env(safe-area-inset-top,0px)) 24px 16px;border-bottom:1px solid var(--line);flex:none}
 .dhead h2{margin:0;font-size:22px;letter-spacing:-.02em;font-weight:700}
 .dhead p{margin:4px 0 0;color:var(--fg2);font-size:var(--t-ui)}
-.dclose{flex:none;display:grid;place-items:center;width:36px;height:36px;border-radius:6px;border:0;background:var(--well);color:var(--fg);cursor:pointer}
-.dbody{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:4px 24px calc(40px + env(safe-area-inset-bottom,0px));-webkit-overflow-scrolling:touch}
+/* close buttons are ghost buttons: no fill until hovered or pressed */
+.dclose{flex:none;display:grid;place-items:center;width:36px;height:36px;border-radius:6px;border:0;background:transparent;color:var(--fg2);cursor:pointer;transition:transform .12s var(--ease-out),background-color .15s ease}
+.dclose:active{transform:scale(.97);background:var(--well);color:var(--fg)}
+@media (hover:hover) and (pointer:fine){.dclose:hover{background:var(--well);color:var(--fg)}}
+@media (pointer:coarse){.dclose{width:44px;height:44px}}
+/* --pt/--px/--pb are the panel's padding; the scroll fades below use them to reach the panel's real edges */
+.dbody{--pt:4px;--px:24px;--pb:calc(40px + env(safe-area-inset-bottom,0px));flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:var(--pt) var(--px) var(--pb)}
 .dbody h3{font-size:var(--t-lede);font-weight:600;letter-spacing:-.01em;margin:26px 0 10px}
 .gsub{margin:-4px 0 12px;font-size:var(--t-ui);color:var(--fg2)}
 .g3{display:grid;gap:10px}
@@ -90,15 +91,7 @@ html{scroll-behavior:smooth}
 .gsteps li::before{content:counter(gs);width:26px;height:26px;margin-top:-2px;border-radius:50%;box-sizing:border-box;border:1px solid color-mix(in oklab,var(--fg) 24%,transparent);background:linear-gradient(180deg,color-mix(in oklab,var(--fg) 16%,transparent),color-mix(in oklab,var(--fg) 2%,transparent) 60%),var(--well);box-shadow:inset 0 1px 0 color-mix(in oklab,#fff 22%,transparent);color:var(--fg);font-weight:600;font-size:14px;line-height:1;display:grid;place-items:center;font-variant-numeric:tabular-nums}
 .dbody .gsteps a{color:var(--fg);text-decoration:underline;text-underline-offset:3px;text-decoration-color:color-mix(in oklab,currentColor 45%,transparent)}
 .dbody .gl a,.dbody .gsrc a{color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-color:color-mix(in oklab,currentColor 45%,transparent)}
-@media (max-width:600px){.drawer{width:100vw;border-left:0}.dhead{padding:max(18px,env(safe-area-inset-top,0px)) 18px 14px}.dbody{padding:2px 18px calc(32px + env(safe-area-inset-bottom,0px))}}
-@media (prefers-reduced-motion:reduce){.drawer{transition:opacity .2s ease,overlay .2s allow-discrete,display .2s allow-discrete;transform:none;opacity:0}.drawer[open]{opacity:1}@starting-style{.drawer[open]{opacity:0;transform:none}}}
-/* one backdrop for every dialog: same dim, same fade. No blur: a full-screen blur over 224 cards and a playing video makes Safari stutter */
-dialog::backdrop{background:rgba(10,14,12,.42);opacity:0;transition:opacity .18s ease,overlay .18s allow-discrete,display .18s allow-discrete}
-dialog[open]::backdrop{opacity:1}
-@starting-style{dialog[open]::backdrop{opacity:0}}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) dialog::backdrop{background:rgba(0,0,0,.58)}}
-:root[data-theme="dark"] dialog::backdrop{background:rgba(0,0,0,.58)}
-@media (prefers-reduced-motion:reduce){dialog::backdrop{transition:none}}
+@media (max-width:600px){.drawer{width:100vw;border-left:0}.dhead{padding:max(18px,env(safe-area-inset-top,0px)) 18px 14px}.dbody{--pt:2px;--px:18px;--pb:calc(32px + env(safe-area-inset-bottom,0px))}}
 /* theme toggle: one icon that morphs. Dark shows a moon, light shows a sun.
    Only transforms and opacity animate (GPU), so it stays smooth; the page itself crossfades through a view transition where supported */
 .navr{display:flex;align-items:center;gap:4px}
@@ -123,10 +116,6 @@ dialog[open]::backdrop{opacity:1}
 ::view-transition-old(themebtn){display:none}
 ::view-transition-new(themebtn){animation:none}
 button{touch-action:manipulation;-webkit-user-select:none;user-select:none}
-.dclose{transition:transform .12s var(--ease-out),background-color .15s ease}
-.dclose:active{transform:scale(.97)}
-html{scrollbar-gutter:stable}
-html.locked{overflow:hidden}
 /* page scrollbar, where the browser's own bar takes up a strip (Windows): a thin Mac-style bar floats over the page instead,
    fades out when you stop scrolling and widens under the mouse. Macs and phones keep their own bar. */
 html[data-overlayscrollbars-initialize],html[data-overlayscrollbars]{scrollbar-gutter:auto}
@@ -139,18 +128,18 @@ html[data-overlayscrollbars-initialize],html[data-overlayscrollbars]{scrollbar-g
 .os-theme-ava.os-scrollbar-vertical .os-scrollbar-handle{left:0;right:0;margin-inline:auto;transition:opacity .15s,background-color .15s,border-color .15s,scale .2s var(--ease-out)}
 .os-theme-ava.os-scrollbar-vertical:hover .os-scrollbar-handle,.os-theme-ava.os-scrollbar-vertical:active .os-scrollbar-handle{scale:var(--sbx) 1}
 .os-theme-ava.os-scrollbar{transition:opacity .3s ease,visibility .3s ease}
-dialog[data-state="closing"]{pointer-events:none}
-.maplink{display:inline-flex;align-items:flex-start;gap:6px;color:var(--fg2);text-decoration:none;width:fit-content}
-.maplink svg{flex:none;margin-top:3px;color:var(--fg3)}
+.maplink{display:inline-flex;align-items:flex-start;gap:6px;color:var(--fg2);text-decoration:none;width:fit-content;line-height:1.5}
+.maplink svg{flex:none;color:var(--fg3)}
 .maplink span{text-decoration:underline;text-decoration-color:var(--line2);text-underline-offset:3px}
 @media (hover:hover) and (pointer:fine){.maplink:hover{color:var(--fg)}.maplink:hover span{text-decoration-color:currentColor}}
 .tel{font-variant-numeric:tabular-nums}
-@media (pointer:coarse){.dclose{width:44px;height:44px}}
 @media (pointer:coarse){.shop>.maplink,.shop>a.web{padding-block:5px}.shop>.maplink:last-child,.shop>a.web:last-child{margin-bottom:-5px}}
+.topnav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:var(--nav-h);padding-block:0}
 .brand{display:inline-flex;align-items:center;gap:10px;color:rgb(var(--hink));text-decoration:none;font-weight:600;font-size:15px;letter-spacing:-.01em;min-height:44px}
 .brand svg{flex:none}
 .navlinks{display:flex;align-items:center;gap:4px;margin-right:-12px}
 .navlinks button,.navlinks a{text-decoration:none;font:inherit;font-size:14px;font-weight:500;color:rgba(var(--hink),.82);background:none;border:0;height:44px;padding:0 12px;border-radius:6px;cursor:pointer;transition:color .15s ease,transform .12s var(--ease-out)}
+.navlinks a{display:inline-flex;align-items:center}
 .navlinks button:active{transform:scale(.97)}
 .navlinks button:focus-visible,.navlinks a:focus-visible,.menubtn:focus-visible,.brand:focus-visible{outline:2px solid rgb(var(--hink));outline-offset:2px}
 @media (hover:hover) and (pointer:fine){.navlinks button:hover,.navlinks a:hover{color:rgb(var(--hink))}}
@@ -158,17 +147,18 @@ dialog[data-state="closing"]{pointer-events:none}
 .brand,.navlinks button{white-space:nowrap}
 @media (prefers-reduced-motion:reduce){.navlinks button:active{transform:none}}
 .rb.lg{height:30px;padding:0 11px;font-size:15px;gap:8px;border-radius:6px;justify-self:start;margin:0 0 8px}
-.web{display:inline-flex;align-items:flex-start;gap:6px;width:fit-content}
-.web svg{flex:none;margin-top:3px;color:var(--fg3)}
+.rb.lg svg{flex:none}
+.web{display:inline-flex;align-items:flex-start;gap:6px;width:fit-content;line-height:1.5}
+.web svg{flex:none;color:var(--fg3)}
+/* contact icons sit on the centre of the first line of text, even when an address wraps */
+.maplink svg,.web svg,.web svg+span+svg{margin-top:calc((1lh - 13px) / 2)}
 .shop a.web{text-decoration:none;font-weight:600;transition:color .15s ease}
 a.web span{text-decoration:underline;text-decoration-color:color-mix(in oklab,currentColor 45%,transparent);text-underline-offset:3px}
 @media (hover:hover) and (pointer:fine){a.web:hover{color:var(--fg)}a.web:hover span{text-decoration-color:currentColor}a.web:hover svg{color:currentColor}}
-.web svg+span+svg{color:currentColor;margin-top:4px}
-.navlinks a{display:inline-flex;align-items:center}
-.menubtn{display:none;align-items:center;justify-content:center;width:44px;height:44px;margin-right:-10px;border:0;border-radius:8px;background:none;color:rgb(var(--hink));cursor:pointer;transition:background-color .15s ease,transform .12s var(--ease-out)}
+.web svg+span+svg{color:currentColor}
+.menubtn{display:none;position:relative;z-index:2;align-items:center;justify-content:center;width:44px;height:44px;margin-right:-10px;border:0;border-radius:8px;background:none;color:rgb(var(--hink));cursor:pointer;transition:background-color .15s ease,transform .12s var(--ease-out)}
 .menubtn:active{transform:scale(.95)}
 @media (max-width:760px){.navlinks{display:none}.menubtn{display:inline-flex}}
-.menubtn{position:relative;z-index:2}
 .menubtn svg{position:absolute;pointer-events:none;transition:opacity .15s ease,transform .18s var(--ease-out)}
 .menubtn .mi-close{opacity:0;transform:rotate(-45deg) scale(.8)}
 .menubtn[aria-expanded="true"] .mi-open{opacity:0;transform:rotate(45deg) scale(.8)}
@@ -182,13 +172,12 @@ a.web span{text-decoration:underline;text-decoration-color:color-mix(in oklab,cu
 .navmenu .nml{opacity:0;transform:translateY(-6px);transition:opacity .16s var(--ease-out),transform .16s var(--ease-out)}
 .navmenu:popover-open .nml{opacity:1;transform:none}
 @starting-style{.navmenu:popover-open .nml{opacity:0;transform:translateY(-6px)}}
-.navmenu::backdrop{background:transparent}
 .nmh{padding-top:env(safe-area-inset-top,0px);border-bottom:1px solid var(--line)}
-.nmh .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;padding-block:0}
+.nmh .wrap{display:flex;align-items:center;justify-content:space-between;height:var(--nav-h);padding-block:0}
 .nmb{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;letter-spacing:-.01em}
 .nmx{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;margin-right:-10px;border:0;border-radius:8px;background:none;color:var(--fg);cursor:pointer;transition:transform .12s var(--ease-out)}
 .nmx:active{transform:scale(.95)}
-.menubtn,.nmx,.nml a,.nml button{touch-action:manipulation}
+.nml a{touch-action:manipulation}
 .nml{list-style:none;margin:8px 0 0;padding:0}
 .nml li{border-bottom:1px solid var(--line)}
 .nml button,.nml a{display:flex;align-items:center;gap:12px;width:100%;min-height:56px;padding:0;border:0;background:none;font:inherit;font-size:17px;font-weight:500;letter-spacing:-.01em;color:var(--fg);text-decoration:none;text-align:left;cursor:pointer;transition:opacity .12s ease}
@@ -198,77 +187,53 @@ a.web span{text-decoration:underline;text-decoration-color:color-mix(in oklab,cu
 .nml .nmc{color:var(--fg3)}
 .navmenu :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
 @media (prefers-reduced-motion:reduce){.navmenu .nml,.navmenu:popover-open .nml{transform:none;transition:opacity .15s ease}@starting-style{.navmenu:popover-open .nml{transform:none}}.nmx:active{transform:none}}
-/* contact icons sit on the centre of the first line of text, even when an address wraps */
-.maplink,.web{line-height:1.5}
-.maplink svg,.web svg{margin-top:3.5px}
-@supports (margin-top:1lh){.maplink svg,.web svg,.web svg+span+svg{margin-top:calc((1lh - 13px) / 2)}}
-/* close buttons are ghost buttons: no fill until hovered or pressed */
-.dclose{background:transparent;color:var(--fg2)}
-.dclose:active{background:var(--well);color:var(--fg)}
-@media (hover:hover) and (pointer:fine){.dclose:hover{background:var(--well);color:var(--fg)}}
 /* scrolling panels fade out at the bottom while there is more to read, and the fade lifts once you reach the end; matching fade at
    the top once the panel has scrolled (the JS marks them has-more / has-above). The home page's windows add their own panels to these rules */
 .dbody::after{content:"";position:sticky;bottom:calc(var(--pb,0px) * -1);display:block;height:56px;margin-top:-56px;pointer-events:none;background:linear-gradient(to bottom,transparent,var(--surface) 92%);opacity:0;transition:opacity .2s ease}
 .dbody.has-more::after{opacity:1}
 .dbody::before{content:"";position:sticky;z-index:3;top:calc(var(--pt,0px) * -1);display:block;height:32px;margin-bottom:-32px;margin-inline:calc(var(--px,0px) * -1);pointer-events:none;background:linear-gradient(to top,transparent,var(--surface) 88%);opacity:0;transition:opacity .2s ease}
 .dbody.has-above::before{opacity:1}
-dialog:focus{outline:none}
-dialog{z-index:50}
-.rb.lg svg{flex:none}
 .gamt dl{margin:10px 0 0;display:grid;gap:8px}
 .gamt dl>div{display:flex;align-items:center;justify-content:space-between;gap:12px}
 .gamt dt{color:var(--fg2);font-size:var(--t-ui)}
 .gamt dd{margin:0}
 .gamt .rb.lg{margin:0;background:var(--accent-soft);color:var(--accent-ink);border-color:color-mix(in oklab,var(--accent) 55%,transparent)}
-/* ---- motion system (Emil's standards): enter and exit with strong ease-out, panels with the iOS drawer curve, transform + opacity only ----
+/* ---- window motion (Emil's standards): enter and exit with strong ease-out, panels with the iOS drawer curve, transform + opacity only.
+   page.js sets data-state: "closed" (just shown, still off screen), "open", "closing" (playing the exit).
    side panels: slide from the right, 300ms in / 200ms out
    bottom sheets (phones): slide up, 320ms in / 220ms out
-   centred windows (desktop): fade + 0.97 scale, 200ms in / 150ms out
-   dim layer: fades with the window */
-:root{--ease-drawer:cubic-bezier(.32,.72,0,1)}
-dialog.drawer{transition:transform .3s var(--ease-drawer),display .3s allow-discrete;transform:translateX(100%)}
+   centred windows (desktop): fade + 0.97 scale, 200ms in / 150ms out */
+/* the dim layer behind every window (page.js adds it); on the home page --sbw stretches it over the scrollbar gutter */
+#scrim{position:fixed;inset:0;right:calc(-1 * var(--sbw,0px));z-index:var(--z-scrim);background:rgba(0,0,0,.5);opacity:0;pointer-events:none;transition:opacity .2s var(--ease-out);will-change:opacity}
+#scrim.on{opacity:1;pointer-events:auto}
+dialog{z-index:var(--z-window)}
+dialog:focus{outline:none}
+dialog[data-state="closing"]{pointer-events:none}
+dialog.drawer{transform:translateX(100%);transition:transform .3s var(--ease-drawer),display .3s allow-discrete}
 dialog.drawer[data-state="open"]{transform:none}
-dialog.drawer[data-state="closing"]{transform:translateX(100%);transition:transform .2s var(--ease-out),display .2s allow-discrete}
-dialog.drawer[data-state="closed"]{transform:translateX(100%);transition:none}
+dialog.drawer[data-state="closing"]{transition:transform .2s var(--ease-out),display .2s allow-discrete}
+dialog.drawer[data-state="closed"]{transition:none}
 @media (prefers-reduced-motion:reduce){
- dialog.drawer,dialog.drawer[data-state]{transform:none!important;transition:opacity .15s ease,display .15s allow-discrete}
- dialog.drawer[data-state="closed"],dialog.drawer[data-state="closing"]{opacity:0}
+ dialog.drawer,dialog.drawer[data-state]{transform:none;opacity:0;transition:opacity .15s ease,display .15s allow-discrete}
  dialog.drawer[data-state="open"]{opacity:1}}
-/* the fade pins to the real bottom edge, not to the panel's inner padding: --pb mirrors each panel's bottom padding */
-.dbody{--pb:calc(40px + env(safe-area-inset-bottom,0px));--pt:4px;--px:24px}
-@media (max-width:600px){.dbody{--pb:calc(32px + env(safe-area-inset-bottom,0px));--pt:2px;--px:18px}}
 @media (max-width:760px){
  :root{--t-micro:14px;--t-meta:14px;--t-ui:15px;--t-body:16px;--t-lede:18px;--t-title:18px}
  .gl,.gsub,.gnote,.gc p,.gdl dd,.gsteps li{font-size:16px;line-height:1.5}
  .gsteps li::before{margin-top:-1px}}
-/* Layout: quiet header, one sticky filter row, a clean photo grid where "you pay" leads each card. */
-/* no browser tap highlight anywhere: it paints over everything (even the opening sheet) and reads as a flash. Pressed states are drawn by the components themselves */
-select,summary,label{-webkit-tap-highlight-color:transparent}
-/* header */
 header .wrap{padding-block:48px 28px;display:grid;gap:12px}
 h1{margin:0;font-size:clamp(32px,4.2vw,44px);line-height:1.06;letter-spacing:-.03em;font-weight:700;text-wrap:balance;max-width:18ch}
 .lede{margin:0;color:var(--fg2);font-size:var(--t-lede);line-height:1.55;max-width:60ch;text-wrap:pretty}
 /* search bar */
 .bar{background:var(--bg)}
 .bar .wrap{padding-block:12px;display:flex;gap:10px;align-items:center}
-.field{position:relative;display:inline-flex;align-items:center}
-.field span{position:absolute;left:12px;font-size:var(--t-micro);font-weight:500;color:var(--fg3);pointer-events:none}
 select,input[type=search]{font:inherit;font-size:var(--t-ui);color:var(--fg);background-color:var(--surface);border:1px solid var(--line2);border-radius:6px;height:38px;transition:border-color .15s ease,box-shadow .15s ease}
-select{appearance:none;-webkit-appearance:none;padding:0 32px 0 12px;background-image:linear-gradient(45deg,transparent 50%,var(--fg3) 50%),linear-gradient(135deg,var(--fg3) 50%,transparent 50%);background-position:calc(100% - 17px) 50%,calc(100% - 12px) 50%;background-size:5px 5px;background-repeat:no-repeat;cursor:pointer}
-.field select{padding-left:var(--pl)}
-.search{flex:1 1 auto;min-width:180px;position:relative}
+select{appearance:none;padding:0 32px 0 12px;background-image:linear-gradient(45deg,transparent 50%,var(--fg3) 50%),linear-gradient(135deg,var(--fg3) 50%,transparent 50%);background-position:calc(100% - 17px) 50%,calc(100% - 12px) 50%;background-size:5px 5px;background-repeat:no-repeat;cursor:pointer}
+.search{flex:1 1 auto;min-width:180px;max-width:640px;position:relative}
 .search svg{position:absolute;left:12px;top:50%;translate:0 -50%;color:var(--fg3);pointer-events:none}
 input[type=search]{width:100%;padding:0 12px 0 36px}
 input::placeholder{color:var(--fg3)}
-.check{display:inline-flex;align-items:center;gap:8px;font-size:var(--t-ui);color:var(--fg2);cursor:pointer;height:38px}
-.check input{width:16px;height:16px;margin:0}
-#reset{font:inherit;font-size:var(--t-ui);font-weight:500;color:var(--accent-ink);background:none;border:0;padding:2px 4px;cursor:pointer;border-radius:4px}
-@media (hover:hover) and (pointer:fine){
- select:hover,input[type=search]:hover{border-color:var(--fg3)}
- #reset:hover{color:var(--fg)}
-}
+@media (hover:hover) and (pointer:fine){select:hover,input[type=search]:hover{border-color:var(--fg3)}}
 select:focus-visible,input[type=search]:focus-visible{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
-/* results */
 .status{padding-block:18px 2px;display:flex;flex-wrap:nowrap;justify-content:space-between;gap:12px;align-items:center;min-height:58px}
 .status .count{flex:none}
 .count{display:flex;align-items:center;gap:12px}
@@ -282,10 +247,11 @@ main.grid .c{content-visibility:auto;contain-intrinsic-size:auto 680px}
 @media (hover:hover) and (pointer:fine){.morebtn:hover{border-color:var(--fg3)}}
 .morebtn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 #more-n{margin:0;font-size:var(--t-meta);color:var(--fg3)}
-main.grid{padding-block:14px 56px;display:grid;grid-template-columns:repeat(auto-fill,minmax(272px,1fr));gap:18px;align-items:stretch}
-/* nothing in the grid (like the pick cards' electric border glow) may push the page wider than the screen */
-main.grid{overflow-x:clip}
-.c{background:var(--surface);border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0;overflow:hidden;view-transition-class:bike;scroll-margin:4px}
+/* overflow-x: nothing in the grid (like the pick cards' electric border glow) may push the page wider than the screen */
+main.grid{padding-block:14px 96px;display:grid;grid-template-columns:repeat(auto-fill,minmax(272px,1fr));gap:18px;align-items:stretch;overflow-x:clip}
+#g:empty{min-height:100vh}
+/* the whole card opens the bike's window (the .more button is stretched over it) */
+.c{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0;overflow:hidden;view-transition-class:bike;scroll-margin:4px;cursor:pointer;transition:border-color .15s ease,box-shadow .2s ease,transform .16s var(--ease-out)}
 .c.flash{animation:flash 1.4s var(--ease-out)}
 @keyframes flash{0%,30%{box-shadow:0 0 0 3px var(--accent),var(--shadow)}}
 .c.pick{border-color:var(--pick);box-shadow:0 0 0 1px var(--pick),var(--shadow)}
@@ -298,39 +264,37 @@ main.grid{overflow-x:clip}
 .ebw>.c{flex:1;min-width:0}
 .c.pick.ebon{border-color:var(--line);box-shadow:var(--shadow)}
 .ph{display:block;position:relative;aspect-ratio:4/3;max-width:100%;background:transparent;overflow:hidden}
-.sws{position:absolute;left:8px;bottom:8px;display:flex;align-items:center;gap:0;padding:1px 2px;border-radius:999px;background:rgba(255,255,255,.92);box-shadow:0 1px 3px rgba(0,0,0,.14);max-width:calc(100% - 20px);flex-wrap:wrap}
+.sws{position:absolute;left:50%;bottom:8px;transform:translateX(-50%);width:max-content;display:flex;align-items:center;gap:0;padding:1px 2px;border-radius:999px;background:rgba(255,255,255,.92);box-shadow:0 1px 3px rgba(0,0,0,.14);max-width:calc(100% - 20px);flex-wrap:nowrap}
 .sw{width:22px;height:22px;border:0;padding:0;background:none;border-radius:50%;display:grid;place-items:center;cursor:pointer;position:relative}
 .sw i{width:12px;height:12px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(0,0,0,.2);transition:transform .12s var(--ease-out)}
 .sw::before{content:"";position:absolute;inset:-2px}
-/* the selected ring is drawn around the dot itself, so it is always perfectly centred on it */
-.sw[aria-pressed="true"] i{box-shadow:inset 0 0 0 1px rgba(0,0,0,.2),0 0 0 2px #fff,0 0 0 3.5px #121614}
+.sw[aria-pressed="true"] i{box-shadow:inset 0 0 0 1px rgba(0,0,0,.2),0 0 0 2px #fff,0 0 0 3.5px rgb(var(--c-fg))}
 @media (hover:hover) and (pointer:fine){.sw:hover i{transform:scale(1.15)}}
 .sw:active i,.sw:hover:active i{transform:scale(.9)}
 @media (pointer:coarse){.sw{width:26px;height:26px}.sw i{width:14px;height:14px}.sw::before{inset:-6px}.sws{gap:4px;padding:2px 4px}}
 .ph img{width:100%;height:100%;object-fit:cover;display:block;background:#fff}
-.tag{position:absolute;left:12px;top:12px;display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.94);color:#0b5f40;border:1px solid rgba(14,122,82,.28);font-size:var(--t-micro);font-weight:600;padding:3px 8px;border-radius:4px;font-variant-numeric:tabular-nums}
-.tag.s400{color:#3d4541;border-color:rgba(18,22,20,.16)}
-.tag i{width:6px;height:6px;border-radius:50%;background:#0e7a52}
+/* the rebate tag on the photo: light colours in both themes, since it sits on the photo */
+.tag{position:absolute;left:12px;top:12px;display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.94);color:rgb(var(--c-accent-ink));border:1px solid rgba(var(--c-accent),.28);font-size:var(--t-micro);font-weight:600;padding:3px 8px;border-radius:4px;font-variant-numeric:tabular-nums}
+.tag.s400{color:#3d4541;border-color:rgba(var(--c-fg),.16)}
+.tag i{width:6px;height:6px;border-radius:50%;background:rgb(var(--c-accent))}
 .tag.s400 i{background:#7a837e}
 .rb i{width:6px;height:6px;border-radius:50%;background:var(--accent);flex:none}
 .rb.s400{background:var(--well);color:var(--fg2);border-color:var(--line)}
 .rb.s400 i{background:var(--fg3)}
-.bmreb{align-items:center}
-.bmrt{color:var(--fg3)}
 .ro .rl .rb{margin-left:8px;vertical-align:1px}
 .b{padding:14px 16px 16px;display:flex;flex-direction:column;gap:12px;flex:1;min-width:0;border-top:1px solid var(--line)}
-.picktag{position:absolute;right:12px;top:12px;display:inline-flex;align-items:center;gap:5px;background:#fdf3e1;color:#7a4f0e;border:1px solid rgba(183,121,31,.35);font-size:var(--t-micro);font-weight:600;padding:3px 8px;border-radius:4px}
-.picktag svg{color:#b7791f}
+.picktag{position:absolute;right:12px;top:12px;display:inline-flex;align-items:center;gap:5px;background:#fdf3e1;color:#7a4f0e;border:1px solid rgba(var(--c-pick),.35);font-size:var(--t-micro);font-weight:600;padding:3px 8px;border-radius:4px}
+.picktag svg{color:rgb(var(--c-pick))}
 .note.picknote{color:var(--fg);font-weight:500}
 .id{display:grid;gap:1px}
 .vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-.br{color:var(--fg3);font-size:var(--t-meta);font-weight:500}
+.br{color:var(--fg3);font-size:var(--t-meta);font-weight:500;overflow-wrap:anywhere}
 .n{margin:0;overflow-wrap:anywhere;font-size:var(--t-title);line-height:1.25;font-weight:600;letter-spacing:-.015em;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .price{display:grid;gap:3px;margin-top:2px}
 .pay{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
 .pay strong{font-size:var(--t-price);line-height:1;font-weight:700;letter-spacing:-.03em;font-variant-numeric:tabular-nums;color:var(--fg)}
 .pay span{font-size:var(--t-meta);color:var(--fg2)}
-/* label + info button sit on one line, the icon centred on the text */
+.pay>span{white-space:nowrap}
 .payl{display:inline-flex;align-items:center;gap:4px}
 .tipb{position:relative;z-index:2;display:inline-grid;place-items:center;width:16px;height:16px;padding:0;border:0;background:none;color:var(--fg2);cursor:pointer;border-radius:50%}
 .tipb::before{content:"";position:absolute;inset:-10px}
@@ -357,12 +321,11 @@ main.grid{overflow-x:clip}
 .price.na .pay strong{font-size:var(--t-title);color:var(--fg2);letter-spacing:-.01em}
 .note{font-size:var(--t-meta);color:var(--fg2);line-height:1.45;text-wrap:pretty;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .chips{display:flex;flex-wrap:wrap;gap:6px;min-width:0}
-.chip{white-space:nowrap;flex:none}
-.chip{font-size:var(--t-micro);font-weight:500;color:var(--fg2);background:var(--well);border-radius:4px;padding:2px 8px}
+.chip{white-space:nowrap;flex:none;font-size:var(--t-micro);font-weight:500;color:var(--fg2);background:var(--well);border-radius:4px;padding:2px 8px}
 /* chips that explain themselves: same look as a plain chip, sit above the card's "See details" layer, and show the bubble */
-.tipc{border:0;margin:0;font-family:inherit;line-height:inherit;letter-spacing:inherit;cursor:default;position:relative;z-index:2;-webkit-tap-highlight-color:transparent}
+.tipc{border:0;margin:0;font-family:inherit;line-height:inherit;letter-spacing:inherit;cursor:default;position:relative;z-index:2}
 .tipc:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-/* discontinued cards are dimmed: lightly in light mode, as before in dark mode */
+/* discontinued cards are dimmed (--offveil: lightly in light mode, more in dark mode) */
 .c.off::after{content:"";position:absolute;inset:0;border-radius:inherit;background:var(--offveil);pointer-events:none;z-index:3}
 .c.off .ph img{filter:grayscale(.85) contrast(.9)}
 /* the status badge looks the same everywhere: on the card photo and in the bike details */
@@ -375,29 +338,19 @@ main.grid{overflow-x:clip}
 .stats dd{margin:1px 0 0;font-size:16px;line-height:1.3;font-weight:650;color:var(--fg);font-variant-numeric:tabular-nums;letter-spacing:-.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .stats dd small{font-size:var(--t-meta);font-weight:500;color:var(--fg2);margin-left:2px}
 .stats dd.na{color:var(--fg3);font-weight:500;font-size:var(--t-meta)}
-.br{overflow-wrap:anywhere}
 .empty{grid-column:1/-1;padding:56px 0;color:var(--fg2);text-align:center}
 .empty p{margin:0 0 14px}
-/* shops */
 .sfoot{padding-block:8px 96px;display:grid;gap:16px}
 .sfoot p{margin:0;font-size:13px;color:var(--fg2)}
 .sfoot p+p{margin-top:2px}
 .sfoot .fc{color:var(--fg3)}
 .sfoot a{color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-color:color-mix(in oklab,currentColor 45%,transparent)}
 @media (min-width:720px){.sfoot p{text-align:center}}
-.bmshop .shead{margin-bottom:2px}
-.bmshop .city{color:var(--accent-ink);font-weight:600;font-size:var(--t-micro)}
-.bmshop .city{margin:-2px 0 -1px}
-/* guide */
-.hlinks{display:flex;flex-wrap:wrap;gap:6px 20px;margin:2px 0 0;font-size:var(--t-ui);font-weight:500}
-.hlinks a{text-decoration:none}
-@media (hover:hover) and (pointer:fine){.hlinks a:hover{text-decoration:underline}}
-.hlinks{align-items:center}
+.bmshop .city{color:var(--accent-ink);font-weight:600;font-size:var(--t-micro);margin:-2px 0 -1px}
 .gbtn{font:inherit;font-size:var(--t-ui);font-weight:600;display:inline-flex;align-items:center;gap:8px;height:36px;padding:0 14px 0 12px;border-radius:6px;border:1px solid var(--line2);background:var(--surface);color:var(--fg);cursor:pointer;transition:border-color .15s ease,transform .12s var(--ease-out)}
 .gbtn svg{color:var(--accent-ink)}
 .gbtn:active{transform:scale(.97)}
 @media (hover:hover) and (pointer:fine){.gbtn:hover{border-color:var(--fg3)}}
-.gp{margin:0;color:var(--fg2);font-size:var(--t-ui);line-height:1.6;text-wrap:pretty}
 /* motion: cards glide to their new places when filters change */
 ::view-transition-group(.bike){animation-duration:.26s;animation-timing-function:var(--ease-in-out)}
 ::view-transition-old(.bike):only-child{animation:vt-out .15s var(--ease-out) both}
@@ -408,17 +361,15 @@ main.grid{overflow-x:clip}
 @keyframes vt-out{to{opacity:0;filter:blur(2px)}}
 @keyframes vt-in{from{opacity:0;filter:blur(2px);transform:scale(.97)}}
 @keyframes vt-fade{from{opacity:0}}
-@media (pointer:coarse){select,input[type=search],#reset,.check{height:44px}}
-.search{max-width:640px}
+@media (pointer:coarse){select,input[type=search]{height:44px}}
 @media (max-width:760px){
  header .wrap{padding-block:32px 20px}
- select,input[type=search],.check,#reset{font-size:16px}
+ select,input[type=search]{font-size:16px}
  .bar .wrap{flex-wrap:nowrap}
- .search{flex:1 1 auto;min-width:0;max-width:none}
- .view{margin-left:auto}
+ .search{min-width:0;max-width:none}
+ .view{margin-left:auto;flex:none}
  .status{flex-wrap:wrap;align-items:center;row-gap:10px}
  .status .count{display:flex;flex-wrap:wrap;align-items:baseline;column-gap:12px;min-width:0}
- .view{flex:none}
  /* phones: the chip row always keeps its height so the bikes never jump */
  .status .achips,.status .achips[hidden]{display:flex;order:3;flex-basis:100%;min-height:34px;margin:0;padding-block:0;align-items:center}
  .status .achips:empty{display:none}
@@ -432,31 +383,27 @@ main.grid{overflow-x:clip}
  ::view-transition-new(.bike){animation:vt-fade .15s ease both}
  ::view-transition-old(.bike){animation:none;opacity:0}
 }
-/* skip link, mobile filter button, card footer button */
-.skip{position:absolute;left:-999px;top:12px;z-index:30;background:var(--surface);color:var(--fg);padding:8px 12px;border-radius:6px;box-shadow:var(--shadow-hi);font-weight:600}
+.skip{position:absolute;left:-999px;top:12px;z-index:var(--z-nav);background:var(--surface);color:var(--fg);padding:8px 12px;border-radius:6px;box-shadow:var(--shadow-hi);font-weight:600}
 .skip:focus{left:16px}
 .more{margin-top:auto;display:flex;align-items:center;justify-content:space-between;width:100%;font:inherit;font-size:var(--t-ui);font-weight:600;color:var(--fg);background:none;border:0;border-top:1px solid var(--line);padding:12px 0 0;cursor:pointer;text-align:left}
 .more svg{color:var(--fg3);transition:transform .16s var(--ease-out),color .15s ease}
 .nospec{margin:0;font-size:var(--t-meta);color:var(--fg2);background:var(--well);border-radius:6px;padding:10px 12px}
 .sw,.hit{touch-action:manipulation;-webkit-user-select:none;user-select:none}
-#reset:active,.primary:active,.hit:active{transform:scale(.97)}
-input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;width:14px;height:14px;background:var(--fg3);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M6 6l12 12M18 6 6 18'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M6 6l12 12M18 6 6 18'/%3E%3C/svg%3E") center/contain no-repeat;cursor:pointer}
+.primary:active,.hit:active{transform:scale(.97)}
+input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;width:14px;height:14px;background:var(--fg3);mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M6 6l12 12M18 6 6 18'/%3E%3C/svg%3E") center/contain no-repeat;cursor:pointer}
 @media (pointer:coarse){.gbtn{height:44px}.more{min-height:44px;padding-top:8px}}
-@media (pointer:coarse){.hlinks a{padding-block:12px}.sw::before{inset:-9px -6px}}
-/* bike detail: the whole card opens it (stretched .more button), centered modal on desktop, bottom sheet on phones */
-.c{position:relative;cursor:pointer;transition:border-color .15s ease,box-shadow .2s ease,transform .16s var(--ease-out)}
+@media (pointer:coarse){.sw::before{inset:-9px -6px}}
 .more::after{content:"";position:absolute;inset:0;z-index:1}
 .c .sws{z-index:2}
 /* a color the maker sells but hasn't photographed yet: a dashed ring, and when it's picked the photo stays put with a short note */
-.sw.np i{outline:1px dashed rgba(18,22,20,.55);outline-offset:1.5px}
-.sw.np[aria-pressed="true"] i{box-shadow:inset 0 0 0 1px rgba(0,0,0,.2);outline:1.5px dashed #121614;outline-offset:2px}
-.npn{position:absolute;left:50%;bottom:38px;transform:translateX(-50%);z-index:2;padding:3px 10px;border-radius:999px;background:rgba(255,255,255,.92);box-shadow:0 1px 3px rgba(0,0,0,.14);color:#121614;font-size:var(--t-meta);white-space:nowrap;pointer-events:none}
+.sw.np i{outline:1px dashed rgba(var(--c-fg),.55);outline-offset:1.5px}
+.sw.np[aria-pressed="true"] i{box-shadow:inset 0 0 0 1px rgba(0,0,0,.2);outline:1.5px dashed rgb(var(--c-fg));outline-offset:2px}
+.npn{position:absolute;left:50%;bottom:38px;transform:translateX(-50%);z-index:2;padding:3px 10px;border-radius:999px;background:rgba(255,255,255,.92);box-shadow:0 1px 3px rgba(0,0,0,.14);color:rgb(var(--c-fg));font-size:var(--t-meta);white-space:nowrap;pointer-events:none}
 .npn[hidden]{display:none}
 @media (pointer:coarse){.npn{bottom:44px}}
-.sws{left:50%;transform:translateX(-50%);width:max-content;flex-wrap:nowrap}
 /* more than 6 colors: 5 dots show at a time and slide along with the picked one; "+N" says how many more there are */
 .sw.off{display:none}
-.swmore{display:flex;align-items:center;height:22px;font-size:var(--t-meta);font-weight:600;line-height:1;font-variant-numeric:tabular-nums;color:rgba(18,22,20,.6);padding:0 6px 0 3px;pointer-events:none}
+.swmore{display:flex;align-items:center;height:22px;font-size:var(--t-meta);font-weight:600;line-height:1;font-variant-numeric:tabular-nums;color:rgba(var(--c-fg),.6);padding:0 6px 0 3px;pointer-events:none}
 @media (pointer:coarse){.swmore{height:26px}}
 .more:focus-visible{outline:none}
 .c:has(.more:focus-visible){outline:2px solid var(--accent);outline-offset:2px}
@@ -467,34 +414,28 @@ input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;width:1
  .c.pick.ebon:hover{border-color:var(--line2);box-shadow:var(--shadow-hi)}
  .c:hover .more svg{transform:translateX(2px);color:var(--fg)}
 }
-.bm{position:fixed;inset:0;margin:auto;width:min(820px,calc(100vw - 48px));max-width:none;height:fit-content;max-height:min(880px,calc(100dvh - 48px));padding:0;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--fg);box-shadow:0 24px 64px rgba(0,0,0,.24);display:flex;flex-direction:column;overflow:hidden;opacity:0;transform:scale(.97);transition:opacity .2s var(--ease-out),transform .22s var(--ease-out),overlay .22s allow-discrete,display .22s allow-discrete}
-.bm:not([open]){display:none;transition-duration:.15s}
-.bm[open]{opacity:1;transform:none}
-@starting-style{.bm[open]{opacity:0;transform:scale(.97)}}
+.bm{position:fixed;inset:0;margin:auto;width:min(820px,calc(100vw - 48px));max-width:none;height:fit-content;max-height:min(880px,calc(100dvh - 48px));padding:0;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--fg);box-shadow:var(--shadow-modal);display:flex;flex-direction:column;overflow:hidden}
+.bm:not([open]){display:none}
 .bmh{position:relative;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:16px 16px 14px 24px;border-bottom:1px solid var(--line);flex:none}
 .bmh .br{display:block}
 .bmh h2{margin:1px 0 0;font-size:22px;line-height:1.2;letter-spacing:-.02em;font-weight:700;text-wrap:balance;overflow-wrap:anywhere}
 .bmb{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain}
 .bmg{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px 28px;padding:20px 24px 28px;align-items:start}
+/* the photo column stays in view while the details scroll, above the panel's top fade */
 @media (min-height:720px){.bml{position:sticky;top:20px;z-index:4}}
-/* the pinned photo column stays above the top fade */
 .bmph{position:relative;aspect-ratio:4/3;background:transparent;border:1px solid var(--line);border-radius:8px;overflow:hidden}
 .bmph img{width:100%;height:100%;object-fit:contain;display:block;background:#fff}
 .bmcap{margin:8px 0 0;font-size:var(--t-meta);color:var(--fg2)}
 .bmp{margin-top:16px;padding-top:16px;border-top:1px solid var(--line);display:grid;gap:10px}
-.bmpay{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.bmpay{display:flex;align-items:baseline;gap:8px;flex-wrap:nowrap}
 .bmpay strong{font-size:34px;line-height:1;font-weight:700;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
 .bmpay span{font-size:var(--t-ui);color:var(--fg2)}
 .bmpay.na strong{font-size:22px;color:var(--fg2);letter-spacing:-.015em}
-.bmpl{margin:0;display:grid;gap:4px;font-size:var(--t-ui);font-variant-numeric:tabular-nums}
-.bmpl div{display:flex;justify-content:space-between;gap:12px}
-.bmpl dt{color:var(--fg2)}
-.bmpl dd{margin:0;font-weight:600}
 .bmtax{margin:0;font-size:var(--t-meta);color:var(--fg2);line-height:1.45;text-wrap:pretty}
 .bmv{margin-top:16px;padding-top:16px;border-top:1px solid var(--line)}
 .bmv h3{margin:0 0 10px;font-size:var(--t-body);font-weight:600;letter-spacing:-.01em}
-.vlist{list-style:none;margin:0 -6px 4px;padding:0;display:grid;gap:4px}
 /* rows have 6px of hover padding; the list steps out by that so thumbnails line up with the heading */
+.vlist{list-style:none;margin:0 -6px 4px;padding:0;display:grid;gap:4px}
 /* one review: thumbnail (YouTube's minimum for a play button is 120 x 70) and its title, channel, views and age */
 .vit{display:grid;grid-template-columns:128px minmax(0,1fr);gap:12px;align-items:start;width:100%;margin:0;padding:6px;border:0;border-radius:8px;background:none;color:inherit;font:inherit;text-align:left;cursor:pointer;transition:background-color .15s ease}
 .vit:focus-visible{outline:2px solid var(--accent);outline-offset:0}
@@ -511,8 +452,9 @@ input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;width:1
 @media (pointer:coarse){.vmore{min-height:44px;margin-top:0}}
 .vnone{margin:0 0 2px;font-size:var(--t-meta);color:var(--fg2)}
 /* the player: YouTube's own, centred on a dark screen like the photo viewer; nothing of ours sits on top of it */
-.vpv .vfig{margin:0;width:min(1100px,100%,calc((100dvh - 190px) * 16 / 9));display:grid;gap:12px}
-.vbox{position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#000;box-shadow:0 24px 64px rgba(0,0,0,.45)}
+.vpv .vfig{margin:0;width:min(1100px,100%,calc(var(--zh) * 16 / 9));display:grid;gap:12px}
+/* the video's own picture (set by the script) shows the moment the player opens, until YouTube's player has loaded over it */
+.vbox{position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#000 center/cover no-repeat;box-shadow:var(--shadow-photo)}
 .vbox iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 /* phone turned sideways while a video plays: the player spans the screen edge to edge on black, clear of the notch,
    with nothing of ours on top, whether or not it is in full screen (like YouTube's mobile site); turning the phone
@@ -524,9 +466,8 @@ input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;width:1
  .vpv .vbox iframe{top:0;left:env(safe-area-inset-left,0px);width:calc(100% - env(safe-area-inset-left,0px) - env(safe-area-inset-right,0px));height:calc(100% - env(safe-area-inset-bottom,0px))}
  .vpv .zcap,.vpv .zx{display:none}
 }
-/* the video's own picture shows the moment the player opens, until YouTube's player has loaded over it */
-.vbox{background:#000 center/cover no-repeat}
-/* full screen: the player fills it edge to edge on black (the notch gap is only for the sideways fill above) */
+/* full screen: the player fills it edge to edge on black (the notch gap is only for the sideways fill above);
+   !important clears the picture the script sets inline */
 .vpv .vbox:fullscreen{aspect-ratio:auto;border-radius:0;box-shadow:none;background:#000!important}
 .vpv .vbox:fullscreen iframe{top:0;left:0;width:100%;height:100%}
 /* upright phone: the player spans the screen's width, like YouTube's; its title keeps the photo caption's spacing */
@@ -559,10 +500,7 @@ input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;width:1
 @media (hover:hover) and (pointer:fine){.bmlinks a:hover{text-decoration:underline}}
 @media (pointer:coarse){.bmshop{gap:0;padding-block:12px 10px}.bmshop>.maplink:last-child,.bmshop>a.web:last-child{margin-bottom:-6px}.bmshop b{padding-block:6px 2px}.bmshop .city{margin:2px 0 0}.bmshop .city+b{padding-top:4px}.bmshop>.maplink,.bmshop>a.web{padding-block:6px}.bmlinks a{min-height:44px}.bmlinks{padding-top:4px}}
 @media (max-width:760px){
- .bm{inset:auto 0 0;margin:0;width:100%;max-height:calc(100dvh - max(16px,env(safe-area-inset-top,0px)));border-radius:14px 14px 0 0;border-width:1px 0 0;opacity:1;transform:translateY(100%);transition:transform .28s cubic-bezier(.32,.72,0,1),overlay .28s allow-discrete,display .28s allow-discrete}
- .bm[open]{transform:none}
- @starting-style{.bm[open]{transform:translateY(100%);opacity:1}}
- .bm:not([open]){transition-duration:.2s}
+ .bm{inset:auto 0 0;margin:0;width:100%;max-height:calc(100dvh - max(16px,env(safe-area-inset-top,0px)));border-radius:14px 14px 0 0;border-width:1px 0 0}
  .bmh{padding:18px 8px 12px 16px}
  .bmh::before{content:"";position:absolute;top:6px;left:50%;width:36px;height:4px;margin-left:-18px;border-radius:2px;background:var(--line2)}
  .bmh h2{font-size:20px}
@@ -570,39 +508,31 @@ input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;width:1
  .bml{position:static}
 }
 @media (prefers-reduced-motion:reduce){
- .bm,.bm[open]{transform:none!important;transition:opacity .15s ease,overlay .15s allow-discrete,display .15s allow-discrete}
- .bm:not([open]){opacity:0}.bm[open]{opacity:1}
- @starting-style{.bm[open]{opacity:0}}
  .c{transition:border-color .15s ease,box-shadow .2s ease}
  .c:active:not(:has(.sw:active)){transform:none}
 }
-/* floating search pill */
-.fab{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:15;display:flex;align-items:center;gap:2px;height:48px;width:min(420px,calc(100vw - 32px));padding:0 4px;border-radius:999px;border:1px solid var(--line2);background:color-mix(in oklab,var(--surface) 90%,transparent);-webkit-backdrop-filter:saturate(1.4) blur(14px);backdrop-filter:saturate(1.4) blur(14px);color:var(--fg2);font-size:var(--t-ui);box-shadow:0 2px 6px rgba(18,22,20,.08),0 12px 32px rgba(18,22,20,.16);opacity:0;transform:translate(-50%,12px) scale(.97);pointer-events:none;transition:opacity .2s var(--ease-out),transform .24s var(--ease-out)}
-.fab.on{opacity:1;transform:translate(-50%,0);pointer-events:auto}
+/* floating search pill. Solid, not frosted: a blur here made scrolling stutter in Safari.
+   Its border beam: the pill's own background (--line2) is the 1px ring, an inner layer (::after) covers the middle, and the
+   light (.bdot) travels along the edge underneath */
+.fab{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:var(--z-fab);display:flex;align-items:center;gap:2px;height:48px;width:min(420px,calc(100vw - 32px));padding:0 4px 0 8px;border-radius:999px;border:0;background:var(--line2);color:var(--fg2);font-size:var(--t-ui);box-shadow:0 2px 6px rgba(var(--c-fg),.08),0 12px 32px rgba(var(--c-fg),.16);isolation:isolate;overflow:hidden;will-change:transform,opacity}
+/* it rises in with a soft spring-like ease and leaves quicker than it arrives; it also goes while a window is open */
+.fab,html.locked .fab.on{opacity:0;transform:translate(-50%,calc(100% + 28px + env(safe-area-inset-bottom,0px)));pointer-events:none;transition:opacity .2s ease,transform .26s var(--ease-out)}
+.fab.on{opacity:1;transform:translate(-50%,0);pointer-events:auto;transition:opacity .36s ease,transform .5s var(--ease-drawer)}
 .fab.on:active{transform:translate(-50%,0) scale(.97);transition:transform .16s var(--ease-out)}
+:root[data-theme="dark"] .fab{box-shadow:0 2px 6px rgba(0,0,0,.3),0 12px 32px rgba(0,0,0,.5)}
+@media (prefers-reduced-motion:reduce){.fab,.fab.on,html.locked .fab.on{transform:translate(-50%,0);transition:opacity .2s ease}}
+@media (max-width:600px){.fab{height:56px;padding-left:10px;font-size:16px}.fab .fmain{height:48px;gap:12px}.fab .fmain svg{width:20px;height:20px}}
 .fab svg{flex:none;color:var(--fg)}
-/* border beam: a short arc of light circling the pill's edge.
-   The gradient is painted once on an oversized square that only rotates (transform), so the GPU compositor runs it without
-   repainting or touching the main thread; the pill clips it to a 1px ring and an inner layer covers the middle. */
-.fab{isolation:isolate;overflow:hidden;border:0}
+.fab .bdot{z-index:-2}
 .fab::after{content:"";position:absolute;z-index:-1;inset:1px;border-radius:inherit;background:var(--surface);pointer-events:none}
-.fmain{display:flex;align-items:center;height:40px;border:0;border-radius:999px;background:none;color:inherit;font:inherit;cursor:pointer}
-#fab-q{transition:color .15s ease}
-.fmain{flex:1 1 auto;min-width:0;gap:10px;padding:0 14px 0 10px}
+.fmain{display:flex;align-items:center;flex:1 1 auto;min-width:0;gap:10px;height:40px;padding:0 14px 0 10px;border:0;border-radius:999px;background:none;color:inherit;font:inherit;cursor:pointer}
+#fab-q{min-width:0;flex:1 1 auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;transition:color .15s ease}
 @media (hover:hover) and (pointer:fine){.fmain:hover #fab-q{color:var(--fg)}}
-#fab-q{min-width:0;flex:1 1 auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left}
 #fab-q.typed{color:var(--fg);font-weight:500}
 .fcount{flex:none;margin-left:auto;font-variant-numeric:tabular-nums;color:var(--fg);font-weight:600}
-html.locked .fab.on{opacity:0;transform:translate(-50%,12px) scale(.97);pointer-events:none}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .fab{box-shadow:0 2px 6px rgba(0,0,0,.3),0 12px 32px rgba(0,0,0,.5)}}
-:root[data-theme="dark"] .fab{box-shadow:0 2px 6px rgba(0,0,0,.3),0 12px 32px rgba(0,0,0,.5)}
-@media (max-width:600px){.fab{width:min(340px,calc(100vw - 48px))}}
 @media (max-width:400px){.fmain{gap:8px;padding-right:12px}}
-@media (prefers-reduced-motion:reduce){.fab,.fab.on,html.locked .fab.on{transform:translate(-50%,0);transition:opacity .15s ease}}
-main.grid{padding-bottom:96px}
-#g:empty{min-height:100vh}
 /* active filters: one removable chip each, right above the cards */
-.achips{flex:1 1 auto;min-width:0;display:flex;flex-wrap:nowrap;align-items:center;gap:6px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;padding:3px 24px 3px 2px;margin:-3px 0;-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 28px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 28px),transparent)}
+.achips{flex:1 1 auto;min-width:0;display:flex;flex-wrap:nowrap;align-items:center;gap:6px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;padding:3px 24px 3px 2px;margin:-3px 0;mask-image:linear-gradient(90deg,#000 calc(100% - 28px),transparent)}
 .achips::-webkit-scrollbar{display:none}
 .achips>*{flex:none}
 .achips[hidden]{display:none}
@@ -612,18 +542,15 @@ main.grid{padding-bottom:96px}
 .achc{font:inherit;font-size:var(--t-meta);font-weight:500;color:var(--accent-ink);background:none;border:0;padding:0 6px;height:28px;cursor:pointer;border-radius:4px}
 @media (hover:hover) and (pointer:fine){.ach button:hover{background:var(--well);color:var(--fg)}.achc:hover{color:var(--fg)}}
 @media (pointer:coarse){.ach{height:34px;padding-left:12px}.ach button{width:32px;height:32px}.achc{height:34px;padding-inline:8px}}
-/* command dialog */
-.cmd{position:fixed;inset:12vh 0 auto;margin:0 auto;width:min(640px,calc(100vw - 32px));max-height:min(720px,76vh);padding:0;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--fg);box-shadow:0 24px 64px rgba(0,0,0,.24);display:flex;flex-direction:column;overflow:hidden;opacity:0;transform:scale(.97);transform-origin:50% 0;transition:opacity .18s var(--ease-out),transform .2s var(--ease-out),overlay .2s allow-discrete,display .2s allow-discrete}
+/* the search window: centred on the screen with a fixed height on desktop, so it never jumps while results change;
+   a bottom sheet on phones */
+.cmd{position:fixed;inset:0 calc(-1 * var(--sbw,0px)) 0 0;margin:auto;width:min(640px,calc(100vw - 32px));height:min(720px,calc(100dvh - 96px));padding:0;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--fg);box-shadow:var(--shadow-modal);display:flex;flex-direction:column;overflow:hidden;transform-origin:50% 0}
 .cmd:not([open]){display:none}
-.cmd[open]{opacity:1;transform:none}
-@starting-style{.cmd[open]{opacity:0;transform:scale(.97)}}
-.cmd.instant,.cmd.instant::backdrop{transition:none}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .cmd{box-shadow:0 24px 64px rgba(0,0,0,.6)}}
 :root[data-theme="dark"] .cmd{box-shadow:0 24px 64px rgba(0,0,0,.6)}
 .chead{position:relative;display:flex;align-items:center;gap:10px;padding:10px 10px 10px 18px;border-bottom:1px solid var(--line);flex:none}
 .cicon{display:grid;color:var(--fg3)}
 #cq{flex:1;min-width:0;height:44px;border:0;background:none;padding:0;font-size:17px;box-shadow:none;outline:none}
-.cbody{flex:1 1 auto;min-height:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;padding:6px 18px 18px;-webkit-overflow-scrolling:touch;interpolate-size:allow-keywords}
+.cbody{--pt:6px;--px:18px;--pb:18px;flex:1 1 auto;min-height:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;padding:var(--pt) var(--px) var(--pb);interpolate-size:allow-keywords}
 .cres h3{margin:12px 0 6px;font-size:var(--t-micro);font-weight:600;color:var(--fg3);letter-spacing:.02em}
 .hit{display:flex;align-items:center;gap:12px;margin:0 -8px;width:calc(100% + 16px);padding:6px 8px;border:0;border-radius:8px;background:none;color:var(--fg);font:inherit;text-align:left;cursor:pointer;transition:background-color .12s ease,transform .12s var(--ease-out)}
 .hit img{width:52px;height:39px;object-fit:cover;border-radius:4px;background:#fff;flex:none;border:1px solid var(--line)}
@@ -633,33 +560,32 @@ main.grid{padding-bottom:96px}
 .hp{flex:none;font-weight:600;font-variant-numeric:tabular-nums;font-size:var(--t-ui)}
 @media (hover:hover) and (pointer:fine){.hit:hover{background:var(--well)}}
 .cnone{margin:8px 0;color:var(--fg2);font-size:var(--t-ui)}
-.cfoot{display:flex;align-items:center;justify-content:flex-end;gap:12px;padding:12px 18px calc(12px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);flex:none}
-.linkbtn{margin-right:auto;font:inherit;font-size:var(--t-ui);font-weight:500;color:var(--accent-ink);background:none;border:0;padding:8px 4px;cursor:pointer}
+.cfoot{display:flex;align-items:center;justify-content:flex-end;gap:12px;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);flex:none}
+/* the search window's footer: two real buttons, same height, even edges */
+.linkbtn{display:inline-flex;align-items:center;justify-content:center;height:42px;margin:0;padding:0 16px;border:0;border-radius:8px;background:transparent;color:var(--fg);font:inherit;font-size:var(--t-ui);font-weight:600;cursor:pointer;transition:transform .12s var(--ease-out),background-color .15s ease}
+.linkbtn:active{transform:scale(.97)}
+.linkbtn:not(:disabled):active{background:var(--well)}
+@media (hover:hover) and (pointer:fine){.linkbtn:not(:disabled):hover{background:var(--well)}}
+.linkbtn:disabled{color:var(--fg3);cursor:default}
 .primary{font:inherit;font-size:var(--t-ui);font-weight:600;height:42px;padding:0 18px;border-radius:8px;border:0;background:var(--accent);color:var(--accent-fg);cursor:pointer;transition:transform .12s var(--ease-out),opacity .15s ease}
 .primary:disabled{opacity:.45;cursor:default}
+.cfoot .primary{min-width:168px}
+@media (max-width:760px),(pointer:coarse){.cfoot{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px))}.cfoot .linkbtn,.cfoot .primary{height:44px;min-width:0;max-width:none;width:100%;margin:0;font-size:15px}}
+@media (min-width:761px) and (pointer:fine){.cfoot .linkbtn,.cfoot .primary{height:38px;font-size:14px}}
 @media (max-width:600px){
- .cmd{inset:auto 0 0;width:100vw;max-width:100vw;height:min(88dvh,760px);max-height:none;border-radius:14px 14px 0 0;border-width:1px 0 0;opacity:1;transform:translateY(100%);transition:transform .32s cubic-bezier(.32,.72,0,1),overlay .32s allow-discrete,display .32s allow-discrete}
- .cmd[open]{transform:none}
- @starting-style{.cmd[open]{transform:translateY(100%);opacity:1}}
- .cmd:not([open]){transition-duration:.2s}
+ .cmd{inset:auto 0 0;margin:0 auto;width:100vw;max-width:100vw;height:min(88dvh,760px);border-radius:14px 14px 0 0;border-width:1px 0 0}
  .chead{padding:16px 8px 8px 16px}
  .chead::before{content:"";position:absolute;top:6px;left:50%;width:36px;height:4px;margin-left:-18px;border-radius:2px;background:var(--line2)}
-
  #cq{font-size:16px}
- .cbody{padding:4px 16px 16px}
- .primary{flex:1;height:48px;font-size:16px}
+ .cbody{--pt:4px;--px:16px;--pb:16px}
 }
-@media (prefers-reduced-motion:reduce){.cmd,.cmd[open]{transform:none!important;transition:opacity .15s ease,overlay .15s allow-discrete,display .15s allow-discrete}@starting-style{.cmd[open]{opacity:0}}}
-@media (pointer:coarse){.linkbtn{min-height:44px;padding-inline:8px;margin-left:-8px}.primary{height:48px;font-size:16px}}
-/* filters inside the command dialog: same controls as the panel, a little more compact */
+/* filters inside the search window, a little more compact */
 .cflt{margin-top:14px;padding-top:2px;border-top:1px solid var(--line)}
 .cflt h3{margin:12px 0 2px;font-size:var(--t-micro);font-weight:600;color:var(--fg3);letter-spacing:.02em}
 .cmd .fs summary{min-height:48px}
 .cmd .fsc{padding-bottom:14px}
 .cmd .fsw{min-height:56px;padding:6px 0}
-.cfoot .primary{min-width:168px}
 @media (pointer:coarse){.cmd .fs summary{min-height:52px}}
-.linkbtn:disabled{color:var(--fg3);cursor:default}
 /* accordion sections */
 .fs{margin-inline:-10px;background:linear-gradient(var(--line),var(--line)) 10px 100%/calc(100% - 20px) 1px no-repeat}
 .fs summary{display:flex;align-items:center;gap:12px;min-height:52px;padding-inline:10px;cursor:pointer;list-style:none;font-weight:600;font-size:var(--t-body);-webkit-user-select:none;user-select:none;border-radius:4px}
@@ -679,7 +605,7 @@ main.grid{padding-bottom:96px}
 .ro[hidden]{display:none}
 .nearbox{margin:12px 0 0}
 .ro{display:flex;align-items:center;gap:12px;min-height:38px;padding:0 10px;margin:0 -10px;border-radius:6px;cursor:pointer;font-size:var(--t-ui);transition:background-color .12s ease}
-.ro input{appearance:none;-webkit-appearance:none;flex:none;width:18px;height:18px;margin:0;border-radius:50%;border:1.5px solid var(--fg3);background:var(--surface);transition:border-width .12s var(--ease-out),border-color .12s ease}
+.ro input{appearance:none;flex:none;width:18px;height:18px;margin:0;border-radius:50%;border:1.5px solid var(--fg3);background:var(--surface);transition:border-width .12s var(--ease-out),border-color .12s ease}
 .ro input:checked{border:5.5px solid var(--accent)}
 .ro input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .ro .rl{flex:1;min-width:0;overflow-wrap:anywhere}
@@ -702,19 +628,17 @@ main.grid{padding-bottom:96px}
 .cb.zero{color:var(--fg3)}
 .cb.zero i{opacity:.4}
 @media (hover:hover) and (pointer:fine){.cb:not([aria-pressed="true"]):hover{border-color:var(--fg3)}}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .cb i{box-shadow:inset 0 0 0 1px rgba(255,255,255,.25)}:root:not([data-theme="light"]) .cb[aria-pressed="true"] i{box-shadow:0 0 0 2px var(--surface),0 0 0 3.5px var(--fg)}}
 :root[data-theme="dark"] .cb i{box-shadow:inset 0 0 0 1px rgba(255,255,255,.25)}
 :root[data-theme="dark"] .cb[aria-pressed="true"] i{box-shadow:0 0 0 2px var(--surface),0 0 0 3.5px var(--fg)}
 /* you pay: two native range inputs over one styled track; the whole strip is the hit area */
 .prv{margin:0 0 2px}
 .ptxt{font-size:var(--t-ui);font-weight:600;font-variant-numeric:tabular-nums}
-.rng{position:relative;touch-action:pan-y;cursor:pointer;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}
+.rng{position:relative;touch-action:pan-y;cursor:pointer;-webkit-user-select:none;user-select:none}
 .rbar{position:relative;height:44px}
 .rtrack{position:absolute;left:10px;right:10px;top:50%;height:4px;margin-top:-2px;border-radius:2px;background:var(--line)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .rtrack{background:var(--line2)}}
 :root[data-theme="dark"] .rtrack{background:var(--line2)}
 .rfill{position:absolute;top:0;bottom:0;left:0;right:0;border-radius:2px;background:var(--accent)}
-.rng input{position:absolute;left:0;top:50%;width:100%;height:20px;margin:-10px 0 0;padding:0;border:0;background:none;-webkit-appearance:none;appearance:none;pointer-events:none;font-size:16px}
+.rng input{position:absolute;left:0;top:50%;width:100%;height:20px;margin:-10px 0 0;padding:0;border:0;background:none;appearance:none;pointer-events:none;font-size:16px}
 .rng input:focus-visible{outline:none}
 .rng input::-webkit-slider-runnable-track{height:20px;background:none;border:0}
 .rng input::-moz-range-track{height:20px;background:none;border:0}
@@ -734,8 +658,7 @@ main.grid{padding-bottom:96px}
 .fsw{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:8px 0;cursor:pointer}
 .fsw b{display:block;font-weight:600;font-size:var(--t-body)}
 .fsw small{display:block;font-size:var(--t-meta);color:var(--fg2)}
-.fsw input{appearance:none;-webkit-appearance:none;flex:none;position:relative;width:42px;height:26px;margin:0;border-radius:999px;background:var(--line2);cursor:pointer;transition:background-color .15s ease}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .fsw input:not(:checked){background:#4a544e}}
+.fsw input{appearance:none;flex:none;position:relative;width:42px;height:26px;margin:0;border-radius:999px;background:var(--line2);cursor:pointer;transition:background-color .15s ease}
 :root[data-theme="dark"] .fsw input:not(:checked){background:#4a544e}
 .fsw input::before{content:"";position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.25);transition:transform .18s var(--ease-out)}
 .fsw input:checked{background:var(--accent)}
@@ -746,131 +669,78 @@ main.grid{padding-bottom:96px}
  .fs::details-content{transition:none}
  .chev,.fsw input::before,.ro input{transition:none}
 }
-/* hero: looping ride video under a dark gradient */
-/* the video section is the same in both themes: full-colour video, white type, dark shading only behind the text.
- In light mode the video ends on a clean edge and the light page starts below it (no light wash over the footage) */
-.hero{--hink:255,255,255;--hscrim:15,18,17;--ha0:.3;--ha1:.12;--ha2:.55;--ha3:.88;--ha4:.5}
-/* light mode: no fade into the (light) page colour, so the bottom keeps the video and ends on a clean edge */
-:root[data-theme="light"] .hero-media::after{background:linear-gradient(180deg,rgba(15,18,17,.3) 0%,rgba(15,18,17,.12) 32%,rgba(15,18,17,.5) 62%,rgba(15,18,17,.62) 100%),linear-gradient(90deg,rgba(15,18,17,.5) 0%,rgba(15,18,17,0) 60%)}
-:root[data-theme="light"] .hero{background:#0f1211}
-.hero{position:relative;isolation:isolate;overflow:hidden;min-height:min(76svh,780px);display:flex;align-items:center;background:var(--bg);color:rgb(var(--hink))}
+/* hero: looping ride video under a dark gradient. It is the same in both themes: full-colour video, white type, dark shading
+   only behind the text (--hscrim is the dark theme's page colour) */
+.hero{--hink:255,255,255;--hscrim:15,18,17;--ha0:.3;--ha1:.12;--ha2:.55;--ha3:.88;--ha4:.5;position:relative;isolation:isolate;overflow:hidden;min-height:min(76svh,780px);display:flex;align-items:center;background:rgb(var(--hscrim));color:rgb(var(--hink))}
 .hero-media{position:absolute;inset:0;z-index:-1}
 .hero-media video{width:100%;height:100%;object-fit:cover;display:block}
 .hero-media::after{content:"";position:absolute;inset:-1px 0;background:linear-gradient(180deg,rgba(var(--hscrim),var(--ha0)) 0%,rgba(var(--hscrim),var(--ha1)) 32%,rgba(var(--hscrim),var(--ha2)) 60%,rgba(var(--hscrim),var(--ha3)) 78%,rgba(var(--hscrim),.97) 92%,var(--bg) 100%),linear-gradient(90deg,rgba(var(--hscrim),var(--ha4)) 0%,rgba(var(--hscrim),0) 60%)}
-.hero .wrap{width:100%;padding-block:64px}
-/* desktop: the text block sits in the vertical middle of the video (64px top = nav height, matched at the bottom) */
+/* light mode: no fade into the (light) page colour, so the video ends on a clean edge and the light page starts below it */
+:root[data-theme="light"] .hero-media::after{background:linear-gradient(180deg,rgba(var(--hscrim),.3) 0%,rgba(var(--hscrim),.12) 32%,rgba(var(--hscrim),.5) 62%,rgba(var(--hscrim),.62) 100%),linear-gradient(90deg,rgba(var(--hscrim),.5) 0%,rgba(var(--hscrim),0) 60%)}
+/* desktop: the text block sits in the vertical middle of the video, clear of the nav (the same space at the bottom) */
+.hero .wrap{width:100%;padding-block:var(--nav-h)}
 .hero h1{color:rgb(var(--hink));font-size:clamp(40px,6vw,72px);line-height:1.02;letter-spacing:-.035em;max-width:14ch}
 .hero .lede{color:rgba(var(--hink),.86);font-size:clamp(17px,1.6vw,20px);max-width:52ch}
-.hero .hlinks{margin-top:10px;gap:10px 12px}
-.hero .gbtn{height:44px;padding:0 16px 0 14px;border-color:rgba(var(--hink),.28);background:rgba(var(--hink),.1);color:rgb(var(--hink));-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
-.hero .gbtn svg{color:rgb(var(--hink))}
-.hero .hlinks a{color:rgb(var(--hink));font-weight:600;text-decoration:underline;text-decoration-color:rgba(var(--hink),.4);text-underline-offset:4px}
-@media (hover:hover) and (pointer:fine){.hero .gbtn:hover{background:rgba(var(--hink),.18);border-color:rgba(var(--hink),.45)}.hero .hlinks a:hover{text-decoration-color:rgb(var(--hink))}}
-/* phones keep their previous hero: height from before, text anchored at the bottom */
+/* phones: a shorter hero, text anchored at the bottom */
 @media (max-width:760px){.hero{min-height:min(52svh,440px);align-items:flex-end}.hero .wrap{padding-block:128px 40px}}
 @media (prefers-reduced-motion:reduce){.hero-media video{display:none}.hero-media{background:url(img/hero.jpg) center/cover}}
 /* the top nav stays pinned while the page scrolls: see-through over the hero video at the very top, then frosted glass the rest of the way down
    (a see-through tint of the page colour over a strong blur, so whatever scrolls underneath turns to soft colour and never clashes with the nav text).
    The two states crossfade */
-.topbar{position:fixed;inset:0 0 auto;z-index:30;padding-top:env(safe-area-inset-top);--hink:255,255,255;
- background-color:rgba(246,247,245,0);-webkit-backdrop-filter:blur(0px);backdrop-filter:blur(0px);box-shadow:0 1px 0 rgba(18,22,20,0),0 8px 24px -12px rgba(18,22,20,0);
+.topbar{position:fixed;inset:0 0 auto;z-index:var(--z-nav);padding-top:env(safe-area-inset-top);--hink:255,255,255;
+ background-color:transparent;-webkit-backdrop-filter:blur(0px);backdrop-filter:blur(0px);box-shadow:0 1px 0 transparent,0 8px 24px -12px transparent;
  transition:background-color .35s ease,-webkit-backdrop-filter .35s ease,backdrop-filter .35s ease,box-shadow .35s ease}
-:root[data-theme="dark"] .topbar{background-color:rgba(15,18,17,0)}
-.topbar.frost{--hink:18,22,20;background-color:color-mix(in srgb,var(--bg) 72%,transparent);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);
- box-shadow:0 1px 0 rgba(18,22,20,.08),0 8px 24px -12px rgba(18,22,20,.18)}
-:root[data-theme="dark"] .topbar.frost{--hink:238,241,238;background-color:color-mix(in srgb,var(--bg) 64%,transparent);box-shadow:0 1px 0 rgba(255,255,255,.07),0 8px 24px -12px rgba(0,0,0,.6)}
+.topbar.frost{--hink:var(--fg-rgb);background-color:color-mix(in srgb,var(--bg) 72%,transparent);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);
+ box-shadow:0 1px 0 rgba(var(--c-fg),.08),0 8px 24px -12px rgba(var(--c-fg),.18)}
+:root[data-theme="dark"] .topbar.frost{background-color:color-mix(in srgb,var(--bg) 64%,transparent);box-shadow:0 1px 0 rgba(255,255,255,.07),0 8px 24px -12px rgba(0,0,0,.6)}
 /* browsers without the blur get a solid bar instead */
 @supports not ((-webkit-backdrop-filter:blur(1px)) or (backdrop-filter:blur(1px))){.topbar.frost,:root[data-theme="dark"] .topbar.frost{background-color:var(--bg)}}
 /* the nav's text and icons fade between white and the page's text colour along with the background */
 .topbar .brand,.topbar .navlinks a,.topbar .navlinks button,.topbar .themebtn,.topbar .menubtn{transition:color .35s ease,background-color .15s ease,transform .12s var(--ease-out)}
-.topbar .topnav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px;padding-block:0}
-.hero .hlinks a.hcta{text-decoration:none}
-.rb.lg i{width:8px;height:8px}
-/* search footer: two real buttons, same height, even edges */
-.cfoot .linkbtn{margin:0;height:42px;min-height:0;padding:0 16px;border:0;border-radius:8px;background:transparent;color:var(--fg);font-weight:600;display:inline-flex;align-items:center;justify-content:center;transition:transform .12s var(--ease-out),background-color .15s ease}
-.cfoot .linkbtn:active{transform:scale(.97)}
-@media (hover:hover) and (pointer:fine){.cfoot .linkbtn:not(:disabled):hover{background:var(--well)}}
-.cfoot .linkbtn:disabled{color:var(--fg3);opacity:.7}
-.cfoot{padding-inline:16px}
-@media (max-width:760px),(pointer:coarse){.cfoot{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px))}.cfoot .linkbtn,.cfoot .primary{height:44px;min-width:0;max-width:none;width:100%;margin:0;font-size:15px}}
-@media (prefers-reduced-motion:reduce){.cfoot .linkbtn:active{transform:none}}
+@media (prefers-reduced-motion:reduce){.linkbtn:active{transform:none}}
 .bmshop a.web{text-decoration:none;font-weight:600;transition:color .15s ease}
-.cfoot .linkbtn:not(:disabled):active{background:var(--well)}
-.cfoot .linkbtn:disabled{opacity:1;color:var(--fg3)}
-.ptag{margin-left:auto;align-self:center;display:inline-flex;align-items:center;gap:6px;height:26px;padding:0 9px;border-radius:6px;font-size:var(--t-micro);font-weight:600;line-height:1;white-space:nowrap;background:var(--warn-soft);color:var(--warn-ink);border:1px solid color-mix(in oklab,var(--warn-ink) 22%,transparent)}
-.ptag svg{flex:none;width:12px;height:12px}
-.bmpay{flex-wrap:nowrap}
-.pay>span{white-space:nowrap}
-.pbr{display:none}
-article.c .b{container-type:inline-size}
-@container (max-width:310px){.pbr{display:block;flex-basis:100%;height:0}.pay .ptag{margin:4px 0 2px}}
 .bmlist{font-size:var(--t-ui);margin-top:-4px}
-.topbar .navmenu .wrap{padding-block:0;display:block}
-.topbar .navmenu .nmh .wrap{display:flex}
-/* the floating search bar is solid instead of frosted, so scrolling stays smooth in Safari */
-.fab{-webkit-backdrop-filter:none;backdrop-filter:none;background:var(--surface)}
-/* scrolling panels fade out at the bottom while there is more to read, and the fade lifts once you reach the end */
+/* the bike and search windows' scrolling panels get the same edge fades as the info panels (see shared/page.css) */
 .bmb::after,.cbody::after{content:"";position:sticky;bottom:calc(var(--pb,0px) * -1);display:block;height:56px;margin-top:-56px;pointer-events:none;background:linear-gradient(to bottom,transparent,var(--surface) 92%);opacity:0;transition:opacity .2s ease}
 .bmb.has-more::after,.cbody.has-more::after{opacity:1}
-/* matching fade at the top once the panel has scrolled: content slides under the header instead of being cut off by it */
 .bmb::before,.cbody::before{content:"";position:sticky;z-index:3;top:calc(var(--pt,0px) * -1);display:block;height:32px;margin-bottom:-32px;margin-inline:calc(var(--px,0px) * -1);pointer-events:none;background:linear-gradient(to top,transparent,var(--surface) 88%);opacity:0;transition:opacity .2s ease}
 .bmb.has-above::before,.cbody.has-above::before{opacity:1}
-.fab{padding-left:8px}
 #q{cursor:pointer;caret-color:transparent}
-/* shared dim layer behind every window */
-#scrim{position:fixed;inset:0;z-index:40;background:rgba(0,0,0,.58);opacity:0;pointer-events:none;transition:opacity .18s ease}
-#scrim.on{opacity:1;pointer-events:auto}
-@media (prefers-reduced-motion:reduce){#scrim{transition:none}}
-/* floating search bar: rises in with a soft spring-like ease, leaves quicker than it arrives (transform and opacity only, so it stays on the GPU) */
-.fab{transform:translate(-50%,calc(100% + 28px + env(safe-area-inset-bottom,0px)));opacity:0;transition:opacity .2s ease,transform .26s var(--ease-out);will-change:transform,opacity}
-.fab.on{transform:translate(-50%,0);opacity:1;transition:opacity .36s ease,transform .5s var(--ease-drawer)}
-html.locked .fab.on{transform:translate(-50%,calc(100% + 28px + env(safe-area-inset-bottom,0px)));opacity:0;transition:opacity .2s ease,transform .26s var(--ease-out)}
-@media (prefers-reduced-motion:reduce){.fab,.fab.on,html.locked .fab.on{transform:translate(-50%,0);transition:opacity .2s ease}}
-dialog.bm,dialog.cmd{transition:opacity .2s var(--ease-out),transform .2s var(--ease-out),display .2s allow-discrete;opacity:0;transform:scale(.97)}
+/* window motion for the bike and search windows (see the motion notes in shared/page.css): centred windows fade and scale,
+   phone bottom sheets slide up */
+dialog.bm,dialog.cmd{opacity:0;transform:scale(.97);transition:opacity .2s var(--ease-out),transform .2s var(--ease-out),display .2s allow-discrete}
 dialog.bm[data-state="open"],dialog.cmd[data-state="open"]{opacity:1;transform:none}
-dialog.bm[data-state="closing"],dialog.cmd[data-state="closing"]{opacity:0;transform:scale(.97);transition:opacity .15s var(--ease-out),transform .15s var(--ease-out),display .15s allow-discrete}
-dialog.bm[data-state="closed"],dialog.cmd[data-state="closed"]{opacity:0;transform:scale(.97);transition:none}
+dialog.bm[data-state="closing"],dialog.cmd[data-state="closing"]{transition:opacity .15s var(--ease-out),transform .15s var(--ease-out),display .15s allow-discrete}
+dialog.bm[data-state="closed"],dialog.cmd[data-state="closed"]{transition:none}
 @media (max-width:760px){
  dialog.bm{opacity:1;transform:translateY(100%);transition:transform .32s var(--ease-drawer),display .32s allow-discrete}
- dialog.bm[data-state="open"]{transform:none}
- dialog.bm[data-state="closing"]{opacity:1;transform:translateY(100%);transition:transform .22s var(--ease-out),display .22s allow-discrete}
- dialog.bm[data-state="closed"]{opacity:1;transform:translateY(100%);transition:none}
+ dialog.bm[data-state="closing"]{transition:transform .22s var(--ease-out),display .22s allow-discrete}
 }
 @media (max-width:600px){
  dialog.cmd{opacity:1;transform:translateY(100%);transition:transform .32s var(--ease-drawer),display .32s allow-discrete}
- dialog.cmd[data-state="open"]{transform:none}
- dialog.cmd[data-state="closing"]{opacity:1;transform:translateY(100%);transition:transform .22s var(--ease-out),display .22s allow-discrete}
- dialog.cmd[data-state="closed"]{opacity:1;transform:translateY(100%);transition:none}
+ dialog.cmd[data-state="closing"]{transition:transform .22s var(--ease-out),display .22s allow-discrete}
 }
-dialog.cmd.instant,dialog.cmd.instant[data-state]{transition:none}
-#scrim{transition:opacity .2s var(--ease-out)}
+dialog.cmd.instant[data-state]{transition:none}
+/* !important: also beats the transform a drag on the sheet sets inline */
 @media (prefers-reduced-motion:reduce){
  dialog.bm,dialog.cmd,dialog.bm[data-state],dialog.cmd[data-state]{transform:none!important;transition:opacity .15s ease,display .15s allow-discrete}
  dialog.bm[data-state="closed"],dialog.bm[data-state="closing"],dialog.cmd[data-state="closed"],dialog.cmd[data-state="closing"]{opacity:0}
  dialog.bm[data-state="open"],dialog.cmd[data-state="open"]{opacity:1}}
-/* the same light blur behind every window, in every browser (Safari needs the -webkit- form). The blur fades in and out together with the dim;
-   only the layer's opacity animates, the page behind is scroll-locked, and the radius stays small */
-#scrim{background:rgba(0,0,0,.5);will-change:opacity}
-/* blur the page itself, region by region, instead of a full-screen backdrop-filter layer: the still regions are blurred once and
+/* behind a window the page itself is blurred, region by region, instead of a full-screen backdrop-filter layer: the still regions are blurred once and
    cached, and the playing hero video only re-blurs its own layer, so nothing behind a window has to stop */
 .hero,#bar,#status,#g{transition:filter .2s var(--ease-out)}
 /* only regions that are on screen get blurred: Safari draws a stray black box when a blur filter sits on an element that is scrolled out of view (WebKit bug 314999) */
 html.dim :is(.hero,#bar,#status,#g).onscr{filter:blur(6px)}
 @media (prefers-reduced-motion:reduce){.hero,#bar,#status,#g{transition:none}}
-/* the ring under the beam: the pill background shows through the 1px gap around the inner layer */
-.fab{background:var(--line2)}
-/* phones: a bigger, easier thumb target */
-@media (max-width:600px){.fab{height:56px;width:min(420px,calc(100vw - 32px));padding-left:10px;font-size:16px}.fab .fmain{height:48px;gap:12px}.fab .fmain svg{width:20px;height:20px}}
-.cbody{--pb:18px;--pt:6px;--px:18px}
-@media (max-width:600px){.cbody{--pb:16px;--pt:4px;--px:16px}}
-@media (min-width:761px) and (pointer:fine){.cfoot .linkbtn,.cfoot .primary{height:38px;font-size:14px}}
 /* photos: swipe across a photo to change color; tap the photo in the details to see it larger */
 .ph,.bmph,.c .more{touch-action:pan-y}
 .bmph img{cursor:zoom-in}
-.zoomv{position:fixed;inset:0;width:100vw;height:100dvh;max-width:none;max-height:none;margin:0;padding:max(56px,env(safe-area-inset-top,0px)) 16px calc(16px + env(safe-area-inset-bottom,0px));border:0;background:#070a09;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;overflow:hidden;z-index:60}
+/* the photo and video viewer. --zh is the height the photo or video may take: the screen less the close button and caption */
+.zoomv{--zbg:#070a09;--zh:calc(100dvh - 190px);position:fixed;inset:0;width:100vw;height:100dvh;max-width:none;max-height:none;margin:0;padding:max(56px,env(safe-area-inset-top,0px)) 16px calc(16px + env(safe-area-inset-bottom,0px));border:0;background:var(--zbg);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;overflow:hidden;z-index:var(--z-photo)}
 .zoomv:not([open]){display:none}
-.zfig{margin:0;width:min(1100px,100%);flex:1 1 auto;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;touch-action:pan-y pinch-zoom}
-.zfig img{display:block;max-width:100%;max-height:100%;min-height:0;object-fit:contain;border-radius:12px;background:#fff;box-shadow:0 24px 64px rgba(0,0,0,.45)}
+.zfig{margin:0;width:100%;max-width:1100px;flex:0 0 auto;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;touch-action:pan-y pinch-zoom}
+/* the photo's dots and arrows sit in the row under it, so it needs a little more room on phones */
+@media (max-width:760px){.zfig{--zh:calc(100dvh - 210px)}}
 .zfig .zcap,.vfig .zcap{font-size:var(--t-ui);color:rgba(255,255,255,.8)}
 /* the video title sits like the photo caption: same type, same gap, same width (the photo's sits between its two arrows) */
 .vfig .zcap{padding:0 56px}
@@ -878,15 +748,11 @@ html.dim :is(.hero,#bar,#status,#g).onscr{filter:blur(6px)}
 .zx:active{transform:scale(.95)}
 @media (hover:hover) and (pointer:fine){.zx:hover{background:rgba(255,255,255,.2)}}
 .zsws:empty{display:none}
-dialog.zoomv{transition:opacity .2s var(--ease-out),transform .2s var(--ease-out),display .2s allow-discrete;opacity:0;transform:scale(.97)}
+dialog.zoomv{opacity:0;transform:scale(.97);transition:opacity .2s var(--ease-out),transform .2s var(--ease-out),display .2s allow-discrete}
 dialog.zoomv[data-state="open"]{opacity:1;transform:none}
-dialog.zoomv[data-state="closing"]{opacity:0;transform:scale(.97);transition:opacity .15s var(--ease-out),transform .15s var(--ease-out),display .15s allow-discrete}
-dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none}
-@media (prefers-reduced-motion:reduce){dialog.zoomv,dialog.zoomv[data-state]{transform:none!important}}
-.zoomv{justify-content:center}
-.zfig{flex:0 0 auto;width:100%;max-width:1100px}
-.zfig img{width:min(100%,1100px,calc((100dvh - 190px) * 4 / 3));aspect-ratio:4/3;height:auto;max-height:none;object-fit:contain}
-@media (max-width:760px){.zfig img{width:min(100%,calc((100dvh - 210px) * 4 / 3))}}
+dialog.zoomv[data-state="closing"]{transition:opacity .15s var(--ease-out),transform .15s var(--ease-out),display .15s allow-discrete}
+dialog.zoomv[data-state="closed"]{transition:none}
+@media (prefers-reduced-motion:reduce){dialog.zoomv,dialog.zoomv[data-state]{transform:none}}
 /* sort menu: a custom list in the site's own style (native select lists can't be styled). The hidden select stays the source of truth */
 .sortwrap{position:relative;display:inline-flex}
 .sortbtn{display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 10px 0 12px;font:inherit;font-size:var(--t-ui);color:var(--fg);background:var(--surface);border:1px solid var(--line2);border-radius:6px;cursor:pointer;transition:border-color .15s ease,transform .16s var(--ease-out)}
@@ -909,64 +775,47 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
 @media (hover:hover) and (pointer:fine){.sopt:hover{background:var(--well)}}
 @media (pointer:coarse){.sopt{min-height:44px;font-size:16px}}
 @media (prefers-reduced-motion:reduce){.sortmenu,.sortmenu:popover-open{transform:none}.sortbtn .schev{transition:none}}
-/* larger photo view: arrows step through the colors; the selected dot gets a clear white ring */
-.zstage{position:relative;display:flex;justify-content:center}
-.zarr{position:absolute;top:50%;width:44px;height:44px;margin-top:-22px;display:grid;place-items:center;border:0;border-radius:999px;background:rgba(10,14,12,.62);color:#fff;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.3);transition:background-color .15s ease,transform .16s var(--ease-out)}
+/* larger photo view: the stage is exactly the photo's size; under it, arrows step through the colors either side of the bike name
+   and its color dots (compact, with a clear ring on the selected one so it reads on the dark background) */
+.zstage{position:relative;display:flex;justify-content:center;width:min(100%,1100px,calc(var(--zh) * 4 / 3));margin-inline:auto;overflow:hidden;border-radius:12px;box-shadow:var(--shadow-photo)}
+.zstage img{display:block;width:100%;max-width:100%;min-height:0;aspect-ratio:4/3;height:auto;object-fit:contain;background:#fff;-webkit-user-drag:none;user-select:none;-webkit-touch-callout:none}
+.zghost{position:absolute;inset:0;pointer-events:none}
+:root[data-theme="light"] .zstage{box-shadow:0 1px 2px rgba(var(--c-fg),.06),0 12px 32px rgba(var(--c-fg),.1);outline:1px solid var(--line);outline-offset:-1px}
+.zbar{display:grid;grid-template-columns:44px minmax(0,1fr) 44px;align-items:center;column-gap:12px;width:min(100%,1100px,calc(var(--zh) * 4 / 3));margin-inline:auto}
+/* arrow buttons: frosted (a small blur, cheap to draw) */
+.zarr{width:44px;height:44px;display:grid;place-items:center;border:0;border-radius:999px;background:rgba(52,60,56,.42);-webkit-backdrop-filter:blur(10px) saturate(1.2);backdrop-filter:blur(10px) saturate(1.2);color:#fff;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.18),inset 0 0 0 1px rgba(255,255,255,.14);transition:background-color .15s ease,transform .16s var(--ease-out)}
 .zarr[hidden]{display:none}
-.zprev{left:12px}
-.znext{right:12px}
+.zprev{grid-column:1}
+.znext{grid-column:3}
 .zarr:active{transform:scale(.94)}
-@media (hover:hover) and (pointer:fine){.zarr:hover{background:rgba(10,14,12,.82)}}
+@media (hover:hover) and (pointer:fine){.zarr:hover{background:rgba(52,60,56,.6)}}
 .zarr:focus-visible{outline:2px solid #fff;outline-offset:2px}
 @media (prefers-reduced-motion:reduce){.zarr:active{transform:none}}
-.zstage{width:100%}
-/* in the larger photo, the color dots sit on the photo, centered along its bottom edge, same size as everywhere else */
-/* color dots sit under the bike name: compact, with a white ring on the selected one so it reads on the dark background */
-.zsws{display:flex;flex-wrap:wrap;justify-content:center;gap:2px}
-.zbar{display:grid;grid-template-columns:44px minmax(0,1fr) 44px;align-items:center;column-gap:12px}
-.zbar .zarr{position:static;margin:0}
-.zbar .zprev{grid-column:1}
-.zbar .znext{grid-column:3}
 .zmeta{grid-column:2;display:grid;justify-items:center;gap:4px;min-width:0;text-align:center}
 .zcap{margin:0}
-.zghost{position:absolute;inset:0;pointer-events:none}
-.zstage{overflow:hidden;border-radius:12px;box-shadow:0 24px 64px rgba(0,0,0,.45)}
-.zstage img{box-shadow:none;border-radius:0;-webkit-user-drag:none;user-select:none;-webkit-touch-callout:none}
-:root[data-theme="light"] .zstage{box-shadow:0 1px 2px rgba(18,22,20,.06),0 12px 32px rgba(18,22,20,.1);outline:1px solid var(--line);outline-offset:-1px}
-:root[data-theme="light"] .zstage img{box-shadow:none;outline:0}
+.zsws{display:flex;flex-wrap:wrap;justify-content:center;gap:2px}
 .zsws .sw{width:22px;height:22px}
 .zsws .sw i{width:12px;height:12px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.3)}
-.zsws .sw[aria-pressed="true"] i{box-shadow:0 0 0 2px #070a09,0 0 0 3px #fff}
+.zsws .sw[aria-pressed="true"] i{box-shadow:0 0 0 2px var(--zbg),0 0 0 3px #fff}
 .zsws .sw.np i{outline-color:rgba(255,255,255,.6)}
 .zsws .sw.np[aria-pressed="true"] i{box-shadow:inset 0 0 0 1px rgba(255,255,255,.3);outline:1.5px dashed #fff;outline-offset:2px}
 .znote{margin:0;font-size:var(--t-meta);color:rgba(255,255,255,.6)}
 .znote[hidden]{display:none}
-/* the stage is exactly the photo's size, so the arrows and dots sit on the photo */
-.zstage,.zbar{width:min(100%,1100px,calc((100dvh - 190px) * 4 / 3));margin-inline:auto}
-@media (max-width:760px){.zstage,.zbar{width:min(100%,calc((100dvh - 210px) * 4 / 3))}}
-.zstage img{width:100%!important}
-/* arrow buttons on the photo: frosted, a little lighter than before (small blur, cheap to draw) */
-.zarr{background:rgba(52,60,56,.42);-webkit-backdrop-filter:blur(10px) saturate(1.2);backdrop-filter:blur(10px) saturate(1.2);box-shadow:0 2px 10px rgba(0,0,0,.18),inset 0 0 0 1px rgba(255,255,255,.14)}
-@media (hover:hover) and (pointer:fine){.zarr:hover{background:rgba(52,60,56,.6)}}
 /* light theme: the photo view sits on the light page color instead of near-black */
-:root[data-theme="light"] .zoomv{background:var(--bg);color:var(--fg)}
+:root[data-theme="light"] .zoomv{--zbg:var(--bg);color:var(--fg)}
 :root[data-theme="light"] .zfig .zcap,:root[data-theme="light"] .vfig .zcap{color:var(--fg2)}
-:root[data-theme="light"] .zfig img{box-shadow:0 1px 2px rgba(18,22,20,.06),0 12px 32px rgba(18,22,20,.1);outline:1px solid var(--line);outline-offset:-1px}
-:root[data-theme="light"] .zx{background:rgba(18,22,20,.06);color:var(--fg)}
-:root[data-theme="light"] .zarr{background:rgba(255,255,255,.62);color:var(--fg);box-shadow:0 2px 10px rgba(18,22,20,.12),inset 0 0 0 1px rgba(18,22,20,.08)}
+:root[data-theme="light"] .zx{background:rgba(var(--c-fg),.06);color:var(--fg)}
+:root[data-theme="light"] .zarr{background:rgba(255,255,255,.62);color:var(--fg);box-shadow:0 2px 10px rgba(var(--c-fg),.12),inset 0 0 0 1px rgba(var(--c-fg),.08)}
 :root[data-theme="light"] .zarr:focus-visible{outline-color:var(--fg)}
 :root[data-theme="light"] .zsws .sw i{box-shadow:inset 0 0 0 1px rgba(0,0,0,.2)}
 :root[data-theme="light"] .zsws .sw[aria-pressed="true"] i{box-shadow:inset 0 0 0 1px rgba(0,0,0,.2),0 0 0 2px var(--bg),0 0 0 3.5px var(--fg)}
-:root[data-theme="light"] .zsws .sw.np i{outline-color:rgba(18,22,20,.55)}
+:root[data-theme="light"] .zsws .sw.np i{outline-color:rgba(var(--c-fg),.55)}
 :root[data-theme="light"] .zsws .sw.np[aria-pressed="true"] i{box-shadow:inset 0 0 0 1px rgba(0,0,0,.2);outline-color:var(--fg)}
 :root[data-theme="light"] .znote{color:var(--fg2)}
-@media (hover:hover) and (pointer:fine){:root[data-theme="light"] .zx:hover{background:rgba(18,22,20,.1)}:root[data-theme="light"] .zarr:hover{background:rgba(255,255,255,.82)}}
+@media (hover:hover) and (pointer:fine){:root[data-theme="light"] .zx:hover{background:rgba(var(--c-fg),.1)}:root[data-theme="light"] .zarr:hover{background:rgba(255,255,255,.82)}}
 /* centred windows are centred on the whole screen: the page keeps a scrollbar gutter (so nothing jumps when a window opens),
-   and --sbw extends their box over it */
-@media (min-width:761px){dialog.cmd,dialog.bm{right:calc(-1 * var(--sbw,0px))}}
-#scrim{right:calc(-1 * var(--sbw,0px))}
-/* desktop search window: centred on the screen with a fixed height, so it never jumps while results change */
-@media (min-width:601px){dialog.cmd{inset:0 calc(-1 * var(--sbw,0px)) 0 0;margin:auto;height:min(720px,calc(100dvh - 96px));max-height:none}}
+   and --sbw (set by the script) extends their box over it */
+@media (min-width:761px){dialog.bm{right:calc(-1 * var(--sbw,0px))}}
 /* desktop hero: title, description and a larger search centered in the video; shading is centered too (no side darkening). Phones keep their left-aligned layout */
 @media (min-width:761px){
  /* one column that scales as a unit: everything is sized from the title's font size (--hfs), so title, description and search shrink together */
@@ -982,28 +831,23 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
  :root[data-theme="light"] .hero-media::after{background:radial-gradient(ellipse 62% 58% at 50% 50%,rgba(15,18,17,.42) 0%,rgba(15,18,17,0) 100%),linear-gradient(180deg,rgba(15,18,17,.3) 0%,rgba(15,18,17,.12) 32%,rgba(15,18,17,.5) 62%,rgba(15,18,17,.62) 100%)}
 }
 /* hero search: a soft shadow lifts it off the video; the focus ring is layered on top so it still shows */
-.hero .hbar input[type=search]{border-color:rgba(255,255,255,.22);box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 1px 3px rgba(0,0,0,.2),0 10px 28px -6px rgba(0,0,0,.4)}
+/* hero search: a very light frost (the dark theme's surface colour, mostly solid, with just enough see-through and blur that the
+   video softly shows behind it; the blur covers only this small field, so it stays cheap), and a soft shadow lifts it off the video.
+   The focus ring is layered on top of the shadow so it still shows */
+.hero .hbar input[type=search]{background-color:color-mix(in srgb,var(--surface) 74%,transparent);-webkit-backdrop-filter:blur(14px) saturate(1.3);backdrop-filter:blur(14px) saturate(1.3);border-color:rgba(255,255,255,.22);box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 1px 3px rgba(0,0,0,.2),0 10px 28px -6px rgba(0,0,0,.4)}
 /* light mode: the bar is white, so its edge is a crisp hairline instead */
-:root[data-theme="light"] .hero .hbar input[type=search]{border-color:rgba(255,255,255,.9);box-shadow:0 0 0 1px rgba(0,0,0,.06),0 1px 3px rgba(0,0,0,.2),0 10px 28px -6px rgba(0,0,0,.4)}
+:root[data-theme="light"] .hero .hbar input[type=search]{background-color:rgba(255,255,255,.9);border-color:rgba(255,255,255,.9);box-shadow:0 0 0 1px rgba(0,0,0,.06),0 1px 3px rgba(0,0,0,.2),0 10px 28px -6px rgba(0,0,0,.4)}
 .hero .hbar input[type=search]:focus-visible{box-shadow:0 0 0 3px var(--accent-soft),0 1px 3px rgba(0,0,0,.2),0 10px 28px -6px rgba(0,0,0,.4)}
-/* hero: the list date sits as a small, quiet line under the search (the column already has a 12px gap; 2px more makes 14px) */
-/* hero search: a very light frost. The field stays mostly solid (its normal colours and text), with just enough
-   see-through and blur that the video softly shows behind it. Blur covers only this small field, so it stays cheap */
-.hero .hbar input[type=search]{background-color:rgba(23,27,25,.74);-webkit-backdrop-filter:blur(14px) saturate(1.3);backdrop-filter:blur(14px) saturate(1.3)}
-:root[data-theme="light"] .hero .hbar input[type=search]{background-color:rgba(255,255,255,.9)}
-.hero .hbar .search svg{z-index:1}
 /* hero search text: readable at rest, brighter on hover (placeholder and icon move together) */
 .hero .hbar input[type=search]::placeholder{color:rgba(255,255,255,.74);transition:color .15s ease}
-.hero .hbar .search svg{color:rgba(255,255,255,.74);transition:color .15s ease}
+.hero .hbar .search svg{z-index:1;color:rgba(255,255,255,.74);transition:color .15s ease}
 @media (hover:hover) and (pointer:fine){.hero .hbar .search:hover input[type=search]::placeholder,.hero .hbar .search:hover svg{color:rgba(255,255,255,.95)}}
-:root[data-theme="light"] .hero .hbar input[type=search]::placeholder,:root[data-theme="light"] .hero .hbar .search svg{color:#4d5651}
-@media (hover:hover) and (pointer:fine){:root[data-theme="light"] .hero .hbar .search:hover input[type=search]::placeholder,:root[data-theme="light"] .hero .hbar .search:hover svg{color:#121614}}
-/* hero search border beam: the same arc of light as the floating search bar.
-   A ring-shaped mask (border width only) sits on top of the field; inside it an oversized conic gradient just rotates,
-   which the GPU compositor runs without repainting. It sits above the field, so the frosted blur never samples it */
-.hero .hbar .search{position:relative}
+:root[data-theme="light"] .hero .hbar input[type=search]::placeholder,:root[data-theme="light"] .hero .hbar .search svg{color:var(--fg2)}
+@media (hover:hover) and (pointer:fine){:root[data-theme="light"] .hero .hbar .search:hover input[type=search]::placeholder,:root[data-theme="light"] .hero .hbar .search:hover svg{color:var(--fg)}}
+/* hero search border beam: the same light as the floating search bar, inside a ring-shaped mask (border width only) on top of
+   the field, so the frosted blur never samples it */
 .hero .sbeam{position:absolute;inset:0;border-radius:10px;padding:1px;overflow:hidden;pointer-events:none;z-index:2;
- -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0)}
+ mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0)}
 /* phones: the hero search is a touch larger (50px, rounder, bigger icon) so it holds its own under the title */
 @media (max-width:760px){
  .hero .hbar input[type=search]{height:50px;padding-left:42px;border-radius:8px}
@@ -1015,7 +859,6 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
    It moves with transform only (Web Animations, run by the compositor); the ring shape hides everything but the 1px edge */
 .bdot{position:absolute;left:0;top:0;width:150px;height:34px;margin:-17px 0 0 -75px;border-radius:50%;pointer-events:none;
  background:radial-gradient(closest-side,#effcf5 0%,#bfeeda 18%,color-mix(in oklab,var(--accent) 85%,transparent) 45%,transparent 100%);will-change:transform}
-.fab .bdot{z-index:-2}
 @media (prefers-reduced-motion:reduce){.bdot{display:none}}
 /* phone type scale: reading text 16px, nothing under 14px, headings kept modest */
 @media (max-width:760px){
@@ -1023,8 +866,7 @@ dialog.zoomv[data-state="closed"]{opacity:0;transform:scale(.97);transition:none
  .bms p{font-size:16px;line-height:1.5}
  .bmin{font-size:15px}
  .bmr h3{font-size:18px}
- .bmh h2{font-size:22px}
- .gp{font-size:16px;line-height:1.5}}
+ .bmh h2{font-size:22px}}
 </style>
 
 <a class="skip" href="#g">Skip to the bikes</a>
@@ -1185,6 +1027,9 @@ const miles=(a,s)=>{const R=3958.8,r=x=>x*Math.PI/180,dl=r(s.lat-a.lat),dg=r(s.l
    the top nav's phone menu, the light / dark toggle and the visitor's saved location. Runs after the page's markup. */
 const $=id=>document.getElementById(id);
 const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
+/* the CSS breakpoints, so scripts use the same numbers (media queries can't read CSS variables, so the CSS writes them out too):
+   phones and small tablets (bike window as a bottom sheet, phone menu), and phones (search window as a bottom sheet) */
+const BP={mobile:'(max-width: 760px)',small:'(max-width: 600px)'};const MOBILE=matchMedia(BP.mobile);
 const THEME={"light": "#f6f7f5", "dark": "#0f1211"};
 /* keyboard users get focus handed back to what opened a window; touch and mouse users get no leftover outline */
 let KBD=false;addEventListener('keydown',e=>{if(e.key==='Tab'||e.key==='Escape'||e.key.startsWith('Arrow')||e.key==='Enter')KBD=true},true);addEventListener('pointerdown',()=>{KBD=false},true);
@@ -1204,8 +1049,8 @@ document.addEventListener('keydown',e=>{const d=DSTACK[DSTACK.length-1];if(!d)re
   const a=f[0],z=f[f.length-1],c=document.activeElement;
   if(!d.contains(c)){e.preventDefault();a.focus();return}
   if(e.shiftKey&&(c===a||c===d)){e.preventDefault();z.focus()}else if(!e.shiftKey&&c===z){e.preventDefault();a.focus()}}});
-/* fn runs once el's transitions have finished (the fallback covers a browser that never reports them) */
-function afterMotion(el,fn){let t=setTimeout(go,300);function go(){if(!t)return;clearTimeout(t);t=0;fn()}Promise.all(el.getAnimations().map(a=>a.finished)).then(go,go)}
+/* fn runs once el's transitions have finished (the fallback, longer than any of the pages' motions, covers a browser that never reports them) */
+function afterMotion(el,fn){let t=setTimeout(go,400);function go(){if(!t)return;clearTimeout(t);t=0;fn()}Promise.all(el.getAnimations().map(a=>a.finished)).then(go,go)}
 /* close() plays the exit animation first, then really closes */
 const NCLOSE=HTMLDialogElement.prototype.close;
 function animClose(){const d=this;if(!d.open||d.dataset.state==='closing')return;
@@ -1233,7 +1078,7 @@ NAVM.addEventListener('toggle',syncNav);NAVM.addEventListener('beforetoggle',()=
 NAVM.addEventListener('click',e=>{const a=e.target.closest('.nml a'),here=a&&a.getAttribute('aria-current')==='page';if(here)e.preventDefault();
  if((here||e.target.closest('.nml button')||(a&&(a.getAttribute('href')||'').startsWith('#')))&&NAVM.matches(':popover-open'))NAVM.hidePopover()});
 addEventListener('pagehide',()=>{if(NAVM.matches(':popover-open'))NAVM.hidePopover()});
-matchMedia('(min-width: 761px)').addEventListener('change',e=>{if(e.matches&&NAVM.matches(':popover-open'))NAVM.hidePopover()});
+MOBILE.addEventListener('change',e=>{if(!e.matches&&NAVM.matches(':popover-open'))NAVM.hidePopover()});
 
 /* mark a scrolling panel when there is more below or above, so it can fade that edge */
 (()=>{const els=[...document.querySelectorAll('.bmb,.dbody,.cbody')];
@@ -1274,7 +1119,6 @@ const PICKS={'lectric-xp4-750-long-range':{tag:'Top pick',head:'Our top pick',no
 const pickNote=(pk,b)=>pk.note+(b.price!=null?` ${money(b.price)}, you pay ${money(b.you)}.`:'');
 const STAR='<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg>';
 const ARROW='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>';
-const MOBILE=matchMedia('(max-width: 760px)');
 
 B.forEach((b,i)=>{
  b.i=i;b.reb=REB[b.type].regular;b.you=b.price!=null?Math.max(0,b.price-b.reb):null;
@@ -1645,12 +1489,12 @@ function sheetDrag(D,head,body,q){let x0=0,y0=0,t0=0,dy=0,st=0,fromBody=false;co
   if(st===1){const dx=Math.abs(e.touches[0].clientX-x0);if(Math.abs(d)<8&&dx<8)return;if(d<0||dx>Math.abs(d)*0.6||(fromBody&&body.scrollTop>0)){st=0;return}st=2;y0=e.touches[0].clientY;t0=performance.now();D.style.transition='none'}
   e.preventDefault();const m=e.touches[0].clientY-y0;dy=m>0?m:-Math.sqrt(-m)*2;D.style.transform=`translateY(${dy}px)`};
  const end=()=>{if(st!==2){st=0;return}st=0;const v=dy/Math.max(1,performance.now()-t0);
-  if(dy>D.offsetHeight*.25||(dy>24&&v>.11)){D.style.transition='transform .2s cubic-bezier(.32,.72,0,1)';D.style.transform='translateY(100%)';setTimeout(()=>{D.style.transition='none';D.close();requestAnimationFrame(()=>{D.style.transition='';D.style.transform=''})},200)}
-  else{D.style.transition='transform .25s cubic-bezier(.32,.72,0,1)';D.style.transform='';setTimeout(()=>{if(!st)D.style.transition=''},260)}};
+  if(dy>D.offsetHeight*.25||(dy>24&&v>.11)){D.style.transition='transform .2s var(--ease-drawer)';D.style.transform='translateY(100%)';setTimeout(()=>{D.style.transition='none';D.close();requestAnimationFrame(()=>{D.style.transition='';D.style.transform=''})},200)}
+  else{D.style.transition='transform .25s var(--ease-drawer)';D.style.transform='';setTimeout(()=>{if(!st)D.style.transition=''},260)}};
  head.addEventListener('touchstart',e=>start(e,false),{passive:true});body.addEventListener('touchstart',e=>start(e,true),{passive:true});
  for(const el of [head,body]){el.addEventListener('touchmove',move,{passive:false});el.addEventListener('touchend',end);el.addEventListener('touchcancel',end)}}
-sheetDrag(CMD,CMD.querySelector('.chead'),CMD.querySelector('.cbody'),'(max-width: 600px)');
-sheetDrag($('bike'),$('bike').querySelector('.bmh'),$('bike').querySelector('.bmb'),'(max-width: 760px)');
+sheetDrag(CMD,CMD.querySelector('.chead'),CMD.querySelector('.cbody'),BP.small);
+sheetDrag($('bike'),$('bike').querySelector('.bmh'),$('bike').querySelector('.bmb'),BP.mobile);
 $('cmd-res').addEventListener('keydown',e=>{
  if(!['ArrowDown','ArrowUp'].includes(e.key))return;const all=[...$('cmd-res').querySelectorAll('.hit')],i=all.indexOf(document.activeElement);if(i<0)return;
  e.preventDefault();const n=all[i+(e.key==='ArrowDown'?1:-1)];(n||(e.key==='ArrowUp'?$('cq'):all[i])).focus()});
@@ -1958,7 +1802,7 @@ ZOOM.addEventListener('toggle',zArrows);
  const mark=()=>{opts.forEach(o=>o.setAttribute('aria-selected',o.dataset.v===sel.value));$('sortval').textContent=sel.selectedOptions[0].text};mark();
  /* the label area is as wide as the longest option, so the button (and the menu under it) never changes width when the sort changes */
  const fit=()=>{const v=$('sortval'),keep=v.textContent;let w=0;for(const o of sel.options){v.textContent=o.text;w=Math.max(w,v.getBoundingClientRect().width)}v.textContent=keep;v.style.minWidth=Math.ceil(w)+'px'};
- fit();document.fonts&&document.fonts.ready.then(fit);matchMedia('(max-width: 760px)').addEventListener('change',()=>{$('sortval').style.minWidth='';fit()});
+ fit();document.fonts&&document.fonts.ready.then(fit);MOBILE.addEventListener('change',()=>{$('sortval').style.minWidth='';fit()});
  const cur=()=>opts.find(o=>o.dataset.v===sel.value)||opts[0];
  menu.addEventListener('beforetoggle',e=>{if(e.newState!=='open')return;mark();const r=btn.getBoundingClientRect();const w=r.width;
   menu.style.width=w+'px';menu.style.left=r.left+'px';

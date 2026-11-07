@@ -3,18 +3,14 @@ __HEAD__
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400..700&display=swap" rel="stylesheet">
 <style>
 __CSS__
-/* shops page */
-:root{--mapbg:#f8f4f0}
-.sbar{position:sticky;top:0;z-index:20;background:var(--bg);padding-top:env(safe-area-inset-top,0px);--hink:18,22,20}
-:root[data-theme="dark"] .sbar{--hink:238,241,238}
+:root{--mapbg:#f8f4f0;
+ /* shadows of the map's hover card (--pop) and of the cards and button floating on the phone map (--float) */
+ --pop:0 1px 2px rgba(var(--c-fg),.05),0 8px 24px rgba(var(--c-fg),.11); --float:0 1px 2px rgba(var(--c-fg),.06),0 4px 14px rgba(var(--c-fg),.14)}
+:root[data-theme="dark"]{--pop:0 2px 6px rgba(0,0,0,.28),0 12px 32px rgba(0,0,0,.42); --float:0 1px 3px rgba(0,0,0,.4),0 6px 16px rgba(0,0,0,.5)}
 /* the same top nav and phone menu as the home page, in the page's text colours instead of over the video */
-.sbar .topnav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px;padding-block:0;max-width:1440px}
+.sbar{position:sticky;top:0;z-index:var(--z-nav);background:var(--bg);padding-top:env(safe-area-inset-top,0px);--hink:var(--fg-rgb)}
+.sbar .topnav .wrap{max-width:1440px}
 .navlinks a[aria-current="page"]{color:rgb(var(--hink))}
-.navmenu .wrap{padding-block:0;display:block}
-.navmenu .nmh .wrap{display:flex}
-/* the E-bike guide and Rebate info side panels (same as the home page) and the dimmed page behind them */
-#scrim{position:fixed;inset:0;z-index:40;background:rgba(0,0,0,.5);opacity:0;pointer-events:none;transition:opacity .2s var(--ease-out)}
-#scrim.on{opacity:1;pointer-events:auto}
 @media (prefers-reduced-motion:reduce){#scrim{transition:none}}
 /* hero: big title like the home page, over a dotted world map (dots near the pointer twinkle; the Bay Area glows in the accent colour) */
 .sphero{position:relative;isolation:isolate;overflow:hidden;display:grid;place-items:center;text-align:center;min-height:clamp(280px,46vh,460px);min-height:clamp(280px,46svh,460px);--ov:40px}
@@ -34,7 +30,7 @@ __CSS__
 @media (min-width:1024px){
  .sphero{--ov:56px;min-height:clamp(380px,50vh,500px);min-height:clamp(380px,50svh,500px)}
  .spg{margin-top:-56px;grid-template-columns:minmax(360px,440px) minmax(0,1fr);grid-template-rows:auto 1fr;grid-template-areas:"count ." "list map";column-gap:24px;row-gap:12px}
- .spmap{position:sticky;top:72px;align-self:start;height:calc(100vh - 88px);height:calc(100svh - 88px)}
+ .spmap{position:sticky;top:calc(var(--nav-h) + 8px);align-self:start;height:calc(100vh - var(--nav-h) - 24px);height:calc(100svh - var(--nav-h) - 24px)}
  .splist{grid-template-columns:minmax(0,1fr)}
  .spsheet{display:contents}
  .shandle{display:none}
@@ -45,7 +41,7 @@ __CSS__
 @media (max-width:1023px){
  html,body{overflow:hidden;overscroll-behavior:none}
  .sphero{display:none}
- .spg{display:block;max-width:none;margin:0;padding:0;height:calc(100vh - 64px - env(safe-area-inset-top,0px));height:calc(100dvh - 64px - env(safe-area-inset-top,0px));overflow:hidden}
+ .spg{display:block;max-width:none;margin:0;padding:0;height:calc(100vh - var(--nav-h) - env(safe-area-inset-top,0px));height:calc(100dvh - var(--nav-h) - env(safe-area-inset-top,0px));overflow:hidden}
  .spmap{position:absolute;inset:0;height:auto;border:0;border-radius:16px 16px 0 0}
  .spsheet{position:absolute;inset:0;z-index:6;display:flex;flex-direction:column;background:var(--bg);border-radius:16px 16px 0 0;box-shadow:0 -1px 0 var(--line);
   transform:translateY(100%);visibility:hidden;transition:transform .32s var(--ease-drawer),visibility 0s linear .32s;will-change:transform}
@@ -66,7 +62,7 @@ __CSS__
  .spsheet.open{opacity:1;transition:opacity .2s ease,visibility 0s}
 }
 
-.splist .shop{scroll-margin:72px 0 16px}
+.splist .shop{scroll-margin:calc(var(--nav-h) + 8px) 0 16px}
 .shop.on{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
 /* clicking a shop card shows it on the map */
 .splist.hasmap .shop{cursor:pointer;transition:border-color .15s ease}
@@ -86,11 +82,10 @@ __CSS__
 .pin:focus-visible svg{outline:2px solid var(--fg);outline-offset:1px;border-radius:50% 50% 50% 50%/40% 40% 60% 60%}
 /* hover card: one element, reused for every pin; it grows out of the pin (or drops below it near the top edge) */
 .maplibregl-marker.mcw{z-index:6;pointer-events:none}
-.mcard{width:296px;max-width:calc(100vw - 58px);display:grid;gap:10px;padding:14px 16px;background:var(--surface);color:var(--fg);border:1px solid var(--line);border-radius:12px;font-size:var(--t-ui);line-height:1.45;text-align:left;
- box-shadow:0 1px 2px rgba(18,22,20,.05),0 8px 24px rgba(18,22,20,.11);
+.mcard{width:296px;max-width:calc(100vw - 58px);display:grid;gap:10px;padding:14px 16px;background:var(--surface);color:var(--fg);border:1px solid var(--line);border-radius:12px;font-size:var(--t-ui);line-height:1.45;text-align:left;box-shadow:var(--pop);
  pointer-events:none;visibility:hidden;opacity:0;transform:scale(.96);transition:opacity .12s var(--ease-out),transform .12s var(--ease-out),visibility 0s linear .12s}
 .mcard.open{pointer-events:auto;visibility:visible;opacity:1;transform:none;transition:opacity .15s var(--ease-out),transform .15s var(--ease-out),visibility 0s}
-:root[data-theme="dark"] .mcard{border-color:var(--line2);box-shadow:0 2px 6px rgba(0,0,0,.28),0 12px 32px rgba(0,0,0,.42)}
+:root[data-theme="dark"] .mcard{border-color:var(--line2)}
 @media (prefers-reduced-motion:reduce){.mcard,.mcard.open{transform:none}.pin svg{transition:none}}
 /* phones and tablets: "Show list" and a row of shop cards at the bottom of the map; swipe the row left or right to go through the shops */
 .mdock{display:none}
@@ -100,15 +95,14 @@ __CSS__
  .spg.listing .mdock{opacity:0;visibility:hidden;transition:opacity .12s var(--ease-out),visibility 0s linear .12s}
  .mlist{pointer-events:auto;display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px 0 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--fg);
   font:inherit;font-size:var(--t-ui);font-weight:600;cursor:pointer;touch-action:manipulation;-webkit-user-select:none;user-select:none;
-  box-shadow:0 1px 2px rgba(18,22,20,.06),0 4px 14px rgba(18,22,20,.14);transition:transform .12s var(--ease-out);will-change:translate}
+  box-shadow:var(--float);transition:transform .12s var(--ease-out);will-change:translate}
  .mlist svg{color:var(--fg2)}
  .mlist:active{transform:scale(.97)}
  .mlist:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
- :root[data-theme="dark"] .mlist{border-color:var(--line2);box-shadow:0 1px 3px rgba(0,0,0,.4),0 6px 16px rgba(0,0,0,.5)}
+ :root[data-theme="dark"] .mlist{border-color:var(--line2)}
  .mcar{display:flex;align-self:stretch;align-items:flex-end;gap:10px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scroll-padding-inline:20px;padding:10px 20px calc(12px + env(safe-area-inset-bottom,0px));scrollbar-width:none;touch-action:pan-x;pointer-events:auto}
  .mcar::-webkit-scrollbar{display:none}
- .mcar .mcard{flex:0 0 calc(100% - 16px);max-width:440px;width:auto;scroll-snap-align:center;scroll-snap-stop:always;pointer-events:auto;visibility:visible;opacity:1;transform:none;transition:none;box-shadow:0 1px 2px rgba(18,22,20,.06),0 4px 14px rgba(18,22,20,.14)}
- :root[data-theme="dark"] .mcar .mcard{box-shadow:0 1px 3px rgba(0,0,0,.4),0 6px 16px rgba(0,0,0,.5)}
+ .mcar .mcard{flex:0 0 calc(100% - 16px);max-width:440px;width:auto;scroll-snap-align:center;scroll-snap-stop:always;pointer-events:auto;visibility:visible;opacity:1;transform:none;transition:none;box-shadow:var(--float)}
  /* details in two columns: address and phone | the week's hours, then the email */
  .mcgrid{display:grid;grid-template-columns:fit-content(132px) minmax(0,1fr);column-gap:12px;align-items:start;font-size:var(--t-meta);line-height:1.4}
  .mcgrid .mclines{gap:2px}
@@ -131,12 +125,12 @@ a.mcl span{text-decoration:underline;text-decoration-color:var(--line2);text-und
 .mcbtn.pri{background:var(--accent);border-color:var(--accent);color:var(--accent-fg)}
 @media (hover:hover) and (pointer:fine){a.mcl:hover{color:var(--fg)}a.mcl:hover span{text-decoration-color:currentColor}.mcbtn:hover{border-color:var(--fg3)}.mcbtn.pri:hover{background:var(--accent-ink);border-color:var(--accent-ink)}:root[data-theme="dark"] .mcbtn.pri:hover{background:#3cc08c;border-color:#3cc08c}}
 @media (pointer:coarse){.mcbtn{height:40px}.mcl{padding-block:3px}}
-/* map controls in the site's colors */
-.spmap .maplibregl-ctrl-group,.spmap .maplibregl-ctrl-attrib.maplibregl-compact{box-shadow:0 0 0 1px rgba(18,22,20,.08),0 1px 3px rgba(18,22,20,.14)}
+/* map controls in the site's light colours, in both themes (the map looks the same in both) */
+.spmap .maplibregl-ctrl-group,.spmap .maplibregl-ctrl-attrib.maplibregl-compact{box-shadow:0 0 0 1px rgba(var(--c-fg),.08),0 1px 3px rgba(var(--c-fg),.14)}
 .spmap .maplibregl-ctrl-group{background:#fff;border-radius:8px}
-.spmap .maplibregl-ctrl-group button+button{border-top-color:#e3e7e2}
-.spmap .maplibregl-ctrl-attrib{font-family:var(--font);font-size:11px;color:#4d5651}
-.spmap .maplibregl-ctrl-attrib a{color:#4d5651}
+.spmap .maplibregl-ctrl-group button+button{border-top-color:rgb(var(--c-line))}
+.spmap .maplibregl-ctrl-attrib{font-family:var(--font);font-size:11px;color:rgb(var(--c-fg2))}
+.spmap .maplibregl-ctrl-attrib a{color:rgb(var(--c-fg2))}
 .spmap .maplibregl-ctrl-attrib.maplibregl-compact{background:#fff}
 /* "find me" button (under the zoom buttons), your location dot, and a short note if location isn't available */
 .spmap .mloc{display:grid;place-items:center;color:#333;touch-action:manipulation}
@@ -145,7 +139,7 @@ a.mcl span{text-decoration:underline;text-decoration-color:var(--line2);text-und
 .spmap .me{width:12px;height:12px}
 .spmap .me::after{content:"";position:absolute;inset:0;border-radius:50%;background:#4285f4;box-shadow:0 0 0 2.5px #fff,0 1px 3px 2.5px rgba(0,0,0,.2)}
 /* the soft blue ring around your dot breathes slowly (transform and opacity only, so it costs nothing while the map moves) */
-.spmap .me::before{content:"";position:absolute;inset:-11px;border-radius:50%;background:rgba(66,133,244,.22);animation:mepulse 2.6s cubic-bezier(0.77,0,0.175,1) infinite alternate}
+.spmap .me::before{content:"";position:absolute;inset:-11px;border-radius:50%;background:rgba(66,133,244,.22);animation:mepulse 2.6s var(--ease-in-out) infinite alternate}
 @keyframes mepulse{from{transform:scale(.7);opacity:1}to{transform:scale(1.1);opacity:.55}}
 @media (prefers-reduced-motion:reduce){.spmap .me::before{animation:none}}
 .spmap .mtoast{position:absolute;left:50%;top:12px;z-index:6;max-width:calc(100% - 120px);transform:translate(-50%,-6px);opacity:0;visibility:hidden;pointer-events:none;padding:8px 12px;border-radius:8px;background:#1f2937;color:#fff;font-size:var(--t-ui);line-height:1.35;text-align:center;box-shadow:0 4px 14px rgba(0,0,0,.25);transition:opacity .18s var(--ease-out),transform .18s var(--ease-out),visibility 0s linear .18s}
@@ -243,7 +237,7 @@ const SH=__SHOPS__;
  const isOpen=()=>sheet.classList.contains('open');
  const listOpen=()=>{if(WIDE.matches||isOpen())return;sheet.style.transform='';sheet.style.transition='';sheet.classList.add('open');stage.classList.add('listing');lbtn.setAttribute('aria-expanded','true');
   if(onCard){const lr=list.getBoundingClientRect(),cr=onCard.getBoundingClientRect();list.scrollTop+=cr.top-lr.top-8}
-  setTimeout(()=>{if(isOpen())sheet.querySelector('.dclose').focus({preventScroll:true})},REDUCE.matches?0:320)};
+  afterMotion(sheet,()=>{if(isOpen())sheet.querySelector('.dclose').focus({preventScroll:true})})};
  const listClose=focus=>{if(!isOpen())return;sheet.style.transform='';sheet.style.transition='';sheet.classList.remove('open');stage.classList.remove('listing');lbtn.setAttribute('aria-expanded','false');if(focus)lbtn.focus({preventScroll:true})};
  lbtn.addEventListener('click',listOpen);
  sheet.querySelector('.dclose').addEventListener('click',()=>listClose(true));

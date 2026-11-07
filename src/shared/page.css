@@ -1,45 +1,46 @@
 /* Styles both pages use: tokens and themes, the top nav and phone menu, the E-bike guide and Rebate info panels, shop cards.
    build2.py puts this first in each page's <style>. */
 :root{
+ /* light-theme colours as r,g,b: the light tokens are made from them, and so is anything that sits on a light surface in both
+    themes (bike photos, the map) */
+ --c-fg:18,22,20; --c-fg2:77,86,81; --c-line:227,231,226; --c-accent:14,122,82; --c-accent-ink:11,95,64; --c-pick:183,121,31;
  --offveil:rgba(10,12,11,.14); --offc:#9a3412; --offbg:#fff7ed; --offbd:#fdba74;
  --sbh:rgba(0,0,0,.45); --sbh2:rgba(0,0,0,.6); --sbo:rgba(255,255,255,.3);
- --bg:#f6f7f5; --surface:#ffffff; --well:#f1f3f0; --fg:#121614; --fg2:#4d5651; --fg3:#646d68;
- --line:#e3e7e2; --line2:#c9d0ca; --accent:#0e7a52; --accent-fg:#ffffff; --accent-soft:#e3f2ea; --accent-ink:#0b5f40;
- --pick:#b7791f; --warn-ink:#8a5300;
- --shadow:0 1px 2px rgba(18,22,20,.04),0 4px 14px rgba(18,22,20,.05);
- --shadow-hi:0 2px 4px rgba(18,22,20,.05),0 12px 28px rgba(18,22,20,.09);
- --ease-out:cubic-bezier(.23,1,.32,1); --ease-in-out:cubic-bezier(.77,0,.175,1);
+ --bg:#f6f7f5; --surface:#ffffff; --well:#f1f3f0; --fg-rgb:var(--c-fg); --fg:rgb(var(--fg-rgb)); --fg2:rgb(var(--c-fg2)); --fg3:#646d68;
+ --line:rgb(var(--c-line)); --line2:#c9d0ca; --accent:rgb(var(--c-accent)); --accent-fg:#ffffff; --accent-soft:#e3f2ea; --accent-ink:rgb(var(--c-accent-ink));
+ --pick:rgb(var(--c-pick));
+ --shadow:0 1px 2px rgba(var(--c-fg),.04),0 4px 14px rgba(var(--c-fg),.05);
+ --shadow-hi:0 2px 4px rgba(var(--c-fg),.05),0 12px 28px rgba(var(--c-fg),.09);
+ --shadow-modal:0 24px 64px rgba(0,0,0,.24); --shadow-photo:0 24px 64px rgba(0,0,0,.45);
+ --ease-out:cubic-bezier(.23,1,.32,1); --ease-in-out:cubic-bezier(.77,0,.175,1); --ease-drawer:cubic-bezier(.32,.72,0,1);
+ --nav-h:64px;
+ /* what sits over what: the notch strip, floating search bar, top nav, dim layer, windows, photo and video viewer */
+ --z-notch:10; --z-fab:15; --z-nav:30; --z-scrim:40; --z-window:50; --z-photo:60;
  --t-micro:12px; --t-meta:13px; --t-ui:14px; --t-body:15px; --t-lede:17px; --t-title:17px; --t-price:28px; --t-h2:24px;
  --font:"Geist",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
  color-scheme:light;
 }
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
- --offveil:rgba(10,12,11,.42); --offc:#fdba74; --offbg:#431407; --offbd:#9a3412;
- --sbh:rgba(255,255,255,.5); --sbh2:rgba(255,255,255,.7); --sbo:rgba(0,0,0,.4);
- --bg:#0f1211; --surface:#171b19; --well:#1e2320; --fg:#eef1ee; --fg2:#b4bcb7; --fg3:#8d9691;
- --line:#262c29; --line2:#3a433e; --accent:#2fae7d; --accent-fg:#06140e; --accent-soft:#16302a; --accent-ink:#7fdcb4;
- --pick:#e0a84a; --warn-ink:#f0c46b;
- --shadow:0 1px 2px rgba(0,0,0,.3); --shadow-hi:0 8px 24px rgba(0,0,0,.4); color-scheme:dark}}
 :root[data-theme="dark"]{
  --offveil:rgba(10,12,11,.42); --offc:#fdba74; --offbg:#431407; --offbd:#9a3412;
  --sbh:rgba(255,255,255,.5); --sbh2:rgba(255,255,255,.7); --sbo:rgba(0,0,0,.4);
- --bg:#0f1211; --surface:#171b19; --well:#1e2320; --fg:#eef1ee; --fg2:#b4bcb7; --fg3:#8d9691;
+ --bg:#0f1211; --surface:#171b19; --well:#1e2320; --fg-rgb:238,241,238; --fg2:#b4bcb7; --fg3:#8d9691;
  --line:#262c29; --line2:#3a433e; --accent:#2fae7d; --accent-fg:#06140e; --accent-soft:#16302a; --accent-ink:#7fdcb4;
- --pick:#e0a84a; --warn-ink:#f0c46b;
+ --pick:#e0a84a;
  --shadow:0 1px 2px rgba(0,0,0,.3); --shadow-hi:0 8px 24px rgba(0,0,0,.4); color-scheme:dark}
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;text-size-adjust:100%;accent-color:var(--accent);scrollbar-color:var(--line2) transparent}
+/* no browser tap highlight anywhere (it is inherited): it paints over everything, even an opening sheet, and reads as a flash.
+   Pressed states are drawn by the components themselves */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;accent-color:var(--accent);scrollbar-color:var(--line2) transparent;scrollbar-gutter:stable;scroll-behavior:smooth;-webkit-tap-highlight-color:transparent}
+html.locked{overflow:hidden}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:var(--t-body);line-height:1.5;-webkit-font-smoothing:antialiased}
-body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:var(--z-notch);background:var(--bg)}
 ::selection{background:var(--accent-soft);color:var(--fg)}
 a{color:var(--accent-ink);text-underline-offset:3px;text-decoration-thickness:1px}
-html,a,button,[data-b]{-webkit-tap-highlight-color:transparent}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
 .wrap{max-width:1200px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
 .rb{display:inline-flex;align-items:center;gap:6px;height:22px;padding:0 8px;border-radius:4px;font-size:var(--t-micro);font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap;line-height:1;background:var(--accent-soft);color:var(--accent-ink);border:1px solid color-mix(in oklab,var(--accent) 30%,transparent)}
 .shop{min-width:0;overflow-wrap:anywhere;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px 16px 12px;font-size:var(--t-ui);display:grid;gap:2px;align-content:start}
-.shead{display:flex;align-items:center;gap:8px;min-width:0;margin-bottom:4px}
-.shead b{min-width:0}
 .slogo{flex:none;width:36px;height:36px;margin-bottom:8px;border-radius:50%;overflow:hidden;background:#fff;box-shadow:0 0 0 1px var(--line);display:grid;place-items:center}
 .slogo img{width:100%;height:100%;object-fit:cover;display:block}
 a.slogo{text-decoration:none;transition:box-shadow .15s ease}
@@ -52,18 +53,18 @@ a.slogo{text-decoration:none;transition:box-shadow .15s ease}
 .shop .city{color:var(--accent-ink);font-weight:600;font-size:var(--t-micro)}
 .shop b{font-size:var(--t-body);font-weight:600}
 .shop .m{color:var(--fg2)}
-html{scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-.drawer{position:fixed;inset:0 0 0 auto;margin:0;height:100dvh;max-height:100dvh;width:min(560px,100vw);max-width:100vw;padding:0;border:0;border-left:1px solid var(--line);background:var(--surface);color:var(--fg);box-shadow:-12px 0 40px rgba(0,0,0,.14);display:flex;flex-direction:column;overflow:hidden;transform:translateX(100%);transition:transform .32s cubic-bezier(.32,.72,0,1),overlay .32s allow-discrete,display .32s allow-discrete}
+.drawer{position:fixed;inset:0 0 0 auto;margin:0;height:100dvh;max-height:100dvh;width:min(560px,100vw);max-width:100vw;padding:0;border:0;border-left:1px solid var(--line);background:var(--surface);color:var(--fg);box-shadow:-12px 0 40px rgba(0,0,0,.14);display:flex;flex-direction:column;overflow:hidden}
 .drawer:not([open]){display:none}
-.drawer[open]{transform:none}
-.drawer:not([open]){transition-duration:.2s}
-@starting-style{.drawer[open]{transform:translateX(100%)}}
 .dhead{display:flex;gap:16px;align-items:flex-start;justify-content:space-between;padding:max(22px,env(safe-area-inset-top,0px)) 24px 16px;border-bottom:1px solid var(--line);flex:none}
 .dhead h2{margin:0;font-size:22px;letter-spacing:-.02em;font-weight:700}
 .dhead p{margin:4px 0 0;color:var(--fg2);font-size:var(--t-ui)}
-.dclose{flex:none;display:grid;place-items:center;width:36px;height:36px;border-radius:6px;border:0;background:var(--well);color:var(--fg);cursor:pointer}
-.dbody{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:4px 24px calc(40px + env(safe-area-inset-bottom,0px));-webkit-overflow-scrolling:touch}
+/* close buttons are ghost buttons: no fill until hovered or pressed */
+.dclose{flex:none;display:grid;place-items:center;width:36px;height:36px;border-radius:6px;border:0;background:transparent;color:var(--fg2);cursor:pointer;transition:transform .12s var(--ease-out),background-color .15s ease}
+.dclose:active{transform:scale(.97);background:var(--well);color:var(--fg)}
+@media (hover:hover) and (pointer:fine){.dclose:hover{background:var(--well);color:var(--fg)}}
+@media (pointer:coarse){.dclose{width:44px;height:44px}}
+/* --pt/--px/--pb are the panel's padding; the scroll fades below use them to reach the panel's real edges */
+.dbody{--pt:4px;--px:24px;--pb:calc(40px + env(safe-area-inset-bottom,0px));flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:var(--pt) var(--px) var(--pb)}
 .dbody h3{font-size:var(--t-lede);font-weight:600;letter-spacing:-.01em;margin:26px 0 10px}
 .gsub{margin:-4px 0 12px;font-size:var(--t-ui);color:var(--fg2)}
 .g3{display:grid;gap:10px}
@@ -86,15 +87,7 @@ html{scroll-behavior:smooth}
 .gsteps li::before{content:counter(gs);width:26px;height:26px;margin-top:-2px;border-radius:50%;box-sizing:border-box;border:1px solid color-mix(in oklab,var(--fg) 24%,transparent);background:linear-gradient(180deg,color-mix(in oklab,var(--fg) 16%,transparent),color-mix(in oklab,var(--fg) 2%,transparent) 60%),var(--well);box-shadow:inset 0 1px 0 color-mix(in oklab,#fff 22%,transparent);color:var(--fg);font-weight:600;font-size:14px;line-height:1;display:grid;place-items:center;font-variant-numeric:tabular-nums}
 .dbody .gsteps a{color:var(--fg);text-decoration:underline;text-underline-offset:3px;text-decoration-color:color-mix(in oklab,currentColor 45%,transparent)}
 .dbody .gl a,.dbody .gsrc a{color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-color:color-mix(in oklab,currentColor 45%,transparent)}
-@media (max-width:600px){.drawer{width:100vw;border-left:0}.dhead{padding:max(18px,env(safe-area-inset-top,0px)) 18px 14px}.dbody{padding:2px 18px calc(32px + env(safe-area-inset-bottom,0px))}}
-@media (prefers-reduced-motion:reduce){.drawer{transition:opacity .2s ease,overlay .2s allow-discrete,display .2s allow-discrete;transform:none;opacity:0}.drawer[open]{opacity:1}@starting-style{.drawer[open]{opacity:0;transform:none}}}
-/* one backdrop for every dialog: same dim, same fade. No blur: a full-screen blur over 224 cards and a playing video makes Safari stutter */
-dialog::backdrop{background:rgba(10,14,12,.42);opacity:0;transition:opacity .18s ease,overlay .18s allow-discrete,display .18s allow-discrete}
-dialog[open]::backdrop{opacity:1}
-@starting-style{dialog[open]::backdrop{opacity:0}}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) dialog::backdrop{background:rgba(0,0,0,.58)}}
-:root[data-theme="dark"] dialog::backdrop{background:rgba(0,0,0,.58)}
-@media (prefers-reduced-motion:reduce){dialog::backdrop{transition:none}}
+@media (max-width:600px){.drawer{width:100vw;border-left:0}.dhead{padding:max(18px,env(safe-area-inset-top,0px)) 18px 14px}.dbody{--pt:2px;--px:18px;--pb:calc(32px + env(safe-area-inset-bottom,0px))}}
 /* theme toggle: one icon that morphs. Dark shows a moon, light shows a sun.
    Only transforms and opacity animate (GPU), so it stays smooth; the page itself crossfades through a view transition where supported */
 .navr{display:flex;align-items:center;gap:4px}
@@ -119,10 +112,6 @@ dialog[open]::backdrop{opacity:1}
 ::view-transition-old(themebtn){display:none}
 ::view-transition-new(themebtn){animation:none}
 button{touch-action:manipulation;-webkit-user-select:none;user-select:none}
-.dclose{transition:transform .12s var(--ease-out),background-color .15s ease}
-.dclose:active{transform:scale(.97)}
-html{scrollbar-gutter:stable}
-html.locked{overflow:hidden}
 /* page scrollbar, where the browser's own bar takes up a strip (Windows): a thin Mac-style bar floats over the page instead,
    fades out when you stop scrolling and widens under the mouse. Macs and phones keep their own bar. */
 html[data-overlayscrollbars-initialize],html[data-overlayscrollbars]{scrollbar-gutter:auto}
@@ -135,18 +124,18 @@ html[data-overlayscrollbars-initialize],html[data-overlayscrollbars]{scrollbar-g
 .os-theme-ava.os-scrollbar-vertical .os-scrollbar-handle{left:0;right:0;margin-inline:auto;transition:opacity .15s,background-color .15s,border-color .15s,scale .2s var(--ease-out)}
 .os-theme-ava.os-scrollbar-vertical:hover .os-scrollbar-handle,.os-theme-ava.os-scrollbar-vertical:active .os-scrollbar-handle{scale:var(--sbx) 1}
 .os-theme-ava.os-scrollbar{transition:opacity .3s ease,visibility .3s ease}
-dialog[data-state="closing"]{pointer-events:none}
-.maplink{display:inline-flex;align-items:flex-start;gap:6px;color:var(--fg2);text-decoration:none;width:fit-content}
-.maplink svg{flex:none;margin-top:3px;color:var(--fg3)}
+.maplink{display:inline-flex;align-items:flex-start;gap:6px;color:var(--fg2);text-decoration:none;width:fit-content;line-height:1.5}
+.maplink svg{flex:none;color:var(--fg3)}
 .maplink span{text-decoration:underline;text-decoration-color:var(--line2);text-underline-offset:3px}
 @media (hover:hover) and (pointer:fine){.maplink:hover{color:var(--fg)}.maplink:hover span{text-decoration-color:currentColor}}
 .tel{font-variant-numeric:tabular-nums}
-@media (pointer:coarse){.dclose{width:44px;height:44px}}
 @media (pointer:coarse){.shop>.maplink,.shop>a.web{padding-block:5px}.shop>.maplink:last-child,.shop>a.web:last-child{margin-bottom:-5px}}
+.topnav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:var(--nav-h);padding-block:0}
 .brand{display:inline-flex;align-items:center;gap:10px;color:rgb(var(--hink));text-decoration:none;font-weight:600;font-size:15px;letter-spacing:-.01em;min-height:44px}
 .brand svg{flex:none}
 .navlinks{display:flex;align-items:center;gap:4px;margin-right:-12px}
 .navlinks button,.navlinks a{text-decoration:none;font:inherit;font-size:14px;font-weight:500;color:rgba(var(--hink),.82);background:none;border:0;height:44px;padding:0 12px;border-radius:6px;cursor:pointer;transition:color .15s ease,transform .12s var(--ease-out)}
+.navlinks a{display:inline-flex;align-items:center}
 .navlinks button:active{transform:scale(.97)}
 .navlinks button:focus-visible,.navlinks a:focus-visible,.menubtn:focus-visible,.brand:focus-visible{outline:2px solid rgb(var(--hink));outline-offset:2px}
 @media (hover:hover) and (pointer:fine){.navlinks button:hover,.navlinks a:hover{color:rgb(var(--hink))}}
@@ -154,17 +143,18 @@ dialog[data-state="closing"]{pointer-events:none}
 .brand,.navlinks button{white-space:nowrap}
 @media (prefers-reduced-motion:reduce){.navlinks button:active{transform:none}}
 .rb.lg{height:30px;padding:0 11px;font-size:15px;gap:8px;border-radius:6px;justify-self:start;margin:0 0 8px}
-.web{display:inline-flex;align-items:flex-start;gap:6px;width:fit-content}
-.web svg{flex:none;margin-top:3px;color:var(--fg3)}
+.rb.lg svg{flex:none}
+.web{display:inline-flex;align-items:flex-start;gap:6px;width:fit-content;line-height:1.5}
+.web svg{flex:none;color:var(--fg3)}
+/* contact icons sit on the centre of the first line of text, even when an address wraps */
+.maplink svg,.web svg,.web svg+span+svg{margin-top:calc((1lh - 13px) / 2)}
 .shop a.web{text-decoration:none;font-weight:600;transition:color .15s ease}
 a.web span{text-decoration:underline;text-decoration-color:color-mix(in oklab,currentColor 45%,transparent);text-underline-offset:3px}
 @media (hover:hover) and (pointer:fine){a.web:hover{color:var(--fg)}a.web:hover span{text-decoration-color:currentColor}a.web:hover svg{color:currentColor}}
-.web svg+span+svg{color:currentColor;margin-top:4px}
-.navlinks a{display:inline-flex;align-items:center}
-.menubtn{display:none;align-items:center;justify-content:center;width:44px;height:44px;margin-right:-10px;border:0;border-radius:8px;background:none;color:rgb(var(--hink));cursor:pointer;transition:background-color .15s ease,transform .12s var(--ease-out)}
+.web svg+span+svg{color:currentColor}
+.menubtn{display:none;position:relative;z-index:2;align-items:center;justify-content:center;width:44px;height:44px;margin-right:-10px;border:0;border-radius:8px;background:none;color:rgb(var(--hink));cursor:pointer;transition:background-color .15s ease,transform .12s var(--ease-out)}
 .menubtn:active{transform:scale(.95)}
 @media (max-width:760px){.navlinks{display:none}.menubtn{display:inline-flex}}
-.menubtn{position:relative;z-index:2}
 .menubtn svg{position:absolute;pointer-events:none;transition:opacity .15s ease,transform .18s var(--ease-out)}
 .menubtn .mi-close{opacity:0;transform:rotate(-45deg) scale(.8)}
 .menubtn[aria-expanded="true"] .mi-open{opacity:0;transform:rotate(45deg) scale(.8)}
@@ -178,13 +168,12 @@ a.web span{text-decoration:underline;text-decoration-color:color-mix(in oklab,cu
 .navmenu .nml{opacity:0;transform:translateY(-6px);transition:opacity .16s var(--ease-out),transform .16s var(--ease-out)}
 .navmenu:popover-open .nml{opacity:1;transform:none}
 @starting-style{.navmenu:popover-open .nml{opacity:0;transform:translateY(-6px)}}
-.navmenu::backdrop{background:transparent}
 .nmh{padding-top:env(safe-area-inset-top,0px);border-bottom:1px solid var(--line)}
-.nmh .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;padding-block:0}
+.nmh .wrap{display:flex;align-items:center;justify-content:space-between;height:var(--nav-h);padding-block:0}
 .nmb{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;letter-spacing:-.01em}
 .nmx{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;margin-right:-10px;border:0;border-radius:8px;background:none;color:var(--fg);cursor:pointer;transition:transform .12s var(--ease-out)}
 .nmx:active{transform:scale(.95)}
-.menubtn,.nmx,.nml a,.nml button{touch-action:manipulation}
+.nml a{touch-action:manipulation}
 .nml{list-style:none;margin:8px 0 0;padding:0}
 .nml li{border-bottom:1px solid var(--line)}
 .nml button,.nml a{display:flex;align-items:center;gap:12px;width:100%;min-height:56px;padding:0;border:0;background:none;font:inherit;font-size:17px;font-weight:500;letter-spacing:-.01em;color:var(--fg);text-decoration:none;text-align:left;cursor:pointer;transition:opacity .12s ease}
@@ -194,45 +183,35 @@ a.web span{text-decoration:underline;text-decoration-color:color-mix(in oklab,cu
 .nml .nmc{color:var(--fg3)}
 .navmenu :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
 @media (prefers-reduced-motion:reduce){.navmenu .nml,.navmenu:popover-open .nml{transform:none;transition:opacity .15s ease}@starting-style{.navmenu:popover-open .nml{transform:none}}.nmx:active{transform:none}}
-/* contact icons sit on the centre of the first line of text, even when an address wraps */
-.maplink,.web{line-height:1.5}
-.maplink svg,.web svg{margin-top:3.5px}
-@supports (margin-top:1lh){.maplink svg,.web svg,.web svg+span+svg{margin-top:calc((1lh - 13px) / 2)}}
-/* close buttons are ghost buttons: no fill until hovered or pressed */
-.dclose{background:transparent;color:var(--fg2)}
-.dclose:active{background:var(--well);color:var(--fg)}
-@media (hover:hover) and (pointer:fine){.dclose:hover{background:var(--well);color:var(--fg)}}
 /* scrolling panels fade out at the bottom while there is more to read, and the fade lifts once you reach the end; matching fade at
    the top once the panel has scrolled (the JS marks them has-more / has-above). The home page's windows add their own panels to these rules */
 .dbody::after{content:"";position:sticky;bottom:calc(var(--pb,0px) * -1);display:block;height:56px;margin-top:-56px;pointer-events:none;background:linear-gradient(to bottom,transparent,var(--surface) 92%);opacity:0;transition:opacity .2s ease}
 .dbody.has-more::after{opacity:1}
 .dbody::before{content:"";position:sticky;z-index:3;top:calc(var(--pt,0px) * -1);display:block;height:32px;margin-bottom:-32px;margin-inline:calc(var(--px,0px) * -1);pointer-events:none;background:linear-gradient(to top,transparent,var(--surface) 88%);opacity:0;transition:opacity .2s ease}
 .dbody.has-above::before{opacity:1}
-dialog:focus{outline:none}
-dialog{z-index:50}
-.rb.lg svg{flex:none}
 .gamt dl{margin:10px 0 0;display:grid;gap:8px}
 .gamt dl>div{display:flex;align-items:center;justify-content:space-between;gap:12px}
 .gamt dt{color:var(--fg2);font-size:var(--t-ui)}
 .gamt dd{margin:0}
 .gamt .rb.lg{margin:0;background:var(--accent-soft);color:var(--accent-ink);border-color:color-mix(in oklab,var(--accent) 55%,transparent)}
-/* ---- motion system (Emil's standards): enter and exit with strong ease-out, panels with the iOS drawer curve, transform + opacity only ----
+/* ---- window motion (Emil's standards): enter and exit with strong ease-out, panels with the iOS drawer curve, transform + opacity only.
+   page.js sets data-state: "closed" (just shown, still off screen), "open", "closing" (playing the exit).
    side panels: slide from the right, 300ms in / 200ms out
    bottom sheets (phones): slide up, 320ms in / 220ms out
-   centred windows (desktop): fade + 0.97 scale, 200ms in / 150ms out
-   dim layer: fades with the window */
-:root{--ease-drawer:cubic-bezier(.32,.72,0,1)}
-dialog.drawer{transition:transform .3s var(--ease-drawer),display .3s allow-discrete;transform:translateX(100%)}
+   centred windows (desktop): fade + 0.97 scale, 200ms in / 150ms out */
+/* the dim layer behind every window (page.js adds it); on the home page --sbw stretches it over the scrollbar gutter */
+#scrim{position:fixed;inset:0;right:calc(-1 * var(--sbw,0px));z-index:var(--z-scrim);background:rgba(0,0,0,.5);opacity:0;pointer-events:none;transition:opacity .2s var(--ease-out);will-change:opacity}
+#scrim.on{opacity:1;pointer-events:auto}
+dialog{z-index:var(--z-window)}
+dialog:focus{outline:none}
+dialog[data-state="closing"]{pointer-events:none}
+dialog.drawer{transform:translateX(100%);transition:transform .3s var(--ease-drawer),display .3s allow-discrete}
 dialog.drawer[data-state="open"]{transform:none}
-dialog.drawer[data-state="closing"]{transform:translateX(100%);transition:transform .2s var(--ease-out),display .2s allow-discrete}
-dialog.drawer[data-state="closed"]{transform:translateX(100%);transition:none}
+dialog.drawer[data-state="closing"]{transition:transform .2s var(--ease-out),display .2s allow-discrete}
+dialog.drawer[data-state="closed"]{transition:none}
 @media (prefers-reduced-motion:reduce){
- dialog.drawer,dialog.drawer[data-state]{transform:none!important;transition:opacity .15s ease,display .15s allow-discrete}
- dialog.drawer[data-state="closed"],dialog.drawer[data-state="closing"]{opacity:0}
+ dialog.drawer,dialog.drawer[data-state]{transform:none;opacity:0;transition:opacity .15s ease,display .15s allow-discrete}
  dialog.drawer[data-state="open"]{opacity:1}}
-/* the fade pins to the real bottom edge, not to the panel's inner padding: --pb mirrors each panel's bottom padding */
-.dbody{--pb:calc(40px + env(safe-area-inset-bottom,0px));--pt:4px;--px:24px}
-@media (max-width:600px){.dbody{--pb:calc(32px + env(safe-area-inset-bottom,0px));--pt:2px;--px:18px}}
 @media (max-width:760px){
  :root{--t-micro:14px;--t-meta:14px;--t-ui:15px;--t-body:16px;--t-lede:18px;--t-title:18px}
  .gl,.gsub,.gnote,.gc p,.gdl dd,.gsteps li{font-size:16px;line-height:1.5}

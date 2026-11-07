@@ -17,6 +17,12 @@ Everything the live site is built from.
   `window.AVA_SITE` from the data file.
 - `site_tpl.html` - the home page template (layout, styles, scripts).
 - `shops_tpl.html` - the shop directory template (browse-vendors/: every shop as a card, next to a map).
+- `shared/` - what both pages use, put into each page by `build2.py`: `page.css` (the colour, type, motion, nav-height and
+  stacking tokens, light and dark themes, the top nav and phone menu, the E-bike guide and Rebate info panels, shop cards,
+  the dim layer), `page.js` (windows, phone menu, theme toggle, the breakpoints the scripts use), `nav.html`, `info.html` (the
+  two info panels), `shop.js` (shop card markup and order) and `scrollbar.html`. The CSS breakpoints (760px phones and small
+  tablets, 600px phones) are written out in each media query, since media queries can't use variables; scripts read them from
+  `BP` in `page.js`.
 - `bikespecs/` - checks each bike's specs against the maker and other sites and writes them into the bike list
   (`python3 -m bikespecs.apply`); Chris's decisions are in `bikespecs/DECISIONS.md` and `policy.py`.
 - `videos/`, `videos.csv` - the video reviews: `videos.csv` is the list, `videos/` checks and publishes it.
