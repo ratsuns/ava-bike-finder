@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Wait for GitHub Pages to publish
-        run: sleep 90    # Pages publishes this push in its own workflow, usually within a minute; pinging sooner sends the old pages
+        run: sleep 480    # "Test and publish" tests, then publishes this push, usually within 6 minutes; pinging sooner sends the old pages
       - name: Tell IndexNow which pages changed
         run: |
           python3 - <<'PY'

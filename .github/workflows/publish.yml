@@ -1,0 +1,58 @@
+name: Test and publish
+# Publishes the site to GitHub Pages only after the tests pass (Pages setting: Source = GitHub Actions).
+#  - runs on every push to main, after the weekly video job saves an update, or from the Actions tab
+#  - tests: the spec and video rules, then the site test in a real browser (phone and desktop, light and dark:
+#    every bike's window and videos, 20 windows opened, 4 real taps, no console errors)
+#  - if a test fails nothing is published, the site stays as it was, and GitHub emails the repo owner
+on:
+  push:
+    branches: [main, ci-check]   # ci-check: trial run, tests only
+  workflow_run:            # the video job's own push can't start this one, so it starts when that job finishes
+    workflows: [Video reviews]
+    types: [completed]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  test:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'workflow_run' && 'main' || github.sha }}   # after the video job: its new commit
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install wordfreq==3.1.1
+      - name: Spec and video rules
+        working-directory: src
+        run: python -m bikespecs.test_rules && python -m videos.test_rules
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install the test browser
+        run: npm install --prefix "$RUNNER_TEMP/pw" playwright@1.63.0 && "$RUNNER_TEMP/pw/node_modules/.bin/playwright" install --with-deps chromium
+      - name: Site test
+        run: |
+          node src/tests/serve.js "$PWD" 8765 &
+          sleep 1
+          NODE_PATH="$RUNNER_TEMP/pw/node_modules" node src/tests/site_test.js http://localhost:8765/
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+  publish:
+    needs: test
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4
