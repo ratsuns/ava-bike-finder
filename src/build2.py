@@ -148,7 +148,7 @@ if CARDS:
         if isinstance(L,dict): continue
         for c in L:
             n={k:v for k,v in o.items() if k not in ('tier','warn')}
-            for k in ('brand','model','cls','spd','tq','wh','range','wt','load','height','motor','price','src','st'): n[k]=c.get(k)
+            for k in ('id','brand','model','cls','spd','tq','wh','range','wt','load','height','motor','price','src','st'): n[k]=c.get(k)
             n['fold']=c.get('fold') or o.get('fold')
             n['range']=rng(n.get('range'))
             if c.get('wtnb'): n['wtnb']=True
@@ -206,8 +206,10 @@ if SITE:
     open(os.path.join(SITE,DN),'w').write(DJ)
     # video reviews: src/videos.csv is the one list; videos/publish.py checks every video against its bike (the build stops
     # on any problem) and writes them to their own small file that the page loads after it's up
-    from videos.publish import write as _write_videos
-    VN=_write_videos(SITE,sorted({(o['brand'],o['model']) for o in out}))
+    from videos import publish as _videos, test_rules as _video_tests
+    _failed=_video_tests.run()
+    if _failed: raise SystemExit('The title rules in videos/rules.py are broken:\n'+'\n'.join(_failed))
+    VN=_videos.write(SITE,[o['id'] for o in out])
     PAGE=open('site_tpl.html').read().replace('__HERO_MP4__',HM).replace('__HERO_JPG__',HJ).replace('__VIDS__',VN)
     PAGE=PAGE.replace('<script>\nconst B=__BIKES__;\nconst S=__SHOPS__;',f'<script src="{DN}"></script>\n<script>\nconst B=window.AVA_B;\nconst S=window.AVA_S;',1)
     assert '__BIKES__' not in PAGE

@@ -1,13 +1,14 @@
-"""Fetch YouTube's current data for every video in videos.csv into verify/video_meta.json.
+"""Fetch YouTube's current data for every video in videos.csv into verify/video_meta.json, and take the videos YouTube
+no longer shows (removed, private, not embeddable, live) out of videos.csv.
 
     YT_API_KEY=... python3 -m videos.refresh        (run from src/; the GitHub Action does this with the key from its secrets)
 
-Costs 1 unit of the free 10,000 a day per 50 videos. Views, title and availability are updated; a video YouTube no
-longer has is marked "gone" so the check names it.
+Costs 1 unit of the free 10,000 a day per 50 videos.
 """
 import json, os, sys, urllib.error, urllib.parse, urllib.request
 
-from .publish import META, load_csv
+from . import files
+from .check import unavailable
 
 API = 'https://www.googleapis.com/youtube/v3/videos'
 
@@ -34,13 +35,18 @@ def fetch(ids, key):
 def main():
     key = os.environ.get('YT_API_KEY')
     if not key: raise SystemExit('YT_API_KEY is not set')
-    ids = sorted({i for v in load_csv().values() for i in v})
+    entries = files.load_csv()
+    ids = sorted({i for v in entries.values() for i in v})
     got = fetch(ids, key)
     if len(got) < 0.9 * len(ids):   # YouTube removing a few videos is normal; most of them at once means a problem on its side
         raise SystemExit(f'YouTube returned only {len(got)} of {len(ids)} videos; keeping the old data')
     meta = {i: got.get(i, {'gone': True}) for i in ids}
-    json.dump(meta, open(META, 'w'), indent=0, ensure_ascii=False, sort_keys=True)
+    files.save_meta(meta)
     print(len(got), 'of', len(ids), 'videos found on YouTube')
+    for bike, vids in entries.items():
+        for i in [i for i in vids if unavailable(meta[i])]:
+            vids.remove(i); print('dropped', bike, i, '-', unavailable(meta[i]))
+    files.save_csv(entries)
 
 
 if __name__ == '__main__':
