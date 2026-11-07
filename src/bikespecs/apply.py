@@ -28,7 +28,7 @@ def apply():
         if policy.discontinued(c['id'], ev.get('status')) and c.get('st') != 'disc':
             changes.append(f"{c['id']} status: {c.get('st')!r} -> 'disc'")
             c['st'] = 'disc'
-    bikedata.save()
+    bikedata.save(cards)
     return changes
 
 
