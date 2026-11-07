@@ -1,6 +1,6 @@
 # Ava Bike Finder
 
-> Every e-bike on Ava Community Energy's e-bike rebate list (363 bikes), with each bike's price, the price after the rebate, specs and the shops that sell it. Made by Chris Beltran in Oakland, CA. Not affiliated with Ava Community Energy. Updated November 6, 2026.
+> Every e-bike on Ava Community Energy's e-bike rebate list (363 bikes), with each bike's price, the price after the rebate, specs and the shops that sell it. Made by Chris Beltran in Oakland, CA. Not affiliated with Ava Community Energy. Updated November 7, 2026.
 
 ## The rebate (source: https://avaenergy.org/bike-electric/, checked October 29, 2026)
 
@@ -37,18 +37,18 @@
 | Aventon Sinch 2.5 | Standard | 2 | $1,799 | $1,399 | 500W rear hub (1,056W peak) | 636 Wh | 55 mi | 68 lb | Discontinued by maker | Sports Basement Berkeley, The Bicycle Garage, The New Wheel, Electric Bike Center, Castro Valley Cyclery |
 | Aventon Soltera 2.5 | Standard | 2 | $1,199 | $799 | 350W rear hub (540W peak) | 345.6 Wh | 46 mi | 46 lb | Available | Sports Basement Berkeley, The Bicycle Garage, The New Wheel, Electric Bike Center, Castro Valley Cyclery |
 | Aventon Soltera 3 ADV | Standard | 1 | $1,499 | $1,099 | 250W rear hub (500W peak), no throttle | 366.8 Wh | 70 mi | 37 lb | Available | Sports Basement Berkeley, The Bicycle Garage, The New Wheel, Electric Bike Center, Castro Valley Cyclery |
-| Benno 46er Performance CX | Cargo | 1 | $4,999 | $4,099 | Bosch Performance Line CX (Gen 4) 250W mid-drive, 85Nm | 500 Wh | 30–80 mi |  | Available | Laurel Cyclery, Alameda Bicycle, The New Wheel, Tip Top Bike Shop, Cyclepath, Castro Valley Cyclery |
-| Benno 46er Performance Speed | Cargo | 3 | $5,299 | $4,399 | Bosch Performance Line Speed (Gen 4) 250W mid-drive, 85Nm | 500 Wh | 25–75 mi |  | Available | Laurel Cyclery, Alameda Bicycle, The New Wheel, Tip Top Bike Shop, Cyclepath, Castro Valley Cyclery |
-| Benno Boost EVO 5 Performance Speed | Cargo | 3 | $5,199 | $4,299 | Bosch Performance Line Speed (Gen 4) 250W mid-drive, 85Nm | 500 Wh | 25–75 mi |  | Available | Laurel Cyclery, Alameda Bicycle, The New Wheel, Tip Top Bike Shop, Cyclepath, Castro Valley Cyclery |
-| Benno Boost EVO 5 Performance Sport | Cargo | 3 | $4,399 | $3,499 | Bosch Performance Line Sport (Gen 3) 250W mid-drive | 400 Wh | 25–70 mi |  | Available | Laurel Cyclery, Alameda Bicycle, The New Wheel, Tip Top Bike Shop, Cyclepath, Castro Valley Cyclery |
-| Benno eJoy 10D Performance | Cargo | 1 | not listed |  | Bosch Performance 250W (GEN 3) | 400 Wh | 25–75 mi |  | Available | Laurel Cyclery, Alameda Bicycle, The New Wheel, Tip Top Bike Shop, Cyclepath, Castro Valley Cyclery |
-| Benno eJoy 10D Performance Sport | Cargo | 3 | $3,749 | $2,849 | Bosch Performance Sport 250W (GEN 3) | 400 Wh | 25–70 mi | 55 lb | Available | Laurel Cyclery, Alameda Bicycle, The New Wheel, Tip Top Bike Shop, Cyclepath, Castro Valley Cyclery |
-| Benno eJoy 5i Performance | Cargo | 1 | $3,749 | $2,849 | Bosch Performance 250W (GEN 3) | 400 Wh | 25–75 mi |  | Available | Laurel Cyclery, Alameda Bicycle, The New Wheel, Tip Top Bike Shop, Cyclepath, Castro Valley Cyclery |
-| Benno RemiDemi 9D EVO 2 Performance | Cargo | 1 | $3,499 | $2,599 | Bosch Performance Line 250W mid-drive, 65Nm | 400 Wh | 25–75 mi |  | Available | Laurel Cyclery, Alameda Bicycle, The New Wheel, Tip Top Bike Shop, Cyclepath, Castro Valley Cyclery |
-| Benno RemiDemi 9D EVO 2 Performance Sport | Cargo | 3 | $3,699 | $2,799 | Bosch Performance Line Sport 250W mid-drive, 65Nm | 400 Wh | 25–70 mi |  | Available | Laurel Cyclery, Alameda Bicycle, The New Wheel, Tip Top Bike Shop, Cyclepath, Castro Valley Cyclery |
-| Benno RemiDemi 9D EVO 4 Performance (Smart System) | Cargo | 1 | not listed |  | Bosch Performance Smart System Gen4/BDU34 (600W max) | 545 Wh | 30–98 mi |  | Available | Laurel Cyclery, Alameda Bicycle, The New Wheel, Tip Top Bike Shop, Cyclepath, Castro Valley Cyclery |
-| Benno RemiDemi XL EVO 1 Performance | Cargo | 1 | not listed |  | Bosch Performance Line (Smart System) 250W mid-drive | 545 Wh | 30–87 mi |  | Available | Laurel Cyclery, Alameda Bicycle, The New Wheel, Tip Top Bike Shop, Cyclepath, Castro Valley Cyclery |
-| Benno RemiDemi XL EVO 1 Performance Sport | Cargo | 3 | $4,599 | $3,699 | Bosch Performance Line Sport (Smart System) 250W mid-drive | 545 Wh | 30–83 mi |  | Available | Laurel Cyclery, Alameda Bicycle, The New Wheel, Tip Top Bike Shop, Cyclepath, Castro Valley Cyclery |
+| Benno 46er Performance CX | Cargo | 1 | $4,999 | $4,099 | Bosch Performance Line CX (Gen 4) 250W mid-drive, 85Nm | 500 Wh | 80 mi |  | Available | Laurel Cyclery, Alameda Bicycle, The New Wheel, Tip Top Bike Shop, Cyclepath, Castro Valley Cyclery |
+| Benno 46er Performance Speed | Cargo | 3 | $5,299 | $4,399 | Bosch Performance Line Speed (Gen 4) 250W mid-drive, 85Nm | 500 Wh | 75 mi |  | Available | Laurel Cyclery, Alameda Bicycle, The New Wheel, Tip Top Bike Shop, Cyclepath, Castro Valley Cyclery |
+| Benno Boost EVO 5 Performance Speed | Cargo | 3 | $5,199 | $4,299 | Bosch Performance Line Speed (Gen 4) 250W mid-drive, 85Nm | 500 Wh | 75 mi |  | Available | Laurel Cyclery, Alameda Bicycle, The New Wheel, Tip Top Bike Shop, Cyclepath, Castro Valley Cyclery |
+| Benno Boost EVO 5 Performance Sport | Cargo | 3 | $4,399 | $3,499 | Bosch Performance Line Sport (Gen 3) 250W mid-drive | 400 Wh | 70 mi |  | Available | Laurel Cyclery, Alameda Bicycle, The New Wheel, Tip Top Bike Shop, Cyclepath, Castro Valley Cyclery |
+| Benno eJoy 10D Performance | Cargo | 1 | not listed |  | Bosch Performance 250W (GEN 3) | 400 Wh | 75 mi |  | Available | Laurel Cyclery, Alameda Bicycle, The New Wheel, Tip Top Bike Shop, Cyclepath, Castro Valley Cyclery |
+| Benno eJoy 10D Performance Sport | Cargo | 3 | $3,749 | $2,849 | Bosch Performance Sport 250W (GEN 3) | 400 Wh | 70 mi | 55 lb | Available | Laurel Cyclery, Alameda Bicycle, The New Wheel, Tip Top Bike Shop, Cyclepath, Castro Valley Cyclery |
+| Benno eJoy 5i Performance | Cargo | 1 | $3,749 | $2,849 | Bosch Performance 250W (GEN 3) | 400 Wh | 75 mi |  | Available | Laurel Cyclery, Alameda Bicycle, The New Wheel, Tip Top Bike Shop, Cyclepath, Castro Valley Cyclery |
+| Benno RemiDemi 9D EVO 2 Performance | Cargo | 1 | $3,499 | $2,599 | Bosch Performance Line 250W mid-drive, 65Nm | 400 Wh | 75 mi |  | Available | Laurel Cyclery, Alameda Bicycle, The New Wheel, Tip Top Bike Shop, Cyclepath, Castro Valley Cyclery |
+| Benno RemiDemi 9D EVO 2 Performance Sport | Cargo | 3 | $3,699 | $2,799 | Bosch Performance Line Sport 250W mid-drive, 65Nm | 400 Wh | 70 mi |  | Available | Laurel Cyclery, Alameda Bicycle, The New Wheel, Tip Top Bike Shop, Cyclepath, Castro Valley Cyclery |
+| Benno RemiDemi 9D EVO 4 Performance (Smart System) | Cargo | 1 | not listed |  | Bosch Performance Smart System Gen4/BDU34 (600W max) | 545 Wh | 98 mi |  | Available | Laurel Cyclery, Alameda Bicycle, The New Wheel, Tip Top Bike Shop, Cyclepath, Castro Valley Cyclery |
+| Benno RemiDemi XL EVO 1 Performance | Cargo | 1 | not listed |  | Bosch Performance Line (Smart System) 250W mid-drive | 545 Wh | 87 mi |  | Available | Laurel Cyclery, Alameda Bicycle, The New Wheel, Tip Top Bike Shop, Cyclepath, Castro Valley Cyclery |
+| Benno RemiDemi XL EVO 1 Performance Sport | Cargo | 3 | $4,599 | $3,699 | Bosch Performance Line Sport (Smart System) 250W mid-drive | 545 Wh | 83 mi |  | Available | Laurel Cyclery, Alameda Bicycle, The New Wheel, Tip Top Bike Shop, Cyclepath, Castro Valley Cyclery |
 | Blix Sol X | Standard | 2 | $1,899 | $1,499 | 750W geared rear hub, 70Nm | 614.4 Wh | 70 mi | 62 lb | Available | Electric Bike Center |
 | Blix Vika X | Standard | 2 | $1,799 | $1,399 | 500W geared rear hub, 55Nm | 614.4 Wh | 70 mi | 61 lb | Available | Electric Bike Center |
 | BMC AMP 257 AL Speed One | Standard | 3 | $4,999 | $4,599 | Bosch Performance Line Speed mid-drive | 625 Wh |  | 48.5 lb | Available | Sports Basement Berkeley |
@@ -58,7 +58,7 @@
 | Bulls Evo TR 1 | Standard | 1 | $5,799 | $5,399 | Bosch Performance Line CX (Smart System) mid-drive, 85Nm | 750 Wh |  | 58.5 lb | Available | Pedego Electric Bikes Livermore |
 | Bulls Iconic Evo 1 | Standard | 1 | $4,499 | $4,099 | Bosch Performance Line CX (Smart System) mid-drive, 85Nm | 750 Wh |  | 58.9 lb | Available | Pedego Electric Bikes Livermore |
 | Bulls Iconic Evo TR | Standard | 3 | $6,299 | $5,899 | Bosch Performance Line Speed (Gen4) mid-drive, 85Nm | 625 Wh |  | 56.8 lb | Available | Pedego Electric Bikes Livermore |
-| Bunch The Original 4+ | Adaptive | 2 | $6,499 | $5,599 | 500W DAPU M155 geared hub, 45Nm | 614 Wh | 20–30 mi | 168 lb | Available | The New Wheel |
+| Bunch The Original 4+ | Adaptive | 2 | $6,499 | $5,599 | 500W DAPU M155 geared hub, 45Nm | 614 Wh | 30 mi | 168 lb | Available | The New Wheel |
 | Cannondale Adventure Neo | Standard | 1 | $2,875 | $2,475 | Bosch Active Line 250W mid-drive, 40Nm | 400 Wh | 65 mi |  | Discontinued by maker | Sports Basement Berkeley, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
 | Cannondale Adventure Neo Allroad | Standard | 2 | $1,675 | $1,275 | Bafang G020 rear hub, 250W | 418 Wh | 47 mi |  | Available | Sports Basement Berkeley, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
 | Cannondale Adventure Neo Allroad EQ | Standard | 2 | $1,875 | $1,475 | Bafang G020 rear hub, 250W | 418 Wh | 47 mi |  | Available | Sports Basement Berkeley, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
@@ -75,7 +75,7 @@
 | Dahon K-Feather | Standard | 1 | $1,299 | $899 | Dahon 24V 250W rear hub | 120 Wh | 25 mi | 26.4 lb | Available | Laurel Cyclery, The Bicycle Garage, Cyclepath |
 | Dahon K-One | Standard | 1 | $1,699 | $1,299 | Dahon 36V 250W rear hub | 313 Wh | 62 mi | 41.8 lb | Available | Laurel Cyclery, The Bicycle Garage, Cyclepath |
 | Dahon Unio E-20 | Standard | 1 | $2,699 | $2,299 | DAHON 36V 200W mid-drive | 345 Wh | 62 mi | 41.2 lb | Available | Laurel Cyclery, The Bicycle Garage, Cyclepath |
-| Ebike2U EB030 | Cargo | 3 | $1,499 | $599 |  |  | 19–50 mi |  | Available | Ebikes2U |
+| Ebike2U EB030 | Cargo | 3 | $1,499 | $599 |  |  | 50 mi |  | Available | Ebikes2U |
 | Electra Cruiser Go! | Standard | 1 | not listed |  | 250W Hyena rear hub | 250 Wh | 40 mi | 44 lb | Discontinued by maker | Robby's Bicycles, Trek Bicycle Dublin, Trek Bicycle Livermore, Trek Bicycle Oakland, Trek Bicycle Castro Valley, Cycle City, The Bicycle Garage, Trek Bicycle Berkeley |
 | Electra Loft Go! | Standard | 1 | not listed |  | Hyena 250W rear hub | 250 Wh | 40 mi | 46.3 lb | Discontinued by maker | Robby's Bicycles, Trek Bicycle Dublin, Trek Bicycle Livermore, Trek Bicycle Oakland, Trek Bicycle Castro Valley, Cycle City, The Bicycle Garage, Trek Bicycle Berkeley |
 | Electra Ponto Go! | Standard | 2 | $2,699.99 | $2,299.99 | 750W rear hub | 625 Wh | 60 mi | 80 lb | Available | Robby's Bicycles, Trek Bicycle Dublin, Trek Bicycle Livermore, Trek Bicycle Oakland, Trek Bicycle Castro Valley, Cycle City, The Bicycle Garage, Trek Bicycle Berkeley |
@@ -86,16 +86,16 @@
 | Electra Townie Go! S | Standard | 3 | $1,799.99 | $1,399.99 | 500W rear hub | 520 Wh | 50 mi | 52.1 lb | Available | Robby's Bicycles, Trek Bicycle Dublin, Trek Bicycle Livermore, Trek Bicycle Oakland, Trek Bicycle Castro Valley, Cycle City, The Bicycle Garage, Trek Bicycle Berkeley |
 | Electra Townie Go! S EQ | Standard | 3 | $1,999.99 | $1,599.99 | 500W rear hub | 520 Wh | 50 mi | 57.3 lb | Available | Robby's Bicycles, Trek Bicycle Dublin, Trek Bicycle Livermore, Trek Bicycle Oakland, Trek Bicycle Castro Valley, Cycle City, The Bicycle Garage, Trek Bicycle Berkeley |
 | Electra Vale Go! | Standard | 1 | not listed |  | Bosch Active Line Plus 250W mid-drive (50 Nm) | 500 Wh |  | 53.9 lb | Discontinued by maker | Robby's Bicycles, Trek Bicycle Dublin, Trek Bicycle Livermore, Trek Bicycle Oakland, Trek Bicycle Castro Valley, Cycle City, The Bicycle Garage, Trek Bicycle Berkeley |
-| Emojo Bison Pro | Adaptive | 2 | $2,999 | $2,099 | 750W Bafang hub | 1344 Wh | 55–80 mi | 123 lb | Available | Pedego Electric Bikes Livermore |
-| Emojo Bison Pro Urban Cruiser | Adaptive | 2 | $3,598 | $2,698 | 750W Bafang hub | 1344 Wh | 55–80 mi | 123 lb | Available | Pedego Electric Bikes Livermore |
-| Emojo Bull | Adaptive | 2 | $1,999 | $1,099 | 500W Bafang hub | 672 Wh | 45–65 mi | 80 lb | Available | Pedego Electric Bikes Livermore |
+| Emojo Bison Pro | Adaptive | 2 | $2,999 | $2,099 | 750W Bafang hub | 1344 Wh | 80 mi | 123 lb | Available | Pedego Electric Bikes Livermore |
+| Emojo Bison Pro Urban Cruiser | Adaptive | 2 | $3,598 | $2,698 | 750W Bafang hub | 1344 Wh | 80 mi | 123 lb | Available | Pedego Electric Bikes Livermore |
+| Emojo Bull | Adaptive | 2 | $1,999 | $1,099 | 500W Bafang hub | 672 Wh | 65 mi | 80 lb | Available | Pedego Electric Bikes Livermore |
 | Emojo Bull Trail | Adaptive | 2 | $2,299 | $1,399 | 750W Emojo rear hub | 672 Wh | 65 mi | 90 lb | Available | Pedego Electric Bikes Livermore |
 | Emojo Bull Trail Urban Cruiser | Adaptive | 2 | $2,798 | $1,898 | 750W Emojo rear hub | 672 Wh | 65 mi | 90 lb | Available | Pedego Electric Bikes Livermore |
-| Emojo Bull Urban Cruiser | Adaptive | 2 | $2,598 | $1,698 | 500W Bafang hub | 672 Wh | 45–65 mi | 80 lb | Available | Pedego Electric Bikes Livermore |
-| Emojo Caddy Pro | Adaptive | 2 | $2,599 | $1,699 | 500W Bafang hub | 720 Wh | 45–65 mi | 90 lb | Available | Pedego Electric Bikes Livermore |
-| Emojo Caddy Pro Urban Cruiser | Adaptive | 2 | $3,198 | $2,298 | 500W Bafang hub | 720 Wh | 45–65 mi | 90 lb | Available | Pedego Electric Bikes Livermore |
-| Eunorau E-FAT-MN | Standard | 3 | not listed |  | 500W rear hub (48V) | 600 Wh | 40–50 mi | 62 lb | Discontinued by maker | Electric Bike Center |
-| Eunorau E-FAT-STEP | Standard | 2 | $1,099 | $699 | 500W brushless rear hub (750W+ peak), 80Nm | 600 Wh | 40–50 mi | 63 lb | Discontinued by maker | Electric Bike Center |
+| Emojo Bull Urban Cruiser | Adaptive | 2 | $2,598 | $1,698 | 500W Bafang hub | 672 Wh | 65 mi | 80 lb | Available | Pedego Electric Bikes Livermore |
+| Emojo Caddy Pro | Adaptive | 2 | $2,599 | $1,699 | 500W Bafang hub | 720 Wh | 65 mi | 90 lb | Available | Pedego Electric Bikes Livermore |
+| Emojo Caddy Pro Urban Cruiser | Adaptive | 2 | $3,198 | $2,298 | 500W Bafang hub | 720 Wh | 65 mi | 90 lb | Available | Pedego Electric Bikes Livermore |
+| Eunorau E-FAT-MN | Standard | 3 | not listed |  | 500W rear hub (48V) | 600 Wh | 50 mi | 62 lb | Discontinued by maker | Electric Bike Center |
+| Eunorau E-FAT-STEP | Standard | 2 | $1,099 | $699 | 500W brushless rear hub (750W+ peak), 80Nm | 600 Wh | 50 mi | 63 lb | Discontinued by maker | Electric Bike Center |
 | Fuji Boulevard EVO | Standard | 2 | not listed |  | Bafang H400B 250W rear hub | 360 Wh | 40 mi | 50.6 lb | Available | Laurel Cyclery, Blue Heron Bikes |
 | Fuji Conductor | Standard | 1 | $1,799.99 | $1,399.99 | Bafang H400B rear hub, 250W rated | 417 Wh |  |  | Available | Laurel Cyclery, Blue Heron Bikes |
 | Fuji E-Crosstown | Standard | 1 | $1,499.99 | $1,099.99 | Bafang H400B rear hub, 250W rated | 468 Wh |  |  | Available | Laurel Cyclery, Blue Heron Bikes |
@@ -117,8 +117,8 @@
 | Gazelle Ultimate T10 | Standard | 1 | $3,499 | $3,099 | Bosch Active Line Plus | 540 Wh | 85 mi | 57.3 lb (no battery) | Available | Blue Heron Bikes, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton, The Bicycle Garage, The New Wheel, Cyclepath |
 | Gazelle Ultimate T11+ | Standard | 3 | $4,499 | $4,099 | Performance Line Sport mid-drive | 540 Wh | 65 mi | 59.5 lb (no battery) | Available | Blue Heron Bikes, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton, The Bicycle Garage, The New Wheel, Cyclepath |
 | Giant Explore E+ | Standard | 3 | not listed |  | Giant SyncDrive Sport2 mid-drive | 625 Wh |  |  | Discontinued by maker | Dublin Cyclery, Alameda Bicycle, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
-| Giant Roam E+ | Standard | 1 | $2,750 | $2,350 | Giant SyncDrive Core mid-drive (Yamaha), 50Nm | 400 Wh | 34–93 mi | 49.5 lb | Discontinued by maker | Dublin Cyclery, Alameda Bicycle, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
-| Giant Stormguard E+ | Standard | 1 | $7,200 | $6,800 | Giant SyncDrive Pro2 mid-drive (Yamaha), 85Nm | 800 Wh | 43–155 mi | 66.8 lb | Discontinued by maker | Dublin Cyclery, Alameda Bicycle, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
+| Giant Roam E+ | Standard | 1 | $2,750 | $2,350 | Giant SyncDrive Core mid-drive (Yamaha), 50Nm | 400 Wh | 93 mi | 49.5 lb | Discontinued by maker | Dublin Cyclery, Alameda Bicycle, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
+| Giant Stormguard E+ | Standard | 1 | $7,200 | $6,800 | Giant SyncDrive Pro2 mid-drive (Yamaha), 85Nm | 800 Wh | 155 mi | 66.8 lb | Discontinued by maker | Dublin Cyclery, Alameda Bicycle, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
 | Golden Cycles Panthro | Standard | 3 | $1,399 | $999 | 750W rear hub | 624 Wh | 45 mi |  | Available | The Bicycle Garage |
 | Hase Gravit | Cargo | 1 | $7,210 | $6,310 | Shimano EP6 Cargo mid-drive, 85 Nm (EU spec); US build lists Shimano STEPS E6100 | 630 Wh |  | 64 lb | Available | The New Wheel |
 | Hase Kettwiesel ONE | Adaptive | 1 | $9,570 | $8,670 | Shimano EP6 Cargo mid-drive, 85Nm | 630 Wh |  | 77 lb | Available | The New Wheel |
@@ -126,16 +126,16 @@
 | Hase Kettwiesel ONE PLUS | Adaptive | 1 | $11,820 | $10,920 | Bosch Performance Line CX (up to 750 W) | 545 Wh |  | 77 lb | Available | The New Wheel |
 | Hase Pino E (Tandem) | Adaptive | 1 | $12,540 | $11,640 | Shimano EP6 Cargo mid-drive, 85Nm | 630 Wh |  | 73 lb | Available | The New Wheel |
 | Hase Pino E Cargo | Adaptive | 1 | $13,020 | $12,120 | Shimano EP6 Cargo mid-drive, 85Nm | 630 Wh |  | 84 lb | Available | The New Wheel |
-| Himiway A7 Commuter eBike (step-through) | Standard | 2 | $1,999 | $1,599 | 48V 750W hub (current config; earlier config 500W/60Nm) | 720 Wh | 40  – 70 mi | 84 lb | Available | Electric Bike Center, The Bicycle Garage |
-| Himiway A7 Pro Commuter eBike | Standard | 2 | $2,499 | $2,099 | Ananda M100 48V 500W mid-drive | 720 Wh | 35–50 mi | 77 lb | Available | Electric Bike Center, The Bicycle Garage |
-| Himiway C3 | Cargo | 2 | $2,199 | $1,299 | 750W hub | 960 Wh | 60–80 mi | 80 lb | Available | Electric Bike Center, The Bicycle Garage |
-| Himiway D5 (Zebra) | Standard | 2 | $2,299 | $1,899 | 750W rear hub | 960 Wh | 60–80 mi | 79 lb | Available | Electric Bike Center, The Bicycle Garage |
-| Himiway D5 2.0 | Standard | 2 | $2,199 | $1,799 | 750W rear hub (1,300W peak) | 720 Wh | 40–70 mi | 92 lb | Available | Electric Bike Center, The Bicycle Garage |
-| Himiway D5 2.0 20" | Standard | 2 | $2,199 | $1,799 | 750W rear hub (1,300W peak) | 720 Wh | 40–70 mi | 80 lb | Available | Electric Bike Center, The Bicycle Garage |
-| Himiway D5 2.0 ST | Standard | 2 | $2,199 | $1,799 | 750W rear hub (1,300W peak) | 720 Wh | 40–70 mi | 92 lb | Available | Electric Bike Center, The Bicycle Garage |
-| Himiway D5 Pro | Standard | 2 | $2,599 | $2,199 | 500W mid-drive (1,300W peak) | 960 Wh | 60–80 mi | 79 lb | Available | Electric Bike Center, The Bicycle Garage |
-| Himiway D5 Pro ST | Standard | 2 | $2,599 | $2,199 | 500W mid-drive (1,300W peak) | 960 Wh | 60–80 mi | 79 lb | Available | Electric Bike Center, The Bicycle Garage |
-| Himiway D5 ST (Zebra ST) | Standard | 2 | $2,299 | $1,899 | 750W rear hub | 960 Wh | 60–80 mi | 79 lb | Available | Electric Bike Center, The Bicycle Garage |
+| Himiway A7 Commuter eBike (step-through) | Standard | 2 | $1,999 | $1,599 | 48V 750W hub (current config; earlier config 500W/60Nm) | 720 Wh | 70 mi | 84 lb | Available | Electric Bike Center, The Bicycle Garage |
+| Himiway A7 Pro Commuter eBike | Standard | 2 | $2,499 | $2,099 | Ananda M100 48V 500W mid-drive | 720 Wh | 50 mi | 77 lb | Available | Electric Bike Center, The Bicycle Garage |
+| Himiway C3 | Cargo | 2 | $2,199 | $1,299 | 750W hub | 960 Wh | 80 mi | 80 lb | Available | Electric Bike Center, The Bicycle Garage |
+| Himiway D5 (Zebra) | Standard | 2 | $2,299 | $1,899 | 750W rear hub | 960 Wh | 80 mi | 79 lb | Available | Electric Bike Center, The Bicycle Garage |
+| Himiway D5 2.0 | Standard | 2 | $2,199 | $1,799 | 750W rear hub (1,300W peak) | 720 Wh | 70 mi | 92 lb | Available | Electric Bike Center, The Bicycle Garage |
+| Himiway D5 2.0 20" | Standard | 2 | $2,199 | $1,799 | 750W rear hub (1,300W peak) | 720 Wh | 70 mi | 80 lb | Available | Electric Bike Center, The Bicycle Garage |
+| Himiway D5 2.0 ST | Standard | 2 | $2,199 | $1,799 | 750W rear hub (1,300W peak) | 720 Wh | 70 mi | 92 lb | Available | Electric Bike Center, The Bicycle Garage |
+| Himiway D5 Pro | Standard | 2 | $2,599 | $2,199 | 500W mid-drive (1,300W peak) | 960 Wh | 80 mi | 79 lb | Available | Electric Bike Center, The Bicycle Garage |
+| Himiway D5 Pro ST | Standard | 2 | $2,599 | $2,199 | 500W mid-drive (1,300W peak) | 960 Wh | 80 mi | 79 lb | Available | Electric Bike Center, The Bicycle Garage |
+| Himiway D5 ST (Zebra ST) | Standard | 2 | $2,299 | $1,899 | 750W rear hub | 960 Wh | 80 mi | 79 lb | Available | Electric Bike Center, The Bicycle Garage |
 | Ice Trikes Full Fat | Adaptive | 1 | $10,059 | $9,159 | 250W Shimano STEPS EP8 | 630 Wh |  | 49.2 lb | Available | Adaptive Cycles |
 | Ice Trikes ICE Adventure (E-Assist) | Adaptive | 1 | $7,837 | $6,937 | Shimano EP8/EP801 or EP6 mid-drive, 250W, 85Nm | 630 Wh |  | 36.2 lb | Available | Adaptive Cycles |
 | Ice Trikes ICE Adventure HD (E-Assist) | Adaptive | 1 | $7,902 | $7,002 | Shimano EP8/EP801 or EP6 mid-drive, 250W, 85Nm | 630 Wh |  | 36.7 lb | Available | Adaptive Cycles |
@@ -160,8 +160,8 @@
 | Letrigo Minivan | Cargo | 2 | $2,999 | $2,099 | Ananda mid-drive 500W (750W peak) | 672 Wh | 45 mi | 71 lb | Available | Electric Bike Center, Castro Valley Cyclery |
 | Letrigo Minivan SE | Cargo | 2 | $1,899 | $999 | 750W rear hub (1,200W peak) | 672 Wh | 40 mi | 71 lb | Available | Electric Bike Center, Castro Valley Cyclery |
 | Letrigo Workhorse | Cargo | 2 | $2,999 | $2,099 | Ananda Cargoline mid-drive 500W (750W peak) | 960 Wh | 60 mi | 78 lb | Available | Electric Bike Center, Castro Valley Cyclery |
-| Liv Rove | Standard | 1 | $2,649.99 | $2,249.99 | Giant SyncDrive Core mid-drive | 400 Wh | 34–93 mi |  | Discontinued by maker | Alameda Bicycle, Dublin Cyclery, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
-| Liv Thrive E+ | Standard | 3 | $4,300 | $3,900 | Giant SyncDrive Pro (powered by YAMAHA) | 500 Wh | 25–90 mi |  | Discontinued by maker | Alameda Bicycle, Dublin Cyclery, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
+| Liv Rove | Standard | 1 | $2,649.99 | $2,249.99 | Giant SyncDrive Core mid-drive | 400 Wh | 93 mi |  | Discontinued by maker | Alameda Bicycle, Dublin Cyclery, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
+| Liv Thrive E+ | Standard | 3 | $4,300 | $3,900 | Giant SyncDrive Pro (powered by YAMAHA) | 500 Wh | 90 mi |  | Discontinued by maker | Alameda Bicycle, Dublin Cyclery, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
 | Macfox M16 | Standard | 2 | $1,099 | $699 | 500W hub (750W peak), single speed, thumb throttle | 499 Wh | 25 mi | 65.7 lb | Available | Electric Bike Center, Pedego Electric Bikes Livermore, The Bicycle Garage |
 | Macfox M20X | Standard | 2 | $1,399 | $999 | 500W hub (750W peak), twist throttle, 6-speed | 499 Wh | 40 mi | 65 lb | Discontinued by maker | Electric Bike Center, Pedego Electric Bikes Livermore, The Bicycle Garage |
 | Macfox X19 | Standard | 2 | not listed |  |  |  |  |  | Discontinued by maker | Electric Bike Center, Pedego Electric Bikes Livermore, The Bicycle Garage |
@@ -169,10 +169,10 @@
 | Macfox X2 | Standard | 2 | $2,199 | $1,799 | 750W hub (1000W peak), full suspension | 960 Wh | 40 mi | 72 lb | Discontinued by maker | Electric Bike Center, Pedego Electric Bikes Livermore, The Bicycle Garage |
 | Macfox X7 | Standard | 2 | $1,599 | $1,199 | 500W hub (750W peak), single speed | 624 Wh | 35 mi | 87 lb | Available | Electric Bike Center, Pedego Electric Bikes Livermore, The Bicycle Garage |
 | Marin Fairfax E (and ST) | Standard | 2 | $1,799 | $1,399 | Bafang 250W rear hub | 340 Wh | 62 mi |  | Available | Blue Heron Bikes, Laurel Cyclery, Stay True Cycles, Tip Top Bike Shop, The Bicycle Garage |
-| Marin Larkspur E | Standard | 1 | $3,699 | $3,299 | Bosch Active Line Plus 250W mid-drive | 545 Wh | 25–93 mi |  | Available | Blue Heron Bikes, Laurel Cyclery, Stay True Cycles, Tip Top Bike Shop, The Bicycle Garage |
-| Marin Sausalito E1 | Standard | 1 | $3,499 | $3,099 | Bosch Active Line Plus, 250W | 545 Wh | 25–93 mi |  | Available | Blue Heron Bikes, Laurel Cyclery, Stay True Cycles, Tip Top Bike Shop, The Bicycle Garage |
-| Marin Sausalito E2 | Standard | 3 | $3,899 | $3,499 | Bosch Performance Line Sport, 250W | 545 Wh | 25–93 mi |  | Available | Blue Heron Bikes, Laurel Cyclery, Stay True Cycles, Tip Top Bike Shop, The Bicycle Garage |
-| Marin Stinson E (and ST) | Standard | 2 | $1,799 | $1,399 | Bafang 250W rear hub | 340 Wh | 15–62 mi |  | Available | Blue Heron Bikes, Laurel Cyclery, Stay True Cycles, Tip Top Bike Shop, The Bicycle Garage |
+| Marin Larkspur E | Standard | 1 | $3,699 | $3,299 | Bosch Active Line Plus 250W mid-drive | 545 Wh | 93 mi |  | Available | Blue Heron Bikes, Laurel Cyclery, Stay True Cycles, Tip Top Bike Shop, The Bicycle Garage |
+| Marin Sausalito E1 | Standard | 1 | $3,499 | $3,099 | Bosch Active Line Plus, 250W | 545 Wh | 93 mi |  | Available | Blue Heron Bikes, Laurel Cyclery, Stay True Cycles, Tip Top Bike Shop, The Bicycle Garage |
+| Marin Sausalito E2 | Standard | 3 | $3,899 | $3,499 | Bosch Performance Line Sport, 250W | 545 Wh | 93 mi |  | Available | Blue Heron Bikes, Laurel Cyclery, Stay True Cycles, Tip Top Bike Shop, The Bicycle Garage |
+| Marin Stinson E (and ST) | Standard | 2 | $1,799 | $1,399 | Bafang 250W rear hub | 340 Wh | 62 mi |  | Available | Blue Heron Bikes, Laurel Cyclery, Stay True Cycles, Tip Top Bike Shop, The Bicycle Garage |
 | Mobility Access Duet (E-assist) | Adaptive | 1 | not listed |  | Rear hub motor (Heinzmann 250W per Mobility & Access page) | 750 Wh |  | 90.4 lb | Available | Adaptive Cycles |
 | Mobility Access Orion Twin (E-assist) | Adaptive | 1 | not listed |  | 250W front hub (direct drive) | 396 Wh |  |  | Available | Adaptive Cycles |
 | MOD Berlin Step-Thru 3 | Standard | 2 | $1,999 | $1,599 | MOD DRIVE 750W geared rear hub | 615 Wh | 45 mi | 66 lb | Available | Pedego Electric Bikes Livermore |
@@ -182,13 +182,13 @@
 | MOD Easy SideCar | Cargo | 3 | $3,899 | $2,999 | MOD Drive 750W geared rear hub | 720 Wh | 50 mi | 73 lb | Available | Pedego Electric Bikes Livermore |
 | MOD Groove Step-Thru 3 | Standard | 2 | $1,999 | $1,599 | MOD Drive 750W geared rear hub | 720 Wh | 50 mi | 75 lb | Available | Pedego Electric Bikes Livermore |
 | MOD MOD Black 3 | Standard | 2 | $2,399 | $1,999 | MOD Drive 750W geared rear hub | 720 Wh | 50 mi | 74.5 lb | Available | Pedego Electric Bikes Livermore |
-| Mokwheel Basalt | Standard | 2 | $1,799.99 | $1,399.99 | 750W hub (1,100W peak) | 940 Wh | 60–80 mi | 80 lb | Available | The Bicycle Garage |
-| Mokwheel Scoria | Standard | 3 | $1,999.99 | $1,599.99 | 750W hub (1,100W peak) | 940 Wh | 60–80 mi | 82 lb | Available | The Bicycle Garage |
-| Momentum Cito E+ | Cargo | 3 | $3,200 | $2,300 | SyncDrive Move S 750W rear hub, 80 Nm | 780 Wh | 30–75 mi | 86 lb | Available | Dublin Cyclery, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
+| Mokwheel Basalt | Standard | 2 | $1,799.99 | $1,399.99 | 750W hub (1,100W peak) | 940 Wh | 80 mi | 80 lb | Available | The Bicycle Garage |
+| Mokwheel Scoria | Standard | 3 | $1,999.99 | $1,599.99 | 750W hub (1,100W peak) | 940 Wh | 80 mi | 82 lb | Available | The Bicycle Garage |
+| Momentum Cito E+ | Cargo | 3 | $3,200 | $2,300 | SyncDrive Move S 750W rear hub, 80 Nm | 780 Wh | 75 mi | 86 lb | Available | Dublin Cyclery, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
 | Momentum Lafree E+ | Standard | 1 | $2,400 | $2,000 | Yamaha-built Giant SyncDrive Life, 250W, 60Nm | 400 Wh | 65 mi | 53 lb | Available | Dublin Cyclery, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
-| Momentum Pakyak E+ | Cargo | 3 | $5,600 | $4,700 | SyncDrive Pro (powered by Yamaha) 250W mid-drive, 80 Nm | 500 Wh | 35–60 mi | 79 lb | Available | Dublin Cyclery, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
+| Momentum Pakyak E+ | Cargo | 3 | $5,600 | $4,700 | SyncDrive Pro (powered by Yamaha) 250W mid-drive, 80 Nm | 500 Wh | 60 mi | 79 lb | Available | Dublin Cyclery, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
 | Momentum Trancend E+ | Cargo | 3 | $2,340 | $1,440 | Giant SyncDrive Life, 250W mid-drive | 500 Wh |  |  | Discontinued by maker | Dublin Cyclery, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
-| Momentum Vida E+ (2026) | Standard | 3 | $1,600 | $1,200 | SyncDrive Move S 500W 48V rear hub | 688 Wh | 40–55 mi | 61.7 lb | Available | Dublin Cyclery, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
+| Momentum Vida E+ (2026) | Standard | 3 | $1,600 | $1,200 | SyncDrive Move S 500W 48V rear hub | 688 Wh | 55 mi | 61.7 lb | Available | Dublin Cyclery, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
 | Momentum Vida E+ EX | Standard | 3 | $1,985 | $1,585 | SyncDrive Move S 500W 48V rear hub | 688 Wh |  | 66 lb | Available | Dublin Cyclery, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
 | Navee KG05 | Standard | 2 | $1,699.99 | $1,299.99 | 500W rear hub (1,000W peak) | 696 Wh | 37 mi | 104.7 lb | Available | Electric Bike Center |
 | Omnium Cargo V3 | Cargo | 1 | not listed |  | Shimano STEPS EP801 CRG mid-drive | 504 Wh | 62 mi | 61.7 lb | No Ava shop sells it now |  |
@@ -218,11 +218,11 @@
 | Pedego Latch 2 | Standard | 2 | $1,695 | $1,295 | 750W rear hub (48V), 90Nm | 835 Wh | 84 mi | 75 lb | Available | Pedego Electric Bikes Livermore |
 | Pedego Ridge Rider | Standard | 2 | $2,195 | $1,795 | 750W | 835 Wh | 90 mi | 71.1 lb | Available | Pedego Electric Bikes Livermore |
 | Priority E-Classic | Standard | 1 | $1,699 | $1,299 | 250W front hub |  |  |  | Discontinued by maker | Electric Bike Center |
-| Priority E-Coast | Standard | 2 | $1,999 | $1,599 | 500W rear hub | 576 Wh | 20–60 mi | 56 lb | Available | Electric Bike Center |
-| Qualisports Dolphin | Standard | 2 | $1,499.0 | $1,099.0 | 500W geared hub (750W peak), 48V | 504 Wh | 45–70 mi | 51.5 lb | Available | Electric Bike Center |
-| Radio Flyer Flyer Loop | Cargo | 2 | $1,999 | $1,099 | 750W rear hub |  | 30–50 mi | 77 lb | Available | Electric Bike Center |
-| Radio Flyer Flyer Via | Cargo | 2 | $1,599 | $699 | 500W rear hub |  | 30–50 mi | 69 lb | Available | Electric Bike Center |
-| Radio Flyer Flyer Via Pro | Cargo | 2 | $1,699 | $799 | 750W rear hub | 687 Wh | 30–50 mi | 73 lb | Available | Electric Bike Center |
+| Priority E-Coast | Standard | 2 | $1,999 | $1,599 | 500W rear hub | 576 Wh | 60 mi | 56 lb | Available | Electric Bike Center |
+| Qualisports Dolphin | Standard | 2 | $1,499.0 | $1,099.0 | 500W geared hub (750W peak), 48V | 504 Wh | 70 mi | 51.5 lb | Available | Electric Bike Center |
+| Radio Flyer Flyer Loop | Cargo | 2 | $1,999 | $1,099 | 750W rear hub |  | 50 mi | 77 lb | Available | Electric Bike Center |
+| Radio Flyer Flyer Via | Cargo | 2 | $1,599 | $699 | 500W rear hub |  | 50 mi | 69 lb | Available | Electric Bike Center |
+| Radio Flyer Flyer Via Pro | Cargo | 2 | $1,699 | $799 | 750W rear hub | 687 Wh | 50 mi | 73 lb | Available | Electric Bike Center |
 | Retrospec Abbot Rev 2 (and Step Through) | Standard | 2 | $1,599.99 | $1,199.99 | 500W rear hub (48V) | 500 Wh | 75 mi | 71 lb | Available | Robby's Bicycles, Dublin Cyclery |
 | Retrospec Beaumont Rev 2 City | Standard | 2 | $999.99 | $599.99 | 350W planetary geared rear hub (36V) | 360 Wh | 42 mi | 57.5 lb | Available | Robby's Bicycles, Dublin Cyclery |
 | Retrospec Boca Rev 2 Electric Tricycle | Adaptive | 2 | $1,699.99 | $799.99 | 500W rear planetary geared hub | 500 Wh | 75 mi | 109 lb | Available | Robby's Bicycles, Dublin Cyclery |
@@ -269,11 +269,11 @@
 | Serfas eDART 350W | Standard | 2 | $1,399.99 | $999.99 | 36V 350W hub | 468 Wh | 30 mi |  | Available | Blue Heron Bikes, Laurel Cyclery, Robby's Bicycles, Sports Basement Berkeley, Tip Top Bike Shop, Tracy Cyclery, Cyclepath |
 | Serfas eDART 500W | Standard | 3 | $2,199.99 | $1,799.9899999999998 | 48V 500W hub | 672 Wh | 30 mi |  | Available | Blue Heron Bikes, Laurel Cyclery, Robby's Bicycles, Sports Basement Berkeley, Tip Top Bike Shop, Tracy Cyclery, Cyclepath |
 | Serfas eDART 750W | Standard | 3 | $2,549.99 | $2,149.99 | 48V 750W hub (1,000W peak) | 634 Wh | 30 mi | 75 lb | Available | Blue Heron Bikes, Laurel Cyclery, Robby's Bicycles, Sports Basement Berkeley, Tip Top Bike Shop, Tracy Cyclery, Cyclepath |
-| Serfas Quest | Cargo | 2 | $2,499.99 | $1,599.9899999999998 | Bafang RMG062 48V 750W rear hub | 720 Wh | 35–40 mi |  | Discontinued by maker | Blue Heron Bikes, Laurel Cyclery, Robby's Bicycles, Sports Basement Berkeley, Tip Top Bike Shop, Tracy Cyclery, Cyclepath |
-| Sixthreezero EVRYjourney 250W (Men's) | Adaptive | 2 | $1,649.99 | $749.99 | 250W rear hub | 250 Wh | 15–30 mi | 62.4 lb | Available | Pedego Electric Bikes Livermore |
+| Serfas Quest | Cargo | 2 | $2,499.99 | $1,599.9899999999998 | Bafang RMG062 48V 750W rear hub | 720 Wh | 40 mi |  | Discontinued by maker | Blue Heron Bikes, Laurel Cyclery, Robby's Bicycles, Sports Basement Berkeley, Tip Top Bike Shop, Tracy Cyclery, Cyclepath |
+| Sixthreezero EVRYjourney 250W (Men's) | Adaptive | 2 | $1,649.99 | $749.99 | 250W rear hub | 250 Wh | 30 mi | 62.4 lb | Available | Pedego Electric Bikes Livermore |
 | Sixthreezero EVRYjourney Electric Tricycle Rickshaw 750W | Adaptive | 2 | $4,999.99 | $4,099.99 | Bafang 48V 750W front hub | 1008 Wh | 50 mi | 158 lb | Available | Pedego Electric Bikes Livermore |
-| Sixthreezero EVRYjourney NEW 500W (Men's Sport Hybrid) | Adaptive | 2 | $1,999.99 | $1,099.99 | 500W rear hub, 48V | 500 Wh | 20–40 mi | 62.4 lb | Available | Pedego Electric Bikes Livermore |
-| Sixthreezero EVRYjourney NEW 500W (Women's Touring Hybrid) | Adaptive | 2 | $1,999.99 | $1,099.99 | 500W rear hub, 48V | 500 Wh | 20–40 mi | 64.8 lb | Available | Pedego Electric Bikes Livermore |
+| Sixthreezero EVRYjourney NEW 500W (Men's Sport Hybrid) | Adaptive | 2 | $1,999.99 | $1,099.99 | 500W rear hub, 48V | 500 Wh | 40 mi | 62.4 lb | Available | Pedego Electric Bikes Livermore |
+| Sixthreezero EVRYjourney NEW 500W (Women's Touring Hybrid) | Adaptive | 2 | $1,999.99 | $1,099.99 | 500W rear hub, 48V | 500 Wh | 40 mi | 64.8 lb | Available | Pedego Electric Bikes Livermore |
 | Specialized Globe Haul LT | Cargo | 3 | $3,799.99 | $2,899.99 | 700W rear hub | 772 Wh | 60 mi | 88.2 lb | Available | Alameda Bicycle, Rhythm Bikes, Stay True Cycles, The Bicycle Garage, The New Wheel, Uptown BART Bike Station |
 | Specialized Globe Haul ST | Cargo | 3 | $2,699.99 | $1,799.9899999999998 | 700W rear hub | 772 Wh | 60 mi | 77.2 lb | Available | Alameda Bicycle, Rhythm Bikes, Stay True Cycles, The Bicycle Garage, The New Wheel, Uptown BART Bike Station |
 | Specialized Turbo Como 3.0 | Standard | 1 | $3,249.99 | $2,849.99 | Specialized 2.0E, 250W | 530 Wh | 68 mi |  | Available | Alameda Bicycle, Rhythm Bikes, Stay True Cycles, The Bicycle Garage, The New Wheel, Uptown BART Bike Station |
@@ -285,31 +285,31 @@
 | Specialized Turbo Vado 2 (5.0 IGH) | Standard | 3 | $4,749.99 | $4,349.99 | Specialized 2.2, 90Nm, 250W nominal | 710 Wh | 62 mi | 59.7 lb | Available | Alameda Bicycle, Rhythm Bikes, Stay True Cycles, The Bicycle Garage, The New Wheel, Uptown BART Bike Station |
 | Specialized Turbo Vado 3 Evo | Standard | 3 | $4,499.99 | $4,099.99 | Specialized 3.1, 105Nm, 810W | 840 Wh | 93 mi | 63.3 lb | Available | Alameda Bicycle, Rhythm Bikes, Stay True Cycles, The Bicycle Garage, The New Wheel, Uptown BART Bike Station |
 | Specialized Turbo Vado 3 X | Standard | 3 | $5,499.99 | $5,099.99 | Specialized 3.1, 105Nm, 810W | 840 Wh | 93 mi | 68.1 lb | Available | Alameda Bicycle, Rhythm Bikes, Stay True Cycles, The Bicycle Garage, The New Wheel, Uptown BART Bike Station |
-| Sunseeker E-Delta B1 SX Electric Delta | Adaptive | 2 | $3,999.99 | $3,099.99 | 350W Bafang B1 | 504 Wh | 45–50 mi | 79.5 lb | Available | Adaptive Cycles |
-| Sunseeker E-Eco Tad B1 SX Electric Tadpole | Adaptive | 2 | $3,849.99 | $2,949.99 | 350W Bafang B1 | 504 Wh | 42–48 mi | 68 lb | Available | Adaptive Cycles |
-| Surly Big Easy | Cargo | 1 | $5,499 | $4,599 | Bosch Performance Line Cargo mid-drive (600W max assist) | 725 Wh | 15–50 mi | 74 lb | Available | Alameda Bicycle, Cyclepath |
-| Surly Skid Loader | Cargo | 1 | $4,599 | $3,699 | Bosch Performance Line Cargo mid-drive (600W max assist) | 545 Wh | 15–50 mi | 60.9 lb | Available | Alameda Bicycle, Cyclepath |
-| Tern GSD P00 | Cargo | 1 | $5,999 | $5,099 | Bosch Cargo Line mid-drive, 85Nm | 500 Wh | 25–63 mi | 78.8 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
-| Tern GSD P10 | Cargo | 1 | $4,999 | $4,099 | Bosch Cargo Line mid-drive, 85Nm | 500 Wh | 25–63 mi | 76.4 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
-| Tern GSD R14 | Cargo | 1 | $10,999 | $10,099 | 250W Bosch Cargo Line (85 Nm) | 800 Wh | 42–89 mi | 85.5 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
-| Tern GSD S10 | Cargo | 1 | $7,999 | $7,099 | Bosch Cargo Line mid-drive, 85Nm | 545 Wh | 28–61 mi | 82.3 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
-| Tern HSD P00 (Gen 3) | Cargo | 1 | $5,699 | $4,799 | Bosch Performance Line (BDU34) mid-drive, 75Nm | 545 Wh | 35–67 mi | 63.7 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
-| Tern HSD P10e Sport (Gen 3) | Cargo | 3 | $5,499 | $4,599 | Bosch Performance Line Sport (BDU34) mid-drive, 90Nm | 545 Wh | 35–67 mi | 62.6 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
-| Tern HSD P5i (Gen 3) | Cargo | 1 | $4,999 | $4,099 | Bosch Performance Line (BDU34) mid-drive, 75Nm | 545 Wh | 35–67 mi | 61.9 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
-| Tern HSD S9i Sport (Gen 3) | Cargo | 3 | $7,499 | $6,599 | Bosch Performance Line Sport (BDU34) mid-drive, 90Nm | 545 Wh | 35–64 mi | 63.9 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
-| Tern NBD P8i | Standard | 1 | $2,999 | $2,599 | Bosch Active Line Plus mid-drive, 50Nm | 400 Wh | 34–67 mi | 52.2 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
-| Tern NBD S5i | Standard | 1 | $3,899 | $3,499 | Bosch Performance Line mid-drive, 65Nm | 500 Wh | 32–74 mi | 51.6 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
-| Tern Orox R14 (27.5") | Cargo | 1 | $6,999 | $6,099 | Bosch Performance Line CX mid-drive, Rohloff E-14 | 800 Wh | 58–100 mi | 83.1 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
-| Tern Orox S12 (27.5") | Cargo | 1 | $4,999 | $4,099 | Bosch Performance Line CX mid-drive | 725 Wh | 52–91 mi | 81.8 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
-| Tern Quick Haul D8 | Cargo | 1 | $2,999 | $2,099 | Bosch Active Line Plus mid-drive | 400 Wh | 33.6–65.2 mi | 50.3 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
-| Tern Quick Haul Long | Cargo | 1 | $3,499 | $2,599 | Bosch Cargo Line mid-drive | 500 Wh | 26–53 mi | 64.6 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
-| Tern Quick Haul Long D9 | Cargo | 1 | $3,499 | $2,599 | Bosch Cargo Line mid-drive | 500 Wh | 26–53 mi | 64.6 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
-| Tern Quick Haul P9 Sport | Cargo | 3 | $3,399 | $2,499 | Bosch Performance Line Sport mid-drive | 400 Wh | 31.7–62.1 mi | 50.7 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
-| Tern Vektron P10 | Standard | 1 | $3,699 | $3,299 | Bosch BES2 Performance Line mid-drive | 400 Wh | 28–70 mi | 49.6 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
-| Tern Vektron P5i | Standard | 1 | $4,099 | $3,699 | Bosch BES2 Performance Line mid-drive | 400 Wh | 28–70 mi | 52.7 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
-| Tern Vektron Q9 | Standard | 1 | $2,999 | $2,599 | Bosch Active Line Plus mid-drive | 400 Wh | 35–70 mi | 48.3 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
+| Sunseeker E-Delta B1 SX Electric Delta | Adaptive | 2 | $3,999.99 | $3,099.99 | 350W Bafang B1 | 504 Wh | 50 mi | 79.5 lb | Available | Adaptive Cycles |
+| Sunseeker E-Eco Tad B1 SX Electric Tadpole | Adaptive | 2 | $3,849.99 | $2,949.99 | 350W Bafang B1 | 504 Wh | 48 mi | 68 lb | Available | Adaptive Cycles |
+| Surly Big Easy | Cargo | 1 | $5,499 | $4,599 | Bosch Performance Line Cargo mid-drive (600W max assist) | 725 Wh | 50 mi | 74 lb | Available | Alameda Bicycle, Cyclepath |
+| Surly Skid Loader | Cargo | 1 | $4,599 | $3,699 | Bosch Performance Line Cargo mid-drive (600W max assist) | 545 Wh | 50 mi | 60.9 lb | Available | Alameda Bicycle, Cyclepath |
+| Tern GSD P00 | Cargo | 1 | $5,999 | $5,099 | Bosch Cargo Line mid-drive, 85Nm | 500 Wh | 63 mi | 78.8 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
+| Tern GSD P10 | Cargo | 1 | $4,999 | $4,099 | Bosch Cargo Line mid-drive, 85Nm | 500 Wh | 63 mi | 76.4 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
+| Tern GSD R14 | Cargo | 1 | $10,999 | $10,099 | 250W Bosch Cargo Line (85 Nm) | 800 Wh | 89 mi | 85.5 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
+| Tern GSD S10 | Cargo | 1 | $7,999 | $7,099 | Bosch Cargo Line mid-drive, 85Nm | 545 Wh | 61 mi | 82.3 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
+| Tern HSD P00 (Gen 3) | Cargo | 1 | $5,699 | $4,799 | Bosch Performance Line (BDU34) mid-drive, 75Nm | 545 Wh | 67 mi | 63.7 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
+| Tern HSD P10e Sport (Gen 3) | Cargo | 3 | $5,499 | $4,599 | Bosch Performance Line Sport (BDU34) mid-drive, 90Nm | 545 Wh | 67 mi | 62.6 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
+| Tern HSD P5i (Gen 3) | Cargo | 1 | $4,999 | $4,099 | Bosch Performance Line (BDU34) mid-drive, 75Nm | 545 Wh | 67 mi | 61.9 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
+| Tern HSD S9i Sport (Gen 3) | Cargo | 3 | $7,499 | $6,599 | Bosch Performance Line Sport (BDU34) mid-drive, 90Nm | 545 Wh | 64 mi | 63.9 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
+| Tern NBD P8i | Standard | 1 | $2,999 | $2,599 | Bosch Active Line Plus mid-drive, 50Nm | 400 Wh | 67 mi | 52.2 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
+| Tern NBD S5i | Standard | 1 | $3,899 | $3,499 | Bosch Performance Line mid-drive, 65Nm | 500 Wh | 74 mi | 51.6 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
+| Tern Orox R14 (27.5") | Cargo | 1 | $6,999 | $6,099 | Bosch Performance Line CX mid-drive, Rohloff E-14 | 800 Wh | 100 mi | 83.1 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
+| Tern Orox S12 (27.5") | Cargo | 1 | $4,999 | $4,099 | Bosch Performance Line CX mid-drive | 725 Wh | 91 mi | 81.8 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
+| Tern Quick Haul D8 | Cargo | 1 | $2,999 | $2,099 | Bosch Active Line Plus mid-drive | 400 Wh | 65.2 mi | 50.3 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
+| Tern Quick Haul Long | Cargo | 1 | $3,499 | $2,599 | Bosch Cargo Line mid-drive | 500 Wh | 53 mi | 64.6 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
+| Tern Quick Haul Long D9 | Cargo | 1 | $3,499 | $2,599 | Bosch Cargo Line mid-drive | 500 Wh | 53 mi | 64.6 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
+| Tern Quick Haul P9 Sport | Cargo | 3 | $3,399 | $2,499 | Bosch Performance Line Sport mid-drive | 400 Wh | 62.1 mi | 50.7 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
+| Tern Vektron P10 | Standard | 1 | $3,699 | $3,299 | Bosch BES2 Performance Line mid-drive | 400 Wh | 70 mi | 49.6 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
+| Tern Vektron P5i | Standard | 1 | $4,099 | $3,699 | Bosch BES2 Performance Line mid-drive | 400 Wh | 70 mi | 52.7 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
+| Tern Vektron Q9 | Standard | 1 | $2,999 | $2,599 | Bosch Active Line Plus mid-drive | 400 Wh | 70 mi | 48.3 lb | Available | Alameda Bicycle, Blue Heron Bikes, The New Wheel, The Bicycle Garage |
 | Top End All E-handcycle models | Adaptive | 1 | $12,199 | $11,299 | Shimano e-assist |  | 30 mi | 60 lb | Available | Adaptive Cycles |
-| Trek Allant+ | Standard | 3 | not listed |  | Bosch Performance Line Speed mid-drive, 75Nm (250W) | 500 Wh | 15–100 mi |  | Discontinued by maker | Cycle City, Rhythm Bikes, Robby's Bicycles, The Bicycle Garage, Trek Bicycle Dublin, Trek Bicycle Livermore, Trek Bicycle Oakland, Trek Bicycle Castro Valley, Trek Bicycle Berkeley |
+| Trek Allant+ | Standard | 3 | not listed |  | Bosch Performance Line Speed mid-drive, 75Nm (250W) | 500 Wh | 100 mi |  | Discontinued by maker | Cycle City, Rhythm Bikes, Robby's Bicycles, The Bicycle Garage, Trek Bicycle Dublin, Trek Bicycle Livermore, Trek Bicycle Oakland, Trek Bicycle Castro Valley, Trek Bicycle Berkeley |
 | Trek Borrego+ | Standard | 2 | $2,499.99 | $2,099.99 | Hyena rear hub, 750W | 720 Wh | 70 mi | 87 lb | Available | Cycle City, Rhythm Bikes, Robby's Bicycles, The Bicycle Garage, Trek Bicycle Dublin, Trek Bicycle Livermore, Trek Bicycle Oakland, Trek Bicycle Castro Valley, Trek Bicycle Berkeley |
 | Trek Borrego+ S | Standard | 3 | $2,499.99 | $2,099.99 | Hyena rear hub, 750W | 720 Wh | 70 mi | 87 lb | Available | Cycle City, Rhythm Bikes, Robby's Bicycles, The Bicycle Garage, Trek Bicycle Dublin, Trek Bicycle Livermore, Trek Bicycle Oakland, Trek Bicycle Castro Valley, Trek Bicycle Berkeley |
 | Trek Charter+ 4S | Standard | 3 | $3,999.99 | $3,599.99 | Bosch Performance Line Sport, 750W | 540 Wh | 45 mi | 67.58 lb | Available | Cycle City, Rhythm Bikes, Robby's Bicycles, The Bicycle Garage, Trek Bicycle Dublin, Trek Bicycle Livermore, Trek Bicycle Oakland, Trek Bicycle Castro Valley, Trek Bicycle Berkeley |
@@ -343,7 +343,7 @@
 | Troxus Trax Sport | Standard | 2 | $1,699 | $1,299 | 350W Jiabo rear hub (500W+ peak), 36V | 360 Wh | 45 mi | 47 lb | Available | Sports Basement Berkeley, Cyclepath, Pedego Electric Bikes Livermore |
 | Troxus Trax SUV | Standard | 3 | $2,599 | $2,199 | 750W Bafang rear hub | 720 Wh | 70 mi | 75 lb | Available | Sports Basement Berkeley, Cyclepath, Pedego Electric Bikes Livermore |
 | Troxus Trax Whim iQ | Standard | 2 | $1,599 | $1,199 | 500W ShengYi rear hub | 672 Wh | 70 mi | 57 lb | Available | Sports Basement Berkeley, Cyclepath, Pedego Electric Bikes Livermore |
-| Urban Arrow Breeze | Cargo | 1 | $6,999 | $6,099 | Bosch Cargo Line (85Nm) | 540 Wh | 25–53 mi | 77.2 lb | Available | The New Wheel, Cyclepath, The Bicycle Garage, Blue Heron Bikes |
+| Urban Arrow Breeze | Cargo | 1 | $6,999 | $6,099 | Bosch Cargo Line (85Nm) | 540 Wh | 53 mi | 77.2 lb | Available | The New Wheel, Cyclepath, The Bicycle Garage, Blue Heron Bikes |
 | Urban Arrow Family | Cargo | 1 | $6,999 | $6,099 | Bosch Performance Line (75Nm), Smart System | 540 Wh | 30 mi | 110 lb | Available | The New Wheel, Cyclepath, The Bicycle Garage, Blue Heron Bikes |
 | Urban Arrow FamilyNext Pro | Cargo | 1 | $8,999 | $8,099 | Bosch Cargo Line Gen 4, 250W | 540 Wh |  |  | Available | The New Wheel, Cyclepath, The Bicycle Garage, Blue Heron Bikes |
 | Urban Arrow Shorty | Cargo | 1 | not listed |  | Bosch Performance Line | 500 Wh | 31 mi | 101.4 lb | Available | The New Wheel, Cyclepath, The Bicycle Garage, Blue Heron Bikes |
@@ -354,25 +354,25 @@
 | Urtopia Carbon Fusion GT | Standard | 2 | $2,799 | $2,399 | Dual 350W hubs front+rear (900W peak combined), 36Nm each | 529 Wh | 68 mi | 58 lb | Available | Pedego Electric Bikes Livermore, The Bicycle Garage |
 | Urtopia Carbon Joy | Standard | 2 | $2,399 | $1,999 | 500W rear hub (750W peak), 50Nm | 529 Wh | 65 mi | 56.8 lb | Available | Pedego Electric Bikes Livermore, The Bicycle Garage |
 | Urtopia Carbon Joy Ultra | Standard | 2 | $2,499 | $2,099 | 500W (750W peak), 60Nm | 529 Wh | 65 mi | 50 lb | Available | Pedego Electric Bikes Livermore, The Bicycle Garage |
-| Velotric Breeze 1 | Standard | 2 | $1,799 | $1,399 | 750W rear hub (900W peak) | 627 Wh | 55–70 mi | 48 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
-| Velotric Discover 1 Plus | Standard | 3 | $1,699 | $1,299 | 48V 500W hub (900W peak) | 691 Wh | 58–65 mi | 60 lb | Discontinued by maker | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
+| Velotric Breeze 1 | Standard | 2 | $1,799 | $1,399 | 750W rear hub (900W peak) | 627 Wh | 70 mi | 48 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
+| Velotric Discover 1 Plus | Standard | 3 | $1,699 | $1,299 | 48V 500W hub (900W peak) | 691 Wh | 65 mi | 60 lb | Discontinued by maker | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
 | Velotric Discover 2 | Standard | 2 | $1,499.0 | $1,099.0 | 48V 750W rear hub (feature copy says 1,100W peak; spec table lists none) | 705.6 Wh | 75 mi | 63 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
 | Velotric Discover 3 | Standard | 2 | $1,999.0 | $1,599.0 | 750W rear hub (1,100W peak) | 730 Wh | 80 mi | 61 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
-| Velotric Discover M | Standard | 2 | $2,499 | $2,099 | VeloCore 48V 500W mid-drive (960W peak) | 802 Wh | 70–95 mi | 60 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
+| Velotric Discover M | Standard | 2 | $2,499 | $2,099 | VeloCore 48V 500W mid-drive (960W peak) | 802 Wh | 95 mi | 60 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
 | Velotric Fold 1 | Cargo | 2 | $1,299.0 | $399.0 | 48V 750W rear hub (1,050W peak) | 608 Wh | 55 mi | 63 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
-| Velotric Fold 1 Lite | Standard | 2 | $1,099 | $699 | 48V 500W rear hub | 486 Wh | 40–48 mi | 61 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
+| Velotric Fold 1 Lite | Standard | 2 | $1,099 | $699 | 48V 500W rear hub | 486 Wh | 48 mi | 61 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
 | Velotric Fold 1 Plus | Cargo | 2 | $1,499.0 | $599.0 | 750W rear hub (1,100W peak per feature copy) | 608 Wh | 68 mi | 63 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
-| Velotric Go 1 | Cargo | 2 | $1,699 | $799 | Velopower H50 500W hub (900W peak) | 691 Wh | 48–55 mi | 65 lb | Discontinued by maker | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
-| Velotric GoMad | Standard | 2 | $1,999 | $1,599 | 48V 750W hub (1,300W peak) | 802 Wh | 50–75 mi | 77 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
-| Velotric Nomad 1 Plus | Standard | 2 | $1,899 | $1,499 | 48V 750W rear hub | 691 Wh | 52–55 mi | 71 lb | Discontinued by maker | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
-| Velotric Nomad 2 | Standard | 2 | $1,999 | $1,599 | 48V 750W hub (1,300W peak) | 706 Wh | 45–65 mi | 75 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
+| Velotric Go 1 | Cargo | 2 | $1,699 | $799 | Velopower H50 500W hub (900W peak) | 691 Wh | 55 mi | 65 lb | Discontinued by maker | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
+| Velotric GoMad | Standard | 2 | $1,999 | $1,599 | 48V 750W hub (1,300W peak) | 802 Wh | 75 mi | 77 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
+| Velotric Nomad 1 Plus | Standard | 2 | $1,899 | $1,499 | 48V 750W rear hub | 691 Wh | 55 mi | 71 lb | Discontinued by maker | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
+| Velotric Nomad 2 | Standard | 2 | $1,999 | $1,599 | 48V 750W hub (1,300W peak) | 706 Wh | 65 mi | 75 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
 | Velotric Nomad 2X | Standard | 2 | $2,399 | $1,999 | 750W hub (1,400W peak), 105Nm; full air suspension | 801.6 Wh | 75 mi | 80 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
-| Velotric Packer 1 | Cargo | 2 | $2,199 | $1,299 | 750W rear hub | 691 Wh | 45–52 mi | 75 lb | Discontinued by maker | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
+| Velotric Packer 1 | Cargo | 2 | $2,199 | $1,299 | 750W rear hub | 691 Wh | 52 mi | 75 lb | Discontinued by maker | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
 | Velotric Summit 1 | Standard | 2 | $1,699.0 | $1,299.0 | 48V 750W rear hub (1,300W peak) | 705.6 Wh | 70 mi | 62 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
 | Velotric Summit 2 | Standard | 2 | $2,099.0 | $1,699.0 | 750W rear hub (1,300W peak) | 801.6 Wh | 95 mi | 57 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
 | Velotric T1 | Standard | 1 | $2,199 | $1,799 | 350W rear hub (600W peak) | 352.8 Wh | 70 mi | 36 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
-| Velotric Tempo | Standard | 2 | $1,499 | $1,099 | 36V 350W rear hub (650W peak) | 374 Wh | 40–60 mi | 39 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
-| Velotric Triker 1 | Adaptive | 2 | $2,499 | $1,599 | 48V 750W hub (1,300W peak) | 804 Wh | 50–60 mi | 85.8 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
+| Velotric Tempo | Standard | 2 | $1,499 | $1,099 | 36V 350W rear hub (650W peak) | 374 Wh | 60 mi | 39 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
+| Velotric Triker 1 | Adaptive | 2 | $2,499 | $1,599 | 48V 750W hub (1,300W peak) | 804 Wh | 60 mi | 85.8 lb | Available | Electric Bike Center, The Bicycle Garage, Castro Valley Cyclery, Pedego Electric Bikes Livermore |
 | X-Lab SP5+ | Standard | 2 | $1,899 | $1,499 | XDS X800 mid-drive 250W (400W peak), 85Nm | 339 Wh | 43 mi | 37 lb | Available | Castro Valley Cyclery, Sports Basement Berkeley |
 | X-Lab ST5+ | Standard | 2 | $1,999 | $1,599 | XDS X800 mid-drive 250W (470W peak), 95Nm | 619 Wh | 75 mi | 54.6 lb | Available | Castro Valley Cyclery, Sports Basement Berkeley |
 | Xtracycle RFA (Shimano EP6, Class 3) | Cargo | 3 | $4,999 | $4,099 | Shimano STEPS EP6, 85Nm | 630 Wh | 60 mi | 60.2 lb | Available | Stay True Cycles |
@@ -380,13 +380,13 @@
 | Xtracycle Swoop ASM | Cargo | 3 | $4,999 | $4,099 | Shimano STEPS EP6 Cargo, 85Nm | 630 Wh | 60 mi | 68.4 lb (no battery) | Available | Stay True Cycles |
 | Xtracycle The Hopper | Cargo | 2 | $2,499 | $1,599 | Xtracycle 750W rear hub, torque sensor | 720 Wh | 60 mi | 85 lb | Available | Stay True Cycles |
 | Yuba Boda Boda | Cargo | 1 | $5,299 | $4,399 | Bosch Cargo Line mid-drive, 85Nm | 500 Wh |  | 70 lb | Available | Blue Heron Bikes, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
-| Yuba Fast Rack | Cargo | 1 | $3,199.99 | $2,299.99 | Shimano STEPS E7000 mid-drive | 500 Wh | 19–43 mi | 76 lb | Available | Blue Heron Bikes, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
+| Yuba Fast Rack | Cargo | 1 | $3,199.99 | $2,299.99 | Shimano STEPS E7000 mid-drive | 500 Wh | 43 mi | 76 lb | Available | Blue Heron Bikes, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
 | Yuba Kombi E5 | Cargo | 1 | $2,399.99 | $1,499.9899999999998 | 250W Shimano Steps E5000 mid-drive | 418 Wh |  | 65 lb | Available | Blue Heron Bikes, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
 | Yuba mini Boda Boda | Cargo | 1 | $4,499 | $3,599 | Bosch Cargo Line mid-drive, 85Nm | 500 Wh |  | 64 lb | Available | Blue Heron Bikes, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
 | Yuba Spicy Curry (New) | Cargo | 1 | $5,999.99 | $5,099.99 | Bosch Cargo Line mid-drive, 85Nm | 500 Wh |  | 70 lb | Available | Blue Heron Bikes, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
 | Yuba Spicy Curry V3 | Cargo | 1 | $3,999.99 | $3,099.99 | Bosch Cargo Line mid-drive, 85Nm | 500 Wh |  | 60.2 lb | Available | Blue Heron Bikes, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
 | Yuba Spicy Curry+ | Cargo | 1 | $6,499.99 | $5,599.99 | Bosch Cargo Line mid-drive, 85Nm | 625 Wh |  | 70 lb | Available | Blue Heron Bikes, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
-| Zooz Ultra Flex G2 Low Bar | Standard | 2 | $3,095 | $2,695 | 750W Thrillmatic hub | 1300 Wh | 25–40 mi | 85 lb | Available | Niles Bicycles |
+| Zooz Ultra Flex G2 Low Bar | Standard | 2 | $3,095 | $2,695 | 750W Thrillmatic hub | 1300 Wh | 40 mi | 85 lb | Available | Niles Bicycles |
 
 ## Participating shops
 

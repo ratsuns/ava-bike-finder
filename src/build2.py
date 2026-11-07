@@ -11,6 +11,7 @@ import datetime, hashlib, html, json, os, re, shutil, subprocess, sys
 from PIL import Image
 
 import bikedata
+from bikespecs.rules import shown_range
 from videos.publish import write as write_videos
 
 SITE = os.environ['SITE_DIR']
@@ -41,20 +42,6 @@ def photo(name):
     src = f'verify/cardphotos/{name}.webp'
     return put_img(f"{name}-{hashlib.md5(open(src, 'rb').read()).hexdigest()[:8]}.webp", src)
 
-
-def rng(v):
-    """the range a card shows: the stock battery's, with pedal assist. When a maker lists throttle-only and pedal-assist
-    ranges ("45 (throttle) / 68 (PAS)"), the pedal-assist one is used, as every other bike's range is"""
-    if v in (None, ''): return None
-    v = str(v).replace('miles', '').replace('mi', '').strip()
-    parts = [x for x in re.split(r'[;,/](?![^()]*\))', v) if x.strip()]
-    if len(parts) > 1 and any(re.search(r'(?i)throttle', x) for x in parts):
-        v = next((x for x in parts if not re.search(r'(?i)throttle', x)), parts[0])
-    v = re.sub(r'\(.*?\)', '', v); v = re.split(r'[;,/]', v)[0]
-    v = re.sub(r'(?i)(up to|approx\.?|about|~|\+)', '', v); v = re.sub(r'\s*-\s*', '–', v).strip(' .')
-    return v or None
-
-
 # ---- shops: one entry per shop location (some shops are listed under two or three names; those share one entry)
 S = json.load(open('shops.json'))
 for s in S.values():
@@ -82,9 +69,10 @@ def bike(c):
         if not x.get('f'): raise SystemExit(f"{c['id']}: color {x['n']!r} has no color family (f)")
     cv = [dict(n=x['n'], f=x['f'], hex=x.get('hex'), img=photo(x['img']) if x.get('img') else None) for x in c['cv']]
     b = dict(id=c['id'], brand=c['brand'], model=c['model'], type=c['type'], fold=c.get('fold'), cls=c.get('cls'), price=c.get('price'),
-             note=c.get('pnote'), motor=c.get('motor'), tq=c.get('tq'), spd=c.get('spd'), wh=c.get('wh'), range=rng(c.get('range')),
+             note=c.get('pnote'), motor=c.get('motor'), tq=c.get('tq'), spd=c.get('spd'), wh=c.get('wh'), range=shown_range(c.get('range')),
              load=c.get('load'), height=c.get('height'), wt=c.get('wt'), src=c.get('src'), img=photo(c['img']) if c.get('img') else None,
              shops=c['shops'], cv=cv, st=c.get('st'))
+    b['you'] = max(b['price'] - rebate(b), 0) if b['price'] is not None else None   # what you pay after the regular rebate
     if c.get('wtnb'): b['wtnb'] = True
     return b
 out = [bike(c) for c in bikedata.load()]
@@ -111,7 +99,7 @@ for br in sorted(_grp, key=str.lower):
     for b in sorted(_grp[br], key=lambda x: x['model'].lower()):
         bits = [b.get('type') or '']
         if b.get('cls'): bits.append(f"Class {b['cls']}")
-        if b.get('price'): bits.append(f"${b['price']:,} list, about ${max(b['price'] - rebate(b), 0):,} after the ${rebate(b)} rebate")
+        if b.get('price'): bits.append(f"${b['price']:,} list, about ${b['you']:,} after the ${rebate(b)} rebate")
         items.append(f"<li>{e(br + ' ' + b['model'])} ({e(', '.join(x for x in bits if x))})</li>")
     _li.append(f"<h3>{e(br)}</h3><ul>{''.join(items)}</ul>")
 NOS = f'<noscript><div class="wrap"><h2>All {len(out)} e-bikes on the Ava rebate list</h2>{"".join(_li)}</div></noscript>'
@@ -198,7 +186,7 @@ _rows = ["| Bike | Type | Class | Price | After rebate | Motor | Battery | Range
 def _c(v): return str(v).replace('|', '/') if v not in (None, '') else ''
 for b in sorted(out, key=lambda x: (x['brand'].lower(), x['model'].lower())):
     p = b.get('price')
-    _rows.append('| ' + ' | '.join([_c(b['brand'] + ' ' + b['model']), _c(b.get('type')), _c(b.get('cls')), f"${p:,}" if p else 'not listed', f"${max(p - rebate(b), 0):,}" if p else '', _c(b.get('motor')), f"{b['wh']} Wh" if b.get('wh') else '', f"{b['range']} mi" if b.get('range') else '', (f"{b['wt']} lb" + (' (no battery)' if b.get('wtnb') else '')) if b.get('wt') else '', F['status'][b['st']]['llms'] if b.get('st') else 'Available', _c(', '.join(S[k]['name'] for k in b['shops']))]) + ' |')
+    _rows.append('| ' + ' | '.join([_c(b['brand'] + ' ' + b['model']), _c(b.get('type')), _c(b.get('cls')), f"${p:,}" if p else 'not listed', f"${b['you']:,}" if p else '', _c(b.get('motor')), f"{b['wh']} Wh" if b.get('wh') else '', f"{b['range']} mi" if b.get('range') else '', (f"{b['wt']} lb" + (' (no battery)' if b.get('wtnb') else '')) if b.get('wt') else '', F['status'][b['st']]['llms'] if b.get('st') else 'Available', _c(', '.join(S[k]['name'] for k in b['shops']))]) + ' |')
 _shops = [f"### {s['name']} ({s.get('city', '')})\n" + "\n".join(f"- {k}: {v}" for k, v in (('Address', (s.get('address') or '') + (', ' + s['city'] if s.get('city') else '') + ', CA'), ('Phone', s.get('phone')), ('Hours', s.get('hours')), ('Email', s.get('email')), ('Website', s.get('url'))) if v) for s in BY_CITY]
 _notes = f"## Notes\n\n- \"After rebate\" uses the regular {AMOUNTS['Standard']} (standard) or {AMOUNTS['Cargo']} (cargo and adaptive) rebate. Sales tax is extra.\n- Prices are the maker's US list price, or the selling shop's price when the maker has none.\n\n## Files"
 open(SITE + '/llms-full.txt', 'w').write(_hdr.replace('## Files', _notes, 1) + f"\n## All {len(out)} e-bikes\n\n" + "\n".join(_rows) + "\n\n## Participating shops\n\n" + "\n\n".join(_shops) + "\n")
@@ -292,10 +280,11 @@ json.dump(_LM, open(_LMF, 'w'), indent=1, sort_keys=True)
 open(SITE + '/sitemap.xml', 'w').write('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(f'<url><loc>{u}</loc><lastmod>{_dates[u]}</lastmod></url>' for u in (URL, SURL)) + '</urlset>')
 print('last updated', _dates)
 
-# ---- remove what nothing uses any more: old bike-list files, old photos and logos, old share images
+# ---- remove what nothing uses any more: old bike-list and video files, old photos and logos, old share images
 # (done last, so a build that stops early leaves the old page and the file it points at in place)
 for f in os.listdir(SITE + '/img'):
     if f not in IMG: os.remove(f'{SITE}/img/{f}')
 for f in os.listdir(SITE):
     if re.fullmatch(r'og-(vendors-)?[0-9a-f]{8}\.jpg', f) and f not in (OGN, OGV): os.remove(f'{SITE}/{f}')
     if f.startswith('data-') and f.endswith('.js') and f != DN: os.remove(f'{SITE}/{f}')
+    if f.startswith('videos-') and f.endswith('.json') and f != VN: os.remove(f'{SITE}/{f}')

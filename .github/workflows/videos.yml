@@ -45,6 +45,8 @@ jobs:
           if git diff --cached --quiet; then echo 'Nothing changed.'; exit 0; fi
           git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
             commit -m 'Video reviews: refreshed from YouTube and checked'
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+            pull --rebase    # someone may have pushed to main while this ran
           git push    # GitHub Pages publishes this push on its own
     env:
       YT_API_KEY: ${{ secrets.YT_API_KEY }}

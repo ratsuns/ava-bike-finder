@@ -699,6 +699,7 @@ __INFO__
 <script>
 __SHARED_JS__
 const B=window.AVA_B,S=window.AVA_S,SITE=window.AVA_SITE,REB=SITE.rebate.by_type;
+/* the card tips keep their own short wording (Chris); the E-bike guide (shared/info.html) says the same facts at length: change both together */
 const CLASSX={"1":"Class 1: pedal assist only, up to 20 mph.","2":"Class 2: pedal assist plus a throttle, up to 20 mph.","3":"Class 3: pedal assist up to 28 mph. No throttle in California."};
 const TYPEX={Standard:"Standard: a city or commuter e-bike. Lighter and easy to handle.",Cargo:"Cargo: built to carry heavy loads or passengers.",Adaptive:"Adaptive: for riders with injuries or mobility needs, like trikes and recumbents."};
 const money=n=>'$'+Math.round(n).toLocaleString('en-US');
@@ -707,13 +708,13 @@ const CORD=Object.keys(CHEX);
 /* the bigger rebate (cargo and adaptive) and the smaller one (standard) get different tag colors */
 const TOPREB=Math.max(...Object.values(REB).map(r=>r.regular));
 /* our two picks: a tag on the card, and a line on the card and in the details that ends with the bike's own price */
-const PICKS={'lectric-xp4-750-long-range':{tag:'Top pick',head:'Our top pick',note:'Goes up to 85 miles on a charge and up to 28 mph, with power for hills.'},'velotric-fold-1-plus':{tag:'Runner-up',head:'Our runner-up',note:'Folds small, goes up to 68 miles on a charge and carries up to 450 lb.'}};
-const pickNote=(pk,b)=>pk.note+(b.price!=null?` ${money(b.price)}, you pay ${money(b.you)}.`:'');
+const PICKS={'lectric-xp4-750-long-range':{tag:'Top pick',head:'Our top pick',note:b=>`Goes up to ${b.range} miles on a charge and up to ${b.spd} mph, with power for hills.`},'velotric-fold-1-plus':{tag:'Runner-up',head:'Our runner-up',note:b=>`Folds small, goes up to ${b.range} miles on a charge and carries up to ${b.load} lb.`}};
+const pickNote=(pk,b)=>pk.note(b)+(b.price!=null?` ${money(b.price)}, you pay ${money(b.you)}.`:'');
 const STAR='<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z"/></svg>';
 const ARROW='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>';
 
 B.forEach((b,i)=>{
- b.i=i;b.reb=REB[b.type].regular;b.you=b.price!=null?Math.max(0,b.price-b.reb):null;
+ b.i=i;b.reb=REB[b.type].regular;
  b.mn=String(b.model||'').replace(/\s*\(All[^)]*\)/i,'').replace(/\s+/g,' ').trim();
  b.name=(b.brand+' '+b.mn).trim();
  b.cities=[...new Set((b.shops||[]).map(k=>S[k]&&S[k].city).filter(Boolean))];
