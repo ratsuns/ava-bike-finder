@@ -2,8 +2,7 @@ __HEAD__
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400..700&display=swap" rel="stylesheet">
 <style>
-/* home page rules this page uses (build2.py copies them from site_tpl.html, so tokens, themes and the shop cards stay identical) */
-__BASE_CSS__
+__CSS__
 /* shops page */
 :root{--mapbg:#f8f4f0}
 .sbar{position:sticky;top:0;z-index:20;background:var(--bg);padding-top:env(safe-area-inset-top,0px);--hink:18,22,20}
@@ -159,27 +158,13 @@ a.mcl span{text-decoration:underline;text-decoration-color:var(--line2);text-und
 <main class="wrap spg">
 <div class="spmap" id="map" role="region" aria-label="Map of the shops"><div class="mdock"><button type="button" class="mlist" aria-controls="sheet" aria-expanded="false"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11M4.5 6h.01M4.5 12h.01M4.5 18h.01"/></svg>Show list</button><div class="mcar" role="region" aria-label="Shops (swipe for more)"></div></div></div>
 <section class="spsheet" id="sheet" aria-labelledby="sph2"><div class="shandle" aria-hidden="true"></div><div class="sphead"><h2 id="sph2">Where to buy</h2><p class="spcount"><b>__COUNT__</b> shops</p><button type="button" class="dclose" aria-label="Close list"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
-<div class="splist" id="list"></div></section>
+<div class="splist" id="list">__SHOP_LIST__</div></section>
 </main>
-__DIALOGS__
+__INFO__
 <script>
-/* shop cards: drawn right away from the inline list, with the same helpers and markup as the home page's "Where to buy" */
+__SHARED_JS__
+/* every shop, in shopOrder (the build sorted them) */
 const SH=__SHOPS__;
-const $=id=>document.getElementById(id);
-__HELPERS__
-SH.sort((a,b)=>(a.city||'').localeCompare(b.city||'')||a.name.localeCompare(b.name));
-/* the first few logos load right away; the rest wait until they're scrolled near.
-   The build already puts these cards in the page (this same code, run at build time), so normally nothing is redrawn here */
-if(!$('list').firstElementChild)$('list').innerHTML=SH.map((s,i)=>{const h=__CARD__;return i<6?h.replace('loading="lazy"','loading="eager"'):h}).join('');
-const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
-/* light / dark toggle: same as the home page (remembered per browser, crossfades where view transitions exist) */
-(()=>{const b=$('themebtn');if(!b)return;const H=document.documentElement;
- const cur=()=>H.dataset.theme==='light'?'light':'dark';
- const label=()=>{const t=cur();b.setAttribute('aria-label',t==='dark'?'Switch to light mode':'Switch to dark mode')};
- const apply=t=>{H.dataset.theme=t;const cs=document.querySelector('meta[name="color-scheme"]'),tc=document.querySelector('meta[name="theme-color"]');if(cs)cs.content=t;if(tc)tc.content=t==='light'?'#f6f7f5':'#0f1211';try{localStorage.setItem('theme',t)}catch(e){}label()};
- label();
- b.addEventListener('click',()=>{const next=cur()==='dark'?'light':'dark';
-  if(document.startViewTransition&&!REDUCE.matches){b.style.viewTransitionName='themebtn';const vt=document.startViewTransition(()=>apply(next));vt.finished.finally(()=>{b.style.viewTransitionName=''})}else apply(next)})})();
 /* hero dots: drawn once to a hidden canvas; only while a pointer is over the hero do the dots near it twinkle, then everything stops */
 (()=>{const sec=document.querySelector('.sphero'),cv=sec&&sec.querySelector('.spdots');if(!cv||!cv.getContext)return;const W=__WORLD__;
  const bits=Uint8Array.from(atob(W.b),c=>c.charCodeAt(0)),cells=[];
@@ -205,44 +190,13 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
   for(let i=0;i<N;i++){g.fillStyle=hl[i]?'rgba('+acc+',.95)':'rgba('+col+','+(dotA*A[i])+')';g.beginPath();g.arc(X[i],Y[i],hl[i]?rad*1.35:rad,0,6.283);g.fill()}
   paint(0)};
  const loop=t=>{const dt=Math.min(64,t-(last||t));last=t;on+=(target-on)*Math.min(1,dt/140);paint(t);if(target||on>.01)raf=requestAnimationFrame(loop);else{raf=0;last=0;on=0;paint(t)}};
- const still=matchMedia('(prefers-reduced-motion: reduce)');
- sec.addEventListener('pointermove',e=>{if(still.matches)return;const b=sec.getBoundingClientRect();px=e.clientX-b.left;py=e.clientY-b.top;target=1;if(!raf)raf=requestAnimationFrame(loop)},{passive:true});
+ sec.addEventListener('pointermove',e=>{if(REDUCE.matches)return;const b=sec.getBoundingClientRect();px=e.clientX-b.left;py=e.clientY-b.top;target=1;if(!raf)raf=requestAnimationFrame(loop)},{passive:true});
  sec.addEventListener('pointerleave',()=>{target=0;if(!raf&&on>0)raf=requestAnimationFrame(loop)});
  new ResizeObserver(layout).observe(sec);
  new MutationObserver(layout).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']})})();
-/* E-bike guide and Rebate info: side panels like the home page. Escape, the close button or a tap on the dimmed page closes them;
-   the page behind stays still and keyboard focus stays inside */
-(()=>{const H=document.documentElement,S=document.createElement('div');S.id='scrim';S.setAttribute('aria-hidden','true');document.body.append(S);const ST=[];
- const lock=()=>H.classList.toggle('locked',!!document.querySelector('dialog[open]:not([data-state="closing"]),#navmenu:popover-open'));
- const close=d=>{if(!d.open||d.dataset.state==='closing')return;ST.splice(ST.indexOf(d),1);S.classList.toggle('on',ST.length>0);d.dataset.state='closing';lock();
-  let t;const done=()=>{clearTimeout(t);d.removeEventListener('transitionend',te);if(d.open)d.close();d.dataset.state='';lock();const o=d._opener;if(o&&o.isConnected&&o.offsetParent)o.focus({preventScroll:true})};
-  const te=e=>{if(e.target===d&&e.propertyName==='transform')done()};d.addEventListener('transitionend',te);t=setTimeout(done,320)};
- const open=(d,opener)=>{if(!d||d.open)return;d._opener=opener||document.activeElement;ST.push(d);d.tabIndex=-1;d.setAttribute('aria-modal','true');d.dataset.state='closed';d.show();d.offsetWidth;d.dataset.state='open';S.classList.add('on');d.focus({preventScroll:true});lock();const b=d.querySelector('.dbody');if(b)b.scrollTop=0};
- document.querySelectorAll('[data-open]').forEach(b=>b.addEventListener('click',()=>{const M=$('navmenu');if(M&&M.matches(':popover-open'))M.hidePopover();open($(b.dataset.open),M&&M.contains(b)?document.querySelector('.menubtn'):b)}));
- document.querySelectorAll('dialog.drawer .dclose').forEach(b=>b.addEventListener('click',()=>close(b.closest('dialog'))));
- S.addEventListener('click',()=>{const d=ST[ST.length-1];if(d)close(d)});
- document.addEventListener('keydown',e=>{const d=ST[ST.length-1];if(!d)return;if(e.key==='Escape'){e.preventDefault();close(d);return}
-  if(e.key==='Tab'){const f=[...d.querySelectorAll('button,[href],[tabindex]:not([tabindex="-1"])')].filter(x=>x.getClientRects().length);if(!f.length)return;const a=f[0],z=f[f.length-1];
-   if(e.shiftKey&&(document.activeElement===a||document.activeElement===d)){e.preventDefault();z.focus()}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus()}}});
- /* soft fades at the top and bottom of a panel's text while there's more to scroll */
- document.querySelectorAll('dialog.drawer .dbody').forEach(el=>{const upd=()=>{el.classList.toggle('has-more',el.scrollHeight-el.scrollTop-el.clientHeight>4);el.classList.toggle('has-above',el.scrollTop>4)};el.addEventListener('scroll',upd,{passive:true});new ResizeObserver(upd).observe(el)})})();
-/* phone menu: same behaviour as the home page (the button shows the X only while the menu is really open; the page behind doesn't scroll) */
-(()=>{const M=$('navmenu'),B=document.querySelector('.menubtn'),H=document.documentElement;if(!M||!B)return;
- const sync=()=>{const o=M.matches(':popover-open');if(B.getAttribute('aria-expanded')!==String(o)){B.setAttribute('aria-expanded',o);B.setAttribute('aria-label',o?'Close menu':'Menu')}H.classList.toggle('locked',o||!!document.querySelector('dialog[open]:not([data-state="closing"])'))};
- M.addEventListener('toggle',sync);M.addEventListener('beforetoggle',()=>requestAnimationFrame(sync));
- ['click','keyup','pointerup'].forEach(t=>document.addEventListener(t,()=>requestAnimationFrame(sync),true));addEventListener('pageshow',sync);
- /* the menu's guide and rebate buttons close it and open their panel (see above). Its link to this same page just closes the menu;
-    a link to another page leaves it open while that page loads, and it's put away once this page is gone (so back finds it closed) */
- M.addEventListener('click',e=>{const a=e.target.closest('.nml a');if(a&&a.getAttribute('aria-current')==='page'){e.preventDefault();M.hidePopover()}});
- addEventListener('pagehide',()=>{if(M.matches(':popover-open'))M.hidePopover()});
- matchMedia('(min-width: 761px)').addEventListener('change',e=>{if(e.matches&&M.matches(':popover-open'))M.hidePopover()})})();
 /* map: starts as soon as MapLibre (loaded with defer in the head) is ready */
-(()=>{const box=$('map'),list=$('list'),H=document.documentElement;
- /* OSM Bright in both light and dark mode, so switching the site's theme never reloads the map */
- const STY={light:'https://tiles.openfreemap.org/styles/bright',dark:'https://tiles.openfreemap.org/styles/bright'};
- const theme=()=>H.dataset.theme==='light'?'light':'dark';
+(()=>{const box=$('map'),list=$('list');
  const BY={};SH.forEach(s=>BY[s.k]=s);
- const dirUrl=s=>'https://www.google.com/maps/dir/?api=1&destination='+encodeURIComponent([s.name,s.address,s.city,'CA'].filter(Boolean).join(', '));
  /* today's hours (Pacific time) from lines like "Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p"; anything else is shown as written */
  const DAYS=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
  const inDays=(spec,d)=>spec.split(/,\s*/).some(x=>{const[a,b]=x.split('–'),i=DAYS.indexOf(a),j=b?DAYS.indexOf(b):i;return i>=0&&j>=0&&(i<=j?d>=i&&d<=j:d>=i||d<=j)});
@@ -250,14 +204,17 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
   for(const p of h.split(' · ')){let m=p.match(/^Closed (.+)$/);if(m){if(inDays(m[1],d))return'Closed today';continue}
    m=p.match(/^(Daily|[A-Z][a-z]{2}(?:–[A-Z][a-z]{2})?(?:, [A-Z][a-z]{2}(?:–[A-Z][a-z]{2})?)*) (.+)$/);if(!m)return h;if(m[1]==='Daily'||inDays(m[1],d))return'Today '+m[2]}
   return /\d/.test(h)?'Closed today':h};
- const cardHTML=s=>{const t=today(s.hours);return `<div class="mctop">${slogo(s)}<div class="mcname"><span class="city">${esc(s.city||'')}</span><b>${esc(s.name)}</b></div></div><div class="mclines">${s.address?`<span class="mcl">${PIN}<span>${esc(s.address)}</span></span>`:''}${t?`<span class="mcl">${CLOCK}<span>${esc(t)}</span></span>`:''}${s.phone?`<a class="mcl" href="${telUrl(s.phone)}">${PHONE}<span>${esc(s.phone)}</span></a>`:''}</div><div class="mcacts"><a class="mcbtn pri" href="${dirUrl(s)}" target="_blank" rel="noopener">Directions</a>${s.url?`<a class="mcbtn" href="${esc(s.url)}" target="_blank" rel="noopener">Website${EXT}</a>`:''}</div>`};
+ /* a shop on the map: its name, then details, then Directions and Website */
+ const mcard=(s,body,eager)=>`<div class="mctop">${slogo(s,eager)}<div class="mcname"><span class="city">${esc(s.city||'')}</span><b>${esc(s.name)}</b></div></div>${body}<div class="mcacts"><a class="mcbtn pri" href="${dirUrl(s)}" target="_blank" rel="noopener">Directions</a>${s.url?`<a class="mcbtn" href="${esc(s.url)}" target="_blank" rel="noopener">Website${EXT}</a>`:''}</div>`;
+ /* desktop: the card over a pin, with today's hours */
+ const cardHTML=s=>{const t=today(s.hours);return mcard(s,`<div class="mclines">${s.address?`<span class="mcl">${PIN}<span>${esc(s.address)}</span></span>`:''}${t?`<span class="mcl">${CLOCK}<span>${esc(t)}</span></span>`:''}${s.phone?`<a class="mcl" href="${telUrl(s.phone)}">${PHONE}<span>${esc(s.phone)}</span></a>`:''}</div>`)};
  const PINSVG='<svg viewBox="0 0 28 36" aria-hidden="true"><path class="pb" d="M14 34.6S3 24 3 14.2a11 11 0 0 1 22 0C25 24 14 34.6 14 34.6z"/><circle class="pd" cx="14" cy="14" r="4"/></svg>';
  const WIDE=matchMedia('(min-width: 1024px)');
  /* phones and tablets: the row of shop cards at the bottom of the map (in list order), drawn right away, before the map arrives.
     Its cards show the address and phone on the left, the week's hours and the email on the right */
  const stage=document.querySelector('.spg'),sheet=$('sheet'),dock=box.querySelector('.mdock'),car=dock.querySelector('.mcar'),lbtn=dock.querySelector('.mlist');
- const carHTML=s=>`<div class="mctop">${slogo(s)}<div class="mcname"><span class="city">${esc(s.city||'')}</span><b>${esc(s.name)}</b></div></div><div class="mcgrid"><div class="mclines">${s.address?`<span class="mcl">${PIN}<span>${esc(s.address)}</span></span>`:''}${s.phone?`<a class="mcl" href="${telUrl(s.phone)}">${PHONE}<span>${esc(s.phone)}</span></a>`:''}</div><div class="mclines">${s.hours?`<div class="mcl mchrs">${CLOCK}<ul>${s.hours.split(' · ').map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`:''}${s.email?`<a class="mcl" href="${mailUrl(s)}">${MAIL}<span>${esc(s.email).replace('@','@<wbr>')}</span></a>`:s.contact?`<a class="mcl" href="${esc(s.contact)}" target="_blank" rel="noopener">${MAIL}<span>Email via contact form</span></a>`:''}</div></div><div class="mcacts"><a class="mcbtn pri" href="${dirUrl(s)}" target="_blank" rel="noopener">Directions</a>${s.url?`<a class="mcbtn" href="${esc(s.url)}" target="_blank" rel="noopener">Website${EXT}</a>`:''}</div>`;
- car.innerHTML=SH.map((s,i)=>{const h=`<div class="mcard" data-k="${esc(s.k)}">${carHTML(s)}</div>`;return i<2?h.replace('loading="lazy"','loading="eager"'):h}).join('');
+ const carHTML=(s,eager)=>mcard(s,`<div class="mcgrid"><div class="mclines">${s.address?`<span class="mcl">${PIN}<span>${esc(s.address)}</span></span>`:''}${s.phone?`<a class="mcl" href="${telUrl(s.phone)}">${PHONE}<span>${esc(s.phone)}</span></a>`:''}</div><div class="mclines">${s.hours?`<div class="mcl mchrs">${CLOCK}<ul>${s.hours.split(' · ').map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`:''}${s.email?`<a class="mcl" href="${mailUrl(s)}">${MAIL}<span>${esc(s.email).replace('@','@<wbr>')}</span></a>`:s.contact?`<a class="mcl" href="${esc(s.contact)}" target="_blank" rel="noopener">${MAIL}<span>Email via contact form</span></a>`:''}</div></div>`,eager);
+ car.innerHTML=SH.map((s,i)=>`<div class="mcard" data-k="${esc(s.k)}">${carHTML(s,i<2)}</div>`).join('');
  let cur=null,pinned=null,onCard=null,pins=null,place=null,quiet=0,st0=0;
  const mark=k=>{if(onCard)onCard.classList.remove('on');onCard=k?list.querySelector(`.shop[data-shop="${CSS.escape(k)}"]`):null;if(onCard)onCard.classList.add('on')};
  const selPin=k=>{if(pins){if(cur&&pins.get(cur))pins.get(cur).classList.remove('sel');if(k&&pins.get(k))pins.get(k).classList.add('sel')}cur=k};
@@ -310,68 +267,57 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
  (()=>{try{const W=box.clientWidth,Hh=box.clientHeight;if(!W||!Hh||!window.fetch)return;
   const v=startView(),z=v.zoom,cx=v.cx,cy=v.cy,tz=Math.floor(z),ts=512*2**(z-tz),n=2**tz,want=[];
   for(let tx=Math.floor((cx-W/2)/ts);tx<=Math.floor((cx+W/2)/ts);tx++)for(let ty=Math.floor((cy-Hh/2)/ts);ty<=Math.floor((cy+Hh/2)/ts);ty++)if(tx>=0&&ty>=0&&tx<n&&ty<n)want.push([tz,tx,ty]);
-  if(!want.length||want.length>30)return;window.__tilePrefetch=want;
+  if(!want.length||want.length>30)return;
   fetch('https://tiles.openfreemap.org/planet').then(r=>r.json()).then(j=>{const u=j.tiles&&j.tiles[0];if(u)want.forEach(([z,x,y])=>fetch(u.replace('{z}',z).replace('{x}',x).replace('{y}',y)).catch(()=>{}))}).catch(()=>{})}catch(e){}})();
  /* if the map can't load, phones show the list instead (it can't be closed then) */
  const noMap=()=>{box.classList.add('nomap');stage.classList.add('nomap');listOpen()};
  const init=()=>{if(!window.maplibregl){noMap();return}
   const sv=startView();
   let map;
-  try{map=new maplibregl.Map({container:box,style:STY[theme()],center:sv.center,zoom:sv.zoom,
+  try{map=new maplibregl.Map({container:box,style:'__MAP_STYLE__',center:sv.center,zoom:sv.zoom,
    minZoom:7,maxZoom:17,maxBounds:[[-123.4,36.3],[-120.4,38.6]],renderWorldCopies:false,fadeDuration:0,pixelRatio:Math.min(devicePixelRatio||1,2),
-   dragRotate:false,pitchWithRotate:false,touchPitch:false,
-   /* like the Google Maps app: one finger moves the map, two fingers zoom */
-   cooperativeGestures:false,attributionControl:false})}
+   dragRotate:false,pitchWithRotate:false,touchPitch:false,attributionControl:false})}
   catch(e){noMap();return}
   map.touchZoomRotate.disableRotation();map.keyboard.disableRotation();
-  /* the map style mentions a few icons it doesn't ship; fill them with a blank so nothing errors */
   /* the map credit stays folded into its (i) button until someone clicks it */
   map.addControl(new maplibregl.AttributionControl({compact:true}),WIDE.matches?'bottom-right':'top-left');
   {const at=box.querySelector('.maplibregl-ctrl-attrib');let asked=false;
    at.querySelector('.maplibregl-ctrl-attrib-button').addEventListener('click',()=>{asked=true},true);
    const fold=()=>{if(!asked&&at.classList.contains('maplibregl-compact-show')){at.classList.remove('maplibregl-compact-show');at.setAttribute('open','')}};
    new MutationObserver(fold).observe(at,{attributes:true,attributeFilter:['class']});fold()}
+  /* the map style mentions a few icons it doesn't ship; fill them with a blank so nothing errors */
   map.on('styleimagemissing',e=>{if(!map.hasImage(e.id))map.addImage(e.id,{width:1,height:1,data:new Uint8Array(4)})});
   map.addControl(new maplibregl.NavigationControl({showCompass:false}),'top-right');
   /* "find me": zooms to show you and the shops within 10 miles of you (the nearest one if none are that close) */
-  const ME_MI=10;let me=null,toastT=0,hideCard=()=>{};
+  const ME_MI=10;let me=null,toastT=0;
   const toast=msg=>{let el=box.querySelector('.mtoast');if(!el){el=document.createElement('div');el.className='mtoast';el.setAttribute('role','status');box.append(el)}el.textContent=msg;el.classList.add('on');clearTimeout(toastT);toastT=setTimeout(()=>el.classList.remove('on'),4000)};
-  const miles=(a,b)=>{const r=Math.PI/180,dl=(b.lat-a.lat)*r,dg=(b.lng-a.lng)*r,h=Math.sin(dl/2)**2+Math.cos(a.lat*r)*Math.cos(b.lat*r)*Math.sin(dg/2)**2;return 7917.6*Math.asin(Math.sqrt(h))};
   map.addControl({onAdd(){const g=document.createElement('div');g.className='maplibregl-ctrl maplibregl-ctrl-group';
    const b=document.createElement('button');b.type='button';b.className='mloc';b.title='Shops near me';b.setAttribute('aria-label','Show shops near me');
    b.innerHTML='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.2" fill="currentColor" stroke="none"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>';
-   /* the same saved location the home page uses (this tab only, up to 10 minutes old, never sent anywhere): if there is one, the map goes there at once
-      and a fresh reading is taken quietly; the map only moves again if you've moved */
-   const ME_KEY='ava-near',ME_TTL=600000;
-   const saved=()=>{try{const v=JSON.parse(sessionStorage.getItem(ME_KEY)||'null');if(v&&Date.now()-v.t<ME_TTL)return v}catch(e){}return null};
-   const save=u=>{try{sessionStorage.setItem(ME_KEY,JSON.stringify({lat:u.lat,lng:u.lng,t:Date.now()}))}catch(e){}};
+   /* the same saved location the home page uses (see NEAR): if there is one, the map goes there at once; the map only moves again if you've moved */
    b.addEventListener('click',()=>{if(!navigator.geolocation){toast("This browser can't share your location.");return}
     if(b.getAttribute('aria-busy')==='true')return;
-    const had=saved();if(had)goMe(had);
-    if(had&&Date.now()-had.t<60000)return;
+    const had=NEAR.saved();if(had)goMe(had);
+    if(had&&NEAR.fresh(had.t))return;
     if(!had)b.setAttribute('aria-busy','true');
-    navigator.geolocation.getCurrentPosition(pos=>{b.removeAttribute('aria-busy');const u={lat:pos.coords.latitude,lng:pos.coords.longitude};save(u);
-     if(!had||miles(had,u)>0.25)goMe(u)},
-    err=>{b.removeAttribute('aria-busy');if(had)return;toast(err.code===1?'Location is off for this site. Turn it on in your browser to see shops near you.':"Couldn't find your location. Try again.")},
-    {enableHighAccuracy:false,timeout:10000,maximumAge:300000})});
+    NEAR.ask(u=>{b.removeAttribute('aria-busy');NEAR.save(u,Date.now());
+     if(!had||NEAR.moved(had,u))goMe(u)},
+    err=>{b.removeAttribute('aria-busy');if(had)return;toast(err.code===1?'Location is off for this site. Turn it on in your browser to see shops near you.':"Couldn't find your location. Try again.")})});
    /* show your dot and zoom to the shops within 10 miles of you (or the nearest one) */
    const goMe=u=>{
      if(!me){const d=document.createElement('div');d.className='me';d.setAttribute('aria-label','You are here');me=new maplibregl.Marker({element:d}).setLngLat([u.lng,u.lat]).addTo(map)}else me.setLngLat([u.lng,u.lat]);
      const by=SH.map(s=>({s,d:miles(u,s)})).sort((a,b)=>a.d-b.d),near=by.filter(x=>x.d<=ME_MI);const show=(near.length?near:by.slice(0,1)).map(x=>x.s);
      const bb=new maplibregl.LngLatBounds([u.lng,u.lat],[u.lng,u.lat]);show.forEach(s=>bb.extend([s.lng,s.lat]));
      const H=box.clientHeight,pad=WIDE.matches?{top:64,bottom:48,left:48,right:64}:{top:64,bottom:Math.max(48,H-openTop()+24),left:32,right:32};
-     if(!WIDE.matches)pick(by[0].s.k,false,true,true);else hideCard();
+     if(!WIDE.matches)pick(by[0].s.k,false,true,true);else hide();
      map.fitBounds(bb,Object.assign({padding:pad,maxZoom:13,essential:true},REDUCE.matches?{duration:0}:{}))};
    g.append(b);return g},onRemove(){}},'top-right');
-  map.once('load',()=>performance.mark('map-load'));
   /* if the map style can't load, say so; the list works without it */
   let styled=false;map.once('style.load',()=>{styled=true});map.on('error',()=>{if(!styled)noMap()});
-  /* pins are made once; HTML markers stay put when the style changes with the theme */
   pins=new Map();
   SH.forEach(s=>{const el=document.createElement('button');el.type='button';el.className='pin';el.dataset.k=s.k;el.setAttribute('aria-label',s.name+', '+s.city);el.innerHTML=PINSVG;
    new maplibregl.Marker({element:el,anchor:'bottom'}).setLngLat([s.lng,s.lat]).addTo(map);pins.set(s.k,el)});
   if(cur&&pins.get(cur))pins.get(cur).classList.add('sel');
-  /* the one hover card, kept on the map (hidden) so it can fade in from its closed state */
   const cw=document.createElement('div');cw.className='mcw';const card=document.createElement('div');card.className='mcard';card.setAttribute('aria-hidden','true');cw.append(card);
   const cm=new maplibregl.Marker({element:cw,anchor:'bottom'}).setLngLat([SH[0].lng,SH[0].lat]).addTo(map);
   let t=0;
@@ -388,14 +334,14 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
    cm.setOffset([f.dx,f.up?-46:f.h+10]);card.style.transformOrigin=`${Math.round(f.w/2-f.dx)}px ${f.up?'100%':'0'}`;
    if(pan&&f.dy)map.panBy([0,f.dy],{duration:REDUCE.matches?0:250})};
   /* where the card goes for a pin at screen point p: above or below it, kept inside the map; dy = how far the map must move for it to fit */
-  const fit=p=>{const W=box.clientWidth,Hh=box.clientHeight,w=card.offsetWidth,h=card.offsetHeight,cr=box.querySelector('.maplibregl-ctrl-bottom-right'),top=8,bot=Math.min(Hh-8-(cr?cr.offsetHeight:0),(window.sheetTop?window.sheetTop():Infinity)-box.getBoundingClientRect().top-8);
+  const fit=p=>{const W=box.clientWidth,Hh=box.clientHeight,w=card.offsetWidth,h=card.offsetHeight,cr=box.querySelector('.maplibregl-ctrl-bottom-right'),top=8,bot=Hh-8-(cr?cr.offsetHeight:0);
    const upTop=p.y-46-h,dnBot=p.y+10+h,up=upTop>=top||(dnBot>bot&&p.y-46-top>=bot-p.y-10);
    const l=p.x-w/2,dx=Math.round(Math.min(Math.max(l,8),W-8-w)-l);
    return {w,h,up,dx,dy:Math.round(up?Math.min(0,upTop-top):Math.max(0,dnBot-bot))}};
   const show=(k,pan)=>{clearTimeout(t);const s=BY[k];if(!s)return;
    if(!WIDE.matches){pick(k,pan,true,true);return}
    if(card.parentNode!==cw)cw.append(card);
-   if(cur!==k){if(cur&&pins.get(cur))pins.get(cur).classList.remove('sel');cur=k;card.innerHTML=cardHTML(s);pins.get(k).classList.add('sel');cm.setLngLat([s.lng,s.lat])}
+   if(cur!==k){selPin(k);card.innerHTML=cardHTML(s);cm.setLngLat([s.lng,s.lat])}
    place(s,pan);card.classList.add('open');card.setAttribute('aria-hidden','false')};
   /* desktop only: phones always keep a shop picked in the row */
   const hide=()=>{clearTimeout(t);if(!WIDE.matches)return;selPin(null);pinned=null;mark(null);card.classList.remove('open');card.setAttribute('aria-hidden','true')};
@@ -405,20 +351,18 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
   box.addEventListener('pointerover',e=>{if(e.pointerType!=='mouse')return;const p=e.target.closest('.pin');if(p)show(p.dataset.k);else if(e.target.closest('.mcw'))clearTimeout(t)});
   box.addEventListener('pointerout',e=>{if(e.pointerType!=='mouse')return;const from=e.target.closest('.pin,.mcw');if(!from)return;const to=e.relatedTarget&&e.relatedTarget.closest?e.relatedTarget.closest('.pin,.mcw'):null;if(to!==from)hideSoon()});
   box.addEventListener('click',e=>{const p=e.target.closest('.pin');if(!p)return;const k=p.dataset.k;pinned=k;show(k,true);if(!WIDE.matches)return;
-   if(ptype==='mouse'||!e.detail){mark(k);if(WIDE.matches&&onCard)onCard.scrollIntoView({block:'nearest',behavior:REDUCE.matches?'auto':'smooth'})}
-   else{mark(k);if(onCard){const lr=list.getBoundingClientRect(),cr=onCard.getBoundingClientRect();list.scrollTo({top:list.scrollTop+cr.top-lr.top-8,behavior:REDUCE.matches?'auto':'smooth'})}}});
-  /* a tap or click on the map itself closes the card */
+   mark(k);if(!onCard)return;
+   if(ptype==='mouse'||!e.detail)onCard.scrollIntoView({block:'nearest',behavior:REDUCE.matches?'auto':'smooth'});
+   else{const lr=list.getBoundingClientRect(),cr=onCard.getBoundingClientRect();list.scrollTo({top:list.scrollTop+cr.top-lr.top-8,behavior:REDUCE.matches?'auto':'smooth'})}});
   map.on('click',e=>{const tg=e.originalEvent&&e.originalEvent.target;if(tg&&tg.closest&&tg.closest('.pin,.mcw,.mdock'))return;hide()});
   box.addEventListener('focusin',e=>{const p=e.target.closest('.pin');if(p)show(p.dataset.k)});
   box.addEventListener('focusout',e=>{if(!e.relatedTarget||!e.relatedTarget.closest||!e.relatedTarget.closest('.pin,.mcw'))hideSoon()});
   document.addEventListener('keydown',e=>{if(e.key==='Escape'&&cur){const k=cur;hide();const p=pins.get(k);if(p&&box.contains(document.activeElement))p.blur()}});
   map.on('moveend',()=>{if(cur)place(BY[cur])});
   /* desktop: when you drag or scroll the map so the open shop's pin leaves the map, its card closes (no card left floating without its pin) */
-  hideCard=hide;
   map.on('move',e=>{if(!WIDE.matches||!cur||!e.originalEvent)return;const s=BY[cur],p=map.project([s.lng,s.lat]);if(p.x<0||p.y<0||p.x>box.clientWidth||p.y>box.clientHeight)hide()});
   /* switching between the phone and desktop layouts (e.g. a resized window) */
   WIDE.addEventListener('change',()=>{card.classList.remove('open');card.setAttribute('aria-hidden','true');pinned=null;if(WIDE.matches){listClose(false);selPin(null);mark(null)}else pick(cur||SH[0].k,false,true)});
-  /* hovering a shop in the list lights up its pin */
   let hot=null;const setHot=k=>{if(hot===k)return;if(hot&&pins.get(hot))pins.get(hot).classList.remove('hot');hot=k;if(k&&pins.get(k))pins.get(k).classList.add('hot')};
   list.addEventListener('pointerover',e=>{if(e.pointerType!=='mouse')return;const c=e.target.closest('.shop');setHot(c?c.dataset.shop:null)});
   list.addEventListener('pointerleave',()=>setHot(null));
@@ -434,19 +378,11 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
    pinned=k;mark(k);show(k);
    const f=fit({x:box.clientWidth/2,y:box.clientHeight/2});place(s,false,{x:box.clientWidth/2,y:box.clientHeight/2-f.dy});
    map.easeTo({center:[s.lng,s.lat],zoom:Math.max(map.getZoom(),13),offset:[0,-f.dy],duration:fast?0:600})});
-  /* follow the site theme. Once the map is idle the other theme's style is fetched, so switching is instant (markers and the card stay) */
  };
  /* the map starts as soon as both its script and its stylesheet have arrived (they download in parallel with the page) */
- let started=false;const go=()=>{if(started||!window.MLCSS||(!window.maplibregl&&document.readyState!=='complete'&&!go.dcl))return;started=true;init()};
- document.addEventListener('DOMContentLoaded',()=>{go.dcl=1;go()});document.addEventListener('mlcss',go);go();
+ let started=false,dcl=false;const go=()=>{if(started||!window.MLCSS||(!window.maplibregl&&document.readyState!=='complete'&&!dcl))return;started=true;init()};
+ document.addEventListener('DOMContentLoaded',()=>{dcl=true;go()});document.addEventListener('mlcss',go);go();
 })();
 </script>
-<script src="vendor/overlayscrollbars-2.16.0.min.js" onerror="document.documentElement.removeAttribute('data-overlayscrollbars-initialize');document.body.removeAttribute('data-overlayscrollbars-initialize')"></script>
-<script>
-/* page scrollbar (see the .os-theme-ava styles): only runs where the browser's own bar takes up space */
-/* only with a real mouse (desktop): phones, tablets and touch screens always keep the device's own scrollbar and scrolling */
-const osOff=()=>{document.documentElement.removeAttribute('data-overlayscrollbars-initialize');document.body.removeAttribute('data-overlayscrollbars-initialize')};
-try{if(!matchMedia('(hover: hover) and (pointer: fine)').matches||matchMedia('(any-pointer: coarse)').matches)osOff();else{const{OverlayScrollbars,ClickScrollPlugin}=OverlayScrollbarsGlobal;OverlayScrollbars.plugin(ClickScrollPlugin);OverlayScrollbars({target:document.body,cancel:{nativeScrollbarsOverlaid:true,body:null}},{scrollbars:{theme:'os-theme-ava',autoHide:'scroll',autoHideDelay:1000,clickScroll:true}})}}
-catch(e){osOff()}
-</script>
+__SCROLLBAR__
 </body></html>

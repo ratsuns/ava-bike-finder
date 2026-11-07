@@ -1,0 +1,8 @@
+<script src="vendor/overlayscrollbars-2.16.0.min.js" onerror="document.documentElement.removeAttribute('data-overlayscrollbars-initialize');document.body.removeAttribute('data-overlayscrollbars-initialize')"></script>
+<script>
+/* page scrollbar (see the .os-theme-ava styles), only with a real mouse, where the browser's own bar takes up space. The head script
+   already took the page's flag off on phones, tablets and touch screens: they keep the device's own scrollbar and scrolling */
+{const osOff=()=>{document.documentElement.removeAttribute('data-overlayscrollbars-initialize');document.body.removeAttribute('data-overlayscrollbars-initialize')};
+try{if(!document.documentElement.hasAttribute('data-overlayscrollbars-initialize'))osOff();else{const{OverlayScrollbars,ClickScrollPlugin}=OverlayScrollbarsGlobal;OverlayScrollbars.plugin(ClickScrollPlugin);OverlayScrollbars({target:document.body,cancel:{nativeScrollbarsOverlaid:true,body:null}},{scrollbars:{theme:'os-theme-ava',autoHide:'scroll',autoHideDelay:1000,clickScroll:true}})}}
+catch(e){osOff()}}
+</script>
