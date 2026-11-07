@@ -1,4 +1,4 @@
-{"bike": "Urtopia|Carbon Classic", "checked": "2026-11-06",
+{"id": "urtopia-carbon-classic", "bike": "Urtopia|Carbon Classic", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2299, "url": "https://newurtopia.com/products/urtopia-carbon-classic-ebike", "quote": "$1,999.00 | $2,299.00 | -$300.00", "basis": "crossed-out regular price; $1,999 is the Black Friday sale price"},
@@ -9,7 +9,7 @@
    {"kind": "review", "value": 2, "url": "https://electricbikereview.com/urtopia/carbon-classic-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 2/3", "basis": "Class 2/3 = ships Class 2, unlockable to Class 3 (per maker)"}
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://newurtopia.com/products/urtopia-carbon-classic-ebike", "quote": "Top Speed | 20mph by default | 25mph upon unlock", "basis": "adjustable to 25 mph"},
+   {"kind": "maker", "value": 20, "url": "https://newurtopia.com/products/urtopia-carbon-classic-ebike", "quote": "Top Speed | 20mph by default | 25mph upon unlock", "basis": "adjustable to 25 mph", "max_mph": 25},
    {"kind": "review", "value": 25, "url": "https://electricbikereview.com/urtopia/carbon-classic-review/", "quote": "TOP SPEED: ⟶ 25 MPH mph", "basis": "unlocked top speed"}
   ],
   "tq": [

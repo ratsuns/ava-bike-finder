@@ -1,4 +1,4 @@
-{"bike": "Retrospec|Joe Rev BMX Electric Bike (Rev 1)", "checked": "2026-11-06",
+{"id": "retrospec-joe-rev-bmx-electric-bike-rev-1", "bike": "Retrospec|Joe Rev BMX Electric Bike (Rev 1)", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1399.99, "url": "https://retrospec.com/products/joe-rev-bmx-electric-bike-1", "quote": "Original Price: $1,399.99", "basis": "page shows sale price $999.99 with regular price $1,399.99"},

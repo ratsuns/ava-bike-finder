@@ -1,4 +1,4 @@
-{"bike": "Troxus|Lynx Cargo", "checked": "2026-11-06",
+{"id": "troxus-lynx-cargo", "bike": "Troxus|Lynx Cargo", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2399, "url": "https://www.troxusmobility.com/products/lynx-cargo-e-bike", "quote": "Regular price ⟶ $2,399.00 USD"}

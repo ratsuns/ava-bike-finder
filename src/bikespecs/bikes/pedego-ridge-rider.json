@@ -1,4 +1,4 @@
-{"bike": "Pedego|Ridge Rider", "checked": "2026-11-06",
+{"id": "pedego-ridge-rider", "bike": "Pedego|Ridge Rider", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2195, "url": "https://pedegoelectricbikes.com/products/ridge-rider-2", "quote": "$2,195.00 ⟶ CHOOSE OPTIONS"},
@@ -10,7 +10,7 @@
   ],
   "spd": [
    {"kind": "maker", "value": 20, "url": "https://pedegoelectricbikes.com/products/ridge-rider-2", "quote": "SPEED ⟶ Class 1 - 20mph Pedal Assist", "basis": "Class 3 upgrade at participating dealers"},
-   {"kind": "review", "value": 20, "url": "https://electricbikereview.com/pedego/ridge-rider-2-review/", "quote": "TOP SPEED: ⟶ 20 mph (Class 2) / 28 mph (Class 3 via dealer) mph", "basis": "adjustable to 28 mph (Class 3 via dealer)"}
+   {"kind": "review", "value": 20, "url": "https://electricbikereview.com/pedego/ridge-rider-2-review/", "quote": "TOP SPEED: ⟶ 20 mph (Class 2) / 28 mph (Class 3 via dealer) mph", "basis": "adjustable to 28 mph (Class 3 via dealer)", "max_mph": 28}
   ],
   "tq": [
    {"kind": "maker", "value": 90, "url": "https://pedegoelectricbikes.com/products/ridge-rider-2", "quote": "MOTOR ⟶ 48V, 750W, 90Nm Torque"},

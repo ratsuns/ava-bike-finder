@@ -1,4 +1,4 @@
-{"bike": "Gazelle|Eclipse T11+", "checked": "2026-11-06",
+{"id": "gazelle-eclipse-t11-plus", "bike": "Gazelle|Eclipse T11+", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 5899, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-eclipse-t11plus", "quote": "$5,899$5,499 | Shop stock: First, configure your bike", "basis": "regular $5,899 shown crossed out next to sale price $5,499"},

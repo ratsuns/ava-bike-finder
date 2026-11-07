@@ -1,4 +1,5 @@
 {
+ "id": "velotric-t1",
  "bike": "Velotric|T1",
  "checked": "2026-11-06",
  "fields": {
@@ -38,7 +39,8 @@
     "value": 20,
     "url": "https://www.velotricbike.com/products/velotric-t1-ebike",
     "quote": "Max Speed ⟶ 20 MPH, Class 1 | Default Speed (Unlock) ⟶ 25 MPH",
-    "basis": "adjustable to 25 mph"
+    "basis": "adjustable to 25 mph",
+    "max_mph": 25
    },
    {
     "kind": "review",

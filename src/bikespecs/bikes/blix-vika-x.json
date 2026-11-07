@@ -1,4 +1,4 @@
-{"bike": "Blix|Vika X", "checked": "2026-11-06",
+{"id": "blix-vika-x", "bike": "Blix|Vika X", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1799, "url": "https://blixbike.com/products/vika-x-folding-ebike", "quote": "Vika X Folding eBike | $1,799.00 | Product information"},
@@ -9,8 +9,8 @@
    {"kind": "review", "value": 2, "url": "https://electricbikereport.com/blix-vika-x-review/", "quote": "The Vika X ships as a Class 2 e-bike set to 20 mph, but it can be unlocked to a Class 3 with pedal assist up to 28 mph through the Blix Connect app."}
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://blixbike.com/products/vika-x-folding-ebike", "quote": "The Vika X is a class 2 ebike that can be changed to a class 3 ebike with the Blix app, increasing the pedal assist top speed from 20 mph to 28 mph.", "basis": "adjustable to 28 mph"},
-   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/blix-vika-x-review/", "quote": "The Vika X ships as a Class 2 e-bike set to 20 mph, but it can be unlocked to a Class 3 with pedal assist up to 28 mph through the Blix Connect app.", "basis": "adjustable to 28 mph"}
+   {"kind": "maker", "value": 20, "url": "https://blixbike.com/products/vika-x-folding-ebike", "quote": "The Vika X is a class 2 ebike that can be changed to a class 3 ebike with the Blix app, increasing the pedal assist top speed from 20 mph to 28 mph.", "basis": "adjustable to 28 mph", "max_mph": 28},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/blix-vika-x-review/", "quote": "The Vika X ships as a Class 2 e-bike set to 20 mph, but it can be unlocked to a Class 3 with pedal assist up to 28 mph through the Blix Connect app.", "basis": "adjustable to 28 mph", "max_mph": 28}
   ],
   "tq": [
    {"kind": "maker", "value": 55, "url": "https://blixbike.com/products/vika-x-folding-ebike", "quote": "Motor | Rear Hub, Geared, 500W, 55Nm Torque"},

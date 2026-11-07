@@ -1,4 +1,4 @@
-{"bike": "Radio Flyer|Flyer Via Pro", "checked": "2026-11-06",
+{"id": "radio-flyer-flyer-via-pro", "bike": "Radio Flyer|Flyer Via Pro", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1699, "url": "https://www.radioflyer.com/products/flyer-via-pro", "quote": "$1,699.00 ⟶ Color: Black", "basis": "no crossed-out price shown (compare_at_price null)"}

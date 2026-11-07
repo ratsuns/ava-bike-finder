@@ -1,4 +1,4 @@
-{"bike": "Tern|Vektron Q9", "checked": "2026-11-06",
+{"id": "tern-vektron-q9", "bike": "Tern|Vektron Q9", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": null, "url": "https://www.ternbicycles.com/us/bikes/473/vektron-q9", "quote": "$2,999 (SALE PRICE)", "basis": "maker shows only a sale price; no regular price on the page"},

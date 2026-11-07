@@ -1,4 +1,4 @@
-{"bike": "Retrospec|Roo Rev Cargo Electric Bike", "checked": "2026-11-06",
+{"id": "retrospec-roo-rev-cargo-electric-bike", "bike": "Retrospec|Roo Rev Cargo Electric Bike", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1899.99, "url": "https://retrospec.com/products/roo-rev-cargo-electric-bike", "quote": "Add To Cart - $1,899.99", "basis": "no crossed-out price shown"},

@@ -1,4 +1,4 @@
-{"bike": "Himiway|D5 2.0", "checked": "2026-11-06",
+{"id": "himiway-d5-2-0", "bike": "Himiway|D5 2.0", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2199, "url": "https://himiwaybike.com/products/himiway-d5", "quote": "Regular price ⟶ $2,199.00", "basis": "regular price; on sale for $1,999"}

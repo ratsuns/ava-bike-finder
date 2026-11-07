@@ -1,4 +1,4 @@
-{"bike": "Giant|Explore E+", "checked": "2026-11-06",
+{"id": "giant-explore-e-plus", "bike": "Giant|Explore E+", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": null, "url": "https://www.giant-bicycles.com/global/explore-e-range", "quote": "", "basis": "global series page has no price; Giant US site lists no Explore E+ (UK page https://www.giant-bicycles.com/gb/bikes-explore-eplus prices in GBP only, e.g. 'Explore E+ 2 | £3,499')"},

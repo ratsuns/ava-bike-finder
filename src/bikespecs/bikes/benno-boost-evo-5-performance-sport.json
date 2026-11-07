@@ -1,4 +1,4 @@
-{"bike": "Benno|Boost EVO 5 Performance Sport", "checked": "2026-11-06",
+{"id": "benno-boost-evo-5-performance-sport", "bike": "Benno|Boost EVO 5 Performance Sport", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 4399, "url": "https://bennobikes.com/e-bikes/boost/", "quote": "Performance Sport: $4,399 USD"},

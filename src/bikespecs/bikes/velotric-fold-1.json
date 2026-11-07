@@ -1,4 +1,4 @@
-{"bike": "Velotric|Fold 1", "checked": "2026-11-06",
+{"id": "velotric-fold-1", "bike": "Velotric|Fold 1", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1499, "url": "https://www.velotricbike.com/products/velotric-fold-1", "quote": "$1,299.00 ⟶ $1,499.00", "basis": "$1,499.00 is the crossed-out regular price; $1,299.00 is the Black Friday sale price (\"Save $200.00\")"},

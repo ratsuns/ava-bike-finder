@@ -1,4 +1,4 @@
-{"bike": "Segway|Xafari", "checked": "2026-11-06",
+{"id": "segway-xafari", "bike": "Segway|Xafari", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2399.99, "url": "https://store.segway.com/segway-ebike-xafari", "quote": "Segway Xafari Fat Tire eBike$1,299.99$2,399.99MSRP", "basis": "MSRP (crossed-out); currently on sale for $1,299.99"},
@@ -9,8 +9,8 @@
    {"kind": "review", "value": 2, "url": "https://www.outdoorgearlab.com/reviews/biking/electric-bike/segway-xafari", "quote": "The Xafari ships as a Class 2 bike, but Class 3 speeds (28 mph) can be unlocked via the Segway app—unless you are in California."}
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://www.segway.com/ebike/products/xafari.html", "quote": "Class 2: 20 mph ⟶ Class 3: 28 mph*", "basis": "adjustable to 28 mph"},
-   {"kind": "review", "value": 20, "url": "https://www.outdoorgearlab.com/reviews/biking/electric-bike/segway-xafari", "quote": "The Xafari ships as a Class 2 bike, but Class 3 speeds (28 mph) can be unlocked via the Segway app—unless you are in California.", "basis": "adjustable to 28 mph"}
+   {"kind": "maker", "value": 20, "url": "https://www.segway.com/ebike/products/xafari.html", "quote": "Class 2: 20 mph ⟶ Class 3: 28 mph*", "basis": "adjustable to 28 mph", "max_mph": 28},
+   {"kind": "review", "value": 20, "url": "https://www.outdoorgearlab.com/reviews/biking/electric-bike/segway-xafari", "quote": "The Xafari ships as a Class 2 bike, but Class 3 speeds (28 mph) can be unlocked via the Segway app—unless you are in California.", "basis": "adjustable to 28 mph", "max_mph": 28}
   ],
   "tq": [
    {"kind": "maker", "value": 80, "url": "https://www.segway.com/ebike/products/xafari.html", "quote": "Max. Torque ⟶ 80Nm"},

@@ -1,4 +1,4 @@
-{"bike": "Cannondale|Adventure Neo Allroad Speed", "checked": "2026-11-06",
+{"id": "cannondale-adventure-neo-allroad-speed", "bike": "Cannondale|Adventure Neo Allroad Speed", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2199, "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/adventure-neo-allroad/adventure-neo-allroad-speed-c68554m", "quote": "$2,199 ⟶ 0% APRor as low as $107/mo with Affirm. See if you qualify"},

@@ -1,4 +1,4 @@
-{"bike": "Troxus|Explorer Plus iQ", "checked": "2026-11-06",
+{"id": "troxus-explorer-plus-iq", "bike": "Troxus|Explorer Plus iQ", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2099, "url": "https://www.troxusmobility.com/products/explorer-plus-iq", "quote": "Regular price ⟶ $2,099.00 USD"}

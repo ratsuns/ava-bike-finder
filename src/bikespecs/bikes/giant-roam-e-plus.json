@@ -1,4 +1,4 @@
-{"bike": "Giant|Roam E+", "checked": "2026-11-06",
+{"id": "giant-roam-e-plus", "bike": "Giant|Roam E+", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2750, "url": "https://www.giant-bicycles.com/us/roam-eplus-gts-2021", "quote": "$2,750 * ⟶ CHOOSE YOUR SIZE", "basis": "Roam E+ GTS (2021); no crossed-out price shown"},

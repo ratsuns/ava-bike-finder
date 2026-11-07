@@ -1,4 +1,4 @@
-{"bike": "Pedego|Cargo", "checked": "2026-11-06",
+{"id": "pedego-cargo", "bike": "Pedego|Cargo", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 3895, "url": "https://pedegoelectricbikes.com/products/cargo", "quote": "$3,895.00 ⟶ CHOOSE OPTIONS"},

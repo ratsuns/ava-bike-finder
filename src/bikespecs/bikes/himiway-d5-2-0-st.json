@@ -1,4 +1,4 @@
-{"bike": "Himiway|D5 2.0 ST", "checked": "2026-11-06",
+{"id": "himiway-d5-2-0-st", "bike": "Himiway|D5 2.0 ST", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2199, "url": "https://himiwaybike.com/products/himiway-d5-st", "quote": "Regular price ⟶ $2,199.00"},
@@ -9,8 +9,8 @@
    {"kind": "retailer", "value": 2, "url": "https://renewableoutdoors.com/products/himiway-d5-2-0-st-step-thru-full-suspension-electric-bike", "quote": "Class 1/2/3 Configurable", "basis": "Ergonomic thumb throttle and 20 MPH default, so Class 2"}
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://himiwaybike.com/products/himiway-d5-st", "quote": "Max speed (default) ⟶ 20 MPH", "basis": "default; adjustable to 28 mph ('Max speed adjustable range ⟶ 4~28 MPH')"},
-   {"kind": "retailer", "value": 20, "url": "https://renewableoutdoors.com/products/himiway-d5-2-0-st-step-thru-full-suspension-electric-bike", "quote": "Max Speed (Default)\t20 MPH ⟶ Max Speed (Adjustable Range)\t4–28 MPH", "basis": "default; adjustable to 28 mph"}
+   {"kind": "maker", "value": 20, "url": "https://himiwaybike.com/products/himiway-d5-st", "quote": "Max speed (default) ⟶ 20 MPH … Max speed adjustable range ⟶ 4~28 MPH", "basis": "default; adjustable to 28 mph ('Max speed adjustable range ⟶ 4~28 MPH')", "max_mph": 28},
+   {"kind": "retailer", "value": 20, "url": "https://renewableoutdoors.com/products/himiway-d5-2-0-st-step-thru-full-suspension-electric-bike", "quote": "Max Speed (Default)\t20 MPH ⟶ Max Speed (Adjustable Range)\t4–28 MPH", "basis": "default; adjustable to 28 mph", "max_mph": 28}
   ],
   "tq": [
    {"kind": "maker", "value": 90, "url": "https://himiwaybike.com/products/himiway-d5-st", "quote": "Motor ⟶ 48V, 750W, 90Nm"},

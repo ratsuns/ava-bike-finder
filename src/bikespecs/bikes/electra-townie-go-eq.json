@@ -1,4 +1,4 @@
-{"bike": "Electra|Townie Go! EQ", "checked": "2026-11-06",
+{"id": "electra-townie-go-eq", "bike": "Electra|Townie Go! EQ", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1999.99, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go-eq/p/85107/", "quote": "Townie Go! EQ | $1,999.99 | Model 5354599"},

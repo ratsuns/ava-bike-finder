@@ -1,4 +1,4 @@
-{"bike": "MOD|Berlin Step-Thru 3", "checked": "2026-11-06",
+{"id": "mod-berlin-step-thru-3", "bike": "MOD|Berlin Step-Thru 3", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1999, "url": "https://mod-bikes.com/products/mod-berlin-step-thru-commuter-ebike?variant=39631584854156", "quote": "$1,799 | $1,799 | Regular price | $1,999 | $1,999 | Sale price", "basis": "regular price $1,999; on sale at $1,799"},
@@ -9,7 +9,7 @@
    {"kind": "review", "value": null, "url": "https://electrek.co/2024/07/17/europe-meets-texas-the-mod-berlin-electric-bike-seeks-to-find-the-best-of-both/", "quote": "In the case of the new MOD Berlin, the bike sports a 750W hub motor and can reach a maximum speed of 28 mph (45 km/h) on pedal assist, maxing out the legally allowable performance specs while staying within Class 3 e-bike regulations (at least, when riders can maintain enough self-discipline to keep the thumb throttle disengaged).", "basis": "describes Class 3 capability; not the shipped setting"}
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://mod-bikes.com/products/mod-berlin-step-thru-commuter-ebike?variant=39631584854156", "quote": "Speed | Up to 20 mph (Off-road mode: up to 28 mph)", "basis": "adjustable to 28 mph (off-road mode)"},
+   {"kind": "maker", "value": 20, "url": "https://mod-bikes.com/products/mod-berlin-step-thru-commuter-ebike?variant=39631584854156", "quote": "Speed | Up to 20 mph (Off-road mode: up to 28 mph)", "basis": "adjustable to 28 mph (off-road mode)", "max_mph": 28},
    {"kind": "review", "value": 28, "url": "https://electrek.co/2024/07/17/europe-meets-texas-the-mod-berlin-electric-bike-seeks-to-find-the-best-of-both/", "quote": "In the case of the new MOD Berlin, the bike sports a 750W hub motor and can reach a maximum speed of 28 mph (45 km/h) on pedal assist, maxing out the legally allowable performance specs while staying within Class 3 e-bike regulations (at least, when riders can maintain enough self-discipline to keep the thumb throttle disengaged).", "basis": "max pedal-assist speed"}
   ],
   "tq": [

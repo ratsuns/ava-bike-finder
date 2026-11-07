@@ -1,4 +1,4 @@
-{"bike": "Trek|Fetch+ 2", "checked": "2026-11-06",
+{"id": "trek-fetch-plus-2", "bike": "Trek|Fetch+ 2", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 5999.99, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fetch/fetch-2/p/37640/", "quote": "$2,999.93 ⟶ $5,999.99", "basis": "sale price $2,999.93; regular (crossed-out, 'Original price') $5,999.99"},

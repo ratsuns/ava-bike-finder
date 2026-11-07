@@ -1,4 +1,4 @@
-{"bike": "Lectric|XPeak 2.0", "checked": "2026-11-06",
+{"id": "lectric-xpeak-2-0", "bike": "Lectric|XPeak 2.0", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1499, "url": "https://lectricebikes.com/products/xpeak-high-step-ebike", "quote": "Previously listed at $1499, now marked down to $1399!"},

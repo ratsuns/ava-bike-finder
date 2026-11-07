@@ -1,4 +1,4 @@
-{"bike": "Gazelle|Avignon C380", "checked": "2026-11-06",
+{"id": "gazelle-avignon-c380", "bike": "Gazelle|Avignon C380", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 5199, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-avignon-c380", "quote": "$5,199$4,999 | Shop stock: First, configure your bike", "basis": "regular $5,199 shown crossed out next to sale price $4,999"},

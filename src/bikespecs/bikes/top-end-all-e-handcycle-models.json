@@ -1,4 +1,4 @@
-{"bike": "Top End|All E-handcycle models", "checked": "2026-11-06",
+{"id": "top-end-all-e-handcycle-models", "bike": "Top End|All E-handcycle models", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "retailer", "value": 12699, "url": "https://www.amplife.co/products/top-end-e-force-3-handcycle", "quote": "$ 12,699.00 ⟶ Save $190.00 when you pay with ACH. Contact us below", "basis": "E-Force 3 base model"},

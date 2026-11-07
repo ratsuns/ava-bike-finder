@@ -1,4 +1,4 @@
-{"bike": "Gazelle|Eclipse C380+", "checked": "2026-11-06",
+{"id": "gazelle-eclipse-c380-plus", "bike": "Gazelle|Eclipse C380+", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 6399, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-eclipse-c380plus", "quote": "$6,399$5,999 | Shop stock: First, configure your bike", "basis": "regular $6,399 shown crossed out next to sale price $5,999"},

@@ -1,4 +1,4 @@
-{"bike": "Trek|Dual Sport+", "checked": "2026-11-06",
+{"id": "trek-dual-sport-plus", "bike": "Trek|Dual Sport+", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2399.99, "url": "https://www.trekbikes.com/us/en_US/pre-owned-bikes/pre-owned-hybrid-bikes/dual-sport-2--2023-x-large/p/95006/", "quote": "$1,499.99 | $2,399.99 | Comp. Value | Original price", "basis": "Trek's pre-owned listing of a 2023 Dual Sport+ 2 gives the original price"},

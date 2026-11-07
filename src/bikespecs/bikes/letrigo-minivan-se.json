@@ -1,4 +1,4 @@
-{"bike": "Letrigo|Minivan SE", "checked": "2026-11-06",
+{"id": "letrigo-minivan-se", "bike": "Letrigo|Minivan SE", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1899, "url": "https://letrigo.com/products/minivan-se", "quote": "$1,899.00 USD ⟶ (20)"},
@@ -10,7 +10,7 @@
   ],
   "spd": [
    {"kind": "maker", "value": 20, "url": "https://letrigo.com/products/minivan-se", "quote": "Speed ⟶ Class 2: 20mph", "basis": "adjustable to 28 mph (Class 3: 28mph)"},
-   {"kind": "retailer", "value": 20, "url": "https://www.citygrounds.com/products/letrigo-minivan-se-electric-bike", "quote": "Speed:Class 2: 20mph / Class 3: 28mph", "basis": "adjustable to 28 mph"}
+   {"kind": "retailer", "value": 20, "url": "https://www.citygrounds.com/products/letrigo-minivan-se-electric-bike", "quote": "Speed:Class 2: 20mph / Class 3: 28mph", "basis": "adjustable to 28 mph", "max_mph": 28}
   ],
   "tq": [
    {"kind": "maker", "value": 90, "url": "https://letrigo.com/products/minivan-se", "quote": "Hentach, Heavy duty Cargoline motor, nylon-steel gears ⟶ 90 Nm of torque"},

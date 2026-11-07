@@ -1,4 +1,4 @@
-{"bike": "Troxus|Explorer Plus MIK (Step-Thru)", "checked": "2026-11-06",
+{"id": "troxus-explorer-plus-mik-step-thru", "bike": "Troxus|Explorer Plus MIK (Step-Thru)", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2299, "url": "https://www.troxusmobility.com/products/explorer-plus-step-thru-e-bike-mik-version", "quote": "Regular price ⟶ $2,299", "basis": "crossed-out regular price; sale price $1,499"}

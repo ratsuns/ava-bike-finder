@@ -1,4 +1,5 @@
 {
+ "id": "pedego-element-pro",
  "bike": "Pedego|Element Pro",
  "checked": "2026-11-06",
  "fields": {
@@ -9,7 +10,7 @@
    {"kind": "maker", "value": 2, "url": "https://pedegoelectricbikes.com/products/element-pro", "quote": "TOP SPEED | Class 1: 20MPH, Class 2: 20MPH, Class 3 Ready: 28MPH", "basis": "Class 1 & 2, Class 3 ready via dealer; has 'Pedego Twist Throttle' and 20 mph -> Class 2"}
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://pedegoelectricbikes.com/products/element-pro", "quote": "TOP SPEED | Class 1: 20MPH, Class 2: 20MPH, Class 3 Ready: 28MPH", "basis": "adjustable to 28 mph (Class 3 upgrade at dealer)"}
+   {"kind": "maker", "value": 20, "url": "https://pedegoelectricbikes.com/products/element-pro", "quote": "TOP SPEED | Class 1: 20MPH, Class 2: 20MPH, Class 3 Ready: 28MPH", "basis": "adjustable to 28 mph (Class 3 upgrade at dealer)", "max_mph": 28}
   ],
   "tq": [
    {"kind": "maker", "value": null, "url": "https://pedegoelectricbikes.com/products/element-pro", "quote": "MOTOR | 749W Rear Hub Motor", "basis": "no torque given"}

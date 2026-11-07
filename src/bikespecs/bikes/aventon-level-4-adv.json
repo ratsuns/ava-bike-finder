@@ -1,4 +1,4 @@
-{"bike": "Aventon|Level 4 ADV", "checked": "2026-11-06",
+{"id": "aventon-level-4-adv", "bike": "Aventon|Level 4 ADV", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2799, "url": "https://www.aventon.com/products/level-4-adv-ebike", "quote": "$2,699.00 | $2,799.00", "basis": "regular $2,799; sale $2,699 ($100 off)"},
@@ -9,8 +9,8 @@
    {"kind": "review", "value": 1, "url": "https://electricbikereport.com/aventon-level-4-adv-review/", "quote": "As a side note, I should mention that we performed our testing using the bike’s default programming and Class 1 speed settings. Riders who increase power via the RideTune feature and/or who travel at speeds above 20 mph should expect less range."}
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://www.aventon.com/products/level-4-adv-ebike", "quote": "Level 4 ADV comes out of the box as a Class 1 eBike, meaning no throttle and a max pedal assist speed of 20mph. However, the Level 4 ADV is throttle-compatible and able to be unlocked to a pedal assist speed of 28mph.", "basis": "adjustable to 28 mph"},
-   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/aventon-level-4-adv-review/", "quote": "This linear pattern translated to higher speeds with nearly the same level of effort, giving me more return for the effort I applied. The bike pedaled to 20 mph easily in the Class 1 test and averaged just below 28 mph in the Class 3 test.", "basis": "adjustable to 28 mph"}
+   {"kind": "maker", "value": 20, "url": "https://www.aventon.com/products/level-4-adv-ebike", "quote": "Level 4 ADV comes out of the box as a Class 1 eBike, meaning no throttle and a max pedal assist speed of 20mph. However, the Level 4 ADV is throttle-compatible and able to be unlocked to a pedal assist speed of 28mph.", "basis": "adjustable to 28 mph", "max_mph": 28},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/aventon-level-4-adv-review/", "quote": "This linear pattern translated to higher speeds with nearly the same level of effort, giving me more return for the effort I applied. The bike pedaled to 20 mph easily in the Class 1 test and averaged just below 28 mph in the Class 3 test.", "basis": "adjustable to 28 mph", "max_mph": 28}
   ],
   "tq": [
    {"kind": "maker", "value": 100, "url": "https://www.aventon.com/products/level-4-adv-ebike", "quote": "Motor Torque | 100Nm"},

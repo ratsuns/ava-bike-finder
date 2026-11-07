@@ -1,4 +1,4 @@
-{"bike": "Electra|Townie Go!", "checked": "2026-11-06",
+{"id": "electra-townie-go", "bike": "Electra|Townie Go!", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1799.99, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/townie-go/townie-go/p/84176/", "quote": "$1,799.99 ⟶ Model 5353864"}

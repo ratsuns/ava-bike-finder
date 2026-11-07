@@ -1,4 +1,4 @@
-{"bike": "Liv|Rove", "checked": "2026-11-06",
+{"id": "liv-rove", "bike": "Liv|Rove", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2750, "url": "https://www.liv-cycling.com/us/rove-eplus-2021", "quote": "$2,750 * ⟶ CHOOSE YOUR SIZE"},

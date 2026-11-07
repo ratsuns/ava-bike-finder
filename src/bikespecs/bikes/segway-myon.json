@@ -1,4 +1,5 @@
 {
+ "id": "segway-myon",
  "bike": "Segway|Myon",
  "checked": "2026-11-06",
  "fields": {
@@ -39,7 +40,8 @@
     "value": 20,
     "url": "https://www.segway.com/ebike/products/myon.html",
     "quote": "Class 2: 20 mph ⟶ Class 3: 28 mph*",
-    "basis": "adjustable to 28 mph"
+    "basis": "adjustable to 28 mph",
+    "max_mph": 28
    }
   ],
   "tq": [

@@ -1,4 +1,4 @@
-{"bike": "Letrigo|Minivan", "checked": "2026-11-06",
+{"id": "letrigo-minivan", "bike": "Letrigo|Minivan", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2999, "url": "https://letrigo.com/products/minivan", "quote": "$2,999.00 USD ⟶ (17)", "basis": "base price without second battery; no crossed-out price shown"},
@@ -10,7 +10,7 @@
    {"kind": "review", "value": 2, "url": "https://www.bikeride.com/letrigo-minivan/", "quote": "CLASS ⟶ Class 2, Class 3", "basis": "lists Class 2 and 3; maker ships Class 2 at 20 mph"}
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://letrigo.com/products/minivan", "quote": "Class 2:20mph ⟶ Max speed up to 27mph", "basis": "default Class 2 20 mph; adjustable to 27 mph"},
+   {"kind": "maker", "value": 20, "url": "https://letrigo.com/products/minivan", "quote": "Class 2:20mph ⟶ Max speed up to 27mph", "basis": "default Class 2 20 mph; adjustable to 27 mph", "max_mph": 27},
    {"kind": "review", "value": 28, "url": "https://www.bikeride.com/letrigo-minivan/", "quote": "TOP SPEED ⟶ 28 mph"}
   ],
   "tq": [

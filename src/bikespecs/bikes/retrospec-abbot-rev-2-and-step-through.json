@@ -1,4 +1,4 @@
-{"bike": "Retrospec|Abbot Rev 2 (and Step Through)", "checked": "2026-11-06",
+{"id": "retrospec-abbot-rev-2-and-step-through", "bike": "Retrospec|Abbot Rev 2 (and Step Through)", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1599.99, "url": "https://retrospec.com/products/abbot-rev-commuter-electric-bike", "quote": "Original Price: $1,599.99", "basis": "page shows sale price $1,299.99 with regular price $1,599.99"},

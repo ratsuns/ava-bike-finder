@@ -1,4 +1,4 @@
-{"bike": "Lectric|XPress2 (Commuter / Cruiser)", "checked": "2026-11-06",
+{"id": "lectric-xpress2-commuter-cruiser", "bike": "Lectric|XPress2 (Commuter / Cruiser)", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1858, "url": "https://lectricebikes.com/products/xpress-750-high-step-black-ebike", "quote": "$1,399 ⟶ $1,858", "basis": "crossed-out price $1,858; $1,399 is current sale price (same on Cruiser page)"},

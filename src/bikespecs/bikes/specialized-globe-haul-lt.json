@@ -1,4 +1,4 @@
-{"bike": "Specialized|Globe Haul LT", "checked": "2026-11-06",
+{"id": "specialized-globe-haul-lt", "bike": "Specialized|Globe Haul LT", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 3799.99, "url": "https://www.specialized.com/us/en/haul-lt/p/277758", "quote": "$3,799.99 ⟶ 0% APRor as low as $132/mo with Affirm. See if you qualify"}

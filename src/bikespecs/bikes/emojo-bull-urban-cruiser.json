@@ -1,4 +1,4 @@
-{"bike": "Emojo|Bull Urban Cruiser", "checked": "2026-11-06",
+{"id": "emojo-bull-urban-cruiser", "bike": "Emojo|Bull Urban Cruiser", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2798, "url": "https://emojobike.com/products/bull-urban-cruiser", "quote": "Regular price ⟶ $2,798.00", "basis": "sale price $2,598.00 not used"}

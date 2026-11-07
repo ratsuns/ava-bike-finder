@@ -1,4 +1,4 @@
-{"bike": "Tern|Vektron P10", "checked": "2026-11-06",
+{"id": "tern-vektron-p10", "bike": "Tern|Vektron P10", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 3699, "url": "https://www.ternbicycles.com/us/bikes/474/vektron-p10", "quote": "RIDE IT, FOLD IT, GO FURTHER ⟶ $3,699"},

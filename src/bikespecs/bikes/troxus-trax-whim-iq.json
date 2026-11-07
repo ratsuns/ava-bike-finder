@@ -1,4 +1,4 @@
-{"bike": "Troxus|Trax Whim iQ", "checked": "2026-11-06",
+{"id": "troxus-trax-whim-iq", "bike": "Troxus|Trax Whim iQ", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1599, "url": "https://www.troxusmobility.com/products/trax-whim-iq", "quote": "Regular price | $1,599.00 USD | Size"},
@@ -10,8 +10,8 @@
    {"kind": "review", "value": null, "url": "https://electricbikereport.com/troxus-trax-whim-iq-review/", "quote": "CLASS 2, THROTTLE TO 20 MPH ⟶ CLASS 3, PEDAL ASSIST TO 28 MPH", "basis": "lists all three classes; doesn't say which it ships in"}
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://www.troxusmobility.com/products/trax-whim-iq", "quote": "Max Speed\tMax Speed Up To 20 MPH on Throttle / Up To 28 MPH on Pedal Assist", "basis": "adjustable to 28 mph"},
-   {"kind": "review", "value": 20, "url": "https://electricbikereview.com/troxus/trax-whim-iq-review/", "quote": "TOP SPEED: ⟶ 20 mph on throttle, 28 mph on pedal assist mph", "basis": "adjustable to 28 mph (ships as Class 2)"},
+   {"kind": "maker", "value": 20, "url": "https://www.troxusmobility.com/products/trax-whim-iq", "quote": "Max Speed\tMax Speed Up To 20 MPH on Throttle / Up To 28 MPH on Pedal Assist", "basis": "adjustable to 28 mph", "max_mph": 28},
+   {"kind": "review", "value": 20, "url": "https://electricbikereview.com/troxus/trax-whim-iq-review/", "quote": "TOP SPEED: ⟶ 20 mph on throttle, 28 mph on pedal assist mph", "basis": "adjustable to 28 mph (ships as Class 2)", "max_mph": 28},
    {"kind": "review", "value": 20, "url": "https://electricbikereport.com/troxus-trax-whim-iq-review/", "quote": "From there, I engaged the PAS system. At class 2 speeds using the cadence sensor, PAS 1 settled in at 9.4 mph, PAS 2 at 12.4, PAS 3 at 15.9, PAS 4 at 17.5, and PAS maxed out at 20.3 mph.", "basis": "adjustable to 28 mph"}
   ],
   "tq": [

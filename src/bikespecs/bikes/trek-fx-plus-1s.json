@@ -1,4 +1,4 @@
-{"bike": "Trek|FX+ 1S", "checked": "2026-11-06",
+{"id": "trek-fx-plus-1s", "bike": "Trek|FX+ 1S", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1999.99, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465T/fx%252b-1s/49668/", "quote": "FX+ 1S | $1,999.99 | Model 5332364"},

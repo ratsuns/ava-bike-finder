@@ -1,4 +1,4 @@
-{"bike": "Pedego|Avenue", "checked": "2026-11-06",
+{"id": "pedego-avenue", "bike": "Pedego|Avenue", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1999, "url": "https://pedegoelectricbikes.com/products/avenue", "quote": "$1,999.00 ⟶ CHOOSE OPTIONS"},

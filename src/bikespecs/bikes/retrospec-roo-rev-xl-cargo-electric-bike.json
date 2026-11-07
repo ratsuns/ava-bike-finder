@@ -1,4 +1,4 @@
-{"bike": "Retrospec|Roo Rev XL Cargo Electric Bike", "checked": "2026-11-06",
+{"id": "retrospec-roo-rev-xl-cargo-electric-bike", "bike": "Retrospec|Roo Rev XL Cargo Electric Bike", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1999.99, "url": "https://retrospec.com/products/roo-rev-xl-cargo-electric-bike", "quote": "Original Price: $1,999.99", "basis": "page shows sale price $1,299.99 with regular price $1,999.99"},

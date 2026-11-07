@@ -1,4 +1,4 @@
-{"bike": "Lectric|XP Lite2", "checked": "2026-11-06",
+{"id": "lectric-xp-lite2", "bike": "Lectric|XP Lite2", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 799, "url": "https://lectricebikes.com/products/xp-lite-arctic-white", "quote": "Previously listed at $799, now marked down to $749!", "basis": "'Previously listed at' price is the regular price; $888 crossed-out and $749 sale price not used"},

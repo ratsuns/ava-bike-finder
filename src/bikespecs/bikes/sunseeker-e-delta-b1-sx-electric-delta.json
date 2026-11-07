@@ -1,4 +1,4 @@
-{"bike": "Sunseeker|E-Delta B1 SX Electric Delta", "checked": "2026-11-06",
+{"id": "sunseeker-e-delta-b1-sx-electric-delta", "bike": "Sunseeker|E-Delta B1 SX Electric Delta", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 3999.99, "url": "https://sunseeker.bike/products/e-delta-b1-sx-electric-delta-23585", "quote": "Regular price ⟶ $3,999.99"},

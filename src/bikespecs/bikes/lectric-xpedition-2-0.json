@@ -1,4 +1,4 @@
-{"bike": "Lectric|XPedition 2.0", "checked": "2026-11-06",
+{"id": "lectric-xpedition-2-0", "bike": "Lectric|XPedition 2.0", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1804, "url": "https://lectricebikes.com/products/xpedition-single-battery", "quote": "$1,399 ⟶ $1,804", "basis": "crossed-out price; no 'Previously listed at' line on the page"},

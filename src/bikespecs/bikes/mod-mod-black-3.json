@@ -1,4 +1,4 @@
-{"bike": "MOD|MOD Black 3", "checked": "2026-11-06",
+{"id": "mod-mod-black-3", "bike": "MOD|MOD Black 3", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2399, "url": "https://mod-bikes.com/products/mod-black-off-road-electric-bike", "quote": "$2,199 | $2,199 | Regular price | $2,399 | $2,399 | Sale price", "basis": "regular price $2,399; currently on sale at $2,199"},
@@ -11,7 +11,7 @@
    {"kind": "review", "value": null, "url": "https://www.bikeride.com/mod-black-3/", "quote": "CLASS ⟶ Class 2, Class 3", "basis": "lists both classes, doesn't say which it ships in"}
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://mod-bikes.com/products/mod-black-off-road-electric-bike", "quote": "Speed | Up to 20 mph (Off-road mode: up to 28 mph)", "basis": "adjustable to 28 mph (off-road mode)"},
+   {"kind": "maker", "value": 20, "url": "https://mod-bikes.com/products/mod-black-off-road-electric-bike", "quote": "Speed | Up to 20 mph (Off-road mode: up to 28 mph)", "basis": "adjustable to 28 mph (off-road mode)", "max_mph": 28},
    {"kind": "review", "value": 28, "url": "https://www.bikeride.com/mod-black-3/", "quote": "TOP SPEED ⟶ 28 mph", "basis": "max unlocked speed"}
   ],
   "tq": [

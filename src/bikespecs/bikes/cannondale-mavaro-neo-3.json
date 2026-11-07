@@ -1,4 +1,4 @@
-{"bike": "Cannondale|Mavaro Neo 3", "checked": "2026-11-06",
+{"id": "cannondale-mavaro-neo-3", "bike": "Cannondale|Mavaro Neo 3", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 3999, "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/mavaro-neo/mavaro-neo-3-low-stepthru", "quote": "$2,999$3,999 ⟶ You Save $1,000", "basis": "regular price $3,999; $2,999 is a sale price"},

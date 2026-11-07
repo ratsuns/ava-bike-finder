@@ -1,4 +1,4 @@
-{"bike": "Surly|Skid Loader", "checked": "2026-11-06",
+{"id": "surly-skid-loader", "bike": "Surly|Skid Loader", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 4599, "url": "https://surlybikes.com/products/skid-loader-illegal-smile-green", "quote": "Regular price ⟶ $4,599.00 USD", "basis": "regular price; page also shows a sale price of $4,199.00"},

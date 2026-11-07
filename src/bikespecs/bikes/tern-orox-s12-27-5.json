@@ -1,4 +1,4 @@
-{"bike": "Tern|Orox S12 (27.5\")", "checked": "2026-11-06",
+{"id": "tern-orox-s12-27-5", "bike": "Tern|Orox S12 (27.5\")", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": null, "url": "https://www.ternbicycles.com/us/bikes/471/orox-s12-275", "quote": "$4,999 (SALE PRICE) ⟶ WHY OROX SPECS ACCESSORIES SUPPORT FIND A DEALER BUY", "basis": "maker shows only a sale price, no regular price"},
