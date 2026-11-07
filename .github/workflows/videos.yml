@@ -35,10 +35,13 @@ jobs:
         run: |
           if grep -rqE '(^|[^A-Za-z0-9+/])AIza[0-9A-Za-z_-]{35}' --include='*.json' --include='*.csv' --include='*.html' --include='*.js' .; then
             echo 'A Google API key is in a file. Not saving.'; exit 1; fi
-          git add -A src/videos.csv src/verify/video_meta.json index.html 'videos-*.json'
-          if ! git diff --quiet; then
+          # only the video data may change: videos.csv, video_meta.json, the videos file, and its name in index.html
+          mask() { sed -E 's/videos-[0-9a-f]{8}\.json/V/'; }
+          if [ -n "$(git status --porcelain -- . ':!src/videos.csv' ':!src/verify/video_meta.json' ':!index.html' ':!videos-*.json')" ] ||
+             ! cmp -s <(git show HEAD:index.html | mask) <(mask < index.html); then
             echo 'The build changed more than the videos, so the site on main is out of date with its sources. Build and commit it locally first:'
-            git diff --stat; exit 1; fi
+            git status --short; exit 1; fi
+          git add -A src/videos.csv src/verify/video_meta.json index.html 'videos-*.json'
           if git diff --cached --quiet; then echo 'Nothing changed.'; exit 0; fi
           git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
             commit -m 'Video reviews: refreshed from YouTube and checked'
