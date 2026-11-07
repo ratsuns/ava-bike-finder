@@ -1,4 +1,4 @@
-{"bike": "Retrospec|Valen Rev 3", "checked": "2026-11-06",
+{"id": "retrospec-valen-rev-3", "bike": "Retrospec|Valen Rev 3", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1499.99, "url": "https://retrospec.com/products/valen-rev-3-fat-tire-electric-bike", "quote": "$1,499.99 ⟶ Regular price", "basis": "no crossed-out price (compare_at_price null)"},

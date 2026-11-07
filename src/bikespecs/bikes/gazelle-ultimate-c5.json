@@ -1,4 +1,4 @@
-{"bike": "Gazelle|Ultimate C5", "checked": "2026-11-06",
+{"id": "gazelle-ultimate-c5", "bike": "Gazelle|Ultimate C5", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 3999, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-c5", "quote": "$3,999 | Shop stock: First, configure your bike", "basis": "single price shown, no crossed-out price"},

@@ -1,4 +1,4 @@
-{"bike": "Himiway|C3", "checked": "2026-11-06",
+{"id": "himiway-c3", "bike": "Himiway|C3", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2199, "url": "https://himiwaybike.com/products/c3cargo-ebike", "quote": "Regular price ⟶ $2,199.00"},

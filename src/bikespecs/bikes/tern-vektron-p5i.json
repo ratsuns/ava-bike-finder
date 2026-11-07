@@ -1,4 +1,4 @@
-{"bike": "Tern|Vektron P5i", "checked": "2026-11-06",
+{"id": "tern-vektron-p5i", "bike": "Tern|Vektron P5i", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 4099, "url": "https://www.ternbicycles.com/us/bikes/474/vektron-p5i", "quote": "RIDE IT, FOLD IT, GO FURTHER ⟶ $4,099"},

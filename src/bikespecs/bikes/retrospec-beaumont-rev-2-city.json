@@ -1,4 +1,4 @@
-{"bike": "Retrospec|Beaumont Rev 2 City", "checked": "2026-11-06",
+{"id": "retrospec-beaumont-rev-2-city", "bike": "Retrospec|Beaumont Rev 2 City", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 999.99, "url": "https://retrospec.com/products/beaumont-rev-electric-city-bike-step-through", "quote": "$999.99 ⟶ Regular price", "basis": "page is now the Beaumont Rev 3; no crossed-out price (compare_at_price null)"},

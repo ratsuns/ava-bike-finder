@@ -1,4 +1,4 @@
-{"bike": "Gazelle|Medeo T9", "checked": "2026-11-06",
+{"id": "gazelle-medeo-t9", "bike": "Gazelle|Medeo T9", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2899, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-medeo-t9", "quote": "$2,899$2,499 ⟶ Shop stock: First, configure your bike", "basis": "regular $2,899 shown crossed out next to sale price $2,499"},

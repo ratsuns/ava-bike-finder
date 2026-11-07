@@ -1,4 +1,4 @@
-{"bike": "Benno|46er Performance CX", "checked": "2026-11-06",
+{"id": "benno-46er-performance-cx", "bike": "Benno|46er Performance CX", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 4999, "url": "https://bennobikes.com/e-bikes/46er/", "quote": "Performance CX: $4,999 USD"},

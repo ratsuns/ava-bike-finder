@@ -1,4 +1,4 @@
-{"bike": "Tern|HSD P00 (Gen 3)", "checked": "2026-11-06",
+{"id": "tern-hsd-p00-gen-3", "bike": "Tern|HSD P00 (Gen 3)", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 5699, "url": "https://www.ternbicycles.com/us/bikes/473/hsd-p00", "quote": "$5,699 ⟶ WHY HSD GEN 3 SPECS ACCESSORIES SUPPORT FIND A DEALER", "basis": "not marked as sale price"},

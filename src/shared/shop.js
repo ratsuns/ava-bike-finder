@@ -1,0 +1,27 @@
+/* Shop cards and their helpers, the same on both pages. No page access here: the build also runs this file in Node
+   to put the vendor page's shop list into the page (shopList), so the built list and the live cards can never differ */
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const PIN='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>';
+const GLOBE='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18z"/></svg>';
+const PHONE='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>';
+const CLOCK='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>';
+const MAIL='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>';
+const EXT='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>';
+const placeQ=s=>encodeURIComponent([s.name,s.address,s.city,'CA'].filter(Boolean).join(', '));
+const mapUrl=s=>'https://www.google.com/maps/search/?api=1&query='+placeQ(s);
+const dirUrl=s=>'https://www.google.com/maps/dir/?api=1&destination='+placeQ(s);
+const telUrl=p=>'tel:'+String(p).replace(/[^0-9+]/g,'');
+/* email a shop with the subject and message already written; about one bike from its details, or a general question from the shop list */
+const mailUrl=(s,b)=>{const subj=b?`Question about the ${b.name} (Ava e-bike rebate)`:'Question about the Ava e-bike rebate';
+ const body=b?`Hi ${s.name},\n\nI'm interested in the ${b.name} and plan to use my Ava Community Energy e-bike rebate. Could you let me know:\n\n- Do you have it in stock, and in which colors and sizes?\n- What is the current price?\n- Can I come in for a test ride?\n\nThank you!\n`
+  :`Hi ${s.name},\n\nI'm shopping for an e-bike and plan to use my Ava Community Energy e-bike rebate. Which rebate-eligible bikes do you have in stock right now?\n\nThank you!\n`;
+ return `mailto:${s.email}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(body.replace(/\n/g,'\r\n'))}`};
+/* shop logo in a round badge; shops without a published logo get their initials */
+const slogo=(s,eager)=>{const tag=s.url?`a href="${esc(s.url)}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"`:'span aria-hidden="true"',end=s.url?'a':'span';return s.logo?`<${tag} class="slogo"><img src="${esc(s.logo)}" alt="" width="36" height="36" loading="${eager?'eager':'lazy'}" decoding="async"></${end}>`:`<${tag} class="slogo ini">${esc(s.name.replace(/^the\s+/i,'').split(/\s+/).filter(w=>/^[A-Za-z]/.test(w)).slice(0,2).map(w=>w[0].toUpperCase()).join(''))}</${end}>`};
+const shopLines=(s,b)=>`${s.address||s.city?`<a class="maplink" href="${mapUrl(s)}" target="_blank" rel="noopener">${PIN}<span>${esc([s.address,s.city].filter(Boolean).join(', '))}</span></a>`:''}${s.phone?`<a class="maplink tel" href="${telUrl(s.phone)}">${PHONE}<span>${esc(s.phone)}</span></a>`:''}${s.hours?`<div class="maplink hrs">${CLOCK}<div><ul>${s.hours.split(' · ').map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div></div>`:''}${s.email?`<a class="maplink mail" href="${mailUrl(s,b)}">${MAIL}<span>${esc(s.email)}</span></a>`:s.contact?`<a class="maplink mail" href="${esc(s.contact)}" target="_blank" rel="noopener">${MAIL}<span>Email via contact form</span></a>`:''}`;
+/* one shop's card: b = the bike it's shown for (the email asks about it), note = text after the city */
+const shopCard=(s,{b,note='',eager}={})=>`${slogo(s,eager)}${s.city?`<span class="city">${esc(s.city)}${note}</span>`:''}<b>${esc(s.name)}</b>${shopLines(s,b)}${s.url?`<a class="web" href="${esc(s.url)}" target="_blank" rel="noopener">${GLOBE}<span>Shop website</span>${EXT}</a>`:''}`;
+const shopOrder=(a,b)=>(a.city||'').localeCompare(b.city||'')||a.name.localeCompare(b.name);
+/* the vendor page's list, in shopOrder; the first few logos load right away, the rest once they're scrolled near */
+const shopList=SH=>SH.map((s,i)=>`<div class="shop" data-shop="${esc(s.k)}">${shopCard(s,{eager:i<6})}</div>`).join('');
+const miles=(a,s)=>{const R=3958.8,r=x=>x*Math.PI/180,dl=r(s.lat-a.lat),dg=r(s.lng-a.lng),h=Math.sin(dl/2)**2+Math.cos(r(a.lat))*Math.cos(r(s.lat))*Math.sin(dg/2)**2;return 2*R*Math.asin(Math.sqrt(h))};

@@ -1,4 +1,4 @@
-{"bike": "Serfas|E Dash Mini", "checked": "2026-11-06",
+{"id": "serfas-e-dash-mini", "bike": "Serfas|E Dash Mini", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2799.99, "url": "https://serfas.com/products/dash-mini-500w-belt-drive", "quote": "$2,799.99"}

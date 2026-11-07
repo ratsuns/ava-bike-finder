@@ -1,4 +1,4 @@
-{"bike": "Urtopia|Carbon Atom E-Bike", "checked": "2026-11-06",
+{"id": "urtopia-carbon-atom-e-bike", "bike": "Urtopia|Carbon Atom E-Bike", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2499, "url": "https://newurtopia.com/products/urtopia-carbon-atom-ebike", "quote": "$2,299.00 | $2,499.00 | -$200.00", "basis": "crossed-out regular price; $2,299 is the Black Friday sale price"},

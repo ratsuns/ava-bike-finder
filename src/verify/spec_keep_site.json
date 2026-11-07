@@ -1,116 +1,21 @@
 [
-[
-"Bulls|Iconic Evo 1",
-"height",
-"Diamond 5'5\"-6'8\"; Wave 5'4\"-6'7\"",
-"5'5\"-6'8\""
-],
-[
-"Eunorau|E-FAT-STEP",
-"price",
-1099,
-1399
-],
-[
-"Fuji|Boulevard EVO",
-"cls",
-2,
-1
-],
-[
-"Macfox|M20X",
-"price",
-1399,
-1199
-],
-[
-"Macfox|X2",
-"price",
-2199,
-1999
-],
-[
-"Macfox|X2",
-"tq",
-65,
-80
-],
-[
-"Macfox|X2",
-"wt",
-72,
-65
-],
-[
-"MOD|Easy SideCar",
-"wt",
-73,
-80.5
-],
-[
-"Pedego|Cargo",
-"range",
-"132 (with optional range extender)",
-"28–56"
-],
-[
-"Radio Flyer|Flyer Via",
-"price",
-1599,
-2199
-],
-[
-"Retrospec|Valen Rev+",
-"cls",
-2,
-3
-],
-[
-"Retrospec|Boca Rev 2 Electric Tricycle",
-"wt",
-109,
-91
-],
-[
-"Retrospec|Chatham Rev+ 2 (and Step Through)",
-"wt",
-64,
-59
-],
-[
-"Retrospec|Joe Rev 2 BMX Electric Bike",
-"wt",
-71,
-56
-],
-[
-"Retrospec|Napa Rev",
-"cls",
-3,
-2
-],
-[
-"Riese and Muller|Load4 75 vario",
-"wt",
-86.4,
-84.0
-],
-[
-"Scott|Silence eRIDE 20 Men Speed Bike (286720)",
-"tq",
-85,
-63
-],
-[
-"Scott|Silence eRIDE 20 Men Speed Bike (286720)",
-"load",
-224,
-287
-],
-[
-"Serfas|Quest",
-"cls",
-2,
-3
-]
+{"id": "bulls-iconic-evo-1", "field": "height", "site": "Diamond 5'5\"-6'8\"; Wave 5'4\"-6'7\"", "sources": "5'5\"-6'8\""},
+{"id": "eunorau-e-fat-step", "field": "price", "site": 1099, "sources": 1399},
+{"id": "fuji-boulevard-evo", "field": "cls", "site": 2, "sources": 1},
+{"id": "macfox-m20x", "field": "price", "site": 1399, "sources": 1199},
+{"id": "macfox-x2", "field": "price", "site": 2199, "sources": 1999},
+{"id": "macfox-x2", "field": "tq", "site": 65, "sources": 80},
+{"id": "macfox-x2", "field": "wt", "site": 72, "sources": 65},
+{"id": "mod-easy-sidecar", "field": "wt", "site": 73, "sources": 80.5},
+{"id": "pedego-cargo", "field": "range", "site": "132 (with optional range extender)", "sources": "28–56"},
+{"id": "radio-flyer-flyer-via", "field": "price", "site": 1599, "sources": 2199},
+{"id": "retrospec-valen-rev-plus", "field": "cls", "site": 2, "sources": 3},
+{"id": "retrospec-boca-rev-2-electric-tricycle", "field": "wt", "site": 109, "sources": 91},
+{"id": "retrospec-chatham-rev-plus-2-and-step-through", "field": "wt", "site": 64, "sources": 59},
+{"id": "retrospec-joe-rev-2-bmx-electric-bike", "field": "wt", "site": 71, "sources": 56},
+{"id": "retrospec-napa-rev", "field": "cls", "site": 3, "sources": 2},
+{"id": "riese-and-muller-load4-75-vario", "field": "wt", "site": 86.4, "sources": 84.0},
+{"id": "scott-silence-eride-20-men-speed-bike-286720", "field": "tq", "site": 85, "sources": 63},
+{"id": "scott-silence-eride-20-men-speed-bike-286720", "field": "load", "site": 224, "sources": 287},
+{"id": "serfas-quest", "field": "cls", "site": 2, "sources": 3}
 ]

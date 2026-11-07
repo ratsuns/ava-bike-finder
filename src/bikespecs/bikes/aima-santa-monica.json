@@ -1,4 +1,4 @@
-{"bike": "Aima|Santa Monica", "checked": "2026-11-06",
+{"id": "aima-santa-monica", "bike": "Aima|Santa Monica", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1999, "url": "https://www.aimatech.us/products/santa-monica-electric-bike", "quote": "Regular price | $1,999", "basis": "page shows sale price $1,899 with regular price $1,999"},

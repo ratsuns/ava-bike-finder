@@ -1,4 +1,4 @@
-{"bike": "Lectric|XP Trike2 (500W)", "checked": "2026-11-06",
+{"id": "lectric-xp-trike2-500w", "bike": "Lectric|XP Trike2 (500W)", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1978, "url": "https://lectricebikes.com/products/xp-trike-grey", "quote": "$1,499 ⟶ $1,978", "basis": "crossed-out price $1,978; $1,499 is current sale price"},

@@ -1,4 +1,4 @@
-{"bike": "Gazelle|Arroyo C380 Elite", "checked": "2026-11-06",
+{"id": "gazelle-arroyo-c380-elite", "bike": "Gazelle|Arroyo C380 Elite", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 4499, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-arroyo-c380-elite", "quote": "$4,499 | Shop stock: First, configure your bike", "basis": "no crossed-out price shown"},

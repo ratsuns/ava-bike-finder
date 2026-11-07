@@ -1,4 +1,4 @@
-{"bike": "Aventon|Aventure M", "checked": "2026-11-06",
+{"id": "aventon-aventure-m", "bike": "Aventon|Aventure M", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2899, "url": "https://www.aventon.com/products/aventure-m-ebike", "quote": "$2,699.00 | $2,899.00", "basis": "regular $2,899; sale $2,699 ($200 off)"},
@@ -10,7 +10,7 @@
   ],
   "spd": [
    {"kind": "maker", "value": 28, "url": "https://www.aventon.com/products/aventure-m-ebike", "quote": "Top Speed | Max 28 MPH", "basis": "maximum after Class 3 conversion; ships Class 1 (20 mph)"},
-   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/aventon-aventure-m-review/", "quote": "CLASS 1 (PEDAL ASSIST TO 20 MPH) ⟶ CLASS 3 (PEDAL ASSIST TO 28 MPH)", "basis": "Class 1 setting; adjustable to 28 mph"}
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/aventon-aventure-m-review/", "quote": "CLASS 1 (PEDAL ASSIST TO 20 MPH) ⟶ CLASS 3 (PEDAL ASSIST TO 28 MPH)", "basis": "Class 1 setting; adjustable to 28 mph", "max_mph": 28}
   ],
   "tq": [
    {"kind": "maker", "value": 100, "url": "https://www.aventon.com/products/aventure-m-ebike", "quote": "Motor Torque | 100Nm"},

@@ -1,4 +1,4 @@
-{"bike": "Emojo|Caddy Pro Urban Cruiser", "checked": "2026-11-06",
+{"id": "emojo-caddy-pro-urban-cruiser", "bike": "Emojo|Caddy Pro Urban Cruiser", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 3398, "url": "https://emojobike.com/products/caddy-pro-urban-cruiser", "quote": "Regular price ⟶ $3,398.00", "basis": "sale price $3,198.00 not used"},

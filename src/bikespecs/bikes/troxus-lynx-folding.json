@@ -1,4 +1,4 @@
-{"bike": "Troxus|Lynx Folding", "checked": "2026-11-06",
+{"id": "troxus-lynx-folding", "bike": "Troxus|Lynx Folding", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1699, "url": "https://www.troxusmobility.com/products/lynx-folding-e-bike", "quote": "Regular price ⟶ $1,699", "basis": "crossed-out regular price; sale price $1,199"}

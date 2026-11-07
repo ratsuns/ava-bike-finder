@@ -1,4 +1,5 @@
 {
+ "id": "lectric-lectric-one",
  "bike": "Lectric|Lectric ONE",
  "checked": "2026-11-06",
  "fields": {
@@ -57,7 +58,8 @@
     "value": 20,
     "url": "https://electricbikereport.com/lectric-one-review/",
     "quote": "The ONE offers five levels of pedal assist, and it ships as a Class 2 e-bike with throttle and pedal assist up to 20 mph. Users can set it to a Class 3 e-bike with pedal assist up to 28 mph through its display menu. We recorded the speed of each pedal assist setting in both Class modes as we rode on paved shared-use paths in our Speed Test.",
-    "basis": "ships at 20 mph; adjustable to 28 mph"
+    "basis": "ships at 20 mph; adjustable to 28 mph",
+    "max_mph": 28
    }
   ],
   "tq": [

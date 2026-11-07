@@ -1,4 +1,4 @@
-{"bike": "Pedego|Latch 2", "checked": "2026-11-06",
+{"id": "pedego-latch-2", "bike": "Pedego|Latch 2", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1695, "url": "https://pedegoelectricbikes.com/products/latch-2", "quote": "$1,695.00 ⟶ Top Speed", "basis": "no crossed-out price shown"},
@@ -10,7 +10,7 @@
   ],
   "spd": [
    {"kind": "maker", "value": 20, "url": "https://pedegoelectricbikes.com/products/latch-2", "quote": "SPEED ⟶ Class 1 - 20mph Pedal Assist", "basis": "adjustable to 28 mph (Class 3) by a dealer"},
-   {"kind": "review", "value": 20, "url": "https://electricbikereview.com/pedego/latch-2-review/", "quote": "TOP SPEED: ⟶ Up to 28 mph in dealer-enabled Class 3 mph", "basis": "20 mph as shipped (Class 1 / Class 2); adjustable to 28 mph"}
+   {"kind": "review", "value": 20, "url": "https://electricbikereview.com/pedego/latch-2-review/", "quote": "TOP SPEED: ⟶ Up to 28 mph in dealer-enabled Class 3 mph", "basis": "20 mph as shipped (Class 1 / Class 2); adjustable to 28 mph", "max_mph": 28}
   ],
   "tq": [
    {"kind": "maker", "value": 90, "url": "https://pedegoelectricbikes.com/products/latch-2", "quote": "MOTOR ⟶ 48V, 750W, 90Nm Torque"},

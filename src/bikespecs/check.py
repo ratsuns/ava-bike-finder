@@ -1,49 +1,65 @@
-"""Every spec the site shows must be what its sources back (rules.py). Lists what isn't.
+"""Lists what is wrong with the specs. Changes nothing.
 
-    python3 -m bikespecs.check            (from src/) summary, and the bikes that need work
-    python3 -m bikespecs.check --strict   exit 1 on any problem (the build uses this)
+    python3 -m bikespecs.check              (from src/) the problems, and how many specs are in each state
+    python3 -m bikespecs.check unverified   also lists the specs in that state (any state from policy.shown)
+
+Problems:
+  no_file    a bike on the site has no source file
+  no_bike    a source file, or a bike named in policy.py / spec_keep_site.json, isn't on the site
+  bad_quote  a source's words don't back its number
+  differs    the site shows something other than what the rule (policy.shown) gives: run bikespecs.apply
+  status     the rule says discontinued, the site doesn't
+  label      a bike's name for people to read (a source file's "bike", the "Bike" column of videos.csv) isn't its
+             name in verify/cards.json
 """
-import collections, sys
+import collections, csv, sys
 
-from . import evidence
-from .rules import FIELDS, agree, decide, supports
+import bikedata
+from videos import files as video_files
+
+from . import evidence, policy
+from .rules import FIELDS, same, supports
 
 
 def check():
-    """-> list of (bike, field, problem); problem kinds: no_file, bad_quote, differs, should_be_blank"""
+    """-> (problems [(bike id, field, kind, detail)], specs [(bike id, field, state, value)])"""
     files = evidence.load_all()
-    out = []
-    for _, card in evidence.cards():
-        k = evidence.key(card)
-        ev = files.get(k)
+    cards = bikedata.by_id()
+    named = files.keys() | {i for i, _ in policy.KEEP_SITE} | policy.PRICE.keys() | policy.DISCONTINUED | policy.STILL_SOLD
+    problems = [(i, '', 'no_bike', 'not on the site') for i in sorted(named - cards.keys())]
+    specs = []
+    for i, card in cards.items():
+        ev = files.get(i)
         if not ev:
-            out.append((k, '', 'no_file', 'no source file yet')); continue
+            problems.append((i, '', 'no_file', 'no source file yet')); continue
         for f in FIELDS:
-            srcs = ev.get('fields', {}).get(f, [])
+            srcs = ev['fields'].get(f, [])
             for s in srcs:
-                if s.get('value') not in (None, '') and not supports(f, s['value'], s.get('quote')):
-                    out.append((k, f, 'bad_quote', f"{s.get('kind')} source's words don't contain {s['value']!r}: {s.get('quote')!r} ({s.get('url')})"))
-            d = decide(f, srcs)
-            shown = card.get(f)
-            if d['show'] and not agree(f, shown, d['value']):
-                out.append((k, f, 'differs', f"site shows {shown!r}, sources back {d['value']!r} ({d['why']})"))
-            if not d['show'] and shown not in (None, ''):
-                out.append((k, f, 'should_be_blank', f"site shows {shown!r} but it isn't backed ({d['why']})"))
-    return out
-
-
-def summary():
-    files = evidence.load_all()
-    states = collections.Counter(decide(f, files[evidence.key(c)].get('fields', {}).get(f, []))['state']
-                                 for _, c in evidence.cards() if evidence.key(c) in files for f in FIELDS)
-    return states
+                for v in (s.get('value'), s.get('max_mph')):
+                    if not supports(f, v, s.get('quote')):
+                        problems.append((i, f, 'bad_quote', f"{s.get('kind')} source's words don't contain {v!r}: {s.get('quote')!r} ({s.get('url')})"))
+            v, why = policy.shown(f, card, srcs)
+            specs.append((i, f, why, v))
+            if not same(f, card.get(f), v):
+                problems.append((i, f, 'differs', f'site shows {card.get(f)!r}, the rule gives {v!r} ({why})'))
+            if f == 'wt' and bool(card.get('wtnb')) != policy.no_battery(srcs, card.get('wt')):
+                problems.append((i, 'wtnb', 'differs', f"site shows \"(no battery)\": {bool(card.get('wtnb'))}, the rule gives {not card.get('wtnb')}"))
+        if policy.discontinued(i, ev.get('status')) and card.get('st') != 'disc':
+            problems.append((i, 'status', 'status', 'discontinued, but the site does not say so'))
+    for r in csv.DictReader(open(video_files.CSV, encoding='utf-8-sig')):
+        card = cards.get(r['id'].strip())
+        if card and r['Bike'] != card['brand'] + ' ' + card['model']:
+            problems.append((card['id'], 'Bike', 'label', f"videos.csv says {r['Bike']!r}, the bike is {card['brand'] + ' ' + card['model']!r}"))
+    for i, ev in files.items():
+        if i in cards and ev.get('bike') != cards[i]['brand'] + '|' + cards[i]['model']:
+            problems.append((i, 'bike', 'label', f"bikes/{i}.json says {ev.get('bike')!r}, the bike is {cards[i]['brand'] + '|' + cards[i]['model']!r}"))
+    return problems, specs
 
 
 if __name__ == '__main__':
-    problems = check()
-    kinds = collections.Counter(p[2] for p in problems)
-    print('specs by state:', dict(summary()))
-    print('problems:', dict(kinds) or 'none')
-    for p in problems:
-        if p[2] != 'no_file' or '--all' in sys.argv: print(' | '.join(p))
-    if '--strict' in sys.argv and problems: sys.exit(1)
+    problems, specs = check()
+    for p in problems: print(' | '.join(p))
+    for i, f, why, v in specs:
+        if why in sys.argv[1:]: print(f'{i} {f}: {v!r} ({why})')
+    print('specs by state:', dict(collections.Counter(s[2] for s in specs)))
+    print('problems:', dict(collections.Counter(p[2] for p in problems)) or 'none')

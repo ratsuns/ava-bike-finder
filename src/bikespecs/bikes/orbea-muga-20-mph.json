@@ -1,4 +1,4 @@
-{"bike": "Orbea|Muga 20 mph", "checked": "2026-11-06",
+{"id": "orbea-muga-20-mph", "bike": "Orbea|Muga 20 mph", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 7829, "url": "https://www.orbea.com/en-us/muga-10-20mph", "quote": "$7,829 ⟶ View summary", "basis": "Muga 10 20mph standard configuration; no crossed-out price shown"},

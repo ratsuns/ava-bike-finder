@@ -1,4 +1,4 @@
-{"bike": "Emojo|Bull Trail", "checked": "2026-11-06",
+{"id": "emojo-bull-trail", "bike": "Emojo|Bull Trail", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2499, "url": "https://emojobike.com/products/bull-trail", "quote": "Regular price ⟶ $2,499.00", "basis": "single battery; sale price $2,299.00 not used; dual battery +$599"}

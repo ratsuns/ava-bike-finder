@@ -1,11 +1,11 @@
 {
- "Troxus|Trax SUV": [
+ "troxus-trax-suv": [
   "aQM6-vfhp4E"
  ],
- "Troxus|Lynx Plus": [
+ "troxus-lynx-plus": [
   "DK5cCiiQB0M"
  ],
- "Troxus|Lynx Cargo": [
+ "troxus-lynx-cargo": [
   "13gU2llHtZY",
   "36F0o_JR7Oc",
   "3v_g6Vbc33k",
@@ -22,7 +22,7 @@
   "mUupLJ-RJwE",
   "vqpMcYJ7Fqc"
  ],
- "Troxus|Lynx Folding": [
+ "troxus-lynx-folding": [
   "13gU2llHtZY",
   "36F0o_JR7Oc",
   "3v_g6Vbc33k",
@@ -39,106 +39,106 @@
   "mUupLJ-RJwE",
   "vqpMcYJ7Fqc"
  ],
- "Troxus|T-XC": [
+ "troxus-t-xc": [
   "5naPfSRz_4c"
  ],
- "Urban Arrow|Family": [
+ "urban-arrow-family": [
   "QVrFMkc3Xrc",
   "Tc2hs-3BOzk",
   "UGA5cDXYcqk",
   "jlsHhaKYAl8"
  ],
- "Velotric|Discover 2": [
+ "velotric-discover-2": [
   "wbeLVVHe_4I"
  ],
- "Velotric|Discover 3": [
+ "velotric-discover-3": [
   "Pu2qDObfZJg"
  ],
- "Velotric|T1": [
+ "velotric-t1": [
   "A_P6OrznAPI",
   "BNwC_MecmCc",
   "aRitHUxbf5Y"
  ],
- "Velotric|Fold 1 Plus": [
+ "velotric-fold-1-plus": [
   "T8I7Vvl93VE",
   "XXPu2szf18k"
  ],
- "Velotric|Summit 2": [
+ "velotric-summit-2": [
   "HEVrqDuEowk"
  ],
- "Velotric|Discover M": [
+ "velotric-discover-m": [
   "Pu2qDObfZJg"
  ],
- "X-Lab|ST5+": [
+ "x-lab-st5-plus": [
   "2mkpn7hoAqk"
  ],
- "X-Lab|SP5+": [
+ "x-lab-sp5-plus": [
   "Mijpiie04aQ",
   "uitHR2zrASI"
  ],
- "Yuba|Spicy Curry (New)": [
+ "yuba-spicy-curry-new": [
   "3a9gpJcg2I0",
   "UPQ2BJwQt2o"
  ],
- "Macfox|X1s (All variants)": [
+ "macfox-x1s-all-variants": [
   "YPxbvDUWwPI",
   "oRE2H5ne5o8"
  ],
- "Macfox|X2": [
+ "macfox-x2": [
   "5Po2VI0eq4I",
   "kh8qy9oNoF8",
   "kmV6SGx-UWg",
   "oZujoIORaQE"
  ],
- "Mokwheel|Basalt": [
+ "mokwheel-basalt": [
   "IfjhuZjxTx0"
  ],
- "Mokwheel|Scoria": [
+ "mokwheel-scoria": [
   "fypMwcugxzY"
  ],
- "Salsa|Tributary": [
+ "salsa-tributary": [
   "FsZNCqAwb4A",
   "L-JyI1ZPQcY"
  ],
- "Segway|Muxi": [
+ "segway-muxi": [
   "0Zt3Btot17A",
   "CTt6_4C-DsE",
   "isGssD5DLu4",
   "laJz_1-xrFA",
   "v27cIAyHlow"
  ],
- "Specialized|Turbo Tero (HT)": [
+ "specialized-turbo-tero-ht": [
   "-TDle6kSgeQ",
   "JcfDZDcHjJg",
   "qVwjXwkRoWU",
   "tw1fE4bD29s"
  ],
- "Specialized|Turbo Como 3.0": [
+ "specialized-turbo-como-3-0": [
   "FmNoeNrBy4g",
   "c_LNF5UjAuY"
  ],
- "Specialized|Turbo Como 4.0": [
+ "specialized-turbo-como-4-0": [
   "VVe8Dyc3T4I",
   "eJUBSDlkhsY",
   "hHvaHhPMlJ0"
  ],
- "Tern|GSD P00": [
+ "tern-gsd-p00": [
   "yB-jFF2bG1U"
  ],
- "Trek|FX+ 1": [
+ "trek-fx-plus-1": [
   "3mhaSKV_zWo",
   "E6UvVZW1SI0"
  ],
- "Trek|FX+ 2": [
+ "trek-fx-plus-2": [
   "3mhaSKV_zWo",
   "DAl3S9rqW_U",
   "LvbAUtNp4a0",
   "f3JYXFdVOg8"
  ],
- "Trek|Verve+ 2 Lowstep": [
+ "trek-verve-plus-2-lowstep": [
   "GLc3M2nr9Gs"
  ],
- "Troxus|Trax Sport": [
+ "troxus-trax-sport": [
   "1YEbesmAp3g",
   "4kQ5jZQe3NI",
   "GBRCr0EFx00",
@@ -149,7 +149,7 @@
   "v3Tt1bk1qic",
   "zCvX9k1ohAc"
  ],
- "Aima|Big Sur Sport": [
+ "aima-big-sur-sport": [
   "0WvK-x3-OLU",
   "BsxB1LM_Yl0",
   "Cz9fVNfrGDQ",
@@ -164,40 +164,40 @@
   "sZXqmu6KTp4",
   "ss6tvAJc49A"
  ],
- "Aventon|Soltera 2.5": [
+ "aventon-soltera-2-5": [
   "4KPz1NXiPC4",
   "C8lmD13fmQw",
   "VlTZmBA1MkA"
  ],
- "Aventon|Soltera 3 ADV": [
+ "aventon-soltera-3-adv": [
   "OWq7i4Uhwl8"
  ],
- "Aventon|Abound LR": [
+ "aventon-abound-lr": [
   "M5F5FyeRuAU"
  ],
- "Aventon|Aventure 3": [
+ "aventon-aventure-3": [
   "35DiYVzkXjo",
   "3mhaSKV_zWo",
   "A4jRWt4FTUE",
   "_ZWM8x65MU4"
  ],
- "Aventon|Aventure M": [
+ "aventon-aventure-m": [
   "A4jRWt4FTUE"
  ],
- "Aventon|Level 4 REC": [
+ "aventon-level-4-rec": [
   "TJubrTEKIfY"
  ],
- "Blix|Sol X": [
+ "blix-sol-x": [
   "0-R-NNexMas",
   "VFiyXATIOzs"
  ],
- "Brompton|Electric C Line (All)": [
+ "brompton-electric-c-line-all": [
   "H8styhlPK7Y",
   "Qw4b4QnTl4I",
   "cw0FPS6KOiA",
   "fdJ0xh7nAQs"
  ],
- "Brompton|Electric P Line (All)": [
+ "brompton-electric-p-line-all": [
   "DCVB-kEtoXY",
   "H8styhlPK7Y",
   "aXeEN5cFJ6Y",
@@ -210,7 +210,7 @@
   "vKLDm1EOh6s",
   "vQnJOBG5WOw"
  ],
- "Cannondale|Adventure Neo": [
+ "cannondale-adventure-neo": [
   "9AIegc87Gr8",
   "DKSpW0q6QWY",
   "anZ9LYYgsEY",
@@ -218,68 +218,68 @@
   "rJphhh3Yi8M",
   "zEEa1_iw-oA"
  ],
- "Cannondale|Cargowagen Neo": [
+ "cannondale-cargowagen-neo": [
   "-no9Q8kwFvE"
  ],
- "Dahon|K-Feather": [
+ "dahon-k-feather": [
   "D2_6EiMQmfs"
  ],
- "Electra|Townie Go!": [
+ "electra-townie-go": [
   "3mhaSKV_zWo",
   "GMfWvFAUXqU",
   "a5XMaWsXhNI"
  ],
- "Electra|Townie Go! S": [
+ "electra-townie-go-s": [
   "eUEInI2b1v0",
   "rBNlEU_wqYQ"
  ],
- "Electra|Ponto Go!": [
+ "electra-ponto-go": [
   "46auAdgsy3U",
   "pwkfhufw1UM"
  ],
- "Emojo|Caddy Pro": [
+ "emojo-caddy-pro": [
   "sY4NbbJEP_s"
  ],
- "Gazelle|Ultimate T10": [
+ "gazelle-ultimate-t10": [
   "0UHhTC2nEW4",
   "6IpZZttM630"
  ],
- "Gazelle|Ultimate C5": [
+ "gazelle-ultimate-c5": [
   "MU4nXMy0klI",
   "RF2aD4_KJ5w",
   "W7FMVURyWkk",
   "ZD_9i6B7_dc"
  ],
- "Giant|Explore E+": [
+ "giant-explore-e-plus": [
   "J6LUJC_q0bQ"
  ],
- "Hase|Kettwiesel ONE (Shimano EP6 Cargo)": [
+ "hase-kettwiesel-one-shimano-ep6-cargo": [
   "6CilzQ9rZ5Q",
   "6u7Q97zq7Ds",
   "SO9_aBXKKWo"
  ],
- "Hase|Kettwiesel ONE": [
+ "hase-kettwiesel-one": [
   "6CilzQ9rZ5Q",
   "6u7Q97zq7Ds",
   "SO9_aBXKKWo"
  ],
- "Himiway|D5 (Zebra)": [
+ "himiway-d5-zebra": [
   "KXGx83fLL3g"
  ],
- "Himiway|D5 ST (Zebra ST)": [
+ "himiway-d5-st-zebra-st": [
   "9kd58Ja9C-E"
  ],
- "Himiway|D5 2.0": [
+ "himiway-d5-2-0": [
   "NYCcPIXrzUU",
   "eRCf2I7GiKg"
  ],
- "Himiway|D5 2.0 20\"": [
+ "himiway-d5-2-0-20": [
   "IsqiQUzR094"
  ],
- "Ice Trikes|ICE Adventure (E-Assist)": [
+ "ice-trikes-ice-adventure-e-assist": [
   "QjFQZerZvM4"
  ],
- "Ice Trikes|ICE Sprint X (Shimano e-assist)": [
+ "ice-trikes-ice-sprint-x-shimano-e-assist": [
   "0-KOpP1b5Fc",
   "2oGPA-dKdxI",
   "5YlHcY3REsw",
@@ -288,64 +288,60 @@
   "i0EM2dWEXbM",
   "v6EjvuTGp58"
  ],
- "Ice Trikes|Full Fat": [
+ "ice-trikes-full-fat": [
   "0ghqpLtNv3s"
  ],
- "Lectric|Xpeak": [
-  "aQ-C1eM9bpI",
-  "gXvqW6GG9rM"
- ],
- "Lectric|XP Lite3": [
+ "lectric-xp-lite3": [
   "_r1vtpYfwEY"
  ],
- "Lectric|XPress2 (Commuter / Cruiser)": [
+ "lectric-xpress2-commuter-cruiser": [
   "E-TbM312U04"
  ],
- "Lectric|XPress Lite": [
+ "lectric-xpress-lite": [
   "CQzn9ReIxuQ",
   "hzYs7i7SnCk"
  ],
- "Lectric|XP Trike2 (500W)": [
+ "lectric-xp-trike2-500w": [
   "2jB-fACTFKQ",
   "bv_GZjVcnno"
  ],
- "Letrigo|Minivan SE": [
+ "letrigo-minivan-se": [
   "-_ujdjF7R3Y",
   "H7AnFz72aMg"
  ],
- "Bunch|The Original 4+": [
+ "bunch-the-original-4-plus": [
   "a_KV0TM918U"
  ],
- "Gazelle|Medeo T9": [
+ "gazelle-medeo-t9": [
   "8l2kmCASnxQ",
   "NbwtaPMzB-A",
   "Ph6Kg5mTPBM",
   "avsPRS1ng90",
   "bwOynyIWTcY"
  ],
- "Gazelle|Ultimate C380+": [
+ "gazelle-ultimate-c380-plus": [
   "JHJBw4woj1Q"
  ],
- "Himiway|D5 2.0 ST": [
+ "himiway-d5-2-0-st": [
   "KJUiNLfd-f4"
  ],
- "MOD|Groove Step-Thru 3": [
+ "mod-groove-step-thru-3": [
   "3_0Dj-CtRdg"
  ],
- "MOD|Easy 3": [
+ "mod-easy-3": [
   "5lZek7l0v_Q"
  ],
- "Omnium|Cargo V3": [
+ "omnium-cargo-v3": [
   "0qhYxnTN60k"
  ],
- "Priority|E-Coast": [
+ "priority-e-coast": [
   "2YGvm1wHYWs",
   "G69l7sFaPCg",
   "HRJPDgG8NFE",
   "MERUwDx6uag",
   "iGcJP6EmAT8"
  ],
- "Priority|E-Classic": [
+ "priority-e-classic": [
   "2F5U6VSph_k",
   "B8R9Mv5S0UM",
   "DQTMEFyp47k",
@@ -355,10 +351,10 @@
   "gl9SvXoxhC4",
   "wOLyOsOsL5s"
  ],
- "Retrospec|Koa Rev+ 2 (and Step Through)": [
+ "retrospec-koa-rev-plus-2-and-step-through": [
   "ZFAEDw7ZwI4"
  ],
- "Specialized|Turbo Vado 2 (4.0)": [
+ "specialized-turbo-vado-2-4-0": [
   "2EjSm6839To",
   "92OiIo3XGzg",
   "9f5Cge8gjeM",
@@ -368,7 +364,7 @@
   "oA6dae4OaTE",
   "uez1bwYr3oM"
  ],
- "Specialized|Turbo Vado 2 (5.0 IGH)": [
+ "specialized-turbo-vado-2-5-0-igh": [
   "2EjSm6839To",
   "92OiIo3XGzg",
   "9f5Cge8gjeM",
@@ -378,27 +374,27 @@
   "oA6dae4OaTE",
   "uez1bwYr3oM"
  ],
- "Tern|Quick Haul Long": [
+ "tern-quick-haul-long": [
   "RtpkJxtUJWM"
  ],
- "Trek|Dual Sport+": [
+ "trek-dual-sport-plus": [
   "S_ieeWp-Jss"
  ],
- "Velotric|Nomad 1 Plus": [
+ "velotric-nomad-1-plus": [
   "3mhaSKV_zWo"
  ],
- "Tern|HSD S9i Sport (Gen 3)": [
+ "tern-hsd-s9i-sport-gen-3": [
   "G6XhNBeKEws",
   "SnHFJrB1sXk"
  ],
- "Tern|Vektron P10": [
+ "tern-vektron-p10": [
   "_m_szNxTqPs"
  ],
- "Tern|Vektron Q9": [
+ "tern-vektron-q9": [
   "_m_szNxTqPs",
   "rLAqrNmCeXA"
  ],
- "Urtopia|Carbon Fusion GT": [
+ "urtopia-carbon-fusion-gt": [
   "1bPJY1Q0C8o",
   "QQiiyxJJ_DA",
   "R_aFW7J60Fc",
@@ -408,17 +404,17 @@
   "yGeM_NAyqcA",
   "yf09-_NP3FI"
  ],
- "Xtracycle|RFA (Shimano EP8, Class 1)": [
+ "xtracycle-rfa-shimano-ep8-class-1": [
   "eC2nkpJ5MXI"
  ],
- "Xtracycle|RFA (Shimano EP6, Class 3)": [
+ "xtracycle-rfa-shimano-ep6-class-3": [
   "eC2nkpJ5MXI"
  ],
- "Yuba|Boda Boda": [
+ "yuba-boda-boda": [
   "ANEraV57Iok",
   "NaFbzE5ksYs"
  ],
- "Zooz|Ultra Flex G2 Low Bar": [
+ "zooz-ultra-flex-g2-low-bar": [
   "CdcVuzFxoCg",
   "CzmWkAvTvuY",
   "P58FhQXy-Ds",
@@ -428,17 +424,17 @@
   "ysygmD_UHuw",
   "zWMNb7TIGMY"
  ],
- "Bulls|Evo 2 Speed": [
+ "bulls-evo-2-speed": [
   "3b5ND4nNsIQ",
   "OB6K7m6xps4",
   "cYXa-r50Pos"
  ],
- "Bulls|Evo TR 1": [
+ "bulls-evo-tr-1": [
   "CrAfyWZ3QQ0",
   "YnT0Cxd8uwk",
   "ZPM58zQUG-I"
  ],
- "Bulls|Iconic Evo 1": [
+ "bulls-iconic-evo-1": [
   "CrAfyWZ3QQ0",
   "KuhEkUVCiQI",
   "YVyQl7XkoO0",
@@ -448,7 +444,7 @@
   "moIf8cvqJVg",
   "tTE-opYd1v8"
  ],
- "Cannondale|Adventure Neo Allroad EQ": [
+ "cannondale-adventure-neo-allroad-eq": [
   "9AIegc87Gr8",
   "CUW9Rw3HKcM",
   "DKSpW0q6QWY",
@@ -456,7 +452,7 @@
   "qSmStXXzEfM",
   "rJphhh3Yi8M"
  ],
- "Cannondale|Adventure Neo Allroad Speed": [
+ "cannondale-adventure-neo-allroad-speed": [
   "9AIegc87Gr8",
   "CUW9Rw3HKcM",
   "DKSpW0q6QWY",
@@ -464,62 +460,62 @@
   "qSmStXXzEfM",
   "rJphhh3Yi8M"
  ],
- "Electra|Townie Go! 7D EQ": [
+ "electra-townie-go-7d-eq": [
   "4olY2yYtbXM",
   "ZGG8HTtmNss",
   "rBNlEU_wqYQ"
  ],
- "Electra|Cruiser Go!": [
+ "electra-cruiser-go": [
   "E2tWSLxlJ-A",
   "SlApgaJunuU",
   "hv-Obgv67rM"
  ],
- "Fuji|Boulevard EVO": [
+ "fuji-boulevard-evo": [
   "NtpXnrU7GXY"
  ],
- "Fuji|E-Crosstown": [
+ "fuji-e-crosstown": [
   "pVUR3JTzpO4"
  ],
- "Gazelle|Avignon C380": [
+ "gazelle-avignon-c380": [
   "o0Pksf5pDFs"
  ],
- "Liv|Rove": [
+ "liv-rove": [
   "6DyjFoym7kY"
  ],
- "Marin|Sausalito E1": [
+ "marin-sausalito-e1": [
   "WjWv1sZ_bsQ"
  ],
- "Marin|Sausalito E2": [
+ "marin-sausalito-e2": [
   "WjWv1sZ_bsQ"
  ],
- "Marin|Larkspur E": [
+ "marin-larkspur-e": [
   "Sb-mxu6ouJM",
   "v_T2azlaqTc"
  ],
- "Orbea|Kemen Tour": [
+ "orbea-kemen-tour": [
   "Q18DMEYuBcU",
   "TGx6_LmncOY",
   "h9Wk16t_R90"
  ],
- "Orbea|Kemen Adv": [
+ "orbea-kemen-adv": [
   "DkhC4yyU7OA",
   "Q18DMEYuBcU",
   "TGx6_LmncOY",
   "h9Wk16t_R90"
  ],
- "Pedego|Boomerang Core": [
+ "pedego-boomerang-core": [
   "vJTcPHF4HM4"
  ],
- "Pedego|Boomerang Pro": [
+ "pedego-boomerang-pro": [
   "vJTcPHF4HM4"
  ],
- "Qualisports|Dolphin": [
+ "qualisports-dolphin": [
   "O-NRxkJUFU0",
   "YmOXYboNqRg",
   "ynhMJHcPWHM",
   "yyqXiCnB8PA"
  ],
- "Radio Flyer|Flyer Via": [
+ "radio-flyer-flyer-via": [
   "5JoMabEHWMQ",
   "K9UWgwUCJrY",
   "LyOyr_CyQQI",
@@ -529,7 +525,7 @@
   "nPWRSQuYuNE",
   "oV84mBayO4Q"
  ],
- "Radio Flyer|Flyer Via Pro": [
+ "radio-flyer-flyer-via-pro": [
   "5JoMabEHWMQ",
   "Hn_aKBpHuvI",
   "HxLdhQug2VM",
@@ -543,21 +539,21 @@
   "tQGcL4b3xas",
   "xW-yH8CGaT8"
  ],
- "Retrospec|Judd Rev Folding": [
+ "retrospec-judd-rev-folding": [
   "JYITiCXwOSQ"
  ],
- "Senada|Osprey V2": [
+ "senada-osprey-v2": [
   "T9zM2qM5HnE",
   "ZOu7veb5XZM",
   "j19lIIV2hBw"
  ],
- "Serfas|E Dash Mini": [
+ "serfas-e-dash-mini": [
   "CcVyweonFhU"
  ],
- "Serfas|DASH 500W Belt Drive": [
+ "serfas-dash-500w-belt-drive": [
   "CcVyweonFhU"
  ],
- "Sixthreezero|EVRYjourney Electric Tricycle Rickshaw 750W": [
+ "sixthreezero-evryjourney-electric-tricycle-rickshaw-750w": [
   "-KtlI2lLDdY",
   "8sdY-huyuQE",
   "9u-QLrB6YnI",
@@ -570,91 +566,91 @@
   "pmm3joQT46U",
   "x58jKU0RZQc"
  ],
- "Sixthreezero|EVRYjourney 250W (Men's)": [
+ "sixthreezero-evryjourney-250w-men-s": [
   "G8LYufF4cNE",
   "lfkuQOdwwvw",
   "mWaa7Yfhdak",
   "pmm3joQT46U"
  ],
- "Sixthreezero|EVRYjourney NEW 500W (Men's Sport Hybrid)": [
+ "sixthreezero-evryjourney-new-500w-men-s-sport-hybrid": [
   "cq6ytd_6hqw",
   "mWaa7Yfhdak"
  ],
- "Sixthreezero|EVRYjourney NEW 500W (Women's Touring Hybrid)": [
+ "sixthreezero-evryjourney-new-500w-women-s-touring-hybrid": [
   "cq6ytd_6hqw",
   "mWaa7Yfhdak"
  ],
- "Specialized|Turbo Vado 3 Evo": [
+ "specialized-turbo-vado-3-evo": [
   "AMJRVQKMXDg"
  ],
- "Benno|RemiDemi 9D EVO 2 Performance": [
+ "benno-remidemi-9d-evo-2-performance": [
   "po7V_RAHBOQ"
  ],
- "Benno|RemiDemi 9D EVO 2 Performance Sport": [
+ "benno-remidemi-9d-evo-2-performance-sport": [
   "po7V_RAHBOQ"
  ],
- "Benno|RemiDemi 9D EVO 4 Performance (Smart System)": [
+ "benno-remidemi-9d-evo-4-performance-smart-system": [
   "po7V_RAHBOQ"
  ],
- "Cannondale|Mavaro Neo 1": [
+ "cannondale-mavaro-neo-1": [
   "OskEjPlglLU"
  ],
- "Cannondale|Mavaro Neo 2": [
+ "cannondale-mavaro-neo-2": [
   "OskEjPlglLU"
  ],
- "Cannondale|Mavaro Neo 3": [
+ "cannondale-mavaro-neo-3": [
   "OskEjPlglLU"
  ],
- "Cannondale|Tesoro Carbon 1": [
+ "cannondale-tesoro-carbon-1": [
   "KFDZyF-lIQI",
   "iyvoD4hY7TU"
  ],
- "Cannondale|Tesoro Carbon 2": [
+ "cannondale-tesoro-carbon-2": [
   "KFDZyF-lIQI",
   "iyvoD4hY7TU"
  ],
- "Electra|Townie Go! EQ": [
+ "electra-townie-go-eq": [
   "ZGG8HTtmNss",
   "rBNlEU_wqYQ"
  ],
- "Electra|Townie Go! S EQ": [
+ "electra-townie-go-s-eq": [
   "ZGG8HTtmNss",
   "e4yf5GkZqjo",
   "rBNlEU_wqYQ"
  ],
- "Gazelle|Eclipse T11+": [
+ "gazelle-eclipse-t11-plus": [
   "Au-N5PRMiHY"
  ],
- "Gazelle|Eclipse C380+": [
+ "gazelle-eclipse-c380-plus": [
   "Au-N5PRMiHY"
  ],
- "Gazelle|Ultimate T11+": [
+ "gazelle-ultimate-t11-plus": [
   "RF2aD4_KJ5w",
   "ZD_9i6B7_dc"
  ],
- "Pedego|Element 2": [
+ "pedego-element-2": [
   "lYmMVqWvscg",
   "zFlgPErbFcE"
  ],
- "Retrospec|Chatham Rev 3 (and Step Through)": [
+ "retrospec-chatham-rev-3-and-step-through": [
   "JfV32eVgezg",
   "QaymNpL12ds",
   "xq9zUZoJQ0k"
  ],
- "Scott|Silence eRIDE 20 Men Speed Bike (286720)": [
+ "scott-silence-eride-20-men-speed-bike-286720": [
   "6VQ60sdPylc",
   "nhKJ-ZIcwgc"
  ],
- "Trek|Charter+ 5S Lowstep": [
+ "trek-charter-plus-5s-lowstep": [
   "Hg3zUCyvp6k"
  ],
- "Trek|Charter+ 4S": [
+ "trek-charter-plus-4s": [
   "Hg3zUCyvp6k"
  ],
- "Trek|Charter+ 4S Lowstep": [
+ "trek-charter-plus-4s-lowstep": [
   "Hg3zUCyvp6k"
  ],
- "Yuba|Spicy Curry V3": [
+ "yuba-spicy-curry-v3": [
   "3UygU03RjAA",
   "44QeMdPNQh8",
   "O3Wq1_DALoc",

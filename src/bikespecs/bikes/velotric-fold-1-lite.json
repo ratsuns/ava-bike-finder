@@ -1,4 +1,4 @@
-{"bike": "Velotric|Fold 1 Lite", "checked": "2026-11-06",
+{"id": "velotric-fold-1-lite", "bike": "Velotric|Fold 1 Lite", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1099, "url": "https://www.velotricbike.com/products/velotric-fold-1-lite", "quote": "Velotric Fold 1 Lite Ebike ⟶ $1,099.00", "basis": "only price shown, no crossed-out price; listed as sold out"},

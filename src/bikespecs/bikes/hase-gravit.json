@@ -1,4 +1,4 @@
-{"bike": "Hase|Gravit", "checked": "2026-11-06",
+{"id": "hase-gravit", "bike": "Hase|Gravit", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/gravit-city-e", "quote": "from 5.999,– | including VAT, excluding delivery", "basis": "EUR only, no USD price published"},

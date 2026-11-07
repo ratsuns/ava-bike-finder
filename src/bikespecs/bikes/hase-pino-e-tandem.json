@@ -1,4 +1,4 @@
-{"bike": "Hase|Pino E (Tandem)", "checked": "2026-11-06",
+{"id": "hase-pino-e-tandem", "bike": "Hase|Pino E (Tandem)", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/pino-e", "quote": "from 9.990,– ⟶ Euros including VAT, excluding delivery", "basis": "EUR only, no USD price published"},

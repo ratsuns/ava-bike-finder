@@ -1,4 +1,4 @@
-{"bike": "Navee|KG05", "checked": "2026-11-06",
+{"id": "navee-kg05", "bike": "Navee|KG05", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1699.99, "url": "https://naveetech.us/products/kg05", "quote": "Regular price ⟶ $1,699.99 USD", "basis": "regular price; sale price $1,299.99"},
@@ -9,7 +9,7 @@
    {"kind": "review", "value": 2, "url": "https://www.bikeride.com/navee-kg05/", "quote": "CLASS ⟶ Class 2, Unrestricted"}
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://naveetech.us/products/kg05", "quote": "20 MPH Max Speed (Default) ⟶ 12 ~ 32 MPH Max Speed Adjustable Range", "basis": "default; adjustable to 32 mph"},
+   {"kind": "maker", "value": 20, "url": "https://naveetech.us/products/kg05", "quote": "20 MPH Max Speed (Default) ⟶ 12 ~ 32 MPH Max Speed Adjustable Range", "basis": "default; adjustable to 32 mph", "max_mph": 32},
    {"kind": "review", "value": 28, "url": "https://www.bikeride.com/navee-kg05/", "quote": "28 mph ⟶ WATTS"}
   ],
   "tq": [

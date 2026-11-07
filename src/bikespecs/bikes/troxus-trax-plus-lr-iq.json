@@ -1,4 +1,4 @@
-{"bike": "Troxus|Trax Plus LR iQ", "checked": "2026-11-06",
+{"id": "troxus-trax-plus-lr-iq", "bike": "Troxus|Trax Plus LR iQ", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 3199, "url": "https://www.troxusmobility.com/products/trax-plus-lr-iq", "quote": "Regular price | $3,199.00 USD | Size"}

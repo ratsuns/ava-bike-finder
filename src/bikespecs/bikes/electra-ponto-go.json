@@ -1,4 +1,4 @@
-{"bike": "Electra|Ponto Go!", "checked": "2026-11-06",
+{"id": "electra-ponto-go", "bike": "Electra|Ponto Go!", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2699.99, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/comfort-ebikes/ponto-go/ponto-go/p/59517/", "quote": "Ponto Go! | $1,999.93 | Model 5341187 | $2,699.99 | Comp. Value | Original price", "basis": "original price; $1,999.93 is a sale price"},

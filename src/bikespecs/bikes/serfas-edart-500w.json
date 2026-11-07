@@ -1,4 +1,4 @@
-{"bike": "Serfas|eDART 500W", "checked": "2026-11-06",
+{"id": "serfas-edart-500w", "bike": "Serfas|eDART 500W", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2199.99, "url": "https://serfas.com/products/serfas-2023-edart-500w-e-bike", "quote": "$2,199.99"},

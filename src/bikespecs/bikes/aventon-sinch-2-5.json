@@ -1,4 +1,4 @@
-{"bike": "Aventon|Sinch 2.5", "checked": "2026-11-06",
+{"id": "aventon-sinch-2-5", "bike": "Aventon|Sinch 2.5", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1799, "url": "https://www.aventon.com/products/sinch-2-5-ebike", "quote": "$1799Starting at $88/mo or 0% APR with Affirm. See if you qualify"},
@@ -9,7 +9,7 @@
    {"kind": "review", "value": 2, "url": "https://electricbikereview.com/aventon/sinch-2-5-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 2"}
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://www.aventon.com/products/sinch-2-5-ebike", "quote": "TOP SPEED | 20MPH | (Adjustable to 25MPH)", "basis": "default; adjustable to 25 mph"},
+   {"kind": "maker", "value": 20, "url": "https://www.aventon.com/products/sinch-2-5-ebike", "quote": "TOP SPEED | 20MPH | (Adjustable to 25MPH)", "basis": "default; adjustable to 25 mph", "max_mph": 25},
    {"kind": "review", "value": 25, "url": "https://electricbikereview.com/aventon/sinch-2-5-review/", "quote": "TOP SPEED: ⟶ 25 Mph mph", "basis": "max adjustable setting"}
   ],
   "tq": [

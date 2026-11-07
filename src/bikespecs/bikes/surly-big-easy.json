@@ -1,4 +1,4 @@
-{"bike": "Surly|Big Easy", "checked": "2026-11-06",
+{"id": "surly-big-easy", "bike": "Surly|Big Easy", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 5499, "url": "https://surlybikes.com/products/big-easy", "quote": "Regular price ⟶ $5,499.00 USD", "basis": "regular price; page also shows a sale price of $4,674.00"},

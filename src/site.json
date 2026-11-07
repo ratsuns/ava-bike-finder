@@ -1,0 +1,29 @@
+{
+ "url": "https://ratsuns.github.io/ava-bike-finder/",
+ "name": "Ava Bike Finder",
+ "short_name": "Ava Bikes",
+ "author": {"name": "Chris Beltran", "city": "Oakland"},
+ "area": "Alameda and San Joaquin County",
+ "theme": {"light": "#f6f7f5", "dark": "#0f1211"},
+ "rebate": {
+  "by_type": {
+   "Standard": {"regular": 400, "income_qualified": 1000},
+   "Cargo": {"regular": 900, "income_qualified": 1500},
+   "Adaptive": {"regular": 900, "income_qualified": 1500}
+  },
+  "gear": 250,
+  "source": "https://avaenergy.org/bike-electric/",
+  "checked": "October 29, 2026"
+ },
+ "status": {
+  "disc": {"label": "Discontinued", "about": "The maker no longer sells this bike. A shop may still have one in stock, so call first.", "llms": "Discontinued by maker"},
+  "na": {"label": "Not available", "about": "No shop on the Ava list sells this bike right now.", "llms": "No Ava shop sells it now"}
+ },
+ "faq": {
+  "How much is the Ava e-bike rebate?": "{Cargo} off cargo and adaptive e-bikes and {Standard} off standard e-bikes. If you're enrolled in CARE or FERA (PG&E) or EAP (Alameda Municipal Power), it's {Cargo_income} off cargo and adaptive and {Standard_income} off standard, plus up to {gear} for a helmet, lock and lights.",
+  "Who can get the Ava e-bike rebate?": "Anyone 18 or older who lives in Alameda County, or who is an Ava residential customer in San Joaquin County (Tracy, Stockton, Lathrop and nearby unincorporated areas). It's one rebate per person and up to two per household.",
+  "How do I get the Ava e-bike rebate?": "Apply on Ava's Bike Electric page. Ava picks people in a random drawing each month, and you're entered in three drawings in a row. If you're picked, Ava emails you a rebate code. Use it in person at a participating shop within 60 days.",
+  "Can I use the Ava e-bike rebate online?": "No. The rebate only works in person at a participating shop. It can't be used online, on used bikes or on bikes bought before you applied.",
+  "Does the Ava e-bike rebate cover sales tax?": "No. The rebate comes off the bike's price only. Sales tax and shipping are paid on top."
+ }
+}

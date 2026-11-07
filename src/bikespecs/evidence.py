@@ -1,6 +1,7 @@
-"""The per-bike source files: bikespecs/bikes/<brand-model>.json
+"""The per-bike source files: bikespecs/bikes/<id>.json, one for each bike on the site (id as in verify/cards.json)
 
 {
+ "id": "velotric-fold-1-plus",
  "bike": "Velotric|Fold 1 Plus",
  "checked": "2026-11-06",
  "fields": {
@@ -8,55 +9,28 @@
      {"kind": "maker",  "value": "68", "url": "https://www.velotricbike.com/...", "quote": "Pedal Assist Range 68 Miles"},
      {"kind": "review", "value": "68", "url": "https://newatlas.com/...",        "quote": "68 miles (109 km) at the lowest PAS"}
    ],
+   "spd": [
+     {"kind": "maker", "value": 20, "max_mph": 28, "url": "...", "quote": "20 mph out of the box, unlocks to 28 mph"}
+   ],
    ...
  },
  "status": {"sources": [{"kind": "maker", "value": "discontinued", "url": "...", "quote": "... is no longer available"}]},
  "notes": ""
 }
-A source with "value": null records that it was read and doesn't give that spec. "basis" may say what a figure means
-(e.g. load "total" when the maker only gives bike + rider + cargo, weight "without battery").
+A source with "value": null records that it was read and doesn't give that spec. "basis" is the helper's note on what
+a figure means (e.g. weight "without battery", load "total" when the maker only gives bike + rider + cargo).
+"max_mph" (top speed only): the speed the source's words say the bike can be set to, when that is above "value".
 """
-import glob, json, os, re
+import glob, json, os
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-SRC = os.path.dirname(HERE)
-DIR = os.path.join(HERE, 'bikes')
-CARDS = os.path.join(SRC, 'verify', 'cards.json')
-
-
-def key(card): return f"{card['brand']}|{card['model']}"
-
-
-def slug(k):
-    """the file name for a bike: "Velotric|Fold 1 Plus" -> velotric-fold-1-plus; "+" is "plus" so "C380" and "C380+" differ"""
-    return re.sub(r'[^a-z0-9]+', '-', k.lower().replace('+', ' plus ').replace('!', '')).strip('-')
-
-
-def path(k): return os.path.join(DIR, slug(k) + '.json')
-
-
-def load(k):
-    p = path(k)
-    return json.load(open(p)) if os.path.exists(p) else None
-
-
-def save(data):
-    os.makedirs(DIR, exist_ok=True)
-    json.dump(data, open(path(data['bike']), 'w'), indent=1, ensure_ascii=False)
+DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'bikes')
 
 
 def load_all():
-    return {d['bike']: d for d in (json.load(open(p)) for p in sorted(glob.glob(os.path.join(DIR, '*.json'))))}
-
-
-def rename_all():
-    """move every file to the name its bike should have (after a change to slug())"""
-    for p in glob.glob(os.path.join(DIR, '*.json')):
-        want = path(json.load(open(p))['bike'])
-        if p != want and not os.path.exists(want): os.rename(p, want)
-
-
-def cards():
-    """[(card id, card)] for every bike card the site shows, from verify/cards.json"""
-    C = json.load(open(CARDS))
-    return [(f'{i}.{j}', c) for i, L in C.items() if isinstance(L, list) for j, c in enumerate(L)]
+    """{bike id: its source file}"""
+    out = {}
+    for p in sorted(glob.glob(os.path.join(DIR, '*.json'))):
+        d = json.load(open(p))
+        if os.path.basename(p) != d['id'] + '.json': raise ValueError(f'{p}: the file name must be its id, {d["id"]}.json')
+        out[d['id']] = d
+    return out

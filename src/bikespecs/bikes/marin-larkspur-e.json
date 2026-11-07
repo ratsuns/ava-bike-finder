@@ -1,4 +1,4 @@
-{"bike": "Marin|Larkspur E", "checked": "2026-11-06",
+{"id": "marin-larkspur-e", "bike": "Marin|Larkspur E", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 3699, "url": "https://marinbikes.com/products/2025-larkspur-e-int", "quote": "$3,699.00 *"},

@@ -1,4 +1,4 @@
-{"bike": "Specialized|Turbo Tero (HT)", "checked": "2026-11-06",
+{"id": "specialized-turbo-tero-ht", "bike": "Specialized|Turbo Tero (HT)", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2749.99, "url": "https://www.specialized.com/us/en/turbo-tero-30/p/188110", "quote": "2022 Turbo Tero 3.0 | $2,749.99", "basis": "no crossed-out price shown"},

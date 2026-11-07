@@ -1,4 +1,4 @@
-{"bike": "Aventon|Abound SR", "checked": "2026-11-06",
+{"id": "aventon-abound-sr", "bike": "Aventon|Abound SR", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1899, "url": "https://www.aventon.com/products/abound-sr-ebike", "quote": "$1,799.00 | $1,899.00", "basis": "regular $1,899; sale $1,799 ($100 off)"},
@@ -9,8 +9,8 @@
    {"kind": "review", "value": 2, "url": "https://electricbikereport.com/aventon-abound-sr-review/", "quote": "The Abound SR ships as a Class 2 e-bike, so its throttle and PAS are limited to 20 mph. Once paired with the Aventon app, users have the option to increase the bike’s maximum PAS speed to 25 mph. I tested the SR with both maximum speeds; see the graph of my data above."}
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://www.aventon.com/products/abound-sr-ebike", "quote": "Top Speed | 20MPH | (Adjustable to 25MPH)", "basis": "adjustable to 25 mph"},
-   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/aventon-abound-sr-review/", "quote": "The Abound SR ships as a Class 2 e-bike, so its throttle and PAS are limited to 20 mph. Once paired with the Aventon app, users have the option to increase the bike’s maximum PAS speed to 25 mph. I tested the SR with both maximum speeds; see the graph of my data above.", "basis": "adjustable to 25 mph"}
+   {"kind": "maker", "value": 20, "url": "https://www.aventon.com/products/abound-sr-ebike", "quote": "Top Speed | 20MPH | (Adjustable to 25MPH)", "basis": "adjustable to 25 mph", "max_mph": 25},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/aventon-abound-sr-review/", "quote": "The Abound SR ships as a Class 2 e-bike, so its throttle and PAS are limited to 20 mph. Once paired with the Aventon app, users have the option to increase the bike’s maximum PAS speed to 25 mph. I tested the SR with both maximum speeds; see the graph of my data above.", "basis": "adjustable to 25 mph", "max_mph": 25}
   ],
   "tq": [
    {"kind": "maker", "value": 80, "url": "https://www.aventon.com/products/abound-sr-ebike", "quote": "Motor Torque | 80Nm"},

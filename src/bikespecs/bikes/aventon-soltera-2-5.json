@@ -1,4 +1,4 @@
-{"bike": "Aventon|Soltera 2.5", "checked": "2026-11-06",
+{"id": "aventon-soltera-2-5", "bike": "Aventon|Soltera 2.5", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1199, "url": "https://www.aventon.com/products/soltera-2-5-ebike", "quote": "Lightweight and Nimble for Conquering All Pavement | $1,199.00", "basis": "single price shown, no sale"},

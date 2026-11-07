@@ -1,4 +1,4 @@
-{"bike": "Xtracycle|RFA (Shimano EP6, Class 3)", "checked": "2026-11-06",
+{"id": "xtracycle-rfa-shimano-ep6-class-3", "bike": "Xtracycle|RFA (Shimano EP6, Class 3)", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 4999, "url": "https://xtracycle.com/products/rfa-2", "quote": "White (sold out) - $4,999.00 ⟶ Black (sold out) - $4,999.00", "basis": "page buy box says 'This is the RFA Class 3, with a Shimano EP6 mid-drive motor.'; no crossed-out price shown"},

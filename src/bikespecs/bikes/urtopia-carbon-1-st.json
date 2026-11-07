@@ -1,4 +1,4 @@
-{"bike": "Urtopia|Carbon 1 ST", "checked": "2026-11-06",
+{"id": "urtopia-carbon-1-st", "bike": "Urtopia|Carbon 1 ST", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2499, "url": "https://newurtopia.com/products/urtopia-carbon-1-step-thru-ebike", "quote": "$1,899.00 | $2,499.00 | -$600.00", "basis": "crossed-out regular price; $1,899 is the Black Friday sale price"},
@@ -9,7 +9,7 @@
    {"kind": "review", "value": 3, "url": "https://electricbikereview.com/urtopia/carbon-1-st-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 3", "basis": "reviewer lists the unlocked 25 mph setting"}
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://newurtopia.com/products/urtopia-carbon-1-step-thru-ebike", "quote": "Top Speed | 20mph by default | 25mph upon unlock", "basis": "adjustable to 25 mph"},
+   {"kind": "maker", "value": 20, "url": "https://newurtopia.com/products/urtopia-carbon-1-step-thru-ebike", "quote": "Top Speed | 20mph by default | 25mph upon unlock", "basis": "adjustable to 25 mph", "max_mph": 25},
    {"kind": "review", "value": 25, "url": "https://electricbikereview.com/urtopia/carbon-1-st-review/", "quote": "TOP SPEED: ⟶ 25 MPH mph", "basis": "unlocked top speed"}
   ],
   "tq": [

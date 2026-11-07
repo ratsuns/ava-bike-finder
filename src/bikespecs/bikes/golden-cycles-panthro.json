@@ -1,4 +1,4 @@
-{"bike": "Golden Cycles|Panthro", "checked": "2026-11-06",
+{"id": "golden-cycles-panthro", "bike": "Golden Cycles|Panthro", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1399, "url": "https://goldenbicycles.com/products/panthro-green", "quote": "$ 1,399.00 ⟶ Shipping calculated at checkout.", "basis": "Army Green; no crossed-out price shown"},

@@ -1,4 +1,4 @@
-{"bike": "Velotric|Triker 1", "checked": "2026-11-06",
+{"id": "velotric-triker-1", "bike": "Velotric|Triker 1", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2499, "url": "https://www.velotricbike.com/products/velotric-triker", "quote": "$2,499.00 ⟶ Sold out", "basis": "only price shown, no crossed-out price; listed as sold out"},
@@ -13,7 +13,7 @@
   "spd": [
    {"kind": "maker", "value": 12, "url": "https://www.velotricbike.com/products/velotric-triker", "quote": "Max Speed (Default) ⟶ 12 MPH", "basis": "default (Standard Mode); adjustable to 20 mph (\"Max Speed Adjustable Range ⟶ 8~20 MPH\"); Beginner Mode limits to 8 mph"},
    {"kind": "review", "value": 28, "url": "https://electricbikereview.com/velotric/triker-review/", "quote": "TOP SPEED: ⟶ 28 MPH mph", "basis": "appears to be an error: same page says \"Beginner Mode (up to 8 MPH) and Standard Mode (12-20 MPH)\" and \"Reaches a top speed of 20 mph\""},
-   {"kind": "review", "value": 12, "url": "https://electricbikereport.com/velotric-triker-review/", "quote": "Once unlocked to its Standard Mode, the Triker has five pedal assist levels and a 12 mph maximum speed, though it can be set up to 20 mph.", "basis": "default; adjustable to 20 mph"}
+   {"kind": "review", "value": 12, "url": "https://electricbikereport.com/velotric-triker-review/", "quote": "Once unlocked to its Standard Mode, the Triker has five pedal assist levels and a 12 mph maximum speed, though it can be set up to 20 mph.", "basis": "default; adjustable to 20 mph", "max_mph": 20}
   ],
   "tq": [
    {"kind": "maker", "value": 90, "url": "https://www.velotricbike.com/products/velotric-triker", "quote": "Motor Hub ⟶ 48V, 750W,1300W Peak, 90Nm"},

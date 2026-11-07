@@ -1,4 +1,4 @@
-{"bike": "Troxus|Lynx Plus", "checked": "2026-11-06",
+{"id": "troxus-lynx-plus", "bike": "Troxus|Lynx Plus", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2199, "url": "https://www.troxusmobility.com/products/lynx-plus-20-e-bike", "quote": "Regular price ⟶ $2,199.00 USD"}
@@ -9,7 +9,7 @@
   ],
   "spd": [
    {"kind": "maker", "value": 28, "url": "https://www.troxusmobility.com/products/lynx-plus-20-e-bike", "quote": "Max Speed\tUp To 20 MPH on Throttle / Up To 28 MPH on Pedal Assist"},
-   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/troxus-lynx-plus-review/", "quote": "The Lynx Plus ships as a Class 2 e-bike, but its speed can be set anywhere up to 28 mph.", "basis": "adjustable to 28 mph"}
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/troxus-lynx-plus-review/", "quote": "The Lynx Plus ships as a Class 2 e-bike, but its speed can be set anywhere up to 28 mph.", "basis": "adjustable to 28 mph", "max_mph": 28}
   ],
   "tq": [
    {"kind": "maker", "value": 86, "url": "https://www.troxusmobility.com/products/lynx-plus-20-e-bike", "quote": "Motor\tAnanda 48V/750W Hub-Drive Motor, 86Nm Max. Torque"},

@@ -1,4 +1,4 @@
-{"bike": "Serfas|DASH Mid-Drive 500W Belt Drive", "checked": "2026-11-06",
+{"id": "serfas-dash-mid-drive-500w-belt-drive", "bike": "Serfas|DASH Mid-Drive 500W Belt Drive", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 3349.99, "url": "https://serfas.com/products/dash-mid-500w-belt-drive", "quote": "$3,349.99"}

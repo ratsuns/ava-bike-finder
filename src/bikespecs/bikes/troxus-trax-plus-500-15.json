@@ -1,4 +1,4 @@
-{"bike": "Troxus|Trax Plus 500/15", "checked": "2026-11-06",
+{"id": "troxus-trax-plus-500-15", "bike": "Troxus|Trax Plus 500/15", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2199, "url": "https://www.troxusmobility.com/products/trax-plus-commuter-e-bike-500w-15ah-plus", "quote": "Sale price | $1,599.00 USD | Regular price | $2,199"},

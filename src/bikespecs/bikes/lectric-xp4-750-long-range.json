@@ -1,4 +1,4 @@
-{"bike": "Lectric|XP4 750 Long-Range", "checked": "2026-11-06",
+{"id": "lectric-xp4-750-long-range", "bike": "Lectric|XP4 750 Long-Range", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1831, "url": "https://lectricebikes.com/products/xp-black-long-range", "quote": "$1,299 ⟶ $1,831", "basis": "crossed-out regular price $1,831; $1,299 is the current sale price"},

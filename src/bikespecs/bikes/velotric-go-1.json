@@ -1,4 +1,4 @@
-{"bike": "Velotric|Go 1", "checked": "2026-11-06",
+{"id": "velotric-go-1", "bike": "Velotric|Go 1", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1699, "url": "https://www.velotricbike.com/products/velotric-go-1-e-bike", "quote": "$1,699.00", "basis": "only price shown, no crossed-out price; page says the bike is no longer available"},
@@ -9,8 +9,8 @@
    {"kind": "review", "value": 2, "url": "https://electrek.co/2023/09/27/velotric-go-electric-utility-bike-review/", "quote": "The 20 mph (32 km/h) speed limit keeps the bike in Class 2 designation, though you do have the option of unlocking 25 mph (40 km/h) speeds if you find that 20 isn’t quite fast enough for you."}
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://www.velotricbike.com/products/velotric-go-1-e-bike", "quote": "Top Speed: 25MPH (unlocked) | 20 MPH (default) ⟶ Max Range: 55 Miles", "basis": "default; adjustable to 25 mph"},
-   {"kind": "review", "value": 20, "url": "https://electrek.co/2023/09/27/velotric-go-electric-utility-bike-review/", "quote": "Top speed: 20 mph (32 km/h) or 25 mph (40 km/h) when unlocked ⟶ Range: Up to 55 miles (88 km)", "basis": "default; adjustable to 25 mph"}
+   {"kind": "maker", "value": 20, "url": "https://www.velotricbike.com/products/velotric-go-1-e-bike", "quote": "Top Speed: 25MPH (unlocked) | 20 MPH (default) ⟶ Max Range: 55 Miles", "basis": "default; adjustable to 25 mph", "max_mph": 25},
+   {"kind": "review", "value": 20, "url": "https://electrek.co/2023/09/27/velotric-go-electric-utility-bike-review/", "quote": "Top speed: 20 mph (32 km/h) or 25 mph (40 km/h) when unlocked ⟶ Range: Up to 55 miles (88 km)", "basis": "default; adjustable to 25 mph", "max_mph": 25}
   ],
   "tq": [
    {"kind": "maker", "value": 65, "url": "https://www.velotricbike.com/products/velotric-go-1-e-bike", "quote": "Motor Hub ⟶ 500W (Peak 900W), 65Nm"},

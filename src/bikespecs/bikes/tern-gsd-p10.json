@@ -1,4 +1,4 @@
-{"bike": "Tern|GSD P10", "checked": "2026-11-06",
+{"id": "tern-gsd-p10", "bike": "Tern|GSD P10", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": null, "url": "https://www.ternbicycles.com/us/bikes/473/gsd-p10", "quote": "$4,999 (SALE PRICE) ⟶ WHY GSD GEN 3 SPECS ACCESSORIES SUPPORT FIND A DEALER BUY", "basis": "maker shows only a sale price, no regular price"},

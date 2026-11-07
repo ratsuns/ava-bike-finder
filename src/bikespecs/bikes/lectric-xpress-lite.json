@@ -1,4 +1,4 @@
-{"bike": "Lectric|XPress Lite", "checked": "2026-11-06",
+{"id": "lectric-xpress-lite", "bike": "Lectric|XPress Lite", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1099, "url": "https://lectricebikes.com/products/xpress-lite-tan-ebike", "quote": "$1,099 ⟶ 0% APRor as low as $69/mo with Affirm", "basis": "no crossed-out price shown"},
@@ -11,7 +11,7 @@
   ],
   "spd": [
    {"kind": "maker", "value": 28, "url": "https://lectricebikes.com/products/xpress-lite-tan-ebike", "quote": "TOP SPEED ⟶ 28 mph"},
-   {"kind": "review", "value": 20, "url": "https://electricbikereview.com/lectric-ebikes/xpress-lite-review/", "quote": "TOP SPEED: ⟶ 28 mph in Class 3, 20 mph in Class 2 mph", "basis": "ships as Class 2 (20 mph); adjustable to 28 mph"}
+   {"kind": "review", "value": 20, "url": "https://electricbikereview.com/lectric-ebikes/xpress-lite-review/", "quote": "TOP SPEED: ⟶ 28 mph in Class 3, 20 mph in Class 2 mph", "basis": "ships as Class 2 (20 mph); adjustable to 28 mph", "max_mph": 28}
   ],
   "tq": [
    {"kind": "maker", "value": 61, "url": "https://lectricebikes.com/products/xpress-lite-tan-ebike", "quote": "A 500W rear hub motor (864W peak) with 61Nm of torque supplies power and speed quicker than ever before. Stealth M24 technology delivers a quieter motor experience without sacrificing power. ⟶ Motor Controller"},

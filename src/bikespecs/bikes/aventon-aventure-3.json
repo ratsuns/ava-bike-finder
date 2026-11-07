@@ -1,4 +1,4 @@
-{"bike": "Aventon|Aventure 3", "checked": "2026-11-06",
+{"id": "aventon-aventure-3", "bike": "Aventon|Aventure 3", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1999, "url": "https://www.aventon.com/products/aventure-3-ebike", "quote": "$1,799.00 | $1,999.00", "basis": "regular $1,999; sale $1,799 ($200 off)"},
@@ -10,7 +10,7 @@
   ],
   "spd": [
    {"kind": "maker", "value": 28, "url": "https://www.aventon.com/products/aventure-3-ebike", "quote": "Top Speed | Max 28 MPH", "basis": "maximum after app adjustment; ships Class 2 (20 mph)"},
-   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/aventon-aventure-3-review/", "quote": "The Aventure 3 has a maximum speed of 20 mph when it arrives, but it can be adjusted to the Class 3 maximum of 28 mph through the Aventon app.", "basis": "adjustable to 28 mph"}
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/aventon-aventure-3-review/", "quote": "The Aventure 3 has a maximum speed of 20 mph when it arrives, but it can be adjusted to the Class 3 maximum of 28 mph through the Aventon app.", "basis": "adjustable to 28 mph", "max_mph": 28}
   ],
   "tq": [
    {"kind": "maker", "value": 80, "url": "https://www.aventon.com/products/aventure-3-ebike", "quote": "Motor Torque | 80Nm"},

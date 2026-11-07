@@ -1,4 +1,4 @@
-{"bike": "Velotric|Discover M", "checked": "2026-11-06",
+{"id": "velotric-discover-m", "bike": "Velotric|Discover M", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2499, "url": "https://www.velotricbike.com/products/velotric-discover-m-mid-drive-ebike", "quote": "$2,399.00 ⟶ $2,499.00", "basis": "$2,499.00 is the crossed-out regular price; $2,399.00 is the Black Friday sale price (\"Save $100.00\")"},

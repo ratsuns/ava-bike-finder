@@ -1,4 +1,4 @@
-{"bike": "Electra|Vale Go!", "checked": "2026-11-06",
+{"id": "electra-vale-go", "bike": "Electra|Vale Go!", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": null, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/vale-go/vale-go-9d-eq/a/34871/", "quote": "", "basis": "archived page shows no price"},

@@ -1,4 +1,4 @@
-{"bike": "Tern|Quick Haul D8", "checked": "2026-11-06",
+{"id": "tern-quick-haul-d8", "bike": "Tern|Quick Haul D8", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2999, "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-d8", "quote": "$2,999 ⟶ WHY QUICK HAUL SPECS ACCESSORIES SUPPORT FIND A DEALER BUY", "basis": "not marked as sale price"},

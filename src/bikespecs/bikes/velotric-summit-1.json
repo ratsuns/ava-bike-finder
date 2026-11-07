@@ -1,4 +1,4 @@
-{"bike": "Velotric|Summit 1", "checked": "2026-11-06",
+{"id": "velotric-summit-1", "bike": "Velotric|Summit 1", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1999, "url": "https://www.velotricbike.com/products/velotric-summit-1", "quote": "$1,399.00 ⟶ $1,999.00", "basis": "$1,999.00 is the crossed-out regular price; $1,399.00 is the Black Friday sale price (\"Save $600.00\")"},

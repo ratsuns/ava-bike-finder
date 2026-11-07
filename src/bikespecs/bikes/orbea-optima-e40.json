@@ -1,4 +1,4 @@
-{"bike": "Orbea|Optima E40", "checked": "2026-11-06",
+{"id": "orbea-optima-e40", "bike": "Orbea|Optima E40", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "review", "value": 3199, "url": "https://99spokes.com/bikes/orbea/2023/optima-e40-20mph", "quote": "Manufacturer Price ⟶ $3,199", "basis": "2023 Optima E40 20mph manufacturer price as listed by 99 Spokes; no maker page found"},

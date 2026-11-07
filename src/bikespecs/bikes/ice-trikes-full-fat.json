@@ -1,4 +1,4 @@
-{"bike": "Ice Trikes|Full Fat", "checked": "2026-11-06",
+{"id": "ice-trikes-full-fat", "bike": "Ice Trikes|Full Fat", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 10059, "url": "https://icetrikes.co/buy/price-lists/ice-trikes-2026-full-price-list-usd/viewdocument/157", "quote": "FULL FAT E-ASSIST  Example  entry-level  specification  REAR SUSPENSION, ELECTRIC SYSTEM WITH EP6 CARGO, ONE 630WH BATTERY  DERAILLEUR GEARING, 8 SPEED REAR WHEEL WITH SHIMANO 11-32 CASSETTE,  BAR END SHIFTERS, DISC BRAKES, ERGO-FLOW SEAT, SCHWALBE ROAD  CRUISER TYRE & OTR PACK  $10,059", "basis": "maker's 2026 USD price list, example entry-level E-Assist build (non-assist entry example is $7,089)"},

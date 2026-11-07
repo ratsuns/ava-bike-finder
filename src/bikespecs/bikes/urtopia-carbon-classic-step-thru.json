@@ -1,4 +1,4 @@
-{"bike": "Urtopia|Carbon Classic Step-Thru", "checked": "2026-11-06",
+{"id": "urtopia-carbon-classic-step-thru", "bike": "Urtopia|Carbon Classic Step-Thru", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2299, "url": "https://newurtopia.com/products/urtopia-carbon-classic-step-thru-ebike", "quote": "$1,999.00 | $2,299.00 | -$300.00", "basis": "crossed-out regular price; $1,999 is the Black Friday sale price"},
@@ -9,8 +9,8 @@
    {"kind": "retailer", "value": 2, "url": "https://ebikesupershop.com/products/ebike-urtopia-carbon-classic-step-thru-creme-in-a-box?variant=53621198848276", "quote": "Class\tClass 2 ⟶ Motor\t750W (peak) rear hub, 60Nm"}
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://newurtopia.com/products/urtopia-carbon-classic-step-thru-ebike", "quote": "Top Speed | 20mph by default | 25mph upon unlock", "basis": "adjustable to 25 mph"},
-   {"kind": "retailer", "value": 20, "url": "https://ebikesupershop.com/products/ebike-urtopia-carbon-classic-step-thru-creme-in-a-box?variant=53621198848276", "quote": "Top Speed\t20mph by default / 25mph upon unlock ⟶ Total Weight Limit\t240 lbs", "basis": "adjustable to 25 mph"}
+   {"kind": "maker", "value": 20, "url": "https://newurtopia.com/products/urtopia-carbon-classic-step-thru-ebike", "quote": "Top Speed | 20mph by default | 25mph upon unlock", "basis": "adjustable to 25 mph", "max_mph": 25},
+   {"kind": "retailer", "value": 20, "url": "https://ebikesupershop.com/products/ebike-urtopia-carbon-classic-step-thru-creme-in-a-box?variant=53621198848276", "quote": "Top Speed\t20mph by default / 25mph upon unlock ⟶ Total Weight Limit\t240 lbs", "basis": "adjustable to 25 mph", "max_mph": 25}
   ],
   "tq": [
    {"kind": "maker", "value": 45, "url": "https://newurtopia.com/products/urtopia-carbon-classic-step-thru-ebike", "quote": "Motor Max. Torque | 45Nm"},

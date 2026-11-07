@@ -1,4 +1,4 @@
-{"bike": "Aventon|Pace 4 Step-Through", "checked": "2026-11-06",
+{"id": "aventon-pace-4-step-through", "bike": "Aventon|Pace 4 Step-Through", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1799, "url": "https://www.aventon.com/products/pace-4-step-through-ebike", "quote": "$1,599.00 | $1,799.00", "basis": "regular $1,799; sale $1,599"},

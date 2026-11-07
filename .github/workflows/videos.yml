@@ -1,15 +1,16 @@
 name: Video reviews
 # Keeps the video reviews right without anyone checking them by hand:
 #  - when src/videos.csv, the matching rules (src/videos/) or this file change, once a week, or when run from the Actions tab
-#  - gets YouTube's current data for every video (needs the YT_API_KEY secret; skipped without it)
-#  - takes out videos YouTube no longer shows, runs the accuracy check, and publishes the site's video file
+#  - gets YouTube's current data for every video and takes out videos YouTube no longer shows (needs the YT_API_KEY
+#    secret; skipped without it)
+#  - builds the site, which checks every video against its bike and publishes the site's video file
 # A video that doesn't match its bike stops the run and nothing is published (GitHub emails the repo owner).
 on:
   push:
     branches: [main]
     paths: ['src/videos.csv', 'src/videos/**', '.github/workflows/videos.yml']
   schedule:
-    - cron: '17 9 * * 1'     # Mondays 2:17am Pacific
+    - cron: '17 9 * * 1'     # Mondays 09:17 UTC: 1:17am Pacific in winter, 2:17am in summer
   workflow_dispatch:
 permissions:
   contents: write
@@ -22,20 +23,24 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install wordfreq==3.1.1
+      - run: pip install Pillow wordfreq==3.1.1
       - name: Get YouTube's current data
         if: ${{ env.YT_API_KEY != '' }}
-        env:
-          YT_API_KEY: ${{ secrets.YT_API_KEY }}
         working-directory: src
         run: python -m videos.refresh
-      - name: Check and publish
+      - name: Build the site
         working-directory: src
-        run: python -m videos.publish .. --drop-unavailable
+        run: SITE_DIR=.. python build2.py
       - name: Save the result
         run: |
           if grep -rqE '(^|[^A-Za-z0-9+/])AIza[0-9A-Za-z_-]{35}' --include='*.json' --include='*.csv' --include='*.html' --include='*.js' .; then
             echo 'A Google API key is in a file. Not saving.'; exit 1; fi
+          # only the video data may change: videos.csv, video_meta.json, the videos file, and its name in index.html
+          mask() { sed -E 's/videos-[0-9a-f]{8}\.json/V/'; }
+          if [ -n "$(git status --porcelain -- . ':!src/videos.csv' ':!src/verify/video_meta.json' ':!index.html' ':!videos-*.json')" ] ||
+             ! cmp -s <(git show HEAD:index.html | mask) <(mask < index.html); then
+            echo 'The build changed more than the videos, so the site on main is out of date with its sources. Build and commit it locally first:'
+            git status --short; exit 1; fi
           git add -A src/videos.csv src/verify/video_meta.json index.html 'videos-*.json'
           if git diff --cached --quiet; then echo 'Nothing changed.'; exit 0; fi
           git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \

@@ -1,4 +1,4 @@
-{"bike": "Orbea|Kemen Tour", "checked": "2026-11-06",
+{"id": "orbea-kemen-tour", "bike": "Orbea|Kemen Tour", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 5071, "url": "https://www.orbea.com/en-us/kemen-tour-10-28mph", "quote": "$5,071 ⟶ View summary", "basis": "Kemen Tour 10 28mph standard configuration; no crossed-out price shown"},

@@ -1,4 +1,4 @@
-{"bike": "Velotric|Packer 1", "checked": "2026-11-06",
+{"id": "velotric-packer-1", "bike": "Velotric|Packer 1", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2199, "url": "https://www.velotricbike.com/products/velotric-packer-1-e-bike", "quote": "$2,199.00", "basis": "only price shown, no crossed-out price; page says the bike is no longer available"},
@@ -11,9 +11,9 @@
    {"kind": "review", "value": 2, "url": "https://electrek.co/2023/08/14/velotric-packer-review-electric-cargo-bike/", "quote": "Top speed: 20 mph (32 km/h) or 25 mph (40 km/h) when unlocked ⟶ Range: Up to 52 miles (84 km)", "basis": "20 mph default with throttle = Class 2"}
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://www.velotricbike.com/products/velotric-packer-1-e-bike", "quote": "Top Speed: 25MPH (unlocked) | 20 MPH (default) ⟶ Max Range: 52 Miles", "basis": "default; adjustable to 25 mph"},
+   {"kind": "maker", "value": 20, "url": "https://www.velotricbike.com/products/velotric-packer-1-e-bike", "quote": "Top Speed: 25MPH (unlocked) | 20 MPH (default) ⟶ Max Range: 52 Miles", "basis": "default; adjustable to 25 mph", "max_mph": 25},
    {"kind": "review", "value": 20, "url": "https://electricbikereport.com/velotric-packer-review/", "quote": "A 750W rear-hub motor with 1200W of peak output keeps the bike moving up to the Class 2 limit of 20 mph.", "basis": "default; review says unlockable to 28 mph (maker says 25 mph)"},
-   {"kind": "review", "value": 20, "url": "https://electrek.co/2023/08/14/velotric-packer-review-electric-cargo-bike/", "quote": "Top speed: 20 mph (32 km/h) or 25 mph (40 km/h) when unlocked ⟶ Range: Up to 52 miles (84 km)", "basis": "default; adjustable to 25 mph"}
+   {"kind": "review", "value": 20, "url": "https://electrek.co/2023/08/14/velotric-packer-review-electric-cargo-bike/", "quote": "Top speed: 20 mph (32 km/h) or 25 mph (40 km/h) when unlocked ⟶ Range: Up to 52 miles (84 km)", "basis": "default; adjustable to 25 mph", "max_mph": 25}
   ],
   "tq": [
    {"kind": "maker", "value": 75, "url": "https://www.velotricbike.com/products/velotric-packer-1-e-bike", "quote": "Motor Hub ⟶ 750W, 75Nm"},

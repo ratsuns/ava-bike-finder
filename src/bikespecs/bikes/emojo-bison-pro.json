@@ -1,4 +1,4 @@
-{"bike": "Emojo|Bison Pro", "checked": "2026-11-06",
+{"id": "emojo-bison-pro", "bike": "Emojo|Bison Pro", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 3299, "url": "https://emojobike.com/products/bison-pro", "quote": "Regular price ⟶ $3,299.00", "basis": "sale price $2,999.00 not used"},

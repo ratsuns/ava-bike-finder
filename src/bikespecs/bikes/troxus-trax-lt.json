@@ -1,4 +1,4 @@
-{"bike": "Troxus|Trax LT", "checked": "2026-11-06",
+{"id": "troxus-trax-lt", "bike": "Troxus|Trax LT", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1699, "url": "https://www.troxusmobility.com/products/trax-lt-e-bike", "quote": "Sale price | $1,349.00 USD | Regular price | $1,699"},
@@ -10,7 +10,7 @@
   ],
   "spd": [
    {"kind": "maker", "value": 20, "url": "https://www.troxusmobility.com/products/trax-lt-e-bike", "quote": "20 mph | Max Speed | Up to 55 Miles | Per Charge | Class 2 eBike | As Sold", "basis": "adjustable to 28 mph"},
-   {"kind": "maker", "value": 20, "url": "https://www.troxusmobility.com/products/trax-lt-e-bike", "quote": "Max Speed\tMax Speed Up To 20 MPH on Throttle / Up To 28 MPH on Pedal Assist", "basis": "adjustable to 28 mph"},
+   {"kind": "maker", "value": 20, "url": "https://www.troxusmobility.com/products/trax-lt-e-bike", "quote": "Max Speed\tMax Speed Up To 20 MPH on Throttle / Up To 28 MPH on Pedal Assist", "basis": "adjustable to 28 mph", "max_mph": 28},
    {"kind": "review", "value": 20, "url": "https://electricbikereport.com/troxus-trax-lt-review/", "quote": "E-BIKE CLASS: ⟶ CLASS 1 (PEDAL ASSIST TO 20 MPH)"}
   ],
   "tq": [

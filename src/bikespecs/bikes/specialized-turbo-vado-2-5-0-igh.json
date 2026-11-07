@@ -1,4 +1,4 @@
-{"bike": "Specialized|Turbo Vado 2 (5.0 IGH)", "checked": "2026-11-06",
+{"id": "specialized-turbo-vado-2-5-0-igh", "bike": "Specialized|Turbo Vado 2 (5.0 IGH)", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 5249.99, "url": "https://www.specialized.com/us/en/turbo-vado-2-50-igh/p/4263673", "quote": "$4,749.99 ⟶ $5,249.99", "basis": "$5,249.99 is the crossed-out regular price; $4,749.99 is a sale price"},

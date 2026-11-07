@@ -1,4 +1,4 @@
-{"bike": "Cannondale|Tesoro X 2", "checked": "2026-11-06",
+{"id": "cannondale-tesoro-x-2", "bike": "Cannondale|Tesoro X 2", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 3750, "url": "https://www.cannondale.com/en-us/bikes/electric/e-touring/tesoro-neo-x/tesoro-neo-x-2-c66242u", "quote": "$2,499$3,750 ⟶ You Save $1,251", "basis": "regular price $3,750; $2,499 is a sale price"},

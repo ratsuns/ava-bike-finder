@@ -1,4 +1,5 @@
 {
+ "id": "velotric-discover-3",
  "bike": "Velotric|Discover 3",
  "checked": "2026-11-06",
  "fields": {
@@ -39,7 +40,8 @@
     "value": 20,
     "url": "https://www.velotricbike.com/products/velotric-discover-3-commuter-ebike",
     "quote": "Max Speed (Default） ⟶ 20MPH | Max Speed Adjustable Range ⟶ 12~28MPH",
-    "basis": "adjustable to 28 mph"
+    "basis": "adjustable to 28 mph",
+    "max_mph": 28
    },
    {
     "kind": "review",

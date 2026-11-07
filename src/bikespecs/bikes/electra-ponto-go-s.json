@@ -1,4 +1,4 @@
-{"bike": "Electra|Ponto Go! S", "checked": "2026-11-06",
+{"id": "electra-ponto-go-s", "bike": "Electra|Ponto Go! S", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2699.99, "url": "https://www.trekbikes.com/us/en_US/bikes/electra-bikes/electra-ebikes/comfort-ebikes/ponto-go/f/EF275/ponto-go%2521-s/41206/", "quote": "$1,999.93 ⟶ $2,699.99", "basis": "$2,699.99 is the crossed-out original price; $1,999.93 is a sale price"},
