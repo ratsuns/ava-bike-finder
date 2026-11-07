@@ -34,3 +34,6 @@ Audit answers (Nov 7, 2026):
 - Range: every card shows one number, the farthest the bike goes on pedal assist (Medeo T9 "40–95" shows 95; throttle-only numbers are never shown).
 - The 26 bikes hand-marked discontinued with no source: look each up (maker + two other sites) and show Chris the list before changing anything. Trek Allant+ stays marked.
 - Class and type tips on the cards keep their own short wording (not the guide's).
+- Discontinued lookup (Nov 7, 2026; results in verify/discontinued-lookup.csv): 7 bikes on sale new were unmarked and added
+  to STILL_SOLD (Scott Sub Cross eRIDE 30, Scott Silence eRIDE 20 Speed, Scott Sub Active eRIDE 20, Serfas Quest,
+  Giant Roam E+, Giant Explore E+, Hase Kettwiesel ONE). The other 18 stay marked discontinued.

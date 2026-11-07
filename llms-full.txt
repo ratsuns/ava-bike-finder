@@ -116,13 +116,13 @@
 | Gazelle Ultimate C8 | Standard | 1 | $4,199 | $3,799 | Bosch Active Line Plus | 500 Wh | 90 mi | 54 lb (no battery) | Available | Blue Heron Bikes, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton, The Bicycle Garage, The New Wheel, Cyclepath |
 | Gazelle Ultimate T10 | Standard | 1 | $3,499 | $3,099 | Bosch Active Line Plus | 540 Wh | 85 mi | 57.3 lb (no battery) | Available | Blue Heron Bikes, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton, The Bicycle Garage, The New Wheel, Cyclepath |
 | Gazelle Ultimate T11+ | Standard | 3 | $4,499 | $4,099 | Performance Line Sport mid-drive | 540 Wh | 65 mi | 59.5 lb (no battery) | Available | Blue Heron Bikes, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton, The Bicycle Garage, The New Wheel, Cyclepath |
-| Giant Explore E+ | Standard | 3 | not listed |  | Giant SyncDrive Sport2 mid-drive | 625 Wh |  |  | Discontinued by maker | Dublin Cyclery, Alameda Bicycle, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
-| Giant Roam E+ | Standard | 1 | $2,750 | $2,350 | Giant SyncDrive Core mid-drive (Yamaha), 50Nm | 400 Wh | 93 mi | 49.5 lb | Discontinued by maker | Dublin Cyclery, Alameda Bicycle, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
+| Giant Explore E+ | Standard | 3 | not listed |  | Giant SyncDrive Sport2 mid-drive | 625 Wh |  |  | Available | Dublin Cyclery, Alameda Bicycle, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
+| Giant Roam E+ | Standard | 1 | $2,750 | $2,350 | Giant SyncDrive Core mid-drive (Yamaha), 50Nm | 400 Wh | 93 mi | 49.5 lb | Available | Dublin Cyclery, Alameda Bicycle, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
 | Giant Stormguard E+ | Standard | 1 | $7,200 | $6,800 | Giant SyncDrive Pro2 mid-drive (Yamaha), 85Nm | 800 Wh | 155 mi | 66.8 lb | Discontinued by maker | Dublin Cyclery, Alameda Bicycle, Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton |
 | Golden Cycles Panthro | Standard | 3 | $1,399 | $999 | 750W rear hub | 624 Wh | 45 mi |  | Available | The Bicycle Garage |
 | Hase Gravit | Cargo | 1 | $7,210 | $6,310 | Shimano EP6 Cargo mid-drive, 85 Nm (EU spec); US build lists Shimano STEPS E6100 | 630 Wh |  | 64 lb | Available | The New Wheel |
 | Hase Kettwiesel ONE | Adaptive | 1 | $9,570 | $8,670 | Shimano EP6 Cargo mid-drive, 85Nm | 630 Wh |  | 77 lb | Available | The New Wheel |
-| Hase Kettwiesel ONE (Shimano EP6 Cargo) | Adaptive | 1 | not listed |  | Shimano EP6 Cargo mid-drive, 85Nm | 630 Wh |  | 77 lb | Discontinued by maker | The New Wheel |
+| Hase Kettwiesel ONE (Shimano EP6 Cargo) | Adaptive | 1 | not listed |  | Shimano EP6 Cargo mid-drive, 85Nm | 630 Wh |  | 77 lb | Available | The New Wheel |
 | Hase Kettwiesel ONE PLUS | Adaptive | 1 | $11,820 | $10,920 | Bosch Performance Line CX (up to 750 W) | 545 Wh |  | 77 lb | Available | The New Wheel |
 | Hase Pino E (Tandem) | Adaptive | 1 | $12,540 | $11,640 | Shimano EP6 Cargo mid-drive, 85Nm | 630 Wh |  | 73 lb | Available | The New Wheel |
 | Hase Pino E Cargo | Adaptive | 1 | $13,020 | $12,120 | Shimano EP6 Cargo mid-drive, 85Nm | 630 Wh |  | 84 lb | Available | The New Wheel |
@@ -253,9 +253,9 @@
 | Santa Cruz Skitch CC Apex Flat Bar | Standard | 3 | $6,499 | $6,099 | Fazua Ride 60 mid-drive | 480 Wh | 60 mi | 30.91 lb | Available | Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton, Rhythm Bikes, The Bicycle Garage |
 | Santa Cruz Skitch CC GX AXS | Standard | 3 | $7,849 | $7,449 | Fazua Ride60 | 480 Wh | 60 mi | 30.04 lb | Available | Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton, Rhythm Bikes, The Bicycle Garage |
 | Santa Cruz Skitch CC GX AXS Flat Bar | Standard | 3 | $8,149 | $7,749 | Fazua Ride 60 mid-drive | 480 Wh | 60 mi | 33.41 lb | Available | Mike's Bikes of Berkeley, Mike's Bikes of Pleasanton, Rhythm Bikes, The Bicycle Garage |
-| Scott Silence eRIDE 20 Men Speed Bike (286720) | Standard | 3 | $5,599.99 | $5,199.99 | Bosch Performance Line Speed mid-drive | 625 Wh |  | 62.39 lb | Discontinued by maker | Sports Basement Berkeley |
-| Scott Sub Active eRIDE 20 Men Bike (290667) | Standard | 1 | $2,699.99 | $2,299.99 | Bosch Active Line (BES2) mid-drive | 400 Wh |  | 58.2 lb | Discontinued by maker | Sports Basement Berkeley |
-| Scott Sub Cross eRIDE 30 Men Bike (290645) | Standard | 1 | $2,699.99 | $2,299.99 | Bosch Active Line (BES2) mid-drive | 400 Wh |  | 52.25 lb | Discontinued by maker | Sports Basement Berkeley |
+| Scott Silence eRIDE 20 Men Speed Bike (286720) | Standard | 3 | $5,599.99 | $5,199.99 | Bosch Performance Line Speed mid-drive | 625 Wh |  | 62.39 lb | Available | Sports Basement Berkeley |
+| Scott Sub Active eRIDE 20 Men Bike (290667) | Standard | 1 | $2,699.99 | $2,299.99 | Bosch Active Line (BES2) mid-drive | 400 Wh |  | 58.2 lb | Available | Sports Basement Berkeley |
+| Scott Sub Cross eRIDE 30 Men Bike (290645) | Standard | 1 | $2,699.99 | $2,299.99 | Bosch Active Line (BES2) mid-drive | 400 Wh |  | 52.25 lb | Available | Sports Basement Berkeley |
 | Segway Muxi | Cargo | 2 | $1,699 | $799 | 750W direct-drive rear hub | 717 Wh | 80 mi | 72.75 lb | Available | The Bicycle Garage, Electric Bike Center, Castro Valley Cyclery |
 | Segway Myon | Standard | 2 | $1,999.99 | $1,599.99 | 500W rear hub | 722 Wh | 80 mi | 72.75 lb | Available | The Bicycle Garage, Electric Bike Center, Castro Valley Cyclery |
 | Segway Xafari | Standard | 2 | $1,499.99 | $1,099.99 | 750W rear hub | 936 Wh | 88 mi | 92.5 lb | Available | The Bicycle Garage, Electric Bike Center, Castro Valley Cyclery |
@@ -269,7 +269,7 @@
 | Serfas eDART 350W | Standard | 2 | $1,399.99 | $999.99 | 36V 350W hub | 468 Wh | 30 mi |  | Available | Blue Heron Bikes, Laurel Cyclery, Robby's Bicycles, Sports Basement Berkeley, Tip Top Bike Shop, Tracy Cyclery, Cyclepath |
 | Serfas eDART 500W | Standard | 3 | $2,199.99 | $1,799.9899999999998 | 48V 500W hub | 672 Wh | 30 mi |  | Available | Blue Heron Bikes, Laurel Cyclery, Robby's Bicycles, Sports Basement Berkeley, Tip Top Bike Shop, Tracy Cyclery, Cyclepath |
 | Serfas eDART 750W | Standard | 3 | $2,549.99 | $2,149.99 | 48V 750W hub (1,000W peak) | 634 Wh | 30 mi | 75 lb | Available | Blue Heron Bikes, Laurel Cyclery, Robby's Bicycles, Sports Basement Berkeley, Tip Top Bike Shop, Tracy Cyclery, Cyclepath |
-| Serfas Quest | Cargo | 2 | $2,499.99 | $1,599.9899999999998 | Bafang RMG062 48V 750W rear hub | 720 Wh | 40 mi |  | Discontinued by maker | Blue Heron Bikes, Laurel Cyclery, Robby's Bicycles, Sports Basement Berkeley, Tip Top Bike Shop, Tracy Cyclery, Cyclepath |
+| Serfas Quest | Cargo | 2 | $2,499.99 | $1,599.9899999999998 | Bafang RMG062 48V 750W rear hub | 720 Wh | 40 mi |  | Available | Blue Heron Bikes, Laurel Cyclery, Robby's Bicycles, Sports Basement Berkeley, Tip Top Bike Shop, Tracy Cyclery, Cyclepath |
 | Sixthreezero EVRYjourney 250W (Men's) | Adaptive | 2 | $1,649.99 | $749.99 | 250W rear hub | 250 Wh | 30 mi | 62.4 lb | Available | Pedego Electric Bikes Livermore |
 | Sixthreezero EVRYjourney Electric Tricycle Rickshaw 750W | Adaptive | 2 | $4,999.99 | $4,099.99 | Bafang 48V 750W front hub | 1008 Wh | 50 mi | 158 lb | Available | Pedego Electric Bikes Livermore |
 | Sixthreezero EVRYjourney NEW 500W (Men's Sport Hybrid) | Adaptive | 2 | $1,999.99 | $1,099.99 | 500W rear hub, 48V | 500 Wh | 40 mi | 62.4 lb | Available | Pedego Electric Bikes Livermore |
