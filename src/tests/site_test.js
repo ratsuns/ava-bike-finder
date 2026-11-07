@@ -6,7 +6,7 @@ for(const [name,vp,scheme] of [['phone light',{width:390,height:844},'light'],['
  const ph=name.startsWith('phone');const p=await br.newPage({viewport:vp,colorScheme:scheme,hasTouch:ph,isMobile:ph});
  const errs=[];p.on('pageerror',e=>errs.push(e.message));p.on('console',m=>{if(m.type()==='error'&&!/ERR_FAILED|net::|Failed to load resource/.test(m.text()))errs.push(m.text())});
  await p.route(/ytimg|youtube|googleapis|gstatic/,r=>r.abort());
- await p.goto('process.argv[2]||"http://localhost:8765/"');const t0=Date.now();await p.waitForFunction(()=>VIDS,null,{timeout:15000});const vt=Date.now()-t0;
+ await p.goto(process.argv[2]||'http://localhost:8765/');const t0=Date.now();await p.waitForFunction(()=>VIDS,null,{timeout:15000});const vt=Date.now()-t0;
  const r=await p.evaluate(async()=>{const bad=[];let withV=0;const ks=[...B.keys()].sort(()=>Math.random()-.5);
   // 1) every bike: build its window (what a tap does first) and check every part belongs to that bike
   for(const i of ks){const b=B[i],k=b.brand+'|'+b.model,exp=(VIDS[k]||[]).map(v=>v[0]);
