@@ -23,7 +23,11 @@ KEEP_SITE = {(r['id'], r['field']): r['site'] for r in
 PRICE = {'lectric-xpedition-2-0': 1399}          # its crossed-out $1,804 is a Black Friday "was" price; $1,399 is the regular price
 DISCONTINUED = {'macfox-x19', 'aventon-sinch-2-5'}
 STILL_SOLD = {'bmc-amp-257-al-speed-one', 'radio-flyer-flyer-via', 'retrospec-beaumont-rev-2-city', 'retrospec-judd-rev-folding',
-              'senada-osprey-v2', 'senada-gladiator', 'senada-austin-v2', 'senada-moto-cargo'}
+              'senada-osprey-v2', 'senada-gladiator', 'senada-austin-v2', 'senada-moto-cargo',
+              # looked up Nov 7, 2026: on sale new from the maker or a shop (verify/discontinued-lookup.csv)
+              'scott-sub-cross-eride-30-men-bike-290645', 'scott-silence-eride-20-men-speed-bike-286720',
+              'scott-sub-active-eride-20-men-bike-290667', 'serfas-quest', 'giant-roam-e-plus', 'giant-explore-e-plus',
+              'hase-kettwiesel-one-shimano-ep6-cargo'}
 
 
 def shown(field, card, srcs):

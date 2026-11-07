@@ -29,3 +29,11 @@
 15 (result). Tested all 24 Trek/Electra www links today: every current link loads the right page (200). The earlier Server Error was temporary; removing /us/en_US just redirects back. No link change needed.
 
 Done (Nov 6, 2026): 10 and 11 removed Pedego Element Platinum Edition and Serfas Atlas from the site; 9 renamed Lectric Xpeak to XPeak 2.0 and XPedition to XPedition 2.0. The code that did it is gone; the four old source files (lectric-xpeak, lectric-xpedition, pedego-element-platinum-edition, serfas-atlas) were deleted.
+
+Audit answers (Nov 7, 2026):
+- Range: every card shows one number, the farthest the bike goes on pedal assist (Medeo T9 "40–95" shows 95; throttle-only numbers are never shown).
+- The 26 bikes hand-marked discontinued with no source: look each up (maker + two other sites) and show Chris the list before changing anything. Trek Allant+ stays marked.
+- Class and type tips on the cards keep their own short wording (not the guide's).
+- Discontinued lookup (Nov 7, 2026; results in verify/discontinued-lookup.csv): 7 bikes on sale new were unmarked and added
+  to STILL_SOLD (Scott Sub Cross eRIDE 30, Scott Silence eRIDE 20 Speed, Scott Sub Active eRIDE 20, Serfas Quest,
+  Giant Roam E+, Giant Explore E+, Hase Kettwiesel ONE). The other 18 stay marked discontinued.

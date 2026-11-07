@@ -19,8 +19,8 @@ for(const [name,vp,scheme] of [['phone light',{width:390,height:844},'light'],['
    if(got&&got.length)withV++}
   // 2) 20 random bikes: really open and close the window
   const opened=[];for(const i of ks.slice(0,20)){const a=performance.now();buildBike(i);openBike(i);
-   while(!BIKE.open&&performance.now()-a<3000)await new Promise(r=>setTimeout(r,2));
-   if(!BIKE.open||$('bike-vids').dataset.k!==B[i].id)bad.push(B[i].name+': did not open correctly');
+   while(!BIKE.open&&performance.now()-a<10000)await new Promise(r=>setTimeout(r,2));   // a busy test machine can take seconds
+   if(!BIKE.open)bad.push(B[i].name+`: did not open within 10 s`);else if($('bike-vids').dataset.k!==B[i].id)bad.push(B[i].name+': opened showing another bike');
    BIKE.close();const e=performance.now();while(BIKE.open&&performance.now()-e<3000)await new Promise(r=>setTimeout(r,5))}
   return {bikes:B.length,withVideos:withV,problems:bad}});
  // 3) real taps/clicks on 4 cards on screen

@@ -35,9 +35,15 @@ def num(v):
     except (TypeError, ValueError): return None
 
 
-def range_numbers(v):
-    """ "15–30" -> [15, 30], "68" -> [68] """
-    return [float(x) for x in re.findall(r'\d+(?:\.\d+)?', str(v or ''))]
+def shown_range(v):
+    """the one range number a card shows (Chris): the farthest the bike goes on pedal assist with its stock battery.
+    "40–95" -> "95"; "45 (throttle) / 68 (PAS)" -> "68" (throttle-only figures are never used); "up to 85" -> "85" """
+    if v in (None, ''): return None
+    parts = [x for x in re.split(r'[;,/](?![^()]*\))', str(v)) if x.strip()]
+    if len(parts) > 1: parts = [x for x in parts if not re.search(r'(?i)throttle', x)] or parts
+    t = re.sub(r'(?i)\d+(?:\.\d+)?\s*\([^)]*throttle[^)]*\)', '', parts[0])   # "45 (throttle)": a throttle-only figure
+    ns = [float(x) for x in re.findall(r'\d+(?:\.\d+)?', re.sub(r'\([^)]*\)', '', t))]   # notes in brackets don't count
+    return f'{max(ns):g}' if ns else None
 
 
 def watts(v):
@@ -95,9 +101,8 @@ def supports(field, value, quote):
         sp = mph(q)
         return bool(sp) and ((c in '12' and 20 in sp) or (c == '3' and 28 in sp))
     if field == 'range':
-        want = range_numbers(value)
-        have = ns + [n * KM for n in ns]
-        return bool(want) and all(any(abs(w - h) <= 0.6 for h in have) for w in want)
+        want = num(shown_range(value))
+        return want is not None and any(abs(want - h) <= 0.6 for h in ns + [n * KM for n in ns])
     if field == 'motor':     # its rated watts, or (makers like Bosch publish none) its name
         w = watts(value)
         if w is not None: return any(abs(w - n) < 0.5 for n in ns)
@@ -121,7 +126,7 @@ def agree(field, a, b):
     if a in (None, '') or b in (None, ''): return False
     if field == 'fold': return str(a).strip().lower()[:1] == str(b).strip().lower()[:1]
     if field == 'cls': return int(num(a)) == int(num(b)) if num(a) is not None and num(b) is not None else str(a) == str(b)
-    if field == 'range': return range_numbers(a) == range_numbers(b) or max(range_numbers(a) or [0]) == max(range_numbers(b) or [0])
+    if field == 'range': return shown_range(a) == shown_range(b) != None
     if field == 'motor':
         if watts(a) is not None and watts(b) is not None: return watts(a) == watts(b)
         na, nb = motor_name(a), motor_name(b)

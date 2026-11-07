@@ -1,12 +1,12 @@
 """Real source wording for how sources are read (rules.supports), and what the site shows (policy.shown,
 policy.discontinued) for each of Chris's answers. Run from src/:  python3 -m bikespecs.test_rules"""
 from . import policy
-from .rules import supports
+from .rules import shown_range, supports
 
 SUPPORTS = [   # (field, value, the source's words, backed?)
     ('wh', 608, '36V 16.9Ah', True), ('wh', 540, 'Battery size 540Wh', True), ('wh', 520, 'Battery size 540Wh', False),
     ('range', '68', 'Pedal Assist Range 68 Miles', True), ('range', '15–30', '15 (throttle) / 15-30 miles (PAS)', True),
-    ('range', '50', 'up to 80 km', True), ('wt', 75, '64.5 lb w/o battery + 10.5 lb battery', True), ('wt', 56, '25.4 kg', True),
+    ('range', '50', 'up to 80 km', True), ('range', '45 (throttle) / 68 (PAS)', 'Pedal Assist Range 68 Miles', True), ('wt', 75, '64.5 lb w/o battery + 10.5 lb battery', True), ('wt', 56, '25.4 kg', True),
     ('spd', 28, 'up to 45 km/h', True), ('cls', 2, 'Class 1/2/3 e-bike', True), ('cls', 3, 'Class 2', False),
     ('price', 1299, '$1,299.00', True), ('motor', '750W rear hub (1,310W peak)', '750W motor, 1310W peak', True),
     ('height', '5\'0"-6\'3"', 'Rider height 5’0” – 6’3”', True), ('load', 440, '440 lbs max load', True),
@@ -52,6 +52,11 @@ DISCONTINUED = [   # (bike id, status sources, discontinued?)
     ('b', DISC(('maker', M)), True), ('b', DISC(('review', R)), False), ('b', DISC(('review', R), ('retailer', N)), True),
     ('b', DISC(('review', R), ('retailer', R + '/other')), False), ('still-sold', DISC(('maker', M)), False), ('chris-disc', None, True),
 ]
+SHOWN_RANGE = [   # (range as recorded, the one number the card shows: the farthest on pedal assist)
+    ('40–95', '95'), ('45 (throttle) / 68 (PAS)', '68'), ('40 (throttle) – 70 (PAS)', '70'), ('up to 85', '85'),
+    ('30–75 (pedal assist, by mode); 25–45 throttle', '75'), ('Up to 75 (PAS), 50 (throttle)', '75'),
+    ('up to 40 (FAQ: up to 99)', '40'), ('22.5', '22.5'), ('', None),
+]
 NO_BATTERY = [   # (weight sources, the card's weight, card says "(no battery)"?)
     ([src('maker', 64.5, M, basis='without battery')], 64.5, True), ([src('retailer', 64.5, N, basis='without battery')], 64.5, False),
 ]
@@ -64,6 +69,7 @@ def run():
         if got != want: bad.append(f'{what}: shows {got!r}, expected {want!r}')
     for i, status, want in DISCONTINUED:
         if policy.discontinued(i, status) != want: bad.append(f'discontinued({i}, {status}) should be {want}')
+    bad += [f'shown_range({v!r}) should be {w!r}, got {shown_range(v)!r}' for v, w in SHOWN_RANGE if shown_range(v) != w]
     for srcs, wt, want in NO_BATTERY:
         if policy.no_battery(srcs, wt) != want: bad.append(f'no_battery({srcs[0]["kind"]}, {wt}) should be {want}')
     return bad
@@ -71,5 +77,5 @@ def run():
 
 if __name__ == '__main__':
     bad = run()
-    print('\n'.join(bad) or f'all {len(SUPPORTS) + len(SHOWN) + len(DISCONTINUED) + len(NO_BATTERY)} spec rules pass')
+    print('\n'.join(bad) or f'all {len(SUPPORTS) + len(SHOWN) + len(DISCONTINUED) + len(NO_BATTERY) + len(SHOWN_RANGE)} spec rules pass')
     raise SystemExit(1 if bad else 0)

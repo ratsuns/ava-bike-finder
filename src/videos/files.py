@@ -8,7 +8,7 @@
   src/verify/video_suggestions.csv   find.py's suggestions
   <site>/videos-<hash>.json          the videos the page shows
 """
-import csv, glob, hashlib, json, os, re
+import csv, hashlib, json, os, re
 
 import bikedata
 
@@ -75,10 +75,8 @@ def save_suggestions(rows):
 
 
 def write_site(site, data):
-    """write the page's video file into the site folder (removing older ones); returns its file name"""
+    """write the page's video file into the site folder; returns its file name (build2.py removes older ones at the end)"""
     text = json.dumps(data, separators=(',', ':'), ensure_ascii=False)
     name = 'videos-' + hashlib.md5(text.encode()).hexdigest()[:8] + '.json'
-    for old in glob.glob(os.path.join(site, 'videos-*.json')):
-        if os.path.basename(old) != name: os.remove(old)
     open(os.path.join(site, name), 'w').write(text)
     return name

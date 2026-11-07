@@ -4139,7 +4139,7 @@
 "model": "Roam E+",
 "src": "https://www.giant-bicycles.com/us/roam-eplus-gts-2021",
 "pnote": null,
-"st": "disc",
+"st": null,
 "img": "giant-roam-e-plus",
 "type": "Standard",
 "shops": [
@@ -4174,7 +4174,7 @@
 "model": "Explore E+",
 "src": "https://www.giant-bicycles.com/global/explore-e-range",
 "pnote": null,
-"st": "disc",
+"st": null,
 "img": "giant-explore-e-plus-cordovan-black",
 "type": "Standard",
 "shops": [
@@ -4271,7 +4271,7 @@
 "model": "Kettwiesel ONE (Shimano EP6 Cargo)",
 "src": "https://www.hasebikes.com/en/kettwiesel-one",
 "pnote": null,
-"st": "disc",
+"st": null,
 "cv": [
 {
 "n": "Pale green RAL 6021",
@@ -10116,7 +10116,7 @@
 "model": "Sub Active eRIDE 20 Men Bike (290667)",
 "src": "https://www.scott-sports.com/us/en/product/scott-sub-active-eride-20-men-bike",
 "pnote": null,
-"st": "disc",
+"st": null,
 "img": "scott-sub-active-all",
 "type": "Standard",
 "shops": [
@@ -10154,7 +10154,7 @@
 "model": "Sub Cross eRIDE 30 Men Bike (290645)",
 "src": "https://scott-sports.com/us/en/product/scott-sub-cross-eride-30-men-bike",
 "pnote": null,
-"st": "disc",
+"st": null,
 "img": "scott-sub-cross-all",
 "type": "Standard",
 "shops": [
@@ -10192,7 +10192,7 @@
 "model": "Silence eRIDE 20 Men Speed Bike (286720)",
 "src": "https://scott-sports.com/us/en/product/scott-silence-eride-20-men-speed-bike",
 "pnote": null,
-"st": "disc",
+"st": null,
 "img": "scott-silence-all",
 "type": "Standard",
 "shops": [
@@ -10469,7 +10469,7 @@
 "model": "Quest",
 "src": "https://serfas.com/products/quest-750w",
 "pnote": null,
-"st": "disc",
+"st": null,
 "cv": [
 {
 "n": "White",
