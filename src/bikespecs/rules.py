@@ -1,15 +1,11 @@
-"""How sources are read and when they agree. One place for every rule, used by check.py and apply.py.
+"""How a source's words are read, when two sources agree, and what the sources back (decide).
+What the site then shows, with Chris's answers, is policy.shown.
 
-Chris's rules:
+What a source's number means (Chris's rules for recording them):
   - price: the maker's regular price (not a sale price)
-  - load:  the max load the maker publishes (its payload; when it only gives a total limit, that total, marked)
+  - load:  the max load the maker publishes (its payload; when it only gives a total limit, that total, basis "total")
   - weight: with the battery (a maker that lists the frame and the battery separately: the two added up)
   - range: the standard battery with pedal assist (what makers headline); throttle-only figures are not used
-A spec is shown only when
-  - the maker states it and at least one independent source (another site) agrees, or
-  - the maker doesn't publish it and two independent sources agree.
-When the maker and the other sources disagree, the maker's number is shown and the bike is listed for Chris.
-Price is the one exception to "two sources": a maker sets its own price, so the maker's regular price is enough.
 """
 import re
 from urllib.parse import urlparse
@@ -20,7 +16,7 @@ FIELDS = {          # field: (what the site shows, unit)
     'motor': ('Motor (rated watts)', 'W'), 'height': ('Rider height', ''), 'fold': ('Folds', ''),
 }
 KINDS = ('maker', 'retailer', 'review')
-TOLERANCE = {'price': 1, 'spd': 0.6, 'tq': 0, 'wt': 1, 'load': 1}   # absolute; wh is 1.5% (rounding of V x Ah)
+TOLERANCE = {'price': 1, 'spd': 0.6, 'tq': 0, 'wt': 1, 'load': 1}
 KM, KG = 0.621371, 2.20462
 
 
@@ -56,17 +52,17 @@ MOTOR_WORDS = {'motor', 'mid', 'drive', 'hub', 'rear', 'front', 'brushless', 'ge
 
 def motor_name(v):
     """a motor's name words: "Bosch Active Line Plus mid-drive (50 Nm)" -> {bosch, active, line, plus}"""
-    return {w for w in re.findall(r'[a-z0-9+]{2,}', str(v or '').lower()) if w not in MOTOR_WORDS and not w.isdigit()}   # keeps "ep600", "x35+"
+    return {w for w in re.findall(r'[a-z0-9+]{2,}', str(v or '').lower()) if w not in MOTOR_WORDS and not w.isdigit()}
 
 
 def heights(v):
     """rider heights in inches: 5'0"-6'3" -> [60, 75]; also "5 ft. 1 in", "5 feet, 1 inch", "150cm-190cm", "1,55 et 1,95 m" """
-    t = str(v or '').replace('’', "'").replace('′', "'").replace('”', '"').replace('″', '"').replace("'-", "'")   # 5’-3”
+    t = str(v or '').replace('’', "'").replace('′', "'").replace('”', '"').replace('″', '"').replace("'-", "'")
     t = re.sub(r'(\d)\s*(?:ft\.?|feet|foot)\s*,?\s*(?:(\d{1,2})\s*(?:in\.?|inch(?:es)?)\b)?', lambda m: f"{m.group(1)}'{m.group(2) or 0}", t, flags=re.I)
     out = [int(f) * 12 + int(i or 0) for f, i in re.findall(r"(\d)\s*'\s*(\d{1,2})?", t)]
     if not out or re.search(r'\d\s*c?m\b', t, re.I):     # no feet given: the heights are metric (some size tables give no unit)
-        out += [round(float(n) / 2.54) for n in re.findall(r'(?<![\d.,])((?:1[3-9]|2[01])\d(?:\.\d)?)(?![\d,]|\.\d)', t)]   # 150 cm, 142.0
-        out += [round(float(a + '.' + b) * 100 / 2.54) for a, b in re.findall(r'(?<![\d.,])([12])[.,](\d{2})(?!\d)', t)]  # 1,55 m
+        out += [round(float(n) / 2.54) for n in re.findall(r'(?<![\d.,])((?:1[3-9]|2[01])\d(?:\.\d)?)(?![\d,]|\.\d)', t)]
+        out += [round(float(a + '.' + b) * 100 / 2.54) for a, b in re.findall(r'(?<![\d.,])([12])[.,](\d{2})(?!\d)', t)]
     return out
 
 
@@ -83,7 +79,7 @@ def mph(quote):
 
 def close(a, b, field):
     if a is None or b is None: return False
-    if field == 'wh': return abs(a - b) <= max(1.0, 0.015 * max(a, b))
+    if field == 'wh': return abs(a - b) <= max(1.0, 0.015 * max(a, b))   # makers round V x Ah
     return abs(a - b) <= TOLERANCE.get(field, 0)
 
 
@@ -93,7 +89,7 @@ def supports(field, value, quote):
     q = quote or ''
     ns = numbers(q)
     if field == 'fold': return bool(q.strip())
-    if field == 'cls':      # the class it names, or (no class named) the class its out-of-the-box speed means: 20 mph -> 1 or 2, 28 -> 3
+    if field == 'cls':      # no class named: by law Class 1 and 2 top out at 20 mph, Class 3 at 28
         c = str(int(num(value)))
         if c in class_of(q): return True
         sp = mph(q)
@@ -108,15 +104,15 @@ def supports(field, value, quote):
         return bool(motor_name(value)) and motor_name(value) <= motor_name(q)
     if field == 'height':
         want, have = heights(value), heights(q)
-        return bool(want) and all(any(abs(w - h) <= 1 for h in have) for w in want)    # within an inch (cm rounding)
+        return bool(want) and all(any(abs(w - h) <= 1 for h in have) for w in want)
     v = num(value)
     if v is None: return False
-    if field == 'price': ns += [float(n.replace('.', '')) for n in re.findall(r'\$\s?(\d{1,3}(?:\.\d{3})+)(?![\d.])', q)]   # "US $6.999"
+    if field == 'price': ns += [float(n.replace('.', '')) for n in re.findall(r'\$\s?(\d{1,3}(?:\.\d{3})+)(?![\d.])', q)]   # some shops write "US $6.999"
     if any(close(v, n, field) for n in ns): return True
     if field == 'spd' and any(close(v, n * KM, field) for n in ns): return True
     if field in ('wt', 'load') and any(close(v, n * KG, field) for n in ns): return True
     if field == 'wh' and any(close(v, a * b, field) for a in ns for b in ns if a != b and 24 <= a <= 72 and b < 60): return True
-    if field == 'wt' and any(close(v, a + b, field) for a in ns for b in ns if a > b): return True   # frame + battery
+    if field == 'wt' and any(close(v, a + b, field) for a in ns for b in ns if a > b): return True
     return False
 
 
@@ -134,12 +130,21 @@ def agree(field, a, b):
     return close(num(a), num(b), field)
 
 
+def same(field, a, b):
+    """the site already shows this value (two blanks are the same)"""
+    return agree(field, a, b) or (a in (None, '') and b in (None, ''))
+
+
 def decide(field, sources):
-    """what the site shows for one spec, from its sources:
-    {'state', 'value', 'show', 'why'}  states: confirmed, confirmed_independent, conflict, maker_only, unconfirmed,
-    not_published"""
-    srcs = [s if supports(field, s.get('value'), s.get('quote')) else dict(s, value=None)    # a source counts only for
-            for s in sources or [] if s.get('kind') in KINDS]                               # what its own words back
+    """what the sources back for one spec: {'state', 'value', 'why'}. A source counts only for what its own words back.
+      confirmed              the maker's number, and another site agrees
+      conflict               the maker's number; other sites give another
+      maker_only             the maker's number; no other site gives one
+      confirmed_independent  no maker number; two other sites agree
+      not_published          value None: the maker doesn't publish it, and no other site gives it
+      unconfirmed            value None: not enough agreeing sources"""
+    srcs = [s if supports(field, s.get('value'), s.get('quote')) else dict(s, value=None)
+            for s in sources or [] if s.get('kind') in KINDS]
     maker = [s for s in srcs if s['kind'] == 'maker']
     mdom = {domain(s.get('url')) for s in maker}
     others = [s for s in srcs if s['kind'] != 'maker' and domain(s.get('url')) not in mdom]
@@ -147,21 +152,14 @@ def decide(field, sources):
     if stated:
         v = stated[0]['value']
         backing = {domain(s.get('url')) for s in others if agree(field, v, s.get('value'))}
-        if backing: return dict(state='confirmed', value=v, show=True, why=f'maker + {len(backing)} more')
-        if field == 'price': return dict(state='maker_only', value=v, show=True, why="the maker's own price")
+        if backing: return dict(state='confirmed', value=v, why=f'maker + {len(backing)} more')
         if any(s.get('value') not in (None, '') for s in others):
-            return dict(state='conflict', value=v, show=True, why='other sources say ' + ', '.join(str(s['value']) for s in others if s.get('value') not in (None, '')))
-        return dict(state='maker_only', value=v, show=False, why='only the maker states it; no second source yet')
+            return dict(state='conflict', value=v, why='other sources say ' + ', '.join(str(s['value']) for s in others if s.get('value') not in (None, '')))
+        return dict(state='maker_only', value=v, why='only the maker states it')
     vals = [s for s in others if s.get('value') not in (None, '')]
     for s in vals:
         doms = {domain(t.get('url')) for t in vals if agree(field, s['value'], t['value'])}
-        if len(doms) >= 2: return dict(state='confirmed_independent', value=s['value'], show=True, why=f'{len(doms)} independent sources')
-    if maker and not vals: return dict(state='not_published', value=None, show=False, why='the maker does not publish it')
-    return dict(state='unconfirmed', value=None, show=False, why='not enough agreeing sources')
+        if len(doms) >= 2: return dict(state='confirmed_independent', value=s['value'], why=f'{len(doms)} independent sources')
+    if maker and not vals: return dict(state='not_published', value=None, why='the maker does not publish it')
+    return dict(state='unconfirmed', value=None, why='not enough agreeing sources')
 
-
-def discontinued(status):
-    """a bike is marked discontinued when the maker says so, or two independent sources do"""
-    srcs = (status or {}).get('sources', [])
-    if any(s.get('kind') == 'maker' and s.get('value') == 'discontinued' for s in srcs): return True
-    return len({domain(s.get('url')) for s in srcs if s.get('kind') != 'maker' and s.get('value') == 'discontinued'}) >= 2
