@@ -8,6 +8,7 @@ apply.py writes it into verify/cards.json; check.py and test_rules.py use the sa
   - Price: the maker's regular price (Tern's own US store for Tern bikes that its main site shows only on sale), and it
     never goes up: when the site's price is lower than the sources', the site's price stays (Chris: "use the cheaper
     prices"; Lectric's crossed-out prices, for one, are higher than what people pay).
+  - Weight: the card adds "(no battery)" when the maker's figure it shows is without the battery (no_battery).
   - No source backs it: the site's number stays (check.py lists these as "unverified").
   - KEEP_SITE (verify/spec_keep_site.json): a second search found a different number; Chris kept the site's.
   - PRICE: Chris's price for a bike.
@@ -15,7 +16,7 @@ A bike is discontinued when the maker says so or two independent sites do, unles
 """
 import json, os
 
-from .rules import decide, domain, num
+from .rules import agree, decide, domain, num
 
 KEEP_SITE = {(r['id'], r['field']): r['site'] for r in
              json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'verify', 'spec_keep_site.json')))}
@@ -36,6 +37,11 @@ def shown(field, card, srcs):
     if field == 'price' and num(now) and num(v) and num(v) > num(now): return now, 'kept_lower_price'
     if v in (None, ''): return (None, d['state']) if now in (None, '') else (now, 'unverified')
     return (int(float(v)) if field == 'cls' else v), d['state']
+
+
+def no_battery(srcs, wt):
+    """the card's weight wt is without the battery: the maker gives that figure with basis 'without battery'"""
+    return any(s.get('kind') == 'maker' and s.get('basis') == 'without battery' and agree('wt', s.get('value'), wt) for s in srcs)
 
 
 def discontinued(bike_id, status):

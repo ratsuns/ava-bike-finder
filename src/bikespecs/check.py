@@ -39,6 +39,8 @@ def check():
             specs.append((i, f, why, v))
             if not same(f, card.get(f), v):
                 problems.append((i, f, 'differs', f'site shows {card.get(f)!r}, the rule gives {v!r} ({why})'))
+            if f == 'wt' and bool(card.get('wtnb')) != policy.no_battery(srcs, card.get('wt')):
+                problems.append((i, 'wtnb', 'differs', f"site shows \"(no battery)\": {bool(card.get('wtnb'))}, the rule gives {not card.get('wtnb')}"))
         if policy.discontinued(i, ev.get('status')) and card.get('st') != 'disc':
             problems.append((i, 'status', 'status', 'discontinued, but the site does not say so'))
     return problems, specs

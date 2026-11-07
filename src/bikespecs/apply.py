@@ -5,7 +5,7 @@
 import bikedata
 
 from . import evidence, policy
-from .rules import FIELDS, agree, same
+from .rules import FIELDS, same
 
 
 def apply():
@@ -22,8 +22,7 @@ def apply():
                 changes.append(f"{c['id']} {f}: {c.get(f)!r} -> {new!r} ({why})")
                 c[f] = new
             if f == 'wt':
-                if any(s.get('kind') == 'maker' and s.get('basis') == 'without battery' and agree('wt', s.get('value'), c.get('wt')) for s in srcs):
-                    c['wtnb'] = True
+                if policy.no_battery(srcs, c.get('wt')): c['wtnb'] = True
                 else: c.pop('wtnb', None)
         if policy.discontinued(c['id'], ev.get('status')) and c.get('st') != 'disc':
             changes.append(f"{c['id']} status: {c.get('st')!r} -> 'disc'")
