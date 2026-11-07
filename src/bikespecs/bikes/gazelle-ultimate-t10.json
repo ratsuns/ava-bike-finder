@@ -1,4 +1,4 @@
-{"bike": "Gazelle|Ultimate T10", "checked": "2026-11-06",
+{"id": "gazelle-ultimate-t10", "bike": "Gazelle|Ultimate T10", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 3499, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-ultimate-t10", "quote": "$3,499 | Shop stock: First, configure your bike", "basis": "single price shown, no crossed-out price"},

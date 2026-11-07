@@ -1,4 +1,4 @@
-{"bike": "Hase|Kettwiesel ONE", "checked": "2026-11-06",
+{"id": "hase-kettwiesel-one", "bike": "Hase|Kettwiesel ONE", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/kettwiesel-one", "quote": "from 8.600,– ⟶ Euros including VAT, excluding delivery", "basis": "EUR only, no USD price published"},

@@ -1,4 +1,4 @@
-{"bike": "Lectric|XP Lite3", "checked": "2026-11-06",
+{"id": "lectric-xp-lite3", "bike": "Lectric|XP Lite3", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 799, "url": "https://lectricebikes.com/products/xp-lite-white-ebike", "quote": "$799 ⟶ 0% APRor as low as $50/mo with Affirm", "basis": "standard-battery chain-drive model; no crossed-out price shown"},

@@ -1,4 +1,4 @@
-{"bike": "Emojo|Caddy Pro", "checked": "2026-11-06",
+{"id": "emojo-caddy-pro", "bike": "Emojo|Caddy Pro", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2799, "url": "https://emojobike.com/products/emojo-caddy-pro", "quote": "Regular price ⟶ $2,799.00", "basis": "sale price $2,599.00 not used"}

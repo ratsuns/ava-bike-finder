@@ -1,4 +1,4 @@
-{"bike": "Sunseeker|E-Eco Tad B1 SX Electric Tadpole", "checked": "2026-11-06",
+{"id": "sunseeker-e-eco-tad-b1-sx-electric-tadpole", "bike": "Sunseeker|E-Eco Tad B1 SX Electric Tadpole", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 3849.99, "url": "https://sunseeker.bike/products/e-eco-tad-b1-sx-electric-tadpole-23584", "quote": "Regular price ⟶ $3,849.99"},

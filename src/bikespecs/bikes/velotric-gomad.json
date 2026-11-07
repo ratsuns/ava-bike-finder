@@ -1,4 +1,4 @@
-{"bike": "Velotric|GoMad", "checked": "2026-11-06",
+{"id": "velotric-gomad", "bike": "Velotric|GoMad", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1999, "url": "https://www.velotricbike.com/products/velotric-gomad-utility-ebike", "quote": "$1,899.00 | $1,999.00 | Save $100.00", "basis": "with Package \"GoMad Only\" selected: $1,999.00 crossed out, $1,899.00 Black Friday sale; the default package (with Young Passenger Kit) shows $1,899.00 / $2,283.99"},

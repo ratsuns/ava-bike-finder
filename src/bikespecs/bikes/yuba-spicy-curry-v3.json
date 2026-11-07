@@ -1,4 +1,4 @@
-{"bike": "Yuba|Spicy Curry V3", "checked": "2026-11-06",
+{"id": "yuba-spicy-curry-v3", "bike": "Yuba|Spicy Curry V3", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 4999.99, "url": "https://yubabikes.com/product/spicy-curry-v3/", "quote": "$4,999.99 | Original price was: $4,999.99. | $3,999.99 | Current price is: $3,999.99.", "basis": "Class 1 version regular price (shown after selecting CLASS 1); Class 3 version regular $5,599.99 per page variant data; both on sale"},

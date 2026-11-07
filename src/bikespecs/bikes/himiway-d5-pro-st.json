@@ -1,4 +1,4 @@
-{"bike": "Himiway|D5 Pro ST", "checked": "2026-11-06",
+{"id": "himiway-d5-pro-st", "bike": "Himiway|D5 Pro ST", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2599, "url": "https://himiwaybike.com/products/all-terrain-electric-bike-d5prost", "quote": "Regular price ⟶ $2,599.00", "basis": "regular price; on sale for $1,999"},

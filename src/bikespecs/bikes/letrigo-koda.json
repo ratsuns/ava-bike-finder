@@ -1,4 +1,4 @@
-{"bike": "Letrigo|Koda", "checked": "2026-11-06",
+{"id": "letrigo-koda", "bike": "Letrigo|Koda", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1999, "url": "https://letrigo.com/products/koda", "quote": "$1,999.00 USD ⟶ Color"},
@@ -9,8 +9,8 @@
    {"kind": "retailer", "value": 2, "url": "https://www.citygrounds.com/products/letrigo-koda-electric-bike", "quote": "Speed:Class 2: 20mph, up to 28mph"}
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://letrigo.com/products/koda", "quote": "Speed ⟶ Class 2:20mph | Class 2:20mph ⟶ Max speed up to 28mph", "basis": "adjustable to 28 mph"},
-   {"kind": "retailer", "value": 20, "url": "https://www.citygrounds.com/products/letrigo-koda-electric-bike", "quote": "Speed:Class 2: 20mph, up to 28mph", "basis": "adjustable to 28 mph"}
+   {"kind": "maker", "value": 20, "url": "https://letrigo.com/products/koda", "quote": "Speed ⟶ Class 2:20mph | Class 2:20mph ⟶ Max speed up to 28mph", "basis": "adjustable to 28 mph", "max_mph": 28},
+   {"kind": "retailer", "value": 20, "url": "https://www.citygrounds.com/products/letrigo-koda-electric-bike", "quote": "Speed:Class 2: 20mph, up to 28mph", "basis": "adjustable to 28 mph", "max_mph": 28}
   ],
   "tq": [
    {"kind": "maker", "value": 100, "url": "https://letrigo.com/products/koda", "quote": "100 Nm of torque ⟶ Battery"},

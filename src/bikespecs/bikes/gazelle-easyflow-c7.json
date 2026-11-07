@@ -1,4 +1,4 @@
-{"bike": "Gazelle|EasyFlow C7", "checked": "2026-11-06",
+{"id": "gazelle-easyflow-c7", "bike": "Gazelle|EasyFlow C7", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 3999, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-easyflow-c7", "quote": "$3,999 | Find a Store", "basis": "no crossed-out price shown"},

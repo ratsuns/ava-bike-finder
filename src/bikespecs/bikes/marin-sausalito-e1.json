@@ -1,4 +1,4 @@
-{"bike": "Marin|Sausalito E1", "checked": "2026-11-06",
+{"id": "marin-sausalito-e1", "bike": "Marin|Sausalito E1", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 3499, "url": "https://marinbikes.com/products/2025-1-sausalito-e1", "quote": "$3,499.00 *"},

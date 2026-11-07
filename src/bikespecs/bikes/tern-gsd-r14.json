@@ -1,4 +1,4 @@
-{"bike": "Tern|GSD R14", "checked": "2026-11-06",
+{"id": "tern-gsd-r14", "bike": "Tern|GSD R14", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 10999, "url": "https://www.ternbicycles.com/us/bikes/473/gsd-r14", "quote": "$10,999 ⟶ WHY GSD GEN 3 SPECS ACCESSORIES SUPPORT FIND A DEALER"},

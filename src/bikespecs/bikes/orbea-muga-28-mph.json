@@ -1,4 +1,4 @@
-{"bike": "Orbea|Muga 28 mph", "checked": "2026-11-06",
+{"id": "orbea-muga-28-mph", "bike": "Orbea|Muga 28 mph", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 6614, "url": "https://www.orbea.com/en-us/muga-20-28mph", "quote": "$6,614 ⟶ View summary", "basis": "Muga 20 28mph standard configuration; no crossed-out price shown"},

@@ -1,4 +1,4 @@
-{"bike": "Priority|E-Classic", "checked": "2026-11-06",
+{"id": "priority-e-classic", "bike": "Priority|E-Classic", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "review", "value": 1699, "url": "https://electrek.co/2023/08/04/high-end-brand-priority-bicycles-launches-its-lowest-priced-belt-drive-e-bike-yet/", "quote": "The $1,699 Priority e-Classic Plus, which is launching with a promotional discount bringing it down to just $1,399, features a number of high-end parts rarely seen at this price point. ⟶ As Priority Bicycles founder and CEO David Weiner explained:"},

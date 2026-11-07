@@ -1,4 +1,4 @@
-{"bike": "Fuji|E-Crosstown", "checked": "2026-11-06",
+{"id": "fuji-e-crosstown", "bike": "Fuji|E-Crosstown", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "review", "value": 2249, "url": "https://99spokes.com/bikes/fuji/2019/e-crosstown", "quote": "Manufacturer Price | $2,249", "basis": "99 Spokes spec aggregator, 2019 E-Crosstown"},

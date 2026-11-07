@@ -1,4 +1,4 @@
-{"bike": "MOD|Groove Step-Thru 3", "checked": "2026-11-06",
+{"id": "mod-groove-step-thru-3", "bike": "MOD|Groove Step-Thru 3", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1999, "url": "https://mod-bikes.com/products/mod-groove-step-thru-electric-beach-cruiser", "quote": "$1,799 | $1,799 | Regular price | $1,999 | $1,999 | Sale price", "basis": "regular price $1,999; on sale at $1,799"},
@@ -8,7 +8,7 @@
    {"kind": "maker", "value": 2, "url": "https://mod-bikes.com/products/mod-groove-step-thru-electric-beach-cruiser", "quote": "Class | Class 2 (adjustable to Class 1 or 3)", "basis": "ships as Class 2"}
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://mod-bikes.com/products/mod-groove-step-thru-electric-beach-cruiser", "quote": "Speed | Up to 20 mph (Off-road mode: up to 28 mph)", "basis": "adjustable to 28 mph (off-road mode)"},
+   {"kind": "maker", "value": 20, "url": "https://mod-bikes.com/products/mod-groove-step-thru-electric-beach-cruiser", "quote": "Speed | Up to 20 mph (Off-road mode: up to 28 mph)", "basis": "adjustable to 28 mph (off-road mode)", "max_mph": 28},
    {"kind": "review", "value": 28, "url": "https://9to5toys.com/2025/03/10/mod-spring-sale-groove-step-thru-3-1849/", "quote": "Coming in three colorway options, MOD’s Groove Step-Thru 3 returns to the scene sporting the previous generations’ classic Americana beach cruiser frame design, which houses a 750W geared hub motor paired with a removable 720Wh Samsung battery (improved from the previous 614Wh model). The cadence sensor from the previous generation has been replaced by a superior torque sensor, which supports the five customizable levels of pedal assistance to provide up to a 28 MPH top speed and 50 miles of travel on a single three to six hour charge – plus, it comes dual-battery capable to extend travel times up to 100 miles. There is also a throttle for pure electric cruises, though this will reduce your travel range.", "basis": "max unlocked speed"}
   ],
   "tq": [

@@ -1,4 +1,4 @@
-{"bike": "Pedego|Latch (2025)", "checked": "2026-11-06",
+{"id": "pedego-latch-2025", "bike": "Pedego|Latch (2025)", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2095, "url": "https://pedegoelectricbikes.com/products/latch", "quote": "$2,095.00 ⟶ Top Speed", "basis": "price shown with the default 52V 10.5Ah battery; no crossed-out price shown"},

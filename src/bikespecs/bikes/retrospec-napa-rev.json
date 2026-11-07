@@ -1,4 +1,4 @@
-{"bike": "Retrospec|Napa Rev", "checked": "2026-11-06",
+{"id": "retrospec-napa-rev", "bike": "Retrospec|Napa Rev", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": null, "url": "https://retrospec.com/collections/warranty-parts-napa-rev", "quote": "Warranty Parts: Napa Rev", "basis": "maker no longer has a product page for the bike; only warranty parts are listed"},

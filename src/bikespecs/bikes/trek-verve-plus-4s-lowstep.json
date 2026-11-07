@@ -1,4 +1,4 @@
-{"bike": "Trek|Verve+ 4S Lowstep", "checked": "2026-11-06",
+{"id": "trek-verve-plus-4s-lowstep", "bike": "Trek|Verve+ 4S Lowstep", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 3999.99, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/verve/f/F436/verve%252b-4s-lowstep/40675/", "quote": "Verve+ 4S Lowstep | $3,499.93 | Model 5292260 | $3,999.99 | Comp. Value | Original price", "basis": "original (crossed-out) price; $3,499.93 is a sale price"}

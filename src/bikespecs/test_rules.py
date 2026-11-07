@@ -1,5 +1,7 @@
-"""Real source wording for every rule in rules.py. Run from src/:  python3 -m bikespecs.test_rules"""
-from .rules import decide, supports
+"""Real source wording for how sources are read (rules.supports), and what the site shows (policy.shown,
+policy.discontinued) for each of Chris's answers. Run from src/:  python3 -m bikespecs.test_rules"""
+from . import policy
+from .rules import supports
 
 SUPPORTS = [   # (field, value, the source's words, backed?)
     ('wh', 608, '36V 16.9Ah', True), ('wh', 540, 'Battery size 540Wh', True), ('wh', 520, 'Battery size 540Wh', False),
@@ -21,27 +23,48 @@ SUPPORTS = [   # (field, value, the source's words, backed?)
     ('height', '4\'8"-6\'4"', 'Recommended Rider Height 142.0 - 150.0 152.0 - 163.0 183.0 - 193.0', True), ('height', '5\'3"-6\'7"', 'One Size 1.59m - 2.00m', True),
 ]
 M, R, N = 'https://www.velotricbike.com/p', 'https://electricbikereview.com/r', 'https://newatlas.com/n'
-DECIDE = [   # (field, sources, state, shown?)
-    ('range', [dict(kind='maker', value='68', url=M, quote='68'), dict(kind='review', value='68', url=N, quote='68')], 'confirmed', True),
-    ('tq', [dict(kind='maker', value=75, url=M, quote='75')], 'maker_only', False),
-    ('tq', [dict(kind='maker', value=75, url=M, quote='75'), dict(kind='review', value=65, url=R, quote='65')], 'conflict', True),
-    ('tq', [dict(kind='review', value=65, url=R, quote='65'), dict(kind='retailer', value=65, url=N, quote='65')], 'confirmed_independent', True),
-    ('tq', [dict(kind='maker', value=None, url=M)], 'not_published', False),
-    ('tq', [dict(kind='maker', value=75, url=M, quote='75'), dict(kind='review', value=75, url=M + '/other', quote='75')], 'maker_only', False),  # same site twice
-    ('price', [dict(kind='maker', value=1499, url=M, quote='1499')], 'maker_only', True),
-    ('wt', [dict(kind='maker', value=60, url=M, quote='60 lb'), dict(kind='review', value=60, url=N, quote='weighs a lot')], 'maker_only', False),  # words don't back it
+
+
+def src(kind, value, url, quote=None, **more):
+    return dict(kind=kind, value=value, url=url, quote=str(value) if quote is None else quote, **more)
+
+
+KEPT, KEPT_FIELD = next(iter(policy.KEEP_SITE))
+PRICED = next(iter(policy.PRICE))
+SHOWN = [   # (what it checks, bike id, field, the site's value now, sources, what the site shows)
+    ('the price never goes up', 'b', 'price', 1299, [src('maker', 1499, M), src('review', 1499, N)], 1299),
+    ('a lower price replaces the site\'s', 'b', 'price', 1499, [src('maker', 1299, M)], 1299),
+    ("the maker's number wins when another site disagrees", 'b', 'tq', 65, [src('maker', 75, M), src('review', 65, R)], 75),
+    ("a number only the maker states is shown", 'b', 'tq', None, [src('maker', 75, M)], 75),
+    ('two other sites that agree are enough without the maker', 'b', 'tq', None, [src('review', 65, R), src('retailer', 65, N)], 65),
+    ('the same site twice is one source', 'b', 'tq', None, [src('review', 65, R), src('retailer', 65, R + '/other')], None),
+    ("a source whose words don't back its number doesn't count", 'b', 'tq', None,
+     [src('review', 65, R, 'plenty of torque'), src('retailer', 65, N)], None),
+    ("the site's number stays when no source backs one", 'b', 'tq', 80, [src('maker', None, M, '')], 80),
+    ('top speed is the highest the bike can reach', 'b', 'spd', 20,
+     [src('maker', 20, M, 'Class 2 at 20 mph out of the box, unlocks to 28 mph', max_mph=28)], 28),
+    ("a kept site number stays whatever the sources say", KEPT, KEPT_FIELD, None, [], policy.KEEP_SITE[KEPT, KEPT_FIELD]),
+    ("Chris's price wins over the maker's", PRICED, 'price', None, [src('maker', 99999, M)], policy.PRICE[PRICED]),
+]
+DISC = lambda *kv: {'sources': [dict(kind=k, value='discontinued', url=u) for k, u in kv]}
+STILL_SOLD, CHRIS_DISC = next(iter(policy.STILL_SOLD)), next(iter(policy.DISCONTINUED))
+DISCONTINUED = [   # (bike id, status sources, discontinued?)
+    ('b', DISC(('maker', M)), True), ('b', DISC(('review', R)), False), ('b', DISC(('review', R), ('retailer', N)), True),
+    ('b', DISC(('review', R), ('retailer', R + '/other')), False), (STILL_SOLD, DISC(('maker', M)), False), (CHRIS_DISC, None, True),
 ]
 
 
 def run():
     bad = [f'supports{t[:3]} should be {t[3]}' for t in SUPPORTS if supports(*t[:3]) != t[3]]
-    for f, s, st, show in DECIDE:
-        d = decide(f, s)
-        if (d['state'], d['show']) != (st, show): bad.append(f'decide({f}, {s}) -> {d["state"]}/{d["show"]}, expected {st}/{show}')
+    for what, i, f, now, srcs, want in SHOWN:
+        got = policy.shown(f, {'id': i, f: now}, srcs)[0]
+        if got != want: bad.append(f'{what}: shows {got!r}, expected {want!r}')
+    for i, status, want in DISCONTINUED:
+        if policy.discontinued(i, status) != want: bad.append(f'discontinued({i}, {status}) should be {want}')
     return bad
 
 
 if __name__ == '__main__':
     bad = run()
-    print('\n'.join(bad) or f'all {len(SUPPORTS) + len(DECIDE)} spec rules pass')
+    print('\n'.join(bad) or f'all {len(SUPPORTS) + len(SHOWN) + len(DISCONTINUED)} spec rules pass')
     raise SystemExit(1 if bad else 0)

@@ -1,4 +1,4 @@
-{"bike": "Aventon|Pace 5 REC Step-Through", "checked": "2026-11-06",
+{"id": "aventon-pace-5-rec-step-through", "bike": "Aventon|Pace 5 REC Step-Through", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1799, "url": "https://www.aventon.com/products/pace-5-rec-step-through-ebike", "quote": "$1,599.00 ⟶ $1,799.00", "basis": "regular $1,799; on sale $1,599 ($200 off)"},
@@ -10,7 +10,7 @@
   ],
   "spd": [
    {"kind": "maker", "value": 28, "url": "https://www.aventon.com/products/pace-5-rec-step-through-ebike", "quote": "Speed ⟶ Max: 28 MPH", "basis": "maximum (Class 3 setting); maker lists the bike as Class 2 (20 mph), adjustable to 28 mph"},
-   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/aventon-pace-5-rec-review/", "quote": "Turbo felt remarkably relaxed, reaching the Class 2 ceiling of 20 mph with only light pedal pressure and hitting 28 mph in Class 3 mode with almost none. In both modes, power stepped up intuitively and consistently.", "basis": "Class 2 setting; adjustable to 28 mph"}
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/aventon-pace-5-rec-review/", "quote": "Turbo felt remarkably relaxed, reaching the Class 2 ceiling of 20 mph with only light pedal pressure and hitting 28 mph in Class 3 mode with almost none. In both modes, power stepped up intuitively and consistently.", "basis": "Class 2 setting; adjustable to 28 mph", "max_mph": 28}
   ],
   "tq": [
    {"kind": "maker", "value": 80, "url": "https://www.aventon.com/products/pace-5-rec-step-through-ebike", "quote": "Motor Torque | 80Nm (96Nm in Boost Mode)"},

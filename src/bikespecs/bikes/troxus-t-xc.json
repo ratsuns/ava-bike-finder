@@ -1,4 +1,4 @@
-{"bike": "Troxus|T-XC", "checked": "2026-11-06",
+{"id": "troxus-t-xc", "bike": "Troxus|T-XC", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 3299, "url": "https://www.troxusmobility.com/products/t-xc-e-bike", "quote": "Regular price ⟶ $3,299", "basis": "crossed-out regular price; sale price $1,999"}

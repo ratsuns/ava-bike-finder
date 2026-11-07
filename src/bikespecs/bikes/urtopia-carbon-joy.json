@@ -1,4 +1,5 @@
 {
+ "id": "urtopia-carbon-joy",
  "bike": "Urtopia|Carbon Joy",
  "checked": "2026-11-06",
  "fields": {
@@ -47,14 +48,16 @@
     "value": 20,
     "url": "https://electricbikereport.com/urtopia-carbon-joy-review/",
     "quote": "As a Class 2 e-bike, the Carbon Joy has a maximum speed of 20 mph for both its throttle and pedal assist system. Users looking to ride faster can adjust the bike to a Class 3 with faster pedal-assisted speeds; the bike’s marketing materials state a limit of 25 mph, but our testing showed the bike could reach 26-27 mph when unlocked.",
-    "basis": "adjustable to 25 mph"
+    "basis": "adjustable to 25 mph",
+    "max_mph": 25
    },
    {
     "kind": "maker",
     "value": 20,
     "url": "https://newurtopia.com/products/urtopia-joy-carbon-fat-tire-ebike",
     "quote": "Top Speed ⟶ 20mph by default | 25mph upon unlock",
-    "basis": "adjustable to 25 mph"
+    "basis": "adjustable to 25 mph",
+    "max_mph": 25
    }
   ],
   "tq": [

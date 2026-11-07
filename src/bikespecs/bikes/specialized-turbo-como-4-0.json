@@ -1,4 +1,4 @@
-{"bike": "Specialized|Turbo Como 4.0", "checked": "2026-11-06",
+{"id": "specialized-turbo-como-4-0", "bike": "Specialized|Turbo Como 4.0", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 4299.99, "url": "https://www.specialized.com/us/en/turbo-como-40/p/4248975", "quote": "$3,799.99 ⟶ $4,299.99", "basis": "$4,299.99 is the crossed-out regular price; $3,799.99 is a sale price"},

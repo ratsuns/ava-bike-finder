@@ -1,4 +1,4 @@
-{"bike": "Lectric|XP Trike2 750 (Long-Range)", "checked": "2026-11-06",
+{"id": "lectric-xp-trike2-750-long-range", "bike": "Lectric|XP Trike2 750 (Long-Range)", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1799, "url": "https://lectricebikes.com/products/xp-trike-navy-long-range", "quote": "Previously listed at $1799, now marked down to $1699!", "basis": "'Previously listed at' price is the regular price; $2,254 crossed-out and $1,699 sale price not used"},

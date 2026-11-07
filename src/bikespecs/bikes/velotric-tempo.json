@@ -1,4 +1,4 @@
-{"bike": "Velotric|Tempo", "checked": "2026-11-06",
+{"id": "velotric-tempo", "bike": "Velotric|Tempo", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1499, "url": "https://www.velotricbike.com/products/velotric-tempo-city-ebike", "quote": "$1,449.00 | $1,499.00 | Save $50.00", "basis": "$1,499.00 is the crossed-out regular price; $1,449.00 is the Black Friday sale price"},

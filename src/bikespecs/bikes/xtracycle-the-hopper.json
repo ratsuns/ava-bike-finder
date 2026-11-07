@@ -1,4 +1,5 @@
 {
+ "id": "xtracycle-the-hopper",
  "bike": "Xtracycle|The Hopper",
  "checked": "2026-11-06",
  "fields": {
@@ -40,14 +41,16 @@
     "value": 20,
     "url": "https://xtracycle.com/products/hopper-compact-cargo",
     "quote": "Max pedal assist speed\t20 mph (shipped), user adjustable 7-28mph maximum ⟶ (20 mph max in California)",
-    "basis": "adjustable to 28 mph"
+    "basis": "adjustable to 28 mph",
+    "max_mph": 28
    },
    {
     "kind": "review",
     "value": 20,
     "url": "https://electrek.co/2024/12/26/xtracycle-hopper-review-a-better-cargo-e-bike-at-a-better-price/",
     "quote": "a powerful motor that provides a top speed of 28 mph (45 km/h) if unlocked from the standard 20 mph (32 km/h) speed limit",
-    "basis": "adjustable to 28 mph"
+    "basis": "adjustable to 28 mph",
+    "max_mph": 28
    }
   ],
   "tq": [

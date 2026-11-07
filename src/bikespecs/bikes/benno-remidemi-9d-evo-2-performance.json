@@ -1,4 +1,4 @@
-{"bike": "Benno|RemiDemi 9D EVO 2 Performance", "checked": "2026-11-06",
+{"id": "benno-remidemi-9d-evo-2-performance", "bike": "Benno|RemiDemi 9D EVO 2 Performance", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 3499, "url": "https://bennobikes.com/e-bikes/remidemi/", "quote": "Performance: $3,499 USD"},

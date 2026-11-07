@@ -1,4 +1,4 @@
-{"bike": "Lectric|XP4 500", "checked": "2026-11-06",
+{"id": "lectric-xp4-500", "bike": "Lectric|XP4 500", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1325, "url": "https://lectricebikes.com/products/xp-black", "quote": "$999 ⟶ $1,325", "basis": "crossed-out regular price $1,325; $999 is the current sale price"},

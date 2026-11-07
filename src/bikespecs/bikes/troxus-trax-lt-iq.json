@@ -1,4 +1,4 @@
-{"bike": "Troxus|Trax LT iQ", "checked": "2026-11-06",
+{"id": "troxus-trax-lt-iq", "bike": "Troxus|Trax LT iQ", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1799, "url": "https://www.troxusmobility.com/products/trax-lt-iq", "quote": "Regular price | $1,799.00 USD | Size"},
@@ -9,7 +9,7 @@
   ],
   "spd": [
    {"kind": "maker", "value": 20, "url": "https://www.troxusmobility.com/products/trax-lt-iq", "quote": "20 mph ⟶ Max Speed", "basis": "adjustable to 28 mph"},
-   {"kind": "maker", "value": 20, "url": "https://www.troxusmobility.com/products/trax-lt-iq", "quote": "Max Speed\tMax Speed Up To 20 MPH on Throttle / Up To 28 MPH on Pedal Assist", "basis": "adjustable to 28 mph"}
+   {"kind": "maker", "value": 20, "url": "https://www.troxusmobility.com/products/trax-lt-iq", "quote": "Max Speed\tMax Speed Up To 20 MPH on Throttle / Up To 28 MPH on Pedal Assist", "basis": "adjustable to 28 mph", "max_mph": 28}
   ],
   "tq": [
    {"kind": "maker", "value": 50, "url": "https://www.troxusmobility.com/products/trax-lt-iq", "quote": "Motor\tJiabo® 48V 500w+ Peak Power Hub-Drive Motor, 50Nm. Peak Torque"},

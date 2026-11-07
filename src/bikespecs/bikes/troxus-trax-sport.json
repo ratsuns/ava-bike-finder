@@ -1,4 +1,4 @@
-{"bike": "Troxus|Trax Sport", "checked": "2026-11-06",
+{"id": "troxus-trax-sport", "bike": "Troxus|Trax Sport", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1699, "url": "https://www.troxusmobility.com/products/trax-sport-e-bike", "quote": "Sale price | $1,299.00 USD | Regular price | $1,699"},

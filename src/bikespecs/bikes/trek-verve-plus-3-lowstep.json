@@ -1,4 +1,4 @@
-{"bike": "Trek|Verve+ 3 Lowstep", "checked": "2026-11-06",
+{"id": "trek-verve-plus-3-lowstep", "bike": "Trek|Verve+ 3 Lowstep", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2999.99, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/verve/f/F436/verve%252b-3-lowstep/40667/", "quote": "Verve+ 3 Lowstep | $2,999.99 | Model 5292189"}

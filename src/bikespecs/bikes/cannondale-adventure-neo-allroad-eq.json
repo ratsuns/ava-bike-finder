@@ -1,4 +1,4 @@
-{"bike": "Cannondale|Adventure Neo Allroad EQ", "checked": "2026-11-06",
+{"id": "cannondale-adventure-neo-allroad-eq", "bike": "Cannondale|Adventure Neo Allroad EQ", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1875, "url": "https://www.cannondale.com/en-us/bikes/electric/e-urban/adventure-neo-allroad/adventure-neo-allroad-eq-c68564m", "quote": "$1,875 ⟶ 0% APRor as low as $117/mo with Affirm. See if you qualify"},

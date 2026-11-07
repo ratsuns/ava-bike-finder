@@ -1,4 +1,4 @@
-{"bike": "Tern|HSD P10e Sport (Gen 3)", "checked": "2026-11-06",
+{"id": "tern-hsd-p10e-sport-gen-3", "bike": "Tern|HSD P10e Sport (Gen 3)", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 5499, "url": "https://www.ternbicycles.com/us/bikes/473/hsd-p10e-sport", "quote": "$5,499"},

@@ -1,4 +1,4 @@
-{"bike": "Velotric|Nomad 2X", "checked": "2026-11-06",
+{"id": "velotric-nomad-2x", "bike": "Velotric|Nomad 2X", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2399, "url": "https://www.velotricbike.com/products/velotric-nomad-2x", "quote": "$2,399.00 ⟶ Buy Now", "basis": "no crossed-out price shown; maker comparison table gives 'Price\t$2,299 - $2,399' depending on style"},
@@ -9,7 +9,7 @@
    {"kind": "review", "value": null, "url": "https://electricbikereview.com/velotric/nomad-2x-review/", "quote": "ELECTRIC BIKE CLASS: ⟶ Class 1, 2 and 3", "basis": "selectable; no shipped default stated"}
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://www.velotricbike.com/products/velotric-nomad-2x", "quote": "Max Speed (Default） ⟶ 20MPH | Max Speed Adjustable Range ⟶ 12~28MPH", "basis": "adjustable to 28 mph"},
+   {"kind": "maker", "value": 20, "url": "https://www.velotricbike.com/products/velotric-nomad-2x", "quote": "Max Speed (Default） ⟶ 20MPH | Max Speed Adjustable Range ⟶ 12~28MPH", "basis": "adjustable to 28 mph", "max_mph": 28},
    {"kind": "review", "value": 28, "url": "https://electricbikereview.com/velotric/nomad-2x-review/", "quote": "TOP SPEED: ⟶ 28 MPH mph", "basis": "unlocked top speed"}
   ],
   "tq": [

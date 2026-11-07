@@ -1,4 +1,4 @@
-{"bike": "Specialized|Turbo Vado 2 (4.0)", "checked": "2026-11-06",
+{"id": "specialized-turbo-vado-2-4-0", "bike": "Specialized|Turbo Vado 2 (4.0)", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 4099.99, "url": "https://www.specialized.com/us/en/turbo-vado-2-40/p/4277441", "quote": "$4,099.99 ⟶ 4.7"},

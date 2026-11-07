@@ -1,4 +1,4 @@
-{"bike": "Troxus|Trax SUV", "checked": "2026-11-06",
+{"id": "troxus-trax-suv", "bike": "Troxus|Trax SUV", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2599, "url": "https://www.troxusmobility.com/products/trax-suv-15-750-e-bike", "quote": "Sale price | $1,999.00 USD | Regular price | $2,599"},

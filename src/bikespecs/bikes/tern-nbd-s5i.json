@@ -1,4 +1,4 @@
-{"bike": "Tern|NBD S5i", "checked": "2026-11-06",
+{"id": "tern-nbd-s5i", "bike": "Tern|NBD S5i", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": null, "url": "https://www.ternbicycles.com/us/bikes/471/nbd-s5i", "quote": "$3,899 (SALE PRICE)", "basis": "maker shows only a sale price; no regular price on the page"},

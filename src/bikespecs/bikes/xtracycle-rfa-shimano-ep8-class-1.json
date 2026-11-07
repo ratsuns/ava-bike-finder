@@ -1,4 +1,4 @@
-{"bike": "Xtracycle|RFA (Shimano EP8, Class 1)", "checked": "2026-11-06",
+{"id": "xtracycle-rfa-shimano-ep8-class-1", "bike": "Xtracycle|RFA (Shimano EP8, Class 1)", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 4999, "url": "https://xtracycle.com/products/rfa-2", "quote": "White (sold out) - $4,999.00 ⟶ Black (sold out) - $4,999.00", "basis": "the one price on the RFA page; page's buy box describes the Class 3 EP6, EP8 has no separate price"},

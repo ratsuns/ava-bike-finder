@@ -1,4 +1,4 @@
-{"bike": "Blix|Sol X", "checked": "2026-11-06",
+{"id": "blix-sol-x", "bike": "Blix|Sol X", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1899, "url": "https://blixbike.com/products/sol-x-cruiser-ebike", "quote": "Sol X Comfort Ebike | $1,899.00 | Product information"},
@@ -12,7 +12,7 @@
   ],
   "spd": [
    {"kind": "maker", "value": null, "url": "https://blixbike.com/products/sol-x-cruiser-ebike", "quote": ""},
-   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/blix-sol-x-review/", "quote": "E-BIKE CLASS: ⟶ CLASS 2 (THROTTLE TO 20 MPH) | CLASS 3 (PEDAL ASSIST TO 28 MPH)", "basis": "20 mph in Class 2 setting; adjustable to 28 mph"},
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/blix-sol-x-review/", "quote": "E-BIKE CLASS: ⟶ CLASS 2 (THROTTLE TO 20 MPH) | CLASS 3 (PEDAL ASSIST TO 28 MPH)", "basis": "20 mph in Class 2 setting; adjustable to 28 mph", "max_mph": 28},
    {"kind": "review", "value": 28, "url": "https://electricbikereview.com/blix/sol-x-review/", "quote": "TOP SPEED: ⟶ 28 MPH mph", "basis": "maximum (Class 3 setting)"}
   ],
   "tq": [

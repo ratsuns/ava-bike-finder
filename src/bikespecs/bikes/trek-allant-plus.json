@@ -1,4 +1,4 @@
-{"bike": "Trek|Allant+", "checked": "2026-11-06",
+{"id": "trek-allant-plus", "bike": "Trek|Allant+", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": null, "url": "https://www.trekbikes.com/us/en_US/allant-plus/faq/", "quote": ""}

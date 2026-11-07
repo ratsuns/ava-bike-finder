@@ -1,4 +1,4 @@
-{"bike": "Emojo|Bull", "checked": "2026-11-06",
+{"id": "emojo-bull", "bike": "Emojo|Bull", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2199, "url": "https://emojobike.com/products/bull", "quote": "Regular price ⟶ $2,199.00", "basis": "sale price $1,999.00 not used"},

@@ -1,4 +1,4 @@
-{"bike": "Revi Bikes|Runabout.2", "checked": "2026-11-06",
+{"id": "revi-bikes-runabout-2", "bike": "Revi Bikes|Runabout.2", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1799, "url": "https://www.revibikes.com/products/runabout2", "quote": "$1,799.00 ⟶ Certified in accordance with UL2849/UL2271", "basis": "no crossed-out price shown"},
@@ -10,8 +10,8 @@
    {"kind": "retailer", "value": 2, "url": "https://electricrideco.com/products/revi-runabout-2-electric-bike", "quote": "Runabout.2 is rated as Class 2, but the power can be released when needed."}
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://www.revibikes.com/products/runabout2", "quote": "Default Class: Class 2Top Speed: 20- 25 MPH 28MPH(lock)", "basis": "adjustable to 25 mph (28 mph locked); page headline also says 'Top Speed ⟶ 28MPH'"},
-   {"kind": "retailer", "value": 20, "url": "https://electricrideco.com/products/revi-runabout-2-electric-bike", "quote": "Normal Mode: PAS activated, Throttle activated, Max Speed 20 mph. ⟶ Sport Mode: PAS activated, Throttle deactivated, Max Speed 25 mph.", "basis": "adjustable to 25 mph (Sport Mode, throttle off)"},
+   {"kind": "maker", "value": 20, "url": "https://www.revibikes.com/products/runabout2", "quote": "Default Class: Class 2Top Speed: 20- 25 MPH 28MPH(lock)", "basis": "adjustable to 25 mph (28 mph locked); page headline also says 'Top Speed ⟶ 28MPH'", "max_mph": 25},
+   {"kind": "retailer", "value": 20, "url": "https://electricrideco.com/products/revi-runabout-2-electric-bike", "quote": "Normal Mode: PAS activated, Throttle activated, Max Speed 20 mph. ⟶ Sport Mode: PAS activated, Throttle deactivated, Max Speed 25 mph.", "basis": "adjustable to 25 mph (Sport Mode, throttle off)", "max_mph": 25},
    {"kind": "review", "value": 25, "url": "https://www.bikeride.com/revibikes-runabout/", "quote": "TOP SPEED ⟶ 25 mph", "basis": "maximum (Sport Mode)"}
   ],
   "tq": [

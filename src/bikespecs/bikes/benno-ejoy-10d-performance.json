@@ -1,4 +1,4 @@
-{"bike": "Benno|eJoy 10D Performance", "checked": "2026-11-06",
+{"id": "benno-ejoy-10d-performance", "bike": "Benno|eJoy 10D Performance", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": null, "url": "https://bennobikes.com/e-bikes/ejoy/", "quote": "10D Performance Sport: $3,749 USD | 5i Performance: $3,749 USD | MSRP", "basis": "maker's MSRP block lists only 10D Performance Sport and 5i Performance; no US price for 10D Performance"}

@@ -1,4 +1,4 @@
-{"bike": "Trek|Borrego+ S", "checked": "2026-11-06",
+{"id": "trek-borrego-plus-s", "bike": "Trek|Borrego+ S", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2499.99, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/borrego/f/F468/borrego%252b-s/77036/", "quote": "$2,499.99 ⟶ Model 5347808"},

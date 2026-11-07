@@ -1,4 +1,4 @@
-{"bike": "Cannondale|Adventure Neo", "checked": "2026-11-06",
+{"id": "cannondale-adventure-neo", "bike": "Cannondale|Adventure Neo", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": null, "url": "https://www.cannondale.com/en/bikes/electric/e-urban/adventure-neo/adventure-neo-4", "quote": "Check Local Bike Shops", "basis": "international (/en/) page shows no price; the US (/en-us/) page says not available in region"},

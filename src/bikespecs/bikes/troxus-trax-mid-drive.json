@@ -1,4 +1,4 @@
-{"bike": "Troxus|Trax Mid-Drive", "checked": "2026-11-06",
+{"id": "troxus-trax-mid-drive", "bike": "Troxus|Trax Mid-Drive", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 3299, "url": "https://www.troxusmobility.com/products/trax-mid-drive-e-bike", "quote": "Sale price | $1,999.00 USD | Regular price | $3,299"},

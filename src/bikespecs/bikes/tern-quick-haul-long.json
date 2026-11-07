@@ -1,4 +1,4 @@
-{"bike": "Tern|Quick Haul Long", "checked": "2026-11-06",
+{"id": "tern-quick-haul-long", "bike": "Tern|Quick Haul Long", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": null, "url": "https://www.ternbicycles.com/us/bikes/471/quick-haul-long-d9", "quote": "$3,499 (SALE PRICE)", "basis": "maker shows only a sale price; no regular price on the page"},

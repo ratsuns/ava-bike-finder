@@ -1,4 +1,4 @@
-{"bike": "Mokwheel|Basalt", "checked": "2026-11-06",
+{"id": "mokwheel-basalt", "bike": "Mokwheel|Basalt", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1799.99, "url": "https://www.mokwheel.com/products/basalt", "quote": "$1,699.99 ⟶ $1,799.99", "basis": "$1,799.99 is the struck-through regular price; $1,699.99 is the sale price"},
@@ -10,7 +10,7 @@
    {"kind": "review", "value": 2, "url": "https://electricbikereport.com/mokwheel-basalt-2-review/", "quote": "E-BIKE CLASS: ⟶ CLASS 2 (THROTTLE TO 20 MPH)"}
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://www.mokwheel.com/products/basalt", "quote": "Max Speed (Default) ⟶ 20 mph", "basis": "adjustable to 28 mph ('Max Speed Adjustable Range ⟶ 15 mph-28 mph (Custom Mode)')"},
+   {"kind": "maker", "value": 20, "url": "https://www.mokwheel.com/products/basalt", "quote": "Max Speed (Default) ⟶ 20 mph … Max Speed Adjustable Range ⟶ 15 mph-28 mph (Custom Mode)", "basis": "adjustable to 28 mph ('Max Speed Adjustable Range ⟶ 15 mph-28 mph (Custom Mode)')", "max_mph": 28},
    {"kind": "review", "value": 28, "url": "https://electricbikereview.com/mokwheel/basalt-2-review-hs/", "quote": "TOP SPEED: ⟶ 28 MPH mph", "basis": "max setting"},
    {"kind": "review", "value": 28, "url": "https://electricbikereport.com/mokwheel-basalt-2-review/", "quote": "CLASS 2 (THROTTLE TO 20 MPH) ⟶ CLASS 3 (PEDAL ASSIST TO 28 MPH)", "basis": "max setting"}
   ],

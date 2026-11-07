@@ -1,4 +1,4 @@
-{"bike": "Tern|NBD P8i", "checked": "2026-11-06",
+{"id": "tern-nbd-p8i", "bike": "Tern|NBD P8i", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": null, "url": "https://www.ternbicycles.com/us/bikes/471/nbd-p8i", "quote": "$2,999 (SALE PRICE)", "basis": "maker shows only a sale price; no regular price on the page"},

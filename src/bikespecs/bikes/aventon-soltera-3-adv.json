@@ -1,4 +1,4 @@
-{"bike": "Aventon|Soltera 3 ADV", "checked": "2026-11-06",
+{"id": "aventon-soltera-3-adv", "bike": "Aventon|Soltera 3 ADV", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1499, "url": "https://www.aventon.com/products/soltera-3-ebike", "quote": "Refined simplicity. | $1,499.00", "basis": "single price shown, no sale"},

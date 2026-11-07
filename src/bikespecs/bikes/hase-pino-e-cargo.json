@@ -1,4 +1,4 @@
-{"bike": "Hase|Pino E Cargo", "checked": "2026-11-06",
+{"id": "hase-pino-e-cargo", "bike": "Hase|Pino E Cargo", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": null, "url": "https://www.hasebikes.com/en/pino-e-cargo", "quote": "from 11.243,– ⟶ including VAT, excluding delivery", "basis": "EUR only, no USD price published"},

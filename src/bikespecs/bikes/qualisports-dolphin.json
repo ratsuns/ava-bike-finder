@@ -1,4 +1,4 @@
-{"bike": "Qualisports|Dolphin", "checked": "2026-11-06",
+{"id": "qualisports-dolphin", "bike": "Qualisports|Dolphin", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1499, "url": "https://www.qualisports.us/products/electric-bike-dolphin", "quote": "$1,499.00 ⟶ Color: Navy Blue", "basis": "single-battery; dual-battery is $1,699; no crossed-out price"},

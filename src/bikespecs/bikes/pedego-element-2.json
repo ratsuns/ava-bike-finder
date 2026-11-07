@@ -1,4 +1,5 @@
 {
+ "id": "pedego-element-2",
  "bike": "Pedego|Element 2",
  "checked": "2026-11-06",
  "fields": {
@@ -11,7 +12,7 @@
    {"kind": "retailer", "value": 2, "url": "https://www.practicalcycle.com/product/element-2-0/", "quote": "Flexible Performance: Class 1 and Class 2 riding. Class 3 upgrade available through participating dealers. ⟶ 75mm suspension fork w/thru axle.", "basis": "throttle up to 20 mph -> Class 2"}
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://pedegoelectricbikes.com/products/element-2", "quote": "SPEED | Class 1 - 20mph Pedal Assist | Class 2 - 20mph Pedal Assist & Throttle | Class 3 Ready (Participating Locations) - 28mph Pedal Assist", "basis": "adjustable to 28 mph (Class 3 upgrade at participating dealers)"},
+   {"kind": "maker", "value": 20, "url": "https://pedegoelectricbikes.com/products/element-2", "quote": "SPEED | Class 1 - 20mph Pedal Assist | Class 2 - 20mph Pedal Assist & Throttle | Class 3 Ready (Participating Locations) - 28mph Pedal Assist", "basis": "adjustable to 28 mph (Class 3 upgrade at participating dealers)", "max_mph": 28},
    {"kind": "retailer", "value": 20, "url": "https://www.practicalcycle.com/product/element-2-0/", "quote": "PedalSense® with Cruise or Torque Assist and throttle power up to 20 mph."}
   ],
   "tq": [

@@ -1,4 +1,4 @@
-{"bike": "Orbea|Vibe", "checked": "2026-11-06",
+{"id": "orbea-vibe", "bike": "Orbea|Vibe", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "review", "value": 3499, "url": "https://www.electricbikejournal.com/orbea-vibe-review/", "quote": "Price: $3499 ⟶ Sizes: Small, Medium, Large", "basis": "Vibe H30 EQ price at time of review; no current maker price found"}

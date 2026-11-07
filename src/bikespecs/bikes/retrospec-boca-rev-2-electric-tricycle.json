@@ -1,4 +1,4 @@
-{"bike": "Retrospec|Boca Rev 2 Electric Tricycle", "checked": "2026-11-06",
+{"id": "retrospec-boca-rev-2-electric-tricycle", "bike": "Retrospec|Boca Rev 2 Electric Tricycle", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1699.99, "url": "https://retrospec.com/products/boca-rev-electric-tricycle", "quote": "$1,699.99 ⟶ Regular price", "basis": "no crossed-out price (compare_at_price null); listed as Pre Order"}

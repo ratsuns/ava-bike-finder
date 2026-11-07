@@ -1,4 +1,4 @@
-{"bike": "Trek|FX+ 7S", "checked": "2026-11-06",
+{"id": "trek-fx-plus-7s", "bike": "Trek|FX+ 7S", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 3999.99, "url": "https://www.trekbikes.com/us/en_US/bikes/hybrid-bikes/electric-hybrid-bikes/fx/f/F465/fx%252b-7s/47897/", "quote": "FX+ 7S | $3,199.93 | Model 5326708 | $3,999.99 | Comp. Value | Original price", "basis": "original (crossed-out) price; $3,199.93 is a sale price"},

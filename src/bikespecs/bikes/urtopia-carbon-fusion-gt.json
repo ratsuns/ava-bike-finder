@@ -1,4 +1,4 @@
-{"bike": "Urtopia|Carbon Fusion GT", "checked": "2026-11-06",
+{"id": "urtopia-carbon-fusion-gt", "bike": "Urtopia|Carbon Fusion GT", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 2799, "url": "https://newurtopia.com/products/urtopia-carbon-fusion-gt", "quote": "$2,499.00 | $2,799.00 | -$300.00", "basis": "crossed-out regular price; $2,499 is the Black Friday sale price"},
@@ -10,7 +10,7 @@
    {"kind": "retailer", "value": 2, "url": "https://562ebikes.com/products/urtopia-carbon-fusion-gt", "quote": "Trottle: Yes (up to 20mph) ⟶ Charger: 3.5H fast charger, 36V 4Amp", "basis": "throttle to 20 mph and 20 mph default speed = Class 2"}
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://newurtopia.com/products/urtopia-carbon-fusion-gt", "quote": "Top Speed | 20mph by default | 28mph upon unlock", "basis": "adjustable to 28 mph"},
+   {"kind": "maker", "value": 20, "url": "https://newurtopia.com/products/urtopia-carbon-fusion-gt", "quote": "Top Speed | 20mph by default | 28mph upon unlock", "basis": "adjustable to 28 mph", "max_mph": 28},
    {"kind": "retailer", "value": 20, "url": "https://562ebikes.com/products/urtopia-carbon-fusion-gt", "quote": "Top Speed: 20mph by default ⟶ Total Weight Limit: 330 lbs."}
   ],
   "tq": [

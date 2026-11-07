@@ -1,4 +1,5 @@
 {
+ "id": "segway-muxi",
  "bike": "Segway|Muxi",
  "checked": "2026-11-06",
  "fields": {
@@ -38,7 +39,8 @@
     "value": 20,
     "url": "https://www.segway.com/ebike/products/muxi.html",
     "quote": "Class 2: 20 mph ⟶ Class 3: 23 mph*",
-    "basis": "adjustable to 23 mph"
+    "basis": "adjustable to 23 mph",
+    "max_mph": 23
    }
   ],
   "tq": [

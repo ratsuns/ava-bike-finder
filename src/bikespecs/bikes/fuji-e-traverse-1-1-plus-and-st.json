@@ -1,4 +1,4 @@
-{"bike": "Fuji|E-Traverse 1.1+ (and ST)", "checked": "2026-11-06",
+{"id": "fuji-e-traverse-1-1-plus-and-st", "bike": "Fuji|E-Traverse 1.1+ (and ST)", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "review", "value": 2999, "url": "https://99spokes.com/bikes/fuji/2022/e-traverse-1.1plus-st", "quote": "Manufacturer Price | $2,999", "basis": "99 Spokes spec aggregator, 2022 E-Traverse 1.1+ ST"},

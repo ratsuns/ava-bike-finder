@@ -1,4 +1,4 @@
-{"bike": "Fuji|Conductor", "checked": "2026-11-06",
+{"id": "fuji-conductor", "bike": "Fuji|Conductor", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "retailer", "value": 1799.99, "url": "https://www.wyckoffcycle.com/bikes/electric-bikes/conductor-21-usa-19-satin-black__2244", "quote": "CONDUCTOR 2.1+ USA 19 SATIN BLACK | $999.99 | $1,799.99 | 44% off | This item is inactive", "basis": "regular $1,799.99 shown with $999.99 clearance price; listing is inactive"},

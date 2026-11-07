@@ -1,4 +1,4 @@
-{"bike": "Priority|E-Coast", "checked": "2026-11-06",
+{"id": "priority-e-coast", "bike": "Priority|E-Coast", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1999, "url": "https://www.prioritybicycles.com/products/ecoast", "quote": "$ 1,999.00 ⟶ LOW INVENTORY! GET YOURS BEFORE THEY’RE GONE!", "basis": "no crossed-out price shown (compare_at_price null)"},
@@ -9,7 +9,7 @@
    {"kind": "review", "value": null, "url": "https://electrek.co/2023/11/22/review-testing-the-best-and-only-belt-drive-electric-cruiser-bike-the-priority-e-coast/", "quote": "", "basis": "class not stated"}
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://www.prioritybicycles.com/products/ecoast", "quote": "The e-Coast ships Class 2 with a max speed of 20 mph. Using the display, it can be re-programmed to Class 3 with a max speed of 28 mph using pedal assist. Please check your local regulations. The maximum speed using the throttle is limited to 20 mph and is not re-programmable. ⟶ What should I expect in terms of water and rust-resistance?", "basis": "adjustable to 28 mph"},
+   {"kind": "maker", "value": 20, "url": "https://www.prioritybicycles.com/products/ecoast", "quote": "The e-Coast ships Class 2 with a max speed of 20 mph. Using the display, it can be re-programmed to Class 3 with a max speed of 28 mph using pedal assist. Please check your local regulations. The maximum speed using the throttle is limited to 20 mph and is not re-programmable. ⟶ What should I expect in terms of water and rust-resistance?", "basis": "adjustable to 28 mph", "max_mph": 28},
    {"kind": "review", "value": 28, "url": "https://electrek.co/2023/11/22/review-testing-the-best-and-only-belt-drive-electric-cruiser-bike-the-priority-e-coast/", "quote": "Motor: 500W rear geared hub motor ⟶ Top speed: 45 km/h (28 mph)", "basis": "max after re-programming; ships at 20 mph per maker"}
   ],
   "tq": [

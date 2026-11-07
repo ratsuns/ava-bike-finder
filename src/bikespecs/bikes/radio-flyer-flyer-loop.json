@@ -1,4 +1,4 @@
-{"bike": "Radio Flyer|Flyer Loop", "checked": "2026-11-06",
+{"id": "radio-flyer-flyer-loop", "bike": "Radio Flyer|Flyer Loop", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1999, "url": "https://www.radioflyer.com/products/flyer-loop", "quote": "$1,999.00 ⟶ Color: Red", "basis": "no crossed-out price shown (compare_at_price null)"},

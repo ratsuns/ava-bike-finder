@@ -1,4 +1,5 @@
 {
+ "id": "pedego-interceptor",
  "bike": "Pedego|Interceptor",
  "checked": "2026-11-06",
  "fields": {
@@ -12,7 +13,7 @@
   ],
   "spd": [
    {"kind": "maker", "value": null, "url": "https://pedegoelectricbikes.com/products/interceptor", "quote": "SPEED | Class 1 & Class 2; | Class 3 Ready", "basis": "no mph given"},
-   {"kind": "maker", "value": 20, "url": "https://pedegoelectricbikes.com/cdn/shop/files/FS22_-_Interceptor.pdf", "quote": "CLASS 2: 2O MPH MAX, WITH PEDAL ASSIST AND THROTTLE ASSIST | CLASS 3: 28 MPH MAX, WITH PEDAL ASSIST ONLY (SOFTWARE UPGRADE AVAILABLE", "basis": "Pedego FS22 Interceptor fact sheet (linked from the product page), Top Speed row; the PDF text reads '2O' (letter O, a typo for 20); adjustable to 28 mph via dealer software upgrade"}
+   {"kind": "maker", "value": 20, "url": "https://pedegoelectricbikes.com/cdn/shop/files/FS22_-_Interceptor.pdf", "quote": "CLASS 2: 2O MPH MAX, WITH PEDAL ASSIST AND THROTTLE ASSIST | CLASS 3: 28 MPH MAX, WITH PEDAL ASSIST ONLY (SOFTWARE UPGRADE AVAILABLE", "basis": "Pedego FS22 Interceptor fact sheet (linked from the product page), Top Speed row; the PDF text reads '2O' (letter O, a typo for 20); adjustable to 28 mph via dealer software upgrade", "max_mph": 28}
   ],
   "tq": [
    {"kind": "maker", "value": 60, "url": "https://pedegoelectricbikes.com/products/interceptor", "quote": "BLACK 52V BRUSHLESS GEARED REAR HUB MOTOR; 749 WATT NOMINAL POWER RATING; 60NM TORQUE; QUICK DISCONNECT CABLE WITH WATERPROOF CONNECTION."},

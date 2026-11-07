@@ -1,4 +1,4 @@
-{"bike": "Velotric|Nomad 1 Plus", "checked": "2026-11-06",
+{"id": "velotric-nomad-1-plus", "bike": "Velotric|Nomad 1 Plus", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1899, "url": "https://www.velotricbike.com/products/velotric-nomad-1", "quote": "$1,899.00", "basis": "only price shown for this bike, no crossed-out price; page says the bike is no longer available"},
@@ -13,7 +13,7 @@
   "spd": [
    {"kind": "maker", "value": 28, "url": "https://www.velotricbike.com/products/velotric-nomad-1", "quote": "Its max speed adjustable range is now 12-28mph, so you can switch from Class 1 to 3 easily! ⟶ Velotric in Life: Why Thousands Love Their Ebikes", "basis": "max adjustable; maker states no default speed but calls it Class 2"},
    {"kind": "review", "value": 28, "url": "https://electricbikereview.com/velotric/nomad-1-plus-review/", "quote": "TOP SPEED: ⟶ 28 MPH mph", "basis": "max adjustable, not default"},
-   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/velotric-nomad-1-review/", "quote": "The Nomad 1 Plus ships with a 20 mph speed limit on its throttle and PAS, but its speeds can range from 12 mph to 28 mph when adjusted through the display menu. ⟶ The proprietary 750W rear hub motor packs 75Nm of torque and peaks at 1200W.", "basis": "default; adjustable to 28 mph"}
+   {"kind": "review", "value": 20, "url": "https://electricbikereport.com/velotric-nomad-1-review/", "quote": "The Nomad 1 Plus ships with a 20 mph speed limit on its throttle and PAS, but its speeds can range from 12 mph to 28 mph when adjusted through the display menu. ⟶ The proprietary 750W rear hub motor packs 75Nm of torque and peaks at 1200W.", "basis": "default; adjustable to 28 mph", "max_mph": 28}
   ],
   "tq": [
    {"kind": "maker", "value": 75, "url": "https://www.velotricbike.com/products/velotric-nomad-1", "quote": "Motor Hub ⟶ 48V, 750W, max torque 75Nm"},

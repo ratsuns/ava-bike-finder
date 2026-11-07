@@ -1,4 +1,4 @@
-{"bike": "Specialized|Turbo Vado 3 Evo", "checked": "2026-11-06",
+{"id": "specialized-turbo-vado-3-evo", "bike": "Specialized|Turbo Vado 3 Evo", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 4499.99, "url": "https://www.specialized.com/us/en/turbo-vado-3-evo-40/p/4279840", "quote": "$4,499.99 ⟶ 4.9", "basis": "4.0 trim (base Vado 3 EVO)"},

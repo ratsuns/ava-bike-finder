@@ -1,4 +1,4 @@
-{"bike": "Himiway|A7 Commuter eBike (step-through)", "checked": "2026-11-06",
+{"id": "himiway-a7-commuter-ebike-step-through", "bike": "Himiway|A7 Commuter eBike (step-through)", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1999, "url": "https://himiwaybike.com/products/himiway-a7-commuter-ebike", "quote": "Regular price ⟶ $1,999.00"}
@@ -8,7 +8,7 @@
   ],
   "spd": [
    {"kind": "maker", "value": 20, "url": "https://himiwaybike.com/products/himiway-a7-commuter-ebike", "quote": "Max speed (default) ⟶ 20 MPH", "basis": "adjustable to 28 mph"},
-   {"kind": "review", "value": 20, "url": "https://upway.co/blogs/news/himiway-a7-commuter-ebike-review", "quote": "Top speed\t20 mph\t20 mph default; adjustable up to 28 mph\t20 mph default; adjustable up to 28 mph", "basis": "middle column = current A7; adjustable to 28 mph"}
+   {"kind": "review", "value": 20, "url": "https://upway.co/blogs/news/himiway-a7-commuter-ebike-review", "quote": "Top speed\t20 mph\t20 mph default; adjustable up to 28 mph\t20 mph default; adjustable up to 28 mph", "basis": "middle column = current A7; adjustable to 28 mph", "max_mph": 28}
   ],
   "tq": [
    {"kind": "maker", "value": 70, "url": "https://himiwaybike.com/products/himiway-a7-commuter-ebike", "quote": "Motor ⟶ 48V, 750W, 70Nm"},

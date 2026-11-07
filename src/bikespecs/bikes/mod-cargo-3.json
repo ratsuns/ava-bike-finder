@@ -1,4 +1,4 @@
-{"bike": "MOD|CarGo 3", "checked": "2026-11-06",
+{"id": "mod-cargo-3", "bike": "MOD|CarGo 3", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 1999, "url": "https://mod-bikes.com/products/mod-cargo-3", "quote": "$1,799 | $1,799 | Regular price | $1,999 | $1,999 | Sale price", "basis": "regular price $1,999; on sale at $1,799"},
@@ -9,7 +9,7 @@
    {"kind": "review", "value": 2, "url": "https://electrek.co/2024/05/30/mod-cargo-i-tested-the-new-texas-based-cargo-electric-bike-for-the-whole-family/", "quote": "The rear motor is rated at 750W of continuous power, maxing out the legal limit in the US for street-legal e-bikes. But the peak power is even higher at 1,000W. I was able to easily hit speeds of up to 28 mph (45 km/h), though you can also limit the bike to 20 mph (32 km/h) if you want to keep it in Class 2 settings.", "basis": "can be set to Class 2"}
   ],
   "spd": [
-   {"kind": "maker", "value": 20, "url": "https://mod-bikes.com/products/mod-cargo-3", "quote": "Speed | Up to 20 mph (Off-road mode: up to 28 mph)", "basis": "adjustable to 28 mph (off-road mode)"},
+   {"kind": "maker", "value": 20, "url": "https://mod-bikes.com/products/mod-cargo-3", "quote": "Speed | Up to 20 mph (Off-road mode: up to 28 mph)", "basis": "adjustable to 28 mph (off-road mode)", "max_mph": 28},
    {"kind": "review", "value": 28, "url": "https://electrek.co/2024/05/30/mod-cargo-i-tested-the-new-texas-based-cargo-electric-bike-for-the-whole-family/", "quote": "Top speed: 28 mph (45 km/h)", "basis": "max unlocked speed"}
   ],
   "tq": [

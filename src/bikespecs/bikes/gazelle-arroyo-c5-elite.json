@@ -1,4 +1,4 @@
-{"bike": "Gazelle|Arroyo C5 Elite", "checked": "2026-11-06",
+{"id": "gazelle-arroyo-c5-elite", "bike": "Gazelle|Arroyo C5 Elite", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 3999, "url": "https://www.gazellebikes.com/en-us/ebikes/gazelle-arroyo-c5-elite", "quote": "$3,999 | Shop stock: First, configure your bike", "basis": "no crossed-out price shown"},

@@ -1,4 +1,4 @@
-{"bike": "Tern|HSD S9i Sport (Gen 3)", "checked": "2026-11-06",
+{"id": "tern-hsd-s9i-sport-gen-3", "bike": "Tern|HSD S9i Sport (Gen 3)", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 7499, "url": "https://www.ternbicycles.com/us/bikes/473/hsd-s9i-sport", "quote": "$7,499"}

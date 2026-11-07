@@ -1,4 +1,4 @@
-{"bike": "Fuji|Sanibel", "checked": "2026-11-06",
+{"id": "fuji-sanibel", "bike": "Fuji|Sanibel", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "review", "value": 1699, "url": "https://99spokes.com/bikes/fuji/2019/sanibel-ls", "quote": "Manufacturer Price | $1,699", "basis": "99 Spokes spec aggregator, 2019 Sanibel LS"},

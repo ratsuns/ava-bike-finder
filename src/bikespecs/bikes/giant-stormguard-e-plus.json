@@ -1,4 +1,4 @@
-{"bike": "Giant|Stormguard E+", "checked": "2026-11-06",
+{"id": "giant-stormguard-e-plus", "bike": "Giant|Stormguard E+", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 7200, "url": "https://www.giant-bicycles.com/us/stormguard-eplus-1-2024", "quote": "2024 | $7,200 * | CHOOSE YOUR SIZE", "basis": "Stormguard E+ 1 (2024), US site; no crossed-out price shown"},

@@ -1,4 +1,4 @@
-{"bike": "Benno|46er Performance Speed", "checked": "2026-11-06",
+{"id": "benno-46er-performance-speed", "bike": "Benno|46er Performance Speed", "checked": "2026-11-06",
  "fields": {
   "price": [
    {"kind": "maker", "value": 5299, "url": "https://bennobikes.com/e-bikes/46er/", "quote": "Performance Speed: $5,299 USD"},
