@@ -56,7 +56,6 @@ a.slogo{text-decoration:none;transition:box-shadow .15s ease}
 .hrs li{white-space:nowrap}
 .shop .city{color:var(--accent-ink);font-weight:600;font-size:var(--t-micro)}
 .shop b{font-size:var(--t-body);font-weight:600}
-.shop .m{color:var(--fg2)}
 .drawer{position:fixed;inset:0 0 0 auto;margin:0;height:100dvh;max-height:100dvh;width:min(560px,100vw);max-width:100vw;padding:0;border:0;border-left:1px solid var(--line);background:var(--surface);color:var(--fg);box-shadow:-12px 0 40px rgba(0,0,0,.14);display:flex;flex-direction:column;overflow:hidden}
 .drawer:not([open]){display:none}
 .dhead{display:flex;gap:16px;align-items:flex-start;justify-content:space-between;padding:max(22px,env(safe-area-inset-top,0px)) 24px 16px;border-bottom:1px solid var(--line);flex:none}
@@ -90,7 +89,7 @@ a.slogo{text-decoration:none;transition:box-shadow .15s ease}
 .gsteps li{counter-increment:gs;display:grid;grid-template-columns:26px 1fr;column-gap:12px;align-items:start;color:var(--fg2);font-size:var(--t-ui);line-height:1.55;text-wrap:pretty}
 .gsteps li::before{content:counter(gs);width:26px;height:26px;margin-top:-2px;border-radius:50%;box-sizing:border-box;border:1px solid color-mix(in oklab,var(--fg) 24%,transparent);background:linear-gradient(180deg,color-mix(in oklab,var(--fg) 16%,transparent),color-mix(in oklab,var(--fg) 2%,transparent) 60%),var(--well);box-shadow:inset 0 1px 0 color-mix(in oklab,#fff 22%,transparent);color:var(--fg);font-weight:600;font-size:14px;line-height:1;display:grid;place-items:center;font-variant-numeric:tabular-nums}
 .dbody .gsteps a{color:var(--fg);text-decoration:underline;text-underline-offset:3px;text-decoration-color:color-mix(in oklab,currentColor 45%,transparent)}
-.dbody .gl a,.dbody .gsrc a{color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-color:color-mix(in oklab,currentColor 45%,transparent)}
+.dbody .gsrc a{color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-color:color-mix(in oklab,currentColor 45%,transparent)}
 @media (max-width:600px){.drawer{width:100vw;border-left:0}.dhead{padding:max(18px,env(safe-area-inset-top,0px)) 18px 14px}.dbody{--pt:2px;--px:18px;--pb:calc(32px + env(safe-area-inset-bottom,0px))}}
 /* theme toggle: one icon that morphs. Dark shows a moon, light shows a sun.
    Only transforms and opacity animate (GPU), so it stays smooth; the page itself crossfades through a view transition where supported */

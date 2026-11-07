@@ -563,7 +563,7 @@ dialog.zoomv[data-state="closed"]{transition:none}
 .zstage{position:relative;display:flex;justify-content:center;width:min(100%,1100px,calc(var(--zh) * 4 / 3));margin-inline:auto;overflow:hidden;border-radius:12px;box-shadow:var(--shadow-photo)}
 .zstage img{display:block;width:100%;max-width:100%;min-height:0;aspect-ratio:4/3;height:auto;object-fit:contain;background:#fff;-webkit-user-drag:none;user-select:none;-webkit-touch-callout:none}
 .zghost{position:absolute;inset:0;pointer-events:none}
-:root[data-theme="light"] .zstage{box-shadow:0 1px 2px rgba(var(--c-fg),.06),0 12px 32px rgba(var(--c-fg),.1);outline:1px solid var(--line);outline-offset:-1px}
+:root[data-theme="light"] .zstage,:root[data-theme="light"] .zstage img{box-shadow:0 1px 2px rgba(var(--c-fg),.06),0 12px 32px rgba(var(--c-fg),.1);outline:1px solid var(--line);outline-offset:-1px}
 .zbar{display:grid;grid-template-columns:44px minmax(0,1fr) 44px;align-items:center;column-gap:12px;width:min(100%,1100px,calc(var(--zh) * 4 / 3));margin-inline:auto}
 /* arrow buttons: frosted (a small blur, cheap to draw) */
 .zarr{width:44px;height:44px;display:grid;place-items:center;border:0;border-radius:999px;background:rgba(52,60,56,.42);-webkit-backdrop-filter:blur(10px) saturate(1.2);backdrop-filter:blur(10px) saturate(1.2);color:#fff;cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.18),inset 0 0 0 1px rgba(255,255,255,.14);transition:background-color .15s ease,transform .16s var(--ease-out)}
