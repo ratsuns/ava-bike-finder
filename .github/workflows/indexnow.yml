@@ -10,19 +10,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 2
       - name: Wait for GitHub Pages to publish
-        run: sleep 90
+        run: sleep 90    # Pages publishes this push in its own workflow, usually within a minute; pinging sooner sends the old pages
       - name: Tell IndexNow which pages changed
         run: |
           python3 - <<'PY'
           import json, subprocess, urllib.request
           new = json.load(open('src/verify/seo/lastmod.json'))
-          try:
-              old = json.loads(subprocess.run(['git', 'show', 'HEAD~1:src/verify/seo/lastmod.json'], capture_output=True, text=True, check=True).stdout)
-          except Exception:
-              old = {}
+          base = '${{ github.event.before }}'
+          subprocess.run(['git', 'fetch', '--depth=1', 'origin', base])
+          before = subprocess.run(['git', 'show', base + ':src/verify/seo/lastmod.json'], capture_output=True, text=True)
+          old = json.loads(before.stdout) if before.returncode == 0 else {}   # no earlier version (new file or force push): send every page
           urls = sorted(u for u, v in new.items() if old.get(u) != v)
           print('changed:', urls)
           if urls:

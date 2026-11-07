@@ -9,7 +9,7 @@ for(const [name,vp,scheme] of [['phone light',{width:390,height:844},'light'],['
  await p.goto(process.argv[2]||'http://localhost:8765/');const t0=Date.now();await p.waitForFunction(()=>VIDS,null,{timeout:15000});const vt=Date.now()-t0;
  const r=await p.evaluate(async()=>{const bad=[];let withV=0;const ks=[...B.keys()].sort(()=>Math.random()-.5);
   // 1) every bike: build its window (what a tap does first) and check every part belongs to that bike
-  for(const i of ks){const b=B[i],k=b.brand+'|'+b.model,exp=(VIDS[k]||[]).map(v=>v[0]);
+  for(const i of ks){const b=B[i],k=b.id,exp=(VIDS[k]||[]).map(v=>v[0]);
    try{buildBike(i)}catch(e){bad.push(b.name+': '+e.message);continue}
    const s=$('bike-vids'),got=s?[...s.querySelectorAll('.vit')].map(x=>x.dataset.v):null;
    if(!s||s.dataset.k!==k||!$('bike-h').textContent.includes(b.mn))bad.push(b.name+': shows another bike');
@@ -20,12 +20,12 @@ for(const [name,vp,scheme] of [['phone light',{width:390,height:844},'light'],['
   // 2) 20 random bikes: really open and close the window
   const opened=[];for(const i of ks.slice(0,20)){const a=performance.now();buildBike(i);openBike(i);
    while(!BIKE.open&&performance.now()-a<3000)await new Promise(r=>setTimeout(r,2));
-   if(!BIKE.open||$('bike-vids').dataset.k!==B[i].brand+'|'+B[i].model)bad.push(B[i].name+': did not open correctly');
+   if(!BIKE.open||$('bike-vids').dataset.k!==B[i].id)bad.push(B[i].name+': did not open correctly');
    BIKE.close();const e=performance.now();while(BIKE.open&&performance.now()-e<3000)await new Promise(r=>setTimeout(r,5))}
   return {bikes:B.length,withVideos:withV,problems:bad}});
  // 3) real taps/clicks on 4 cards on screen
  let real=0;const cards=await p.$$('article.c');
- for(const c of cards.slice(0,4)){const k=await c.evaluate(e=>{e.scrollIntoView({block:'center'});const b=B[+e.dataset.b];return b.brand+'|'+b.model});await p.waitForTimeout(300);
+ for(const c of cards.slice(0,4)){const k=await c.evaluate(e=>{e.scrollIntoView({block:'center'});return B[+e.dataset.b].id});await p.waitForTimeout(300);
   const bb=await (await c.$('.ph img')).boundingBox();const x=bb.x+bb.width/2,y=bb.y+bb.height/3;await (ph?p.touchscreen.tap(x,y):p.mouse.click(x,y));
   await p.waitForFunction(()=>BIKE.open,null,{timeout:4000}).catch(()=>{});
   if(await p.evaluate(k=>BIKE.open&&$('bike-vids').dataset.k===k,k))real++;

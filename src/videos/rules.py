@@ -13,22 +13,19 @@ It is not about the bike when
   - it names another model of the brand by its own name and doesn't name this one as exactly ("Globe Haul ST" on the
     Globe Haul LT, "D5 (Zebra)" on the D5 Pro, "Quick Haul Long" on the Quick Haul P9); a comparison naming both is fine
   - it names another model code of the brand and not this model ("Tesoro X1" on the Tesoro X 2)
-  - it looks like it is in another language
+  - it is in another language: YouTube says so, or the title's words look like one
 """
 import html
 import re
 import unicodedata
 
-try:
-    from wordfreq import zipf_frequency
-except ImportError:  # without the word lists every word counts as common and nothing counts as another language
-    def zipf_frequency(word, lang): return 9 if lang == 'en' else 0
+from wordfreq import zipf_frequency
 
 
 def norm(text):
     """lower case ascii words; letters and numbers split apart ("XP4" -> "xp 4", "Müller" -> "muller", "Trek's" -> "trek")"""
     text = re.sub(r"[’']s\b", '', html.unescape(text)).replace("'", '').replace('’', '')
-    text = re.sub(r'(\d)\.0\b', r'\1', text)                                     # "2.0" is "2", "Vado 4.0" is "Vado 4"
+    text = re.sub(r'(\d)\.0\b', r'\1', text)
     text = unicodedata.normalize('NFKD', text).encode('ascii', 'ignore').decode()
     text = text.lower().replace('&', ' and ').replace('+', ' plus ')
     text = re.sub(r'[^a-z0-9]+', ' ', text)
@@ -61,16 +58,16 @@ BRAND_NAMES = {
 }
 # words a brand puts in front of its model names that reviewers often leave out ("Turbo Como" is reviewed as "Como")
 MODEL_PREFIXES = {'Specialized': ['turbo']}
-# other names a model is sold or spelled as ("Brand|Model": [names]); a bracketed name in the model is added automatically
+# other names a model is sold or spelled as ({bike id: [names]}); a bracketed name in the model is added automatically
 MODEL_ALIASES = {
-    'Momentum|Trancend E+': ['Transend E+'],
-    'Retrospec|Abbot Rev 2 (and Step Through)': ['Abbott Rev 2'],
-    'Sunseeker|E-Delta B1 SX Electric Delta': ['Eco-Delta'],
-    'Sunseeker|E-Eco Tad B1 SX Electric Tadpole': ['Eco-Tad'],
-    'Omnium|Min-Max V3': ['Mini-Max'],
-    'Retrospec|Roo Rev XL Cargo Electric Bike': ['Rev Roo XL'],
-    'Izip|Simi': ['E3 Simi'],
-    'Urtopia|Carbon Joy Ultra': ['Joy Ultra'],
+    'momentum-trancend-e-plus': ['Transend E+'],
+    'retrospec-abbot-rev-2-and-step-through': ['Abbott Rev 2'],
+    'sunseeker-e-delta-b1-sx-electric-delta': ['Eco-Delta'],
+    'sunseeker-e-eco-tad-b1-sx-electric-tadpole': ['Eco-Tad'],
+    'omnium-min-max-v3': ['Mini-Max'],
+    'retrospec-roo-rev-xl-cargo-electric-bike': ['Rev Roo XL'],
+    'izip-simi': ['E3 Simi'],
+    'urtopia-carbon-joy-ultra': ['Joy Ultra'],
 }
 # words that describe a version or the frame, not which bike it is
 DESCRIPTORS = set(norm('step through thru lowstep low step mens men womens women ebike bike electric bicycle tricycle commuter '
@@ -85,7 +82,6 @@ VERSION_WORDS = GENERIC | {'speed', 'eq', 'lt', 'xl', 'sl', 's'}
 BETWEEN_BRAND_AND_MODEL = {'bikes', 'bike', 'ebikes', 'cycles', 'the', 'new'}
 # a number followed by one of these is a spec ("48V", "750W", "20 mph", "$2.6k"), not a model number
 UNITS = set('v w wh ah mph kmh km k lb lbs mile miles mi nm kg'.split())   # not inch: "D5 20 inch" is a model
-# a model code: a letter or two and a number (S10, P5i, C380, Q9)
 CODE = re.compile(r'\b[A-Za-z]{1,2}\d{1,4}[A-Za-z]{0,2}\b')
 # everyday words of other languages that English titles don't use (accents removed)
 FOREIGN = set('und das der mit fur ist ein eine dem auf nicht wir testen unser vom zum zur fahrrad im '
@@ -105,13 +101,15 @@ def needs_brand(word):
     return word in GENERIC or len(word) <= 3 or common(word)
 
 
-def looks_foreign(title, ignore=()):
-    """two or more words of another language, not counting the bike's own name ("Das vielseitige E-Bike für Stadt und ...")"""
+def not_english(title, lang, ignore=()):
+    """why the video is not in English, or None: YouTube's language for it when it has one, and either way two or more
+    words of another language in the title, not counting the bike's own name ("Das vielseitige E-Bike für Stadt und ...")"""
+    if lang and not lang.lower().startswith('en'): return f'not in English ({lang})'
     words = [w for w in norm(title).split() if w not in ignore]
     known = sum(w in FOREIGN for w in words)
     unknown = sum(len(w) >= 4 and w.isalpha() and zipf_frequency(w, 'en') < 2
                   and max(zipf_frequency(w, l) for l in OTHER_LANGUAGES) >= 3 for w in words)
-    return known + unknown >= 2
+    return 'title looks like it is not in English' if known + unknown >= 2 else None
 
 
 def clean_model(model):
@@ -139,48 +137,47 @@ def distinctive(words):
 
 
 class Bike:
-    def __init__(self, brand, model, siblings=()):
-        self.brand, self.model, self.key = brand, model, f'{brand}|{model}'
+    def __init__(self, card, siblings=()):
+        """card: the bike's entry in verify/cards.json; siblings: the cards of its brand's other models"""
+        self.id, self.brand, self.model = card['id'], card['brand'], card['model']
+        brand, model = self.brand, self.model
         self.brand_names = BRAND_NAMES.get(brand, [norm(brand)])
         self.brand_words = {w for b in self.brand_names for w in b.split()}
         self.prefixes = MODEL_PREFIXES.get(brand, [])
-        self.names = self._names(model)
+        self.names = self._names(card)
         self.family = self._family()
         self.words = {w for n in self.names for w in n}
-        self.all_words = set(norm(model).split()) | {w for a in MODEL_ALIASES.get(self.key, []) for w in norm(a).split()}
-        self.codes = {c.lower() for n in self._raw_names(model) for c in CODE.findall(clean_model(n))}
-        others = [s for s in siblings if s != model]
-        self.other_codes = {c.lower() for s in others for c in CODE.findall(clean_model(s))} - self.codes
-        # other models' names, unless the name is part of this one's ("Avenue" for the Avenue Core)
+        self.all_words = set(norm(model).split()) | {w for a in MODEL_ALIASES.get(self.id, []) for w in norm(a).split()}
+        self.codes = {c.lower() for n in self._raw_names(card) for c in CODE.findall(clean_model(n))}
+        others = [s for s in siblings if s['model'] != model]
+        self.other_codes = {c.lower() for s in others for c in CODE.findall(clean_model(s['model']))} - self.codes
         self.other_names = [n for s in others for n in self._names(s) if set(n) - self.words]
         self.sibling_words = [keys(n) for s in others for n in self._names(s)]
-        self.numbered = any(w.isdigit() for n in self.names for w in n)   # "Koa Rev 3" has a model number, "Basalt" none
-        # the bike's numbers as written ("E-Traverse 1.1+" -> 1 1, "Turbo Vado 2 (4.0)" -> 2 and 4)
+        self.numbered = any(w.isdigit() for n in self.names for w in n)
         self.numbers = {tuple(r.split()) for part in [model] + re.findall(r'\(([^)]*)\)', model)
                         for r in re.findall(r'\d+(?: \d+)*', norm(clean_model(part) if '(' not in part else part))}
         self.sibling_vocab = {w for n in self.sibling_words for w in n}
-        # the word each family is followed by in this bike's own name ("E-FAT-MN": fat -> mn)
         self.suffix = {tuple(f): {w for n in self.names for w in self._after(n, f)} for f in map(self._family_keys, self.family)}
 
-    # ---- the bike's names ----
-    def _raw_names(self, model):
-        """the model, the names it is also sold as, and a bracketed name that is a name rather than a version:
+    def _raw_names(self, card):
+        """a model's name, the names it is also sold as, and a bracketed name that is a name rather than a version:
         "D5 (Zebra)" -> Zebra, but not "(4.0)", "(HT)", "(Rev 1)" or "(and Step Through)" """
+        model = card['model']
         main = set(norm(clean_model(model)).split())
         def is_name(b):
             first = (norm(b).split() or [''])[0]
             return first.isalpha() and len(first) >= 4 and first not in main and first not in GENERIC and first not in DESCRIPTORS
-        return [model] + [b for b in re.findall(r'\(([^)]*)\)', model) if is_name(b)] + MODEL_ALIASES.get(f'{self.brand}|{model}', [])
+        return [model] + [b for b in re.findall(r'\(([^)]*)\)', model) if is_name(b)] + MODEL_ALIASES.get(card['id'], [])
 
-    def _names(self, model):
-        names = [n for n in (self._words(x) for x in self._raw_names(model)) if n and not set(n) <= {'and', 'st'}]
-        return names + [n[1:] for n in names if n[0] == 'the' and len(n) > 1]      # "The Hopper" is also "Hopper"
+    def _names(self, card):
+        names = [n for n in (self._words(x) for x in self._raw_names(card)) if n and not set(n) <= {'and', 'st'}]
+        return names + [n[1:] for n in names if n[0] == 'the' and len(n) > 1]
 
     def _words(self, name):
         """a name's identifying words: no descriptors, and not starting with the brand ("Lectric ONE" -> one, Radio
         Flyer's "Flyer Via" -> via) or the brand's usual prefix ("Turbo Como 5.0" -> como 5 0)"""
         words = []
-        for raw in clean_model(name).split():          # a descriptor joined to the name stays: "E-FAT-STEP", not "Step-Thru"
+        for raw in clean_model(name).split():
             parts = norm(raw).split()
             joined = '-' in raw and any(p not in DESCRIPTORS for p in parts)
             words += [p for p in parts if joined or p not in DESCRIPTORS]
@@ -198,16 +195,15 @@ class Bike:
             lead = []
             for n, w in enumerate(core):
                 if any(ch.isdigit() for ch in w) or w in ('evo', 'gen'): break
-                if len(w) <= 2 and not (n == 0 and len(w) == 1 and len(core) > 1): break   # a leading "E-" stays
+                if len(w) <= 2 and not (n == 0 and len(w) == 1 and len(core) > 1): break
                 lead.append(w)
-            if lead == core and len(core) > 1 and core[-1] in VERSION_WORDS: lead = core[:-1]   # "Spicy Curry+" -> spicy curry
+            if lead == core and len(core) > 1 and core[-1] in VERSION_WORDS: lead = core[:-1]
             if lead and lead != core and len(''.join(lead)) > 2 and lead not in out: out.append(lead)
             if len(core) > 1 and len(core[0]) >= 4 and core[0] not in GENERIC and [core[0]] not in out: out.append([core[0]])
         first = clean_model(self.model).split()[:1]
         if first and re.search(r'\d', first[0]) and re.search(r'[a-z]', first[0], re.I): out.append(norm(first[0]).split())
         return out
 
-    # ---- reading a title ----
     def _after_brand(self, tokens, words):
         """the words come right after a brand name (up to two in-between words like "Bikes", "Cycles" or "Turbo")"""
         skip = BETWEEN_BRAND_AND_MODEL | set(self.prefixes) | self.brand_words
@@ -280,7 +276,7 @@ class Bike:
             if w in after_sibling: return ' '.join(words + [w])
             if whole_name: continue
             if own_suffix and w.isalpha() and len(w) <= 3 and zipf_frequency(w, 'en') < 4.5 and w not in self.sibling_vocab:
-                return ' '.join(words + [w])                                     # "FAT-HD" on the E-FAT-MN
+                return ' '.join(words + [w])
             if self.numbered and w.isalpha() and len(w) <= 3 and nxt.isdigit() and zipf_frequency(w, 'en') < 4 \
                     and w + nxt not in self.codes and not (w == 'v' and (nxt,) in self.numbers):
                 return ' '.join(words + [w, nxt])
@@ -294,14 +290,14 @@ class Bike:
         extra = (set(k) - self.words) or (set(n) - self.words - {'st'})
         return self._named(src, k, lambda w: w in GENERIC or len(w) <= 3) and (not extra or extra <= set(full))
 
-    def match(self, title):
-        """'model' when the title names this bike, 'family' when it names the brand and the model family,
-        None (and why) when it is not about this bike"""
+    def match(self, title, lang=None):
+        """('model', '') when the title names this bike, ('family', '') when it names the brand and the model family,
+        (None, why) when the video is not about this bike or not in English (lang: YouTube's language for it)"""
         t = norm(title)
         tokens = t.split()
         step_thru = 'st' in tokens or bool(re.search(r'\bstep ?(?:thru|through)\b', t))
-        full = [w for w in tokens if (w not in DESCRIPTORS or w in self.words) and w != 'st']   # names with filler ("CarGo 3")
-        core = [w for w in full if w not in FILLER]                         # for the rest ("XP4 750", not "Long-Range")
+        full = [w for w in tokens if (w not in DESCRIPTORS or w in self.words) and w != 'st']
+        core = [w for w in full if w not in FILLER]
         def src(k): return core if all(w not in FILLER for w in k) else full
         matched = [keys(n) for n in self.names if ('st' not in n or step_thru) and self._named(src(keys(n)), keys(n))]
         names_brand = any(has(t, b) for b in self.brand_names)
@@ -320,15 +316,15 @@ class Bike:
         for n in self.other_names:
             if self._names_other(full, core, n, step_thru) and all(m < set(keys(n)) | ({'st'} & set(n)) for m in mine):
                 return None, f"title names another model ({' '.join(n)})"
-        if looks_foreign(title, self.all_words | self.brand_words):
-            return None, 'title looks like it is not in English'
+        foreign = not_english(title, lang, self.all_words | self.brand_words)
+        if foreign: return None, foreign
         return ('model' if matched else 'family'), ''
 
-def bikes_from(models):
-    """[(brand, model)] -> {key: Bike}, each knowing its brand's other models"""
+def bikes_from(cards):
+    """bike cards (verify/cards.json entries) -> {id: Bike}, each knowing its brand's other models"""
     by_brand = {}
-    for b, m in models: by_brand.setdefault(b, []).append(m)
-    return {f'{b}|{m}': Bike(b, m, by_brand[b]) for b, m in models}
+    for c in cards: by_brand.setdefault(c['brand'], []).append(c)
+    return {c['id']: Bike(c, by_brand[c['brand']]) for c in cards}
 
 
 def seconds(iso):

@@ -100,7 +100,7 @@ DN = 'data-' + hashlib.md5(DJ.encode()).hexdigest()[:8] + '.js'
 open(os.path.join(SITE, DN), 'w').write(DJ)
 # video reviews: src/videos.csv is the one list; videos/publish.py checks every video against its bike (the build stops
 # on any problem) and writes them to their own small file that the page loads after it's up
-VN = write_videos(SITE, sorted({(o['brand'], o['model']) for o in out}))
+VN = write_videos(SITE, [o['id'] for o in out])
 _tpl = open('site_tpl.html').read()
 PAGE = _tpl.replace('__HERO_MP4__', HM).replace('__HERO_JPG__', HJ).replace('__VIDS__', VN)
 PAGE = PAGE.replace('<script>\nconst B=__BIKES__;\nconst S=__SHOPS__;', f'<script src="{DN}"></script>\n<script>\nconst B=window.AVA_B;\nconst S=window.AVA_S;', 1)

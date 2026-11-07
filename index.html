@@ -1405,7 +1405,7 @@ document.querySelectorAll('[data-open]').forEach(btn=>btn.onclick=()=>showDlg($(
 const BIKE=$('bike');let BIKE_I=null,BIKE_AC=null;/* the modal's colour is its own: picking one there never changes the card */
 /* video reviews: the 3 most-watched recent reviews per bike (found with YouTube's official search when the site is built).
    They live in their own small file, fetched once the page is idle, so they never slow the first view */
-const VURL='videos-37c0fb11.json';let VIDS=null,VIDP=null;
+const VURL='videos-ed1c272e.json';let VIDS=null,VIDP=null;
 const loadVids=()=>VIDP||(VIDP=fetch(VURL,{priority:'low'}).then(r=>r.ok?r.json():Promise.reject()).then(j=>VIDS=j).catch(()=>{VIDP=null;return null}));
 /* fetched as soon as the page has loaded, at low priority so it never competes with the photos; ready before anyone opens a bike */
 if(document.readyState==='complete')loadVids();else addEventListener('load',()=>loadVids(),{once:true});
@@ -1413,13 +1413,13 @@ const nViews=n=>n>=1e6?(n/1e6).toFixed(n<1e7?1:0).replace(/\.0$/,'')+'M':n>=1e3?
 const vAge=d=>{const m=Math.max(0,Math.round((Date.now()-Date.parse(d))/2629800000)),y=Math.round(m/12);return m<1?'this month':m<12?m+(m===1?' month':' months')+' ago':y+(y===1?' year':' years')+' ago'};
 const vDur=s=>{const h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=String(s%60).padStart(2,'0');return h?h+':'+String(m).padStart(2,'0')+':'+x:m+':'+x};
 function vidsHTML(b){try{return vidsHTML_(b)}catch(e){return ''}}
-function vidsHTML_(b){const list=VIDS?VIDS[b.brand+'|'+b.model]||[]:null;
+function vidsHTML_(b){const list=VIDS?VIDS[b.id]||[]:null;
  const more=`<a class="vmore" href="https://www.youtube.com/results?search_query=${encodeURIComponent(b.name+' review')}" target="_blank" rel="noopener">View more video reviews on YouTube${EXT}</a>`;
  if(list===null)return `<h3>Video reviews</h3>${more}`;
  if(!list.length)return `<h3>Video reviews</h3><p class="vnone">No recent reviews we could match to this exact bike yet.</p>${more}`;
  return `<h3>Video reviews</h3><ul class="vlist">${list.map(([id,t,c,vw,d,du])=>`<li><button type="button" class="vit" data-v="${esc(id)}" data-t="${esc(t)}" data-c="${esc(c)}" aria-label="Play video: ${esc(t)}, by ${esc(c)}"><span class="vth"><img src="https://i.ytimg.com/vi/${esc(id)}/mqdefault.jpg" alt="" width="128" height="72" decoding="async"><span class="vd">${vDur(du)}</span></span><span class="vtx"><span class="vt">${esc(t)}</span><span class="vm">${esc(c)} · ${nViews(vw)} views · ${vAge(d)}</span></span></button></li>`).join('')}</ul>${more}`}
 /* if the videos arrive after a bike window was built, fill its section in place */
-function fillVids(){const s=$('bike-vids');if(!s||!VIDS)return;const i=B.findIndex(x=>x.brand+'|'+x.model===s.dataset.k);if(i>=0&&!s.querySelector('.vlist,.vnone')){s.innerHTML=vidsHTML(B[i]);fitBml()}}
+function fillVids(){const s=$('bike-vids');if(!s||!VIDS)return;const i=B.findIndex(x=>x.id===s.dataset.k);if(i>=0&&!s.querySelector('.vlist,.vnone')){s.innerHTML=vidsHTML(B[i]);fitBml()}}
 /* the photo column stays pinned while the details scroll; when it's taller than the window it scrolls up first, then pins */
 function fitBml(){const c=BIKE.querySelector('.bml'),bb=$('bike-body');if(c&&bb)c.style.top=Math.min(20,bb.clientHeight-c.offsetHeight-20)+'px'}
 addEventListener('resize',()=>{if(BIKE.open)fitBml()},{passive:true});
@@ -1510,7 +1510,7 @@ function buildBike(i){const pre=i+'|'+F.city+'|'+F.q+'|'+(ME?NEAR_MI:'');if(BIKE
   <div class="bmph"><img id="bike-img" src="${shownSrc(b)}" decoding="sync" alt="${esc(b.name)}">${sws}</div>
   <p class="bmcap" id="bike-cap" hidden></p>
   <div class="bmp">${b.st?`<p class="bmst"><span class="chip stag">${esc(STX[b.st][0])}</span>${esc(STX[b.st][1])}</p>`:''}${price}${b.note?`<p class="bmtax">About the price: ${esc(b.note)}</p>`:''}</div>
-  <section class="bmv" id="bike-vids" data-k="${esc(b.brand+'|'+b.model)}">${vidsHTML(b)}</section>
+  <section class="bmv" id="bike-vids" data-k="${esc(b.id)}">${vidsHTML(b)}</section>
  </div>
  <div class="bmr">
   ${pk?`<div class="bmpick"><span class="bmpk">${STAR}${esc(pk.tag)}</span><p><b>${esc(pk.head)}</b> ${esc(pk.sub)}</p></div>`:''}
@@ -1522,7 +1522,7 @@ function buildBike(i){const pre=i+'|'+F.city+'|'+F.q+'|'+(ME?NEAR_MI:'');if(BIKE
 </div>`;
  $('bike-img').decode().catch(()=>{});
  BIKE_PRE=pre;/* marked built only once every part is in place */
- if(VIDS&&VIDS[b.brand+'|'+b.model])warmYT();
+ if(VIDS&&VIDS[b.id])warmYT();
  if(!VIDS)loadVids().then(fillVids);
 }
 /* the details open on exactly the photo the card shows: the color picked on the card if there is one, otherwise the display photo with no dot selected.
