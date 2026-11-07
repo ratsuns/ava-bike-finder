@@ -29,8 +29,9 @@ def src(kind, value, url, quote=None, **more):
     return dict(kind=kind, value=value, url=url, quote=str(value) if quote is None else quote, **more)
 
 
-KEPT, KEPT_FIELD = next(iter(policy.KEEP_SITE))
-PRICED = next(iter(policy.PRICE))
+# the tests' own entries in Chris's lists, so they don't depend on what the real lists hold
+policy.KEEP_SITE, policy.PRICE = {('kept', 'tq'): 70}, {'priced': 1234}
+policy.STILL_SOLD, policy.DISCONTINUED = {'still-sold'}, {'chris-disc'}
 SHOWN = [   # (what it checks, bike id, field, the site's value now, sources, what the site shows)
     ('the price never goes up', 'b', 'price', 1299, [src('maker', 1499, M), src('review', 1499, N)], 1299),
     ('a lower price replaces the site\'s', 'b', 'price', 1499, [src('maker', 1299, M)], 1299),
@@ -43,14 +44,13 @@ SHOWN = [   # (what it checks, bike id, field, the site's value now, sources, wh
     ("the site's number stays when no source backs one", 'b', 'tq', 80, [src('maker', None, M, '')], 80),
     ('top speed is the highest the bike can reach', 'b', 'spd', 20,
      [src('maker', 20, M, 'Class 2 at 20 mph out of the box, unlocks to 28 mph', max_mph=28)], 28),
-    ("a kept site number stays whatever the sources say", KEPT, KEPT_FIELD, None, [], policy.KEEP_SITE[KEPT, KEPT_FIELD]),
-    ("Chris's price wins over the maker's", PRICED, 'price', None, [src('maker', 99999, M)], policy.PRICE[PRICED]),
+    ("a kept site number stays whatever the sources say", 'kept', 'tq', None, [src('maker', 75, M)], 70),
+    ("Chris's price wins over the maker's", 'priced', 'price', None, [src('maker', 99999, M)], 1234),
 ]
 DISC = lambda *kv: {'sources': [dict(kind=k, value='discontinued', url=u) for k, u in kv]}
-STILL_SOLD, CHRIS_DISC = next(iter(policy.STILL_SOLD)), next(iter(policy.DISCONTINUED))
 DISCONTINUED = [   # (bike id, status sources, discontinued?)
     ('b', DISC(('maker', M)), True), ('b', DISC(('review', R)), False), ('b', DISC(('review', R), ('retailer', N)), True),
-    ('b', DISC(('review', R), ('retailer', R + '/other')), False), (STILL_SOLD, DISC(('maker', M)), False), (CHRIS_DISC, None, True),
+    ('b', DISC(('review', R), ('retailer', R + '/other')), False), ('still-sold', DISC(('maker', M)), False), ('chris-disc', None, True),
 ]
 
 
