@@ -2,8 +2,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400..700&display=swap" rel="stylesheet">
 <style>
-/* home page rules this page uses (build2.py copies them from site_tpl.html, so tokens, themes and the shop cards stay identical) */
-:root{--offveil:rgba(10,12,11,.14); --offc:#9a3412; --offbg:#fff7ed; --offbd:#fdba74;
+/* Styles both pages use: tokens and themes, the top nav and phone menu, the E-bike guide and Rebate info panels, shop cards.
+   build2.py puts this first in each page's <style>. */
+:root{
+ --offveil:rgba(10,12,11,.14); --offc:#9a3412; --offbg:#fff7ed; --offbd:#fdba74;
  --sbh:rgba(0,0,0,.45); --sbh2:rgba(0,0,0,.6); --sbo:rgba(255,255,255,.3);
  --bg:#f6f7f5; --surface:#ffffff; --well:#f1f3f0; --fg:#121614; --fg2:#4d5651; --fg3:#646d68;
  --line:#e3e7e2; --line2:#c9d0ca; --accent:#0e7a52; --accent-fg:#ffffff; --accent-soft:#e3f2ea; --accent-ink:#0b5f40;
@@ -13,14 +15,17 @@
  --ease-out:cubic-bezier(.23,1,.32,1); --ease-in-out:cubic-bezier(.77,0,.175,1);
  --t-micro:12px; --t-meta:13px; --t-ui:14px; --t-body:15px; --t-lede:17px; --t-title:17px; --t-price:28px; --t-h2:24px;
  --font:"Geist",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
- color-scheme:light;}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--offveil:rgba(10,12,11,.42); --offc:#fdba74; --offbg:#431407; --offbd:#9a3412;
+ color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+ --offveil:rgba(10,12,11,.42); --offc:#fdba74; --offbg:#431407; --offbd:#9a3412;
  --sbh:rgba(255,255,255,.5); --sbh2:rgba(255,255,255,.7); --sbo:rgba(0,0,0,.4);
  --bg:#0f1211; --surface:#171b19; --well:#1e2320; --fg:#eef1ee; --fg2:#b4bcb7; --fg3:#8d9691;
  --line:#262c29; --line2:#3a433e; --accent:#2fae7d; --accent-fg:#06140e; --accent-soft:#16302a; --accent-ink:#7fdcb4;
  --pick:#e0a84a; --warn-ink:#f0c46b;
  --shadow:0 1px 2px rgba(0,0,0,.3); --shadow-hi:0 8px 24px rgba(0,0,0,.4); color-scheme:dark}}
-:root[data-theme="dark"]{--offveil:rgba(10,12,11,.42); --offc:#fdba74; --offbg:#431407; --offbd:#9a3412;
+:root[data-theme="dark"]{
+ --offveil:rgba(10,12,11,.42); --offc:#fdba74; --offbg:#431407; --offbd:#9a3412;
  --sbh:rgba(255,255,255,.5); --sbh2:rgba(255,255,255,.7); --sbo:rgba(0,0,0,.4);
  --bg:#0f1211; --surface:#171b19; --well:#1e2320; --fg:#eef1ee; --fg2:#b4bcb7; --fg3:#8d9691;
  --line:#262c29; --line2:#3a433e; --accent:#2fae7d; --accent-fg:#06140e; --accent-soft:#16302a; --accent-ink:#7fdcb4;
@@ -85,18 +90,17 @@ html{scroll-behavior:smooth}
 .gsteps li::before{content:counter(gs);width:26px;height:26px;margin-top:-2px;border-radius:50%;box-sizing:border-box;border:1px solid color-mix(in oklab,var(--fg) 24%,transparent);background:linear-gradient(180deg,color-mix(in oklab,var(--fg) 16%,transparent),color-mix(in oklab,var(--fg) 2%,transparent) 60%),var(--well);box-shadow:inset 0 1px 0 color-mix(in oklab,#fff 22%,transparent);color:var(--fg);font-weight:600;font-size:14px;line-height:1;display:grid;place-items:center;font-variant-numeric:tabular-nums}
 .dbody .gsteps a{color:var(--fg);text-decoration:underline;text-underline-offset:3px;text-decoration-color:color-mix(in oklab,currentColor 45%,transparent)}
 .dbody .gl a,.dbody .gsrc a{color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-color:color-mix(in oklab,currentColor 45%,transparent)}
-@media (max-width:600px){.drawer{width:100vw;border-left:0}
-.dhead{padding:max(18px,env(safe-area-inset-top,0px)) 18px 14px}
-.dbody{padding:2px 18px calc(32px + env(safe-area-inset-bottom,0px))}}
-@media (prefers-reduced-motion:reduce){.drawer{transition:opacity .2s ease,overlay .2s allow-discrete,display .2s allow-discrete;transform:none;opacity:0}
-.drawer[open]{opacity:1}
-@starting-style{.drawer[open]{opacity:0;transform:none}}}
+@media (max-width:600px){.drawer{width:100vw;border-left:0}.dhead{padding:max(18px,env(safe-area-inset-top,0px)) 18px 14px}.dbody{padding:2px 18px calc(32px + env(safe-area-inset-bottom,0px))}}
+@media (prefers-reduced-motion:reduce){.drawer{transition:opacity .2s ease,overlay .2s allow-discrete,display .2s allow-discrete;transform:none;opacity:0}.drawer[open]{opacity:1}@starting-style{.drawer[open]{opacity:0;transform:none}}}
+/* one backdrop for every dialog: same dim, same fade. No blur: a full-screen blur over 224 cards and a playing video makes Safari stutter */
 dialog::backdrop{background:rgba(10,14,12,.42);opacity:0;transition:opacity .18s ease,overlay .18s allow-discrete,display .18s allow-discrete}
 dialog[open]::backdrop{opacity:1}
 @starting-style{dialog[open]::backdrop{opacity:0}}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) dialog::backdrop{background:rgba(0,0,0,.58)}}
 :root[data-theme="dark"] dialog::backdrop{background:rgba(0,0,0,.58)}
 @media (prefers-reduced-motion:reduce){dialog::backdrop{transition:none}}
+/* theme toggle: one icon that morphs. Dark shows a moon, light shows a sun.
+   Only transforms and opacity animate (GPU), so it stays smooth; the page itself crossfades through a view transition where supported */
 .navr{display:flex;align-items:center;gap:4px}
 .themebtn{display:grid;place-items:center;width:40px;height:40px;margin-left:8px;border:0;border-radius:8px;background:none;color:rgba(var(--hink),.82);cursor:pointer;transition:color .15s ease,transform .12s var(--ease-out)}
 .themebtn:active{transform:scale(.92)}
@@ -104,15 +108,18 @@ dialog[open]::backdrop{opacity:1}
 @media (hover:hover) and (pointer:fine){.themebtn:hover{color:rgb(var(--hink))}}
 .themebtn svg{overflow:visible}
 .themebtn .tm-core,.themebtn .tm-cut,.themebtn .tm-rays{transform-box:view-box;transform-origin:12px 12px;transition:transform .45s var(--ease-out),opacity .3s var(--ease-out)}
+/* light (sun): small core, cut-out moved clear, rays out */
 .themebtn .tm-core{transform:scale(.55)}
 .themebtn .tm-cut{transform:translate(9px,-9px)}
 .themebtn .tm-rays{transform:none;opacity:1}
+/* dark (moon): full disc with a bite taken out, rays tucked away */
 :root[data-theme="dark"] .themebtn .tm-core{transform:rotate(0deg) scale(1)}
 :root[data-theme="dark"] .themebtn .tm-cut{transform:none}
 :root[data-theme="dark"] .themebtn .tm-rays{transform:rotate(-45deg) scale(.5);opacity:0}
 @media (max-width:760px){.themebtn{margin-left:0;width:44px;height:44px}}
 @media (prefers-reduced-motion:reduce){.themebtn .tm-core,.themebtn .tm-cut,.themebtn .tm-rays{transition:none}}
 ::view-transition-old(root),::view-transition-new(root){animation-duration:.3s;animation-timing-function:ease}
+/* the toggle itself is shown live during the crossfade, so its morph plays instead of being frozen in a snapshot */
 ::view-transition-old(themebtn){display:none}
 ::view-transition-new(themebtn){animation:none}
 button{touch-action:manipulation;-webkit-user-select:none;user-select:none}
@@ -120,11 +127,14 @@ button{touch-action:manipulation;-webkit-user-select:none;user-select:none}
 .dclose:active{transform:scale(.97)}
 html{scrollbar-gutter:stable}
 html.locked{overflow:hidden}
+/* page scrollbar, where the browser's own bar takes up a strip (Windows): a thin Mac-style bar floats over the page instead,
+   fades out when you stop scrolling and widens under the mouse. Macs and phones keep their own bar. */
 html[data-overlayscrollbars-initialize],html[data-overlayscrollbars]{scrollbar-gutter:auto}
 .os-theme-ava{--os-size:18px;--os-padding-perpendicular:4px;--os-padding-axis:4px;--os-track-border-radius:10px;--os-handle-border-radius:10px;--os-handle-min-size:40px;
  --os-handle-perpendicular-size:7px;--os-handle-perpendicular-size-hover:7px;--os-handle-perpendicular-size-active:7px;--sbx:calc(9 / 7);
  --os-handle-bg:var(--sbh);--os-handle-bg-hover:var(--sbh2);--os-handle-bg-active:var(--sbh2);
  --os-handle-border:1px solid var(--sbo);--os-handle-border-hover:1px solid var(--sbo);--os-handle-border-active:1px solid var(--sbo)}
+/* bar: 7px wide, 6px from the right edge; it keeps its width and grows by stretching (7px -> 9px), which the browser animates smoothly in fractions of a pixel */
 .os-theme-ava.os-scrollbar-vertical{padding:4px 5px 4px 4px}
 .os-theme-ava.os-scrollbar-vertical .os-scrollbar-handle{left:0;right:0;margin-inline:auto;transition:opacity .15s,background-color .15s,border-color .15s,scale .2s var(--ease-out)}
 .os-theme-ava.os-scrollbar-vertical:hover .os-scrollbar-handle,.os-theme-ava.os-scrollbar-vertical:active .os-scrollbar-handle{scale:var(--sbx) 1}
@@ -133,12 +143,10 @@ dialog[data-state="closing"]{pointer-events:none}
 .maplink{display:inline-flex;align-items:flex-start;gap:6px;color:var(--fg2);text-decoration:none;width:fit-content}
 .maplink svg{flex:none;margin-top:3px;color:var(--fg3)}
 .maplink span{text-decoration:underline;text-decoration-color:var(--line2);text-underline-offset:3px}
-@media (hover:hover) and (pointer:fine){.maplink:hover{color:var(--fg)}
-.maplink:hover span{text-decoration-color:currentColor}}
+@media (hover:hover) and (pointer:fine){.maplink:hover{color:var(--fg)}.maplink:hover span{text-decoration-color:currentColor}}
 .tel{font-variant-numeric:tabular-nums}
 @media (pointer:coarse){.dclose{width:44px;height:44px}}
-@media (pointer:coarse){.shop>.maplink,.shop>a.web{padding-block:5px}
-.shop>.maplink:last-child,.shop>a.web:last-child{margin-bottom:-5px}}
+@media (pointer:coarse){.shop>.maplink,.shop>a.web{padding-block:5px}.shop>.maplink:last-child,.shop>a.web:last-child{margin-bottom:-5px}}
 .brand{display:inline-flex;align-items:center;gap:10px;color:rgb(var(--hink));text-decoration:none;font-weight:600;font-size:15px;letter-spacing:-.01em;min-height:44px}
 .brand svg{flex:none}
 .navlinks{display:flex;align-items:center;gap:4px;margin-right:-12px}
@@ -146,9 +154,7 @@ dialog[data-state="closing"]{pointer-events:none}
 .navlinks button:active{transform:scale(.97)}
 .navlinks button:focus-visible,.navlinks a:focus-visible,.menubtn:focus-visible,.brand:focus-visible{outline:2px solid rgb(var(--hink));outline-offset:2px}
 @media (hover:hover) and (pointer:fine){.navlinks button:hover,.navlinks a:hover{color:rgb(var(--hink))}}
-@media (max-width:760px){.navlinks button{padding:0 10px;font-size:15px}
-.navlinks{margin-right:-10px;gap:0}
-.brand{font-size:15px;gap:8px}}
+@media (max-width:760px){.navlinks button{padding:0 10px;font-size:15px}.navlinks{margin-right:-10px;gap:0}.brand{font-size:15px;gap:8px}}
 .brand,.navlinks button{white-space:nowrap}
 @media (prefers-reduced-motion:reduce){.navlinks button:active{transform:none}}
 .rb.lg{height:30px;padding:0 11px;font-size:15px;gap:8px;border-radius:6px;justify-self:start;margin:0 0 8px}
@@ -156,22 +162,22 @@ dialog[data-state="closing"]{pointer-events:none}
 .web svg{flex:none;margin-top:3px;color:var(--fg3)}
 .shop a.web{text-decoration:none;font-weight:600;transition:color .15s ease}
 a.web span{text-decoration:underline;text-decoration-color:color-mix(in oklab,currentColor 45%,transparent);text-underline-offset:3px}
-@media (hover:hover) and (pointer:fine){a.web:hover{color:var(--fg)}
-a.web:hover span{text-decoration-color:currentColor}
-a.web:hover svg{color:currentColor}}
+@media (hover:hover) and (pointer:fine){a.web:hover{color:var(--fg)}a.web:hover span{text-decoration-color:currentColor}a.web:hover svg{color:currentColor}}
 .web svg+span+svg{color:currentColor;margin-top:4px}
 .navlinks a{display:inline-flex;align-items:center}
 .menubtn{display:none;align-items:center;justify-content:center;width:44px;height:44px;margin-right:-10px;border:0;border-radius:8px;background:none;color:rgb(var(--hink));cursor:pointer;transition:background-color .15s ease,transform .12s var(--ease-out)}
 .menubtn:active{transform:scale(.95)}
-@media (max-width:760px){.navlinks{display:none}
-.menubtn{display:inline-flex}}
+@media (max-width:760px){.navlinks{display:none}.menubtn{display:inline-flex}}
 .menubtn{position:relative;z-index:2}
 .menubtn svg{position:absolute;pointer-events:none;transition:opacity .15s ease,transform .18s var(--ease-out)}
 .menubtn .mi-close{opacity:0;transform:rotate(-45deg) scale(.8)}
 .menubtn[aria-expanded="true"] .mi-open{opacity:0;transform:rotate(45deg) scale(.8)}
 .menubtn[aria-expanded="true"] .mi-close{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.menubtn svg{transition:opacity .12s ease;transform:none!important}}
+/* mobile menu: a full-screen page that replaces the view, like most product sites */
 .navmenu{position:fixed;inset:0;width:100%;height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;background:var(--bg);color:var(--fg);overflow-y:auto;overscroll-behavior:contain;opacity:0;transition:opacity .12s var(--ease-out),overlay .12s allow-discrete,display .12s allow-discrete}
+/* the menu opens at once: its top row (logo, close button) lands exactly where the nav's is and doesn't move, so nothing up there flickers, and the links below slide in.
+   Closing is a quick fade of the whole panel */
 .navmenu:popover-open{opacity:1;transition:none}
 .navmenu .nml{opacity:0;transform:translateY(-6px);transition:opacity .16s var(--ease-out),transform .16s var(--ease-out)}
 .navmenu:popover-open .nml{opacity:1;transform:none}
@@ -191,15 +197,17 @@ a.web:hover svg{color:currentColor}}
 .nml span{flex:1}
 .nml .nmc{color:var(--fg3)}
 .navmenu :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
-@media (prefers-reduced-motion:reduce){.navmenu .nml,.navmenu:popover-open .nml{transform:none;transition:opacity .15s ease}
-@starting-style{.navmenu:popover-open .nml{transform:none}}
-.nmx:active{transform:none}}
+@media (prefers-reduced-motion:reduce){.navmenu .nml,.navmenu:popover-open .nml{transform:none;transition:opacity .15s ease}@starting-style{.navmenu:popover-open .nml{transform:none}}.nmx:active{transform:none}}
+/* contact icons sit on the centre of the first line of text, even when an address wraps */
 .maplink,.web{line-height:1.5}
 .maplink svg,.web svg{margin-top:3.5px}
 @supports (margin-top:1lh){.maplink svg,.web svg,.web svg+span+svg{margin-top:calc((1lh - 13px) / 2)}}
+/* close buttons are ghost buttons: no fill until hovered or pressed */
 .dclose{background:transparent;color:var(--fg2)}
 .dclose:active{background:var(--well);color:var(--fg)}
 @media (hover:hover) and (pointer:fine){.dclose:hover{background:var(--well);color:var(--fg)}}
+/* scrolling panels fade out at the bottom while there is more to read, and the fade lifts once you reach the end; matching fade at
+   the top once the panel has scrolled (the JS marks them has-more / has-above). The home page's windows add their own panels to these rules */
 .dbody::after{content:"";position:sticky;bottom:calc(var(--pb,0px) * -1);display:block;height:56px;margin-top:-56px;pointer-events:none;background:linear-gradient(to bottom,transparent,var(--surface) 92%);opacity:0;transition:opacity .2s ease}
 .dbody.has-more::after{opacity:1}
 .dbody::before{content:"";position:sticky;z-index:3;top:calc(var(--pt,0px) * -1);display:block;height:32px;margin-bottom:-32px;margin-inline:calc(var(--px,0px) * -1);pointer-events:none;background:linear-gradient(to top,transparent,var(--surface) 88%);opacity:0;transition:opacity .2s ease}
@@ -212,19 +220,27 @@ dialog{z-index:50}
 .gamt dt{color:var(--fg2);font-size:var(--t-ui)}
 .gamt dd{margin:0}
 .gamt .rb.lg{margin:0;background:var(--accent-soft);color:var(--accent-ink);border-color:color-mix(in oklab,var(--accent) 55%,transparent)}
+/* ---- motion system (Emil's standards): enter and exit with strong ease-out, panels with the iOS drawer curve, transform + opacity only ----
+   side panels: slide from the right, 300ms in / 200ms out
+   bottom sheets (phones): slide up, 320ms in / 220ms out
+   centred windows (desktop): fade + 0.97 scale, 200ms in / 150ms out
+   dim layer: fades with the window */
 :root{--ease-drawer:cubic-bezier(.32,.72,0,1)}
 dialog.drawer{transition:transform .3s var(--ease-drawer),display .3s allow-discrete;transform:translateX(100%)}
 dialog.drawer[data-state="open"]{transform:none}
 dialog.drawer[data-state="closing"]{transform:translateX(100%);transition:transform .2s var(--ease-out),display .2s allow-discrete}
 dialog.drawer[data-state="closed"]{transform:translateX(100%);transition:none}
-@media (prefers-reduced-motion:reduce){dialog.drawer,dialog.drawer[data-state]{transform:none!important;transition:opacity .15s ease,display .15s allow-discrete}
-dialog.drawer[data-state="closed"],dialog.drawer[data-state="closing"]{opacity:0}
-dialog.drawer[data-state="open"]{opacity:1}}
+@media (prefers-reduced-motion:reduce){
+ dialog.drawer,dialog.drawer[data-state]{transform:none!important;transition:opacity .15s ease,display .15s allow-discrete}
+ dialog.drawer[data-state="closed"],dialog.drawer[data-state="closing"]{opacity:0}
+ dialog.drawer[data-state="open"]{opacity:1}}
+/* the fade pins to the real bottom edge, not to the panel's inner padding: --pb mirrors each panel's bottom padding */
 .dbody{--pb:calc(40px + env(safe-area-inset-bottom,0px));--pt:4px;--px:24px}
 @media (max-width:600px){.dbody{--pb:calc(32px + env(safe-area-inset-bottom,0px));--pt:2px;--px:18px}}
-@media (max-width:760px){:root{--t-micro:14px;--t-meta:14px;--t-ui:15px;--t-body:16px;--t-lede:18px;--t-title:18px}
-.gl,.gsub,.gnote,.gc p,.gdl dd,.gsteps li{font-size:16px;line-height:1.5}
-.gsteps li::before{margin-top:-1px}}
+@media (max-width:760px){
+ :root{--t-micro:14px;--t-meta:14px;--t-ui:15px;--t-body:16px;--t-lede:18px;--t-title:18px}
+ .gl,.gsub,.gnote,.gc p,.gdl dd,.gsteps li{font-size:16px;line-height:1.5}
+ .gsteps li::before{margin-top:-1px}}
 /* shops page */
 :root{--mapbg:#f8f4f0}
 .sbar{position:sticky;top:0;z-index:20;background:var(--bg);padding-top:env(safe-area-inset-top,0px);--hink:18,22,20}
@@ -465,38 +481,116 @@ a.mcl span{text-decoration:underline;text-decoration-color:var(--line2);text-und
   <p class="gsrc">Source: <a href="https://avaenergy.org/bike-electric/" target="_blank" rel="noopener">Ava Community Energy</a>, checked October 29, 2026.</p>
  </div>
 </dialog>
-
 <script>
-/* shop cards: drawn right away from the inline list, with the same helpers and markup as the home page's "Where to buy" */
-const SH=[{"k":"Adaptive Cycles (Berkeley)","name":"Adaptive Cycles","address":"1 Spinnaker Way","city":"Berkeley","phone":"(510) 497-1828","url":"https://adaptivecycles.com/","email":"greg@adaptivecycles.com","hours":"By appointment","lat":37.869802,"lng":-122.319622,"logo":"img/logo-adaptive-cycles.webp"},{"k":"Alameda Bicycle (Alameda)","name":"Alameda Bicycle","address":"1522 Park St","city":"Alameda","phone":"(510) 522-0070","url":"https://www.alamedabicycle.com/","email":"info@alamedabicycle.com","hours":"Mon 2:30–6p · Tue–Sun 11a–6p","lat":37.766062,"lng":-122.24113,"logo":"img/logo-alameda-bicycle.webp"},{"k":"Bicycle Garage (Fremont)","name":"The Bicycle Garage","address":"5006 Mowry Ave","city":"Fremont","phone":"(510) 795-9622","url":"https://www.bicyclegaragefremont.com/","email":"velocipedesf@gmail.com","hours":"Mon 10a–7p · Closed Tue · Wed–Fri 10a–7p · Sat 10a–6p · Sun 11a–5p","lat":37.536138,"lng":-121.998373,"logo":"img/logo-the-bicycle-garage.webp"},{"k":"Blue Heron Bicycles (Berkeley)","name":"Blue Heron Bikes","address":"1306 Gilman St","city":"Berkeley","phone":"(510) 524-1937","url":"https://blueheronbikesberkeley.com","email":"service@blueheronbikesberkeley.com","hours":"Mon–Sat 9a–6p · Closed Sun","lat":37.881135,"lng":-122.28932,"logo":"img/logo-blue-heron-bikes.webp"},{"k":"Castro Valley Cyclery","name":"Castro Valley Cyclery","address":"20515 Stanton Ave","city":"Castro Valley","phone":"(510) 538-1878","hours":"Closed Mon · Tue–Fri 12:30–5p · Sat 10a–4p · Closed Sun","lat":37.694554,"lng":-122.090325},{"k":"Cycle City (Alameda)","name":"Cycle City","address":"1433 High St","city":"Alameda","phone":"(510) 521-2872","url":"https://cyclecityusa.com/","email":"info@cyclecityusa.com","hours":"Closed Mon · Tue–Sat 10:30a–6p · Closed Sun","lat":37.75867,"lng":-122.231549,"logo":"img/logo-cycle-city.webp"},{"k":"Dublin Cyclery (Dublin)","name":"Dublin Cyclery","address":"7001 Dublin Blvd","city":"Dublin","phone":"(925) 828-8676","url":"https://www.dublincyclery.com/","email":"info@dublincyclery.com","hours":"Closed Mon · Tue 10a–4p · Wed–Fri 9:30a–5:30p · Sat 10a–4p · Sun 11a–3p","lat":37.706159,"lng":-121.923567,"logo":"img/logo-dublin-cyclery.webp"},{"k":"Ebikes2U","name":"Ebikes2U","address":"46701 Fremont Blvd Unit B","city":"Fremont","phone":"(510) 883-3909","url":"https://ebikes2u.com/","email":"info@ebikes2u.com","hours":"Mon–Fri 9a–5p · Closed Sat, Sun","lat":37.482213,"lng":-121.945517,"logo":"img/logo-ebikes2u.webp"},{"k":"Electric Bike Center (Dublin)","name":"Electric Bike Center","address":"6894 Village Parkway","city":"Dublin","phone":"(925) 230-8178","url":"https://electricbikeca.com/","email":"sales@electricbikeca.com","hours":"Daily 10:30a–6p","lat":37.707356,"lng":-121.924943,"logo":"img/logo-electric-bike-center.webp"},{"k":"Laurel Cyclery (Oakland)","name":"Laurel Cyclery","address":"3715 MacArthur Blvd","city":"Oakland","phone":"(510) 328-1158","url":"https://www.laurelcyclery.com/","email":"laurelcyclery@gmail.com","hours":"Mon–Fri 11a–6p · Sat 10a–4p · Closed Sun","lat":37.791965,"lng":-122.199165,"logo":"img/logo-laurel-cyclery.webp"},{"k":"Mike's Bikes (Berkeley)","name":"Mike's Bikes of Berkeley","address":"1824 University Ave","city":"Berkeley","phone":"(510) 845-2453","url":"https://mikesbikes.com/pages/berkeley","email":"info@mikesbikes.com","hours":"Mon–Sat 10a–6p · Sun 10a–5p","lat":37.871237,"lng":-122.274693,"logo":"img/logo-mike-s-bikes.webp"},{"k":"Mike's Bikes (Pleasanton)","name":"Mike's Bikes of Pleasanton","address":"6754 Bernal Ave, Suite 710","city":"Pleasanton","phone":"(925) 223-8267","url":"https://mikesbikes.com/pages/pleasanton","email":"info@mikesbikes.com","hours":"Mon–Sat 10a–6p · Sun 10a–5p","lat":37.657831,"lng":-121.8983,"logo":"img/logo-mike-s-bikes.webp"},{"k":"NILES BICYCLES (Fremont)","name":"Niles Bicycles","address":"161 I Street","city":"Fremont","phone":"(510) 565-1111","url":"https://nilesbicycles.com/","email":"nilesbicycles@gmail.com","hours":"Closed Mon, Tue · Wed–Sat 12–6p · Sun 11a–3p","lat":37.57609,"lng":-121.978365,"logo":"img/logo-niles-bicycles.webp"},{"k":"Pedego Electric Bikes (Livermore)","name":"Pedego Electric Bikes Livermore","address":"4590 Tesla Road","city":"Livermore","phone":"(925) 800-5330","url":"https://dealers.pedegoelectricbikes.com/pages/dealers/livermore","email":"contact@pedegolivermore.com","hours":"Closed Tue, Wed · Thu–Mon 11a–5p","lat":37.665203,"lng":-121.739343,"logo":"img/logo-pedego.webp"},{"k":"Rhythm Bikes (Oakland)","name":"Rhythm Bikes","address":"6112 La Salle Ave","city":"Oakland","phone":"(510) 339-2953","url":"https://www.rhythmbikes.com","email":"rhythm@rhythmbikes.com","hours":"Closed Mon · Tue–Fri 11a–6p · Sat 10a–5p · Closed Sun","lat":37.826287,"lng":-122.210333,"logo":"img/logo-rhythm-bikes.webp"},{"k":"Robby's Bicycles (Stockton)","name":"Robby's Bicycles","address":"7931 Thornton Rd","city":"Stockton","phone":"(209) 951-4371","url":"https://www.robbysbicycles.com/","contact":"https://www.robbysbicycles.com/about/contact-us-pg126.htm","hours":"Mon–Fri 11a–5p · Sat 12–5p · Sun 12–4p","lat":38.021605,"lng":-121.325805,"logo":"img/logo-robby-s-bicycles.webp"},{"k":"Sports Basement (Berkeley)","name":"Sports Basement Berkeley","address":"2727 Milvia St","city":"Berkeley","phone":"(510) 984-3907","url":"https://shop.sportsbasement.com/blogs/stores/berkeley","email":"friends@sportsbasement.com","hours":"Mon–Fri 11a–8p · Sat–Sun 10a–7p","lat":37.85918,"lng":-122.2693,"logo":"img/logo-sports-basement.webp"},{"k":"Stay True Cycles (Berkeley)","name":"Stay True Cycles","address":"2116 Vine St","city":"Berkeley","phone":"(510) 725-6281","url":"https://www.staytrue.bike/","contact":"https://www.staytrue.bike/articles/email-us-pg199.htm","hours":"Closed Mon · Tue–Sat 12–7p · Closed Sun","lat":37.88022,"lng":-122.268568,"logo":"img/logo-stay-true-cycles.webp"},{"k":"The New Wheel (Oakland)","name":"The New Wheel","address":"1446 Leimert Blvd","city":"Oakland","phone":"(415) 524-7362","url":"https://newwheel.net/pages/oakland-east-bay-electric-bike-shop","email":"info@newwheel.net","hours":"Closed Mon, Tue · Wed–Sat 11a–6p · Sun 11a–5p","lat":37.811726,"lng":-122.212466,"logo":"img/logo-the-new-wheel.webp"},{"k":"Tip Top Bike Shop (Oakland)","name":"Tip Top Bike Shop","address":"4800 Telegraph Ave A","city":"Oakland","phone":"(510) 444-4148","url":"https://tiptopbikeshop.com","email":"top@tiptopbikeshop.com","hours":"Closed Mon · Tue–Fri 11a–6p · Sat–Sun 12–5p","lat":37.834775,"lng":-122.262839,"logo":"img/logo-tip-top-bike-shop.webp"},{"k":"Tracy Cyclery (Tracy)","name":"Tracy Cyclery","address":"2217 N Tracy Blvd","city":"Tracy","phone":"(209) 640-9380","hours":"Closed Mon · Tue–Fri 10a–6p · Sat 10a–5p · Closed Sun","lat":37.753443,"lng":-121.435189},{"k":"Trek Bicycle (Berkeley)","name":"Trek Bicycle Berkeley","address":"1045 Ashby Ave","city":"Berkeley","phone":"(510) 370-2890","url":"https://www.trekbikes.com/us/en_US/retail/berkeley/","hours":"Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p · Sun 12–5p","lat":37.85186,"lng":-122.288818,"logo":"img/logo-trek.webp"},{"k":"Trek Bicycle (Dublin)","name":"Trek Bicycle Dublin","address":"7222 San Ramon Road","city":"Dublin","phone":"(925) 829-4310","url":"https://www.trekbikes.com/us/en_US/retail/dublin/","hours":"Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p · Sun 12–5p","lat":37.702215,"lng":-121.93612,"logo":"img/logo-trek.webp"},{"k":"Trek Bicycle (Livermore)","name":"Trek Bicycle Livermore","address":"2752 First Street","city":"Livermore","phone":"(925) 455-8090","url":"https://www.trekbikes.com/us/en_US/retail/livermore/","hours":"Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p · Sun 12–5p","lat":37.684565,"lng":-121.764165,"logo":"img/logo-trek.webp"},{"k":"Trek Bicycle (Oakland)","name":"Trek Bicycle Oakland","address":"3530 Grand Avenue","city":"Oakland","phone":"(510) 570-3885","url":"https://www.trekbikes.com/us/en_US/retail/oakland/","hours":"Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p · Closed Sun","lat":37.81439,"lng":-122.246199,"logo":"img/logo-trek.webp"},{"k":"Trek Bicycles (Castro Valley)","name":"Trek Bicycle Castro Valley","address":"3318 Village Drive","city":"Castro Valley","phone":"(510) 881-5000","url":"https://www.trekbikes.com/us/en_US/retail/castro_valley/","hours":"Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p · Sun 12–5p","lat":37.696686,"lng":-122.07813,"logo":"img/logo-trek.webp"},{"k":"Uptown BART Bike Station (Oakland)","name":"Uptown BART Bike Station","address":"1775 Broadway","city":"Oakland","phone":"(510) 858-7555","url":"https://www.bikehub.com/articles/bart-bike-stations-pg1208.htm","email":"uptown@bikehub.com","hours":"Mon–Fri 7a–7p · Closed Sat, Sun","lat":37.807129,"lng":-122.269597,"logo":"img/logo-bikehub.webp"},{"k":"eCyclepath (Hayward)","name":"Cyclepath","address":"22510 Foothill Blvd","city":"Hayward","phone":"(510) 881-5177","url":"https://www.ecyclepath.com/","email":"info@cyclepathhayward.com","hours":"Mon–Fri 10a–5p · Sat 10a–4p · Closed Sun","lat":37.67459,"lng":-122.081194,"logo":"img/logo-cyclepath.webp"}];
-const $=id=>document.getElementById(id);
+/* Shop cards and their helpers, the same on both pages. No page access here: the build also runs this file in Node
+   to put the vendor page's shop list into the page (shopList), so the built list and the live cards can never differ */
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const mapUrl=s=>'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent([s.name,s.address,s.city,'CA'].filter(Boolean).join(', '));
-const telUrl=p=>'tel:'+String(p).replace(/[^0-9+]/g,'');
 const PIN='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>';
-const GLOBE='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18z"/></svg>',PHONE='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>';
+const GLOBE='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18z"/></svg>';
+const PHONE='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>';
 const CLOCK='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>';
 const MAIL='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>';
+const EXT='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>';
+const placeQ=s=>encodeURIComponent([s.name,s.address,s.city,'CA'].filter(Boolean).join(', '));
+const mapUrl=s=>'https://www.google.com/maps/search/?api=1&query='+placeQ(s);
+const dirUrl=s=>'https://www.google.com/maps/dir/?api=1&destination='+placeQ(s);
+const telUrl=p=>'tel:'+String(p).replace(/[^0-9+]/g,'');
+/* email a shop with the subject and message already written; about one bike from its details, or a general question from the shop list */
 const mailUrl=(s,b)=>{const subj=b?`Question about the ${b.name} (Ava e-bike rebate)`:'Question about the Ava e-bike rebate';
  const body=b?`Hi ${s.name},\n\nI'm interested in the ${b.name} and plan to use my Ava Community Energy e-bike rebate. Could you let me know:\n\n- Do you have it in stock, and in which colors and sizes?\n- What is the current price?\n- Can I come in for a test ride?\n\nThank you!\n`
   :`Hi ${s.name},\n\nI'm shopping for an e-bike and plan to use my Ava Community Energy e-bike rebate. Which rebate-eligible bikes do you have in stock right now?\n\nThank you!\n`;
  return `mailto:${s.email}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(body.replace(/\n/g,'\r\n'))}`};
-const slogo=s=>{const tag=s.url?`a href="${esc(s.url)}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"`:'span aria-hidden="true"',end=s.url?'a':'span';return s.logo?`<${tag} class="slogo"><img src="${esc(s.logo)}" alt="" width="36" height="36" loading="lazy" decoding="async"></${end}>`:`<${tag} class="slogo ini">${esc(s.name.replace(/^the\s+/i,'').split(/\s+/).filter(w=>/^[A-Za-z]/.test(w)).slice(0,2).map(w=>w[0].toUpperCase()).join(''))}</${end}>`};
+/* shop logo in a round badge; shops without a published logo get their initials */
+const slogo=(s,eager)=>{const tag=s.url?`a href="${esc(s.url)}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"`:'span aria-hidden="true"',end=s.url?'a':'span';return s.logo?`<${tag} class="slogo"><img src="${esc(s.logo)}" alt="" width="36" height="36" loading="${eager?'eager':'lazy'}" decoding="async"></${end}>`:`<${tag} class="slogo ini">${esc(s.name.replace(/^the\s+/i,'').split(/\s+/).filter(w=>/^[A-Za-z]/.test(w)).slice(0,2).map(w=>w[0].toUpperCase()).join(''))}</${end}>`};
 const shopLines=(s,b)=>`${s.address||s.city?`<a class="maplink" href="${mapUrl(s)}" target="_blank" rel="noopener">${PIN}<span>${esc([s.address,s.city].filter(Boolean).join(', '))}</span></a>`:''}${s.phone?`<a class="maplink tel" href="${telUrl(s.phone)}">${PHONE}<span>${esc(s.phone)}</span></a>`:''}${s.hours?`<div class="maplink hrs">${CLOCK}<div><ul>${s.hours.split(' · ').map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div></div>`:''}${s.email?`<a class="maplink mail" href="${mailUrl(s,b)}">${MAIL}<span>${esc(s.email)}</span></a>`:s.contact?`<a class="maplink mail" href="${esc(s.contact)}" target="_blank" rel="noopener">${MAIL}<span>Email via contact form</span></a>`:''}`;
-const EXT='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>';
-SH.sort((a,b)=>(a.city||'').localeCompare(b.city||'')||a.name.localeCompare(b.name));
-/* the first few logos load right away; the rest wait until they're scrolled near.
-   The build already puts these cards in the page (this same code, run at build time), so normally nothing is redrawn here */
-if(!$('list').firstElementChild)$('list').innerHTML=SH.map((s,i)=>{const h=`<div class="shop" data-shop="${esc(s.k)}">${slogo(s)}<span class="city">${esc(s.city||'')}</span><b>${esc(s.name)}</b>${shopLines(s)||'<span class="m">Address not listed</span>'}${s.url?`<a class="web" href="${esc(s.url)}" target="_blank" rel="noopener">${GLOBE}<span>Shop website</span>${EXT}</a>`:''}</div>`;return i<6?h.replace('loading="lazy"','loading="eager"'):h}).join('');
+/* one shop's card: b = the bike it's shown for (the email asks about it), note = text after the city */
+const shopCard=(s,{b,note='',eager}={})=>`${slogo(s,eager)}${s.city?`<span class="city">${esc(s.city)}${note}</span>`:''}<b>${esc(s.name)}</b>${shopLines(s,b)}${s.url?`<a class="web" href="${esc(s.url)}" target="_blank" rel="noopener">${GLOBE}<span>Shop website</span>${EXT}</a>`:''}`;
+const shopOrder=(a,b)=>(a.city||'').localeCompare(b.city||'')||a.name.localeCompare(b.name);
+/* the vendor page's list, in shopOrder; the first few logos load right away, the rest once they're scrolled near */
+const shopList=SH=>SH.map((s,i)=>`<div class="shop" data-shop="${esc(s.k)}">${shopCard(s,{eager:i<6})}</div>`).join('');
+const miles=(a,s)=>{const R=3958.8,r=x=>x*Math.PI/180,dl=r(s.lat-a.lat),dg=r(s.lng-a.lng),h=Math.sin(dl/2)**2+Math.cos(r(a.lat))*Math.cos(r(s.lat))*Math.sin(dg/2)**2;return 2*R*Math.asin(Math.sqrt(h))};
+/* What both pages do the same way: windows (the E-bike guide, Rebate info and, on the home page, every other window),
+   the top nav's phone menu, the light / dark toggle and the visitor's saved location. Runs after the page's markup. */
+const $=id=>document.getElementById(id);
 const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
-/* light / dark toggle: same as the home page (remembered per browser, crossfades where view transitions exist) */
-(()=>{const b=$('themebtn');if(!b)return;const H=document.documentElement;
+const THEME={"light": "#f6f7f5", "dark": "#0f1211"};
+/* keyboard users get focus handed back to what opened a window; touch and mouse users get no leftover outline */
+let KBD=false;addEventListener('keydown',e=>{if(e.key==='Tab'||e.key==='Escape'||e.key.startsWith('Arrow')||e.key==='Enter')KBD=true},true);addEventListener('pointerdown',()=>{KBD=false},true);
+
+/* Windows open with show(), not showModal(): showModal makes the browser mark all ~11,000 elements behind it as blocked,
+   which took 60-90ms on a mid-range phone. The dim layer, Escape, outside taps and keeping Tab inside the window are handled here instead.
+   The page behind stays still while a window or the phone menu is open. */
+function lockScroll(){document.documentElement.classList.toggle('locked',!!document.querySelector('dialog[open]:not([data-state="closing"]),#navmenu:popover-open'))}
+/* the page can follow the windows: stack(on) runs whenever the dim layer shows or goes, closed(d) once a window has fully closed */
+const WINDOW_HOOKS={stack:()=>{},closed:()=>{}};
+const DSTACK=[];const SCRIM=document.createElement('div');SCRIM.id='scrim';SCRIM.setAttribute('aria-hidden','true');document.body.append(SCRIM);
+const scrim=on=>{SCRIM.classList.toggle('on',on);WINDOW_HOOKS.stack(on)};
+SCRIM.addEventListener('click',()=>{const d=DSTACK[DSTACK.length-1];if(d)d.close()});
+document.addEventListener('keydown',e=>{const d=DSTACK[DSTACK.length-1];if(!d)return;
+ if(e.key==='Escape'){e.preventDefault();d.close();return}
+ if(e.key==='Tab'){const f=[...d.querySelectorAll('button,[href],input,select,textarea,summary,[tabindex]:not([tabindex="-1"])')].filter(x=>!x.disabled&&x.getClientRects().length);if(!f.length)return;
+  const a=f[0],z=f[f.length-1],c=document.activeElement;
+  if(!d.contains(c)){e.preventDefault();a.focus();return}
+  if(e.shiftKey&&(c===a||c===d)){e.preventDefault();z.focus()}else if(!e.shiftKey&&c===z){e.preventDefault();a.focus()}}});
+/* fn runs once el's transitions have finished (the fallback covers a browser that never reports them) */
+function afterMotion(el,fn){let t=setTimeout(go,300);function go(){if(!t)return;clearTimeout(t);t=0;fn()}Promise.all(el.getAnimations().map(a=>a.finished)).then(go,go)}
+/* close() plays the exit animation first, then really closes */
+const NCLOSE=HTMLDialogElement.prototype.close;
+function animClose(){const d=this;if(!d.open||d.dataset.state==='closing')return;
+ scrim(DSTACK.some(x=>x!==d));
+ if(d.classList.contains('instant')){NCLOSE.call(d);d.dataset.state='';return}
+ d.dataset.state='closing';lockScroll();const ae=document.activeElement;if(d.contains(ae)&&!KBD)ae.blur();
+ afterMotion(d,()=>{if(d.dataset.state!=='closing')return;NCLOSE.call(d);d.dataset.state='';d.style.transition='';d.style.transform=''})}
+function showDlg(d,opener){if(d.open)return;d._opener=opener||document.activeElement;d.tabIndex=-1;d.setAttribute('aria-modal','true');DSTACK.push(d);d.style.transform='';d.dataset.state='closed';d.show();d.offsetWidth;d.dataset.state='open';scrim(true);d.focus({preventScroll:true});lockScroll();const body=d.querySelector('.dbody,.cbody');if(body)body.scrollTop=0}
+document.querySelectorAll('dialog').forEach(d=>{d.close=animClose;
+ d.addEventListener('close',()=>{const i=DSTACK.indexOf(d);if(i>=0)DSTACK.splice(i,1);scrim(DSTACK.length>0);lockScroll();WINDOW_HOOKS.closed(d);const o=d._opener;if(KBD&&o&&o.isConnected&&o.focus)o.focus({preventScroll:true});else if(d.contains(document.activeElement)||document.activeElement===d)document.activeElement.blur()});
+ d.addEventListener('click',e=>{if(e.target!==d)return;const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close()});
+ d.querySelectorAll('.dclose').forEach(x=>x.onclick=()=>d.close())});
+
+/* the phone menu: a full-screen page under its button; the button turns into a close icon while it's open */
+const NAVM=$('navmenu'),MBTN=document.querySelector('.menubtn');
+/* the nav's window buttons; in the menu, the menu goes away and its button gets focus back when the window closes */
+document.querySelectorAll('[data-open]').forEach(b=>b.addEventListener('click',()=>{const inMenu=NAVM.contains(b);if(inMenu&&NAVM.matches(':popover-open'))NAVM.hidePopover();showDlg($(b.dataset.open),inMenu?MBTN:b)}));
+/* the button reads the menu's actual state on every open/close and again after any tap or key, so it can't get stuck
+   on the X if a browser (iPhone Safari) skips a close event */
+const syncNav=()=>{const o=NAVM.matches(':popover-open');if(MBTN.getAttribute('aria-expanded')!==String(o)){MBTN.setAttribute('aria-expanded',o);MBTN.setAttribute('aria-label',o?'Close menu':'Menu')}lockScroll()};
+NAVM.addEventListener('toggle',syncNav);NAVM.addEventListener('beforetoggle',()=>requestAnimationFrame(syncNav));
+['click','keyup','pointerup'].forEach(t=>document.addEventListener(t,()=>requestAnimationFrame(syncNav),true));addEventListener('pageshow',syncNav);
+/* links to this same page close the menu; a link to another page leaves it open while that page loads (no flash of this page in
+   between) and the menu is put away once this page is gone, so coming back with the browser's back button finds it closed */
+NAVM.addEventListener('click',e=>{const a=e.target.closest('.nml a'),here=a&&a.getAttribute('aria-current')==='page';if(here)e.preventDefault();
+ if((here||e.target.closest('.nml button')||(a&&(a.getAttribute('href')||'').startsWith('#')))&&NAVM.matches(':popover-open'))NAVM.hidePopover()});
+addEventListener('pagehide',()=>{if(NAVM.matches(':popover-open'))NAVM.hidePopover()});
+matchMedia('(min-width: 761px)').addEventListener('change',e=>{if(e.matches&&NAVM.matches(':popover-open'))NAVM.hidePopover()});
+
+/* mark a scrolling panel when there is more below or above, so it can fade that edge */
+(()=>{const els=[...document.querySelectorAll('.bmb,.dbody,.cbody')];
+ const upd=el=>{el.classList.toggle('has-more',el.scrollHeight-el.scrollTop-el.clientHeight>4);el.classList.toggle('has-above',el.scrollTop>4)};
+ const ro=new ResizeObserver(es=>es.forEach(e=>upd(e.target)));
+ els.forEach(el=>{el.addEventListener('scroll',()=>upd(el),{passive:true});ro.observe(el);new MutationObserver(()=>requestAnimationFrame(()=>upd(el))).observe(el,{childList:true,subtree:true,attributes:true,attributeFilter:['open','hidden']})});
+ document.querySelectorAll('dialog').forEach(d=>d.addEventListener('toggle',()=>requestAnimationFrame(()=>els.forEach(upd))))})();
+
+/* light / dark toggle: remembered per browser; the page crossfades between themes where view transitions exist */
+(()=>{const b=$('themebtn'),H=document.documentElement;
  const cur=()=>H.dataset.theme==='light'?'light':'dark';
- const label=()=>{const t=cur();b.setAttribute('aria-label',t==='dark'?'Switch to light mode':'Switch to dark mode')};
- const apply=t=>{H.dataset.theme=t;const cs=document.querySelector('meta[name="color-scheme"]'),tc=document.querySelector('meta[name="theme-color"]');if(cs)cs.content=t;if(tc)tc.content=t==='light'?'#f6f7f5':'#0f1211';try{localStorage.setItem('theme',t)}catch(e){}label()};
+ const label=()=>{const t=cur();b.setAttribute('aria-label',t==='dark'?'Switch to light mode':'Switch to dark mode');b.dataset.tip=b.getAttribute('aria-label');b.setAttribute('data-tiphover','')};
+ const apply=t=>{H.dataset.theme=t;document.querySelector('meta[name="color-scheme"]').content=t;document.querySelector('meta[name="theme-color"]').content=THEME[t];try{localStorage.setItem('theme',t)}catch(e){}label()};
  label();
  b.addEventListener('click',()=>{const next=cur()==='dark'?'light':'dark';
   if(document.startViewTransition&&!REDUCE.matches){b.style.viewTransitionName='themebtn';const vt=document.startViewTransition(()=>apply(next));vt.finished.finally(()=>{b.style.viewTransitionName=''})}else apply(next)})})();
+
+/* the visitor's location: kept for up to 10 minutes in this tab only (sessionStorage, never sent anywhere), so both pages show it at once */
+const NEAR={TTL:600000,
+ saved(){try{const v=JSON.parse(sessionStorage.getItem('ava-near')||'null');if(v&&Date.now()-v.t<NEAR.TTL)return v}catch(e){}return null},
+ save(u,t){try{sessionStorage.setItem('ava-near',JSON.stringify({lat:u.lat,lng:u.lng,t}))}catch(e){}},
+ drop(){try{sessionStorage.removeItem('ava-near')}catch(e){}},
+ /* a reading under a minute old is used as it is; an older one shows at once while a fresh one is taken quietly */
+ fresh:t=>Date.now()-t<60000,
+ /* the position shown only follows a real move, so distances don't jitter */
+ moved:(a,b)=>miles(a,b)>0.25,
+ ask:(ok,err)=>navigator.geolocation.getCurrentPosition(p=>ok({lat:p.coords.latitude,lng:p.coords.longitude}),err,{enableHighAccuracy:false,timeout:15000,maximumAge:60000})};
+/* every shop, in shopOrder (the build sorted them) */
+const SH=[{"k":"Alameda Bicycle (Alameda)","name":"Alameda Bicycle","address":"1522 Park St","city":"Alameda","phone":"(510) 522-0070","url":"https://www.alamedabicycle.com/","email":"info@alamedabicycle.com","hours":"Mon 2:30–6p · Tue–Sun 11a–6p","lat":37.766062,"lng":-122.24113,"logo":"img/logo-alameda-bicycle.webp"},{"k":"Cycle City (Alameda)","name":"Cycle City","address":"1433 High St","city":"Alameda","phone":"(510) 521-2872","url":"https://cyclecityusa.com/","email":"info@cyclecityusa.com","hours":"Closed Mon · Tue–Sat 10:30a–6p · Closed Sun","lat":37.75867,"lng":-122.231549,"logo":"img/logo-cycle-city.webp"},{"k":"Adaptive Cycles (Berkeley)","name":"Adaptive Cycles","address":"1 Spinnaker Way","city":"Berkeley","phone":"(510) 497-1828","url":"https://adaptivecycles.com/","email":"greg@adaptivecycles.com","hours":"By appointment","lat":37.869802,"lng":-122.319622,"logo":"img/logo-adaptive-cycles.webp"},{"k":"Blue Heron Bicycles (Berkeley)","name":"Blue Heron Bikes","address":"1306 Gilman St","city":"Berkeley","phone":"(510) 524-1937","url":"https://blueheronbikesberkeley.com","email":"service@blueheronbikesberkeley.com","hours":"Mon–Sat 9a–6p · Closed Sun","lat":37.881135,"lng":-122.28932,"logo":"img/logo-blue-heron-bikes.webp"},{"k":"Mike's Bikes (Berkeley)","name":"Mike's Bikes of Berkeley","address":"1824 University Ave","city":"Berkeley","phone":"(510) 845-2453","url":"https://mikesbikes.com/pages/berkeley","email":"info@mikesbikes.com","hours":"Mon–Sat 10a–6p · Sun 10a–5p","lat":37.871237,"lng":-122.274693,"logo":"img/logo-mike-s-bikes.webp"},{"k":"Sports Basement (Berkeley)","name":"Sports Basement Berkeley","address":"2727 Milvia St","city":"Berkeley","phone":"(510) 984-3907","url":"https://shop.sportsbasement.com/blogs/stores/berkeley","email":"friends@sportsbasement.com","hours":"Mon–Fri 11a–8p · Sat–Sun 10a–7p","lat":37.85918,"lng":-122.2693,"logo":"img/logo-sports-basement.webp"},{"k":"Stay True Cycles (Berkeley)","name":"Stay True Cycles","address":"2116 Vine St","city":"Berkeley","phone":"(510) 725-6281","url":"https://www.staytrue.bike/","contact":"https://www.staytrue.bike/articles/email-us-pg199.htm","hours":"Closed Mon · Tue–Sat 12–7p · Closed Sun","lat":37.88022,"lng":-122.268568,"logo":"img/logo-stay-true-cycles.webp"},{"k":"Trek Bicycle (Berkeley)","name":"Trek Bicycle Berkeley","address":"1045 Ashby Ave","city":"Berkeley","phone":"(510) 370-2890","url":"https://www.trekbikes.com/us/en_US/retail/berkeley/","hours":"Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p · Sun 12–5p","lat":37.85186,"lng":-122.288818,"logo":"img/logo-trek.webp"},{"k":"Castro Valley Cyclery","name":"Castro Valley Cyclery","address":"20515 Stanton Ave","city":"Castro Valley","phone":"(510) 538-1878","hours":"Closed Mon · Tue–Fri 12:30–5p · Sat 10a–4p · Closed Sun","lat":37.694554,"lng":-122.090325},{"k":"Trek Bicycles (Castro Valley)","name":"Trek Bicycle Castro Valley","address":"3318 Village Drive","city":"Castro Valley","phone":"(510) 881-5000","url":"https://www.trekbikes.com/us/en_US/retail/castro_valley/","hours":"Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p · Sun 12–5p","lat":37.696686,"lng":-122.07813,"logo":"img/logo-trek.webp"},{"k":"Dublin Cyclery (Dublin)","name":"Dublin Cyclery","address":"7001 Dublin Blvd","city":"Dublin","phone":"(925) 828-8676","url":"https://www.dublincyclery.com/","email":"info@dublincyclery.com","hours":"Closed Mon · Tue 10a–4p · Wed–Fri 9:30a–5:30p · Sat 10a–4p · Sun 11a–3p","lat":37.706159,"lng":-121.923567,"logo":"img/logo-dublin-cyclery.webp"},{"k":"Electric Bike Center (Dublin)","name":"Electric Bike Center","address":"6894 Village Parkway","city":"Dublin","phone":"(925) 230-8178","url":"https://electricbikeca.com/","email":"sales@electricbikeca.com","hours":"Daily 10:30a–6p","lat":37.707356,"lng":-121.924943,"logo":"img/logo-electric-bike-center.webp"},{"k":"Trek Bicycle (Dublin)","name":"Trek Bicycle Dublin","address":"7222 San Ramon Road","city":"Dublin","phone":"(925) 829-4310","url":"https://www.trekbikes.com/us/en_US/retail/dublin/","hours":"Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p · Sun 12–5p","lat":37.702215,"lng":-121.93612,"logo":"img/logo-trek.webp"},{"k":"Ebikes2U","name":"Ebikes2U","address":"46701 Fremont Blvd Unit B","city":"Fremont","phone":"(510) 883-3909","url":"https://ebikes2u.com/","email":"info@ebikes2u.com","hours":"Mon–Fri 9a–5p · Closed Sat, Sun","lat":37.482213,"lng":-121.945517,"logo":"img/logo-ebikes2u.webp"},{"k":"NILES BICYCLES (Fremont)","name":"Niles Bicycles","address":"161 I Street","city":"Fremont","phone":"(510) 565-1111","url":"https://nilesbicycles.com/","email":"nilesbicycles@gmail.com","hours":"Closed Mon, Tue · Wed–Sat 12–6p · Sun 11a–3p","lat":37.57609,"lng":-121.978365,"logo":"img/logo-niles-bicycles.webp"},{"k":"Bicycle Garage (Fremont)","name":"The Bicycle Garage","address":"5006 Mowry Ave","city":"Fremont","phone":"(510) 795-9622","url":"https://www.bicyclegaragefremont.com/","email":"velocipedesf@gmail.com","hours":"Mon 10a–7p · Closed Tue · Wed–Fri 10a–7p · Sat 10a–6p · Sun 11a–5p","lat":37.536138,"lng":-121.998373,"logo":"img/logo-the-bicycle-garage.webp"},{"k":"eCyclepath (Hayward)","name":"Cyclepath","address":"22510 Foothill Blvd","city":"Hayward","phone":"(510) 881-5177","url":"https://www.ecyclepath.com/","email":"info@cyclepathhayward.com","hours":"Mon–Fri 10a–5p · Sat 10a–4p · Closed Sun","lat":37.67459,"lng":-122.081194,"logo":"img/logo-cyclepath.webp"},{"k":"Pedego Electric Bikes (Livermore)","name":"Pedego Electric Bikes Livermore","address":"4590 Tesla Road","city":"Livermore","phone":"(925) 800-5330","url":"https://dealers.pedegoelectricbikes.com/pages/dealers/livermore","email":"contact@pedegolivermore.com","hours":"Closed Tue, Wed · Thu–Mon 11a–5p","lat":37.665203,"lng":-121.739343,"logo":"img/logo-pedego.webp"},{"k":"Trek Bicycle (Livermore)","name":"Trek Bicycle Livermore","address":"2752 First Street","city":"Livermore","phone":"(925) 455-8090","url":"https://www.trekbikes.com/us/en_US/retail/livermore/","hours":"Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p · Sun 12–5p","lat":37.684565,"lng":-121.764165,"logo":"img/logo-trek.webp"},{"k":"Laurel Cyclery (Oakland)","name":"Laurel Cyclery","address":"3715 MacArthur Blvd","city":"Oakland","phone":"(510) 328-1158","url":"https://www.laurelcyclery.com/","email":"laurelcyclery@gmail.com","hours":"Mon–Fri 11a–6p · Sat 10a–4p · Closed Sun","lat":37.791965,"lng":-122.199165,"logo":"img/logo-laurel-cyclery.webp"},{"k":"Rhythm Bikes (Oakland)","name":"Rhythm Bikes","address":"6112 La Salle Ave","city":"Oakland","phone":"(510) 339-2953","url":"https://www.rhythmbikes.com","email":"rhythm@rhythmbikes.com","hours":"Closed Mon · Tue–Fri 11a–6p · Sat 10a–5p · Closed Sun","lat":37.826287,"lng":-122.210333,"logo":"img/logo-rhythm-bikes.webp"},{"k":"The New Wheel (Oakland)","name":"The New Wheel","address":"1446 Leimert Blvd","city":"Oakland","phone":"(415) 524-7362","url":"https://newwheel.net/pages/oakland-east-bay-electric-bike-shop","email":"info@newwheel.net","hours":"Closed Mon, Tue · Wed–Sat 11a–6p · Sun 11a–5p","lat":37.811726,"lng":-122.212466,"logo":"img/logo-the-new-wheel.webp"},{"k":"Tip Top Bike Shop (Oakland)","name":"Tip Top Bike Shop","address":"4800 Telegraph Ave A","city":"Oakland","phone":"(510) 444-4148","url":"https://tiptopbikeshop.com","email":"top@tiptopbikeshop.com","hours":"Closed Mon · Tue–Fri 11a–6p · Sat–Sun 12–5p","lat":37.834775,"lng":-122.262839,"logo":"img/logo-tip-top-bike-shop.webp"},{"k":"Trek Bicycle (Oakland)","name":"Trek Bicycle Oakland","address":"3530 Grand Avenue","city":"Oakland","phone":"(510) 570-3885","url":"https://www.trekbikes.com/us/en_US/retail/oakland/","hours":"Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p · Closed Sun","lat":37.81439,"lng":-122.246199,"logo":"img/logo-trek.webp"},{"k":"Uptown BART Bike Station (Oakland)","name":"Uptown BART Bike Station","address":"1775 Broadway","city":"Oakland","phone":"(510) 858-7555","url":"https://www.bikehub.com/articles/bart-bike-stations-pg1208.htm","email":"uptown@bikehub.com","hours":"Mon–Fri 7a–7p · Closed Sat, Sun","lat":37.807129,"lng":-122.269597,"logo":"img/logo-bikehub.webp"},{"k":"Mike's Bikes (Pleasanton)","name":"Mike's Bikes of Pleasanton","address":"6754 Bernal Ave, Suite 710","city":"Pleasanton","phone":"(925) 223-8267","url":"https://mikesbikes.com/pages/pleasanton","email":"info@mikesbikes.com","hours":"Mon–Sat 10a–6p · Sun 10a–5p","lat":37.657831,"lng":-121.8983,"logo":"img/logo-mike-s-bikes.webp"},{"k":"Robby's Bicycles (Stockton)","name":"Robby's Bicycles","address":"7931 Thornton Rd","city":"Stockton","phone":"(209) 951-4371","url":"https://www.robbysbicycles.com/","contact":"https://www.robbysbicycles.com/about/contact-us-pg126.htm","hours":"Mon–Fri 11a–5p · Sat 12–5p · Sun 12–4p","lat":38.021605,"lng":-121.325805,"logo":"img/logo-robby-s-bicycles.webp"},{"k":"Tracy Cyclery (Tracy)","name":"Tracy Cyclery","address":"2217 N Tracy Blvd","city":"Tracy","phone":"(209) 640-9380","hours":"Closed Mon · Tue–Fri 10a–6p · Sat 10a–5p · Closed Sun","lat":37.753443,"lng":-121.435189}];
 /* hero dots: drawn once to a hidden canvas; only while a pointer is over the hero do the dots near it twinkle, then everything stops */
 (()=>{const sec=document.querySelector('.sphero'),cv=sec&&sec.querySelector('.spdots');if(!cv||!cv.getContext)return;const W={"cols":180,"rows":81,"lat0":83,"dy":1.732,"dx":2,"b":"AAAAAAAA+AD4PwAAAAAAAAAAAAAAAAAAAAAAQL6f//97AAAAAAIAAAAAAAAAAAAAAAB8H/7//wCAdwAAAAEOAAAAAAAAAAAwDDj8//8XAFADAAAAAAAAAAAAAAAAIMsRBPH//wAAAAAABwD6B4AAAAAAAIABAAAA/v8LAAAAAAYA/i8AAAAAAAAAsJvnC4D/fwAAAAAwMPz//wMCAAAAAAD8Yf4D+P8HAAAIAIP7/////x8AAP/ff267+QD+HwAA/A8Et////////z/w////358e+B8AAOD/6//7////////3v////9f4Ib/QAcA38f//////////w/g/////xwe8AEcAPz+//////////9/gP////8PGAEeAEDg5////////////wP47f//P4APgAAAAH/3/////////4cFAByg//8H+AYAAABgx/////////8BBABAAPj//4F/AAAACDT/////////B3AAAACA/v9/+A8AAABB4P///////z8ABwACAOj//89/AQAAE/7/////////DxgAAAAA/P//+z8AAKD3//////////8DAQAAAMD///8PAAAAwP//////////DwAAAAAA4P//f2MAAAD///////////8AAAAAAAD///8/AAAA4P9fP///////FwAAAAAA8P///wYAAAD+/ujz/////z8AAAAAAID///8DAAAAfskHnP//////MQAAAAAA8P//PwAAAMAH84zn/////wcBAAAAAAD///8AAAAAHiD5P/////8VAAAAAAAA4P//DwAAAMADI//j////HwIAAAAAAAD+//8AAAAAxAeY//////8jDAAAAAAAwP//BwAAAIB/APD/////PxAAAAAAAAD4/z8AAAAA/g+B//////9DAAAAAAAAAP//AQAAAOD/9/7/////fwAAAAAAAADwPxAAAAAA////v/////8DAAAAAAAAAPoBAgAAAPj///f3////PwAAAAAAAACgHwAAAADA//9/f/7///8BAAAAAAAAAPQBAAAAAPz//+8/8P//XwAAAAAAAAAAHjgBAADg/////gf//38AAAAAAAAAAOAhGAAAAPz//99/wB9/AAAAAAAAAAAAPgMGAADg/////AP84BMAAAAAAAAAAAA/AAAAAPz//58/gAd6QAAAAAAAAAAAgAcAAADg////eQA8wA8CAAAAAAAAAADgAAAAAPz//38DgAP4gQAAAAAAAAAAAAwGAADg////BwAYAA4IAAAAAAAAAACA8AUAAPj///8HAANIoAAAAAAAAAAAAPD/AACA////fwAwgAAQAAAAAAAAAAAA+B8AAPD///8HAAQQAAEAAAAAAAAAAID/BwAAFv//PwAAIIEBAAAAAAAAAAAA+P8AAACA//8BAAAoGAAAAAAAAAAAAMD/HwAAAPz/DwAAgPAhAAAAAAAAAAAA/P8BAACA/38AAAAwHggAAAAAAAAAAOD/fwAAAPz/AwAAAPfSBQAAAAAAAAAA/P9/AACA/z8AAABgSPIDAAAAAAAAAOD//w8AAPD/AQAAAAAGPAMAAAAAAAAA/P//AQAA/z8AAACAB4APAQAAAAAAAMD//w8AAPD/AQAAAIATkAAAAAAAAAAA+P//AAAA/j8AAAAAAAAAAAAAAAAAAID//wcAAPD/AwAAAAAAEwAAAAAAAAAA8P8/AAAA/z8EAAAAADoCAAAAAAAAAAD//wMAAPj/YwAAAADwMwAAAAAAAAAAwP8/AAAA/x8HAAAAgP8HAAAAAAAAAAD8/wMAAPB/MAAAAAD8fwAAAAAAAAAAgP8/AAAA/g8DAAAA8P8fEAAAAAAAAAD8/wEAAOB/GAAAAMD//wEAAAAAAAAAgP8DAAAA/g8DAAAA+P8/AAAAAAAAAAD8HwAAAOA/AAAAAID//wMAAAAAAAAAwP8DAAAA/AMAAAAA+P9/AAAAAAAAAAD8HwAAAMAfAAAAAID//wMAAAAAAAAAwP8BAAAA+AEAAAAA8P8/AAAAAAAAAAD8BwAAAMAHAAAAAIAP/gEAAAAAAAAAwF8AAAAAAAAAAAAAEIAfAAAAAAAAAAD+AQAAAAAAAAAAAAAA+AEAAAAAAAAA4B8AAAAAAAAAAAAAAAAKAAYAAAAAAAA+AAAAAAAAAAAAAAAAoAAgAAAAAAAAwAEAAAAAAAAAAAAAAAAMAAEAAAAAAAAeAAAAAAAAAAAAAAAAAAAMAAAAAAAA4AEAAAAAAAAAAAAAAAAAQAAAAAAAAAAPAAAAAAAAAAAAAAAAAAACAAAAAAAA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="};
  const bits=Uint8Array.from(atob(W.b),c=>c.charCodeAt(0)),cells=[];
@@ -522,44 +616,13 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
   for(let i=0;i<N;i++){g.fillStyle=hl[i]?'rgba('+acc+',.95)':'rgba('+col+','+(dotA*A[i])+')';g.beginPath();g.arc(X[i],Y[i],hl[i]?rad*1.35:rad,0,6.283);g.fill()}
   paint(0)};
  const loop=t=>{const dt=Math.min(64,t-(last||t));last=t;on+=(target-on)*Math.min(1,dt/140);paint(t);if(target||on>.01)raf=requestAnimationFrame(loop);else{raf=0;last=0;on=0;paint(t)}};
- const still=matchMedia('(prefers-reduced-motion: reduce)');
- sec.addEventListener('pointermove',e=>{if(still.matches)return;const b=sec.getBoundingClientRect();px=e.clientX-b.left;py=e.clientY-b.top;target=1;if(!raf)raf=requestAnimationFrame(loop)},{passive:true});
+ sec.addEventListener('pointermove',e=>{if(REDUCE.matches)return;const b=sec.getBoundingClientRect();px=e.clientX-b.left;py=e.clientY-b.top;target=1;if(!raf)raf=requestAnimationFrame(loop)},{passive:true});
  sec.addEventListener('pointerleave',()=>{target=0;if(!raf&&on>0)raf=requestAnimationFrame(loop)});
  new ResizeObserver(layout).observe(sec);
  new MutationObserver(layout).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']})})();
-/* E-bike guide and Rebate info: side panels like the home page. Escape, the close button or a tap on the dimmed page closes them;
-   the page behind stays still and keyboard focus stays inside */
-(()=>{const H=document.documentElement,S=document.createElement('div');S.id='scrim';S.setAttribute('aria-hidden','true');document.body.append(S);const ST=[];
- const lock=()=>H.classList.toggle('locked',!!document.querySelector('dialog[open]:not([data-state="closing"]),#navmenu:popover-open'));
- const close=d=>{if(!d.open||d.dataset.state==='closing')return;ST.splice(ST.indexOf(d),1);S.classList.toggle('on',ST.length>0);d.dataset.state='closing';lock();
-  let t;const done=()=>{clearTimeout(t);d.removeEventListener('transitionend',te);if(d.open)d.close();d.dataset.state='';lock();const o=d._opener;if(o&&o.isConnected&&o.offsetParent)o.focus({preventScroll:true})};
-  const te=e=>{if(e.target===d&&e.propertyName==='transform')done()};d.addEventListener('transitionend',te);t=setTimeout(done,320)};
- const open=(d,opener)=>{if(!d||d.open)return;d._opener=opener||document.activeElement;ST.push(d);d.tabIndex=-1;d.setAttribute('aria-modal','true');d.dataset.state='closed';d.show();d.offsetWidth;d.dataset.state='open';S.classList.add('on');d.focus({preventScroll:true});lock();const b=d.querySelector('.dbody');if(b)b.scrollTop=0};
- document.querySelectorAll('[data-open]').forEach(b=>b.addEventListener('click',()=>{const M=$('navmenu');if(M&&M.matches(':popover-open'))M.hidePopover();open($(b.dataset.open),M&&M.contains(b)?document.querySelector('.menubtn'):b)}));
- document.querySelectorAll('dialog.drawer .dclose').forEach(b=>b.addEventListener('click',()=>close(b.closest('dialog'))));
- S.addEventListener('click',()=>{const d=ST[ST.length-1];if(d)close(d)});
- document.addEventListener('keydown',e=>{const d=ST[ST.length-1];if(!d)return;if(e.key==='Escape'){e.preventDefault();close(d);return}
-  if(e.key==='Tab'){const f=[...d.querySelectorAll('button,[href],[tabindex]:not([tabindex="-1"])')].filter(x=>x.getClientRects().length);if(!f.length)return;const a=f[0],z=f[f.length-1];
-   if(e.shiftKey&&(document.activeElement===a||document.activeElement===d)){e.preventDefault();z.focus()}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus()}}});
- /* soft fades at the top and bottom of a panel's text while there's more to scroll */
- document.querySelectorAll('dialog.drawer .dbody').forEach(el=>{const upd=()=>{el.classList.toggle('has-more',el.scrollHeight-el.scrollTop-el.clientHeight>4);el.classList.toggle('has-above',el.scrollTop>4)};el.addEventListener('scroll',upd,{passive:true});new ResizeObserver(upd).observe(el)})})();
-/* phone menu: same behaviour as the home page (the button shows the X only while the menu is really open; the page behind doesn't scroll) */
-(()=>{const M=$('navmenu'),B=document.querySelector('.menubtn'),H=document.documentElement;if(!M||!B)return;
- const sync=()=>{const o=M.matches(':popover-open');if(B.getAttribute('aria-expanded')!==String(o)){B.setAttribute('aria-expanded',o);B.setAttribute('aria-label',o?'Close menu':'Menu')}H.classList.toggle('locked',o||!!document.querySelector('dialog[open]:not([data-state="closing"])'))};
- M.addEventListener('toggle',sync);M.addEventListener('beforetoggle',()=>requestAnimationFrame(sync));
- ['click','keyup','pointerup'].forEach(t=>document.addEventListener(t,()=>requestAnimationFrame(sync),true));addEventListener('pageshow',sync);
- /* the menu's guide and rebate buttons close it and open their panel (see above). Its link to this same page just closes the menu;
-    a link to another page leaves it open while that page loads, and it's put away once this page is gone (so back finds it closed) */
- M.addEventListener('click',e=>{const a=e.target.closest('.nml a');if(a&&a.getAttribute('aria-current')==='page'){e.preventDefault();M.hidePopover()}});
- addEventListener('pagehide',()=>{if(M.matches(':popover-open'))M.hidePopover()});
- matchMedia('(min-width: 761px)').addEventListener('change',e=>{if(e.matches&&M.matches(':popover-open'))M.hidePopover()})})();
 /* map: starts as soon as MapLibre (loaded with defer in the head) is ready */
-(()=>{const box=$('map'),list=$('list'),H=document.documentElement;
- /* OSM Bright in both light and dark mode, so switching the site's theme never reloads the map */
- const STY={light:'https://tiles.openfreemap.org/styles/bright',dark:'https://tiles.openfreemap.org/styles/bright'};
- const theme=()=>H.dataset.theme==='light'?'light':'dark';
+(()=>{const box=$('map'),list=$('list');
  const BY={};SH.forEach(s=>BY[s.k]=s);
- const dirUrl=s=>'https://www.google.com/maps/dir/?api=1&destination='+encodeURIComponent([s.name,s.address,s.city,'CA'].filter(Boolean).join(', '));
  /* today's hours (Pacific time) from lines like "Closed Mon · Tue–Fri 11a–6p · Sat 10a–6p"; anything else is shown as written */
  const DAYS=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
  const inDays=(spec,d)=>spec.split(/,\s*/).some(x=>{const[a,b]=x.split('–'),i=DAYS.indexOf(a),j=b?DAYS.indexOf(b):i;return i>=0&&j>=0&&(i<=j?d>=i&&d<=j:d>=i||d<=j)});
@@ -567,14 +630,17 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
   for(const p of h.split(' · ')){let m=p.match(/^Closed (.+)$/);if(m){if(inDays(m[1],d))return'Closed today';continue}
    m=p.match(/^(Daily|[A-Z][a-z]{2}(?:–[A-Z][a-z]{2})?(?:, [A-Z][a-z]{2}(?:–[A-Z][a-z]{2})?)*) (.+)$/);if(!m)return h;if(m[1]==='Daily'||inDays(m[1],d))return'Today '+m[2]}
   return /\d/.test(h)?'Closed today':h};
- const cardHTML=s=>{const t=today(s.hours);return `<div class="mctop">${slogo(s)}<div class="mcname"><span class="city">${esc(s.city||'')}</span><b>${esc(s.name)}</b></div></div><div class="mclines">${s.address?`<span class="mcl">${PIN}<span>${esc(s.address)}</span></span>`:''}${t?`<span class="mcl">${CLOCK}<span>${esc(t)}</span></span>`:''}${s.phone?`<a class="mcl" href="${telUrl(s.phone)}">${PHONE}<span>${esc(s.phone)}</span></a>`:''}</div><div class="mcacts"><a class="mcbtn pri" href="${dirUrl(s)}" target="_blank" rel="noopener">Directions</a>${s.url?`<a class="mcbtn" href="${esc(s.url)}" target="_blank" rel="noopener">Website${EXT}</a>`:''}</div>`};
+ /* a shop on the map: its name, then details, then Directions and Website */
+ const mcard=(s,body,eager)=>`<div class="mctop">${slogo(s,eager)}<div class="mcname"><span class="city">${esc(s.city||'')}</span><b>${esc(s.name)}</b></div></div>${body}<div class="mcacts"><a class="mcbtn pri" href="${dirUrl(s)}" target="_blank" rel="noopener">Directions</a>${s.url?`<a class="mcbtn" href="${esc(s.url)}" target="_blank" rel="noopener">Website${EXT}</a>`:''}</div>`;
+ /* desktop: the card over a pin, with today's hours */
+ const cardHTML=s=>{const t=today(s.hours);return mcard(s,`<div class="mclines">${s.address?`<span class="mcl">${PIN}<span>${esc(s.address)}</span></span>`:''}${t?`<span class="mcl">${CLOCK}<span>${esc(t)}</span></span>`:''}${s.phone?`<a class="mcl" href="${telUrl(s.phone)}">${PHONE}<span>${esc(s.phone)}</span></a>`:''}</div>`)};
  const PINSVG='<svg viewBox="0 0 28 36" aria-hidden="true"><path class="pb" d="M14 34.6S3 24 3 14.2a11 11 0 0 1 22 0C25 24 14 34.6 14 34.6z"/><circle class="pd" cx="14" cy="14" r="4"/></svg>';
  const WIDE=matchMedia('(min-width: 1024px)');
  /* phones and tablets: the row of shop cards at the bottom of the map (in list order), drawn right away, before the map arrives.
     Its cards show the address and phone on the left, the week's hours and the email on the right */
  const stage=document.querySelector('.spg'),sheet=$('sheet'),dock=box.querySelector('.mdock'),car=dock.querySelector('.mcar'),lbtn=dock.querySelector('.mlist');
- const carHTML=s=>`<div class="mctop">${slogo(s)}<div class="mcname"><span class="city">${esc(s.city||'')}</span><b>${esc(s.name)}</b></div></div><div class="mcgrid"><div class="mclines">${s.address?`<span class="mcl">${PIN}<span>${esc(s.address)}</span></span>`:''}${s.phone?`<a class="mcl" href="${telUrl(s.phone)}">${PHONE}<span>${esc(s.phone)}</span></a>`:''}</div><div class="mclines">${s.hours?`<div class="mcl mchrs">${CLOCK}<ul>${s.hours.split(' · ').map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`:''}${s.email?`<a class="mcl" href="${mailUrl(s)}">${MAIL}<span>${esc(s.email).replace('@','@<wbr>')}</span></a>`:s.contact?`<a class="mcl" href="${esc(s.contact)}" target="_blank" rel="noopener">${MAIL}<span>Email via contact form</span></a>`:''}</div></div><div class="mcacts"><a class="mcbtn pri" href="${dirUrl(s)}" target="_blank" rel="noopener">Directions</a>${s.url?`<a class="mcbtn" href="${esc(s.url)}" target="_blank" rel="noopener">Website${EXT}</a>`:''}</div>`;
- car.innerHTML=SH.map((s,i)=>{const h=`<div class="mcard" data-k="${esc(s.k)}">${carHTML(s)}</div>`;return i<2?h.replace('loading="lazy"','loading="eager"'):h}).join('');
+ const carHTML=(s,eager)=>mcard(s,`<div class="mcgrid"><div class="mclines">${s.address?`<span class="mcl">${PIN}<span>${esc(s.address)}</span></span>`:''}${s.phone?`<a class="mcl" href="${telUrl(s.phone)}">${PHONE}<span>${esc(s.phone)}</span></a>`:''}</div><div class="mclines">${s.hours?`<div class="mcl mchrs">${CLOCK}<ul>${s.hours.split(' · ').map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`:''}${s.email?`<a class="mcl" href="${mailUrl(s)}">${MAIL}<span>${esc(s.email).replace('@','@<wbr>')}</span></a>`:s.contact?`<a class="mcl" href="${esc(s.contact)}" target="_blank" rel="noopener">${MAIL}<span>Email via contact form</span></a>`:''}</div></div>`,eager);
+ car.innerHTML=SH.map((s,i)=>`<div class="mcard" data-k="${esc(s.k)}">${carHTML(s,i<2)}</div>`).join('');
  let cur=null,pinned=null,onCard=null,pins=null,place=null,quiet=0,st0=0;
  const mark=k=>{if(onCard)onCard.classList.remove('on');onCard=k?list.querySelector(`.shop[data-shop="${CSS.escape(k)}"]`):null;if(onCard)onCard.classList.add('on')};
  const selPin=k=>{if(pins){if(cur&&pins.get(cur))pins.get(cur).classList.remove('sel');if(k&&pins.get(k))pins.get(k).classList.add('sel')}cur=k};
@@ -627,68 +693,57 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
  (()=>{try{const W=box.clientWidth,Hh=box.clientHeight;if(!W||!Hh||!window.fetch)return;
   const v=startView(),z=v.zoom,cx=v.cx,cy=v.cy,tz=Math.floor(z),ts=512*2**(z-tz),n=2**tz,want=[];
   for(let tx=Math.floor((cx-W/2)/ts);tx<=Math.floor((cx+W/2)/ts);tx++)for(let ty=Math.floor((cy-Hh/2)/ts);ty<=Math.floor((cy+Hh/2)/ts);ty++)if(tx>=0&&ty>=0&&tx<n&&ty<n)want.push([tz,tx,ty]);
-  if(!want.length||want.length>30)return;window.__tilePrefetch=want;
+  if(!want.length||want.length>30)return;
   fetch('https://tiles.openfreemap.org/planet').then(r=>r.json()).then(j=>{const u=j.tiles&&j.tiles[0];if(u)want.forEach(([z,x,y])=>fetch(u.replace('{z}',z).replace('{x}',x).replace('{y}',y)).catch(()=>{}))}).catch(()=>{})}catch(e){}})();
  /* if the map can't load, phones show the list instead (it can't be closed then) */
  const noMap=()=>{box.classList.add('nomap');stage.classList.add('nomap');listOpen()};
  const init=()=>{if(!window.maplibregl){noMap();return}
   const sv=startView();
   let map;
-  try{map=new maplibregl.Map({container:box,style:STY[theme()],center:sv.center,zoom:sv.zoom,
+  try{map=new maplibregl.Map({container:box,style:'https://tiles.openfreemap.org/styles/bright',center:sv.center,zoom:sv.zoom,
    minZoom:7,maxZoom:17,maxBounds:[[-123.4,36.3],[-120.4,38.6]],renderWorldCopies:false,fadeDuration:0,pixelRatio:Math.min(devicePixelRatio||1,2),
-   dragRotate:false,pitchWithRotate:false,touchPitch:false,
-   /* like the Google Maps app: one finger moves the map, two fingers zoom */
-   cooperativeGestures:false,attributionControl:false})}
+   dragRotate:false,pitchWithRotate:false,touchPitch:false,attributionControl:false})}
   catch(e){noMap();return}
   map.touchZoomRotate.disableRotation();map.keyboard.disableRotation();
-  /* the map style mentions a few icons it doesn't ship; fill them with a blank so nothing errors */
   /* the map credit stays folded into its (i) button until someone clicks it */
   map.addControl(new maplibregl.AttributionControl({compact:true}),WIDE.matches?'bottom-right':'top-left');
   {const at=box.querySelector('.maplibregl-ctrl-attrib');let asked=false;
    at.querySelector('.maplibregl-ctrl-attrib-button').addEventListener('click',()=>{asked=true},true);
    const fold=()=>{if(!asked&&at.classList.contains('maplibregl-compact-show')){at.classList.remove('maplibregl-compact-show');at.setAttribute('open','')}};
    new MutationObserver(fold).observe(at,{attributes:true,attributeFilter:['class']});fold()}
+  /* the map style mentions a few icons it doesn't ship; fill them with a blank so nothing errors */
   map.on('styleimagemissing',e=>{if(!map.hasImage(e.id))map.addImage(e.id,{width:1,height:1,data:new Uint8Array(4)})});
   map.addControl(new maplibregl.NavigationControl({showCompass:false}),'top-right');
   /* "find me": zooms to show you and the shops within 10 miles of you (the nearest one if none are that close) */
-  const ME_MI=10;let me=null,toastT=0,hideCard=()=>{};
+  const ME_MI=10;let me=null,toastT=0;
   const toast=msg=>{let el=box.querySelector('.mtoast');if(!el){el=document.createElement('div');el.className='mtoast';el.setAttribute('role','status');box.append(el)}el.textContent=msg;el.classList.add('on');clearTimeout(toastT);toastT=setTimeout(()=>el.classList.remove('on'),4000)};
-  const miles=(a,b)=>{const r=Math.PI/180,dl=(b.lat-a.lat)*r,dg=(b.lng-a.lng)*r,h=Math.sin(dl/2)**2+Math.cos(a.lat*r)*Math.cos(b.lat*r)*Math.sin(dg/2)**2;return 7917.6*Math.asin(Math.sqrt(h))};
   map.addControl({onAdd(){const g=document.createElement('div');g.className='maplibregl-ctrl maplibregl-ctrl-group';
    const b=document.createElement('button');b.type='button';b.className='mloc';b.title='Shops near me';b.setAttribute('aria-label','Show shops near me');
    b.innerHTML='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.2" fill="currentColor" stroke="none"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>';
-   /* the same saved location the home page uses (this tab only, up to 10 minutes old, never sent anywhere): if there is one, the map goes there at once
-      and a fresh reading is taken quietly; the map only moves again if you've moved */
-   const ME_KEY='ava-near',ME_TTL=600000;
-   const saved=()=>{try{const v=JSON.parse(sessionStorage.getItem(ME_KEY)||'null');if(v&&Date.now()-v.t<ME_TTL)return v}catch(e){}return null};
-   const save=u=>{try{sessionStorage.setItem(ME_KEY,JSON.stringify({lat:u.lat,lng:u.lng,t:Date.now()}))}catch(e){}};
+   /* the same saved location the home page uses (see NEAR): if there is one, the map goes there at once; the map only moves again if you've moved */
    b.addEventListener('click',()=>{if(!navigator.geolocation){toast("This browser can't share your location.");return}
     if(b.getAttribute('aria-busy')==='true')return;
-    const had=saved();if(had)goMe(had);
-    if(had&&Date.now()-had.t<60000)return;
+    const had=NEAR.saved();if(had)goMe(had);
+    if(had&&NEAR.fresh(had.t))return;
     if(!had)b.setAttribute('aria-busy','true');
-    navigator.geolocation.getCurrentPosition(pos=>{b.removeAttribute('aria-busy');const u={lat:pos.coords.latitude,lng:pos.coords.longitude};save(u);
-     if(!had||miles(had,u)>0.25)goMe(u)},
-    err=>{b.removeAttribute('aria-busy');if(had)return;toast(err.code===1?'Location is off for this site. Turn it on in your browser to see shops near you.':"Couldn't find your location. Try again.")},
-    {enableHighAccuracy:false,timeout:10000,maximumAge:300000})});
+    NEAR.ask(u=>{b.removeAttribute('aria-busy');NEAR.save(u,Date.now());
+     if(!had||NEAR.moved(had,u))goMe(u)},
+    err=>{b.removeAttribute('aria-busy');if(had)return;toast(err.code===1?'Location is off for this site. Turn it on in your browser to see shops near you.':"Couldn't find your location. Try again.")})});
    /* show your dot and zoom to the shops within 10 miles of you (or the nearest one) */
    const goMe=u=>{
      if(!me){const d=document.createElement('div');d.className='me';d.setAttribute('aria-label','You are here');me=new maplibregl.Marker({element:d}).setLngLat([u.lng,u.lat]).addTo(map)}else me.setLngLat([u.lng,u.lat]);
      const by=SH.map(s=>({s,d:miles(u,s)})).sort((a,b)=>a.d-b.d),near=by.filter(x=>x.d<=ME_MI);const show=(near.length?near:by.slice(0,1)).map(x=>x.s);
      const bb=new maplibregl.LngLatBounds([u.lng,u.lat],[u.lng,u.lat]);show.forEach(s=>bb.extend([s.lng,s.lat]));
      const H=box.clientHeight,pad=WIDE.matches?{top:64,bottom:48,left:48,right:64}:{top:64,bottom:Math.max(48,H-openTop()+24),left:32,right:32};
-     if(!WIDE.matches)pick(by[0].s.k,false,true,true);else hideCard();
+     if(!WIDE.matches)pick(by[0].s.k,false,true,true);else hide();
      map.fitBounds(bb,Object.assign({padding:pad,maxZoom:13,essential:true},REDUCE.matches?{duration:0}:{}))};
    g.append(b);return g},onRemove(){}},'top-right');
-  map.once('load',()=>performance.mark('map-load'));
   /* if the map style can't load, say so; the list works without it */
   let styled=false;map.once('style.load',()=>{styled=true});map.on('error',()=>{if(!styled)noMap()});
-  /* pins are made once; HTML markers stay put when the style changes with the theme */
   pins=new Map();
   SH.forEach(s=>{const el=document.createElement('button');el.type='button';el.className='pin';el.dataset.k=s.k;el.setAttribute('aria-label',s.name+', '+s.city);el.innerHTML=PINSVG;
    new maplibregl.Marker({element:el,anchor:'bottom'}).setLngLat([s.lng,s.lat]).addTo(map);pins.set(s.k,el)});
   if(cur&&pins.get(cur))pins.get(cur).classList.add('sel');
-  /* the one hover card, kept on the map (hidden) so it can fade in from its closed state */
   const cw=document.createElement('div');cw.className='mcw';const card=document.createElement('div');card.className='mcard';card.setAttribute('aria-hidden','true');cw.append(card);
   const cm=new maplibregl.Marker({element:cw,anchor:'bottom'}).setLngLat([SH[0].lng,SH[0].lat]).addTo(map);
   let t=0;
@@ -705,14 +760,14 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
    cm.setOffset([f.dx,f.up?-46:f.h+10]);card.style.transformOrigin=`${Math.round(f.w/2-f.dx)}px ${f.up?'100%':'0'}`;
    if(pan&&f.dy)map.panBy([0,f.dy],{duration:REDUCE.matches?0:250})};
   /* where the card goes for a pin at screen point p: above or below it, kept inside the map; dy = how far the map must move for it to fit */
-  const fit=p=>{const W=box.clientWidth,Hh=box.clientHeight,w=card.offsetWidth,h=card.offsetHeight,cr=box.querySelector('.maplibregl-ctrl-bottom-right'),top=8,bot=Math.min(Hh-8-(cr?cr.offsetHeight:0),(window.sheetTop?window.sheetTop():Infinity)-box.getBoundingClientRect().top-8);
+  const fit=p=>{const W=box.clientWidth,Hh=box.clientHeight,w=card.offsetWidth,h=card.offsetHeight,cr=box.querySelector('.maplibregl-ctrl-bottom-right'),top=8,bot=Hh-8-(cr?cr.offsetHeight:0);
    const upTop=p.y-46-h,dnBot=p.y+10+h,up=upTop>=top||(dnBot>bot&&p.y-46-top>=bot-p.y-10);
    const l=p.x-w/2,dx=Math.round(Math.min(Math.max(l,8),W-8-w)-l);
    return {w,h,up,dx,dy:Math.round(up?Math.min(0,upTop-top):Math.max(0,dnBot-bot))}};
   const show=(k,pan)=>{clearTimeout(t);const s=BY[k];if(!s)return;
    if(!WIDE.matches){pick(k,pan,true,true);return}
    if(card.parentNode!==cw)cw.append(card);
-   if(cur!==k){if(cur&&pins.get(cur))pins.get(cur).classList.remove('sel');cur=k;card.innerHTML=cardHTML(s);pins.get(k).classList.add('sel');cm.setLngLat([s.lng,s.lat])}
+   if(cur!==k){selPin(k);card.innerHTML=cardHTML(s);cm.setLngLat([s.lng,s.lat])}
    place(s,pan);card.classList.add('open');card.setAttribute('aria-hidden','false')};
   /* desktop only: phones always keep a shop picked in the row */
   const hide=()=>{clearTimeout(t);if(!WIDE.matches)return;selPin(null);pinned=null;mark(null);card.classList.remove('open');card.setAttribute('aria-hidden','true')};
@@ -722,20 +777,18 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
   box.addEventListener('pointerover',e=>{if(e.pointerType!=='mouse')return;const p=e.target.closest('.pin');if(p)show(p.dataset.k);else if(e.target.closest('.mcw'))clearTimeout(t)});
   box.addEventListener('pointerout',e=>{if(e.pointerType!=='mouse')return;const from=e.target.closest('.pin,.mcw');if(!from)return;const to=e.relatedTarget&&e.relatedTarget.closest?e.relatedTarget.closest('.pin,.mcw'):null;if(to!==from)hideSoon()});
   box.addEventListener('click',e=>{const p=e.target.closest('.pin');if(!p)return;const k=p.dataset.k;pinned=k;show(k,true);if(!WIDE.matches)return;
-   if(ptype==='mouse'||!e.detail){mark(k);if(WIDE.matches&&onCard)onCard.scrollIntoView({block:'nearest',behavior:REDUCE.matches?'auto':'smooth'})}
-   else{mark(k);if(onCard){const lr=list.getBoundingClientRect(),cr=onCard.getBoundingClientRect();list.scrollTo({top:list.scrollTop+cr.top-lr.top-8,behavior:REDUCE.matches?'auto':'smooth'})}}});
-  /* a tap or click on the map itself closes the card */
+   mark(k);if(!onCard)return;
+   if(ptype==='mouse'||!e.detail)onCard.scrollIntoView({block:'nearest',behavior:REDUCE.matches?'auto':'smooth'});
+   else{const lr=list.getBoundingClientRect(),cr=onCard.getBoundingClientRect();list.scrollTo({top:list.scrollTop+cr.top-lr.top-8,behavior:REDUCE.matches?'auto':'smooth'})}});
   map.on('click',e=>{const tg=e.originalEvent&&e.originalEvent.target;if(tg&&tg.closest&&tg.closest('.pin,.mcw,.mdock'))return;hide()});
   box.addEventListener('focusin',e=>{const p=e.target.closest('.pin');if(p)show(p.dataset.k)});
   box.addEventListener('focusout',e=>{if(!e.relatedTarget||!e.relatedTarget.closest||!e.relatedTarget.closest('.pin,.mcw'))hideSoon()});
   document.addEventListener('keydown',e=>{if(e.key==='Escape'&&cur){const k=cur;hide();const p=pins.get(k);if(p&&box.contains(document.activeElement))p.blur()}});
   map.on('moveend',()=>{if(cur)place(BY[cur])});
   /* desktop: when you drag or scroll the map so the open shop's pin leaves the map, its card closes (no card left floating without its pin) */
-  hideCard=hide;
   map.on('move',e=>{if(!WIDE.matches||!cur||!e.originalEvent)return;const s=BY[cur],p=map.project([s.lng,s.lat]);if(p.x<0||p.y<0||p.x>box.clientWidth||p.y>box.clientHeight)hide()});
   /* switching between the phone and desktop layouts (e.g. a resized window) */
   WIDE.addEventListener('change',()=>{card.classList.remove('open');card.setAttribute('aria-hidden','true');pinned=null;if(WIDE.matches){listClose(false);selPin(null);mark(null)}else pick(cur||SH[0].k,false,true)});
-  /* hovering a shop in the list lights up its pin */
   let hot=null;const setHot=k=>{if(hot===k)return;if(hot&&pins.get(hot))pins.get(hot).classList.remove('hot');hot=k;if(k&&pins.get(k))pins.get(k).classList.add('hot')};
   list.addEventListener('pointerover',e=>{if(e.pointerType!=='mouse')return;const c=e.target.closest('.shop');setHot(c?c.dataset.shop:null)});
   list.addEventListener('pointerleave',()=>setHot(null));
@@ -751,19 +804,18 @@ const REDUCE=matchMedia('(prefers-reduced-motion: reduce)');
    pinned=k;mark(k);show(k);
    const f=fit({x:box.clientWidth/2,y:box.clientHeight/2});place(s,false,{x:box.clientWidth/2,y:box.clientHeight/2-f.dy});
    map.easeTo({center:[s.lng,s.lat],zoom:Math.max(map.getZoom(),13),offset:[0,-f.dy],duration:fast?0:600})});
-  /* follow the site theme. Once the map is idle the other theme's style is fetched, so switching is instant (markers and the card stay) */
  };
  /* the map starts as soon as both its script and its stylesheet have arrived (they download in parallel with the page) */
- let started=false;const go=()=>{if(started||!window.MLCSS||(!window.maplibregl&&document.readyState!=='complete'&&!go.dcl))return;started=true;init()};
- document.addEventListener('DOMContentLoaded',()=>{go.dcl=1;go()});document.addEventListener('mlcss',go);go();
+ let started=false,dcl=false;const go=()=>{if(started||!window.MLCSS||(!window.maplibregl&&document.readyState!=='complete'&&!dcl))return;started=true;init()};
+ document.addEventListener('DOMContentLoaded',()=>{dcl=true;go()});document.addEventListener('mlcss',go);go();
 })();
 </script>
 <script src="vendor/overlayscrollbars-2.16.0.min.js" onerror="document.documentElement.removeAttribute('data-overlayscrollbars-initialize');document.body.removeAttribute('data-overlayscrollbars-initialize')"></script>
 <script>
-/* page scrollbar (see the .os-theme-ava styles): only runs where the browser's own bar takes up space */
-/* only with a real mouse (desktop): phones, tablets and touch screens always keep the device's own scrollbar and scrolling */
-const osOff=()=>{document.documentElement.removeAttribute('data-overlayscrollbars-initialize');document.body.removeAttribute('data-overlayscrollbars-initialize')};
-try{if(!matchMedia('(hover: hover) and (pointer: fine)').matches||matchMedia('(any-pointer: coarse)').matches)osOff();else{const{OverlayScrollbars,ClickScrollPlugin}=OverlayScrollbarsGlobal;OverlayScrollbars.plugin(ClickScrollPlugin);OverlayScrollbars({target:document.body,cancel:{nativeScrollbarsOverlaid:true,body:null}},{scrollbars:{theme:'os-theme-ava',autoHide:'scroll',autoHideDelay:1000,clickScroll:true}})}}
-catch(e){osOff()}
+/* page scrollbar (see the .os-theme-ava styles), only with a real mouse, where the browser's own bar takes up space. The head script
+   already took the page's flag off on phones, tablets and touch screens: they keep the device's own scrollbar and scrolling */
+{const osOff=()=>{document.documentElement.removeAttribute('data-overlayscrollbars-initialize');document.body.removeAttribute('data-overlayscrollbars-initialize')};
+try{if(!document.documentElement.hasAttribute('data-overlayscrollbars-initialize'))osOff();else{const{OverlayScrollbars,ClickScrollPlugin}=OverlayScrollbarsGlobal;OverlayScrollbars.plugin(ClickScrollPlugin);OverlayScrollbars({target:document.body,cancel:{nativeScrollbarsOverlaid:true,body:null}},{scrollbars:{theme:'os-theme-ava',autoHide:'scroll',autoHideDelay:1000,clickScroll:true}})}}
+catch(e){osOff()}}
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://ratsuns.github.io/ava-bike-finder/browse-vendors/","url":"https://ratsuns.github.io/ava-bike-finder/browse-vendors/","name":"Participating Shops for the Ava E-Bike Rebate | Ava Bike Finder","description":"All 28 shops that take the Ava Community Energy e-bike rebate in Alameda and San Joaquin County, on a map with each address, phone number and opening hours.","inLanguage":"en-US","isPartOf":{"@id":"https://ratsuns.github.io/ava-bike-finder/#site"},"breadcrumb":{"@id":"https://ratsuns.github.io/ava-bike-finder/browse-vendors/#crumbs"},"primaryImageOfPage":"https://ratsuns.github.io/ava-bike-finder/og-vendors-e624df8d.jpg","dateModified":"2026-11-03","mainEntity":{"@id":"https://ratsuns.github.io/ava-bike-finder/browse-vendors/#shops"}},{"@type":"BreadcrumbList","@id":"https://ratsuns.github.io/ava-bike-finder/browse-vendors/#crumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Ava Bike Finder","item":"https://ratsuns.github.io/ava-bike-finder/"},{"@type":"ListItem","position":2,"name":"Browse vendors","item":"https://ratsuns.github.io/ava-bike-finder/browse-vendors/"}]},{"@type":"WebSite","@id":"https://ratsuns.github.io/ava-bike-finder/#site","name":"Ava Bike Finder","url":"https://ratsuns.github.io/ava-bike-finder/"},{"@type":"ItemList","@id":"https://ratsuns.github.io/ava-bike-finder/browse-vendors/#shops","name":"Shops that accept the Ava e-bike rebate","numberOfItems":28,"itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"BikeStore","name":"Alameda Bicycle","address":{"@type":"PostalAddress","streetAddress":"1522 Park St","addressLocality":"Alameda","addressRegion":"CA","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":37.766062,"longitude":-122.24113},"telephone":"(510) 522-0070","url":"https://www.alamedabicycle.com/","email":"info@alamedabicycle.com","logo":"https://ratsuns.github.io/ava-bike-finder/img/logo-alameda-bicycle.webp","image":"https://ratsuns.github.io/ava-bike-finder/img/logo-alameda-bicycle.webp"}},{"@type":"ListItem","position":2,"item":{"@type":"BikeStore","name":"Cycle City","address":{"@type":"PostalAddress","streetAddress":"1433 High St","addressLocality":"Alameda","addressRegion":"CA","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":37.75867,"longitude":-122.231549},"telephone":"(510) 521-2872","url":"https://cyclecityusa.com/","email":"info@cyclecityusa.com","logo":"https://ratsuns.github.io/ava-bike-finder/img/logo-cycle-city.webp","image":"https://ratsuns.github.io/ava-bike-finder/img/logo-cycle-city.webp"}},{"@type":"ListItem","position":3,"item":{"@type":"BikeStore","name":"Adaptive Cycles","address":{"@type":"PostalAddress","streetAddress":"1 Spinnaker Way","addressLocality":"Berkeley","addressRegion":"CA","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":37.869802,"longitude":-122.319622},"telephone":"(510) 497-1828","url":"https://adaptivecycles.com/","email":"greg@adaptivecycles.com","logo":"https://ratsuns.github.io/ava-bike-finder/img/logo-adaptive-cycles.webp","image":"https://ratsuns.github.io/ava-bike-finder/img/logo-adaptive-cycles.webp"}},{"@type":"ListItem","position":4,"item":{"@type":"BikeStore","name":"Blue Heron Bikes","address":{"@type":"PostalAddress","streetAddress":"1306 Gilman St","addressLocality":"Berkeley","addressRegion":"CA","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":37.881135,"longitude":-122.28932},"telephone":"(510) 524-1937","url":"https://blueheronbikesberkeley.com","email":"service@blueheronbikesberkeley.com","logo":"https://ratsuns.github.io/ava-bike-finder/img/logo-blue-heron-bikes.webp","image":"https://ratsuns.github.io/ava-bike-finder/img/logo-blue-heron-bikes.webp"}},{"@type":"ListItem","position":5,"item":{"@type":"BikeStore","name":"Mike's Bikes of Berkeley","address":{"@type":"PostalAddress","streetAddress":"1824 University Ave","addressLocality":"Berkeley","addressRegion":"CA","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":37.871237,"longitude":-122.274693},"telephone":"(510) 845-2453","url":"https://mikesbikes.com/pages/berkeley","email":"info@mikesbikes.com","logo":"https://ratsuns.github.io/ava-bike-finder/img/logo-mike-s-bikes.webp","image":"https://ratsuns.github.io/ava-bike-finder/img/logo-mike-s-bikes.webp"}},{"@type":"ListItem","position":6,"item":{"@type":"BikeStore","name":"Sports Basement Berkeley","address":{"@type":"PostalAddress","streetAddress":"2727 Milvia St","addressLocality":"Berkeley","addressRegion":"CA","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":37.85918,"longitude":-122.2693},"telephone":"(510) 984-3907","url":"https://shop.sportsbasement.com/blogs/stores/berkeley","email":"friends@sportsbasement.com","logo":"https://ratsuns.github.io/ava-bike-finder/img/logo-sports-basement.webp","image":"https://ratsuns.github.io/ava-bike-finder/img/logo-sports-basement.webp"}},{"@type":"ListItem","position":7,"item":{"@type":"BikeStore","name":"Stay True Cycles","address":{"@type":"PostalAddress","streetAddress":"2116 Vine St","addressLocality":"Berkeley","addressRegion":"CA","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":37.88022,"longitude":-122.268568},"telephone":"(510) 725-6281","url":"https://www.staytrue.bike/","logo":"https://ratsuns.github.io/ava-bike-finder/img/logo-stay-true-cycles.webp","image":"https://ratsuns.github.io/ava-bike-finder/img/logo-stay-true-cycles.webp"}},{"@type":"ListItem","position":8,"item":{"@type":"BikeStore","name":"Trek Bicycle Berkeley","address":{"@type":"PostalAddress","streetAddress":"1045 Ashby Ave","addressLocality":"Berkeley","addressRegion":"CA","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":37.85186,"longitude":-122.288818},"telephone":"(510) 370-2890","url":"https://www.trekbikes.com/us/en_US/retail/berkeley/","logo":"https://ratsuns.github.io/ava-bike-finder/img/logo-trek.webp","image":"https://ratsuns.github.io/ava-bike-finder/img/logo-trek.webp"}},{"@type":"ListItem","position":9,"item":{"@type":"BikeStore","name":"Castro Valley Cyclery","address":{"@type":"PostalAddress","streetAddress":"20515 Stanton Ave","addressLocality":"Castro Valley","addressRegion":"CA","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":37.694554,"longitude":-122.090325},"telephone":"(510) 538-1878"}},{"@type":"ListItem","position":10,"item":{"@type":"BikeStore","name":"Trek Bicycle Castro Valley","address":{"@type":"PostalAddress","streetAddress":"3318 Village Drive","addressLocality":"Castro Valley","addressRegion":"CA","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":37.696686,"longitude":-122.07813},"telephone":"(510) 881-5000","url":"https://www.trekbikes.com/us/en_US/retail/castro_valley/","logo":"https://ratsuns.github.io/ava-bike-finder/img/logo-trek.webp","image":"https://ratsuns.github.io/ava-bike-finder/img/logo-trek.webp"}},{"@type":"ListItem","position":11,"item":{"@type":"BikeStore","name":"Dublin Cyclery","address":{"@type":"PostalAddress","streetAddress":"7001 Dublin Blvd","addressLocality":"Dublin","addressRegion":"CA","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":37.706159,"longitude":-121.923567},"telephone":"(925) 828-8676","url":"https://www.dublincyclery.com/","email":"info@dublincyclery.com","logo":"https://ratsuns.github.io/ava-bike-finder/img/logo-dublin-cyclery.webp","image":"https://ratsuns.github.io/ava-bike-finder/img/logo-dublin-cyclery.webp"}},{"@type":"ListItem","position":12,"item":{"@type":"BikeStore","name":"Electric Bike Center","address":{"@type":"PostalAddress","streetAddress":"6894 Village Parkway","addressLocality":"Dublin","addressRegion":"CA","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":37.707356,"longitude":-121.924943},"telephone":"(925) 230-8178","url":"https://electricbikeca.com/","email":"sales@electricbikeca.com","logo":"https://ratsuns.github.io/ava-bike-finder/img/logo-electric-bike-center.webp","image":"https://ratsuns.github.io/ava-bike-finder/img/logo-electric-bike-center.webp"}},{"@type":"ListItem","position":13,"item":{"@type":"BikeStore","name":"Trek Bicycle Dublin","address":{"@type":"PostalAddress","streetAddress":"7222 San Ramon Road","addressLocality":"Dublin","addressRegion":"CA","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":37.702215,"longitude":-121.93612},"telephone":"(925) 829-4310","url":"https://www.trekbikes.com/us/en_US/retail/dublin/","logo":"https://ratsuns.github.io/ava-bike-finder/img/logo-trek.webp","image":"https://ratsuns.github.io/ava-bike-finder/img/logo-trek.webp"}},{"@type":"ListItem","position":14,"item":{"@type":"BikeStore","name":"Ebikes2U","address":{"@type":"PostalAddress","streetAddress":"46701 Fremont Blvd Unit B","addressLocality":"Fremont","addressRegion":"CA","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":37.482213,"longitude":-121.945517},"telephone":"(510) 883-3909","url":"https://ebikes2u.com/","email":"info@ebikes2u.com","logo":"https://ratsuns.github.io/ava-bike-finder/img/logo-ebikes2u.webp","image":"https://ratsuns.github.io/ava-bike-finder/img/logo-ebikes2u.webp"}},{"@type":"ListItem","position":15,"item":{"@type":"BikeStore","name":"Niles Bicycles","address":{"@type":"PostalAddress","streetAddress":"161 I Street","addressLocality":"Fremont","addressRegion":"CA","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":37.57609,"longitude":-121.978365},"telephone":"(510) 565-1111","url":"https://nilesbicycles.com/","email":"nilesbicycles@gmail.com","logo":"https://ratsuns.github.io/ava-bike-finder/img/logo-niles-bicycles.webp","image":"https://ratsuns.github.io/ava-bike-finder/img/logo-niles-bicycles.webp"}},{"@type":"ListItem","position":16,"item":{"@type":"BikeStore","name":"The Bicycle Garage","address":{"@type":"PostalAddress","streetAddress":"5006 Mowry Ave","addressLocality":"Fremont","addressRegion":"CA","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":37.536138,"longitude":-121.998373},"telephone":"(510) 795-9622","url":"https://www.bicyclegaragefremont.com/","email":"velocipedesf@gmail.com","logo":"https://ratsuns.github.io/ava-bike-finder/img/logo-the-bicycle-garage.webp","image":"https://ratsuns.github.io/ava-bike-finder/img/logo-the-bicycle-garage.webp"}},{"@type":"ListItem","position":17,"item":{"@type":"BikeStore","name":"Cyclepath","address":{"@type":"PostalAddress","streetAddress":"22510 Foothill Blvd","addressLocality":"Hayward","addressRegion":"CA","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":37.67459,"longitude":-122.081194},"telephone":"(510) 881-5177","url":"https://www.ecyclepath.com/","email":"info@cyclepathhayward.com","logo":"https://ratsuns.github.io/ava-bike-finder/img/logo-cyclepath.webp","image":"https://ratsuns.github.io/ava-bike-finder/img/logo-cyclepath.webp"}},{"@type":"ListItem","position":18,"item":{"@type":"BikeStore","name":"Pedego Electric Bikes Livermore","address":{"@type":"PostalAddress","streetAddress":"4590 Tesla Road","addressLocality":"Livermore","addressRegion":"CA","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":37.665203,"longitude":-121.739343},"telephone":"(925) 800-5330","url":"https://dealers.pedegoelectricbikes.com/pages/dealers/livermore","email":"contact@pedegolivermore.com","logo":"https://ratsuns.github.io/ava-bike-finder/img/logo-pedego.webp","image":"https://ratsuns.github.io/ava-bike-finder/img/logo-pedego.webp"}},{"@type":"ListItem","position":19,"item":{"@type":"BikeStore","name":"Trek Bicycle Livermore","address":{"@type":"PostalAddress","streetAddress":"2752 First Street","addressLocality":"Livermore","addressRegion":"CA","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":37.684565,"longitude":-121.764165},"telephone":"(925) 455-8090","url":"https://www.trekbikes.com/us/en_US/retail/livermore/","logo":"https://ratsuns.github.io/ava-bike-finder/img/logo-trek.webp","image":"https://ratsuns.github.io/ava-bike-finder/img/logo-trek.webp"}},{"@type":"ListItem","position":20,"item":{"@type":"BikeStore","name":"Laurel Cyclery","address":{"@type":"PostalAddress","streetAddress":"3715 MacArthur Blvd","addressLocality":"Oakland","addressRegion":"CA","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":37.791965,"longitude":-122.199165},"telephone":"(510) 328-1158","url":"https://www.laurelcyclery.com/","email":"laurelcyclery@gmail.com","logo":"https://ratsuns.github.io/ava-bike-finder/img/logo-laurel-cyclery.webp","image":"https://ratsuns.github.io/ava-bike-finder/img/logo-laurel-cyclery.webp"}},{"@type":"ListItem","position":21,"item":{"@type":"BikeStore","name":"Rhythm Bikes","address":{"@type":"PostalAddress","streetAddress":"6112 La Salle Ave","addressLocality":"Oakland","addressRegion":"CA","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":37.826287,"longitude":-122.210333},"telephone":"(510) 339-2953","url":"https://www.rhythmbikes.com","email":"rhythm@rhythmbikes.com","logo":"https://ratsuns.github.io/ava-bike-finder/img/logo-rhythm-bikes.webp","image":"https://ratsuns.github.io/ava-bike-finder/img/logo-rhythm-bikes.webp"}},{"@type":"ListItem","position":22,"item":{"@type":"BikeStore","name":"The New Wheel","address":{"@type":"PostalAddress","streetAddress":"1446 Leimert Blvd","addressLocality":"Oakland","addressRegion":"CA","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":37.811726,"longitude":-122.212466},"telephone":"(415) 524-7362","url":"https://newwheel.net/pages/oakland-east-bay-electric-bike-shop","email":"info@newwheel.net","logo":"https://ratsuns.github.io/ava-bike-finder/img/logo-the-new-wheel.webp","image":"https://ratsuns.github.io/ava-bike-finder/img/logo-the-new-wheel.webp"}},{"@type":"ListItem","position":23,"item":{"@type":"BikeStore","name":"Tip Top Bike Shop","address":{"@type":"PostalAddress","streetAddress":"4800 Telegraph Ave A","addressLocality":"Oakland","addressRegion":"CA","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":37.834775,"longitude":-122.262839},"telephone":"(510) 444-4148","url":"https://tiptopbikeshop.com","email":"top@tiptopbikeshop.com","logo":"https://ratsuns.github.io/ava-bike-finder/img/logo-tip-top-bike-shop.webp","image":"https://ratsuns.github.io/ava-bike-finder/img/logo-tip-top-bike-shop.webp"}},{"@type":"ListItem","position":24,"item":{"@type":"BikeStore","name":"Trek Bicycle Oakland","address":{"@type":"PostalAddress","streetAddress":"3530 Grand Avenue","addressLocality":"Oakland","addressRegion":"CA","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":37.81439,"longitude":-122.246199},"telephone":"(510) 570-3885","url":"https://www.trekbikes.com/us/en_US/retail/oakland/","logo":"https://ratsuns.github.io/ava-bike-finder/img/logo-trek.webp","image":"https://ratsuns.github.io/ava-bike-finder/img/logo-trek.webp"}},{"@type":"ListItem","position":25,"item":{"@type":"BikeStore","name":"Uptown BART Bike Station","address":{"@type":"PostalAddress","streetAddress":"1775 Broadway","addressLocality":"Oakland","addressRegion":"CA","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":37.807129,"longitude":-122.269597},"telephone":"(510) 858-7555","url":"https://www.bikehub.com/articles/bart-bike-stations-pg1208.htm","email":"uptown@bikehub.com","logo":"https://ratsuns.github.io/ava-bike-finder/img/logo-bikehub.webp","image":"https://ratsuns.github.io/ava-bike-finder/img/logo-bikehub.webp"}},{"@type":"ListItem","position":26,"item":{"@type":"BikeStore","name":"Mike's Bikes of Pleasanton","address":{"@type":"PostalAddress","streetAddress":"6754 Bernal Ave, Suite 710","addressLocality":"Pleasanton","addressRegion":"CA","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":37.657831,"longitude":-121.8983},"telephone":"(925) 223-8267","url":"https://mikesbikes.com/pages/pleasanton","email":"info@mikesbikes.com","logo":"https://ratsuns.github.io/ava-bike-finder/img/logo-mike-s-bikes.webp","image":"https://ratsuns.github.io/ava-bike-finder/img/logo-mike-s-bikes.webp"}},{"@type":"ListItem","position":27,"item":{"@type":"BikeStore","name":"Robby's Bicycles","address":{"@type":"PostalAddress","streetAddress":"7931 Thornton Rd","addressLocality":"Stockton","addressRegion":"CA","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":38.021605,"longitude":-121.325805},"telephone":"(209) 951-4371","url":"https://www.robbysbicycles.com/","logo":"https://ratsuns.github.io/ava-bike-finder/img/logo-robby-s-bicycles.webp","image":"https://ratsuns.github.io/ava-bike-finder/img/logo-robby-s-bicycles.webp"}},{"@type":"ListItem","position":28,"item":{"@type":"BikeStore","name":"Tracy Cyclery","address":{"@type":"PostalAddress","streetAddress":"2217 N Tracy Blvd","addressLocality":"Tracy","addressRegion":"CA","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":37.753443,"longitude":-121.435189},"telephone":"(209) 640-9380"}}]}]}</script></body></html>

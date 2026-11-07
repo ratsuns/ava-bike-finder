@@ -1,7 +1,7 @@
 """Builds the whole site into SITE_DIR. Run from src/:  SITE_DIR=.. python3 build2.py
 
 Reads the bike list (bikedata.py -> verify/cards.json), shops.json, site.json (site facts), the two page templates
-(site_tpl.html, shops_tpl.html), videos.csv (through videos/publish.py) and the files in verify/. Writes index.html,
+(site_tpl.html, shops_tpl.html) and what they share (shared/), videos.csv (through videos/publish.py) and the files in verify/. Writes index.html,
 browse-vendors/index.html, shops.html (a redirect), data-<hash>.js, videos-<hash>.json, img/, the share images,
 icons, site.webmanifest, llms.txt, llms-full.txt and sitemap.xml, and removes site files nothing uses any more.
 Needs Python with Pillow, and Node with Playwright (for the vendor page's share card).
@@ -24,6 +24,7 @@ def money(n): return f'${n:,}'
 def rebate(b): return REBATE[b['type']]['regular']
 AMOUNTS = {**{t: money(r['regular']) for t, r in REBATE.items()}, **{t + '_income': money(r['income_qualified']) for t, r in REBATE.items()},
            'gear': money(F['rebate']['gear'])}
+REBATE_FACTS = {**AMOUNTS, 'checked': F['rebate']['checked']}
 FAQ = [(q, a.format(**AMOUNTS)) for q, a in F['faq'].items()]
 e = html.escape
 TODAY = datetime.date.today()
@@ -101,10 +102,6 @@ open(os.path.join(SITE, DN), 'w').write(DJ)
 # video reviews: src/videos.csv is the one list; videos/publish.py checks every video against its bike (the build stops
 # on any problem) and writes them to their own small file that the page loads after it's up
 VN = write_videos(SITE, [o['id'] for o in out])
-_tpl = open('site_tpl.html').read()
-PAGE = _tpl.replace('__HERO_MP4__', HM).replace('__HERO_JPG__', HJ).replace('__VIDS__', VN)
-PAGE = PAGE.replace('<script>\nconst B=__BIKES__;\nconst S=__SHOPS__;', f'<script src="{DN}"></script>\n<script>\nconst B=window.AVA_B;\nconst S=window.AVA_S;', 1)
-assert '__BIKES__' not in PAGE and '__SHOPS__' not in PAGE
 # plain-text copy of the list for search engines and browsers that don't run the page script
 _grp = {}
 for b in out: _grp.setdefault(b['brand'], []).append(b)
@@ -118,17 +115,32 @@ for br in sorted(_grp, key=str.lower):
         items.append(f"<li>{e(br + ' ' + b['model'])} ({e(', '.join(x for x in bits if x))})</li>")
     _li.append(f"<h3>{e(br)}</h3><ul>{''.join(items)}</ul>")
 NOS = f'<noscript><div class="wrap"><h2>All {len(out)} e-bikes on the Ava rebate list</h2>{"".join(_li)}</div></noscript>'
-assert PAGE.count('<main class="wrap grid" id="g"></main>') == 1
-PAGE = PAGE.replace('<main class="wrap grid" id="g"></main>', '<main class="wrap grid" id="g"></main>' + NOS, 1)
-PAGE = PAGE.replace('<title>Ava Rebate Bike Finder</title>', '', 1)
+
+# ---- the page templates: __NAME__ marks where the build puts something in
+def fill(text, **vals):
+    used = set()
+    def put(m): used.add(m.group(1)); return vals[m.group(1)]
+    text = re.sub(r'__([A-Z][A-Z0-9_]*)__', put, text)
+    assert used == set(vals), f'not in the template: {set(vals) - used}'
+    return text
+# what both pages share (shared/): styles, the nav, the E-bike guide and Rebate info windows (amounts from site.json), scripts
+def shared(name, **vals): return fill(open('shared/' + name).read().rstrip('\n'), **vals)
+def nav(here): return shared('nav.html', HOME='./' if here else '#top', HERE=' aria-current="page"' if here else '')
+INFO = re.sub(r'\{(\w+)\}', lambda m: REBATE_FACTS[m.group(1)], shared('info.html'))
+SHARED_JS = shared('shop.js') + '\n' + shared('page.js', THEME=json.dumps(F['theme']))
+BOTH = dict(CSS=shared('page.css'), INFO=INFO, SHARED_JS=SHARED_JS, SCROLLBAR=shared('scrollbar.html'))
+PAGE = fill(open('site_tpl.html').read(), **BOTH, NAV=nav(False), DATA_JS=DN, HERO_MP4=HM, HERO_JPG=HJ, VIDS=VN, NOSCRIPT=NOS)
 
 # ---- what both pages' <head> share
 # the share image gets a content hash in its name, so every change is a new URL that apps and the CDN fetch fresh
 def share_image(src, prefix):
     name = prefix + hashlib.md5(open(src, 'rb').read()).hexdigest()[:8] + '.jpg'
     shutil.copy(src, f'{SITE}/{name}'); return name
-HEAD_START = ('<!doctype html><html lang="en" data-theme="dark" data-overlayscrollbars-initialize><head><meta charset="utf-8"><link rel="stylesheet" href="vendor/overlayscrollbars-2.16.0.min.css">'
-              f'<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="color-scheme" content="dark"><meta name="theme-color" content="{DARK}">')
+def head_start(base=''):
+    return ('<!doctype html><html lang="en" data-theme="dark" data-overlayscrollbars-initialize><head><meta charset="utf-8">' + base + '<link rel="stylesheet" href="vendor/overlayscrollbars-2.16.0.min.css">'
+            f'<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="color-scheme" content="dark"><meta name="theme-color" content="{DARK}">')
+# phones, tablets and touch screens keep the device's own scrollbar: the page's OverlayScrollbars flag comes off here, before
+# the first paint (shared/scrollbar.html reads it)
 THEME_JS = ('try{if(!matchMedia("(hover: hover) and (pointer: fine)").matches||matchMedia("(any-pointer: coarse)").matches)document.documentElement.removeAttribute("data-overlayscrollbars-initialize");'
             f'var t=localStorage.getItem("theme");if(t==="light"){{document.documentElement.dataset.theme="light";document.querySelector("meta[name=color-scheme]").content="light";document.querySelector("meta[name=theme-color]").content="{LIGHT}"}}}}catch(e){{}}')
 def page_tags(title, desc, url):
@@ -161,7 +173,7 @@ _tagline = 'Find your e-bike with the Ava rebate'
 SEO = (page_tags(TITLE, DESC, URL)
        + share_tags(URL, _tagline, DESC, OGN, f"{NAME}: {_tagline}. {AMOUNTS['Cargo']} off cargo and adaptive, {AMOUNTS['Standard']} off standard.", f'{NAME}: {_tagline}.', _hero_video)
        + ld_script(LD))
-open(SITE + '/index.html', 'w').write(HEAD_START + SEO + '<script>if(location.hash==="#dir")location.replace("browse-vendors/");' + THEME_JS + '</script><script type="speculationrules">{"prefetch":[{"where":{"href_matches":"*browse-vendors/*"},"eagerness":"moderate"}]}</script></head><body data-overlayscrollbars-initialize style="margin:0">' + PAGE + '</body></html>')
+open(SITE + '/index.html', 'w').write(head_start() + SEO + '<script>if(location.hash==="#dir")location.replace("browse-vendors/");' + THEME_JS + '</script><script type="speculationrules">{"prefetch":[{"where":{"href_matches":"*browse-vendors/*"},"eagerness":"moderate"}]}</script></head><body data-overlayscrollbars-initialize style="margin:0">' + PAGE + '</body></html>')
 
 # ---- icons, manifest, llms files (llmstxt.org: plain markdown for AI assistants)
 for f in ['favicon.svg', 'favicon.ico', 'apple-touch-icon.png', 'fav-192.png', 'fav-512.png']: shutil.copy('verify/seo/' + f, SITE + '/' + f)
@@ -191,42 +203,6 @@ _notes = f"## Notes\n\n- \"After rebate\" uses the regular {AMOUNTS['Standard']}
 open(SITE + '/llms-full.txt', 'w').write(_hdr.replace('## Files', _notes, 1) + f"\n## All {len(out)} e-bikes\n\n" + "\n".join(_rows) + "\n\n## Participating shops\n\n" + "\n\n".join(_shops) + "\n")
 
 # ---- browse-vendors/: every shop location as the home page's shop card, next to a map with a pin per shop
-def _css_keep(css,classes,types):
-    # copies the home page rules whose selectors only use the given classes and element types (rule order kept, @media/@supports filtered inside)
-    def ok(sel):
-        if any(v not in ('root','themebtn') for v in re.findall(r'view-transition-[\w-]+\(([^)]*)\)',sel)): return False
-        s=re.sub(r'\[[^\]]*\]','',sel)
-        while re.search(r'\([^()]*\)',s): s=re.sub(r'\([^()]*\)','',s)
-        s=re.sub(r'::?[\w-]+','',s)
-        cl=re.findall(r'\.([\w-]+)',s); ids=re.findall(r'#([\w-]+)',s); ty=re.findall(r'[a-zA-Z][\w-]*',re.sub(r'[.#][\w-]+','',s))
-        return not ids and all(c in classes or c.startswith('os-') for c in cl) and all(t in types for t in ty)
-    def walk(t):
-        o=[];i=0
-        while i<len(t):
-            j=t.find('{',i)
-            if j<0: break
-            pre=t[i:j].strip();d=1;k=j+1
-            while d:
-                d+={'{':1,'}':-1}.get(t[k],0);k+=1
-            body=t[j+1:k-1];i=k
-            if pre.startswith('@media') or pre.startswith('@supports') or pre.startswith('@starting-style'):
-                inner=walk(body)
-                if inner: o.append(pre+'{'+inner+'}')
-            elif pre.startswith('@'): continue
-            else:
-                sels=[x.strip() for x in pre.split(',') if ok(x.strip())]
-                if sels: o.append(','.join(sels)+'{'+body.strip()+'}')
-        return '\n'.join(o)
-    return walk(re.sub(r'/\*.*?\*/','',css,flags=re.S))
-_css=_tpl[_tpl.index('<style>')+7:_tpl.index('</style>')]
-BASE_CSS=_css_keep(_css,{'wrap','shop','slogo','ini','shead','maplink','hrs','tel','mail','web','city','m','brand','themebtn','tm-core','tm-cut','tm-rays','topnav','navr','navlinks','menubtn','mi-open','mi-close','navmenu','nmh','nmb','nmx','nml','nmc','locked','drawer','dhead','dbody','dclose','g2','g3','gamt','gc','gdl','gk','gl','gnote','gsrc','gsteps','gsub','lg','rb','has-more','has-above'},{'html','body','a','svg','img','b','span','ul','li','button','nav','dialog','div','p','h2','h3','dl','dt','dd','ol'})
-# the card helpers and the card markup come straight from the home page script, so the cards are identical
-def _js(name,until=None):
-    m=re.search(r'^const '+name+r'=.*$',_tpl,re.M); assert m,name
-    if not until: return m.group(0)
-    end=_tpl.index(until,m.end()); return _tpl[m.start():_tpl.index('\n',end)]
-HELPERS='\n'.join([_js('esc'),_js('mapUrl'),_js('telUrl'),_js('PIN'),_js('GLOBE'),_js('CLOCK'),_js('MAIL'),_js('mailUrl',' return `mailto:'),_js('slogo'),_js('shopLines'),_js('EXT')])
-CARD='`<div class="shop" data-shop="${esc(s.k)}">${slogo(s)}<span class="city">${esc(s.city||\'\')}</span><b>${esc(s.name)}</b>${shopLines(s)||\'<span class="m">Address not listed</span>\'}${s.url?`<a class="web" href="${esc(s.url)}" target="_blank" rel="noopener">${GLOBE}<span>Shop website</span>${EXT}</a>`:\'\'}</div>`'
 SURL = URL + 'browse-vendors/'
 STITLE = f'Participating Shops for the Ava E-Bike Rebate | {NAME}'
 SDESC = f"All {len(SHL)} shops that take the Ava Community Energy e-bike rebate in {F['area']}, on a map with each address, phone number and opening hours."
@@ -240,7 +216,8 @@ SLD = {"@context": "https://schema.org", "@graph": [
     {"@type": "ItemList", "@id": SURL + "#shops", "name": SHOPS_LD_NAME, "numberOfItems": len(STORES), "itemListElement": [{"@type": "ListItem", "position": i + 1, "item": x} for i, x in enumerate(STORES)]}]}
 SOG = share_tags(SURL, 'Every shop that takes the Ava e-bike rebate', SDESC, OGV, _OGV_ALT, _OGV_ALT)
 MAP_STYLE = 'https://tiles.openfreemap.org/styles/bright'   # OSM Bright, in both themes
-SHEAD = (HEAD_START + page_tags(STITLE, SDESC, SURL) + SOG +
+# the page lives at browse-vendors/ (clean address); every relative link in it resolves from the site root
+SHEAD = (head_start('<base href="../">') + page_tags(STITLE, SDESC, SURL) + SOG +
      '<script type="speculationrules">{"prefetch":[{"where":{"selector_matches":"a.brand, a[href=\\"./\\"]"},"eagerness":"moderate"}]}</script>'
      '<link rel="preconnect" href="https://tiles.openfreemap.org" crossorigin>'
      # the map's tile index, style, icons and label fonts start downloading right away, in parallel, instead of one
@@ -250,25 +227,14 @@ SHEAD = (HEAD_START + page_tags(STITLE, SDESC, SURL) + SOG +
      f'<script>{THEME_JS}(function(){{var l=document.createElement("link");l.rel="preload";l.as="fetch";l.crossOrigin="anonymous";l.href="{MAP_STYLE}";document.head.appendChild(l)}})()</script>'
      # the map's stylesheet downloads in parallel but never holds up the cards: it's applied when it arrives, and the map starts once it's in
      '<link rel="preload" as="style" href="vendor/maplibre-gl-5.24.0.min.css" onload="this.onload=null;this.rel=\'stylesheet\';window.MLCSS=1;document.dispatchEvent(new Event(\'mlcss\'))" onerror="window.MLCSS=1;document.dispatchEvent(new Event(\'mlcss\'))"><script defer src="vendor/maplibre-gl-5.24.0.min.js"></script>')
-# the same top nav and phone menu as the home page; its window buttons become links back to the home page
-_nav=_tpl[_tpl.index('<nav class="topnav"'):_tpl.index('</div><header class="hero"')]
-_nav=_nav.replace('href="#top"','href="./"',1).replace('href="browse-vendors/"','href="browse-vendors/" aria-current="page"')
-assert _nav.count('data-open="guide"')==2 and _nav.count('data-open="rebate"')==2 and _nav.count('aria-current')==2
-# the E-bike guide and Rebate info windows come along, so those buttons open them right here
-_dl=''.join(_tpl[_tpl.index(f'<dialog id="{d}"'):_tpl.index('</dialog>',_tpl.index(f'<dialog id="{d}"'))+9]+'\n' for d in ('guide','rebate'))
-SP=open('shops_tpl.html').read()
-for a,b in (('__HEAD__',SHEAD),('__BASE_CSS__',BASE_CSS),('__HELPERS__',HELPERS),('__CARD__',CARD),('__NAV__',_nav),('__DIALOGS__',_dl),('__COUNT__',str(len(SHL))),('__WORLD__',open('worlddots.json').read().strip()),('__SHOPS__',json.dumps(SHL,separators=(',',':'),ensure_ascii=False).replace('</','<\\/'))):
-    assert SP.count(a)==1,a; SP=SP.replace(a,b)
-# the shop list is put into the page at build time, so it shows at once and search engines see every shop without running the page.
-# It is made by the page's own card code (run here in Node), so the built list and the live one can never differ
-_s=SP.index('const SH=');_e=SP.index("$('list').innerHTML=",_s);_e=SP.index('\n',_e)
-_code='const document={getElementById:id=>id==="list"?L:{}},L={firstElementChild:null,innerHTML:""};'+SP[_s:_e]+'\nprocess.stdout.write(L.innerHTML)'
-_list=subprocess.run(['node','-e',_code],capture_output=True,text=True,check=True).stdout
-assert _list.count('class="shop"')==len(SHL),'prerendered shop list'
-assert SP.count('<div class="splist" id="list"></div>')==1
-SP=SP.replace('<div class="splist" id="list"></div>','<div class="splist" id="list">'+_list+'</div>',1)
-# the page lives at browse-vendors/ (clean address); every relative link in it resolves from the site root
-SP=SP.replace('<meta charset="utf-8">','<meta charset="utf-8"><base href="../">',1)
+# the shop list is put into the page at build time, so it shows at once and search engines see every shop without running the
+# page. It is made by the pages' own card code (shared/shop.js, run here in Node), which also puts the shops in their order
+_r = subprocess.run(['node', '-e', open('shared/shop.js').read() + '\nconst SH=' + json.dumps(SHL) + ';SH.sort(shopOrder);process.stdout.write(JSON.stringify({sh:SH,list:shopList(SH)}))'],
+                    capture_output=True, text=True, check=True)
+_sp = json.loads(_r.stdout)
+assert _sp['list'].count('class="shop"') == len(SHL), 'prerendered shop list'
+SP = fill(open('shops_tpl.html').read(), **BOTH, HEAD=SHEAD, NAV=nav(True), COUNT=str(len(SHL)), WORLD=open('worlddots.json').read().strip(), MAP_STYLE=MAP_STYLE,
+          SHOPS=json.dumps(_sp['sh'], separators=(',', ':'), ensure_ascii=False).replace('</', '<\\/'), SHOP_LIST=_sp['list'])
 # the structured data goes at the end of the page, so it never delays the first paint (search engines read it anywhere)
 assert SP.rstrip().endswith('</body></html>')
 SP = SP.rstrip()[:-len('</body></html>')] + ld_script(SLD) + '</body></html>'
