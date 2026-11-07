@@ -6,14 +6,13 @@ Live site: https://ratsuns.github.io/ava-bike-finder/
 
 ## What's in this folder
 
-- `index.html`, `img/`, icons, `og-*.jpg`, `site.webmanifest`, `sitemap.xml`: the published site (served by GitHub Pages).
-- `src/`: everything the site is built from.
-  - `site_tpl.html`: the page design.
-  - `build2.py`: combines the design with the data into the site.
-  - `shops.json`, `bikes.json`, `res_all.json`, `fill*.json`, `specs/`, `cargo_specs.py`: the bike list, prices, specs and shop addresses.
-  - `verify/`: checked photos, photo fixes, the hero video, the share card and icons.
-- `.claude/` and `skills-lock.json`: the Claude design skills this project uses (Impeccable, Emil Kowalski's animation skills, frontend-design).
+- The published site (served by GitHub Pages), all written by the build: `index.html`, `browse-vendors/` (the shop
+  directory), `shops.html` (forwards to it), `data-*.js` (bikes and shops), `videos-*.json`, `img/`, icons,
+  `og-*.jpg`, `site.webmanifest`, `sitemap.xml`, `llms.txt`, `llms-full.txt`. `vendor/` holds the scrollbar and map libraries.
+- `src/`: everything the site is built from (see `src/README.md`).
+- `.github/workflows/`: the weekly video refresh and the IndexNow ping.
+- `.claude/` and `skills-lock.json`: the Claude skills this project uses.
 
 ## Rebuild
 
-From `src/`: `SITE_DIR=.. python3 build2.py`
+Needs Python 3 with Pillow, and Node with Playwright. From `src/`: `SITE_DIR=.. python3 build2.py`
