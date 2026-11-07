@@ -1104,7 +1104,7 @@ const NEAR={TTL:600000,
  fresh:t=>Date.now()-t<60000,
  /* the position shown only follows a real move, so distances don't jitter */
  moved:(a,b)=>miles(a,b)>0.25,
- ask:(ok,err)=>navigator.geolocation.getCurrentPosition(p=>ok({lat:p.coords.latitude,lng:p.coords.longitude}),err,{enableHighAccuracy:false,timeout:15000,maximumAge:60000})};
+ ask:(ok,err,o)=>navigator.geolocation.getCurrentPosition(p=>ok({lat:p.coords.latitude,lng:p.coords.longitude}),err,{enableHighAccuracy:false,timeout:15000,maximumAge:60000,...o})};
 const B=window.AVA_B,S=window.AVA_S,SITE=window.AVA_SITE,REB=SITE.rebate.by_type;
 const CLASSX={"1":"Class 1: pedal assist only, up to 20 mph.","2":"Class 2: pedal assist plus a throttle, up to 20 mph.","3":"Class 3: pedal assist up to 28 mph. No throttle in California."};
 const TYPEX={Standard:"Standard: a city or commuter e-bike. Lighter and easy to handle.",Cargo:"Cargo: built to carry heavy loads or passengers.",Adaptive:"Adaptive: for riders with injuries or mobility needs, like trikes and recumbents."};
@@ -1280,7 +1280,7 @@ WINDOW_HOOKS.stack=setDim;WINDOW_HOOKS.closed=()=>{LASTCLOSE=performance.now();u
  const mk=document.createElement('div');mk.setAttribute('aria-hidden','true');mk.style.cssText='position:absolute;top:0;left:0;width:1px;height:4px;pointer-events:none';hero.prepend(mk);
  if('IntersectionObserver' in window)new IntersectionObserver(([e])=>bar.classList.toggle('frost',!e.isIntersecting)).observe(mk);else bar.classList.add('frost')})();
 /* the vendor page used to link here as ./#guide and ./#rebate: open that window, then tidy the address */
-{const fromHash=()=>{const h=location.hash.slice(1);if(h==='guide'||h==='rebate'){history.replaceState(null,'',location.pathname+location.search);requestAnimationFrame(()=>showDlg($(h)))}};fromHash();addEventListener('hashchange',fromHash)}
+{const fromHash=()=>{const h=location.hash.slice(1);if(h==='dir'){location.replace('browse-vendors/');return}if(h==='guide'||h==='rebate'){history.replaceState(null,'',location.pathname+location.search);requestAnimationFrame(()=>showDlg($(h)))}};fromHash();addEventListener('hashchange',fromHash)}
 const BIKE=$('bike');let BIKE_I=null,BIKE_AC=null;/* the modal's colour is its own: picking one there never changes the card */
 /* video reviews: the 3 most-watched recent reviews per bike (found with YouTube's official search when the site is built).
    They live in their own small file, fetched once the page is idle, so they never slow the first view */
@@ -1360,7 +1360,7 @@ VP.addEventListener('click',e=>{if(!e.target.closest('.vbox,.zx'))VP.close()});
 VP.addEventListener('close',vpStop);
 /* the details are built as soon as a finger or mouse goes down on a card, so by the time the tap lands the window only has to slide in */
 let BIKE_PRE=null;
-function buildBike(i){const pre=i+'|'+F.city+'|'+F.q+'|'+(ME?NEAR_MI:'');if(BIKE_PRE===pre)return;BIKE_PRE=null;
+function buildBike(i){const pre=i+'|'+F.city+'|'+F.q+'|'+(ME?NEAR_MI+'|'+ME.lat+','+ME.lng:'');   /* where you are changes the shop distances */if(BIKE_PRE===pre)return;BIKE_PRE=null;
  const b=B[i],pk=PICKS[b.id];
  const has=v=>v!=null&&v!=='';
  const uniq=[...new Map((b.shops||[]).map(x=>S[x]).filter(Boolean).map(s=>[s.name,s])).values()];

@@ -296,7 +296,8 @@ const SH=__SHOPS__;
     if(!had)b.setAttribute('aria-busy','true');
     NEAR.ask(u=>{b.removeAttribute('aria-busy');NEAR.save(u,Date.now());
      if(!had||NEAR.moved(had,u))goMe(u)},
-    err=>{b.removeAttribute('aria-busy');if(had)return;toast(err.code===1?'Location is off for this site. Turn it on in your browser to see shops near you.':"Couldn't find your location. Try again.")})});
+    err=>{b.removeAttribute('aria-busy');if(had)return;toast(err.code===1?'Location is off for this site. Turn it on in your browser to see shops near you.':"Couldn't find your location. Try again.")},
+    {timeout:10000,maximumAge:300000})});   /* the shops page's own timing: an older reading is fine for a shop list */
    /* show your dot and zoom to the shops within 10 miles of you (or the nearest one) */
    const goMe=u=>{
      if(!me){const d=document.createElement('div');d.className='me';d.setAttribute('aria-label','You are here');me=new maplibregl.Marker({element:d}).setLngLat([u.lng,u.lat]).addTo(map)}else me.setLngLat([u.lng,u.lat]);

@@ -20,6 +20,8 @@ for tests in ('bikespecs.test_rules', 'videos.test_rules'):
 F = json.load(open('site.json'))
 URL, NAME, LIGHT, DARK = F['url'], F['name'], F['theme']['light'], F['theme']['dark']
 REBATE = F['rebate']['by_type']
+# the Rebate window (shared/info.html) and the share text show cargo and adaptive as one amount
+if REBATE['Cargo'] != REBATE['Adaptive']: raise SystemExit('site.json: Cargo and Adaptive rebates differ, but shared/info.html and the share text show them together; split them there first')
 def money(n): return f'${n:,}'
 def rebate(b): return REBATE[b['type']]['regular']
 AMOUNTS = {**{t: money(r['regular']) for t, r in REBATE.items()}, **{t + '_income': money(r['income_qualified']) for t, r in REBATE.items()},
@@ -262,7 +264,9 @@ _OGJ = 'verify/seo/og-vendors.json'; _og = json.load(open(_OGJ)) if os.path.exis
 _pg = undated(SP.replace(OGV, 'OGV'))
 _ogfp = hashlib.sha256((_pg + ''.join(hashlib.md5(open('verify/seo/' + x, 'rb').read()).hexdigest() for x in ('og-vendors-shot.js', 'og-vendors-map.jpg', 'Geist-Variable.woff2'))).encode()).hexdigest()
 if _og.get('fp') != _ogfp:
-    _r = subprocess.run(['node', 'verify/seo/og-vendors-shot.js', os.path.abspath(SITE), 'shot'], capture_output=True, text=True, check=True)
+    _r = subprocess.run(['node', 'verify/seo/og-vendors-shot.js', os.path.abspath(SITE), 'shot'], capture_output=True, text=True)
+    if _r.returncode: raise SystemExit('the vendor share card has to be re-shot (the shops page changed), and that failed.\n'
+                                       'It needs Node with Playwright and Chromium (npm i playwright; npx playwright install chromium).\n' + _r.stderr[-2000:])
     _view = json.loads(_r.stdout.strip().splitlines()[-1])
     Image.open('verify/seo/og-vendors.png').convert('RGB').resize((1200, 630), Image.LANCZOS).save('verify/seo/og-vendors.jpg', quality=90, optimize=True, progressive=True)
     os.remove('verify/seo/og-vendors.png')
@@ -274,7 +278,7 @@ if _og.get('fp') != _ogfp:
     _new = share_image('verify/seo/og-vendors.jpg', 'og-vendors-')
     if _new != OGV:
         for _x in ('browse-vendors/index.html', 'shops.html'):
-            _p = SITE + '/' + _x; open(_p, 'w').write(open(_p).read().replace(OGV, _new))
+            _p = SITE + '/' + _x; _s = open(_p).read(); open(_p, 'w').write(_s.replace(OGV, _new))   # read before 'w' empties the file
         OGV = _new
     print('vendor share card re-made:', OGV)
 

@@ -80,4 +80,4 @@ const NEAR={TTL:600000,
  fresh:t=>Date.now()-t<60000,
  /* the position shown only follows a real move, so distances don't jitter */
  moved:(a,b)=>miles(a,b)>0.25,
- ask:(ok,err)=>navigator.geolocation.getCurrentPosition(p=>ok({lat:p.coords.latitude,lng:p.coords.longitude}),err,{enableHighAccuracy:false,timeout:15000,maximumAge:60000})};
+ ask:(ok,err,o)=>navigator.geolocation.getCurrentPosition(p=>ok({lat:p.coords.latitude,lng:p.coords.longitude}),err,{enableHighAccuracy:false,timeout:15000,maximumAge:60000,...o})};
