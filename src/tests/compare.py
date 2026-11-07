@@ -25,8 +25,8 @@ for f in sorted(glob.glob(os.path.join(a, '*.png'))):
     x, y = Image.open(f).convert('RGB'), Image.open(g).convert('RGB')
     if x.size != y.size: bad += 1; print(os.path.basename(f), 'size', x.size, '->', y.size); continue
     d = ImageChops.difference(x, y).convert('L').point(lambda v: 255 if v > 24 else 0)
-    pct = 100 * sum(d.histogram()[255:]) / (x.size[0] * x.size[1])
-    if pct > 0.1: bad += 1
-    print(f'{os.path.basename(f)}: {pct:.2f}% of pixels changed')
+    n = sum(d.histogram()[255:])   # any changed pixel counts: unchanged screenshots come out identical
+    if n: bad += 1
+    print(f'{os.path.basename(f)}: {n} pixels changed ({100 * n / (x.size[0] * x.size[1]):.2f}%)')
 print('DIFFERENCES:', bad)
 sys.exit(1 if bad else 0)

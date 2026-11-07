@@ -4,7 +4,7 @@ Reads the bike list (bikedata.py -> verify/cards.json), shops.json, site.json (s
 (site_tpl.html, shops_tpl.html) and what they share (shared/), videos.csv (through videos/publish.py) and the files in verify/. Writes index.html,
 browse-vendors/index.html, shops.html (a redirect), data-<hash>.js, videos-<hash>.json, img/, the share images,
 icons, site.webmanifest, llms.txt, llms-full.txt and sitemap.xml, and removes site files nothing uses any more.
-Needs Python with Pillow, and Node with Playwright (for the vendor page's share card).
+Needs Python 3 with Pillow and wordfreq 3.1.1 (pip install Pillow wordfreq==3.1.1), and Node with Playwright (for the vendor page's share card).
 """
 import datetime, hashlib, html, json, os, re, shutil, subprocess, sys
 
@@ -26,7 +26,7 @@ def money(n): return f'${n:,}'
 def rebate(b): return REBATE[b['type']]['regular']
 AMOUNTS = {**{t: money(r['regular']) for t, r in REBATE.items()}, **{t + '_income': money(r['income_qualified']) for t, r in REBATE.items()},
            'gear': money(F['rebate']['gear'])}
-REBATE_FACTS = {**AMOUNTS, 'checked': F['rebate']['checked']}
+REBATE_FACTS = {**AMOUNTS, 'checked': F['rebate']['checked'], 'source': F['rebate']['source']}
 FAQ = [(q, a.format(**AMOUNTS)) for q, a in F['faq'].items()]
 e = html.escape
 TODAY = datetime.date.today()
@@ -95,8 +95,6 @@ HM, HJ = put_img('hero.mp4', 'verify/hero.mp4'), put_img('hero.jpg', 'verify/her
 # the published page keeps the bike list in its own file, so the page itself stays small and link previews
 # (Messages, Slack, X) can read it; the list loads right after, before the page script runs.
 # window.AVA_SITE holds the site facts (site.json, FAQ amounts filled in) for the page scripts.
-for f in os.listdir(SITE):
-    if f.startswith('data-') and f.endswith('.js'): os.remove(os.path.join(SITE, f))
 FACTS = {**F, 'faq': dict(FAQ)}
 DJ = 'window.AVA_B=' + json.dumps(out, separators=(',', ':')) + ';window.AVA_S=' + json.dumps(S, separators=(',', ':')) + ';window.AVA_SITE=' + json.dumps(FACTS, separators=(',', ':')) + ';'
 DN = 'data-' + hashlib.md5(DJ.encode()).hexdigest()[:8] + '.js'
@@ -130,8 +128,9 @@ def shared(name, **vals): return fill(open('shared/' + name).read().rstrip('\n')
 def nav(here): return shared('nav.html', HOME='./' if here else '#top', HERE=' aria-current="page"' if here else '')
 INFO = re.sub(r'\{(\w+)\}', lambda m: REBATE_FACTS[m.group(1)], shared('info.html'))
 SHARED_JS = shared('shop.js') + '\n' + shared('page.js', THEME=json.dumps(F['theme']))
-BOTH = dict(CSS=shared('page.css'), INFO=INFO, SHARED_JS=SHARED_JS, SCROLLBAR=shared('scrollbar.html'))
-PAGE = fill(open('site_tpl.html').read(), **BOTH, NAV=nav(False), DATA_JS=DN, HERO_MP4=HM, HERO_JPG=HJ, VIDS=VN, NOSCRIPT=NOS)
+BOTH = dict(CSS=shared('page.css', LIGHT=LIGHT, DARK=DARK), INFO=INFO, SHARED_JS=SHARED_JS, SCROLLBAR=shared('scrollbar.html'))
+PAGE = fill(open('site_tpl.html').read(), **BOTH, NAV=nav(False), DATA_JS=DN, HERO_MP4=HM, HERO_JPG=HJ, VIDS=VN, NOSCRIPT=NOS,
+            AVA_SRC=F['rebate']['source'], AUTHOR=F['author']['name'], CITY=F['author']['city'])
 
 # ---- what both pages' <head> share
 # the share image gets a content hash in its name, so every change is a new URL that apps and the CDN fetch fresh
@@ -293,8 +292,10 @@ json.dump(_LM, open(_LMF, 'w'), indent=1, sort_keys=True)
 open(SITE + '/sitemap.xml', 'w').write('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(f'<url><loc>{u}</loc><lastmod>{_dates[u]}</lastmod></url>' for u in (URL, SURL)) + '</urlset>')
 print('last updated', _dates)
 
-# ---- remove what nothing uses any more: old photos and logos, old share images
+# ---- remove what nothing uses any more: old bike-list files, old photos and logos, old share images
+# (done last, so a build that stops early leaves the old page and the file it points at in place)
 for f in os.listdir(SITE + '/img'):
     if f not in IMG: os.remove(f'{SITE}/img/{f}')
 for f in os.listdir(SITE):
     if re.fullmatch(r'og-(vendors-)?[0-9a-f]{8}\.jpg', f) and f not in (OGN, OGV): os.remove(f'{SITE}/{f}')
+    if f.startswith('data-') and f.endswith('.js') and f != DN: os.remove(f'{SITE}/{f}')

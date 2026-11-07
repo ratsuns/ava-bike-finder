@@ -4,7 +4,7 @@ Everything the live site is built from.
 
 - `build2.py` - builds the whole site: from here, `SITE_DIR=.. python3 build2.py` writes it into the repo root and
   removes old photos, share images and data files nothing uses any more. It first runs the spec and video title tests
-  and stops if either fails. Needs Python 3 with Pillow, and Node with Playwright (it re-makes the shop directory's
+  and stops if either fails. Needs Python 3 with Pillow and wordfreq 3.1.1 (`pip install Pillow wordfreq==3.1.1`), and Node with Playwright (it re-makes the shop directory's
   share card when that page changes).
 - `verify/cards.json` - the bike list, one entry per bike, read and written only through `bikedata.py` (which
   describes the fields). Each bike has a fixed `id`, its type (sets the rebate), shops, specs, price, main photo and

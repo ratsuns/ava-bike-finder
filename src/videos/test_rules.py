@@ -129,6 +129,7 @@ def run():
     bikes = bikes_from(bikedata.load())
     failed = []
     for bike, title, want in CASES:
+        if bike not in bikes: failed.append(f'{bike}: not in the bike list any more; move this case to another bike'); continue
         kind, why = bikes[bike].match(title)
         if (kind or why) != want: failed.append(f'{bike} | {title}\n    expected {want}, got {kind or why}')
     return failed

@@ -15,4 +15,4 @@ Live site: https://ratsuns.github.io/ava-bike-finder/
 
 ## Rebuild
 
-Needs Python 3 with Pillow, and Node with Playwright. From `src/`: `SITE_DIR=.. python3 build2.py`
+Needs Python 3 with Pillow and wordfreq 3.1.1 (`pip install Pillow wordfreq==3.1.1`), and Node with Playwright. From `src/`: `SITE_DIR=.. python3 build2.py`

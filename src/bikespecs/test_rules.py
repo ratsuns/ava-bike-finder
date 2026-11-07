@@ -52,6 +52,9 @@ DISCONTINUED = [   # (bike id, status sources, discontinued?)
     ('b', DISC(('maker', M)), True), ('b', DISC(('review', R)), False), ('b', DISC(('review', R), ('retailer', N)), True),
     ('b', DISC(('review', R), ('retailer', R + '/other')), False), ('still-sold', DISC(('maker', M)), False), ('chris-disc', None, True),
 ]
+NO_BATTERY = [   # (weight sources, the card's weight, card says "(no battery)"?)
+    ([src('maker', 64.5, M, basis='without battery')], 64.5, True), ([src('retailer', 64.5, N, basis='without battery')], 64.5, False),
+]
 
 
 def run():
@@ -61,10 +64,12 @@ def run():
         if got != want: bad.append(f'{what}: shows {got!r}, expected {want!r}')
     for i, status, want in DISCONTINUED:
         if policy.discontinued(i, status) != want: bad.append(f'discontinued({i}, {status}) should be {want}')
+    for srcs, wt, want in NO_BATTERY:
+        if policy.no_battery(srcs, wt) != want: bad.append(f'no_battery({srcs[0]["kind"]}, {wt}) should be {want}')
     return bad
 
 
 if __name__ == '__main__':
     bad = run()
-    print('\n'.join(bad) or f'all {len(SUPPORTS) + len(SHOWN) + len(DISCONTINUED)} spec rules pass')
+    print('\n'.join(bad) or f'all {len(SUPPORTS) + len(SHOWN) + len(DISCONTINUED) + len(NO_BATTERY)} spec rules pass')
     raise SystemExit(1 if bad else 0)

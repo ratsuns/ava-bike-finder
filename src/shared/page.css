@@ -6,7 +6,7 @@
  --c-fg:18,22,20; --c-fg2:77,86,81; --c-line:227,231,226; --c-accent:14,122,82; --c-accent-ink:11,95,64; --c-pick:183,121,31;
  --offveil:rgba(10,12,11,.14); --offc:#9a3412; --offbg:#fff7ed; --offbd:#fdba74;
  --sbh:rgba(0,0,0,.45); --sbh2:rgba(0,0,0,.6); --sbo:rgba(255,255,255,.3);
- --bg:#f6f7f5; --surface:#ffffff; --well:#f1f3f0; --fg-rgb:var(--c-fg); --fg:rgb(var(--fg-rgb)); --fg2:rgb(var(--c-fg2)); --fg3:#646d68;
+ --bg:__LIGHT__; --surface:#ffffff; --well:#f1f3f0; --fg-rgb:var(--c-fg); --fg:rgb(var(--fg-rgb)); --fg2:rgb(var(--c-fg2)); --fg3:#646d68;
  --line:rgb(var(--c-line)); --line2:#c9d0ca; --accent:rgb(var(--c-accent)); --accent-fg:#ffffff; --accent-soft:#e3f2ea; --accent-ink:rgb(var(--c-accent-ink));
  --pick:rgb(var(--c-pick));
  --shadow:0 1px 2px rgba(var(--c-fg),.04),0 4px 14px rgba(var(--c-fg),.05);
@@ -23,7 +23,7 @@
 :root[data-theme="dark"]{
  --offveil:rgba(10,12,11,.42); --offc:#fdba74; --offbg:#431407; --offbd:#9a3412;
  --sbh:rgba(255,255,255,.5); --sbh2:rgba(255,255,255,.7); --sbo:rgba(0,0,0,.4);
- --bg:#0f1211; --surface:#171b19; --well:#1e2320; --fg-rgb:238,241,238; --fg2:#b4bcb7; --fg3:#8d9691;
+ --bg:__DARK__; --surface:#171b19; --well:#1e2320; --fg-rgb:238,241,238; --fg2:#b4bcb7; --fg3:#8d9691;
  --line:#262c29; --line2:#3a433e; --accent:#2fae7d; --accent-fg:#06140e; --accent-soft:#16302a; --accent-ink:#7fdcb4;
  --pick:#e0a84a;
  --shadow:0 1px 2px rgba(0,0,0,.3); --shadow-hi:0 8px 24px rgba(0,0,0,.4); color-scheme:dark}
