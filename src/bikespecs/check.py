@@ -9,10 +9,13 @@ Problems:
   bad_quote  a source's words don't back its number
   differs    the site shows something other than what the rule (policy.shown) gives: run bikespecs.apply
   status     the rule says discontinued, the site doesn't
+  label      a bike's name for people to read (a source file's "bike", the "Bike" column of videos.csv) isn't its
+             name in verify/cards.json
 """
-import collections, sys
+import collections, csv, sys
 
 import bikedata
+from videos import files as video_files
 
 from . import evidence, policy
 from .rules import FIELDS, same, supports
@@ -43,6 +46,13 @@ def check():
                 problems.append((i, 'wtnb', 'differs', f"site shows \"(no battery)\": {bool(card.get('wtnb'))}, the rule gives {not card.get('wtnb')}"))
         if policy.discontinued(i, ev.get('status')) and card.get('st') != 'disc':
             problems.append((i, 'status', 'status', 'discontinued, but the site does not say so'))
+    for r in csv.DictReader(open(video_files.CSV, encoding='utf-8-sig')):
+        card = cards.get(r['id'].strip())
+        if card and r['Bike'] != card['brand'] + ' ' + card['model']:
+            problems.append((card['id'], 'Bike', 'label', f"videos.csv says {r['Bike']!r}, the bike is {card['brand'] + ' ' + card['model']!r}"))
+    for i, ev in files.items():
+        if i in cards and ev.get('bike') != cards[i]['brand'] + '|' + cards[i]['model']:
+            problems.append((i, 'bike', 'label', f"bikes/{i}.json says {ev.get('bike')!r}, the bike is {cards[i]['brand'] + '|' + cards[i]['model']!r}"))
     return problems, specs
 
 

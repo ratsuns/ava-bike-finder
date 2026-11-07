@@ -10,6 +10,8 @@
 """
 import csv, glob, hashlib, json, os, re
 
+import bikedata
+
 SRC = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CSV = os.path.join(SRC, 'videos.csv')
 META = os.path.join(SRC, 'verify', 'video_meta.json')
@@ -37,14 +39,15 @@ def load_csv():
 
 
 def save_csv(entries):
-    """write the lists back in the file's own row order"""
+    """write the lists back in the file's own row order, with each bike's name from the bike list"""
     rows = list(csv.DictReader(open(CSV, encoding='utf-8-sig')))
+    names = {i: c['brand'] + ' ' + c['model'] for i, c in bikedata.by_id().items()}
     with open(CSV, 'w', newline='', encoding='utf-8') as f:
         w = csv.DictWriter(f, fieldnames=['id', 'Bike'] + COLUMNS)
         w.writeheader()
         for r in rows:
             ids = entries[r['id'].strip()]
-            w.writerow({'id': r['id'], 'Bike': r['Bike'],
+            w.writerow({'id': r['id'], 'Bike': names.get(r['id'].strip(), r['Bike']),
                         **{col: 'https://www.youtube.com/watch?v=' + ids[n] if n < len(ids) else '' for n, col in enumerate(COLUMNS)}})
 
 
