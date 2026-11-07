@@ -1,6 +1,7 @@
 {
 "0": [
 {
+"id": "aima-big-sur-sport",
 "cls": 2,
 "spd": 20,
 "tq": 85,
@@ -34,6 +35,7 @@
 ],
 "1": [
 {
+"id": "aima-santa-monica",
 "cls": 2,
 "spd": 20,
 "tq": null,
@@ -77,6 +79,7 @@
 ],
 "2": [
 {
+"id": "aventon-pace-5-rec-step-through",
 "cls": 2,
 "spd": 28,
 "tq": 80,
@@ -123,6 +126,7 @@
 "img": "609ec97c45f8c0"
 },
 {
+"id": "aventon-pace-4-step-through",
 "cls": 2,
 "spd": 28,
 "tq": 60,
@@ -161,6 +165,7 @@
 ],
 "3": [
 {
+"id": "aventon-soltera-2-5",
 "cls": 2,
 "spd": 20,
 "tq": 45,
@@ -192,6 +197,7 @@
 "img": "82d06781a3f621"
 },
 {
+"id": "aventon-soltera-3-adv",
 "cls": 1,
 "spd": 20,
 "tq": 40,
@@ -230,6 +236,7 @@
 ],
 "4": [
 {
+"id": "aventon-abound-sr",
 "cls": 2,
 "spd": 25,
 "tq": 80,
@@ -266,6 +273,7 @@
 "img": "d330731e11ac1c"
 },
 {
+"id": "aventon-abound-lr",
 "cls": 2,
 "spd": 25,
 "tq": 80,
@@ -299,6 +307,7 @@
 ],
 "5": [
 {
+"id": "aventon-aventure-3",
 "cls": 2,
 "spd": 28,
 "tq": 80,
@@ -330,6 +339,7 @@
 "img": "ce596e82c8fa55"
 },
 {
+"id": "aventon-aventure-m",
 "cls": 1,
 "spd": 28,
 "tq": 100,
@@ -368,6 +378,7 @@
 ],
 "6": [
 {
+"id": "aventon-level-4-rec",
 "cls": 2,
 "spd": 28,
 "tq": 80,
@@ -399,6 +410,7 @@
 "img": "8c25ba114aaf3e"
 },
 {
+"id": "aventon-level-4-adv",
 "cls": 1,
 "spd": 28,
 "tq": 100,
@@ -432,6 +444,7 @@
 ],
 "7": [
 {
+"id": "aventon-sinch-2-5",
 "cls": 2,
 "spd": 25,
 "tq": 60,
@@ -465,6 +478,7 @@
 ],
 "8": [
 {
+"id": "benno-boost-evo-5-performance-sport",
 "cls": 3,
 "spd": 28,
 "tq": 65,
@@ -511,6 +525,7 @@
 "img": "71c4f8c46c5661"
 },
 {
+"id": "benno-boost-evo-5-performance-speed",
 "cls": 3,
 "spd": 28,
 "tq": 85,
@@ -554,6 +569,7 @@
 ],
 "9": [
 {
+"id": "benno-46er-performance-speed",
 "cls": 3,
 "spd": 28,
 "tq": 85,
@@ -595,6 +611,7 @@
 "img": "8344c405ae63c4"
 },
 {
+"id": "benno-46er-performance-cx",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -638,6 +655,7 @@
 ],
 "10": [
 {
+"id": "benno-ejoy-5i-performance",
 "cls": 1,
 "spd": 20,
 "tq": 65,
@@ -679,6 +697,7 @@
 "img": "42804de19236c5"
 },
 {
+"id": "benno-ejoy-10d-performance",
 "cls": 1,
 "spd": 20,
 "tq": 65,
@@ -720,6 +739,7 @@
 "img": "42804de19236c5"
 },
 {
+"id": "benno-ejoy-10d-performance-sport",
 "cls": 3,
 "spd": 28,
 "tq": 65,
@@ -763,6 +783,7 @@
 ],
 "11": [
 {
+"id": "benno-remidemi-9d-evo-2-performance",
 "cls": 1,
 "spd": 20,
 "tq": 65,
@@ -814,6 +835,7 @@
 "img": "2cd3198b35dd60"
 },
 {
+"id": "benno-remidemi-9d-evo-2-performance-sport",
 "cls": 3,
 "spd": 28,
 "tq": 65,
@@ -865,6 +887,7 @@
 "img": "2cd3198b35dd60"
 },
 {
+"id": "benno-remidemi-9d-evo-4-performance-smart-system",
 "cls": 1,
 "spd": 20,
 "tq": 75,
@@ -903,6 +926,7 @@
 ],
 "12": [
 {
+"id": "benno-remidemi-xl-evo-1-performance-sport",
 "cls": 3,
 "spd": 28,
 "tq": 75,
@@ -939,6 +963,7 @@
 "img": "e58e4b1a91f5a8"
 },
 {
+"id": "benno-remidemi-xl-evo-1-performance",
 "cls": 1,
 "spd": 20,
 "tq": 75,
@@ -977,6 +1002,7 @@
 ],
 "13": [
 {
+"id": "blix-sol-x",
 "cls": 2,
 "spd": 28,
 "tq": 70,
@@ -1020,6 +1046,7 @@
 ],
 "14": [
 {
+"id": "blix-vika-x",
 "cls": 2,
 "spd": 28,
 "tq": 55,
@@ -1063,6 +1090,7 @@
 ],
 "15": [
 {
+"id": "bmc-amp-257-al-speed-one",
 "cls": 3,
 "spd": 28,
 "tq": 85,
@@ -1091,6 +1119,7 @@
 ],
 "16": [
 {
+"id": "brompton-electric-c-line-all",
 "cls": 1,
 "spd": 15.5,
 "tq": 24,
@@ -1119,6 +1148,7 @@
 ],
 "17": [
 {
+"id": "brompton-electric-p-line-all",
 "cls": 1,
 "spd": 15.5,
 "tq": 24,
@@ -1147,6 +1177,7 @@
 ],
 "18": [
 {
+"id": "bulls-evo-2-speed",
 "cls": 3,
 "spd": 28,
 "tq": 85,
@@ -1175,6 +1206,7 @@
 ],
 "19": [
 {
+"id": "bulls-evo-tr-1",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -1203,6 +1235,7 @@
 ],
 "20": [
 {
+"id": "bulls-iconic-evo-1",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -1231,6 +1264,7 @@
 ],
 "21": [
 {
+"id": "bulls-iconic-evo-tr",
 "cls": 3,
 "spd": 28,
 "tq": 85,
@@ -1259,6 +1293,7 @@
 ],
 "22": [
 {
+"id": "bunch-the-original-4-plus",
 "cls": 2,
 "spd": 20,
 "tq": 45,
@@ -1302,6 +1337,7 @@
 ],
 "23": [
 {
+"id": "cannondale-adventure-neo-allroad",
 "cls": 2,
 "spd": 20,
 "tq": null,
@@ -1328,6 +1364,7 @@
 "img": "2f4d6824bcd691"
 },
 {
+"id": "cannondale-adventure-neo-allroad-eq",
 "cls": 2,
 "spd": 20,
 "tq": null,
@@ -1354,6 +1391,7 @@
 "img": "dd3390bf8cf95d"
 },
 {
+"id": "cannondale-adventure-neo-allroad-speed",
 "cls": 3,
 "spd": 28,
 "tq": null,
@@ -1387,6 +1425,7 @@
 ],
 "24": [
 {
+"id": "cannondale-adventure-neo",
 "cls": 1,
 "spd": 20,
 "tq": 40,
@@ -1425,6 +1464,7 @@
 ],
 "25": [
 {
+"id": "cannondale-cargowagen-neo",
 "cls": 3,
 "spd": 28,
 "tq": 85,
@@ -1453,6 +1493,7 @@
 ],
 "26": [
 {
+"id": "cannondale-mavaro-neo-1",
 "cls": 3,
 "spd": 28,
 "tq": 85,
@@ -1479,6 +1520,7 @@
 "img": "92788cf46cf6e1"
 },
 {
+"id": "cannondale-mavaro-neo-2",
 "cls": 3,
 "spd": 28,
 "tq": 75,
@@ -1505,6 +1547,7 @@
 "img": "d85a490f5fa9fc"
 },
 {
+"id": "cannondale-mavaro-neo-3",
 "cls": 1,
 "spd": 20,
 "tq": 50,
@@ -1533,6 +1576,7 @@
 ],
 "27": [
 {
+"id": "cannondale-tesoro-carbon-1",
 "cls": 3,
 "spd": 28,
 "tq": 55,
@@ -1559,6 +1603,7 @@
 "img": "1ec0a6246ceeb8"
 },
 {
+"id": "cannondale-tesoro-carbon-2",
 "cls": 3,
 "spd": 28,
 "tq": 55,
@@ -1585,6 +1630,7 @@
 "img": "0e028fa6d221b1"
 },
 {
+"id": "cannondale-tesoro-x-1",
 "cls": 3,
 "spd": 28,
 "tq": 85,
@@ -1611,6 +1657,7 @@
 "img": "084790e2893a36"
 },
 {
+"id": "cannondale-tesoro-x-2",
 "cls": 3,
 "spd": 28,
 "tq": 75,
@@ -1639,6 +1686,7 @@
 ],
 "28": [
 {
+"id": "dahon-k-feather",
 "cls": 1,
 "spd": 16,
 "tq": 32,
@@ -1707,6 +1755,7 @@
 ],
 "29": [
 {
+"id": "dahon-unio-e-20",
 "cls": 1,
 "spd": 20,
 "tq": 60,
@@ -1740,6 +1789,7 @@
 ],
 "30": [
 {
+"id": "dahon-k-one",
 "cls": 1,
 "spd": 15.5,
 "tq": null,
@@ -1773,6 +1823,7 @@
 ],
 "31": [
 {
+"id": "dahon-e-hemingway",
 "cls": 1,
 "spd": null,
 "tq": 42,
@@ -1806,6 +1857,7 @@
 ],
 "32": [
 {
+"id": "ebike2u-eb030",
 "cls": 3,
 "spd": null,
 "tq": null,
@@ -1827,6 +1879,7 @@
 ],
 "33": [
 {
+"id": "electra-townie-go-7d-eq",
 "cls": 1,
 "spd": 20,
 "tq": 40,
@@ -1858,6 +1911,7 @@
 "img": "d707666d204148"
 },
 {
+"id": "electra-townie-go",
 "cls": 2,
 "spd": 20,
 "tq": 60,
@@ -1889,6 +1943,7 @@
 "img": "bdc0b77e9d5fae"
 },
 {
+"id": "electra-townie-go-s",
 "cls": 3,
 "spd": 28,
 "tq": 60,
@@ -1920,6 +1975,7 @@
 "img": "dd4e9379a5bbaa"
 },
 {
+"id": "electra-townie-go-eq",
 "cls": 2,
 "spd": 20,
 "tq": 60,
@@ -1956,6 +2012,7 @@
 "img": "7a8eb7cfd0b3c6"
 },
 {
+"id": "electra-townie-go-s-eq",
 "cls": 3,
 "spd": 28,
 "tq": 60,
@@ -1994,6 +2051,7 @@
 ],
 "34": [
 {
+"id": "electra-cruiser-go",
 "cls": 1,
 "spd": 20,
 "tq": 40,
@@ -2015,6 +2073,7 @@
 ],
 "35": [
 {
+"id": "electra-loft-go",
 "cls": 1,
 "spd": 20,
 "tq": 40,
@@ -2036,6 +2095,7 @@
 ],
 "36": [
 {
+"id": "electra-ponto-go",
 "cls": 2,
 "spd": 20,
 "tq": 60,
@@ -2067,6 +2127,7 @@
 "img": "3db4f70279fee0"
 },
 {
+"id": "electra-ponto-go-s",
 "cls": 3,
 "spd": 28,
 "tq": 60,
@@ -2105,6 +2166,7 @@
 ],
 "37": [
 {
+"id": "electra-vale-go",
 "cls": 1,
 "spd": 20,
 "tq": 50,
@@ -2126,6 +2188,7 @@
 ],
 "38": [
 {
+"id": "emojo-bull",
 "cls": 2,
 "spd": 20,
 "tq": null,
@@ -2162,6 +2225,7 @@
 "img": "ad8e391057ea38"
 },
 {
+"id": "emojo-bull-urban-cruiser",
 "cls": 2,
 "spd": 20,
 "tq": null,
@@ -2213,6 +2277,7 @@
 "img": "e44a6009f48fef"
 },
 {
+"id": "emojo-bull-trail",
 "cls": 2,
 "spd": 20,
 "tq": null,
@@ -2249,6 +2314,7 @@
 "img": "5de7dd7681d2ec"
 },
 {
+"id": "emojo-bull-trail-urban-cruiser",
 "cls": 2,
 "spd": 20,
 "tq": null,
@@ -2287,6 +2353,7 @@
 ],
 "39": [
 {
+"id": "emojo-caddy-pro",
 "cls": 2,
 "spd": 20,
 "tq": null,
@@ -2323,6 +2390,7 @@
 "img": "1f336b2a6a39fa"
 },
 {
+"id": "emojo-caddy-pro-urban-cruiser",
 "cls": 2,
 "spd": 20,
 "tq": null,
@@ -2376,6 +2444,7 @@
 ],
 "40": [
 {
+"id": "emojo-bison-pro",
 "cls": 2,
 "spd": 20,
 "tq": null,
@@ -2412,6 +2481,7 @@
 "img": "691e01ee7fd770"
 },
 {
+"id": "emojo-bison-pro-urban-cruiser",
 "cls": 2,
 "spd": 20,
 "tq": null,
@@ -2465,6 +2535,7 @@
 ],
 "41": [
 {
+"id": "eunorau-e-fat-step",
 "cls": 2,
 "spd": 20,
 "tq": 80,
@@ -2503,6 +2574,7 @@
 ],
 "42": [
 {
+"id": "eunorau-e-fat-mn",
 "cls": 3,
 "spd": 20,
 "tq": 80,
@@ -2524,6 +2596,7 @@
 ],
 "43": [
 {
+"id": "fuji-boulevard-evo",
 "cls": 2,
 "spd": 20,
 "tq": null,
@@ -2562,6 +2635,7 @@
 ],
 "44": [
 {
+"id": "fuji-conductor",
 "cls": 1,
 "spd": 20,
 "tq": null,
@@ -2590,6 +2664,7 @@
 ],
 "45": [
 {
+"id": "fuji-e-traverse-1-1-plus-and-st",
 "cls": 1,
 "spd": 15.5,
 "tq": 50,
@@ -2618,6 +2693,7 @@
 ],
 "46": [
 {
+"id": "fuji-e-crosstown",
 "cls": 1,
 "spd": 20,
 "tq": 45,
@@ -2646,6 +2722,7 @@
 ],
 "47": [
 {
+"id": "fuji-sanibel",
 "cls": 1,
 "spd": 20,
 "tq": 45,
@@ -2674,6 +2751,7 @@
 ],
 "48": [
 {
+"id": "gazelle-medeo-t9",
 "cls": 1,
 "spd": 20,
 "tq": 50,
@@ -2711,6 +2789,7 @@
 "img": "b18885c3110509"
 },
 {
+"id": "gazelle-medeo-t9-city",
 "cls": 1,
 "spd": 20,
 "tq": 40,
@@ -2745,6 +2824,7 @@
 ],
 "49": [
 {
+"id": "gazelle-eclipse-t11-plus",
 "cls": 3,
 "spd": 28,
 "tq": 85,
@@ -2777,6 +2857,7 @@
 "img": "74dc476774cdce"
 },
 {
+"id": "gazelle-eclipse-c380-plus",
 "cls": 3,
 "spd": 28,
 "tq": 85,
@@ -2811,6 +2892,7 @@
 ],
 "50": [
 {
+"id": "gazelle-ultimate-t10",
 "cls": 1,
 "spd": 20,
 "tq": 60,
@@ -2843,6 +2925,7 @@
 "img": "72f2dceeb586ed"
 },
 {
+"id": "gazelle-ultimate-c5",
 "cls": 1,
 "spd": 20,
 "tq": 75,
@@ -2875,6 +2958,7 @@
 "wtnb": true
 },
 {
+"id": "gazelle-ultimate-c8",
 "cls": 1,
 "spd": 20,
 "tq": 50,
@@ -2907,6 +2991,7 @@
 "img": "6defcfe6e8fe78"
 },
 {
+"id": "gazelle-ultimate-c380",
 "cls": 1,
 "spd": 20,
 "tq": 75,
@@ -2939,6 +3024,7 @@
 "wtnb": true
 },
 {
+"id": "gazelle-ultimate-t11-plus",
 "cls": 3,
 "spd": 28,
 "tq": 85,
@@ -2966,6 +3052,7 @@
 "img": "fefe0ceceb2996"
 },
 {
+"id": "gazelle-ultimate-c380-plus",
 "cls": 3,
 "spd": 28,
 "tq": 85,
@@ -3000,6 +3087,7 @@
 ],
 "51": [
 {
+"id": "gazelle-arroyo-c5-elite",
 "cls": 1,
 "spd": 20,
 "tq": 75,
@@ -3032,6 +3120,7 @@
 "img": "f256b1fd8ab60b"
 },
 {
+"id": "gazelle-arroyo-c8-elite",
 "cls": 1,
 "spd": 20,
 "tq": 50,
@@ -3064,6 +3153,7 @@
 "img": "3ad9433ed06482"
 },
 {
+"id": "gazelle-arroyo-c380-elite",
 "cls": 1,
 "spd": 20,
 "tq": 75,
@@ -3098,6 +3188,7 @@
 ],
 "52": [
 {
+"id": "gazelle-avignon-c380",
 "cls": 1,
 "spd": 20,
 "tq": 75,
@@ -3132,6 +3223,7 @@
 ],
 "53": [
 {
+"id": "gazelle-easyflow-c7",
 "cls": 1,
 "spd": 20,
 "tq": 50,
@@ -3166,6 +3258,7 @@
 ],
 "54": [
 {
+"id": "giant-stormguard-e-plus",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -3187,6 +3280,7 @@
 ],
 "55": [
 {
+"id": "giant-roam-e-plus",
 "cls": 1,
 "spd": 20,
 "tq": 50,
@@ -3208,6 +3302,7 @@
 ],
 "56": [
 {
+"id": "giant-explore-e-plus",
 "cls": 3,
 "spd": 28,
 "tq": 75,
@@ -3229,6 +3324,7 @@
 ],
 "57": [
 {
+"id": "golden-cycles-panthro",
 "cls": 3,
 "spd": 28,
 "tq": 51,
@@ -3277,6 +3373,7 @@
 ],
 "58": [
 {
+"id": "hase-kettwiesel-one-shimano-ep6-cargo",
 "cls": 1,
 "spd": null,
 "tq": 85,
@@ -3305,6 +3402,7 @@
 ],
 "59": [
 {
+"id": "hase-gravit",
 "cls": 1,
 "spd": null,
 "tq": 85,
@@ -3333,6 +3431,7 @@
 ],
 "60": [
 {
+"id": "hase-kettwiesel-one",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -3359,6 +3458,7 @@
 "img": "b5c9ebbc91f723"
 },
 {
+"id": "hase-kettwiesel-one-plus",
 "cls": 1,
 "spd": 20,
 "tq": 100,
@@ -3387,6 +3487,7 @@
 ],
 "61": [
 {
+"id": "hase-pino-e-tandem",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -3413,6 +3514,7 @@
 "img": "e73ecc35c1b019"
 },
 {
+"id": "hase-pino-e-cargo",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -3434,6 +3536,7 @@
 ],
 "62": [
 {
+"id": "himiway-a7-commuter-ebike-step-through",
 "cls": 2,
 "spd": 20,
 "tq": 70,
@@ -3470,6 +3573,7 @@
 "img": "63584dd144ffe8"
 },
 {
+"id": "himiway-a7-pro-commuter-ebike",
 "cls": 2,
 "spd": 28,
 "tq": 130,
@@ -3508,6 +3612,7 @@
 ],
 "63": [
 {
+"id": "himiway-d5-zebra",
 "cls": 2,
 "spd": 20,
 "tq": 86,
@@ -3544,6 +3649,7 @@
 "img": "41e7d6cc97af59"
 },
 {
+"id": "himiway-d5-st-zebra-st",
 "cls": 2,
 "spd": 20,
 "tq": 86,
@@ -3580,6 +3686,7 @@
 "img": "689f307131af21"
 },
 {
+"id": "himiway-d5-pro",
 "cls": 2,
 "spd": 20,
 "tq": 130,
@@ -3616,6 +3723,7 @@
 "img": "6b526666d64e44"
 },
 {
+"id": "himiway-d5-pro-st",
 "cls": 2,
 "spd": 20,
 "tq": 130,
@@ -3652,6 +3760,7 @@
 "img": "f3c0a95c7a7148"
 },
 {
+"id": "himiway-d5-2-0",
 "cls": 2,
 "spd": 20,
 "tq": 90,
@@ -3688,6 +3797,7 @@
 "img": "6a54fd595f905f"
 },
 {
+"id": "himiway-d5-2-0-st",
 "cls": 2,
 "spd": 28,
 "tq": 90,
@@ -3719,6 +3829,7 @@
 "img": "3d5915c5d7261d"
 },
 {
+"id": "himiway-d5-2-0-20",
 "cls": 2,
 "spd": 28,
 "tq": 90,
@@ -3762,6 +3873,7 @@
 ],
 "64": [
 {
+"id": "himiway-c3",
 "cls": 2,
 "spd": 20,
 "tq": 86,
@@ -3795,6 +3907,7 @@
 ],
 "65": [
 {
+"id": "ice-trikes-ice-adventure-e-assist",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -3831,6 +3944,7 @@
 "img": "47053ee8cb44ba"
 },
 {
+"id": "ice-trikes-ice-adventure-hd-e-assist",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -3864,6 +3978,7 @@
 ],
 "66": [
 {
+"id": "ice-trikes-ice-sprint-x-shimano-e-assist",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -3890,6 +4005,7 @@
 "img": "a705bfda48191b"
 },
 {
+"id": "ice-trikes-ice-sprint-x-tour-shimano-e-assist",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -3918,6 +4034,7 @@
 ],
 "67": [
 {
+"id": "ice-trikes-full-fat",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -3939,6 +4056,7 @@
 ],
 "68": [
 {
+"id": "izip-simi",
 "cls": 1,
 "spd": 20,
 "tq": 60,
@@ -3960,6 +4078,7 @@
 ],
 "69": [
 {
+"id": "larryvsharry-ebullitt-ep600",
 "cls": 1,
 "spd": 15.5,
 "tq": 85,
@@ -4026,6 +4145,7 @@
 "img": "afde4bda37bce7"
 },
 {
+"id": "larryvsharry-ebullitt-ep801",
 "cls": 1,
 "spd": 15.5,
 "tq": 85,
@@ -4094,6 +4214,7 @@
 ],
 "70": [
 {
+"id": "larryvsharry-ebullittx",
 "cls": 1,
 "spd": 15.5,
 "tq": 85,
@@ -4162,6 +4283,7 @@
 ],
 "71": [
 {
+"id": "lectric-xp4-500",
 "cls": 2,
 "spd": 28,
 "tq": 55,
@@ -4193,6 +4315,7 @@
 "img": "017261f3a9dd3c"
 },
 {
+"id": "lectric-xp4-750-long-range",
 "cls": 2,
 "spd": 28,
 "tq": 85,
@@ -4236,6 +4359,7 @@
 ],
 "72": [
 {
+"id": "lectric-xpeak-2-0",
 "cls": 2,
 "spd": 28,
 "tq": 85,
@@ -4269,6 +4393,7 @@
 ],
 "73": [
 {
+"id": "lectric-xp-lite2",
 "cls": 2,
 "spd": 20,
 "tq": 28,
@@ -4315,6 +4440,7 @@
 "img": "7bf8af6fa35096"
 },
 {
+"id": "lectric-xp-lite3",
 "cls": 2,
 "spd": 20,
 "tq": 28,
@@ -4368,6 +4494,7 @@
 ],
 "74": [
 {
+"id": "lectric-xpedition-2-0",
 "cls": 2,
 "spd": 28,
 "tq": 85,
@@ -4401,6 +4528,7 @@
 ],
 "75": [
 {
+"id": "lectric-xpress2-commuter-cruiser",
 "cls": 2,
 "spd": 28,
 "tq": 85,
@@ -4442,6 +4570,7 @@
 "img": "df5d97ac441b2d"
 },
 {
+"id": "lectric-xpress-lite",
 "cls": 2,
 "spd": 28,
 "tq": 61,
@@ -4485,6 +4614,7 @@
 ],
 "76": [
 {
+"id": "lectric-xp-trike2-500w",
 "cls": 2,
 "spd": 14,
 "tq": 65,
@@ -4521,6 +4651,7 @@
 "img": "8b34c4f5afdec6"
 },
 {
+"id": "lectric-xp-trike2-750-long-range",
 "cls": 2,
 "spd": 17,
 "tq": 85,
@@ -4569,6 +4700,7 @@
 ],
 "77": [
 {
+"id": "lectric-lectric-one",
 "cls": 2,
 "spd": 28,
 "tq": 85,
@@ -4590,6 +4722,7 @@
 ],
 "78": [
 {
+"id": "letrigo-minivan",
 "cls": 2,
 "spd": 27,
 "tq": 130,
@@ -4621,6 +4754,7 @@
 "img": "78e233b028c41e"
 },
 {
+"id": "letrigo-minivan-se",
 "cls": 2,
 "spd": 20,
 "tq": 90,
@@ -4659,6 +4793,7 @@
 ],
 "79": [
 {
+"id": "letrigo-koda",
 "cls": 2,
 "spd": 28,
 "tq": 100,
@@ -4692,6 +4827,7 @@
 ],
 "80": [
 {
+"id": "letrigo-workhorse",
 "cls": 2,
 "spd": 28,
 "tq": 130,
@@ -4725,6 +4861,7 @@
 ],
 "81": [
 {
+"id": "liv-thrive-e-plus",
 "cls": 3,
 "spd": 28,
 "tq": 80,
@@ -4746,6 +4883,7 @@
 ],
 "82": [
 {
+"id": "liv-rove",
 "cls": 1,
 "spd": 20,
 "tq": 50,
@@ -4767,6 +4905,7 @@
 ],
 "83": [
 {
+"id": "macfox-x1s-all-variants",
 "cls": 2,
 "spd": 20,
 "tq": 65,
@@ -4800,6 +4939,7 @@
 ],
 "84": [
 {
+"id": "macfox-x19",
 "cls": 2,
 "spd": 20,
 "tq": null,
@@ -4821,6 +4961,7 @@
 ],
 "85": [
 {
+"id": "macfox-m20x",
 "cls": 2,
 "spd": 20,
 "tq": 65,
@@ -4842,6 +4983,7 @@
 ],
 "86": [
 {
+"id": "macfox-x2",
 "cls": 2,
 "spd": 20,
 "tq": 65,
@@ -4880,6 +5022,7 @@
 ],
 "87": [
 {
+"id": "macfox-m16",
 "cls": 2,
 "spd": 20,
 "tq": null,
@@ -4923,6 +5066,7 @@
 ],
 "88": [
 {
+"id": "macfox-x7",
 "cls": 2,
 "spd": 20,
 "tq": null,
@@ -4966,6 +5110,7 @@
 ],
 "89": [
 {
+"id": "marin-fairfax-e-and-st",
 "cls": 2,
 "spd": 20,
 "tq": 40,
@@ -4999,6 +5144,7 @@
 ],
 "90": [
 {
+"id": "marin-stinson-e-and-st",
 "cls": 2,
 "spd": 20,
 "tq": 40,
@@ -5032,6 +5178,7 @@
 ],
 "91": [
 {
+"id": "marin-sausalito-e1",
 "cls": 1,
 "spd": 20,
 "tq": 50,
@@ -5058,6 +5205,7 @@
 "img": "393bc705367e3e"
 },
 {
+"id": "marin-sausalito-e2",
 "cls": 3,
 "spd": 28,
 "tq": 70,
@@ -5086,6 +5234,7 @@
 ],
 "92": [
 {
+"id": "marin-larkspur-e",
 "cls": 1,
 "spd": 20,
 "tq": 50,
@@ -5114,6 +5263,7 @@
 ],
 "93": [
 {
+"id": "mobility-access-orion-twin-e-assist",
 "cls": 1,
 "spd": null,
 "tq": null,
@@ -5135,6 +5285,7 @@
 ],
 "94": [
 {
+"id": "mobility-access-duet-e-assist",
 "cls": 1,
 "spd": null,
 "tq": null,
@@ -5173,6 +5324,7 @@
 ],
 "95": [
 {
+"id": "mod-mod-black-3",
 "cls": 2,
 "spd": 28,
 "tq": 69,
@@ -5201,6 +5353,7 @@
 ],
 "96": [
 {
+"id": "mod-cargo-3",
 "cls": 2,
 "spd": 28,
 "tq": 69,
@@ -5244,6 +5397,7 @@
 ],
 "97": [
 {
+"id": "mod-city-plus-step-thru-3",
 "cls": 2,
 "spd": 28,
 "tq": 69,
@@ -5290,6 +5444,7 @@
 },
 "99": [
 {
+"id": "mod-berlin-step-thru-3",
 "cls": 2,
 "spd": 28,
 "tq": 69,
@@ -5323,6 +5478,7 @@
 ],
 "100": [
 {
+"id": "mod-groove-step-thru-3",
 "cls": 2,
 "spd": 28,
 "tq": 69,
@@ -5366,6 +5522,7 @@
 ],
 "101": [
 {
+"id": "mod-easy-3",
 "cls": 2,
 "spd": 28,
 "tq": 69,
@@ -5399,6 +5556,7 @@
 ],
 "102": [
 {
+"id": "mod-easy-sidecar",
 "cls": 3,
 "spd": 28,
 "tq": 69,
@@ -5437,6 +5595,7 @@
 ],
 "103": [
 {
+"id": "mokwheel-basalt",
 "cls": 2,
 "spd": 28,
 "tq": 90,
@@ -5470,6 +5629,7 @@
 ],
 "104": [
 {
+"id": "mokwheel-scoria",
 "cls": 3,
 "spd": 28,
 "tq": 90,
@@ -5513,6 +5673,7 @@
 ],
 "105": [
 {
+"id": "momentum-vida-e-plus-2026",
 "cls": 3,
 "spd": 28,
 "tq": 60,
@@ -5544,6 +5705,7 @@
 "img": "3f108fe42723b8"
 },
 {
+"id": "momentum-vida-e-plus-ex",
 "cls": 3,
 "spd": 28,
 "tq": 60,
@@ -5582,6 +5744,7 @@
 ],
 "106": [
 {
+"id": "momentum-lafree-e-plus",
 "cls": 1,
 "spd": 20,
 "tq": 60,
@@ -5615,6 +5778,7 @@
 ],
 "107": [
 {
+"id": "momentum-trancend-e-plus",
 "cls": 3,
 "spd": 28,
 "tq": 60,
@@ -5648,6 +5812,7 @@
 ],
 "108": [
 {
+"id": "momentum-cito-e-plus",
 "cls": 3,
 "spd": 28,
 "tq": 80,
@@ -5681,6 +5846,7 @@
 ],
 "109": [
 {
+"id": "momentum-pakyak-e-plus",
 "cls": 3,
 "spd": 28,
 "tq": 80,
@@ -5714,6 +5880,7 @@
 ],
 "110": [
 {
+"id": "navee-kg05",
 "cls": 2,
 "spd": 32,
 "tq": 85,
@@ -5747,6 +5914,7 @@
 ],
 "111": [
 {
+"id": "omnium-cargo-v3",
 "cls": 1,
 "spd": 15.5,
 "tq": 85,
@@ -5795,6 +5963,7 @@
 ],
 "112": [
 {
+"id": "omnium-min-max-v3",
 "cls": 1,
 "spd": null,
 "tq": 85,
@@ -5843,6 +6012,7 @@
 ],
 "113": [
 {
+"id": "orbea-diem-20-mph",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -5879,6 +6049,7 @@
 "img": "aa05535d315c49"
 },
 {
+"id": "orbea-diem-28-mph",
 "cls": 3,
 "spd": 28,
 "tq": 85,
@@ -5917,6 +6088,7 @@
 ],
 "114": [
 {
+"id": "orbea-kemen-tour",
 "cls": 3,
 "spd": 28,
 "tq": 85,
@@ -5953,6 +6125,7 @@
 "img": "af32fbe2ab19b8"
 },
 {
+"id": "orbea-kemen-adv",
 "cls": 3,
 "spd": 28,
 "tq": 85,
@@ -5991,6 +6164,7 @@
 ],
 "115": [
 {
+"id": "orbea-vibe",
 "cls": 1,
 "spd": 20,
 "tq": 40,
@@ -6012,6 +6186,7 @@
 ],
 "116": [
 {
+"id": "orbea-optima-e40",
 "cls": 1,
 "spd": 20,
 "tq": 40,
@@ -6033,6 +6208,7 @@
 ],
 "117": [
 {
+"id": "orbea-muga-20-mph",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -6069,6 +6245,7 @@
 "img": "e646d132b99b1e"
 },
 {
+"id": "orbea-muga-28-mph",
 "cls": 3,
 "spd": 28,
 "tq": 85,
@@ -6107,6 +6284,7 @@
 ],
 "118": [
 {
+"id": "orbea-carpe-20-mph",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -6143,6 +6321,7 @@
 "img": "202206198569ce"
 },
 {
+"id": "orbea-carpe-28-mph",
 "cls": 3,
 "spd": 28,
 "tq": 85,
@@ -6181,6 +6360,7 @@
 ],
 "119": [
 {
+"id": "pedego-latch-2025",
 "cls": 2,
 "spd": 20,
 "tq": 45,
@@ -6217,6 +6397,7 @@
 "img": "94600e15c5bed2"
 },
 {
+"id": "pedego-latch-2",
 "cls": 2,
 "spd": 20,
 "tq": 90,
@@ -6255,6 +6436,7 @@
 ],
 "120": [
 {
+"id": "pedego-cargo",
 "cls": 2,
 "spd": 20,
 "tq": 85,
@@ -6288,6 +6470,7 @@
 ],
 "121": [
 {
+"id": "pedego-avenue",
 "cls": 2,
 "spd": 20,
 "tq": 60,
@@ -6339,6 +6522,7 @@
 "img": "8c4ec5c5f8e9e6"
 },
 {
+"id": "pedego-avenue-core",
 "cls": 2,
 "spd": 20,
 "tq": 75,
@@ -6380,6 +6564,7 @@
 "img": "ab18b304fade11"
 },
 {
+"id": "pedego-avenue-pro",
 "cls": 2,
 "spd": 20,
 "tq": 85,
@@ -6428,6 +6613,7 @@
 ],
 "122": [
 {
+"id": "pedego-interceptor",
 "cls": 2,
 "spd": 28,
 "tq": 60,
@@ -6504,6 +6690,7 @@
 "img": "b6244634c54e8c"
 },
 {
+"id": "pedego-interceptor-platinum-edition",
 "cls": 2,
 "spd": 28,
 "tq": 60,
@@ -6532,6 +6719,7 @@
 ],
 "123": [
 {
+"id": "pedego-boomerang-core",
 "cls": 2,
 "spd": 20,
 "tq": null,
@@ -6573,6 +6761,7 @@
 "img": "6f0de8d8d5dad1"
 },
 {
+"id": "pedego-boomerang-pro",
 "cls": 2,
 "spd": 28,
 "tq": null,
@@ -6621,6 +6810,7 @@
 ],
 "124": [
 {
+"id": "pedego-element-core",
 "cls": 2,
 "spd": 20,
 "tq": null,
@@ -6652,6 +6842,7 @@
 "img": "04d3483b25d8a9"
 },
 {
+"id": "pedego-element-pro",
 "cls": 2,
 "spd": 28,
 "tq": null,
@@ -6688,6 +6879,7 @@
 "img": "dfc1280bf68920"
 },
 {
+"id": "pedego-element-2",
 "cls": 2,
 "spd": 28,
 "tq": 90,
@@ -6726,6 +6918,7 @@
 ],
 "125": [
 {
+"id": "pedego-ridge-rider",
 "cls": 2,
 "spd": 20,
 "tq": 90,
@@ -6764,6 +6957,7 @@
 ],
 "126": [
 {
+"id": "priority-e-coast",
 "cls": 2,
 "spd": 28,
 "tq": null,
@@ -6807,6 +7001,7 @@
 ],
 "127": [
 {
+"id": "priority-e-classic",
 "cls": 1,
 "spd": null,
 "tq": null,
@@ -6828,6 +7023,7 @@
 ],
 "128": [
 {
+"id": "qualisports-dolphin",
 "cls": 2,
 "spd": 20,
 "tq": null,
@@ -6866,6 +7062,7 @@
 ],
 "129": [
 {
+"id": "radio-flyer-flyer-loop",
 "cls": 2,
 "spd": 20,
 "tq": 87,
@@ -6909,6 +7106,7 @@
 ],
 "130": [
 {
+"id": "radio-flyer-flyer-via",
 "cls": 2,
 "spd": 20,
 "tq": null,
@@ -6937,6 +7135,7 @@
 ],
 "131": [
 {
+"id": "radio-flyer-flyer-via-pro",
 "cls": 2,
 "spd": 20,
 "tq": 85,
@@ -6975,6 +7174,7 @@
 ],
 "132": [
 {
+"id": "retrospec-beaumont-rev-2-city",
 "cls": 2,
 "spd": 20,
 "tq": null,
@@ -7023,6 +7223,7 @@
 ],
 "133": [
 {
+"id": "retrospec-judd-rev-folding",
 "cls": 2,
 "spd": 20,
 "tq": null,
@@ -7061,6 +7262,7 @@
 ],
 "134": [
 {
+"id": "retrospec-valen-rev-plus",
 "cls": 2,
 "spd": 20,
 "tq": 65,
@@ -7097,6 +7299,7 @@
 "img": "9b07a2b34cef03"
 },
 {
+"id": "retrospec-valen-rev-3",
 "cls": 2,
 "spd": 20,
 "tq": 85,
@@ -7130,6 +7333,7 @@
 ],
 "135": [
 {
+"id": "retrospec-boca-rev-2-electric-tricycle",
 "cls": 2,
 "spd": 14,
 "tq": 65,
@@ -7163,6 +7367,7 @@
 ],
 "136": [
 {
+"id": "retrospec-chatham-rev-plus-2-and-step-through",
 "cls": 2,
 "spd": 20,
 "tq": 65,
@@ -7214,6 +7419,7 @@
 "img": "1614be82eafd33"
 },
 {
+"id": "retrospec-chatham-rev-3-and-step-through",
 "cls": 2,
 "spd": 20,
 "tq": null,
@@ -7267,6 +7473,7 @@
 ],
 "137": [
 {
+"id": "retrospec-joe-rev-bmx-electric-bike-rev-1",
 "cls": 2,
 "spd": 20,
 "tq": null,
@@ -7293,6 +7500,7 @@
 "img": "6d334c84bced8b"
 },
 {
+"id": "retrospec-joe-rev-2-bmx-electric-bike",
 "cls": 2,
 "spd": 20,
 "tq": null,
@@ -7331,6 +7539,7 @@
 ],
 "138": [
 {
+"id": "retrospec-abbot-rev-2-and-step-through",
 "cls": 2,
 "spd": 20,
 "tq": 65,
@@ -7369,6 +7578,7 @@
 ],
 "139": [
 {
+"id": "retrospec-napa-rev",
 "cls": 3,
 "spd": 28,
 "tq": null,
@@ -7397,6 +7607,7 @@
 ],
 "140": [
 {
+"id": "retrospec-koa-rev-3-and-step-through",
 "cls": 2,
 "spd": 20,
 "tq": 65,
@@ -7438,6 +7649,7 @@
 "img": "3c6324d60dbe8c"
 },
 {
+"id": "retrospec-koa-rev-plus-2-and-step-through",
 "cls": 2,
 "spd": null,
 "tq": null,
@@ -7486,6 +7698,7 @@
 ],
 "141": [
 {
+"id": "retrospec-roo-rev-cargo-electric-bike",
 "cls": 2,
 "spd": 20,
 "tq": 85,
@@ -7517,6 +7730,7 @@
 "img": "7cacd109b2016e"
 },
 {
+"id": "retrospec-roo-rev-xl-cargo-electric-bike",
 "cls": 2,
 "spd": 20,
 "tq": 85,
@@ -7550,6 +7764,7 @@
 ],
 "142": [
 {
+"id": "revi-bikes-runabout-2",
 "cls": 2,
 "spd": 25,
 "tq": 80,
@@ -7603,6 +7818,7 @@
 ],
 "143": [
 {
+"id": "riese-and-muller-load4-75-vario",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -7634,6 +7850,7 @@
 "img": null
 },
 {
+"id": "riese-and-muller-load4-60-vario",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -7672,6 +7889,7 @@
 ],
 "144": [
 {
+"id": "salsa-confluence-flat-bar-altus",
 "cls": 1,
 "spd": 20,
 "tq": 40,
@@ -7698,6 +7916,7 @@
 "img": "13bad599a4b80a"
 },
 {
+"id": "salsa-confluence-flat-bar-cues-11",
 "cls": 1,
 "spd": 20,
 "tq": 40,
@@ -7724,6 +7943,7 @@
 "img": "a6c54a6668d019"
 },
 {
+"id": "salsa-confluence-apex-1",
 "cls": 1,
 "spd": 20,
 "tq": 40,
@@ -7750,6 +7970,7 @@
 "img": "9fb6b349acc47d"
 },
 {
+"id": "salsa-confluence-grx-600-2x",
 "cls": 1,
 "spd": 20,
 "tq": 40,
@@ -7776,6 +7997,7 @@
 "img": "26b4c6e2256562"
 },
 {
+"id": "salsa-confluence-flat-bar-essa-8",
 "cls": 1,
 "spd": 20,
 "tq": 45,
@@ -7802,6 +8024,7 @@
 "img": "d7c287233e56b3"
 },
 {
+"id": "salsa-confluence-cues-10",
 "cls": 1,
 "spd": 20,
 "tq": 45,
@@ -7828,6 +8051,7 @@
 "img": "803f98cae9148c"
 },
 {
+"id": "salsa-confluence-cues-11",
 "cls": 1,
 "spd": 20,
 "tq": 45,
@@ -7856,6 +8080,7 @@
 ],
 "145": [
 {
+"id": "salsa-tributary",
 "cls": 3,
 "spd": 28,
 "tq": 85,
@@ -7904,6 +8129,7 @@
 ],
 "146": [
 {
+"id": "santa-cruz-skitch-cc-apex-flat-bar",
 "cls": 3,
 "spd": 28,
 "tq": 60,
@@ -7935,6 +8161,7 @@
 "img": "f3863879a7aed7"
 },
 {
+"id": "santa-cruz-skitch-cc-apex",
 "cls": 3,
 "spd": 28,
 "tq": 60,
@@ -7966,6 +8193,7 @@
 "img": "ebc2dc9037140c"
 },
 {
+"id": "santa-cruz-skitch-cc-gx-axs",
 "cls": 3,
 "spd": 28,
 "tq": 60,
@@ -7997,6 +8225,7 @@
 "img": "f7d2a38fb466af"
 },
 {
+"id": "santa-cruz-skitch-cc-gx-axs-flat-bar",
 "cls": 3,
 "spd": 28,
 "tq": 60,
@@ -8030,6 +8259,7 @@
 ],
 "147": [
 {
+"id": "scott-sub-active-eride-20-men-bike-290667",
 "cls": 1,
 "spd": 20,
 "tq": 40,
@@ -8051,6 +8281,7 @@
 ],
 "148": [
 {
+"id": "scott-sub-cross-eride-30-men-bike-290645",
 "cls": 1,
 "spd": 20,
 "tq": 40,
@@ -8072,6 +8303,7 @@
 ],
 "149": [
 {
+"id": "scott-silence-eride-20-men-speed-bike-286720",
 "cls": 3,
 "spd": 28,
 "tq": 85,
@@ -8093,6 +8325,7 @@
 ],
 "150": [
 {
+"id": "segway-xafari",
 "cls": 2,
 "spd": 28,
 "tq": 80,
@@ -8126,6 +8359,7 @@
 ],
 "151": [
 {
+"id": "segway-myon",
 "cls": 2,
 "spd": 28,
 "tq": 85,
@@ -8164,6 +8398,7 @@
 ],
 "152": [
 {
+"id": "segway-muxi",
 "cls": 2,
 "spd": 23,
 "tq": 80,
@@ -8197,6 +8432,7 @@
 ],
 "153": [
 {
+"id": "senada-osprey-v2",
 "cls": 3,
 "spd": null,
 "tq": null,
@@ -8218,6 +8454,7 @@
 ],
 "154": [
 {
+"id": "senada-gladiator",
 "cls": 3,
 "spd": 28,
 "tq": null,
@@ -8239,6 +8476,7 @@
 ],
 "155": [
 {
+"id": "senada-austin-v2",
 "cls": 3,
 "spd": null,
 "tq": null,
@@ -8260,6 +8498,7 @@
 ],
 "156": [
 {
+"id": "senada-moto-cargo",
 "cls": 3,
 "spd": null,
 "tq": null,
@@ -8282,6 +8521,7 @@
 "157": [],
 "158": [
 {
+"id": "serfas-quest",
 "cls": 2,
 "spd": 28,
 "tq": null,
@@ -8315,6 +8555,7 @@
 ],
 "159": [
 {
+"id": "serfas-e-dash-mini",
 "cls": 3,
 "spd": 28,
 "tq": null,
@@ -8358,6 +8599,7 @@
 ],
 "160": [
 {
+"id": "serfas-edart-750w",
 "cls": 3,
 "spd": 28,
 "tq": null,
@@ -8389,6 +8631,7 @@
 "img": "c992891f1553aa"
 },
 {
+"id": "serfas-edart-500w",
 "cls": 3,
 "spd": 28,
 "tq": null,
@@ -8445,6 +8688,7 @@
 "img": "1b2cddec9fcac0"
 },
 {
+"id": "serfas-edart-350w",
 "cls": 2,
 "spd": 20,
 "tq": null,
@@ -8483,6 +8727,7 @@
 ],
 "161": [
 {
+"id": "serfas-dash-500w-belt-drive",
 "cls": 3,
 "spd": 28,
 "tq": null,
@@ -8519,6 +8764,7 @@
 "img": "9fdf9bf1255d33"
 },
 {
+"id": "serfas-dash-mid-drive-500w-belt-drive",
 "cls": 3,
 "spd": 28,
 "tq": null,
@@ -8562,6 +8808,7 @@
 ],
 "162": [
 {
+"id": "sixthreezero-evryjourney-electric-tricycle-rickshaw-750w",
 "cls": 2,
 "spd": 20,
 "tq": null,
@@ -8588,6 +8835,7 @@
 "img": null
 },
 {
+"id": "sixthreezero-evryjourney-250w-men-s",
 "cls": 2,
 "spd": 20,
 "tq": null,
@@ -8614,6 +8862,7 @@
 "img": "6db1ff1267a589"
 },
 {
+"id": "sixthreezero-evryjourney-new-500w-men-s-sport-hybrid",
 "cls": 2,
 "spd": 20,
 "tq": null,
@@ -8640,6 +8889,7 @@
 "img": "a94c348373d10b"
 },
 {
+"id": "sixthreezero-evryjourney-new-500w-women-s-touring-hybrid",
 "cls": 2,
 "spd": 20,
 "tq": null,
@@ -8668,6 +8918,7 @@
 ],
 "163": [
 {
+"id": "specialized-turbo-tero-ht",
 "cls": 1,
 "spd": null,
 "tq": 50,
@@ -8701,6 +8952,7 @@
 ],
 "164": [
 {
+"id": "specialized-globe-haul-st",
 "cls": 3,
 "spd": 28,
 "tq": null,
@@ -8732,6 +8984,7 @@
 "img": "8ab97bddea14f0"
 },
 {
+"id": "specialized-globe-haul-lt",
 "cls": 3,
 "spd": 28,
 "tq": null,
@@ -8765,6 +9018,7 @@
 ],
 "165": [
 {
+"id": "specialized-turbo-como-3-0",
 "cls": 1,
 "spd": 20,
 "tq": 50,
@@ -8791,6 +9045,7 @@
 "img": "7c8399a9dc5190"
 },
 {
+"id": "specialized-turbo-como-4-0",
 "cls": 3,
 "spd": 28,
 "tq": 70,
@@ -8827,6 +9082,7 @@
 "img": "659b7d20bd0c5f"
 },
 {
+"id": "specialized-turbo-como-4-0-igh",
 "cls": 3,
 "spd": 28,
 "tq": 70,
@@ -8853,6 +9109,7 @@
 "img": "8e10cfee9722d9"
 },
 {
+"id": "specialized-turbo-como-5-0-igh",
 "cls": 3,
 "spd": 28,
 "tq": 90,
@@ -8886,6 +9143,7 @@
 ],
 "166": [
 {
+"id": "specialized-turbo-vado-3-evo",
 "cls": 3,
 "spd": 28,
 "tq": 105,
@@ -8922,6 +9180,7 @@
 "img": "d6e0eebcc3102b"
 },
 {
+"id": "specialized-turbo-vado-3-x",
 "cls": 3,
 "spd": 28,
 "tq": 105,
@@ -8953,6 +9212,7 @@
 "img": "aa78c331cda20b"
 },
 {
+"id": "specialized-turbo-vado-2-4-0",
 "cls": 3,
 "spd": 28,
 "tq": 70,
@@ -8984,6 +9244,7 @@
 "img": "e98ca9bbdd2d4b"
 },
 {
+"id": "specialized-turbo-vado-2-5-0-igh",
 "cls": 3,
 "spd": 28,
 "tq": 90,
@@ -9017,6 +9278,7 @@
 ],
 "167": [
 {
+"id": "sunseeker-e-delta-b1-sx-electric-delta",
 "cls": 2,
 "spd": 15,
 "tq": 60,
@@ -9038,6 +9300,7 @@
 ],
 "168": [
 {
+"id": "sunseeker-e-eco-tad-b1-sx-electric-tadpole",
 "cls": 2,
 "spd": 15,
 "tq": 60,
@@ -9059,6 +9322,7 @@
 ],
 "169": [
 {
+"id": "surly-skid-loader",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -9087,6 +9351,7 @@
 ],
 "170": [
 {
+"id": "surly-big-easy",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -9115,6 +9380,7 @@
 ],
 "171": [
 {
+"id": "tern-gsd-s10",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -9151,6 +9417,7 @@
 "img": "f040baae5f9eaa"
 },
 {
+"id": "tern-gsd-p00",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -9192,6 +9459,7 @@
 "img": "bbf6f322acce3a"
 },
 {
+"id": "tern-gsd-p10",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -9218,6 +9486,7 @@
 "img": "3c84bde9154b72"
 },
 {
+"id": "tern-gsd-r14",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -9246,6 +9515,7 @@
 ],
 "172": [
 {
+"id": "tern-orox-s12-27-5",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -9277,6 +9547,7 @@
 "img": "0b64619c7e8776"
 },
 {
+"id": "tern-orox-r14-27-5",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -9305,6 +9576,7 @@
 ],
 "173": [
 {
+"id": "tern-quick-haul-d8",
 "cls": 1,
 "spd": 20,
 "tq": 50,
@@ -9341,6 +9613,7 @@
 "img": "8da90741dadfbf"
 },
 {
+"id": "tern-quick-haul-p9-sport",
 "cls": 3,
 "spd": 28,
 "tq": 65,
@@ -9372,6 +9645,7 @@
 "img": "0d5348f2f8cd38"
 },
 {
+"id": "tern-quick-haul-long-d9",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -9420,6 +9694,7 @@
 ],
 "174": [
 {
+"id": "tern-hsd-p5i-gen-3",
 "cls": 1,
 "spd": 20,
 "tq": 75,
@@ -9451,6 +9726,7 @@
 "img": "72cdde80745be9"
 },
 {
+"id": "tern-hsd-p00-gen-3",
 "cls": 1,
 "spd": 20,
 "tq": 75,
@@ -9477,6 +9753,7 @@
 "img": "c62144e6c0b316"
 },
 {
+"id": "tern-hsd-p10e-sport-gen-3",
 "cls": 3,
 "spd": 28,
 "tq": 90,
@@ -9513,6 +9790,7 @@
 "img": "580569cc2f055f"
 },
 {
+"id": "tern-hsd-s9i-sport-gen-3",
 "cls": 3,
 "spd": 28,
 "tq": 90,
@@ -9546,6 +9824,7 @@
 ],
 "175": [
 {
+"id": "tern-nbd-p8i",
 "cls": 1,
 "spd": 20,
 "tq": 50,
@@ -9577,6 +9856,7 @@
 "img": "dded2c9309fe56"
 },
 {
+"id": "tern-nbd-s5i",
 "cls": 1,
 "spd": 20,
 "tq": 65,
@@ -9615,6 +9895,7 @@
 ],
 "176": [
 {
+"id": "tern-quick-haul-long",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -9663,6 +9944,7 @@
 ],
 "177": [
 {
+"id": "tern-vektron-p10",
 "cls": 1,
 "spd": 20,
 "tq": 65,
@@ -9689,6 +9971,7 @@
 "img": "9e443ecb0fce73"
 },
 {
+"id": "tern-vektron-p5i",
 "cls": 1,
 "spd": 20,
 "tq": 65,
@@ -9715,6 +9998,7 @@
 "img": "1a12374ce34427"
 },
 {
+"id": "tern-vektron-q9",
 "cls": 1,
 "spd": 20,
 "tq": 50,
@@ -9748,6 +10032,7 @@
 ],
 "178": [
 {
+"id": "top-end-all-e-handcycle-models",
 "cls": 1,
 "spd": 20,
 "tq": null,
@@ -9769,6 +10054,7 @@
 ],
 "179": [
 {
+"id": "trek-dual-sport-plus",
 "cls": 1,
 "spd": 20,
 "tq": 40,
@@ -9790,6 +10076,7 @@
 ],
 "180": [
 {
+"id": "trek-fetch-plus-2",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -9821,6 +10108,7 @@
 "img": "587ac61307c8f3"
 },
 {
+"id": "trek-fetch-plus-4",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -9849,6 +10137,7 @@
 ],
 "181": [
 {
+"id": "trek-fx-plus-1",
 "cls": 2,
 "spd": 20,
 "tq": 60,
@@ -9880,6 +10169,7 @@
 "img": "76b44957670fc1"
 },
 {
+"id": "trek-fx-plus-1s",
 "cls": 3,
 "spd": 28,
 "tq": 60,
@@ -9911,6 +10201,7 @@
 "img": "76b44957670fc1"
 },
 {
+"id": "trek-fx-plus-2",
 "cls": 2,
 "spd": 20,
 "tq": 60,
@@ -9937,6 +10228,7 @@
 "img": "884471a4cc5362"
 },
 {
+"id": "trek-fx-plus-2s",
 "cls": 3,
 "spd": 28,
 "tq": 60,
@@ -9963,6 +10255,7 @@
 "img": "884471a4cc5362"
 },
 {
+"id": "trek-fx-plus-7s",
 "cls": 3,
 "spd": 28,
 "tq": 50,
@@ -9996,6 +10289,7 @@
 ],
 "182": [
 {
+"id": "trek-verve-plus-2-lowstep",
 "cls": 1,
 "spd": 20,
 "tq": 50,
@@ -10022,6 +10316,7 @@
 "img": "2e9f77bec42339"
 },
 {
+"id": "trek-verve-plus-3-lowstep",
 "cls": 1,
 "spd": 20,
 "tq": 75,
@@ -10053,6 +10348,7 @@
 "img": "90f7b67da592d3"
 },
 {
+"id": "trek-verve-plus-4s-lowstep",
 "cls": 3,
 "spd": 28,
 "tq": 75,
@@ -10081,6 +10377,7 @@
 ],
 "183": [
 {
+"id": "trek-allant-plus",
 "cls": 3,
 "spd": 20,
 "tq": 75,
@@ -10102,6 +10399,7 @@
 ],
 "184": [
 {
+"id": "trek-charter-plus-5s-lowstep",
 "cls": 3,
 "spd": 28,
 "tq": 85,
@@ -10133,6 +10431,7 @@
 "img": "03b4f709f1a357"
 },
 {
+"id": "trek-charter-plus-4s",
 "cls": 3,
 "spd": 28,
 "tq": 85,
@@ -10164,6 +10463,7 @@
 "img": "7fd189000aa8e1"
 },
 {
+"id": "trek-charter-plus-4s-lowstep",
 "cls": 3,
 "spd": 28,
 "tq": 85,
@@ -10197,6 +10497,7 @@
 ],
 "185": [
 {
+"id": "trek-borrego-plus",
 "cls": 2,
 "spd": 20,
 "tq": 90,
@@ -10233,6 +10534,7 @@
 "img": "369620aec77595"
 },
 {
+"id": "trek-borrego-plus-s",
 "cls": 3,
 "spd": 28,
 "tq": 90,
@@ -10271,6 +10573,7 @@
 ],
 "186": [
 {
+"id": "troxus-trax-lt",
 "cls": 2,
 "spd": 20,
 "tq": 50,
@@ -10307,6 +10610,7 @@
 "img": "90d35223eb927a"
 },
 {
+"id": "troxus-trax-lt-iq",
 "cls": 2,
 "spd": 20,
 "tq": 50,
@@ -10343,6 +10647,7 @@
 "img": "18fdea0a5df83c"
 },
 {
+"id": "troxus-trax-sport",
 "cls": 2,
 "spd": 25,
 "tq": 50,
@@ -10374,6 +10679,7 @@
 "img": "4ebebd500c4b2e"
 },
 {
+"id": "troxus-trax-whim-iq",
 "cls": 2,
 "spd": 28,
 "tq": 50,
@@ -10405,6 +10711,7 @@
 "img": "bd8edce974cfb9"
 },
 {
+"id": "troxus-trax-plus-500-15",
 "cls": 3,
 "spd": 28,
 "tq": 65,
@@ -10441,6 +10748,7 @@
 "img": "264ccfb23af88d"
 },
 {
+"id": "troxus-trax-plus-iq",
 "cls": 3,
 "spd": 28,
 "tq": 65,
@@ -10477,6 +10785,7 @@
 "img": "69ccb158d9c6fe"
 },
 {
+"id": "troxus-trax-plus-750-30",
 "cls": 3,
 "spd": 28,
 "tq": 86,
@@ -10513,6 +10822,7 @@
 "img": "633806b13e8acc"
 },
 {
+"id": "troxus-trax-plus-lr-iq",
 "cls": 3,
 "spd": 28,
 "tq": 86,
@@ -10544,6 +10854,7 @@
 "img": "36b447717114e8"
 },
 {
+"id": "troxus-trax-suv",
 "cls": 3,
 "spd": 28,
 "tq": 85,
@@ -10575,6 +10886,7 @@
 "img": "f3583705ee5500"
 },
 {
+"id": "troxus-trax-mid-drive",
 "cls": 3,
 "spd": 28,
 "tq": 130,
@@ -10608,6 +10920,7 @@
 ],
 "187": [
 {
+"id": "troxus-lynx-plus",
 "cls": 3,
 "spd": 28,
 "tq": 86,
@@ -10644,6 +10957,7 @@
 "img": "8620bb8d799c52"
 },
 {
+"id": "troxus-lynx-plus-iq",
 "cls": 3,
 "spd": 28,
 "tq": 86,
@@ -10680,6 +10994,7 @@
 "img": "ffa59f22e7b4e1"
 },
 {
+"id": "troxus-lynx-cargo",
 "cls": 2,
 "spd": 20,
 "tq": 86,
@@ -10711,6 +11026,7 @@
 "img": "6bdf56079b6f2e"
 },
 {
+"id": "troxus-lynx-folding",
 "cls": 2,
 "spd": 20,
 "tq": 65,
@@ -10744,6 +11060,7 @@
 ],
 "188": [
 {
+"id": "troxus-explorer-plus-iq",
 "cls": 3,
 "spd": 28,
 "tq": 86,
@@ -10785,6 +11102,7 @@
 "img": "3d50d3de6c6d9d"
 },
 {
+"id": "troxus-explorer-plus-mik-step-thru",
 "cls": 3,
 "spd": 28,
 "tq": 86,
@@ -10818,6 +11136,7 @@
 ],
 "189": [
 {
+"id": "troxus-t-xc",
 "cls": 1,
 "spd": 20,
 "tq": 130,
@@ -10852,6 +11171,7 @@
 "190": [],
 "191": [
 {
+"id": "urban-arrow-family",
 "cls": 1,
 "spd": 15.5,
 "tq": 75,
@@ -10883,6 +11203,7 @@
 "img": "aee1403986380f"
 },
 {
+"id": "urban-arrow-familynext-pro",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -10916,6 +11237,7 @@
 ],
 "192": [
 {
+"id": "urban-arrow-shorty",
 "cls": 1,
 "spd": 15.5,
 "tq": 65,
@@ -10949,6 +11271,7 @@
 ],
 "193": [
 {
+"id": "urban-arrow-breeze",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -10977,6 +11300,7 @@
 ],
 "194": [
 {
+"id": "urtopia-carbon-joy",
 "cls": 2,
 "spd": 25,
 "tq": 50,
@@ -11018,6 +11342,7 @@
 "img": "c8a5ac421f1cb2"
 },
 {
+"id": "urtopia-carbon-joy-ultra",
 "cls": 2,
 "spd": 25,
 "tq": 50,
@@ -11071,6 +11396,7 @@
 ],
 "195": [
 {
+"id": "urtopia-carbon-1-st",
 "cls": 1,
 "spd": 25,
 "tq": 45,
@@ -11109,6 +11435,7 @@
 ],
 "196": [
 {
+"id": "urtopia-carbon-fusion-gt",
 "cls": 2,
 "spd": 28,
 "tq": 36,
@@ -11147,6 +11474,7 @@
 ],
 "197": [
 {
+"id": "urtopia-carbon-classic",
 "cls": 2,
 "spd": 25,
 "tq": 45,
@@ -11188,6 +11516,7 @@
 "img": "11187d4e8e8652"
 },
 {
+"id": "urtopia-carbon-classic-step-thru",
 "cls": 2,
 "spd": 25,
 "tq": 45,
@@ -11226,6 +11555,7 @@
 ],
 "198": [
 {
+"id": "urtopia-carbon-atom-e-bike",
 "cls": 3,
 "spd": 28,
 "tq": 90,
@@ -11264,6 +11594,7 @@
 ],
 "199": [
 {
+"id": "velotric-breeze-1",
 "cls": 2,
 "spd": 28,
 "tq": 65,
@@ -11317,6 +11648,7 @@
 ],
 "200": [
 {
+"id": "velotric-nomad-2",
 "cls": 2,
 "spd": 28,
 "tq": 90,
@@ -11358,6 +11690,7 @@
 "img": "ebbf28a72aeec1"
 },
 {
+"id": "velotric-nomad-2x",
 "cls": 2,
 "spd": 28,
 "tq": 105,
@@ -11406,6 +11739,7 @@
 ],
 "201": [
 {
+"id": "velotric-discover-2",
 "cls": 2,
 "spd": 28,
 "tq": 75,
@@ -11447,6 +11781,7 @@
 "img": "01e2305c923b62"
 },
 {
+"id": "velotric-discover-3",
 "cls": 2,
 "spd": 28,
 "tq": 75,
@@ -11495,6 +11830,7 @@
 ],
 "202": [
 {
+"id": "velotric-t1",
 "cls": 1,
 "spd": 25,
 "tq": 45,
@@ -11528,6 +11864,7 @@
 ],
 "203": [
 {
+"id": "velotric-discover-1-plus",
 "cls": 3,
 "spd": 28,
 "tq": 65,
@@ -11561,6 +11898,7 @@
 ],
 "204": [
 {
+"id": "velotric-nomad-1-plus",
 "cls": 2,
 "spd": 28,
 "tq": 75,
@@ -11599,6 +11937,7 @@
 ],
 "205": [
 {
+"id": "velotric-fold-1",
 "cls": 2,
 "spd": 20,
 "tq": 70,
@@ -11625,6 +11964,7 @@
 "img": "0bdea3f7f71560"
 },
 {
+"id": "velotric-fold-1-plus",
 "cls": 2,
 "spd": 20,
 "tq": 75,
@@ -11673,6 +12013,7 @@
 ],
 "206": [
 {
+"id": "velotric-summit-1",
 "cls": 2,
 "spd": 20,
 "tq": 90,
@@ -11709,6 +12050,7 @@
 "img": "201886fd44b641"
 },
 {
+"id": "velotric-summit-2",
 "cls": 2,
 "spd": 20,
 "tq": 100,
@@ -11747,6 +12089,7 @@
 ],
 "207": [
 {
+"id": "velotric-go-1",
 "cls": 2,
 "spd": 25,
 "tq": 65,
@@ -11780,6 +12123,7 @@
 ],
 "208": [
 {
+"id": "velotric-fold-1-lite",
 "cls": 2,
 "spd": 20,
 "tq": 55,
@@ -11813,6 +12157,7 @@
 ],
 "209": [
 {
+"id": "velotric-packer-1",
 "cls": 2,
 "spd": 25,
 "tq": 75,
@@ -11846,6 +12191,7 @@
 ],
 "210": [
 {
+"id": "velotric-triker-1",
 "cls": 2,
 "spd": 12,
 "tq": 90,
@@ -11884,6 +12230,7 @@
 ],
 "211": [
 {
+"id": "velotric-discover-m",
 "cls": 2,
 "spd": 20,
 "tq": 100,
@@ -11917,6 +12264,7 @@
 ],
 "212": [
 {
+"id": "velotric-gomad",
 "cls": 2,
 "spd": 20,
 "tq": 85,
@@ -11955,6 +12303,7 @@
 ],
 "213": [
 {
+"id": "velotric-tempo",
 "cls": 2,
 "spd": 20,
 "tq": 45,
@@ -11993,6 +12342,7 @@
 ],
 "214": [
 {
+"id": "x-lab-st5-plus",
 "cls": 2,
 "spd": 20,
 "tq": 95,
@@ -12021,6 +12371,7 @@
 ],
 "215": [
 {
+"id": "x-lab-sp5-plus",
 "cls": 2,
 "spd": 20,
 "tq": 85,
@@ -12049,6 +12400,7 @@
 ],
 "216": [
 {
+"id": "xtracycle-swoop-asm",
 "cls": 3,
 "spd": 28,
 "tq": 85,
@@ -12083,6 +12435,7 @@
 ],
 "217": [
 {
+"id": "xtracycle-rfa-shimano-ep8-class-1",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -12102,6 +12455,7 @@
 "img": null
 },
 {
+"id": "xtracycle-rfa-shimano-ep6-class-3",
 "cls": 3,
 "spd": 28,
 "tq": 85,
@@ -12123,6 +12477,7 @@
 ],
 "218": [
 {
+"id": "xtracycle-the-hopper",
 "cls": 2,
 "spd": 28,
 "tq": null,
@@ -12151,6 +12506,7 @@
 ],
 "219": [
 {
+"id": "yuba-boda-boda",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -12177,6 +12533,7 @@
 "img": "7666d4844c29f9"
 },
 {
+"id": "yuba-mini-boda-boda",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -12205,6 +12562,7 @@
 ],
 "220": [
 {
+"id": "yuba-spicy-curry-new",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -12241,6 +12599,7 @@
 "img": "53ab825d9b1617"
 },
 {
+"id": "yuba-spicy-curry-plus",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -12267,6 +12626,7 @@
 "img": "2fc9de0131d020"
 },
 {
+"id": "yuba-spicy-curry-v3",
 "cls": 1,
 "spd": 20,
 "tq": 85,
@@ -12310,6 +12670,7 @@
 ],
 "221": [
 {
+"id": "yuba-fast-rack",
 "cls": 1,
 "spd": 20,
 "tq": 60,
@@ -12343,6 +12704,7 @@
 ],
 "222": [
 {
+"id": "yuba-kombi-e5",
 "cls": 1,
 "spd": 20,
 "tq": 40,
@@ -12376,6 +12738,7 @@
 ],
 "223": [
 {
+"id": "zooz-ultra-flex-g2-low-bar",
 "cls": 2,
 "spd": 20,
 "tq": null,
