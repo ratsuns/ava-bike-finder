@@ -278,6 +278,7 @@ for _f, _u in (('index.html', URL), ('browse-vendors/index.html', SURL), ('llms.
     open(_p, 'w').write(_s.replace(_iso, _o['date']).replace(_long, _d.strftime('%B %-d, %Y')))
 json.dump(_LM, open(_LMF, 'w'), indent=1, sort_keys=True)
 open(SITE + '/sitemap.xml', 'w').write('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(f'<url><loc>{u}</loc><lastmod>{_dates[u]}</lastmod></url>' for u in (URL, SURL)) + '</urlset>')
+open(SITE + '/robots.txt', 'w').write(f'User-agent: *\nAllow: /\n\nSitemap: {URL}sitemap.xml\n')
 print('last updated', _dates)
 
 # ---- remove what nothing uses any more: old bike-list and video files, old photos and logos, old share images
