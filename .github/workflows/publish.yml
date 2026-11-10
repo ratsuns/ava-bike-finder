@@ -1,9 +1,9 @@
 name: Test and publish
-# Publishes the site to GitHub Pages only after the tests pass (Pages setting: Source = GitHub Actions).
+# Runs the tests on every change. The site itself is published by Vercel (www.ebikerebatefinder.com).
 #  - runs on every push to main, after the weekly video job saves an update, or from the Actions tab
 #  - tests: the spec and video rules, then the site test in a real browser (phone and desktop, light and dark:
 #    every bike's window and videos, 20 windows opened, 4 real taps, no console errors)
-#  - if a test fails nothing is published, the site stays as it was, and GitHub emails the repo owner
+#  - if a test fails GitHub emails the repo owner (Vercel does not wait for these tests yet)
 on:
   push:
     branches: [main]
@@ -13,10 +13,8 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
-  pages: write
-  id-token: write
 concurrency:
-  group: pages
+  group: tests
   cancel-in-progress: false
 jobs:
   test:
@@ -43,16 +41,3 @@ jobs:
           node src/tests/serve.js "$PWD" 8765 &
           sleep 1
           NODE_PATH="$RUNNER_TEMP/pw/node_modules" node src/tests/site_test.js http://localhost:8765/
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
-  publish:
-    needs: test
-    if: github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
-    steps:
-      - id: deploy
-        uses: actions/deploy-pages@v4
