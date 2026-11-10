@@ -134,7 +134,7 @@ THEME_JS = ('try{if(!matchMedia("(hover: hover) and (pointer: fine)").matches||m
             f'var t=localStorage.getItem("theme");if(t==="light"){{document.documentElement.dataset.theme="light";document.querySelector("meta[name=color-scheme]").content="light";document.querySelector("meta[name=theme-color]").content="{LIGHT}"}}}}catch(e){{}}')
 def page_tags(title, desc, url):
     return (f'<title>{e(title)}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{url}">'
-            '<meta name="robots" content="index,follow,max-image-preview:large">'
+            '<meta name="robots" content="index,follow,max-image-preview:large"><meta name="msvalidate.01" content="E92F479E5202458908C55622B28B718F">'
             '<link rel="icon" href="favicon.ico" sizes="48x48"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="manifest" href="site.webmanifest"><link rel="alternate" type="text/markdown" title="Full bike and shop list" href="llms-full.txt">')
 def share_tags(url, title, desc, image, alt, short_alt, video=''):
     return (f'<meta property="og:type" content="website"><meta property="og:site_name" content="{e(NAME)}"><meta property="og:url" content="{url}"><meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}">'
