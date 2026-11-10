@@ -162,7 +162,7 @@ _tagline = 'Find your e-bike with the Ava rebate'
 SEO = (page_tags(TITLE, DESC, URL)
        + share_tags(URL, _tagline, DESC, OGN, f"{NAME}: {_tagline}. {AMOUNTS['Cargo']} off cargo and adaptive, {AMOUNTS['Standard']} off standard.", f'{NAME}: {_tagline}.', _hero_video)
        + ld_script(LD))
-open(SITE + '/index.html', 'w').write(head_start() + SEO + '<script>if(location.hash==="#dir")location.replace("browse-vendors/");' + THEME_JS + '</script><script type="speculationrules">{"prefetch":[{"where":{"href_matches":"*browse-vendors/*"},"eagerness":"moderate"}]}</script></head><body data-overlayscrollbars-initialize style="margin:0">' + PAGE + '</body></html>')
+open(SITE + '/index.html', 'w').write(head_start() + SEO + '<script>if(location.hash==="#dir")location.replace("browse-vendors/");' + THEME_JS + '</script><script type="speculationrules">{"prefetch":[{"where":{"href_matches":"*browse-vendors/*"},"eagerness":"moderate"}]}</script><script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments);};</script><script defer src="/_vercel/insights/script.js"></script></head><body data-overlayscrollbars-initialize style="margin:0">' + PAGE + '</body></html>')
 
 # ---- icons, manifest, llms files (llmstxt.org: plain markdown for AI assistants)
 for f in ['favicon.svg', 'favicon.ico', 'apple-touch-icon.png', 'fav-192.png', 'fav-512.png']: shutil.copy('verify/seo/' + f, SITE + '/' + f)
@@ -215,7 +215,8 @@ SHEAD = (head_start('<base href="../">') + page_tags(STITLE, SDESC, SURL) + SOG 
      '<script>(()=>{const r=Math.min(devicePixelRatio||1,2)>1?"@2x":"",b="https://tiles.openfreemap.org/";["sprites/ofm_f384/ofm"+r+".json","sprites/ofm_f384/ofm"+r+".png","fonts/Noto%20Sans%20Regular/0-255.pbf","fonts/Noto%20Sans%20Italic/0-255.pbf"].forEach(u=>{const l=document.createElement("link");l.rel="preload";l.as="fetch";l.crossOrigin="anonymous";l.href=b+u;document.head.append(l)})})()</script>'
      f'<script>{THEME_JS}(function(){{var l=document.createElement("link");l.rel="preload";l.as="fetch";l.crossOrigin="anonymous";l.href="{MAP_STYLE}";document.head.appendChild(l)}})()</script>'
      # the map's stylesheet downloads in parallel but never holds up the cards: it's applied when it arrives, and the map starts once it's in
-     '<link rel="preload" as="style" href="vendor/maplibre-gl-5.24.0.min.css" onload="this.onload=null;this.rel=\'stylesheet\';window.MLCSS=1;document.dispatchEvent(new Event(\'mlcss\'))" onerror="window.MLCSS=1;document.dispatchEvent(new Event(\'mlcss\'))"><script defer src="vendor/maplibre-gl-5.24.0.min.js"></script>')
+     '<link rel="preload" as="style" href="vendor/maplibre-gl-5.24.0.min.css" onload="this.onload=null;this.rel=\'stylesheet\';window.MLCSS=1;document.dispatchEvent(new Event(\'mlcss\'))" onerror="window.MLCSS=1;document.dispatchEvent(new Event(\'mlcss\'))"><script defer src="vendor/maplibre-gl-5.24.0.min.js"></script>'
+     '<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments);};</script><script defer src="/_vercel/insights/script.js"></script>')
 # the shop list is put into the page at build time, so it shows at once and search engines see every shop without running the
 # page. It is made by the pages' own card code (shared/shop.js, run here in Node), which also puts the shops in their order
 _r = subprocess.run(['node', '-e', open('shared/shop.js').read() + '\nconst SH=' + json.dumps(SHL) + ';SH.sort(shopOrder);process.stdout.write(JSON.stringify({sh:SH,list:shopList(SH)}))'],
