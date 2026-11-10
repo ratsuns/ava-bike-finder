@@ -170,6 +170,8 @@ a.web span{text-decoration:underline;text-decoration-color:color-mix(in oklab,cu
 .nmh{padding-top:env(safe-area-inset-top,0px);border-bottom:1px solid var(--line)}
 .nmh .wrap{display:flex;align-items:center;justify-content:space-between;height:var(--nav-h);padding-block:0}
 .nmb{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;letter-spacing:-.01em}
+/* the bike icon is drawn low in its box, so the name drops to match its middle */
+.brand>span,.nmb>span{position:relative;top:1.75px}
 .nmx{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;margin-right:-10px;border:0;border-radius:8px;background:none;color:var(--fg);cursor:pointer;transition:transform .12s var(--ease-out)}
 .nmx:active{transform:scale(.95)}
 .nml a{touch-action:manipulation}
