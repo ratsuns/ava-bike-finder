@@ -147,7 +147,7 @@ SHOPS_LD_NAME = 'Shops that accept the Ava e-bike rebate'
 
 # ---- home page <head>
 OGN = share_image('verify/seo/og.jpg', 'og-')
-TITLE = 'Ava E-Bike Rebate Finder: Every Eligible E-Bike, Price and Shop'
+TITLE = 'E-bike Rebate Finder: Every Ava-Eligible E-Bike, Price and Shop'
 DESC = f"All {len(out)} e-bikes on Ava Community Energy's rebate list for {F['area']}. See your price after the {AMOUNTS['Standard']} or {AMOUNTS['Cargo']} rebate and find a shop."
 ME = {"@type": "Person", "@id": URL + "#chris", "name": F['author']['name'], "address": {"@type": "PostalAddress", "addressLocality": F['author']['city'], "addressRegion": "CA"}}
 LD = {"@context": "https://schema.org", "@graph": [
