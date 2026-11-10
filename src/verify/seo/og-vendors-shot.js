@@ -26,7 +26,7 @@ const OGCSS='<style id="ogcard">html,body{scrollbar-width:none!important}html::-
   return {w:m.clientWidth,h:m.clientHeight,mapLeft:r.left,mapRight:r.right,mapTop:r.top,cardLeft:l.left,headLeft:hr&&hr.left,c:__m.getCenter(),z:__m.getZoom()}});
  console.log(JSON.stringify(g));
  if(MODE==='shot'){
-  await p.evaluate(()=>{const br=document.createElement('div');br.className='ogbrand';br.innerHTML='<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5.5" cy="17" r="3.5"/><circle cx="18.5" cy="17" r="3.5"/><path d="M5.5 17 9 9h6l3.5 8M12 17l3-8M8 6h3"/></svg>Ava Bike Finder';document.body.append(br);
+  await p.evaluate(()=>{const br=document.createElement('div');br.className='ogbrand';br.innerHTML='<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5.5" cy="17" r="3.5"/><circle cx="18.5" cy="17" r="3.5"/><path d="M5.5 17 9 9h6l3.5 8M12 17l3-8M8 6h3"/></svg>E-bike Rebate Finder';document.body.append(br);
    const cc=document.querySelector('#map .maplibregl-canvas-container'),im=document.createElement('img');cc.querySelector('canvas').style.opacity='0';im.src='/__maptop.jpg';im.style.cssText='position:absolute;left:0;top:0;width:100%;pointer-events:none';cc.parentNode.insertBefore(im,cc);document.activeElement&&document.activeElement.blur()});
   await p.waitForTimeout(600);await p.screenshot({path:path.join(W,'og-vendors.png')})}
  await b.close();s.close()})();

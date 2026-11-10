@@ -1,7 +1,7 @@
 {
- "url": "https://ratsuns.github.io/ava-bike-finder/",
- "name": "Ava Bike Finder",
- "short_name": "Ava Bikes",
+ "url": "https://www.ebikerebatefinder.com/",
+ "name": "E-bike Rebate Finder",
+ "short_name": "Rebate Finder",
  "author": {"name": "Chris Beltran", "city": "Oakland"},
  "area": "Alameda and San Joaquin County",
  "theme": {"light": "#f6f7f5", "dark": "#0f1211"},

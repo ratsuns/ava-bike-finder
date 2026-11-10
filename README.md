@@ -2,7 +2,7 @@
 
 Every e-bike on the Ava Bike Electric rebate list (Oct 8, 2026), with photos, prices, what you pay after the rebate, specs and East Bay shops.
 
-Live site: https://ratsuns.github.io/ava-bike-finder/
+Live site: https://www.ebikerebatefinder.com/
 
 ## What's in this folder
 

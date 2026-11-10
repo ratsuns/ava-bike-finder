@@ -24,8 +24,8 @@ jobs:
           urls = sorted(u for u, v in new.items() if old.get(u) != v)
           print('changed:', urls)
           if urls:
-              body = json.dumps({"host": "ratsuns.github.io", "key": "3ef55a8fd8c77a4982e3f3d6703f0926",
-                                 "keyLocation": "https://ratsuns.github.io/ava-bike-finder/3ef55a8fd8c77a4982e3f3d6703f0926.txt",
+              body = json.dumps({"host": "www.ebikerebatefinder.com", "key": "3ef55a8fd8c77a4982e3f3d6703f0926",
+                                 "keyLocation": "https://www.ebikerebatefinder.com/3ef55a8fd8c77a4982e3f3d6703f0926.txt",
                                  "urlList": urls}).encode()
               req = urllib.request.Request("https://api.indexnow.org/indexnow", data=body, method="POST",
                                            headers={"Content-Type": "application/json; charset=utf-8"})
