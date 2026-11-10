@@ -81,3 +81,12 @@ const NEAR={TTL:600000,
  /* the position shown only follows a real move, so distances don't jitter */
  moved:(a,b)=>miles(a,b)>0.25,
  ask:(ok,err,o)=>navigator.geolocation.getCurrentPosition(p=>ok({lat:p.coords.latitude,lng:p.coords.longitude}),err,{enableHighAccuracy:false,timeout:15000,maximumAge:60000,...o})};
+
+/* Visitor events for Vercel Analytics (Analytics → Events): which shops people contact, which bikes they open, what they
+   search for. va() is set up in the page head; if analytics is blocked or missing, nothing happens */
+const track=(name,data)=>{try{window.va&&window.va('event',{name,data})}catch(e){}};
+/* a tap on a shop's phone, email, address (map), directions or website, wherever its card is: the shop list,
+   a bike's details or the map */
+addEventListener('click',e=>{const a=e.target.closest&&e.target.closest('a[href]'),c=a&&a.closest('.shop,.bmshop,.mcard');if(!c)return;
+ const n=c.querySelector('b'),h=a.getAttribute('href');if(!n)return;
+ track('Shop contact',{shop:n.textContent.trim(),action:h.startsWith('tel:')?'Call':h.startsWith('mailto:')||a.classList.contains('mail')?'Email':h.includes('/maps/dir/')?'Directions':h.includes('/maps/')?'Map':'Website'})},true);

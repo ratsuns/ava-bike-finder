@@ -1002,7 +1002,7 @@ function buildBike(i){const pre=i+'|'+F.city+'|'+F.q+'|'+(ME?NEAR_MI+'|'+ME.lat+
 /* the photo is decoded before the window is shown, so its first painted frame already has the picture (no blank-then-image flash).
    decoding starts on pointerdown, so by the time the tap lands it is normally finished; a short cap keeps a slow decode from holding the window back */
 let BIKE_OPENING=0;
-function openBike(i,opener){if(BIKE.open)return;const tok=++BIKE_OPENING;buildBike(i);DT.reset();BIKE_I=i;BIKE_AC=activeColor(B[i]);syncBike();
+function openBike(i,opener){if(BIKE.open)return;const tok=++BIKE_OPENING;buildBike(i);DT.reset();BIKE_I=i;track('Bike details',{bike:B[i].brand+' '+B[i].model,brand:B[i].brand});BIKE_AC=activeColor(B[i]);syncBike();
  const im=$('bike-img'),show=()=>{if(tok!==BIKE_OPENING||BIKE.open)return;showDlg(BIKE,opener);$('bike-body').scrollTop=0;fitBml()};
  Promise.race([im.decode().catch(()=>{}),new Promise(r=>setTimeout(r,150))]).then(show)}
 /* desktop: a mouse resting on a card for 65ms (the usual hover-intent delay) prepares its window, so the click opens it with everything ready */
@@ -1071,6 +1071,8 @@ CMD.addEventListener('click',e=>{
   if(ae&&ae.matches&&ae.matches('input,textarea'))ae.blur();let done=false,kt=0;const go=()=>{if(done)return;done=true;clearTimeout(kt);vv.removeEventListener('resize',onv);goTo(k)};
   const onv=()=>{if(innerHeight-vv.height<=100){clearTimeout(kt);kt=setTimeout(go,60)}};vv.addEventListener('resize',onv);kt=setTimeout(go,700);return}});
 let qt;$('cq').addEventListener('input',()=>{F.q=$('q').value=$('cq').value;clearTimeout(qt);qt=setTimeout(render,100)});
+/* what people search for: sent once they stop typing for 1.5 s, at least 2 letters, not the same search twice in a row */
+let qs,qLast='';$('cq').addEventListener('input',()=>{clearTimeout(qs);qs=setTimeout(()=>{const v=F.q.trim().toLowerCase().slice(0,100);if(v.length>=2&&v!==qLast){qLast=v;track('Search',{query:v})}},1500)});
 $('cq').addEventListener('keydown',e=>{
  if(e.key==='Enter'){e.preventDefault();clearTimeout(qt);render();CMD._go=true;CMD.close()}
  else if(e.key==='ArrowDown'){const h=CMD.querySelector('.hit');if(h){e.preventDefault();h.focus()}}});
