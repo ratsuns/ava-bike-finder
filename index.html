@@ -1115,7 +1115,12 @@ const track=(name,data)=>{try{window.va&&window.va('event',{name,data})}catch(e)
    a bike's details or the map */
 addEventListener('click',e=>{const a=e.target.closest&&e.target.closest('a[href]'),c=a&&a.closest('.shop,.bmshop,.mcard');if(!c)return;
  const n=c.querySelector('b'),h=a.getAttribute('href');if(!n)return;
- track('Shop contact',{shop:n.textContent.trim(),action:h.startsWith('tel:')?'Call':h.startsWith('mailto:')||a.classList.contains('mail')?'Email':h.includes('/maps/dir/')?'Directions':h.includes('/maps/')?'Map':'Website'})},true);
+ const shop=n.textContent.trim(),action=h.startsWith('tel:')?'Call':h.startsWith('mailto:')||a.classList.contains('mail')?'Email':h.includes('/maps/dir/')?'Directions':h.includes('/maps/')?'Map':'Website';
+ track('Shop contact',{shop,action});
+ /* from inside a bike's details: also which bike sent them there (Vercel Pro allows 2 details per event, so the
+    contact type rides along with the shop name) */
+ const b=c.classList.contains('bmshop')&&typeof BIKE_I==='number'&&typeof B!=='undefined'?B[BIKE_I]:null;
+ if(b)track('Bike to shop',{bike:b.brand+' '+b.model,shop:shop+' · '+action})},true);
 const B=window.AVA_B,S=window.AVA_S,SITE=window.AVA_SITE,REB=SITE.rebate.by_type;
 /* the card tips keep their own short wording (Chris); the E-bike guide (shared/info.html) says the same facts at length: change both together */
 const CLASSX={"1":"Class 1: pedal assist only, up to 20 mph.","2":"Class 2: pedal assist plus a throttle, up to 20 mph.","3":"Class 3: pedal assist up to 28 mph. No throttle in California."};
