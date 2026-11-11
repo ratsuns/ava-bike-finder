@@ -4,7 +4,9 @@ name: Test and publish
 #  - tests: the spec and video rules; the site files (search-engine addresses, old-link forwarding); then in a real
 #    browser the site test (phone and desktop, light and dark: every bike's window and videos, 20 windows opened,
 #    4 real taps, no console errors) and the analytics events test
-#  - Vercel only puts a change live after this "test" check passes (Vercel → Settings → Deployment Checks);
+#  - every test runs on every change; the browser tests run side by side on separate machines to save time
+#  - Vercel only puts a change live after the "test" check passes (Vercel → Settings → Deployment Checks). "test" is
+#    the last job below and passes only if every other job passed, so keep its name;
 #    if a test fails, the live site stays as it was and GitHub emails the repo owner
 on:
   push:
@@ -19,7 +21,8 @@ concurrency:
   group: tests
   cancel-in-progress: false
 jobs:
-  test:
+  rules:
+    name: rules and site files
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
@@ -36,13 +39,42 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: '22'
-      - name: Install the test browser
-        run: npm install --prefix "$RUNNER_TEMP/pw" playwright@1.63.0 && "$RUNNER_TEMP/pw/node_modules/.bin/playwright" install --with-deps chromium
       - name: Site files (search-engine addresses, old-link forwarding)
         run: node src/tests/files_test.js .
-      - name: Site test
+  browser:
+    name: browser (${{ matrix.test }} ${{ matrix.setup }})
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false       # one failing setup doesn't hide the results of the others
+      matrix:
+        include:             # each line is one machine; together they are the whole site test and events test
+          - {test: site_test,   setup: phone light}
+          - {test: site_test,   setup: phone dark}
+          - {test: site_test,   setup: desktop light}
+          - {test: site_test,   setup: desktop dark}
+          - {test: events_test, setup: desktop}
+          - {test: events_test, setup: phone}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event_name == 'workflow_run' && 'main' || github.sha }}
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+      - name: Install the test browser
+        run: npm install --prefix "$RUNNER_TEMP/pw" playwright@1.63.0 && "$RUNNER_TEMP/pw/node_modules/.bin/playwright" install --with-deps chromium
+      - name: ${{ matrix.test }} (${{ matrix.setup }})
         run: |
           node src/tests/serve.js "$PWD" 8765 &
           sleep 1
-          NODE_PATH="$RUNNER_TEMP/pw/node_modules" node src/tests/site_test.js http://localhost:8765/
-          NODE_PATH="$RUNNER_TEMP/pw/node_modules" node src/tests/events_test.js http://localhost:8765/
+          NODE_PATH="$RUNNER_TEMP/pw/node_modules" node src/tests/${{ matrix.test }}.js http://localhost:8765/ "${{ matrix.setup }}"
+  test:                      # the one check Vercel waits for: passes only if every job above passed
+    needs: [rules, browser]
+    if: always() && (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Every test passed
+        run: |
+          echo "rules and site files: ${{ needs.rules.result }}; browser tests: ${{ needs.browser.result }}"
+          [ "${{ needs.rules.result }}" = success ] && [ "${{ needs.browser.result }}" = success ]

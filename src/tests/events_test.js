@@ -5,6 +5,9 @@
 const {chromium}=require('playwright');
 const URL0=process.argv[2]||'http://localhost:8765/';
 const HOST=new URL(URL0).host;
+// a third argument runs just one device (GitHub runs them side by side): 'desktop' or 'phone'
+const ONLY=process.argv[3]||'';
+if(ONLY&&!['desktop','phone'].includes(ONLY)){console.log(`FAIL no device is called "${ONLY}" (have: desktop, phone)`);process.exit(1)}
 
 // every call the page made to va('event', ...), oldest first
 const events=p=>p.evaluate(()=>(window.vaq||[]).map(a=>[...a]).filter(a=>a[0]==='event').map(a=>a[1]));
@@ -90,7 +93,7 @@ const tests=[
 ];
 
 (async()=>{const br=await chromium.launch();let bad=0;
- for(const [vname,vp,mob] of [['desktop',{width:1366,height:900},false],['phone',{width:390,height:844},true]]){
+ for(const [vname,vp,mob] of [['desktop',{width:1366,height:900},false],['phone',{width:390,height:844},true]].filter(c=>!ONLY||c[0]===ONLY)){
   for(const [name,fn] of tests){
    const ctx=await br.newContext({viewport:vp,hasTouch:mob,isMobile:mob});
    await ctx.route(u=>u.host!==HOST,r=>r.abort());                  // shop sites, maps and videos: never leave the test

@@ -1,8 +1,11 @@
 // The site test: every bike's window shows that bike and its videos, 20 windows really open and close, 4 real taps,
 // no console errors; on phone and desktop, light and dark.   node tests/site_test.js <site url>
 const {chromium}=require('playwright');
+// a third argument runs just one setup (GitHub runs the four side by side): 'phone light', 'phone dark', 'desktop light' or 'desktop dark'
+const ONLY=process.argv[3]||'',SETUPS=['phone light','phone dark','desktop light','desktop dark'];
+if(ONLY&&!SETUPS.includes(ONLY)){console.log(`FAIL no setup is called "${ONLY}" (have: ${SETUPS.join(', ')})`);process.exit(1)}
 (async()=>{const br=await chromium.launch();let fail=0;
-for(const [name,vp,scheme] of [['phone light',{width:390,height:844},'light'],['phone dark',{width:390,height:844},'dark'],['desktop light',{width:1366,height:900},'light'],['desktop dark',{width:1366,height:900},'dark']]){
+for(const [name,vp,scheme] of [['phone light',{width:390,height:844},'light'],['phone dark',{width:390,height:844},'dark'],['desktop light',{width:1366,height:900},'light'],['desktop dark',{width:1366,height:900},'dark']].filter(c=>!ONLY||c[0]===ONLY)){
  const ph=name.startsWith('phone');const p=await br.newPage({viewport:vp,colorScheme:scheme,hasTouch:ph,isMobile:ph});
  const errs=[];p.on('pageerror',e=>errs.push(e.message));p.on('console',m=>{if(m.type()==='error'&&!/ERR_FAILED|net::|Failed to load resource/.test(m.text()))errs.push(m.text())});
  await p.route(/ytimg|youtube|googleapis|gstatic/,r=>r.abort());
