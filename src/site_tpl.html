@@ -1071,7 +1071,7 @@ CMD.addEventListener('click',e=>{
   if(ae&&ae.matches&&ae.matches('input,textarea'))ae.blur();let done=false,kt=0;const go=()=>{if(done)return;done=true;clearTimeout(kt);vv.removeEventListener('resize',onv);goTo(k)};
   const onv=()=>{if(innerHeight-vv.height<=100){clearTimeout(kt);kt=setTimeout(go,60)}};vv.addEventListener('resize',onv);kt=setTimeout(go,700);return}});
 let qt;$('cq').addEventListener('input',()=>{F.q=$('q').value=$('cq').value;clearTimeout(qt);qt=setTimeout(render,100)});
-/* what people search for: sent once they stop typing for 1.5 s, at least 2 letters, not the same search twice in a row */
+/* what people search for, once they stop typing for 1.5 s: 2+ letters, and not the same search twice in a row */
 let qs,qLast='';$('cq').addEventListener('input',()=>{clearTimeout(qs);qs=setTimeout(()=>{const v=F.q.trim().toLowerCase().slice(0,100);if(v.length>=2&&v!==qLast){qLast=v;track('Search',{query:v})}},1500)});
 $('cq').addEventListener('keydown',e=>{
  if(e.key==='Enter'){e.preventDefault();clearTimeout(qt);render();CMD._go=true;CMD.close()}

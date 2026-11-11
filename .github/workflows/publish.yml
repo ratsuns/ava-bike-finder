@@ -1,9 +1,11 @@
 name: Test and publish
 # Runs the tests on every change. The site itself is published by Vercel (www.ebikerebatefinder.com).
 #  - runs on every push to main, after the weekly video job saves an update, or from the Actions tab
-#  - tests: the spec and video rules, then the site test in a real browser (phone and desktop, light and dark:
-#    every bike's window and videos, 20 windows opened, 4 real taps, no console errors)
-#  - if a test fails GitHub emails the repo owner (Vercel does not wait for these tests yet)
+#  - tests: the spec and video rules; the site files (search-engine addresses, old-link forwarding); then in a real
+#    browser the site test (phone and desktop, light and dark: every bike's window and videos, 20 windows opened,
+#    4 real taps, no console errors) and the analytics events test
+#  - Vercel only puts a change live after this "test" check passes (Vercel → Settings → Deployment Checks);
+#    if a test fails, the live site stays as it was and GitHub emails the repo owner
 on:
   push:
     branches: [main]
@@ -36,8 +38,11 @@ jobs:
           node-version: '22'
       - name: Install the test browser
         run: npm install --prefix "$RUNNER_TEMP/pw" playwright@1.63.0 && "$RUNNER_TEMP/pw/node_modules/.bin/playwright" install --with-deps chromium
+      - name: Site files (search-engine addresses, old-link forwarding)
+        run: node src/tests/files_test.js .
       - name: Site test
         run: |
           node src/tests/serve.js "$PWD" 8765 &
           sleep 1
           NODE_PATH="$RUNNER_TEMP/pw/node_modules" node src/tests/site_test.js http://localhost:8765/
+          NODE_PATH="$RUNNER_TEMP/pw/node_modules" node src/tests/events_test.js http://localhost:8765/

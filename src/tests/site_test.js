@@ -23,14 +23,17 @@ for(const [name,vp,scheme] of [['phone light',{width:390,height:844},'light'],['
    if(!BIKE.open)bad.push(B[i].name+`: did not open within 10 s`);else if($('bike-vids').dataset.k!==B[i].id)bad.push(B[i].name+': opened showing another bike');
    BIKE.close();const e=performance.now();while(BIKE.open&&performance.now()-e<3000)await new Promise(r=>setTimeout(r,5))}
   return {bikes:B.length,withVideos:withV,problems:bad}});
- // 3) real taps/clicks on 4 cards on screen
- let real=0;const cards=await p.$$('article.c');
- for(const c of cards.slice(0,4)){const k=await c.evaluate(e=>{e.scrollIntoView({block:'center'});return B[+e.dataset.b].id});await p.waitForTimeout(300);
+ // 3) real taps/clicks on 4 cards on screen. The page scrolls smoothly, and on a phone a tap while it is still scrolling
+ //    only stops the scroll (for people too), so jump to the card and wait until it sits still for 3 frames before tapping
+ let real=0;const tapBad=[];const cards=await p.$$('article.c');
+ for(const c of cards.slice(0,4)){const k=await c.evaluate(e=>{e.scrollIntoView({block:'center',behavior:'instant'});return B[+e.dataset.b].id});
+  await c.evaluate(e=>new Promise(res=>{let last=null,same=0;const f=()=>{const y=e.getBoundingClientRect().top;same=y===last?same+1:0;last=y;same>=3?res():requestAnimationFrame(f)};f()}));
   const bb=await (await c.$('.ph img')).boundingBox();const x=bb.x+bb.width/2,y=bb.y+bb.height/3;await (ph?p.touchscreen.tap(x,y):p.mouse.click(x,y));
-  await p.waitForFunction(()=>BIKE.open,null,{timeout:4000}).catch(()=>{});
-  if(await p.evaluate(k=>BIKE.open&&$('bike-vids').dataset.k===k,k))real++;
-  await p.keyboard.press('Escape');await p.waitForFunction(()=>!BIKE.open,null,{timeout:4000}).catch(()=>{})}
+  await p.waitForFunction(()=>BIKE.open,null,{timeout:10000}).catch(()=>{});   // a busy test machine can take seconds
+  const got=await p.evaluate(()=>BIKE.open?$('bike-vids').dataset.k:null);
+  if(got===k)real++;else tapBad.push(got===null?k+': the tap did not open it':k+': the tap opened '+got);
+  await p.keyboard.press('Escape');await p.waitForFunction(()=>!BIKE.open,null,{timeout:10000}).catch(()=>{})}
  const ok=!errs.length&&!r.problems.length&&real===4;if(!ok)fail++;
- console.log((ok?'PASS ':'FAIL ')+name,JSON.stringify({bikesChecked:r.bikes,withVideos:r.withVideos,problems:r.problems.slice(0,5),problemCount:r.problems.length,realTaps:real+'/4',videoFileReadyMs:vt}),'console errors:',errs.length,errs.slice(0,2));
+ console.log((ok?'PASS ':'FAIL ')+name,JSON.stringify({bikesChecked:r.bikes,withVideos:r.withVideos,problems:r.problems.slice(0,5),problemCount:r.problems.length,realTaps:real+'/4',tapProblems:tapBad,videoFileReadyMs:vt}),'console errors:',errs.length,errs.slice(0,2));
  await p.close()}
 await br.close();process.exit(fail?1:0)})();

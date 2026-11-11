@@ -82,16 +82,13 @@ const NEAR={TTL:600000,
  moved:(a,b)=>miles(a,b)>0.25,
  ask:(ok,err,o)=>navigator.geolocation.getCurrentPosition(p=>ok({lat:p.coords.latitude,lng:p.coords.longitude}),err,{enableHighAccuracy:false,timeout:15000,maximumAge:60000,...o})};
 
-/* Visitor events for Vercel Analytics (Analytics → Events): which shops people contact, which bikes they open, what they
-   search for. va() is set up in the page head; if analytics is blocked or missing, nothing happens */
+/* What people do, for Vercel Analytics (Analytics → Events). va() is set up in the page head and queues calls until
+   Vercel's script arrives; if it never does, nothing breaks */
 const track=(name,data)=>{try{window.va&&window.va('event',{name,data})}catch(e){}};
-/* a tap on a shop's phone, email, address (map), directions or website, wherever its card is: the shop list,
-   a bike's details or the map */
-addEventListener('click',e=>{const a=e.target.closest&&e.target.closest('a[href]'),c=a&&a.closest('.shop,.bmshop,.mcard');if(!c)return;
- const n=c.querySelector('b'),h=a.getAttribute('href');if(!n)return;
- const shop=n.textContent.trim(),action=h.startsWith('tel:')?'Call':h.startsWith('mailto:')||a.classList.contains('mail')?'Email':h.includes('/maps/dir/')?'Directions':h.includes('/maps/')?'Map':'Website';
- track('Shop contact',{shop,action});
- /* from inside a bike's details: also which bike sent them there (Vercel Pro allows 2 details per event, so the
-    contact type rides along with the shop name) */
- const b=c.classList.contains('bmshop')&&typeof BIKE_I==='number'&&typeof B!=='undefined'?B[BIKE_I]:null;
- if(b)track('Bike to shop',{bike:b.brand+' '+b.model,shop:shop+' · '+action})},true);
+/* a tap on a shop's phone, email, address, directions or website: in the shop list, a bike's details or the map.
+   From a bike's details it also says which bike led there (Vercel Pro allows 2 details per event, so the contact
+   type travels with the shop name there) */
+const contactType=a=>{const h=a.getAttribute('href');return h.startsWith('tel:')?'Call':h.startsWith('mailto:')||a.classList.contains('mail')?'Email':h.includes('/maps/dir/')?'Directions':h.includes('/maps/')?'Map':'Website'};
+addEventListener('click',e=>{const a=e.target.closest&&e.target.closest('a[href]'),c=a&&a.closest('.shop,.bmshop,.mcard'),n=c&&c.querySelector('b');if(!n)return;
+ const shop=n.textContent.trim(),action=contactType(a);track('Shop contact',{shop,action});
+ if(c.classList.contains('bmshop')&&typeof BIKE_I==='number'){const b=B[BIKE_I];track('Bike to shop',{bike:b.brand+' '+b.model,shop:shop+' · '+action})}},true);
