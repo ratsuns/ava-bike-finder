@@ -19,8 +19,8 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
       - run: pip install Pillow wordfreq==3.1.1
@@ -47,6 +47,6 @@ jobs:
             commit -m 'Video reviews: refreshed from YouTube and checked'
           git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
             pull --rebase    # someone may have pushed to main while this ran
-          git push    # GitHub Pages publishes this push on its own
+          git push    # GitHub runs the tests on this push, and Vercel publishes it once they pass
     env:
       YT_API_KEY: ${{ secrets.YT_API_KEY }}

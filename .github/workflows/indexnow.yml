@@ -9,7 +9,7 @@ jobs:
   ping:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Wait for GitHub Pages to publish
         run: sleep 480    # "Test and publish" tests, then publishes this push, usually within 6 minutes; pinging sooner sends the old pages
       - name: Tell IndexNow which pages changed
