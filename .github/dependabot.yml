@@ -1,0 +1,11 @@
+# Dependabot: once a week, checks the GitHub setup steps the workflows use (actions/checkout and so on) and opens
+# one pull request with any updates. Security alerts are switched on in the repo's settings.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      github-actions:
+        patterns: ['*']
