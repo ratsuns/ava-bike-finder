@@ -49,6 +49,9 @@ jobs:
     name: browser (${{ matrix.test }} ${{ matrix.setup }})
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
+    container:               # Playwright's own test machine, with the test browser installed: no download each run
+      image: mcr.microsoft.com/playwright:v1.63.0-noble    # (downloading it took 20 s on a good day, up to 6 min on a bad one)
+      options: --ipc=host    # Playwright's advice for Chromium in a container (it can run out of memory without it)
     strategy:
       fail-fast: false       # one failing setup doesn't hide the results of the others
       matrix:
@@ -63,11 +66,8 @@ jobs:
       - uses: actions/checkout@v7
         with:
           ref: ${{ github.event_name == 'workflow_run' && 'main' || github.sha }}
-      - uses: actions/setup-node@v7
-        with:
-          node-version: '22'
-      - name: Install the test browser
-        run: npm install --prefix "$RUNNER_TEMP/pw" playwright@1.63.0 && "$RUNNER_TEMP/pw/node_modules/.bin/playwright" install --with-deps chromium
+      - name: Get Playwright (the browser is already on this machine)
+        run: PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1 npm install --prefix "$RUNNER_TEMP/pw" playwright@1.63.0
       - name: ${{ matrix.test }} (${{ matrix.setup }})
         run: |
           node src/tests/serve.js "$PWD" 8765 &
