@@ -14,7 +14,8 @@ if(ONLY&&!['desktop','phone'].includes(ONLY)){console.log(`FAIL no device is cal
 // every call the page made to va('event', ...), oldest first
 const events=p=>p.evaluate(()=>(window.vaq||[]).map(a=>[...a]).filter(a=>a[0]==='event').map(a=>a[1]));
 // stop the page's clock: from here time moves only when a test fast-forwards it, however slow the machine is
-const stopClock=async p=>{await p.clock.install();await p.clock.pauseAt(await p.evaluate(()=>Date.now())+1)};
+// (it stops a second ahead: a slow machine can take more than a moment between reading the time and stopping it)
+const stopClock=async p=>{await p.clock.install();await p.clock.pauseAt(await p.evaluate(()=>Date.now())+1000)};
 const fail=(msg)=>{throw new Error(msg)};
 const same=(got,want,what)=>{const g=JSON.stringify(got),w=JSON.stringify(want);if(g!==w)fail(`${what}\n      want ${w}\n      got  ${g}`)};
 
