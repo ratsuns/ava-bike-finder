@@ -6,6 +6,8 @@ change: write the test, watch it fail for the right reason, then write the code.
 reproduces it before the fix. Code written without a failing test first is rewritten test-first.
 
 ## The tests (all must pass; GitHub runs them on every push and Vercel publishes only after they pass)
+    ruff check src --select E9,F                                               # Python code check (real errors only)
+    npx -y oxlint@1.94.0 src/shared src/tests                                  # JavaScript code check
     cd src && python -m bikespecs.test_rules && python -m videos.test_rules    # spec and video rules
     node src/tests/files_test.js .                                             # search-engine addresses, old-link forwarding
     node src/tests/serve.js "$PWD" 8765 &                                      # then, in a real browser:
