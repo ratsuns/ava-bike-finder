@@ -1,10 +1,11 @@
 name: Test and publish
 # Runs the tests on every change. The site itself is published by Vercel (www.ebikerebatefinder.com).
 #  - runs on every push to main, after the weekly video job saves an update, or from the Actions tab
-#  - tests: the spec and video rules; the site files (search-engine addresses, old-link forwarding); then in a real
+#  - tests: the code checks (Ruff for Python, Oxlint for JavaScript); the spec and video rules; the site files (search-engine addresses, old-link forwarding); then in a real
 #    browser the site test (phone and desktop, light and dark: every bike's window and videos, 20 windows opened,
 #    4 real taps, no console errors) and the analytics events test
 #  - every test runs on every change; the browser tests run side by side on separate machines to save time
+#    (Playwright's own machine, which comes with the test browser installed)
 #  - Vercel only puts a change live after the "test" check passes (Vercel → Settings → Deployment Checks). "test" is
 #    the last job below and passes only if every other job passed, so keep its name;
 #    if a test fails, the live site stays as it was and GitHub emails the repo owner
@@ -32,7 +33,9 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
-      - run: pip install wordfreq==3.1.1
+      - run: pip install wordfreq==3.1.1 ruff==0.16.9
+      - name: Python code check (Ruff)
+        run: ruff check src --select E9,F    # real errors only: broken syntax, undefined names, unused imports (not style: the code is compact on purpose)
       - name: Spec and video rules
         working-directory: src
         run: python -m bikespecs.test_rules && python -m videos.test_rules
@@ -41,10 +44,15 @@ jobs:
           node-version: '22'
       - name: Site files (search-engine addresses, old-link forwarding)
         run: node src/tests/files_test.js .
+      - name: JavaScript code check (Oxlint)
+        run: npx -y oxlint@1.94.0 src/shared src/tests    # fails on real errors; warnings are listed but don't block
   browser:
     name: browser (${{ matrix.test }} ${{ matrix.setup }})
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
+    container:               # Playwright's own test machine: the test browser comes installed (no download each run)
+      image: mcr.microsoft.com/playwright:v1.63.0-noble
+      options: --ipc=host    # Playwright's advice for Chromium in a container (it can run out of memory without it)
     strategy:
       fail-fast: false       # one failing setup doesn't hide the results of the others
       matrix:
@@ -59,11 +67,8 @@ jobs:
       - uses: actions/checkout@v7
         with:
           ref: ${{ github.event_name == 'workflow_run' && 'main' || github.sha }}
-      - uses: actions/setup-node@v7
-        with:
-          node-version: '22'
-      - name: Install the test browser
-        run: npm install --prefix "$RUNNER_TEMP/pw" playwright@1.63.0 && "$RUNNER_TEMP/pw/node_modules/.bin/playwright" install --with-deps chromium
+      - name: Get Playwright (the browser is already on this machine)
+        run: PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1 npm install --prefix "$RUNNER_TEMP/pw" playwright@1.63.0
       - name: ${{ matrix.test }} (${{ matrix.setup }})
         run: |
           node src/tests/serve.js "$PWD" 8765 &

@@ -2,6 +2,7 @@
 //   node tests/events_test.js <site url>
 // Runs the real pages. Vercel's script isn't served here, so the page's own va() stub keeps every call in
 // window.vaq, and the test reads that queue: no mocks. Each test names the break it catches.
+// The search tests fast-forward Playwright's clock past the search pause instead of really waiting (same timing, less wall time).
 const {chromium}=require('playwright');
 const URL0=process.argv[2]||'http://localhost:8765/';
 const HOST=new URL(URL0).host;
@@ -66,20 +67,20 @@ const tests=[
  }],
  ['a search is counted once, after the visitor stops typing', async p=>{
   // breaks if: every keystroke is sent, nothing is sent, or the query isn't what was typed
-  await p.evaluate(()=>qOpen());await p.locator('#cq').pressSequentially('Lectric',{delay:80});
-  await p.waitForTimeout(500);same(await events(p),[],'events while still typing (half a second after the last key)');
-  await p.waitForTimeout(1500);same(await events(p),[{name:'Search',data:{query:'lectric'}}],'events after a pause');
+  await p.clock.install();await p.evaluate(()=>qOpen());await p.locator('#cq').pressSequentially('Lectric',{delay:80});
+  await p.clock.fastForward(500);same(await events(p),[],'events while still typing (half a second after the last key)');
+  await p.clock.fastForward(1500);same(await events(p),[{name:'Search',data:{query:'lectric'}}],'events after a pause');
  }],
  ['a one-letter search is not counted', async p=>{
   // breaks if: the 2-letter minimum is dropped
-  await p.evaluate(()=>qOpen());await p.locator('#cq').pressSequentially('x');await p.waitForTimeout(2000);
+  await p.clock.install();await p.evaluate(()=>qOpen());await p.locator('#cq').pressSequentially('x');await p.clock.fastForward(2000);
   same(await events(p),[],'events after typing one letter');
  }],
  ['the same search twice in a row is counted once', async p=>{
   // breaks if: repeats aren't filtered out
-  await p.evaluate(()=>qOpen());const q=p.locator('#cq');
-  await q.pressSequentially('rad',{delay:60});await p.waitForTimeout(2000);
-  await q.press('End');await q.pressSequentially('x');await q.press('Backspace');await p.waitForTimeout(2000);
+  await p.clock.install();await p.evaluate(()=>qOpen());const q=p.locator('#cq');
+  await q.pressSequentially('rad',{delay:60});await p.clock.fastForward(2000);
+  await q.press('End');await q.pressSequentially('x');await q.press('Backspace');await p.clock.fastForward(2000);
   same(await events(p),[{name:'Search',data:{query:'rad'}}],'events after searching "rad" twice');
  }],
  ['each page loads each Vercel script once', async p=>{
