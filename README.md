@@ -1,4 +1,4 @@
-# Ava Rebate Bike Finder
+# E-bike Rebate Finder
 
 Every e-bike on the Ava Bike Electric rebate list (Oct 8, 2026), with photos, prices, what you pay after the rebate, specs and East Bay shops.
 
