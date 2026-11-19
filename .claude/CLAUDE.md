@@ -15,3 +15,9 @@ reproduces it before the fix. Code written without a failing test first is rewri
     node src/tests/events_test.js http://localhost:8765/                       #   analytics events
 
 Build after changing anything in src/: `cd src && SITE_DIR=.. python3 build2.py` (the tests check the built files).
+
+## How changes ship
+- Each change: its own branch, then a pull request, then merge into main. GitHub tests main and Vercel publishes only if they pass.
+  Docs-only changes (README, notes) need no local tests or rebuild.
+- Change files in `src/`, then rebuild. The files at the top of the repo are output from the build.
+- The weekly video job commits straight to main. That's expected.
